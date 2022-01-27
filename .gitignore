@@ -1,0 +1,57 @@
+# Batch files
+# No need to synchronize batch files?
+#**/*.bat
+
+# VisualStudio Code
+# Just synchronize ".vscode/launch.json" and ".vscode/tasks.json".
+
+# MinGW 6.3.0
+# No need to synchronize executable files (*.exe)
+**/*.exe
+
+# VisualStudio 2019 Community Edition
+# Just synchronize the solution "*.sln" and project files "*.vcxproj", ".vcxproj.filters", ".vcxproj.user"
+# No need to synchronize the DEBUG and .vs directories
+**/DEBUG
+**/.vs
+
+# OpenWATCOM-C/C++ 1.9
+# Just synchonize IDE project "*.wpj" and compilation target "*.tgt"  
+**/*.err
+**/*.exe
+**/*.lk1
+**/*.map
+**/*.mk
+**/*.mk1
+**/*.obj
+**/*.sym
+
+# Borland C/C++ 5.5 commandline tools
+# Just synchonize the configuration file "bcc32.cfg"
+**/*.exe
+**/*.obj
+**/*.tds
+
+# Borland C/C++ 5.02
+# Just synchonize the configuration file "*.ide"
+**/*.exe
+**/*.obj
+**/*.csm
+**/*.~de
+**/*.DSW
+**/*.mbt
+**/*.mrt
+**/*.r$p
+
+# DJGPP 2.05 on MSDOS, DJGPP 10.20 Cross Compiler on Windows
+**/*.exe
+**/*.out
+**/*.ilc
+**/*.ild
+**/*.ilf
+**/*.ils
+
+# Digital Mars, Datalight C, Zorland C, Zortech C and Zortech C++, Symantec C++ 
+**/*.exe
+**/*.map
+**/*.obj
