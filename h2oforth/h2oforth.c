@@ -463,7 +463,7 @@ void storeSPInteger(void){
 				endIndex = lenAllowedCharactersBuffer;
 		};
 		for(ii=startIndex; ii<endIndex; ii++) {
-			printf("[%d] [%c]  [%c] \n", ii, wordBuffer[aWordIndex], aListPointer[ii] );
+			// printf("[%d] [%c]  [%c] \n", ii, wordBuffer[aWordIndex], aListPointer[ii] );
 			if (wordBuffer[aWordIndex] == aListPointer[ii] ) {
 				if ( ( wordBuffer[aWordIndex] == DIGIT_COMMA ) || ( wordBuffer[aWordIndex] == DIGIT_DOT ) ) {
 					break;
@@ -473,11 +473,11 @@ void storeSPInteger(void){
 					break;
 				};
 				value = value*forthTasks[forthCurrentTask].forthBase + ii - 1;
-				printf("nachher ii =%d, new value = %d \n", ii, value);
+				// printf("nachher ii =%d, new value = %d \n", ii, value);
 				break;
 			}
 		};
-		printf("value %lld\n",value);
+		//printf("value %lld\n",value);
 		aWordIndex++;
 	};
 
@@ -489,14 +489,31 @@ void storeSPInteger(void){
 	lowValue = value;
 #endif
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_8BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_16BIT )
-	/* Please adopt this for your host compiler */
-	/* TBD, incorrect code */
-	lowValue = ( short int ) value;
+	if ( value > UINT_MAX) {
+		/* Overflow: ... value .. UINT_MAX[ */
+		printf("SP Integer Overflow!\n");
+	} else if ( value > INT_MAX ) {
+		/* [UINT_MAX ... value .. INT_MAX[ */
+		short int shortValue = value & INT_MAX;
+		lowValue = - ( shortValue ^ INT_MAX );
+		//printf("short = %d, low = %d\n", shortValue, lowValue);
+	} else if ( value >= INT_MIN ) {
+		/* [INT_MAX ... value .. INT_MIN] */
+		lowValue = value;
+	} else if ( value >= UINT_MIN ) {
+		/*  ]INT_MIN... value .. UINT_MIN] */
+		short int shortValue = value & INT_MAX;
+		lowValue =  shortValue;
+		//printf("short = %d, low = %d\n", shortValue, lowValue);
+	} else if ( value < UINT_MIN ) {
+		/* Underflow */
+		printf("SP Integer Underflow!\n");
+	};
 #endif	
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_32BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_64BIT )
 	lowValue = value;
 #endif
-	printf("final value = %lld, lowValue = %d \n", value, lowValue);
+	//printf("final value = %lld, lowValue = %d \n", value, lowValue);
     forthTasks[forthCurrentTask].forthDataStack[forthTasks[forthCurrentTask].dataStackIndex++] = lowValue;
 
 }
@@ -627,7 +644,7 @@ void storeDPInteger(void){
 						break;
 					};
 					value = value*forthTasks[forthCurrentTask].forthBase + ii - 1;
-					printf("nachher ii =%d, new value = %lld \n", ii, value);
+					// printf("nachher ii =%d, new value = %lld \n", ii, value);
 					break;
 				}
 			};
@@ -639,9 +656,30 @@ void storeDPInteger(void){
 		value = value*(-1);
 	}
 
+#if SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_HOST
 	lowValue = value % ( (long long) INT_MAX+1 );
 	highValue = value / ( (long long) INT_MAX+1 );
-	printf("final value = %lld; low = %d, high = %d \n", value, lowValue, highValue);
+#endif
+#if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_8BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_16BIT )
+	/* 2147483647+1 = 0x7FFFFFFF +1 => -2147483648 */
+	/* -2147483648-1 = 0x8000000-1 => 2147483647 */
+	lowValue = value % ( (long long) INT_MAX+1 );
+	highValue = value / ( (long long) INT_MAX+1 );
+
+    /* TBD: Does this work ?? */
+	if ( highValue != 0) {
+		/* Overflow */
+		printf("DP Integer Overflow!\n");
+	} else {
+
+	};
+#endif	
+#if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_32BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_64BIT )
+	lowValue = value % ( (long long) INT_MAX+1 );
+	highValue = value / ( (long long) INT_MAX+1 );
+#endif
+
+	//printf("final value = %lld; low = %d, high = %d \n", value, lowValue, highValue);
     forthTasks[forthCurrentTask].forthDataStack[forthTasks[forthCurrentTask].dataStackIndex++] = lowValue;
     forthTasks[forthCurrentTask].forthDataStack[forthTasks[forthCurrentTask].dataStackIndex++] = highValue;
 

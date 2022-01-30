@@ -164,17 +164,29 @@
 #if SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_HOST
 #if !defined( INT_MIN ) || !defined( INT_MAX )
 /* Please adopt this for your host compiler */
+// #define INT_MIN -32768
+// #define INT_MAX 32767
+// #define UINT_MAX 65535
+// #define UINT_MIN -65536
 #define INT_MIN -2147483648
 #define INT_MAX 2147483647
+#define UINT_MAX 4294967295
 #endif
+#define UINT_MIN -4294967296
 #endif
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_8BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_16BIT )
+/* Emulation of 8BIT/16BIT targets for 32BIT/64BIT C compilers */
 #define INT_MIN -32768
 #define INT_MAX 32767
+#define UINT_MAX 65535
+#define UINT_MIN -65536
 #endif
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_32BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_64BIT )
+/* No emulation of 32BIT/64BIT targets for 8BIT/16BIT C compilers implemented */
 #define INT_MIN -2147483648
 #define INT_MAX 2147483647
+#define UINT_MAX 4294967295
+#define UINT_MIN -4294967296
 #endif
 
 unsigned int ioKey(void);
