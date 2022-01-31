@@ -660,8 +660,8 @@ void storeDPInteger(void){
 	};
 
 #if SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_HOST
-	lowValue = (int) (value % ( (long long) INT_MAX+1 ));
-	highValue = (int) (value / ( (long long) INT_MAX+1 ));
+	lowValue = (int) (value % ( (long long)INT_MAX + 1 ));
+	highValue = (int) (value / ( (long long)INT_MAX + 1 ));
 #endif
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_8BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_16BIT )
 	/* 2147483647+1 = 0x7FFFFFFF +1 => -2147483648 */
