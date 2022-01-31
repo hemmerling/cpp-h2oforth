@@ -24,6 +24,8 @@
   <ItemGroup>
     <ClInclude Include="h2oarg1.h" />
     <ClInclude Include="h2oarg2.h" />
+    <ClInclude Include="h2ocomm1.h" />
+    <ClInclude Include="h2ocomm2.h" />
     <ClInclude Include="h2oforth.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

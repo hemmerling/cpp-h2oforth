@@ -208,9 +208,11 @@ int forthIsExit = FALSE;
 typedef  struct _forthTask {
 	int forthBase;
 	int dataStackIndex;
+	int floatStackIndex;
 	int returnStackIndex;
-	int forthDataStack[MAX_DATASTACK];
-	unsigned long forthReturnStack[MAX_RETURNSTACK];
+	int dataStackSpace[MAX_DATASTACK];
+	float floatStackSpace[MAX_FLOATSTACK];
+	unsigned long returnStackSpace[MAX_RETURNSTACK];
 	typedef_forthWord **forthWords; /* instead of *forthWords[] */
 } typedef_forthTask;
 
@@ -341,6 +343,7 @@ void forthInit(void) {
 	for(ii=0; ii<MAX_FORTHTASKS; ii++) {
 		forthTasks[ii].forthBase = DECIMAL;
 		forthTasks[ii].dataStackIndex = 0;
+		forthTasks[ii].floatStackIndex = 0;
 		forthTasks[ii].returnStackIndex = 0;
 	};
 }
@@ -349,7 +352,7 @@ void forthInit(void) {
 int isSPInteger(void){
 	int result = FALSE;
     int aWordIndex = 0;
-	int lenWordBuffer = strlen(wordBuffer);
+	int lenWordBuffer = (int) strlen(wordBuffer);
     char *aListPointer = (char*)NULL;
 	int lenAllowedCharactersBuffer = 0;
 	
@@ -370,11 +373,11 @@ int isSPInteger(void){
 			aListPointer = aListofHex;
 			lenAllowedCharactersBuffer = sizeof(aListofHex);
 	    	break;
-    	default:;
+    	default:
 			aListPointer = aListOfBase;
 			lenAllowedCharactersBuffer = sizeof(aListOfBase);
 			return(result);
-	}
+	};
 
 	/* Don't proceed if it is Minus operator */
 	result = ! ( ( lenWordBuffer == 1) && ( wordBuffer[0] == '-' ) );
@@ -406,7 +409,7 @@ int isSPInteger(void){
 				if (wordBuffer[aWordIndex] == aListPointer[ii] ) {
 					isNumeric = TRUE;
 					break;
-				}
+				};
 			};
 			result = result && isNumeric;
 			aWordIndex++;
@@ -415,12 +418,12 @@ int isSPInteger(void){
 	return(result);
 }
 
-/* Convert word to an Single Precision Integer and store it on the Stack */
+/* Convert word to an Single Precision Integer and store it on the DataStack */
 void storeSPInteger(void){
     long long value = 0;
 	int valueIsNegative = FALSE;
     int aWordIndex = 0;
-	int lenWordBuffer = strlen(wordBuffer);
+	int lenWordBuffer = (int)strlen(wordBuffer);
     char *aListPointer = (char*)NULL;
 	int lenAllowedCharactersBuffer = 0;
 	int lowValue = 0;
@@ -438,9 +441,9 @@ void storeSPInteger(void){
 			aListPointer = aListofHex;
 			lenAllowedCharactersBuffer = sizeof(aListofHex);
 	    	break;
-    	default:;
+    	default:
 			return;
-	}
+	};
 	
 	while(aWordIndex < lenWordBuffer) {
 		int startIndex = 0;
@@ -451,7 +454,7 @@ void storeSPInteger(void){
 			/* Number can't start with "," or "." */
 			startIndex = 0;
 			endIndex = lenAllowedCharactersBuffer-2;
-		} else if ( aWordIndex == ( lenWordBuffer - 1 ) ) {
+		} else  if ( aWordIndex == ( lenWordBuffer - 1 ) ) {
 				/* "-" may just be the first digit */
 				/* Digit is last digit, so it can't be "," or "." */
 				startIndex = 1;
@@ -475,7 +478,7 @@ void storeSPInteger(void){
 				value = value*forthTasks[forthCurrentTask].forthBase + ii - 1;
 				// printf("nachher ii =%d, new value = %d \n", ii, value);
 				break;
-			}
+			};
 		};
 		//printf("value %lld\n",value);
 		aWordIndex++;
@@ -483,10 +486,10 @@ void storeSPInteger(void){
 
 	if ( valueIsNegative ) {
 		value = value*(-1);
-	}
+	};
 
 #if SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_HOST
-	lowValue = value;
+	lowValue = (int)value;
 #endif
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_8BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_16BIT )
 	if ( value > UINT_MAX) {
@@ -513,8 +516,9 @@ void storeSPInteger(void){
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_32BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_64BIT )
 	lowValue = value;
 #endif
+
 	//printf("final value = %lld, lowValue = %d \n", value, lowValue);
-    forthTasks[forthCurrentTask].forthDataStack[forthTasks[forthCurrentTask].dataStackIndex++] = lowValue;
+    forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex++] = lowValue;
 
 }
 
@@ -522,7 +526,7 @@ void storeSPInteger(void){
 int isDPInteger(void){
 	int result = FALSE;
     int aWordIndex = 0;
-	int lenWordBuffer = strlen(wordBuffer);
+	int lenWordBuffer = (int)strlen(wordBuffer);
     char *aListPointer = (char*)NULL;
 	int lenAllowedCharactersBuffer = 0;
 	
@@ -539,9 +543,9 @@ int isDPInteger(void){
 			aListPointer = aListofHex;
 			lenAllowedCharactersBuffer = sizeof(aListofHex);
 	    	break;
-    	default:;
+    	default:
 			return(result);
-	}
+	};
 	/* Don't proceed if just 1 character => "." is necessary, but is no valid Double Precision Integer */
 	result = ! ( lenWordBuffer == 1);
 	if ( result ) {
@@ -572,7 +576,7 @@ int isDPInteger(void){
 				if (wordBuffer[aWordIndex] == aListPointer[ii] ) {
 					isNumeric = TRUE;
 					break;
-				}
+				};
 			};
 			result = result && isNumeric;
 			aWordIndex++;
@@ -581,13 +585,13 @@ int isDPInteger(void){
 	return(result);
 }
 
-/* Convert word to an Double Precision Integer and store it on the Stack */
+/* Convert word to an Double Precision Integer and store it on the DataStack */
 /* As with 32-bit computers, int = long, long long variable type is used for Double Precision value */
 void storeDPInteger(void){
     long long value = 0;
 	int valueIsNegative = FALSE;
     int aWordIndex = 0;
-	int lenWordBuffer = strlen(wordBuffer);
+	int lenWordBuffer = (int)strlen(wordBuffer);
     char *aListPointer = (char*)NULL;
 	int lenAllowedCharactersBuffer = 0;
 	int lowValue = 0;
@@ -606,14 +610,13 @@ void storeDPInteger(void){
 			aListPointer = aListofHex;
 			lenAllowedCharactersBuffer = sizeof(aListofHex);
 	    	break;
-    	default:;
+    	default:
 			return;
-	}
+	};
 	/* Don't proceed if just 1 character => "." is necessary, but is no valid Double Precision Integer */
 	if (! ( lenWordBuffer == 1) ) {
 		/* check if number */
     	while(aWordIndex < lenWordBuffer) {
-			int isNumeric = FALSE;
 			int startIndex = 0;
 			int endIndex = 0;
 			int ii = 0;
@@ -646,7 +649,7 @@ void storeDPInteger(void){
 					value = value*forthTasks[forthCurrentTask].forthBase + ii - 1;
 					// printf("nachher ii =%d, new value = %lld \n", ii, value);
 					break;
-				}
+				};
 			};
 			aWordIndex++;
 		};
@@ -654,11 +657,11 @@ void storeDPInteger(void){
 
 	if ( valueIsNegative ) {
 		value = value*(-1);
-	}
+	};
 
 #if SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_HOST
-	lowValue = value % ( (long long) INT_MAX+1 );
-	highValue = value / ( (long long) INT_MAX+1 );
+	lowValue = (int) (value % ( (long long) INT_MAX+1 ));
+	highValue = (int) (value / ( (long long) INT_MAX+1 ));
 #endif
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_8BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_16BIT )
 	/* 2147483647+1 = 0x7FFFFFFF +1 => -2147483648 */
@@ -666,12 +669,9 @@ void storeDPInteger(void){
 	lowValue = value % ( (long long) INT_MAX+1 );
 	highValue = value / ( (long long) INT_MAX+1 );
 
-    /* TBD: Does this work ?? */
-	if ( highValue != 0) {
+    if ( highValue != 0) {
 		/* Overflow */
 		printf("DP Integer Overflow!\n");
-	} else {
-
 	};
 #endif	
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_32BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_64BIT )
@@ -680,8 +680,8 @@ void storeDPInteger(void){
 #endif
 
 	//printf("final value = %lld; low = %d, high = %d \n", value, lowValue, highValue);
-    forthTasks[forthCurrentTask].forthDataStack[forthTasks[forthCurrentTask].dataStackIndex++] = lowValue;
-    forthTasks[forthCurrentTask].forthDataStack[forthTasks[forthCurrentTask].dataStackIndex++] = highValue;
+    forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex++] = lowValue;
+    forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex++] = highValue;
 
 }
 
@@ -691,7 +691,7 @@ void storeDPInteger(void){
 int isFloat(void){
 	int result = FALSE;
     int aWordIndex = 0;
-	int lenWordBuffer = strlen(wordBuffer);
+	int lenWordBuffer = (int)strlen(wordBuffer);
     char *aListPointer = (char*)NULL;
 	int lenAllowedCharactersBuffer = 0;
 	
@@ -700,11 +700,29 @@ int isFloat(void){
 		lenAllowedCharactersBuffer = sizeof(aListofDecimal);
 	} else {
 		return(result);
-	}
+	};
 	
 	/* TBD */
 
 	return(result);
+}
+
+/* Convert word to an Float and store it on the FloatStack */
+void storeFloat(void){
+    float value = 0;
+	int valueIsNegative = FALSE;
+    int aWordIndex = 0;
+	int lenWordBuffer = (int)strlen(wordBuffer);
+    char *aListPointer = (char*)NULL;
+	int lenAllowedCharactersBuffer = 0;
+	int lowValue = 0;
+	int highValue = 0;
+
+    /* TBD */
+
+	//printf("final value = %f \n", value);
+    forthTasks[forthCurrentTask].floatStackSpace[forthTasks[forthCurrentTask].floatStackIndex++] = value;
+
 }
 
 /* Find word in wordlist */
@@ -713,16 +731,28 @@ int isPermWord(void){
 	int result = FALSE;
 
 	int lenForthWords = sizeof(forthWords) / sizeof(forthWords[0]);
+	int lenFpointWords = sizeof(fpointWords) / sizeof(fpointWords[0]);
 
     for(ii=0;ii<lenForthWords;ii++) {
 		if ( strcmp(wordBuffer, forthWords[ii].forthWordName) == 0 ) {
 			result = TRUE;
 			if ( forthWords[ii].forthOpt != NULL ) {
 				forthWords[ii].forthOpt();
-			}
+			};
 		 	break;
 	 	};
 	}
+
+    for(ii=0;ii<lenFpointWords;ii++) {
+		if ( strcmp(wordBuffer, fpointWords[ii].forthWordName) == 0 ) {
+			result = TRUE;
+			if ( fpointWords[ii].forthOpt != NULL ) {
+				fpointWords[ii].forthOpt();
+			};
+		 	break;
+	 	};
+	}
+
 	return(result);
 }
 
@@ -731,8 +761,8 @@ void forthParseTib(void){
     int aTibIndex = 0;
     int aWordIndex = 0;
 	int aWordDetected = FALSE;
-	int lenIoTib = strlen(ioTib);
-	int isSPIntegerWord, isDPIntegerWord, isAFloatWord, isWordFound;
+	int lenIoTib = (int)strlen(ioTib);
+	int isSPIntegerWord, isDPIntegerWord, isFloatWord, isWordFound;
 	while(aTibIndex < lenIoTib) {
 		if ( aWordDetected ) {
 			if ( ioTib[aTibIndex] <= SPACE ) {
@@ -740,19 +770,22 @@ void forthParseTib(void){
 				aWordDetected = FALSE;
 				isSPIntegerWord = isSPInteger();
 				isDPIntegerWord = isDPInteger();
-				isAFloatWord = isFloat();
+				isFloatWord = isFloat();
 				isWordFound = isPermWord();
 #if defined (__DEBUG__)
 				printf("word = [%s], isSPInteger = [%d], isDPInteger = [%d], \
 isDPFloat = [%d], isWordFound = [%d]\n",
 					   wordBuffer, isSPIntegerWord, isDPIntegerWord,
-					   isAFloatWord, isWordFound);
+					   isFloatWord, isWordFound);
 #endif
 				if (isSPIntegerWord) {
 					storeSPInteger();
 				};
 				if (isDPIntegerWord) {
 					storeDPInteger();
+				};
+				if (isFloatWord) {
+					storeFloat();
 				};
     			// int aWordIndex = 0;
 		 		// wordBuffer[aWordIndex] = 0;

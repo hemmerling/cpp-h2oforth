@@ -407,11 +407,11 @@ void bbc79DotS(void) {
 	if (dataStackIndex) {
 		printf ("[%d] ",dataStackIndex);
 		for(ii=0; ii<dataStackIndex; ii++) {
-			printf ("%d ", forthTasks[forthCurrentTask].forthDataStack[ii]);
+			printf ("%d ", forthTasks[forthCurrentTask].dataStackSpace[ii]);
 		};
 	printf("\n");
 	} else  {
-		printf("Stack empty!\n"); /* "Stack underflow" */
+		printf("DataStack empty!\n"); /* "Stack underflow" */
 	};
 #if defined (__DEBUG__)
 	printf("bbc79DotS\n");
@@ -612,10 +612,10 @@ void bbc79UDot(void) {
 
 void bbc79Dot(void) {
 	if (forthTasks[forthCurrentTask].dataStackIndex) {
-		printf ("%d\n", forthTasks[forthCurrentTask].forthDataStack[forthTasks[forthCurrentTask].dataStackIndex-1]);
+		printf ("%d\n", forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex-1]);
 		forthTasks[forthCurrentTask].dataStackIndex--;
 	} else  {
-		printf("Stack empty!\n"); /* "Stack underflow" */
+		printf("FloatStack empty!\n"); /* "Stack underflow" */
 	};
 
 #if defined (__DEBUG__)

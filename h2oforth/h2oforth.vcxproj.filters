@@ -29,5 +29,11 @@
     <ClInclude Include="h2oarg2.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="h2ocomm1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2ocomm2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
