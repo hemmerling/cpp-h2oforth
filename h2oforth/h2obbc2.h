@@ -407,7 +407,8 @@ void bbc79DotS(void) {
 	if (dataStackIndex) {
 		printf ("[%d] ",dataStackIndex);
 		for(ii=0; ii<dataStackIndex; ii++) {
-			printf ("%d ", forthTasks[forthCurrentTask].dataStackSpace[ii]);
+			printf (forthTasks[forthCurrentTask].baseFormat, forthTasks[forthCurrentTask].dataStackSpace[ii]);
+			printf ("%s", STRING_SPACE);
 		};
 	printf("\n");
 	} else  {
@@ -612,7 +613,9 @@ void bbc79UDot(void) {
 
 void bbc79Dot(void) {
 	if (forthTasks[forthCurrentTask].dataStackIndex) {
-		printf ("%d\n", forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex-1]);
+		printf (forthTasks[forthCurrentTask].baseFormat, forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex-1]);
+		printf ("%s", STRING_CR);
+
 		forthTasks[forthCurrentTask].dataStackIndex--;
 	} else  {
 		printf("FloatStack empty!\n"); /* "Stack underflow" */
@@ -1075,6 +1078,7 @@ void bbc79ZSemicolonCode(void) {
 
 void bbc79Decimal(void) {
 	forthTasks[forthCurrentTask].forthBase = DECIMAL;
+	forthTasks[forthCurrentTask].baseFormat = BASE_FORMAT_DECIMAL;
 #if defined (__DEBUG__)
 	printf("bbc79Decimal\n");
 #endif
@@ -1088,6 +1092,7 @@ void bbc79CR(void) {
 
 void bbc79Hex(void) {
 	forthTasks[forthCurrentTask].forthBase = HEX;
+	forthTasks[forthCurrentTask].baseFormat = BASE_FORMAT_HEX;
 #if defined (__DEBUG__)
 	printf("bbc79Hex\n");
 #endif

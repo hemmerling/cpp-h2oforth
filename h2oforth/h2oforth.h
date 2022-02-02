@@ -153,6 +153,9 @@
 #define DIGIT_DOT '.'
 #define DIGIT_MINUS '-'
 
+#define STRING_SPACE " "
+#define STRING_CR "\n"
+
 #define COPYRIGHT_MESSAGE "H2oForth by Rolf Hemmerling, (c) 2021-2022, MIT License\n"
 
 #define MAX_DATASTACK 1024
@@ -160,33 +163,49 @@
 #define MAX_RETURNSTACK 1024
 #define MAX_FORTHTASKS 1
 
+#define BASE_FORMAT_DECIMAL "%d"
+#define BASE_FORMAT_HEX "%p"
+#define BASE_FORMAT_OCTAL "%o"
+
 #define MAX_FORTHWORD_ID 65535UL
 
 #if SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_HOST
 #if !defined( INT_MIN ) || !defined( INT_MAX )
 /* Please adopt this for your host compiler */
+// #undef INT_MIN
+// #undef INT_MAX
+// #undef UINT_MAX
 // #define INT_MIN -32768
 // #define INT_MAX 32767
 // #define UINT_MAX 65535
 // #define UINT_MIN -65536
-#define INT_MIN -2147483648
-#define INT_MAX 2147483647
-#define UINT_MAX 4294967295
+// #define INT_MIN -2147483648
+// #define INT_MAX 2147483647
+// #define UINT_MAX 4294967295
 #endif
+#undef UINT_MIN
 #define UINT_MIN -4294967296
 #endif
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_8BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_16BIT )
 /* Emulation of 8BIT/16BIT targets for 32BIT/64BIT C compilers */
+#undef INT_MIN
+#undef INT_MAX
+#undef UINT_MAX
 #define INT_MIN -32768
 #define INT_MAX 32767
 #define UINT_MAX 65535
+#undef UINT_MIN
 #define UINT_MIN -65536
 #endif
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_32BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_64BIT )
 /* No emulation of 32BIT/64BIT targets for 8BIT/16BIT C compilers implemented */
+// #undef INT_MIN
+// #undef INT_MAX
+// #undef UINT_MAX
 #define INT_MIN -2147483648
 #define INT_MAX 2147483647
 #define UINT_MAX 4294967295
+#undef UINT_MIN
 #define UINT_MIN -4294967296
 #endif
 

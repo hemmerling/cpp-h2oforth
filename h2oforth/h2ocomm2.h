@@ -20,4 +20,12 @@ void fpointDotF(void) {
 	printf("fpointDotF\n");
 #endif
 }
+
+void commonOctal(void) {
+	forthTasks[forthCurrentTask].forthBase = OCTAL;
+	forthTasks[forthCurrentTask].baseFormat = BASE_FORMAT_OCTAL;
+#if defined (__DEBUG__)
+	printf("commonOctal\n");
+#endif
+}
 #endif

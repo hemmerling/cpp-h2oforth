@@ -3,6 +3,7 @@
 
 /* Definitions of FORTH words common to one or more FORTH standards & FORTH implementations */
 void fpointDotF(void);
+void commonOctal(void);
 
 typedef void (*forthOperation)(void);
 
@@ -17,6 +18,7 @@ typedef  struct _fpointWord {
 } typedef_fpointWord;
 
 static const typedef_fpointWord fpointWords[] = {
-			{ ".F", ".F", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)fpointDotF }
+			{ ".F", ".F", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)fpointDotF },
+			{ "OCTAL", "OCTAL", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)commonOctal }
 };
 #endif

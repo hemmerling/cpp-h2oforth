@@ -207,6 +207,7 @@ int forthIsExit = FALSE;
 
 typedef  struct _forthTask {
 	int forthBase;
+	char *baseFormat;
 	int dataStackIndex;
 	int floatStackIndex;
 	int returnStackIndex;
@@ -342,6 +343,7 @@ void forthInit(void) {
 	int ii = 0;
 	for(ii=0; ii<MAX_FORTHTASKS; ii++) {
 		forthTasks[ii].forthBase = DECIMAL;
+		forthTasks[ii].baseFormat = BASE_FORMAT_DECIMAL;
 		forthTasks[ii].dataStackIndex = 0;
 		forthTasks[ii].floatStackIndex = 0;
 		forthTasks[ii].returnStackIndex = 0;
