@@ -412,7 +412,7 @@ void bbc79DotS(void) {
 		};
 	printf("\n");
 	} else  {
-		printf("DataStack empty!\n"); /* "Stack underflow" */
+		printf("DataStack empty!\n"); /* "DataStack underflow" */
 	};
 #if defined (__DEBUG__)
 	printf("bbc79DotS\n");
@@ -618,7 +618,7 @@ void bbc79Dot(void) {
 
 		forthTasks[forthCurrentTask].dataStackIndex--;
 	} else  {
-		printf("FloatStack empty!\n"); /* "Stack underflow" */
+		printf("FloatStack empty!\n"); /* "FloatStack underflow" */
 	};
 
 #if defined (__DEBUG__)
@@ -627,6 +627,21 @@ void bbc79Dot(void) {
 }
 
 void bbc79DotR(void) {
+    int ii=0;
+	int returnStackIndex = forthTasks[forthCurrentTask].returnStackIndex;
+	if (returnStackIndex) {
+		printf ("[%d] ",returnStackIndex);
+		for(ii=0; ii<returnStackIndex; ii++) {
+			printf (forthTasks[forthCurrentTask].baseFormat, forthTasks[forthCurrentTask].returnStackSpace[ii]);
+			printf ("%s", STRING_SPACE);
+			printf ("%lx\n", forthTasks[forthCurrentTask].returnStackSpace[ii]);
+			printf("%lx\n", &forthTasks[forthCurrentTask].forthBase);
+	};
+	
+	printf("\n");
+	} else  {
+		printf("ReturnStack empty!\n"); /* "ReturnStack underflow" */
+	};
 #if defined (__DEBUG__)
 	printf("bbc79DotR\n");
 #endif
@@ -1320,12 +1335,26 @@ void bbc79DPL(void) {
 #endif
 }
 
-/* ": HEX 10 BASE ! ; ( MAKE HEX THE IN-OUT BASE *)" */
+/* ": HEX 16 BASE ! ; ( MAKE HEX THE IN-OUT BASE *)" */
 /* ": DECIMAL 0A BASE ! ; ( MAKE DECIMAL THE IN-OUT BASE *)" */
 /* "BASE @ DEC ( Display the value of BASE )" */
 void bbc79Base(void) {
-//   forthTasks[forthCurrentTask].forthDataStack[forthTasks[forthCurrentTask].dataStackIndex++] = 
-//   	&forthTasks[forthCurrentTask].forthBase;
+	forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex++] = 
+		(int)&(forthTasks[forthCurrentTask].forthBase);
+	printf("base == %d\n",forthTasks[forthCurrentTask].forthBase);
+	// switch (forthTasks[forthCurrentTask].forthBase) {
+    //  	case OCTAL:
+	// 		forthTasks[forthCurrentTask].baseFormat = BASE_FORMAT_OCTAL;
+    //  		break;
+    // 	case DECIMAL:
+	// 		forthTasks[forthCurrentTask].baseFormat = BASE_FORMAT_DECIMAL;
+	//     	break;
+    // 	case HEX:
+	// 		forthTasks[forthCurrentTask].baseFormat = BASE_FORMAT_HEX;
+	//     	break;
+    // 	default:
+	// 		forthTasks[forthCurrentTask].baseFormat = BASE_FORMAT_EMPTY;
+	// };
 #if defined (__DEBUG__)
 	printf("bbc79Base\n");
 #endif
@@ -1548,8 +1577,12 @@ void bbc79PlusStore(void) {
 }
 
 void bbc79Store(void) {
-	// int *address =  forthTasks[forthCurrentTask].forthDataStack[forthTasks[forthCurrentTask].dataStackIndex--];
-	// *address = (int) forthTasks[forthCurrentTask].forthDataStack[forthTasks[forthCurrentTask].dataStackIndex--];
+	if (forthTasks[forthCurrentTask].dataStackIndex >= 2) {
+		int *address = (int *) forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex];
+		*address = (int) forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex];
+	} else {
+		printf("DataStack empty!\n"); /* "DataStack underflow" */
+	};
 #if defined (__DEBUG__)
 	printf("bbc79Store\n");
 #endif

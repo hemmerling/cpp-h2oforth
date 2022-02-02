@@ -209,12 +209,12 @@ typedef  struct _forthTask {
 	int forthBase;
 	char *baseFormat;
 	int dataStackIndex;
-	int floatStackIndex;
 	int returnStackIndex;
 	int dataStackSpace[MAX_DATASTACK];
-	float floatStackSpace[MAX_FLOATSTACK];
-	unsigned long returnStackSpace[MAX_RETURNSTACK];
+	void *returnStackSpace[MAX_RETURNSTACK];
 	typedef_forthWord **forthWords; /* instead of *forthWords[] */
+	int floatStackIndex;
+	float floatStackSpace[MAX_FLOATSTACK];
 } typedef_forthTask;
 
 typedef_forthTask forthTasks[MAX_FORTHTASKS];
@@ -345,8 +345,8 @@ void forthInit(void) {
 		forthTasks[ii].forthBase = DECIMAL;
 		forthTasks[ii].baseFormat = BASE_FORMAT_DECIMAL;
 		forthTasks[ii].dataStackIndex = 0;
-		forthTasks[ii].floatStackIndex = 0;
 		forthTasks[ii].returnStackIndex = 0;
+		forthTasks[ii].floatStackIndex = 0;
 	};
 }
 
