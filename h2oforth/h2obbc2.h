@@ -405,6 +405,7 @@ void bbc79DotS(void) {
     int ii=0;
 	int dataStackIndex = forthTasks[forthCurrentTask].dataStackIndex;
 	if (dataStackIndex) {
+		privateSetBaseFormat();
 		printf ("[%d] ",dataStackIndex);
 		for(ii=0; ii<dataStackIndex; ii++) {
 			printf (forthTasks[forthCurrentTask].baseFormat, forthTasks[forthCurrentTask].dataStackSpace[ii]);
@@ -412,7 +413,7 @@ void bbc79DotS(void) {
 		};
 	printf("\n");
 	} else  {
-		printf("DataStack empty!\n"); /* "DataStack underflow" */
+		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 #if defined (__DEBUG__)
 	printf("bbc79DotS\n");
@@ -587,15 +588,27 @@ void bbc79MSGNum(void) {
 #endif
 }
 
+/* Display in hexadecimal base in the format of <.> */
 void bbc79HDot(void) {
+	if (forthTasks[forthCurrentTask].dataStackIndex) {
+		printf("%x ", forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
+	} else  {
+		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
+	};
 #if defined (__DEBUG__)
 	printf("bbc79HDot\n");
 #endif
 }
 
-void bbc79DECDot(void) {
+/* Display in decimal base in the format of <.> */
+void bbc79DecDot(void) {
+	if (forthTasks[forthCurrentTask].dataStackIndex) {
+		printf("%d ", forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
+	} else  {
+		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
+	};
 #if defined (__DEBUG__)
-	printf("bbc79DECDot\n");
+	printf("bbc79DecDot\n");
 #endif
 }
 
@@ -613,14 +626,13 @@ void bbc79UDot(void) {
 
 void bbc79Dot(void) {
 	if (forthTasks[forthCurrentTask].dataStackIndex) {
-		printf (forthTasks[forthCurrentTask].baseFormat, forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex-1]);
-		printf ("%s", STRING_CR);
-
-		forthTasks[forthCurrentTask].dataStackIndex--;
+		privateSetBaseFormat();
+		printf (forthTasks[forthCurrentTask].baseFormat, 
+			    forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
+		printf ("test %s", STRING_CR);
 	} else  {
-		printf("FloatStack empty!\n"); /* "FloatStack underflow" */
+		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-
 #if defined (__DEBUG__)
 	printf("bbc79Dot\n");
 #endif
@@ -630,17 +642,15 @@ void bbc79DotR(void) {
     int ii=0;
 	int returnStackIndex = forthTasks[forthCurrentTask].returnStackIndex;
 	if (returnStackIndex) {
+		privateSetBaseFormat();
 		printf ("[%d] ",returnStackIndex);
 		for(ii=0; ii<returnStackIndex; ii++) {
 			printf (forthTasks[forthCurrentTask].baseFormat, forthTasks[forthCurrentTask].returnStackSpace[ii]);
 			printf ("%s", STRING_SPACE);
-			printf ("%lx\n", forthTasks[forthCurrentTask].returnStackSpace[ii]);
-			printf("%lx\n", &forthTasks[forthCurrentTask].forthBase);
 	};
-	
 	printf("\n");
 	} else  {
-		printf("ReturnStack empty!\n"); /* "ReturnStack underflow" */
+		forthTasks[forthCurrentTask].errorNumber = ERROR_RETURNSTACK_EMPTY;
 	};
 #if defined (__DEBUG__)
 	printf("bbc79DotR\n");
@@ -648,14 +658,35 @@ void bbc79DotR(void) {
 }
 
 void bbc79DDot(void) {
+	if (forthTasks[forthCurrentTask].dataStackIndex >= 2) {
+		LONG_LONG value = 0;
+		privateSetBaseLFormat();
+		value = (LONG_LONG)(forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex])
+		                    <<(sizeof(forthTasks[forthCurrentTask].dataStackSpace[0])*sizeof(LONG_LONG));
+		printf (forthTasks[forthCurrentTask].baseFormat, value +
+				forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
+		printf ("%s", STRING_CR);
+	} else  {
+		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
+	};
 #if defined (__DEBUG__)
 	printf("bbc79DDot\n");
 #endif
 }
 
-void bbc79DDotR(void) {
+void bbc79DDotRDot(void) {
+	if (forthTasks[forthCurrentTask].returnStackIndex >= 2) {
+		privateSetBaseLFormat();
+		printf (forthTasks[forthCurrentTask].baseFormat, 
+		        (LONG_LONG)(forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]) 
+				<< sizeof(LONG_LONG) +
+				forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
+		printf ("%s", STRING_CR);
+	} else  {
+		forthTasks[forthCurrentTask].errorNumber = ERROR_RETURNSTACK_EMPTY;
+	};
 #if defined (__DEBUG__)
-	printf("bbc79DDotR\n");
+	printf("bbc79DDotRDot\n");
 #endif
 }
 
@@ -1337,24 +1368,14 @@ void bbc79DPL(void) {
 
 /* ": HEX 16 BASE ! ; ( MAKE HEX THE IN-OUT BASE *)" */
 /* ": DECIMAL 0A BASE ! ; ( MAKE DECIMAL THE IN-OUT BASE *)" */
-/* "BASE @ DEC ( Display the value of BASE )" */
+/* "BASE @ DEC. ( Display the value of BASE )" */
 void bbc79Base(void) {
-	forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex++] = 
-		(int)&(forthTasks[forthCurrentTask].forthBase);
-	printf("base == %d\n",forthTasks[forthCurrentTask].forthBase);
-	// switch (forthTasks[forthCurrentTask].forthBase) {
-    //  	case OCTAL:
-	// 		forthTasks[forthCurrentTask].baseFormat = BASE_FORMAT_OCTAL;
-    //  		break;
-    // 	case DECIMAL:
-	// 		forthTasks[forthCurrentTask].baseFormat = BASE_FORMAT_DECIMAL;
-	//     	break;
-    // 	case HEX:
-	// 		forthTasks[forthCurrentTask].baseFormat = BASE_FORMAT_HEX;
-	//     	break;
-    // 	default:
-	// 		forthTasks[forthCurrentTask].baseFormat = BASE_FORMAT_EMPTY;
-	// };
+	if (forthTasks[forthCurrentTask].dataStackIndex < MAX_DATASTACK-1) {
+		forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex++] = 
+			(int)&(forthTasks[forthCurrentTask].forthBase);
+	} else {
+		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_FULL;
+	};
 #if defined (__DEBUG__)
 	printf("bbc79Base\n");
 #endif
@@ -1581,16 +1602,53 @@ void bbc79Store(void) {
 		int *address = (int *) forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex];
 		*address = (int) forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex];
 	} else {
-		printf("DataStack empty!\n"); /* "DataStack underflow" */
+		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 #if defined (__DEBUG__)
 	printf("bbc79Store\n");
 #endif
 }
 
-void bbc79CPage(void) {
+void bbc79CStore(void) {
 #if defined (__DEBUG__)
-	printf("bbc79CPage\n");
+	printf("bbc79CStore\n");
+#endif
+}
+
+void bbc79Fetch(void) {
+		if (forthTasks[forthCurrentTask].dataStackIndex) {
+		int *address = (int *) forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex];
+		forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex++] = *address;
+	} else {
+		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
+	};
+
+#if defined (__DEBUG__)
+	printf("bbc79Fetch\n");
+#endif
+}
+
+void bbc79CFetch(void) {
+#if defined (__DEBUG__)
+	printf("bbc79CFetch\n");
+#endif
+}
+
+void bbc79QFile(void) {
+#if defined (__DEBUG__)
+	printf("bbc79QFile\n");
+#endif
+}
+
+void bbc79Himem(void) {
+#if defined (__DEBUG__)
+	printf("bbc79Himem\n");
+#endif
+}
+
+void bbc79Page(void) {
+#if defined (__DEBUG__)
+	printf("bbc79Page\n");
 #endif
 }
 
@@ -1679,6 +1737,13 @@ void bbc79DPlus(void) {
 }
 
 void bbc79Plus(void) {
+	if (forthTasks[forthCurrentTask].dataStackIndex >= 2) {
+		forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex] +
+			forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex];
+		printf ("%s", STRING_CR);
+	} else  {
+		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
+	};
 #if defined (__DEBUG__)
 	printf("bbc79Plus\n");
 #endif
@@ -1733,6 +1798,8 @@ void bbc79ToR(void) {
 }
 
 void bbc79RFetch(void) {
+
+	
 #if defined (__DEBUG__)
 	printf("bbc79RFetch\n");
 #endif

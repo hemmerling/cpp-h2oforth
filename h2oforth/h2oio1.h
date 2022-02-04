@@ -8,6 +8,9 @@
 #define BLOCK_COLUMNS 64
 #define BLOCK_LINES 16
 
+/* Use LONG_LONG instead of "LONG_LONG", to support Borland C++ 5.01 */
+#define LONG_LONG long long
+
 #if defined(__DOS__) 
 /* Open Watcom C/C++ 1.9 */
 #define __MSDOS__
@@ -25,6 +28,11 @@
 #endif
 
 #if defined(__BORLANDC__) || defined(__TURBOC__)
+/* Borland 5.5.1 does not support 64-bit "long long" integers, however integers are 32-bit wide.    */
+/* "long long" is rejected by the error message "Too many types in declaration".                    */
+/* Therefore, FORTH Double Integers arithmetic therefore does not work properly, as implemented :-( */
+#undef LONG_LONG
+#define LONG_LONG long int
 #define _putch(x) putch(x)
 #if (__BORLANDC__ < 0x0550)
 /* Borland C/C++ 5.02  */
@@ -36,7 +44,7 @@
 #define _write(f,b,s) write(f,b,s)
 #define _close(f) close(f)
 #else
-/* Borland C/C++ 5.5.2 and newer */
+/* Borland C/C++ 5.5.1 and newer */
 #endif 
 #endif
 

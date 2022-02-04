@@ -29,3 +29,59 @@ void commonOctal(void) {
 #endif
 }
 #endif
+
+void privateErrorHandler(void) {
+	/* TBD: Word should be listed */
+	printf("? %d # %s \n", forthTasks[forthCurrentTask].errorNumber, 
+	 		forthErrors[forthTasks[forthCurrentTask].errorNumber].errorMessage);
+}
+
+void privateSetBaseFormat(void) {
+	switch (forthTasks[forthCurrentTask].forthBase) {
+     	case OCTAL:
+			forthTasks[forthCurrentTask].baseFormat = BASE_FORMAT_OCTAL;
+     		break;
+    	case DECIMAL:
+			forthTasks[forthCurrentTask].baseFormat = BASE_FORMAT_DECIMAL;
+	    	break;
+    	case HEX:
+			forthTasks[forthCurrentTask].baseFormat = BASE_FORMAT_HEX;
+	    	break;
+    	default:
+			forthTasks[forthCurrentTask].baseFormat = BASE_FORMAT_EMPTY;
+	};
+}
+
+void privateSetBaseLFormat(void) {
+	switch (forthTasks[forthCurrentTask].forthBase) {
+     	case OCTAL:
+			forthTasks[forthCurrentTask].baseFormat = BASE_FORMAT_LOCTAL;
+     		break;
+    	case DECIMAL:
+			forthTasks[forthCurrentTask].baseFormat = BASE_FORMAT_LDECIMAL;
+	    	break;
+    	case HEX:
+			forthTasks[forthCurrentTask].baseFormat = BASE_FORMAT_LHEX;
+	    	break;
+    	default:
+			forthTasks[forthCurrentTask].baseFormat = BASE_FORMAT_EMPTY;
+	};
+}
+
+/* Display in hexadecimal base in the format of <.> */
+void bbc79HexDot(void) {
+	bbc79HDot();
+#if defined (__DEBUG__)
+	printf("bbc79HexDot\n");
+#endif
+}
+
+/* Display in octal base in the format of <.> */
+void bbc79OctDot(void) {
+	if (forthTasks[forthCurrentTask].dataStackIndex) {
+		printf("%o ", forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
+	};
+#if defined (__DEBUG__)
+	printf("bbc79OctDot\n");
+#endif
+}

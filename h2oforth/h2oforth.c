@@ -45,10 +45,6 @@
 #undef FORTHSTD_ANS94
 #undef FORTHSTD_FORTH2012
 
-#ifdef COMMON_FORTH_WORDS
-#include "h2ocomm1.h"
-#endif
-
 #if H2O_FORTH_PRIMITIVES == AIM65_FORTH
 #define FORTHSTANDARD FORTHSTD_FIG
 #include "h2oaim1.h"
@@ -186,6 +182,10 @@
 #include "h2owin1.h"
 #endif
 
+#ifdef COMMON_FORTH_WORDS
+#include "h2ocomm1.h"
+#endif
+
 /********Global Constants*****************************/
 
 static /*const */ char aListofBinary[] = {'-', '0', '1', ',', '.'};
@@ -206,13 +206,15 @@ int forthIsVerbose = TRUE;
 int forthIsExit = FALSE;
 
 typedef  struct _forthTask {
-	int forthBase;
-	char *baseFormat;
+	short int forthBase;
+	short int errorNumber;
 	int dataStackIndex;
 	int returnStackIndex;
 	int dataStackSpace[MAX_DATASTACK];
 	void *returnStackSpace[MAX_RETURNSTACK];
+	char *baseFormat;
 	typedef_forthWord **forthWords; /* instead of *forthWords[] */
+	typedef_forthError **forthErrors; /* instead of *forthErrors[] */
 	int floatStackIndex;
 	float floatStackSpace[MAX_FLOATSTACK];
 } typedef_forthTask;
@@ -221,10 +223,6 @@ typedef_forthTask forthTasks[MAX_FORTHTASKS];
 int forthCurrentTask = 0;
 
 /******** FORTH Primitives ********************/
-
-#ifdef COMMON_FORTH_WORDS
-#include "h2ocomm2.h"
-#endif
 
 #include "h2oio2.h"
 
@@ -331,6 +329,10 @@ int forthCurrentTask = 0;
 #include "h2owin2.h"
 #endif
 
+#ifdef COMMON_FORTH_WORDS
+#include "h2ocomm2.h"
+#endif
+
 /******** Command line argument checking *******/
 
 #if !H2O_NOEXIT
@@ -343,6 +345,7 @@ void forthInit(void) {
 	int ii = 0;
 	for(ii=0; ii<MAX_FORTHTASKS; ii++) {
 		forthTasks[ii].forthBase = DECIMAL;
+		forthTasks[ii].errorNumber = 0;
 		forthTasks[ii].baseFormat = BASE_FORMAT_DECIMAL;
 		forthTasks[ii].dataStackIndex = 0;
 		forthTasks[ii].returnStackIndex = 0;
@@ -422,7 +425,7 @@ int isSPInteger(void){
 
 /* Convert word to an Single Precision Integer and store it on the DataStack */
 void storeSPInteger(void){
-    long long value = 0;
+    LONG_LONG value = 0;
 	int valueIsNegative = FALSE;
     int aWordIndex = 0;
 	int lenWordBuffer = (int)strlen(wordBuffer);
@@ -588,9 +591,9 @@ int isDPInteger(void){
 }
 
 /* Convert word to an Double Precision Integer and store it on the DataStack */
-/* As with 32-bit computers, int = long, long long variable type is used for Double Precision value */
+/* As with 32-bit computers, int = long, LONG_LONG variable type is used for Double Precision value */
 void storeDPInteger(void){
-    long long value = 0;
+    LONG_LONG value = 0;
 	int valueIsNegative = FALSE;
     int aWordIndex = 0;
 	int lenWordBuffer = (int)strlen(wordBuffer);
@@ -662,14 +665,14 @@ void storeDPInteger(void){
 	};
 
 #if SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_HOST
-	lowValue = (int) (value % ( (long long)INT_MAX + 1 ));
-	highValue = (int) (value / ( (long long)INT_MAX + 1 ));
+	lowValue = (int) (value % ( (LONG_LONG)INT_MAX + 1 ));
+	highValue = (int) (value / ( (LONG_LONG)INT_MAX + 1 ));
 #endif
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_8BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_16BIT )
 	/* 2147483647+1 = 0x7FFFFFFF +1 => -2147483648 */
 	/* -2147483648-1 = 0x8000000-1 => 2147483647 */
-	lowValue = value % ( (long long) INT_MAX+1 );
-	highValue = value / ( (long long) INT_MAX+1 );
+	lowValue = value % ( (LONG_LONG) INT_MAX+1 );
+	highValue = value / ( (LONG_LONG) INT_MAX+1 );
 
     if ( highValue != 0) {
 		/* Overflow */
@@ -677,8 +680,8 @@ void storeDPInteger(void){
 	};
 #endif	
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_32BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_64BIT )
-	lowValue = value % ( (long long) INT_MAX+1 );
-	highValue = value / ( (long long) INT_MAX+1 );
+	lowValue = value % ( (LONG_LONG) INT_MAX+1 );
+	highValue = value / ( (LONG_LONG) INT_MAX+1 );
 #endif
 
 	//printf("final value = %lld; low = %d, high = %d \n", value, lowValue, highValue);
@@ -733,12 +736,14 @@ int isPermWord(void){
 	int result = FALSE;
 
 	int lenForthWords = sizeof(forthWords) / sizeof(forthWords[0]);
+	int lenCommonWords = sizeof(commonWords) / sizeof(commonWords[0]);
 	int lenFpointWords = sizeof(fpointWords) / sizeof(fpointWords[0]);
 
     for(ii=0;ii<lenForthWords;ii++) {
 		if ( strcmp(wordBuffer, forthWords[ii].forthWordName) == 0 ) {
 			result = TRUE;
 			if ( forthWords[ii].forthOpt != NULL ) {
+				/* Wort ausführen */
 				forthWords[ii].forthOpt();
 			};
 		 	break;
@@ -749,12 +754,23 @@ int isPermWord(void){
 		if ( strcmp(wordBuffer, fpointWords[ii].forthWordName) == 0 ) {
 			result = TRUE;
 			if ( fpointWords[ii].forthOpt != NULL ) {
+				/* Wort ausführen */
 				fpointWords[ii].forthOpt();
 			};
 		 	break;
 	 	};
 	}
 
+	for(ii=0;ii<lenCommonWords;ii++) {
+		if ( strcmp(wordBuffer, commonWords[ii].forthWordName) == 0 ) {
+			result = TRUE;
+			if ( commonWords[ii].forthOpt != NULL ) {
+				/* Wort ausführen */
+				commonWords[ii].forthOpt();
+			};
+		 	break;
+	 	};
+	}
 	return(result);
 }
 
@@ -770,6 +786,10 @@ void forthParseTib(void){
 			if ( ioTib[aTibIndex] <= SPACE ) {
 				/* Finish word detection */
 				aWordDetected = FALSE;
+				
+				/* Error Message Nummer zurücksetzen */
+				forthTasks[forthCurrentTask].errorNumber = 0;
+				
 				isSPIntegerWord = isSPInteger();
 				isDPIntegerWord = isDPInteger();
 				isFloatWord = isFloat();
@@ -780,15 +800,23 @@ isDPFloat = [%d], isWordFound = [%d]\n",
 					   wordBuffer, isSPIntegerWord, isDPIntegerWord,
 					   isFloatWord, isWordFound);
 #endif
-				if (isSPIntegerWord) {
-					storeSPInteger();
-				};
-				if (isDPIntegerWord) {
-					storeDPInteger();
-				};
-				if (isFloatWord) {
-					storeFloat();
-				};
+				if (!isWordFound) {
+					if (isSPIntegerWord) {
+						storeSPInteger();
+					};
+					if (isDPIntegerWord) {
+						storeDPInteger();
+					};
+					if (isFloatWord) {
+						storeFloat();
+					};
+
+					if (!isSPInteger() && !isDPInteger() && !isFloat()) {
+						forthTasks[forthCurrentTask].errorNumber = ERROR_NOT_IN_CURRENT_DIRECTORY;
+						privateErrorHandler();
+	
+					};
+				};	
     			// int aWordIndex = 0;
 		 		// wordBuffer[aWordIndex] = 0;
 			} else {
@@ -836,6 +864,8 @@ void noParameterPreProcessing(void) {
 
 int main(int argc, char* argv[])
 {
+	//printf("Integer size = %d\n",sizeof(int));
+	//printf("LONG_LONG size = %d\n",sizeof(LONG_LONG));
 	forthInit();
 	do {
 #if H2O_NOEXIT 

@@ -4,21 +4,19 @@
 /* Definitions of FORTH words common to one or more FORTH standards & FORTH implementations */
 void fpointDotF(void);
 void commonOctal(void);
+void privateErrorHandler(void);
+void privateSetBaseFormat(void);
+void privateSetBaseLFormat(void);
+void bbc79HexDot(void);
+void bbc79OctDot(void);
 
-typedef void (*forthOperation)(void);
+static const typedef_forthWord commonWords[] = {
+			{ "OCTAL", "OCTAL", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)commonOctal },
+			{ "HEX.", "HEX.", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79HexDot },
+			{ "OCT.", "OCT.", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79OctDot }
+};
 
-typedef  struct _fpointWord {
-	const char* forthWordName;
-	const char* forthAlternativeName;
-	const short int interpreted;
-	const short int immediate;
-	const short int implemented;
-	const unsigned long forthWordNumber;
-	const forthOperation  forthOpt; // function pointer 
-} typedef_fpointWord;
-
-static const typedef_fpointWord fpointWords[] = {
-			{ ".F", ".F", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)fpointDotF },
-			{ "OCTAL", "OCTAL", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)commonOctal }
+static const typedef_forthWord fpointWords[] = {
+			{ ".F", ".F", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)fpointDotF }
 };
 #endif

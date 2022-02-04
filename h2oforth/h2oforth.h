@@ -163,10 +163,16 @@
 #define MAX_RETURNSTACK 1024
 #define MAX_FORTHTASKS 1
 
-#define BASE_FORMAT_DECIMAL "%ld"
+#define BASE_FORMAT_DECIMAL "%d"
 #define BASE_FORMAT_EMPTY ""
-#define BASE_FORMAT_HEX "%lx"
-#define BASE_FORMAT_OCTAL "%lo"
+#define BASE_FORMAT_HEX "%p"
+//#define BASE_FORMAT_HEX "%x"
+#define BASE_FORMAT_OCTAL "%o"
+
+#define BASE_FORMAT_LDECIMAL "%lld"
+#define BASE_FORMAT_LHEX "%llp"
+//#define BASE_FORMAT_LHEX "%llx"
+#define BASE_FORMAT_LOCTAL "%llo"
 
 #define MAX_FORTHWORD_ID 65535UL
 

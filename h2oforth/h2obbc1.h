@@ -101,13 +101,13 @@ void bbc79TwoStar(void);
 void bbc79Message(void);
 void bbc79MSGNum(void);
 void bbc79HDot(void);
-void bbc79DECDot(void);
+void bbc79DecDot(void);
 void bbc79Q(void);
 void bbc79UDot(void);
 void bbc79Dot(void);
 void bbc79DotR(void);
 void bbc79DDot(void);
-void bbc79DDotR(void);
+void bbc79DDotRDot(void);
 void bbc79NumS(void);
 void bbc79Num(void);
 void bbc79Sign(void);
@@ -258,7 +258,12 @@ void bbc79RColon(void);
 void bbc79Toggle(void);
 void bbc79PlusStore(void);
 void bbc79Store(void);
-void bbc79CPage(void);
+void bbc79CStore(void);
+void bbc79Fetch(void);
+void bbc79CFetch(void);
+void bbc79QFile(void);
+void bbc79Himem(void);
+void bbc79Page(void);
 void bbc79Traverse(void);
 void bbc79Rot(void);
 void bbc79TwentyVer(void);
@@ -329,6 +334,48 @@ typedef  struct _forthWord {
 } typedef_forthWord;
 
 /* Variables */
+typedef  struct _forthError {
+	const int errorNumber;
+	const char* errorMessage;
+} typedef_forthError;
+
+#define ERROR_NOERROR 0
+#define ERROR_DATASTACK_EMPTY 1
+#define ERROR_DATASTACK_FULL 7
+#define ERROR_DIVISION_BY_ZERO 11
+#define ERROR_RETURNSTACK_EMPTY 15
+#define ERROR_RETURNSTACK_FULL 15
+#define ERROR_NOT_IN_CURRENT_DIRECTORY 24
+
+/* Richard De Grandis-Harrison: FORTH on the BBC Microcomputer", page 159ff */
+static const typedef_forthError forthErrors[] = {
+			{ 0, "No error" }, /* not for display, was: "reserved!" */
+			{ 1, "Stack Empty" },
+			{ 2, "Dictionary Full" },
+			{ 3, "Has Incorrect Address Mode Assembler!" },
+			{ 4, "Isn't unique" },
+			{ 5, "Parameter Outside Valid Range" },
+			{ 6, "Screen Number Out of Range" },
+			{ 7, "Stack Full" },
+			{ 8, "Can't Open or Extend File" },
+			{ 9, "Read/Write not Completed" },
+			{ 10, "Can't Redefine End-of-Line" },
+			{ 11, "Can 't Divide by Zero" },
+			{ 12, "Undefined Execution Vector" },
+			{ 13, "Branch Too Long" },
+			{ 14, "Incorrect CURRENT Vocabulary" },
+			{ 15, "ReturnStack empty" }, /* was: "reserved!" */
+			{ 16, "ReturnStack full" }, /* was: "reserved!" */
+			{ 17, "Compilation Only" },
+			{ 18, "Execution Only" },
+			{ 19, "Conditionals not Paired" },
+			{ 20, "Definition not Finished" },
+			{ 21, "In Protected Dictionary" },
+			{ 22, "Use Only When LOADing" },
+			{ 23, "Off Current Editing Screen" },
+			{ 24, "Not in CURRENT Vocabulary" },
+			{ 25, "System Memory Clash" }
+};
 
 static const typedef_forthWord forthWords[] = {
 			{ "$MSG", "$MSG", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79DollarMSG },
@@ -427,13 +474,13 @@ static const typedef_forthWord forthWords[] = {
 			{ "MESSAGE", "MESSAGE", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Message },
 			{ "MSG#", "MSG#", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79MSGNum },
 			{ "H.", "H.", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79HDot },
-			{ "DEC.", "DEC.", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79DECDot },
+			{ "DEC.", "DEC.", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79DecDot },
 			{ "?", "?", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Q },
 			{ "U.", "U.", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79UDot },
 			{ ".", ".", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Dot },
 			{ ".R", ".R", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79DotR },
 			{ "D.", "D.", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79DDot },
-			{ "D.R.", "D.R.", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79DDotR },
+			{ "D.R.", "D.R.", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79DDotRDot },
 			{ "#S", "#S", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79NumS },
 			{ "#", "#", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Num },
 			{ "SIGN", "SIGN", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Sign },
@@ -584,7 +631,12 @@ static const typedef_forthWord forthWords[] = {
 			{ "TOGGLE", "TOGGLE", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Toggle },
 			{ "+!", "+!", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79PlusStore },
 			{ "!", "!", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Store },
-			{ "CPAGE", "CPAGE", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79CPage },
+			{ "C!", "C!", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79CStore },
+			{ "@", "@", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Fetch },
+			{ "C@", "C@", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79CFetch },
+			{ "?FILE", "?FILE", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79QFile },
+			{ "HIMEM", "HIMEM", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Himem },
+			{ "PAGE", "PAGE", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Page },
 			{ "TRAVERSE", "TRAVERSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Traverse },
 			{ "ROT", "ROT", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Rot },
 			{ "20VER", "20VER", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79TwentyVer },
