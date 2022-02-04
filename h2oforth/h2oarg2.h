@@ -105,7 +105,7 @@ void writeCode(char* filename) {
 
 /* Parameter help screen */
 int parameterHelp(void) {
-	printf(COPYRIGHT_MESSAGE);
+	printf("%s ( Int=%zd, LongLong=%zd, Ptr=%zd )\n", COPYRIGHT_MESSAGE, sizeof(int), sizeof(LONG_LONG), sizeof(char *));
 	printf("\n");
 	printf("H2oForth [%c%s][%c%s][%c%s]\n", PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName2,

@@ -155,7 +155,7 @@
 #define STRING_SPACE " "
 #define STRING_CR "\n"
 
-#define COPYRIGHT_MESSAGE "H2oForth by Rolf Hemmerling, (c) 2021-2022, MIT License\n"
+#define COPYRIGHT_MESSAGE "H2oForth by Rolf Hemmerling, (c) 2021-2022, MIT License"
 
 #define MAX_DATASTACK 1024
 #define MAX_FLOATSTACK 64

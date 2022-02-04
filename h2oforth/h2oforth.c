@@ -855,7 +855,7 @@ void processTib(void) {
 /* No processing of commands passed by the command line interface */
 void noParameterPreProcessing(void) {
     if (forthIsVerbose){
-		printf(COPYRIGHT_MESSAGE);
+		printf("%s ( Int=%zd, LongLong=%zd, Ptr=%zd )\n", COPYRIGHT_MESSAGE, sizeof(int), sizeof(LONG_LONG), sizeof(char *));
 	};	
 	forthIsWaitingForKeyboard = FALSE;
 	forthReadsTerminal = TRUE;
@@ -864,9 +864,6 @@ void noParameterPreProcessing(void) {
 
 int main(int argc, char* argv[])
 {
-	printf("Integer size = %zd\n",sizeof(int));
-	printf("LONG_LONG size = %zd\n",sizeof(LONG_LONG));
-	printf("PTR size = %zd\n", sizeof(char *));
 	forthInit();
 	do {
 #if H2O_NOEXIT 
