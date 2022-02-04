@@ -678,8 +678,8 @@ void bbc79DDotRDot(void) {
 	if (forthTasks[forthCurrentTask].returnStackIndex >= 2) {
 		privateSetBaseLFormat();
 		printf (forthTasks[forthCurrentTask].baseFormat, 
-		        (LONG_LONG)(forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]) 
-				<< sizeof(LONG_LONG) +
+		        ((LONG_LONG)(forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]) 
+				<< sizeof(LONG_LONG)) +
 				forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
 		printf ("%s", STRING_CR);
 	} else  {
@@ -1738,6 +1738,7 @@ void bbc79DPlus(void) {
 
 void bbc79Plus(void) {
 	if (forthTasks[forthCurrentTask].dataStackIndex >= 2) {
+		forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex++] =
 		forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex] +
 			forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex];
 		printf ("%s", STRING_CR);

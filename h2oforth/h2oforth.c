@@ -206,8 +206,8 @@ int forthIsVerbose = TRUE;
 int forthIsExit = FALSE;
 
 typedef  struct _forthTask {
-	short int forthBase;
-	short int errorNumber;
+	int forthBase;
+	int errorNumber;
 	int dataStackIndex;
 	int returnStackIndex;
 	int dataStackSpace[MAX_DATASTACK];
@@ -496,7 +496,7 @@ void storeSPInteger(void){
 #if SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_HOST
 	lowValue = (int)value;
 #endif
-#if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_8BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_16BIT )
+#if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_8BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_1632BIT )
 	if ( value > UINT_MAX) {
 		/* Overflow: ... value .. UINT_MAX[ */
 		printf("SP Integer Overflow!\n");
@@ -668,7 +668,7 @@ void storeDPInteger(void){
 	lowValue = (int) (value % ( (LONG_LONG)INT_MAX + 1 ));
 	highValue = (int) (value / ( (LONG_LONG)INT_MAX + 1 ));
 #endif
-#if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_8BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_16BIT )
+#if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_8BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_1632BIT )
 	/* 2147483647+1 = 0x7FFFFFFF +1 => -2147483648 */
 	/* -2147483648-1 = 0x8000000-1 => 2147483647 */
 	lowValue = value % ( (LONG_LONG) INT_MAX+1 );
@@ -864,8 +864,9 @@ void noParameterPreProcessing(void) {
 
 int main(int argc, char* argv[])
 {
-	//printf("Integer size = %d\n",sizeof(int));
-	//printf("LONG_LONG size = %d\n",sizeof(LONG_LONG));
+	printf("Integer size = %zd\n",sizeof(int));
+	printf("LONG_LONG size = %zd\n",sizeof(LONG_LONG));
+	printf("PTR size = %zd\n", sizeof(char *));
 	forthInit();
 	do {
 #if H2O_NOEXIT 

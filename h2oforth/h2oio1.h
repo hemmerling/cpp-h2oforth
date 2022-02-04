@@ -8,7 +8,8 @@
 #define BLOCK_COLUMNS 64
 #define BLOCK_LINES 16
 
-/* Use LONG_LONG instead of "LONG_LONG", to support Borland C++ 5.01 */
+/* "long long" is not available with 
+   Arduino AVR C/C++ and Borland C++ 5.51 */
 #define LONG_LONG long long
 
 #if defined(__DOS__) 
@@ -32,7 +33,7 @@
 /* "long long" is rejected by the error message "Too many types in declaration".                    */
 /* Therefore, FORTH Double Integers arithmetic therefore does not work properly, as implemented :-( */
 #undef LONG_LONG
-#define LONG_LONG long int
+#define LONG_LONG long
 #define _putch(x) putch(x)
 #if (__BORLANDC__ < 0x0550)
 /* Borland C/C++ 5.02  */
