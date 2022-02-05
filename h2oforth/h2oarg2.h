@@ -1,6 +1,8 @@
 #ifndef H2OARG2
 #define H2OARG2
-#include "h2oio1.h"
+
+/* Support for Command Line Arguments / Command Line Parameters */
+
 
 void readDatabase(char* databaseString) {
 	printf("H2oForth - Reads a database. TBD\n");
@@ -105,7 +107,7 @@ void writeCode(char* filename) {
 
 /* Parameter help screen */
 int parameterHelp(void) {
-	printf("%s ( Int=%zd, LongLong=%zd, Ptr=%zd )\n", COPYRIGHT_MESSAGE, sizeof(int), sizeof(LONG_LONG), sizeof(char *));
+	printf("%s ( Int=%zd, Ptr=%zd, LongLong=%zd )\n", COPYRIGHT_MESSAGE, sizeof(int), sizeof(LONG_LONG), sizeof(char *));
 	printf("\n");
 	printf("H2oForth [%c%s][%c%s][%c%s]\n", PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName2,

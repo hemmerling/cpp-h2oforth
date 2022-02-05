@@ -1,5 +1,7 @@
-#ifndef H2OIO2
-#define H2OIO2
+#ifndef H2OARC2
+#define H2OARC2
+
+/* Architecture Detection & Configuration  & Architecture-specific code  */
 
 /* key  ( – x )       Read key stroke as ASCII character */
 unsigned int ioKey(void) {

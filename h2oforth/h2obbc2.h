@@ -411,7 +411,7 @@ void bbc79DotS(void) {
 			printf (forthTasks[forthCurrentTask].baseFormat, forthTasks[forthCurrentTask].dataStackSpace[ii]);
 			printf ("%s", STRING_SPACE);
 		};
-	printf("\n");
+		printf("\n");
 	} else  {
 		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
@@ -1741,7 +1741,6 @@ void bbc79Plus(void) {
 		forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex++] =
 		forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex] +
 			forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex];
-		printf ("%s", STRING_CR);
 	} else  {
 		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};

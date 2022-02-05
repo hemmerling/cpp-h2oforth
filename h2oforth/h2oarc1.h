@@ -1,5 +1,7 @@
-#ifndef H2OIO1
-#define H2OIO1
+#ifndef H2OARC1
+#define H2OARC1
+
+/* Architecture Detection & Configuration  & Architecture-specific code  */
 
 /* Maximum length of a text file line, usually 255 */
 #define MAX_INPUTBUFFER 255
@@ -7,10 +9,6 @@
 #define BLOCK_BUFFER 1024
 #define BLOCK_COLUMNS 64
 #define BLOCK_LINES 16
-
-/* "long long" is not available with 
-   Arduino AVR C/C++ and Borland C++ 5.51 */
-#define LONG_LONG long long
 
 #if defined(__DOS__) 
 /* Open Watcom C/C++ 1.9 */

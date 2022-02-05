@@ -26,7 +26,7 @@
 /* Configuration switch */
 //#define H2O_INTERACTiVE FALSE
 
-#include "h2oio1.h"
+#include "h2oarc1.h"
 
 #if !H2O_NOEXIT
 #include "h2oarg1.h"
@@ -224,7 +224,7 @@ int forthCurrentTask = 0;
 
 /******** FORTH Primitives ********************/
 
-#include "h2oio2.h"
+#include "h2oarc2.h"
 
 #if H2O_FORTH_PRIMITIVES == AIM65_FORTH
 #include "h2oaim2.h"
@@ -496,7 +496,7 @@ void storeSPInteger(void){
 #if SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_HOST
 	lowValue = (int)value;
 #endif
-#if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_8BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_1632BIT )
+#if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_161632BIT )
 	if ( value > UINT_MAX) {
 		/* Overflow: ... value .. UINT_MAX[ */
 		printf("SP Integer Overflow!\n");
@@ -518,7 +518,7 @@ void storeSPInteger(void){
 		printf("SP Integer Underflow!\n");
 	};
 #endif	
-#if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_32BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_64BIT )
+#if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_32BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_646464BIT )
 	lowValue = value;
 #endif
 
@@ -668,7 +668,7 @@ void storeDPInteger(void){
 	lowValue = (int) (value % ( (LONG_LONG)INT_MAX + 1 ));
 	highValue = (int) (value / ( (LONG_LONG)INT_MAX + 1 ));
 #endif
-#if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_8BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_1632BIT )
+#if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_161632BIT )
 	/* 2147483647+1 = 0x7FFFFFFF +1 => -2147483648 */
 	/* -2147483648-1 = 0x8000000-1 => 2147483647 */
 	lowValue = value % ( (LONG_LONG) INT_MAX+1 );
@@ -679,7 +679,7 @@ void storeDPInteger(void){
 		printf("DP Integer Overflow!\n");
 	};
 #endif	
-#if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_32BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_64BIT )
+#if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_32BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_646464BIT )
 	lowValue = value % ( (LONG_LONG) INT_MAX+1 );
 	highValue = value / ( (LONG_LONG) INT_MAX+1 );
 #endif
@@ -748,29 +748,33 @@ int isPermWord(void){
 			};
 		 	break;
 	 	};
-	}
+	};
 
-    for(ii=0;ii<lenFpointWords;ii++) {
-		if ( strcmp(wordBuffer, fpointWords[ii].forthWordName) == 0 ) {
-			result = TRUE;
-			if ( fpointWords[ii].forthOpt != NULL ) {
-				/* Wort ausführen */
-				fpointWords[ii].forthOpt();
-			};
-		 	break;
-	 	};
-	}
+	if (!result) {
+    	for(ii=0;ii<lenFpointWords;ii++) {
+			if ( strcmp(wordBuffer, fpointWords[ii].forthWordName) == 0 ) {
+				result = TRUE;
+				if ( fpointWords[ii].forthOpt != NULL ) {
+					/* Wort ausführen */
+					fpointWords[ii].forthOpt();
+				};
+		 		break;
+	 		};
+		};
+	};
 
-	for(ii=0;ii<lenCommonWords;ii++) {
-		if ( strcmp(wordBuffer, commonWords[ii].forthWordName) == 0 ) {
-			result = TRUE;
-			if ( commonWords[ii].forthOpt != NULL ) {
-				/* Wort ausführen */
-				commonWords[ii].forthOpt();
-			};
-		 	break;
-	 	};
-	}
+	if (!result) {
+		for(ii=0;ii<lenCommonWords;ii++) {
+			if ( strcmp(wordBuffer, commonWords[ii].forthWordName) == 0 ) {
+				result = TRUE;
+				if ( commonWords[ii].forthOpt != NULL ) {
+					/* Wort ausführen */
+					commonWords[ii].forthOpt();
+				};
+		 		break;
+	 		};
+		;}
+	};
 	return(result);
 }
 
@@ -820,6 +824,7 @@ isDPFloat = [%d], isWordFound = [%d]\n",
     			// int aWordIndex = 0;
 		 		// wordBuffer[aWordIndex] = 0;
 			} else {
+				privateErrorHandler();
 				/* Continue word detection */
 				wordBuffer[aWordIndex++] = ioTib[aTibIndex];
 		 		wordBuffer[aWordIndex] = 0;
@@ -855,7 +860,7 @@ void processTib(void) {
 /* No processing of commands passed by the command line interface */
 void noParameterPreProcessing(void) {
     if (forthIsVerbose){
-		printf("%s ( Int=%zd, LongLong=%zd, Ptr=%zd )\n", COPYRIGHT_MESSAGE, sizeof(int), sizeof(LONG_LONG), sizeof(char *));
+		printf("%s ( Int=%zd, Ptr=%zd, LongLong=%zd, )\n", COPYRIGHT_MESSAGE, sizeof(int), sizeof(LONG_LONG), sizeof(char *));
 	};	
 	forthIsWaitingForKeyboard = FALSE;
 	forthReadsTerminal = TRUE;

@@ -32,8 +32,10 @@ void commonOctal(void) {
 
 void privateErrorHandler(void) {
 	/* TBD: Word should be listed */
-	printf("? %d # %s \n", forthTasks[forthCurrentTask].errorNumber, 
-	 		forthErrors[forthTasks[forthCurrentTask].errorNumber].errorMessage);
+	if(forthTasks[forthCurrentTask].errorNumber) {
+		printf("? %d # %s \n", forthTasks[forthCurrentTask].errorNumber, 
+	 			forthErrors[forthTasks[forthCurrentTask].errorNumber].errorMessage);
+	};
 }
 
 void privateSetBaseFormat(void) {
