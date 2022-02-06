@@ -4,6 +4,10 @@
 #define __DEBUG__
 //#undef __DEBUG__
 
+/******************/
+#define BUILT 1
+/******************/
+
 #define AIM65_FORTH 1
 #define ATARICOINUP_FORTH 2
 #define BBCMICRO_FORTH 3
@@ -163,7 +167,7 @@
 
 #define STRING_SPACE " "
 #define STRING_CR "\n"
-
+ 
 #define COPYRIGHT_MESSAGE "H2oForth by Rolf Hemmerling, (c) 2021-2022, MIT License"
 
 #define MAX_DATASTACK 1024
@@ -182,6 +186,10 @@
 //#define BASE_FORMAT_LHEX "%llx"
 #define BASE_FORMAT_LOCTAL "%llo"
 
+#define CELLSIZE2 2
+#define CELLSIZE4 4
+#define CELLSIZE8 8
+
 #define MAX_FORTHWORD_ID 65535UL
 
 #if (SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_HOST)
@@ -199,14 +207,61 @@
 // #define UINT_MAX 4294967295
 #endif
 /* Please adopt this for your host compiler */
-/* "long long" is not available with Arduino AVR C/C++ and Borland C++ 5.5.1 */
-#define LONG_LONG long long
-//#define LONG_LONG long
 
+/* CELL must have the size of a pointer / address */
 /* Double Precision Integer just if sizeof(LONG_LONG)>sizeof(int) */
-/* Not available with Arduino AVR C/C++ and Borland C++ 5.5.1     */
-//#undef DPINTEGER_SUPPORT
+
+#ifdef _WIN64
+#ifdef __MINGW32__
+/* MinGW, Win32 compiler */
+#define CELL int
+#define LONG_LONG long long
 #define DPINTEGER_SUPPORT
+#else
+/* Microsoft C/C++, Win64 compilation target */
+#define CELL long long
+#define LONG_LONG long long
+#undef DPINTEGER_SUPPORT
+#endif
+#else
+#ifdef _WIN32
+/* Microsoft C/C++, Win32 compilation target */
+#undef CELL
+#define CELL int
+#define LONG_LONG long long
+#define DPINTEGER_SUPPORT
+#endif
+
+#ifdef __GNUC__
+#if(__WORDSIZE == 32)
+#undef CELL
+#define CELL int
+#define LONG_LONG long long
+#define DPINTEGER_SUPPORT
+#endif
+#if(__WORDSIZE == 64)
+#undef CELL
+#define CELL long long
+#define LONG_LONG long long
+#undef DPINTEGER_SUPPORT
+#endif
+#endif
+
+#if defined(__BORLANDC__) || defined(__TURBOC__)
+/* "long long" is not available with Borland C++ 5.5.1 */
+#undef LONG_LONG
+#define LONG_LONG long
+#undef DPINTEGER_SUPPORT
+#endif
+
+#if defined(AVR_UNO) || defined(AVR_ADK)
+/* "long long" is not available with Arduino AVR C/C++ */
+#undef LONG_LONG
+#define LONG_LONG long
+#undef DPINTEGER_SUPPORT
+#endif
+
+#endif
 
 #undef UINT_MIN
 #define UINT_MIN -4294967296
@@ -214,6 +269,8 @@
 
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_081616BIT )
 /* Emulation of 081616BIT targets */
+#define CELLSIZE 2
+#define CELL int
 #define LONG_LONG long
 #define DPINTEGER_SUPPORT
 #undef INT_MIN
@@ -228,6 +285,7 @@
 
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_161632BIT )
 /* Emulation of 161632BIT targets */
+#define CELL int
 #define LONG_LONG long
 #define DPINTEGER_SUPPORT
 #undef INT_MIN
@@ -253,21 +311,25 @@
 #endif
 
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_323232BIT ) 
+#define CELL int
 #define LONG_LONG long
 #undef DPINTEGER_SUPPORT
 #endif
 
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_326464BIT )
+#define CELL long long
 #define LONG_LONG long long
 #define DPINTEGER_SUPPORT
 #endif
 
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_646464BIT )
+#define CELL int
 #define LONG_LONG long long
 #undef DPINTEGER_SUPPORT
 #endif
 
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_6464128BIT )
+#define CELL int
 #define LONG_LONG __int128
 #define DPINTEGER_SUPPORT
 #endif

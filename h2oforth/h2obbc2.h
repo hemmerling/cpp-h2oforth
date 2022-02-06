@@ -591,7 +591,11 @@ void bbc79MSGNum(void) {
 /* Display in hexadecimal base in the format of <.> */
 void bbc79HDot(void) {
 	if (forthTasks[forthCurrentTask].dataStackIndex) {
-		printf("%x ", forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
+		if ( sizeof(CELL) == CELLSIZE8 ) {
+			printf("%llx ", forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
+		} else {
+			printf("%x ", forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
+		}
 	} else  {
 		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
@@ -603,7 +607,11 @@ void bbc79HDot(void) {
 /* Display in decimal base in the format of <.> */
 void bbc79DecDot(void) {
 	if (forthTasks[forthCurrentTask].dataStackIndex) {
-		printf("%d ", forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
+		if ( sizeof(CELL) == CELLSIZE8 ) {
+			printf("%lld ", forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
+		} else {
+			printf("%d ", forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
+		}
 	} else  {
 		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
@@ -663,7 +671,7 @@ void bbc79DDot(void) {
 		LONG_LONG value = 0;
 		privateSetBaseLFormat();
 		value = (LONG_LONG)(forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex])
-		                    <<(sizeof(forthTasks[forthCurrentTask].dataStackSpace[0])*sizeof(LONG_LONG));
+		                    <<(sizeof(forthTasks[forthCurrentTask].dataStackSpace[0])*4); /* ?? */
 		printf (forthTasks[forthCurrentTask].baseFormat, value +
 				forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
 		printf ("%s", STRING_CR);
@@ -1380,7 +1388,7 @@ void bbc79DPL(void) {
 void bbc79Base(void) {
 	if (forthTasks[forthCurrentTask].dataStackIndex < MAX_DATASTACK-1) {
 		forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex++] = 
-			(int)&(forthTasks[forthCurrentTask].forthBase);
+			(CELL)&(forthTasks[forthCurrentTask].forthBase);
 	} else {
 		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_FULL;
 	};
@@ -1607,8 +1615,8 @@ void bbc79PlusStore(void) {
 
 void bbc79Store(void) {
 	if (forthTasks[forthCurrentTask].dataStackIndex >= 2) {
-		int *address = (int *) forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex];
-		*address = (int) forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex];
+		CELL *address = (CELL *) forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex];
+		*address = (CELL) forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex];
 	} else {
 		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
@@ -1625,7 +1633,7 @@ void bbc79CStore(void) {
 
 void bbc79Fetch(void) {
 		if (forthTasks[forthCurrentTask].dataStackIndex) {
-		int *address = (int *) forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex];
+		CELL *address = (CELL *) forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex];
 		forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex++] = *address;
 	} else {
 		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
@@ -1747,10 +1755,11 @@ void bbc79DPlus(void) {
 #endif
 
 void bbc79Plus(void) {
-	if (forthTasks[forthCurrentTask].dataStackIndex >= 2) {
-		forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex++] =
-		forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex] +
+ 	if (forthTasks[forthCurrentTask].dataStackIndex >= 2) {
+		CELL value  = 
+			forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex] +
 			forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex];
+		forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex++] = value;
 	} else  {
 		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};

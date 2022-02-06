@@ -106,7 +106,13 @@ void writeCode(char* filename) {
 
 /* Parameter help screen */
 int parameterHelp(void) {
-	printf("%s ( Int=%zd, Ptr=%zd, LongLong=%zd )\n", COPYRIGHT_MESSAGE, sizeof(int), sizeof(char *), sizeof(LONG_LONG));
+#if defined(__BORLANDC__) || defined(__TURBOC__)
+	printf("%s, Built %d ( Int=%d, CELL=%d, Ptr=%d, LongLong=%d )\n", COPYRIGHT_MESSAGE, BUILT, \
+			sizeof(int), sizeof(CELL), sizeof(void*), sizeof(LONG_LONG));
+#else
+	printf("%s, Built %d ( Int=%zd, CELL=%zd, Ptr=%zd, LongLong=%zd )\n", COPYRIGHT_MESSAGE, BUILT, \
+			sizeof(int), sizeof(CELL), sizeof(void*), sizeof(LONG_LONG));
+#endif
 	printf("\n");
 	printf("H2oForth [%c%s][%c%s][%c%s]\n", PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName2,

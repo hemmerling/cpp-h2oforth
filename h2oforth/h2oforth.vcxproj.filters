@@ -35,5 +35,14 @@
     <ClInclude Include="h2ocomm2.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2obbc2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2obbc1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

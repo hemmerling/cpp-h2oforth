@@ -24,9 +24,12 @@
   <ItemGroup>
     <ClInclude Include="h2oarg1.h" />
     <ClInclude Include="h2oarg2.h" />
+    <ClInclude Include="h2obbc1.h" />
+    <ClInclude Include="h2obbc2.h" />
     <ClInclude Include="h2ocomm1.h" />
     <ClInclude Include="h2ocomm2.h" />
     <ClInclude Include="h2oforth.h" />
+    <ClInclude Include="Header.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

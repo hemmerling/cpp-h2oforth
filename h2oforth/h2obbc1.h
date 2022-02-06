@@ -444,9 +444,7 @@ static const typedef_forthWord forthWords[] = {
 			{ "OSCLI", "OSCLI", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79OSCLI },
 			{ "ROLL", "ROLL", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Roll },
 			{ "PICK", "PICK", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Pick },
-#ifdef DPINTEGER_SUPPORT
 			{ ".S", ".S", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79DotS },
-#endif
 			{ "DEPTH", "DEPTH", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Depth },
 			{ "FORGET", "FORGET", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Forget },
 			{ "PRUNE", "PRUNE", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Prune },

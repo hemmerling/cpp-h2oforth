@@ -211,7 +211,7 @@ typedef  struct _forthTask {
 	int errorNumber;
 	int dataStackIndex;
 	int returnStackIndex;
-	int dataStackSpace[MAX_DATASTACK];
+	CELL dataStackSpace[MAX_DATASTACK];
 	void *returnStackSpace[MAX_RETURNSTACK];
 	char *baseFormat;
 	typedef_forthWord **forthWords; /* instead of *forthWords[] */
@@ -519,8 +519,11 @@ void storeSPInteger(void){
 		printf("SP Integer Underflow!\n");
 	};
 #endif	
-#if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_32BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_646464BIT )
-	lowValue = value;
+#if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_323232BIT ) || \
+    ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_326464BIT ) || \
+	( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_646464BIT)  || \
+	( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_6464128BIT)
+		lowValue = value;
 #endif
 
 	//printf("final value = %lld, lowValue = %d \n", value, lowValue);
@@ -600,8 +603,8 @@ void storeDPInteger(void){
 	int lenWordBuffer = (int)strlen(wordBuffer);
     char *aListPointer = (char*)NULL;
 	int lenAllowedCharactersBuffer = 0;
-	int lowValue = 0;
-	int highValue = 0;
+	CELL lowValue = 0;
+	CELL highValue = 0;
 
 	switch (forthTasks[forthCurrentTask].forthBase) {
     	case OCTAL:
@@ -889,7 +892,13 @@ void processTib(void) {
 /* No processing of commands passed by the command line interface */
 void noParameterPreProcessing(void) {
     if (forthIsVerbose){
-		printf("%s ( Int=%zd, Ptr=%zd, LongLong=%zd )\n", COPYRIGHT_MESSAGE, sizeof(int), sizeof(char *), sizeof(LONG_LONG));
+#if defined(__BORLANDC__) || defined(__TURBOC__)
+		printf("%s, Built %d ( Int=%d, CELL=%d, Ptr=%d, LongLong=%d )\n", COPYRIGHT_MESSAGE, BUILT, \
+			sizeof(int), sizeof(CELL), sizeof(void*), sizeof(LONG_LONG));
+#else
+		printf("%s, Built %d ( Int=%zd, CELL=%zd, Ptr=%zd, LongLong=%zd )\n", COPYRIGHT_MESSAGE, BUILT, \
+			sizeof(int), sizeof(CELL), sizeof(void*), sizeof(LONG_LONG));
+#endif
 	};	
 	forthIsWaitingForKeyboard = FALSE;
 	forthReadsTerminal = TRUE;

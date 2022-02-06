@@ -37,6 +37,7 @@ void privateErrorHandler(void) {
 	if(forthTasks[forthCurrentTask].errorNumber) {
 		printf("? %d # %s \n", forthTasks[forthCurrentTask].errorNumber, 
 	 			forthErrors[forthTasks[forthCurrentTask].errorNumber].errorMessage);
+		forthTasks[forthCurrentTask].errorNumber = 0;
 	};
 }
 
@@ -83,7 +84,11 @@ void bbc79HexDot(void) {
 /* Display in octal base in the format of <.> */
 void bbc79OctDot(void) {
 	if (forthTasks[forthCurrentTask].dataStackIndex) {
-		printf("%o ", forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
+		if ( sizeof(CELL) == CELLSIZE8 ) {
+			printf("%llo ", forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
+		} else {
+			printf("%o ", forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
+		}
 	};
 #if defined (__DEBUG__)
 	printf("bbc79OctDot\n");
