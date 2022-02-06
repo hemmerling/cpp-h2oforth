@@ -73,6 +73,9 @@
 #define SYSTEM_ARCHITECTURE_6464128BIT 6
 
 /* Start of configuration switches */
+//#undef FLOAT_SUPPORT
+#define FLOAT_SUPPORT
+
 #define SYSTEM_ARCHITECTURE SYSTEM_ARCHITECTURE_HOST
 //#define SYSTEM_ARCHITECTURE SYSTEM_ARCHITECTURE_081616BIT
 //#define SYSTEM_ARCHITECTURE SYSTEM_ARCHITECTURE_161632BIT
@@ -198,6 +201,13 @@
 /* Please adopt this for your host compiler */
 /* "long long" is not available with Arduino AVR C/C++ and Borland C++ 5.51 */
 #define LONG_LONG long long
+//#define LONG_LONG long
+
+/* Double Precision Integer just if  sizeof(LONG_LONG) > sizeof(int) */
+/* Not available with Arduino AVR C/C++ and Borland C++ 5.51         */
+//#undef DPINTEGER_SUPPORT
+#define DPINTEGER_SUPPORT
+
 #undef UINT_MIN
 #define UINT_MIN -4294967296
 #endif
@@ -205,6 +215,7 @@
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_081616BIT )
 /* Emulation of 081616BIT targets */
 #define LONG_LONG long
+#define DPINTEGER_SUPPORT
 #undef INT_MIN
 #undef INT_MAX
 #undef UINT_MAX
@@ -218,6 +229,7 @@
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_161632BIT )
 /* Emulation of 16B32IT targets */
 #define LONG_LONG long
+#define DPINTEGER_SUPPORT
 #undef INT_MIN
 #undef INT_MAX
 #undef UINT_MAX
@@ -242,18 +254,22 @@
 
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_323232BIT ) 
 #define LONG_LONG long
+#undef DPINTEGER_SUPPORT
 #endif
 
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_326464BIT )
 #define LONG_LONG long long
+#define DPINTEGER_SUPPORT
 #endif
 
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_646464BIT )
 #define LONG_LONG long long
+#undef DPINTEGER_SUPPORT
 #endif
 
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_6464128BIT )
 #define LONG_LONG __int128
+#define DPINTEGER_SUPPORT
 #endif
 
 unsigned int ioKey(void);

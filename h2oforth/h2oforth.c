@@ -21,18 +21,19 @@
 #include "h2oforth.h"
 
 /* Configuration switch */
-#define H2O_INTERACTIVE TRUE
+//#undef H2O_INTERACTiVE
+#define H2O_INTERACTIVE
 
-/* Configuration switch */
-//#define H2O_INTERACTiVE FALSE
-
+/* Architecture detection & configuration & architecture-specific code  */
 #include "h2oarc1.h"
 
 #if !H2O_NOEXIT
+/* Support for command line arguments / command line parameters */
 #include "h2oarg1.h"
 #endif
 
-#if H2O_INTERACTIVE
+#ifdef H2O_INTERACTIVE
+/* Support for interactive applications with user input */
 #include "h2oint1.h"
 #endif
 
@@ -737,7 +738,9 @@ int isPermWord(void){
 
 	int lenForthWords = sizeof(forthWords) / sizeof(forthWords[0]);
 	int lenCommonWords = sizeof(commonWords) / sizeof(commonWords[0]);
+#ifdef FLOAT_SUPPORT
 	int lenFpointWords = sizeof(fpointWords) / sizeof(fpointWords[0]);
+#endif
 
     for(ii=0;ii<lenForthWords;ii++) {
 		if ( strcmp(wordBuffer, forthWords[ii].forthWordName) == 0 ) {
@@ -748,19 +751,6 @@ int isPermWord(void){
 			};
 		 	break;
 	 	};
-	};
-
-	if (!result) {
-    	for(ii=0;ii<lenFpointWords;ii++) {
-			if ( strcmp(wordBuffer, fpointWords[ii].forthWordName) == 0 ) {
-				result = TRUE;
-				if ( fpointWords[ii].forthOpt != NULL ) {
-					/* Wort ausführen */
-					fpointWords[ii].forthOpt();
-				};
-		 		break;
-	 		};
-		};
 	};
 
 	if (!result) {
@@ -775,6 +765,21 @@ int isPermWord(void){
 	 		};
 		;}
 	};
+
+#ifdef FLOAT_SUPPORT
+	if (!result) {
+    	for(ii=0;ii<lenFpointWords;ii++) {
+			if ( strcmp(wordBuffer, fpointWords[ii].forthWordName) == 0 ) {
+				result = TRUE;
+				if ( fpointWords[ii].forthOpt != NULL ) {
+					/* Wort ausführen */
+					fpointWords[ii].forthOpt();
+				};
+		 		break;
+	 		};
+		};
+	};
+#endif
 	return(result);
 }
 
@@ -784,7 +789,13 @@ void forthParseTib(void){
     int aWordIndex = 0;
 	int aWordDetected = FALSE;
 	int lenIoTib = (int)strlen(ioTib);
-	int isSPIntegerWord, isDPIntegerWord, isFloatWord, isWordFound;
+	int isSPIntegerWord = FALSE, isWordFound = FALSE;
+#ifdef DPINTEGER_SUPPORT
+	int isDPIntegerWord = FALSE;
+#endif
+#ifdef FLOAT_SUPPORT
+	int isFloatWord = FALSE;
+#endif
 	while(aTibIndex < lenIoTib) {
 		if ( aWordDetected ) {
 			if ( ioTib[aTibIndex] <= SPACE ) {
@@ -795,27 +806,45 @@ void forthParseTib(void){
 				forthTasks[forthCurrentTask].errorNumber = 0;
 				
 				isSPIntegerWord = isSPInteger();
+#ifdef DPINTEGER_SUPPORT
 				isDPIntegerWord = isDPInteger();
+#endif
+#ifdef FLOAT_SUPPORT
 				isFloatWord = isFloat();
+#endif
 				isWordFound = isPermWord();
 #if defined (__DEBUG__)
-				printf("word = [%s], isSPInteger = [%d], isDPInteger = [%d], \
-isDPFloat = [%d], isWordFound = [%d]\n",
-					   wordBuffer, isSPIntegerWord, isDPIntegerWord,
-					   isFloatWord, isWordFound);
+				printf("word = [%s], isSPInteger = [%d]", wordBuffer, isSPIntegerWord);
+#ifdef DPINTEGER_SUPPORT
+				printf(", isDPInteger = [%d]", isDPIntegerWord);
+#endif
+#ifdef FLOAT_SUPPORT
+				printf(", isDPFloat = [%d]", isFloatWord);
+#endif
+				printf(", isWordFound = [%d]\n", isWordFound);
 #endif
 				if (!isWordFound) {
 					if (isSPIntegerWord) {
 						storeSPInteger();
 					};
+#ifdef DPINTEGER_SUPPORT
 					if (isDPIntegerWord) {
 						storeDPInteger();
 					};
+#endif
+#ifdef FLOAT_SUPPORT
 					if (isFloatWord) {
 						storeFloat();
 					};
-
-					if (!isSPInteger() && !isDPInteger() && !isFloat()) {
+#endif
+					if (!isSPInteger() 
+#ifdef DPINTEGER_SUPPORT
+					    && !isDPInteger() 
+#endif
+#ifdef FLOAT_SUPPORT
+						&& !isFloat()
+#endif
+						) {
 						forthTasks[forthCurrentTask].errorNumber = ERROR_NOT_IN_CURRENT_DIRECTORY;
 						privateErrorHandler();
 	
@@ -853,7 +882,7 @@ void processTib(void) {
 }
 /**************************/
 
-#if H2O_INTERACTIVE
+#ifdef H2O_INTERACTIVE
 #include "h2oint2.h"
 #endif
 
@@ -876,7 +905,7 @@ int main(int argc, char* argv[])
 #else
 		parameterPreProcessing(argc, argv);
 #endif
-#if H2O_INTERACTIVE
+#ifdef H2O_INTERACTIVE
 		if (!forthIsExit) {
 			/* Tib is now an empty string */
 			//ioTib[0] = 0;

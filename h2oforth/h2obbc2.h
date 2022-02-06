@@ -657,6 +657,7 @@ void bbc79DotR(void) {
 #endif
 }
 
+#ifdef DPINTEGER_SUPPORT
 void bbc79DDot(void) {
 	if (forthTasks[forthCurrentTask].dataStackIndex >= 2) {
 		LONG_LONG value = 0;
@@ -673,7 +674,9 @@ void bbc79DDot(void) {
 	printf("bbc79DDot\n");
 #endif
 }
+#endif
 
+#ifdef DPINTEGER_SUPPORT
 void bbc79DDotRDot(void) {
 	if (forthTasks[forthCurrentTask].returnStackIndex >= 2) {
 		privateSetBaseLFormat();
@@ -689,6 +692,7 @@ void bbc79DDotRDot(void) {
 	printf("bbc79DDotRDot\n");
 #endif
 }
+#endif
 
 void bbc79NumS(void) {
 #if defined (__DEBUG__)
@@ -780,11 +784,13 @@ void bbc79MAbs(void) {
 #endif
 }
 
+#ifdef DPINTEGER_SUPPORT
 void bbc79DPlusMinus(void) {
 #if defined (__DEBUG__)
 	printf("bbc79DPlusMinus\n");
 #endif
 }
+#endif
 
 void bbc79PlusMinus(void) {
 #if defined (__DEBUG__)
@@ -792,11 +798,13 @@ void bbc79PlusMinus(void) {
 #endif
 }
 
+#ifdef DPINTEGER_SUPPORT
 void bbc79SToD(void) {
 #if defined (__DEBUG__)
 	printf("bbc79SToD\n");
 #endif
 }
+#endif
 
 void bbc79Warm(void) {
 #if defined (__DEBUG__)
@@ -1730,11 +1738,13 @@ void bbc79Negate(void) {
 #endif
 }
 
+#ifdef DPINTEGER_SUPPORT
 void bbc79DPlus(void) {
 #if defined (__DEBUG__)
 	printf("bbc79DPlus\n");
 #endif
 }
+#endif
 
 void bbc79Plus(void) {
 	if (forthTasks[forthCurrentTask].dataStackIndex >= 2) {
@@ -1749,11 +1759,13 @@ void bbc79Plus(void) {
 #endif
 }
 
+#ifdef DPINTEGER_SUPPORT
 void bbc79DLess(void) {
 #if defined (__DEBUG__)
 	printf("bbc79DLess\n");
 #endif
 }
+#endif
 
 void bbc79Less(void) {
 #if defined (__DEBUG__)

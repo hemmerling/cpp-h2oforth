@@ -1,8 +1,7 @@
 #ifndef H2OARG2
 #define H2OARG2
 
-/* Support for Command Line Arguments / Command Line Parameters */
-
+/* Support for command line arguments / command line parameters */
 
 void readDatabase(char* databaseString) {
 	printf("H2oForth - Reads a database. TBD\n");

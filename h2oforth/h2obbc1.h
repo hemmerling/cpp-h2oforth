@@ -444,7 +444,9 @@ static const typedef_forthWord forthWords[] = {
 			{ "OSCLI", "OSCLI", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79OSCLI },
 			{ "ROLL", "ROLL", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Roll },
 			{ "PICK", "PICK", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Pick },
+#ifdef DPINTEGER_SUPPORT
 			{ ".S", ".S", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79DotS },
+#endif
 			{ "DEPTH", "DEPTH", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Depth },
 			{ "FORGET", "FORGET", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Forget },
 			{ "PRUNE", "PRUNE", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Prune },
@@ -479,8 +481,10 @@ static const typedef_forthWord forthWords[] = {
 			{ "U.", "U.", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79UDot },
 			{ ".", ".", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Dot },
 			{ ".R", ".R", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79DotR },
+#ifdef DPINTEGER_SUPPORT
 			{ "D.", "D.", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79DDot },
 			{ "D.R.", "D.R.", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79DDotRDot },
+#endif
 			{ "#S", "#S", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79NumS },
 			{ "#", "#", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Num },
 			{ "SIGN", "SIGN", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Sign },
@@ -496,9 +500,13 @@ static const typedef_forthWord forthWords[] = {
 			{ "*", "*", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Star },
 			{ "M/", "M/", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79MSlash },
 			{ "MABS", "MABS", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79MAbs },
+#ifdef DPINTEGER_SUPPORT
 			{ "D+-", "D+-", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79DPlusMinus },
+#endif
 			{ "+-", "+-", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79PlusMinus },
+#ifdef DPINTEGER_SUPPORT
 			{ "S->D", "S->D", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79SToD },
+#endif
 			{ "WARM", "WARM", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Warm },
 			{ "COLD", "COLD", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Cold },
 			{ "START", "START", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Start },
@@ -650,9 +658,13 @@ static const typedef_forthWord forthWords[] = {
 			{ "DROP", "DROP", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Drop },
 			{ "DNEGATE", "DNEGATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79DNegate },
 			{ "NEGATE", "NEGATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Negate },
+#ifdef DPINTEGER_SUPPORT
 			{ "D+", "D+", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79DPlus },
+#endif
 			{ "+", "+", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Plus },
+#ifdef DPINTEGER_SUPPORT
 			{ "D<", "D<", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79DLess },
+#endif
 			{ "<", "<", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Less },
 			{ "0<", "0<", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79ZeroLess },
 			{ "0=", "0=", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79ZeroEqual },

@@ -16,7 +16,9 @@ static const typedef_forthWord commonWords[] = {
 			{ "OCT.", "OCT.", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79OctDot }
 };
 
+#ifdef FLOAT_SUPPORT
 static const typedef_forthWord fpointWords[] = {
 			{ ".F", ".F", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)fpointDotF }
 };
+#endif
 #endif

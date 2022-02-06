@@ -1,7 +1,7 @@
 #ifndef H2OARC1
 #define H2OARC1
 
-/* Architecture Detection & Configuration  & Architecture-specific code  */
+/* Architecture detection & configuration & architecture-specific code  */
 
 /* Maximum length of a text file line, usually 255 */
 #define MAX_INPUTBUFFER 255

@@ -1,7 +1,9 @@
 #ifndef H2OINT2
 #define H2OINT2
 
-/*  Get input, fill the terminal input buffer (tib) */
+/* Support for interactive applications with user input */
+
+/* Get input, fill the terminal input buffer (tib) */
 void readInput(void) {
 	int doTibPointer = 0;
 	int doInput = 0;

@@ -1,7 +1,7 @@
 #ifndef H2OARG1
 #define H2OARG1 
 
-/* Support for Command Line Arguments / Command Line Parameters */
+/* Support for command line arguments / command line parameters */
 
 /* Start of configuration switches */
 #define H2O_DISPLAY_HELP_WITH_NO_PARAMETERS

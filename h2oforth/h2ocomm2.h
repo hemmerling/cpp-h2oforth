@@ -4,6 +4,7 @@
 /* Declarations of FORTH words common to one or more FORTH standards & FORTH implementations */
 
 /* Primitives */
+#ifdef FLOAT_SUPPORT
 void fpointDotF(void) {
     int ii=0;
 	int floatStackIndex = forthTasks[forthCurrentTask].floatStackIndex;
@@ -20,6 +21,7 @@ void fpointDotF(void) {
 	printf("fpointDotF\n");
 #endif
 }
+#endif
 
 void commonOctal(void) {
 	forthTasks[forthCurrentTask].forthBase = OCTAL;
