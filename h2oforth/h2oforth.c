@@ -889,7 +889,7 @@ void processTib(void) {
 /* No processing of commands passed by the command line interface */
 void noParameterPreProcessing(void) {
     if (forthIsVerbose){
-		printf("%s ( Int=%zd, Ptr=%zd, LongLong=%zd, )\n", COPYRIGHT_MESSAGE, sizeof(int), sizeof(LONG_LONG), sizeof(char *));
+		printf("%s ( Int=%zd, Ptr=%zd, LongLong=%zd )\n", COPYRIGHT_MESSAGE, sizeof(int), sizeof(char *), sizeof(LONG_LONG));
 	};	
 	forthIsWaitingForKeyboard = FALSE;
 	forthReadsTerminal = TRUE;

@@ -199,12 +199,12 @@
 // #define UINT_MAX 4294967295
 #endif
 /* Please adopt this for your host compiler */
-/* "long long" is not available with Arduino AVR C/C++ and Borland C++ 5.51 */
+/* "long long" is not available with Arduino AVR C/C++ and Borland C++ 5.5.1 */
 #define LONG_LONG long long
 //#define LONG_LONG long
 
-/* Double Precision Integer just if  sizeof(LONG_LONG) > sizeof(int) */
-/* Not available with Arduino AVR C/C++ and Borland C++ 5.51         */
+/* Double Precision Integer just if sizeof(LONG_LONG)>sizeof(int) */
+/* Not available with Arduino AVR C/C++ and Borland C++ 5.5.1     */
 //#undef DPINTEGER_SUPPORT
 #define DPINTEGER_SUPPORT
 
@@ -227,7 +227,7 @@
 #endif
 
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_161632BIT )
-/* Emulation of 16B32IT targets */
+/* Emulation of 161632BIT targets */
 #define LONG_LONG long
 #define DPINTEGER_SUPPORT
 #undef INT_MIN
