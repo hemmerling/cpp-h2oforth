@@ -206,6 +206,11 @@ int forthReadsKeyboard = FALSE;
 int forthIsVerbose = TRUE;
 int forthIsExit = FALSE;
 
+/* 
+	FORTH Task.
+	Designed to avoid "flexible array member not at end of struct"
+	and "invalid use of flexible array member" 
+*/
 typedef  struct _forthTask {
 	int forthBase;
 	int errorNumber;
@@ -214,11 +219,17 @@ typedef  struct _forthTask {
 	CELL dataStackSpace[MAX_DATASTACK];
 	void *returnStackSpace[MAX_RETURNSTACK];
 	char *baseFormat;
-	typedef_forthWord **forthWords; /* instead of *forthWords[] */
-	typedef_forthError **forthErrors; /* instead of *forthErrors[] */
+	typedef_forthWord *forthWords;
+	int numberOfWordLists;
+	typedef_forthWord **forthWordLists;
+	typedef_forthError *forthErrors; 
 	int floatStackIndex;
 	float floatStackSpace[MAX_FLOATSTACK];
 } typedef_forthTask;
+
+/* Variables */
+
+static const typedef_forthWord *forthWordLists[] = { forthWords, commonWords, fpointWords };
 
 typedef_forthTask forthTasks[MAX_FORTHTASKS];
 int forthCurrentTask = 0;
@@ -344,13 +355,19 @@ int forthCurrentTask = 0;
 
 void forthInit(void) {
 	int ii = 0;
+
 	for(ii=0; ii<MAX_FORTHTASKS; ii++) {
+		int jj = 0;
 		forthTasks[ii].forthBase = DECIMAL;
 		forthTasks[ii].errorNumber = 0;
 		forthTasks[ii].baseFormat = BASE_FORMAT_DECIMAL;
 		forthTasks[ii].dataStackIndex = 0;
 		forthTasks[ii].returnStackIndex = 0;
 		forthTasks[ii].floatStackIndex = 0;
+		forthTasks[ii].forthWords = (typedef_forthWord *) forthWords;
+		forthTasks[ii].numberOfWordLists=sizeof(forthWordLists) / sizeof(forthWordLists[0]);
+  		forthTasks[ii].forthWordLists = (typedef_forthWord **) forthWordLists;
+		forthTasks[ii].forthErrors = (typedef_forthError *) forthErrors;
 	};
 }
 
@@ -745,12 +762,15 @@ int isPermWord(void){
 	int lenFpointWords = sizeof(fpointWords) / sizeof(fpointWords[0]);
 #endif
 
+		// forthTasks[ii].numberOfWordLists=sizeof(forthWordLists) / sizeof(forthWordLists[0]);
+  		// forthTasks[ii].forthWordLists = (typedef_forthWord **) forthWordLists;
+
     for(ii=0;ii<lenForthWords;ii++) {
 		if ( strcmp(wordBuffer, forthWords[ii].forthWordName) == 0 ) {
 			result = TRUE;
-			if ( forthWords[ii].forthOpt != NULL ) {
+			if ( forthTasks[forthCurrentTask].forthWords[ii].forthOpt != NULL ) {
 				/* Wort ausführen */
-				forthWords[ii].forthOpt();
+				forthTasks[forthCurrentTask].forthWords[ii].forthOpt();
 			};
 		 	break;
 	 	};
@@ -805,7 +825,7 @@ void forthParseTib(void){
 				/* Finish word detection */
 				aWordDetected = FALSE;
 				
-				/* Error Message Nummer zurücksetzen */
+				/* Reset error message number */
 				forthTasks[forthCurrentTask].errorNumber = 0;
 				
 				isSPIntegerWord = isSPInteger();
@@ -849,14 +869,13 @@ void forthParseTib(void){
 #endif
 						) {
 						forthTasks[forthCurrentTask].errorNumber = ERROR_NOT_IN_CURRENT_DIRECTORY;
-						privateErrorHandler();
-	
 					};
+					
 				};	
+				privateErrorHandler();
     			// int aWordIndex = 0;
 		 		// wordBuffer[aWordIndex] = 0;
 			} else {
-				privateErrorHandler();
 				/* Continue word detection */
 				wordBuffer[aWordIndex++] = ioTib[aTibIndex];
 		 		wordBuffer[aWordIndex] = 0;

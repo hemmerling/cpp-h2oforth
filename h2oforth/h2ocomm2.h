@@ -36,7 +36,7 @@ void privateErrorHandler(void) {
 	/* TBD: Word should be listed */
 	if(forthTasks[forthCurrentTask].errorNumber) {
 		printf("? %d # %s \n", forthTasks[forthCurrentTask].errorNumber, 
-	 			forthErrors[forthTasks[forthCurrentTask].errorNumber].errorMessage);
+	 			forthTasks[forthCurrentTask].forthErrors[forthTasks[forthCurrentTask].errorNumber].errorMessage);
 		forthTasks[forthCurrentTask].errorNumber = 0;
 	};
 }

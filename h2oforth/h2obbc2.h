@@ -637,7 +637,7 @@ void bbc79Dot(void) {
 		privateSetBaseFormat();
 		printf (forthTasks[forthCurrentTask].baseFormat, 
 			    forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
-		printf ("test %s", STRING_CR);
+		printf ("%s", STRING_CR);
 	} else  {
 		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};

@@ -333,11 +333,12 @@ typedef  struct _forthWord {
 	const forthOperation  forthOpt; // function pointer 
 } typedef_forthWord;
 
-/* Variables */
 typedef  struct _forthError {
 	const int errorNumber;
 	const char* errorMessage;
 } typedef_forthError;
+
+/* Variables */
 
 #define ERROR_NOERROR 0
 #define ERROR_DATASTACK_EMPTY 1
