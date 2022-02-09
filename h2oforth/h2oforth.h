@@ -69,21 +69,32 @@
 #define SYSTEM_ARCHITECTURE_646464BIT 5
 #define SYSTEM_ARCHITECTURE_6464128BIT 6
 
+#define ERROR_CAUSES_IGNORE 0
+#define ERROR_CAUSES_HALT 2
+#define ERROR_CAUSES_EXIT_TO_PROMPT 3
+#define ERROR_CAUSES_RESET 4
+#define ERROR_CAUSES_EXIT_TO_OS 5
 
 /*********************************/
 /* Configuration switches        */
+/*********************************/
 
 #define BUILT 1
 
 //#undef __DEBUG__
 #define __DEBUG__
 
+//#undef FLOAT_SUPPORT
+#define FLOAT_SUPPORT
+
 //#undef H2O_INTERACTiVE
 #define H2O_INTERACTIVE
 
-/* Start of configuration switches */
-//#undef FLOAT_SUPPORT
-#define FLOAT_SUPPORT
+#define ERROR_BEHAVIOUR ERROR_CAUSES_IGNORE
+//#define ERROR_BEHAVIOUR ERROR_CAUSES_HALT
+//#define ERROR_BEHAVIOUR ERROR_CAUSES_EXIT_TO_PROMPT
+//#define ERROR_BEHAVIOUR ERROR_CAUSES_RESET
+//#define ERROR_BEHAVIOUR ERROR_CAUSES_EXIT_TO_OS
 
 #define SYSTEM_ARCHITECTURE SYSTEM_ARCHITECTURE_HOST
 //#define SYSTEM_ARCHITECTURE SYSTEM_ARCHITECTURE_081616BIT
@@ -132,6 +143,7 @@
 //#define H2O_FORTH_PRIMITIVES VOLK_PC_FORTH
 //#define H2O_FORTH_PRIMITIVES WIN32_FORTH
 
+/*********************************/
 /* End of configuration switches */
 /*********************************/
 

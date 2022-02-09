@@ -104,15 +104,15 @@ void privateSetBaseLFormat(void) {
 }
 
 /* Display in hexadecimal base in the format of <.> */
-void bbc79HexDot(void) {
+void commonHexDot(void) {
 	bbc79HDot();
 #if defined (__DEBUG__)
-	printf("bbc79HexDot\n");
+	printf("commonHexDot\n");
 #endif
 }
 
 /* Display in octal base in the format of <.> */
-void bbc79OctDot(void) {
+void commonOctDot(void) {
 	if (forthTasks[forthState.forthCurrentTask].dataStackIndex) {
 		if ( sizeof(CELL) == CELLSIZE8 ) {
 			printf("%llo ", forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
@@ -123,6 +123,24 @@ void bbc79OctDot(void) {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 #if defined (__DEBUG__)
-	printf("bbc79OctDot\n");
+	printf("commonOctDot\n");
+#endif
+}
+
+void commonCatch(void) {
+#if defined (__DEBUG__)
+	printf("commonCatch\n");
+#endif
+}
+
+void commonThrow(void) {
+#if defined (__DEBUG__)
+	printf("commonThrow\n");
+#endif
+}
+
+void commonQuit(void) {
+#if defined (__DEBUG__)
+	printf("commonQuit\n");
 #endif
 }
