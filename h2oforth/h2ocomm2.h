@@ -15,7 +15,7 @@ void fpointDotF(void) {
 		};
 	printf("\n");
 	} else  {
-		printf("FloatStack empty!\n"); /* "Stack underflow" */
+		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 #if defined (__DEBUG__)
 	printf("fpointDotF\n");
@@ -88,7 +88,9 @@ void bbc79OctDot(void) {
 			printf("%llo ", forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
 		} else {
 			printf("%o ", forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
-		}
+		};
+	} else  {
+		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 #if defined (__DEBUG__)
 	printf("bbc79OctDot\n");

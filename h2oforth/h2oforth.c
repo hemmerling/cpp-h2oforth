@@ -212,24 +212,29 @@ int forthIsExit = FALSE;
 	and "invalid use of flexible array member" 
 */
 typedef  struct _forthTask {
+	char *baseFormat;
 	int forthBase;
 	int errorNumber;
 	int dataStackIndex;
 	int returnStackIndex;
 	CELL dataStackSpace[MAX_DATASTACK];
 	void *returnStackSpace[MAX_RETURNSTACK];
-	char *baseFormat;
-	typedef_forthWord *forthWords;
-	int numberOfWordLists;
-	typedef_forthWord **forthWordLists;
+	typedef_forthWordList *forthWordLists;
 	typedef_forthError *forthErrors; 
+#ifdef FLOAT_SUPPORT
 	int floatStackIndex;
 	float floatStackSpace[MAX_FLOATSTACK];
+#endif
 } typedef_forthTask;
 
 /* Variables */
 
-static const typedef_forthWord *forthWordLists[] = { forthWords, commonWords, fpointWords };
+static const typedef_forthWordList forthWordLists[] = { 
+	{sizeof(forthWords)/sizeof(forthWords[0]), forthWords}, {sizeof(commonWords)/sizeof(commonWords[0]), commonWords}
+#ifdef FLOAT_SUPPORT
+	, {sizeof(fpointWords)/sizeof(fpointWords[0]), fpointWords}
+#endif
+};
 
 typedef_forthTask forthTasks[MAX_FORTHTASKS];
 int forthCurrentTask = 0;
@@ -358,18 +363,19 @@ void forthInit(void) {
 
 	for(ii=0; ii<MAX_FORTHTASKS; ii++) {
 		int jj = 0;
+		forthTasks[ii].baseFormat = BASE_FORMAT_DECIMAL;
 		forthTasks[ii].forthBase = DECIMAL;
 		forthTasks[ii].errorNumber = 0;
-		forthTasks[ii].baseFormat = BASE_FORMAT_DECIMAL;
 		forthTasks[ii].dataStackIndex = 0;
 		forthTasks[ii].returnStackIndex = 0;
-		forthTasks[ii].floatStackIndex = 0;
-		forthTasks[ii].forthWords = (typedef_forthWord *) forthWords;
-		forthTasks[ii].numberOfWordLists=sizeof(forthWordLists) / sizeof(forthWordLists[0]);
-  		forthTasks[ii].forthWordLists = (typedef_forthWord **) forthWordLists;
+ 		forthTasks[ii].forthWordLists = (typedef_forthWordList *) forthWordLists;
 		forthTasks[ii].forthErrors = (typedef_forthError *) forthErrors;
+#ifdef FLOAT_SUPPORT
+		forthTasks[ii].floatStackIndex = 0;
+#endif
 	};
 }
+
 
 /* Check if word is a Single Precision Integer */
 int isSPInteger(void){
@@ -549,6 +555,7 @@ void storeSPInteger(void){
 }
 
 /* Check if word is a Double Precision Integer, e.g. "12. d." => "12" ( but not "1.2 d." => "12" ) */
+#ifdef DPINTEGER_SUPPORT
 int isDPInteger(void){
 	int result = FALSE;
     int aWordIndex = 0;
@@ -610,9 +617,11 @@ int isDPInteger(void){
 	};
 	return(result);
 }
+#endif
 
 /* Convert word to an Double Precision Integer and store it on the DataStack */
 /* As with 32-bit computers, int = long, LONG_LONG variable type is used for Double Precision value */
+#ifdef DPINTEGER_SUPPORT
 void storeDPInteger(void){
     LONG_LONG value = 0;
 	int valueIsNegative = FALSE;
@@ -708,12 +717,13 @@ void storeDPInteger(void){
 	//printf("final value = %lld; low = %d, high = %d \n", value, lowValue, highValue);
     forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex++] = lowValue;
     forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex++] = highValue;
-
 }
+#endif
 
 /* Check if word is a Float, but just in DECIMAL mode, e.g. "1.2e .F" => 1.2 */
 /* I was told: According to the ANS standard, floating-point numbers are always 
    interpreted as decimal (regardless of the content of the BASE variable) */
+#ifdef FLOAT_SUPPORT
 int isFloat(void){
 	int result = FALSE;
     int aWordIndex = 0;
@@ -732,8 +742,10 @@ int isFloat(void){
 
 	return(result);
 }
+#endif
 
 /* Convert word to an Float and store it on the FloatStack */
+#ifdef FLOAT_SUPPORT
 void storeFloat(void){
     float value = 0;
 	int valueIsNegative = FALSE;
@@ -743,66 +755,35 @@ void storeFloat(void){
 	int lenAllowedCharactersBuffer = 0;
 	int lowValue = 0;
 	int highValue = 0;
-
     /* TBD */
-
 	//printf("final value = %f \n", value);
     forthTasks[forthCurrentTask].floatStackSpace[forthTasks[forthCurrentTask].floatStackIndex++] = value;
-
 }
+#endif
 
 /* Find word in wordlist */
 int isPermWord(void){
 	int ii = 0;
+    int jj = 0;
 	int result = FALSE;
-
-	int lenForthWords = sizeof(forthWords) / sizeof(forthWords[0]);
-	int lenCommonWords = sizeof(commonWords) / sizeof(commonWords[0]);
-#ifdef FLOAT_SUPPORT
-	int lenFpointWords = sizeof(fpointWords) / sizeof(fpointWords[0]);
-#endif
-
-		// forthTasks[ii].numberOfWordLists=sizeof(forthWordLists) / sizeof(forthWordLists[0]);
-  		// forthTasks[ii].forthWordLists = (typedef_forthWord **) forthWordLists;
-
-    for(ii=0;ii<lenForthWords;ii++) {
-		if ( strcmp(wordBuffer, forthWords[ii].forthWordName) == 0 ) {
-			result = TRUE;
-			if ( forthTasks[forthCurrentTask].forthWords[ii].forthOpt != NULL ) {
-				/* Wort ausführen */
-				forthTasks[forthCurrentTask].forthWords[ii].forthOpt();
-			};
-		 	break;
-	 	};
-	};
-
-	if (!result) {
-		for(ii=0;ii<lenCommonWords;ii++) {
-			if ( strcmp(wordBuffer, commonWords[ii].forthWordName) == 0 ) {
+	/* TBD: lenForthWordLists should be calculated by forthTasks[forthCurrentTask].forthWordLists */
+	int lenForthWordLists = sizeof(forthWordLists) / 
+							sizeof(forthWordLists[0]);
+	//printf("sizeof wordsLists %d\n", lenForthWordLists);
+	for(ii=0;ii<lenForthWordLists;ii++) {
+      	//printf("wordsQuantity %d, %d\n", ii, forthTasks[forthCurrentTask].forthWordLists[ii].lenForthWords);
+		for(jj=0;jj<forthTasks[forthCurrentTask].forthWordLists[ii].lenForthWords;jj++) {
+	     	//printf("wordlists %d, %s\n", ii, forthTasks[forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName);
+			if ( strcmp(wordBuffer, forthTasks[forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName) == 0 ) {
 				result = TRUE;
-				if ( commonWords[ii].forthOpt != NULL ) {
-					/* Wort ausführen */
-					commonWords[ii].forthOpt();
-				};
-		 		break;
-	 		};
-		;}
-	};
-
-#ifdef FLOAT_SUPPORT
-	if (!result) {
-    	for(ii=0;ii<lenFpointWords;ii++) {
-			if ( strcmp(wordBuffer, fpointWords[ii].forthWordName) == 0 ) {
-				result = TRUE;
-				if ( fpointWords[ii].forthOpt != NULL ) {
-					/* Wort ausführen */
-					fpointWords[ii].forthOpt();
+				if ( forthTasks[forthCurrentTask].forthWordLists[ii].forthWords[jj].forthOpt != NULL ) {
+					/* Execute word */
+					forthTasks[forthCurrentTask].forthWordLists[ii].forthWords[jj].forthOpt();
 				};
 		 		break;
 	 		};
 		};
 	};
-#endif
 	return(result);
 }
 

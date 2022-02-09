@@ -333,6 +333,11 @@ typedef  struct _forthWord {
 	const forthOperation  forthOpt; // function pointer 
 } typedef_forthWord;
 
+typedef  struct _forthWordList {
+	const int lenForthWords;
+	const typedef_forthWord *forthWords;
+} typedef_forthWordList;
+
 typedef  struct _forthError {
 	const int errorNumber;
 	const char* errorMessage;
@@ -344,9 +349,9 @@ typedef  struct _forthError {
 #define ERROR_DATASTACK_EMPTY 1
 #define ERROR_DATASTACK_FULL 7
 #define ERROR_DIVISION_BY_ZERO 11
-#define ERROR_RETURNSTACK_EMPTY 15
-#define ERROR_RETURNSTACK_FULL 15
 #define ERROR_NOT_IN_CURRENT_DIRECTORY 24
+#define ERROR_RETURNSTACK_EMPTY 25
+#define ERROR_RETURNSTACK_FULL 26
 
 /* Richard De Grandis-Harrison: FORTH on the BBC Microcomputer", page 159ff */
 static const typedef_forthError forthErrors[] = {
@@ -365,8 +370,8 @@ static const typedef_forthError forthErrors[] = {
 			{ 12, "Undefined Execution Vector" },
 			{ 13, "Branch Too Long" },
 			{ 14, "Incorrect CURRENT Vocabulary" },
-			{ 15, "ReturnStack empty" }, /* was: "reserved!" */
-			{ 16, "ReturnStack full" }, /* was: "reserved!" */
+			{ 15, "reserved!" },
+			{ 16, "reserved!" },
 			{ 17, "Compilation Only" },
 			{ 18, "Execution Only" },
 			{ 19, "Conditionals not Paired" },
@@ -376,6 +381,8 @@ static const typedef_forthError forthErrors[] = {
 			{ 23, "Off Current Editing Screen" },
 			{ 24, "Not in CURRENT Vocabulary" },
 			{ 25, "System Memory Clash" }
+			{ 26, "ReturnStack empty" }, /* No original error code */
+			{ 27, "ReturnStack full" }, /* No original error code */
 };
 
 static const typedef_forthWord forthWords[] = {
