@@ -37,6 +37,23 @@
 #include "h2oint1.h"
 #endif
 
+/******** State of the FORTH System ********************/
+
+/* Typedef */
+
+typedef struct _forthState {
+	int forthIsWaitingForParameter;
+	int forthIsWaitingForKeyboard;
+	int forthReadsTerminal;
+	int forthReadsKeyboard;
+	int forthIsVerbose;
+	int forthIsExit;
+	int forthCurrentTask;
+} typedef_forthState;
+
+/* Variables */
+typedef_forthState forthState;
+
 /********Global FORTH Variables ********************/
 
 #undef FORTHSTD_MINIMAL
@@ -187,7 +204,7 @@
 #include "h2ocomm1.h"
 #endif
 
-/********Global Constants*****************************/
+/********Global Constants *****************************/
 
 static /*const */ char aListofBinary[] = {'-', '0', '1', ',', '.'};
 static /*const */ char aListofOctal[] = {'-', '0', '1', '2', '3', '4', '5', '6', '7', ',', '.'};
@@ -197,14 +214,7 @@ static /*const */ char aListofHex[] = {'-', '0', '1', '2', '3', '4', '5', '6', '
 static /*const */ char aListOfBase[NUMBERTABLE_SIZE] = {'-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', \
 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', ',', '.'};
 
-/********Global Runtime Variables ********************/
-
-int forthIsWaitingForParameter = FALSE;
-int forthIsWaitingForKeyboard = FALSE;
-int forthReadsTerminal = FALSE;
-int forthReadsKeyboard = FALSE;
-int forthIsVerbose = TRUE;
-int forthIsExit = FALSE;
+/******** Typedefs ********************/
 
 /* 
 	FORTH Task.
@@ -215,12 +225,16 @@ typedef  struct _forthTask {
 	char *baseFormat;
 	int forthBase;
 	int errorNumber;
+	int messageNumber;
+	int osErrorNumber;
 	int dataStackIndex;
 	int returnStackIndex;
 	CELL dataStackSpace[MAX_DATASTACK];
 	void *returnStackSpace[MAX_RETURNSTACK];
 	typedef_forthWordList *forthWordLists;
-	typedef_forthError *forthErrors; 
+	typedef_forthMessage *forthErrors; 
+	typedef_forthMessage *forthMessages; 
+	typedef_forthMessage *forthOsErrors;
 #ifdef FLOAT_SUPPORT
 	int floatStackIndex;
 	float floatStackSpace[MAX_FLOATSTACK];
@@ -228,6 +242,7 @@ typedef  struct _forthTask {
 } typedef_forthTask;
 
 /* Variables */
+typedef_forthTask forthTasks[MAX_FORTHTASKS];
 
 static const typedef_forthWordList forthWordLists[] = { 
 	{sizeof(forthWords)/sizeof(forthWords[0]), forthWords}, {sizeof(commonWords)/sizeof(commonWords[0]), commonWords}
@@ -235,9 +250,6 @@ static const typedef_forthWordList forthWordLists[] = {
 	, {sizeof(fpointWords)/sizeof(fpointWords[0]), fpointWords}
 #endif
 };
-
-typedef_forthTask forthTasks[MAX_FORTHTASKS];
-int forthCurrentTask = 0;
 
 /******** FORTH Primitives ********************/
 
@@ -359,23 +371,33 @@ int forthCurrentTask = 0;
 /**************************/
 
 void forthInit(void) {
-	int ii = 0;
+	forthState.forthIsWaitingForParameter = FALSE;
+	forthState.forthIsWaitingForKeyboard = FALSE;
+	forthState.forthReadsTerminal = FALSE;
+	forthState.forthReadsKeyboard = FALSE;
+	forthState.forthIsVerbose = FALSE;
+	forthState.forthIsExit = FALSE;
+	forthState.forthCurrentTask= 0;
 
+	int ii = 0;
 	for(ii=0; ii<MAX_FORTHTASKS; ii++) {
 		int jj = 0;
 		forthTasks[ii].baseFormat = BASE_FORMAT_DECIMAL;
 		forthTasks[ii].forthBase = DECIMAL;
 		forthTasks[ii].errorNumber = 0;
+		forthTasks[ii].messageNumber = 0;
+		forthTasks[ii].osErrorNumber = 0;
 		forthTasks[ii].dataStackIndex = 0;
 		forthTasks[ii].returnStackIndex = 0;
  		forthTasks[ii].forthWordLists = (typedef_forthWordList *) forthWordLists;
-		forthTasks[ii].forthErrors = (typedef_forthError *) forthErrors;
+		forthTasks[ii].forthErrors = (typedef_forthMessage *) forthErrors;
+		forthTasks[ii].forthMessages = (typedef_forthMessage *) forthMessages;
+		forthTasks[ii].forthOsErrors = (typedef_forthMessage *) forthOsErrors;
 #ifdef FLOAT_SUPPORT
 		forthTasks[ii].floatStackIndex = 0;
 #endif
 	};
 }
-
 
 /* Check if word is a Single Precision Integer */
 int isSPInteger(void){
@@ -385,7 +407,7 @@ int isSPInteger(void){
     char *aListPointer = (char*)NULL;
 	int lenAllowedCharactersBuffer = 0;
 	
-	switch (forthTasks[forthCurrentTask].forthBase) {
+	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
    		case BINARY:
 			aListPointer = aListofBinary;
 			lenAllowedCharactersBuffer = sizeof(aListofBinary);
@@ -457,7 +479,7 @@ void storeSPInteger(void){
 	int lenAllowedCharactersBuffer = 0;
 	int lowValue = 0;
 	
-	switch (forthTasks[forthCurrentTask].forthBase) {
+	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
     	case OCTAL:
 			aListPointer = aListofOctal;
 			lenAllowedCharactersBuffer = sizeof(aListofOctal);
@@ -504,7 +526,7 @@ void storeSPInteger(void){
 					valueIsNegative = TRUE;
 					break;
 				};
-				value = value*forthTasks[forthCurrentTask].forthBase + ii - 1;
+				value = value*forthTasks[forthState.forthCurrentTask].forthBase + ii - 1;
 				// printf("nachher ii =%d, new value = %d \n", ii, value);
 				break;
 			};
@@ -550,7 +572,7 @@ void storeSPInteger(void){
 #endif
 
 	//printf("final value = %lld, lowValue = %d \n", value, lowValue);
-    forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex++] = lowValue;
+    forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex++] = lowValue;
 
 }
 
@@ -563,7 +585,7 @@ int isDPInteger(void){
     char *aListPointer = (char*)NULL;
 	int lenAllowedCharactersBuffer = 0;
 	
-	switch (forthTasks[forthCurrentTask].forthBase) {
+	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
     	case OCTAL:
 			aListPointer = aListofOctal;
 			lenAllowedCharactersBuffer = sizeof(aListofOctal);
@@ -632,7 +654,7 @@ void storeDPInteger(void){
 	CELL lowValue = 0;
 	CELL highValue = 0;
 
-	switch (forthTasks[forthCurrentTask].forthBase) {
+	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
     	case OCTAL:
 			aListPointer = aListofOctal;
 			lenAllowedCharactersBuffer = sizeof(aListofOctal);
@@ -681,7 +703,7 @@ void storeDPInteger(void){
 						valueIsNegative = TRUE;
 						break;
 					};
-					value = value*forthTasks[forthCurrentTask].forthBase + ii - 1;
+					value = value*forthTasks[forthState.forthCurrentTask].forthBase + ii - 1;
 					// printf("nachher ii =%d, new value = %lld \n", ii, value);
 					break;
 				};
@@ -715,8 +737,8 @@ void storeDPInteger(void){
 #endif
 
 	//printf("final value = %lld; low = %d, high = %d \n", value, lowValue, highValue);
-    forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex++] = lowValue;
-    forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex++] = highValue;
+    forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex++] = lowValue;
+    forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex++] = highValue;
 }
 #endif
 
@@ -731,7 +753,7 @@ int isFloat(void){
     char *aListPointer = (char*)NULL;
 	int lenAllowedCharactersBuffer = 0;
 	
-	if (forthTasks[forthCurrentTask].forthBase == DECIMAL ) {
+	if (forthTasks[forthState.forthCurrentTask].forthBase == DECIMAL ) {
 		aListPointer = aListofDecimal;
 		lenAllowedCharactersBuffer = sizeof(aListofDecimal);
 	} else {
@@ -757,7 +779,7 @@ void storeFloat(void){
 	int highValue = 0;
     /* TBD */
 	//printf("final value = %f \n", value);
-    forthTasks[forthCurrentTask].floatStackSpace[forthTasks[forthCurrentTask].floatStackIndex++] = value;
+    forthTasks[forthState.forthCurrentTask].floatStackSpace[forthTasks[forthState.forthCurrentTask].floatStackIndex++] = value;
 }
 #endif
 
@@ -766,19 +788,19 @@ int isPermWord(void){
 	int ii = 0;
     int jj = 0;
 	int result = FALSE;
-	/* TBD: lenForthWordLists should be calculated by forthTasks[forthCurrentTask].forthWordLists */
+	/* TBD: lenForthWordLists should be calculated by forthTasks[forthState.forthCurrentTask].forthWordLists */
 	int lenForthWordLists = sizeof(forthWordLists) / 
 							sizeof(forthWordLists[0]);
 	//printf("sizeof wordsLists %d\n", lenForthWordLists);
 	for(ii=0;ii<lenForthWordLists;ii++) {
-      	//printf("wordsQuantity %d, %d\n", ii, forthTasks[forthCurrentTask].forthWordLists[ii].lenForthWords);
-		for(jj=0;jj<forthTasks[forthCurrentTask].forthWordLists[ii].lenForthWords;jj++) {
-	     	//printf("wordlists %d, %s\n", ii, forthTasks[forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName);
-			if ( strcmp(wordBuffer, forthTasks[forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName) == 0 ) {
+      	//printf("wordsQuantity %d, %d\n", ii, forthTasks[forthState.forthCurrentTask].forthWordLists[ii].lenForthWords);
+		for(jj=0;jj<forthTasks[forthState.forthCurrentTask].forthWordLists[ii].lenForthWords;jj++) {
+	     	//printf("wordlists %d, %s\n", ii, forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName);
+			if ( strcmp(wordBuffer, forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName) == 0 ) {
 				result = TRUE;
-				if ( forthTasks[forthCurrentTask].forthWordLists[ii].forthWords[jj].forthOpt != NULL ) {
+				if ( forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthOpt != NULL ) {
 					/* Execute word */
-					forthTasks[forthCurrentTask].forthWordLists[ii].forthWords[jj].forthOpt();
+					forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthOpt();
 				};
 		 		break;
 	 		};
@@ -806,8 +828,10 @@ void forthParseTib(void){
 				/* Finish word detection */
 				aWordDetected = FALSE;
 				
-				/* Reset error message number */
-				forthTasks[forthCurrentTask].errorNumber = 0;
+				/* Reset message numbers */
+				forthTasks[forthState.forthCurrentTask].messageNumber = 0;
+				forthTasks[forthState.forthCurrentTask].errorNumber = 0;
+				forthTasks[forthState.forthCurrentTask].osErrorNumber = 0;
 				
 				isSPIntegerWord = isSPInteger();
 #ifdef DPINTEGER_SUPPORT
@@ -816,6 +840,7 @@ void forthParseTib(void){
 #ifdef FLOAT_SUPPORT
 				isFloatWord = isFloat();
 #endif
+				/* Check if a permanent word, and execute it */
 				isWordFound = isPermWord();
 #if defined (__DEBUG__)
 				printf("word = [%s], isSPInteger = [%d]", wordBuffer, isSPIntegerWord);
@@ -849,11 +874,11 @@ void forthParseTib(void){
 						&& !isFloat()
 #endif
 						) {
-						forthTasks[forthCurrentTask].errorNumber = ERROR_NOT_IN_CURRENT_DIRECTORY;
+						forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_NOT_IN_CURRENT_DIRECTORY;
 					};
-					
+					privateMessageHandler();
 				};	
-				privateErrorHandler();
+				privateMessageHandler();
     			// int aWordIndex = 0;
 		 		// wordBuffer[aWordIndex] = 0;
 			} else {
@@ -891,7 +916,7 @@ void processTib(void) {
 
 /* No processing of commands passed by the command line interface */
 void noParameterPreProcessing(void) {
-    if (forthIsVerbose){
+    if (forthState.forthIsVerbose){
 #if defined(__BORLANDC__) || defined(__TURBOC__)
 		printf("%s, Built %d ( Int=%d, CELL=%d, Ptr=%d, LongLong=%d )\n", COPYRIGHT_MESSAGE, BUILT, \
 			sizeof(int), sizeof(CELL), sizeof(void*), sizeof(LONG_LONG));
@@ -900,9 +925,9 @@ void noParameterPreProcessing(void) {
 			sizeof(int), sizeof(CELL), sizeof(void*), sizeof(LONG_LONG));
 #endif
 	};	
-	forthIsWaitingForKeyboard = FALSE;
-	forthReadsTerminal = TRUE;
-	forthReadsKeyboard = FALSE;
+	forthState.forthIsWaitingForKeyboard = FALSE;
+	forthState.forthReadsTerminal = TRUE;
+	forthState.forthReadsKeyboard = FALSE;
 }
 
 int main(int argc, char* argv[])
@@ -915,18 +940,18 @@ int main(int argc, char* argv[])
 		parameterPreProcessing(argc, argv);
 #endif
 #ifdef H2O_INTERACTIVE
-		if (!forthIsExit) {
+		if (!forthState.forthIsExit) {
 			/* Tib is now an empty string */
 			//ioTib[0] = 0;
 			do {
 				/* Main FORTH input loop */
 				readInput();
 				processTib();
-			} while (!forthIsExit);
+			} while (!forthState.forthIsExit);
 		};
 #endif
 #if H2O_NOEXIT
-		forthIsExit = FALSE;
+		forthState.forthIsExit = FALSE;
 #else 
 		parameterPostProcessing();
 #endif

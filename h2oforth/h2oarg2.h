@@ -15,7 +15,7 @@ void readCode(char* filename) {
 		fputs("\n", stderr);
 		exit(EXIT_CODE_NOTFOUND);
 	};
-    if (forthIsVerbose){
+    if (forthState.forthIsVerbose){
 		printf("H2oForth - Reads a code file. TBD\n");
 	};
 	fclose(fp);
@@ -63,7 +63,7 @@ void readBlocks(char* filename) {
 		perror(filename);
 		fputs("\n", stderr);
 		createDefaultBlock();
-    if (forthIsVerbose){
+    if (forthState.forthIsVerbose){
 		printf("H2oForth - Done Writing the default blocks file %s\n", filename);
 	};
 		exit(EXIT_BLOCKS_NOTFOUND);
@@ -99,7 +99,7 @@ void readFile(char* filename) {
 }
 
 void writeCode(char* filename) {
-    if (forthIsVerbose){
+    if (forthState.forthIsVerbose){
 		printf("H2oForth - Writes a code file. TBD\n");
 	};
 }
@@ -158,55 +158,55 @@ int parameterHelp(void) {
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_KEYBOARD]).name);
 	printf("%c%s, %c%s           Save a code file. TBD\n", PARAMETER_IDENTIFIER, (parameters[PARAMETER_SAVE]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_SAVE]).name);
-	forthIsExit = TRUE;
+	forthState.forthIsExit = TRUE;
 	exitCode = EXIT_HELP;
 	return(TRUE);
 }
 
 int parameterVerbose(void) {
-	forthIsWaitingForParameter = FALSE;
-	forthIsVerbose = !forthIsVerbose;
+	forthState.forthIsWaitingForParameter = FALSE;
+	forthState.forthIsVerbose = !forthState.forthIsVerbose;
  	return(FALSE);
 }
 
 int parameterTerminal(void) {
 	(parameters[PARAMETER_TERMINAL]).isWaitingFor = TRUE;
-	forthIsWaitingForParameter = FALSE;
+	forthState.forthIsWaitingForParameter = FALSE;
 	//printf("Waits for terminal input\n");
 	return(FALSE);
 }
 
 int parameterKeyboard(void) {
 	(parameters[PARAMETER_KEYBOARD]).isWaitingFor = TRUE;
-	forthIsWaitingForKeyboard = TRUE;
-	forthIsWaitingForParameter = FALSE;
+	forthState.forthIsWaitingForKeyboard = TRUE;
+	forthState.forthIsWaitingForParameter = FALSE;
 	//printf("Waits for keyboard input\n");
 	return(FALSE);
 }
 
 int parameterSave(void) {
 	(parameters[PARAMETER_SAVE]).isWaitingFor = TRUE;
-	forthIsWaitingForParameter = FALSE;
+	forthState.forthIsWaitingForParameter = FALSE;
 	return(FALSE);
 }
 
 int parameterDatabase(void) {
-	forthIsWaitingForParameter = FALSE;
+	forthState.forthIsWaitingForParameter = FALSE;
  	return(FALSE);
 }
 
 int parameterLoad(void) {
-	forthIsWaitingForParameter = FALSE;
+	forthState.forthIsWaitingForParameter = FALSE;
 	return(FALSE);
 }
 
 int parameterBlocks(void) {
-	forthIsWaitingForParameter = FALSE;
+	forthState.forthIsWaitingForParameter = FALSE;
 	return(FALSE);
 }
 
 int parameterFile(void) {
-	forthIsWaitingForParameter = FALSE;
+	forthState.forthIsWaitingForParameter = FALSE;
 	return(FALSE);
 }
 
@@ -215,7 +215,7 @@ int parameterUnknown(char* parParameter) {
 	//perror(parParameter);
 	fputs(parParameter, stderr);
 	fputs("\n", stderr);
-	forthIsExit = TRUE;
+	forthState.forthIsExit = TRUE;
 	exitCode = EXIT_UNKNOWN_PARAMETER;
 	return(FALSE);
 }
@@ -250,7 +250,7 @@ void parameterPreProcessing(int argc, char* argv[]) {
 		{
 
 			int jj;
-			forthIsWaitingForParameter = TRUE;
+			forthState.forthIsWaitingForParameter = TRUE;
 			for (jj = PARAMETER_HELP; jj < PARAMETER_FILE + 1; jj++) {
 				if ((argv[ii][0] == PARAMETER_IDENTIFIER) && (strlen(argv[ii]) > 1) && (
 					(strcmp(argv[ii] + 1, (parameters[jj]).shortName) == EQUAL) ||
@@ -263,7 +263,7 @@ void parameterPreProcessing(int argc, char* argv[]) {
 			};
 
 			if  ( (argv[ii][0] == PARAMETER_IDENTIFIER) && ( (strlen(argv[ii]) == 1) || 
-				  forthIsWaitingForParameter ) ) {
+				  forthState.forthIsWaitingForParameter ) ) {
 				parameterUnknown(argv[ii]);
 				parameterIsUnknown = TRUE;
 			};
@@ -311,34 +311,34 @@ void parameterPreProcessing(int argc, char* argv[]) {
 #else
 		(parameters[PARAMETER_TERMINAL]).isWaitingFor = TRUE;
 		(parameters[PARAMETER_KEYBOARD]).isWaitingFor = TRUE;
-   		forthIsWaitingForKeyboard = (parameters[PARAMETER_KEYBOARD]).isWaitingFor;
+   		forthState.forthIsWaitingForKeyboard = (parameters[PARAMETER_KEYBOARD]).isWaitingFor;
 #endif
 	};
 
 #if H2O_NOEXIT 
 	(parameters[PARAMETER_TERMINAL]).isWaitingFor = TRUE;
 	(parameters[PARAMETER_KEYBOARD]).isWaitingFor = FALSE;
-	forthIsWaitingForKeyboard = (parameters[PARAMETER_KEYBOARD]).isWaitingFor;
-	forthReadsTerminal = TRUE;
-	forthReadsKeyboard = FALSE;
+	forthState.forthIsWaitingForKeyboard = (parameters[PARAMETER_KEYBOARD]).isWaitingFor;
+	forthState.forthReadsTerminal = TRUE;
+	forthState.forthReadsKeyboard = FALSE;
 #else
 	if ((parameters[PARAMETER_TERMINAL]).isWaitingFor) {
-		forthReadsTerminal = TRUE;
-        if (forthIsVerbose){
+		forthState.forthReadsTerminal = TRUE;
+        if (forthState.forthIsVerbose){
 			printf("H2OForth - Wait for terminal input\n");
 		};
 	};
 
 	if ((parameters[PARAMETER_KEYBOARD]).isWaitingFor && (!(parameters[PARAMETER_TERMINAL]).isWaitingFor)) {
-		forthReadsKeyboard = TRUE;
-        if (forthIsVerbose){
+		forthState.forthReadsKeyboard = TRUE;
+        if (forthState.forthIsVerbose){
 			printf("H2OForth - Wait for keyboard input(1)\n");
 		};
 	};
 
 	if ((!(parameters[PARAMETER_KEYBOARD]).isWaitingFor) && (!(parameters[PARAMETER_TERMINAL]).isWaitingFor)) {
-		forthIsExit = TRUE;
-        if (forthIsVerbose){
+		forthState.forthIsExit = TRUE;
+        if (forthState.forthIsVerbose){
 			printf("H2OForth - Terminating\n");
 		};
 	};
@@ -349,7 +349,7 @@ void parameterPreProcessing(int argc, char* argv[]) {
 /* Process the commands passed by the command line interface */
 void parameterPostProcessing(void) {
 	if ((parameters[PARAMETER_SAVE]).isWaitingFor) {
-    	if (forthIsVerbose){
+    	if (forthState.forthIsVerbose){
 			printf("H2OForth - Saving compiled code. TBD\n");
 		};
 	}

@@ -4,7 +4,7 @@
 /* Definitions of FORTH words common to one or more FORTH standards & FORTH implementations */
 void fpointDotF(void);
 void commonOctal(void);
-void privateErrorHandler(void);
+void privateMessageHandler(void);
 void privateSetBaseFormat(void);
 void privateSetBaseLFormat(void);
 void bbc79HexDot(void);

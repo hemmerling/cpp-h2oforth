@@ -23,25 +23,25 @@ void readInput(void) {
 
 	ioTib[doTibPointer] = 0; /* Last character is 0, to make the array a valid C/C++ string */
 
-	if (forthReadsKeyboard) {
+	if (forthState.forthReadsKeyboard) {
 		if (doInput == CTRLZ_GETCHAR) {
-			forthIsExit = TRUE;
+			forthState.forthIsExit = TRUE;
 			//printf("CTRLZ_GETCH - Exit\n");
 			//printf("H2oForth is terminating\n");
 		};
 	};
 
-	if (forthReadsTerminal) {
+	if (forthState.forthReadsTerminal) {
 		if ((doInput == CTRLZ_GETCHAR) || (doInput == CTRLZ_EOF)) {
-			if (forthIsWaitingForKeyboard) {
-				forthReadsKeyboard = TRUE;
-				forthReadsTerminal = FALSE;
-        		if (forthIsVerbose){
+			if (forthState.forthIsWaitingForKeyboard) {
+				forthState.forthReadsKeyboard = TRUE;
+				forthState.forthReadsTerminal = FALSE;
+        		if (forthState.forthIsVerbose){
 					printf("\nH2OForth - Wait for keyboard input(2)\n");
 				};
 			}
 			else {
-				forthIsExit = TRUE;
+				forthState.forthIsExit = TRUE;
 				//printf("CTRLZ_GETCHAR - Exit\n");
 				//printf("H2oForth is terminating\n");
 			};

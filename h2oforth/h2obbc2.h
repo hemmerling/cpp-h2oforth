@@ -403,17 +403,17 @@ void bbc79Pick(void) {
 
 void bbc79DotS(void) {
     int ii=0;
-	int dataStackIndex = forthTasks[forthCurrentTask].dataStackIndex;
+	int dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex;
 	if (dataStackIndex) {
 		privateSetBaseFormat();
 		printf ("[%d] ",dataStackIndex);
 		for(ii=0; ii<dataStackIndex; ii++) {
-			printf (forthTasks[forthCurrentTask].baseFormat, forthTasks[forthCurrentTask].dataStackSpace[ii]);
+			printf (forthTasks[forthState.forthCurrentTask].baseFormat, forthTasks[forthState.forthCurrentTask].dataStackSpace[ii]);
 			printf ("%s", STRING_SPACE);
 		};
 		printf("\n");
 	} else  {
-		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
+		forthTasks[forthState.forthCurrentTask].messageNumber = MESSAGE_DATASTACK_EMPTY;
 	};
 #if defined (__DEBUG__)
 	printf("bbc79DotS\n");
@@ -590,14 +590,14 @@ void bbc79MSGNum(void) {
 
 /* Display in hexadecimal base in the format of <.> */
 void bbc79HDot(void) {
-	if (forthTasks[forthCurrentTask].dataStackIndex) {
+	if (forthTasks[forthState.forthCurrentTask].dataStackIndex) {
 		if ( sizeof(CELL) == CELLSIZE8 ) {
-			printf("%llx ", forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
+			printf("%llx ", forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
 		} else {
-			printf("%x ", forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
+			printf("%x ", forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
 		}
 	} else  {
-		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
+		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 #if defined (__DEBUG__)
 	printf("bbc79HDot\n");
@@ -606,14 +606,14 @@ void bbc79HDot(void) {
 
 /* Display in decimal base in the format of <.> */
 void bbc79DecDot(void) {
-	if (forthTasks[forthCurrentTask].dataStackIndex) {
+	if (forthTasks[forthState.forthCurrentTask].dataStackIndex) {
 		if ( sizeof(CELL) == CELLSIZE8 ) {
-			printf("%lld ", forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
+			printf("%lld ", forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
 		} else {
-			printf("%d ", forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
+			printf("%d ", forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
 		}
 	} else  {
-		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
+		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 #if defined (__DEBUG__)
 	printf("bbc79DecDot\n");
@@ -633,13 +633,13 @@ void bbc79UDot(void) {
 }
 
 void bbc79Dot(void) {
-	if (forthTasks[forthCurrentTask].dataStackIndex) {
+	if (forthTasks[forthState.forthCurrentTask].dataStackIndex) {
 		privateSetBaseFormat();
-		printf (forthTasks[forthCurrentTask].baseFormat, 
-			    forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
+		printf (forthTasks[forthState.forthCurrentTask].baseFormat, 
+			    forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
 		printf ("%s", STRING_CR);
 	} else  {
-		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
+		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 #if defined (__DEBUG__)
 	printf("bbc79Dot\n");
@@ -648,17 +648,17 @@ void bbc79Dot(void) {
 
 void bbc79DotR(void) {
     int ii=0;
-	int returnStackIndex = forthTasks[forthCurrentTask].returnStackIndex;
+	int returnStackIndex = forthTasks[forthState.forthCurrentTask].returnStackIndex;
 	if (returnStackIndex) {
 		privateSetBaseFormat();
 		printf ("[%d] ",returnStackIndex);
 		for(ii=0; ii<returnStackIndex; ii++) {
-			printf (forthTasks[forthCurrentTask].baseFormat, forthTasks[forthCurrentTask].returnStackSpace[ii]);
+			printf (forthTasks[forthState.forthCurrentTask].baseFormat, forthTasks[forthState.forthCurrentTask].returnStackSpace[ii]);
 			printf ("%s", STRING_SPACE);
 	};
 	printf("\n");
 	} else  {
-		forthTasks[forthCurrentTask].errorNumber = ERROR_RETURNSTACK_EMPTY;
+		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_RETURNSTACK_EMPTY;
 	};
 #if defined (__DEBUG__)
 	printf("bbc79DotR\n");
@@ -667,16 +667,16 @@ void bbc79DotR(void) {
 
 #ifdef DPINTEGER_SUPPORT
 void bbc79DDot(void) {
-	if (forthTasks[forthCurrentTask].dataStackIndex >= 2) {
+	if (forthTasks[forthState.forthCurrentTask].dataStackIndex >= 2) {
 		LONG_LONG value = 0;
 		privateSetBaseLFormat();
-		value = (LONG_LONG)(forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex])
-		                    <<(sizeof(forthTasks[forthCurrentTask].dataStackSpace[0])*4); /* ?? */
-		printf (forthTasks[forthCurrentTask].baseFormat, value +
-				forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
+		value = (LONG_LONG)(forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex])
+		                    <<(sizeof(forthTasks[forthState.forthCurrentTask].dataStackSpace[0])*4); /* ?? */
+		printf (forthTasks[forthState.forthCurrentTask].baseFormat, value +
+				forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
 		printf ("%s", STRING_CR);
 	} else  {
-		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
+		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 #if defined (__DEBUG__)
 	printf("bbc79DDot\n");
@@ -686,15 +686,15 @@ void bbc79DDot(void) {
 
 #ifdef DPINTEGER_SUPPORT
 void bbc79DDotRDot(void) {
-	if (forthTasks[forthCurrentTask].returnStackIndex >= 2) {
+	if (forthTasks[forthState.forthCurrentTask].returnStackIndex >= 2) {
 		privateSetBaseLFormat();
-		printf (forthTasks[forthCurrentTask].baseFormat, 
-		        ((LONG_LONG)(forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]) 
+		printf (forthTasks[forthState.forthCurrentTask].baseFormat, 
+		        ((LONG_LONG)(forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]) 
 				<< sizeof(LONG_LONG)) +
-				forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex]);
+				forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
 		printf ("%s", STRING_CR);
 	} else  {
-		forthTasks[forthCurrentTask].errorNumber = ERROR_RETURNSTACK_EMPTY;
+		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_RETURNSTACK_EMPTY;
 	};
 #if defined (__DEBUG__)
 	printf("bbc79DDotRDot\n");
@@ -1139,8 +1139,8 @@ void bbc79ZSemicolonCode(void) {
 }
 
 void bbc79Decimal(void) {
-	forthTasks[forthCurrentTask].forthBase = DECIMAL;
-	forthTasks[forthCurrentTask].baseFormat = BASE_FORMAT_DECIMAL;
+	forthTasks[forthState.forthCurrentTask].forthBase = DECIMAL;
+	forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_DECIMAL;
 #if defined (__DEBUG__)
 	printf("bbc79Decimal\n");
 #endif
@@ -1153,8 +1153,8 @@ void bbc79CR(void) {
 }
 
 void bbc79Hex(void) {
-	forthTasks[forthCurrentTask].forthBase = HEX;
-	forthTasks[forthCurrentTask].baseFormat = BASE_FORMAT_HEX;
+	forthTasks[forthState.forthCurrentTask].forthBase = HEX;
+	forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_HEX;
 #if defined (__DEBUG__)
 	printf("bbc79Hex\n");
 #endif
@@ -1386,11 +1386,11 @@ void bbc79DPL(void) {
 /* ": DECIMAL 0A BASE ! ; ( MAKE DECIMAL THE IN-OUT BASE *)" */
 /* "BASE @ DEC. ( Display the value of BASE )" */
 void bbc79Base(void) {
-	if (forthTasks[forthCurrentTask].dataStackIndex < MAX_DATASTACK-1) {
-		forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex++] = 
-			(CELL)&(forthTasks[forthCurrentTask].forthBase);
+	if (forthTasks[forthState.forthCurrentTask].dataStackIndex < MAX_DATASTACK-1) {
+		forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex++] = 
+			(CELL)&(forthTasks[forthState.forthCurrentTask].forthBase);
 	} else {
-		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_FULL;
+		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_FULL;
 	};
 #if defined (__DEBUG__)
 	printf("bbc79Base\n");
@@ -1614,11 +1614,11 @@ void bbc79PlusStore(void) {
 }
 
 void bbc79Store(void) {
-	if (forthTasks[forthCurrentTask].dataStackIndex >= 2) {
-		CELL *address = (CELL *) forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex];
-		*address = (CELL) forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex];
+	if (forthTasks[forthState.forthCurrentTask].dataStackIndex >= 2) {
+		CELL *address = (CELL *) forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex];
+		*address = (CELL) forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex];
 	} else {
-		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
+		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 #if defined (__DEBUG__)
 	printf("bbc79Store\n");
@@ -1632,11 +1632,11 @@ void bbc79CStore(void) {
 }
 
 void bbc79Fetch(void) {
-		if (forthTasks[forthCurrentTask].dataStackIndex) {
-		CELL *address = (CELL *) forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex];
-		forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex++] = *address;
+		if (forthTasks[forthState.forthCurrentTask].dataStackIndex) {
+		CELL *address = (CELL *) forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex];
+		forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex++] = *address;
 	} else {
-		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
+		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 
 #if defined (__DEBUG__)
@@ -1755,13 +1755,13 @@ void bbc79DPlus(void) {
 #endif
 
 void bbc79Plus(void) {
- 	if (forthTasks[forthCurrentTask].dataStackIndex >= 2) {
+ 	if (forthTasks[forthState.forthCurrentTask].dataStackIndex >= 2) {
 		CELL value  = 
-			forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex] +
-			forthTasks[forthCurrentTask].dataStackSpace[--forthTasks[forthCurrentTask].dataStackIndex];
-		forthTasks[forthCurrentTask].dataStackSpace[forthTasks[forthCurrentTask].dataStackIndex++] = value;
+			forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex] +
+			forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex];
+		forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex++] = value;
 	} else  {
-		forthTasks[forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
+		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 #if defined (__DEBUG__)
 	printf("bbc79Plus\n");

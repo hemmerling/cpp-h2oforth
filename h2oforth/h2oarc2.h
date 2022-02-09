@@ -7,7 +7,7 @@
 unsigned int ioKey(void) {
 #if defined(__MSDOS__) || defined(__WINDOWS__)
 	/* MSDOS, Windows */
-	if (forthReadsKeyboard) {
+	if (forthState.forthReadsKeyboard) {
 		/* This generic os function reads a single character stroke from the keyboard */
 		return(_getch());
 	}
@@ -24,7 +24,7 @@ unsigned int ioKey(void) {
 
 /* emit         ( x – )       Print low byte of x as an ASCII character  */
 void ioEmit(unsigned int varByte) {
-	if (forthReadsKeyboard) {
+	if (forthState.forthReadsKeyboard) {
 #if defined (__WATCOMC__)
 		/* With WATCOMC, console input is not echoed, if written to standard output by putchar() */
 		_putch((char)varByte);

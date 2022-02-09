@@ -338,10 +338,10 @@ typedef  struct _forthWordList {
 	const typedef_forthWord *forthWords;
 } typedef_forthWordList;
 
-typedef  struct _forthError {
-	const int errorNumber;
-	const char* errorMessage;
-} typedef_forthError;
+typedef  struct _forthMessage {
+	const int messageNumber;
+	const char* messageText;
+} typedef_forthMessage;
 
 /* Variables */
 
@@ -353,8 +353,12 @@ typedef  struct _forthError {
 #define ERROR_RETURNSTACK_EMPTY 25
 #define ERROR_RETURNSTACK_FULL 26
 
+#define MESSAGE_DATASTACK_EMPTY 1
+
+#define OSERROR_FILEOPEN 1
+
 /* Richard De Grandis-Harrison: FORTH on the BBC Microcomputer", page 159ff */
-static const typedef_forthError forthErrors[] = {
+static const typedef_forthMessage forthErrors[] = {
 			{ 0, "No error" }, /* not for display, was: "reserved!" */
 			{ 1, "Stack Empty" },
 			{ 2, "Dictionary Full" },
@@ -380,9 +384,21 @@ static const typedef_forthError forthErrors[] = {
 			{ 22, "Use Only When LOADing" },
 			{ 23, "Off Current Editing Screen" },
 			{ 24, "Not in CURRENT Vocabulary" },
-			{ 25, "System Memory Clash" }
+			{ 25, "System Memory Clash" },
 			{ 26, "ReturnStack empty" }, /* No original error code */
-			{ 27, "ReturnStack full" }, /* No original error code */
+			{ 27, "ReturnStack full" } /* No original error code */
+};
+
+/* Original BBC Forth messages, which are not errors */
+static const typedef_forthMessage forthMessages[] = {
+			{ 0, "No message" }, /* not for display */
+			{ 1, "Empty" }, /* No original error code */
+};
+
+/* Error messages of the operating system, e.g with file I/O */
+static const typedef_forthMessage forthOsErrors[] = {
+			{ 0, "No message" }, /* not for display */
+			{ 1, "File Open" }, /* No original error code */
 };
 
 static const typedef_forthWord forthWords[] = {
