@@ -20,10 +20,6 @@
 
 #include "h2oforth.h"
 
-/* Configuration switch */
-//#undef H2O_INTERACTiVE
-#define H2O_INTERACTIVE
-
 /* Architecture detection & configuration & architecture-specific code  */
 #include "h2oarc1.h"
 

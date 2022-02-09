@@ -1,13 +1,6 @@
 #ifndef H2OFORTH
 #define H2OFORTH 
 
-#define __DEBUG__
-//#undef __DEBUG__
-
-/******************/
-#define BUILT 1
-/******************/
-
 #define AIM65_FORTH 1
 #define ATARICOINUP_FORTH 2
 #define BBCMICRO_FORTH 3
@@ -76,6 +69,18 @@
 #define SYSTEM_ARCHITECTURE_646464BIT 5
 #define SYSTEM_ARCHITECTURE_6464128BIT 6
 
+
+/*********************************/
+/* Configuration switches        */
+
+#define BUILT 1
+
+//#undef __DEBUG__
+#define __DEBUG__
+
+//#undef H2O_INTERACTiVE
+#define H2O_INTERACTIVE
+
 /* Start of configuration switches */
 //#undef FLOAT_SUPPORT
 #define FLOAT_SUPPORT
@@ -128,6 +133,7 @@
 //#define H2O_FORTH_PRIMITIVES WIN32_FORTH
 
 /* End of configuration switches */
+/*********************************/
 
 #define FALSE 0
 #define EQUAL 0
