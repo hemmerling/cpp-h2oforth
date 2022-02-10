@@ -50,6 +50,15 @@ typedef struct _forthState {
 /* Variables */
 typedef_forthState forthState;
 
+/* tib = Terminal input buffer, where input is parsed from */
+char ioTib[MAX_INPUTBUFFER];
+
+/* Word buffer */
+char wordBuffer[MAX_INPUTBUFFER];
+
+/* Block buffer, used to read Blocks files, by command line parameter support functions */
+char ioBlockBuffer[MAX_BLOCKBUFFER];
+
 /********Global FORTH Variables ********************/
 
 #undef FORTHSTD_MINIMAL
@@ -227,6 +236,7 @@ typedef  struct _forthTask {
         int returnStackIndex;
         CELL dataStackSpace[MAX_DATASTACK];
         void *returnStackSpace[MAX_RETURNSTACK];
+        char ioBlockBuffer[MAX_BLOCKBUFFER];
         typedef_forthWordList *forthWordLists;
         typedef_forthMessage *forthErrors; 
         typedef_forthMessage *forthMessages; 

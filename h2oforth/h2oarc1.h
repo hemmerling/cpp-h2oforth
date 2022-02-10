@@ -3,13 +3,6 @@
 
 /* Architecture detection & configuration & architecture-specific code  */
 
-/* Maximum length of a text file line, usually 255 */
-#define MAX_INPUTBUFFER 255
-/* Blocks are always 1024 bytes */
-#define BLOCK_BUFFER 1024
-#define BLOCK_COLUMNS 64
-#define BLOCK_LINES 16
-
 #if defined(__DOS__) 
 /* Open Watcom C/C++ 1.9 */
 #define __MSDOS__
@@ -67,13 +60,9 @@
 #define _putch(x) putch(x)
 #endif
 
-/* tib = Terminal input buffer, where input is parsed from */
-char ioTib[MAX_INPUTBUFFER];
-
-/* Word buffer */
-char wordBuffer[MAX_INPUTBUFFER];
-
-/* Block buffer, used to read Blocks files */
-char ioBlockBuffer[BLOCK_BUFFER];
+unsigned int ioKey(void);
+void ioEmit(unsigned int);
+void ioStorePort(unsigned long, unsigned int);
+unsigned int ioGetPort(unsigned long);
 
 #endif

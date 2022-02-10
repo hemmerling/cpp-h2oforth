@@ -11,10 +11,12 @@ void readInput(void) {
 	do {
 		doInput = ioKey();
 		/* TBD: Line editing for MSDOS, Windows */
+#ifdef ECHO_KEYBOARD_INPUT
 		if (forthState.forthReadsKeyboard) {
 			/* Just for keyboard input, echo the character */
 			ioEmit(doInput);
 		};
+#endif
 		if (doInput >= SPACE) {
 			ioTib[doTibPointer++] = doInput;
 		}

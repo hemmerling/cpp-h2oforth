@@ -70,10 +70,10 @@
 #define SYSTEM_ARCHITECTURE_6464128BIT 6
 
 #define ERROR_CAUSES_IGNORE 0
-#define ERROR_CAUSES_HALT 2
-#define ERROR_CAUSES_EXIT_TO_PROMPT 3
-#define ERROR_CAUSES_RESET 4
-#define ERROR_CAUSES_EXIT_TO_OS 5
+#define ERROR_CAUSES_HALT 1
+#define ERROR_CAUSES_EXIT_TO_PROMPT 2
+#define ERROR_CAUSES_RESET 3
+#define ERROR_CAUSES_EXIT_TO_OS 4
 
 /*********************************/
 /* Configuration switches        */
@@ -82,7 +82,7 @@
 #define BUILT 1
 
 //#undef __DEBUG__
-//#define __DEBUG__
+#define __DEBUG__
 
 //#undef __DEVELOP__
 #define __DEVELOP__
@@ -92,6 +92,9 @@
 
 //#undef H2O_INTERACTiVE
 #define H2O_INTERACTIVE
+
+//#undef ECHO_KEYBOARD_INPUT
+#define ECHO_KEYBOARD_INPUT
 
 #define ERROR_BEHAVIOUR ERROR_CAUSES_IGNORE
 //#define ERROR_BEHAVIOUR ERROR_CAUSES_HALT
@@ -194,7 +197,14 @@
 #define MAX_DATASTACK 1024
 #define MAX_FLOATSTACK 64
 #define MAX_RETURNSTACK 1024
+/* Blocks are always 1024 bytes */
+#define MAX_BLOCKBUFFER 1024
+/* Maximum length of a text file line, usually 255 */
+#define MAX_INPUTBUFFER 255
 #define MAX_FORTHTASKS 1
+
+#define BLOCK_COLUMNS 64
+#define BLOCK_LINES 16
 
 #define BASE_FORMAT_DECIMAL "%d"
 #define BASE_FORMAT_EMPTY ""
@@ -355,10 +365,6 @@
 #define DPINTEGER_SUPPORT
 #endif
 
-unsigned int ioKey(void);
-void ioEmit(unsigned int);
-void ioStorePort(unsigned long, unsigned int);
-unsigned int ioGetPort(unsigned long);
 void forthInit(void);
 int isSPInteger(void);
 void storeSPInteger(void);
