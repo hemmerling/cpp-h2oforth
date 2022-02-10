@@ -48,7 +48,6 @@ void readCode(char*);
 void createDefaultBlock(void);
 void readBlocks(char*);
 void readFile(char*);
-void readInput(void);
 void writeCode(char*);
 void processTib(void);
 int parameterHelp(void);

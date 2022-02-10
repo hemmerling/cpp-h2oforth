@@ -82,7 +82,10 @@
 #define BUILT 1
 
 //#undef __DEBUG__
-#define __DEBUG__
+//#define __DEBUG__
+
+//#undef __DEVELOP__
+#define __DEVELOP__
 
 //#undef FLOAT_SUPPORT
 #define FLOAT_SUPPORT

@@ -977,6 +977,14 @@ void bbc79IDDot(void) {
 }
 
 void bbc79Error(void) {
+	if (forthTasks[forthState.forthCurrentTask].dataStackIndex) {
+		int errorNumber = forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex];
+		/* Originally, two spaces between "ERROR" and "?" */
+		printf("ERROR  ? %s\n", 
+			forthTasks[forthState.forthCurrentTask].forthErrors[errorNumber].messageText);
+		} else  {
+			forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
+	};
 #if defined (__DEBUG__)
 	printf("bbc79Error\n");
 #endif
@@ -1227,6 +1235,17 @@ void bbc79QComp(void) {
 }
 
 void bbc79QError(void) {
+	if (forthTasks[forthState.forthCurrentTask].dataStackIndex >=2) {
+		CELL errorNumber = forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex];
+		if (forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]) {
+			forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex++] = errorNumber;
+			printf("test %d %d\n",forthTasks[forthState.forthCurrentTask].dataStackIndex, errorNumber);
+			/* Call another FORTH word */
+			bbc79Error();
+		};
+	} else  {
+		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
+	};
 #if defined (__DEBUG__)
 	printf("bbc79QError\n");
 #endif

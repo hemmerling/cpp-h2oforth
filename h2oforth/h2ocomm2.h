@@ -36,13 +36,13 @@ void privateMessageHandler(void) {
 	int errorNumber = forthTasks[forthState.forthCurrentTask].errorNumber;
 	int messageNumber = forthTasks[forthState.forthCurrentTask].messageNumber;
 	int osErrorNumber = forthTasks[forthState.forthCurrentTask].osErrorNumber;
-#if defined (__DEBUG__)
+#if defined (__DEVELOP__)
 	int sizeOfErrors = sizeof(forthErrors)/sizeof(forthErrors[0]);
 	int sizeOfMessages = sizeof(forthMessages)/sizeof(forthMessages[0]);
 	int sizeOfOsErrors = sizeof(forthOsErrors)/sizeof(forthOsErrors[0]);
 #endif
 	if(errorNumber 
-#if defined (__DEBUG__)
+#if defined (__DEVELOP__)
 	   && ( errorNumber < sizeOfErrors)
 #endif
 	  ) {
@@ -51,7 +51,7 @@ void privateMessageHandler(void) {
 				forthTasks[forthState.forthCurrentTask].errorNumber); 
 	};
 	if(messageNumber 
-#if defined (__DEBUG__)
+#if defined (__DEVELOP__)
 	   && ( messageNumber < sizeOfMessages)
 #endif
 	   ) {
@@ -59,7 +59,7 @@ void privateMessageHandler(void) {
 				forthTasks[forthState.forthCurrentTask].forthMessages[forthTasks[forthState.forthCurrentTask].messageNumber].messageText);
 	};
 	if(osErrorNumber 
-#if defined (__DEBUG__)
+#if defined (__DEVELOP__)
    	   && ( osErrorNumber < sizeOfOsErrors)
 #endif
 	  ) {

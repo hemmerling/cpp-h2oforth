@@ -352,6 +352,10 @@ typedef  struct _forthMessage {
 #define ERROR_NOT_IN_CURRENT_DIRECTORY 24
 #define ERROR_RETURNSTACK_EMPTY 25
 #define ERROR_RETURNSTACK_FULL 26
+#define ERROR_SPINTEGER_UNDERFLOW 27
+#define ERROR_SPINTEGER_OVERFLOW 28
+#define ERROR_DPINTEGER_UNDERFLOW 29
+#define ERROR_DPINTEGER_OVERFLOW 30
 
 #define MESSAGE_DATASTACK_EMPTY 1
 
@@ -386,13 +390,17 @@ static const typedef_forthMessage forthErrors[] = {
 			{ 24, "Not in CURRENT Vocabulary" },
 			{ 25, "System Memory Clash" },
 			{ 26, "ReturnStack empty" }, /* No original error code */
-			{ 27, "ReturnStack full" } /* No original error code */
+			{ 27, "ReturnStack full" }, /* No original error code */
+			{ 28, "SP Integer Underflow!" }, /* No original error code */
+			{ 29, "SP Integer Overflow!" }, /* No original error code */
+			{ 30, "DP Integer Underflow!" }, /* No original error code, unused */
+			{ 31, "DP Integer Overflow!" } /* No original error code */
 };
 
 /* Original BBC Forth messages, which are not errors */
 static const typedef_forthMessage forthMessages[] = {
 			{ 0, "No message" }, /* not for display */
-			{ 1, "Empty" }, /* No original error code */
+			{ 1, "Empty" }, /* Original message, but no original error code */
 };
 
 /* Error messages of the operating system, e.g with file I/O */
@@ -648,11 +656,13 @@ static const typedef_forthWord forthWords[] = {
 			{ "PAD", "PAD", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79PAD },
 			{ "C/L", "C/L", TRUE, FALSE, FALSE, 0UL, (forthOperation)CSlashL },
 			{ "BL", "BL", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79BL },
+/*
 			{ "2", "2", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Two },
 			{ "1", "1", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79One },
 			{ "0", "0", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Null },
 			{ "-1", "-1", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79MinusOne },
 			{ "-2", "-2", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79MinusTwo },
+ */
 			{ "USER", "USER", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79User },
 			{ "VARIABLE", "VARIABLE", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Variable },
 			{ "CONSTANT", "CONSTANT", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Constant },
