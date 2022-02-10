@@ -127,6 +127,18 @@ void commonOctDot(void) {
 #endif
 }
 
+void commonAbort(void) {
+#if defined (__DEBUG__)
+	printf("commonAbort\n");
+#endif
+}
+
+void commonAbortQ(void) {
+#if defined (__DEBUG__)
+	printf("commonAbortQ\n");
+#endif
+}
+
 void commonCatch(void) {
 #if defined (__DEBUG__)
 	printf("commonCatch\n");
@@ -139,6 +151,7 @@ void commonThrow(void) {
 #endif
 }
 
+/* Quit with exception handling. Overrides standard implementation in forthWords */
 void commonQuit(void) {
 #if defined (__DEBUG__)
 	printf("commonQuit\n");
