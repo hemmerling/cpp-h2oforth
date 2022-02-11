@@ -278,6 +278,13 @@
 #endif
 #endif
 
+#if defined (__DJGPP__)
+#undef CELL
+#define CELL int
+#define LONG_LONG long long
+#define DPINTEGER_SUPPORT
+#endif
+
 #if defined(__BORLANDC__) || defined(__TURBOC__)
 /* "long long" is not available with Borland C++ 5.5.1 */
 #undef LONG_LONG
