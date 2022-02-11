@@ -87,7 +87,15 @@ void commonOctal(void) {
 
 /* Display in hexadecimal base in the format of <.> */
 void commonHexDot(void) {
-	bbc79HDot();
+	if (forthTasks[forthState.forthCurrentTask].dataStackIndex) {
+		if ( sizeof(CELL) == CELLSIZE8 ) {
+			printf("%llx ", forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
+		} else {
+			printf("%x ", forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
+		}
+	} else  {
+		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
+	};
 #if defined (__DEBUG__)
 	printf("commonHexDot\n");
 #endif
@@ -222,6 +230,12 @@ void taskingStop(void) {
 void taskingTask(void) {
 #if defined (__DEBUG__)
 	printf("taskingTask\n");
+#endif
+}
+
+void taskingTasks(void) {
+#if defined (__DEBUG__)
+	printf("taskingTasks\n");
 #endif
 }
 

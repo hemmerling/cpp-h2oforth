@@ -28,6 +28,7 @@ void taskingSingleTask(void);
 void taskingSleep(void);
 void taskingStop(void);
 void taskingTask(void);
+void taskingTasks(void);
 void taskingUnlock(void);
 void taskingWake(void);
 void taskingUPFetch(void);
@@ -71,6 +72,7 @@ static const typedef_forthWord taskingWords[] = {
 			{ "SLEEP", "SLEEP", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingSleep },
 			{ "STOP", "STOP", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingStop },
 			{ "TASK", "TASK", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingTask },
+			{ "TASKS", "TASKS", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingTasks },
 			{ "UNLOCK", "UNLOCK", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingUnlock },
 			{ "STOP", "STOP", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingStop },
 			{ "WAKE", "WAKE", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingWake },

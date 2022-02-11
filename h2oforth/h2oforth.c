@@ -205,6 +205,9 @@ char ioBlockBuffer[MAX_BLOCKBUFFER];
 #include "h2owin1.h"
 #endif
 
+/* Messages and error messages */
+#include "h2omsg1.h"
+
 #ifdef COMMON_FORTH_WORDS
 #include "h2ocomm1.h"
 #endif

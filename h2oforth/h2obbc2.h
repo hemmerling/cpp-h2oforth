@@ -591,15 +591,7 @@ void bbc79MSGNum(void) {
 
 /* Display in hexadecimal base in the format of <.> */
 void bbc79HDot(void) {
-	if (forthTasks[forthState.forthCurrentTask].dataStackIndex) {
-		if ( sizeof(CELL) == CELLSIZE8 ) {
-			printf("%llx ", forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
-		} else {
-			printf("%x ", forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
-		}
-	} else  {
-		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
-	};
+	commonHexDot();
 #if defined (__DEBUG__)
 	printf("bbc79HDot\n");
 #endif

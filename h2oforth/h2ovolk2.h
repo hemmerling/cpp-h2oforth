@@ -4428,7 +4428,7 @@ void volkASmDotFb(void) {
 #endif
 }
 
-void volkvolks4THDotSys(void) {
+void volkVolks4THDotSys(void) {
 #if defined (__DEBUG__)
 	printf("volkvolks4THDotSys\n");
 #endif
