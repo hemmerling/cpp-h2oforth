@@ -261,8 +261,8 @@ static const typedef_forthWordList forthWordLists[] = {
 #ifdef FLOAT_SUPPORT
         , {sizeof(fpointWords)/sizeof(fpointWords[0]), fpointWords}
 #endif
-#ifdef TASKING_SUPPORT_SUPPORT
-        , {sizeof(taskinggWords)/sizeof(taskingWords[0]), taskingWords} 
+#if ((TASKINGSTANDARD == TASKINGSTD_VOLK)) || ( TASKINGSTANDARD == TASKINGSTD_FORTH83 )
+        , {sizeof(taskingWords)/sizeof(taskingWords[0]), taskingWords} 
 #endif       
 #ifdef TESTING_SUPPORT
         , {sizeof(testingWords)/sizeof(testingWords[0]), testingWords}
