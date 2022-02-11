@@ -257,6 +257,7 @@
 #else
 #ifdef _WIN32
 /* Microsoft C/C++, Win32 compilation target */
+/* Open Watcom C/C++ 1.9, Win32 (NT/Win95/Win32s) */
 #undef CELL
 #define CELL int
 #define LONG_LONG long long
@@ -286,14 +287,55 @@
 #endif
 
 #if defined(__BORLANDC__) || defined(__TURBOC__)
-/* "long long" is not available with Borland C++ 5.5.1 */
+/* Borland 5.5.1 and earlier do not support 64-bit "long long" integers, however integers are 32-bit wide.    */
+/* "long long" is rejected by the error message "Too many types in declaration".                              */
+/* Therefore, FORTH Double Integers arithmetic therefore does not work properly, as implemented :-(           */
+#define CELL int
 #undef LONG_LONG
 #define LONG_LONG long
 #undef DPINTEGER_SUPPORT
 #endif
 
+
+#if defined (__WATCOMC__)
+
+/* Open Watcom C/C++ 1.9 */
+#ifdef __DOS__
+#undef CELL
+#define CELL int
+#define LONG_LONG long long
+#define DPINTEGER_SUPPORT
+#ifdef __I86__
+/* Open Watcom C/C++ 1.9, DOS 16-bit */
+#endif
+#ifdef __386__
+/* Open Watcom C/C++ 1.9, DOS 32-bit */
+#endif
+#else
+/* Open Watcom C/C++ 1.9, Win16 & Win386(Watcom Extender) */
+#undef CELL
+#define CELL int
+#define LONG_LONG long long
+#define DPINTEGER_SUPPORT
+#ifdef __I86__
+/* Open Watcom C/C++ 1.9, Win16 */
+#endif
+#ifdef __386__
+/* Open Watcom C/C++ 1.9, Win386(Watcom Extender), 16-bit application */
+#endif
+#ifdef _WIN32
+/* Open Watcom C/C++ 1.9, Win32 (NT/Win95/Win32s) */
+#undef CELL
+#define CELL int
+#define LONG_LONG long long
+#define DPINTEGER_SUPPORT
+#endif
+#endif
+#endif
+
 #if defined(AVR_UNO) || defined(AVR_ADK)
 /* "long long" is not available with Arduino AVR C/C++ */
+#define CELL int
 #undef LONG_LONG
 #define LONG_LONG long
 #undef DPINTEGER_SUPPORT
@@ -307,7 +349,6 @@
 
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_081616BIT )
 /* Emulation of 081616BIT targets */
-#define CELLSIZE 2
 #define CELL int
 #define LONG_LONG long
 #define DPINTEGER_SUPPORT

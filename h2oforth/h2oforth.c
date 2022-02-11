@@ -388,7 +388,6 @@ void forthInit(void) {
         forthState.forthCurrentTask= 0;
 
         for(ii=0; ii<MAX_FORTHTASKS; ii++) {
-                int jj = 0;
                 forthTasks[ii].baseFormat = BASE_FORMAT_DECIMAL;
                 forthTasks[ii].forthBase = DECIMAL;
                 forthTasks[ii].errorNumber = 0;

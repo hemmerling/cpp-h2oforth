@@ -20,11 +20,6 @@
 #endif
 
 #if defined(__BORLANDC__) || defined(__TURBOC__)
-/* Borland 5.5.1 does not support 64-bit "long long" integers, however integers are 32-bit wide.    */
-/* "long long" is rejected by the error message "Too many types in declaration".                    */
-/* Therefore, FORTH Double Integers arithmetic therefore does not work properly, as implemented :-( */
-#undef LONG_LONG
-#define LONG_LONG long
 #define _putch(x) putch(x)
 #if (__BORLANDC__ < 0x0550)
 /* Borland C/C++ 5.02  */
@@ -52,6 +47,26 @@
 #if defined (__WATCOMC__)
 /* Open Watcom C/C++ 1.9 */
 #define _putch(x) putch(x)
+
+#ifdef __DOS__
+#ifdef __I86__
+/* Open Watcom C/C++ 1.9, DOS 16-bit */
+#endif
+#ifdef __386__
+/* Open Watcom C/C++ 1.9, DOS 32-bit */
+#endif
+#else
+/* Open Watcom C/C++ 1.9, Win16 & Win386(Watcom Extender) */
+#ifdef __I86__
+/* Open Watcom C/C++ 1.9, Win16 */
+#endif
+#ifdef __386__
+/* Open Watcom C/C++ 1.9, Win386(Watcom Extender), 16-bit application */
+#endif
+#ifdef _WIN32
+/* Open Watcom C/C++ 1.9, Win32 (NT/Win95/Win32s) */
+#endif
+#endif
 #endif
 
 #if defined (__DJGPP__)
