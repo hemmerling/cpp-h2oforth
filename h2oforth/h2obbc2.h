@@ -413,7 +413,8 @@ void bbc79DotS(void) {
 		};
 		printf("\n");
 	} else  {
-		forthTasks[forthState.forthCurrentTask].messageNumber = MESSAGE_DATASTACK_EMPTY;
+		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
+		// forthTasks[forthState.forthCurrentTask].messageNumber = MESSAGE_DATASTACK_EMPTY;
 	};
 #if defined (__DEBUG__)
 	printf("bbc79DotS\n");

@@ -3,35 +3,7 @@
 
 /* Declarations of FORTH words common to one or more FORTH standards & FORTH implementations */
 
-/* Primitives */
-#ifdef FLOAT_SUPPORT
-void fpointDotF(void) {
-    int ii=0;
-	int floatStackIndex = forthTasks[forthState.forthCurrentTask].floatStackIndex;
-	if (floatStackIndex) {
-		printf ("[%d] ",floatStackIndex);
-		for(ii=0; ii<floatStackIndex; ii++) {
-			printf ("%f ", forthTasks[forthState.forthCurrentTask].floatStackSpace[ii]);
-		};
-	printf("\n");
-	} else  {
-		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
-	};
-#if defined (__DEBUG__)
-	printf("fpointDotF\n");
-#endif
-}
-#endif
-
-void commonOctal(void) {
-	forthTasks[forthState.forthCurrentTask].forthBase = OCTAL;
-	forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_OCTAL;
-#if defined (__DEBUG__)
-	printf("commonOctal\n");
-#endif
-}
-#endif
-
+/* Internal functions */
 void privateMessageHandler(void) {
 	int errorNumber = forthTasks[forthState.forthCurrentTask].errorNumber;
 	int messageNumber = forthTasks[forthState.forthCurrentTask].messageNumber;
@@ -103,6 +75,16 @@ void privateSetBaseLFormat(void) {
 	};
 }
 
+/* Primitives */
+
+void commonOctal(void) {
+	forthTasks[forthState.forthCurrentTask].forthBase = OCTAL;
+	forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_OCTAL;
+#if defined (__DEBUG__)
+	printf("commonOctal\n");
+#endif
+}
+
 /* Display in hexadecimal base in the format of <.> */
 void commonHexDot(void) {
 	bbc79HDot();
@@ -127,33 +109,160 @@ void commonOctDot(void) {
 #endif
 }
 
-void commonAbort(void) {
+
+#ifdef EXCEPTION_SUPPORT
+void exceptionAbort(void) {
 #if defined (__DEBUG__)
-	printf("commonAbort\n");
+	printf("exceptionAbort\n");
 #endif
 }
 
-void commonAbortQ(void) {
+void exceptionAbortQ(void) {
 #if defined (__DEBUG__)
-	printf("commonAbortQ\n");
+	printf("exceptionAbortQ\n");
 #endif
 }
 
-void commonCatch(void) {
+void exceptionCatch(void) {
 #if defined (__DEBUG__)
-	printf("commonCatch\n");
+	printf("exceptionCatch\n");
 #endif
 }
 
-void commonThrow(void) {
+void exceptionThrow(void) {
 #if defined (__DEBUG__)
-	printf("commonThrow\n");
+	printf("exceptionThrow\n");
 #endif
 }
 
 /* Quit with exception handling. Overrides standard implementation in forthWords */
-void commonQuit(void) {
+void exceptionQuit(void) {
 #if defined (__DEBUG__)
-	printf("commonQuit\n");
+	printf("exceptionQuit\n");
 #endif
 }
+#endif
+
+
+#ifdef FLOAT_SUPPORT
+void fpointDotF(void) {
+    int ii=0;
+	int floatStackIndex = forthTasks[forthState.forthCurrentTask].floatStackIndex;
+	if (floatStackIndex) {
+		printf ("[%d] ",floatStackIndex);
+		for(ii=0; ii<floatStackIndex; ii++) {
+			printf ("%f ", forthTasks[forthState.forthCurrentTask].floatStackSpace[ii]);
+		};
+	printf("\n");
+	} else  {
+		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
+	};
+#if defined (__DEBUG__)
+	printf("fpointDotF\n");
+#endif
+}
+#endif
+
+
+#ifdef TASKING_SUPPORT
+void taskingActivate(void) {
+#if defined (__DEBUG__)
+	printf("taskingActivate\n");
+#endif
+}
+
+void taskingLock(void) {
+#if defined (__DEBUG__)
+	printf("taskingLock\n");
+#endif
+}
+
+void taskingMultiTask(void) {
+#if defined (__DEBUG__)
+	printf("taskingMultiTask\n");
+#endif
+}
+
+void taskingPass(void) {
+#if defined (__DEBUG__)
+	printf("taskingPass\n");
+#endif
+}
+
+void taskingPause(void) {
+#if defined (__DEBUG__)
+	printf("taskingPause\n");
+#endif
+}
+
+void taskingRendezvous(void) {
+#if defined (__DEBUG__)
+	printf("taskingRendezvous\n");
+#endif
+}
+
+void taskingSingleTask(void) {
+#if defined (__DEBUG__)
+	printf("taskingSingleTask\n");
+#endif
+}
+
+void taskingSleep(void) {
+#if defined (__DEBUG__)
+	printf("taskingSleep\n");
+#endif
+}
+
+void taskingStop(void) {
+#if defined (__DEBUG__)
+	printf("taskingStop\n");
+#endif
+}
+
+void taskingTask(void) {
+#if defined (__DEBUG__)
+	printf("taskingTask\n");
+#endif
+}
+
+void taskingUnlock(void) {
+#if defined (__DEBUG__)
+	printf("taskingUnlock\n");
+#endif
+}
+
+void taskingWake(void) {
+#if defined (__DEBUG__)
+	printf("taskingWake\n");
+#endif
+}
+
+void taskingUPFetch(void) {
+#if defined (__DEBUG__)
+	printf("taskingUPFetch\n");
+#endif
+}
+
+void taskingUPStore(void) {
+#if defined (__DEBUG__)
+	printf("taskingUPStore\n");
+#endif
+}
+#endif
+
+
+#ifdef TESTING_SUPPORT
+void testingTCurlyBracket(void) {
+#if defined (__DEBUG__)
+	printf("testingTCurlyBracket\n");
+#endif
+}
+
+void testingCurlyBracketT(void) {
+#if defined (__DEBUG__)
+	printf("testingCurlyBracketT\n");
+#endif
+}
+#endif
+
+#endif

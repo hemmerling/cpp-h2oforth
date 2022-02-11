@@ -251,11 +251,20 @@ typedef  struct _forthTask {
 typedef_forthTask forthTasks[MAX_FORTHTASKS];
 
 static const typedef_forthWordList forthWordLists[] = { 
-        {sizeof(commonWords)/sizeof(commonWords[0]), commonWords}, 
-        {sizeof(forthWords)/sizeof(forthWords[0]), forthWords}
+        {sizeof(commonWords)/sizeof(commonWords[0]), commonWords} 
+#ifdef EXCEPTION_SUPPORT
+        , {sizeof(exceptionWords)/sizeof(exceptionWords[0]), exceptionWords} 
+#endif
 #ifdef FLOAT_SUPPORT
         , {sizeof(fpointWords)/sizeof(fpointWords[0]), fpointWords}
 #endif
+#ifdef TASKING_SUPPORT_SUPPORT
+        , {sizeof(taskinggWords)/sizeof(taskingWords[0]), taskingWords} 
+#endif       
+#ifdef TESTING_SUPPORT
+        , {sizeof(testingWords)/sizeof(testingWords[0]), testingWords}
+#endif
+        , {sizeof(forthWords)/sizeof(forthWords[0]), forthWords}
 };
 
 /******** FORTH Primitives ********************/

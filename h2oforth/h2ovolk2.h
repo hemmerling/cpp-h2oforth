@@ -3214,9 +3214,9 @@ void volkEndQ(void) {
 #endif
 }
 
-void VolkBasOn(void) {
+void volkBasOn(void) {
 #if defined (__DEBUG__)
-	printf("VolkBasOn\n");
+	printf("volkBasOn\n");
 #endif
 }
 
@@ -3229,7 +3229,7 @@ void volkLogo(void) {
 #endif
 
 #if (H2O_FORTH_PRIMITIVES == VOLK_FORTH) || \
-    (H2O_FORTH_PRIMITIVES == volk_ST_FORTH)
+    (H2O_FORTH_PRIMITIVES == VOLK_ST_FORTH)
 void volkPrintALL(void) {
 #if defined (__DEBUG__)
 	printf("volkPrintALL\n");
@@ -4428,9 +4428,9 @@ void volkASmDotFb(void) {
 #endif
 }
 
-void volkVolks4THDotSys(void) {
+void volkvolks4THDotSys(void) {
 #if defined (__DEBUG__)
-	printf("volkVolks4THDotSys\n");
+	printf("volkvolks4THDotSys\n");
 #endif
 }
 
@@ -4640,7 +4640,7 @@ void volkFileLink(void) {
 
 void volkAborted(void) {
 #if defined (__DEBUG__)
-	printf("olkAborted\n");
+	printf("volkAborted\n");
 #endif
 }
 
