@@ -100,8 +100,13 @@
 #undef EXCEPTION_SUPPORT
 //#define EXCEPTION_SUPPORT
 
-#undef FLOAT_SUPPORT
-//#define FLOAT_SUPPORT
+//#undef FLOAT_SUPPORT
+#define FLOAT_SUPPORT
+
+#ifdef FLOAT_SUPPORT
+//#define CELL_FLOAT float
+#define CELL_FLOAT double
+#endif
 
 #undef TESTING_SUPPORT
 //#define TESTING_SUPPORT
@@ -207,9 +212,9 @@
  
 #define COPYRIGHT_MESSAGE "H2oForth by Rolf Hemmerling, (c) 2021-2022, MIT License"
 
-#define MAX_DATASTACK 1024
-#define MAX_FLOATSTACK 64
-#define MAX_RETURNSTACK 1024
+#define MAX_DATASTACK 256
+#define MAX_FLOATSTACK 256
+#define MAX_RETURNSTACK 256
 /* Blocks are always 1024 bytes */
 #define MAX_BLOCKBUFFER 1024
 /* Maximum length of a text file line, usually 255 */
@@ -252,18 +257,18 @@
 #endif
 /* Please adopt this for your host compiler */
 
-/* CELL must have the size of a pointer / address */
+/* CELL_INTEGER must have the size of a pointer / address */
 /* Double Precision Integer just if sizeof(LONG_LONG)>sizeof(int) */
 
 #ifdef _WIN64
 #ifdef __MINGW32__
 /* MinGW, Win32 compiler */
-#define CELL int
+#define CELL_INTEGER int
 #define LONG_LONG long long
 #define DPINTEGER_SUPPORT
 #else
 /* Microsoft C/C++, Win64 compilation target */
-#define CELL long long
+#define CELL_INTEGER long long
 #define LONG_LONG long long
 #undef DPINTEGER_SUPPORT
 #endif
@@ -271,30 +276,30 @@
 #ifdef _WIN32
 /* Microsoft C/C++, Win32 compilation target */
 /* Open Watcom C/C++ 1.9, Win32 (NT/Win95/Win32s) */
-#undef CELL
-#define CELL int
+#undef CELL_INTEGER
+#define CELL_INTEGER int
 #define LONG_LONG long long
 #define DPINTEGER_SUPPORT
 #endif
 
 #ifdef __GNUC__
 #if(__WORDSIZE == 32)
-#undef CELL
-#define CELL int
+#undef CELL_INTEGER
+#define CELL_INTEGER int
 #define LONG_LONG long long
 #define DPINTEGER_SUPPORT
 #endif
 #if(__WORDSIZE == 64)
-#undef CELL
-#define CELL long long
+#undef CELL_INTEGER
+#define CELL_INTEGER long long
 #define LONG_LONG long long
 #undef DPINTEGER_SUPPORT
 #endif
 #endif
 
 #if defined (__DJGPP__)
-#undef CELL
-#define CELL int
+#undef CELL_INTEGER
+#define CELL_INTEGER int
 #define LONG_LONG long long
 #define DPINTEGER_SUPPORT
 #endif
@@ -303,7 +308,7 @@
 /* Borland 5.5.1 and earlier do not support 64-bit "long long" integers, however integers are 32-bit wide.    */
 /* "long long" is rejected by the error message "Too many types in declaration".                              */
 /* Therefore, FORTH Double Integers arithmetic therefore does not work properly, as implemented :-(           */
-#define CELL int
+#define CELL_INTEGER int
 #undef LONG_LONG
 #define LONG_LONG long
 #undef DPINTEGER_SUPPORT
@@ -314,8 +319,8 @@
 
 /* Open Watcom C/C++ 1.9 */
 #ifdef __DOS__
-#undef CELL
-#define CELL int
+#undef CELL_INTEGER
+#define CELL_INTEGER int
 #define LONG_LONG long long
 #define DPINTEGER_SUPPORT
 #ifdef __I86__
@@ -326,8 +331,8 @@
 #endif
 #else
 /* Open Watcom C/C++ 1.9, Win16 & Win386(Watcom Extender) */
-#undef CELL
-#define CELL int
+#undef CELL_INTEGER
+#define CELL_INTEGER int
 #define LONG_LONG long long
 #define DPINTEGER_SUPPORT
 #ifdef __I86__
@@ -338,8 +343,8 @@
 #endif
 #ifdef _WIN32
 /* Open Watcom C/C++ 1.9, Win32 (NT/Win95/Win32s) */
-#undef CELL
-#define CELL int
+#undef CELL_INTEGER
+#define CELL_INTEGER int
 #define LONG_LONG long long
 #define DPINTEGER_SUPPORT
 #endif
@@ -348,7 +353,7 @@
 
 #if defined(AVR_UNO) || defined(AVR_ADK)
 /* "long long" is not available with Arduino AVR C/C++ */
-#define CELL int
+#define CELL_INTEGER int
 #undef LONG_LONG
 #define LONG_LONG long
 #undef DPINTEGER_SUPPORT
@@ -362,7 +367,7 @@
 
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_081616BIT )
 /* Emulation of 081616BIT targets */
-#define CELL int
+#define CELL_INTEGER int
 #define LONG_LONG long
 #define DPINTEGER_SUPPORT
 #undef INT_MIN
@@ -377,7 +382,7 @@
 
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_161632BIT )
 /* Emulation of 161632BIT targets */
-#define CELL int
+#define CELL_INTEGER int
 #define LONG_LONG long
 #define DPINTEGER_SUPPORT
 #undef INT_MIN
@@ -403,25 +408,25 @@
 #endif
 
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_323232BIT ) 
-#define CELL int
+#define CELL_INTEGER int
 #define LONG_LONG long
 #undef DPINTEGER_SUPPORT
 #endif
 
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_326464BIT )
-#define CELL long long
+#define CELL_INTEGER long long
 #define LONG_LONG long long
 #define DPINTEGER_SUPPORT
 #endif
 
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_646464BIT )
-#define CELL int
+#define CELL_INTEGER int
 #define LONG_LONG long long
 #undef DPINTEGER_SUPPORT
 #endif
 
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_6464128BIT )
-#define CELL int
+#define CELL_INTEGER int
 #define LONG_LONG __int128
 #define DPINTEGER_SUPPORT
 #endif

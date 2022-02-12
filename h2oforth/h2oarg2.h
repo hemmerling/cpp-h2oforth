@@ -107,11 +107,19 @@ void writeCode(char* filename) {
 /* Parameter help screen */
 int parameterHelp(void) {
 #if defined(__BORLANDC__) || defined(__TURBOC__)
-	printf("%s, Built %d ( Int=%d, CELL=%d, Ptr=%d, LongLong=%d )\n", COPYRIGHT_MESSAGE, BUILT, \
-			sizeof(int), sizeof(CELL), sizeof(void*), sizeof(LONG_LONG));
+	printf("%s, Built %d\n( Int=%d, INTEGER_CELL=%d, *Int=%d, Long Long=%d", COPYRIGHT_MESSAGE, BUILT, \
+			sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
+#ifdef FLOAT_SUPPORT
+	printf(", FLOAT_CELL=%d", sizeof(CELL_FLOAT));
+#endif
+	printf(" )\n");
 #else
-	printf("%s, Built %d ( Int=%zd, CELL=%zd, Ptr=%zd, LongLong=%zd )\n", COPYRIGHT_MESSAGE, BUILT, \
-			sizeof(int), sizeof(CELL), sizeof(void*), sizeof(LONG_LONG));
+	printf("%s, Built %d\n( Int=%zd, INTEGER_CELL=%zd, *Int=%zd, Long Long=%zd", COPYRIGHT_MESSAGE, BUILT, \
+			sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
+#ifdef FLOAT_SUPPORT
+	printf(", FLOAT_CELL=%zd", sizeof(CELL_FLOAT));
+#endif
+	printf(" )\n");
 #endif
 	printf("\n");
 	printf("H2oForth [%c%s][%c%s][%c%s]\n", PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName,

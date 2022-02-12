@@ -88,7 +88,7 @@ void commonOctal(void) {
 /* Display in hexadecimal base in the format of <.> */
 void commonHexDot(void) {
 	if (forthTasks[forthState.forthCurrentTask].dataStackIndex) {
-		if ( sizeof(CELL) == CELLSIZE8 ) {
+		if ( sizeof(CELL_INTEGER) == CELLSIZE8 ) {
 			printf("%llx ", forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
 		} else {
 			printf("%x ", forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
@@ -104,7 +104,7 @@ void commonHexDot(void) {
 /* Display in octal base in the format of <.> */
 void commonOctDot(void) {
 	if (forthTasks[forthState.forthCurrentTask].dataStackIndex) {
-		if ( sizeof(CELL) == CELLSIZE8 ) {
+		if ( sizeof(CELL_INTEGER) == CELLSIZE8 ) {
 			printf("%llo ", forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
 		} else {
 			printf("%o ", forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);

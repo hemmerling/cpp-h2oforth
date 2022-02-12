@@ -237,7 +237,7 @@ typedef  struct _forthTask {
         int osErrorNumber;
         int dataStackIndex;
         int returnStackIndex;
-        CELL dataStackSpace[MAX_DATASTACK];
+        CELL_INTEGER dataStackSpace[MAX_DATASTACK];
         void *returnStackSpace[MAX_RETURNSTACK];
         char ioBlockBuffer[MAX_BLOCKBUFFER];
         typedef_forthWordList *forthWordLists;
@@ -669,8 +669,8 @@ void storeDPInteger(void){
         int lenWordBuffer = (int)strlen(wordBuffer);
     char *aListPointer = (char*)NULL;
         int lenAllowedCharactersBuffer = 0;
-        CELL lowValue = 0;
-        CELL highValue = 0;
+        CELL_INTEGER lowValue = 0;
+        CELL_INTEGER highValue = 0;
 
         switch (forthTasks[forthState.forthCurrentTask].forthBase) {
         case OCTAL:
@@ -765,21 +765,57 @@ void storeDPInteger(void){
    interpreted as decimal (regardless of the content of the BASE variable) */
 #ifdef FLOAT_SUPPORT
 int isFloat(void){
+        /* TBD */
         int result = FALSE;
     int aWordIndex = 0;
         int lenWordBuffer = (int)strlen(wordBuffer);
     char *aListPointer = (char*)NULL;
         int lenAllowedCharactersBuffer = 0;
         
-        if (forthTasks[forthState.forthCurrentTask].forthBase == DECIMAL ) {
-                aListPointer = aListofDecimal;
-                lenAllowedCharactersBuffer = sizeof(aListofDecimal);
-        } else {
-                return(result);
+        switch (forthTasks[forthState.forthCurrentTask].forthBase) {
+        case DECIMAL:
+                        aListPointer = aListofDecimal;
+                        lenAllowedCharactersBuffer = sizeof(aListofDecimal);
+                break;
+        default:
+                        return(result);
         };
-        
-        /* TBD */
-
+        /* Don't proceed if just 1 character => "E" is necessary, but is no valid Float */
+        result = ! ( lenWordBuffer == 1);
+        if ( result ) {
+                /* check if number */
+        while(aWordIndex < lenWordBuffer) {
+                        int isNumeric = FALSE;
+                        int startIndex = 0;
+                        int endIndex = 0;
+                        int ii = 0;
+                        if ( aWordIndex == 0 ) {
+                                /* Number can start with "-" */
+                                /* Number can't start with "," or "." */
+                                startIndex = 0;
+                                endIndex = lenAllowedCharactersBuffer-2;
+                        } else if ( aWordIndex == ( lenWordBuffer - 1 ) ) {
+                                        /* "-" may just be the first digit */
+                                        /* Digit is last digit, so it must be "." */
+                                        startIndex = lenAllowedCharactersBuffer-1;
+                                        endIndex = lenAllowedCharactersBuffer;
+                                } else {
+                                        /* "-" may just be the first digit */
+                                        /* Digit ist not the last digit, so it can be ","  and "." */
+                                        startIndex = 1;
+                                        endIndex = lenAllowedCharactersBuffer;
+                        };
+                        for(ii=startIndex; ii<endIndex; ii++) {
+                                //printf("[%d] [%c]  [%c] \n", ii, wordBuffer[aWordIndex], aListPointer[ii] );
+                                if (wordBuffer[aWordIndex] == aListPointer[ii] ) {
+                                        isNumeric = TRUE;
+                                        break;
+                                };
+                        };
+                        result = result && isNumeric;
+                        aWordIndex++;
+                };
+        };
         return(result);
 }
 #endif
@@ -936,11 +972,19 @@ void processTib(void) {
 void noParameterPreProcessing(void) {
     if (forthState.forthIsVerbose){
 #if defined(__BORLANDC__) || defined(__TURBOC__)
-                printf("%s, Built %d ( Int=%d, CELL=%d, Ptr=%d, LongLong=%d )\n", COPYRIGHT_MESSAGE, BUILT, \
-                        sizeof(int), sizeof(CELL), sizeof(void*), sizeof(LONG_LONG));
+	printf("%s, Built %d\n( Int=%d, INTEGER_CELL=%d, *Int=%d, Long Long=%d", COPYRIGHT_MESSAGE, BUILT, \
+			sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
+#ifdef FLOAT_SUPPORT
+	printf(", FLOAT_CELL=%d", sizeof(CELL_FLOAT));        
+#endif
+	printf(" )\n");
 #else
-                printf("%s, Built %d ( Int=%zd, CELL=%zd, Ptr=%zd, LongLong=%zd )\n", COPYRIGHT_MESSAGE, BUILT, \
-                        sizeof(int), sizeof(CELL), sizeof(void*), sizeof(LONG_LONG));
+	printf("%s, Built %d\n( Int=%zd, INTEGER_CELL=%zd, *Int=%zd, Long Long=%zd", COPYRIGHT_MESSAGE, BUILT, \
+			sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
+#ifdef FLOAT_SUPPORT
+	printf(", FLOAT_CELL=%zd", sizeof(CELL_FLOAT));
+#endif
+	printf(" )\n");
 #endif
         };      
         forthState.forthIsWaitingForKeyboard = FALSE;
