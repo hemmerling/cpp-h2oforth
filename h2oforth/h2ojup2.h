@@ -610,7 +610,7 @@ void jupiterDot(void) {
 	printf("jupiterDot\n");
 #endif
 }
- 
+
 void jupiterSign(void) {
 #if defined (__DEBUG__)
 	printf("jupiterDot\n");
@@ -664,7 +664,7 @@ void jupiterQDup(void) {
 	printf("jupiterQDup\n");
 #endif
 }
- 
+
 void jupiterRFrom(void) {
 #if defined (__DEBUG__)
 	printf("jupiterRFrom\n");

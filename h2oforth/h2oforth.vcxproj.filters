@@ -44,5 +44,164 @@
     <ClInclude Include="h2obbc1.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="h2oaim1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2oaim2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2oarc1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2oarc2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2ocam1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2ocam2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2ocoin1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2ocoin2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2ocol1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2ocol2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2oe1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2oe2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2ofig1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2ofig2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2ohec1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2ohec2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2oint1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2oint2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2ojup1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2ojup2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2oknbe1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2oknbe2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2olape1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2olape2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2omec1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2omec2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2omsg1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2omvp1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2omvp2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2onels1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2onels2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2onesp1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2onue1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2opat1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2opat2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2oq1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2oq2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2orca1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2orca2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2orsc1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2orsc2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2osec1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2osec2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2osnin1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2osnin2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2oter1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2oter2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2ov1c64.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2ov1cpm.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2ov1pc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2ov1st.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2ovolk1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="h2ovolk2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

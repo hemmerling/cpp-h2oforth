@@ -19,7 +19,7 @@ void patelRSFrom(void) {
 }
 
 /* 1+ ( x – y ) */
- void patelAdd1(void) {
+void patelAdd1(void) {
 #if defined (__DEBUG__)
 	printf("patelAdd1\n");
 #endif

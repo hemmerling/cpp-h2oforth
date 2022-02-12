@@ -8,16 +8,16 @@ unsigned int ioKey(void) {
 #if defined(__MSDOS__) || defined(__WINDOWS__)
 	/* MSDOS, Windows */
 	if (forthState.forthReadsKeyboard) {
-		/* 
+		/*
 		   This generic os function reads a single character stroke from the keyboard.
-		   Characters are not echoed. 
+		   Characters are not echoed.
 		*/
 		return(_getch());
 	}
 	else {
-		/* 
-		    This generic os function reads characters from keyboard until the user presses the RETURN key.
-			Characters are echoed on the screen during input. 
+		/*
+			This generic os function reads characters from keyboard until the user presses the RETURN key.
+			Characters are echoed on the screen during input.
 		 */
 		return(getchar());
 	};

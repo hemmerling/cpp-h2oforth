@@ -1144,7 +1144,7 @@ void hectorPFA(void) {
 	printf("hectorPFA\n");
 #endif
 }
- 
+
 void hectorNFA(void) {
 #if defined (__DEBUG__)
 	printf("hectorNFA\n");
@@ -1228,7 +1228,7 @@ void hectorOffset(void) {
 	printf("hectorOffset\n");
 #endif
 }
- 
+
 void hectorHLD(void) {
 #if defined (__DEBUG__)
 	printf("hectorHLD\n");
@@ -1270,7 +1270,7 @@ void hectorCurrent(void) {
 	printf("hectorCurrent\n");
 #endif
 }
- 
+
 void hectorContext(void) {
 #if defined (__DEBUG__)
 	printf("hectorContext\n");
@@ -1306,7 +1306,7 @@ void hectorDP(void) {
 	printf("hectorDP\n");
 #endif
 }
- 
+
 void hectorFence(void) {
 #if defined (__DEBUG__)
 	printf("hectorFence\n");

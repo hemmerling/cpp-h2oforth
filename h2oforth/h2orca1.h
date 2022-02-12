@@ -120,7 +120,7 @@ void rcamicroCopy(void);
 void rcamicroDelete(void);
 void rcamicroTop(void);
 /* Lower Baud Serial I/O */
-/* Terminal I/O */ 
+/* Terminal I/O */
 void rcamicroType(void);
 void rcamicroCount(void);
 void rcamicroMsg(void);
@@ -242,7 +242,7 @@ void rcamicroParen(void);
 void rcamicroSemicolon(void);
 void rcamicroHColon(void);
 void rcamicroColon(void);
- /* Initialize Nucleus */
+/* Initialize Nucleus */
 void rcamicroCopy(void);
 /* Initialize Symbols */
 void rcamicroComputer(void);
@@ -344,7 +344,7 @@ static const typedef_forthWord forthWords[] = {
 			{ "FLUSH", "FLUSH", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroFlush },
 			{ "TASK", "TASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroTask },
 			{ "VANISH", "VANISH", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroVanish }, /* Vocabulary Assembler */
- 			{ "CODE", "CODE", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroCode },
+			{ "CODE", "CODE", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroCode },
 			{ ";CODE", ";CODE", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroColonCode },
 			{ "PAGE", "PAGE", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroPage },
 			{ "OCTAL", "OCTAL", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroOctal },
@@ -437,7 +437,7 @@ static const typedef_forthWord forthWords[] = {
 			{ "DELETE", "DELETE", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroDelete },
 			{ "TOP", "TOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroTop },
 			/* Lower Baud Serial I/O */
-			{ "TYPE", "TYPE", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroType }, /* Terminal I/O */ 
+			{ "TYPE", "TYPE", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroType }, /* Terminal I/O */
 			{ "COUNT", "COUNT", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroCount },
 			{ "MSG", "MSG", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroMsg },
 			{ "EXPECT", "EXPECT", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroExpect },
@@ -600,7 +600,7 @@ static const typedef_forthWord forthWords[] = {
 			{ "1POP", "1POP", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroOnePop },
 			{ ";S", ";S", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroSemicolonS },
 			{ "<", "<", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroLess }, /* More Definitions */
-			{ ">", ">", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroGreater }, 
+			{ ">", ">", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroGreater },
 			{ "=", "=", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroEqual },
 			{ "H:", "H:", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroHColon }, /* Cross Illustration */
 			{ "LITTLE", "LITTLE", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroLittle },

@@ -1613,7 +1613,7 @@ void nelsonWindows(void) {
 #endif
 }
 
-void nelsonFDotS (void) {
+void nelsonFDotS(void) {
 #if defined (__DEBUG__)
 	printf("nelsonFDotS\n");
 #endif

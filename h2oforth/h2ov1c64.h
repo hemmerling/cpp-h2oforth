@@ -402,7 +402,7 @@ typedef  struct _forthWord {
 } typedef_forthWord;
 
 /* Variables */
-/* Words which start or end with a left parentheses "(word" are internal words, 
+/* Words which start or end with a left parentheses "(word" are internal words,
    which are named with other FORTH implementations with surrounding parentheses "(word)" */
 
 #if H2O_FORTH_PRIMITIVES == VOLK_C64_FORTH

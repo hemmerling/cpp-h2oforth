@@ -255,57 +255,57 @@ void mvpCfa(void);
 void mvpCFetchL(void);
 void mvpCFetch(void);
 void mvpCSlashL(void);
-void mvpCComma(void);			
-void mvpCStoreL(void);			
-void mvpCStore(void);			
-void mvpBye(void);			
-void mvpBuffer(void);			
-void mvpBranch(void);			
-void mvpBPDrv(void);			
-void mvpBlock(void);			
-void mvpBlkSlashDrv(void);			
-void mvpBlk(void);			
-void mvpBlank(void);			
-void mvpBl(void);			
-void mvpBegin(void);			
-void mvpBase(void);			
-void mvpAPush(void);			
-void mvpAnd(void);			
-void mvpAllot(void);			
-void mvpAgain(void);			
-void mvpAbs(void);			
-void mvpAbortQuote(void);			
-void mvpAbort(void);			
-void mvpFetchL(void);			
-void mvpFetch(void);			
-void mvpQTerminal(void);			
-void mvpQStream(void);			
-void mvpQStack(void);			
-void mvpQPairs(void);			
-void mvpQLoading(void);			
-void mvpQDup(void);			
-void mvpQCSP(void);			
-void mvpQConfigure(void);			
-void mvpQComp(void);			
-void mvpQ(void);			
-void mvpToR(void);			
-void mvpToIn(void);			
-void mvpGreater(void);			
-void mvpEqual(void);			
-void mvpZWord(void);			
-void mvpZVocabularyFig(void);			
-void mvpZVocabulary79(void);			
-void mvpZTAmpersandSCalc(void);			
-void mvpZRSlashW(void);			
-void mvpZPage(void);			
-void mvpZNumber(void);			
-void mvpZLoop(void);			
-void mvpZLoad(void);			
-void mvpZLine(void);			
-void mvpZKey(void);			
-void mvpZInterpret(void);			
-void mvpZFind(void);			
-void mvpZFill(void);			
+void mvpCComma(void);
+void mvpCStoreL(void);
+void mvpCStore(void);
+void mvpBye(void);
+void mvpBuffer(void);
+void mvpBranch(void);
+void mvpBPDrv(void);
+void mvpBlock(void);
+void mvpBlkSlashDrv(void);
+void mvpBlk(void);
+void mvpBlank(void);
+void mvpBl(void);
+void mvpBegin(void);
+void mvpBase(void);
+void mvpAPush(void);
+void mvpAnd(void);
+void mvpAllot(void);
+void mvpAgain(void);
+void mvpAbs(void);
+void mvpAbortQuote(void);
+void mvpAbort(void);
+void mvpFetchL(void);
+void mvpFetch(void);
+void mvpQTerminal(void);
+void mvpQStream(void);
+void mvpQStack(void);
+void mvpQPairs(void);
+void mvpQLoading(void);
+void mvpQDup(void);
+void mvpQCSP(void);
+void mvpQConfigure(void);
+void mvpQComp(void);
+void mvpQ(void);
+void mvpToR(void);
+void mvpToIn(void);
+void mvpGreater(void);
+void mvpEqual(void);
+void mvpZWord(void);
+void mvpZVocabularyFig(void);
+void mvpZVocabulary79(void);
+void mvpZTAmpersandSCalc(void);
+void mvpZRSlashW(void);
+void mvpZPage(void);
+void mvpZNumber(void);
+void mvpZLoop(void);
+void mvpZLoad(void);
+void mvpZLine(void);
+void mvpZKey(void);
+void mvpZInterpret(void);
+void mvpZFind(void);
+void mvpZFill(void);
 void mvpZExpect(void);
 void mvpZEmit(void);
 void mvpZDo(void);
@@ -399,9 +399,9 @@ typedef  struct _forthWord {
 
 /* Variables */
 
-/* 
+/*
 	FORTH-79 words missing with MVP Forth:
-			{ "2ROT", "2ROT", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineTwoRot }, 
+			{ "2ROT", "2ROT", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineTwoRot },
 			{ "END-CODE", "END-CODE", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineEndCode },
 
 			{ "!BITS", "!BITS", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineStoreBits },
@@ -423,12 +423,12 @@ typedef  struct _forthWord {
 			{ "BELL", "BELL", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineBell },
 			{ "BL", "BL", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineBl },
 			{ "BLANKS", "BLANKS", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineBlanks },
-     		{ "CHAIN", "CHAIN", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineChain },
-	     	{ "COM", "COM", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineCom },
-    		{ "CONTINUED", "CONTINUED", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineContinued },
-    		{ "CUR", "CUR", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineCur },
-    		{ "DBLOCK", "DBLOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineDBlock },
- 			{ "END", "END", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineEnd },
+			{ "CHAIN", "CHAIN", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineChain },
+			{ "COM", "COM", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineCom },
+			{ "CONTINUED", "CONTINUED", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineContinued },
+			{ "CUR", "CUR", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineCur },
+			{ "DBLOCK", "DBLOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineDBlock },
+			{ "END", "END", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineEnd },
 			{ "H.", "H.", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineHDot },
 			{ "IFEND", "IFEND", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineIfEnd },
 			{ "IFTRUE", "IFTRUE", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineIfTrue },

@@ -107,13 +107,13 @@ void qforthEndOf(void) {
 #endif
 }
 
-void qforthExecute(void) { 
-/* Atmel 2004, but not Temic 1994 */
+void qforthExecute(void) {
+	/* Atmel 2004, but not Temic 1994 */
 #if defined (__DEBUG__)
 	printf("qforthExecute\n");
 #endif
 }
- 
+
 void qforthIf(void) {
 #if defined (__DEBUG__)
 	printf("qforthIf\n");
@@ -229,7 +229,7 @@ void qforthAddC(void) {
 #endif
 }
 
-void qforthPlusC (void) {
+void qforthPlusC(void) {
 #if defined (__DEBUG__)
 	printf("qforthPlusC\n");
 #endif
@@ -410,7 +410,7 @@ void qforthCmpGe(void) {
 }
 
 void qforthGreaterEqual(void) {
-/* Temic 1994, but not Atmel 2004 */
+	/* Temic 1994, but not Atmel 2004 */
 #if defined (__DEBUG__)
 	printf("qforthCmpGe\n");
 #endif

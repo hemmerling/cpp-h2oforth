@@ -41,7 +41,7 @@ void readInput(void) {
 			if (forthState.forthIsWaitingForKeyboard) {
 				forthState.forthReadsKeyboard = TRUE;
 				forthState.forthReadsTerminal = FALSE;
-        		if (forthState.forthIsVerbose){
+				if (forthState.forthIsVerbose) {
 					printf("\nH2OForth - Wait for keyboard input(2)\n");
 				};
 			}
@@ -53,6 +53,6 @@ void readInput(void) {
 		};
 
 	};
-} 
+}
 
 #endif

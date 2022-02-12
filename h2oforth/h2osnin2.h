@@ -214,7 +214,7 @@ void snineToR(void) {
 #if defined (__DEBUG__)
 	printf("snineToR\n");
 #endif
-}	
+}
 
 void snineQ(void) {
 #if defined (__DEBUG__)
@@ -1111,19 +1111,19 @@ void snineChain(void) {
 	printf("snineChain\n");
 #endif
 }
-	
+
 void snineCom(void) {
 #if defined (__DEBUG__)
 	printf("snineCom\n");
 #endif
 }
-	
+
 void snineContinued(void) {
 #if defined (__DEBUG__)
 	printf("snineContinued\n");
 #endif
 }
-	
+
 void snineCur(void) {
 #if defined (__DEBUG__)
 	printf("snineCur\n");
@@ -1196,13 +1196,13 @@ void snineITick(void) {
 #endif
 }
 
-void snineIfEnd(void){
+void snineIfEnd(void) {
 #if defined (__DEBUG__)
 	printf("snineIfEnd\n");
 #endif
 }
 
-void snineIfTrue(void){
+void snineIfTrue(void) {
 #if defined (__DEBUG__)
 	printf("snineIfTrue\n");
 #endif
@@ -1378,7 +1378,7 @@ void snineThru(void) {
 
 void snineUDotR(void) {
 #if defined (__DEBUG__)
-	printf( "snineUDotR\n");
+	printf("snineUDotR\n");
 #endif
 }
 

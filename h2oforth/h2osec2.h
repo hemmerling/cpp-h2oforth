@@ -22,7 +22,7 @@ void sectorStore(void) {
 }
 
 /* sp@ ( – sp ) Get pointer to top of data stack */
- void sectorSP(void) {
+void sectorSP(void) {
 	// return ( unsigned long )
 #if defined (__DEBUG__)
 	printf("sectorStore\n");

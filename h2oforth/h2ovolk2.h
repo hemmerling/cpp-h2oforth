@@ -3422,13 +3422,13 @@ void volkRemoveQ(void) {
 #endif
 }
 
-void volkMakeDir(void) { 
-/* = volkMd */
+void volkMakeDir(void) {
+	/* = volkMd */
 #if defined (__DEBUG__)
 	printf("volkMakeDir\n");
 #endif
 }
- 
+
 void volkZMore(void) {
 #if defined (__DEBUG__)
 	printf("volkZMore\n");
@@ -3662,7 +3662,7 @@ void volkTasks(void) {
 }
 
 void volkTickS(void) {
-/* "'S" => Capital "S" */
+	/* "'S" => Capital "S" */
 #if defined (__DEBUG__)
 	printf("volkTasks\n");
 #endif

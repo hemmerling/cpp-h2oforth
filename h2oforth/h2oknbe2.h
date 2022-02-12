@@ -249,7 +249,7 @@ void knaggsbennetRFrom(void) {
 	printf("knaggsbennetRFrom\n");
 #endif
 }
- 
+
 void knaggsbennetRote(void) {
 #if defined (__DEBUG__)
 	printf("knaggsbennetRote\n");

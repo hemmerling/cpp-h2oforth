@@ -254,124 +254,124 @@ void coinupCount(void);
 void coinupDoes(void);
 void coinupBuilds(void);
 void coinupSemicolonCode(void);
-void coinupYSemicolonCode(void); 
-void coinupDecimal(void); 
-void coinupHex(void); 
-void coinupSmudge(void); 
-void coinupRightBracket(void); 
-void coinupLeftBracket(void); 
-void coinupCompile(void); 
-void coinupQLoading(void); 
-void coinupQCsp(void); 
-void coinupQPairs(void); 
-void coinupQExec(void); 
-void coinupQComp(void); 
-void coinupQError(void); 
-void coinupStoreCsp(void); 
-void coinupLfa(void); 
-void coinupPfa(void); 
-void coinupNfa(void); 
-void coinupCfa(void); 
-void coinupLatest(void); 
-void coinupTraverse(void); 
-void coinupMinusDup(void); 
-void coinupSpace(void); 
-void coinupRot(void); 
-void coinupGreater(void); 
-void coinupEqual(void); 
-void coinupMinus(void); 
-void coinupCComma(void); 
-void coinupComma(void); 
-void coinupAllot(void); 
-void coinupHere(void); 
-void coinupTwoPlus(void); 
-void coinupOnePlus(void); 
-void coinupPhysOff(void); 
-void coinupInpt(void); 
-void coinupHld(void); 
-void coinupRNum(void); 
-void coinupCsp(void); 
-void coinupFld(void); 
-void coinupDpl(void); 
-void coinupBase(void); 
-void coinupState(void); 
-void coinupCurrent(void); 
-void coinupContext(void); 
-void coinupOffset(void); 
-void coinupScr(void); 
-void coinupOut(void); 
-void coinupIn(void); 
-void coinupBlk(void); 
-void coinupVocLink(void); 
-void coinupDp(void); 
-void coinupFence(void); 
-void coinupWarning(void); 
-void coinupWidth(void); 
-void coinupTib(void); 
-void coinupPlusOrigin(void); 
-void coinupHimem(void); 
-void coinupBSlashScr(void); 
-void coinupBSlashBuf(void); 
-void coinupLimit(void); 
-void coinupFirst(void); 
-void coinupNumLinks(void); 
-void coinupCSlashL(void); 
-void coinupCl(void); 
-void coinupBl(void); 
-void coinupThree(void); 
-void coinupTwo(void); 
-void coinupOne(void); 
-void coinupZero(void); 
-void coinupUser(void); 
-void coinupVariable(void); 
-void coinupConstant(void); 
-void coinupSemicolon(void); 
-void coinupColon(void); 
-void coinupCStore(void); 
-void coinupStore(void); 
-void coinupCFetch(void); 
-void coinupFetch(void); 
-void coinupToggle(void); 
-void coinupPlusStore(void); 
-void coinupDup(void); 
-void coinupSwap(void); 
-void coinupDrop(void); 
-void coinupOver(void); 
-void coinupDMinus(void); 
-void coinupMinusWord(void); 
-void coinupDPlus(void); 
-void coinupPlus(void); 
-void coinupLess(void); 
-void coinupULess(void); 
-void coinupZeroLess(void); 
-void coinupZeroEqual(void); 
-void coinupR(void); 
-void coinupRTo(void); 
-void coinupGreaterR(void); 
-void coinupLeave(void); 
-void coinupSemicolonS(void); 
-void coinupRPStoreye(void); 
-void coinupSPStore(void); 
-void coinupSPFetch(void); 
-void coinupXor(void); 
-void coinupOr(void); 
-void coinupAnd(void); 
-void coinupUSlash(void); 
-void coinupUStar(void); 
-void coinupCMove(void); 
-void coinupD8uStar(void); 
-void coinupEnclose(void); 
-void coinupYFind(void); 
-void coinupDigit(void); 
-void coinupJ(void); 
-void coinupI(void); 
-void coinupYDo(void); 
-void coinupYPlusLoop(void); 
-void coinupYLoop(void); 
-void coinupZeroBranch(void); 
-void coinupBranch(void); 
-void coinupExecute(void); 
-void coinupLit(void); 
+void coinupYSemicolonCode(void);
+void coinupDecimal(void);
+void coinupHex(void);
+void coinupSmudge(void);
+void coinupRightBracket(void);
+void coinupLeftBracket(void);
+void coinupCompile(void);
+void coinupQLoading(void);
+void coinupQCsp(void);
+void coinupQPairs(void);
+void coinupQExec(void);
+void coinupQComp(void);
+void coinupQError(void);
+void coinupStoreCsp(void);
+void coinupLfa(void);
+void coinupPfa(void);
+void coinupNfa(void);
+void coinupCfa(void);
+void coinupLatest(void);
+void coinupTraverse(void);
+void coinupMinusDup(void);
+void coinupSpace(void);
+void coinupRot(void);
+void coinupGreater(void);
+void coinupEqual(void);
+void coinupMinus(void);
+void coinupCComma(void);
+void coinupComma(void);
+void coinupAllot(void);
+void coinupHere(void);
+void coinupTwoPlus(void);
+void coinupOnePlus(void);
+void coinupPhysOff(void);
+void coinupInpt(void);
+void coinupHld(void);
+void coinupRNum(void);
+void coinupCsp(void);
+void coinupFld(void);
+void coinupDpl(void);
+void coinupBase(void);
+void coinupState(void);
+void coinupCurrent(void);
+void coinupContext(void);
+void coinupOffset(void);
+void coinupScr(void);
+void coinupOut(void);
+void coinupIn(void);
+void coinupBlk(void);
+void coinupVocLink(void);
+void coinupDp(void);
+void coinupFence(void);
+void coinupWarning(void);
+void coinupWidth(void);
+void coinupTib(void);
+void coinupPlusOrigin(void);
+void coinupHimem(void);
+void coinupBSlashScr(void);
+void coinupBSlashBuf(void);
+void coinupLimit(void);
+void coinupFirst(void);
+void coinupNumLinks(void);
+void coinupCSlashL(void);
+void coinupCl(void);
+void coinupBl(void);
+void coinupThree(void);
+void coinupTwo(void);
+void coinupOne(void);
+void coinupZero(void);
+void coinupUser(void);
+void coinupVariable(void);
+void coinupConstant(void);
+void coinupSemicolon(void);
+void coinupColon(void);
+void coinupCStore(void);
+void coinupStore(void);
+void coinupCFetch(void);
+void coinupFetch(void);
+void coinupToggle(void);
+void coinupPlusStore(void);
+void coinupDup(void);
+void coinupSwap(void);
+void coinupDrop(void);
+void coinupOver(void);
+void coinupDMinus(void);
+void coinupMinusWord(void);
+void coinupDPlus(void);
+void coinupPlus(void);
+void coinupLess(void);
+void coinupULess(void);
+void coinupZeroLess(void);
+void coinupZeroEqual(void);
+void coinupR(void);
+void coinupRTo(void);
+void coinupGreaterR(void);
+void coinupLeave(void);
+void coinupSemicolonS(void);
+void coinupRPStoreye(void);
+void coinupSPStore(void);
+void coinupSPFetch(void);
+void coinupXor(void);
+void coinupOr(void);
+void coinupAnd(void);
+void coinupUSlash(void);
+void coinupUStar(void);
+void coinupCMove(void);
+void coinupD8uStar(void);
+void coinupEnclose(void);
+void coinupYFind(void);
+void coinupDigit(void);
+void coinupJ(void);
+void coinupI(void);
+void coinupYDo(void);
+void coinupYPlusLoop(void);
+void coinupYLoop(void);
+void coinupZeroBranch(void);
+void coinupBranch(void);
+void coinupExecute(void);
+void coinupLit(void);
 
 typedef void (*forthOperation)(void);
 
@@ -387,10 +387,10 @@ typedef  struct _forthWord {
 
 /* Variables */
 
-/* List of FORTH words */          
+/* List of FORTH words */
 
 static const typedef_forthWord forthWords[] = {
-  			{ "-MOVE", "-MOVE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMinusMove }, /* Unavailable words, for fig Editor */
+			{ "-MOVE", "-MOVE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMinusMove }, /* Unavailable words, for fig Editor */
 			{ "$", "$", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDollar },
 			{ "%", "%", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupPercent },
 			{ "DL", "DL", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDl },
@@ -407,7 +407,7 @@ static const typedef_forthWord forthWords[] = {
 			{ "R0", "R0", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupR0 },
 			{ "S0", "S0", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupS0 },
 			{ "X", "X", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupX }, /* Unavailable word, for Coin-Up kernel */
-			
+
 			{ "TASK", "TASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupTask }, /* Coin-Up kernel */
 			{ "SAVENFAS", "SAVENFAs", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupSaveNfas }, /* Coin-Up ATARI extensions */
 			{ "FORMY", "FORMY", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupFormy },
@@ -426,7 +426,7 @@ static const typedef_forthWord forthWords[] = {
 			{ "COLPM!", "COLPM!", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupColpmStore },
 			{ "SIZE!", "SIZE!", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupSizeStore },
 			{ "HPOS!", "HPOS!", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupHPosStore },
-			{ "PLAYER", "PLAYER", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupPlayer }, 
+			{ "PLAYER", "PLAYER", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupPlayer },
 			{ "GPRIOR", "GPRIOR", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupGPrior }, /* Mentioned in manual, but not in the wordlists of the manual */
 			{ "COLPM", "COLPM", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupColpm },
 			{ "VDELAY", "VDELAY", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupVDelay },
@@ -525,153 +525,153 @@ static const typedef_forthWord forthWords[] = {
 			{ "CODE", "CODE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupCode }, /* Coin-Up Assembler */
 			{ "ASSEMBLER", "ASSEMBLER", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupAssembler }, /* Coin-Up Assembler */
 			{ "VLIST", "VLIST", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupVList }, /* Coin-Up kernel */
-			{ "TRIAD", "TRIAD", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupTriad }, 
-			{ "INDEX", "INDEX", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupIndex }, 
+			{ "TRIAD", "TRIAD", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupTriad },
+			{ "INDEX", "INDEX", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupIndex },
 			{ "LIST", "LIST", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupList },  /* fig Editor */
 			{ "?", "?", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupQ }, /* Coin-Up kernel */
-			{ ".", ".", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDot }, 
-			{ ".R", ".R", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDotR }, 
-			{ "D.", "D.", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDDot }, 
-			{ "D.R", "D.R", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDDotR }, 
-			{ "#S", "#S", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupNumS }, 
-			{ "#", "#", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupNum }, 
-			{ "SIGN", "SIGN", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupSign }, 
-			{ "#>", "#>", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupNumGreater }, 
-			{ "<#", "<#", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupLessNum }, 
-			{ "SPACES", "SPACES", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupSpaces }, 
-			{ "WHILE", "WHILE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupWhile }, 
-			{ "ELSE", "ELSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupElse }, 
-			{ "IF", "IF", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupIf }, 
-			{ "REPEAT", "REPEAT", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupRepeat }, 
-			{ "AGAIN", "AGAIN", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupAgain }, 
-			{ "END", "END", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupEnd }, 
-			{ "UNTIL", "UNTIL", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupUntil }, 
-			{ "+LOOP", "+LOOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupPlusLoop }, 
-			{ "LOOP", "LOOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupLoop }, 
-			{ "DO", "DO", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDo }, 
-			{ "THEN", "THEN", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupThen }, 
-			{ "ENDIF", "ENDIF", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupEndIf }, 
-			{ "BEGIN", "BEGIN", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupBegin }, 
-			{ "BACK", "BACK", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupBack }, 
-			{ "FORGET", "FORGET", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupForget }, 
-			{ "'", "'", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupTick }, 
-			{ "UPDATE", "UPDATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupUpdate }, 
+			{ ".", ".", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDot },
+			{ ".R", ".R", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDotR },
+			{ "D.", "D.", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDDot },
+			{ "D.R", "D.R", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDDotR },
+			{ "#S", "#S", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupNumS },
+			{ "#", "#", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupNum },
+			{ "SIGN", "SIGN", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupSign },
+			{ "#>", "#>", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupNumGreater },
+			{ "<#", "<#", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupLessNum },
+			{ "SPACES", "SPACES", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupSpaces },
+			{ "WHILE", "WHILE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupWhile },
+			{ "ELSE", "ELSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupElse },
+			{ "IF", "IF", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupIf },
+			{ "REPEAT", "REPEAT", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupRepeat },
+			{ "AGAIN", "AGAIN", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupAgain },
+			{ "END", "END", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupEnd },
+			{ "UNTIL", "UNTIL", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupUntil },
+			{ "+LOOP", "+LOOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupPlusLoop },
+			{ "LOOP", "LOOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupLoop },
+			{ "DO", "DO", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDo },
+			{ "THEN", "THEN", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupThen },
+			{ "ENDIF", "ENDIF", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupEndIf },
+			{ "BEGIN", "BEGIN", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupBegin },
+			{ "BACK", "BACK", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupBack },
+			{ "FORGET", "FORGET", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupForget },
+			{ "'", "'", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupTick },
+			{ "UPDATE", "UPDATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupUpdate },
 			{ "FLUSH", "FLUSH", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupFlush }, /* Both fig Editor word and Coin-up kernel word. ATARI-8bit specific, not figFORTH */
-			{ "R/W", "R/W", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupRSlashW }, 
+			{ "R/W", "R/W", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupRSlashW },
 			{ "DDIO", "DDIO", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDdIo }, /* ATARI-8bit specific, not figFORTH */
 			{ "DIO", "DIO", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDIo }, /* ATARI-8bit specific, not figFORTH */
 			{ "SECIO", "SECIO", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupSecIo }, /* ATARI-8bit specific, not figFORTH */
 			{ "SIO", "SIO", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupSio }, /* ATARI-8bit specific, not figFORTH */
 			{ "DECMAP", "DECMAP", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDecMap }, /* ATARI-8bit specific, not figFORTH */
-			{ "TYPE", "TYPE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupType }, 
-			{ "?TERMINAL", "?TERMINAL", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupQTerminal }, 
-			{ "CR", "CR", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupCr }, 
-			{ "EMIT", "EMIT", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupEmit }, 
-			{ "KEY", "KEY", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupKey }, 
+			{ "TYPE", "TYPE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupType },
+			{ "?TERMINAL", "?TERMINAL", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupQTerminal },
+			{ "CR", "CR", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupCr },
+			{ "EMIT", "EMIT", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupEmit },
+			{ "KEY", "KEY", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupKey },
 			{ "TCIOV", "TCIOV", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupTciov }, /* ATARI-8bit specific, not figFORTH */
 			{ "ICAL", "ICAL", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupIcAl }, /* ATARI-8bit specific, not figFORTH */
 			{ "ICLL", "ICLL", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupIcLl }, /* ATARI-8bit specific, not figFORTH */
 			{ "ICCM", "ICCM", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupIcCm }, /* ATARI-8bit specific, not figFORTH */
-			{ "-->", "-->", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupTo }, 
-			{ "LOAD", "LOAD", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupLoad }, 
-			{ "MESSAGE", "MESSAGE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMessage }, 
-			{ ".LINE", ".LINE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDotLine }, 
-			{ "(LINE)", "(LINE)", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupYLine }, 
-			{ "BLOCK", "BLOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupBlock }, 
-			{ "BUFFER", "BUFFER", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupBuffer }, 
+			{ "-->", "-->", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupTo },
+			{ "LOAD", "LOAD", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupLoad },
+			{ "MESSAGE", "MESSAGE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMessage },
+			{ ".LINE", ".LINE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDotLine },
+			{ "(LINE)", "(LINE)", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupYLine },
+			{ "BLOCK", "BLOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupBlock },
+			{ "BUFFER", "BUFFER", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupBuffer },
 			{ "BFND", "BFND", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupBfnd }, /* ATARI-8bit specific, not figFORTH */
-			{ "DR1", "DR1", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDr1 }, 
-			{ "DR0", "DR0", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDr0 }, 
-			{ "EMPTY-BUFFERS", "EMPTY-BUFFERS", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupEmptyBuffers }, 
+			{ "DR1", "DR1", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDr1 },
+			{ "DR0", "DR0", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDr0 },
+			{ "EMPTY-BUFFERS", "EMPTY-BUFFERS", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupEmptyBuffers },
 			{ "ALT", "ALT", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupAlt }, /* ATARI-8bit specific, not figFORTH */
-			{ "PREV", "PREV", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupPrev }, 
+			{ "PREV", "PREV", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupPrev },
 			{ "PTAB", "PTAB", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupPtab }, /* ATARI-8bit specific, not figFORTH */
-			{ "M/MOD", "M/MOD", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMSlashMod }, 
-			{ "*/", "*/", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupStarSlash }, 
-			{ "*/MOD", "*/MOD", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupStarSlashMod }, 
-			{ "MOD", "MOD", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMod }, 
-			{ "/", "/", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupSlash }, 
-			{ "/MOD", "/MOD", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupslashMod }, 
-			{ "*", "*", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupStar }, 
-			{ "M/", "M/", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMSlash }, 
-			{ "M*", "M*", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMStar }, 
-			{ "MAX", "MAX", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMax }, 
-			{ "MIN", "MIN", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMin }, 
-			{ "DABS", "DABS", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDAbs }, 
-			{ "ABS", "ABS", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupAbs }, 
-			{ "D+-", "D+-", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDPlusMinus }, 
-			{ "+-", "+-", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupPlusMinus }, 
-			{ "S->D", "S->D", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupSToD }, 
-			{ "COLD", "COLD", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupCold }, 
-			{ "ABORT", "ABORT", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupAbort }, 
-			{ "QUIT", "QUIT", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupQuit }, 
-			{ "(", "(", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupParen }, 
-			{ "DEFINITIONS", "DEFINITIONS", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDefinitions }, 
-			{ "FORTH", "FORTH", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupForth }, 
-			{ "VOCABULARY", "VOCABULARY", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupVocabulary }, 
-			{ "IMMEDIATE", "IMMEDIATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupImmediate }, 
-			{ "INTERPRET", "INTERPRET", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupInterpret }, 
-			{ "?STACK", "?STACK", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupQStack }, 
-			{ "DLITERAL", "DLITERAL", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDLiteral }, 
-			{ "LITERAL", "LITERAL", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupLiteral }, 
-			{ "[COMPILE]", "[COMPILE]", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupXCompile }, 
-			{ "CREATE", "CREATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupCreate }, 
-			{ "ID.", "ID.", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupIdDot }, 
-			{ "ERROR", "ERROR", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupError }, 
-			{ "(ABORT)", "(ABORT)", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupYAbort }, 
-			{ "-FIND", "-FIND", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMinusFind }, 
+			{ "M/MOD", "M/MOD", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMSlashMod },
+			{ "*/", "*/", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupStarSlash },
+			{ "*/MOD", "*/MOD", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupStarSlashMod },
+			{ "MOD", "MOD", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMod },
+			{ "/", "/", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupSlash },
+			{ "/MOD", "/MOD", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupslashMod },
+			{ "*", "*", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupStar },
+			{ "M/", "M/", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMSlash },
+			{ "M*", "M*", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMStar },
+			{ "MAX", "MAX", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMax },
+			{ "MIN", "MIN", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMin },
+			{ "DABS", "DABS", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDAbs },
+			{ "ABS", "ABS", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupAbs },
+			{ "D+-", "D+-", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDPlusMinus },
+			{ "+-", "+-", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupPlusMinus },
+			{ "S->D", "S->D", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupSToD },
+			{ "COLD", "COLD", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupCold },
+			{ "ABORT", "ABORT", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupAbort },
+			{ "QUIT", "QUIT", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupQuit },
+			{ "(", "(", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupParen },
+			{ "DEFINITIONS", "DEFINITIONS", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDefinitions },
+			{ "FORTH", "FORTH", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupForth },
+			{ "VOCABULARY", "VOCABULARY", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupVocabulary },
+			{ "IMMEDIATE", "IMMEDIATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupImmediate },
+			{ "INTERPRET", "INTERPRET", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupInterpret },
+			{ "?STACK", "?STACK", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupQStack },
+			{ "DLITERAL", "DLITERAL", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDLiteral },
+			{ "LITERAL", "LITERAL", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupLiteral },
+			{ "[COMPILE]", "[COMPILE]", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupXCompile },
+			{ "CREATE", "CREATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupCreate },
+			{ "ID.", "ID.", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupIdDot },
+			{ "ERROR", "ERROR", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupError },
+			{ "(ABORT)", "(ABORT)", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupYAbort },
+			{ "-FIND", "-FIND", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMinusFind },
 			{ "HASH", "HASH", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupHash }, /* ATARI-8bit specific, not figFORTH */
-			{ "NUMBER", "NUMBER", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupNumber }, 
-			{ "(NUMBER)", "(NUMBER)", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupYNumber }, 
+			{ "NUMBER", "NUMBER", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupNumber },
+			{ "(NUMBER)", "(NUMBER)", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupYNumber },
 			{ "7BITS", "7BITS", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinup7Bits }, /* ATARI-8bit specific, not figFORTH */
-			{ "WORD", "WORD", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupWord }, 
-			{ "PAD", "PAD", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupPad }, 
-			{ "HOLD", "HOLD", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupHold }, 
-			{ "BLANKS", "BLANKS", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupBlanks }, 
-			{ "ERASE", "ERASE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupErase }, 
-			{ "FILL", "FILL", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupFill }, 
+			{ "WORD", "WORD", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupWord },
+			{ "PAD", "PAD", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupPad },
+			{ "HOLD", "HOLD", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupHold },
+			{ "BLANKS", "BLANKS", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupBlanks },
+			{ "ERASE", "ERASE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupErase },
+			{ "FILL", "FILL", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupFill },
 			{ "♣", "♣", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupHeart }, /* Not mentioned in the manual, just listed by VLIST */
-			{ "QUERY", "QUERY", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupQuery }, 
-			{ "EXPECT", "EXPECT", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupExpect }, 
-			{ ".\"", ".\"", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDotQuote }, 
-			{ "(.\")", "(.\")", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupParenDotQuote }, 
-			{ "-TRAILING", "-TRAILING", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupTrailing }, 
-			{ "COUNT", "COUNT", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupCount }, 
-			{ "DOES>", "DOES>", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDoes }, 
-			{ "<BUILDS", "<BUILDS", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupBuilds }, 
-			{ ";CODE", ";CODE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupSemicolonCode }, 
-			{ "(;CODE)", "(;CODE)", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupYSemicolonCode }, 
-			{ "DECIMAL", "DECIMAL", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDecimal }, 
-			{ "HEX", "HEX", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupHex }, 
-			{ "SMUDGE", "SMUDGE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupSmudge }, 
-			{ "]", "]", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupRightBracket }, 
-			{ "[", "[", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupLeftBracket }, 
-			{ "COMPILE", "COMPILE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupCompile }, 
-			{ "?LOADING", "?LOADING", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupQLoading }, 
-			{ "?CSP", "?CSP", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupQCsp }, 
-			{ "?PAIRS", "?PAIRS", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupQPairs }, 
-			{ "?EXEC", "?EXEC", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupQExec }, 
-			{ "?COMP", "?COMP", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupQComp }, 
-			{ "?ERROR", "?ERROR", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupQError }, 
-			{ "!CSP", "!CSP", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupStoreCsp }, 
-			{ "LFA", "LFA", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupLfa }, 
-			{ "PFA", "PFA", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupPfa }, 
-			{ "NFA", "NFA", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupNfa }, 
-			{ "CFA", "CFA", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupCfa }, 
-			{ "LATEST", "LATEST", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupLatest }, 
-			{ "TRAVERSE", "TRAVERSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupTraverse }, 
-			{ "-DUP", "-DUP", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMinusDup }, 
-			{ "SPACE", "SPACE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupSpace }, 
-			{ "ROT", "ROT", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupRot }, 
-			{ ">", ">", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupGreater }, 
-			{ "=", "=", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupEqual }, 
-			{ "-", "-", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMinus }, 
-			{ "C,", "C,", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupCComma }, 
-			{ ",", ",", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupComma }, 
-			{ "ALLOT", "ALLOT", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupAllot }, 
-			{ "HERE", "HERE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupHere }, 
-			{ "2+", "2+", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupTwoPlus }, 
-			{ "1+", "1+", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupOnePlus }, 
+			{ "QUERY", "QUERY", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupQuery },
+			{ "EXPECT", "EXPECT", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupExpect },
+			{ ".\"", ".\"", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDotQuote },
+			{ "(.\")", "(.\")", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupParenDotQuote },
+			{ "-TRAILING", "-TRAILING", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupTrailing },
+			{ "COUNT", "COUNT", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupCount },
+			{ "DOES>", "DOES>", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDoes },
+			{ "<BUILDS", "<BUILDS", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupBuilds },
+			{ ";CODE", ";CODE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupSemicolonCode },
+			{ "(;CODE)", "(;CODE)", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupYSemicolonCode },
+			{ "DECIMAL", "DECIMAL", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDecimal },
+			{ "HEX", "HEX", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupHex },
+			{ "SMUDGE", "SMUDGE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupSmudge },
+			{ "]", "]", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupRightBracket },
+			{ "[", "[", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupLeftBracket },
+			{ "COMPILE", "COMPILE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupCompile },
+			{ "?LOADING", "?LOADING", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupQLoading },
+			{ "?CSP", "?CSP", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupQCsp },
+			{ "?PAIRS", "?PAIRS", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupQPairs },
+			{ "?EXEC", "?EXEC", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupQExec },
+			{ "?COMP", "?COMP", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupQComp },
+			{ "?ERROR", "?ERROR", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupQError },
+			{ "!CSP", "!CSP", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupStoreCsp },
+			{ "LFA", "LFA", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupLfa },
+			{ "PFA", "PFA", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupPfa },
+			{ "NFA", "NFA", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupNfa },
+			{ "CFA", "CFA", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupCfa },
+			{ "LATEST", "LATEST", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupLatest },
+			{ "TRAVERSE", "TRAVERSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupTraverse },
+			{ "-DUP", "-DUP", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMinusDup },
+			{ "SPACE", "SPACE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupSpace },
+			{ "ROT", "ROT", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupRot },
+			{ ">", ">", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupGreater },
+			{ "=", "=", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupEqual },
+			{ "-", "-", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMinus },
+			{ "C,", "C,", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupCComma },
+			{ ",", ",", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupComma },
+			{ "ALLOT", "ALLOT", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupAllot },
+			{ "HERE", "HERE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupHere },
+			{ "2+", "2+", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupTwoPlus },
+			{ "1+", "1+", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupOnePlus },
 			{ "PHYSOFF", "PHYSOFF", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupPhysOff }, /* ATARI-8bit specific, not figFORTH */
 			{ "INPT", "INPT", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupInpt },
 			{ "HLD", "HLD", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupHld },
@@ -714,12 +714,12 @@ static const typedef_forthWord forthWords[] = {
 			{ ";", ";", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupSemicolon },
 			{ ":", ":", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupColon },
 			{ "C!", "C!", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupCStore },
-			{ "!", "!", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupStore }, 
+			{ "!", "!", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupStore },
 			{ "C@", "C@", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupCFetch },
 			{ "@", "@", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupFetch },
 			{ "TOGGLE", "TOGGLE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupToggle },
 			{ "+!", "+!", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupPlusStore },
- 			{ "DUP", "DUP", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDup },
+			{ "DUP", "DUP", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDup },
 			{ "SWAP", "SWAP", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupSwap },
 			{ "DROP", "DROP", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDrop },
 			{ "OVER", "OVER", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupOver },
@@ -752,7 +752,7 @@ static const typedef_forthWord forthWords[] = {
 			{ "J", "J", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupJ }, /* ATARI-8bit specific, not figFORTH */
 			{ "I", "I", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupI },
 			{ "(DO)", "(DO)", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupYDo },
-			{ "(+LOOP)", "(+LOOP)", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupYPlusLoop }, 
+			{ "(+LOOP)", "(+LOOP)", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupYPlusLoop },
 			{ "(LOOP)", "(LOOP)", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupYLoop },
 			{ "0BRANCH", "0BRANCH", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupZeroBranch },
 			{ "BRANCH", "BRANCH", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupBranch },
@@ -1016,7 +1016,7 @@ static const typedef_forthWord forthWordsSorted[] = {
 			{ "DR0", "DR0", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDr0 },
 			{ "DR1", "DR1", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDr1 },
 			{ "DROP", "DROP", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDrop },
- 			{ "DUP", "DUP", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDup },
+			{ "DUP", "DUP", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDup },
 			{ "ELSE", "ELSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupElse },
 			{ "EMIT", "EMIT", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupEmit },
 			{ "EMPTY-BUFFERS", "EMPTY-BUFFERS", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupEmptyBuffers },

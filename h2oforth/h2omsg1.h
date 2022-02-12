@@ -5,7 +5,7 @@
 
 typedef  struct _forthWordList {
 	const int lenForthWords;
-	const typedef_forthWord *forthWords;
+	const typedef_forthWord* forthWords;
 } typedef_forthWordList;
 
 typedef  struct _forthMessage {

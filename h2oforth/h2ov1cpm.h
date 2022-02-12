@@ -509,7 +509,7 @@ void volkErrorhandler(void);
 void volkInput(void);
 void volkOutput(void);
 void volkBase(void);
-void volkOffset (void);
+void volkOffset(void);
 void volkDP(void);
 void volkR0(void);
 void volkS0(void);
@@ -533,7 +533,7 @@ typedef  struct _forthWord {
 } typedef_forthWord;
 
 /* Variables */
-/* Words which start or end with a left parentheses "(word" are internal words, 
+/* Words which start or end with a left parentheses "(word" are internal words,
    which are named with other FORTH implementations with surrounding parentheses "(word)" */
 
 #if H2O_FORTH_PRIMITIVES == VOLK_CPM_FORTH

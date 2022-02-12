@@ -31,7 +31,7 @@
 #define FILEIO_ERROR -1
 
 typedef int (*commandLineParameter)(void);
-typedef void (*getData2)(char *);
+typedef void (*getData2)(char*);
 
 typedef  struct _parameterSet {
 	const char* shortName;

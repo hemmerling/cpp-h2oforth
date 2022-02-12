@@ -1567,7 +1567,7 @@ void coinupStoreCsp(void) {
 	printf("coinupStoreCsp\n");
 #endif
 }
- 
+
 void coinupLfa(void) {
 #if defined (__DEBUG__)
 	printf("coinupLfa\n");

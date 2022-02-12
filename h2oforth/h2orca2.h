@@ -582,7 +582,7 @@ void rcamicroTop(void) {
 
 /* Lower Baud Serial I/O */
 
-/* Terminal I/O */ 
+/* Terminal I/O */
 void rcamicroType(void) {
 #if defined (__DEBUG__)
 	printf("rcamicroType\n");

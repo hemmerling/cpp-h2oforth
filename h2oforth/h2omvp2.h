@@ -96,7 +96,7 @@ void mvpXTick(void) {
 
 void mvpUDotR(void) {
 #if defined (__DEBUG__)
-	printf( "mvpUDotR\n");
+	printf("mvpUDotR\n");
 #endif
 }
 

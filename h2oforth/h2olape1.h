@@ -608,7 +608,7 @@ typedef  struct _forthWord {
 
 #if	H2O_FORTH_PRIMITIVES == LAXONPERRY_PC_FORTH
 static const typedef_forthWord forthWords[] = { /* PC */
-			{ "EMPTY", "EMPTY", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperEmpty }, 
+			{ "EMPTY", "EMPTY", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperEmpty },
 			{ "MARK", "MARK", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperMark },
 			{ "HELLO", "HELLO", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperHello },
 			{ "BACKGROUND:", "BACKGROUND:", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperBackgroundColon },
@@ -1171,7 +1171,7 @@ static const typedef_forthWord forthWords[] = { /* PC */
 
 #if	H2O_FORTH_PRIMITIVES == LAXONPERRY_CPM_FORTH
 static const typedef_forthWord forthWords[] = { /* CP/M */
-			{ "EMPTY", "EMPTY", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperEmpty }, 
+			{ "EMPTY", "EMPTY", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperEmpty },
 			{ "MARK", "MARK", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperMark },
 			{ "HELLO", "HELLO", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperHello },
 			{ "BACKGROUND:", "BACKGROUND:", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperBackgroundColon },
@@ -1730,7 +1730,7 @@ static const typedef_forthWord forthWords[] = { /* CP/M */
 
 #if H2O_FORTH_PRIMITIVES == LAXONPERRY_CPM68K_FORTH
 static const typedef_forthWord forthWords[] = { /* CP/M 68 K, unchecked wordlist */
-			{ "EMPTY", "EMPTY", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperEmpty }, 
+			{ "EMPTY", "EMPTY", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperEmpty },
 			{ "MARK", "MARK", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperMark },
 			{ "HELLO", "HELLO", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperHello },
 			{ "BACKGROUND:", "BACKGROUND:", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperBackgroundColon },

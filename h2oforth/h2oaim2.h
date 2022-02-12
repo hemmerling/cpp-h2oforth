@@ -569,7 +569,7 @@ void aimMinusTrailing(void) {
 #endif
 }
 
-void aimType (void) {
+void aimType(void) {
 #if defined (__DEBUG__)
 	printf("aimType\n");
 #endif

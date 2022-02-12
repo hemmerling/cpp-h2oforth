@@ -40,40 +40,40 @@ void knaggsbennetXor(void);
 void knaggsbennetFalse(void);
 void knaggsbennetRShift(void);
 void knaggsbennetDupe(void);
-void knaggsbennetSwap(void); 
-void knaggsbennetToR(void); 
-void knaggsbennetRFetch(void); 
-void knaggsbennetDrop(void); 
-void knaggsbennetOver(void); 
-void knaggsbennetRFrom(void); 
-void knaggsbennetRote(void); 
-void knaggsbennetIf(void); 
-void knaggsbennetThen(void); 
-void knaggsbennetWhile(void); 
-void knaggsbennetRepeat(void); 
-void knaggsbennetDo(void); 
-void knaggsbennetI(void); 
-void knaggsbennetTick(void); 
-void knaggsbennetElse(void); 
-void knaggsbennetBegin(void); 
-void knaggsbennetAgain(void); 
-void knaggsbennetUntil(void); 
-void knaggsbennetLoop(void); 
-void knaggsbennetJ(void); 
-void knaggsbennetExecute(void); 
-void knaggsbennetColon(void); 
-void knaggsbennetConstant(void); 
-void knaggsbennetCreate(void); 
-void knaggsbennetSemicolon(void); 
-void knaggsbennetVariable(void); 
-void knaggsbennetDoes(void); 
-void knaggsbennetKey(void); 
-void knaggsbennetEmit(void); 
-void knaggsbennetKeyQuestion(void); 
-void knaggsbennetCr(void); 
-void knaggsbennetParen(void); 
-void knaggsbennetDotS(void); 
-void knaggsbennetBackslash(void); 
+void knaggsbennetSwap(void);
+void knaggsbennetToR(void);
+void knaggsbennetRFetch(void);
+void knaggsbennetDrop(void);
+void knaggsbennetOver(void);
+void knaggsbennetRFrom(void);
+void knaggsbennetRote(void);
+void knaggsbennetIf(void);
+void knaggsbennetThen(void);
+void knaggsbennetWhile(void);
+void knaggsbennetRepeat(void);
+void knaggsbennetDo(void);
+void knaggsbennetI(void);
+void knaggsbennetTick(void);
+void knaggsbennetElse(void);
+void knaggsbennetBegin(void);
+void knaggsbennetAgain(void);
+void knaggsbennetUntil(void);
+void knaggsbennetLoop(void);
+void knaggsbennetJ(void);
+void knaggsbennetExecute(void);
+void knaggsbennetColon(void);
+void knaggsbennetConstant(void);
+void knaggsbennetCreate(void);
+void knaggsbennetSemicolon(void);
+void knaggsbennetVariable(void);
+void knaggsbennetDoes(void);
+void knaggsbennetKey(void);
+void knaggsbennetEmit(void);
+void knaggsbennetKeyQuestion(void);
+void knaggsbennetCr(void);
+void knaggsbennetParen(void);
+void knaggsbennetDotS(void);
+void knaggsbennetBackslash(void);
 
 typedef void (*forthOperation)(void);
 
@@ -90,78 +90,78 @@ typedef  struct _forthWord {
 
 static const typedef_forthWord forthWords[] = {
 			{ "!", "!", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetStore }, /* 1 Memory Access */
-			{ ",", ",", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetComma }, 
-			{ "@", "@", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetFetch }, 
-			{ "ALIGN", "ALIGN", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetAlign }, 
-			{ "ALIGNED", "ALIGNED", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetAligned }, 
-			{ "CELL+", "CELL+", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetCellPlus }, 
-			{ "CELLS", "CELLS", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetCells }, 
-			{ "C!", "C!", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetCStore }, 
-			{ "C,", "C,", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetC }, 
-			{ "C@", "C@", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetCCommaCFetch }, 
-			{ "CALIGN", "CALIGN", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetCAlign }, 
-			{ "CALIGNED", "CALIGNED", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetCAligned }, 
-			{ "CHAR+", "CHAR+", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetCharPlus }, 
-			{ "CHARS", "CHARS", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetChars }, 
+			{ ",", ",", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetComma },
+			{ "@", "@", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetFetch },
+			{ "ALIGN", "ALIGN", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetAlign },
+			{ "ALIGNED", "ALIGNED", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetAligned },
+			{ "CELL+", "CELL+", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetCellPlus },
+			{ "CELLS", "CELLS", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetCells },
+			{ "C!", "C!", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetCStore },
+			{ "C,", "C,", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetC },
+			{ "C@", "C@", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetCCommaCFetch },
+			{ "CALIGN", "CALIGN", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetCAlign },
+			{ "CALIGNED", "CALIGNED", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetCAligned },
+			{ "CHAR+", "CHAR+", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetCharPlus },
+			{ "CHARS", "CHARS", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetChars },
 			{ "+", "+", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetPlus }, /* 2 Arithmetic */
-			{ "*", "*", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetStar }, 
-			{ "2*", "2*", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetTwoStar }, 
-			{ "*/MOD", "*/MOD", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetStarSlashMod }, 
-			{ "-", "-", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetMinus }, 
-			{ "/", "/", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetSlash }, 
-			{ "2/", "2/", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetTwoSlash }, 
-			{ "MOD", "MOD", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetMod }, 
+			{ "*", "*", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetStar },
+			{ "2*", "2*", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetTwoStar },
+			{ "*/MOD", "*/MOD", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetStarSlashMod },
+			{ "-", "-", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetMinus },
+			{ "/", "/", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetSlash },
+			{ "2/", "2/", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetTwoSlash },
+			{ "MOD", "MOD", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetMod },
 			{ "0=", "0=", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetZeroEquals }, /* 3 Logic */
-			{ "<", "<", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetLessThen  }, 
-			{ "AND", "AND", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetAnd }, 
-			{ "INVERT", "INVERT", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetInvert }, 
-			{ "TRUE", "TRUE", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetTrue }, 
-			{ "LSHIFT", "LSHIFT", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetLShift }, 
-			{ "=", "=", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetEquals }, 
-			{ ">", ">", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetGreaterThan }, 
-			{ "OR", "OR", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetOr }, 
-			{ "XOR", "XOR", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetXor }, 
-			{ "FALSE", "FALSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetFalse }, 
-			{ "RSHIFT", "RSHIFT", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetRShift }, 
+			{ "<", "<", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetLessThen  },
+			{ "AND", "AND", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetAnd },
+			{ "INVERT", "INVERT", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetInvert },
+			{ "TRUE", "TRUE", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetTrue },
+			{ "LSHIFT", "LSHIFT", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetLShift },
+			{ "=", "=", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetEquals },
+			{ ">", ">", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetGreaterThan },
+			{ "OR", "OR", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetOr },
+			{ "XOR", "XOR", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetXor },
+			{ "FALSE", "FALSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetFalse },
+			{ "RSHIFT", "RSHIFT", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetRShift },
 			{ "DUP", "DUP", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetDupe }, /* 4 Stack */
-			{ "SWAP", "SWAP", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetSwap }, 
-			{ ">R", ">R", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetToR }, 
-			{ "R@", "R@", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetRFetch }, 
-			{ "DROP", "DROP", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetDrop }, 
-			{ "OVER", "OVER", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetOver }, 
-			{ "R>", "R>", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetRFrom }, 
-			{ "ROT", "ROT", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetRote }, 
+			{ "SWAP", "SWAP", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetSwap },
+			{ ">R", ">R", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetToR },
+			{ "R@", "R@", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetRFetch },
+			{ "DROP", "DROP", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetDrop },
+			{ "OVER", "OVER", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetOver },
+			{ "R>", "R>", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetRFrom },
+			{ "ROT", "ROT", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetRote },
 			{ "IF", "IF", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetIf }, /* 5 Flow Control */
-			{ "THEN", "THEN", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetThen }, 
-			{ "WHILE", "WHILE", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetWhile }, 
-			{ "REPEAT", "REPEAT", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetRepeat }, 
-			{ "DO", "DO", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetDo }, 
-			{ "I", "I", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetI }, 
-			{ "’", "’", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetTick }, 
-			{ "ELSE", "ELSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetElse }, 
-			{ "BEGIN", "BEGIN", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetBegin }, 
-			{ "AGAIN", "AGAIN", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetAgain }, 
-			{ "UNTIL", "UNTIL", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetUntil }, 
-			{ "LOOP", "LOOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetLoop }, 
-			{ "J", "J", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetJ }, 
-			{ "EXECUTE", "EXECUTE", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetExecute }, 
+			{ "THEN", "THEN", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetThen },
+			{ "WHILE", "WHILE", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetWhile },
+			{ "REPEAT", "REPEAT", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetRepeat },
+			{ "DO", "DO", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetDo },
+			{ "I", "I", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetI },
+			{ "’", "’", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetTick },
+			{ "ELSE", "ELSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetElse },
+			{ "BEGIN", "BEGIN", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetBegin },
+			{ "AGAIN", "AGAIN", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetAgain },
+			{ "UNTIL", "UNTIL", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetUntil },
+			{ "LOOP", "LOOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetLoop },
+			{ "J", "J", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetJ },
+			{ "EXECUTE", "EXECUTE", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetExecute },
 			{ ":", ":", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetColon }, /* 6 Definitions */
-			{ "CONSTANT", "CONSTANT", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetConstant }, 
-			{ "CREATE", "CREATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetCreate }, 
-			{ ";", ";", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetSemicolon }, 
-			{ "VARIABLE", "VARIABLE", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetVariable }, 
-			{ "DOES>", "DOES>", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetDoes }, 
+			{ "CONSTANT", "CONSTANT", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetConstant },
+			{ "CREATE", "CREATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetCreate },
+			{ ";", ";", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetSemicolon },
+			{ "VARIABLE", "VARIABLE", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetVariable },
+			{ "DOES>", "DOES>", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetDoes },
 			{ "KEY", "KEY", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetKey }, /* 7 Device */
-			{ "EMIT", "EMIT", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetEmit }, 
-			{ "KEY?", "KEY?", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetKeyQuestion }, 
-			{ "CR", "CR", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetCr }, 
+			{ "EMIT", "EMIT", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetEmit },
+			{ "KEY?", "KEY?", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetKeyQuestion },
+			{ "CR", "CR", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetCr },
 			{ "(", "(", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetParen }, /* 8 Tools */
-			{ ".S", ".S", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetDotS }, 
+			{ ".S", ".S", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetDotS },
 			{ "\\", "\\", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetBackslash },
 			{ "H2OFORTH", "H2OFORTH", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)NULL }
 };
 
-/*	 		 
+/*
 A number of proposed supplements include, but are by no means limited to, the following:
 9 IEEE Floating Point
 10 String

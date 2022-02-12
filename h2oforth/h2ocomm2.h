@@ -9,34 +9,34 @@ void privateMessageHandler(void) {
 	int messageNumber = forthTasks[forthState.forthCurrentTask].messageNumber;
 	int osErrorNumber = forthTasks[forthState.forthCurrentTask].osErrorNumber;
 #if defined (__DEVELOP__)
-	int sizeOfErrors = sizeof(forthErrors)/sizeof(forthErrors[0]);
-	int sizeOfMessages = sizeof(forthMessages)/sizeof(forthMessages[0]);
-	int sizeOfOsErrors = sizeof(forthOsErrors)/sizeof(forthOsErrors[0]);
+	int sizeOfErrors = sizeof(forthErrors) / sizeof(forthErrors[0]);
+	int sizeOfMessages = sizeof(forthMessages) / sizeof(forthMessages[0]);
+	int sizeOfOsErrors = sizeof(forthOsErrors) / sizeof(forthOsErrors[0]);
 #endif
-	if(errorNumber 
+	if (errorNumber
 #if defined (__DEVELOP__)
-	   && ( errorNumber < sizeOfErrors)
+		&& (errorNumber < sizeOfErrors)
 #endif
-	  ) {
-		printf("? %s %s # %d\n", wordBuffer, 
-	 			forthTasks[forthState.forthCurrentTask].forthErrors[forthTasks[forthState.forthCurrentTask].errorNumber].messageText,
-				forthTasks[forthState.forthCurrentTask].errorNumber); 
+		) {
+		printf("? %s %s # %d\n", wordBuffer,
+			forthTasks[forthState.forthCurrentTask].forthErrors[forthTasks[forthState.forthCurrentTask].errorNumber].messageText,
+			forthTasks[forthState.forthCurrentTask].errorNumber);
 	};
-	if(messageNumber 
+	if (messageNumber
 #if defined (__DEVELOP__)
-	   && ( messageNumber < sizeOfMessages)
+		&& (messageNumber < sizeOfMessages)
 #endif
-	   ) {
-		printf("%s\n", 
-				forthTasks[forthState.forthCurrentTask].forthMessages[forthTasks[forthState.forthCurrentTask].messageNumber].messageText);
+		) {
+		printf("%s\n",
+			forthTasks[forthState.forthCurrentTask].forthMessages[forthTasks[forthState.forthCurrentTask].messageNumber].messageText);
 	};
-	if(osErrorNumber 
+	if (osErrorNumber
 #if defined (__DEVELOP__)
-   	   && ( osErrorNumber < sizeOfOsErrors)
+		&& (osErrorNumber < sizeOfOsErrors)
 #endif
-	  ) {
-		printf("%s\n", 
-				forthTasks[forthState.forthCurrentTask].forthOsErrors[forthTasks[forthState.forthCurrentTask].osErrorNumber].messageText);
+		) {
+		printf("%s\n",
+			forthTasks[forthState.forthCurrentTask].forthOsErrors[forthTasks[forthState.forthCurrentTask].osErrorNumber].messageText);
 	};
 	forthTasks[forthState.forthCurrentTask].errorNumber = 0;
 	forthTasks[forthState.forthCurrentTask].messageNumber = 0;
@@ -45,33 +45,33 @@ void privateMessageHandler(void) {
 
 void privateSetBaseFormat(void) {
 	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
-     	case OCTAL:
-			forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_OCTAL;
-     		break;
-    	case DECIMAL:
-			forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_DECIMAL;
-	    	break;
-    	case HEX:
-			forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_HEX;
-	    	break;
-    	default:
-			forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_EMPTY;
+	case OCTAL:
+		forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_OCTAL;
+		break;
+	case DECIMAL:
+		forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_DECIMAL;
+		break;
+	case HEX:
+		forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_HEX;
+		break;
+	default:
+		forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_EMPTY;
 	};
 }
 
 void privateSetBaseLFormat(void) {
 	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
-     	case OCTAL:
-			forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_LOCTAL;
-     		break;
-    	case DECIMAL:
-			forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_LDECIMAL;
-	    	break;
-    	case HEX:
-			forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_LHEX;
-	    	break;
-    	default:
-			forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_EMPTY;
+	case OCTAL:
+		forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_LOCTAL;
+		break;
+	case DECIMAL:
+		forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_LDECIMAL;
+		break;
+	case HEX:
+		forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_LHEX;
+		break;
+	default:
+		forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_EMPTY;
 	};
 }
 
@@ -88,12 +88,14 @@ void commonOctal(void) {
 /* Display in hexadecimal base in the format of <.> */
 void commonHexDot(void) {
 	if (forthTasks[forthState.forthCurrentTask].dataStackIndex) {
-		if ( sizeof(CELL_INTEGER) == CELLSIZE8 ) {
+		if (sizeof(CELL_INTEGER) == CELLSIZE8) {
 			printf("%llx ", forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
-		} else {
+		}
+		else {
 			printf("%x ", forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
 		}
-	} else  {
+	}
+	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 #if defined (__DEBUG__)
@@ -104,12 +106,14 @@ void commonHexDot(void) {
 /* Display in octal base in the format of <.> */
 void commonOctDot(void) {
 	if (forthTasks[forthState.forthCurrentTask].dataStackIndex) {
-		if ( sizeof(CELL_INTEGER) == CELLSIZE8 ) {
+		if (sizeof(CELL_INTEGER) == CELLSIZE8) {
 			printf("%llo ", forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
-		} else {
+		}
+		else {
 			printf("%o ", forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
 		};
-	} else  {
+	}
+	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 #if defined (__DEBUG__)
@@ -155,15 +159,16 @@ void exceptionQuit(void) {
 #ifdef FLOAT_SUPPORT
 
 void fpointFDotS(void) {
-    int ii=0;
+	int ii = 0;
 	int floatStackIndex = forthTasks[forthState.forthCurrentTask].floatStackIndex;
 	if (floatStackIndex) {
-		printf ("[%d] ",floatStackIndex);
-		for(ii=0; ii<floatStackIndex; ii++) {
-			printf ("%f ", forthTasks[forthState.forthCurrentTask].floatStackSpace[ii]);
+		printf("[%d] ", floatStackIndex);
+		for (ii = 0; ii < floatStackIndex; ii++) {
+			printf("%f ", forthTasks[forthState.forthCurrentTask].floatStackSpace[ii]);
 		};
-	printf("\n");
-	} else  {
+		printf("\n");
+	}
+	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 #if defined (__DEBUG__)

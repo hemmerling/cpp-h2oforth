@@ -507,24 +507,24 @@ typedef  struct _forthWord {
 } typedef_forthWord;
 
 /* Variables */
-/* Words which start or end with a left parentheses "(word" are internal words, 
+/* Words which start or end with a left parentheses "(word" are internal words,
    which are named with other FORTH implementations with surrounding parentheses "(word)" */
 
 #if H2O_FORTH_PRIMITIVES == volk_ST_FORTH
 static const typedef_forthWord forthWords[] = { /* ATARI-ST */
-			{ "LISTING", "LISTING", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkListing }, 
-			{ "DOCUMENT", "DOCUMENT", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkDocument }, 
-			{ "PRINTALL", "PRINTALL", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkPrintALL }, 
-			{ "PTHRU", "PTHRU", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkPThru }, 
-			{ "PRINT", "PRINT", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkPrint }, 
-			{ "PRINTER", "PRINTER", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkPrinter }, 
-			{ "PRINTER.SCR", "PRINTER.SCR", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkPrinterDotScr }, 
-			{ "BUFFERS", "BUFFERS", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkBuffers }, 
-			{ "RELOCATE", "RELOCATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkRelocate }, 
-			{ "RELOCATE.SCR", "RELOCATE.SCR", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkRelocateDotScr }, 
-			{ "TRACE'", "TRACE'", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkTraceTick }, 
-			{ "DEBUG", "DEBUG", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkDebug }, 
-			{ "DUMP", "DUMP", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkDump }, 
+			{ "LISTING", "LISTING", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkListing },
+			{ "DOCUMENT", "DOCUMENT", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkDocument },
+			{ "PRINTALL", "PRINTALL", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkPrintALL },
+			{ "PTHRU", "PTHRU", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkPThru },
+			{ "PRINT", "PRINT", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkPrint },
+			{ "PRINTER", "PRINTER", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkPrinter },
+			{ "PRINTER.SCR", "PRINTER.SCR", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkPrinterDotScr },
+			{ "BUFFERS", "BUFFERS", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkBuffers },
+			{ "RELOCATE", "RELOCATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkRelocate },
+			{ "RELOCATE.SCR", "RELOCATE.SCR", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkRelocateDotScr },
+			{ "TRACE'", "TRACE'", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkTraceTick },
+			{ "DEBUG", "DEBUG", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkDebug },
+			{ "DUMP", "DUMP", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkDump },
 			{ "LDUMP", "LDUMP", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkLDump },
 			{ "TOOLS", "TOOLS", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkTools },
 			{ "TOOLS.SCR", "TOOLS.SCR", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkToolsDotScr },

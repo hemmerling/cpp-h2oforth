@@ -605,9 +605,9 @@ static const typedef_forthWord forthWords[] = {
 // List of figForth words, which are not in RSC-FORTH ( however, some of the words are in the RSC-FORTH Assembler vocabulary ):
 /*
 ^ Word Name ^ Where Used ^ Comment ^
-^ +ORIGIN | system | | 
-^ ?LOADING | system | | 
-^ BACK | system | | 
+^ +ORIGIN | system | |
+^ ?LOADING | system | |
+^ BACK | system | |
 ^ BLOCK-READ | user disk word | (DREAD) |
 ^ BLOCK-WRITE | user disk word | (DWRITE) |
 ^ DLIST | duplicate name | (VLIST) |
