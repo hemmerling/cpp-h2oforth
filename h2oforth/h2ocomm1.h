@@ -3,6 +3,9 @@
 
 /* Definitions of FORTH words common to one or more FORTH standards & FORTH implementations */
 
+#if defined (__DEBUG__)
+void privateDebugWord(char*);
+#endif
 void privateMessageHandler(void);
 void privateSetBaseFormat(void);
 void privateSetBaseLFormat(void);
@@ -16,6 +19,98 @@ void exceptionCatch(void);
 void exceptionThrow(void);
 void exceptionQuit(void);
 
+#ifdef FLOAT_SUPPORT
+#if (FLOATSTD == FLOAT_ANS94) || (FLOATSTD == FLOAT_FORTH2012)
+/* Floating-Point extension words */
+void fpointDFStore(void);
+void fpointDFFetch(void);
+void fpointDFAlign(void);
+void fpointDFFieldColon(void);
+void fpointDFloatPlus(void);
+void fpointDFloatS(void);
+void fpointFStarStar(void);
+void fpointFDot(void);
+void fpointFToS(void);
+void fpointFAbs(void);
+void fpointFAcos(void);
+void fpointFAcosh(void);
+void fpointFAlog(void);
+void fpointFAsin(void);
+void fpointAsinh(void);
+void fpointAtan(void);
+void fpointAtan2(void);
+void fpointFAtanh(void);
+void fpointFCos(void);
+void fpointFCosh(void);
+void fpointFEDot(void);
+void fpointFExp(void);
+void fpointFExpm1(void);
+void fpointFFieldColon(void);
+void fpointFLn(void);
+void fpointFLnp1(void);
+void fpointFLog(void);
+void fpointFSDot(void);
+void fpointFSin(void);
+void fpointFSincos(void);
+void fpointFSinH(void);
+void fpointFSqrt(void);
+void fpointFTan(void);
+void fpointFTanh(void);
+void fpointFTrunc(void);
+void fpointFValue(void);
+void fpointFTilde(void);
+void fpointPrecision(void);
+void fpointSToF(void);
+void fpointSetPrecision(void);
+void fpointSFStore(void);
+void fpointSFFetch(void);
+void fpointSFAlign(void);
+void fpointSFAligned(void);
+void fpointSFFieldColon(void);
+void fpointSFloatPlus(void);
+void fpointSFloatS(void);
+/* Floating-Point words */
+void fpointToFloat(void);
+void fpointDToF(void);
+void fpointFStore(void);
+void fpointFMultiply(void);
+void fpointFPlus(void);
+void fpointFMinus(void);
+void fpointFfpointFSlash(void);
+void fpointF0Less(void);
+void fpointF0Equal(void);
+void fpointFLess(void);
+void fpointFToD(void);
+void fpointFFetch(void);
+void fpointtFAlign(void);
+void fpointFAligned(void);
+void fpointFConstant(void);
+void fpointFDepth(void);
+void fpointFDrop(void);
+void fpointFDup(void);
+void fpointFLiteral(void);
+void fpointFloatPlus(void);
+void fpointFloatS(void);
+void fpointFloor(void);
+void fpointFMax(void);
+void fpointFMin(void);
+void fpointFNegate(void);
+void fpointFOver(void);
+void fpointFRot(void);
+void fpointFRound(void);
+void fpointFSwap(void);
+void fpointFVariable(void);
+void fpointRepresent(void);
+#endif
+#if (FLOATSTD == FLOAT_JUPITER)
+void fpointFNegate(void);
+void fpointFSlash(void);
+void fpointFStar(void);
+void fpointFPlus(void);
+void fpointFMinus(void);
+void fpointFDot(void);
+#endif
+#if (FLOATSTD == FLOAT_NELSON)
 void fpointFDotS(void);
 void fpointFDot(void);
 void fpointNumFS(void);
@@ -61,6 +156,81 @@ void fpointSFFetch(void);
 void fpointSF(void);
 void fpointFPStore(void);
 void fpointFPFetch(void);
+#endif
+#if (FLOATSTD == FLOAT_TURBO)
+/* 10 Floating-Point Stack Manipulation Words */
+void fpointFDup(void);
+void fpointFDrop(void);
+void fpointFSwap(void);
+void fpointFOver(void);
+void fpointFPClear(void);
+/* 11 Math Words */
+void fpointFPlus(void);
+void fpointFMinus(void);
+void fpointFStar(void);
+void fpointFSlash(void);
+void fpointFNegate(void);
+void fpointFAbs(void);
+void fpointFloor(void);
+void fpointCeil(void);
+void fpointTrunc(void);
+void fpointFrac(void);
+/* 12 Comparison Words */
+void fpointFEqual(void);
+void fpointF0Equal(void);
+void fpointFLess(void);
+void fpointFGreater(void);
+void fpointF0Less(void);
+/* 13 Floating-Point Literal Handling */
+void fpointToF(void);
+void fpointFLiteral(void);
+void fpointFLit(void);
+/* 14 Floating-Point Variables */
+void fpointFVariable(void);
+void fpointFStore(void);
+void fpointFFetch(void);
+/* 15 Floating-Point Constants */
+void fpointFConstant(void);
+/* 16 Floating-Point Values */
+void fpointFValue(void);
+void fpointFTo(void);
+void fpointPlusFTo(void);
+/* 17 Displaying Floating-Point Numbers */
+void fpointFDot(void);
+void fpointFFDpt(void);
+void fpointFFPlusDot(void);
+void fpointFFEDot(void);
+void fpointFFEPlusDot(void);
+void fpointFFXDot(void);
+void fpointFFXPlusDot(void);
+void fpointFDollarDot(void);
+void fpointDotFS(void);
+void fpointDotFDollar(void);
+/* 18 Floating-Point Number Conversion */
+void fpointSToFP(void);
+void fpointFPToS(void);
+/* 19 Transcendental Constants and Conversion Functions */
+void fpointPi(void);
+void fpointEulerE(void);
+void fpointRadDeg(void);
+void fpointDegRad(void);
+void fpointToRad(void);
+void fpointToDeg(void);
+/* 20 Transcendental Functions */
+void fpointExp(void);
+void fpointLog(void);
+void fpointSqrt(void);
+void fpointCos(void);
+void fpointSin(void);
+void fpointTan(void);
+void fpointAtn(void);
+void fpointPow(void);
+void fpointLog10(void);
+void fpointExp10(void);
+/* 21.3 Floating Point Error Handling */
+void fpointQFPErr(void);
+#endif
+#endif
 
 void taskingVfActivate(void);
 void taskingVfLock(void);
@@ -118,6 +288,101 @@ static const typedef_forthWord exceptionWords[] = {
 #endif
 
 #ifdef FLOAT_SUPPORT
+#if (FLOATSTD == FLOAT_ANS94) || (FLOATSTD == FLOAT_FORTH2012)
+static const typedef_forthWord fpointWords[] = {
+			/* Floating-Point extension words */
+			{ "DF!", "DF!", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointDFStore },
+			{ "DF@", "DF@", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointDFFetch },
+			{ "DFALIGN", "DFALIGNED", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointDFAlign },
+			{ "DFFIELD:", "DFFIELD:", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointDFFieldColon },
+			{ "DFLOAT+", "DFLOAT+", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointDFloatPlus },
+			{ "DFLOATS", "DFLOATS", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointDFloatS },
+			{ "F**", "F**", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFStarStar },
+			{ "F.", "F.", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDot },
+			{ "F>S", "F>S", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFToS },
+			{ "FABS", "FABS", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFAbs },
+			{ "FACOS", "FACOS", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFAcos },
+			{ "FACOSH", "FACOSH", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFAcosh },
+			{ "FALOG", "FALOG", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFAlog },
+			{ "FASIN", "FASIN", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFAsin },
+			{ "FASINH", "FASINH", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointAsinh },
+			{ "FATAN", "FATAN", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointAtan },
+			{ "FATAN2", "FATAN2", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointAtan2 },
+			{ "FATANH", "FATANH", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFAtanh },
+			{ "FCOS", "FCOS", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFCos },
+			{ "FCOSH", "FCOSH", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFCosh },
+			{ "FE.", "FE.", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFEDot },
+			{ "FEXP", "FEXP", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFExp },
+			{ "FEXPM1", "FEXPM1", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFExpm1 },
+			{ "FFIELD:", "FFIELD:", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFFieldColon },
+			{ "FLN", "FLN", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFLn },
+			{ "FLNP1", "FLNP1", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFLnp1 },
+			{ "FLOG", "FLOG", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFLog },
+			{ "FS.", "FS.", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFSDot },
+			{ "FSIN", "FSIN", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFSin },
+			{ "FSINCOS", "FSINCOS", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFSincos },
+			{ "FSINH", "FSINH", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFSinH },
+			{ "FSQRT", "FSQRT", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFSqrt },
+			{ "FTAN", "FTAN", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFTan },
+			{ "FTANH", "FTANH", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFTanh },
+			{ "FTRUNC", "FTRUNC", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFTrunc },
+			{ "FVALUE", "FVALUE", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFValue },
+			{ "F~", "F~", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFTilde },
+			{ "PRECISION", "PRECISION", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointPrecision },
+			{ "S>F", "S>F", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSToF },
+			{ "SET-PRECISION", "SET-PRECISION", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSetPrecision },
+			{ "SF!", "SF!", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFStore },
+			{ "SF@", "SF@", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFFetch },
+			{ "SFALIGN", "SFALIGN", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFAlign },
+			{ "SFALIGNED", "SFALIGNED", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFAligned },
+			{ "SFFIELD:", "SFFIELD:", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFFieldColon },
+			{ "SFLOAT+", "SFLOAT+", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFloatPlus },
+			{ "SFLOATS", "SFLOATS", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFloatS },
+			/* Floating-Point words */
+			{ ">FLOAT", ">FLOAT", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointToFloat },
+			{ "D>F", "D>F", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointDToF },
+			{ "F!", "F!", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFStore },
+			{ "F*", "F*", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFMultiply },
+			{ "F+", "F+", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFPlus },
+			{ "F-", "F-", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFMinus },
+			{ "F/", "F/", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFfpointFSlash },
+			{ "F0<", "F0<", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointF0Less },
+			{ "F0=", "F0=", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointF0Equal },
+			{ "F<", "F<", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFLess },
+			{ "F>D", "F>D", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFToD },
+			{ "F@", "F@", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFFetch },
+			{ "FALIGN", "FALIGN", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointtFAlign },
+			{ "FALIGNED", "FALIGNED", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFAligned },
+			{ "FCONSTANT", "FCONSTANT", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFConstant },
+			{ "FDEPTH", "FDEPTH", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDepth },
+			{ "FDROP", "FDROP", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDrop },
+			{ "FDUP", "FDUP", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDup },
+			{ "FLITERAL", "FLITERAL", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFLiteral },
+			{ "FLOAT+", "FLOAT+", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFloatPlus },
+			{ "FLOATS", "FLOATS", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFloatS },
+			{ "FLOOR", "FLOOR", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFloor },
+			{ "FMAX", "FMAX", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFMax },
+			{ "FMIN", "FMIN", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFMin },
+			{ "FNEGATE", "FNEGATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFNegate },
+			{ "FOVER", "FOVER", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFOver },
+			{ "FROT", "FROT", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFRot },
+			{ "FROUND", "FROUND", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFRound },
+			{ "FSWAP", "FSWAP", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFSwap },
+			{ "FVARIABLE", "FVARIABLE", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFVariable },
+			{ "REPRESENT", "REPRESENT", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointRepresent }
+};
+#endif
+#if (FLOATSTD == FLOAT_JUPITER)
+static const typedef_forthWord fpointWords[] = {
+			{ "FNEGATE", "FNEGATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFNegate },
+			{ "F/", "F/", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFSlash },
+			{ "F*", "F*", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFStar },
+			{ "F+", "F+", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFPlus },
+			{ "F-", "F-", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFMinus },
+			{ "F.", "F.", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDot }
+};
+#endif
+#if (FLOATSTD == FLOAT_NELSON)
 static const typedef_forthWord fpointWords[] = {
 			{ "F.S", "f.s", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDotS },
 			{ "F.", "f.", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDot },
@@ -165,6 +430,82 @@ static const typedef_forthWord fpointWords[] = {
 			{ "FP!", "FP!", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFPStore },
 			{ "FP@", "FP@", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFPFetch }
 };
+#endif
+#if (FLOATSTD == FLOAT_TURBO)
+static const typedef_forthWord fpointWords[] = {
+			/* 10 Floating-Point Stack Manipulation Words */
+			{ "FDUP", "FDUP", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDup },
+			{ "FDROP", "FDROP", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDrop },
+			{ "FSWAP", "FSWAP", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFSwap },
+			{ "FOVER", "FOVER", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFOver },
+			{ "FPCLEAR", "FPCLEAR", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFPClear },
+			/* 11 Math Words */
+			{ "F+", "F+", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFPlus },
+			{ "F-", "F-", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFMinus },
+			{ "F*", "F*", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFStar },
+			{ "F/", "F/", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFSlash },
+			{ "FNEGATE", "FNEGATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFNegate },
+			{ "FABS", "FABS", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFAbs },
+			{ "FLOOR", "FLOOR", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFloor },
+			{ "CEIL", "CEIL", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointCeil },
+			{ "TRUNC", "TRUNC", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointTrunc },
+			{ "FRAC", "FRAC", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFrac },
+ 			/* 12 Comparison Words */
+			{ "F=", "F=", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFEqual },
+			{ "F0=", "F0=", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointF0Equal },
+			{ "F<", "F<", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFLess },
+			{ "F>", "F>", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFGreater },
+			{ "F0<", "F0<", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointF0Less },
+			/* 13 Floating-Point Literal Handling */
+			{ ">F", ">F", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointToF },
+			{ "FLITERAL", "FLITERAL", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFLiteral },
+			{ "FLIT", "FLIT", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFLit },
+			/* 14 Floating-Point Variables */
+			{ "FVARIABLE", "FVARIABLE", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFVariable },
+			{ "F!", "F!", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFStore },
+			{ "F@", "F@", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFFetch },
+			/* 15 Floating-Point Constants */
+			{ "FCONSTANT", "FCONSTANT", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFConstant },
+			/* 16 Floating-Point Values */
+			{ "FVALUE", "FVALUE", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFValue },
+			{ "FTO", "FTO", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFTo },
+			{ "+FTO", "+FTO", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointPlusFTo },
+			/* 17 Displaying Floating-Point Numbers */
+			{ "F.", "F.", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDot },
+			{ "FF.", "FF.", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFFDpt },
+			{ "FF+.", "FF+.", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFFPlusDot },
+			{ "FFE.", "FFE.", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFFEDot },
+			{ "FFE+.", "FFE+.", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFFEPlusDot },
+			{ "FFX.", "FFX.", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFFXDot },
+			{ "FFX+.", "FFX+.", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFFXPlusDot },
+			{ "F$.", "F$.", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDollarDot },
+			{ ".FS", ".FS", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointDotFS },
+			{ ".F$", ".F$", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointDotFDollar },
+			/* 18 Floating-Point Number Conversion */
+			{ "S>FP", "S>FP", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSToFP },
+			{ "FP>S", "FP>S", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFPToS },
+			/* 19 Transcendental Constants and Conversion Functions */
+			{ "PI", "PI", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointPi },
+			{ "EULER_E", "EULER_E", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointEulerE },
+			{ "RAD/DEG", "RAD/DEG", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointRadDeg },
+			{ "DEG/RAD", "DEG/RAD", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointDegRad },
+			{ ">RAD", ">RAD", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointToRad },
+			{ ">DEG", ">DEG", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointToDeg },
+			/* 20 Transcendental Functions */
+			{ "EXP", "EXP", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointExp },
+			{ "LOG", "LOG", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointLog },
+			{ "SQRT", "SQRT", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSqrt },
+			{ "COS", "COS", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointCos },
+			{ "SIN", "SIN", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSin },
+			{ "TAN", "TAN", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointTan },
+			{ "ATN", "ATN", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointAtn },
+			{ "POW", "POW", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointPow },
+			{ "LOG10", "LOG10", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointLog10 },
+			{ "EXP10", "EXP10", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointExp10 },
+			/* 21.3 Floating Point Error Handling */
+			{ "?FPERR", "?FPERR", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointQFPErr }
+};
+#endif
 #endif
 
 #if TASKINGSTANDARD == TASKINGSTD_VOLK
@@ -218,3 +559,4 @@ static const typedef_forthWord testingWords[] = {
 #endif
 
 #endif
+

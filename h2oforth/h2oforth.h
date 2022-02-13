@@ -60,6 +60,13 @@
 #define FORTHSTD_ANS94 6
 #define FORTHSTD_FORTH2012 7
 
+#undef FLOATSTD 
+#define FLOAT_ANS94 1
+#define FLOAT_FORTH2012 2
+#define FLOAT_JUPITER 3
+#define FLOAT_NELSON 4
+#define FLOAT_TURBO 5
+
 #undef TASKINGSTANDARD
 #define TASKINGSTD_VOLK_ 1
 #define TASKINGSTD_FORTH83 2
@@ -100,13 +107,23 @@
 #undef EXCEPTION_SUPPORT
 //#define EXCEPTION_SUPPORT
 
-//#undef FLOAT_SUPPORT
-#define FLOAT_SUPPORT
+/* FLOAT options start --------- */
+#undef FLOAT_SUPPORT
+//#define FLOAT_SUPPORT
+
+#ifdef FLOAT_SUPPORT
+//#define FLOATSTD FLOAT_ANS94
+//#define FLOATSTD FLOAT_FORTH2012
+#define FLOATSTD FLOAT_JUPITER
+//#define FLOATSTD FLOAT_NELSON
+//#define FLOATSTD FLOAT_TURBO
+#endif
 
 #ifdef FLOAT_SUPPORT
 //#define CELL_FLOAT float
 #define CELL_FLOAT double
 #endif
+/* FLOAT options end ----------- */
 
 #undef TESTING_SUPPORT
 //#define TESTING_SUPPORT
@@ -429,6 +446,13 @@
 #define CELL_INTEGER int
 #define LONG_LONG __int128
 #define DPINTEGER_SUPPORT
+#endif
+
+/* Macros */
+#if defined (__DEBUG__)
+#define DEBUG_WORD(X) privateDebugWord(X);
+#else
+#define DEBUG_PRINT_OWN_NAME(X)
 #endif
 
 void forthInit(void);
