@@ -86,9 +86,7 @@ void privateSetBaseLFormat(void) {
 void commonOctal(void) {
 	forthTasks[forthState.forthCurrentTask].forthBase = OCTAL;
 	forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_OCTAL;
-#if defined (__DEBUG__)
-	printf("commonOctal\n");
-#endif
+DEBUG_WORD("commonOctal")
 }
 
 /* Display in hexadecimal base in the format of <.> */
@@ -104,9 +102,7 @@ void commonHexDot(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-#if defined (__DEBUG__)
-	printf("commonHexDot\n");
-#endif
+DEBUG_WORD("commonHexDot")
 }
 
 /* Display in octal base in the format of <.> */
@@ -122,42 +118,30 @@ void commonOctDot(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-#if defined (__DEBUG__)
-	printf("commonOctDot\n");
-#endif
+DEBUG_WORD("commonOctDot")
 }
 
 
 #ifdef EXCEPTION_SUPPORT
 void exceptionAbort(void) {
-#if defined (__DEBUG__)
-	printf("exceptionAbort\n");
-#endif
+DEBUG_WORD("exceptionAbort")
 }
 
 void exceptionAbortQ(void) {
-#if defined (__DEBUG__)
-	printf("exceptionAbortQ\n");
-#endif
+DEBUG_WORD("exceptionAbortQ")
 }
 
 void exceptionCatch(void) {
-#if defined (__DEBUG__)
-	printf("exceptionCatch\n");
-#endif
+DEBUG_WORD("exceptionCatch")
 }
 
 void exceptionThrow(void) {
-#if defined (__DEBUG__)
-	printf("exceptionThrow\n");
-#endif
+DEBUG_WORD("exceptionThrow")
 }
 
 /* Quit with exception handling. Overrides standard implementation in forthWords */
 void exceptionQuit(void) {
-#if defined (__DEBUG__)
-	printf("exceptionQuit\n");
-#endif
+DEBUG_WORD("exceptionQuit")
 }
 #endif
 
@@ -166,510 +150,342 @@ void exceptionQuit(void) {
 #if (FLOATSTD == FLOAT_ANS94) || (FLOATSTD == FLOAT_FORTH2012)
 /* Floating-Point extension words */
 void fpointDFStore(void) {
-#if defined (__DEBUG__)
-	printf("fpointDFStore\n");
-#endif
+DEBUG_WORD("fpointDFStore")
 }
 
 void fpointDFFetch(void) {
-#if defined (__DEBUG__)
-	printf("fpointDFFetch\n");
-#endif
+DEBUG_WORD("fpointDFFetch")
 }
 
 void fpointDFAlign(void) {
-#if defined (__DEBUG__)
-	printf("fpointDFAlign\n");
-#endif
+DEBUG_WORD("fpointDFAlign")
 }
 
 void fpointDFFieldColon(void) {
-#if defined (__DEBUG__)
-	printf("fpointDFFieldColon\n");
-#endif
+DEBUG_WORD("fpointDFFieldColon")
 }
 
 void fpointDFloatPlus(void) {
-#if defined (__DEBUG__)
-	printf("fpointDFloatPlus\n");
-#endif
+DEBUG_WORD("fpointDFloatPlus")
 }
 
 void fpointDFloatS(void) {
-#if defined (__DEBUG__)
-	printf("fpointDFloatS\n");
-#endif
+DEBUG_WORD("fpointDFloatS")
 }
 
 void fpointFStarStar(void) {
-#if defined (__DEBUG__)
-	printf("fpointFStarStar\n");
-#endif
+DEBUG_WORD("fpointFStarStar")
 }
 
 void fpointFDot(void) {
-#if defined (__DEBUG__)
-	printf("fpointFDot\n");
-#endif
+DEBUG_WORD("fpointFDot")
 }
 
 void fpointFToS(void) {
-#if defined (__DEBUG__)
-	printf("fpointFToS\n");
-#endif
+DEBUG_WORD("fpointFToS")
 }
 
 void fpointFAbs(void) {
-#if defined (__DEBUG__)
-	printf("fpointFAbs\n");
-#endif
+DEBUG_WORD("fpointFAbs")
 }
 
 void fpointFAcos(void) {
-#if defined (__DEBUG__)
-	printf("fpointFAcos\n");
-#endif
+DEBUG_WORD("fpointFAcos")
 }
 
 void fpointFAcosh(void) {
-#if defined (__DEBUG__)
-	printf("fpointFAcosh\n");
-#endif
+DEBUG_WORD("fpointFAcosh")
 }
 
 void fpointFAlog(void) {
-#if defined (__DEBUG__)
-	printf("fpointFAlog\n");
-#endif
+DEBUG_WORD("fpointFAlog")
 }
 
 void fpointFAsin(void) {
-#if defined (__DEBUG__)
-	printf("fpointFAsin\n");
-#endif
+DEBUG_WORD("fpointFAsin")
 }
 
 void fpointAsinh(void) {
-#if defined (__DEBUG__)
-	printf("fpointAsinh\n");
-#endif
+DEBUG_WORD("fpointAsinh")
 }
 
 void fpointAtan(void) {
-#if defined (__DEBUG__)
-	printf("fpointAtan\n");
-#endif
+DEBUG_WORD("fpointAtan")
 }
 
 void fpointAtan2(void) {
-#if defined (__DEBUG__)
-	printf("fpointAtan2\n");
-#endif
+DEBUG_WORD("fpointAtan2")
 }
 
 void fpointFAtanh(void) {
-#if defined (__DEBUG__)
-	printf("fpointFAtanh\n");
-#endif
+DEBUG_WORD("fpointFAtanh")
 }
 
 void fpointFCos(void) {
-#if defined (__DEBUG__)
-	printf("fpointFCos\n");
-#endif
+DEBUG_WORD("fpointFCos")
 }
 
 void fpointFCosh(void) {
-#if defined (__DEBUG__)
-	printf("fpointFCosh\n");
-#endif
+DEBUG_WORD("fpointFCosh")
 }
 
 void fpointFEDot(void) {
-#if defined (__DEBUG__)
-	printf("fpointFEDot\n");
-#endif
+DEBUG_WORD("fpointFEDot")
 }
 
 void fpointFExp(void) {
-#if defined (__DEBUG__)
-	printf("fpointFExp\n");
-#endif
+DEBUG_WORD("fpointFExp")
 }
 
 void fpointFExpm1(void) {
-#if defined (__DEBUG__)
-	printf("fpointFExpm1\n");
-#endif
+DEBUG_WORD("fpointFExpm1")
 }
 
 void fpointFFieldColon(void) {
-#if defined (__DEBUG__)
-	printf("fpointFFieldColon\n");
-#endif
+DEBUG_WORD("fpointFFieldColon")
 }
 
 void fpointFLn(void) {
-#if defined (__DEBUG__)
-	printf("fpointFLn\n");
-#endif
+DEBUG_WORD("fpointFLn")
 }
 
 void fpointFLnp1(void) {
-#if defined (__DEBUG__)
-	printf("fpointFLnp1\n");
-#endif
+DEBUG_WORD("fpointFLnp1")
 }
 
 void fpointFLog(void) {
-#if defined (__DEBUG__)
-	printf("fpointFLog\n");
-#endif
+DEBUG_WORD("fpointFLog")
 }
 
 void fpointFSDot(void) {
-#if defined (__DEBUG__)
-	printf("fpointFSDot\n");
-#endif
+DEBUG_WORD("fpointFSDot")
 }
 
 void fpointFSin(void) {
-#if defined (__DEBUG__)
-	printf("fpointFSin\n");
-#endif
+DEBUG_WORD("fpointFSin")
 }
 
 void fpointFSincos(void) {
-#if defined (__DEBUG__)
-	printf("fpointFSincos\n");
-#endif
+DEBUG_WORD("fpointFSincos")
 }
 
 void fpointFSinH(void) {
-#if defined (__DEBUG__)
-	printf("fpointFSinH\n");
-#endif
+DEBUG_WORD("fpointFSinH")
 }
 
 void fpointFSqrt(void) {
-#if defined (__DEBUG__)
-	printf("fpointFSqrt\n");
-#endif
+DEBUG_WORD("fpointFSqrt")
 }
 
 void fpointFTan(void) {
-#if defined (__DEBUG__)
-	printf("fpointFTan\n");
-#endif
+DEBUG_WORD("fpointFTan")
 }
 
 void fpointFTanh(void) {
-#if defined (__DEBUG__)
-	printf("fpointFTanh\n");
-#endif
+DEBUG_WORD("fpointFTanh")
 }
 
 void fpointFTrunc(void) {
-#if defined (__DEBUG__)
-	printf("fpointFTrunc\n");
-#endif
+DEBUG_WORD("fpointFTrunc")
 }
 
 void fpointFValue(void) {
-#if defined (__DEBUG__)
-	printf("fpointFValue\n");
-#endif
+DEBUG_WORD("fpointFValue")
 }
 
 void fpointFTilde(void) {
-#if defined (__DEBUG__)
-	printf("fpointFTilde\n");
-#endif
+DEBUG_WORD("fpointFTilde")
 }
 
 void fpointPrecision(void) {
-#if defined (__DEBUG__)
-	printf("fpointPrecision\n");
-#endif
+DEBUG_WORD("fpointPrecision")
 }
 
 void fpointSToF(void) {
-#if defined (__DEBUG__)
-	printf("fpointSToF\n");
-#endif
+DEBUG_WORD("fpointSToF")
 }
 
 void fpointSetPrecision(void) {
-#if defined (__DEBUG__)
-	printf("fpointSetPrecision\n");
-#endif
+DEBUG_WORD("fpointSetPrecision")
 }
 
 void fpointSFStore(void) {
-#if defined (__DEBUG__)
-	printf("fpointSFStore\n");
-#endif
+DEBUG_WORD("fpointSFStore")
 }
 
 void fpointSFFetch(void) {
-#if defined (__DEBUG__)
-	printf("fpointSFFetch\n");
-#endif
+DEBUG_WORD("fpointSFFetch")
 }
 
 void fpointSFAlign(void) {
-#if defined (__DEBUG__)
-	printf("fpointSFAlign\n");
-#endif
+DEBUG_WORD("fpointSFAlign")
 }
 
 void fpointSFAligned(void) {
-#if defined (__DEBUG__)
-	printf("fpointSFAligned\n");
-#endif
+DEBUG_WORD("fpointSFAligned")
 }
 
 void fpointSFFieldColon(void) {
-#if defined (__DEBUG__)
-	printf("fpointSFFieldColon\n");
-#endif
+DEBUG_WORD("fpointSFFieldColon")
 }
 
 void fpointSFloatPlus(void) {
-#if defined (__DEBUG__)
-	printf("fpointSFloatPlus\n");
-#endif
+DEBUG_WORD("fpointSFloatPlus")
 }
 
 void fpointSFloatS(void) {
-#if defined (__DEBUG__)
-	printf("fpointSFloatS\n");
-#endif
+DEBUG_WORD("fpointSFloatS")
 }
 
 /* Floating-Point words */
 void fpointToFloat(void) {
-#if defined (__DEBUG__)
-	printf("fpointToFloat\n");
-#endif
+DEBUG_WORD("fpointToFloat")
 }
 
 void fpointDToF(void) {
-#if defined (__DEBUG__)
-	printf("fpointDToF\n");
-#endif
+DEBUG_WORD("fpointDToF")
 }
 
 void fpointFStore(void) {
-#if defined (__DEBUG__)
-	printf("fpointFStore\n");
-#endif
+DEBUG_WORD("fpointFStore")
 }
 
 void fpointFMultiply(void) {
-#if defined (__DEBUG__)
-	printf("fpointFMultiply\n");
-#endif
+DEBUG_WORD("fpointFMultiply")
 }
 
 void fpointFPlus(void) {
-#if defined (__DEBUG__)
-	printf("fpointFPlus\n");
-#endif
+DEBUG_WORD("fpointFPlus")
 }
 
 void fpointFMinus(void) {
-#if defined (__DEBUG__)
-	printf("fpointFMinus\n");
-#endif
+DEBUG_WORD("fpointFMinus")
 }
 
 void fpointFfpointFSlash(void) {
-#if defined (__DEBUG__)
-	printf("fpointFfpointFSlash\n");
-#endif
+DEBUG_WORD("fpointFfpointFSlash")
 }
 
 void fpointF0Less(void) {
-#if defined (__DEBUG__)
-	printf("fpointF0Less\n");
-#endif
+DEBUG_WORD("fpointF0Less")
 }
 
 void fpointF0Equal(void) {
-#if defined (__DEBUG__)
-	printf("fpointF0Equal\n");
-#endif
+DEBUG_WORD("fpointF0Equal")
 }
 
 void fpointFLess(void) {
-#if defined (__DEBUG__)
-	printf("fpointFLess\n");
-#endif
+DEBUG_WORD("fpointFLess")
 }
 
 void fpointFToD(void) {
-#if defined (__DEBUG__)
-	printf("fpointFToD\n");
-#endif
+DEBUG_WORD("fpointFToD")
 }
 
 void fpointFFetch(void) {
-#if defined (__DEBUG__)
-	printf("fpointFFetch\n");
-#endif
+DEBUG_WORD("fpointFFetch")
 }
 
 void fpointtFAlign(void) {
-#if defined (__DEBUG__)
-	printf("fpointtFAlign\n");
-#endif
+DEBUG_WORD("fpointtFAlign")
 }
 
 void fpointFAligned(void) {
-#if defined (__DEBUG__)
-	printf("fpointFAligned\n");
-#endif
+DEBUG_WORD("fpointFAligned")
 }
 
 void fpointFConstant(void) {
-#if defined (__DEBUG__)
-	printf("fpointFConstant\n");
-#endif
+DEBUG_WORD("fpointFConstant")
 }
 
 void fpointFDepth(void) {
-#if defined (__DEBUG__)
-	printf("fpointFDepth\n");
-#endif
+DEBUG_WORD("fpointFDepth")
 }
 
 void fpointFDrop(void) {
-#if defined (__DEBUG__)
-	printf("fpointFDrop\n");
-#endif
+DEBUG_WORD("fpointFDrop")
 }
 
 void fpointFDup(void) {
-#if defined (__DEBUG__)
-	printf("fpointFDup\n");
-#endif
+DEBUG_WORD("fpointFDup")
 }
 
 void fpointFLiteral(void) {
-#if defined (__DEBUG__)
-	printf("fpointFLiteral\n");
-#endif
+DEBUG_WORD("fpointFLiteral")
 }
 
 void fpointFloatPlus(void) {
-#if defined (__DEBUG__)
-	printf("fpointFloatPlus\n");
-#endif
+DEBUG_WORD("fpointFloatPlus")
 }
 
 void fpointFloatS(void) {
-#if defined (__DEBUG__)
-	printf("fpointFloatS\n");
-#endif
+DEBUG_WORD("fpointFloatS")
 }
 
 void fpointFloor(void) {
-#if defined (__DEBUG__)
-	printf("fpointFloor\n");
-#endif
+DEBUG_WORD("fpointFloor")
 }
 
 void fpointFMax(void) {
-#if defined (__DEBUG__)
-	printf("fpointFMax\n");
-#endif
+DEBUG_WORD("fpointFMax")
 }
 
 void fpointFMin(void) {
-#if defined (__DEBUG__)
-	printf("fpointFMin\n");
-#endif
+DEBUG_WORD("fpointFMin")
 }
 
 void fpointFNegate(void) {
-#if defined (__DEBUG__)
-	printf("fpointFNegate\n");
-#endif
+DEBUG_WORD("fpointFNegate")
 }
 
 void fpointFOver(void) {
-#if defined (__DEBUG__)
-	printf("fpointFOver\n");
-#endif
+DEBUG_WORD("fpointFOver")
 }
 
 void fpointFRot(void) {
-#if defined (__DEBUG__)
-	printf("fpointFRot\n");
-#endif
+DEBUG_WORD("fpointFRot")
 }
 
 void fpointFRound(void) {
-#if defined (__DEBUG__)
-	printf("fpointFRound\n");
-#endif
+DEBUG_WORD("fpointFRound")
 }
 
 void fpointFSwap(void) {
-#if defined (__DEBUG__)
-	printf("fpointFSwap\n");
-#endif
+DEBUG_WORD("fpointFSwap")
 }
 
 void fpointFVariable(void) {
-#if defined (__DEBUG__)
-	printf("fpointFVariable\n");
-#endif
+DEBUG_WORD("fpointFVariable")
 }
 
 void fpointRepresent(void) {
-#if defined (__DEBUG__)
-	printf("fpointRepresent\n");
-#endif
+DEBUG_WORD("fpointRepresent")
 }
 
 #endif
 #if (FLOATSTD == FLOAT_JUPITER)
 void fpointFNegate(void) {
-#if defined (__DEBUG__)
-	printf("fpointFNegate\n");
-#endif
+DEBUG_WORD("fpointFNegate")
 }
 
 void fpointFSlash(void) {
-#if defined (__DEBUG__)
-	printf("fpointFSlash\n");
-#endif
+DEBUG_WORD("fpointFSlash")
 }
 
 void fpointFStar(void) {
-#if defined (__DEBUG__)
-	printf("fpointFStar\n");
-#endif
+DEBUG_WORD("fpointFStar")
 }
 
 void fpointFPlus(void) {
-#if defined (__DEBUG__)
-	printf("fpointFPlus\n");
-#endif
+DEBUG_WORD("fpointFPlus")
 }
 
 void fpointFMinus(void) {
-#if defined (__DEBUG__)
-	printf("fpointFMinus\n");
-#endif
+DEBUG_WORD("fpointFMinus")
 }
 
 void fpointFDot(void){
-#if defined (__DEBUG__)
-	printf("fpointFDot\n");
-#endif
+DEBUG_WORD("fpointFDot")
 }
 
 
@@ -688,641 +504,433 @@ void fpointFDotS(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-#if defined (__DEBUG__)
-	printf("fpointDotF\n");
-#endif
+DEBUG_WORD("fpointDotF")
 }
 
 void fpointFDot(void) {
-#if defined (__DEBUG__)
-	printf("fpoinFtDot\n");
-#endif
+DEBUG_WORD("fpoinFtDot")
 }
 
 void fpointNumFS(void) {
-#if defined (__DEBUG__)
-	printf("fpointNumFS\n");
-#endif
+DEBUG_WORD("fpointNumFS")
 }
 
 void fpointSetPrecision(void) {
-#if defined (__DEBUG__)
-	printf("fpointSetPrecision\n");
-#endif
+DEBUG_WORD("fpointSetPrecision")
 }
 
 void fpointPrecision(void) {
-#if defined (__DEBUG__)
-	printf("fpointPrecision\n");
-#endif
+DEBUG_WORD("fpointPrecision")
 }
 
 void fpointFSqrt(void) {
-#if defined (__DEBUG__)
-	printf("fpointFSqrt\n");
-#endif
+DEBUG_WORD("fpointFSqrt")
 }
 
 void fpointPi(void) {
-#if defined (__DEBUG__)
-	printf("fpointPi\n");
-#endif
+DEBUG_WORD("fpointPi")
 }
 
 void fpointFVariable(void) {
-#if defined (__DEBUG__)
-	printf("fpointFVariable\n");
-#endif
+DEBUG_WORD("fpointFVariable")
 }
 
 void fpointFConstant(void) {
-#if defined (__DEBUG__)
-	printf("fpointFConstant\n");
-#endif
+DEBUG_WORD("fpointFConstant")
 }
 
 void fpointFLiteral(void) {
-#if defined (__DEBUG__)
-	printf("fpointFLiteral\n");
-#endif
+DEBUG_WORD("fpointFLiteral")
 }
 
 void fpointAFLiteral(void) {
-#if defined (__DEBUG__)
-	printf("fpointAFLiteral\n");
-#endif
+DEBUG_WORD("fpointAFLiteral")
 }
 
 void fpointSFComma(void) {
-#if defined (__DEBUG__)
-	printf("fpointSFComma\n");
-#endif
+DEBUG_WORD("fpointSFComma")
 }
 
 void fpointSFloatPlus(void) {
-#if defined (__DEBUG__)
-	printf("fpointSFloatPlus\n");
-#endif
+DEBUG_WORD("fpointSFloatPlus")
 }
 
 void fpointSFloats(void) {
-#if defined (__DEBUG__)
-	printf("fpointSFloats\n");
-#endif
+DEBUG_WORD("fpointSFloats")
 }
 
 void fpointSFloat(void) {
-#if defined (__DEBUG__)
-	printf("fpointSFloat\n");
-#endif
+DEBUG_WORD("fpointSFloat")
 }
 
 void fpointSFGreaterEqual(void) {
-#if defined (__DEBUG__)
-	printf("fpointSFGreaterEqual\n");
-#endif
+DEBUG_WORD("fpointSFGreaterEqual")
 }
 
 void fpointSFLessEqual(void) {
-#if defined (__DEBUG__)
-	printf("fpointSFLessEqual\n");
-#endif
+DEBUG_WORD("fpointSFLessEqual")
 }
 
 void fpointSFUnequal(void) {
-#if defined (__DEBUG__)
-	printf("fpointSFUnequal\n");
-#endif
+DEBUG_WORD("fpointSFUnequal")
 }
 
 void fpointSFGreater(void) {
-#if defined (__DEBUG__)
-	printf("fpointSFGreater\n");
-#endif
+DEBUG_WORD("fpointSFGreater")
 }
 
 void fpointSFLess(void) {
-#if defined (__DEBUG__)
-	printf("fpointSFLess\n");
-#endif
+DEBUG_WORD("fpointSFLess")
 }
 
 void fpointSFEqual(void) {
-#if defined (__DEBUG__)
-	printf("fpointSFEqual\n");
-#endif
+DEBUG_WORD("fpointSFEqual")
 }
 
 void fpointFg(void) {
-#if defined (__DEBUG__)
-	printf("fpointFg\n");
-#endif
+DEBUG_WORD("fpointFg")
 }
 
 void fpointFDepth(void) {
-#if defined (__DEBUG__)
-	printf("fpointFDepth\n");
-#endif
+DEBUG_WORD("fpointFDepth")
 }
 
 void fpointFP0(void) {
-#if defined (__DEBUG__)
-	printf("fpointFP0\n");
-#endif
+DEBUG_WORD("fpointFP0")
 }
 
 void fpointFGreaterNumberQ(void) {
-#if defined (__DEBUG__)
-	printf("fpointFGreaterNumberQ\n");
-#endif
+DEBUG_WORD("fpointFGreaterNumberQ")
 }
 
 void fpointFToS(void) {
-#if defined (__DEBUG__)
-	printf("fpointFToS\n");
-#endif
+DEBUG_WORD("fpointFToS")
 }
 
 void fpointSToF(void) {
-#if defined (__DEBUG__)
-	printf("fpointSToF\n");
-#endif
+DEBUG_WORD("fpointSToF")
 }
 
 void fpointOneSlashF(void) {
-#if defined (__DEBUG__)
-	printf("fpointOneSlashF\n");
-#endif
+DEBUG_WORD("fpointOneSlashF")
 }
 
 void fpointFSlash(void) {
-#if defined (__DEBUG__)
-	printf("fpointFSlash\n");
-#endif
+DEBUG_WORD("fpointFSlash")
 }
 
 void fpointFStar(void) {
-#if defined (__DEBUG__)
-	printf("fpointFStar\n");
-#endif
+DEBUG_WORD("fpointFStar")
 }
 
 void fpointFMinus(void) {
-#if defined (__DEBUG__)
-	printf("fpointFMinus\n");
-#endif
+DEBUG_WORD("fpointFMinus")
 }
 
 void fpointFPlus(void) {
-#if defined (__DEBUG__)
-	printf("fpointFPlus\n");
-#endif
+DEBUG_WORD("fpointFPlus")
 }
 
 void fpointF0Equal(void) {
-#if defined (__DEBUG__)
-	printf("fpointF0Equal\n");
-#endif
+DEBUG_WORD("fpointF0Equal")
 }
 
 void fpointF0Less(void) {
-#if defined (__DEBUG__)
-	printf("fpointF0Less\n");
-#endif
+DEBUG_WORD("fpointF0Less")
 }
 
 void fpointFNegate(void) {
-#if defined (__DEBUG__)
-	printf("fpointFNegate\n");
-#endif
+DEBUG_WORD("fpointFNegate")
 }
 
 void fpointFswa(void) {
-#if defined (__DEBUG__)
-	printf("fpointFswa\n");
-#endif
+DEBUG_WORD("fpointFswa")
 }
 
 void fpointFOver(void) {
-#if defined (__DEBUG__)
-	printf("fpointFOver\n");
-#endif
+DEBUG_WORD("fpointFOver")
 }
 
 void fpointFDrop(void) {
-#if defined (__DEBUG__)
-	printf("fpointFDrop\n");
-#endif
+DEBUG_WORD("fpointFDrop")
 }
 
 void fpointFNip(void) {
-#if defined (__DEBUG__)
-	printf("fpointFNip\n");
-#endif
+DEBUG_WORD("fpointFNip")
 }
 
 void fpointFDup(void) {
-#if defined (__DEBUG__)
-	printf("fpointFDup\n");
-#endif
+DEBUG_WORD("fpointFDup")
 }
 
 void fpointSFStore(void) {
-#if defined (__DEBUG__)
-	printf("fpointSFStore\n");
-#endif
+DEBUG_WORD("fpointSFStore")
 }
 
 void fpointSFFetch(void) {
-#if defined (__DEBUG__)
-	printf("fpointSFFetch\n");
-#endif
+DEBUG_WORD("fpointSFFetch")
 }
 
 void fpointSF(void) {
-#if defined (__DEBUG__)
-	printf("fpointSF\n");
-#endif
+DEBUG_WORD("fpointSF")
 }
 
 void fpointFPStore(void) {
-#if defined (__DEBUG__)
-	printf("fpointFPStore\n");
-#endif
+DEBUG_WORD("fpointFPStore")
 }
 
 void fpointFPFetch(void) {
-#if defined (__DEBUG__)
-	printf("fpointFPFetch\n");
-#endif
+DEBUG_WORD("fpointFPFetch")
 }
 
 #endif
 #if (FLOATSTD == FLOAT_TURBO)
 /* 10 Floating-Point Stack Manipulation Words */
 void fpointFDup(void) {
-#if defined (__DEBUG__)
-	printf("fpointFDup\n");
-#endif
+DEBUG_WORD("fpointFDup")
 }
 
 void fpointFDrop(void) {
-#if defined (__DEBUG__)
-	printf("fpointFDrop\n");
-#endif
+DEBUG_WORD("fpointFDrop")
 }
 
 void fpointFSwap(void) {
-#if defined (__DEBUG__)
-	printf("fpointFSwap\n");
-#endif
+DEBUG_WORD("fpointFSwap")
 }
 
 void fpointFOver(void) {
-#if defined (__DEBUG__)
-	printf("fpointFOver\n");
-#endif
+DEBUG_WORD("fpointFOver")
 }
 
 void fpointFPClear(void) {
-#if defined (__DEBUG__)
-	printf("fpointFPClear\n");
-#endif
+DEBUG_WORD("fpointFPClear")
 }
 
 /* 11 Math Words */
 void fpointFPlus(void) {
-#if defined (__DEBUG__)
-	printf("fpointFPlus\n");
-#endif
+DEBUG_WORD("fpointFPlus")
 }
 
 void fpointFMinus(void) {
-#if defined (__DEBUG__)
-	printf("fpointFMinus\n");
-#endif
+DEBUG_WORD("fpointFMinus")
 }
 
 void fpointFStar(void) {
-#if defined (__DEBUG__)
-	printf("fpointFStar\n");
-#endif
+DEBUG_WORD("fpointFStar")
 }
 
 void fpointFSlash(void) {
-#if defined (__DEBUG__)
-	printf("fpointFSlash\n");
-#endif
+DEBUG_WORD("fpointFSlash")
 }
 
 void fpointFNegate(void) {
-#if defined (__DEBUG__)
-	printf("fpointFNegate\n");
-#endif
+DEBUG_WORD("fpointFNegate")
 }
 
 void fpointFAbs(void) {
-#if defined (__DEBUG__)
-	printf("fpointFAbs\n");
-#endif
+DEBUG_WORD("fpointFAbs")
 }
 
 void fpointFloor(void) {
-#if defined (__DEBUG__)
-	printf("fpointFloor\n");
-#endif
+DEBUG_WORD("fpointFloor")
 }
 
 void fpointCeil(void) {
-#if defined (__DEBUG__)
-	printf("fpointCeil\n");
-#endif
+DEBUG_WORD("fpointCeil")
 }
 
 void fpointTrunc(void) {
-#if defined (__DEBUG__)
-	printf("fpointTrunc\n");
-#endif
+DEBUG_WORD("fpointTrunc")
 }
 
 void fpointFrac(void) {
-#if defined (__DEBUG__)
-	printf("fpointFrac\n");
-#endif
+DEBUG_WORD("fpointFrac")
 }
 
 /* 12 Comparison Words */
 void fpointFEqual(void) {
-#if defined (__DEBUG__)
-	printf("fpointFEqual\n");
-#endif
+DEBUG_WORD("fpointFEqual")
 }
 
 void fpointF0Equal(void) {
-#if defined (__DEBUG__)
-	printf("fpointF0Equal\n");
-#endif
+DEBUG_WORD("fpointF0Equal")
 }
 
 void fpointFLess(void) {
-#if defined (__DEBUG__)
-	printf("fpointFLess\n");
-#endif
+DEBUG_WORD("fpointFLess")
 }
 
 void fpointFGreater(void) {
-#if defined (__DEBUG__)
-	printf("fpointFGreater\n");
-#endif
+DEBUG_WORD("fpointFGreater")
 }
 
 void fpointF0Less(void) {
-#if defined (__DEBUG__)
-	printf("fpointF0Less\n");
-#endif
+DEBUG_WORD("fpointF0Less")
 }
 
 /* 13 Floating-Point Literal Handling */
 void fpointToF(void) {
-#if defined (__DEBUG__)
-	printf("fpointToF\n");
-#endif
+DEBUG_WORD("fpointToF")
 }
 
 void fpointFLiteral(void) {
-#if defined (__DEBUG__)
-	printf("fpointFLiteral\n");
-#endif
+DEBUG_WORD("fpointFLiteral")
 }
 
 void fpointFLit(void) {
-#if defined (__DEBUG__)
-	printf("fpointFLit\n");
-#endif
+DEBUG_WORD("fpointFLit")
 }
 
 /* 14 Floating-Point Variables */
 void fpointFVariable(void) {
-#if defined (__DEBUG__)
-	printf("fpointFVariable\n");
-#endif
+DEBUG_WORD("fpointFVariable")
 }
 
 void fpointFStore(void) {
-#if defined (__DEBUG__)
-	printf("fpointFStore\n");
-#endif
+DEBUG_WORD("fpointFStore")
 }
 
 void fpointFFetch(void) {
-#if defined (__DEBUG__)
-	printf("fpointFFetch\n");
-#endif
+DEBUG_WORD("fpointFFetch")
 }
 
 /* 15 Floating-Point Constants */
 void fpointFConstant(void) {
-#if defined (__DEBUG__)
-	printf("fpointFConstant\n");
-#endif
+DEBUG_WORD("fpointFConstant")
 }
 
 /* 16 Floating-Point Values */
 void fpointFValue(void) {
-#if defined (__DEBUG__)
-	printf("fpointFValue\n");
-#endif
+DEBUG_WORD("fpointFValue")
 }
 
 void fpointFTo(void) {
-#if defined (__DEBUG__)
-	printf("fpointFTo\n");
-#endif
+DEBUG_WORD("fpointFTo")
 }
 
 void fpointPlusFTo(void) {
-#if defined (__DEBUG__)
-	printf("fpointPlusFTo\n");
-#endif
+DEBUG_WORD("fpointPlusFTo")
 }
 
 /* 17 Displaying Floating-Point Numbers */
 void fpointFDot(void) {
-#if defined (__DEBUG__)
-	printf("fpointFDot\n");
-#endif
+DEBUG_WORD("fpointFDot")
 }
 
 void fpointFFDpt(void) {
-#if defined (__DEBUG__)
-	printf("fpointFFDpt\n");
-#endif
+DEBUG_WORD("fpointFFDpt")
 }
 
 void fpointFFPlusDot(void) {
-#if defined (__DEBUG__)
-	printf("fpointFFPlusDot\n");
-#endif
+DEBUG_WORD("fpointFFPlusDot")
 }
 
 void fpointFFEDot(void) {
-#if defined (__DEBUG__)
-	printf("fpointFFEDot\n");
-#endif
+DEBUG_WORD("fpointFFEDot")
 }
 
 void fpointFFEPlusDot(void) {
-#if defined (__DEBUG__)
-	printf("fpointFFEPlusDot\n");
-#endif
+DEBUG_WORD("fpointFFEPlusDot")
 }
 
 void fpointFFXDot(void) {
-#if defined (__DEBUG__)
-	printf("fpointFFXDot\n");
-#endif
+DEBUG_WORD("fpointFFXDot")
 }
 
 void fpointFFXPlusDot(void) {
-#if defined (__DEBUG__)
-	printf("fpointFFXPlusDot\n");
-#endif
+DEBUG_WORD("fpointFFXPlusDot")
 }
 
 void fpointFDollarDot(void) {
-#if defined (__DEBUG__)
-	printf("fpointFDollarDot\n");
-#endif
+DEBUG_WORD("fpointFDollarDot")
 }
 
 void fpointDotFS(void) {
-#if defined (__DEBUG__)
-	printf("fpointDotFS\n");
-#endif
+DEBUG_WORD("fpointDotFS")
 }
 
 void fpointDotFDollar(void) {
-#if defined (__DEBUG__)
-	printf("fpointDotFDollar\n");
-#endif
+DEBUG_WORD("fpointDotFDollar")
 }
 
 /* 18 Floating-Point Number Conversion */
 void fpointSToFP(void) {
-#if defined (__DEBUG__)
-	printf("fpointSToFP\n");
-#endif
+DEBUG_WORD("fpointSToFP")
 }
 
 void fpointFPToS(void) {
-#if defined (__DEBUG__)
-	printf("fpointFPToS\n");
-#endif
+DEBUG_WORD("fpointFPToS")
 }
 
 /* 19 Transcendental Constants and Conversion Functions */
 void fpointPi(void) {
-#if defined (__DEBUG__)
-	printf("fpointPi\n");
-#endif
+DEBUG_WORD("fpointPi")
 }
 
 void fpointEulerE(void) {
-#if defined (__DEBUG__)
-	printf("fpointEulerE\n");
-#endif
+DEBUG_WORD("fpointEulerE")
 }
 
 void fpointRadDeg(void) {
-#if defined (__DEBUG__)
-	printf("fpointRadDeg\n");
-#endif
+DEBUG_WORD("fpointRadDeg")
 }
 
 void fpointDegRad(void) {
-#if defined (__DEBUG__)
-	printf("fpointDegRad\n");
-#endif
+DEBUG_WORD("fpointDegRad")
 }
 
 void fpointToRad(void) {
-#if defined (__DEBUG__)
-	printf("fpointToRad\n");
-#endif
+DEBUG_WORD("fpointToRad")
 }
 
 void fpointToDeg(void) {
-#if defined (__DEBUG__)
-	printf("fpointToDeg\n");
-#endif
+DEBUG_WORD("fpointToDeg")
 }
 
 /* 20 Transcendental Functions */
 void fpointExp(void) {
-#if defined (__DEBUG__)
-	printf("fpointExp\n");
-#endif
+DEBUG_WORD("fpointExp")
 }
 
 void fpointLog(void) {
-#if defined (__DEBUG__)
-	printf("fpointLog\n");
-#endif
+DEBUG_WORD("fpointLog")
 }
 
 void fpointSqrt(void) {
-#if defined (__DEBUG__)
-	printf("fpointSqrt\n");
-#endif
+DEBUG_WORD("fpointSqrt")
 }
 
 void fpointCos(void) {
-#if defined (__DEBUG__)
-	printf("fpointCos\n");
-#endif
+DEBUG_WORD("fpointCos")
 }
 
 void fpointSin(void) {
-#if defined (__DEBUG__)
-	printf("fpointSin\n");
-#endif
+DEBUG_WORD("fpointSin")
 }
 
 void fpointTan(void) {
-#if defined (__DEBUG__)
-	printf("fpointTan\n");
-#endif
+DEBUG_WORD("fpointTan")
 }
 
 void fpointAtn(void) {
-#if defined (__DEBUG__)
-	printf("fpointAtn\n");
-#endif
+DEBUG_WORD("fpointAtn")
 }
 
 void fpointPow(void) {
-#if defined (__DEBUG__)
-	printf("fpointPow\n");
-#endif
+DEBUG_WORD("fpointPow")
 }
 
 void fpointLog10(void) {
-#if defined (__DEBUG__)
-	printf("fpointLog10\n");
-#endif
+DEBUG_WORD("fpointLog10")
 }
 
 void fpointExp10(void) {
-#if defined (__DEBUG__)
-	printf("fpointExp10\n");
-#endif
+DEBUG_WORD("fpointExp10")
 }
 
 /* 21.3 Floating Point Error Handling */
 void fpointQFPErr(void) {
-#if defined (__DEBUG__)
-	printf("fpointQFPErr\n");
-#endif
+DEBUG_WORD("fpointQFPErr")
 }
 
 #endif
@@ -1331,218 +939,148 @@ void fpointQFPErr(void) {
 
 #if TASKINGSTANDARD == TASKINGSTD_VOLK
 void taskingVfActivate(void) {
-#if defined (__DEBUG__)
-	printf("taskingVfActivate\n");
-#endif
+DEBUG_WORD("taskingVfActivate")
 }
 
 void taskingVfLock(void) {
-#if defined (__DEBUG__)
-	printf("taskingVfLock\n");
-#endif
+DEBUG_WORD("taskingVfLock")
 }
 
 void taskingVfMultiTask(void) {
-#if defined (__DEBUG__)
-	printf("taskingVfMultiTask\n");
-#endif
+DEBUG_WORD("taskingVfMultiTask")
 }
 
 void taskingVfPass(void) {
-#if defined (__DEBUG__)
-	printf("taskingVfPass\n");
-#endif
+DEBUG_WORD("taskingVfPass")
 }
 
 void taskingVfPause(void) {
-#if defined (__DEBUG__)
-	printf("taskingVfPause\n");
-#endif
+DEBUG_WORD("taskingVfPause")
 }
 
 void taskingVfRendezvous(void) {
-#if defined (__DEBUG__)
-	printf("taskingVfRendezvous\n");
-#endif
+DEBUG_WORD("taskingVfRendezvous")
 }
 
 void taskingVfSingleTask(void) {
-#if defined (__DEBUG__)
-	printf("taskingVfSingleTask\n");
-#endif
+DEBUG_WORD("taskingVfSingleTask")
 }
 
 void taskingVfSleep(void) {
-#if defined (__DEBUG__)
-	printf("taskingVfSleep\n");
-#endif
+DEBUG_WORD("taskingVfSleep")
 }
 
 void taskingVfStop(void) {
-#if defined (__DEBUG__)
-	printf("taskingVfStop\n");
-#endif
+DEBUG_WORD("taskingVfStop")
 }
 
 void taskingVfTask(void) {
-#if defined (__DEBUG__)
-	printf("taskingVfTask\n");
-#endif
+DEBUG_WORD("taskingVfTask")
 }
 
 void taskingVfTasks(void) {
-#if defined (__DEBUG__)
-	printf("taskingVfTasks\n");
-#endif
+DEBUG_WORD("taskingVfTasks")
 }
 
 void taskingVfUnlock(void) {
-#if defined (__DEBUG__)
-	printf("taskingVfUnlock\n");
-#endif
+DEBUG_WORD("taskingVfUnlock")
 }
 
 void taskingVfWake(void) {
-#if defined (__DEBUG__)
-	printf("taskingVfWake\n");
-#endif
+DEBUG_WORD("taskingVfWake")
 }
 
 void taskingVfUPFetch(void) {
-#if defined (__DEBUG__)
-	printf("taskingVfUPFetch\n");
-#endif
+DEBUG_WORD("taskingVfUPFetch")
 }
 
 void taskingVfUPStore(void) {
-#if defined (__DEBUG__)
-	printf("taskingVfUPStore\n");
-#endif
+DEBUG_WORD("taskingVfUPStore")
 }
 #endif
 
 
 #ifdef TESTING_SUPPORT
 void testingTCurlyBracket(void) {
-#if defined (__DEBUG__)
-	printf("testingTCurlyBracket\n");
-#endif
+DEBUG_WORD("testingTCurlyBracket")
 }
 
 void testingCurlyBracketT(void) {
-#if defined (__DEBUG__)
-	printf("testingCurlyBracketT\n");
-#endif
+DEBUG_WORD("testingCurlyBracketT")
 }
 #endif
 
 #if TASKINGSTANDARD == TASKINGSTD_FORTH83
 void taskingF83Allot(void) {
-#if defined (__DEBUG__)
-	printf("taskingF83Allot\n");
-#endif
+DEBUG_WORD("taskingF83Allot")
 }
 
 void taskingF83Create(void) {
-#if defined (__DEBUG__)
-	printf("taskingF83Create\n");
-#endif
+DEBUG_WORD("taskingF83Create")
 }
 
 void taskingF83Variable(void) {
-#if defined (__DEBUG__)
-	printf("taskingF83Variable\n");
-#endif
+DEBUG_WORD("taskingF83Variable")
 }
 
 void taskingF83Defer(void) {
-#if defined (__DEBUG__)
-	printf("taskingF83Defer\n");
-#endif
+DEBUG_WORD("taskingF83Defer")
 }
 
 void taskingF83Pause(void) {
-#if defined (__DEBUG__)
-	printf("taskingF83Pause\n");
-#endif
+DEBUG_WORD("taskingF83Pause")
 }
 
 void taskingF83Restart(void) {
-#if defined (__DEBUG__)
-	printf("taskingF83Restart\n");
-#endif
+DEBUG_WORD("taskingF83Restart")
 }
 
 void taskingF83Local(void) {
-#if defined (__DEBUG__)
-	printf("taskingF83Local\n");
-#endif
+DEBUG_WORD("taskingF83Local")
 }
 
 void taskingF83FetchLink(void) {
-#if defined (__DEBUG__)
-	printf("taskingF83FetchLink\n");
-#endif
+DEBUG_WORD("taskingF83FetchLink")
 }
 
 void taskingF83StoreLink(void) {
-#if defined (__DEBUG__)
-	printf("taskingF83StoreLink\n");
-#endif
+DEBUG_WORD("taskingF83StoreLink")
 }
 
 void taskingF83Sleep(void) {
-#if defined (__DEBUG__)
-	printf("taskingF83Sleep\n");
-#endif
+DEBUG_WORD("taskingF83Sleep")
 }
 
 void taskingF83Wake(void) {
-#if defined (__DEBUG__)
-	printf("taskingF83Wake\n");
-#endif
+DEBUG_WORD("taskingF83Wake")
 }
 
 void taskingF83Stop(void) {
-#if defined (__DEBUG__)
-	printf("taskingF83Stop\n");
-#endif
+DEBUG_WORD("taskingF83Stop")
 }
 
 void taskingF83Multi(void) {
-#if defined (__DEBUG__)
-	printf("taskingF83Multi\n");
-#endif
+DEBUG_WORD("taskingF83Multi")
 }
 
 void taskingF83Single(void) {
-#if defined (__DEBUG__)
-	printf("taskingF83Single\n");
-#endif
+DEBUG_WORD("taskingF83Single")
 }
 
 void taskingF83Task(void) {
-#if defined (__DEBUG__)
-	printf("taskingF83Task\n");
-#endif
+DEBUG_WORD("taskingF83Task")
 }
 
 void taskingF83SetTask(void) {
-#if defined (__DEBUG__)
-	printf("taskingF83SetTask\n");
-#endif
+DEBUG_WORD("taskingF83SetTask")
 }
 
 void taskingF83Activate(void) {
-#if defined (__DEBUG__)
-	printf("taskingF83Activate\n");
-#endif
+DEBUG_WORD("taskingF83Activate")
 }
 
 void taskingF83Background(void) {
-#if defined (__DEBUG__)
-	printf("taskingF83Background\n");
-#endif
+DEBUG_WORD("taskingF83Background")
 }
 
 

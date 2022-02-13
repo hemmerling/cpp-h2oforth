@@ -6,399 +6,267 @@
 /* Primitives */
 
 void bbc79DollarMSG(void) {
-#if defined (__DEBUG__)
-	printf("bbc79DollarMSG\n");
-#endif
+DEBUG_WORD("bbc79DollarMSG")
 }
 
 void bbc79Plot(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Plot\n");
-#endif
+DEBUG_WORD("bbc79Plot")
 }
 
 void bbc79MoveBuffers(void) {
-#if defined (__DEBUG__)
-	printf("bbc79MoveBuffers\n");
-#endif
+DEBUG_WORD("bbc79MoveBuffers")
 }
 
 void bbc79FromCMove(void) {
-#if defined (__DEBUG__)
-	printf("bbc79FromCMove\n");
-#endif
+DEBUG_WORD("bbc79FromCMove")
 }
 
 void bbc79Where(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Where\n");
-#endif
+DEBUG_WORD("bbc79Where")
 }
 
 void bbc79Line(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Line\n");
-#endif
+DEBUG_WORD("bbc79Line")
 }
 
 void bbc79Text(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Text\n");
-#endif
+DEBUG_WORD("bbc79Text")
 }
 
 void bbc79More(void) {
-#if defined (__DEBUG__)
-	printf("bbc79More\n");
-#endif
+DEBUG_WORD("bbc79More")
 }
 
 void bbc79Another(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Another\n");
-#endif
+DEBUG_WORD("bbc79Another")
 }
 
 void bbc79Program(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Program\n");
-#endif
+DEBUG_WORD("bbc79Program")
 }
 
 void bbc79ClrScr(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ClrScr\n");
-#endif
+DEBUG_WORD("bbc79ClrScr")
 }
 
 void bbc79Save(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Save\n");
-#endif
+DEBUG_WORD("bbc79Save")
 }
 
 void bbc79Locate(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Locate\n");
-#endif
+DEBUG_WORD("bbc79Locate")
 }
 
 void bbc79Editor(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Editor\n");
-#endif
+DEBUG_WORD("bbc79Editor")
 }
 
 void bbc79Code(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Code\n");
-#endif
+DEBUG_WORD("bbc79Code")
 }
 
 void bbc79QCurrent(void) {
-#if defined (__DEBUG__)
-	printf("bbc79QCurrent\n");
-#endif
+DEBUG_WORD("bbc79QCurrent")
 }
 
 void bbc79Assembler(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Assembler\n");
-#endif
+DEBUG_WORD("bbc79Assembler")
 }
 
 void bbc79Triad(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Triad\n");
-#endif
+DEBUG_WORD("bbc79Triad")
 }
 
 void bbc79Index(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Index\n");
-#endif
+DEBUG_WORD("bbc79Index")
 }
 
 void bbc79SnineStandard(void) {
-#if defined (__DEBUG__)
-	printf("bbc79SnineStandard\n");
-#endif
+DEBUG_WORD("bbc79SnineStandard")
 }
 
 void bbc79List(void) {
-#if defined (__DEBUG__)
-	printf("bbc79List\n");
-#endif
+DEBUG_WORD("bbc79List")
 }
 
 void bbc79CreateScreens(void) {
-#if defined (__DEBUG__)
-	printf("bbc79CreateScreens\n");
-#endif
+DEBUG_WORD("bbc79CreateScreens")
 }
 
 void bbc79Tape(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Tape\n");
-#endif
+DEBUG_WORD("bbc79Tape")
 }
 
 void bbc79QRSlashW(void) {
-#if defined (__DEBUG__)
-	printf("bbc79QRSlashW\n");
-#endif
+DEBUG_WORD("bbc79QRSlashW")
 }
 
 void bbc79TRSlashW(void) {
-#if defined (__DEBUG__)
-	printf("bbc79TRSlashW\n");
-#endif
+DEBUG_WORD("bbc79TRSlashW")
 }
 
 void bbc79TW(void) {
-#if defined (__DEBUG__)
-	printf("bbc79TW\n");
-#endif
+DEBUG_WORD("bbc79TW")
 }
 
 void bbc79TR(void) {
-#if defined (__DEBUG__)
-	printf("bbc79TR\n");
-#endif
+DEBUG_WORD("bbc79TR")
 }
 
 void bbc79FourHEX(void) {
-#if defined (__DEBUG__)
-	printf("bbc79FourHEX\n");
-#endif
+DEBUG_WORD("bbc79FourHEX")
 }
 
 void bbc79SSTo(void) {
-#if defined (__DEBUG__)
-	printf("bbc79SSTo\n");
-#endif
+DEBUG_WORD("bbc79SSTo")
 }
 
 void bbc79Flush(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Flush\n");
-#endif
+DEBUG_WORD("bbc79Flush")
 }
 
 void bbc79SaveBuffers(void) {
-#if defined (__DEBUG__)
-	printf("bbc79SaveBuffers\n");
-#endif
+DEBUG_WORD("bbc79SaveBuffers")
 }
 
 void bbc79Disk(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Disk\n");
-#endif
+DEBUG_WORD("bbc79Disk")
 }
 
 void bbc79ZDisk(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZDisk\n");
-#endif
+DEBUG_WORD("bbc79ZDisk")
 }
 
 void bbc79Load(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Load\n");
-#endif
+DEBUG_WORD("bbc79Load")
 }
 
 void bbc79Block(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Block\n");
-#endif
+DEBUG_WORD("bbc79Block")
 }
 
 void bbc79Buffer(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Buffer\n");
-#endif
+DEBUG_WORD("bbc79Buffer")
 }
 
 void bbc79Update(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Update\n");
-#endif
+DEBUG_WORD("bbc79Update")
 }
 
 void bbc79ZUpdate(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZUpdate\n");
-#endif
+DEBUG_WORD("bbc79ZUpdate")
 }
 
 void bbc79PlusBuf(void) {
-#if defined (__DEBUG__)
-	printf("bbc79PlusBuf\n");
-#endif
+DEBUG_WORD("bbc79PlusBuf")
 }
 
 void bbc79InitBuf(void) {
-#if defined (__DEBUG__)
-	printf("bbc79InitBuf\n");
-#endif
+DEBUG_WORD("bbc79InitBuf")
 }
 
 void bbc79SetBuf(void) {
-#if defined (__DEBUG__)
-	printf("bbc79SetBuf\n");
-#endif
+DEBUG_WORD("bbc79SetBuf")
 }
 
 void bbc79EmptyBuffers(void) {
-#if defined (__DEBUG__)
-	printf("bbc79EmptyBuffers\n");
-#endif
+DEBUG_WORD("bbc79EmptyBuffers")
 }
 
 void bbc79NumBuf(void) {
-#if defined (__DEBUG__)
-	printf("bbc79NumBuf\n");
-#endif
+DEBUG_WORD("bbc79NumBuf")
 }
 
 void bbc79Prev(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Prev\n");
-#endif
+DEBUG_WORD("bbc79Prev")
 }
 
 void bbc79Use(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Use\n");
-#endif
+DEBUG_WORD("bbc79Use")
 }
 
 void bbc79BufSZ(void) {
-#if defined (__DEBUG__)
-	printf("bbc79BufSZ\n");
-#endif
+DEBUG_WORD("bbc79BufSZ")
 }
 
 void bbc79MinBUF(void) {
-#if defined (__DEBUG__)
-	printf("bbc79MinBUF\n");
-#endif
+DEBUG_WORD("bbc79MinBUF")
 }
 
 void bbc79RSlashW(void) {
-#if defined (__DEBUG__)
-	printf("bbc79RSlashW\n");
-#endif
+DEBUG_WORD("bbc79RSlashW")
 }
 
 void bbc79DRSlashW(void) {
-#if defined (__DEBUG__)
-	printf("bbc79DRSlashW\n");
-#endif
+DEBUG_WORD("bbc79DRSlashW")
 }
 
 void bbc79Open(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Open\n");
-#endif
+DEBUG_WORD("bbc79Open")
 }
 
 void bbc79FName(void) {
-#if defined (__DEBUG__)
-	printf("bbc79FName\n");
-#endif
+DEBUG_WORD("bbc79FName")
 }
 
 void bbc79Channel(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Channel\n");
-#endif
+DEBUG_WORD("bbc79Channel")
 }
 
 void bbc79MaxFiles(void) {
-#if defined (__DEBUG__)
-	printf("bbc79MaxFiles\n");
-#endif
+DEBUG_WORD("bbc79MaxFiles")
 }
 
 void bbc79SSlashFile(void) {
-#if defined (__DEBUG__)
-	printf("bbc79SSlashFile\n");
-#endif
+DEBUG_WORD("bbc79SSlashFile")
 }
 
 void bbc79ZRSlashW(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZRSlashW\n");
-#endif
+DEBUG_WORD("bbc79ZRSlashW")
 }
 
 void bbc79Close(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Close\n");
-#endif
+DEBUG_WORD("bbc79Close")
 }
 
 void bbc79ZOpen(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZOpen\n");
-#endif
+DEBUG_WORD("bbc79ZOpen")
 }
 
 void bbc79KeyTick(void) {
-#if defined (__DEBUG__)
-	printf("bbc79KeyTick\n");
-#endif
+DEBUG_WORD("bbc79KeyTick")
 }
 
 void bbc79OSTick(void) {
-#if defined (__DEBUG__)
-	printf("bbc79OSTick\n");
-#endif
+DEBUG_WORD("bbc79OSTick")
 }
 
 void bbc79ToCLI(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ToCLI\n");
-#endif
+DEBUG_WORD("bbc79ToCLI")
 }
 
 void bbc79ZCLI(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZCLI\n");
-#endif
+DEBUG_WORD("bbc79ZCLI")
 }
 
 void bbc79ZDollarPlus(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZDollarPlus\n");
-#endif
+DEBUG_WORD("bbc79ZDollarPlus")
 }
 
 void bbc79String(void) {
-#if defined (__DEBUG__)
-	printf("bbc79String\n");
-#endif
+DEBUG_WORD("bbc79String")
 }
 
 void bbc79OSCLI(void) {
-#if defined (__DEBUG__)
-	printf("bbc79OSCLI\n");
-#endif
+DEBUG_WORD("bbc79OSCLI")
 }
 
 void bbc79Roll(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Roll\n");
-#endif
+DEBUG_WORD("bbc79Roll")
 }
 
 void bbc79Pick(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Pick\n");
-#endif
+DEBUG_WORD("bbc79Pick")
 }
 
 void bbc79DotS(void) {
@@ -417,185 +285,125 @@ void bbc79DotS(void) {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 		// forthTasks[forthState.forthCurrentTask].messageNumber = MESSAGE_DATASTACK_EMPTY;
 	};
-#if defined (__DEBUG__)
-	printf("bbc79DotS\n");
-#endif
+DEBUG_WORD("bbc79DotS")
 }
 
 void bbc79Depth(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Depth\n");
-#endif
+DEBUG_WORD("bbc79Depth")
 }
 
 void bbc79Forget(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Forget\n");
-#endif
+DEBUG_WORD("bbc79Forget")
 }
 
 void bbc79Prune(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Prune\n");
-#endif
+DEBUG_WORD("bbc79Prune")
 }
 
 void bbc79InitVecs(void) {
-#if defined (__DEBUG__)
-	printf("bbc79InitVecs\n");
-#endif
+DEBUG_WORD("bbc79InitVecs")
 }
 
 void bbc79ToDo(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ToDo\n");
-#endif
+DEBUG_WORD("bbc79ToDo")
 }
 
 void bbc79DoVec(void) {
-#if defined (__DEBUG__)
-	printf("bbc79DoVec\n");
-#endif
+DEBUG_WORD("bbc79DoVec")
 }
 
 void bbc79Assign(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Assign\n");
-#endif
+DEBUG_WORD("bbc79Assign")
 }
 
 void bbc79ExVec(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ExVec\n");
-#endif
+DEBUG_WORD("bbc79ExVec")
 }
 
 void bbc79Novec(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Novec\n");
-#endif
+DEBUG_WORD("bbc79Novec")
 }
 
 void bbc79Vlist(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Vlist\n");
-#endif
+DEBUG_WORD("bbc79Vlist")
 }
 
 void bbc79Tick(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Tick\n");
-#endif
+DEBUG_WORD("bbc79Tick")
 }
 
 void bbc79Repeat(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Repeat\n");
-#endif
+DEBUG_WORD("bbc79Repeat")
 }
 
 void bbc79While(void) {
-#if defined (__DEBUG__)
-	printf("bbc79While\n");
-#endif
+DEBUG_WORD("bbc79While")
 }
 
 void bbc79Again(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Again\n");
-#endif
+DEBUG_WORD("bbc79Again")
 }
 
 void bbc79Until(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Until\n");
-#endif
+DEBUG_WORD("bbc79Until")
 }
 
 void bbc79Begin(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Begin\n");
-#endif
+DEBUG_WORD("bbc79Begin")
 }
 
 void bbc79Else(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Else\n");
-#endif
+DEBUG_WORD("bbc79Else")
 }
 
 void bbc79Then(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Then\n");
-#endif
+DEBUG_WORD("bbc79Then")
 }
 
 void bbc79If(void) {
-#if defined (__DEBUG__)
-	printf("bbc79If\n");
-#endif
+DEBUG_WORD("bbc79If")
 }
 
 void bbc79PlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("bbc79PlusLoop\n");
-#endif
+DEBUG_WORD("bbc79PlusLoop")
 }
 
 void bbc79Loop(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Loop\n");
-#endif
+DEBUG_WORD("bbc79Loop")
 }
 
 void bbc79Do(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Do\n");
-#endif
+DEBUG_WORD("bbc79Do")
 }
 
 void bbc79Back(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Back\n");
-#endif
+DEBUG_WORD("bbc79Back")
 }
 
 void bbc79J(void) {
-#if defined (__DEBUG__)
-	printf("bbc79J\n");
-#endif
+DEBUG_WORD("bbc79J")
 }
 
 void bbc79TwoSlash(void) {
-#if defined (__DEBUG__)
-	printf("bbc79TwoSlash\n");
-#endif
+DEBUG_WORD("bbc79TwoSlash")
 }
 
 void bbc79TwoStar(void) {
-#if defined (__DEBUG__)
-	printf("bbc79TwoStar\n");
-#endif
+DEBUG_WORD("bbc79TwoStar")
 }
 
 void bbc79Message(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Message\n");
-#endif
+DEBUG_WORD("bbc79Message")
 }
 
 void bbc79MSGNum(void) {
-#if defined (__DEBUG__)
-	printf("bbc79MSGNum\n");
-#endif
+DEBUG_WORD("bbc79MSGNum")
 }
 
 /* Display in hexadecimal base in the format of <.> */
 void bbc79HDot(void) {
 	commonHexDot();
-#if defined (__DEBUG__)
-	printf("bbc79HDot\n");
-#endif
+DEBUG_WORD("bbc79HDot")
 }
 
 /* Display in decimal base in the format of <.> */
@@ -611,21 +419,15 @@ void bbc79DecDot(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-#if defined (__DEBUG__)
-	printf("bbc79DecDot\n");
-#endif
+DEBUG_WORD("bbc79DecDot")
 }
 
 void bbc79Q(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Q\n");
-#endif
+DEBUG_WORD("bbc79Q")
 }
 
 void bbc79UDot(void) {
-#if defined (__DEBUG__)
-	printf("bbc79UDot\n");
-#endif
+DEBUG_WORD("bbc79UDot")
 }
 
 void bbc79Dot(void) {
@@ -638,9 +440,7 @@ void bbc79Dot(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-#if defined (__DEBUG__)
-	printf("bbc79Dot\n");
-#endif
+DEBUG_WORD("bbc79Dot")
 }
 
 void bbc79DotR(void) {
@@ -658,9 +458,7 @@ void bbc79DotR(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_RETURNSTACK_EMPTY;
 	};
-#if defined (__DEBUG__)
-	printf("bbc79DotR\n");
-#endif
+DEBUG_WORD("bbc79DotR")
 }
 
 #ifdef DPINTEGER_SUPPORT
@@ -677,9 +475,7 @@ void bbc79DDot(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-#if defined (__DEBUG__)
-	printf("bbc79DDot\n");
-#endif
+DEBUG_WORD("bbc79DDot")
 }
 #endif
 
@@ -696,284 +492,192 @@ void bbc79DDotRDot(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_RETURNSTACK_EMPTY;
 	};
-#if defined (__DEBUG__)
-	printf("bbc79DDotRDot\n");
-#endif
+DEBUG_WORD("bbc79DDotRDot")
 }
 #endif
 
 void bbc79NumS(void) {
-#if defined (__DEBUG__)
-	printf("bbc79NumS\n");
-#endif
+DEBUG_WORD("bbc79NumS")
 }
 
 void bbc79Num(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Num\n");
-#endif
+DEBUG_WORD("bbc79Num")
 }
 
 void bbc79Sign(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Sign\n");
-#endif
+DEBUG_WORD("bbc79Sign")
 }
 
 void bbc79NumGreater(void) {
-#if defined (__DEBUG__)
-	printf("bbc79NumGreater\n");
-#endif
+DEBUG_WORD("bbc79NumGreater")
 }
 
 void bbc79LessNum(void) {
-#if defined (__DEBUG__)
-	printf("bbc79LessNum\n");
-#endif
+DEBUG_WORD("bbc79LessNum")
 }
 
 void bbc79Spaces(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Spaces\n");
-#endif
+DEBUG_WORD("bbc79Spaces")
 }
 
 void bbc79MSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("bbc79MSlashMod\n");
-#endif
+DEBUG_WORD("bbc79MSlashMod")
 }
 
 void bbc79StarSlash(void) {
-#if defined (__DEBUG__)
-	printf("bbc79StarSlash\n");
-#endif
+DEBUG_WORD("bbc79StarSlash")
 }
 
 void bbc79StarSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("bbc79StarSlashMod\n");
-#endif
+DEBUG_WORD("bbc79StarSlashMod")
 }
 
 void bbc79Mod(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Mod\n");
-#endif
+DEBUG_WORD("bbc79Mod")
 }
 
 void bbc79Slash(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Slash\n");
-#endif
+DEBUG_WORD("bbc79Slash")
 }
 
 void bbc79SlashMod(void) {
-#if defined (__DEBUG__)
-	printf("bbc79SlashMod\n");
-#endif
+DEBUG_WORD("bbc79SlashMod")
 }
 
 void bbc79Star(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Star\n");
-#endif
+DEBUG_WORD("bbc79Star")
 }
 
 void bbc79MSlash(void) {
-#if defined (__DEBUG__)
-	printf("bbc79MSlash\n");
-#endif
+DEBUG_WORD("bbc79MSlash")
 }
 
 void bbc79MAbs(void) {
-#if defined (__DEBUG__)
-	printf("bbc79MAbs\n");
-#endif
+DEBUG_WORD("bbc79MAbs")
 }
 
 #ifdef DPINTEGER_SUPPORT
 void bbc79DPlusMinus(void) {
-#if defined (__DEBUG__)
-	printf("bbc79DPlusMinus\n");
-#endif
+DEBUG_WORD("bbc79DPlusMinus")
 }
 #endif
 
 void bbc79PlusMinus(void) {
-#if defined (__DEBUG__)
-	printf("bbc79PlusMinus\n");
-#endif
+DEBUG_WORD("bbc79PlusMinus")
 }
 
 #ifdef DPINTEGER_SUPPORT
 void bbc79SToD(void) {
-#if defined (__DEBUG__)
-	printf("bbc79SToD\n");
-#endif
+DEBUG_WORD("bbc79SToD")
 }
 #endif
 
 void bbc79Warm(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Warm\n");
-#endif
+DEBUG_WORD("bbc79Warm")
 }
 
 void bbc79Cold(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Cold\n");
-#endif
+DEBUG_WORD("bbc79Cold")
 }
 
 void bbc79Start(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Start\n");
-#endif
+DEBUG_WORD("bbc79Start")
 }
 
 void bbc79Mode(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Mode\n");
-#endif
+DEBUG_WORD("bbc79Mode")
 }
 
 void bbc79OSError(void) {
-#if defined (__DEBUG__)
-	printf("bbc79OSError\n");
-#endif
+DEBUG_WORD("bbc79OSError")
 }
 
 void bbc79Escape(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Escape\n");
-#endif
+DEBUG_WORD("bbc79Escape")
 }
 
 void bbc79Abort(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Abort\n");
-#endif
+DEBUG_WORD("bbc79Abort")
 }
 
 void bbc79ZAbort(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZAbort\n");
-#endif
+DEBUG_WORD("bbc79ZAbort")
 }
 
 void bbc79ZWarm(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZWarm\n");
-#endif
+DEBUG_WORD("bbc79ZWarm")
 }
 
 void bbc79Definitions(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Definitions\n");
-#endif
+DEBUG_WORD("bbc79Definitions")
 }
 
 void bbc79Quit(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Quit\n");
-#endif
+DEBUG_WORD("bbc79Quit")
 }
 
 void bbc79Forth(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Forth\n");
-#endif
+DEBUG_WORD("bbc79Forth")
 }
 
 void bbc79Vocabulary(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Vocabulary\n");
-#endif
+DEBUG_WORD("bbc79Vocabulary")
 }
 
 void bbc79Interpret(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Interpret\n");
-#endif
+DEBUG_WORD("bbc79Interpret")
 }
 
 void bbc79NumericInterpret(void) {
-#if defined (__DEBUG__)
-	printf("bbc79NumericInterpret\n");
-#endif
+DEBUG_WORD("bbc79NumericInterpret")
 }
 
 void bbc79ZNumericInterpret(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZNumericInterpret\n");
-#endif
+DEBUG_WORD("bbc79ZNumericInterpret")
 }
 
 void bbc79Paren(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Paren\n");
-#endif
+DEBUG_WORD("bbc79Paren")
 }
 
 void bbc79Number(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Number\n");
-#endif
+DEBUG_WORD("bbc79Number")
 }
 
 void bbc79Semicolon(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Semicolon\n");
-#endif
+DEBUG_WORD("bbc79Semicolon")
 }
 
 void bbc79Colon(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Colon\n");
-#endif
+DEBUG_WORD("bbc79Colon")
 }
 
 void bbc79QStack(void) {
-#if defined (__DEBUG__)
-	printf("bbc79QStack\n");
-#endif
+DEBUG_WORD("bbc79QStack")
 }
 
 void bbc79Dliteral(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Dliteral\n");
-#endif
+DEBUG_WORD("bbc79Dliteral")
 }
 
 void bbc79Literal(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Literal\n");
-#endif
+DEBUG_WORD("bbc79Literal")
 }
 
 void bbc79ZCompile(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Literal\n");
-#endif
+DEBUG_WORD("bbc79Literal")
 }
 
 void bbc79Create(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Create\n");
-#endif
+DEBUG_WORD("bbc79Create")
 }
 
 void bbc79ZCreate(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZCreate\n");
-#endif
+DEBUG_WORD("bbc79ZCreate")
 }
 
 void bbc79IDDot(void) {
-#if defined (__DEBUG__)
-	printf("bbc79IDDot\n");
-#endif
+DEBUG_WORD("bbc79IDDot")
 }
 
 void bbc79Error(void) {
@@ -986,253 +690,171 @@ void bbc79Error(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-#if defined (__DEBUG__)
-	printf("bbc79Error\n");
-#endif
+DEBUG_WORD("bbc79Error")
 }
 
 void bbc79Find(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Find\n");
-#endif
+DEBUG_WORD("bbc79Find")
 }
 
 void bbc79MinusFind(void) {
-#if defined (__DEBUG__)
-	printf("bbc79MinusFind\n");
-#endif
+DEBUG_WORD("bbc79MinusFind")
 }
 
 void bbc79Convert(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Convert\n");
-#endif
+DEBUG_WORD("bbc79Convert")
 }
 
 void bbc79Word(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Word\n");
-#endif
+DEBUG_WORD("bbc79Word")
 }
 
 void bbc79OneWord(void) {
-#if defined (__DEBUG__)
-	printf("bbc79OneWord\n");
-#endif
+DEBUG_WORD("bbc79OneWord")
 }
 
 void bbc79WBFR(void) {
-#if defined (__DEBUG__)
-	printf("bbc79WBFR\n");
-#endif
+DEBUG_WORD("bbc79WBFR")
 }
 
 void bbc79WDSZ(void) {
-#if defined (__DEBUG__)
-	printf("bbc79WDSZ\n");
-#endif
+DEBUG_WORD("bbc79WDSZ")
 }
 
 void bbc79ZWord(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZWord\n");
-#endif
+DEBUG_WORD("bbc79ZWord")
 }
 
 void bbc79Hold(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Hold\n");
-#endif
+DEBUG_WORD("bbc79Hold")
 }
 
 void bbc79Blanks(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Blanks\n");
-#endif
+DEBUG_WORD("bbc79Blanks")
 }
 
 void bbc79Erase(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Erase\n");
-#endif
+DEBUG_WORD("bbc79Erase")
 }
 
 void bbc79Fill(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Fill\n");
-#endif
+DEBUG_WORD("bbc79Fill")
 }
 
 void bbc79Move(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Move\n");
-#endif
+DEBUG_WORD("bbc79Move")
 }
 
 void bbc79Query(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Query\n");
-#endif
+DEBUG_WORD("bbc79Query")
 }
 
 void bbc79Expect(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Expect\n");
-#endif
+DEBUG_WORD("bbc79Expect")
 }
 
 void bbc79ZExpect(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZExpect\n");
-#endif
+DEBUG_WORD("bbc79ZExpect")
 }
 
 void bbc79DotQuote(void) {
-#if defined (__DEBUG__)
-	printf("bbc79DotQuote\n");
-#endif
+DEBUG_WORD("bbc79DotQuote")
 }
 
 void bbc79ZDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZDotQuote\n");
-#endif
+DEBUG_WORD("bbc79ZDotQuote")
 }
 
 void bbc79TextComma(void) {
-#if defined (__DEBUG__)
-	printf("bbc79TextComma\n");
-#endif
+DEBUG_WORD("bbc79TextComma")
 }
 
 void bbc79MinusTrailing(void) {
-#if defined (__DEBUG__)
-	printf("bbc79MinusTrailing\n");
-#endif
+DEBUG_WORD("bbc79MinusTrailing")
 }
 
 void bbc79Type(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Type\n");
-#endif
+DEBUG_WORD("bbc79Type")
 }
 
 void bbc79Count(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Type\n");
-#endif
+DEBUG_WORD("bbc79Type")
 }
 
 void bbc79ZeroGreater(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZeroGreater\n");
-#endif
+DEBUG_WORD("bbc79ZeroGreater")
 }
 
 void bbc79Does(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Does\n");
-#endif
+DEBUG_WORD("bbc79Does")
 }
 
 void bbc79SemicolonCode(void) {
-#if defined (__DEBUG__)
-	printf("bbc79SemicolonCode\n");
-#endif
+DEBUG_WORD("bbc79SemicolonCode")
 }
 
 void bbc79ZSemicolonCode(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZSemicolonCode\n");
-#endif
+DEBUG_WORD("bbc79ZSemicolonCode")
 }
 
 void bbc79Decimal(void) {
 	forthTasks[forthState.forthCurrentTask].forthBase = DECIMAL;
 	forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_DECIMAL;
-#if defined (__DEBUG__)
-	printf("bbc79Decimal\n");
-#endif
+DEBUG_WORD("bbc79Decimal")
 }
 
 void bbc79CR(void) {
-#if defined (__DEBUG__)
-	printf("bbc79CR\n");
-#endif
+DEBUG_WORD("bbc79CR")
 }
 
 void bbc79Hex(void) {
 	forthTasks[forthState.forthCurrentTask].forthBase = HEX;
 	forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_HEX;
-#if defined (__DEBUG__)
-	printf("bbc79Hex\n");
-#endif
+DEBUG_WORD("bbc79Hex")
 }
 
 void bbc79QTab(void) {
-#if defined (__DEBUG__)
-	printf("bbc79QTab\n");
-#endif
+DEBUG_WORD("bbc79QTab")
 }
 
 void bbc79NoOp(void) {
-#if defined (__DEBUG__)
-	printf("bbc79NoOp\n");
-#endif
+DEBUG_WORD("bbc79NoOp")
 }
 
 void bbc79To(void) {
-#if defined (__DEBUG__)
-	printf("bbc79To\n");
-#endif
+DEBUG_WORD("bbc79To")
 }
 
 void bbc79From(void) {
-#if defined (__DEBUG__)
-	printf("bbc79From\n");
-#endif
+DEBUG_WORD("bbc79From")
 }
 
 void bbc79Compile(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Compile\n");
-#endif
+DEBUG_WORD("bbc79Compile")
 }
 
 void bbc79Immediate(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Immediate\n");
-#endif
+DEBUG_WORD("bbc79Immediate")
 }
 
 void bbc79QLoading(void) {
-#if defined (__DEBUG__)
-	printf("bbc79QLoading\n");
-#endif
+DEBUG_WORD("bbc79QLoading")
 }
 
 void bbc79QCSP(void) {
-#if defined (__DEBUG__)
-	printf("bbc79QCSP\n");
-#endif
+DEBUG_WORD("bbc79QCSP")
 }
 
 void bbc79QPairs(void) {
-#if defined (__DEBUG__)
-	printf("bbc79QPairs\n");
-#endif
+DEBUG_WORD("bbc79QPairs")
 }
 
 void bbc79QExec(void) {
-#if defined (__DEBUG__)
-	printf("bbc79QExec\n");
-#endif
+DEBUG_WORD("bbc79QExec")
 }
 
 void bbc79QComp(void) {
-#if defined (__DEBUG__)
-	printf("bbc79QComp\n");
-#endif
+DEBUG_WORD("bbc79QComp")
 }
 
 void bbc79QError(void) {
@@ -1248,159 +870,107 @@ void bbc79QError(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-#if defined (__DEBUG__)
-	printf("bbc79QError\n");
-#endif
+DEBUG_WORD("bbc79QError")
 }
 
 void bbc79StoreCSP(void) {
-#if defined (__DEBUG__)
-	printf("bbc79StoreCSP\n");
-#endif
+DEBUG_WORD("bbc79StoreCSP")
 }
 
 void bbc79Not(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Not\n");
-#endif
+DEBUG_WORD("bbc79Not")
 }
 
 void bbc79PFA(void) {
-#if defined (__DEBUG__)
-	printf("bbc79PFA\n");
-#endif
+DEBUG_WORD("bbc79PFA")
 }
 
 void bbc79CFA(void) {
-#if defined (__DEBUG__)
-	printf("bbc79CFA\n");
-#endif
+DEBUG_WORD("bbc79CFA")
 }
 
 void bbc79NFA(void) {
-#if defined (__DEBUG__)
-	printf("bbc79NFA\n");
-#endif
+DEBUG_WORD("bbc79NFA")
 }
 
 void bbc79LFA(void) {
-#if defined (__DEBUG__)
-	printf("bbc79LFA\n");
-#endif
+DEBUG_WORD("bbc79LFA")
 }
 
 void bbc79ULess(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ULess\n");
-#endif
+DEBUG_WORD("bbc79ULess")
 }
 
 void bbc79Greater(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Greater\n");
-#endif
+DEBUG_WORD("bbc79Greater")
 }
 
 void bbc79Equal(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Equal\n");
-#endif
+DEBUG_WORD("bbc79Equal")
 }
 
 void bbc79Minus(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Minus\n");
-#endif
+DEBUG_WORD("bbc79Minus")
 }
 
 void bbc79Smudge(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Smudge\n");
-#endif
+DEBUG_WORD("bbc79Smudge")
 }
 
 void bbc79Last(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Last\n");
-#endif
+DEBUG_WORD("bbc79Last")
 }
 
 void bbc79CComma(void) {
-#if defined (__DEBUG__)
-	printf("bbc79CComma\n");
-#endif
+DEBUG_WORD("bbc79CComma")
 }
 
 void bbc79Comma(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Comma\n");
-#endif
+DEBUG_WORD("bbc79Comma")
 }
 
 void bbc79Space(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Comma\n");
-#endif
+DEBUG_WORD("bbc79Comma")
 }
 
 void bbc79Allot(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Allot\n");
-#endif
+DEBUG_WORD("bbc79Allot")
 }
 
 void bbc79Here(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Here\n");
-#endif
+DEBUG_WORD("bbc79Here")
 }
 
 void bbc79TwoMinus(void) {
-#if defined (__DEBUG__)
-	printf("bbc79TwoMinus\n");
-#endif
+DEBUG_WORD("bbc79TwoMinus")
 }
 
 void bbc79OneMinus(void) {
-#if defined (__DEBUG__)
-	printf("bbc79OneMinus\n");
-#endif
+DEBUG_WORD("bbc79OneMinus")
 }
 
 void bbc79TwoPlus(void) {
-#if defined (__DEBUG__)
-	printf("bbc79TwoPlus\n");
-#endif
+DEBUG_WORD("bbc79TwoPlus")
 }
 
 void bbc79OnePlus(void) {
-#if defined (__DEBUG__)
-	printf("bbc79OnePlus\n");
-#endif
+DEBUG_WORD("bbc79OnePlus")
 }
 
 void bbc79HLD(void) {
-#if defined (__DEBUG__)
-	printf("bbc79HLD\n");
-#endif
+DEBUG_WORD("bbc79HLD")
 }
 
 void bbc79RNum(void) {
-#if defined (__DEBUG__)
-	printf("bbc79RNum\n");
-#endif
+DEBUG_WORD("bbc79RNum")
 }
 
 void bbc79CSP(void) {
-#if defined (__DEBUG__)
-	printf("bbc79CSP\n");
-#endif
+DEBUG_WORD("bbc79CSP")
 }
 
 void bbc79DPL(void) {
-#if defined (__DEBUG__)
-	printf("bbc79DPL\n");
-#endif
+DEBUG_WORD("bbc79DPL")
 }
 
 /* ": HEX 16 BASE ! ; ( MAKE HEX THE IN-OUT BASE *)" */
@@ -1414,225 +984,151 @@ void bbc79Base(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_FULL;
 	};
-#if defined (__DEBUG__)
-	printf("bbc79Base\n");
-#endif
+DEBUG_WORD("bbc79Base")
 }
 
 void bbc79State(void) {
-#if defined (__DEBUG__)
-	printf("bbc79State\n");
-#endif
+DEBUG_WORD("bbc79State")
 }
 
 void bbc79Current(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Current\n");
-#endif
+DEBUG_WORD("bbc79Current")
 }
 
 void bbc79Context(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Context\n");
-#endif
+DEBUG_WORD("bbc79Context")
 }
 
 void bbc79Offset(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Offset\n");
-#endif
+DEBUG_WORD("bbc79Offset")
 }
 
 void bbc79SCR(void) {
-#if defined (__DEBUG__)
-	printf("bbc79SCR\n");
-#endif
+DEBUG_WORD("bbc79SCR")
 }
 
 void bbc79Out(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Out\n");
-#endif
+DEBUG_WORD("bbc79Out")
 }
 
 void bbc79ToIn(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ToIn\n");
-#endif
+DEBUG_WORD("bbc79ToIn")
 }
 
 void bbc79BLK(void) {
-#if defined (__DEBUG__)
-	printf("bbc79BLK\n");
-#endif
+DEBUG_WORD("bbc79BLK")
 }
 
 void bbc79VocLink(void) {
-#if defined (__DEBUG__)
-	printf("bbc79VocLink\n");
-#endif
+DEBUG_WORD("bbc79VocLink")
 }
 
 void bbc79DP(void) {
-#if defined (__DEBUG__)
-	printf("bbc79DP\n");
-#endif
+DEBUG_WORD("bbc79DP")
 }
 
 void bbc79Fence(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Fence\n");
-#endif
+DEBUG_WORD("bbc79Fence")
 }
 
 void bbc79Warnung(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Warnung\n");
-#endif
+DEBUG_WORD("bbc79Warnung")
 }
 
 void bbc79Width(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Width\n");
-#endif
+DEBUG_WORD("bbc79Width")
 }
 
 void bbc79TIB(void) {
-#if defined (__DEBUG__)
-	printf("bbc79TIB\n");
-#endif
+DEBUG_WORD("bbc79TIB")
 }
 
 void bbc79R0(void) {
-#if defined (__DEBUG__)
-	printf("bbc79R0\n");
-#endif
+DEBUG_WORD("bbc79R0")
 }
 
 void bbc79S0(void) {
-#if defined (__DEBUG__)
-	printf("bbc79S0\n");
-#endif
+DEBUG_WORD("bbc79S0")
 }
 
 void bbc79PlusOrigin(void) {
-#if defined (__DEBUG__)
-	printf("bbc79PlusOrigin\n");
-#endif
+DEBUG_WORD("bbc79PlusOrigin")
 }
 
 void bbc79BSlashSCR(void) {
-#if defined (__DEBUG__)
-	printf("bbc79BSlashSCR\n");
-#endif
+DEBUG_WORD("bbc79BSlashSCR")
 }
 
 void bbc79BSlashBUF(void) {
-#if defined (__DEBUG__)
-	printf("bbc79BSlashBUF\n");
-#endif
+DEBUG_WORD("bbc79BSlashBUF")
 }
 
 void bbc79Limit(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Limit\n");
-#endif
+DEBUG_WORD("bbc79Limit")
 }
 
 void bbc79First(void) {
-#if defined (__DEBUG__)
-	printf("bbc79First\n");
-#endif
+DEBUG_WORD("bbc79First")
 }
 
 void bbc79PAD(void) {
-#if defined (__DEBUG__)
-	printf("bbc79PAD\n");
-#endif
+DEBUG_WORD("bbc79PAD")
 }
 
 void CSlashL(void) {
-#if defined (__DEBUG__)
-	printf("CSlashL\n");
-#endif
+DEBUG_WORD("CSlashL")
 }
 
 void bbc79BL(void) {
-#if defined (__DEBUG__)
-	printf("bbc79BL\n");
-#endif
+DEBUG_WORD("bbc79BL")
 }
 
 void bbc79Two(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Two\n");
-#endif
+DEBUG_WORD("bbc79Two")
 }
 
 void bbc79One(void) {
-#if defined (__DEBUG__)
-	printf("bbc79One\n");
-#endif
+DEBUG_WORD("bbc79One")
 }
 
 void bbc79Null(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Null\n");
-#endif
+DEBUG_WORD("bbc79Null")
 }
 
 void bbc79MinusOne(void) {
-#if defined (__DEBUG__)
-	printf("bbc79MinusOne\n");
-#endif
+DEBUG_WORD("bbc79MinusOne")
 }
 
 void bbc79MinusTwo(void) {
-#if defined (__DEBUG__)
-	printf("bbc79MinusTwo\n");
-#endif
+DEBUG_WORD("bbc79MinusTwo")
 }
 
 void bbc79User(void) {
-#if defined (__DEBUG__)
-	printf("bbc79User\n");
-#endif
+DEBUG_WORD("bbc79User")
 }
 
 void bbc79Variable(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Variable\n");
-#endif
+DEBUG_WORD("bbc79Variable")
 }
 
 void bbc79Constant(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Constant\n");
-#endif
+DEBUG_WORD("bbc79Constant")
 }
 
 void bbc79RSemicolon(void) {
-#if defined (__DEBUG__)
-	printf("bbc79RSemicolon\n");
-#endif
+DEBUG_WORD("bbc79RSemicolon")
 }
 
 void bbc79RColon(void) {
-#if defined (__DEBUG__)
-	printf("bbc79RColon\n");
-#endif
+DEBUG_WORD("bbc79RColon")
 }
 
 void bbc79Toggle(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Toggle\n");
-#endif
+DEBUG_WORD("bbc79Toggle")
 }
 
 void bbc79PlusStore(void) {
-#if defined (__DEBUG__)
-	printf("bbc79PlusStore\n");
-#endif
+DEBUG_WORD("bbc79PlusStore")
 }
 
 void bbc79Store(void) {
@@ -1643,15 +1139,11 @@ void bbc79Store(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-#if defined (__DEBUG__)
-	printf("bbc79Store\n");
-#endif
+DEBUG_WORD("bbc79Store")
 }
 
 void bbc79CStore(void) {
-#if defined (__DEBUG__)
-	printf("bbc79CStore\n");
-#endif
+DEBUG_WORD("bbc79CStore")
 }
 
 void bbc79Fetch(void) {
@@ -1663,118 +1155,80 @@ void bbc79Fetch(void) {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 
-#if defined (__DEBUG__)
-	printf("bbc79Fetch\n");
-#endif
+DEBUG_WORD("bbc79Fetch")
 }
 
 void bbc79CFetch(void) {
-#if defined (__DEBUG__)
-	printf("bbc79CFetch\n");
-#endif
+DEBUG_WORD("bbc79CFetch")
 }
 
 void bbc79QFile(void) {
-#if defined (__DEBUG__)
-	printf("bbc79QFile\n");
-#endif
+DEBUG_WORD("bbc79QFile")
 }
 
 void bbc79Himem(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Himem\n");
-#endif
+DEBUG_WORD("bbc79Himem")
 }
 
 void bbc79Page(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Page\n");
-#endif
+DEBUG_WORD("bbc79Page")
 }
 
 void bbc79Traverse(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Traverse\n");
-#endif
+DEBUG_WORD("bbc79Traverse")
 }
 
 void bbc79Rot(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Rot\n");
-#endif
+DEBUG_WORD("bbc79Rot")
 }
 
 void bbc79TwentyVer(void) {
-#if defined (__DEBUG__)
-	printf("bbc79TwentyVer\n");
-#endif
+DEBUG_WORD("bbc79TwentyVer")
 }
 
 void bbc79Over(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Over\n");
-#endif
+DEBUG_WORD("bbc79Over")
 }
 
 void bbc79TwoSwap(void) {
-#if defined (__DEBUG__)
-	printf("bbc79TwoSwap\n");
-#endif
+DEBUG_WORD("bbc79TwoSwap")
 }
 
 void bbc79Swap(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Swap\n");
-#endif
+DEBUG_WORD("bbc79Swap")
 }
 
 void bbc79TwoDup(void) {
-#if defined (__DEBUG__)
-	printf("bbc79TwoDup\n");
-#endif
+DEBUG_WORD("bbc79TwoDup")
 }
 
 void bbc79QDup(void) {
-#if defined (__DEBUG__)
-	printf("bbc79QDup\n");
-#endif
+DEBUG_WORD("bbc79QDup")
 }
 
 void bbc79Dup(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Dup\n");
-#endif
+DEBUG_WORD("bbc79Dup")
 }
 
 void bbc79TwoDrop(void) {
-#if defined (__DEBUG__)
-	printf("bbc79TwoDrop\n");
-#endif
+DEBUG_WORD("bbc79TwoDrop")
 }
 
 void bbc79Drop(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Drop\n");
-#endif
+DEBUG_WORD("bbc79Drop")
 }
 
 void bbc79DNegate(void) {
-#if defined (__DEBUG__)
-	printf("bbc79DNegate\n");
-#endif
+DEBUG_WORD("bbc79DNegate")
 }
 
 void bbc79Negate(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Negate\n");
-#endif
+DEBUG_WORD("bbc79Negate")
 }
 
 #ifdef DPINTEGER_SUPPORT
 void bbc79DPlus(void) {
-#if defined (__DEBUG__)
-	printf("bbc79DPlus\n");
-#endif
+DEBUG_WORD("bbc79DPlus")
 }
 #endif
 
@@ -1788,259 +1242,175 @@ void bbc79Plus(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-#if defined (__DEBUG__)
-	printf("bbc79Plus\n");
-#endif
+DEBUG_WORD("bbc79Plus")
 }
 
 #ifdef DPINTEGER_SUPPORT
 void bbc79DLess(void) {
-#if defined (__DEBUG__)
-	printf("bbc79DLess\n");
-#endif
+DEBUG_WORD("bbc79DLess")
 }
 #endif
 
 void bbc79Less(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Less\n");
-#endif
+DEBUG_WORD("bbc79Less")
 }
 
 void bbc79ZeroLess(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZeroLess\n");
-#endif
+DEBUG_WORD("bbc79ZeroLess")
 }
 
 void bbc79ZeroEqual(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZeroEqual\n");
-#endif
+DEBUG_WORD("bbc79ZeroEqual")
 }
 
 void bbc79Leave(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Leave\n");
-#endif
+DEBUG_WORD("bbc79Leave")
 }
 
 void bbc79SwapBytes(void) {
-#if defined (__DEBUG__)
-	printf("bbc79SwapBytes\n");
-#endif
+DEBUG_WORD("bbc79SwapBytes")
 }
 
 void bbc79RFrom(void) {
-#if defined (__DEBUG__)
-	printf("bbc79RFrom\n");
-#endif
+DEBUG_WORD("bbc79RFrom")
 }
 
 void bbc79ToR(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ToR\n");
-#endif
+DEBUG_WORD("bbc79ToR")
 }
 
 void bbc79RFetch(void) {
 
 
-#if defined (__DEBUG__)
-	printf("bbc79RFetch\n");
-#endif
+DEBUG_WORD("bbc79RFetch")
 }
 
 void bbc79Exit(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Exit\n");
-#endif
+DEBUG_WORD("bbc79Exit")
 }
 
 void bbc79Key(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Key\n");
-#endif
+DEBUG_WORD("bbc79Key")
 }
 
 void bbc79ZKey(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZKey\n");
-#endif
+DEBUG_WORD("bbc79ZKey")
 }
 
 void bbc79QKey(void) {
-#if defined (__DEBUG__)
-	printf("bbc79QKey\n");
-#endif
+DEBUG_WORD("bbc79QKey")
 }
 
 void bbc79Xor(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Xor\n");
-#endif
+DEBUG_WORD("bbc79Xor")
 }
 
 void bbc79Or(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Or\n");
-#endif
+DEBUG_WORD("bbc79Or")
 }
 
 void bbc79And(void) {
-#if defined (__DEBUG__)
-	printf("bbc79And\n");
-#endif
+DEBUG_WORD("bbc79And")
 }
 
 void bbc79USlash(void) {
-#if defined (__DEBUG__)
-	printf("bbc79USlash\n");
-#endif
+DEBUG_WORD("bbc79USlash")
 }
 
 void bbc79UStar(void) {
-#if defined (__DEBUG__)
-	printf("bbc79UStar\n");
-#endif
+DEBUG_WORD("bbc79UStar")
 }
 
 void bbc79CMove(void) {
-#if defined (__DEBUG__)
-	printf("bbc79CMove\n");
-#endif
+DEBUG_WORD("bbc79CMove")
 }
 
 void bbc79ToVDU(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ToVDU\n");
-#endif
+DEBUG_WORD("bbc79ToVDU")
 }
 
 void bbc79Emit(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Emit\n");
-#endif
+DEBUG_WORD("bbc79Emit")
 }
 
 void bbc79ZEmit(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZEmit\n");
-#endif
+DEBUG_WORD("bbc79ZEmit")
 }
 
 void bbc79RPStore(void) {
-#if defined (__DEBUG__)
-	printf("bbc79RPStore\n");
-#endif
+DEBUG_WORD("bbc79RPStore")
 }
 
 void bbc79SPStore(void) {
-#if defined (__DEBUG__)
-	printf("bbc79SPStore\n");
-#endif
+DEBUG_WORD("bbc79SPStore")
 }
 
 void bbc79RPFetch(void) {
-#if defined (__DEBUG__)
-	printf("bbc79RPFetch\n");
-#endif
+DEBUG_WORD("bbc79RPFetch")
 }
 
 void bbc79SPFetch(void) {
-#if defined (__DEBUG__)
-	printf("bbc79SPFetch\n");
-#endif
+DEBUG_WORD("bbc79SPFetch")
 }
 
 void bbc79Enclose(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Enclose\n");
-#endif
+DEBUG_WORD("bbc79Enclose")
 }
 
 void bbc79ZFind(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZFind\n");
-#endif
+DEBUG_WORD("bbc79ZFind")
 }
 
 void bbc79Digit(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Digit\n");
-#endif
+DEBUG_WORD("bbc79Digit")
 }
 
 void bbc79ModeAddr(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ModeAddr\n");
-#endif
+DEBUG_WORD("bbc79ModeAddr")
 }
 
 void bbc79HIAddr(void) {
-#if defined (__DEBUG__)
-	printf("bbc79HIAddr\n");
-#endif
+DEBUG_WORD("bbc79HIAddr")
 }
 
 void bbc79ZDO(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZDO\n");
-#endif
+DEBUG_WORD("bbc79ZDO")
 }
 
 void bbc79I(void) {
-#if defined (__DEBUG__)
-	printf("bbc79I\n");
-#endif
+DEBUG_WORD("bbc79I")
 }
 
 void bbc79ZULoop(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZULoop\n");
-#endif
+DEBUG_WORD("bbc79ZULoop")
 }
 
 void bbc79ZPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZPlusLoop\n");
-#endif
+DEBUG_WORD("bbc79ZPlusLoop")
 }
 
 void bbc79ZLoop(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZLoop\n");
-#endif
+DEBUG_WORD("bbc79ZLoop")
 }
 
 void bbc79ZeroBranch(void) {
-#if defined (__DEBUG__)
-	printf("bbc79ZeroBranch\n");
-#endif
+DEBUG_WORD("bbc79ZeroBranch")
 }
 
 void bbc79Branch(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Branch\n");
-#endif
+DEBUG_WORD("bbc79Branch")
 }
 
 void bbc79FetchExecute(void) {
-#if defined (__DEBUG__)
-	printf("bbc79FetchExecute\n");
-#endif
+DEBUG_WORD("bbc79FetchExecute")
 }
 
 void bbc79Execute(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Execute\n");
-#endif
+DEBUG_WORD("bbc79Execute")
 }
 
 void bbc79Lit(void) {
-#if defined (__DEBUG__)
-	printf("bbc79Lit\n");
-#endif
+DEBUG_WORD("bbc79Lit")
 }
 
 #endif
