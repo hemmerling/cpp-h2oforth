@@ -452,7 +452,7 @@
 #if defined (__DEBUG__)
 #define DEBUG_WORD(X) privateDebugWord(X);
 #else
-#define DEBUG_PRINT_OWN_NAME(X)
+#define DEBUG_WORD(X)
 #endif
 
 void forthInit(void);
