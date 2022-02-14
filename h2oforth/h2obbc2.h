@@ -6,267 +6,267 @@
 /* Primitives */
 
 void bbc79DollarMSG(void) {
-DEBUG_WORD("bbc79DollarMSG")
+	DEBUG_WORD("bbc79DollarMSG")
 }
 
 void bbc79Plot(void) {
-DEBUG_WORD("bbc79Plot")
+	DEBUG_WORD("bbc79Plot")
 }
 
 void bbc79MoveBuffers(void) {
-DEBUG_WORD("bbc79MoveBuffers")
+	DEBUG_WORD("bbc79MoveBuffers")
 }
 
 void bbc79FromCMove(void) {
-DEBUG_WORD("bbc79FromCMove")
+	DEBUG_WORD("bbc79FromCMove")
 }
 
 void bbc79Where(void) {
-DEBUG_WORD("bbc79Where")
+	DEBUG_WORD("bbc79Where")
 }
 
 void bbc79Line(void) {
-DEBUG_WORD("bbc79Line")
+	DEBUG_WORD("bbc79Line")
 }
 
 void bbc79Text(void) {
-DEBUG_WORD("bbc79Text")
+	DEBUG_WORD("bbc79Text")
 }
 
 void bbc79More(void) {
-DEBUG_WORD("bbc79More")
+	DEBUG_WORD("bbc79More")
 }
 
 void bbc79Another(void) {
-DEBUG_WORD("bbc79Another")
+	DEBUG_WORD("bbc79Another")
 }
 
 void bbc79Program(void) {
-DEBUG_WORD("bbc79Program")
+	DEBUG_WORD("bbc79Program")
 }
 
 void bbc79ClrScr(void) {
-DEBUG_WORD("bbc79ClrScr")
+	DEBUG_WORD("bbc79ClrScr")
 }
 
 void bbc79Save(void) {
-DEBUG_WORD("bbc79Save")
+	DEBUG_WORD("bbc79Save")
 }
 
 void bbc79Locate(void) {
-DEBUG_WORD("bbc79Locate")
+	DEBUG_WORD("bbc79Locate")
 }
 
 void bbc79Editor(void) {
-DEBUG_WORD("bbc79Editor")
+	DEBUG_WORD("bbc79Editor")
 }
 
 void bbc79Code(void) {
-DEBUG_WORD("bbc79Code")
+	DEBUG_WORD("bbc79Code")
 }
 
 void bbc79QCurrent(void) {
-DEBUG_WORD("bbc79QCurrent")
+	DEBUG_WORD("bbc79QCurrent")
 }
 
 void bbc79Assembler(void) {
-DEBUG_WORD("bbc79Assembler")
+	DEBUG_WORD("bbc79Assembler")
 }
 
 void bbc79Triad(void) {
-DEBUG_WORD("bbc79Triad")
+	DEBUG_WORD("bbc79Triad")
 }
 
 void bbc79Index(void) {
-DEBUG_WORD("bbc79Index")
+	DEBUG_WORD("bbc79Index")
 }
 
 void bbc79SnineStandard(void) {
-DEBUG_WORD("bbc79SnineStandard")
+	DEBUG_WORD("bbc79SnineStandard")
 }
 
 void bbc79List(void) {
-DEBUG_WORD("bbc79List")
+	DEBUG_WORD("bbc79List")
 }
 
 void bbc79CreateScreens(void) {
-DEBUG_WORD("bbc79CreateScreens")
+	DEBUG_WORD("bbc79CreateScreens")
 }
 
 void bbc79Tape(void) {
-DEBUG_WORD("bbc79Tape")
+	DEBUG_WORD("bbc79Tape")
 }
 
 void bbc79QRSlashW(void) {
-DEBUG_WORD("bbc79QRSlashW")
+	DEBUG_WORD("bbc79QRSlashW")
 }
 
 void bbc79TRSlashW(void) {
-DEBUG_WORD("bbc79TRSlashW")
+	DEBUG_WORD("bbc79TRSlashW")
 }
 
 void bbc79TW(void) {
-DEBUG_WORD("bbc79TW")
+	DEBUG_WORD("bbc79TW")
 }
 
 void bbc79TR(void) {
-DEBUG_WORD("bbc79TR")
+	DEBUG_WORD("bbc79TR")
 }
 
 void bbc79FourHEX(void) {
-DEBUG_WORD("bbc79FourHEX")
+	DEBUG_WORD("bbc79FourHEX")
 }
 
 void bbc79SSTo(void) {
-DEBUG_WORD("bbc79SSTo")
+	DEBUG_WORD("bbc79SSTo")
 }
 
 void bbc79Flush(void) {
-DEBUG_WORD("bbc79Flush")
+	DEBUG_WORD("bbc79Flush")
 }
 
 void bbc79SaveBuffers(void) {
-DEBUG_WORD("bbc79SaveBuffers")
+	DEBUG_WORD("bbc79SaveBuffers")
 }
 
 void bbc79Disk(void) {
-DEBUG_WORD("bbc79Disk")
+	DEBUG_WORD("bbc79Disk")
 }
 
 void bbc79ZDisk(void) {
-DEBUG_WORD("bbc79ZDisk")
+	DEBUG_WORD("bbc79ZDisk")
 }
 
 void bbc79Load(void) {
-DEBUG_WORD("bbc79Load")
+	DEBUG_WORD("bbc79Load")
 }
 
 void bbc79Block(void) {
-DEBUG_WORD("bbc79Block")
+	DEBUG_WORD("bbc79Block")
 }
 
 void bbc79Buffer(void) {
-DEBUG_WORD("bbc79Buffer")
+	DEBUG_WORD("bbc79Buffer")
 }
 
 void bbc79Update(void) {
-DEBUG_WORD("bbc79Update")
+	DEBUG_WORD("bbc79Update")
 }
 
 void bbc79ZUpdate(void) {
-DEBUG_WORD("bbc79ZUpdate")
+	DEBUG_WORD("bbc79ZUpdate")
 }
 
 void bbc79PlusBuf(void) {
-DEBUG_WORD("bbc79PlusBuf")
+	DEBUG_WORD("bbc79PlusBuf")
 }
 
 void bbc79InitBuf(void) {
-DEBUG_WORD("bbc79InitBuf")
+	DEBUG_WORD("bbc79InitBuf")
 }
 
 void bbc79SetBuf(void) {
-DEBUG_WORD("bbc79SetBuf")
+	DEBUG_WORD("bbc79SetBuf")
 }
 
 void bbc79EmptyBuffers(void) {
-DEBUG_WORD("bbc79EmptyBuffers")
+	DEBUG_WORD("bbc79EmptyBuffers")
 }
 
 void bbc79NumBuf(void) {
-DEBUG_WORD("bbc79NumBuf")
+	DEBUG_WORD("bbc79NumBuf")
 }
 
 void bbc79Prev(void) {
-DEBUG_WORD("bbc79Prev")
+	DEBUG_WORD("bbc79Prev")
 }
 
 void bbc79Use(void) {
-DEBUG_WORD("bbc79Use")
+	DEBUG_WORD("bbc79Use")
 }
 
 void bbc79BufSZ(void) {
-DEBUG_WORD("bbc79BufSZ")
+	DEBUG_WORD("bbc79BufSZ")
 }
 
 void bbc79MinBUF(void) {
-DEBUG_WORD("bbc79MinBUF")
+	DEBUG_WORD("bbc79MinBUF")
 }
 
 void bbc79RSlashW(void) {
-DEBUG_WORD("bbc79RSlashW")
+	DEBUG_WORD("bbc79RSlashW")
 }
 
 void bbc79DRSlashW(void) {
-DEBUG_WORD("bbc79DRSlashW")
+	DEBUG_WORD("bbc79DRSlashW")
 }
 
 void bbc79Open(void) {
-DEBUG_WORD("bbc79Open")
+	DEBUG_WORD("bbc79Open")
 }
 
 void bbc79FName(void) {
-DEBUG_WORD("bbc79FName")
+	DEBUG_WORD("bbc79FName")
 }
 
 void bbc79Channel(void) {
-DEBUG_WORD("bbc79Channel")
+	DEBUG_WORD("bbc79Channel")
 }
 
 void bbc79MaxFiles(void) {
-DEBUG_WORD("bbc79MaxFiles")
+	DEBUG_WORD("bbc79MaxFiles")
 }
 
 void bbc79SSlashFile(void) {
-DEBUG_WORD("bbc79SSlashFile")
+	DEBUG_WORD("bbc79SSlashFile")
 }
 
 void bbc79ZRSlashW(void) {
-DEBUG_WORD("bbc79ZRSlashW")
+	DEBUG_WORD("bbc79ZRSlashW")
 }
 
 void bbc79Close(void) {
-DEBUG_WORD("bbc79Close")
+	DEBUG_WORD("bbc79Close")
 }
 
 void bbc79ZOpen(void) {
-DEBUG_WORD("bbc79ZOpen")
+	DEBUG_WORD("bbc79ZOpen")
 }
 
 void bbc79KeyTick(void) {
-DEBUG_WORD("bbc79KeyTick")
+	DEBUG_WORD("bbc79KeyTick")
 }
 
 void bbc79OSTick(void) {
-DEBUG_WORD("bbc79OSTick")
+	DEBUG_WORD("bbc79OSTick")
 }
 
 void bbc79ToCLI(void) {
-DEBUG_WORD("bbc79ToCLI")
+	DEBUG_WORD("bbc79ToCLI")
 }
 
 void bbc79ZCLI(void) {
-DEBUG_WORD("bbc79ZCLI")
+	DEBUG_WORD("bbc79ZCLI")
 }
 
 void bbc79ZDollarPlus(void) {
-DEBUG_WORD("bbc79ZDollarPlus")
+	DEBUG_WORD("bbc79ZDollarPlus")
 }
 
 void bbc79String(void) {
-DEBUG_WORD("bbc79String")
+	DEBUG_WORD("bbc79String")
 }
 
 void bbc79OSCLI(void) {
-DEBUG_WORD("bbc79OSCLI")
+	DEBUG_WORD("bbc79OSCLI")
 }
 
 void bbc79Roll(void) {
-DEBUG_WORD("bbc79Roll")
+	DEBUG_WORD("bbc79Roll")
 }
 
 void bbc79Pick(void) {
-DEBUG_WORD("bbc79Pick")
+	DEBUG_WORD("bbc79Pick")
 }
 
 void bbc79DotS(void) {
@@ -285,125 +285,125 @@ void bbc79DotS(void) {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 		// forthTasks[forthState.forthCurrentTask].messageNumber = MESSAGE_DATASTACK_EMPTY;
 	};
-DEBUG_WORD("bbc79DotS")
+	DEBUG_WORD("bbc79DotS")
 }
 
 void bbc79Depth(void) {
-DEBUG_WORD("bbc79Depth")
+	DEBUG_WORD("bbc79Depth")
 }
 
 void bbc79Forget(void) {
-DEBUG_WORD("bbc79Forget")
+	DEBUG_WORD("bbc79Forget")
 }
 
 void bbc79Prune(void) {
-DEBUG_WORD("bbc79Prune")
+	DEBUG_WORD("bbc79Prune")
 }
 
 void bbc79InitVecs(void) {
-DEBUG_WORD("bbc79InitVecs")
+	DEBUG_WORD("bbc79InitVecs")
 }
 
 void bbc79ToDo(void) {
-DEBUG_WORD("bbc79ToDo")
+	DEBUG_WORD("bbc79ToDo")
 }
 
 void bbc79DoVec(void) {
-DEBUG_WORD("bbc79DoVec")
+	DEBUG_WORD("bbc79DoVec")
 }
 
 void bbc79Assign(void) {
-DEBUG_WORD("bbc79Assign")
+	DEBUG_WORD("bbc79Assign")
 }
 
 void bbc79ExVec(void) {
-DEBUG_WORD("bbc79ExVec")
+	DEBUG_WORD("bbc79ExVec")
 }
 
 void bbc79Novec(void) {
-DEBUG_WORD("bbc79Novec")
+	DEBUG_WORD("bbc79Novec")
 }
 
 void bbc79Vlist(void) {
-DEBUG_WORD("bbc79Vlist")
+	DEBUG_WORD("bbc79Vlist")
 }
 
 void bbc79Tick(void) {
-DEBUG_WORD("bbc79Tick")
+	DEBUG_WORD("bbc79Tick")
 }
 
 void bbc79Repeat(void) {
-DEBUG_WORD("bbc79Repeat")
+	DEBUG_WORD("bbc79Repeat")
 }
 
 void bbc79While(void) {
-DEBUG_WORD("bbc79While")
+	DEBUG_WORD("bbc79While")
 }
 
 void bbc79Again(void) {
-DEBUG_WORD("bbc79Again")
+	DEBUG_WORD("bbc79Again")
 }
 
 void bbc79Until(void) {
-DEBUG_WORD("bbc79Until")
+	DEBUG_WORD("bbc79Until")
 }
 
 void bbc79Begin(void) {
-DEBUG_WORD("bbc79Begin")
+	DEBUG_WORD("bbc79Begin")
 }
 
 void bbc79Else(void) {
-DEBUG_WORD("bbc79Else")
+	DEBUG_WORD("bbc79Else")
 }
 
 void bbc79Then(void) {
-DEBUG_WORD("bbc79Then")
+	DEBUG_WORD("bbc79Then")
 }
 
 void bbc79If(void) {
-DEBUG_WORD("bbc79If")
+	DEBUG_WORD("bbc79If")
 }
 
 void bbc79PlusLoop(void) {
-DEBUG_WORD("bbc79PlusLoop")
+	DEBUG_WORD("bbc79PlusLoop")
 }
 
 void bbc79Loop(void) {
-DEBUG_WORD("bbc79Loop")
+	DEBUG_WORD("bbc79Loop")
 }
 
 void bbc79Do(void) {
-DEBUG_WORD("bbc79Do")
+	DEBUG_WORD("bbc79Do")
 }
 
 void bbc79Back(void) {
-DEBUG_WORD("bbc79Back")
+	DEBUG_WORD("bbc79Back")
 }
 
 void bbc79J(void) {
-DEBUG_WORD("bbc79J")
+	DEBUG_WORD("bbc79J")
 }
 
 void bbc79TwoSlash(void) {
-DEBUG_WORD("bbc79TwoSlash")
+	DEBUG_WORD("bbc79TwoSlash")
 }
 
 void bbc79TwoStar(void) {
-DEBUG_WORD("bbc79TwoStar")
+	DEBUG_WORD("bbc79TwoStar")
 }
 
 void bbc79Message(void) {
-DEBUG_WORD("bbc79Message")
+	DEBUG_WORD("bbc79Message")
 }
 
 void bbc79MSGNum(void) {
-DEBUG_WORD("bbc79MSGNum")
+	DEBUG_WORD("bbc79MSGNum")
 }
 
 /* Display in hexadecimal base in the format of <.> */
 void bbc79HDot(void) {
 	commonHexDot();
-DEBUG_WORD("bbc79HDot")
+	DEBUG_WORD("bbc79HDot")
 }
 
 /* Display in decimal base in the format of <.> */
@@ -419,15 +419,15 @@ void bbc79DecDot(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-DEBUG_WORD("bbc79DecDot")
+	DEBUG_WORD("bbc79DecDot")
 }
 
 void bbc79Q(void) {
-DEBUG_WORD("bbc79Q")
+	DEBUG_WORD("bbc79Q")
 }
 
 void bbc79UDot(void) {
-DEBUG_WORD("bbc79UDot")
+	DEBUG_WORD("bbc79UDot")
 }
 
 void bbc79Dot(void) {
@@ -440,7 +440,7 @@ void bbc79Dot(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-DEBUG_WORD("bbc79Dot")
+	DEBUG_WORD("bbc79Dot")
 }
 
 void bbc79DotR(void) {
@@ -458,7 +458,7 @@ void bbc79DotR(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_RETURNSTACK_EMPTY;
 	};
-DEBUG_WORD("bbc79DotR")
+	DEBUG_WORD("bbc79DotR")
 }
 
 #ifdef DPINTEGER_SUPPORT
@@ -475,7 +475,7 @@ void bbc79DDot(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-DEBUG_WORD("bbc79DDot")
+	DEBUG_WORD("bbc79DDot")
 }
 #endif
 
@@ -492,192 +492,192 @@ void bbc79DDotRDot(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_RETURNSTACK_EMPTY;
 	};
-DEBUG_WORD("bbc79DDotRDot")
+	DEBUG_WORD("bbc79DDotRDot")
 }
 #endif
 
 void bbc79NumS(void) {
-DEBUG_WORD("bbc79NumS")
+	DEBUG_WORD("bbc79NumS")
 }
 
 void bbc79Num(void) {
-DEBUG_WORD("bbc79Num")
+	DEBUG_WORD("bbc79Num")
 }
 
 void bbc79Sign(void) {
-DEBUG_WORD("bbc79Sign")
+	DEBUG_WORD("bbc79Sign")
 }
 
 void bbc79NumGreater(void) {
-DEBUG_WORD("bbc79NumGreater")
+	DEBUG_WORD("bbc79NumGreater")
 }
 
 void bbc79LessNum(void) {
-DEBUG_WORD("bbc79LessNum")
+	DEBUG_WORD("bbc79LessNum")
 }
 
 void bbc79Spaces(void) {
-DEBUG_WORD("bbc79Spaces")
+	DEBUG_WORD("bbc79Spaces")
 }
 
 void bbc79MSlashMod(void) {
-DEBUG_WORD("bbc79MSlashMod")
+	DEBUG_WORD("bbc79MSlashMod")
 }
 
 void bbc79StarSlash(void) {
-DEBUG_WORD("bbc79StarSlash")
+	DEBUG_WORD("bbc79StarSlash")
 }
 
 void bbc79StarSlashMod(void) {
-DEBUG_WORD("bbc79StarSlashMod")
+	DEBUG_WORD("bbc79StarSlashMod")
 }
 
 void bbc79Mod(void) {
-DEBUG_WORD("bbc79Mod")
+	DEBUG_WORD("bbc79Mod")
 }
 
 void bbc79Slash(void) {
-DEBUG_WORD("bbc79Slash")
+	DEBUG_WORD("bbc79Slash")
 }
 
 void bbc79SlashMod(void) {
-DEBUG_WORD("bbc79SlashMod")
+	DEBUG_WORD("bbc79SlashMod")
 }
 
 void bbc79Star(void) {
-DEBUG_WORD("bbc79Star")
+	DEBUG_WORD("bbc79Star")
 }
 
 void bbc79MSlash(void) {
-DEBUG_WORD("bbc79MSlash")
+	DEBUG_WORD("bbc79MSlash")
 }
 
 void bbc79MAbs(void) {
-DEBUG_WORD("bbc79MAbs")
+	DEBUG_WORD("bbc79MAbs")
 }
 
 #ifdef DPINTEGER_SUPPORT
 void bbc79DPlusMinus(void) {
-DEBUG_WORD("bbc79DPlusMinus")
+	DEBUG_WORD("bbc79DPlusMinus")
 }
 #endif
 
 void bbc79PlusMinus(void) {
-DEBUG_WORD("bbc79PlusMinus")
+	DEBUG_WORD("bbc79PlusMinus")
 }
 
 #ifdef DPINTEGER_SUPPORT
 void bbc79SToD(void) {
-DEBUG_WORD("bbc79SToD")
+	DEBUG_WORD("bbc79SToD")
 }
 #endif
 
 void bbc79Warm(void) {
-DEBUG_WORD("bbc79Warm")
+	DEBUG_WORD("bbc79Warm")
 }
 
 void bbc79Cold(void) {
-DEBUG_WORD("bbc79Cold")
+	DEBUG_WORD("bbc79Cold")
 }
 
 void bbc79Start(void) {
-DEBUG_WORD("bbc79Start")
+	DEBUG_WORD("bbc79Start")
 }
 
 void bbc79Mode(void) {
-DEBUG_WORD("bbc79Mode")
+	DEBUG_WORD("bbc79Mode")
 }
 
 void bbc79OSError(void) {
-DEBUG_WORD("bbc79OSError")
+	DEBUG_WORD("bbc79OSError")
 }
 
 void bbc79Escape(void) {
-DEBUG_WORD("bbc79Escape")
+	DEBUG_WORD("bbc79Escape")
 }
 
 void bbc79Abort(void) {
-DEBUG_WORD("bbc79Abort")
+	DEBUG_WORD("bbc79Abort")
 }
 
 void bbc79ZAbort(void) {
-DEBUG_WORD("bbc79ZAbort")
+	DEBUG_WORD("bbc79ZAbort")
 }
 
 void bbc79ZWarm(void) {
-DEBUG_WORD("bbc79ZWarm")
+	DEBUG_WORD("bbc79ZWarm")
 }
 
 void bbc79Definitions(void) {
-DEBUG_WORD("bbc79Definitions")
+	DEBUG_WORD("bbc79Definitions")
 }
 
 void bbc79Quit(void) {
-DEBUG_WORD("bbc79Quit")
+	DEBUG_WORD("bbc79Quit")
 }
 
 void bbc79Forth(void) {
-DEBUG_WORD("bbc79Forth")
+	DEBUG_WORD("bbc79Forth")
 }
 
 void bbc79Vocabulary(void) {
-DEBUG_WORD("bbc79Vocabulary")
+	DEBUG_WORD("bbc79Vocabulary")
 }
 
 void bbc79Interpret(void) {
-DEBUG_WORD("bbc79Interpret")
+	DEBUG_WORD("bbc79Interpret")
 }
 
 void bbc79NumericInterpret(void) {
-DEBUG_WORD("bbc79NumericInterpret")
+	DEBUG_WORD("bbc79NumericInterpret")
 }
 
 void bbc79ZNumericInterpret(void) {
-DEBUG_WORD("bbc79ZNumericInterpret")
+	DEBUG_WORD("bbc79ZNumericInterpret")
 }
 
 void bbc79Paren(void) {
-DEBUG_WORD("bbc79Paren")
+	DEBUG_WORD("bbc79Paren")
 }
 
 void bbc79Number(void) {
-DEBUG_WORD("bbc79Number")
+	DEBUG_WORD("bbc79Number")
 }
 
 void bbc79Semicolon(void) {
-DEBUG_WORD("bbc79Semicolon")
+	DEBUG_WORD("bbc79Semicolon")
 }
 
 void bbc79Colon(void) {
-DEBUG_WORD("bbc79Colon")
+	DEBUG_WORD("bbc79Colon")
 }
 
 void bbc79QStack(void) {
-DEBUG_WORD("bbc79QStack")
+	DEBUG_WORD("bbc79QStack")
 }
 
 void bbc79Dliteral(void) {
-DEBUG_WORD("bbc79Dliteral")
+	DEBUG_WORD("bbc79Dliteral")
 }
 
 void bbc79Literal(void) {
-DEBUG_WORD("bbc79Literal")
+	DEBUG_WORD("bbc79Literal")
 }
 
 void bbc79ZCompile(void) {
-DEBUG_WORD("bbc79Literal")
+	DEBUG_WORD("bbc79Literal")
 }
 
 void bbc79Create(void) {
-DEBUG_WORD("bbc79Create")
+	DEBUG_WORD("bbc79Create")
 }
 
 void bbc79ZCreate(void) {
-DEBUG_WORD("bbc79ZCreate")
+	DEBUG_WORD("bbc79ZCreate")
 }
 
 void bbc79IDDot(void) {
-DEBUG_WORD("bbc79IDDot")
+	DEBUG_WORD("bbc79IDDot")
 }
 
 void bbc79Error(void) {
@@ -690,171 +690,171 @@ void bbc79Error(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-DEBUG_WORD("bbc79Error")
+	DEBUG_WORD("bbc79Error")
 }
 
 void bbc79Find(void) {
-DEBUG_WORD("bbc79Find")
+	DEBUG_WORD("bbc79Find")
 }
 
 void bbc79MinusFind(void) {
-DEBUG_WORD("bbc79MinusFind")
+	DEBUG_WORD("bbc79MinusFind")
 }
 
 void bbc79Convert(void) {
-DEBUG_WORD("bbc79Convert")
+	DEBUG_WORD("bbc79Convert")
 }
 
 void bbc79Word(void) {
-DEBUG_WORD("bbc79Word")
+	DEBUG_WORD("bbc79Word")
 }
 
 void bbc79OneWord(void) {
-DEBUG_WORD("bbc79OneWord")
+	DEBUG_WORD("bbc79OneWord")
 }
 
 void bbc79WBFR(void) {
-DEBUG_WORD("bbc79WBFR")
+	DEBUG_WORD("bbc79WBFR")
 }
 
 void bbc79WDSZ(void) {
-DEBUG_WORD("bbc79WDSZ")
+	DEBUG_WORD("bbc79WDSZ")
 }
 
 void bbc79ZWord(void) {
-DEBUG_WORD("bbc79ZWord")
+	DEBUG_WORD("bbc79ZWord")
 }
 
 void bbc79Hold(void) {
-DEBUG_WORD("bbc79Hold")
+	DEBUG_WORD("bbc79Hold")
 }
 
 void bbc79Blanks(void) {
-DEBUG_WORD("bbc79Blanks")
+	DEBUG_WORD("bbc79Blanks")
 }
 
 void bbc79Erase(void) {
-DEBUG_WORD("bbc79Erase")
+	DEBUG_WORD("bbc79Erase")
 }
 
 void bbc79Fill(void) {
-DEBUG_WORD("bbc79Fill")
+	DEBUG_WORD("bbc79Fill")
 }
 
 void bbc79Move(void) {
-DEBUG_WORD("bbc79Move")
+	DEBUG_WORD("bbc79Move")
 }
 
 void bbc79Query(void) {
-DEBUG_WORD("bbc79Query")
+	DEBUG_WORD("bbc79Query")
 }
 
 void bbc79Expect(void) {
-DEBUG_WORD("bbc79Expect")
+	DEBUG_WORD("bbc79Expect")
 }
 
 void bbc79ZExpect(void) {
-DEBUG_WORD("bbc79ZExpect")
+	DEBUG_WORD("bbc79ZExpect")
 }
 
 void bbc79DotQuote(void) {
-DEBUG_WORD("bbc79DotQuote")
+	DEBUG_WORD("bbc79DotQuote")
 }
 
 void bbc79ZDotQuote(void) {
-DEBUG_WORD("bbc79ZDotQuote")
+	DEBUG_WORD("bbc79ZDotQuote")
 }
 
 void bbc79TextComma(void) {
-DEBUG_WORD("bbc79TextComma")
+	DEBUG_WORD("bbc79TextComma")
 }
 
 void bbc79MinusTrailing(void) {
-DEBUG_WORD("bbc79MinusTrailing")
+	DEBUG_WORD("bbc79MinusTrailing")
 }
 
 void bbc79Type(void) {
-DEBUG_WORD("bbc79Type")
+	DEBUG_WORD("bbc79Type")
 }
 
 void bbc79Count(void) {
-DEBUG_WORD("bbc79Type")
+	DEBUG_WORD("bbc79Type")
 }
 
 void bbc79ZeroGreater(void) {
-DEBUG_WORD("bbc79ZeroGreater")
+	DEBUG_WORD("bbc79ZeroGreater")
 }
 
 void bbc79Does(void) {
-DEBUG_WORD("bbc79Does")
+	DEBUG_WORD("bbc79Does")
 }
 
 void bbc79SemicolonCode(void) {
-DEBUG_WORD("bbc79SemicolonCode")
+	DEBUG_WORD("bbc79SemicolonCode")
 }
 
 void bbc79ZSemicolonCode(void) {
-DEBUG_WORD("bbc79ZSemicolonCode")
+	DEBUG_WORD("bbc79ZSemicolonCode")
 }
 
 void bbc79Decimal(void) {
 	forthTasks[forthState.forthCurrentTask].forthBase = DECIMAL;
 	forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_DECIMAL;
-DEBUG_WORD("bbc79Decimal")
+	DEBUG_WORD("bbc79Decimal")
 }
 
 void bbc79CR(void) {
-DEBUG_WORD("bbc79CR")
+	DEBUG_WORD("bbc79CR")
 }
 
 void bbc79Hex(void) {
 	forthTasks[forthState.forthCurrentTask].forthBase = HEX;
 	forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_HEX;
-DEBUG_WORD("bbc79Hex")
+	DEBUG_WORD("bbc79Hex")
 }
 
 void bbc79QTab(void) {
-DEBUG_WORD("bbc79QTab")
+	DEBUG_WORD("bbc79QTab")
 }
 
 void bbc79NoOp(void) {
-DEBUG_WORD("bbc79NoOp")
+	DEBUG_WORD("bbc79NoOp")
 }
 
 void bbc79To(void) {
-DEBUG_WORD("bbc79To")
+	DEBUG_WORD("bbc79To")
 }
 
 void bbc79From(void) {
-DEBUG_WORD("bbc79From")
+	DEBUG_WORD("bbc79From")
 }
 
 void bbc79Compile(void) {
-DEBUG_WORD("bbc79Compile")
+	DEBUG_WORD("bbc79Compile")
 }
 
 void bbc79Immediate(void) {
-DEBUG_WORD("bbc79Immediate")
+	DEBUG_WORD("bbc79Immediate")
 }
 
 void bbc79QLoading(void) {
-DEBUG_WORD("bbc79QLoading")
+	DEBUG_WORD("bbc79QLoading")
 }
 
 void bbc79QCSP(void) {
-DEBUG_WORD("bbc79QCSP")
+	DEBUG_WORD("bbc79QCSP")
 }
 
 void bbc79QPairs(void) {
-DEBUG_WORD("bbc79QPairs")
+	DEBUG_WORD("bbc79QPairs")
 }
 
 void bbc79QExec(void) {
-DEBUG_WORD("bbc79QExec")
+	DEBUG_WORD("bbc79QExec")
 }
 
 void bbc79QComp(void) {
-DEBUG_WORD("bbc79QComp")
+	DEBUG_WORD("bbc79QComp")
 }
 
 void bbc79QError(void) {
@@ -870,107 +870,107 @@ void bbc79QError(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-DEBUG_WORD("bbc79QError")
+	DEBUG_WORD("bbc79QError")
 }
 
 void bbc79StoreCSP(void) {
-DEBUG_WORD("bbc79StoreCSP")
+	DEBUG_WORD("bbc79StoreCSP")
 }
 
 void bbc79Not(void) {
-DEBUG_WORD("bbc79Not")
+	DEBUG_WORD("bbc79Not")
 }
 
 void bbc79PFA(void) {
-DEBUG_WORD("bbc79PFA")
+	DEBUG_WORD("bbc79PFA")
 }
 
 void bbc79CFA(void) {
-DEBUG_WORD("bbc79CFA")
+	DEBUG_WORD("bbc79CFA")
 }
 
 void bbc79NFA(void) {
-DEBUG_WORD("bbc79NFA")
+	DEBUG_WORD("bbc79NFA")
 }
 
 void bbc79LFA(void) {
-DEBUG_WORD("bbc79LFA")
+	DEBUG_WORD("bbc79LFA")
 }
 
 void bbc79ULess(void) {
-DEBUG_WORD("bbc79ULess")
+	DEBUG_WORD("bbc79ULess")
 }
 
 void bbc79Greater(void) {
-DEBUG_WORD("bbc79Greater")
+	DEBUG_WORD("bbc79Greater")
 }
 
 void bbc79Equal(void) {
-DEBUG_WORD("bbc79Equal")
+	DEBUG_WORD("bbc79Equal")
 }
 
 void bbc79Minus(void) {
-DEBUG_WORD("bbc79Minus")
+	DEBUG_WORD("bbc79Minus")
 }
 
 void bbc79Smudge(void) {
-DEBUG_WORD("bbc79Smudge")
+	DEBUG_WORD("bbc79Smudge")
 }
 
 void bbc79Last(void) {
-DEBUG_WORD("bbc79Last")
+	DEBUG_WORD("bbc79Last")
 }
 
 void bbc79CComma(void) {
-DEBUG_WORD("bbc79CComma")
+	DEBUG_WORD("bbc79CComma")
 }
 
 void bbc79Comma(void) {
-DEBUG_WORD("bbc79Comma")
+	DEBUG_WORD("bbc79Comma")
 }
 
 void bbc79Space(void) {
-DEBUG_WORD("bbc79Comma")
+	DEBUG_WORD("bbc79Comma")
 }
 
 void bbc79Allot(void) {
-DEBUG_WORD("bbc79Allot")
+	DEBUG_WORD("bbc79Allot")
 }
 
 void bbc79Here(void) {
-DEBUG_WORD("bbc79Here")
+	DEBUG_WORD("bbc79Here")
 }
 
 void bbc79TwoMinus(void) {
-DEBUG_WORD("bbc79TwoMinus")
+	DEBUG_WORD("bbc79TwoMinus")
 }
 
 void bbc79OneMinus(void) {
-DEBUG_WORD("bbc79OneMinus")
+	DEBUG_WORD("bbc79OneMinus")
 }
 
 void bbc79TwoPlus(void) {
-DEBUG_WORD("bbc79TwoPlus")
+	DEBUG_WORD("bbc79TwoPlus")
 }
 
 void bbc79OnePlus(void) {
-DEBUG_WORD("bbc79OnePlus")
+	DEBUG_WORD("bbc79OnePlus")
 }
 
 void bbc79HLD(void) {
-DEBUG_WORD("bbc79HLD")
+	DEBUG_WORD("bbc79HLD")
 }
 
 void bbc79RNum(void) {
-DEBUG_WORD("bbc79RNum")
+	DEBUG_WORD("bbc79RNum")
 }
 
 void bbc79CSP(void) {
-DEBUG_WORD("bbc79CSP")
+	DEBUG_WORD("bbc79CSP")
 }
 
 void bbc79DPL(void) {
-DEBUG_WORD("bbc79DPL")
+	DEBUG_WORD("bbc79DPL")
 }
 
 /* ": HEX 16 BASE ! ; ( MAKE HEX THE IN-OUT BASE *)" */
@@ -984,151 +984,151 @@ void bbc79Base(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_FULL;
 	};
-DEBUG_WORD("bbc79Base")
+	DEBUG_WORD("bbc79Base")
 }
 
 void bbc79State(void) {
-DEBUG_WORD("bbc79State")
+	DEBUG_WORD("bbc79State")
 }
 
 void bbc79Current(void) {
-DEBUG_WORD("bbc79Current")
+	DEBUG_WORD("bbc79Current")
 }
 
 void bbc79Context(void) {
-DEBUG_WORD("bbc79Context")
+	DEBUG_WORD("bbc79Context")
 }
 
 void bbc79Offset(void) {
-DEBUG_WORD("bbc79Offset")
+	DEBUG_WORD("bbc79Offset")
 }
 
 void bbc79SCR(void) {
-DEBUG_WORD("bbc79SCR")
+	DEBUG_WORD("bbc79SCR")
 }
 
 void bbc79Out(void) {
-DEBUG_WORD("bbc79Out")
+	DEBUG_WORD("bbc79Out")
 }
 
 void bbc79ToIn(void) {
-DEBUG_WORD("bbc79ToIn")
+	DEBUG_WORD("bbc79ToIn")
 }
 
 void bbc79BLK(void) {
-DEBUG_WORD("bbc79BLK")
+	DEBUG_WORD("bbc79BLK")
 }
 
 void bbc79VocLink(void) {
-DEBUG_WORD("bbc79VocLink")
+	DEBUG_WORD("bbc79VocLink")
 }
 
 void bbc79DP(void) {
-DEBUG_WORD("bbc79DP")
+	DEBUG_WORD("bbc79DP")
 }
 
 void bbc79Fence(void) {
-DEBUG_WORD("bbc79Fence")
+	DEBUG_WORD("bbc79Fence")
 }
 
 void bbc79Warnung(void) {
-DEBUG_WORD("bbc79Warnung")
+	DEBUG_WORD("bbc79Warnung")
 }
 
 void bbc79Width(void) {
-DEBUG_WORD("bbc79Width")
+	DEBUG_WORD("bbc79Width")
 }
 
 void bbc79TIB(void) {
-DEBUG_WORD("bbc79TIB")
+	DEBUG_WORD("bbc79TIB")
 }
 
 void bbc79R0(void) {
-DEBUG_WORD("bbc79R0")
+	DEBUG_WORD("bbc79R0")
 }
 
 void bbc79S0(void) {
-DEBUG_WORD("bbc79S0")
+	DEBUG_WORD("bbc79S0")
 }
 
 void bbc79PlusOrigin(void) {
-DEBUG_WORD("bbc79PlusOrigin")
+	DEBUG_WORD("bbc79PlusOrigin")
 }
 
 void bbc79BSlashSCR(void) {
-DEBUG_WORD("bbc79BSlashSCR")
+	DEBUG_WORD("bbc79BSlashSCR")
 }
 
 void bbc79BSlashBUF(void) {
-DEBUG_WORD("bbc79BSlashBUF")
+	DEBUG_WORD("bbc79BSlashBUF")
 }
 
 void bbc79Limit(void) {
-DEBUG_WORD("bbc79Limit")
+	DEBUG_WORD("bbc79Limit")
 }
 
 void bbc79First(void) {
-DEBUG_WORD("bbc79First")
+	DEBUG_WORD("bbc79First")
 }
 
 void bbc79PAD(void) {
-DEBUG_WORD("bbc79PAD")
+	DEBUG_WORD("bbc79PAD")
 }
 
 void CSlashL(void) {
-DEBUG_WORD("CSlashL")
+	DEBUG_WORD("CSlashL")
 }
 
 void bbc79BL(void) {
-DEBUG_WORD("bbc79BL")
+	DEBUG_WORD("bbc79BL")
 }
 
 void bbc79Two(void) {
-DEBUG_WORD("bbc79Two")
+	DEBUG_WORD("bbc79Two")
 }
 
 void bbc79One(void) {
-DEBUG_WORD("bbc79One")
+	DEBUG_WORD("bbc79One")
 }
 
 void bbc79Null(void) {
-DEBUG_WORD("bbc79Null")
+	DEBUG_WORD("bbc79Null")
 }
 
 void bbc79MinusOne(void) {
-DEBUG_WORD("bbc79MinusOne")
+	DEBUG_WORD("bbc79MinusOne")
 }
 
 void bbc79MinusTwo(void) {
-DEBUG_WORD("bbc79MinusTwo")
+	DEBUG_WORD("bbc79MinusTwo")
 }
 
 void bbc79User(void) {
-DEBUG_WORD("bbc79User")
+	DEBUG_WORD("bbc79User")
 }
 
 void bbc79Variable(void) {
-DEBUG_WORD("bbc79Variable")
+	DEBUG_WORD("bbc79Variable")
 }
 
 void bbc79Constant(void) {
-DEBUG_WORD("bbc79Constant")
+	DEBUG_WORD("bbc79Constant")
 }
 
 void bbc79RSemicolon(void) {
-DEBUG_WORD("bbc79RSemicolon")
+	DEBUG_WORD("bbc79RSemicolon")
 }
 
 void bbc79RColon(void) {
-DEBUG_WORD("bbc79RColon")
+	DEBUG_WORD("bbc79RColon")
 }
 
 void bbc79Toggle(void) {
-DEBUG_WORD("bbc79Toggle")
+	DEBUG_WORD("bbc79Toggle")
 }
 
 void bbc79PlusStore(void) {
-DEBUG_WORD("bbc79PlusStore")
+	DEBUG_WORD("bbc79PlusStore")
 }
 
 void bbc79Store(void) {
@@ -1139,11 +1139,11 @@ void bbc79Store(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-DEBUG_WORD("bbc79Store")
+	DEBUG_WORD("bbc79Store")
 }
 
 void bbc79CStore(void) {
-DEBUG_WORD("bbc79CStore")
+	DEBUG_WORD("bbc79CStore")
 }
 
 void bbc79Fetch(void) {
@@ -1155,80 +1155,80 @@ void bbc79Fetch(void) {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 
-DEBUG_WORD("bbc79Fetch")
+	DEBUG_WORD("bbc79Fetch")
 }
 
 void bbc79CFetch(void) {
-DEBUG_WORD("bbc79CFetch")
+	DEBUG_WORD("bbc79CFetch")
 }
 
 void bbc79QFile(void) {
-DEBUG_WORD("bbc79QFile")
+	DEBUG_WORD("bbc79QFile")
 }
 
 void bbc79Himem(void) {
-DEBUG_WORD("bbc79Himem")
+	DEBUG_WORD("bbc79Himem")
 }
 
 void bbc79Page(void) {
-DEBUG_WORD("bbc79Page")
+	DEBUG_WORD("bbc79Page")
 }
 
 void bbc79Traverse(void) {
-DEBUG_WORD("bbc79Traverse")
+	DEBUG_WORD("bbc79Traverse")
 }
 
 void bbc79Rot(void) {
-DEBUG_WORD("bbc79Rot")
+	DEBUG_WORD("bbc79Rot")
 }
 
 void bbc79TwentyVer(void) {
-DEBUG_WORD("bbc79TwentyVer")
+	DEBUG_WORD("bbc79TwentyVer")
 }
 
 void bbc79Over(void) {
-DEBUG_WORD("bbc79Over")
+	DEBUG_WORD("bbc79Over")
 }
 
 void bbc79TwoSwap(void) {
-DEBUG_WORD("bbc79TwoSwap")
+	DEBUG_WORD("bbc79TwoSwap")
 }
 
 void bbc79Swap(void) {
-DEBUG_WORD("bbc79Swap")
+	DEBUG_WORD("bbc79Swap")
 }
 
 void bbc79TwoDup(void) {
-DEBUG_WORD("bbc79TwoDup")
+	DEBUG_WORD("bbc79TwoDup")
 }
 
 void bbc79QDup(void) {
-DEBUG_WORD("bbc79QDup")
+	DEBUG_WORD("bbc79QDup")
 }
 
 void bbc79Dup(void) {
-DEBUG_WORD("bbc79Dup")
+	DEBUG_WORD("bbc79Dup")
 }
 
 void bbc79TwoDrop(void) {
-DEBUG_WORD("bbc79TwoDrop")
+	DEBUG_WORD("bbc79TwoDrop")
 }
 
 void bbc79Drop(void) {
-DEBUG_WORD("bbc79Drop")
+	DEBUG_WORD("bbc79Drop")
 }
 
 void bbc79DNegate(void) {
-DEBUG_WORD("bbc79DNegate")
+	DEBUG_WORD("bbc79DNegate")
 }
 
 void bbc79Negate(void) {
-DEBUG_WORD("bbc79Negate")
+	DEBUG_WORD("bbc79Negate")
 }
 
 #ifdef DPINTEGER_SUPPORT
 void bbc79DPlus(void) {
-DEBUG_WORD("bbc79DPlus")
+	DEBUG_WORD("bbc79DPlus")
 }
 #endif
 
@@ -1242,175 +1242,175 @@ void bbc79Plus(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-DEBUG_WORD("bbc79Plus")
+	DEBUG_WORD("bbc79Plus")
 }
 
 #ifdef DPINTEGER_SUPPORT
 void bbc79DLess(void) {
-DEBUG_WORD("bbc79DLess")
+	DEBUG_WORD("bbc79DLess")
 }
 #endif
 
 void bbc79Less(void) {
-DEBUG_WORD("bbc79Less")
+	DEBUG_WORD("bbc79Less")
 }
 
 void bbc79ZeroLess(void) {
-DEBUG_WORD("bbc79ZeroLess")
+	DEBUG_WORD("bbc79ZeroLess")
 }
 
 void bbc79ZeroEqual(void) {
-DEBUG_WORD("bbc79ZeroEqual")
+	DEBUG_WORD("bbc79ZeroEqual")
 }
 
 void bbc79Leave(void) {
-DEBUG_WORD("bbc79Leave")
+	DEBUG_WORD("bbc79Leave")
 }
 
 void bbc79SwapBytes(void) {
-DEBUG_WORD("bbc79SwapBytes")
+	DEBUG_WORD("bbc79SwapBytes")
 }
 
 void bbc79RFrom(void) {
-DEBUG_WORD("bbc79RFrom")
+	DEBUG_WORD("bbc79RFrom")
 }
 
 void bbc79ToR(void) {
-DEBUG_WORD("bbc79ToR")
+	DEBUG_WORD("bbc79ToR")
 }
 
 void bbc79RFetch(void) {
 
 
-DEBUG_WORD("bbc79RFetch")
+	DEBUG_WORD("bbc79RFetch")
 }
 
 void bbc79Exit(void) {
-DEBUG_WORD("bbc79Exit")
+	DEBUG_WORD("bbc79Exit")
 }
 
 void bbc79Key(void) {
-DEBUG_WORD("bbc79Key")
+	DEBUG_WORD("bbc79Key")
 }
 
 void bbc79ZKey(void) {
-DEBUG_WORD("bbc79ZKey")
+	DEBUG_WORD("bbc79ZKey")
 }
 
 void bbc79QKey(void) {
-DEBUG_WORD("bbc79QKey")
+	DEBUG_WORD("bbc79QKey")
 }
 
 void bbc79Xor(void) {
-DEBUG_WORD("bbc79Xor")
+	DEBUG_WORD("bbc79Xor")
 }
 
 void bbc79Or(void) {
-DEBUG_WORD("bbc79Or")
+	DEBUG_WORD("bbc79Or")
 }
 
 void bbc79And(void) {
-DEBUG_WORD("bbc79And")
+	DEBUG_WORD("bbc79And")
 }
 
 void bbc79USlash(void) {
-DEBUG_WORD("bbc79USlash")
+	DEBUG_WORD("bbc79USlash")
 }
 
 void bbc79UStar(void) {
-DEBUG_WORD("bbc79UStar")
+	DEBUG_WORD("bbc79UStar")
 }
 
 void bbc79CMove(void) {
-DEBUG_WORD("bbc79CMove")
+	DEBUG_WORD("bbc79CMove")
 }
 
 void bbc79ToVDU(void) {
-DEBUG_WORD("bbc79ToVDU")
+	DEBUG_WORD("bbc79ToVDU")
 }
 
 void bbc79Emit(void) {
-DEBUG_WORD("bbc79Emit")
+	DEBUG_WORD("bbc79Emit")
 }
 
 void bbc79ZEmit(void) {
-DEBUG_WORD("bbc79ZEmit")
+	DEBUG_WORD("bbc79ZEmit")
 }
 
 void bbc79RPStore(void) {
-DEBUG_WORD("bbc79RPStore")
+	DEBUG_WORD("bbc79RPStore")
 }
 
 void bbc79SPStore(void) {
-DEBUG_WORD("bbc79SPStore")
+	DEBUG_WORD("bbc79SPStore")
 }
 
 void bbc79RPFetch(void) {
-DEBUG_WORD("bbc79RPFetch")
+	DEBUG_WORD("bbc79RPFetch")
 }
 
 void bbc79SPFetch(void) {
-DEBUG_WORD("bbc79SPFetch")
+	DEBUG_WORD("bbc79SPFetch")
 }
 
 void bbc79Enclose(void) {
-DEBUG_WORD("bbc79Enclose")
+	DEBUG_WORD("bbc79Enclose")
 }
 
 void bbc79ZFind(void) {
-DEBUG_WORD("bbc79ZFind")
+	DEBUG_WORD("bbc79ZFind")
 }
 
 void bbc79Digit(void) {
-DEBUG_WORD("bbc79Digit")
+	DEBUG_WORD("bbc79Digit")
 }
 
 void bbc79ModeAddr(void) {
-DEBUG_WORD("bbc79ModeAddr")
+	DEBUG_WORD("bbc79ModeAddr")
 }
 
 void bbc79HIAddr(void) {
-DEBUG_WORD("bbc79HIAddr")
+	DEBUG_WORD("bbc79HIAddr")
 }
 
 void bbc79ZDO(void) {
-DEBUG_WORD("bbc79ZDO")
+	DEBUG_WORD("bbc79ZDO")
 }
 
 void bbc79I(void) {
-DEBUG_WORD("bbc79I")
+	DEBUG_WORD("bbc79I")
 }
 
 void bbc79ZULoop(void) {
-DEBUG_WORD("bbc79ZULoop")
+	DEBUG_WORD("bbc79ZULoop")
 }
 
 void bbc79ZPlusLoop(void) {
-DEBUG_WORD("bbc79ZPlusLoop")
+	DEBUG_WORD("bbc79ZPlusLoop")
 }
 
 void bbc79ZLoop(void) {
-DEBUG_WORD("bbc79ZLoop")
+	DEBUG_WORD("bbc79ZLoop")
 }
 
 void bbc79ZeroBranch(void) {
-DEBUG_WORD("bbc79ZeroBranch")
+	DEBUG_WORD("bbc79ZeroBranch")
 }
 
 void bbc79Branch(void) {
-DEBUG_WORD("bbc79Branch")
+	DEBUG_WORD("bbc79Branch")
 }
 
 void bbc79FetchExecute(void) {
-DEBUG_WORD("bbc79FetchExecute")
+	DEBUG_WORD("bbc79FetchExecute")
 }
 
 void bbc79Execute(void) {
-DEBUG_WORD("bbc79Execute")
+	DEBUG_WORD("bbc79Execute")
 }
 
 void bbc79Lit(void) {
-DEBUG_WORD("bbc79Lit")
+	DEBUG_WORD("bbc79Lit")
 }
 
 #endif
