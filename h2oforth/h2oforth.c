@@ -459,7 +459,7 @@ int isSPInteger(void) {
 			int endIndex = 0;
 			int ii = 0;
 			if (aWordIndex == 0) {
-				/* Number can start with "-" */
+				/* Number may start with "-" */
 				/* Number can't start with "," or "." */
 				startIndex = 0;
 				endIndex = lenAllowedCharactersBuffer - 2;
@@ -522,7 +522,7 @@ void storeSPInteger(void) {
 		int endIndex = 0;
 		int ii = 0;
 		if (aWordIndex == 0) {
-			/* Number can start with "-" */
+			/* Number may start with "-" */
 			/* Number can't start with "," or "." */
 			startIndex = 0;
 			endIndex = lenAllowedCharactersBuffer - 2;
@@ -638,7 +638,7 @@ int isDPInteger(void) {
 			int endIndex = 0;
 			int ii = 0;
 			if (aWordIndex == 0) {
-				/* Number can start with "-" */
+				/* Number may start with "-" */
 				/* Number can't start with "," or "." */
 				startIndex = 0;
 				endIndex = lenAllowedCharactersBuffer - 2;
@@ -707,7 +707,7 @@ void storeDPInteger(void) {
 			int endIndex = 0;
 			int ii = 0;
 			if (aWordIndex == 0) {
-				/* Number can start with "-" */
+				/* Number may start with "-" */
 				/* Number can't start with "," or "." */
 				startIndex = 0;
 				endIndex = lenAllowedCharactersBuffer - 2;
@@ -803,8 +803,8 @@ int isFloat(void) {
 			int endIndex = 0;
 			int ii = 0;
 			if (aWordIndex == 0) {
-				/* Number can start with "-" */
-				/* Number can't start with "," or "." */
+				/* Number may start with "-" or "." */
+				/* Float number can't start with "," or "E" */
 				startIndex = 0;
 				endIndex = lenAllowedCharactersBuffer - 2;
 			}

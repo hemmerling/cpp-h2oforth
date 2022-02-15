@@ -141,7 +141,7 @@ int parameterHelp(void) {
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_TERMINAL]).name);
 	printf("H2oForth [%c%s][%c%s]\n", PARAMETER_IDENTIFIER, (parameters[PARAMETER_KEYBOARD]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_KEYBOARD]).name);
-	printf("H2oForth [%c%s][%c%s] code.fc\n\n", PARAMETER_IDENTIFIER, (parameters[7]).shortName, PARAMETER_IDENTIFIER, (parameters[PARAMETER_SAVE]).name);
+	printf("H2oForth [%c%s][%c%s] code.fc\n\n", PARAMETER_IDENTIFIER, (parameters[PARAMETER_SAVE]).shortName, PARAMETER_IDENTIFIER, (parameters[PARAMETER_SAVE]).name);
 #if defined(H2O_DISPLAY_HELP_WITH_NO_PARAMETERS)
 	printf("Without parameters: Display this help screen\n");
 #else
