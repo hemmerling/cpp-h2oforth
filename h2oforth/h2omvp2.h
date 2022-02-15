@@ -5,2277 +5,1519 @@
 /* Primitives */
 
 void mvpSemicolonCode(void) {
-#if defined (__DEBUG__)
-	printf("mvpSemicolonCode\n");
-#endif
+	DEBUG_WORD("mvpSemicolonCode")
 }
 
 void mvpCode(void) {
-#if defined (__DEBUG__)
-	printf("mvpCode\n");
-#endif
+	DEBUG_WORD("mvpCode")
 }
 
 void mvpEnterCode(void) {
-#if defined (__DEBUG__)
-	printf("mvpEnterCode\n");
-#endif
+	DEBUG_WORD("mvpEnterCode")
 }
 
 void mvpAssembler(void) {
-#if defined (__DEBUG__)
-	printf("mvpAssembler\n");
-#endif
+	DEBUG_WORD("mvpAssembler")
 }
 
 void mvpQError4(void) {
-#if defined (__DEBUG__)
-	printf("mvpQError4\n");
-#endif
+	DEBUG_WORD("mvpQError4")
 }
 
 void mvpQError3(void) {
-#if defined (__DEBUG__)
-	printf("mvpQError3\n");
-#endif
+	DEBUG_WORD("mvpQError3")
 }
 
 void mvpQError2(void) {
-#if defined (__DEBUG__)
-	printf("mvpQError2\n");
-#endif
+	DEBUG_WORD("mvpQError2")
 }
 
 void mvpQError1(void) {
-#if defined (__DEBUG__)
-	printf("mvpQError1\n");
-#endif
+	DEBUG_WORD("mvpQError1")
 }
 
 void mvpTo(void) {
-#if defined (__DEBUG__)
-	printf("mvpTo\n");
-#endif
+	DEBUG_WORD("mvpTo")
 }
 
 void mvpEditor(void) {
-#if defined (__DEBUG__)
-	printf("mvpEditor\n");
-#endif
+	DEBUG_WORD("mvpEditor")
 }
 
 void mvpWipe(void) {
-#if defined (__DEBUG__)
-	printf("mvpWipe\n");
-#endif
+	DEBUG_WORD("mvpWipe")
 }
 
 void mvpLine(void) {
-#if defined (__DEBUG__)
-	printf("mvpLine\n");
-#endif
+	DEBUG_WORD("mvpLine")
 }
 
 void mvpMatch(void) {
-#if defined (__DEBUG__)
-	printf("mvpMatch\n");
-#endif
+	DEBUG_WORD("mvpMatch")
 }
 
 void mvpZMatch(void) {
-#if defined (__DEBUG__)
-	printf("mvpZMatch\n");
-#endif
+	DEBUG_WORD("mvpZMatch")
 }
 
 void mvpXTick(void) {
-#if defined (__DEBUG__)
-	printf("mvpXTick\n");
-#endif
+	DEBUG_WORD("mvpXTick")
 }
 
 void mvpUDotR(void) {
-#if defined (__DEBUG__)
-	printf("mvpUDotR\n");
-#endif
+	DEBUG_WORD("mvpUDotR")
 }
 
 void mvpOctal(void) {
-#if defined (__DEBUG__)
-	printf("mvpOctal\n");
-#endif
+	DEBUG_WORD("mvpOctal")
 }
 
 void mvpH(void) {
-#if defined (__DEBUG__)
-	printf("mvpH\n");
-#endif
+	DEBUG_WORD("mvpH")
 }
 
 void mvpFlush(void) {
-#if defined (__DEBUG__)
-	printf("mvpFlush\n");
-#endif
+	DEBUG_WORD("mvpFlush")
 }
 
 void mvpErase(void) {
-#if defined (__DEBUG__)
-	printf("mvpErase\n");
-#endif
+	DEBUG_WORD("mvpErase")
 }
 
 void mvpEmpty(void) {
-#if defined (__DEBUG__)
-	printf("mvpEmpty\n");
-#endif
+	DEBUG_WORD("mvpEmpty")
 }
 
 void mvpToType(void) {
-#if defined (__DEBUG__)
-	printf("mvpToType\n");
-#endif
+	DEBUG_WORD("mvpToType")
 }
 
 void mvpToBinary(void) {
-#if defined (__DEBUG__)
-	printf("mvpToBinary\n");
-#endif
+	DEBUG_WORD("mvpToBinary")
 }
 
 void mvpTwoVariable(void) {
-#if defined (__DEBUG__)
-	printf("mvpTwoVariable\n");
-#endif
+	DEBUG_WORD("mvpTwoVariable")
 }
 
 void mvpTwoSwap(void) {
-#if defined (__DEBUG__)
-	printf("mvpTwoSwap\n");
-#endif
+	DEBUG_WORD("mvpTwoSwap")
 }
 
 void mvpTwoOver(void) {
-#if defined (__DEBUG__)
-	printf("mvpTwoOver\n");
-#endif
+	DEBUG_WORD("mvpTwoOver")
 }
 
 void mvpTwoDup(void) {
-#if defined (__DEBUG__)
-	printf("mvpTwoDup\n");
-#endif
+	DEBUG_WORD("mvpTwoDup")
 }
 
 void mvpTwoDrop(void) {
-#if defined (__DEBUG__)
-	printf("mvpTwoDrop\n");
-#endif
+	DEBUG_WORD("mvpTwoDrop")
 }
 
 void mvpTwoConstant(void) {
-#if defined (__DEBUG__)
-	printf("mvpTwoConstant\n");
-#endif
+	DEBUG_WORD("mvpTwoConstant")
 }
 
 void mvpTwoFetch(void) {
-#if defined (__DEBUG__)
-	printf("mvpTwoFetch\n");
-#endif
+	DEBUG_WORD("mvpTwoFetch")
 }
 
 void mvpTwoStore(void) {
-#if defined (__DEBUG__)
-	printf("mvpTwoStore\n");
-#endif
+	DEBUG_WORD("mvpTwoStore")
 }
 
 void mvpMinusText(void) {
-#if defined (__DEBUG__)
-	printf("mvpMinusText\n");
-#endif
+	DEBUG_WORD("mvpMinusText")
 }
 
 void mvpTickS(void) {
-#if defined (__DEBUG__)
-	printf("mvpTickS\n");
-#endif
+	DEBUG_WORD("mvpTickS")
 }
 
 void mvpSaveForth(void) {
-#if defined (__DEBUG__)
-	printf("mvpSaveForth\n");
-#endif
+	DEBUG_WORD("mvpSaveForth")
 }
 
 void mvpDotS(void) {
-#if defined (__DEBUG__)
-	printf("mvpDotS\n");
-#endif
+	DEBUG_WORD("mvpDotS")
 }
 
 void mvpDotSr(void) {
-#if defined (__DEBUG__)
-	printf("mvpDotSr\n");
-#endif
+	DEBUG_WORD("mvpDotSr")
 }
 
 void mvpDotSl(void) {
-#if defined (__DEBUG__)
-	printf("mvpDotSl\n");
-#endif
+	DEBUG_WORD("mvpDotSl")
 }
 
 void mvpDotSs(void) {
-#if defined (__DEBUG__)
-	printf("mvpDotSs\n");
-#endif
+	DEBUG_WORD("mvpDotSs")
 }
 
 void mvpVList(void) {
-#if defined (__DEBUG__)
-	printf("mvpVList\n");
-#endif
+	DEBUG_WORD("mvpVList")
 }
 
 void mvpIndex(void) {
-#if defined (__DEBUG__)
-	printf("mvpIndex\n");
-#endif
+	DEBUG_WORD("mvpIndex")
 }
 
 void mvpIDDot(void) {
-#if defined (__DEBUG__)
-	printf("mvpIDDot\n");
-#endif
+	DEBUG_WORD("mvpIDDot")
 }
 
 void mvpDVariable(void) {
-#if defined (__DEBUG__)
-	printf("mvpDVariable\n");
-#endif
+	DEBUG_WORD("mvpDVariable")
 }
 
 void mvpDumpL(void) {
-#if defined (__DEBUG__)
-	printf("mvpDumpL\n");
-#endif
+	DEBUG_WORD("mvpDumpL")
 }
 
 void mvpDump(void) {
-#if defined (__DEBUG__)
-	printf("mvpDump\n");
-#endif
+	DEBUG_WORD("mvpDump")
 }
 
 void mvpDumpHeader(void) {
-#if defined (__DEBUG__)
-	printf("mvpDumpHeader\n");
-#endif
+	DEBUG_WORD("mvpDumpHeader")
 }
 
 void mvpPause(void) {
-#if defined (__DEBUG__)
-	printf("mvpPause\n");
-#endif
+	DEBUG_WORD("mvpPause")
 }
 
 void mvpDotIndex(void) {
-#if defined (__DEBUG__)
-	printf("mvpDotIndex\n");
-#endif
+	DEBUG_WORD("mvpDotIndex")
 }
 
 void mvpDMin(void) {
-#if defined (__DEBUG__)
-	printf("mvpDMin\n");
-#endif
+	DEBUG_WORD("mvpDMin")
 }
 
 void mvpDMax(void) {
-#if defined (__DEBUG__)
-	printf("mvpDMax\n");
-#endif
+	DEBUG_WORD("mvpDMax")
 }
 
 void mvpDConstant(void) {
-#if defined (__DEBUG__)
-	printf("mvpDConstant\n");
-#endif
+	DEBUG_WORD("mvpDConstant")
 }
 
 void mvpDFetch(void) {
-#if defined (__DEBUG__)
-	printf("mvpDFetch\n");
-#endif
+	DEBUG_WORD("mvpDFetch")
 }
 
 void mvpDGreater(void) {
-#if defined (__DEBUG__)
-	printf("mvpDGreater\n");
-#endif
+	DEBUG_WORD("mvpDGreater")
 }
 
 void mvpDEqual(void) {
-#if defined (__DEBUG__)
-	printf("mvpDEqual\n");
-#endif
+	DEBUG_WORD("mvpDEqual")
 }
 
 void mvpDZeroEqual(void) {
-#if defined (__DEBUG__)
-	printf("mvpDZeroEqual\n");
-#endif
+	DEBUG_WORD("mvpDZeroEqual")
 }
 
 void mvpDMinus(void) {
-#if defined (__DEBUG__)
-	printf("mvpDMinus\n");
-#endif
+	DEBUG_WORD("mvpDMinus")
 }
 
 void mvpDULess(void) {
-#if defined (__DEBUG__)
-	printf("mvpDULess\n");
-#endif
+	DEBUG_WORD("mvpDULess")
 }
 
 void mvpDSwap(void) {
-#if defined (__DEBUG__)
-	printf("mvpDSwap\n");
-#endif
+	DEBUG_WORD("mvpDSwap")
 }
 
 void mvpDOver(void) {
-#if defined (__DEBUG__)
-	printf("mvpDOver\n");
-#endif
+	DEBUG_WORD("mvpDOver")
 }
 
 void mvpCopy(void) {
-#if defined (__DEBUG__)
-	printf("mvpCopy\n");
-#endif
+	DEBUG_WORD("mvpCopy")
 }
 
 void mvpBMove(void) {
-#if defined (__DEBUG__)
-	printf("mvpBMove\n");
-#endif
+	DEBUG_WORD("mvpBMove")
 }
 
 void mvpBackslash(void) {
-#if defined (__DEBUG__)
-	printf("mvpBackslash\n");
-#endif
+	DEBUG_WORD("mvpBackslash")
 }
 
 void mvpTriad(void) {
-#if defined (__DEBUG__)
-	printf("mvpTriad\n");
-#endif
+	DEBUG_WORD("mvpTriad")
 }
 
 void mvpTickTitle(void) {
-#if defined (__DEBUG__)
-	printf("mvpTickTitle\n");
-#endif
+	DEBUG_WORD("mvpTickTitle")
 }
 
 void mvpTitle(void) {
-#if defined (__DEBUG__)
-	printf("mvpTitle\n");
-#endif
+	DEBUG_WORD("mvpTitle")
 }
 
 void mvpThru(void) {
-#if defined (__DEBUG__)
-	printf("mvpThru\n");
-#endif
+	DEBUG_WORD("mvpThru")
 }
 
 void mvpZIbmPage(void) {
-#if defined (__DEBUG__)
-	printf("mvpZIbmPage\n");
-#endif
+	DEBUG_WORD("mvpZIbmPage")
 }
 
 void mvpRightParen(void) {
-#if defined (__DEBUG__)
-	printf("mvpRightParen\n");
-#endif
+	DEBUG_WORD("mvpRightParen")
 }
 
 void mvpXCompile(void) {
-#if defined (__DEBUG__)
-	printf("mvpXCompile\n");
-#endif
+	DEBUG_WORD("mvpXCompile")
 }
 
 void mvpLeftParen(void) {
-#if defined (__DEBUG__)
-	printf("mvpLeftParen\n");
-#endif
+	DEBUG_WORD("mvpLeftParen")
 }
 
 void mvpXor(void) {
-#if defined (__DEBUG__)
-	printf("mvpXor\n");
-#endif
+	DEBUG_WORD("mvpXor")
 }
 
 void mvpWord(void) {
-#if defined (__DEBUG__)
-	printf("mvpWord\n");
-#endif
+	DEBUG_WORD("mvpWord")
 }
 
 void mvpWidth(void) {
-#if defined (__DEBUG__)
-	printf("mvpWidth\n");
-#endif
+	DEBUG_WORD("mvpWidth")
 }
 
 void mvpWhile(void) {
-#if defined (__DEBUG__)
-	printf("mvpWhile\n");
-#endif
+	DEBUG_WORD("mvpWhile")
 }
 
 void mvpWhere(void) {
-#if defined (__DEBUG__)
-	printf("mvpWhere\n");
-#endif
+	DEBUG_WORD("mvpWhere")
 }
 
 void mvpWarning(void) {
-#if defined (__DEBUG__)
-	printf("mvpWarning\n");
-#endif
+	DEBUG_WORD("mvpWarning")
 }
 
 void mvpVocabulary(void) {
-#if defined (__DEBUG__)
-	printf("mvpVocabulary\n");
-#endif
+	DEBUG_WORD("mvpVocabulary")
 }
 
 void mvpVocLink(void) {
-#if defined (__DEBUG__)
-	printf("mvpVocLink\n");
-#endif
+	DEBUG_WORD("mvpVocLink")
 }
 
 void mvpVariable(void) {
-#if defined (__DEBUG__)
-	printf("mvpVariable\n");
-#endif
+	DEBUG_WORD("mvpVariable")
 }
 
 void mvpUser(void) {
-#if defined (__DEBUG__)
-	printf("mvpUser\n");
-#endif
+	DEBUG_WORD("mvpUser")
 }
 
 void mvpUse(void) {
-#if defined (__DEBUG__)
-	printf("mvpUse\n");
-#endif
+	DEBUG_WORD("mvpUse")
 }
 
 void mvpUpdate(void) {
-#if defined (__DEBUG__)
-	printf("mvpUpdate\n");
-#endif
+	DEBUG_WORD("mvpUpdate")
 }
 
 void mvpUp(void) {
-#if defined (__DEBUG__)
-	printf("mvpUp\n");
-#endif
+	DEBUG_WORD("mvpUp")
 }
 
 void mvpUntil(void) {
-#if defined (__DEBUG__)
-	printf("mvpUntil\n");
-#endif
+	DEBUG_WORD("mvpUntil")
 }
 
 void mvpULess(void) {
-#if defined (__DEBUG__)
-	printf("mvpULess\n");
-#endif
+	DEBUG_WORD("mvpULess")
 }
 
 void mvpUSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("mvpUSlashMod\n");
-#endif
+	DEBUG_WORD("mvpUSlashMod")
 }
 
 void mvpUDot(void) {
-#if defined (__DEBUG__)
-	printf("mvpUDot\n");
-#endif
+	DEBUG_WORD("mvpUDot")
 }
 
 void mvpUStar(void) {
-#if defined (__DEBUG__)
-	printf("mvpUStar\n");
-#endif
+	DEBUG_WORD("mvpUStar")
 }
 
 void mvpType(void) {
-#if defined (__DEBUG__)
-	printf("mvpType\n");
-#endif
+	DEBUG_WORD("mvpType")
 }
 
 void mvpTraverse(void) {
-#if defined (__DEBUG__)
-	printf("mvpTraverse\n");
-#endif
+	DEBUG_WORD("mvpTraverse")
 }
 
 void mvpTrack(void) {
-#if defined (__DEBUG__)
-	printf("mvpTrack\n");
-#endif
+	DEBUG_WORD("mvpTrack")
 }
 
 void mvpToggle(void) {
-#if defined (__DEBUG__)
-	printf("mvpToggle\n");
-#endif
+	DEBUG_WORD("mvpToggle")
 }
 
 void mvpTib(void) {
-#if defined (__DEBUG__)
-	printf("mvpTib\n");
-#endif
+	DEBUG_WORD("mvpTib")
 }
 
 void mvpTAmpersandSCalc(void) {
-#if defined (__DEBUG__)
-	printf("mvpTAmpersandSCalc\n");
-#endif
+	DEBUG_WORD("mvpTAmpersandSCalc")
 }
 
 void mvpThen(void) {
-#if defined (__DEBUG__)
-	printf("mvpThen\n");
-#endif
+	DEBUG_WORD("mvpThen")
 }
 
 void mvpText(void) {
-#if defined (__DEBUG__)
-	printf("mvpText\n");
-#endif
+	DEBUG_WORD("mvpText")
 }
 
 void mvpSysCall(void) {
-#if defined (__DEBUG__)
-	printf("mvpSysCall\n");
-#endif
+	DEBUG_WORD("mvpSysCall")
 }
 
 void mvpSwap(void) {
-#if defined (__DEBUG__)
-	printf("mvpSwap\n");
-#endif
+	DEBUG_WORD("mvpSwap")
 }
 
 void mvpState(void) {
-#if defined (__DEBUG__)
-	printf("mvpState\n");
-#endif
+	DEBUG_WORD("mvpState")
 }
 
 void mvpSPt(void) {
-#if defined (__DEBUG__)
-	printf("mvpSPt\n");
-#endif
+	DEBUG_WORD("mvpSPt")
 }
 
 void mvpSPDrv(void) {
-#if defined (__DEBUG__)
-	printf("mvpSPDrv\n");
-#endif
+	DEBUG_WORD("mvpSPDrv")
 }
 
 void mvpSPBlk(void) {
-#if defined (__DEBUG__)
-	printf("mvpSPBlk\n");
-#endif
+	DEBUG_WORD("mvpSPBlk")
 }
 
 void mvpSpaces(void) {
-#if defined (__DEBUG__)
-	printf("mvpSpaces\n");
-#endif
+	DEBUG_WORD("mvpSpaces")
 }
 
 void mvpSpace(void) {
-#if defined (__DEBUG__)
-	printf("mvpSpace\n");
-#endif
+	DEBUG_WORD("mvpSpace")
 }
 
 void mvpSPFetch(void) {
-#if defined (__DEBUG__)
-	printf("mvpSPFetch\n");
-#endif
+	DEBUG_WORD("mvpSPFetch")
 }
 
 void mvpSP0(void) {
-#if defined (__DEBUG__)
-	printf("mvpSP0\n");
-#endif
+	DEBUG_WORD("mvpSP0")
 }
 
 void mvpSPStore(void) {
-#if defined (__DEBUG__)
-	printf("mvpSPStore\n");
-#endif
+	DEBUG_WORD("mvpSPStore")
 }
 
 void mvpSmudge(void) {
-#if defined (__DEBUG__)
-	printf("mvpSmudge\n");
-#endif
+	DEBUG_WORD("mvpSmudge")
 }
 
 void mvpSign(void) {
-#if defined (__DEBUG__)
-	printf("mvpSign\n");
-#endif
+	DEBUG_WORD("mvpSign")
 }
 
 void mvpSetDrx(void) {
-#if defined (__DEBUG__)
-	printf("mvpSetDrx\n");
-#endif
+	DEBUG_WORD("mvpSetDrx")
 }
 
 void mvpSecSlashTr(void) {
-#if defined (__DEBUG__)
-	printf("mvpSecSlashTr\n");
-#endif
+	DEBUG_WORD("mvpSecSlashTr")
 }
 
 void mvpSecSlashBlk(void) {
-#if defined (__DEBUG__)
-	printf("mvpSecSlashBlk\n");
-#endif
+	DEBUG_WORD("mvpSecSlashBlk")
 }
 
 void mvpSecWrite(void) {
-#if defined (__DEBUG__)
-	printf("mvpSecWrite\n");
-#endif
+	DEBUG_WORD("mvpSecWrite")
 }
 
 void mvpSecRead(void) {
-#if defined (__DEBUG__)
-	printf("mvpSecRead\n");
-#endif
+	DEBUG_WORD("mvpSecRead")
 }
 
 void mvpSec(void) {
-#if defined (__DEBUG__)
-	printf("mvpSec\n");
-#endif
+	DEBUG_WORD("mvpSec")
 }
 
 void mvpScr(void) {
-#if defined (__DEBUG__)
-	printf("mvpScr\n");
-#endif
+	DEBUG_WORD("mvpScr")
 }
 
 void mvpSaveBuffers(void) {
-#if defined (__DEBUG__)
-	printf("mvpSaveBuffers\n");
-#endif
+	DEBUG_WORD("mvpSaveBuffers")
 }
 
 void mvpS0(void) {
-#if defined (__DEBUG__)
-	printf("mvpS0\n");
-#endif
+	DEBUG_WORD("mvpS0")
 }
 
 void mvpSToD(void) {
-#if defined (__DEBUG__)
-	printf("mvpSToD\n");
-#endif
+	DEBUG_WORD("mvpSToD")
 }
 
 void mvpRPP(void) {
-#if defined (__DEBUG__)
-	printf("mvpRPP\n");
-#endif
+	DEBUG_WORD("mvpRPP")
 }
 
 void mvpRPFetch(void) {
-#if defined (__DEBUG__)
-	printf("mvpRPFetch\n");
-#endif
+	DEBUG_WORD("mvpRPFetch")
 }
 
 void mvpRPStore(void) {
-#if defined (__DEBUG__)
-	printf("mvpRPStore\n");
-#endif
+	DEBUG_WORD("mvpRPStore")
 }
 
 void mvpRot(void) {
-#if defined (__DEBUG__)
-	printf("mvpRot\n");
-#endif
+	DEBUG_WORD("mvpRot")
 }
 
 void mvpRoll(void) {
-#if defined (__DEBUG__)
-	printf("mvpRoll\n");
-#endif
+	DEBUG_WORD("mvpRoll")
 }
 
 void mvpRepeat(void) {
-#if defined (__DEBUG__)
-	printf("mvpRepeat\n");
-#endif
+	DEBUG_WORD("mvpRepeat")
 }
 
 void mvpRFetch(void) {
-#if defined (__DEBUG__)
-	printf("mvpRFetch\n");
-#endif
+	DEBUG_WORD("mvpRFetch")
 }
 
 void mvpRGreater(void) {
-#if defined (__DEBUG__)
-	printf("mvpRGreater\n");
-#endif
+	DEBUG_WORD("mvpRGreater")
 }
 
 void mvpR0(void) {
-#if defined (__DEBUG__)
-	printf("mvpR0\n");
-#endif
+	DEBUG_WORD("mvpR0")
 }
 
 void mvpRSlashW(void) {
-#if defined (__DEBUG__)
-	printf("mvpRSlashW\n");
-#endif
+	DEBUG_WORD("mvpRSlashW")
 }
 
 void mvpRNum(void) {
-#if defined (__DEBUG__)
-	printf("mvpRNum\n");
-#endif
+	DEBUG_WORD("mvpRNum")
 }
 
 void mvpQuit(void) {
-#if defined (__DEBUG__)
-	printf("mvpQuit\n");
-#endif
+	DEBUG_WORD("mvpQuit")
 }
 
 void mvpQuery(void) {
-#if defined (__DEBUG__)
-	printf("mvpQuery\n");
-#endif
+	DEBUG_WORD("mvpQuery")
 }
 
 void mvpPWFetch(void) {
-#if defined (__DEBUG__)
-	printf("mvpPWFetch\n");
-#endif
+	DEBUG_WORD("mvpPWFetch")
 }
 
 void mvpPWStore(void) {
-#if defined (__DEBUG__)
-	printf("mvpPWStore\n");
-#endif
+	DEBUG_WORD("mvpPWStore")
 }
 
 void mvpPrev(void) {
-#if defined (__DEBUG__)
-	printf("mvpPrev\n");
-#endif
+	DEBUG_WORD("mvpPrev")
 }
 
 void mvpPp(void) {
-#if defined (__DEBUG__)
-	printf("mvpPp\n");
-#endif
+	DEBUG_WORD("mvpPp")
 }
 
 void mvpPick(void) {
-#if defined (__DEBUG__)
-	printf("mvpPick\n");
-#endif
+	DEBUG_WORD("mvpPick")
 }
 
 void mvpPfa(void) {
-#if defined (__DEBUG__)
-	printf("mvpPick\n");
-#endif
+	DEBUG_WORD("mvpPick")
 }
 
 void mvpPage(void) {
-#if defined (__DEBUG__)
-	printf("mvpPage\n");
-#endif
+	DEBUG_WORD("mvpPage")
 }
 
 void mvpPad(void) {
-#if defined (__DEBUG__)
-	printf("mvpPad\n");
-#endif
+	DEBUG_WORD("mvpPad")
 }
 
 void mvpPFetch(void) {
-#if defined (__DEBUG__)
-	printf("mvpPFetch\n");
-#endif
+	DEBUG_WORD("mvpPFetch")
 }
 
 void mvpPStore(void) {
-#if defined (__DEBUG__)
-	printf("mvpPStore\n");
-#endif
+	DEBUG_WORD("mvpPStore")
 }
 
 void mvpOver(void) {
-#if defined (__DEBUG__)
-	printf("mvpOver\n");
-#endif
+	DEBUG_WORD("mvpOver")
 }
 
 void mvpOut(void) {
-#if defined (__DEBUG__)
-	printf("mvpOut\n");
-#endif
+	DEBUG_WORD("mvpOut")
 }
 
 void mvpOr(void) {
-#if defined (__DEBUG__)
-	printf("mvpOr\n");
-#endif
+	DEBUG_WORD("mvpOr")
 }
 
 void mvpOffset(void) {
-#if defined (__DEBUG__)
-	printf("mvpOffset\n");
-#endif
+	DEBUG_WORD("mvpOffset")
 }
 
 void mvpNumber(void) {
-#if defined (__DEBUG__)
-	printf("mvpNumber\n");
-#endif
+	DEBUG_WORD("mvpNumber")
 }
 
 void mvpNot(void) {
-#if defined (__DEBUG__)
-	printf("mvpNot\n");
-#endif
+	DEBUG_WORD("mvpNot")
 }
 
 void mvpNfa(void) {
-#if defined (__DEBUG__)
-	printf("mvpNfa\n");
-#endif
+	DEBUG_WORD("mvpNfa")
 }
 
 void mvpNext1(void) {
-#if defined (__DEBUG__)
-	printf("mvpNext1\n");
-#endif
+	DEBUG_WORD("mvpNext1")
 }
 
 void mvpNext(void) {
-#if defined (__DEBUG__)
-	printf("mvpNext\n");
-#endif
+	DEBUG_WORD("mvpNext")
 }
 
 void mvpNegate(void) {
-#if defined (__DEBUG__)
-	printf("mvpNegate\n");
-#endif
+	DEBUG_WORD("mvpNegate")
 }
 
 void mvpMove(void) {
-#if defined (__DEBUG__)
-	printf("mvpMove\n");
-#endif
+	DEBUG_WORD("mvpMove")
 }
 
 void mvpMod(void) {
-#if defined (__DEBUG__)
-	printf("mvpMod\n");
-#endif
+	DEBUG_WORD("mvpMod")
 }
 
 void mvpMin(void) {
-#if defined (__DEBUG__)
-	printf("mvpMin\n");
-#endif
+	DEBUG_WORD("mvpMin")
 }
 
 void mvpMaxDrv(void) {
-#if defined (__DEBUG__)
-	printf("mvpMaxDrv\n");
-#endif
+	DEBUG_WORD("mvpMaxDrv")
 }
 
 void mvpMax(void) {
-#if defined (__DEBUG__)
-	printf("mvpMax\n");
-#endif
+	DEBUG_WORD("mvpMax")
 }
 
 void mvpMSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("mvpMSlashMod\n");
-#endif
+	DEBUG_WORD("mvpMSlashMod")
 }
 
 void mvpMSlash(void) {
-#if defined (__DEBUG__)
-	printf("mvpMSlash\n");
-#endif
+	DEBUG_WORD("mvpMSlash")
 }
 
 void mvpMPlus(void) {
-#if defined (__DEBUG__)
-	printf("mvpMPlus\n");
-#endif
+	DEBUG_WORD("mvpMPlus")
 }
 
 void mvpMStarSlash(void) {
-#if defined (__DEBUG__)
-	printf("mvpMStarSlash\n");
-#endif
+	DEBUG_WORD("mvpMStarSlash")
 }
 
 void mvpMStar(void) {
-#if defined (__DEBUG__)
-	printf("mvpMStar\n");
-#endif
+	DEBUG_WORD("mvpMStar")
 }
 
 void mvpLoop(void) {
-#if defined (__DEBUG__)
-	printf("mvpLoop\n");
-#endif
+	DEBUG_WORD("mvpLoop")
 }
 
 void mvpLoad(void) {
-#if defined (__DEBUG__)
-	printf("mvpLoad\n");
-#endif
+	DEBUG_WORD("mvpLoad")
 }
 
 void mvpLiteral(void) {
-#if defined (__DEBUG__)
-	printf("mvpLiteral\n");
-#endif
+	DEBUG_WORD("mvpLiteral")
 }
 
 void mvpLit(void) {
-#if defined (__DEBUG__)
-	printf("mvpLit\n");
-#endif
+	DEBUG_WORD("mvpLit")
 }
 
 void mvpList(void) {
-#if defined (__DEBUG__)
-	printf("mvpList\n");
-#endif
+	DEBUG_WORD("mvpList")
 }
 
 void mvpLimit(void) {
-#if defined (__DEBUG__)
-	printf("mvpLimit\n");
-#endif
+	DEBUG_WORD("mvpLimit")
 }
 
 void mvpLfa(void) {
-#if defined (__DEBUG__)
-	printf("mvpLfa\n");
-#endif
+	DEBUG_WORD("mvpLfa")
 }
 
 void mvpLeave(void) {
-#if defined (__DEBUG__)
-	printf("mvpLeave\n");
-#endif
+	DEBUG_WORD("mvpLeave")
 }
 
 void mvpLatest(void) {
-#if defined (__DEBUG__)
-	printf("mvpLatest\n");
-#endif
+	DEBUG_WORD("mvpLatest")
 }
 
 void mvpKey(void) {
-#if defined (__DEBUG__)
-	printf("mvpKey\n");
-#endif
+	DEBUG_WORD("mvpKey")
 }
 
 void mvpJ(void) {
-#if defined (__DEBUG__)
-	printf("mvpJ\n");
-#endif
+	DEBUG_WORD("mvpJ")
 }
 
 void mvpInterpret(void) {
-#if defined (__DEBUG__)
-	printf("mvpInterpret\n");
-#endif
+	DEBUG_WORD("mvpInterpret")
 }
 
 void mvpIntCall(void) {
-#if defined (__DEBUG__)
-	printf("mvpIntCall\n");
-#endif
+	DEBUG_WORD("mvpIntCall")
 }
 
 void mvpInitUser(void) {
-#if defined (__DEBUG__)
-	printf("mvpInitUser\n");
-#endif
+	DEBUG_WORD("mvpInitUser")
 }
 
 void mvpInitForth(void) {
-#if defined (__DEBUG__)
-	printf("mvpInitForth\n");
-#endif
+	DEBUG_WORD("mvpInitForth")
 }
 
 void mvpImmediate(void) {
-#if defined (__DEBUG__)
-	printf("mvpImmediate\n");
-#endif
+	DEBUG_WORD("mvpImmediate")
 }
 
 void mvpIf(void) {
-#if defined (__DEBUG__)
-	printf("mvpIf\n");
-#endif
+	DEBUG_WORD("mvpIf")
 }
 
 void mvpITick(void) {
-#if defined (__DEBUG__)
-	printf("mvpITick\n");
-#endif
+	DEBUG_WORD("mvpITick")
 }
 
 void mvpI(void) {
-#if defined (__DEBUG__)
-	printf("mvpI\n");
-#endif
+	DEBUG_WORD("mvpI")
 }
 
 void mvpHold(void) {
-#if defined (__DEBUG__)
-	printf("mvpHold\n");
-#endif
+	DEBUG_WORD("mvpHold")
 }
 
 void mvpHld(void) {
-#if defined (__DEBUG__)
-	printf("mvpHld\n");
-#endif
+	DEBUG_WORD("mvpHld")
 }
 
 void mvpHex(void) {
-#if defined (__DEBUG__)
-	printf("mvpHex\n");
-#endif
+	DEBUG_WORD("mvpHex")
 }
 
 void mvpHere(void) {
-#if defined (__DEBUG__)
-	printf("mvpHere\n");
-#endif
+	DEBUG_WORD("mvpHere")
 }
 
 void mvpFreeze(void) {
-#if defined (__DEBUG__)
-	printf("mvpFreeze\n");
-#endif
+	DEBUG_WORD("mvpFreeze")
 }
 
 void mvpForth(void) {
-#if defined (__DEBUG__)
-	printf("mvpForth\n");
-#endif
+	DEBUG_WORD("mvpForth")
 }
 
 void mvpForget(void) {
-#if defined (__DEBUG__)
-	printf("mvpForget\n");
-#endif
+	DEBUG_WORD("mvpForget")
 }
 
 void mvpFld(void) {
-#if defined (__DEBUG__)
-	printf("mvpFld\n");
-#endif
+	DEBUG_WORD("mvpFld")
 }
 
 void mvpFirst(void) {
-#if defined (__DEBUG__)
-	printf("mvpFirst\n");
-#endif
+	DEBUG_WORD("mvpFirst")
 }
 
 void mvpFind(void) {
-#if defined (__DEBUG__)
-	printf("mvpFind\n");
-#endif
+	DEBUG_WORD("mvpFind")
 }
 
 void mvpFill(void) {
-#if defined (__DEBUG__)
-	printf("mvpFill\n");
-#endif
+	DEBUG_WORD("mvpFill")
 }
 
 void mvpFence(void) {
-#if defined (__DEBUG__)
-	printf("mvpFence\n");
-#endif
+	DEBUG_WORD("mvpFence")
 }
 
 void mvpExpect(void) {
-#if defined (__DEBUG__)
-	printf("mvpExpect\n");
-#endif
+	DEBUG_WORD("mvpExpect")
 }
 
 void mvpExit(void) {
-#if defined (__DEBUG__)
-	printf("mvpExit\n");
-#endif
+	DEBUG_WORD("mvpExit")
 }
 
 void mvpExecute(void) {
-#if defined (__DEBUG__)
-	printf("mvpExecute\n");
-#endif
+	DEBUG_WORD("mvpExecute")
 }
 
 void mvpEPrint(void) {
-#if defined (__DEBUG__)
-	printf("mvpEPrint\n");
-#endif
+	DEBUG_WORD("mvpEPrint")
 }
 
 void mvpEnclose(void) {
-#if defined (__DEBUG__)
-	printf("mvpEnclose\n");
-#endif
+	DEBUG_WORD("mvpEnclose")
 }
 
 void mvpEmptyBuffers(void) {
-#if defined (__DEBUG__)
-	printf("mvpEmptyBuffers\n");
-#endif
+	DEBUG_WORD("mvpEmptyBuffers")
 }
 
 void mvpEmit(void) {
-#if defined (__DEBUG__)
-	printf("mvpEmit\n");
-#endif
+	DEBUG_WORD("mvpEmit")
 }
 
 void mvpElse(void) {
-#if defined (__DEBUG__)
-	printf("mvpElse\n");
-#endif
+	DEBUG_WORD("mvpElse")
 }
 
 void mvpDup(void) {
-#if defined (__DEBUG__)
-	printf("mvpDup\n");
-#endif
+	DEBUG_WORD("mvpDup")
 }
 
 void mvpDrop(void) {
-#if defined (__DEBUG__)
-	printf("mvpDrop\n");
-#endif
+	DEBUG_WORD("mvpDrop")
 }
 
 void mvpDrive(void) {
-#if defined (__DEBUG__)
-	printf("mvpDrive\n");
-#endif
+	DEBUG_WORD("mvpDrive")
 }
 
 void mvpDr4(void) {
-#if defined (__DEBUG__)
-	printf("mvpDr4\n");
-#endif
+	DEBUG_WORD("mvpDr4")
 }
 
 void mvpDr3(void) {
-#if defined (__DEBUG__)
-	printf("mvpDr3\n");
-#endif
+	DEBUG_WORD("mvpDr3")
 }
 
 void mvpDr2(void) {
-#if defined (__DEBUG__)
-	printf("mvpDr2\n");
-#endif
+	DEBUG_WORD("mvpDr2")
 }
 
 void mvpDr1(void) {
-#if defined (__DEBUG__)
-	printf("mvpDr1\n");
-#endif
+	DEBUG_WORD("mvpDr1")
 }
 
 void mvpDr0(void) {
-#if defined (__DEBUG__)
-	printf("mvpDr0\n");
-#endif
+	DEBUG_WORD("mvpDr0")
 }
 
 void mvpDrDen(void) {
-#if defined (__DEBUG__)
-	printf("mvpDrDen\n");
-#endif
+	DEBUG_WORD("mvpDrDen")
 }
 
 void mvpDPush(void) {
-#if defined (__DEBUG__)
-	printf("mvpDPush\n");
-#endif
+	DEBUG_WORD("mvpDPush")
 }
 
 void mvpDpl(void) {
-#if defined (__DEBUG__)
-	printf("mvpDpl\n");
-#endif
+	DEBUG_WORD("mvpDpl")
 }
 
 void mvpDp(void) {
-#if defined (__DEBUG__)
-	printf("mvpDp\n");
-#endif
+	DEBUG_WORD("mvpDp")
 }
 
 void mvpDoes(void) {
-#if defined (__DEBUG__)
-	printf("mvpDoes\n");
-#endif
+	DEBUG_WORD("mvpDoes")
 }
 
 void mvpDo(void) {
-#if defined (__DEBUG__)
-	printf("mvpDo\n");
-#endif
+	DEBUG_WORD("mvpDo")
 }
 
 void mvpDnegate(void) {
-#if defined (__DEBUG__)
-	printf("mvpDnegate\n");
-#endif
+	DEBUG_WORD("mvpDnegate")
 }
 
 void mvpDLiteral(void) {
-#if defined (__DEBUG__)
-	printf("mvpDLiteral\n");
-#endif
+	DEBUG_WORD("mvpDLiteral")
 }
 
 void mvpDiskError(void) {
-#if defined (__DEBUG__)
-	printf("mvpDiskError\n");
-#endif
+	DEBUG_WORD("mvpDiskError")
 }
 
 void mvpDigit(void) {
-#if defined (__DEBUG__)
-	printf("mvpDigit\n");
-#endif
+	DEBUG_WORD("mvpDigit")
 }
 
 void mvpDepth(void) {
-#if defined (__DEBUG__)
-	printf("mvpDepth\n");
-#endif
+	DEBUG_WORD("mvpDepth")
 }
 
 void mvpDensity(void) {
-#if defined (__DEBUG__)
-	printf("mvpDensity\n");
-#endif
+	DEBUG_WORD("mvpDensity")
 }
 
 void mvpDen(void) {
-#if defined (__DEBUG__)
-	printf("mvpDen\n");
-#endif
+	DEBUG_WORD("mvpDen")
 }
 
 void mvpDefinitions(void) {
-#if defined (__DEBUG__)
-	printf("mvpDefinitions\n");
-#endif
+	DEBUG_WORD("mvpDefinitions")
 }
 
 void mvpDecimal(void) {
-#if defined (__DEBUG__)
-	printf("mvpDecimal\n");
-#endif
+	DEBUG_WORD("mvpDecimal")
 }
 
 void mvpDDup(void) {
-#if defined (__DEBUG__)
-	printf("mvpDDup\n");
-#endif
+	DEBUG_WORD("mvpDDup")
 }
 
 void mvpDDrop(void) {
-#if defined (__DEBUG__)
-	printf("mvpDDrop\n");
-#endif
+	DEBUG_WORD("mvpDDrop")
 }
 
 void mvpDAbs(void) {
-#if defined (__DEBUG__)
-	printf("mvpDAbs\n");
-#endif
+	DEBUG_WORD("mvpDAbs")
 }
 
 void mvpDLess(void) {
-#if defined (__DEBUG__)
-	printf("mvpDLess\n");
-#endif
+	DEBUG_WORD("mvpDLess")
 }
 
 void mvpDDotR(void) {
-#if defined (__DEBUG__)
-	printf("mvpDDotR\n");
-#endif
+	DEBUG_WORD("mvpDDotR")
 }
 
 void mvpDDot(void) {
-#if defined (__DEBUG__)
-	printf("mvpDDot\n");
-#endif
+	DEBUG_WORD("mvpDDot")
 }
 
 void mvpDPlusMinus(void) {
-#if defined (__DEBUG__)
-	printf("mvpDPlusMinus\n");
-#endif
+	DEBUG_WORD("mvpDPlusMinus")
 }
 
 void mvpDPlus(void) {
-#if defined (__DEBUG__)
-	printf("mvpDPlus\n");
-#endif
+	DEBUG_WORD("mvpDPlus")
 }
 
 void mvpDStore(void) {
-#if defined (__DEBUG__)
-	printf("mvpDStore\n");
-#endif
+	DEBUG_WORD("mvpDStore")
 }
 
 void mvpCurrent(void) {
-#if defined (__DEBUG__)
-	printf("mvpCurrent\n");
-#endif
+	DEBUG_WORD("mvpCurrent")
 }
 
 void mvpCSP(void) {
-#if defined (__DEBUG__)
-	printf("mvpCSP\n");
-#endif
+	DEBUG_WORD("mvpCSP")
 }
 
 void mvpCreate(void) {
-#if defined (__DEBUG__)
-	printf("mvpCreate\n");
-#endif
+	DEBUG_WORD("mvpCreate")
 }
 
 void mvpCr(void) {
-#if defined (__DEBUG__)
-	printf("mvpCr\n");
-#endif
+	DEBUG_WORD("mvpCr")
 }
 
 void mvpCount(void) {
-#if defined (__DEBUG__)
-	printf("mvpCount\n");
-#endif
+	DEBUG_WORD("mvpCount")
 }
 
 void mvpConvert(void) {
-#if defined (__DEBUG__)
-	printf("mvpConvert\n");
-#endif
+	DEBUG_WORD("mvpConvert")
 }
 
 void mvpContext(void) {
-#if defined (__DEBUG__)
-	printf("mvpContext\n");
-#endif
+	DEBUG_WORD("mvpContext")
 }
 
 void mvpConstant(void) {
-#if defined (__DEBUG__)
-	printf("mvpConstant\n");
-#endif
+	DEBUG_WORD("mvpConstant")
 }
 
 void mvpConfigure(void) {
-#if defined (__DEBUG__)
-	printf("mvpConfigure\n");
-#endif
+	DEBUG_WORD("mvpConfigure")
 }
 
 void mvpCompile(void) {
-#if defined (__DEBUG__)
-	printf("mvpCompile\n");
-#endif
+	DEBUG_WORD("mvpCompile")
 }
 
 void mvpCold(void) {
-#if defined (__DEBUG__)
-	printf("mvpCold\n");
-#endif
+	DEBUG_WORD("mvpCold")
 }
 
 void mvpCMove(void) {
-#if defined (__DEBUG__)
-	printf("mvpCMove\n");
-#endif
+	DEBUG_WORD("mvpCMove")
 }
 
 void mvpClear(void) {
-#if defined (__DEBUG__)
-	printf("mvpClear\n");
-#endif
+	DEBUG_WORD("mvpClear")
 }
 
 void mvpChange(void) {
-#if defined (__DEBUG__)
-	printf("mvpChange\n");
-#endif
+	DEBUG_WORD("mvpChange")
 }
 
 void mvpCfa(void) {
-#if defined (__DEBUG__)
-	printf("mvpCfa\n");
-#endif
+	DEBUG_WORD("mvpCfa")
 }
 
 void mvpCFetchL(void) {
-#if defined (__DEBUG__)
-	printf("mvpCFetchL\n");
-#endif
+	DEBUG_WORD("mvpCFetchL")
 }
 
 void mvpCFetch(void) {
-#if defined (__DEBUG__)
-	printf("mvpCFetch\n");
-#endif
+	DEBUG_WORD("mvpCFetch")
 }
 
 void mvpCSlashL(void) {
-#if defined (__DEBUG__)
-	printf("mvpCSlashL\n");
-#endif
+	DEBUG_WORD("mvpCSlashL")
 }
 
 void mvpCComma(void) {
-#if defined (__DEBUG__)
-	printf("mvpCComma\n");
-#endif
+	DEBUG_WORD("mvpCComma")
 }
 
 void mvpCStoreL(void) {
-#if defined (__DEBUG__)
-	printf("mvpCStoreL\n");
-#endif
+	DEBUG_WORD("mvpCStoreL")
 }
 
 void mvpCStore(void) {
-#if defined (__DEBUG__)
-	printf("mvpCStore\n");
-#endif
+	DEBUG_WORD("mvpCStore")
 }
 
 void mvpBye(void) {
-#if defined (__DEBUG__)
-	printf("mvpBye\n");
-#endif
+	DEBUG_WORD("mvpBye")
 }
 
 void mvpBuffer(void) {
-#if defined (__DEBUG__)
-	printf("mvpBuffer\n");
-#endif
+	DEBUG_WORD("mvpBuffer")
 }
 
 void mvpBranch(void) {
-#if defined (__DEBUG__)
-	printf("mvpBranch\n");
-#endif
+	DEBUG_WORD("mvpBranch")
 }
 
 void mvpBPDrv(void) {
-#if defined (__DEBUG__)
-	printf("mvpBPDrv\n");
-#endif
+	DEBUG_WORD("mvpBPDrv")
 }
 
 void mvpBlock(void) {
-#if defined (__DEBUG__)
-	printf("mvpBlock\n");
-#endif
+	DEBUG_WORD("mvpBlock")
 }
 
 void mvpBlkSlashDrv(void) {
-#if defined (__DEBUG__)
-	printf("mvpBlkSlashDrv\n");
-#endif
+	DEBUG_WORD("mvpBlkSlashDrv")
 }
 
 void mvpBlk(void) {
-#if defined (__DEBUG__)
-	printf("mvpBlk\n");
-#endif
+	DEBUG_WORD("mvpBlk")
 }
 
 void mvpBlank(void) {
-#if defined (__DEBUG__)
-	printf("mvpBlank\n");
-#endif
+	DEBUG_WORD("mvpBlank")
 }
 
 void mvpBl(void) {
-#if defined (__DEBUG__)
-	printf("mvpBl\n");
-#endif
+	DEBUG_WORD("mvpBl")
 }
 
 void mvpBegin(void) {
-#if defined (__DEBUG__)
-	printf("mvpBegin\n");
-#endif
+	DEBUG_WORD("mvpBegin")
 }
 
 void mvpBase(void) {
-#if defined (__DEBUG__)
-	printf("mvpBase\n");
-#endif
+	DEBUG_WORD("mvpBase")
 }
 
 void mvpAPush(void) {
-#if defined (__DEBUG__)
-	printf("mvpAPush\n");
-#endif
+	DEBUG_WORD("mvpAPush")
 }
 
 void mvpAnd(void) {
-#if defined (__DEBUG__)
-	printf("mvpAnd\n");
-#endif
+	DEBUG_WORD("mvpAnd")
 }
 
 void mvpAllot(void) {
-#if defined (__DEBUG__)
-	printf("mvpAllot\n");
-#endif
+	DEBUG_WORD("mvpAllot")
 }
 
 void mvpAgain(void) {
-#if defined (__DEBUG__)
-	printf("mvpAgain\n");
-#endif
+	DEBUG_WORD("mvpAgain")
 }
 
 void mvpAbs(void) {
-#if defined (__DEBUG__)
-	printf("mvpAbs\n");
-#endif
+	DEBUG_WORD("mvpAbs")
 }
 
 void mvpAbortQuote(void) {
-#if defined (__DEBUG__)
-	printf("mvpAbortQuote\n");
-#endif
+	DEBUG_WORD("mvpAbortQuote")
 }
 
 void mvpAbort(void) {
-#if defined (__DEBUG__)
-	printf("mvpAbort\n");
-#endif
+	DEBUG_WORD("mvpAbort")
 }
 
 void mvpFetchL(void) {
-#if defined (__DEBUG__)
-	printf("mvpFetchL\n");
-#endif
+	DEBUG_WORD("mvpFetchL")
 }
 
 void mvpFetch(void) {
-#if defined (__DEBUG__)
-	printf("mvpFetch\n");
-#endif
+	DEBUG_WORD("mvpFetch")
 }
 
 void mvpQTerminal(void) {
-#if defined (__DEBUG__)
-	printf("mvpQTerminal\n");
-#endif
+	DEBUG_WORD("mvpQTerminal")
 }
 
 void mvpQStream(void) {
-#if defined (__DEBUG__)
-	printf("mvpQStream\n");
-#endif
+	DEBUG_WORD("mvpQStream")
 }
 
 void mvpQStack(void) {
-#if defined (__DEBUG__)
-	printf("mvpQStack\n");
-#endif
+	DEBUG_WORD("mvpQStack")
 }
 
 void mvpQPairs(void) {
-#if defined (__DEBUG__)
-	printf("mvpQPairs\n");
-#endif
+	DEBUG_WORD("mvpQPairs")
 }
 
 void mvpQLoading(void) {
-#if defined (__DEBUG__)
-	printf("mvpQLoading\n");
-#endif
+	DEBUG_WORD("mvpQLoading")
 }
 
 void mvpQDup(void) {
-#if defined (__DEBUG__)
-	printf("mvpQDup\n");
-#endif
+	DEBUG_WORD("mvpQDup")
 }
 
 void mvpQCSP(void) {
-#if defined (__DEBUG__)
-	printf("mvpQCSP\n");
-#endif
+	DEBUG_WORD("mvpQCSP")
 }
 
 void mvpQConfigure(void) {
-#if defined (__DEBUG__)
-	printf("mvpQConfigure\n");
-#endif
+	DEBUG_WORD("mvpQConfigure")
 }
 
 void mvpQComp(void) {
-#if defined (__DEBUG__)
-	printf("mvpQComp\n");
-#endif
+	DEBUG_WORD("mvpQComp")
 }
 
 void mvpQ(void) {
-#if defined (__DEBUG__)
-	printf("mvpQ\n");
-#endif
+	DEBUG_WORD("mvpQ")
 }
 
 void mvpToR(void) {
-#if defined (__DEBUG__)
-	printf("mvpToR\n");
-#endif
+	DEBUG_WORD("mvpToR")
 }
 
 void mvpToIn(void) {
-#if defined (__DEBUG__)
-	printf("mvpToIn\n");
-#endif
+	DEBUG_WORD("mvpToIn")
 }
 
 void mvpGreater(void) {
-#if defined (__DEBUG__)
-	printf("mvpGreater\n");
-#endif
+	DEBUG_WORD("mvpGreater")
 }
 
 void mvpEqual(void) {
-#if defined (__DEBUG__)
-	printf("mvpEqual\n");
-#endif
+	DEBUG_WORD("mvpEqual")
 }
 
 void mvpZWord(void) {
-#if defined (__DEBUG__)
-	printf("mvpZWord\n");
-#endif
+	DEBUG_WORD("mvpZWord")
 }
 
 void mvpZVocabularyFig(void) {
-#if defined (__DEBUG__)
-	printf("mvpZVocabularyFig\n");
-#endif
+	DEBUG_WORD("mvpZVocabularyFig")
 }
 
 void mvpZVocabulary79(void) {
-#if defined (__DEBUG__)
-	printf("mvpZVocabulary79\n");
-#endif
+	DEBUG_WORD("mvpZVocabulary79")
 }
 
 void mvpZTAmpersandSCalc(void) {
-#if defined (__DEBUG__)
-	printf("mvpZTAmpersandSCalc\n");
-#endif
+	DEBUG_WORD("mvpZTAmpersandSCalc")
 }
 
 void mvpZRSlashW(void) {
-#if defined (__DEBUG__)
-	printf("mvpZRSlashW\n");
-#endif
+	DEBUG_WORD("mvpZRSlashW")
 }
 
 void mvpZPage(void) {
-#if defined (__DEBUG__)
-	printf("mvpZPage\n");
-#endif
+	DEBUG_WORD("mvpZPage")
 }
 
 void mvpZNumber(void) {
-#if defined (__DEBUG__)
-	printf("mvpZNumber\n");
-#endif
+	DEBUG_WORD("mvpZNumber")
 }
 
 void mvpZLoop(void) {
-#if defined (__DEBUG__)
-	printf("mvpZLoop\n");
-#endif
+	DEBUG_WORD("mvpZLoop")
 }
 
 void mvpZLoad(void) {
-#if defined (__DEBUG__)
-	printf("mvpZLoad\n");
-#endif
+	DEBUG_WORD("mvpZLoad")
 }
 
 void mvpZLine(void) {
-#if defined (__DEBUG__)
-	printf("mvpZLine\n");
-#endif
+	DEBUG_WORD("mvpZLine")
 }
 
 void mvpZKey(void) {
-#if defined (__DEBUG__)
-	printf("mvpZKey\n");
-#endif
+	DEBUG_WORD("mvpZKey")
 }
 
 void mvpZInterpret(void) {
-#if defined (__DEBUG__)
-	printf("mvpZInterpret\n");
-#endif
+	DEBUG_WORD("mvpZInterpret")
 }
 
 void mvpZFind(void) {
-#if defined (__DEBUG__)
-	printf("mvpZFind\n");
-#endif
+	DEBUG_WORD("mvpZFind")
 }
 
 void mvpZFill(void) {
-#if defined (__DEBUG__)
-	printf("mvpZFill\n");
-#endif
+	DEBUG_WORD("mvpZFill")
 }
 
 void mvpZExpect(void) {
-#if defined (__DEBUG__)
-	printf("mvpZExpect\n");
-#endif
+	DEBUG_WORD("mvpZExpect")
 }
 
 void mvpZEmit(void) {
-#if defined (__DEBUG__)
-	printf("mvpZEmit\n");
-#endif
+	DEBUG_WORD("mvpZEmit")
 }
 
 void mvpZDo(void) {
-#if defined (__DEBUG__)
-	printf("mvpZDo\n");
-#endif
+	DEBUG_WORD("mvpZDo")
 }
 
 void mvpZCr(void) {
-#if defined (__DEBUG__)
-	printf("mvpZCr\n");
-#endif
+	DEBUG_WORD("mvpZCr")
 }
 
 void mvpZCMove(void) {
-#if defined (__DEBUG__)
-	printf("mvpZCMove\n");
-#endif
+	DEBUG_WORD("mvpZCMove")
 }
 
 void mvpLessCmove(void) {
-#if defined (__DEBUG__)
-	printf("mvpLessCmove\n");
-#endif
+	DEBUG_WORD("mvpLessCmove")
 }
 
 void mvpZBock(void) {
-#if defined (__DEBUG__)
-	printf("mvpZBock\n");
-#endif
+	DEBUG_WORD("mvpZBock")
 }
 
 void mvpZAbort(void) {
-#if defined (__DEBUG__)
-	printf("mvpZAbort\n");
-#endif
+	DEBUG_WORD("mvpZAbort")
 }
 
 void mvpZAbortQuote(void) {
-#if defined (__DEBUG__)
-	printf("mvpZAbortQuote\n");
-#endif
+	DEBUG_WORD("mvpZAbortQuote")
 }
 
 void mvpZQTerminal(void) {
-#if defined (__DEBUG__)
-	printf("mvpZQTerminal\n");
-#endif
+	DEBUG_WORD("mvpZQTerminal")
 }
 
 void mvpLessZCMove(void) {
-#if defined (__DEBUG__)
-	printf("mvpLessZCMove\n");
-#endif
+	DEBUG_WORD("mvpLessZCMove")
 }
 
 void mvpZSemicolonCode(void) {
-#if defined (__DEBUG__)
-	printf("mvpZSemicolonCode\n");
-#endif
+	DEBUG_WORD("mvpZSemicolonCode")
 }
 
 void mvpZSlashLoop(void) {
-#if defined (__DEBUG__)
-	printf("mvpZSlashLoop\n");
-#endif
+	DEBUG_WORD("mvpZSlashLoop")
 }
 
 void mvpZDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("mvpZDotQuote\n");
-#endif
+	DEBUG_WORD("mvpZDotQuote")
 }
 
 void mvpZMinusFind(void) {
-#if defined (__DEBUG__)
-	printf("mvpZMinusFind\n");
-#endif
+	DEBUG_WORD("mvpZMinusFind")
 }
 
 void mvpZPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("mvpZPlusLoop\n");
-#endif
+	DEBUG_WORD("mvpZPlusLoop")
 }
 
 void mvpLessNum(void) {
-#if defined (__DEBUG__)
-	printf("mvpLessNum\n");
-#endif
+	DEBUG_WORD("mvpLessNum")
 }
 
 void mvpLess(void) {
-#if defined (__DEBUG__)
-	printf("mvpLess\n");
-#endif
+	DEBUG_WORD("mvpLess")
 }
 
 void mvpSemicolon(void) {
-#if defined (__DEBUG__)
-	printf("mvpSemicolon\n");
-#endif
+	DEBUG_WORD("mvpSemicolon")
 }
 
 void mvpColon(void) {
-#if defined (__DEBUG__)
-	printf("mvpColon\n");
-#endif
+	DEBUG_WORD("mvpColon")
 }
 
 void mvpSnineStandard(void) {
-#if defined (__DEBUG__)
-	printf("mvpSnineStandard\n");
-#endif
+	DEBUG_WORD("mvpSnineStandard")
 }
 
 void mvpTwoSlash(void) {
-#if defined (__DEBUG__)
-	printf("mvpTwoSlash\n");
-#endif
+	DEBUG_WORD("mvpTwoSlash")
 }
 
 void mvpTwoMinus(void) {
-#if defined (__DEBUG__)
-	printf("mvpTwoMinus\n");
-#endif
+	DEBUG_WORD("mvpTwoMinus")
 }
 
 void mvpTwoPlus(void) {
-#if defined (__DEBUG__)
-	printf("mvpTwoPlus\n");
-#endif
+	DEBUG_WORD("mvpTwoPlus")
 }
 
 void mvpTwoStar(void) {
-#if defined (__DEBUG__)
-	printf("mvpTwoStar\n");
-#endif
+	DEBUG_WORD("mvpTwoStar")
 }
 
 void mvpTwo(void) {
-#if defined (__DEBUG__)
-	printf("mvpTwo\n");
-#endif
+	DEBUG_WORD("mvpTwo")
 }
 
 void mvpOneMinus(void) {
-#if defined (__DEBUG__)
-	printf("mvpOneMinus\n");
-#endif
+	DEBUG_WORD("mvpOneMinus")
 }
 
 void mvpOnePlus(void) {
-#if defined (__DEBUG__)
-	printf("mvpOnePlus\n");
-#endif
+	DEBUG_WORD("mvpOnePlus")
 }
 
 void mvpOne(void) {
-#if defined (__DEBUG__)
-	printf("mvpOne\n");
-#endif
+	DEBUG_WORD("mvpOne")
 }
 
 void mvpZeroBranch(void) {
-#if defined (__DEBUG__)
-	printf("mvpZeroBranch\n");
-#endif
+	DEBUG_WORD("mvpZeroBranch")
 }
 
 void mvpZeroGreater(void) {
-#if defined (__DEBUG__)
-	printf("mvpZeroGreater\n");
-#endif
+	DEBUG_WORD("mvpZeroGreater")
 }
 
 void mvpZeroEqual(void) {
-#if defined (__DEBUG__)
-	printf("mvpZeroEqual\n");
-#endif
+	DEBUG_WORD("mvpZeroEqual")
 }
 
 void mvpZeroLess(void) {
-#if defined (__DEBUG__)
-	printf("mvpZeroLess\n");
-#endif
+	DEBUG_WORD("mvpZeroLess")
 }
 
 void mvpZero(void) {
-#if defined (__DEBUG__)
-	printf("mvpZero\n");
-#endif
+	DEBUG_WORD("mvpZero")
 }
 
 void mvpSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("mvpSlashMod\n");
-#endif
+	DEBUG_WORD("mvpSlashMod")
 }
 
 void mvpSlashLoop(void) {
-#if defined (__DEBUG__)
-	printf("mvpSlashLoop\n");
-#endif
+	DEBUG_WORD("mvpSlashLoop")
 }
 
 void mvpSlash(void) {
-#if defined (__DEBUG__)
-	printf("mvpSlash\n");
-#endif
+	DEBUG_WORD("mvpSlash")
 }
 
 void mvpDotR(void) {
-#if defined (__DEBUG__)
-	printf("mvpDotR\n");
-#endif
+	DEBUG_WORD("mvpDotR")
 }
 
 void mvpDotLine(void) {
-#if defined (__DEBUG__)
-	printf("mvpDotLine\n");
-#endif
+	DEBUG_WORD("mvpDotLine")
 }
 
 void mvpDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("mvpDotQuote\n");
-#endif
+	DEBUG_WORD("mvpDotQuote")
 }
 
 void mvpDot(void) {
-#if defined (__DEBUG__)
-	printf("mvpDot\n");
-#endif
+	DEBUG_WORD("mvpDot")
 }
 
 void mvpTrailing(void) {
-#if defined (__DEBUG__)
-	printf("mvpTrailing\n");
-#endif
+	DEBUG_WORD("mvpTrailing")
 }
 
 void mvpMinusFind(void) {
-#if defined (__DEBUG__)
-	printf("mvpMinusFind\n");
-#endif
+	DEBUG_WORD("mvpMinusFind")
 }
 
 void mvpMinus(void) {
-#if defined (__DEBUG__)
-	printf("mvpMinus\n");
-#endif
+	DEBUG_WORD("mvpMinus")
 }
 
 void mvpComma(void) {
-#if defined (__DEBUG__)
-	printf("mvpComma\n");
-#endif
+	DEBUG_WORD("mvpComma")
 }
 
 void mvpPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("mvpPlusLoop\n");
-#endif
+	DEBUG_WORD("mvpPlusLoop")
 }
 
 void mvpPlusBuf(void) {
-#if defined (__DEBUG__)
-	printf("mvpPlusBuf\n");
-#endif
+	DEBUG_WORD("mvpPlusBuf")
 }
 
 void mvpPlusMinus(void) {
-#if defined (__DEBUG__)
-	printf("mvpPlusMinus\n");
-#endif
+	DEBUG_WORD("mvpPlusMinus")
 }
 
 void mvpPlusStore(void) {
-#if defined (__DEBUG__)
-	printf("mvpPlusStore\n");
-#endif
+	DEBUG_WORD("mvpPlusStore")
 }
 
 void mvpPlus(void) {
-#if defined (__DEBUG__)
-	printf("mvpPlus\n");
-#endif
+	DEBUG_WORD("mvpPlus")
 }
 
 void mvpStarSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("mvpStarSlashMod\n");
-#endif
+	DEBUG_WORD("mvpStarSlashMod")
 }
 
 void mvpStarSlash(void) {
-#if defined (__DEBUG__)
-	printf("mvpStarSlash\n");
-#endif
+	DEBUG_WORD("mvpStarSlash")
 }
 
 void mvpStar(void) {
-#if defined (__DEBUG__)
-	printf("mvpStar\n");
-#endif
+	DEBUG_WORD("mvpStar")
 }
 
 void mvpParen(void) {
-#if defined (__DEBUG__)
-	printf("mvpParen\n");
-#endif
+	DEBUG_WORD("mvpParen")
 }
 
 void mvpTickWord(void) {
-#if defined (__DEBUG__)
-	printf("mvpTickWord\n");
-#endif
+	DEBUG_WORD("mvpTickWord")
 }
 
 void mvpTickVocabulary(void) {
-#if defined (__DEBUG__)
-	printf("mvpTickVocabulary\n");
-#endif
+	DEBUG_WORD("mvpTickVocabulary")
 }
 
 void mvpTickTApersandSCalc(void) {
-#if defined (__DEBUG__)
-	printf("mvpTickTApersandSCalc\n");
-#endif
+	DEBUG_WORD("mvpTickTApersandSCalc")
 }
 
 void mvpTickStream(void) {
-#if defined (__DEBUG__)
-	printf("mvpTickStream\n");
-#endif
+	DEBUG_WORD("mvpTickStream")
 }
 
 void mvpTickRSlashW(void) {
-#if defined (__DEBUG__)
-	printf("mvpTickRSlashW\n");
-#endif
+	DEBUG_WORD("mvpTickRSlashW")
 }
 
 void mvpTickPage(void) {
-#if defined (__DEBUG__)
-	printf("mvpTickPage\n");
-#endif
+	DEBUG_WORD("mvpTickPage")
 }
 
 void mvpTickNumber(void) {
-#if defined (__DEBUG__)
-	printf("mvpTickNumber\n");
-#endif
+	DEBUG_WORD("mvpTickNumber")
 }
 
 void mvpTickLoad(void) {
-#if defined (__DEBUG__)
-	printf("mvpTickLoad\n");
-#endif
+	DEBUG_WORD("mvpTickLoad")
 }
 
 void mvpTickKey(void) {
-#if defined (__DEBUG__)
-	printf("mvpTickKey\n");
-#endif
+	DEBUG_WORD("mvpTickKey")
 }
 
 void mvpTickInterpret(void) {
-#if defined (__DEBUG__)
-	printf("mvpTickInterpret\n");
-#endif
+	DEBUG_WORD("mvpTickInterpret")
 }
 
 void mvpTickExpect(void) {
-#if defined (__DEBUG__)
-	printf("mvpTickExpect\n");
-#endif
+	DEBUG_WORD("mvpTickExpect")
 }
 
 void mvpTickEmit(void) {
-#if defined (__DEBUG__)
-	printf("mvpTickEmit\n");
-#endif
+	DEBUG_WORD("mvpTickEmit")
 }
 
 void mvpTickCr(void) {
-#if defined (__DEBUG__)
-	printf("mvpTickCr\n");
-#endif
+	DEBUG_WORD("mvpTickCr")
 }
 
 void mvpTickBlock(void) {
-#if defined (__DEBUG__)
-	printf("mvpTickBlock\n");
-#endif
+	DEBUG_WORD("mvpTickBlock")
 }
 
 void mvpTickAbort(void) {
-#if defined (__DEBUG__)
-	printf("mvpTickAbort\n");
-#endif
+	DEBUG_WORD("mvpTickAbort")
 }
 
 void mvpTickTerminal(void) {
-#if defined (__DEBUG__)
-	printf("mvpTickTerminal\n");
-#endif
+	DEBUG_WORD("mvpTickTerminal")
 }
 
 void mvpTickMinusFind(void) {
-#if defined (__DEBUG__)
-	printf("mvpTickMinusFind\n");
-#endif
+	DEBUG_WORD("mvpTickMinusFind")
 }
 
 void mvpTick(void) {
-#if defined (__DEBUG__)
-	printf("mvpTick\n");
-#endif
+	DEBUG_WORD("mvpTick")
 }
 
 void mvpNumS(void) {
-#if defined (__DEBUG__)
-	printf("mvpNumS\n");
-#endif
+	DEBUG_WORD("mvpNumS")
 }
 
 void mvpNumBuff(void) {
-#if defined (__DEBUG__)
-	printf("mvpNumBuff\n");
-#endif
+	DEBUG_WORD("mvpNumBuff")
 }
 
 void mvpNumGreater(void) {
-#if defined (__DEBUG__)
-	printf("mvpNumGreater\n");
-#endif
+	DEBUG_WORD("mvpNumGreater")
 }
 
 void mvpNum(void) {
-#if defined (__DEBUG__)
-	printf("mvpNum\n");
-#endif
+	DEBUG_WORD("mvpNum")
 }
 
 void mvpStoreL(void) {
-#if defined (__DEBUG__)
-	printf("mvpStoreL\n");
-#endif
+	DEBUG_WORD("mvpStoreL")
 }
 
 void mvpStore(void) {
-#if defined (__DEBUG__)
-	printf("mvpStore\n");
-#endif
+	DEBUG_WORD("mvpStore")
 }
 
 #endif

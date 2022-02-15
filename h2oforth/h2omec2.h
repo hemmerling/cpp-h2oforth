@@ -7,1997 +7,1333 @@
 
  /* Mecrisp Core */
 void mecrispHookKeyQ(void) {
-#if defined (__DEBUG__)
-	printf("mecrispHookKeyQ\n");
-#endif
+	DEBUG_WORD("mecrispHookKeyQ")
 }
 
 void mecrispHookKey(void) {
-#if defined (__DEBUG__)
-	printf("mecrispHookKey\n");
-#endif
+	DEBUG_WORD("mecrispHookKey")
 }
 
 void mecrispHookEmitQ(void) {
-#if defined (__DEBUG__)
-	printf("mecrispHookEmitQ\n");
-#endif
+	DEBUG_WORD("mecrispHookEmitQ")
 }
 
 void mecrispHookEmit(void) {
-#if defined (__DEBUG__)
-	printf("mecrispHookEmit\n");
-#endif
+	DEBUG_WORD("mecrispHookEmit")
 }
 
 void mecrispKeyQ(void) {
-#if defined (__DEBUG__)
-	printf("mecrispKeyQ\n");
-#endif
+	DEBUG_WORD("mecrispKeyQ")
 }
 
 void mecrispKey(void) {
-#if defined (__DEBUG__)
-	printf("mecrispKey\n");
-#endif
+	DEBUG_WORD("mecrispKey")
 }
 
 void mecrispEmitQ(void) {
-#if defined (__DEBUG__)
-	printf("mecrispEmitQ\n");
-#endif
+	DEBUG_WORD("mecrispEmitQ")
 }
 
 void mecrispEmit(void) {
-#if defined (__DEBUG__)
-	printf("mecrispEmit\n");
-#endif
+	DEBUG_WORD("mecrispEmit")
 }
 
 void mecrispHexDot(void) {
-#if defined (__DEBUG__)
-	printf("mecrispHexDot\n");
-#endif
+	DEBUG_WORD("mecrispHexDot")
 }
 
 void mecrispCr(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCr\n");
-#endif
+	DEBUG_WORD("mecrispCr")
 }
 
 void mecrispBl(void) {
-#if defined (__DEBUG__)
-	printf("mecrispBl\n");
-#endif
+	DEBUG_WORD("mecrispBl")
 }
 
 void mecrispSpace(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSpace\n");
-#endif
+	DEBUG_WORD("mecrispSpace")
 }
 
 void mecrispSpaces(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSpaces\n");
-#endif
+	DEBUG_WORD("mecrispSpaces")
 }
 
 void mecrispWords(void) {
-#if defined (__DEBUG__)
-	printf("mecrispWords\n");
-#endif
+	DEBUG_WORD("mecrispWords")
 }
 
 void mecrispDotS(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDotS\n");
-#endif
+	DEBUG_WORD("mecrispDotS")
 }
 
 void mecrispHDotS(void) {
-#if defined (__DEBUG__)
-	printf("mecrispHDotS\n");
-#endif
+	DEBUG_WORD("mecrispHDotS")
 }
 
 void mecrispUDotS(void) {
-#if defined (__DEBUG__)
-	printf("mecrispUDotS\n");
-#endif
+	DEBUG_WORD("mecrispUDotS")
 }
 
 void mecrispDotRs(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDotRs\n");
-#endif
+	DEBUG_WORD("mecrispDotRs")
 }
 
 void mecrispTwoNip(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTwoNip\n");
-#endif
+	DEBUG_WORD("mecrispTwoNip")
 }
 
 void mecrispTwoDrop(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTwoDrop\n");
-#endif
+	DEBUG_WORD("mecrispTwoDrop")
 }
 
 void mecrispTwoMinusRot(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTwoMinusRot\n");
-#endif
+	DEBUG_WORD("mecrispTwoMinusRot")
 }
 
 void mecrispTwoRot(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTwoRot\n");
-#endif
+	DEBUG_WORD("mecrispTwoRot")
 }
 
 void mecrispTwoTuck(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTwoTuck\n");
-#endif
+	DEBUG_WORD("mecrispTwoTuck")
 }
 
 void mecrispTwoSwap(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTwoSwap\n");
-#endif
+	DEBUG_WORD("mecrispTwoSwap")
 }
 
 void mecrispTwoOver(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTwoOver\n");
-#endif
+	DEBUG_WORD("mecrispTwoOver")
 }
 
 void mecrispTwoDup(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTwoDup\n");
-#endif
+	DEBUG_WORD("mecrispTwoDup")
 }
 
 void mecrispTwoToR(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTwoToR\n");
-#endif
+	DEBUG_WORD("mecrispTwoToR")
 }
 
 void mecrispTwoRFrom(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTwoRFrom\n");
-#endif
+	DEBUG_WORD("mecrispTwoRFrom")
 }
 
 void mecrispTwoRFetch(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTwoRFetch\n");
-#endif
+	DEBUG_WORD("mecrispTwoRFetch")
 }
 
 void mecrispTwoRDrop(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTwoRDrop\n");
-#endif
+	DEBUG_WORD("mecrispTwoRDrop")
 }
 
 void mecrispDepth(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDepth\n");
-#endif
+	DEBUG_WORD("mecrispDepth")
 }
 
 void mecrispPick(void) {
-#if defined (__DEBUG__)
-	printf("mecrispPick\n");
-#endif
+	DEBUG_WORD("mecrispPick")
 }
 
 void mecrispNip(void) {
-#if defined (__DEBUG__)
-	printf("mecrispNip\n");
-#endif
+	DEBUG_WORD("mecrispNip")
 }
 
 void mecrispDrop(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDrop\n");
-#endif
+	DEBUG_WORD("mecrispDrop")
 }
 
 void mecrispRot(void) {
-#if defined (__DEBUG__)
-	printf("mecrispRot\n");
-#endif
+	DEBUG_WORD("mecrispRot")
 }
 
 void mecrispMinusRot(void) {
-#if defined (__DEBUG__)
-	printf("mecrispMinusRot\n");
-#endif
+	DEBUG_WORD("mecrispMinusRot")
 }
 
 void mecrispSwap(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSwap\n");
-#endif
+	DEBUG_WORD("mecrispSwap")
 }
 
 void mecrispTuck(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTuck\n");
-#endif
+	DEBUG_WORD("mecrispTuck")
 }
 
 void mecrispOver(void) {
-#if defined (__DEBUG__)
-	printf("mecrispOver\n");
-#endif
+	DEBUG_WORD("mecrispOver")
 }
 
 void mecrispQDup(void) {
-#if defined (__DEBUG__)
-	printf("mecrispQDup\n");
-#endif
+	DEBUG_WORD("mecrispQDup")
 }
 
 void mecrispDup(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDup\n");
-#endif
+	DEBUG_WORD("mecrispDup")
 }
 
 void mecrispToR(void) {
-#if defined (__DEBUG__)
-	printf("mecrispToR\n");
-#endif
+	DEBUG_WORD("mecrispToR")
 }
 
 void mecrispRFrom(void) {
-#if defined (__DEBUG__)
-	printf("mecrispRFrom\n");
-#endif
+	DEBUG_WORD("mecrispRFrom")
 }
 
 void mecrispRFetch(void) {
-#if defined (__DEBUG__)
-	printf("mecrispRFetch\n");
-#endif
+	DEBUG_WORD("mecrispRFetch")
 }
 
 void mecrispRDrop(void) {
-#if defined (__DEBUG__)
-	printf("mecrispRDrop\n");
-#endif
+	DEBUG_WORD("mecrispRDrop")
 }
 
 void mecrispRDepth(void) {
-#if defined (__DEBUG__)
-	printf("mecrispRDepth\n");
-#endif
+	DEBUG_WORD("mecrispRDepth")
 }
 
 void mecrispRPick(void) {
-#if defined (__DEBUG__)
-	printf("mecrispRPick\n");
-#endif
+	DEBUG_WORD("mecrispRPick")
 }
 
 void mecrispSPFetch(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSPFetch\n");
-#endif
+	DEBUG_WORD("mecrispSPFetch")
 }
 
 void mecrispSPStore(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSPStore\n");
-#endif
+	DEBUG_WORD("mecrispSPStore")
 }
 
 void mecrispRPFetch(void) {
-#if defined (__DEBUG__)
-	printf("mecrispRPFetch\n");
-#endif
+	DEBUG_WORD("mecrispRPFetch")
 }
 
 void mecrispRPStore(void) {
-#if defined (__DEBUG__)
-	printf("mecrispRPStore\n");
-#endif
+	DEBUG_WORD("mecrispRPStore")
 }
 
 void mecrispReverseHalf(void) {
-#if defined (__DEBUG__)
-	printf("mecrispReverseHalf\n");
-#endif
+	DEBUG_WORD("mecrispReverseHalf")
 }
 
 void mecrispARShift(void) {
-#if defined (__DEBUG__)
-	printf("mecrispARShift\n");
-#endif
+	DEBUG_WORD("mecrispARShift")
 }
 
 void mecrispRShift(void) {
-#if defined (__DEBUG__)
-	printf("mecrispRShift\n");
-#endif
+	DEBUG_WORD("mecrispRShift")
 }
 
 void mecrispLShift(void) {
-#if defined (__DEBUG__)
-	printf("mecrispLShift\n");
-#endif
+	DEBUG_WORD("mecrispLShift")
 }
 
 void mecrispShR(void) {
-#if defined (__DEBUG__)
-	printf("mecrispShR\n");
-#endif
+	DEBUG_WORD("mecrispShR")
 }
 
 void mecrispShL(void) {
-#if defined (__DEBUG__)
-	printf("mecrispShL\n");
-#endif
+	DEBUG_WORD("mecrispShL")
 }
 
 void mecrispRoR(void) {
-#if defined (__DEBUG__)
-	printf("mecrispRoR\n");
-#endif
+	DEBUG_WORD("mecrispRoR")
 }
 
 void mecrispRoL(void) {
-#if defined (__DEBUG__)
-	printf("mecrispRoL\n");
-#endif
+	DEBUG_WORD("mecrispRoL")
 }
 
 void mecrispBic(void) {
-#if defined (__DEBUG__)
-	printf("mecrispBic\n");
-#endif
+	DEBUG_WORD("mecrispBic")
 }
 
 void mecrispNot(void) {
-#if defined (__DEBUG__)
-	printf("mecrispNot\n");
-#endif
+	DEBUG_WORD("mecrispNot")
 }
 
 void mecrispXor(void) {
-#if defined (__DEBUG__)
-	printf("mecrispXor\n");
-#endif
+	DEBUG_WORD("mecrispXor")
 }
 
 void mecrispOr(void) {
-#if defined (__DEBUG__)
-	printf("mecrispOr\n");
-#endif
+	DEBUG_WORD("mecrispOr")
 }
 
 void mecrispAnd(void) {
-#if defined (__DEBUG__)
-	printf("mecrispAnd\n");
-#endif
+	DEBUG_WORD("mecrispAnd")
 }
 
 void mecrispTrue(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTrue\n");
-#endif
+	DEBUG_WORD("mecrispTrue")
 }
 
 void mecrispFalse(void) {
-#if defined (__DEBUG__)
-	printf("mecrispFalse\n");
-#endif
+	DEBUG_WORD("mecrispFalse")
 }
 
 void mecrispClz(void) {
-#if defined (__DEBUG__)
-	printf("mecrispClz\n");
-#endif
+	DEBUG_WORD("mecrispClz")
 }
 
 void mecrispDotDigit(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDotDigit\n");
-#endif
+	DEBUG_WORD("mecrispDotDigit")
 }
 
 void mecrispDigit(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDigit\n");
-#endif
+	DEBUG_WORD("mecrispDigit")
 }
 
 void mecrispHold(void) {
-#if defined (__DEBUG__)
-	printf("mecrispHold\n");
-#endif
+	DEBUG_WORD("mecrispHold")
 }
 
 void mecrispSign(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSign\n");
-#endif
+	DEBUG_WORD("mecrispSign")
 }
 
 void mecrispNumS(void) {
-#if defined (__DEBUG__)
-	printf("mecrispNumS\n");
-#endif
+	DEBUG_WORD("mecrispNumS")
 }
 
 void mecrispNum(void) {
-#if defined (__DEBUG__)
-	printf("mecrispNum\n");
-#endif
+	DEBUG_WORD("mecrispNum")
 }
 
 void mecrispNumGreater(void) {
-#if defined (__DEBUG__)
-	printf("mecrispNumGreater\n");
-#endif
+	DEBUG_WORD("mecrispNumGreater")
 }
 
 void mecrispLessNum(void) {
-#if defined (__DEBUG__)
-	printf("mecrispLessNum\n");
-#endif
+	DEBUG_WORD("mecrispLessNum")
 }
 
 void mecrispUDot(void) {
-#if defined (__DEBUG__)
-	printf("mecrispUDot\n");
-#endif
+	DEBUG_WORD("mecrispUDot")
 }
 
 void mecrispDot(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDot\n");
-#endif
+	DEBUG_WORD("mecrispDot")
 }
 
 void mecrispUDDot(void) {
-#if defined (__DEBUG__)
-	printf("mecrispUDDot\n");
-#endif
+	DEBUG_WORD("mecrispUDDot")
 }
 
 void mecrispDDot(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDDot\n");
-#endif
+	DEBUG_WORD("mecrispDDot")
 }
 
 void mecrispFSlash(void) {
-#if defined (__DEBUG__)
-	printf("mecrispFSlash\n");
-#endif
+	DEBUG_WORD("mecrispFSlash")
 }
 
 void mecrispFStar(void) {
-#if defined (__DEBUG__)
-	printf("mecrispFStar\n");
-#endif
+	DEBUG_WORD("mecrispFStar")
 }
 
 void mecrispHoldLess(void) {
-#if defined (__DEBUG__)
-	printf("mecrispHoldLess\n");
-#endif
+	DEBUG_WORD("mecrispHoldLess")
 }
 
 void mecrispFNumS(void) {
-#if defined (__DEBUG__)
-	printf("mecrispFNumS\n");
-#endif
+	DEBUG_WORD("mecrispFNumS")
 }
 
 void mecrispFNum(void) {
-#if defined (__DEBUG__)
-	printf("mecrispFNum\n");
-#endif
+	DEBUG_WORD("mecrispFNum")
 }
 
 void mecrispFDot(void) {
-#if defined (__DEBUG__)
-	printf("mecrispFDot\n");
-#endif
+	DEBUG_WORD("mecrispFDot")
 }
 
 void mecrisp(void) {
-#if defined (__DEBUG__)
-	printf("mecrisp\n");
-#endif
+	DEBUG_WORD("mecrisp")
 }
 
 void mecrispNumber(void) {
-#if defined (__DEBUG__)
-	printf("mecrispNumber\n");
-#endif
+	DEBUG_WORD("mecrispNumber")
 }
 
 void mecrispSlashStar(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSlashStar\n");
-#endif
+	DEBUG_WORD("mecrispSlashStar")
 }
 
 void mecrispUStarSlash(void) {
-#if defined (__DEBUG__)
-	printf("mecrispUStarSlash\n");
-#endif
+	DEBUG_WORD("mecrispUStarSlash")
 }
 
 void mecrispStarSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("mecrispStarSlashMod\n");
-#endif
+	DEBUG_WORD("mecrispStarSlashMod")
 }
 
 void mecrispMSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("mecrispMSlashMod\n");
-#endif
+	DEBUG_WORD("mecrispMSlashMod")
 }
 
 void mecrispMStar(void) {
-#if defined (__DEBUG__)
-	printf("mecrispMStar\n");
-#endif
+	DEBUG_WORD("mecrispMStar")
 }
 
 void mecrispUMSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("mecrispUMSlashMod\n");
-#endif
+	DEBUG_WORD("mecrispUMSlashMod")
 }
 
 void mecrispUDSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("mecrispUDSlashMod\n");
-#endif
+	DEBUG_WORD("mecrispUDSlashMod")
 }
 
 void mecrispUDMStar(void) {
-#if defined (__DEBUG__)
-	printf("mecrispUDMStar\n");
-#endif
+	DEBUG_WORD("mecrispUDMStar")
 }
 
 void mecrispD2Slash(void) {
-#if defined (__DEBUG__)
-	printf("mecrispD2Slash\n");
-#endif
+	DEBUG_WORD("mecrispD2Slash")
 }
 
 void mecrispD2Star(void) {
-#if defined (__DEBUG__)
-	printf("mecrispD2Star\n");
-#endif
+	DEBUG_WORD("mecrispD2Star")
 }
 
 void mecrispDShR(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDShR\n");
-#endif
+	DEBUG_WORD("mecrispDShR")
 }
 
 void mecrispDShL(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDShL\n");
-#endif
+	DEBUG_WORD("mecrispDShL")
 }
 
 void mecrispDAbs(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDAbs\n");
-#endif
+	DEBUG_WORD("mecrispDAbs")
 }
 
 void mecrispDNegate(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDNegate\n");
-#endif
+	DEBUG_WORD("mecrispDNegate")
 }
 
 void mecrispDMinus(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDMinus\n");
-#endif
+	DEBUG_WORD("mecrispDMinus")
 }
 
 void mecrispDPlus(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDPlus\n");
-#endif
+	DEBUG_WORD("mecrispDPlus")
 }
 
 void mecrispSToD(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSToD\n");
-#endif
+	DEBUG_WORD("mecrispSToD")
 }
 
 void mecrispDuGreater(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDuGreater\n");
-#endif
+	DEBUG_WORD("mecrispDuGreater")
 }
 
 void mecrispDuLess(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDuLess\n");
-#endif
+	DEBUG_WORD("mecrispDuLess")
 }
 
 void mecrispDGreater(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDGreater\n");
-#endif
+	DEBUG_WORD("mecrispDGreater")
 }
 
 void mecrispDLess(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDLess\n");
-#endif
+	DEBUG_WORD("mecrispDLess")
 }
 
 void mecrispD0Less(void) {
-#if defined (__DEBUG__)
-	printf("mecrispD0Less\n");
-#endif
+	DEBUG_WORD("mecrispD0Less")
 }
 
 void mecrispD0Equal(void) {
-#if defined (__DEBUG__)
-	printf("mecrispD0Equal\n");
-#endif
+	DEBUG_WORD("mecrispD0Equal")
 }
 
 void mecrispD0Unequal(void) {
-#if defined (__DEBUG__)
-	printf("mecrispD0Unequal\n");
-#endif
+	DEBUG_WORD("mecrispD0Unequal")
 }
 
 void mecrispDEqual(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDEqual\n");
-#endif
+	DEBUG_WORD("mecrispDEqual")
 }
 
 void mecrispUMStar(void) {
-#if defined (__DEBUG__)
-	printf("mecrispUMStar\n");
-#endif
+	DEBUG_WORD("mecrispUMStar")
 }
 
 void mecrispUSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("mecrispUSlashMod\n");
-#endif
+	DEBUG_WORD("mecrispUSlashMod")
 }
 
 void mecrispSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSlashMod\n");
-#endif
+	DEBUG_WORD("mecrispSlashMod")
 }
 
 void mecrispMod(void) {
-#if defined (__DEBUG__)
-	printf("mecrispMod\n");
-#endif
+	DEBUG_WORD("mecrispMod")
 }
 
 void mecrispSlash(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSlash\n");
-#endif
+	DEBUG_WORD("mecrispSlash")
 }
 
 void mecrispStar(void) {
-#if defined (__DEBUG__)
-	printf("mecrispStar\n");
-#endif
+	DEBUG_WORD("mecrispStar")
 }
 
 void mecrispCompare(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCompare\n");
-#endif
+	DEBUG_WORD("mecrispCompare")
 }
 
 void mecrispSkipString(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSkipString\n");
-#endif
+	DEBUG_WORD("mecrispSkipString")
 }
 
 void mecrispCType(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCType\n");
-#endif
+	DEBUG_WORD("mecrispCType")
 }
 
 void mecrispType(void) {
-#if defined (__DEBUG__)
-	printf("mecrispType\n");
-#endif
+	DEBUG_WORD("mecrispType")
 }
 
 void mecrispSQuote(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSQuote\n");
-#endif
+	DEBUG_WORD("mecrispSQuote")
 }
 
 void mecrispCQuote(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCQuote\n");
-#endif
+	DEBUG_WORD("mecrispCQuote")
 }
 
 void mecrispDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDotQuote\n");
-#endif
+	DEBUG_WORD("mecrispDotQuote")
 }
 
 void mecrispParen(void) {
-#if defined (__DEBUG__)
-	printf("mecrispParen\n");
-#endif
+	DEBUG_WORD("mecrispParen")
 }
 
 void mecrispCount(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCount\n");
-#endif
+	DEBUG_WORD("mecrispCount")
 }
 
 void mecrispBackslash(void) {
-#if defined (__DEBUG__)
-	printf("mecrispBackslash\n");
-#endif
+	DEBUG_WORD("mecrispBackslash")
 }
 
 void mecrispMin(void) {
-#if defined (__DEBUG__)
-	printf("mecrispMin\n");
-#endif
+	DEBUG_WORD("mecrispMin")
 }
 
 void mecrispMax(void) {
-#if defined (__DEBUG__)
-	printf("mecrispMax\n");
-#endif
+	DEBUG_WORD("mecrispMax")
 }
 
 void mecrispUMin(void) {
-#if defined (__DEBUG__)
-	printf("mecrispUMin\n");
-#endif
+	DEBUG_WORD("mecrispUMin")
 }
 
 void mecrispUMax(void) {
-#if defined (__DEBUG__)
-	printf("mecrispUMax\n");
-#endif
+	DEBUG_WORD("mecrispUMax")
 }
 
 void mecrispTwoMinus(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTwoMinus\n");
-#endif
+	DEBUG_WORD("mecrispTwoMinus")
 }
 
 void mecrispOneMinus(void) {
-#if defined (__DEBUG__)
-	printf("mecrispOneMinus\n");
-#endif
+	DEBUG_WORD("mecrispOneMinus")
 }
 
 void mecrispTwoPlus(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTwoPlus\n");
-#endif
+	DEBUG_WORD("mecrispTwoPlus")
 }
 
 void mecrispOnePlus(void) {
-#if defined (__DEBUG__)
-	printf("mecrispOnePlus\n");
-#endif
+	DEBUG_WORD("mecrispOnePlus")
 }
 
 void mecrispEven(void) {
-#if defined (__DEBUG__)
-	printf("mecrispEven\n");
-#endif
+	DEBUG_WORD("mecrispEven")
 }
 
 void mecrispTwoStar(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTwoStar\n");
-#endif
+	DEBUG_WORD("mecrispTwoStar")
 }
 
 void mecrispTwoSlash(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTwoSlash\n");
-#endif
+	DEBUG_WORD("mecrispTwoSlash")
 }
 
 void mecrispAbs(void) {
-#if defined (__DEBUG__)
-	printf("mecrispAbs\n");
-#endif
+	DEBUG_WORD("mecrispAbs")
 }
 
 void mecrispNegate(void) {
-#if defined (__DEBUG__)
-	printf("mecrispNegate\n");
-#endif
+	DEBUG_WORD("mecrispNegate")
 }
 
 void mecrispMinus(void) {
-#if defined (__DEBUG__)
-	printf("mecrispMinus\n");
-#endif
+	DEBUG_WORD("mecrispMinus")
 }
 
 void mecrispPlus(void) {
-#if defined (__DEBUG__)
-	printf("mecrispPlus\n");
-#endif
+	DEBUG_WORD("mecrispPlus")
 }
 
 void mecrispBinary(void) {
-#if defined (__DEBUG__)
-	printf("mecrispBinary\n");
-#endif
+	DEBUG_WORD("mecrispBinary")
 }
 
 void mecrispDecimal(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDecimal\n");
-#endif
+	DEBUG_WORD("mecrispDecimal")
 }
 
 void mecrispHex(void) {
-#if defined (__DEBUG__)
-	printf("mecrispHex\n");
-#endif
+	DEBUG_WORD("mecrispHex")
 }
 
 void mecrispBase(void) {
-#if defined (__DEBUG__)
-	printf("mecrispBase\n");
-#endif
+	DEBUG_WORD("mecrispBase")
 }
 
 void mecrispCells(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCells\n");
-#endif
+	DEBUG_WORD("mecrispCells")
 }
 
 void mecrispCellPlus(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCellPlus\n");
-#endif
+	DEBUG_WORD("mecrispCellPlus")
 }
 
 void mecrispMove(void) {
-#if defined (__DEBUG__)
-	printf("mecrispMove\n");
-#endif
+	DEBUG_WORD("mecrispMove")
 }
 
 void mecrispFill(void) {
-#if defined (__DEBUG__)
-	printf("mecrispFill\n");
-#endif
+	DEBUG_WORD("mecrispFill")
 }
 
 void mecrispCBitFetch(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCBitFetch\n");
-#endif
+	DEBUG_WORD("mecrispCBitFetch")
 }
 
 void mecrispBitFetch(void) {
-#if defined (__DEBUG__)
-	printf("mecrispBitFetch\n");
-#endif
+	DEBUG_WORD("mecrispBitFetch")
 }
 
 void mecrispCXorStore(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCXorStore\n");
-#endif
+	DEBUG_WORD("mecrispCXorStore")
 }
 
 void mecrispXorStore(void) {
-#if defined (__DEBUG__)
-	printf("mecrispXorStore\n");
-#endif
+	DEBUG_WORD("mecrispXorStore")
 }
 
 void mecrispCBicStore(void) {
-#if defined (__DEBUG__)
-	printf("mecrispXorStore\n");
-#endif
+	DEBUG_WORD("mecrispXorStore")
 }
 
 void mecrispBicStore(void) {
-#if defined (__DEBUG__)
-	printf("mecrispBicStore\n");
-#endif
+	DEBUG_WORD("mecrispBicStore")
 }
 
 void mecrispCBisStore(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCBisStore\n");
-#endif
+	DEBUG_WORD("mecrispCBisStore")
 }
 
 void mecrispBisStore(void) {
-#if defined (__DEBUG__)
-	printf("mecrispBisStore\n");
-#endif
+	DEBUG_WORD("mecrispBisStore")
 }
 
 void mecrispTwoConstant(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTwoConstant\n");
-#endif
+	DEBUG_WORD("mecrispTwoConstant")
 }
 
 void mecrispConstant(void) {
-#if defined (__DEBUG__)
-	printf("mecrispConstant\n");
-#endif
+	DEBUG_WORD("mecrispConstant")
 }
 
 void mecrispTwoVariable(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTwoVariable\n");
-#endif
+	DEBUG_WORD("mecrispTwoVariable")
 }
 
 void mecrispVariable(void) {
-#if defined (__DEBUG__)
-	printf("mecrispVariable\n");
-#endif
+	DEBUG_WORD("mecrispVariable")
 }
 
 void mecrispNVariable(void) {
-#if defined (__DEBUG__)
-	printf("mecrispNVariable\n");
-#endif
+	DEBUG_WORD("mecrispNVariable")
 }
 
 void mecrispBufferColon(void) {
-#if defined (__DEBUG__)
-	printf("mecrispBufferColon\n");
-#endif
+	DEBUG_WORD("mecrispBufferColon")
 }
 
 void mecrispPlusStore(void) {
-#if defined (__DEBUG__)
-	printf("mecrispPlusStore\n");
-#endif
+	DEBUG_WORD("mecrispPlusStore")
 }
 
 void mecrispCPlusStore(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCPlusStore\n");
-#endif
+	DEBUG_WORD("mecrispCPlusStore")
 }
 
 void mecrispTwoStore(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTwoStore\n");
-#endif
+	DEBUG_WORD("mecrispTwoStore")
 }
 
 void mecrispTwoFetch(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTwoFetch\n");
-#endif
+	DEBUG_WORD("mecrispTwoFetch")
 }
 
 void mecrispCStore(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCStore\n");
-#endif
+	DEBUG_WORD("mecrispCStore")
 }
 
 void mecrispCFetch(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCFetch\n");
-#endif
+	DEBUG_WORD("mecrispCFetch")
 }
 
 void mecrispStore(void) {
-#if defined (__DEBUG__)
-	printf("mecrispStore\n");
-#endif
+	DEBUG_WORD("mecrispStore")
 }
 
 void mecrispFetch(void) {
-#if defined (__DEBUG__)
-	printf("mecrispFetch\n");
-#endif
+	DEBUG_WORD("mecrispFetch")
 }
 
 void mecrispToIn(void) {
-#if defined (__DEBUG__)
-	printf("mecrispToIn\n");
-#endif
+	DEBUG_WORD("mecrispToIn")
 }
 
 void mecrispCurrentSource(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCurrentSource\n");
-#endif
+	DEBUG_WORD("mecrispCurrentSource")
 }
 
 void mecrispSource(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSource\n");
-#endif
+	DEBUG_WORD("mecrispSource")
 }
 
 void mecrispSetSource(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSetSource\n");
-#endif
+	DEBUG_WORD("mecrispSetSource")
 }
 
 void mecrispTib(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTib\n");
-#endif
+	DEBUG_WORD("mecrispTib")
 }
 
 void mecrispQuery(void) {
-#if defined (__DEBUG__)
-	printf("mecrispQuery\n");
-#endif
+	DEBUG_WORD("mecrispQuery")
 }
 
 void mecrispCExpect(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCExpect\n");
-#endif
+	DEBUG_WORD("mecrispCExpect")
 }
 
 void mecrispForth(void) {
-#if defined (__DEBUG__)
-	printf("mecrispForth\n");
-#endif
+	DEBUG_WORD("mecrispForth")
 }
 
 void mecrispToken(void) {
-#if defined (__DEBUG__)
-	printf("mecrispToken\n");
-#endif
+	DEBUG_WORD("mecrispToken")
 }
 
 void mecrispParse(void) {
-#if defined (__DEBUG__)
-	printf("mecrispParse\n");
-#endif
+	DEBUG_WORD("mecrispParse")
 }
 
 void mecrispXTick(void) {
-#if defined (__DEBUG__)
-	printf("mecrispXTick\n");
-#endif
+	DEBUG_WORD("mecrispXTick")
 }
 
 void mecrispTick(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTick\n");
-#endif
+	DEBUG_WORD("mecrispTick")
 }
 
 void mecrispEvaluate(void) {
-#if defined (__DEBUG__)
-	printf("mecrispEvaluate\n");
-#endif
+	DEBUG_WORD("mecrispEvaluate")
 }
 
 void mecrispInterpret(void) {
-#if defined (__DEBUG__)
-	printf("mecrispInterpret\n");
-#endif
+	DEBUG_WORD("mecrispInterpret")
 }
 
 void mecrispHookQuit(void) {
-#if defined (__DEBUG__)
-	printf("mecrispHookQuit\n");
-#endif
+	DEBUG_WORD("mecrispHookQuit")
 }
 
 void mecrispQuit(void) {
-#if defined (__DEBUG__)
-	printf("mecrispQuit\n");
-#endif
+	DEBUG_WORD("mecrispQuit")
 }
 
 void mecrispDictionaryStart(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDictionaryStart\n");
-#endif
+	DEBUG_WORD("mecrispDictionaryStart")
 }
 
 void mecrispDictionaryNext(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDictionaryNext\n");
-#endif
+	DEBUG_WORD("mecrispDictionaryNext")
 }
 
 void mecrispComma(void) {
-#if defined (__DEBUG__)
-	printf("mecrispComma\n");
-#endif
+	DEBUG_WORD("mecrispComma")
 }
 
 void mecrispCComma(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCComma\n");
-#endif
+	DEBUG_WORD("mecrispCComma")
 }
 
 void mecrispAlign(void) {
-#if defined (__DEBUG__)
-	printf("mecrispAlign\n");
-#endif
+	DEBUG_WORD("mecrispAlign")
 }
 
 void mecrispAligned(void) {
-#if defined (__DEBUG__)
-	printf("mecrispAligned\n");
-#endif
+	DEBUG_WORD("mecrispAligned")
 }
 
 void mecrispXChar(void) {
-#if defined (__DEBUG__)
-	printf("mecrispXChar\n");
-#endif
+	DEBUG_WORD("mecrispXChar")
 }
 
 void mecrispChar(void) {
-#if defined (__DEBUG__)
-	printf("mecrispChar\n");
-#endif
+	DEBUG_WORD("mecrispChar")
 }
 
 void mecrispStringComma(void) {
-#if defined (__DEBUG__)
-	printf("mecrispStringComma\n");
-#endif
+	DEBUG_WORD("mecrispStringComma")
 }
 
 void mecrispLiteralComma(void) {
-#if defined (__DEBUG__)
-	printf("mecrispLiteralComma\n");
-#endif
+	DEBUG_WORD("mecrispLiteralComma")
 }
 
 void mecrispTwoLiteralComma(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTwoLiteralComma\n");
-#endif
+	DEBUG_WORD("mecrispTwoLiteralComma")
 }
 
 void mecrispInlineComma(void) {
-#if defined (__DEBUG__)
-	printf("mecrispInlineComma\n");
-#endif
+	DEBUG_WORD("mecrispInlineComma")
 }
 
 void mecrispCallComma(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCallComma\n");
-#endif
+	DEBUG_WORD("mecrispCallComma")
 }
 
 void mecrispRetComma(void) {
-#if defined (__DEBUG__)
-	printf("mecrispRetComma\n");
-#endif
+	DEBUG_WORD("mecrispRetComma")
 }
 
 void mecrispFlashVarHere(void) {
-#if defined (__DEBUG__)
-	printf("mecrispFlashVarHere\n");
-#endif
+	DEBUG_WORD("mecrispFlashVarHere")
 }
 
 void mecrispHere(void) {
-#if defined (__DEBUG__)
-	printf("mecrispHere\n");
-#endif
+	DEBUG_WORD("mecrispHere")
 }
 
 void mecrispAllot(void) {
-#if defined (__DEBUG__)
-	printf("mecrispAllot\n");
-#endif
+	DEBUG_WORD("mecrispAllot")
 }
 
 void mecrispYCreate(void) {
-#if defined (__DEBUG__)
-	printf("mecrispYCreate\n");
-#endif
+	DEBUG_WORD("mecrispYCreate")
 }
 
 void mecrispCompiletoRamQ(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCompiletoRamQ\n");
-#endif
+	DEBUG_WORD("mecrispCompiletoRamQ")
 }
 
 void mecrispCompiletoRam(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCompiletoRam\n");
-#endif
+	DEBUG_WORD("mecrispCompiletoRam")
 }
 
 void mecrispCompileToFlash(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCompileToFlash\n");
-#endif
+	DEBUG_WORD("mecrispCompileToFlash")
 }
 
 void mecrispSmudge(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSmudge\n");
-#endif
+	DEBUG_WORD("mecrispSmudge")
 }
 
 void mecrispCompileOnly(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCompileOnly\n");
-#endif
+	DEBUG_WORD("mecrispCompileOnly")
 }
 
 void mecrispInline(void) {
-#if defined (__DEBUG__)
-	printf("mecrispInline\n");
-#endif
+	DEBUG_WORD("mecrispInline")
 }
 
 void mecrispImmediate(void) {
-#if defined (__DEBUG__)
-	printf("mecrispImmediate\n");
-#endif
+	DEBUG_WORD("mecrispImmediate")
 }
 
 void mecrispSetflags(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSetflags\n");
-#endif
+	DEBUG_WORD("mecrispSetflags")
 }
 
 void mecrispFind(void) {
-#if defined (__DEBUG__)
-	printf("mecrispFind\n");
-#endif
+	DEBUG_WORD("mecrispFind")
 }
 
 void mecrispExecute(void) {
-#if defined (__DEBUG__)
-	printf("mecrispExecute\n");
-#endif
+	DEBUG_WORD("mecrispExecute")
 }
 
 void mecrispRecurse(void) {
-#if defined (__DEBUG__)
-	printf("mecrispRecurse\n");
-#endif
+	DEBUG_WORD("mecrispRecurse")
 }
 
 void mecrispPostpone(void) {
-#if defined (__DEBUG__)
-	printf("mecrispPostpone\n");
-#endif
+	DEBUG_WORD("mecrispPostpone")
 }
 
 void mecrispDoes(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDoes\n");
-#endif
+	DEBUG_WORD("mecrispDoes")
 }
 
 void mecrispBuilds(void) {
-#if defined (__DEBUG__)
-	printf("mecrispBuilds\n");
-#endif
+	DEBUG_WORD("mecrispBuilds")
 }
 
 void mecrispCreate(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCreate\n");
-#endif
+	DEBUG_WORD("mecrispCreate")
 }
 
 void mecrispState(void) {
-#if defined (__DEBUG__)
-	printf("mecrispState\n");
-#endif
+	DEBUG_WORD("mecrispState")
 }
 
 void mecrispRightBracket(void) {
-#if defined (__DEBUG__)
-	printf("mecrispRightBracket\n");
-#endif
+	DEBUG_WORD("mecrispRightBracket")
 }
 
 void mecrispLeftBracket(void) {
-#if defined (__DEBUG__)
-	printf("mecrispLeftBracket\n");
-#endif
+	DEBUG_WORD("mecrispLeftBracket")
 }
 
 void mecrispSemicolon(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSemicolon\n");
-#endif
+	DEBUG_WORD("mecrispSemicolon")
 }
 
 void mecrispColon(void) {
-#if defined (__DEBUG__)
-	printf("mecrispColon\n");
-#endif
+	DEBUG_WORD("mecrispColon")
 }
 
 void mecrispZeroFoldable(void) {
-#if defined (__DEBUG__)
-	printf("mecrispZeroFoldable\n");
-#endif
+	DEBUG_WORD("mecrispZeroFoldable")
 }
 
 void mecrispOneFoldable(void) {
-#if defined (__DEBUG__)
-	printf("mecrispOneFoldable\n");
-#endif
+	DEBUG_WORD("mecrispOneFoldable")
 }
 
 void mecrispTwoFoldable(void) {
-#if defined (__DEBUG__)
-	printf("mecrispTwoFoldable\n");
-#endif
+	DEBUG_WORD("mecrispTwoFoldable")
 }
 
 void mecrispThreeFoldable(void) {
-#if defined (__DEBUG__)
-	printf("mecrispThreeFoldable\n");
-#endif
+	DEBUG_WORD("mecrispThreeFoldable")
 }
 
 void mecrispFourFoldable(void) {
-#if defined (__DEBUG__)
-	printf("mecrispFourFoldable\n");
-#endif
+	DEBUG_WORD("mecrispFourFoldable")
 }
 
 void mecrispFiveFoldable(void) {
-#if defined (__DEBUG__)
-	printf("mecrispFiveFoldable\n");
-#endif
+	DEBUG_WORD("mecrispFiveFoldable")
 }
 
 void mecrispSixFoldable(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSixFoldable\n");
-#endif
+	DEBUG_WORD("mecrispSixFoldable")
 }
 
 void mecrispSevenFoldable(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSevenFoldable\n");
-#endif
+	DEBUG_WORD("mecrispSevenFoldable")
 }
 
 void mecrispJumpComma(void) {
-#if defined (__DEBUG__)
-	printf("mecrispJumpComma\n");
-#endif
+	DEBUG_WORD("mecrispJumpComma")
 }
 
 void mecrispThen(void) {
-#if defined (__DEBUG__)
-	printf("mecrispThen\n");
-#endif
+	DEBUG_WORD("mecrispThen")
 }
 
 void mecrispElse(void) {
-#if defined (__DEBUG__)
-	printf("mecrispElse\n");
-#endif
+	DEBUG_WORD("mecrispElse")
 }
 
 void mecrispIf(void) {
-#if defined (__DEBUG__)
-	printf("mecrispIf\n");
-#endif
+	DEBUG_WORD("mecrispIf")
 }
 
 void mecrispAhead(void) {
-#if defined (__DEBUG__)
-	printf("mecrispAhead\n");
-#endif
+	DEBUG_WORD("mecrispAhead")
 }
 
 void mecrispRepeat(void) {
-#if defined (__DEBUG__)
-	printf("mecrispRepeat\n");
-#endif
+	DEBUG_WORD("mecrispRepeat")
 }
 
 void mecrispWhile(void) {
-#if defined (__DEBUG__)
-	printf("mecrispWhile\n");
-#endif
+	DEBUG_WORD("mecrispWhile")
 }
 
 void mecrispUntil(void) {
-#if defined (__DEBUG__)
-	printf("mecrispUntil\n");
-#endif
+	DEBUG_WORD("mecrispUntil")
 }
 
 void mecrispAgain(void) {
-#if defined (__DEBUG__)
-	printf("mecrispAgain\n");
-#endif
+	DEBUG_WORD("mecrispAgain")
 }
 
 void mecrispBegin(void) {
-#if defined (__DEBUG__)
-	printf("mecrispBegin\n");
-#endif
+	DEBUG_WORD("mecrispBegin")
 }
 
 void mecrispExit(void) {
-#if defined (__DEBUG__)
-	printf("mecrispExit\n");
-#endif
+	DEBUG_WORD("mecrispExit")
 }
 
 void mecrispK(void) {
-#if defined (__DEBUG__)
-	printf("mecrispK\n");
-#endif
+	DEBUG_WORD("mecrispK")
 }
 
 void mecrispJ(void) {
-#if defined (__DEBUG__)
-	printf("mecrispJ\n");
-#endif
+	DEBUG_WORD("mecrispJ")
 }
 
 void mecrispI(void) {
-#if defined (__DEBUG__)
-	printf("mecrispI\n");
-#endif
+	DEBUG_WORD("mecrispI")
 }
 
 void mecrispUnLoop(void) {
-#if defined (__DEBUG__)
-	printf("mecrispUnLoop\n");
-#endif
+	DEBUG_WORD("mecrispUnLoop")
 }
 
 void mecrispLeave(void) {
-#if defined (__DEBUG__)
-	printf("mecrispLeave\n");
-#endif
+	DEBUG_WORD("mecrispLeave")
 }
 
 void mecrispPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("mecrispPlusLoop\n");
-#endif
+	DEBUG_WORD("mecrispPlusLoop")
 }
 
 void mecrispLoop(void) {
-#if defined (__DEBUG__)
-	printf("mecrispLoop\n");
-#endif
+	DEBUG_WORD("mecrispLoop")
 }
 
 void mecrispQDo(void) {
-#if defined (__DEBUG__)
-	printf("mecrispQDo\n");
-#endif
+	DEBUG_WORD("mecrispQDo")
 }
 
 void mecrispDo(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDo\n");
-#endif
+	DEBUG_WORD("mecrispDo")
 }
 
 void mecrispCase(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCase\n");
-#endif
+	DEBUG_WORD("mecrispCase")
 }
 
 void mecrispQOf(void) {
-#if defined (__DEBUG__)
-	printf("mecrispQOf\n");
-#endif
+	DEBUG_WORD("mecrispQOf")
 }
 
 void mecrispOf(void) {
-#if defined (__DEBUG__)
-	printf("mecrispOf\n");
-#endif
+	DEBUG_WORD("mecrispOf")
 }
 
 void mecrispEndOf(void) {
-#if defined (__DEBUG__)
-	printf("mecrispEndOf\n");
-#endif
+	DEBUG_WORD("mecrispEndOf")
 }
 
 void mecrispEndCase(void) {
-#if defined (__DEBUG__)
-	printf("mecrispEndCase\n");
-#endif
+	DEBUG_WORD("mecrispEndCase")
 }
 
 void mecrispULessEqual(void) {
-#if defined (__DEBUG__)
-	printf("mecrispULessEqual\n");
-#endif
+	DEBUG_WORD("mecrispULessEqual")
 }
 
 void mecrispUGreaterEqual(void) {
-#if defined (__DEBUG__)
-	printf("mecrispUGreaterEqual\n");
-#endif
+	DEBUG_WORD("mecrispUGreaterEqual")
 }
 
 void mecrispUGreater(void) {
-#if defined (__DEBUG__)
-	printf("mecrispUGreater\n");
-#endif
+	DEBUG_WORD("mecrispUGreater")
 }
 
 void mecrispULess(void) {
-#if defined (__DEBUG__)
-	printf("mecrispULess\n");
-#endif
+	DEBUG_WORD("mecrispULess")
 }
 
 void mecrispLessEqual(void) {
-#if defined (__DEBUG__)
-	printf("mecrispLessEqual\n");
-#endif
+	DEBUG_WORD("mecrispLessEqual")
 }
 
 void mecrispGreaterEqual(void) {
-#if defined (__DEBUG__)
-	printf("mecrispGreaterEqual\n");
-#endif
+	DEBUG_WORD("mecrispGreaterEqual")
 }
 
 void mecrispGreater(void) {
-#if defined (__DEBUG__)
-	printf("mecrispGreater\n");
-#endif
+	DEBUG_WORD("mecrispGreater")
 }
 
 void mecrispLess(void) {
-#if defined (__DEBUG__)
-	printf("mecrispLess\n");
-#endif
+	DEBUG_WORD("mecrispLess")
 }
 
 void mecrispZeroLess(void) {
-#if defined (__DEBUG__)
-	printf("mecrispZeroLess\n");
-#endif
+	DEBUG_WORD("mecrispZeroLess")
 }
 
 void mecrispZeroUnequal(void) {
-#if defined (__DEBUG__)
-	printf("mecrispZeroUnequal\n");
-#endif
+	DEBUG_WORD("mecrispZeroUnequal")
 }
 
 void mecrispZeroEqual(void) {
-#if defined (__DEBUG__)
-	printf("mecrispZeroEqual\n");
-#endif
+	DEBUG_WORD("mecrispZeroEqual")
 }
 
 void mecrispUnequal(void) {
-#if defined (__DEBUG__)
-	printf("mecrispUnequal\n");
-#endif
+	DEBUG_WORD("mecrispUnequal")
 }
 
 void mecrispEqual(void) {
-#if defined (__DEBUG__)
-	printf("mecrispEqual\n");
-#endif
+	DEBUG_WORD("mecrispEqual")
 }
 
 void mecrispDInt(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDInt\n");
-#endif
+	DEBUG_WORD("mecrispDInt")
 }
 
 void mecrispEInt(void) {
-#if defined (__DEBUG__)
-	printf("mecrispEInt\n");
-#endif
+	DEBUG_WORD("mecrispEInt")
 }
 
 void mecrispEIntQ(void) {
-#if defined (__DEBUG__)
-	printf("mecrispEIntQ\n");
-#endif
+	DEBUG_WORD("mecrispEIntQ")
 }
 
 void mecrispNop(void) {
-#if defined (__DEBUG__)
-	printf("mecrispNop\n");
-#endif
+	DEBUG_WORD("mecrispNop")
 }
 
 void mecrispReset(void) {
-#if defined (__DEBUG__)
-	printf("mecrispReset\n");
-#endif
+	DEBUG_WORD("mecrispReset")
 }
 
 void mecrispLpm0(void) {
-#if defined (__DEBUG__)
-	printf("mecrispLpm0\n");
-#endif
+	DEBUG_WORD("mecrispLpm0")
 }
 
 void mecrispLpm1(void) {
-#if defined (__DEBUG__)
-	printf("mecrispLpm1\n");
-#endif
+	DEBUG_WORD("mecrispLpm1")
 }
 
 void mecrispLpm2(void) {
-#if defined (__DEBUG__)
-	printf("mecrispLpm2\n");
-#endif
+	DEBUG_WORD("mecrispLpm2")
 }
 
 void mecrispLpm3(void) {
-#if defined (__DEBUG__)
-	printf("mecrispLpm3\n");
-#endif
+	DEBUG_WORD("mecrispLpm3")
 }
 
 void mecrispLpm4(void) {
-#if defined (__DEBUG__)
-	printf("mecrispLpm4\n");
-#endif
+	DEBUG_WORD("mecrispLpm4")
 }
 
 void mecrispWakeup(void) {
-#if defined (__DEBUG__)
-	printf("mecrispWakeup\n");
-#endif
+	DEBUG_WORD("mecrispWakeup")
 }
 
 void mecrispHookPause(void) {
-#if defined (__DEBUG__)
-	printf("mecrispHookPause\n");
-#endif
+	DEBUG_WORD("mecrispHookPause")
 }
 
 void mecrispPause(void) {
-#if defined (__DEBUG__)
-	printf("mecrispPause\n");
-#endif
+	DEBUG_WORD("mecrispPause")
 }
 
 void mecrispSerialKeyQ(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSerialKeyQ\n");
-#endif
+	DEBUG_WORD("mecrispSerialKeyQ")
 }
 
 void mecrispSerialKey(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSerialKey\n");
-#endif
+	DEBUG_WORD("mecrispSerialKey")
 }
 
 void mecrispSerialEmitQ(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSerialEmitQ\n");
-#endif
+	DEBUG_WORD("mecrispSerialEmitQ")
 }
 
 void mecrispSerialEmit(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSerialEmit\n");
-#endif
+	DEBUG_WORD("mecrispSerialEmit")
 }
 
 void mecrispAdcVcc(void) {
-#if defined (__DEBUG__)
-	printf("mecrispAdcVcc\n");
-#endif
+	DEBUG_WORD("mecrispAdcVcc")
 }
 
 void mecrispAdc1Dot5(void) {
-#if defined (__DEBUG__)
-	printf("mecrispAdc1Dot5\n");
-#endif
+	DEBUG_WORD("mecrispAdc1Dot5")
 }
 
 void mecrispAnalog(void) {
-#if defined (__DEBUG__)
-	printf("mecrispAnalog\n");
-#endif
+	DEBUG_WORD("mecrispAnalog")
 }
 
 void mecrispEraseFlashFrom(void) {
-#if defined (__DEBUG__)
-	printf("mecrispEraseFlashFrom\n");
-#endif
+	DEBUG_WORD("mecrispEraseFlashFrom")
 }
 
 void mecrispEraseFlash(void) {
-#if defined (__DEBUG__)
-	printf("mecrispEraseFlash\n");
-#endif
+	DEBUG_WORD("mecrispEraseFlash")
 }
 
 void mecrispCFlashStore(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCFlashStore\n");
-#endif
+	DEBUG_WORD("mecrispCFlashStore")
 }
 
 void mecrispFlashStore(void) {
-#if defined (__DEBUG__)
-	printf("mecrispFlashStore\n");
-#endif
+	DEBUG_WORD("mecrispFlashStore")
 }
 
 void mecrispIrqPort1(void) {
-#if defined (__DEBUG__)
-	printf("mecrispIrqPort1\n");
-#endif
+	DEBUG_WORD("mecrispIrqPort1")
 }
 
 void mecrispIrqPort2(void) {
-#if defined (__DEBUG__)
-	printf("mecrispIrqPort2\n");
-#endif
+	DEBUG_WORD("mecrispIrqPort2")
 }
 
 void mecrispIrqAdc(void) {
-#if defined (__DEBUG__)
-	printf("mecrispIrqAdc\n");
-#endif
+	DEBUG_WORD("mecrispIrqAdc")
 }
 
 void mecrispIrqTimerA1(void) {
-#if defined (__DEBUG__)
-	printf("mecrispIrqTimerA1\n");
-#endif
+	DEBUG_WORD("mecrispIrqTimerA1")
 }
 
 void mecrispIrqTimerA0(void) {
-#if defined (__DEBUG__)
-	printf("mecrispIrqTimerA0\n");
-#endif
+	DEBUG_WORD("mecrispIrqTimerA0")
 }
 
 void mecrispIrqWatchdog(void) {
-#if defined (__DEBUG__)
-	printf("mecrispIrqWatchdog\n");
-#endif
+	DEBUG_WORD("mecrispIrqWatchdog")
 }
 
 void mecrispIrqTimerB1(void) {
-#if defined (__DEBUG__)
-	printf("mecrispIrqTimerB1\n");
-#endif
+	DEBUG_WORD("mecrispIrqTimerB1")
 }
 
 void mecrispIrqTimerB0(void) {
-#if defined (__DEBUG__)
-	printf("mecrispIrqTimerB0\n");
-#endif
+	DEBUG_WORD("mecrispIrqTimerB0")
 }
 
 void mecrispIrqComp(void) {
-#if defined (__DEBUG__)
-	printf("mecrispIrqComp\n");
-#endif
+	DEBUG_WORD("mecrispIrqComp")
 }
 
 void mecrispIrqTx(void) {
-#if defined (__DEBUG__)
-	printf("mecrispIrqTx\n");
-#endif
+	DEBUG_WORD("mecrispIrqTx")
 }
 
 void mecrispIrqRx(void) {
-#if defined (__DEBUG__)
-	printf("mecrispIrqRx\n");
-#endif
+	DEBUG_WORD("mecrispIrqRx")
 }
 
 /* Flash Dictionary */
 
 void mecrispList(void) {
-#if defined (__DEBUG__)
-	printf("mecrispIrqRx\n");
-#endif
+	DEBUG_WORD("mecrispIrqRx")
 }
 
 void mecrispSearchFor(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSearchFor\n");
-#endif
+	DEBUG_WORD("mecrispSearchFor")
 }
 
 void mecrispSearchCalls(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSearchCalls\n");
-#endif
+	DEBUG_WORD("mecrispSearchCalls")
 }
 
 void mecrispUses(void) {
-#if defined (__DEBUG__)
-	printf("mecrispUses\n");
-#endif
+	DEBUG_WORD("mecrispUses")
 }
 
 void mecrispNameDot(void) {
-#if defined (__DEBUG__)
-	printf("mecrispNameDot\n");
-#endif
+	DEBUG_WORD("mecrispNameDot")
 }
 
 void mecrispDisasmDollar(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDisasmDollar\n");
-#endif
+	DEBUG_WORD("mecrispDisasmDollar")
 }
 
 void mecrispDisasmFetch(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDisasmFetch\n");
-#endif
+	DEBUG_WORD("mecrispDisasmFetch")
 }
 
 void mecrispUDot4(void) {
-#if defined (__DEBUG__)
-	printf("mecrispUDot4\n");
-#endif
+	DEBUG_WORD("mecrispUDot4")
 }
 
 void mecrispUDotNs(void) {
-#if defined (__DEBUG__)
-	printf("mecrispUDotNs\n");
-#endif
+	DEBUG_WORD("mecrispUDotNs")
 }
 
 void mecrispUDotH(void) {
-#if defined (__DEBUG__)
-	printf("mecrispUDotH\n");
-#endif
+	DEBUG_WORD("mecrispUDotH")
 }
 
 void mecrispRegisterDot(void) {
-#if defined (__DEBUG__)
-	printf("mecrispRegisterDot\n");
-#endif
+	DEBUG_WORD("mecrispRegisterDot")
 }
 
 void mecrispDisasmConst(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDisasmConst\n");
-#endif
+	DEBUG_WORD("mecrispDisasmConst")
 }
 
 void mecrispDisasmJumps(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDisasmJumps\n");
-#endif
+	DEBUG_WORD("mecrispDisasmJumps")
 }
 
 void mecrispDisasmSource(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDisasmSource\n");
-#endif
+	DEBUG_WORD("mecrispDisasmSource")
 }
 
 void mecrispDisasmDestination(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDisasmDestination\n");
-#endif
+	DEBUG_WORD("mecrispDisasmDestination")
 }
 
 void mecrispDisasmString(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDisasmString\n");
-#endif
+	DEBUG_WORD("mecrispDisasmString")
 }
 
 void mecrispDisasmSingle(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDisasmSingle\n");
-#endif
+	DEBUG_WORD("mecrispDisasmSingle")
 }
 
 void mecrispDisasmDouble(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDisasmDouble\n");
-#endif
+	DEBUG_WORD("mecrispDisasmDouble")
 }
 
 void mecrispDisasm(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDisasm\n");
-#endif
+	DEBUG_WORD("mecrispDisasm")
 }
 
 void mecrispMemStamp(void) {
-#if defined (__DEBUG__)
-	printf("mecrispMemStamp\n");
-#endif
+	DEBUG_WORD("mecrispMemStamp")
 }
 
 void mecrispDisasmStep(void) {
-#if defined (__DEBUG__)
-	printf("mecrispDisasmStep\n");
-#endif
+	DEBUG_WORD("mecrispDisasmStep")
 }
 
 void mecrispSeeC(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSeeC\n");
-#endif
+	DEBUG_WORD("mecrispSeeC")
 }
 
 void mecrispSee(void) {
-#if defined (__DEBUG__)
-	printf("mecrispSee\n");
-#endif
+	DEBUG_WORD("mecrispSee")
 }
 
 void mecrispCornerStone(void) {
-#if defined (__DEBUG__)
-	printf("mecrispCornerStone\n");
-#endif
+	DEBUG_WORD("mecrispCornerStone")
 }
 
 #endif

@@ -6,837 +6,559 @@
 /* Primitives */
 
 void jupiterForth(void) {
-#if defined (__DEBUG__)
-	printf("jupiterForth\n");
-#endif
+	DEBUG_WORD("jupiterForth")
 }
 
-void jupiterUFLoad(void) {
-#if defined (__DEBUG__)
-	printf("jupiterUFLoad\n");
-#endif
+void jupiterUFLoat(void) {
+	DEBUG_WORD("jupiterUFLoat")
 }
 
 void jupiterFNegate(void) {
-#if defined (__DEBUG__)
-	printf("jupiterFNegate\n");
-#endif
+	DEBUG_WORD("jupiterFNegate")
 }
 
 void jupiterFSlash(void) {
-#if defined (__DEBUG__)
-	printf("jupiterFSlash\n");
-#endif
+	DEBUG_WORD("jupiterFSlash")
 }
 
 void jupiterFStar(void) {
-#if defined (__DEBUG__)
-	printf("jupiterFStar\n");
-#endif
+	DEBUG_WORD("jupiterFStar")
 }
 
 void jupiterFPlus(void) {
-#if defined (__DEBUG__)
-	printf("jupiterFPlus\n");
-#endif
+	DEBUG_WORD("jupiterFPlus")
 }
 
 void jupiterFMinus(void) {
-#if defined (__DEBUG__)
-	printf("jupiterFMinus\n");
-#endif
+	DEBUG_WORD("jupiterFMinus")
 }
 
 void jupiterLoad(void) {
-#if defined (__DEBUG__)
-	printf("jupiterLoad\n");
-#endif
+	DEBUG_WORD("jupiterLoad")
 }
 
 void jupiterBVerify(void) {
-#if defined (__DEBUG__)
-	printf("jupiterBVerify\n");
-#endif
+	DEBUG_WORD("jupiterBVerify")
 }
 
 void jupiterVerify(void) {
-#if defined (__DEBUG__)
-	printf("jupiterVerify\n");
-#endif
+	DEBUG_WORD("jupiterVerify")
 }
 
 void jupiterBLoad(void) {
-#if defined (__DEBUG__)
-	printf("jupiterBLoad\n");
-#endif
+	DEBUG_WORD("jupiterBLoad")
 }
 
 void jupiterBSave(void) {
-#if defined (__DEBUG__)
-	printf("jupiterBSave\n");
-#endif
+	DEBUG_WORD("jupiterBSave")
 }
 
 void jupiterSave(void) {
-#if defined (__DEBUG__)
-	printf("jupiterSave\n");
-#endif
+	DEBUG_WORD("jupiterSave")
 }
 
 void jupiterList(void) {
-#if defined (__DEBUG__)
-	printf("jupiterList\n");
-#endif
+	DEBUG_WORD("jupiterList")
 }
 
 void jupiterEdit(void) {
-#if defined (__DEBUG__)
-	printf("jupiterEdit\n");
-#endif
+	DEBUG_WORD("jupiterEdit")
 }
 
 void jupiterForget(void) {
-#if defined (__DEBUG__)
-	printf("jupiterForget\n");
-#endif
+	DEBUG_WORD("jupiterForget")
 }
 
 void jupiterRedefine(void) {
-#if defined (__DEBUG__)
-	printf("jupiterRedefine\n");
-#endif
+	DEBUG_WORD("jupiterRedefine")
 }
 
 void jupiterExit(void) {
-#if defined (__DEBUG__)
-	printf("jupiterExit\n");
-#endif
+	DEBUG_WORD("jupiterExit")
 }
 
 void jupiterDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("jupiterDotQuote\n");
-#endif
+	DEBUG_WORD("jupiterDotQuote")
 }
 
 void jupiterParen(void) {
-#if defined (__DEBUG__)
-	printf("jupiterParen\n");
-#endif
+	DEBUG_WORD("jupiterParen")
 }
 
 void jupiterLeftBracket(void) {
-#if defined (__DEBUG__)
-	printf("jupiterLeftBracket\n");
-#endif
+	DEBUG_WORD("jupiterLeftBracket")
 }
 
 void jupiterPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("jupiterPlusLoop\n");
-#endif
+	DEBUG_WORD("jupiterPlusLoop")
 }
 
 void jupiterLoop(void) {
-#if defined (__DEBUG__)
-	printf("jupiterLoop\n");
-#endif
+	DEBUG_WORD("jupiterLoop")
 }
 
 void jupiterDo(void) {
-#if defined (__DEBUG__)
-	printf("jupiterDo\n");
-#endif
+	DEBUG_WORD("jupiterDo")
 }
 
 void jupiterUntil(void) {
-#if defined (__DEBUG__)
-	printf("jupiterUntil\n");
-#endif
+	DEBUG_WORD("jupiterUntil")
 }
 
 void jupiterRepeat(void) {
-#if defined (__DEBUG__)
-	printf("jupiterRepeat\n");
-#endif
+	DEBUG_WORD("jupiterRepeat")
 }
 
 void jupiterBegin(void) {
-#if defined (__DEBUG__)
-	printf("jupiterBegin\n");
-#endif
+	DEBUG_WORD("jupiterBegin")
 }
 
 void jupiterThen(void) {
-#if defined (__DEBUG__)
-	printf("jupiterThen\n");
-#endif
+	DEBUG_WORD("jupiterThen")
 }
 
 void jupiterElse(void) {
-#if defined (__DEBUG__)
-	printf("jupiterElse\n");
-#endif
+	DEBUG_WORD("jupiterElse")
 }
 
 void jupiterWhile(void) {
-#if defined (__DEBUG__)
-	printf("jupiterWhile\n");
-#endif
+	DEBUG_WORD("jupiterWhile")
 }
 
 void jupiterIf(void) {
-#if defined (__DEBUG__)
-	printf("jupiterIf\n");
-#endif
+	DEBUG_WORD("jupiterIf")
 }
 
 void jupiterRightBracket(void) {
-#if defined (__DEBUG__)
-	printf("jupiterRightBracket\n");
-#endif
+	DEBUG_WORD("jupiterRightBracket")
 }
 
 void jupiterLeave(void) {
-#if defined (__DEBUG__)
-	printf("jupiterLeave\n");
-#endif
+	DEBUG_WORD("jupiterLeave")
 }
 
 void jupiterJ(void) {
-#if defined (__DEBUG__)
-	printf("jupiterJ\n");
-#endif
+	DEBUG_WORD("jupiterJ")
 }
 
 void jupiterITick(void) {
-#if defined (__DEBUG__)
-	printf("jupiterITick\n");
-#endif
+	DEBUG_WORD("jupiterITick")
 }
 
 void jupiterI(void) {
-#if defined (__DEBUG__)
-	printf("jupiterI\n");
-#endif
+	DEBUG_WORD("jupiterI")
 }
 
 void jupiterDefinitions(void) {
-#if defined (__DEBUG__)
-	printf("jupiterDefinitions\n");
-#endif
+	DEBUG_WORD("jupiterDefinitions")
 }
 
 void jupiterVocabulary(void) {
-#if defined (__DEBUG__)
-	printf("jupiterVocabulary\n");
-#endif
+	DEBUG_WORD("jupiterVocabulary")
 }
 
 void jupiterImmediate(void) {
-#if defined (__DEBUG__)
-	printf("jupiterImmediate\n");
-#endif
+	DEBUG_WORD("jupiterImmediate")
 }
 
 void jupiterDoes(void) {
-#if defined (__DEBUG__)
-	printf("jupiterDoes\n");
-#endif
+	DEBUG_WORD("jupiterDoes")
 }
 
 void jupiterCompiler(void) {
-#if defined (__DEBUG__)
-	printf("jupiterCompiler\n");
-#endif
+	DEBUG_WORD("jupiterCompiler")
 }
 
 void jupiterCall(void) {
-#if defined (__DEBUG__)
-	printf("jupiterCall\n");
-#endif
+	DEBUG_WORD("jupiterCall")
 }
 
 void jupiterDefiner(void) {
-#if defined (__DEBUG__)
-	printf("jupiterDefiner\n");
-#endif
+	DEBUG_WORD("jupiterDefiner")
 }
 
 void jupiterASCII(void) {
-#if defined (__DEBUG__)
-	printf("jupiterASCII\n");
-#endif
+	DEBUG_WORD("jupiterASCII")
 }
 
 void jupiterLiteral(void) {
-#if defined (__DEBUG__)
-	printf("jupiterLiteral\n");
-#endif
+	DEBUG_WORD("jupiterLiteral")
 }
 
 void jupiterConstant(void) {
-#if defined (__DEBUG__)
-	printf("jupiterConstant\n");
-#endif
+	DEBUG_WORD("jupiterConstant")
 }
 
 void jupiterVariable(void) {
-#if defined (__DEBUG__)
-	printf("jupiterVariable\n");
-#endif
+	DEBUG_WORD("jupiterVariable")
 }
 
 void jupiterAllot(void) {
-#if defined (__DEBUG__)
-	printf("jupiterAllot\n");
-#endif
+	DEBUG_WORD("jupiterAllot")
 }
 
 void jupiterCComma(void) {
-#if defined (__DEBUG__)
-	printf("jupiterCComma\n");
-#endif
+	DEBUG_WORD("jupiterCComma")
 }
 
 void jupiterComma(void) {
-#if defined (__DEBUG__)
-	printf("jupiterComma\n");
-#endif
+	DEBUG_WORD("jupiterComma")
 }
 
 void jupiterCreate(void) {
-#if defined (__DEBUG__)
-	printf("jupiterCreate\n");
-#endif
+	DEBUG_WORD("jupiterCreate")
 }
 
 void jupiterColon(void) {
-#if defined (__DEBUG__)
-	printf("jupiterColon\n");
-#endif
+	DEBUG_WORD("jupiterColon")
 }
 
 void jupiterDecimal(void) {
-#if defined (__DEBUG__)
-	printf("jupiterDecimal\n");
-#endif
+	DEBUG_WORD("jupiterDecimal")
 }
 
 void jupiterMin(void) {
-#if defined (__DEBUG__)
-	printf("jupiterMin\n");
-#endif
+	DEBUG_WORD("jupiterMin")
 }
 
 void jupiterMax(void) {
-#if defined (__DEBUG__)
-	printf("jupiterMax\n");
-#endif
+	DEBUG_WORD("jupiterMax")
 }
 
 void jupiterXor(void) {
-#if defined (__DEBUG__)
-	printf("jupiterXor\n");
-#endif
+	DEBUG_WORD("jupiterXor")
 }
 
 void jupiterAnd(void) {
-#if defined (__DEBUG__)
-	printf("jupiterAnd\n");
-#endif
+	DEBUG_WORD("jupiterAnd")
 }
 
 void jupiterOr(void) {
-#if defined (__DEBUG__)
-	printf("jupiterOr\n");
-#endif
+	DEBUG_WORD("jupiterOr")
 }
 
 void jupiterTwoMinus(void) {
-#if defined (__DEBUG__)
-	printf("jupiterTwoMinus\n");
-#endif
+	DEBUG_WORD("jupiterTwoMinus")
 }
 
 void jupiterOneMinus(void) {
-#if defined (__DEBUG__)
-	printf("jupiterOneMinus\n");
-#endif
+	DEBUG_WORD("jupiterOneMinus")
 }
 
 void jupiterTwoPlus(void) {
-#if defined (__DEBUG__)
-	printf("jupiterTwoPlus\n");
-#endif
+	DEBUG_WORD("jupiterTwoPlus")
 }
 
 void jupiterOnePlus(void) {
-#if defined (__DEBUG__)
-	printf("jupiterOnePlus\n");
-#endif
+	DEBUG_WORD("jupiterOnePlus")
 }
 
 void jupiterDPlus(void) {
-#if defined (__DEBUG__)
-	printf("jupiterDPlus\n");
-#endif
+	DEBUG_WORD("jupiterDPlus")
 }
 
 void jupiterMinus(void) {
-#if defined (__DEBUG__)
-	printf("jupiterMinus\n");
-#endif
+	DEBUG_WORD("jupiterMinus")
 }
 
 void jupiterPlus(void) {
-#if defined (__DEBUG__)
-	printf("jupiterPlus\n");
-#endif
+	DEBUG_WORD("jupiterPlus")
 }
 
 void jupiterDNegate(void) {
-#if defined (__DEBUG__)
-	printf("jupiterDNegate\n");
-#endif
+	DEBUG_WORD("jupiterDNegate")
 }
 
 void jupiterNegate(void) {
-#if defined (__DEBUG__)
-	printf("jupiterNegate\n");
-#endif
+	DEBUG_WORD("jupiterNegate")
 }
 
 void jupiterUSlashMOD(void) {
-#if defined (__DEBUG__)
-	printf("jupiterUSlashMOD\n");
-#endif
+	DEBUG_WORD("jupiterUSlashMOD")
 }
 
 void jupiterStarSlash(void) {
-#if defined (__DEBUG__)
-	printf("jupiterStarSlash\n");
-#endif
+	DEBUG_WORD("jupiterStarSlash")
 }
 
 void jupiterStar(void) {
-#if defined (__DEBUG__)
-	printf("jupiterStar\n");
-#endif
+	DEBUG_WORD("jupiterStar")
 }
 
 void jupiterMOD(void) {
-#if defined (__DEBUG__)
-	printf("jupiterMOD\n");
-#endif
+	DEBUG_WORD("jupiterMOD")
 }
 
 void jupiterSlash(void) {
-#if defined (__DEBUG__)
-	printf("jupiterSlash\n");
-#endif
+	DEBUG_WORD("jupiterSlash")
 }
 
 void jupiterStarSlashMOD(void) {
-#if defined (__DEBUG__)
-	printf("jupiterStarSlashMOD\n");
-#endif
+	DEBUG_WORD("jupiterStarSlashMOD")
 }
 
 void jupiterSlashMOD(void) {
-#if defined (__DEBUG__)
-	printf("jupiterSlashMOD\n");
-#endif
+	DEBUG_WORD("jupiterSlashMOD")
 }
 
 void jupiterUStar(void) {
-#if defined (__DEBUG__)
-	printf("jupiterUStar\n");
-#endif
+	DEBUG_WORD("jupiterUStar")
 }
 
 void jupiterDGreater(void) {
-#if defined (__DEBUG__)
-	printf("jupiterDGreater\n");
-#endif
+	DEBUG_WORD("jupiterDGreater")
 }
 
 void jupiterUGreater(void) {
-#if defined (__DEBUG__)
-	printf("jupiterUGreater\n");
-#endif
+	DEBUG_WORD("jupiterUGreater")
 }
 
 void jupiterLess(void) {
-#if defined (__DEBUG__)
-	printf("jupiterLess\n");
-#endif
+	DEBUG_WORD("jupiterLess")
 }
 
 void jupiterGreater(void) {
-#if defined (__DEBUG__)
-	printf("jupiterGreater\n");
-#endif
+	DEBUG_WORD("jupiterGreater")
 }
 
 void jupiterEqual(void) {
-#if defined (__DEBUG__)
-	printf("jupiterEqual\n");
-#endif
+	DEBUG_WORD("jupiterEqual")
 }
 
 void jupiterZeroGreater(void) {
-#if defined (__DEBUG__)
-	printf("jupiterZeroGreater\n");
-#endif
+	DEBUG_WORD("jupiterZeroGreater")
 }
 
 void jupiterZeroLess(void) {
-#if defined (__DEBUG__)
-	printf("jupiterZeroLess\n");
-#endif
+	DEBUG_WORD("jupiterZeroLess")
 }
 
 void jupiterZeroEqual(void) {
-#if defined (__DEBUG__)
-	printf("jupiterZeroEqual\n");
-#endif
+	DEBUG_WORD("jupiterZeroEqual")
 }
 
 void jupiterAbs(void) {
-#if defined (__DEBUG__)
-	printf("jupiterAbs\n");
-#endif
+	DEBUG_WORD("jupiterAbs")
 }
 
 void jupiterOut(void) {
-#if defined (__DEBUG__)
-	printf("jupiterOut\n");
-#endif
+	DEBUG_WORD("jupiterOut")
 }
 
 void jupiterIn(void) {
-#if defined (__DEBUG__)
-	printf("jupiterIn\n");
-#endif
+	DEBUG_WORD("jupiterIn")
 }
 
 void jupiterInKey(void) {
-#if defined (__DEBUG__)
-	printf("jupiterInKey\n");
-#endif
+	DEBUG_WORD("jupiterInKey")
 }
 
 void jupiterBeep(void) {
-#if defined (__DEBUG__)
-	printf("jupiterBeep\n");
-#endif
+	DEBUG_WORD("jupiterBeep")
 }
 
 void jupiterPlot(void) {
-#if defined (__DEBUG__)
-	printf("jupiterPlot\n");
-#endif
+	DEBUG_WORD("jupiterPlot")
 }
 
 void jupiterAt(void) {
-#if defined (__DEBUG__)
-	printf("jupiterAt\n");
-#endif
+	DEBUG_WORD("jupiterAt")
 }
 
 void jupiterFDot(void) {
-#if defined (__DEBUG__)
-	printf("jupiterFDot\n");
-#endif
+	DEBUG_WORD("jupiterFDot")
 }
 
 void jupiterEmit(void) {
-#if defined (__DEBUG__)
-	printf("jupiterEmit\n");
-#endif
+	DEBUG_WORD("jupiterEmit")
 }
 
 void jupiterCR(void) {
-#if defined (__DEBUG__)
-	printf("jupiterCR\n");
-#endif
+	DEBUG_WORD("jupiterCR")
 }
 
 void jupiterSpaces(void) {
-#if defined (__DEBUG__)
-	printf("jupiterSpaces\n");
-#endif
+	DEBUG_WORD("jupiterSpaces")
 }
 
 void jupiterSpace(void) {
-#if defined (__DEBUG__)
-	printf("jupiterSpace\n");
-#endif
+	DEBUG_WORD("jupiterSpace")
 }
 
 void jupiterHold(void) {
-#if defined (__DEBUG__)
-	printf("jupiterHold\n");
-#endif
+	DEBUG_WORD("jupiterHold")
 }
 
 void jupiterCLS(void) {
-#if defined (__DEBUG__)
-	printf("jupiterCLS\n");
-#endif
+	DEBUG_WORD("jupiterCLS")
 }
 
 void jupiterNum(void) {
-#if defined (__DEBUG__)
-	printf("jupiterNum\n");
-#endif
+	DEBUG_WORD("jupiterNum")
 }
 
 void jupiterNums(void) {
-#if defined (__DEBUG__)
-	printf("jupiterNums\n");
-#endif
+	DEBUG_WORD("jupiterNums")
 }
 
 void jupiterUDot(void) {
-#if defined (__DEBUG__)
-	printf("jupiterUDot\n");
-#endif
+	DEBUG_WORD("jupiterUDot")
 }
 
 void jupiterDot(void) {
-#if defined (__DEBUG__)
-	printf("jupiterDot\n");
-#endif
+	DEBUG_WORD("jupiterDot")
 }
 
 void jupiterSign(void) {
-#if defined (__DEBUG__)
-	printf("jupiterDot\n");
-#endif
+	DEBUG_WORD("jupiterDot")
 }
 
 void jupiterNumGreater(void) {
-#if defined (__DEBUG__)
-	printf("jupiterNumGreater\n");
-#endif
+	DEBUG_WORD("jupiterNumGreater")
 }
 
 void jupiterLessNum(void) {
-#if defined (__DEBUG__)
-	printf("jupiterLessNum\n");
-#endif
+	DEBUG_WORD("jupiterLessNum")
 }
 
 void jupiterType(void) {
-#if defined (__DEBUG__)
-	printf("jupiterType\n");
-#endif
+	DEBUG_WORD("jupiterType")
 }
 
 void jupiterRoll(void) {
-#if defined (__DEBUG__)
-	printf("jupiterRoll\n");
-#endif
+	DEBUG_WORD("jupiterRoll")
 }
 
 void jupiterPick(void) {
-#if defined (__DEBUG__)
-	printf("jupiterPick\n");
-#endif
+	DEBUG_WORD("jupiterPick")
 }
 
 void jupiterOver(void) {
-#if defined (__DEBUG__)
-	printf("jupiterOver\n");
-#endif
+	DEBUG_WORD("jupiterOver")
 }
 
 void jupiterRot(void) {
-#if defined (__DEBUG__)
-	printf("jupiterRot\n");
-#endif
+	DEBUG_WORD("jupiterRot")
 }
 
 void jupiterQDup(void) {
-#if defined (__DEBUG__)
-	printf("jupiterQDup\n");
-#endif
+	DEBUG_WORD("jupiterQDup")
 }
 
 void jupiterRFrom(void) {
-#if defined (__DEBUG__)
-	printf("jupiterRFrom\n");
-#endif
+	DEBUG_WORD("jupiterRFrom")
 }
 
 void jupiterToR(void) {
-#if defined (__DEBUG__)
-	printf("jupiterToR\n");
-#endif
+	DEBUG_WORD("jupiterToR")
 }
 
 void jupiterStore(void) {
-#if defined (__DEBUG__)
-	printf("jupiterStore\n");
-#endif
+	DEBUG_WORD("jupiterStore")
 }
 
 void jupiterFetch(void) {
-#if defined (__DEBUG__)
-	printf("jupiterFetch\n");
-#endif
+	DEBUG_WORD("jupiterFetch")
 }
 
 void jupiterCStore(void) {
-#if defined (__DEBUG__)
-	printf("jupiterCStore\n");
-#endif
+	DEBUG_WORD("jupiterCStore")
 }
 
 void jupiterCFetch(void) {
-#if defined (__DEBUG__)
-	printf("jupiterCFetch\n");
-#endif
+	DEBUG_WORD("jupiterCFetch")
 }
 
 void jupiterSwap(void) {
-#if defined (__DEBUG__)
-	printf("jupiterSwap\n");
-#endif
+	DEBUG_WORD("jupiterSwap")
 }
 
 void jupiterDrop(void) {
-#if defined (__DEBUG__)
-	printf("jupiterDrop\n");
-#endif
+	DEBUG_WORD("jupiterDrop")
 }
 
 void jupiterDup(void) {
-#if defined (__DEBUG__)
-	printf("jupiterDup\n");
-#endif
+	DEBUG_WORD("jupiterDup")
 }
 
 void jupiterSlow(void) {
-#if defined (__DEBUG__)
-	printf("jupiterSlow\n");
-#endif
+	DEBUG_WORD("jupiterSlow")
 }
 
 void jupiterFast(void) {
-#if defined (__DEBUG__)
-	printf("jupiterFast\n");
-#endif
+	DEBUG_WORD("jupiterFast")
 }
 
 void jupiterInvis(void) {
-#if defined (__DEBUG__)
-	printf("jupiterInvis\n");
-#endif
+	DEBUG_WORD("jupiterInvis")
 }
 
 void jupiterVis(void) {
-#if defined (__DEBUG__)
-	printf("jupiterVis\n");
-#endif
+	DEBUG_WORD("jupiterVis")
 }
 
 void jupiterConvert(void) {
-#if defined (__DEBUG__)
-	printf("jupiterConvert\n");
-#endif
+	DEBUG_WORD("jupiterConvert")
 }
 
 void jupiterNumber(void) {
-#if defined (__DEBUG__)
-	printf("jupiterNumber\n");
-#endif
+	DEBUG_WORD("jupiterNumber")
 }
 
 void jupiterExecute(void) {
-#if defined (__DEBUG__)
-	printf("jupiterExecute\n");
-#endif
+	DEBUG_WORD("jupiterExecute")
 }
 
 void jupiterFind(void) {
-#if defined (__DEBUG__)
-	printf("jupiterFind\n");
-#endif
+	DEBUG_WORD("jupiterFind")
 }
 
 void jupiterVlist(void) {
-#if defined (__DEBUG__)
-	printf("jupiterVlist\n");
-#endif
+	DEBUG_WORD("jupiterVlist")
 }
 
 void jupiterWord(void) {
-#if defined (__DEBUG__)
-	printf("jupiterWord\n");
-#endif
+	DEBUG_WORD("jupiterWord")
 }
 
 void jupiterRetype(void) {
-#if defined (__DEBUG__)
-	printf("jupiterRetype\n");
-#endif
+	DEBUG_WORD("jupiterRetype")
 }
 
 void jupiterQuery(void) {
-#if defined (__DEBUG__)
-	printf("jupiterQuery\n");
-#endif
+	DEBUG_WORD("jupiterQuery")
 }
 
 void jupiterLine(void) {
-#if defined (__DEBUG__)
-	printf("jupiterLine\n");
-#endif
+	DEBUG_WORD("jupiterLine")
 }
 
 void jupiterPad(void) {
-#if defined (__DEBUG__)
-	printf("jupiterPad\n");
-#endif
+	DEBUG_WORD("jupiterPad")
 }
 
 void jupiterBase(void) {
-#if defined (__DEBUG__)
-	printf("jupiterBase\n");
-#endif
+	DEBUG_WORD("jupiterBase")
 }
 
 void jupiterCurrent(void) {
-#if defined (__DEBUG__)
-	printf("jupiterCurrent\n");
-#endif
+	DEBUG_WORD("jupiterCurrent")
 }
 
 void jupiterContext(void) {
-#if defined (__DEBUG__)
-	printf("jupiterContext\n");
-#endif
+	DEBUG_WORD("jupiterContext")
 }
 
 void jupiterHere(void) {
-#if defined (__DEBUG__)
-	printf("jupiterHere\n");
-#endif
+	DEBUG_WORD("jupiterHere")
 }
 
 void jupiterAbort(void) {
-#if defined (__DEBUG__)
-	printf("jupiterAbort\n");
-#endif
+	DEBUG_WORD("jupiterAbort")
 }
 
 void jupiterQuit(void) {
-#if defined (__DEBUG__)
-	printf("jupiterQuit\n");
-#endif
+	DEBUG_WORD("jupiterQuit")
 }
 
 #endif

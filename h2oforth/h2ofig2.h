@@ -6,1344 +6,898 @@
 /* Primitives */
 
 void figStore(void) {
-#if defined (__DEBUG__)
-	printf("figStore\n");
-#endif
+	DEBUG_WORD("figStore")
 }
 
 void figStoreCsp(void) {
-#if defined (__DEBUG__)
-	printf("figStoreCsp\n");
-#endif
+	DEBUG_WORD("figStoreCsp")
 }
 
 void figNum(void) {
-#if defined (__DEBUG__)
-	printf("figNum\n");
-#endif
+	DEBUG_WORD("figNum")
 }
 
 void figNumGreater(void) {
-#if defined (__DEBUG__)
-	printf("figNumGreater\n");
-#endif
+	DEBUG_WORD("figNumGreater")
 }
 
 void figNumS(void) {
-#if defined (__DEBUG__)
-	printf("figNumS\n");
-#endif
+	DEBUG_WORD("figNumS")
 }
 
 void figTick(void) {
-#if defined (__DEBUG__)
-	printf("figTick\n");
-#endif
+	DEBUG_WORD("figTick")
 }
 
 void figParen(void) {
-#if defined (__DEBUG__)
-	printf("figParen\n");
-#endif
+	DEBUG_WORD("figParen")
 }
 
 void figYDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("figYDotQuote\n");
-#endif
+	DEBUG_WORD("figYDotQuote")
 }
 
 void figYSemicolonCode(void) {
-#if defined (__DEBUG__)
-	printf("figYSemicolonCode\n");
-#endif
+	DEBUG_WORD("figYSemicolonCode")
 }
 
 void figYPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("figYPlusLoop\n");
-#endif
+	DEBUG_WORD("figYPlusLoop")
 }
 
 void figYAbort(void) {
-#if defined (__DEBUG__)
-	printf("figYAbort\n");
-#endif
+	DEBUG_WORD("figYAbort")
 }
 
 void figYDo(void) {
-#if defined (__DEBUG__)
-	printf("figYDo\n");
-#endif
+	DEBUG_WORD("figYDo")
 }
 
 void figYFind(void) {
-#if defined (__DEBUG__)
-	printf("figYFind\n");
-#endif
+	DEBUG_WORD("figYFind")
 }
 
 void figYLine(void) {
-#if defined (__DEBUG__)
-	printf("figYLine\n");
-#endif
+	DEBUG_WORD("figYLine")
 }
 
 void figYLoop(void) {
-#if defined (__DEBUG__)
-	printf("figYLoop\n");
-#endif
+	DEBUG_WORD("figYLoop")
 }
 
 void figYNumber(void) {
-#if defined (__DEBUG__)
-	printf("figYNumber\n");
-#endif
+	DEBUG_WORD("figYNumber")
 }
 
 void figStar(void) {
-#if defined (__DEBUG__)
-	printf("figStar\n");
-#endif
+	DEBUG_WORD("figStar")
 }
 
 void figStarSlash(void) {
-#if defined (__DEBUG__)
-	printf("figStarSlash\n");
-#endif
+	DEBUG_WORD("figStarSlash")
 }
 
 void figStarSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("figStarSlashMod\n");
-#endif
+	DEBUG_WORD("figStarSlashMod")
 }
 
 void figPlus(void) {
-#if defined (__DEBUG__)
-	printf("figPlus\n");
-#endif
+	DEBUG_WORD("figPlus")
 }
 
 void figPlusStore(void) {
-#if defined (__DEBUG__)
-	printf("figPlusStore\n");
-#endif
+	DEBUG_WORD("figPlusStore")
 }
 
 void figPlusMinus(void) {
-#if defined (__DEBUG__)
-	printf("figPlusMinus\n");
-#endif
+	DEBUG_WORD("figPlusMinus")
 }
 
 void figPlusBuf(void) {
-#if defined (__DEBUG__)
-	printf("figPlusBuf\n");
-#endif
+	DEBUG_WORD("figPlusBuf")
 }
 
 void figPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("figPlusLoop\n");
-#endif
+	DEBUG_WORD("figPlusLoop")
 }
 
 void figOrigin(void) {
-#if defined (__DEBUG__)
-	printf("figOrigin\n");
-#endif
+	DEBUG_WORD("figOrigin")
 }
 
 void figComma(void) {
-#if defined (__DEBUG__)
-	printf("figComma\n");
-#endif
+	DEBUG_WORD("figComma")
 }
 
 void figMinus(void) {
-#if defined (__DEBUG__)
-	printf("figMinus\n");
-#endif
+	DEBUG_WORD("figMinus")
 }
 
 void figTo(void) {
-#if defined (__DEBUG__)
-	printf("figTo\n");
-#endif
+	DEBUG_WORD("figTo")
 }
 
 void figMinusDup(void) {
-#if defined (__DEBUG__)
-	printf("figMinusDup\n");
-#endif
+	DEBUG_WORD("figMinusDup")
 }
 
 void figFind(void) {
-#if defined (__DEBUG__)
-	printf("figFind\n");
-#endif
+	DEBUG_WORD("figFind")
 }
 
 void figTrailing(void) {
-#if defined (__DEBUG__)
-	printf("figTrailing\n");
-#endif
+	DEBUG_WORD("figTrailing")
 }
 
 void figDot(void) {
-#if defined (__DEBUG__)
-	printf("figDot\n");
-#endif
+	DEBUG_WORD("figDot")
 }
 
 void figDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("figDotQuote\n");
-#endif
+	DEBUG_WORD("figDotQuote")
 }
 
 void figDotLine(void) {
-#if defined (__DEBUG__)
-	printf("figDotLine\n");
-#endif
+	DEBUG_WORD("figDotLine")
 }
 
 void figDotR(void) {
-#if defined (__DEBUG__)
-	printf("figDotR\n");
-#endif
+	DEBUG_WORD("figDotR")
 }
 
 void figSlash(void) {
-#if defined (__DEBUG__)
-	printf("figSlash\n");
-#endif
+	DEBUG_WORD("figSlash")
 }
 
 void figSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("figSlashMod\n");
-#endif
+	DEBUG_WORD("figSlashMod")
 }
 
 void figZero(void) {
-#if defined (__DEBUG__)
-	printf("figZero\n");
-#endif
+	DEBUG_WORD("figZero")
 }
 
 void figOne(void) {
-#if defined (__DEBUG__)
-	printf("figOne\n");
-#endif
+	DEBUG_WORD("figOne")
 }
 
 void figTwo(void) {
-#if defined (__DEBUG__)
-	printf("figTwo\n");
-#endif
+	DEBUG_WORD("figTwo")
 }
 
 void figThree(void) {
-#if defined (__DEBUG__)
-	printf("figThree\n");
-#endif
+	DEBUG_WORD("figThree")
 }
 
 void figZeroLess(void) {
-#if defined (__DEBUG__)
-	printf("figZeroLess\n");
-#endif
+	DEBUG_WORD("figZeroLess")
 }
 
 void figZeroEqual(void) {
-#if defined (__DEBUG__)
-	printf("figZeroEqual\n");
-#endif
+	DEBUG_WORD("figZeroEqual")
 }
 
 void figZeroBranch(void) {
-#if defined (__DEBUG__)
-	printf("figZeroBranch\n");
-#endif
+	DEBUG_WORD("figZeroBranch")
 }
 
 void figOnePlus(void) {
-#if defined (__DEBUG__)
-	printf("figOnePlus\n");
-#endif
+	DEBUG_WORD("figOnePlus")
 }
 
 void figTwoPlus(void) {
-#if defined (__DEBUG__)
-	printf("figTwoPlus\n");
-#endif
+	DEBUG_WORD("figTwoPlus")
 }
 
 void figColon(void) {
-#if defined (__DEBUG__)
-	printf("figColon\n");
-#endif
+	DEBUG_WORD("figColon")
 }
 
 void figSemicolon(void) {
-#if defined (__DEBUG__)
-	printf("figSemicolon\n");
-#endif
+	DEBUG_WORD("figSemicolon")
 }
 
 void figSemicolonCode(void) {
-#if defined (__DEBUG__)
-	printf("figSemicolonCode\n");
-#endif
+	DEBUG_WORD("figSemicolonCode")
 }
 
 void figSemicolonS(void) {
-#if defined (__DEBUG__)
-	printf("figSemicolonS\n");
-#endif
+	DEBUG_WORD("figSemicolonS")
 }
 
 void figLess(void) {
-#if defined (__DEBUG__)
-	printf("figLess\n");
-#endif
+	DEBUG_WORD("figLess")
 }
 
 void figLessNum(void) {
-#if defined (__DEBUG__)
-	printf("figLessNum\n");
-#endif
+	DEBUG_WORD("figLessNum")
 }
 
 void figBuilds(void) {
-#if defined (__DEBUG__)
-	printf("figBuilds\n");
-#endif
+	DEBUG_WORD("figBuilds")
 }
 
 void figEqual(void) {
-#if defined (__DEBUG__)
-	printf("figEqual\n");
-#endif
+	DEBUG_WORD("figEqual")
 }
 
 void figGreater(void) {
-#if defined (__DEBUG__)
-	printf("figGreater\n");
-#endif
+	DEBUG_WORD("figGreater")
 }
 
 void figToR(void) {
-#if defined (__DEBUG__)
-	printf("figToR\n");
-#endif
+	DEBUG_WORD("figToR")
 }
 
 void figQ(void) {
-#if defined (__DEBUG__)
-	printf("figQ\n");
-#endif
+	DEBUG_WORD("figQ")
 }
 
 void figQComp(void) {
-#if defined (__DEBUG__)
-	printf("figQComp\n");
-#endif
+	DEBUG_WORD("figQComp")
 }
 
 void figQCsp(void) {
-#if defined (__DEBUG__)
-	printf("figQCsp\n");
-#endif
+	DEBUG_WORD("figQCsp")
 }
 
 void figQError(void) {
-#if defined (__DEBUG__)
-	printf("figQError\n");
-#endif
+	DEBUG_WORD("figQError")
 }
 
 void figQExec(void) {
-#if defined (__DEBUG__)
-	printf("figQExec\n");
-#endif
+	DEBUG_WORD("figQExec")
 }
 
 void figQLoading(void) {
-#if defined (__DEBUG__)
-	printf("figQLoading\n");
-#endif
+	DEBUG_WORD("figQLoading")
 }
 
 void figQPairs(void) {
-#if defined (__DEBUG__)
-	printf("figQPairs\n");
-#endif
+	DEBUG_WORD("figQPairs")
 }
 
 void figQStack(void) {
-#if defined (__DEBUG__)
-	printf("figQStack\n");
-#endif
+	DEBUG_WORD("figQStack")
 }
 
 void figQTerminal(void) {
-#if defined (__DEBUG__)
-	printf("figQTerminal\n");
-#endif
+	DEBUG_WORD("figQTerminal")
 }
 
 void figFetch(void) {
-#if defined (__DEBUG__)
-	printf("figFetch\n");
-#endif
+	DEBUG_WORD("figFetch")
 }
 
 void figAbort(void) {
-#if defined (__DEBUG__)
-	printf("figAbort\n");
-#endif
+	DEBUG_WORD("figAbort")
 }
 
 void figAbs(void) {
-#if defined (__DEBUG__)
-	printf("figAbs\n");
-#endif
+	DEBUG_WORD("figAbs")
 }
 
 void figAgain(void) {
-#if defined (__DEBUG__)
-	printf("figAgain\n");
-#endif
+	DEBUG_WORD("figAgain")
 }
 
 void figAllot(void) {
-#if defined (__DEBUG__)
-	printf("figAllot\n");
-#endif
+	DEBUG_WORD("figAllot")
 }
 
 void figAnd(void) {
-#if defined (__DEBUG__)
-	printf("figAnd\n");
-#endif
+	DEBUG_WORD("figAnd")
 }
 
 void figBSlashBuf(void) {
-#if defined (__DEBUG__)
-	printf("figBSlashBuf\n");
-#endif
+	DEBUG_WORD("figBSlashBuf")
 }
 
 void figBSlashScr(void) {
-#if defined (__DEBUG__)
-	printf("figBSlashScr\n");
-#endif
+	DEBUG_WORD("figBSlashScr")
 }
 
 void figBack(void) {
-#if defined (__DEBUG__)
-	printf("figBack\n");
-#endif
+	DEBUG_WORD("figBack")
 }
 
 void figBase(void) {
-#if defined (__DEBUG__)
-	printf("figBase\n");
-#endif
+	DEBUG_WORD("figBase")
 }
 
 void figBegin(void) {
-#if defined (__DEBUG__)
-	printf("figBegin\n");
-#endif
+	DEBUG_WORD("figBegin")
 }
 
 void figBl(void) {
-#if defined (__DEBUG__)
-	printf("figBl\n");
-#endif
+	DEBUG_WORD("figBl")
 }
 
 void figBlanks(void) {
-#if defined (__DEBUG__)
-	printf("figBlanks\n");
-#endif
+	DEBUG_WORD("figBlanks")
 }
 
 void figBlk(void) {
-#if defined (__DEBUG__)
-	printf("figBlk\n");
-#endif
+	DEBUG_WORD("figBlk")
 }
 
 void figBlock(void) {
-#if defined (__DEBUG__)
-	printf("figBlock\n");
-#endif
+	DEBUG_WORD("figBlock")
 }
 
 void figBlockRead(void) {
-#if defined (__DEBUG__)
-	printf("figBlockRead\n");
-#endif
+	DEBUG_WORD("figBlockRead")
 }
 
 void figBlockWrite(void) {
-#if defined (__DEBUG__)
-	printf("figBlockWrite\n");
-#endif
+	DEBUG_WORD("figBlockWrite")
 }
 
 void figBranch(void) {
-#if defined (__DEBUG__)
-	printf("figBranch\n");
-#endif
+	DEBUG_WORD("figBranch")
 }
 
 void figBuffer(void) {
-#if defined (__DEBUG__)
-	printf("figBuffer\n");
-#endif
+	DEBUG_WORD("figBuffer")
 }
 
 void figCStore(void) {
-#if defined (__DEBUG__)
-	printf("figCStore\n");
-#endif
+	DEBUG_WORD("figCStore")
 }
 
 void figCComma(void) {
-#if defined (__DEBUG__)
-	printf("figCComma\n");
-#endif
+	DEBUG_WORD("figCComma")
 }
 
 void figCFetch(void) {
-#if defined (__DEBUG__)
-	printf("figCFetch\n");
-#endif
+	DEBUG_WORD("figCFetch")
 }
 
 void figCfa(void) {
-#if defined (__DEBUG__)
-	printf("figCfa\n");
-#endif
+	DEBUG_WORD("figCfa")
 }
 
 void figCMove(void) {
-#if defined (__DEBUG__)
-	printf("figCMove\n");
-#endif
+	DEBUG_WORD("figCMove")
 }
 
 void figCold(void) {
-#if defined (__DEBUG__)
-	printf("figCold\n");
-#endif
+	DEBUG_WORD("figCold")
 }
 
 void figCompile(void) {
-#if defined (__DEBUG__)
-	printf("figCompile\n");
-#endif
+	DEBUG_WORD("figCompile")
 }
 
 void figConstant(void) {
-#if defined (__DEBUG__)
-	printf("figConstant\n");
-#endif
+	DEBUG_WORD("figConstant")
 }
 
 void figContext(void) {
-#if defined (__DEBUG__)
-	printf("figContext\n");
-#endif
+	DEBUG_WORD("figContext")
 }
 
 void figCount(void) {
-#if defined (__DEBUG__)
-	printf("figCount\n");
-#endif
+	DEBUG_WORD("figCount")
 }
 
 void figCr(void) {
-#if defined (__DEBUG__)
-	printf("figCr\n");
-#endif
+	DEBUG_WORD("figCr")
 }
 
 void figCreate(void) {
-#if defined (__DEBUG__)
-	printf("figCreate\n");
-#endif
+	DEBUG_WORD("figCreate")
 }
 
 void figCsp(void) {
-#if defined (__DEBUG__)
-	printf("figCsp\n");
-#endif
+	DEBUG_WORD("figCsp")
 }
 
 void figDPlus(void) {
-#if defined (__DEBUG__)
-	printf("figDPlus\n");
-#endif
+	DEBUG_WORD("figDPlus")
 }
 
 void figDPlusMinus(void) {
-#if defined (__DEBUG__)
-	printf("figAbsrscDPlusMinus\n");
-#endif
+	DEBUG_WORD("figAbsrscDPlusMinus")
 }
 
 void figDDot(void) {
-#if defined (__DEBUG__)
-	printf("figDDot\n");
-#endif
+	DEBUG_WORD("figDDot")
 }
 
 void figDDotR(void) {
-#if defined (__DEBUG__)
-	printf("figDDotR\n");
-#endif
+	DEBUG_WORD("figDDotR")
 }
 
 void figDAbs(void) {
-#if defined (__DEBUG__)
-	printf("figDAbs\n");
-#endif
+	DEBUG_WORD("figDAbs")
 }
 
 void figDecimal(void) {
-#if defined (__DEBUG__)
-	printf("figDecimal\n");
-#endif
+	DEBUG_WORD("figDecimal")
 }
 
 void figDefinitions(void) {
-#if defined (__DEBUG__)
-	printf("figDefinitions\n");
-#endif
+	DEBUG_WORD("figDefinitions")
 }
 
 void figDigit(void) {
-#if defined (__DEBUG__)
-	printf("figDigit\n");
-#endif
+	DEBUG_WORD("figDigit")
 }
 
 void figDList(void) {
-#if defined (__DEBUG__)
-	printf("figDList\n");
-#endif
+	DEBUG_WORD("figDList")
 }
 
 void figDLiteral(void) {
-#if defined (__DEBUG__)
-	printf("figDLiteral\n");
-#endif
+	DEBUG_WORD("figDLiteral")
 }
 
 void figDMinus(void) {
-#if defined (__DEBUG__)
-	printf("figDMinus\n");
-#endif
+	DEBUG_WORD("figDMinus")
 }
 
 void figDo(void) {
-#if defined (__DEBUG__)
-	printf("figDo\n");
-#endif
+	DEBUG_WORD("figDo")
 }
 
 void figDoes(void) {
-#if defined (__DEBUG__)
-	printf("figDoes\n");
-#endif
+	DEBUG_WORD("figDoes")
 }
 
 void figDP(void) {
-#if defined (__DEBUG__)
-	printf("figDP\n");
-#endif
+	DEBUG_WORD("figDP")
 }
 
 void figDpl(void) {
-#if defined (__DEBUG__)
-	printf("figDpl\n");
-#endif
+	DEBUG_WORD("figDpl")
 }
 
 void figDr0(void) {
-#if defined (__DEBUG__)
-	printf("figDr0\n");
-#endif
+	DEBUG_WORD("figDr0")
 }
 
 void figDr1(void) {
-#if defined (__DEBUG__)
-	printf("figDr1\n");
-#endif
+	DEBUG_WORD("figDr1")
 }
 
 void figDrop(void) {
-#if defined (__DEBUG__)
-	printf("figDrop\n");
-#endif
+	DEBUG_WORD("figDrop")
 }
 
 void figDump(void) {
-#if defined (__DEBUG__)
-	printf("figDump\n");
-#endif
+	DEBUG_WORD("figDump")
 }
 
 void figDup(void) {
-#if defined (__DEBUG__)
-	printf("figDup\n");
-#endif
+	DEBUG_WORD("figDup")
 }
 
 void figElse(void) {
-#if defined (__DEBUG__)
-	printf("figElse\n");
-#endif
+	DEBUG_WORD("figElse")
 }
 
 void figEmit(void) {
-#if defined (__DEBUG__)
-	printf("figEmit\n");
-#endif
+	DEBUG_WORD("figEmit")
 }
 
 void figEmptyBuffers(void) {
-#if defined (__DEBUG__)
-	printf("figEmptyBuffers\n");
-#endif
+	DEBUG_WORD("figEmptyBuffers")
 }
 
 void figEnclose(void) {
-#if defined (__DEBUG__)
-	printf("figEnclose\n");
-#endif
+	DEBUG_WORD("figEnclose")
 }
 
 void figEnd(void) {
-#if defined (__DEBUG__)
-	printf("figEnd\n");
-#endif
+	DEBUG_WORD("figEnd")
 }
 
 void figEndIf(void) {
-#if defined (__DEBUG__)
-	printf("figEndIf\n");
-#endif
+	DEBUG_WORD("figEndIf")
 }
 
 void figErase(void) {
-#if defined (__DEBUG__)
-	printf("figErase\n");
-#endif
+	DEBUG_WORD("figErase")
 }
 
 void figError(void) {
-#if defined (__DEBUG__)
-	printf("figError\n");
-#endif
+	DEBUG_WORD("figError")
 }
 
 void figExecute(void) {
-#if defined (__DEBUG__)
-	printf("figExecute\n");
-#endif
+	DEBUG_WORD("figExecute")
 }
 
 void figExpect(void) {
-#if defined (__DEBUG__)
-	printf("figExpect\n");
-#endif
+	DEBUG_WORD("figExpect")
 }
 
 void figFence(void) {
-#if defined (__DEBUG__)
-	printf("figFence\n");
-#endif
+	DEBUG_WORD("figFence")
 }
 
 void figFill(void) {
-#if defined (__DEBUG__)
-	printf("figFill\n");
-#endif
+	DEBUG_WORD("figFill")
 }
 
 void figFirst(void) {
-#if defined (__DEBUG__)
-	printf("figFirst\n");
-#endif
+	DEBUG_WORD("figFirst")
 }
 
 void figFld(void) {
-#if defined (__DEBUG__)
-	printf("figFld\n");
-#endif
+	DEBUG_WORD("figFld")
 }
 
 void figForget(void) {
-#if defined (__DEBUG__)
-	printf("figForget\n");
-#endif
+	DEBUG_WORD("figForget")
 }
 
 void figForth(void) {
-#if defined (__DEBUG__)
-	printf("figForth\n");
-#endif
+	DEBUG_WORD("figForth")
 }
 
 void figHere(void) {
-#if defined (__DEBUG__)
-	printf("figHere\n");
-#endif
+	DEBUG_WORD("figHere")
 }
 
 void figHex(void) {
-#if defined (__DEBUG__)
-	printf("figHex\n");
-#endif
+	DEBUG_WORD("figHex")
 }
 
 void figHld(void) {
-#if defined (__DEBUG__)
-	printf("figHld\n");
-#endif
+	DEBUG_WORD("figHld")
 }
 
 void figHold(void) {
-#if defined (__DEBUG__)
-	printf("figHold\n");
-#endif
+	DEBUG_WORD("figHold")
 }
 
 void figI(void) {
-#if defined (__DEBUG__)
-	printf("figI\n");
-#endif
+	DEBUG_WORD("figI")
 }
 
 void figIDDot(void) {
-#if defined (__DEBUG__)
-	printf("figIDDot\n");
-#endif
+	DEBUG_WORD("figIDDot")
 }
 
 void figIf(void) {
-#if defined (__DEBUG__)
-	printf("figIf\n");
-#endif
+	DEBUG_WORD("figIf")
 }
 
 void figImmediate(void) {
-#if defined (__DEBUG__)
-	printf("figImmediate\n");
-#endif
+	DEBUG_WORD("figImmediate")
 }
 
 void figIn(void) {
-#if defined (__DEBUG__)
-	printf("figIn\n");
-#endif
+	DEBUG_WORD("figIn")
 }
 
 void figIndex(void) {
-#if defined (__DEBUG__)
-	printf("figIndex\n");
-#endif
+	DEBUG_WORD("figIndex")
 }
 
 void figInterpret(void) {
-#if defined (__DEBUG__)
-	printf("figInterpret\n");
-#endif
+	DEBUG_WORD("figInterpret")
 }
 
 void figKey(void) {
-#if defined (__DEBUG__)
-	printf("figKey\n");
-#endif
+	DEBUG_WORD("figKey")
 }
 
 void figLatest(void) {
-#if defined (__DEBUG__)
-	printf("figLatest\n");
-#endif
+	DEBUG_WORD("figLatest")
 }
 
 void figLeave(void) {
-#if defined (__DEBUG__)
-	printf("figLeave\n");
-#endif
+	DEBUG_WORD("figLeave")
 }
 
 void figLfa(void) {
-#if defined (__DEBUG__)
-	printf("figLfa\n");
-#endif
+	DEBUG_WORD("figLfa")
 }
 
 void figLimit(void) {
-#if defined (__DEBUG__)
-	printf("figLimit\n");
-#endif
+	DEBUG_WORD("figLimit")
 }
 
 void figList(void) {
-#if defined (__DEBUG__)
-	printf("figList\n");
-#endif
+	DEBUG_WORD("figList")
 }
 
 void figLit(void) {
-#if defined (__DEBUG__)
-	printf("figLit\n");
-#endif
+	DEBUG_WORD("figLit")
 }
 
 void figLiteral(void) {
-#if defined (__DEBUG__)
-	printf("figLiteral\n");
-#endif
+	DEBUG_WORD("figLiteral")
 }
 
 void figLoad(void) {
-#if defined (__DEBUG__)
-	printf("figLoad\n");
-#endif
+	DEBUG_WORD("figLoad")
 }
 
 void figLoop(void) {
-#if defined (__DEBUG__)
-	printf("figLoop\n");
-#endif
+	DEBUG_WORD("figLoop")
 }
 
 void figMStar(void) {
-#if defined (__DEBUG__)
-	printf("figMStar\n");
-#endif
+	DEBUG_WORD("figMStar")
 }
 
 void figMSlash(void) {
-#if defined (__DEBUG__)
-	printf("figMSlash\n");
-#endif
+	DEBUG_WORD("figMSlash")
 }
 
 void figMSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("figMSlashMod\n");
-#endif
+	DEBUG_WORD("figMSlashMod")
 }
 
 void figMax(void) {
-#if defined (__DEBUG__)
-	printf("figMax\n");
-#endif
+	DEBUG_WORD("figMax")
 }
 
 void figMessage(void) {
-#if defined (__DEBUG__)
-	printf("figMessage\n");
-#endif
+	DEBUG_WORD("figMessage")
 }
 
 void figMin(void) {
-#if defined (__DEBUG__)
-	printf("figMin\n");
-#endif
+	DEBUG_WORD("figMin")
 }
 
 void figMod(void) {
-#if defined (__DEBUG__)
-	printf("figMod\n");
-#endif
+	DEBUG_WORD("figMod")
 }
 
 void figMon(void) {
-#if defined (__DEBUG__)
-	printf("figMon\n");
-#endif
+	DEBUG_WORD("figMon")
 }
 
 void figMove(void) {
-#if defined (__DEBUG__)
-	printf("figMove\n");
-#endif
+	DEBUG_WORD("figMove")
 }
 
 void figNext(void) {
-#if defined (__DEBUG__)
-	printf("figNext\n");
-#endif
+	DEBUG_WORD("figNext")
 }
 
 
 
 void figNumber(void) {
-#if defined (__DEBUG__)
-	printf("figNumber\n");
-#endif
+	DEBUG_WORD("figNumber")
 }
 
 void figOffset(void) {
-#if defined (__DEBUG__)
-	printf("figOffset\n");
-#endif
+	DEBUG_WORD("figOffset")
 }
 
 void figOr(void) {
-#if defined (__DEBUG__)
-	printf("figOr\n");
-#endif
+	DEBUG_WORD("figOr")
 }
 
 void figOut(void) {
-#if defined (__DEBUG__)
-	printf("figOut\n");
-#endif
+	DEBUG_WORD("figOut")
 }
 
 void figOver(void) {
-#if defined (__DEBUG__)
-	printf("figOver\n");
-#endif
+	DEBUG_WORD("figOver")
 }
 
 void figPad(void) {
-#if defined (__DEBUG__)
-	printf("figPad\n");
-#endif
+	DEBUG_WORD("figPad")
 }
 
 void figNfa(void) {
-#if defined (__DEBUG__)
-	printf("figNfa\n");
-#endif
+	DEBUG_WORD("figNfa")
 }
 
 void figPfa(void) {
-#if defined (__DEBUG__)
-	printf("figPfa\n");
-#endif
+	DEBUG_WORD("figPfa")
 }
 
 void figPop(void) {
-#if defined (__DEBUG__)
-	printf("figPop\n");
-#endif
+	DEBUG_WORD("figPop")
 }
 
 void figPrev(void) {
-#if defined (__DEBUG__)
-	printf("figPrev\n");
-#endif
+	DEBUG_WORD("figPrev")
 }
 
 void figPush(void) {
-#if defined (__DEBUG__)
-	printf("figPush\n");
-#endif
+	DEBUG_WORD("figPush")
 }
 
 void figPut(void) {
-#if defined (__DEBUG__)
-	printf("figPut\n");
-#endif
+	DEBUG_WORD("figPut")
 }
 
 void figQuery(void) {
-#if defined (__DEBUG__)
-	printf("figQuery\n");
-#endif
+	DEBUG_WORD("figQuery")
 }
 
 void figQuit(void) {
-#if defined (__DEBUG__)
-	printf("figQuit\n");
-#endif
+	DEBUG_WORD("figQuit")
 }
 
 void figR(void) {
-#if defined (__DEBUG__)
-	printf("figR\n");
-#endif
+	DEBUG_WORD("figR")
 }
 
 void figRNum(void) {
-#if defined (__DEBUG__)
-	printf("figRNum\n");
-#endif
+	DEBUG_WORD("figRNum")
 }
 
 void figRSlashW(void) {
-#if defined (__DEBUG__)
-	printf("figRSlashW\n");
-#endif
+	DEBUG_WORD("figRSlashW")
 }
 
 void figRFrom(void) {
-#if defined (__DEBUG__)
-	printf("figRFrom\n");
-#endif
+	DEBUG_WORD("figRFrom")
 }
 
 void figR0(void) {
-#if defined (__DEBUG__)
-	printf("figR0L\n");
-#endif
+	DEBUG_WORD("figR0L")
 }
 
 void figRepeat(void) {
-#if defined (__DEBUG__)
-	printf("figRepeat\n");
-#endif
+	DEBUG_WORD("figRepeat")
 }
 
 void figRot(void) {
-#if defined (__DEBUG__)
-	printf("figRot\n");
-#endif
+	DEBUG_WORD("figRot")
 }
 
 void figRPStore(void) {
-#if defined (__DEBUG__)
-	printf("figRPStore\n");
-#endif
+	DEBUG_WORD("figRPStore")
 }
 
 void figSToD(void) {
-#if defined (__DEBUG__)
-	printf("figSToD\n");
-#endif
+	DEBUG_WORD("figSToD")
 }
 
 void figS0(void) {
-#if defined (__DEBUG__)
-	printf("figS0\n");
-#endif
+	DEBUG_WORD("figS0")
 }
 
 void figScr(void) {
-#if defined (__DEBUG__)
-	printf("figScr\n");
-#endif
+	DEBUG_WORD("figScr")
 }
 
 void figSign(void) {
-#if defined (__DEBUG__)
-	printf("figSign\n");
-#endif
+	DEBUG_WORD("figSign")
 }
 
 void figSmudge(void) {
-#if defined (__DEBUG__)
-	printf("figSmudge\n");
-#endif
+	DEBUG_WORD("figSmudge")
 }
 
 void figSPStore(void) {
-#if defined (__DEBUG__)
-	printf("figSPStore\n");
-#endif
+	DEBUG_WORD("figSPStore")
 }
 
 void figSPFetch(void) {
-#if defined (__DEBUG__)
-	printf("figSPFetch\n");
-#endif
+	DEBUG_WORD("figSPFetch")
 }
 
 void figSpace(void) {
-#if defined (__DEBUG__)
-	printf("figSpace\n");
-#endif
+	DEBUG_WORD("figSpace")
 }
 
 void figSpaces(void) {
-#if defined (__DEBUG__)
-	printf("figSpaces\n");
-#endif
+	DEBUG_WORD("figSpaces")
 }
 
 
 void figState(void) {
-#if defined (__DEBUG__)
-	printf("figState\n");
-#endif
+	DEBUG_WORD("figState")
 }
 
 void figSwap(void) {
-#if defined (__DEBUG__)
-	printf("figSwap\n");
-#endif
+	DEBUG_WORD("figSwap")
 }
 
 void figTask(void) {
-#if defined (__DEBUG__)
-	printf("figTask\n");
-#endif
+	DEBUG_WORD("figTask")
 }
 
 void figThen(void) {
-#if defined (__DEBUG__)
-	printf("figThen\n");
-#endif
+	DEBUG_WORD("figThen")
 }
 
 void figTib(void) {
-#if defined (__DEBUG__)
-	printf("figTib\n");
-#endif
+	DEBUG_WORD("figTib")
 }
 
 void figToggle(void) {
-#if defined (__DEBUG__)
-	printf("figToggle\n");
-#endif
+	DEBUG_WORD("figToggle")
 }
 
 void figTraverse(void) {
-#if defined (__DEBUG__)
-	printf("figTraverse\n");
-#endif
+	DEBUG_WORD("figTraverse")
 }
 
 void figTriad(void) {
-#if defined (__DEBUG__)
-	printf("figTriad\n");
-#endif
+	DEBUG_WORD("figTriad")
 }
 
 void figType(void) {
-#if defined (__DEBUG__)
-	printf("figType\n");
-#endif
+	DEBUG_WORD("figType")
 }
 
 void figUStar(void) {
-#if defined (__DEBUG__)
-	printf("figUStar\n");
-#endif
+	DEBUG_WORD("figUStar")
 }
 
 void figUSlash(void) {
-#if defined (__DEBUG__)
-	printf("figUSlash\n");
-#endif
+	DEBUG_WORD("figUSlash")
 }
 
 void figUntil(void) {
-#if defined (__DEBUG__)
-	printf("figUntil\n");
-#endif
+	DEBUG_WORD("figUntil")
 }
 
 void figUpdate(void) {
-#if defined (__DEBUG__)
-	printf("figUpdate\n");
-#endif
+	DEBUG_WORD("figUpdate")
 }
 
 void figUse(void) {
-#if defined (__DEBUG__)
-	printf("figUse\n");
-#endif
+	DEBUG_WORD("figUse")
 }
 
 void figUser(void) {
-#if defined (__DEBUG__)
-	printf("figUser\n");
-#endif
+	DEBUG_WORD("figUser")
 }
 
 void figVariable(void) {
-#if defined (__DEBUG__)
-	printf("figVariable\n");
-#endif
+	DEBUG_WORD("figVariable")
 }
 
 void figVocLink(void) {
-#if defined (__DEBUG__)
-	printf("figVocLink\n");
-#endif
+	DEBUG_WORD("figVocLink")
 }
 
 void figVocabulary(void) {
-#if defined (__DEBUG__)
-	printf("figVocabulary\n");
-#endif
+	DEBUG_WORD("figVocabulary")
 }
 
 void figVlist(void) {
-#if defined (__DEBUG__)
-	printf("figVlist\n");
-#endif
+	DEBUG_WORD("figVlist")
 }
 
 void figWarning(void) {
-#if defined (__DEBUG__)
-	printf("figWarning\n");
-#endif
+	DEBUG_WORD("figWarning")
 }
 
 void figWhile(void) {
-#if defined (__DEBUG__)
-	printf("figWhile\n");
-#endif
+	DEBUG_WORD("figWhile")
 }
 
 void figWidth(void) {
-#if defined (__DEBUG__)
-	printf("figWidth\n");
-#endif
+	DEBUG_WORD("figWidth")
 }
 
 void figWord(void) {
-#if defined (__DEBUG__)
-	printf("figWord\n");
-#endif
+	DEBUG_WORD("figWord")
 }
 
 void figX(void) {
-#if defined (__DEBUG__)
-	printf("figX\n");
-#endif
+	DEBUG_WORD("figX")
 }
 
 void figXor(void) {
-#if defined (__DEBUG__)
-	printf("figXor\n");
-#endif
+	DEBUG_WORD("figXor")
 }
 
 void figRightBracket(void) {
-#if defined (__DEBUG__)
-	printf("figRightBracket\n");
-#endif
+	DEBUG_WORD("figRightBracket")
 }
 
 void figXCompile(void) {
-#if defined (__DEBUG__)
-	printf("figXCompile\n");
-#endif
+	DEBUG_WORD("figXCompile")
 }
 
 void figLeftBracket(void) {
-#if defined (__DEBUG__)
-	printf("figLeftBracket\n");
-#endif
+	DEBUG_WORD("figLeftBracket")
 }
 
 #endif

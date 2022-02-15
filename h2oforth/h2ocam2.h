@@ -6,1409 +6,941 @@
 /* Primitives */
 
 void camelExit(void) {
-#if defined (__DEBUG__)
-	printf("camelExit\n");
-#endif
+	DEBUG_WORD("camelExit")
 }
 
 void camelExecute(void) {
-#if defined (__DEBUG__)
-	printf("camelExecute\n");
-#endif
+	DEBUG_WORD("camelExecute")
 }
 
 void camelLit(void) {
-#if defined (__DEBUG__)
-	printf("camelLit\n");
-#endif
+	DEBUG_WORD("camelLit")
 }
 
 void camelDup(void) {
-#if defined (__DEBUG__)
-	printf("camelDup\n");
-#endif
+	DEBUG_WORD("camelDup")
 }
 
 void camelQDup(void) {
-#if defined (__DEBUG__)
-	printf("camelQDup\n");
-#endif
+	DEBUG_WORD("camelQDup")
 }
 
 void camelDrop(void) {
-#if defined (__DEBUG__)
-	printf("camelDrop\n");
-#endif
+	DEBUG_WORD("camelDrop")
 }
 
 void camelSwap(void) {
-#if defined (__DEBUG__)
-	printf("camelSwap\n");
-#endif
+	DEBUG_WORD("camelSwap")
 }
 
 void camelOver(void) {
-#if defined (__DEBUG__)
-	printf("camelOver\n");
-#endif
+	DEBUG_WORD("camelOver")
 }
 
 void camelRot(void) {
-#if defined (__DEBUG__)
-	printf("camelRot\n");
-#endif
+	DEBUG_WORD("camelRot")
 }
 
 void camelNip(void) {
-#if defined (__DEBUG__)
-	printf("camelNip\n");
-#endif
+	DEBUG_WORD("camelNip")
 }
 
 void camelTuck(void) {
-#if defined (__DEBUG__)
-	printf("camelTuck\n");
-#endif
+	DEBUG_WORD("camelTuck")
 }
 
 void camelToR(void) {
-#if defined (__DEBUG__)
-	printf("camelToR\n");
-#endif
+	DEBUG_WORD("camelToR")
 }
 
 void camelRFrom(void) {
-#if defined (__DEBUG__)
-	printf("camelRFrom\n");
-#endif
+	DEBUG_WORD("camelRFrom")
 }
 
 void camelRFetch(void) {
-#if defined (__DEBUG__)
-	printf("camelRFetch\n");
-#endif
+	DEBUG_WORD("camelRFetch")
 }
 
 void camelSPFetch(void) {
-#if defined (__DEBUG__)
-	printf("camelSPFetch\n");
-#endif
+	DEBUG_WORD("camelSPFetch")
 }
 
 void camelSPStore(void) {
-#if defined (__DEBUG__)
-	printf("camelSPStore\n");
-#endif
+	DEBUG_WORD("camelSPStore")
 }
 
 void camelRPfetch(void) {
-#if defined (__DEBUG__)
-	printf("camelRPfetch\n");
-#endif
+	DEBUG_WORD("camelRPfetch")
 }
 
 void camelRPStore(void) {
-#if defined (__DEBUG__)
-	printf("camelRPStore\n");
-#endif
+	DEBUG_WORD("camelRPStore")
 }
 
 void camelFetch(void) {
-#if defined (__DEBUG__)
-	printf("camelFetch\n");
-#endif
+	DEBUG_WORD("camelFetch")
 }
 
 void camelStore(void) {
-#if defined (__DEBUG__)
-	printf("camelStore\n");
-#endif
+	DEBUG_WORD("camelStore")
 }
 
 void camelCFetch(void) {
-#if defined (__DEBUG__)
-	printf("camelCFetch\n");
-#endif
+	DEBUG_WORD("camelCFetch")
 }
 
 void camelCStore(void) {
-#if defined (__DEBUG__)
-	printf("camelCStore\n");
-#endif
+	DEBUG_WORD("camelCStore")
 }
 
 void camelIFetch(void) {
-#if defined (__DEBUG__)
-	printf("camelIFetch\n");
-#endif
+	DEBUG_WORD("camelIFetch")
 }
 
 void camelIStore(void) {
-#if defined (__DEBUG__)
-	printf("camelIStore\n");
-#endif
+	DEBUG_WORD("camelIStore")
 }
 
 void camelICFetch(void) {
-#if defined (__DEBUG__)
-	printf("camelICFetch\n");
-#endif
+	DEBUG_WORD("camelICFetch")
 }
 
 void camelICStore(void) {
-#if defined (__DEBUG__)
-	printf("camelICStore\n");
-#endif
+	DEBUG_WORD("camelICStore")
 }
 
 void camelHFetch(void) {
-#if defined (__DEBUG__)
-	printf("camelHFetch\n");
-#endif
+	DEBUG_WORD("camelHFetch")
 }
 
 void camelHStore(void) {
-#if defined (__DEBUG__)
-	printf("camelHStore\n");
-#endif
+	DEBUG_WORD("camelHStore")
 }
 
 void camelHCFetch(void) {
-#if defined (__DEBUG__)
-	printf("camelHCFetch\n");
-#endif
+	DEBUG_WORD("camelHCFetch")
 }
 
 void camelHCStore(void) {
-#if defined (__DEBUG__)
-	printf("camelHCStore\n");
-#endif
+	DEBUG_WORD("camelHCStore")
 }
 
 void camelPlus(void) {
-#if defined (__DEBUG__)
-	printf("camelPlus\n");
-#endif
+	DEBUG_WORD("camelPlus")
 }
 
 void camelPlusStore(void) {
-#if defined (__DEBUG__)
-	printf("camelPlusStore\n");
-#endif
+	DEBUG_WORD("camelPlusStore")
 }
 
 void camelMPlus(void) {
-#if defined (__DEBUG__)
-	printf("camelMPlus\n");
-#endif
+	DEBUG_WORD("camelMPlus")
 }
 
 void camelMinus(void) {
-#if defined (__DEBUG__)
-	printf("camelMinus\n");
-#endif
+	DEBUG_WORD("camelMinus")
 }
 
 void camelMult(void) {
-#if defined (__DEBUG__)
-	printf("camelMult\n");
-#endif
+	DEBUG_WORD("camelMult")
 }
 
 void camelDiv(void) {
-#if defined (__DEBUG__)
-	printf("camelDiv\n");
-#endif
+	DEBUG_WORD("camelDiv")
 }
 
 void camelAnd(void) {
-#if defined (__DEBUG__)
-	printf("camelAnd\n");
-#endif
+	DEBUG_WORD("camelAnd")
 }
 
 void camelOr(void) {
-#if defined (__DEBUG__)
-	printf("camelOr\n");
-#endif
+	DEBUG_WORD("camelOr")
 }
 
 void camelXor(void) {
-#if defined (__DEBUG__)
-	printf("camelXor\n");
-#endif
+	DEBUG_WORD("camelXor")
 }
 
 void camelInvert(void) {
-#if defined (__DEBUG__)
-	printf("camelInvert\n");
-#endif
+	DEBUG_WORD("camelInvert")
 }
 
 void camelNegate(void) {
-#if defined (__DEBUG__)
-	printf("camelNegate\n");
-#endif
+	DEBUG_WORD("camelNegate")
 }
 
 void camelOnePlus(void) {
-#if defined (__DEBUG__)
-	printf("camelOnePlus\n");
-#endif
+	DEBUG_WORD("camelOnePlus")
 }
 
 void camelOneMinus(void) {
-#if defined (__DEBUG__)
-	printf("camelOneMinus\n");
-#endif
+	DEBUG_WORD("camelOneMinus")
 }
 
 void camelSwapBytes(void) {
-#if defined (__DEBUG__)
-	printf("camelSwapBytes\n");
-#endif
+	DEBUG_WORD("camelSwapBytes")
 }
 
 void camelTwoStar(void) {
-#if defined (__DEBUG__)
-	printf("camelTwoStar\n");
-#endif
+	DEBUG_WORD("camelTwoStar")
 }
 
 void camelTwoSlash(void) {
-#if defined (__DEBUG__)
-	printf("camelTwoSlash\n");
-#endif
+	DEBUG_WORD("camelTwoSlash")
 }
 
 void camelLShift(void) {
-#if defined (__DEBUG__)
-	printf("camelLShift\n");
-#endif
+	DEBUG_WORD("camelLShift")
 }
 
 void camelRShift(void) {
-#if defined (__DEBUG__)
-	printf("camelRShift\n");
-#endif
+	DEBUG_WORD("camelRShift")
 }
 
 void camelZeroEqual(void) {
-#if defined (__DEBUG__)
-	printf("camelZeroEqual\n");
-#endif
+	DEBUG_WORD("camelZeroEqual")
 }
 
 void camelZeroLess(void) {
-#if defined (__DEBUG__)
-	printf("camelZeroLess\n");
-#endif
+	DEBUG_WORD("camelZeroLess")
 }
 
 void camelEqual(void) {
-#if defined (__DEBUG__)
-	printf("camelEqual\n");
-#endif
+	DEBUG_WORD("camelEqual")
 }
 
 void camelNotEqual(void) {
-#if defined (__DEBUG__)
-	printf("camelNotEqual\n");
-#endif
+	DEBUG_WORD("camelNotEqual")
 }
 
 void camelLess(void) {
-#if defined (__DEBUG__)
-	printf("camelLess\n");
-#endif
+	DEBUG_WORD("camelLess")
 }
 
 void camelGreater(void) {
-#if defined (__DEBUG__)
-	printf("camelGreater\n");
-#endif
+	DEBUG_WORD("camelGreater")
 }
 
 void camelULess(void) {
-#if defined (__DEBUG__)
-	printf("camelULess\n");
-#endif
+	DEBUG_WORD("camelULess")
 }
 
 void camelUGreater(void) {
-#if defined (__DEBUG__)
-	printf("camelUGreater\n");
-#endif
+	DEBUG_WORD("camelUGreater")
 }
 
 void camelUBranch(void) {
-#if defined (__DEBUG__)
-	printf("camelUBranch\n");
-#endif
+	DEBUG_WORD("camelUBranch")
 }
 
 void camelBranch(void) {
-#if defined (__DEBUG__)
-	printf("camelBranch\n");
-#endif
+	DEBUG_WORD("camelBranch")
 }
 
 void camelQBranch(void) {
-#if defined (__DEBUG__)
-	printf("camelQBranch\n");
-#endif
+	DEBUG_WORD("camelQBranch")
 }
 
 void camelZPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("camelZPlusLoop\n");
-#endif
+	DEBUG_WORD("camelZPlusLoop")
 }
 
 void camelZLoop(void) {
-#if defined (__DEBUG__)
-	printf("camelZLoop\n");
-#endif
+	DEBUG_WORD("camelZLoop")
 }
 
 void camelZdo(void) {
-#if defined (__DEBUG__)
-	printf("camelZdo\n");
-#endif
+	DEBUG_WORD("camelZdo")
 }
 
 void camelI(void) {
-#if defined (__DEBUG__)
-	printf("camelI\n");
-#endif
+	DEBUG_WORD("camelI")
 }
 
 void camelJ(void) {
-#if defined (__DEBUG__)
-	printf("camelJ\n");
-#endif
+	DEBUG_WORD("camelJ")
 }
 
 void camelUnLoop(void) {
-#if defined (__DEBUG__)
-	printf("camelUnLoop\n");
-#endif
+	DEBUG_WORD("camelUnLoop")
 }
 
 void camelUmStar(void) {
-#if defined (__DEBUG__)
-	printf("camelUmStar\n");
-#endif
+	DEBUG_WORD("camelUmStar")
 }
 
 void camelUmSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("camelUmSlashMod\n");
-#endif
+	DEBUG_WORD("camelUmSlashMod")
 }
 
 void camelFill(void) {
-#if defined (__DEBUG__)
-	printf("camelFill\n");
-#endif
+	DEBUG_WORD("camelFill")
 }
 
 void camelCMove(void) {
-#if defined (__DEBUG__)
-	printf("camelCMove\n");
-#endif
+	DEBUG_WORD("camelCMove")
 }
 
 void camelCMoveUp(void) {
-#if defined (__DEBUG__)
-	printf("camelCMoveUp\n");
-#endif
+	DEBUG_WORD("camelCMoveUp")
 }
 
 void camelIToD(void) {
-#if defined (__DEBUG__)
-	printf("camelIToD\n");
-#endif
+	DEBUG_WORD("camelIToD")
 }
 
 void camelSkip(void) {
-#if defined (__DEBUG__)
-	printf("camelSkip\n");
-#endif
+	DEBUG_WORD("camelSkip")
 }
 
 void camelScan(void) {
-#if defined (__DEBUG__)
-	printf("camelScan\n");
-#endif
+	DEBUG_WORD("camelScan")
 }
 
 void camelSEqual(void) {
-#if defined (__DEBUG__)
-	printf("camelSEqual\n");
-#endif
+	DEBUG_WORD("camelSEqual")
 }
 
 void camelNEqual(void) {
-#if defined (__DEBUG__)
-	printf("camelNEqual\n");
-#endif
+	DEBUG_WORD("camelNEqual")
 }
 
 void camelKey(void) {
-#if defined (__DEBUG__)
-	printf("camelKey\n");
-#endif
+	DEBUG_WORD("camelKey")
 }
 
 void camelEmit(void) {
-#if defined (__DEBUG__)
-	printf("camelEmit\n");
-#endif
+	DEBUG_WORD("camelEmit")
 }
 
 void camelKeyQ(void) {
-#if defined (__DEBUG__)
-	printf("camelKeyQ\n");
-#endif
+	DEBUG_WORD("camelKeyQ")
 }
 
 void camelDotHH(void) {
-#if defined (__DEBUG__)
-	printf("camelDotHH\n");
-#endif
+	DEBUG_WORD("camelDotHH")
 }
 
 void camelDotHHH(void) {
-#if defined (__DEBUG__)
-	printf("camelDotHHH\n");
-#endif
+	DEBUG_WORD("camelDotHHH")
 }
 
 void camelDotS(void) {
-#if defined (__DEBUG__)
-	printf("camelDotS\n");
-#endif
+	DEBUG_WORD("camelDotS")
 }
 
 void camelDump(void) {
-#if defined (__DEBUG__)
-	printf("camelDump\n");
-#endif
+	DEBUG_WORD("camelDump")
 }
 
 void camelBye(void) {
-#if defined (__DEBUG__)
-	printf("camelBye\n");
-#endif
+	DEBUG_WORD("camelBye")
 }
 
 /* High level words */
 
 void camelU0(void) {
-#if defined (__DEBUG__)
-	printf("camelU0\n");
-#endif
+	DEBUG_WORD("camelU0")
 }
 
 void camelToIN(void) {
-#if defined (__DEBUG__)
-	printf("camelToIN\n");
-#endif
+	DEBUG_WORD("camelToIN")
 }
 
 void camelBase(void) {
-#if defined (__DEBUG__)
-	printf("camelBase\n");
-#endif
+	DEBUG_WORD("camelBase")
 }
 
 void camelState(void) {
-#if defined (__DEBUG__)
-	printf("camelState\n");
-#endif
+	DEBUG_WORD("camelState")
 }
 
 void camelDp(void) {
-#if defined (__DEBUG__)
-	printf("camelDp\n");
-#endif
+	DEBUG_WORD("camelDp")
 }
 
 void camelTickSource(void) {
-#if defined (__DEBUG__)
-	printf("camelTickSource\n");
-#endif
+	DEBUG_WORD("camelTickSource")
 }
 
 void camelLatest(void) {
-#if defined (__DEBUG__)
-	printf("camelLatest\n");
-#endif
+	DEBUG_WORD("camelLatest")
 }
 
 void camelHp(void) {
-#if defined (__DEBUG__)
-	printf("camelHp\n");
-#endif
+	DEBUG_WORD("camelHp")
 }
 
 void camelLp(void) {
-#if defined (__DEBUG__)
-	printf("camelLp\n");
-#endif
+	DEBUG_WORD("camelLp")
 }
 
 void camelIdp(void) {
-#if defined (__DEBUG__)
-	printf("camelIdp\n");
-#endif
+	DEBUG_WORD("camelIdp")
 }
 
 void camelNewest(void) {
-#if defined (__DEBUG__)
-	printf("camelNewest\n");
-#endif
+	DEBUG_WORD("camelNewest")
 }
 
 void camelUInit(void) {
-#if defined (__DEBUG__)
-	printf("camelUInit\n");
-#endif
+	DEBUG_WORD("camelUInit")
 }
 
 void camelNInit(void) {
-#if defined (__DEBUG__)
-	printf("camelNInit\n");
-#endif
+	DEBUG_WORD("camelNInit")
 }
 
 void camelPad(void) {
-#if defined (__DEBUG__)
-	printf("camelPad\n");
-#endif
+	DEBUG_WORD("camelPad")
 }
 
 void camelL0(void) {
-#if defined (__DEBUG__)
-	printf("camelL0\n");
-#endif
+	DEBUG_WORD("camelL0")
 }
 
 void camelS0(void) {
-#if defined (__DEBUG__)
-	printf("camelS0\n");
-#endif
+	DEBUG_WORD("camelS0")
 }
 
 void camelR0(void) {
-#if defined (__DEBUG__)
-	printf("camelR0\n");
-#endif
+	DEBUG_WORD("camelR0")
 }
 
 void camelTib(void) {
-#if defined (__DEBUG__)
-	printf("camelTib\n");
-#endif
+	DEBUG_WORD("camelTib")
 }
 
 void camelTibSize(void) {
-#if defined (__DEBUG__)
-	printf("camelTibSize\n");
-#endif
+	DEBUG_WORD("camelTibSize")
 }
 
 void camelZero(void) {
-#if defined (__DEBUG__)
-	printf("camelZero\n");
-#endif
+	DEBUG_WORD("camelZero")
 }
 
 void camelOne(void) {
-#if defined (__DEBUG__)
-	printf("camelOne\n");
-#endif
+	DEBUG_WORD("camelOne")
 }
 
 void camelTwo(void) {
-#if defined (__DEBUG__)
-	printf("camelTwo\n");
-#endif
+	DEBUG_WORD("camelTwo")
 }
 
 void camelThree(void) {
-#if defined (__DEBUG__)
-	printf("camelThree\n");
-#endif
+	DEBUG_WORD("camelThree")
 }
 
 void camelMinusOne(void) {
-#if defined (__DEBUG__)
-	printf("camelMinusOne\n");
-#endif
+	DEBUG_WORD("camelMinusOne")
 }
 
 void camelCell(void) {
-#if defined (__DEBUG__)
-	printf("camelCell\n");
-#endif
+	DEBUG_WORD("camelCell")
 }
 
 void camelHere(void) {
-#if defined (__DEBUG__)
-	printf("camelHere\n");
-#endif
+	DEBUG_WORD("camelHere")
 }
 
 void camelAllot(void) {
-#if defined (__DEBUG__)
-	printf("camelAllot\n");
-#endif
+	DEBUG_WORD("camelAllot")
 }
 
 void camelComma(void) {
-#if defined (__DEBUG__)
-	printf("camelComma\n");
-#endif
+	DEBUG_WORD("camelComma")
 }
 
 void camelCComma(void) {
-#if defined (__DEBUG__)
-	printf("camelCComma\n");
-#endif
+	DEBUG_WORD("camelCComma")
 }
 
 void camelAligned(void) {
-#if defined (__DEBUG__)
-	printf("camelAligned\n");
-#endif
+	DEBUG_WORD("camelAligned")
 }
 
 void camelAlign(void) {
-#if defined (__DEBUG__)
-	printf("camelAlign\n");
-#endif
+	DEBUG_WORD("camelAlign")
 }
 
 void camelCellPlus(void) {
-#if defined (__DEBUG__)
-	printf("camelCellPlus\n");
-#endif
+	DEBUG_WORD("camelCellPlus")
 }
 
 void camelCharPlus(void) {
-#if defined (__DEBUG__)
-	printf("camelCharPlus\n");
-#endif
+	DEBUG_WORD("camelCharPlus")
 }
 
 void camelToBody(void) {
-#if defined (__DEBUG__)
-	printf("camelToBody\n");
-#endif
+	DEBUG_WORD("camelToBody")
 }
 
 void camelCommaXt(void) {
-#if defined (__DEBUG__)
-	printf("camelCommaXt\n");
-#endif
+	DEBUG_WORD("camelCommaXt")
 }
 
 void camelStoreCF(void) {
-#if defined (__DEBUG__)
-	printf("camelStoreCF\n");
-#endif
+	DEBUG_WORD("camelStoreCF")
 }
 
 void camelCommaCF(void) {
-#if defined (__DEBUG__)
-	printf("camelCommaCF\n");
-#endif
+	DEBUG_WORD("camelCommaCF")
 }
 
 void camelStoreColon(void) {
-#if defined (__DEBUG__)
-	printf("camelStoreColon\n");
-#endif
+	DEBUG_WORD("camelStoreColon")
 }
 
 void camelCommaExit(void) {
-#if defined (__DEBUG__)
-	printf("camelCommaExit\n");
-#endif
+	DEBUG_WORD("camelCommaExit")
 }
 
 void camelCommaBranch(void) {
-#if defined (__DEBUG__)
-	printf("camelCommaBranch\n");
-#endif
+	DEBUG_WORD("camelCommaBranch")
 }
 
 void camelCommaDest(void) {
-#if defined (__DEBUG__)
-	printf("camelCommaDest\n");
-#endif
+	DEBUG_WORD("camelCommaDest")
 }
 
 void camelStoreDest(void) {
-#if defined (__DEBUG__)
-	printf("camelStoreDest\n");
-#endif
+	DEBUG_WORD("camelStoreDest")
 }
 
 void camelCommaNone(void) {
-#if defined (__DEBUG__)
-	printf("camelCommaNone\n");
-#endif
+	DEBUG_WORD("camelCommaNone")
 }
 
 void camelTwoFetch(void) {
-#if defined (__DEBUG__)
-	printf("camelTwoFetch\n");
-#endif
+	DEBUG_WORD("camelTwoFetch")
 }
 
 void camelTwoStore(void) {
-#if defined (__DEBUG__)
-	printf("camelTwoStore\n");
-#endif
+	DEBUG_WORD("camelTwoStore")
 }
 
 void camelTwoDrop(void) {
-#if defined (__DEBUG__)
-	printf("camelTwoDrop\n");
-#endif
+	DEBUG_WORD("camelTwoDrop")
 }
 
 void camelTwoDup(void) {
-#if defined (__DEBUG__)
-	printf("camelTwoDup\n");
-#endif
+	DEBUG_WORD("camelTwoDup")
 }
 
 void camelTwoSwap(void) {
-#if defined (__DEBUG__)
-	printf("camelTwoSwap\n");
-#endif
+	DEBUG_WORD("camelTwoSwap")
 }
 
 void camelTwoOver(void) {
-#if defined (__DEBUG__)
-	printf("camelTwoOver\n");
-#endif
+	DEBUG_WORD("camelTwoOver")
 }
 
 void camelSToD(void) {
-#if defined (__DEBUG__)
-	printf("camelSToD\n");
-#endif
+	DEBUG_WORD("camelSToD")
 }
 
 void camelAbs(void) {
-#if defined (__DEBUG__)
-	printf("camelAbs\n");
-#endif
+	DEBUG_WORD("camelAbs")
 }
 
 void camelDNegate(void) {
-#if defined (__DEBUG__)
-	printf("camelDNegate\n");
-#endif
+	DEBUG_WORD("camelDNegate")
 }
 
 void camelQDNegate(void) {
-#if defined (__DEBUG__)
-	printf("camelQDNegate\n");
-#endif
+	DEBUG_WORD("camelQDNegate")
 }
 
 void camelDAbs(void) {
-#if defined (__DEBUG__)
-	printf("camelDAbs\n");
-#endif
+	DEBUG_WORD("camelDAbs")
 }
 
 void camelMStar(void) {
-#if defined (__DEBUG__)
-	printf("camelMStar\n");
-#endif
+	DEBUG_WORD("camelMStar")
 }
 
 void camelSMSlashREM(void) {
-#if defined (__DEBUG__)
-	printf("camelSMSlashREM\n");
-#endif
+	DEBUG_WORD("camelSMSlashREM")
 }
 
 void camelFMSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("camelFMSlashMod\n");
-#endif
+	DEBUG_WORD("camelFMSlashMod")
 }
 
 void camelSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("camelSlashMod\n");
-#endif
+	DEBUG_WORD("camelSlashMod")
 }
 
 void camelMod(void) {
-#if defined (__DEBUG__)
-	printf("camelMod\n");
-#endif
+	DEBUG_WORD("camelMod")
 }
 
 void camelStarSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("camelStarSlashMod\n");
-#endif
+	DEBUG_WORD("camelStarSlashMod")
 }
 
 void camelStarSlash(void) {
-#if defined (__DEBUG__)
-	printf("camelStarSlash\n");
-#endif
+	DEBUG_WORD("camelStarSlash")
 }
 
 void camelMax(void) {
-#if defined (__DEBUG__)
-	printf("camelMax\n");
-#endif
+	DEBUG_WORD("camelMax")
 }
 
 void camelMin(void) {
-#if defined (__DEBUG__)
-	printf("camelMin\n");
-#endif
+	DEBUG_WORD("camelMin")
 }
 
 void camelUMax(void) {
-#if defined (__DEBUG__)
-	printf("camelUMax\n");
-#endif
+	DEBUG_WORD("camelUMax")
 }
 
 void camelUMin(void) {
-#if defined (__DEBUG__)
-	printf("camelUMin\n");
-#endif
+	DEBUG_WORD("camelUMin")
 }
 
 void camelCells(void) {
-#if defined (__DEBUG__)
-	printf("camelCells\n");
-#endif
+	DEBUG_WORD("camelCells")
 }
 
 void camelCount(void) {
-#if defined (__DEBUG__)
-	printf("camelCount\n");
-#endif
+	DEBUG_WORD("camelCount")
 }
 
 void camelCR(void) {
-#if defined (__DEBUG__)
-	printf("camelCR\n");
-#endif
+	DEBUG_WORD("camelCR")
 }
 
 void camelSpace(void) {
-#if defined (__DEBUG__)
-	printf("camelSpace\n");
-#endif
+	DEBUG_WORD("camelSpace")
 }
 
 void camelSpaces(void) {
-#if defined (__DEBUG__)
-	printf("camelSpaces\n");
-#endif
+	DEBUG_WORD("camelSpaces")
 }
 
 void camelAccept(void) {
-#if defined (__DEBUG__)
-	printf("camelAccept\n");
-#endif
+	DEBUG_WORD("camelAccept")
 }
 
 void camelType(void) {
-#if defined (__DEBUG__)
-	printf("camelType\n");
-#endif
+	DEBUG_WORD("camelType")
 }
 
 void camelUDSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("camelUDSlashMod\n");
-#endif
+	DEBUG_WORD("camelUDSlashMod")
 }
 
 void camelUDStar(void) {
-#if defined (__DEBUG__)
-	printf("camelUDStar\n");
-#endif
+	DEBUG_WORD("camelUDStar")
 }
 
 void camelHold(void) {
-#if defined (__DEBUG__)
-	printf("camelHold\n");
-#endif
+	DEBUG_WORD("camelHold")
 }
 
 void camelLessNum(void) {
-#if defined (__DEBUG__)
-	printf("camelLessNum\n");
-#endif
+	DEBUG_WORD("camelLessNum")
 }
 
 void camelToDigit(void) {
-#if defined (__DEBUG__)
-	printf("camelToDigit\n");
-#endif
+	DEBUG_WORD("camelToDigit")
 }
 
 void camelNum(void) {
-#if defined (__DEBUG__)
-	printf("camelNum\n");
-#endif
+	DEBUG_WORD("camelNum")
 }
 
 void camelNums(void) {
-#if defined (__DEBUG__)
-	printf("camelNums\n");
-#endif
+	DEBUG_WORD("camelNums")
 }
 
 void camelNumGreater(void) {
-#if defined (__DEBUG__)
-	printf("camelNumGreater\n");
-#endif
+	DEBUG_WORD("camelNumGreater")
 }
 
 void camelSign(void) {
-#if defined (__DEBUG__)
-	printf("camelSign\n");
-#endif
+	DEBUG_WORD("camelSign")
 }
 
 void camelUDot(void) {
-#if defined (__DEBUG__)
-	printf("camelUDot\n");
-#endif
+	DEBUG_WORD("camelUDot")
 }
 
 void camelDot(void) {
-#if defined (__DEBUG__)
-	printf("camelDot\n");
-#endif
+	DEBUG_WORD("camelDot")
 }
 
 void camelDecimal(void) {
-#if defined (__DEBUG__)
-	printf("camelDecimal\n");
-#endif
+	DEBUG_WORD("camelDecimal")
 }
 
 void camelHex(void) {
-#if defined (__DEBUG__)
-	printf("camelHex\n");
-#endif
+	DEBUG_WORD("camelHex")
 }
 
 void camelSource(void) {
-#if defined (__DEBUG__)
-	printf("camelSource\n");
-#endif
+	DEBUG_WORD("camelSource")
 }
 
 void camelSlashString(void) {
-#if defined (__DEBUG__)
-	printf("camelSlashString\n");
-#endif
+	DEBUG_WORD("camelSlashString")
 }
 
 void camelToCounted(void) {
-#if defined (__DEBUG__)
-	printf("camelToCounted\n");
-#endif
+	DEBUG_WORD("camelToCounted")
 }
 
 void camelAdrToIN(void) {
-#if defined (__DEBUG__)
-	printf("camelAdrToIN\n");
-#endif
+	DEBUG_WORD("camelAdrToIN")
 }
 
 void camelParse(void) {
-#if defined (__DEBUG__)
-	printf("camelParse\n");
-#endif
+	DEBUG_WORD("camelParse")
 }
 
 void camelWord(void) {
-#if defined (__DEBUG__)
-	printf("camelWord\n");
-#endif
+	DEBUG_WORD("camelWord")
 }
 
 void camelZSQuote(void) {
-#if defined (__DEBUG__)
-	printf("camelZSQuote\n");
-#endif
+	DEBUG_WORD("camelZSQuote")
 }
 
 void camelSQuote(void) {
-#if defined (__DEBUG__)
-	printf("camelSQuote\n");
-#endif
+	DEBUG_WORD("camelSQuote")
 }
 
 void camelDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("camelDotQuote\n");
-#endif
+	DEBUG_WORD("camelDotQuote")
 }
 
 void camelNFAToLFA(void) {
-#if defined (__DEBUG__)
-	printf("camelNFAToLFA\n");
-#endif
+	DEBUG_WORD("camelNFAToLFA")
 }
 
 void camelNFAToCFA(void) {
-#if defined (__DEBUG__)
-	printf("camelNFAToCFA\n");
-#endif
+	DEBUG_WORD("camelNFAToCFA")
 }
 
 void camelImmedQ(void) {
-#if defined (__DEBUG__)
-	printf("camelImmedQ\n");
-#endif
+	DEBUG_WORD("camelImmedQ")
 }
 
 void camelFind(void) {
-#if defined (__DEBUG__)
-	printf("camelFind\n");
-#endif
+	DEBUG_WORD("camelFind")
 }
 
 void camelLiteral(void) {
-#if defined (__DEBUG__)
-	printf("camelLiteral\n");
-#endif
+	DEBUG_WORD("camelLiteral")
 }
 
 void camelDigitQ(void) {
-#if defined (__DEBUG__)
-	printf("camelDigitQ\n");
-#endif
+	DEBUG_WORD("camelDigitQ")
 }
 
 void camelQSign(void) {
-#if defined (__DEBUG__)
-	printf("camelQSign\n");
-#endif
+	DEBUG_WORD("camelQSign")
 }
 
 void camelToNumber(void) {
-#if defined (__DEBUG__)
-	printf("camelToNumber\n");
-#endif
+	DEBUG_WORD("camelToNumber")
 }
 
 void camelQNumber(void) {
-#if defined (__DEBUG__)
-	printf("camelQNumber\n");
-#endif
+	DEBUG_WORD("camelQNumber")
 }
 
 void camelInterpret(void) {
-#if defined (__DEBUG__)
-	printf("camelInterpret\n");
-#endif
+	DEBUG_WORD("camelInterpret")
 }
 
 void camelEvaluate(void) {
-#if defined (__DEBUG__)
-	printf("camelEvaluate\n");
-#endif
+	DEBUG_WORD("camelEvaluate")
 }
 
 void camelQuit(void) {
-#if defined (__DEBUG__)
-	printf("camelQuit\n");
-#endif
+	DEBUG_WORD("camelQuit")
 }
 
 void camelAbort(void) {
-#if defined (__DEBUG__)
-	printf("camelAbort\n");
-#endif
+	DEBUG_WORD("camelAbort")
 }
 
 void camelQAbort(void) {
-#if defined (__DEBUG__)
-	printf("camelQAbort\n");
-#endif
+	DEBUG_WORD("camelQAbort")
 }
 
 void camelAbortQuote(void) {
-#if defined (__DEBUG__)
-	printf("camelAbortQuote\n");
-#endif
+	DEBUG_WORD("camelAbortQuote")
 }
 
 void camelTick(void) {
-#if defined (__DEBUG__)
-	printf("camelTick\n");
-#endif
+	DEBUG_WORD("camelTick")
 }
 
 void camelChar(void) {
-#if defined (__DEBUG__)
-	printf("camelChar\n");
-#endif
+	DEBUG_WORD("camelChar")
 }
 
 void camelXChar(void) {
-#if defined (__DEBUG__)
-	printf("camelXChar\n");
-#endif
+	DEBUG_WORD("camelXChar")
 }
 
 void camelParen(void) {
-#if defined (__DEBUG__)
-	printf("camelParen\n");
-#endif
+	DEBUG_WORD("camelParen")
 }
 
 void camelHeader(void) {
-#if defined (__DEBUG__)
-	printf("camelHeader\n");
-#endif
+	DEBUG_WORD("camelHeader")
 }
 
 void camelBuilds(void) {
-#if defined (__DEBUG__)
-	printf("camelBuilds\n");
-#endif
+	DEBUG_WORD("camelBuilds")
 }
 
 void camelVariable(void) {
-#if defined (__DEBUG__)
-	printf("camelVariable\n");
-#endif
+	DEBUG_WORD("camelVariable")
 }
 
 void camelConstant(void) {
-#if defined (__DEBUG__)
-	printf("camelConstant\n");
-#endif
+	DEBUG_WORD("camelConstant")
 }
 
 void camelUser(void) {
-#if defined (__DEBUG__)
-	printf("camelUser\n");
-#endif
+	DEBUG_WORD("camelUser")
 }
 
 void camelCreate(void) {
-#if defined (__DEBUG__)
-	printf("camelCreate\n");
-#endif
+	DEBUG_WORD("camelCreate")
 }
 
 void camelZDoes(void) {
-#if defined (__DEBUG__)
-	printf("camelZDoes\n");
-#endif
+	DEBUG_WORD("camelZDoes")
 }
 
 void camelRecurse(void) {
-#if defined (__DEBUG__)
-	printf("camelRecurse\n");
-#endif
+	DEBUG_WORD("camelRecurse")
 }
 
 void camelLeftBracket(void) {
-#if defined (__DEBUG__)
-	printf("camelLeftBracket\n");
-#endif
+	DEBUG_WORD("camelLeftBracket")
 }
 
 void camelRightBracket(void) {
-#if defined (__DEBUG__)
-	printf("camelRightBracket\n");
-#endif
+	DEBUG_WORD("camelRightBracket")
 }
 
 void camelHide(void) {
-#if defined (__DEBUG__)
-	printf("camelHide\n");
-#endif
+	DEBUG_WORD("camelHide")
 }
 
 void camelReveal(void) {
-#if defined (__DEBUG__)
-	printf("camelReveal\n");
-#endif
+	DEBUG_WORD("camelReveal")
 }
 
 void camelImmediate(void) {
-#if defined (__DEBUG__)
-	printf("camelImmediate\n");
-#endif
+	DEBUG_WORD("camelImmediate")
 }
 
 void camelColon(void) {
-#if defined (__DEBUG__)
-	printf("camelColon\n");
-#endif
+	DEBUG_WORD("camelColon")
 }
 
 void camelSemicolon(void) {
-#if defined (__DEBUG__)
-	printf("camelSemicolon\n");
-#endif
+	DEBUG_WORD("camelSemicolon")
 }
 
 void camelXTick(void) {
-#if defined (__DEBUG__)
-	printf("camelXTick\n");
-#endif
+	DEBUG_WORD("camelXTick")
 }
 
 void camelPostpone(void) {
-#if defined (__DEBUG__)
-	printf("camelPostpone\n");
-#endif
+	DEBUG_WORD("camelPostpone")
 }
 
 void camelCompile(void) {
-#if defined (__DEBUG__)
-	printf("camelCompile\n");
-#endif
+	DEBUG_WORD("camelCompile")
 }
 
 void camelIf(void) {
-#if defined (__DEBUG__)
-	printf("camelIf\n");
-#endif
+	DEBUG_WORD("camelIf")
 }
 
 void camelThen(void) {
-#if defined (__DEBUG__)
-	printf("camelThen\n");
-#endif
+	DEBUG_WORD("camelThen")
 }
 
 void camelElse(void) {
-#if defined (__DEBUG__)
-	printf("camelElse\n");
-#endif
+	DEBUG_WORD("camelElse")
 }
 
 void camelBegin(void) {
-#if defined (__DEBUG__)
-	printf("camelBegin\n");
-#endif
+	DEBUG_WORD("camelBegin")
 }
 
 void camelUntil(void) {
-#if defined (__DEBUG__)
-	printf("camelUntil\n");
-#endif
+	DEBUG_WORD("camelUntil")
 }
 
 void camelAgain(void) {
-#if defined (__DEBUG__)
-	printf("camelAgain\n");
-#endif
+	DEBUG_WORD("camelAgain")
 }
 
 void camelWhile(void) {
-#if defined (__DEBUG__)
-	printf("camelWhile\n");
-#endif
+	DEBUG_WORD("camelWhile")
 }
 
 void camelRepeat(void) {
-#if defined (__DEBUG__)
-	printf("camelRepeat\n");
-#endif
+	DEBUG_WORD("camelRepeat")
 }
 
 void camelToL(void) {
-#if defined (__DEBUG__)
-	printf("camelToL\n");
-#endif
+	DEBUG_WORD("camelToL")
 }
 
 void camelLFrom(void) {
-#if defined (__DEBUG__)
-	printf("camelLFrom\n");
-#endif
+	DEBUG_WORD("camelLFrom")
 }
 
 void camelDo(void) {
-#if defined (__DEBUG__)
-	printf("camelDo\n");
-#endif
+	DEBUG_WORD("camelDo")
 }
 
 void camelEndLoop(void) {
-#if defined (__DEBUG__)
-	printf("camelEndLoop\n");
-#endif
+	DEBUG_WORD("camelEndLoop")
 }
 
 void camelLoop(void) {
-#if defined (__DEBUG__)
-	printf("camelLoop\n");
-#endif
+	DEBUG_WORD("camelLoop")
 }
 
 void camelPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("camelPlusLoop\n");
-#endif
+	DEBUG_WORD("camelPlusLoop")
 }
 
 void camelLeave(void) {
-#if defined (__DEBUG__)
-	printf("camelLeave\n");
-#endif
+	DEBUG_WORD("camelLeave")
 }
 
 void camelWithin(void) {
-#if defined (__DEBUG__)
-	printf("camelWithin\n");
-#endif
+	DEBUG_WORD("camelWithin")
 }
 
 void camelMove(void) {
-#if defined (__DEBUG__)
-	printf("camelMove\n");
-#endif
+	DEBUG_WORD("camelMove")
 }
 
 void camelDepth(void) {
-#if defined (__DEBUG__)
-	printf("camelDepth\n");
-#endif
+	DEBUG_WORD("camelDepth")
 }
 
 void camelEnvironmentQ(void) {
-#if defined (__DEBUG__)
-	printf("camelEnvironmentQ\n");
-#endif
+	DEBUG_WORD("camelEnvironmentQ")
 }
 
 void camelMarker(void) {
-#if defined (__DEBUG__)
-	printf("camelMarker\n");
-#endif
+	DEBUG_WORD("camelMarker")
 }
 
 #endif

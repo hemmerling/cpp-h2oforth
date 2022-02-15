@@ -6,1719 +6,1147 @@
 /* Primitives */
 
 void rscNum(void) {
-#if defined (__DEBUG__)
-	printf("rscNum\n");
-#endif
+	DEBUG_WORD("rscNum")
 }
 
 void rscTask(void) {
-#if defined (__DEBUG__)
-	printf("rscTask\n");
-#endif
+	DEBUG_WORD("rscTask")
 }
 
 void rscAdmp(void) {
-#if defined (__DEBUG__)
-	printf("rscAdmp\n");
-#endif
+	DEBUG_WORD("rscAdmp")
 }
 
 void rscSemicolonDump(void) {
-#if defined (__DEBUG__)
-	printf("rscSemicolonDump\n");
-#endif
+	DEBUG_WORD("rscSemicolonDump")
 }
 
 void rscFormat(void) {
-#if defined (__DEBUG__)
-	printf("rscFormat\n");
-#endif
+	DEBUG_WORD("rscFormat")
 }
 
 void rscFmTrk(void) {
-#if defined (__DEBUG__)
-	printf("rscFmTrk\n");
-#endif
+	DEBUG_WORD("rscFmTrk")
 }
 
 void rscBankExecute(void) {
-#if defined (__DEBUG__)
-	printf("rscBankExecute\n");
-#endif
+	DEBUG_WORD("rscBankExecute")
 }
 
 void rscBankEecStore(void) {
-#if defined (__DEBUG__)
-	printf("rscBankEecStore\n");
-#endif
+	DEBUG_WORD("rscBankEecStore")
 }
 
 void rscBankCFetch(void) {
-#if defined (__DEBUG__)
-	printf("rscBankCFetch\n");
-#endif
+	DEBUG_WORD("rscBankCFetch")
 }
 
 void rscBankCStore(void) {
-#if defined (__DEBUG__)
-	printf("rscBankCStore\n");
-#endif
+	DEBUG_WORD("rscBankCStore")
 }
 
 void rscEecStore(void) {
-#if defined (__DEBUG__)
-	printf("rscEecStore\n");
-#endif
+	DEBUG_WORD("rscEecStore")
 }
 
 void rscCaseColon(void) {
-#if defined (__DEBUG__)
-	printf("rscCaseColon\n");
-#endif
+	DEBUG_WORD("rscCaseColon")
 }
 
 void rscMemTop(void) {
-#if defined (__DEBUG__)
-	printf("rscMemTop\n");
-#endif
+	DEBUG_WORD("rscMemTop")
 }
 
 void rscScdr(void) {
-#if defined (__DEBUG__)
-	printf("rscScdr\n");
-#endif
+	DEBUG_WORD("rscScdr")
 }
 
 void rscScsr(void) {
-#if defined (__DEBUG__)
-	printf("rscScsr\n");
-#endif
+	DEBUG_WORD("rscScsr")
 }
 
 void rscSccr(void) {
-#if defined (__DEBUG__)
-	printf("rscSccr\n");
-#endif
+	DEBUG_WORD("rscSccr")
 }
 
 void rscMcr(void) {
-#if defined (__DEBUG__)
-	printf("rscMcr\n");
-#endif
+	DEBUG_WORD("rscMcr")
 }
 
 void rscIer(void) {
-#if defined (__DEBUG__)
-	printf("rscIer\n");
-#endif
+	DEBUG_WORD("rscIer")
 }
 
 void rscIfr(void) {
-#if defined (__DEBUG__)
-	printf("rscIfr\n");
-#endif
+	DEBUG_WORD("rscIfr")
 }
 
 void rscPg(void) {
-#if defined (__DEBUG__)
-	printf("rscPg\n");
-#endif
+	DEBUG_WORD("rscPg")
 }
 
 void rscPf(void) {
-#if defined (__DEBUG__)
-	printf("rscPf\n");
-#endif
+	DEBUG_WORD("rscPf")
 }
 
 void rscPe(void) {
-#if defined (__DEBUG__)
-	printf("rscPe\n");
-#endif
+	DEBUG_WORD("rscPe")
 }
 
 void rscPd(void) {
-#if defined (__DEBUG__)
-	printf("rscPd\n");
-#endif
+	DEBUG_WORD("rscPd")
 }
 
 void rscPc(void) {
-#if defined (__DEBUG__)
-	printf("rscPc\n");
-#endif
+	DEBUG_WORD("rscPc")
 }
 
 void rscPb(void) {
-#if defined (__DEBUG__)
-	printf("rscPb\n");
-#endif
+	DEBUG_WORD("rscPb")
 }
 
 void rscPa(void) {
-#if defined (__DEBUG__)
-	printf("rscPa\n");
-#endif
+	DEBUG_WORD("rscPa")
 }
 
 void rscNmiVec(void) {
-#if defined (__DEBUG__)
-	printf("rscNmiVec\n");
-#endif
+	DEBUG_WORD("rscNmiVec")
 }
 
 void rscIrqVec(void) {
-#if defined (__DEBUG__)
-	printf("rscIrqVec\n");
-#endif
+	DEBUG_WORD("rscIrqVec")
 }
 
 void rscIntVec(void) {
-#if defined (__DEBUG__)
-	printf("rscIntVec\n");
-#endif
+	DEBUG_WORD("rscIntVec")
 }
 
 void rscIntFlg(void) {
-#if defined (__DEBUG__)
-	printf("rscIntFlg\n");
-#endif
+	DEBUG_WORD("rscIntFlg")
 }
 
 void rscCCommaCon(void) {
-#if defined (__DEBUG__)
-	printf("rscCCommaCon\n");
-#endif
+	DEBUG_WORD("rscCCommaCon")
 }
 
 void rscDotS(void) {
-#if defined (__DEBUG__)
-	printf("rscDotS\n");
-#endif
+	DEBUG_WORD("rscDotS")
 }
 
 void rscMon(void) {
-#if defined (__DEBUG__)
-	printf("rscMon\n");
-#endif
+	DEBUG_WORD("rscMon")
 }
 
 void rscVlist(void) {
-#if defined (__DEBUG__)
-	printf("rscVlist\n");
-#endif
+	DEBUG_WORD("rscVlist")
 }
 
 void rscIndex(void) {
-#if defined (__DEBUG__)
-	printf("rscIndex\n");
-#endif
+	DEBUG_WORD("rscIndex")
 }
 
 void rscList(void) {
-#if defined (__DEBUG__)
-	printf("rscList\n");
-#endif
+	DEBUG_WORD("rscList")
 }
 
 void rscQ(void) {
-#if defined (__DEBUG__)
-	printf("rscQ\n");
-#endif
+	DEBUG_WORD("rscQ")
 }
 
 void rscDot(void) {
-#if defined (__DEBUG__)
-	printf("rscDot\n");
-#endif
+	DEBUG_WORD("rscDot")
 }
 
 void rscDotR(void) {
-#if defined (__DEBUG__)
-	printf("rscDotR\n");
-#endif
+	DEBUG_WORD("rscDotR")
 }
 
 void rscDDot(void) {
-#if defined (__DEBUG__)
-	printf("rscDDot\n");
-#endif
+	DEBUG_WORD("rscDDot")
 }
 
 void rscDDotR(void) {
-#if defined (__DEBUG__)
-	printf("rscDDotR\n");
-#endif
+	DEBUG_WORD("rscDDotR")
 }
 
 void rscNumS(void) {
-#if defined (__DEBUG__)
-	printf("rscNumS\n");
-#endif
+	DEBUG_WORD("rscNumS")
 }
 
 void rscSign(void) {
-#if defined (__DEBUG__)
-	printf("rscSign\n");
-#endif
+	DEBUG_WORD("rscSign")
 }
 
 void rscNumGreater(void) {
-#if defined (__DEBUG__)
-	printf("rscNumGreater\n");
-#endif
+	DEBUG_WORD("rscNumGreater")
 }
 
 void rscLessNum(void) {
-#if defined (__DEBUG__)
-	printf("rscLessNum\n");
-#endif
+	DEBUG_WORD("rscLessNum")
 }
 
 void rscSpaces(void) {
-#if defined (__DEBUG__)
-	printf("rscSpaces\n");
-#endif
+	DEBUG_WORD("rscSpaces")
 }
 
 void rscWhile(void) {
-#if defined (__DEBUG__)
-	printf("rscWhile\n");
-#endif
+	DEBUG_WORD("rscWhile")
 }
 
 void rscElse(void) {
-#if defined (__DEBUG__)
-	printf("rscElse\n");
-#endif
+	DEBUG_WORD("rscElse")
 }
 
 void rscIf(void) {
-#if defined (__DEBUG__)
-	printf("rscIf\n");
-#endif
+	DEBUG_WORD("rscIf")
 }
 
 void rscRepeat(void) {
-#if defined (__DEBUG__)
-	printf("rscRepeat\n");
-#endif
+	DEBUG_WORD("rscRepeat")
 }
 
 void rscAgain(void) {
-#if defined (__DEBUG__)
-	printf("rscAgain\n");
-#endif
+	DEBUG_WORD("rscAgain")
 }
 
 void rscEnd(void) {
-#if defined (__DEBUG__)
-	printf("rscEnd\n");
-#endif
+	DEBUG_WORD("rscEnd")
 }
 
 void rscUntil(void) {
-#if defined (__DEBUG__)
-	printf("rscUntil\n");
-#endif
+	DEBUG_WORD("rscUntil")
 }
 
 void rscPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("rscPlusLoop\n");
-#endif
+	DEBUG_WORD("rscPlusLoop")
 }
 
 void rscLoop(void) {
-#if defined (__DEBUG__)
-	printf("rscLoop\n");
-#endif
+	DEBUG_WORD("rscLoop")
 }
 
 void rscDo(void) {
-#if defined (__DEBUG__)
-	printf("rscDo\n");
-#endif
+	DEBUG_WORD("rscDo")
 }
 
 void rscThen(void) {
-#if defined (__DEBUG__)
-	printf("rscThen\n");
-#endif
+	DEBUG_WORD("rscThen")
 }
 
 void rscEndIf(void) {
-#if defined (__DEBUG__)
-	printf("rscEndIf\n");
-#endif
+	DEBUG_WORD("rscEndIf")
 }
 
 void rscBegin(void) {
-#if defined (__DEBUG__)
-	printf("rscBegin\n");
-#endif
+	DEBUG_WORD("rscBegin")
 }
 
 void rscForget(void) {
-#if defined (__DEBUG__)
-	printf("rscForget\n");
-#endif
+	DEBUG_WORD("rscForget")
 }
 
 void rscAutostart(void) {
-#if defined (__DEBUG__)
-	printf("rscAutostart\n");
-#endif
+	DEBUG_WORD("rscAutostart")
 }
 
 void rscQKernel(void) {
-#if defined (__DEBUG__)
-	printf("rscQKernel\n");
-#endif
+	DEBUG_WORD("rscQKernel")
 }
 
 void rscHWord(void) {
-#if defined (__DEBUG__)
-	printf("rscHWord\n");
-#endif
+	DEBUG_WORD("rscHWord")
 }
 
 void rscHSlashC(void) {
-#if defined (__DEBUG__)
-	printf("rscHSlashC\n");
-#endif
+	DEBUG_WORD("rscHSlashC")
 }
 
 void rscTick(void) {
-#if defined (__DEBUG__)
-	printf("rscTick\n");
-#endif
+	DEBUG_WORD("rscTick")
 }
 
 void rscSeek(void) {
-#if defined (__DEBUG__)
-	printf("rscSeek\n");
-#endif
+	DEBUG_WORD("rscSeek")
 }
 
 void rscInit(void) {
-#if defined (__DEBUG__)
-	printf("rscInit\n");
-#endif
+	DEBUG_WORD("rscInit")
 }
 
 void rscDWrite(void) {
-#if defined (__DEBUG__)
-	printf("rscDWrite\n");
-#endif
+	DEBUG_WORD("rscDWrite")
 }
 
 void rscDRead(void) {
-#if defined (__DEBUG__)
-	printf("rscDRead\n");
-#endif
+	DEBUG_WORD("rscDRead")
 }
 
 void rscSelect(void) {
-#if defined (__DEBUG__)
-	printf("rscSelect\n");
-#endif
+	DEBUG_WORD("rscSelect")
 }
 
 void rscDisk(void) {
-#if defined (__DEBUG__)
-	printf("rscDisk\n");
-#endif
+	DEBUG_WORD("rscDisk")
 }
 
 void rscRSlashW(void) {
-#if defined (__DEBUG__)
-	printf("rscRSlashW\n");
-#endif
+	DEBUG_WORD("rscRSlashW")
 }
 
 void rscBSlashScr(void) {
-#if defined (__DEBUG__)
-	printf("rscBSlashScr\n");
-#endif
+	DEBUG_WORD("rscBSlashScr")
 }
 
 void rscBSlashBuf(void) {
-#if defined (__DEBUG__)
-	printf("rscBSlashBuf\n");
-#endif
+	DEBUG_WORD("rscBSlashBuf")
 }
 
 void rscMinusBCD(void) {
-#if defined (__DEBUG__)
-	printf("rscMinusBCD\n");
-#endif
+	DEBUG_WORD("rscMinusBCD")
 }
 
 void rscTo(void) {
-#if defined (__DEBUG__)
-	printf("rscTo\n");
-#endif
+	DEBUG_WORD("rscTo")
 }
 
 void rscLoad(void) {
-#if defined (__DEBUG__)
-	printf("rscLoad\n");
-#endif
+	DEBUG_WORD("rscLoad")
 }
 
 void rscMessage(void) {
-#if defined (__DEBUG__)
-	printf("rscMessage\n");
-#endif
+	DEBUG_WORD("rscMessage")
 }
 
 void rscToLine(void) {
-#if defined (__DEBUG__)
-	printf("rscToLine\n");
-#endif
+	DEBUG_WORD("rscToLine")
 }
 
 void rscDotLine(void) {
-#if defined (__DEBUG__)
-	printf("rscDotLine\n");
-#endif
+	DEBUG_WORD("rscDotLine")
 }
 
 void rscYLine(void) {
-#if defined (__DEBUG__)
-	printf("rscYLine\n");
-#endif
+	DEBUG_WORD("rscYLine")
 }
 
 void rscDump(void) {
-#if defined (__DEBUG__)
-	printf("rscDump\n");
-#endif
+	DEBUG_WORD("rscDump")
 }
 
 void rscFlush(void) {
-#if defined (__DEBUG__)
-	printf("rscFlush\n");
-#endif
+	DEBUG_WORD("rscFlush")
 }
 
 void rscBlock(void) {
-#if defined (__DEBUG__)
-	printf("rscBlock\n");
-#endif
+	DEBUG_WORD("rscBlock")
 }
 
 void rscBuffer(void) {
-#if defined (__DEBUG__)
-	printf("rscBuffer\n");
-#endif
+	DEBUG_WORD("rscBuffer")
 }
 
 void rscEmptyBuffers(void) {
-#if defined (__DEBUG__)
-	printf("rscEmptyBuffers\n");
-#endif
+	DEBUG_WORD("rscEmptyBuffers")
 }
 
 void rscUpdate(void) {
-#if defined (__DEBUG__)
-	printf("rscUpdate\n");
-#endif
+	DEBUG_WORD("rscUpdate")
 }
 
 void rscPlusBuf(void) {
-#if defined (__DEBUG__)
-	printf("rscPlusBuf\n");
-#endif
+	DEBUG_WORD("rscPlusBuf")
 }
 
 void rscMSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("rscMSlashMod\n");
-#endif
+	DEBUG_WORD("rscMSlashMod")
 }
 
 void rscStarSlash(void) {
-#if defined (__DEBUG__)
-	printf("rscStarSlash\n");
-#endif
+	DEBUG_WORD("rscStarSlash")
 }
 
 void rscStarSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("rscStarSlashMod\n");
-#endif
+	DEBUG_WORD("rscStarSlashMod")
 }
 
 void rscMod(void) {
-#if defined (__DEBUG__)
-	printf("rscMod\n");
-#endif
+	DEBUG_WORD("rscMod")
 }
 
 void rscSlash(void) {
-#if defined (__DEBUG__)
-	printf("rscSlash\n");
-#endif
+	DEBUG_WORD("rscSlash")
 }
 
 void rscSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("rscSlashMod\n");
-#endif
+	DEBUG_WORD("rscSlashMod")
 }
 
 void rscStar(void) {
-#if defined (__DEBUG__)
-	printf("rscStar\n");
-#endif
+	DEBUG_WORD("rscStar")
 }
 
 void rscMSlash(void) {
-#if defined (__DEBUG__)
-	printf("rscMSlash\n");
-#endif
+	DEBUG_WORD("rscMSlash")
 }
 
 void rscMStar(void) {
-#if defined (__DEBUG__)
-	printf("rscMStar\n");
-#endif
+	DEBUG_WORD("rscMStar")
 }
 
 void rscMax(void) {
-#if defined (__DEBUG__)
-	printf("rscMax\n");
-#endif
+	DEBUG_WORD("rscMax")
 }
 
 void rscMin(void) {
-#if defined (__DEBUG__)
-	printf("rscMin\n");
-#endif
+	DEBUG_WORD("rscMin")
 }
 
 void rscDAbs(void) {
-#if defined (__DEBUG__)
-	printf("rscDAbs\n");
-#endif
+	DEBUG_WORD("rscDAbs")
 }
 
 void rscAbs(void) {
-#if defined (__DEBUG__)
-	printf("rscAbs\n");
-#endif
+	DEBUG_WORD("rscAbs")
 }
 
 void rscDPlusMinus(void) {
-#if defined (__DEBUG__)
-	printf("rscAbsrscDPlusMinus\n");
-#endif
+	DEBUG_WORD("rscAbsrscDPlusMinus")
 }
 
 void rscPlusMinus(void) {
-#if defined (__DEBUG__)
-	printf("rscPlusMinus\n");
-#endif
+	DEBUG_WORD("rscPlusMinus")
 }
 
 void rscSToD(void) {
-#if defined (__DEBUG__)
-	printf("rscSToD\n");
-#endif
+	DEBUG_WORD("rscSToD")
 }
 
 void rscCold(void) {
-#if defined (__DEBUG__)
-	printf("rscCold\n");
-#endif
+	DEBUG_WORD("rscCold")
 }
 
 void rscAbort(void) {
-#if defined (__DEBUG__)
-	printf("rscAbort\n");
-#endif
+	DEBUG_WORD("rscAbort")
 }
 
 void rscQuit(void) {
-#if defined (__DEBUG__)
-	printf("rscQuit\n");
-#endif
+	DEBUG_WORD("rscQuit")
 }
 
 void rscParen(void) {
-#if defined (__DEBUG__)
-	printf("rscParen\n");
-#endif
+	DEBUG_WORD("rscParen")
 }
 
 void rscDefinitions(void) {
-#if defined (__DEBUG__)
-	printf("rscDefinitions\n");
-#endif
+	DEBUG_WORD("rscDefinitions")
 }
 
 void rscAssembler(void) {
-#if defined (__DEBUG__)
-	printf("rscAssembler\n");
-#endif
+	DEBUG_WORD("rscAssembler")
 }
 
 void rscForth(void) {
-#if defined (__DEBUG__)
-	printf("rscForth\n");
-#endif
+	DEBUG_WORD("rscForth")
 }
 
 void rscVocabulary(void) {
-#if defined (__DEBUG__)
-	printf("rscVocabulary\n");
-#endif
+	DEBUG_WORD("rscVocabulary")
 }
 
 void rscImmediate(void) {
-#if defined (__DEBUG__)
-	printf("rscImmediate\n");
-#endif
+	DEBUG_WORD("rscImmediate")
 }
 
 void rscInterpret(void) {
-#if defined (__DEBUG__)
-	printf("rscInterpret\n");
-#endif
+	DEBUG_WORD("rscInterpret")
 }
 
 void rscQStack(void) {
-#if defined (__DEBUG__)
-	printf("rscQStack\n");
-#endif
+	DEBUG_WORD("rscQStack")
 }
 
 void rscDLiteral(void) {
-#if defined (__DEBUG__)
-	printf("rscDLiteral\n");
-#endif
+	DEBUG_WORD("rscDLiteral")
 }
 
 void rscLiteral(void) {
-#if defined (__DEBUG__)
-	printf("rscLiteral\n");
-#endif
+	DEBUG_WORD("rscLiteral")
 }
 
 void rscXCompile(void) {
-#if defined (__DEBUG__)
-	printf("rscXCompile\n");
-#endif
+	DEBUG_WORD("rscXCompile")
 }
 
 void rscCreate(void) {
-#if defined (__DEBUG__)
-	printf("rscCreate\n");
-#endif
+	DEBUG_WORD("rscCreate")
 }
 
 void rscIDDot(void) {
-#if defined (__DEBUG__)
-	printf("rscIDDot\n");
-#endif
+	DEBUG_WORD("rscIDDot")
 }
 
 void rscError(void) {
-#if defined (__DEBUG__)
-	printf("rscError\n");
-#endif
+	DEBUG_WORD("rscError")
 }
 
 void rscYAbort(void) {
-#if defined (__DEBUG__)
-	printf("rscYAbort\n");
-#endif
+	DEBUG_WORD("rscYAbort")
 }
 
 void rscFind(void) {
-#if defined (__DEBUG__)
-	printf("rscFind\n");
-#endif
+	DEBUG_WORD("rscFind")
 }
 
 void rscNumber(void) {
-#if defined (__DEBUG__)
-	printf("rscNumber\n");
-#endif
+	DEBUG_WORD("rscNumber")
 }
 
 void rscYNumber(void) {
-#if defined (__DEBUG__)
-	printf("rscYNumber\n");
-#endif
+	DEBUG_WORD("rscYNumber")
 }
 
 void rscWord(void) {
-#if defined (__DEBUG__)
-	printf("rscWord\n");
-#endif
+	DEBUG_WORD("rscWord")
 }
 
 void rscHold(void) {
-#if defined (__DEBUG__)
-	printf("rscHold\n");
-#endif
+	DEBUG_WORD("rscHold")
 }
 
 void rscBlanks(void) {
-#if defined (__DEBUG__)
-	printf("rscBlanks\n");
-#endif
+	DEBUG_WORD("rscBlanks")
 }
 
 void rscErase(void) {
-#if defined (__DEBUG__)
-	printf("rscErase\n");
-#endif
+	DEBUG_WORD("rscErase")
 }
 
 void rscFill(void) {
-#if defined (__DEBUG__)
-	printf("rscFill\n");
-#endif
+	DEBUG_WORD("rscFill")
 }
 
 void rscEmptySpace(void) {
-#if defined (__DEBUG__)
-	printf("rscEmptySpace\n");
-#endif
+	DEBUG_WORD("rscEmptySpace")
 }
 
 void rscQuery(void) {
-#if defined (__DEBUG__)
-	printf("rscQuery\n");
-#endif
+	DEBUG_WORD("rscQuery")
 }
 
 void rscExpect(void) {
-#if defined (__DEBUG__)
-	printf("rscExpect\n");
-#endif
+	DEBUG_WORD("rscExpect")
 }
 
 void rscDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("rscDotQuote\n");
-#endif
+	DEBUG_WORD("rscDotQuote")
 }
 
 void rscYDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("rscYDotQuote\n");
-#endif
+	DEBUG_WORD("rscYDotQuote")
 }
 
 void rscTrailing(void) {
-#if defined (__DEBUG__)
-	printf("rscTrailing\n");
-#endif
+	DEBUG_WORD("rscTrailing")
 }
 
 void rscType(void) {
-#if defined (__DEBUG__)
-	printf("rscType\n");
-#endif
+	DEBUG_WORD("rscType")
 }
 
 void rscCount(void) {
-#if defined (__DEBUG__)
-	printf("rscCount\n");
-#endif
+	DEBUG_WORD("rscCount")
 }
 
 void rscDoes(void) {
-#if defined (__DEBUG__)
-	printf("rscDoes\n");
-#endif
+	DEBUG_WORD("rscDoes")
 }
 
 void rscBuilds(void) {
-#if defined (__DEBUG__)
-	printf("rscBuilds\n");
-#endif
+	DEBUG_WORD("rscBuilds")
 }
 
 void rscSemicolonCode(void) {
-#if defined (__DEBUG__)
-	printf("rscSemicolonCode\n");
-#endif
+	DEBUG_WORD("rscSemicolonCode")
 }
 
 void rscYSemicolonCode(void) {
-#if defined (__DEBUG__)
-	printf("rscYSemicolonCode\n");
-#endif
+	DEBUG_WORD("rscYSemicolonCode")
 }
 
 void rscDecimal(void) {
-#if defined (__DEBUG__)
-	printf("rscDecimal\n");
-#endif
+	DEBUG_WORD("rscDecimal")
 }
 
 void rscHex(void) {
-#if defined (__DEBUG__)
-	printf("rscHex\n");
-#endif
+	DEBUG_WORD("rscHex")
 }
 
 void rscSmudge(void) {
-#if defined (__DEBUG__)
-	printf("rscSmudge\n");
-#endif
+	DEBUG_WORD("rscSmudge")
 }
 
 void rscRightBracket(void) {
-#if defined (__DEBUG__)
-	printf("rscRightBracket\n");
-#endif
+	DEBUG_WORD("rscRightBracket")
 }
 
 void rscLeftBracket(void) {
-#if defined (__DEBUG__)
-	printf("rscLeftBracket\n");
-#endif
+	DEBUG_WORD("rscLeftBracket")
 }
 
 void rscCompile(void) {
-#if defined (__DEBUG__)
-	printf("rscCompile\n");
-#endif
+	DEBUG_WORD("rscCompile")
 }
 
 void rscQCsp(void) {
-#if defined (__DEBUG__)
-	printf("rscQCsp\n");
-#endif
+	DEBUG_WORD("rscQCsp")
 }
 
 void rscQPairs(void) {
-#if defined (__DEBUG__)
-	printf("rscQPairs\n");
-#endif
+	DEBUG_WORD("rscQPairs")
 }
 
 void rscQExec(void) {
-#if defined (__DEBUG__)
-	printf("rscQExec\n");
-#endif
+	DEBUG_WORD("rscQExec")
 }
 
 void rscQComp(void) {
-#if defined (__DEBUG__)
-	printf("rscQComp\n");
-#endif
+	DEBUG_WORD("rscQComp")
 }
 
 void rscQError(void) {
-#if defined (__DEBUG__)
-	printf("rscQError\n");
-#endif
+	DEBUG_WORD("rscQError")
 }
 
 void rscStoreCsp(void) {
-#if defined (__DEBUG__)
-	printf("rscStoreCsp\n");
-#endif
+	DEBUG_WORD("rscStoreCsp")
 }
 
 void rscPfaptr(void) {
-#if defined (__DEBUG__)
-	printf("rscPfaptr\n");
-#endif
+	DEBUG_WORD("rscPfaptr")
 }
 
 void rscNfa(void) {
-#if defined (__DEBUG__)
-	printf("rscNfa\n");
-#endif
+	DEBUG_WORD("rscNfa")
 }
 
 void rscCfa(void) {
-#if defined (__DEBUG__)
-	printf("rscCfa\n");
-#endif
+	DEBUG_WORD("rscCfa")
 }
 
 void rscLfa(void) {
-#if defined (__DEBUG__)
-	printf("rscLfa\n");
-#endif
+	DEBUG_WORD("rscLfa")
 }
 
 void rscLatest(void) {
-#if defined (__DEBUG__)
-	printf("rscLatest\n");
-#endif
+	DEBUG_WORD("rscLatest")
 }
 
 void rscTraverse(void) {
-#if defined (__DEBUG__)
-	printf("rscTraverse\n");
-#endif
+	DEBUG_WORD("rscTraverse")
 }
 
 void rscMinusDup(void) {
-#if defined (__DEBUG__)
-	printf("rscMinusDup\n");
-#endif
+	DEBUG_WORD("rscMinusDup")
 }
 
 void rscSpace(void) {
-#if defined (__DEBUG__)
-	printf("rscSpace\n");
-#endif
+	DEBUG_WORD("rscSpace")
 }
 
 void rscPick(void) {
-#if defined (__DEBUG__)
-	printf("rscPick\n");
-#endif
+	DEBUG_WORD("rscPick")
 }
 
 void rscRot(void) {
-#if defined (__DEBUG__)
-	printf("rscRot\n");
-#endif
+	DEBUG_WORD("rscRot")
 }
 
 void rscGreater(void) {
-#if defined (__DEBUG__)
-	printf("rscGreater\n");
-#endif
+	DEBUG_WORD("rscGreater")
 }
 
 void rscLess(void) {
-#if defined (__DEBUG__)
-	printf("rscLess\n");
-#endif
+	DEBUG_WORD("rscLess")
 }
 
 void rscULess(void) {
-#if defined (__DEBUG__)
-	printf("rscULess\n");
-#endif
+	DEBUG_WORD("rscULess")
 }
 
 void rscEqual(void) {
-#if defined (__DEBUG__)
-	printf("rscEqual\n");
-#endif
+	DEBUG_WORD("rscEqual")
 }
 
 void rscMinus(void) {
-#if defined (__DEBUG__)
-	printf("rscMinus\n");
-#endif
+	DEBUG_WORD("rscMinus")
 }
 
 void rscCComma(void) {
-#if defined (__DEBUG__)
-	printf("rscCComma\n");
-#endif
+	DEBUG_WORD("rscCComma")
 }
 
 void rscComma(void) {
-#if defined (__DEBUG__)
-	printf("rscComma\n");
-#endif
+	DEBUG_WORD("rscComma")
 }
 
 void rscAllot(void) {
-#if defined (__DEBUG__)
-	printf("rscAllot\n");
-#endif
+	DEBUG_WORD("rscAllot")
 }
 
 void rscHere(void) {
-#if defined (__DEBUG__)
-	printf("rscHere\n");
-#endif
+	DEBUG_WORD("rscHere")
 }
 
 void rscCommaSlash(void) {
-#if defined (__DEBUG__)
-	printf("rscCommaSlash\n");
-#endif
+	DEBUG_WORD("rscCommaSlash")
 }
 
 void rscAllotSlash(void) {
-#if defined (__DEBUG__)
-	printf("rscAllotSlash\n");
-#endif
+	DEBUG_WORD("rscAllotSlash")
 }
 
 void rscHereSlash(void) {
-#if defined (__DEBUG__)
-	printf("rscHereSlash\n");
-#endif
+	DEBUG_WORD("rscHereSlash")
 }
 
 void rscDPSlash(void) {
-#if defined (__DEBUG__)
-	printf("rscDPSlash\n");
-#endif
+	DEBUG_WORD("rscDPSlash")
 }
 
 void rscTwoMinus(void) {
-#if defined (__DEBUG__)
-	printf("rscTwoMinus\n");
-#endif
+	DEBUG_WORD("rscTwoMinus")
 }
 
 void rscOneMinus(void) {
-#if defined (__DEBUG__)
-	printf("rscOneMinus\n");
-#endif
+	DEBUG_WORD("rscOneMinus")
 }
 
 void rscTwoPlus(void) {
-#if defined (__DEBUG__)
-	printf("rscTwoPlus\n");
-#endif
+	DEBUG_WORD("rscTwoPlus")
 }
 
 void rscOnePlus(void) {
-#if defined (__DEBUG__)
-	printf("rscOnePlus\n");
-#endif
+	DEBUG_WORD("rscOnePlus")
 }
 
 void rscPad(void) {
-#if defined (__DEBUG__)
-	printf("rscPad\n");
-#endif
+	DEBUG_WORD("rscPad")
 }
 
 void rscLimit(void) {
-#if defined (__DEBUG__)
-	printf("rscLimit\n");
-#endif
+	DEBUG_WORD("rscLimit")
 }
 
 void rscFirst(void) {
-#if defined (__DEBUG__)
-	printf("rscFirst\n");
-#endif
+	DEBUG_WORD("rscFirst")
 }
 
 void rscCSlashL(void) {
-#if defined (__DEBUG__)
-	printf("rscCSlashL\n");
-#endif
+	DEBUG_WORD("rscCSlashL")
 }
 
 void rscKhz(void) {
-#if defined (__DEBUG__)
-	printf("rscKhz\n");
-#endif
+	DEBUG_WORD("rscKhz")
 }
 
 void rscMode(void) {
-#if defined (__DEBUG__)
-	printf("rscMode\n");
-#endif
+	DEBUG_WORD("rscMode")
 }
 
 void rscCsp(void) {
-#if defined (__DEBUG__)
-	printf("rscCsp\n");
-#endif
+	DEBUG_WORD("rscCsp")
 }
 
 void rscState(void) {
-#if defined (__DEBUG__)
-	printf("rscState\n");
-#endif
+	DEBUG_WORD("rscState")
 }
 
 void rscCurrent(void) {
-#if defined (__DEBUG__)
-	printf("rscCurrent\n");
-#endif
+	DEBUG_WORD("rscCurrent")
 }
 
 void rscContext(void) {
-#if defined (__DEBUG__)
-	printf("rscContext\n");
-#endif
+	DEBUG_WORD("rscContext")
 }
 
 void rscScr(void) {
-#if defined (__DEBUG__)
-	printf("rscScr\n");
-#endif
+	DEBUG_WORD("rscScr")
 }
 
 void rscBlk(void) {
-#if defined (__DEBUG__)
-	printf("rscBlk\n");
-#endif
+	DEBUG_WORD("rscBlk")
 }
 
 void rscPrev(void) {
-#if defined (__DEBUG__)
-	printf("rscPrev\n");
-#endif
+	DEBUG_WORD("rscPrev")
 }
 
 void rscUse(void) {
-#if defined (__DEBUG__)
-	printf("rscUse\n");
-#endif
+	DEBUG_WORD("rscUse")
 }
 
 void rscUAbort(void) {
-#if defined (__DEBUG__)
-	printf("rscUAbort\n");
-#endif
+	DEBUG_WORD("rscUAbort")
 }
 
 void rscVocLink(void) {
-#if defined (__DEBUG__)
-	printf("rscVocLink\n");
-#endif
+	DEBUG_WORD("rscVocLink")
 }
 
 void rscHeaderless(void) {
-#if defined (__DEBUG__)
-	printf("rscHeaderless\n");
-#endif
+	DEBUG_WORD("rscHeaderless")
 }
 
 void rscDP(void) {
-#if defined (__DEBUG__)
-	printf("rscDP\n");
-#endif
+	DEBUG_WORD("rscDP")
 }
 
 void rscFence(void) {
-#if defined (__DEBUG__)
-	printf("rscFence\n");
-#endif
+	DEBUG_WORD("rscFence")
 }
 
 void rscWarning(void) {
-#if defined (__DEBUG__)
-	printf("rscWarning\n");
-#endif
+	DEBUG_WORD("rscWarning")
 }
 
 void rscWidth(void) {
-#if defined (__DEBUG__)
-	printf("rscWidth\n");
-#endif
+	DEBUG_WORD("rscWidth")
 }
 
 void rscOffset(void) {
-#if defined (__DEBUG__)
-	printf("rscOffset\n");
-#endif
+	DEBUG_WORD("rscOffset")
 }
 
 void rscULimit(void) {
-#if defined (__DEBUG__)
-	printf("rscULimit\n");
-#endif
+	DEBUG_WORD("rscULimit")
 }
 
 void rscUFirst(void) {
-#if defined (__DEBUG__)
-	printf("rscUFirst\n");
-#endif
+	DEBUG_WORD("rscUFirst")
 }
 
 void rscBSlashSide(void) {
-#if defined (__DEBUG__)
-	printf("rscBSlashSide\n");
-#endif
+	DEBUG_WORD("rscBSlashSide")
 }
 
 void rscCylinder(void) {
-#if defined (__DEBUG__)
-	printf("rscCylinder\n");
-#endif
+	DEBUG_WORD("rscCylinder")
 }
 
 void rscDiskNo(void) {
-#if defined (__DEBUG__)
-	printf("rscDiskNo\n");
-#endif
+	DEBUG_WORD("rscDiskNo")
 }
 
 void rscHld(void) {
-#if defined (__DEBUG__)
-	printf("rscHld\n");
-#endif
+	DEBUG_WORD("rscHld")
 }
 
 void rscDpl(void) {
-#if defined (__DEBUG__)
-	printf("rscDpl\n");
-#endif
+	DEBUG_WORD("rscDpl")
 }
 
 void rscIn(void) {
-#if defined (__DEBUG__)
-	printf("rscIn\n");
-#endif
+	DEBUG_WORD("rscIn")
 }
 
 void rscCldSlashWrm(void) {
-#if defined (__DEBUG__)
-	printf("rscCldSlashWrm\n");
-#endif
+	DEBUG_WORD("rscCldSlashWrm")
 }
 
 void rscBase(void) {
-#if defined (__DEBUG__)
-	printf("rscBase\n");
-#endif
+	DEBUG_WORD("rscBase")
 }
 
 void rscURSlashW(void) {
-#if defined (__DEBUG__)
-	printf("rscURSlashW\n");
-#endif
+	DEBUG_WORD("rscURSlashW")
 }
 
 void rscUPad(void) {
-#if defined (__DEBUG__)
-	printf("rscUPad\n");
-#endif
+	DEBUG_WORD("rscUPad")
 }
 
 void rscUCSlashL(void) {
-#if defined (__DEBUG__)
-	printf("rscUCSlashL\n");
-#endif
+	DEBUG_WORD("rscUCSlashL")
 }
 
 void rscR0(void) {
-#if defined (__DEBUG__)
-	printf("rscR0L\n");
-#endif
+	DEBUG_WORD("rscR0L")
 }
 
 void rscS0(void) {
-#if defined (__DEBUG__)
-	printf("rscS0\n");
-#endif
+	DEBUG_WORD("rscS0")
 }
 
 void rscTib(void) {
-#if defined (__DEBUG__)
-	printf("rscTib\n");
-#endif
+	DEBUG_WORD("rscTib")
 }
 
 void rscBl(void) {
-#if defined (__DEBUG__)
-	printf("rscBl\n");
-#endif
+	DEBUG_WORD("rscBl")
 }
 
 void rscFour(void) {
-#if defined (__DEBUG__)
-	printf("rscFour\n");
-#endif
+	DEBUG_WORD("rscFour")
 }
 
 void rscThree(void) {
-#if defined (__DEBUG__)
-	printf("rscThree\n");
-#endif
+	DEBUG_WORD("rscThree")
 }
 
 void rscTwo(void) {
-#if defined (__DEBUG__)
-	printf("rscTwo\n");
-#endif
+	DEBUG_WORD("rscTwo")
 }
 
 void rscOne(void) {
-#if defined (__DEBUG__)
-	printf("rscOne\n");
-#endif
+	DEBUG_WORD("rscOne")
 }
 
 void rscZero(void) {
-#if defined (__DEBUG__)
-	printf("rscZero\n");
-#endif
+	DEBUG_WORD("rscZero")
 }
 
 void rscUser(void) {
-#if defined (__DEBUG__)
-	printf("rscUser\n");
-#endif
+	DEBUG_WORD("rscUser")
 }
 
 void rscCode(void) {
-#if defined (__DEBUG__)
-	printf("rscCode\n");
-#endif
+	DEBUG_WORD("rscCode")
 }
 
 void rscVariable(void) {
-#if defined (__DEBUG__)
-	printf("rscVariable\n");
-#endif
+	DEBUG_WORD("rscVariable")
 }
 
 void rscConstant(void) {
-#if defined (__DEBUG__)
-	printf("rscConstant\n");
-#endif
+	DEBUG_WORD("rscConstant")
 }
 
 void rscSemicolon(void) {
-#if defined (__DEBUG__)
-	printf("rscSemicolon\n");
-#endif
+	DEBUG_WORD("rscSemicolon")
 }
 
 void rscColon(void) {
-#if defined (__DEBUG__)
-	printf("rscColon\n");
-#endif
+	DEBUG_WORD("rscColon")
 }
 
 void rscCStore(void) {
-#if defined (__DEBUG__)
-	printf("rscCStore\n");
-#endif
+	DEBUG_WORD("rscCStore")
 }
 
 void rscStore(void) {
-#if defined (__DEBUG__)
-	printf("rscStore\n");
-#endif
+	DEBUG_WORD("rscStore")
 }
 
 void rscCFetch(void) {
-#if defined (__DEBUG__)
-	printf("rscCFetch\n");
-#endif
+	DEBUG_WORD("rscCFetch")
 }
 
 void rscFetch(void) {
-#if defined (__DEBUG__)
-	printf("rscFetch\n");
-#endif
+	DEBUG_WORD("rscFetch")
 }
 
 void rscToggle(void) {
-#if defined (__DEBUG__)
-	printf("rscToggle\n");
-#endif
+	DEBUG_WORD("rscToggle")
 }
 
 void rscPlusStore(void) {
-#if defined (__DEBUG__)
-	printf("rscPlusStore\n");
-#endif
+	DEBUG_WORD("rscPlusStore")
 }
 
 void rscBounds(void) {
-#if defined (__DEBUG__)
-	printf("rscBounds\n");
-#endif
+	DEBUG_WORD("rscBounds")
 }
 
 void rscTwoDup(void) {
-#if defined (__DEBUG__)
-	printf("rscTwoDup\n");
-#endif
+	DEBUG_WORD("rscTwoDup")
 }
 
 void rscDup(void) {
-#if defined (__DEBUG__)
-	printf("rscDup\n");
-#endif
+	DEBUG_WORD("rscDup")
 }
 
 void rscSwap(void) {
-#if defined (__DEBUG__)
-	printf("rscSwap\n");
-#endif
+	DEBUG_WORD("rscSwap")
 }
 
 void rscTwoDrop(void) {
-#if defined (__DEBUG__)
-	printf("rscTwoDrop\n");
-#endif
+	DEBUG_WORD("rscTwoDrop")
 }
 
 void rscDrop(void) {
-#if defined (__DEBUG__)
-	printf("rscDrop\n");
-#endif
+	DEBUG_WORD("rscDrop")
 }
 
 void rscOver(void) {
-#if defined (__DEBUG__)
-	printf("rscOver\n");
-#endif
+	DEBUG_WORD("rscOver")
 }
 
 void rscDNegate(void) {
-#if defined (__DEBUG__)
-	printf("rscDNegate\n");
-#endif
+	DEBUG_WORD("rscDNegate")
 }
 
 void rscNegate(void) {
-#if defined (__DEBUG__)
-	printf("rscNegate\n");
-#endif
+	DEBUG_WORD("rscNegate")
 }
 
 void rscDPlus(void) {
-#if defined (__DEBUG__)
-	printf("rscDPlus\n");
-#endif
+	DEBUG_WORD("rscDPlus")
 }
 
 void rscPlus(void) {
-#if defined (__DEBUG__)
-	printf("rscPlus\n");
-#endif
+	DEBUG_WORD("rscPlus")
 }
 
 void rscZeroLess(void) {
-#if defined (__DEBUG__)
-	printf("rscZeroLess\n");
-#endif
+	DEBUG_WORD("rscZeroLess")
 }
 
 void rscNot(void) {
-#if defined (__DEBUG__)
-	printf("rscNot\n");
-#endif
+	DEBUG_WORD("rscNot")
 }
 
 void rscZeroEqual(void) {
-#if defined (__DEBUG__)
-	printf("rscZeroEqual\n");
-#endif
+	DEBUG_WORD("rscZeroEqual")
 }
 
 void rscR(void) {
-#if defined (__DEBUG__)
-	printf("rscR\n");
-#endif
+	DEBUG_WORD("rscR")
 }
 
 void rscRFrom(void) {
-#if defined (__DEBUG__)
-	printf("rscRFrom\n");
-#endif
+	DEBUG_WORD("rscRFrom")
 }
 
 void rscToR(void) {
-#if defined (__DEBUG__)
-	printf("rscToR\n");
-#endif
+	DEBUG_WORD("rscToR")
 }
 
 void rscLeave(void) {
-#if defined (__DEBUG__)
-	printf("rscLeave\n");
-#endif
+	DEBUG_WORD("rscLeave")
 }
 
 void rscSemicolonS(void) {
-#if defined (__DEBUG__)
-	printf("rscSemicolonS\n");
-#endif
+	DEBUG_WORD("rscSemicolonS")
 }
 
 void rscRPFetch(void) {
-#if defined (__DEBUG__)
-	printf("rscRPFetch\n");
-#endif
+	DEBUG_WORD("rscRPFetch")
 }
 
 void rscRPStore(void) {
-#if defined (__DEBUG__)
-	printf("rscRPStore\n");
-#endif
+	DEBUG_WORD("rscRPStore")
 }
 
 void rscSPStore(void) {
-#if defined (__DEBUG__)
-	printf("rscSPStore\n");
-#endif
+	DEBUG_WORD("rscSPStore")
 }
 
 void rscSPFetch(void) {
-#if defined (__DEBUG__)
-	printf("rscSPFetch\n");
-#endif
+	DEBUG_WORD("rscSPFetch")
 }
 
 void rscXor(void) {
-#if defined (__DEBUG__)
-	printf("rscXor\n");
-#endif
+	DEBUG_WORD("rscXor")
 }
 
 void rscOr(void) {
-#if defined (__DEBUG__)
-	printf("rscOr\n");
-#endif
+	DEBUG_WORD("rscOr")
 }
 
 void rscAnd(void) {
-#if defined (__DEBUG__)
-	printf("rscAnd\n");
-#endif
+	DEBUG_WORD("rscAnd")
 }
 
 void rscUSlash(void) {
-#if defined (__DEBUG__)
-	printf("rscUSlash\n");
-#endif
+	DEBUG_WORD("rscUSlash")
 }
 
 void rscUStar(void) {
-#if defined (__DEBUG__)
-	printf("rscUStar\n");
-#endif
+	DEBUG_WORD("rscUStar")
 }
 
 void rscCMove(void) {
-#if defined (__DEBUG__)
-	printf("rscCMove\n");
-#endif
+	DEBUG_WORD("rscCMove")
 }
 
 void rscFinis(void) {
-#if defined (__DEBUG__)
-	printf("rscFinis\n");
-#endif
+	DEBUG_WORD("rscFinis")
 }
 
 void rscSource(void) {
-#if defined (__DEBUG__)
-	printf("rscSource\n");
-#endif
+	DEBUG_WORD("rscSource")
 }
 
 void rscXOff(void) {
-#if defined (__DEBUG__)
-	printf("rscXOff\n");
-#endif
+	DEBUG_WORD("rscXOff")
 }
 
 void rscXon(void) {
-#if defined (__DEBUG__)
-	printf("rscXon\n");
-#endif
+	DEBUG_WORD("rscXon")
 }
 
 void rscCr(void) {
-#if defined (__DEBUG__)
-	printf("rscCr\n");
-#endif
+	DEBUG_WORD("rscCr")
 }
 
 void rscQTerminal(void) {
-#if defined (__DEBUG__)
-	printf("rscQTerminal\n");
-#endif
+	DEBUG_WORD("rscQTerminal")
 }
 
 void rscKey(void) {
-#if defined (__DEBUG__)
-	printf("rscKey\n");
-#endif
+	DEBUG_WORD("rscKey")
 }
 
 void rscEmit(void) {
-#if defined (__DEBUG__)
-	printf("rscEmit\n");
-#endif
+	DEBUG_WORD("rscEmit")
 }
 
 void rscEnclose(void) {
-#if defined (__DEBUG__)
-	printf("rscEnclose\n");
-#endif
+	DEBUG_WORD("rscEnclose")
 }
 
 void rscYFind(void) {
-#if defined (__DEBUG__)
-	printf("rscYFind\n");
-#endif
+	DEBUG_WORD("rscYFind")
 }
 
 void rscDigit(void) {
-#if defined (__DEBUG__)
-	printf("rscDigit\n");
-#endif
+	DEBUG_WORD("rscDigit")
 }
 
 void rscI(void) {
-#if defined (__DEBUG__)
-	printf("rscI\n");
-#endif
+	DEBUG_WORD("rscI")
 }
 
 void rscYDo(void) {
-#if defined (__DEBUG__)
-	printf("rscYDo\n");
-#endif
+	DEBUG_WORD("rscYDo")
 }
 
 void rscYPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("rscYPlusLoop\n");
-#endif
+	DEBUG_WORD("rscYPlusLoop")
 }
 
 void rscYLoop(void) {
-#if defined (__DEBUG__)
-	printf("rscYLoop\n");
-#endif
+	DEBUG_WORD("rscYLoop")
 }
 
 void rscZeroBranch(void) {
-#if defined (__DEBUG__)
-	printf("rscZeroBranch\n");
-#endif
+	DEBUG_WORD("rscZeroBranch")
 }
 
 void rscBranch(void) {
-#if defined (__DEBUG__)
-	printf("rscBranch\n");
-#endif
+	DEBUG_WORD("rscBranch")
 }
 
 void rscExecute(void) {
-#if defined (__DEBUG__)
-	printf("rscExecute\n");
-#endif
+	DEBUG_WORD("rscExecute")
 }
 
 void rscClit(void) {
-#if defined (__DEBUG__)
-	printf("rscClit\n");
-#endif
+	DEBUG_WORD("rscClit")
 }
 
 void rscLit(void) {
-#if defined (__DEBUG__)
-	printf("rscLit\n");
-#endif
+	DEBUG_WORD("rscLit")
 }
 
 #endif

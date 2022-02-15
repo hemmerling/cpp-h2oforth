@@ -5,7 +5,7 @@
 
 /* Definitions */
 void jupiterForth(void);
-void jupiterUFLoad(void);
+void jupiterUFLoat(void);
 void jupiterFNegate(void);
 void jupiterFSlash(void);
 void jupiterFStar(void);
@@ -160,7 +160,7 @@ typedef  struct _forthWord {
 
 static const typedef_forthWord forthWords[] = {
 			{ "FORTH", "FORTH", TRUE, FALSE, FALSE, 0UL, (forthOperation)jupiterForth },
-			{ "UFLOAD", "UFLOAD", TRUE, FALSE, FALSE, 0UL, (forthOperation)jupiterUFLoad },
+			{ "UFLOAT", "UFLOAT", TRUE, FALSE, FALSE, 0UL, (forthOperation)jupiterUFLoat },
 			{ "FNEGATE", "FNEGATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)jupiterFNegate },
 			{ "F/", "F/", TRUE, FALSE, FALSE, 0UL, (forthOperation)jupiterFSlash },
 			{ "F*", "F*", TRUE, FALSE, FALSE, 0UL, (forthOperation)jupiterFStar },

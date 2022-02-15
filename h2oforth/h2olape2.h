@@ -10,3279 +10,2187 @@
     (H2O_FORTH_PRIMITIVES == LAXONPERRY_CPM_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == LAXONPERRY_CPM68K_FORTH)
 void laxperEmpty(void) {
-#if defined (__DEBUG__)
-	printf("laxperEmpty\n");
-#endif
+	DEBUG_WORD("laxperEmpty")
 }
 
 void laxperMark(void) {
-#if defined (__DEBUG__)
-	printf("laxperMark\n");
-#endif
+	DEBUG_WORD("laxperMark")
 }
 
 void laxperHello(void) {
-#if defined (__DEBUG__)
-	printf("laxperHello\n");
-#endif
+	DEBUG_WORD("laxperHello")
 }
 
 void laxperBackgroundColon(void) {
-#if defined (__DEBUG__)
-	printf("laxperBackgroundColon\n");
-#endif
+	DEBUG_WORD("laxperBackgroundColon")
 }
 
 void laxperActivate(void) {
-#if defined (__DEBUG__)
-	printf("laxperActivate\n");
-#endif
+	DEBUG_WORD("laxperActivate")
 }
 
 void laxperSetTask(void) {
-#if defined (__DEBUG__)
-	printf("laxperSetTask\n");
-#endif
+	DEBUG_WORD("laxperSetTask")
 }
 
 void laxperTaskColon(void) {
-#if defined (__DEBUG__)
-	printf("laxperTaskColon\n");
-#endif
+	DEBUG_WORD("laxperTaskColon")
 }
 
 void laxperResume(void) {
-#if defined (__DEBUG__)
-	printf("laxperResume\n");
-#endif
+	DEBUG_WORD("laxperResume")
 }
 
 void laxperDebug(void) {
-#if defined (__DEBUG__)
-	printf("laxperDebug\n");
-#endif
+	DEBUG_WORD("laxperDebug")
 }
 
 void laxperListing(void) {
-#if defined (__DEBUG__)
-	printf("laxperListing\n");
-#endif
+	DEBUG_WORD("laxperListing")
 }
 
 void laxperShow(void) {
-#if defined (__DEBUG__)
-	printf("laxperShow\n");
-#endif
+	DEBUG_WORD("laxperShow")
 }
 
 void laxperYSemit(void) {
-#if defined (__DEBUG__)
-	printf("laxperYSemit\n");
-#endif
+	DEBUG_WORD("laxperYSemit")
 }
 
 void laxperYPage(void) {
-#if defined (__DEBUG__)
-	printf("laxperYPage\n");
-#endif
+	DEBUG_WORD("laxperYPage")
 }
 
 void laxperFormFeed(void) {
-#if defined (__DEBUG__)
-	printf("laxperFormFeed\n");
-#endif
+	DEBUG_WORD("laxperFormFeed")
 }
 
 void laxperPage(void) {
-#if defined (__DEBUG__)
-	printf("laxperPage\n");
-#endif
+	DEBUG_WORD("laxperPage")
 }
 
 void laxperNumPage(void) {
-#if defined (__DEBUG__)
-	printf("laxperNumPage\n");
-#endif
+	DEBUG_WORD("laxperNumPage")
 }
 
 void laxperLogo(void) {
-#if defined (__DEBUG__)
-	printf("laxperLogo\n");
-#endif
+	DEBUG_WORD("laxperLogo")
 }
 
 void laxperLSlashPage(void) {
-#if defined (__DEBUG__)
-	printf("laxperLSlashPage\n");
-#endif
+	DEBUG_WORD("laxperLSlashPage")
 }
 
 void laxperFooting(void) {
-#if defined (__DEBUG__)
-	printf("laxperFooting\n");
-#endif
+	DEBUG_WORD("laxperFooting")
 }
 
 void laxperInitPr(void) {
-#if defined (__DEBUG__)
-	printf("laxperInitPr\n");
-#endif
+	DEBUG_WORD("laxperInitPr")
 }
 
 void laxperEpson(void) {
-#if defined (__DEBUG__)
-	printf("laxperEpson\n");
-#endif
+	DEBUG_WORD("laxperEpson")
 }
 
 void laxperSee(void) {
-#if defined (__DEBUG__)
-	printf("laxperSee\n");
-#endif
+	DEBUG_WORD("laxperSee")
 }
 
 void laxperYSee(void) {
-#if defined (__DEBUG__)
-	printf("laxperYSee\n");
-#endif
+	DEBUG_WORD("laxperYSee")
 }
 
 void laxperAssociativeColon(void) {
-#if defined (__DEBUG__)
-	printf("laxperAssociativeColon\n");
-#endif
+	DEBUG_WORD("laxperAssociativeColon")
 }
 
 void laxperCaseColon(void) {
-#if defined (__DEBUG__)
-	printf("laxperCaseColon\n");
-#endif
+	DEBUG_WORD("laxperCaseColon")
 }
 
 void laxperMap(void) {
-#if defined (__DEBUG__)
-	printf("laxperMap\n");
-#endif
+	DEBUG_WORD("laxperMap")
 }
 
 void laxperOut(void) {
-#if defined (__DEBUG__)
-	printf("laxperOut\n");
-#endif
+	DEBUG_WORD("laxperOut")
 }
 
 void laxperDL(void) {
-#if defined (__DEBUG__)
-	printf("laxperDL\n");
-#endif
+	DEBUG_WORD("laxperDL")
 }
 
 void laxperDU(void) {
-#if defined (__DEBUG__)
-	printf("laxperDU\n");
-#endif
+	DEBUG_WORD("laxperDU")
 }
 
 void laxperDump(void) {
-#if defined (__DEBUG__)
-	printf("laxperDump\n");
-#endif
+	DEBUG_WORD("laxperDump")
 }
 
 void laxperDotHead(void) {
-#if defined (__DEBUG__)
-	printf("laxperDotHead\n");
-#endif
+	DEBUG_WORD("laxperDotHead")
 }
 
 void laxperQDotA(void) {
-#if defined (__DEBUG__)
-	printf("laxperQDotA\n");
-#endif
+	DEBUG_WORD("laxperQDotA")
 }
 
 void laxperQDotN(void) {
-#if defined (__DEBUG__)
-	printf("laxperQDotN\n");
-#endif
+	DEBUG_WORD("laxperQDotN")
 }
 
 void laxperDln(void) {
-#if defined (__DEBUG__)
-	printf("laxperDln\n");
-#endif
+	DEBUG_WORD("laxperDln")
 }
 
 void laxperEmitDot(void) {
-#if defined (__DEBUG__)
-	printf("laxperEmitDot\n");
-#endif
+	DEBUG_WORD("laxperEmitDot")
 }
 
 void laxperDDotTwo(void) {
-#if defined (__DEBUG__)
-	printf("laxperDDotTwo\n");
-#endif
+	DEBUG_WORD("laxperDDotTwo")
 }
 
 void laxperDotTwo(void) {
-#if defined (__DEBUG__)
-	printf("laxperDotTwo\n");
-#endif
+	DEBUG_WORD("laxperDotTwo")
 }
 
 void laxperA(void) {
-#if defined (__DEBUG__)
-	printf("laxperA\n");
-#endif
+	DEBUG_WORD("laxperA")
 }
 
 void laxperShadow(void) {
-#if defined (__DEBUG__)
-	printf("laxperShadow\n");
-#endif
+	DEBUG_WORD("laxperShadow")
 }
 
 void laxperYWhere(void) {
-#if defined (__DEBUG__)
-	printf("laxperYWhere\n");
-#endif
+	DEBUG_WORD("laxperYWhere")
 }
 
 void laxperFix(void) {
-#if defined (__DEBUG__)
-	printf("laxperFix\n");
-#endif
+	DEBUG_WORD("laxperFix")
 }
 
 void laxperEdit(void) {
-#if defined (__DEBUG__)
-	printf("laxperEdit\n");
-#endif
+	DEBUG_WORD("laxperEdit")
 }
 
 void laxperEd(void) {
-#if defined (__DEBUG__)
-	printf("laxperEd\n");
-#endif
+	DEBUG_WORD("laxperEd")
 }
 
 void laxperDone(void) {
-#if defined (__DEBUG__)
-	printf("laxperDone\n");
-#endif
+	DEBUG_WORD("laxperDone")
 }
 
 void laxperEditor(void) {
-#if defined (__DEBUG__)
-	printf("laxperEditor\n");
-#endif
+	DEBUG_WORD("laxperEditor")
 }
 
 void laxperDark(void) {
-#if defined (__DEBUG__)
-	printf("laxperDark\n");
-#endif
+	DEBUG_WORD("laxperDark")
 }
 
 void laxperAt(void) {
-#if defined (__DEBUG__)
-	printf("laxperAt\n");
-#endif
+	DEBUG_WORD("laxperAt")
 }
 
 void laxperMinusLine(void) {
-#if defined (__DEBUG__)
-	printf("laxperMinusLine\n");
-#endif
+	DEBUG_WORD("laxperMinusLine")
 }
 
 void laxperBlot(void) {
-#if defined (__DEBUG__)
-	printf("laxperBlot\n");
-#endif
+	DEBUG_WORD("laxperBlot")
 }
 
 void laxperReplace(void) {
-#if defined (__DEBUG__)
-	printf("laxperReplace\n");
-#endif
+	DEBUG_WORD("laxperReplace")
 }
 
 void laxperInsert(void) {
-#if defined (__DEBUG__)
-	printf("laxperInsert\n");
-#endif
+	DEBUG_WORD("laxperInsert")
 }
 
 void laxperDelete(void) {
-#if defined (__DEBUG__)
-	printf("laxperDelete\n");
-#endif
+	DEBUG_WORD("laxperDelete")
 }
 
 void laxperSearch(void) {
-#if defined (__DEBUG__)
-	printf("laxperSearch\n");
-#endif
+	DEBUG_WORD("laxperSearch")
 }
 
 void laxperScanFirst(void) {
-#if defined (__DEBUG__)
-	printf("laxperScanFirst\n");
-#endif
+	DEBUG_WORD("laxperScanFirst")
 }
 
 void laxperFound(void) {
-#if defined (__DEBUG__)
-	printf("laxperFound\n");
-#endif
+	DEBUG_WORD("laxperFound")
 }
 
 void laxperTo(void) {
-#if defined (__DEBUG__)
-	printf("laxperTo\n");
-#endif
+	DEBUG_WORD("laxperTo")
 }
 
 void laxperCorvey(void) {
-#if defined (__DEBUG__)
-	printf("laxperCorvey\n");
-#endif
+	DEBUG_WORD("laxperCorvey")
 }
 
 void laxperYConvey(void) {
-#if defined (__DEBUG__)
-	printf("laxperYConvey\n");
-#endif
+	DEBUG_WORD("laxperYConvey")
 }
 
 void laxperDotTo(void) {
-#if defined (__DEBUG__)
-	printf("laxperDotTo\n");
-#endif
+	DEBUG_WORD("laxperDotTo")
 }
 
 void laxperHop(void) {
-#if defined (__DEBUG__)
-	printf("laxperHop\n");
-#endif
+	DEBUG_WORD("laxperHop")
 }
 
 void laxperConveyCopy(void) {
-#if defined (__DEBUG__)
-	printf("laxperConveyCopy\n");
-#endif
+	DEBUG_WORD("laxperConveyCopy")
 }
 
 void laxperUSlashD(void) {
-#if defined (__DEBUG__)
-	printf("laxperUSlashD\n");
-#endif
+	DEBUG_WORD("laxperUSlashD")
 }
 
 void laxperHopped(void) {
-#if defined (__DEBUG__)
-	printf("laxperHopped\n");
-#endif
+	DEBUG_WORD("laxperHopped")
 }
 
 void laxperView(void) {
-#if defined (__DEBUG__)
-	printf("laxperView\n");
-#endif
+	DEBUG_WORD("laxperView")
 }
 
 void laxperFetchView(void) {
-#if defined (__DEBUG__)
-	printf("laxperFetchView\n");
-#endif
+	DEBUG_WORD("laxperFetchView")
 }
 
 void laxperCopy(void) {
-#if defined (__DEBUG__)
-	printf("laxperCopy\n");
-#endif
+	DEBUG_WORD("laxperCopy")
 }
 
 void laxperYCopy(void) {
-#if defined (__DEBUG__)
-	printf("laxperYCopy\n");
-#endif
+	DEBUG_WORD("laxperYCopy")
 }
 
 void laxperEstablish(void) {
-#if defined (__DEBUG__)
-	printf("laxperEstablish\n");
-#endif
+	DEBUG_WORD("laxperEstablish")
 }
 
 void laxperL(void) {
-#if defined (__DEBUG__)
-	printf("laxperL\n");
-#endif
+	DEBUG_WORD("laxperL")
 }
 
 void laxperB(void) {
-#if defined (__DEBUG__)
-	printf("laxperB\n");
-#endif
+	DEBUG_WORD("laxperB")
 }
 
 void laxperN(void) {
-#if defined (__DEBUG__)
-	printf("laxperN\n");
-#endif
+	DEBUG_WORD("laxperN")
 }
 
 void laxperColonColon(void) {
-#if defined (__DEBUG__)
-	printf("laxperColonColon\n");
-#endif
+	DEBUG_WORD("laxperColonColon")
 }
 
 void laxperMany(void) {
-#if defined (__DEBUG__)
-	printf("laxperMany\n");
-#endif
+	DEBUG_WORD("laxperMany")
 }
 
 void laxperTimes(void) {
-#if defined (__DEBUG__)
-	printf("laxperTimes\n");
-#endif
+	DEBUG_WORD("laxperTimes")
 }
 
 void laxperNumTimes(void) {
-#if defined (__DEBUG__)
-	printf("laxperNumTimes\n");
-#endif
+	DEBUG_WORD("laxperNumTimes")
 }
 
 void laxperWords(void) {
-#if defined (__DEBUG__)
-	printf("laxperWords\n");
-#endif
+	DEBUG_WORD("laxperWords")
 }
 
 void laxperLargest(void) {
-#if defined (__DEBUG__)
-	printf("laxperLargest\n");
-#endif
+	DEBUG_WORD("laxperLargest")
 }
 
 void laxperInd(void) {
-#if defined (__DEBUG__)
-	printf("laxperInd\n");
-#endif
+	DEBUG_WORD("laxperInd")
 }
 
 void laxperIndex(void) {
-#if defined (__DEBUG__)
-	printf("laxperIndex\n");
-#endif
+	DEBUG_WORD("laxperIndex")
 }
 
 void laxperDotLineZero(void) {
-#if defined (__DEBUG__)
-	printf("laxperDotLineZero\n");
-#endif
+	DEBUG_WORD("laxperDotLineZero")
 }
 
 void laxperTriad(void) {
-#if defined (__DEBUG__)
-	printf("laxperTriad\n");
-#endif
+	DEBUG_WORD("laxperTriad")
 }
 
 void laxperList(void) {
-#if defined (__DEBUG__)
-	printf("laxperList\n");
-#endif
+	DEBUG_WORD("laxperList")
 }
 
 void laxperDotScr(void) {
-#if defined (__DEBUG__)
-	printf("laxperDotScr\n");
-#endif
+	DEBUG_WORD("laxperDotScr")
 }
 
 void laxperQCr(void) {
-#if defined (__DEBUG__)
-	printf("laxperQCr\n");
-#endif
+	DEBUG_WORD("laxperQCr")
 }
 
 void laxperQLine(void) {
-#if defined (__DEBUG__)
-	printf("laxperQLine\n");
-#endif
+	DEBUG_WORD("laxperQLine")
 }
 
 void laxperRMargin(void) {
-#if defined (__DEBUG__)
-	printf("laxperRMargin\n");
-#endif
+	DEBUG_WORD("laxperRMargin")
 }
 
 void laxperLMargin(void) {
-#if defined (__DEBUG__)
-	printf("laxperLMargin\n");
-#endif
+	DEBUG_WORD("laxperLMargin")
 }
 
 void laxperHidden(void) {
-#if defined (__DEBUG__)
-	printf("laxperHidden\n");
-#endif
+	DEBUG_WORD("laxperHidden")
 }
 
 void laxperZeroLessEqual(void) {
-#if defined (__DEBUG__)
-	printf("laxperZeroLessEqual\n");
-#endif
+	DEBUG_WORD("laxperZeroLessEqual")
 }
 
 void laxperZeroGreaterEqual(void) {
-#if defined (__DEBUG__)
-	printf("laxperZeroGreaterEqual\n");
-#endif
+	DEBUG_WORD("laxperZeroGreaterEqual")
 }
 
 void laxperGreaterEqual(void) {
-#if defined (__DEBUG__)
-	printf("laxperGreaterEqual\n");
-#endif
+	DEBUG_WORD("laxperGreaterEqual")
 }
 
 void laxperLessEqual(void) {
-#if defined (__DEBUG__)
-	printf("laxperLessEqual\n");
-#endif
+	DEBUG_WORD("laxperLessEqual")
 }
 
 void laxperUGreaterEqual(void) {
-#if defined (__DEBUG__)
-	printf("laxperUGreaterEqual\n");
-#endif
+	DEBUG_WORD("laxperUGreaterEqual")
 }
 
 void laxperULessEqual(void) {
-#if defined (__DEBUG__)
-	printf("laxperULessEqual\n");
-#endif
+	DEBUG_WORD("laxperULessEqual")
 }
 
 void laxperMs(void) {
-#if defined (__DEBUG__)
-	printf("laxperMs\n");
-#endif
+	DEBUG_WORD("laxperMs")
 }
 
 void laxperFudge(void) {
-#if defined (__DEBUG__)
-	printf("laxperFudge\n");
-#endif
+	DEBUG_WORD("laxperFudge")
 }
 
 void laxperPCStore(void) {
-#if defined (__DEBUG__)
-	printf("laxperPCStore\n");
-#endif
+	DEBUG_WORD("laxperPCStore")
 }
 
 void laxperPCFetch(void) {
-#if defined (__DEBUG__)
-	printf("laxperPCFetch\n");
-#endif
+	DEBUG_WORD("laxperPCFetch")
 }
 
 void laxperMulti(void) {
-#if defined (__DEBUG__)
-	printf("laxperMulti\n");
-#endif
+	DEBUG_WORD("laxperMulti")
 }
 
 void laxperSingle(void) {
-#if defined (__DEBUG__)
-	printf("laxperSingle\n");
-#endif
+	DEBUG_WORD("laxperSingle")
 }
 
 void laxperStop(void) {
-#if defined (__DEBUG__)
-	printf("laxperStop\n");
-#endif
+	DEBUG_WORD("laxperStop")
 }
 
 void laxperWake(void) {
-#if defined (__DEBUG__)
-	printf("laxperWake\n");
-#endif
+	DEBUG_WORD("laxperWake")
 }
 
 void laxperSleep(void) {
-#if defined (__DEBUG__)
-	printf("laxperSleep\n");
-#endif
+	DEBUG_WORD("laxperSleep")
 }
 
 void laxperStoreLink(void) {
-#if defined (__DEBUG__)
-	printf("laxperStoreLink\n");
-#endif
+	DEBUG_WORD("laxperStoreLink")
 }
 
 void laxperFetchLink(void) {
-#if defined (__DEBUG__)
-	printf("laxperFetchLink\n");
-#endif
+	DEBUG_WORD("laxperFetchLink")
 }
 
 void laxperLocal(void) {
-#if defined (__DEBUG__)
-	printf("laxperLocal\n");
-#endif
+	DEBUG_WORD("laxperLocal")
 }
 
 void laxperRestart(void) {
-#if defined (__DEBUG__)
-	printf("laxperRestart\n");
-#endif
+	DEBUG_WORD("laxperRestart")
 }
 
 void laxperYPause(void) {
-#if defined (__DEBUG__)
-	printf("laxperYPause\n");
-#endif
+	DEBUG_WORD("laxperYPause")
 }
 
 void laxperUnbug(void) {
-#if defined (__DEBUG__)
-	printf("laxperUnbug\n");
-#endif
+	DEBUG_WORD("laxperUnbug")
 }
 
 void laxperBug(void) {
-#if defined (__DEBUG__)
-	printf("laxperBug\n");
-#endif
+	DEBUG_WORD("laxperBug")
 }
 
 void laxperDoesQ(void) {
-#if defined (__DEBUG__)
-	printf("laxperDoesQ\n");
-#endif
+	DEBUG_WORD("laxperDoesQ")
 }
 
 void laxperDoesSize(void) {
-#if defined (__DEBUG__)
-	printf("laxperDoesSize\n");
-#endif
+	DEBUG_WORD("laxperDoesSize")
 }
 
 void laxperDoesOp(void) {
-#if defined (__DEBUG__)
-	printf("laxperDoesOp\n");
-#endif
+	DEBUG_WORD("laxperDoesOp")
 }
 
 void laxperLabel(void) {
-#if defined (__DEBUG__)
-	printf("laxperLabel\n");
-#endif
+	DEBUG_WORD("laxperLabel")
 }
 
 void laxperUtilityDotBlk(void) {
-#if defined (__DEBUG__)
-	printf("laxperUtilityDotBlk\n");
-#endif
+	DEBUG_WORD("laxperUtilityDotBlk")
 }
 
 void laxperViews(void) {
-#if defined (__DEBUG__)
-	printf("laxperViews\n");
-#endif
+	DEBUG_WORD("laxperViews")
 }
 
 void laxperViewFiles(void) {
-#if defined (__DEBUG__)
-	printf("laxperViewFiles\n");
-#endif
+	DEBUG_WORD("laxperViewFiles")
 }
 
 void laxperSaveSystem(void) {
-#if defined (__DEBUG__)
-	printf("laxperSaveSystem\n");
-#endif
+	DEBUG_WORD("laxperSaveSystem")
 }
 
 void laxperForm(void) {
-#if defined (__DEBUG__)
-	printf("laxperForm\n");
-#endif
+	DEBUG_WORD("laxperForm")
 }
 
 void laxperOpen(void) {
-#if defined (__DEBUG__)
-	printf("laxperOpen\n");
-#endif
+	DEBUG_WORD("laxperOpen")
 }
 
 void laxperDefine(void) {
-#if defined (__DEBUG__)
-	printf("laxperDefine\n");
-#endif
+	DEBUG_WORD("laxperDefine")
 }
 
 void laxperBColon(void) {
-#if defined (__DEBUG__)
-	printf("laxperBColon\n");
-#endif
+	DEBUG_WORD("laxperBColon")
 }
 
 void laxperAColon(void) {
-#if defined (__DEBUG__)
-	printf("laxperAColon\n");
-#endif
+	DEBUG_WORD("laxperAColon")
 }
 
 void laxperDriveQ(void) {
-#if defined (__DEBUG__)
-	printf("laxperDriveQ\n");
-#endif
+	DEBUG_WORD("laxperDriveQ")
 }
 
 void laxperDir(void) {
-#if defined (__DEBUG__)
-	printf("laxperDir\n");
-#endif
+	DEBUG_WORD("laxperDir")
 }
 
 void laxperCreateFile(void) {
-#if defined (__DEBUG__)
-	printf("laxperCreateFile\n");
-#endif
+	DEBUG_WORD("laxperCreateFile")
 }
 
 void laxperMore(void) {
-#if defined (__DEBUG__)
-	printf("laxperMore\n");
-#endif
+	DEBUG_WORD("laxperMore")
 }
 
 void laxperRoot(void) {
-#if defined (__DEBUG__)
-	printf("laxperRoot\n");
-#endif
+	DEBUG_WORD("laxperRoot")
 }
 
 void laxperNextBlock(void) {
-#if defined (__DEBUG__)
-	printf("laxperNextBlock\n");
-#endif
+	DEBUG_WORD("laxperNextBlock")
 }
 
 void laxperPlusThru(void) {
-#if defined (__DEBUG__)
-	printf("laxperPlusThru\n");
-#endif
+	DEBUG_WORD("laxperPlusThru")
 }
 
 void laxperThru(void) {
-#if defined (__DEBUG__)
-	printf("laxperThru\n");
-#endif
+	DEBUG_WORD("laxperThru")
 }
 
 void laxperQEnough(void) {
-#if defined (__DEBUG__)
-	printf("laxperQEnough\n");
-#endif
+	DEBUG_WORD("laxperQEnough")
 }
 
 void laxperQ(void) {
-#if defined (__DEBUG__)
-	printf("laxperQ\n");
-#endif
+	DEBUG_WORD("laxperQ")
 }
 
 void laxperParenS(void) {
-#if defined (__DEBUG__)
-	printf("laxperParenS\n");
-#endif
+	DEBUG_WORD("laxperParenS")
 }
 
 void laxperBackslash(void) {
-#if defined (__DEBUG__)
-	printf("laxperBackslash\n");
-#endif
+	DEBUG_WORD("laxperBackslash")
 }
 
 void laxperLSlashScr(void) {
-#if defined (__DEBUG__)
-	printf("laxperLSlashScr\n");
-#endif
+	DEBUG_WORD("laxperLSlashScr")
 }
 
 void laxperCSlashL(void) {
-#if defined (__DEBUG__)
-	printf("laxperCSlashL\n");
-#endif
+	DEBUG_WORD("laxperCSlashL")
 }
 
 void laxperRecurse(void) {
-#if defined (__DEBUG__)
-	printf("laxperRecurse\n");
-#endif
+	DEBUG_WORD("laxperRecurse")
 }
 
 void laxperDotId(void) {
-#if defined (__DEBUG__)
-	printf("laxperDotId\n");
-#endif
+	DEBUG_WORD("laxperDotId")
 }
 
 void laxperDotS(void) {
-#if defined (__DEBUG__)
-	printf("laxperDotS\n");
-#endif
+	DEBUG_WORD("laxperDotS")
 }
 
 void laxperDepth(void) {
-#if defined (__DEBUG__)
-	printf("laxperDepth\n");
-#endif
+	DEBUG_WORD("laxperDepth")
 }
 
 void laxperBye(void) {
-#if defined (__DEBUG__)
-	printf("laxperBye\n");
-#endif
+	DEBUG_WORD("laxperBye")
 }
 
 void laxperStart(void) {
-#if defined (__DEBUG__)
-	printf("laxperStart\n");
-#endif
+	DEBUG_WORD("laxperStart")
 }
 
 void laxperOk(void) {
-#if defined (__DEBUG__)
-	printf("laxperOk\n");
-#endif
+	DEBUG_WORD("laxperOk")
 }
 
 void laxperInitial(void) {
-#if defined (__DEBUG__)
-	printf("laxperInitial\n");
-#endif
+	DEBUG_WORD("laxperInitial")
 }
 
 void laxperCold(void) {
-#if defined (__DEBUG__)
-	printf("laxperCold\n");
-#endif
+	DEBUG_WORD("laxperCold")
 }
 
 void laxperWarm(void) {
-#if defined (__DEBUG__)
-	printf("laxperWarm\n");
-#endif
+	DEBUG_WORD("laxperWarm")
 }
 
 void laxperBoot(void) {
-#if defined (__DEBUG__)
-	printf("laxperBoot\n");
-#endif
+	DEBUG_WORD("laxperBoot")
 }
 
 void laxperQuit(void) {
-#if defined (__DEBUG__)
-	printf("laxperQuit\n");
-#endif
+	DEBUG_WORD("laxperQuit")
 }
 
 void laxperRun(void) {
-#if defined (__DEBUG__)
-	printf("laxperRun\n");
-#endif
+	DEBUG_WORD("laxperRun")
 }
 
 void laxperIs(void) {
-#if defined (__DEBUG__)
-	printf("laxperIs\n");
-#endif
+	DEBUG_WORD("laxperIs")
 }
 
 void laxperYIs(void) {
-#if defined (__DEBUG__)
-	printf("laxperYIs\n");
-#endif
+	DEBUG_WORD("laxperYIs")
 }
 
 void laxperToIs(void) {
-#if defined (__DEBUG__)
-	printf("laxperToIs\n");
-#endif
+	DEBUG_WORD("laxperToIs")
 }
 
 void laxperUser(void) {
-#if defined (__DEBUG__)
-	printf("laxperUser\n");
-#endif
+	DEBUG_WORD("laxperUser")
 }
 
 void laxperNumUser(void) {
-#if defined (__DEBUG__)
-	printf("laxperNumUser\n");
-#endif
+	DEBUG_WORD("laxperNumUser")
 }
 
 void laxperCode(void) {
-#if defined (__DEBUG__)
-	printf("laxperCode\n");
-#endif
+	DEBUG_WORD("laxperCode")
 }
 
 void laxperAvoc(void) {
-#if defined (__DEBUG__)
-	printf("laxperAvoc\n");
-#endif
+	DEBUG_WORD("laxperAvoc")
 }
 
 void laxperTwoVariable(void) {
-#if defined (__DEBUG__)
-	printf("laxperTwoVariable\n");
-#endif
+	DEBUG_WORD("laxperTwoVariable")
 }
 
 void laxperTwoConstant(void) {
-#if defined (__DEBUG__)
-	printf("laxperTwoConstant\n");
-#endif
+	DEBUG_WORD("laxperTwoConstant")
 }
 
 void laxperDefinitions(void) {
-#if defined (__DEBUG__)
-	printf("laxperDefinitions\n");
-#endif
+	DEBUG_WORD("laxperDefinitions")
 }
 
 void laxperVocabulary(void) {
-#if defined (__DEBUG__)
-	printf("laxperVocabulary\n");
-#endif
+	DEBUG_WORD("laxperVocabulary")
 }
 
 void laxperDefer(void) {
-#if defined (__DEBUG__)
-	printf("laxperDefer\n");
-#endif
+	DEBUG_WORD("laxperDefer")
 }
 
 void laxperVariable(void) {
-#if defined (__DEBUG__)
-	printf("laxperVariable\n");
-#endif
+	DEBUG_WORD("laxperVariable")
 }
 
 void laxperConstant(void) {
-#if defined (__DEBUG__)
-	printf("laxperConstant\n");
-#endif
+	DEBUG_WORD("laxperConstant")
 }
 
 void laxperRecursive(void) {
-#if defined (__DEBUG__)
-	printf("laxperRecursive\n");
-#endif
+	DEBUG_WORD("laxperRecursive")
 }
 
 void laxperSemicolon(void) {
-#if defined (__DEBUG__)
-	printf("laxperSemicolon\n");
-#endif
+	DEBUG_WORD("laxperSemicolon")
 }
 
 void laxperColon(void) {
-#if defined (__DEBUG__)
-	printf("laxperColon\n");
-#endif
+	DEBUG_WORD("laxperColon")
 }
 
 void laxperRightBracket(void) {
-#if defined (__DEBUG__)
-	printf("laxperRightBracket\n");
-#endif
+	DEBUG_WORD("laxperRightBracket")
 }
 
 void laxperLeftBracket(void) {
-#if defined (__DEBUG__)
-	printf("laxperLeftBracket\n");
-#endif
+	DEBUG_WORD("laxperLeftBracket")
 }
 
 void laxperDoes(void) {
-#if defined (__DEBUG__)
-	printf("laxperDoes\n");
-#endif
+	DEBUG_WORD("laxperDoes")
 }
 
 void laxperSemicolonCode(void) {
-#if defined (__DEBUG__)
-	printf("laxperSemicolonCode\n");
-#endif
+	DEBUG_WORD("laxperSemicolonCode")
 }
 
 void laxperYSemicolonCode(void) {
-#if defined (__DEBUG__)
-	printf("laxperYSemicolonCode\n");
-#endif
+	DEBUG_WORD("laxperYSemicolonCode")
 }
 
 void laxperSemicolonUses(void) {
-#if defined (__DEBUG__)
-	printf("laxperSemicolonUses\n");
-#endif
+	DEBUG_WORD("laxperSemicolonUses")
 }
 
 void laxperAssembler(void) {
-#if defined (__DEBUG__)
-	printf("laxperAssembler\n");
-#endif
+	DEBUG_WORD("laxperAssembler")
 }
 
 void laxperYSemicolonUses(void) {
-#if defined (__DEBUG__)
-	printf("laxperYSemicolonUses\n");
-#endif
+	DEBUG_WORD("laxperYSemicolonUses")
 }
 
 void laxperReveal(void) {
-#if defined (__DEBUG__)
-	printf("laxperReveal\n");
-#endif
+	DEBUG_WORD("laxperReveal")
 }
 
 void laxperHide(void) {
-#if defined (__DEBUG__)
-	printf("laxperHide\n");
-#endif
+	DEBUG_WORD("laxperHide")
 }
 
 void laxperQCsp(void) {
-#if defined (__DEBUG__)
-	printf("laxperQCsp\n");
-#endif
+	DEBUG_WORD("laxperQCsp")
 }
 
 void laxperStoreCsp(void) {
-#if defined (__DEBUG__)
-	printf("laxperStoreCsp\n");
-#endif
+	DEBUG_WORD("laxperStoreCsp")
 }
 
 void laxperCreate(void) {
-#if defined (__DEBUG__)
-	printf("laxperCreate\n");
-#endif
+	DEBUG_WORD("laxperCreate")
 }
 
 void laxperBackslashCreate(void) {
-#if defined (__DEBUG__)
-	printf("laxperBackslashCreate\n");
-#endif
+	DEBUG_WORD("laxperBackslashCreate")
 }
 
 void laxperCommaView(void) {
-#if defined (__DEBUG__)
-	printf("laxperCommaView\n");
-#endif
+	DEBUG_WORD("laxperCommaView")
 }
 
 void laxperWhile(void) {
-#if defined (__DEBUG__)
-	printf("laxperWhile\n");
-#endif
+	DEBUG_WORD("laxperWhile")
 }
 
 void laxperElse(void) {
-#if defined (__DEBUG__)
-	printf("laxperElse\n");
-#endif
+	DEBUG_WORD("laxperElse")
 }
 
 void laxperIf(void) {
-#if defined (__DEBUG__)
-	printf("laxperIf\n");
-#endif
+	DEBUG_WORD("laxperIf")
 }
 
 void laxperRepeat(void) {
-#if defined (__DEBUG__)
-	printf("laxperRepeat\n");
-#endif
+	DEBUG_WORD("laxperRepeat")
 }
 
 void laxperAgain(void) {
-#if defined (__DEBUG__)
-	printf("laxperAgain\n");
-#endif
+	DEBUG_WORD("laxperAgain")
 }
 
 void laxperUntil(void) {
-#if defined (__DEBUG__)
-	printf("laxperUntil\n");
-#endif
+	DEBUG_WORD("laxperUntil")
 }
 
 void laxperPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("laxperPlusLoop\n");
-#endif
+	DEBUG_WORD("laxperPlusLoop")
 }
 
 void laxperLoop(void) {
-#if defined (__DEBUG__)
-	printf("laxperLoop\n");
-#endif
+	DEBUG_WORD("laxperLoop")
 }
 
 void laxperQDo(void) {
-#if defined (__DEBUG__)
-	printf("laxperQDo\n");
-#endif
+	DEBUG_WORD("laxperQDo")
 }
 
 void laxperDo(void) {
-#if defined (__DEBUG__)
-	printf("laxperDo\n");
-#endif
+	DEBUG_WORD("laxperDo")
 }
 
 void laxperThen(void) {
-#if defined (__DEBUG__)
-	printf("laxperThen\n");
-#endif
+	DEBUG_WORD("laxperThen")
 }
 
 void laxperBegin(void) {
-#if defined (__DEBUG__)
-	printf("laxperBegin\n");
-#endif
+	DEBUG_WORD("laxperBegin")
 }
 
 void laxperQLeave(void) {
-#if defined (__DEBUG__)
-	printf("laxperQLeave\n");
-#endif
+	DEBUG_WORD("laxperQLeave")
 }
 
 void laxperLeave(void) {
-#if defined (__DEBUG__)
-	printf("laxperLeave\n");
-#endif
+	DEBUG_WORD("laxperLeave")
 }
 
 void laxperQLessResolve(void) {
-#if defined (__DEBUG__)
-	printf("laxperQLessResolve\n");
-#endif
+	DEBUG_WORD("laxperQLessResolve")
 }
 
 void laxperQLessMark(void) {
-#if defined (__DEBUG__)
-	printf("laxperQLessMark\n");
-#endif
+	DEBUG_WORD("laxperQLessMark")
 }
 
 void laxperQGreaterResolve(void) {
-#if defined (__DEBUG__)
-	printf("laxperQGreaterResolve\n");
-#endif
+	DEBUG_WORD("laxperQGreaterResolve")
 }
 
 void laxperQGreaterMark(void) {
-#if defined (__DEBUG__)
-	printf("laxperQGreaterMark\n");
-#endif
+	DEBUG_WORD("laxperQGreaterMark")
 }
 
 void laxperLessResolve(void) {
-#if defined (__DEBUG__)
-	printf("laxperLessResolve\n");
-#endif
+	DEBUG_WORD("laxperLessResolve")
 }
 
 void laxperLessMark(void) {
-#if defined (__DEBUG__)
-	printf("laxperLessMark\n");
-#endif
+	DEBUG_WORD("laxperLessMark")
 }
 
 void laxperToResolve(void) {
-#if defined (__DEBUG__)
-	printf("laxperToResolve\n");
-#endif
+	DEBUG_WORD("laxperToResolve")
 }
 
 void laxperToMark(void) {
-#if defined (__DEBUG__)
-	printf("laxperToMark\n");
-#endif
+	DEBUG_WORD("laxperToMark")
 }
 
 void laxperQCondition(void) {
-#if defined (__DEBUG__)
-	printf("laxperQCondition\n");
-#endif
+	DEBUG_WORD("laxperQCondition")
 }
 
 void laxperAbort(void) {
-#if defined (__DEBUG__)
-	printf("laxperAbort\n");
-#endif
+	DEBUG_WORD("laxperAbort")
 }
 
 void laxperAbortQuote(void) {
-#if defined (__DEBUG__)
-	printf("laxperAbortQuote\n");
-#endif
+	DEBUG_WORD("laxperAbortQuote")
 }
 
 void laxperYAbortQuote(void) {
-#if defined (__DEBUG__)
-	printf("laxperYAbortQuote\n");
-#endif
+	DEBUG_WORD("laxperYAbortQuote")
 }
 
 void laxperYQError(void) {
-#if defined (__DEBUG__)
-	printf("laxperYQError\n");
-#endif
+	DEBUG_WORD("laxperYQError")
 }
 
 void laxperQError(void) {
-#if defined (__DEBUG__)
-	printf("laxperQError\n");
-#endif
+	DEBUG_WORD("laxperQError")
 }
 
 void laxperWhere(void) {
-#if defined (__DEBUG__)
-	printf("laxperWhere\n");
-#endif
+	DEBUG_WORD("laxperWhere")
 }
 
 void laxperForget(void) {
-#if defined (__DEBUG__)
-	printf("laxperForget\n");
-#endif
+	DEBUG_WORD("laxperForget")
 }
 
 void laxperYForget(void) {
-#if defined (__DEBUG__)
-	printf("laxperYForget\n");
-#endif
+	DEBUG_WORD("laxperYForget")
 }
 
 void laxperTrim(void) {
-#if defined (__DEBUG__)
-	printf("laxperTrim\n");
-#endif
+	DEBUG_WORD("laxperTrim")
 }
 
 void laxperFence(void) {
-#if defined (__DEBUG__)
-	printf("laxperFence\n");
-#endif
+	DEBUG_WORD("laxperFence")
 }
 
 void laxperQuote(void) {
-#if defined (__DEBUG__)
-	printf("laxperQuoten\n");
-#endif
+	DEBUG_WORD("laxperQuoten")
 }
 
 void laxperDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("laxperDotQuote\n");
-#endif
+	DEBUG_WORD("laxperDotQuote")
 }
 
 void laxperCommaQuote(void) {
-#if defined (__DEBUG__)
-	printf("laxperCommaQuote\n");
-#endif
+	DEBUG_WORD("laxperCommaQuote")
 }
 
 void laxperYDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("laxperYDotQuote\n");
-#endif
+	DEBUG_WORD("laxperYDotQuote")
 }
 
 void laxperYQuote(void) {
-#if defined (__DEBUG__)
-	printf("laxperYQuote\n");
-#endif
+	DEBUG_WORD("laxperYQuote")
 }
 
 void laxperXCompile(void) {
-#if defined (__DEBUG__)
-	printf("laxperXCompile\n");
-#endif
+	DEBUG_WORD("laxperXCompile")
 }
 
 void laxperXTick(void) {
-#if defined (__DEBUG__)
-	printf("laxperXTick\n");
-#endif
+	DEBUG_WORD("laxperXTick")
 }
 
 void laxperTick(void) {
-#if defined (__DEBUG__)
-	printf("laxperTick\n");
-#endif
+	DEBUG_WORD("laxperTick")
 }
 
 void laxperQMissing(void) {
-#if defined (__DEBUG__)
-	printf("laxperQMissing\n");
-#endif
+	DEBUG_WORD("laxperQMissing")
 }
 
 void laxperCrash(void) {
-#if defined (__DEBUG__)
-	printf("laxperCrash\n");
-#endif
+	DEBUG_WORD("laxperCrash")
 }
 
 void laxperControl(void) {
-#if defined (__DEBUG__)
-	printf("laxperControl\n");
-#endif
+	DEBUG_WORD("laxperControl")
 }
 
 void laxperAscii(void) {
-#if defined (__DEBUG__)
-	printf("laxperAscii\n");
-#endif
+	DEBUG_WORD("laxperAscii")
 }
 
 void laxperDLiteral(void) {
-#if defined (__DEBUG__)
-	printf("laxperDLiteral\n");
-#endif
+	DEBUG_WORD("laxperDLiteral")
 }
 
 void laxperLiteral(void) {
-#if defined (__DEBUG__)
-	printf("laxperLiteral\n");
-#endif
+	DEBUG_WORD("laxperLiteral")
 }
 
 void laxperImmediate(void) {
-#if defined (__DEBUG__)
-	printf("laxperImmediate\n");
-#endif
+	DEBUG_WORD("laxperImmediate")
 }
 
 void laxperCompile(void) {
-#if defined (__DEBUG__)
-	printf("laxperCompile\n");
-#endif
+	DEBUG_WORD("laxperCompile")
 }
 
 void laxperEven(void) {
-#if defined (__DEBUG__)
-	printf("laxperEven\n");
-#endif
+	DEBUG_WORD("laxperEven")
 }
 
 void laxperAlign(void) {
-#if defined (__DEBUG__)
-	printf("laxperAlign\n");
-#endif
+	DEBUG_WORD("laxperAlign")
 }
 
 void laxperCComma(void) {
-#if defined (__DEBUG__)
-	printf("laxperCComma\n");
-#endif
+	DEBUG_WORD("laxperCComma")
 }
 
 void laxperComma(void) {
-#if defined (__DEBUG__)
-	printf("laxperComma\n");
-#endif
+	DEBUG_WORD("laxperComma")
 }
 
 void laxperAllot(void) {
-#if defined (__DEBUG__)
-	printf("laxperAllot\n");
-#endif
+	DEBUG_WORD("laxperAllot")
 }
 
 void laxperInterpret(void) {
-#if defined (__DEBUG__)
-	printf("laxperInterpret\n");
-#endif
+	DEBUG_WORD("laxperInterpret")
 }
 
 void laxperStatus(void) {
-#if defined (__DEBUG__)
-	printf("laxperStatus\n");
-#endif
+	DEBUG_WORD("laxperStatus")
 }
 
 void laxperQStatus(void) {
-#if defined (__DEBUG__)
-	printf("laxperQStatus\n");
-#endif
+	DEBUG_WORD("laxperQStatus")
 }
 
 void laxperDefined(void) {
-#if defined (__DEBUG__)
-	printf("laxperDefined\n");
-#endif
+	DEBUG_WORD("laxperDefined")
 }
 
 void laxperQUppercase(void) {
-#if defined (__DEBUG__)
-	printf("laxperQUppercase\n");
-#endif
+	DEBUG_WORD("laxperQUppercase")
 }
 
 void laxperFind(void) {
-#if defined (__DEBUG__)
-	printf("laxperFind\n");
-#endif
+	DEBUG_WORD("laxperFind")
 }
 
 void laxperNumThreads(void) {
-#if defined (__DEBUG__)
-	printf("laxperNumThreads\n");
-#endif
+	DEBUG_WORD("laxperNumThreads")
 }
 
 void laxperYFind(void) {
-#if defined (__DEBUG__)
-	printf("laxperYFind\n");
-#endif
+	DEBUG_WORD("laxperYFind")
 }
 
 void laxperHash(void) {
-#if defined (__DEBUG__)
-	printf("laxperHash\n");
-#endif
+	DEBUG_WORD("laxperHash")
 }
 
 void laxperViewFrom(void) {
-#if defined (__DEBUG__)
-	printf("laxperViewFrom\n");
-#endif
+	DEBUG_WORD("laxperViewFrom")
 }
 
 void laxperToView(void) {
-#if defined (__DEBUG__)
-	printf("laxperToView\n");
-#endif
+	DEBUG_WORD("laxperToView")
 }
 
 void laxperToLink(void) {
-#if defined (__DEBUG__)
-	printf("laxperToLink\n");
-#endif
+	DEBUG_WORD("laxperToLink")
 }
 
 void laxperToName(void) {
-#if defined (__DEBUG__)
-	printf("laxperToName\n");
-#endif
+	DEBUG_WORD("laxperToName")
 }
 
 void laxperToBody(void) {
-#if defined (__DEBUG__)
-	printf("laxperToBody\n");
-#endif
+	DEBUG_WORD("laxperToBody")
 }
 
 void laxperLinkFrom(void) {
-#if defined (__DEBUG__)
-	printf("laxperLinkFrom\n");
-#endif
+	DEBUG_WORD("laxperLinkFrom")
 }
 
 void laxperNameFrom(void) {
-#if defined (__DEBUG__)
-	printf("laxperNameFrom\n");
-#endif
+	DEBUG_WORD("laxperNameFrom")
 }
 
 void laxperBodyFrom(void) {
-#if defined (__DEBUG__)
-	printf("laxperBodyFrom\n");
-#endif
+	DEBUG_WORD("laxperBodyFrom")
 }
 
 void laxperLGreaterName(void) {
-#if defined (__DEBUG__)
-	printf("laxperLGreaterName\n");
-#endif
+	DEBUG_WORD("laxperLGreaterName")
 }
 
 void laxperNToLink(void) {
-#if defined (__DEBUG__)
-	printf("laxperNToLink\n");
-#endif
+	DEBUG_WORD("laxperNToLink")
 }
 
 void laxperForth83(void) {
-#if defined (__DEBUG__)
-	printf("laxperForth83\n");
-#endif
+	DEBUG_WORD("laxperForth83")
 }
 
 void laxperDoneQ(void) {
-#if defined (__DEBUG__)
-	printf("laxperDoneQ\n");
-#endif
+	DEBUG_WORD("laxperDoneQ")
 }
 
 void laxperTraverse(void) {
-#if defined (__DEBUG__)
-	printf("laxperTraverse\n");
-#endif
+	DEBUG_WORD("laxperTraverse")
 }
 
 void laxperBackslashS(void) {
-#if defined (__DEBUG__)
-	printf("laxperBackslashS\n");
-#endif
+	DEBUG_WORD("laxperBackslashS")
 }
 
 void laxperParen(void) {
-#if defined (__DEBUG__)
-	printf("laxperParen\n");
-#endif
+	DEBUG_WORD("laxperParen")
 }
 
 void laxperDotParen(void) {
-#if defined (__DEBUG__)
-	printf("laxperDotParen\n");
-#endif
+	DEBUG_WORD("laxperDotParen")
 }
 
 void laxperToType(void) {
-#if defined (__DEBUG__)
-	printf("laxperToType\n");
-#endif
+	DEBUG_WORD("laxperToType")
 }
 
 void laxperWord(void) {
-#if defined (__DEBUG__)
-	printf("laxperWord\n");
-#endif
+	DEBUG_WORD("laxperWord")
 }
 
 void laxperTickWord(void) {
-#if defined (__DEBUG__)
-	printf("laxperTickWord\n");
-#endif
+	DEBUG_WORD("laxperTickWord")
 }
 
 void laxperParse(void) {
-#if defined (__DEBUG__)
-	printf("laxperParse\n");
-#endif
+	DEBUG_WORD("laxperParse")
 }
 
 void laxperParseWord(void) {
-#if defined (__DEBUG__)
-	printf("laxperParseWord\n");
-#endif
+	DEBUG_WORD("laxperParseWord")
 }
 
 void laxperSource(void) {
-#if defined (__DEBUG__)
-	printf("laxperSource\n");
-#endif
+	DEBUG_WORD("laxperSource")
 }
 
 void laxperYSource(void) {
-#if defined (__DEBUG__)
-	printf("laxperYSource\n");
-#endif
+	DEBUG_WORD("laxperYSource")
 }
 
 void laxperPlace(void) {
-#if defined (__DEBUG__)
-	printf("laxperPlace\n");
-#endif
+	DEBUG_WORD("laxperPlace")
 }
 
 void laxperSlashString(void) {
-#if defined (__DEBUG__)
-	printf("laxperSlashString\n");
-#endif
+	DEBUG_WORD("laxperSlashString")
 }
 
 void laxperScan(void) {
-#if defined (__DEBUG__)
-	printf("laxperScan\n");
-#endif
+	DEBUG_WORD("laxperScan")
 }
 
 void laxperSkip(void) {
-#if defined (__DEBUG__)
-	printf("laxperSkip\n");
-#endif
+	DEBUG_WORD("laxperSkip")
 }
 
 void laxperDDotR(void) {
-#if defined (__DEBUG__)
-	printf("laxperDDotR\n");
-#endif
+	DEBUG_WORD("laxperDDotR")
 }
 
 void laxperDDot(void) {
-#if defined (__DEBUG__)
-	printf("laxperDDot\n");
-#endif
+	DEBUG_WORD("laxperDDot")
 }
 
 void laxperYDDot(void) {
-#if defined (__DEBUG__)
-	printf("laxperYDDot\n");
-#endif
+	DEBUG_WORD("laxperYDDot")
 }
 
 void laxperUdDotR(void) {
-#if defined (__DEBUG__)
-	printf("laxperUdDotR\n");
-#endif
+	DEBUG_WORD("laxperUdDotR")
 }
 
 void laxperUdDot(void) {
-#if defined (__DEBUG__)
-	printf("laxperUdDot\n");
-#endif
+	DEBUG_WORD("laxperUdDot")
 }
 
 void laxperYUdDot(void) {
-#if defined (__DEBUG__)
-	printf("laxperYUdDo\n");
-#endif
+	DEBUG_WORD("laxperYUdDo")
 }
 
 void laxperDotR(void) {
-#if defined (__DEBUG__)
-	printf("laxperDotR\n");
-#endif
+	DEBUG_WORD("laxperDotR")
 }
 
 void laxperDot(void) {
-#if defined (__DEBUG__)
-	printf("laxperDot\n");
-#endif
+	DEBUG_WORD("laxperDot")
 }
 
 void laxperYDot(void) {
-#if defined (__DEBUG__)
-	printf("laxperYDot\n");
-#endif
+	DEBUG_WORD("laxperYDot")
 }
 
 void laxperUDotR(void) {
-#if defined (__DEBUG__)
-	printf("laxperUDotR\n");
-#endif
+	DEBUG_WORD("laxperUDotR")
 }
 
 void laxperUDot(void) {
-#if defined (__DEBUG__)
-	printf("laxperUDot\n");
-#endif
+	DEBUG_WORD("laxperUDot")
 }
 
 void laxperYUDot(void) {
-#if defined (__DEBUG__)
-	printf("laxperYUDot\n");
-#endif
+	DEBUG_WORD("laxperYUDot")
 }
 
 void laxperOctal(void) {
-#if defined (__DEBUG__)
-	printf("laxperOctal\n");
-#endif
+	DEBUG_WORD("laxperOctal")
 }
 
 void laxperDecimal(void) {
-#if defined (__DEBUG__)
-	printf("laxperDecimal\n");
-#endif
+	DEBUG_WORD("laxperDecimal")
 }
 
 void laxperHex(void) {
-#if defined (__DEBUG__)
-	printf("laxperHex\n");
-#endif
+	DEBUG_WORD("laxperHex")
 }
 
 void laxperNumS(void) {
-#if defined (__DEBUG__)
-	printf("laxperNumS\n");
-#endif
+	DEBUG_WORD("laxperNumS")
 }
 
 void laxperNum(void) {
-#if defined (__DEBUG__)
-	printf("laxperNum\n");
-#endif
+	DEBUG_WORD("laxperNum")
 }
 
 void laxperSign(void) {
-#if defined (__DEBUG__)
-	printf("laxperSign\n");
-#endif
+	DEBUG_WORD("laxperSign")
 }
 
 void laxperNumGreater(void) {
-#if defined (__DEBUG__)
-	printf("laxperNumGreater\n");
-#endif
+	DEBUG_WORD("laxperNumGreater")
 }
 
 void laxperLessNum(void) {
-#if defined (__DEBUG__)
-	printf("laxperLessNum\n");
-#endif
+	DEBUG_WORD("laxperLessNum")
 }
 
 void laxperHold(void) {
-#if defined (__DEBUG__)
-	printf("laxperHold\n");
-#endif
+	DEBUG_WORD("laxperHold")
 }
 
 void laxperNumber(void) {
-#if defined (__DEBUG__)
-	printf("laxperNumber\n");
-#endif
+	DEBUG_WORD("laxperNumber")
 }
 
 void laxperYNumber(void) {
-#if defined (__DEBUG__)
-	printf("laxperYNumber\n");
-#endif
+	DEBUG_WORD("laxperYNumber")
 }
 
 void laxperNumberQ(void) {
-#if defined (__DEBUG__)
-	printf("laxperNumberQ\n");
-#endif
+	DEBUG_WORD("laxperNumberQ")
 }
 
 void laxperYNumberQ(void) {
-#if defined (__DEBUG__)
-	printf("laxperYNumberQ\n");
-#endif
+	DEBUG_WORD("laxperYNumberQ")
 }
 
 void laxperConvert(void) {
-#if defined (__DEBUG__)
-	printf("laxperConvert\n");
-#endif
+	DEBUG_WORD("laxperConvert")
 }
 
 void laxperDoubleQ(void) {
-#if defined (__DEBUG__)
-	printf("laxperDoubleQ\n");
-#endif
+	DEBUG_WORD("laxperDoubleQ")
 }
 
 void laxperDigit(void) {
-#if defined (__DEBUG__)
-	printf("laxperDigit\n");
-#endif
+	DEBUG_WORD("laxperDigit")
 }
 
 void laxperLoad(void) {
-#if defined (__DEBUG__)
-	printf("laxperLoad\n");
-#endif
+	DEBUG_WORD("laxperLoad")
 }
 
 void laxperYLoad(void) {
-#if defined (__DEBUG__)
-	printf("laxperYLoad\n");
-#endif
+	DEBUG_WORD("laxperYLoad")
 }
 
 void laxperDefault(void) {
-#if defined (__DEBUG__)
-	printf("laxperDefault\n");
-#endif
+	DEBUG_WORD("laxperDefault")
 }
 
 void laxperViewNum(void) {
-#if defined (__DEBUG__)
-	printf("laxperViewNum\n");
-#endif
+	DEBUG_WORD("laxperViewNum")
 }
 
 void laxperFlush(void) {
-#if defined (__DEBUG__)
-	printf("laxperFlush\n");
-#endif
+	DEBUG_WORD("laxperFlush")
 }
 
 void laxperSaveBuffers(void) {
-#if defined (__DEBUG__)
-	printf("laxperSaveBuffers\n");
-#endif
+	DEBUG_WORD("laxperSaveBuffers")
 }
 
 void laxperEmptyBuffers(void) {
-#if defined (__DEBUG__)
-	printf("laxperEmptyBuffers\n");
-#endif
+	DEBUG_WORD("laxperEmptyBuffers")
 }
 
 void laxperInBlock(void) {
-#if defined (__DEBUG__)
-	printf("laxperInBlock\n");
-#endif
+	DEBUG_WORD("laxperInBlock")
 }
 
 void laxperBlock(void) {
-#if defined (__DEBUG__)
-	printf("laxperBlock\n");
-#endif
+	DEBUG_WORD("laxperBlock")
 }
 
 void laxperYBlock(void) {
-#if defined (__DEBUG__)
-	printf("laxperYBlock\n");
-#endif
+	DEBUG_WORD("laxperYBlock")
 }
 
 void laxperBuffer(void) {
-#if defined (__DEBUG__)
-	printf("laxperBuffer\n");
-#endif
+	DEBUG_WORD("laxperBuffer")
 }
 
 void laxperYBuffer(void) {
-#if defined (__DEBUG__)
-	printf("laxperYBuffer\n");
-#endif
+	DEBUG_WORD("laxperYBuffer")
 }
 
 void laxperMissing(void) {
-#if defined (__DEBUG__)
-	printf("laxperMissing\n");
-#endif
+	DEBUG_WORD("laxperMissing")
 }
 
 void laxperDiscord(void) {
-#if defined (__DEBUG__)
-	printf("laxperDiscord\n");
-#endif
+	DEBUG_WORD("laxperDiscord")
 }
 
 void laxperUpdate(void) {
-#if defined (__DEBUG__)
-	printf("laxperUpdate\n");
-#endif
+	DEBUG_WORD("laxperUpdate")
 }
 
 void laxperAbsentQ(void) {
-#if defined (__DEBUG__)
-	printf("laxperAbsentQ\n");
-#endif
+	DEBUG_WORD("laxperAbsentQ")
 }
 
 void laxperLatestQ(void) {
-#if defined (__DEBUG__)
-	printf("laxperLatestQ\n");
-#endif
+	DEBUG_WORD("laxperLatestQ")
 }
 
 void laxperCapacity(void) {
-#if defined (__DEBUG__)
-	printf("laxperCapacity\n");
-#endif
+	DEBUG_WORD("laxperCapacity")
 }
 
 void laxperDos(void) {
-#if defined (__DEBUG__)
-	printf("laxperDos\n");
-#endif
+	DEBUG_WORD("laxperDos")
 }
 
 void laxperSwitch(void) {
-#if defined (__DEBUG__)
-	printf("laxperSwitch\n");
-#endif
+	DEBUG_WORD("laxperSwitch")
 }
 
 void laxperFileQ(void) {
-#if defined (__DEBUG__)
-	printf("laxperFileQ\n");
-#endif
+	DEBUG_WORD("laxperFileQ")
 }
 
 void laxperDotFile(void) {
-#if defined (__DEBUG__)
-	printf("laxperDotFile\n");
-#endif
+	DEBUG_WORD("laxperDotFile")
 }
 
 void laxperWriteBlock(void) {
-#if defined (__DEBUG__)
-	printf("laxperWriteBlock\n");
-#endif
+	DEBUG_WORD("laxperWriteBlock")
 }
 
 void laxperReadBlock(void) {
-#if defined (__DEBUG__)
-	printf("laxperReadBlock\n");
-#endif
+	DEBUG_WORD("laxperReadBlock")
 }
 
 void laxperToUpdate(void) {
-#if defined (__DEBUG__)
-	printf("laxperToUpdate\n");
-#endif
+	DEBUG_WORD("laxperToUpdate")
 }
 
 void laxperBuffersNum(void) {
-#if defined (__DEBUG__)
-	printf("laxperBuffersNum\n");
-#endif
+	DEBUG_WORD("laxperBuffersNum")
 }
 
 void laxperToEnd(void) {
-#if defined (__DEBUG__)
-	printf("laxperToEnd\n");
-#endif
+	DEBUG_WORD("laxperToEnd")
 }
 
 void laxperToBuffers(void) {
-#if defined (__DEBUG__)
-	printf("laxperToBuffers\n");
-#endif
+	DEBUG_WORD("laxperToBuffers")
 }
 
 void laxperInitR0(void) {
-#if defined (__DEBUG__)
-	printf("laxperInitR0\n");
-#endif
+	DEBUG_WORD("laxperInitR0")
 }
 
 void laxperFirst(void) {
-#if defined (__DEBUG__)
-	printf("laxperFirst\n");
-#endif
+	DEBUG_WORD("laxperFirst")
 }
 
 void laxperToSize(void) {
-#if defined (__DEBUG__)
-	printf("laxperToSize\n");
-#endif
+	DEBUG_WORD("laxperToSize")
 }
 
 void laxperLimit(void) {
-#if defined (__DEBUG__)
-	printf("laxperLimit\n");
-#endif
+	DEBUG_WORD("laxperLimit")
 }
 
 void laxperDiskError(void) {
-#if defined (__DEBUG__)
-	printf("laxperDiskError\n");
-#endif
+	DEBUG_WORD("laxperDiskError")
 }
 
 void laxperBSlashFcb(void) {
-#if defined (__DEBUG__)
-	printf("laxperBSlashFcb\n");
-#endif
+	DEBUG_WORD("laxperBSlashFcb")
 }
 
 void laxperRecSlashBlk(void) {
-#if defined (__DEBUG__)
-	printf("laxperRecSlashBlk\n");
-#endif
+	DEBUG_WORD("laxperRecSlashBlk")
 }
 
 void laxperBSlashRec(void) {
-#if defined (__DEBUG__)
-	printf("laxperBSlashRec\n");
-#endif
+	DEBUG_WORD("laxperBSlashRec")
 }
 
 void laxperBSlashBuf(void) {
-#if defined (__DEBUG__)
-	printf("laxperBSlashBuf\n");
-#endif
+	DEBUG_WORD("laxperBSlashBuf")
 }
 
 void laxperNumBuffers(void) {
-#if defined (__DEBUG__)
-	printf("laxperNumBuffers\n");
-#endif
+	DEBUG_WORD("laxperNumBuffers")
 }
 
 void laxperQuery(void) {
-#if defined (__DEBUG__)
-	printf("laxperQuery\n");
-#endif
+	DEBUG_WORD("laxperQuery")
 }
 
 void laxperTib(void) {
-#if defined (__DEBUG__)
-	printf("laxperTib\n");
-#endif
+	DEBUG_WORD("laxperTib")
 }
 
 void laxperExpect(void) {
-#if defined (__DEBUG__)
-	printf("laxperExpect\n");
-#endif
+	DEBUG_WORD("laxperExpect")
 }
 
 void laxperCcForth(void) {
-#if defined (__DEBUG__)
-	printf("laxperCcForth\n");
-#endif
+	DEBUG_WORD("laxperCcForth")
 }
 
 void laxperCc(void) {
-#if defined (__DEBUG__)
-	printf("laxperCc\n");
-#endif
+	DEBUG_WORD("laxperCc")
 }
 
 void laxperDelIn(void) {
-#if defined (__DEBUG__)
-	printf("laxperDelIn\n");
-#endif
+	DEBUG_WORD("laxperDelIn")
 }
 
 void laxperChar(void) {
-#if defined (__DEBUG__)
-	printf("laxperChar\n");
-#endif
+	DEBUG_WORD("laxperChar")
 }
 
 void laxperYChar(void) {
-#if defined (__DEBUG__)
-	printf("laxperYChar\n");
-#endif
+	DEBUG_WORD("laxperYChar")
 }
 
 void laxperCrIn(void) {
-#if defined (__DEBUG__)
-	printf("laxperCrIn\n");
-#endif
+	DEBUG_WORD("laxperCrIn")
 }
 
 void laxperPIn(void) {
-#if defined (__DEBUG__)
-	printf("laxperPIn\n");
-#endif
+	DEBUG_WORD("laxperPIn")
 }
 
 void laxperResIn(void) {
-#if defined (__DEBUG__)
-	printf("laxperResIn\n");
-#endif
+	DEBUG_WORD("laxperResIn")
 }
 
 void laxperBackUp(void) {
-#if defined (__DEBUG__)
-	printf("laxperBackUp\n");
-#endif
+	DEBUG_WORD("laxperBackUp")
 }
 
 void laxperYDelIn(void) {
-#if defined (__DEBUG__)
-	printf("laxperYDelIn\n");
-#endif
+	DEBUG_WORD("laxperYDelIn")
 }
 
 void laxperBsIn(void) {
-#if defined (__DEBUG__)
-	printf("laxperBsIn\n");
-#endif
+	DEBUG_WORD("laxperBsIn")
 }
 
 void laxperBeep(void) {
-#if defined (__DEBUG__)
-	printf("laxperBeep\n");
-#endif
+	DEBUG_WORD("laxperBeep")
 }
 
 void laxperBackspaces(void) {
-#if defined (__DEBUG__)
-	printf("laxperBackspaces\n");
-#endif
+	DEBUG_WORD("laxperBackspaces")
 }
 
 void laxperSpaces(void) {
-#if defined (__DEBUG__)
-	printf("laxperSpaces\n");
-#endif
+	DEBUG_WORD("laxperSpaces")
 }
 
 void laxperSpace(void) {
-#if defined (__DEBUG__)
-	printf("laxperSpace\n");
-#endif
+	DEBUG_WORD("laxperSpace")
 }
 
 void laxperType(void) {
-#if defined (__DEBUG__)
-	printf("laxperType\n");
-#endif
+	DEBUG_WORD("laxperType")
 }
 
 void laxperCrLf(void) {
-#if defined (__DEBUG__)
-	printf("laxperCrLf\n");
-#endif
+	DEBUG_WORD("laxperCrLf")
 }
 
 void laxperYEmit(void) {
-#if defined (__DEBUG__)
-	printf("laxperYEmit\n");
-#endif
+	DEBUG_WORD("laxperYEmit")
 }
 
 void laxperYPrint(void) {
-#if defined (__DEBUG__)
-	printf("laxperYPrint\n");
-#endif
+	DEBUG_WORD("laxperYPrint")
 }
 
 void laxperPrStat(void) {
-#if defined (__DEBUG__)
-	printf("laxperPrStat\n");
-#endif
+	DEBUG_WORD("laxperPrStat")
 }
 
 void laxperCr(void) {
-#if defined (__DEBUG__)
-	printf("laxperCr\n");
-#endif
+	DEBUG_WORD("laxperCr")
 }
 
 void laxperKey(void) {
-#if defined (__DEBUG__)
-	printf("laxperKey\n");
-#endif
+	DEBUG_WORD("laxperKey")
 }
 
 void laxperKeyQ(void) {
-#if defined (__DEBUG__)
-	printf("laxperKeyQ\n");
-#endif
+	DEBUG_WORD("laxperKeyQ")
 }
 
 void laxperYConsole(void) {
-#if defined (__DEBUG__)
-	printf("laxperYConsole\n");
-#endif
+	DEBUG_WORD("laxperYConsole")
 }
 
 void laxperYKey(void) {
-#if defined (__DEBUG__)
-	printf("laxperYKey\n");
-#endif
+	DEBUG_WORD("laxperYKey")
 }
 
 void laxperYKeyQ(void) {
-#if defined (__DEBUG__)
-	printf("laxperYKeyQ\n");
-#endif
+	DEBUG_WORD("laxperYKeyQ")
 }
 
 void laxperBdos(void) {
-#if defined (__DEBUG__)
-	printf("laxperBdos\n");
-#endif
+	DEBUG_WORD("laxperBdos")
 }
 
 void laxperCompare(void) {
-#if defined (__DEBUG__)
-	printf("laxperCompare\n");
-#endif
+	DEBUG_WORD("laxperCompare")
 }
 
 void laxperCapsComp(void) {
-#if defined (__DEBUG__)
-	printf("laxperCapsComp\n");
-#endif
+	DEBUG_WORD("laxperCapsComp")
 }
 
 void laxperComp(void) {
-#if defined (__DEBUG__)
-	printf("laxperComp\n");
-#endif
+	DEBUG_WORD("laxperComp")
 }
 
 void laxperMinusTrailing(void) {
-#if defined (__DEBUG__)
-	printf("laxperMinusTrailing\n");
-#endif
+	DEBUG_WORD("laxperMinusTrailing")
 }
 
 void laxperPad(void) {
-#if defined (__DEBUG__)
-	printf("laxperPad\n");
-#endif
+	DEBUG_WORD("laxperPad")
 }
 
 void laxperHere(void) {
-#if defined (__DEBUG__)
-	printf("laxperHere\n");
-#endif
+	DEBUG_WORD("laxperHere")
 }
 
 void laxperUpper(void) {
-#if defined (__DEBUG__)
-	printf("laxperUpper\n");
-#endif
+	DEBUG_WORD("laxperUpper")
 }
 
 void laxperUpc(void) {
-#if defined (__DEBUG__)
-	printf("laxperUpc\n");
-#endif
+	DEBUG_WORD("laxperUpc")
 }
 
 void laxperMove(void) {
-#if defined (__DEBUG__)
-	printf("laxperMove\n");
-#endif
+	DEBUG_WORD("laxperMove")
 }
 
 void laxperLength(void) {
-#if defined (__DEBUG__)
-	printf("laxperLength\n");
-#endif
+	DEBUG_WORD("laxperLength")
 }
 
 void laxperCount(void) {
-#if defined (__DEBUG__)
-	printf("laxperCount\n");
-#endif
+	DEBUG_WORD("laxperCount")
 }
 
 void laxperBlank(void) {
-#if defined (__DEBUG__)
-	printf("laxperBlank\n");
-#endif
+	DEBUG_WORD("laxperBlank")
 }
 
 void laxperErase(void) {
-#if defined (__DEBUG__)
-	printf("laxperErase\n");
-#endif
+	DEBUG_WORD("laxperErase")
 }
 
 void laxperFill(void) {
-#if defined (__DEBUG__)
-	printf("laxperFill\n");
-#endif
+	DEBUG_WORD("laxperFill")
 }
 
 void laxperCaps(void) {
-#if defined (__DEBUG__)
-	printf("laxperCaps\n");
-#endif
+	DEBUG_WORD("laxperCaps")
 }
 
 void laxperBell(void) {
-#if defined (__DEBUG__)
-	printf("laxperBell\n");
-#endif
+	DEBUG_WORD("laxperBell")
 }
 
 void laxperBs(void) {
-#if defined (__DEBUG__)
-	printf("laxperBs\n");
-#endif
+	DEBUG_WORD("laxperBs")
 }
 
 void laxperBl(void) {
-#if defined (__DEBUG__)
-	printf("laxperBl\n");
-#endif
+	DEBUG_WORD("laxperBl")
 }
 
 void laxperEndQ(void) {
-#if defined (__DEBUG__)
-	printf("laxperEndQ\n");
-#endif
+	DEBUG_WORD("laxperEndQ")
 }
 
 void laxperNumTib(void) {
-#if defined (__DEBUG__)
-	printf("laxperNumTib\n");
-#endif
+	DEBUG_WORD("laxperNumTib")
 }
 
 void laxperSpan(void) {
-#if defined (__DEBUG__)
-	printf("laxperSpan\n");
-#endif
+	DEBUG_WORD("laxperSpan")
 }
 
 void laxperToIn(void) {
-#if defined (__DEBUG__)
-	printf("laxperToIn\n");
-#endif
+	DEBUG_WORD("laxperToIn")
 }
 
 void laxperBlk(void) {
-#if defined (__DEBUG__)
-	printf("laxperBlk\n");
-#endif
+	DEBUG_WORD("laxperBlk")
 }
 
 void laxperVocLink(void) {
-#if defined (__DEBUG__)
-	printf("laxperVocLink\n");
-#endif
+	DEBUG_WORD("laxperVocLink")
 }
 
 void laxperWidth(void) {
-#if defined (__DEBUG__)
-	printf("laxperWidth\n");
-#endif
+	DEBUG_WORD("laxperWidth")
 }
 
 void laxperTickTib(void) {
-#if defined (__DEBUG__)
-	printf("laxperTickTib\n");
-#endif
+	DEBUG_WORD("laxperTickTib")
 }
 
 void laxperContext(void) {
-#if defined (__DEBUG__)
-	printf("laxperContext\n");
-#endif
+	DEBUG_WORD("laxperContext")
 }
 
 void laxperNumVocs(void) {
-#if defined (__DEBUG__)
-	printf("laxperNumVocs\n");
-#endif
+	DEBUG_WORD("laxperNumVocs")
 }
 
 void laxperCurrent(void) {
-#if defined (__DEBUG__)
-	printf("laxperCurrent\n");
-#endif
+	DEBUG_WORD("laxperCurrent")
 }
 
 void laxperCsp(void) {
-#if defined (__DEBUG__)
-	printf("laxperCsp\n");
-#endif
+	DEBUG_WORD("laxperCsp")
 }
 
 void laxperLast(void) {
-#if defined (__DEBUG__)
-	printf("laxperLast\n");
-#endif
+	DEBUG_WORD("laxperLast")
 }
 
 void laxperRNum(void) {
-#if defined (__DEBUG__)
-	printf("laxperRNum\n");
-#endif
+	DEBUG_WORD("laxperRNum")
 }
 
 void laxperDpl(void) {
-#if defined (__DEBUG__)
-	printf("laxperDpl\n");
-#endif
+	DEBUG_WORD("laxperDpl")
 }
 
 void laxperWarning(void) {
-#if defined (__DEBUG__)
-	printf("laxperWarning\n");
-#endif
+	DEBUG_WORD("laxperWarning")
 }
 
 void laxperState(void) {
-#if defined (__DEBUG__)
-	printf("laxperState\n");
-#endif
+	DEBUG_WORD("laxperState")
 }
 
 void laxperPrior(void) {
-#if defined (__DEBUG__)
-	printf("laxperPrior\n");
-#endif
+	DEBUG_WORD("laxperPrior")
 }
 
 void laxperScr(void) {
-#if defined (__DEBUG__)
-	printf("laxperScr\n");
-#endif
+	DEBUG_WORD("laxperScr")
 }
 
 void laxperEmit(void) {
-#if defined (__DEBUG__)
-	printf("laxperEmit\n");
-#endif
+	DEBUG_WORD("laxperEmit")
 }
 
 void laxperPrinting(void) {
-#if defined (__DEBUG__)
-	printf("laxperPrinting\n");
-#endif
+	DEBUG_WORD("laxperPrinting")
 }
 
 void laxperInFile(void) {
-#if defined (__DEBUG__)
-	printf("laxperInFile\n");
-#endif
+	DEBUG_WORD("laxperInFile")
 }
 
 void laxperFile(void) {
-#if defined (__DEBUG__)
-	printf("laxperFile\n");
-#endif
+	DEBUG_WORD("laxperFile")
 }
 
 void laxperHld(void) {
-#if defined (__DEBUG__)
-	printf("laxperHld\n");
-#endif
+	DEBUG_WORD("laxperHld")
 }
 
 void laxperBase(void) {
-#if defined (__DEBUG__)
-	printf("laxperBase\n");
-#endif
+	DEBUG_WORD("laxperBase")
 }
 
 void laxperOffset(void) {
-#if defined (__DEBUG__)
-	printf("laxperOffset\n");
-#endif
+	DEBUG_WORD("laxperOffset")
 }
 
 void laxperNumLine(void) {
-#if defined (__DEBUG__)
-	printf("laxperOffset\n");
-#endif
+	DEBUG_WORD("laxperOffset")
 }
 
 void laxperNumOut(void) {
-#if defined (__DEBUG__)
-	printf("laxperNumOut\n");
-#endif
+	DEBUG_WORD("laxperNumOut")
 }
 
 void laxperDP(void) {
-#if defined (__DEBUG__)
-	printf("laxperDP\n");
-#endif
+	DEBUG_WORD("laxperDP")
 }
 
 void laxperRP0(void) {
-#if defined (__DEBUG__)
-	printf("laxperRP0\n");
-#endif
+	DEBUG_WORD("laxperRP0")
 }
 
 void laxperSP0(void) {
-#if defined (__DEBUG__)
-	printf("laxperSP0\n");
-#endif
+	DEBUG_WORD("laxperSP0")
 }
 
 void laxperLink(void) {
-#if defined (__DEBUG__)
-	printf("laxperLink\n");
-#endif
+	DEBUG_WORD("laxperLink")
 }
 
 void laxperEntry(void) {
-#if defined (__DEBUG__)
-	printf("laxperEntry\n");
-#endif
+	DEBUG_WORD("laxperEntry")
 }
 
 void laxperTos(void) {
-#if defined (__DEBUG__)
-	printf("laxperTos\n");
-#endif
+	DEBUG_WORD("laxperTos")
 }
 
 void laxperStarSlash(void) {
-#if defined (__DEBUG__)
-	printf("laxperStarSlash\n");
-#endif
+	DEBUG_WORD("laxperStarSlash")
 }
 
 void laxperStarSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("laxperStarSlashMod\n");
-#endif
+	DEBUG_WORD("laxperStarSlashMod")
 }
 
 void laxperMod(void) {
-#if defined (__DEBUG__)
-	printf("laxperMod\n");
-#endif
+	DEBUG_WORD("laxperMod")
 }
 
 void laxperSlash(void) {
-#if defined (__DEBUG__)
-	printf("laxperSlash\n");
-#endif
+	DEBUG_WORD("laxperSlash")
 }
 
 void laxperSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("laxperSlashMod\n");
-#endif
+	DEBUG_WORD("laxperSlashMod")
 }
 
 void laxperStar(void) {
-#if defined (__DEBUG__)
-	printf("laxperStar\n");
-#endif
+	DEBUG_WORD("laxperStar")
 }
 
 void laxperMuSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("laxperMuSlashMod\n");
-#endif
+	DEBUG_WORD("laxperMuSlashMod")
 }
 
 void laxperMSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("laxperMSlashMod\n");
-#endif
+	DEBUG_WORD("laxperMSlashMod")
 }
 
 void laxperStarD(void) {
-#if defined (__DEBUG__)
-	printf("laxperStarD\n");
-#endif
+	DEBUG_WORD("laxperStarD")
 }
 
 void laxperDMax(void) {
-#if defined (__DEBUG__)
-	printf("laxperDMax\n");
-#endif
+	DEBUG_WORD("laxperDMax")
 }
 
 void laxperDMin(void) {
-#if defined (__DEBUG__)
-	printf("laxperDMin\n");
-#endif
+	DEBUG_WORD("laxperDMin")
 }
 
 void laxperDGreater(void) {
-#if defined (__DEBUG__)
-	printf("laxperDGreater\n");
-#endif
+	DEBUG_WORD("laxperDGreater")
 }
 
 void laxperDLess(void) {
-#if defined (__DEBUG__)
-	printf("laxperDLess\n");
-#endif
+	DEBUG_WORD("laxperDLess")
 }
 
 void laxperDULess(void) {
-#if defined (__DEBUG__)
-	printf("laxperDULess\n");
-#endif
+	DEBUG_WORD("laxperDULess")
 }
 
 void laxperDEqual(void) {
-#if defined (__DEBUG__)
-	printf("laxperDEqual\n");
-#endif
+	DEBUG_WORD("laxperDEqual")
 }
 
 void laxperD0Equal(void) {
-#if defined (__DEBUG__)
-	printf("laxperD0Equal\n");
-#endif
+	DEBUG_WORD("laxperD0Equal")
 }
 
 void laxperQDNegate(void) {
-#if defined (__DEBUG__)
-	printf("laxperQDNegate\n");
-#endif
+	DEBUG_WORD("laxperQDNegate")
 }
 
 void laxperDMinus(void) {
-#if defined (__DEBUG__)
-	printf("laxperDMinus\n");
-#endif
+	DEBUG_WORD("laxperDMinus")
 }
 
 void laxperD2Slash(void) {
-#if defined (__DEBUG__)
-	printf("laxperD2Slash\n");
-#endif
+	DEBUG_WORD("laxperD2Slash")
 }
 
 void laxperD2Star(void) {
-#if defined (__DEBUG__)
-	printf("laxperD2Star\n");
-#endif
+	DEBUG_WORD("laxperD2Star")
 }
 
 void laxperDAbs(void) {
-#if defined (__DEBUG__)
-	printf("laxperDAbs\n");
-#endif
+	DEBUG_WORD("laxperDAbs")
 }
 
 void laxperSToD(void) {
-#if defined (__DEBUG__)
-	printf("laxperSToD\n");
-#endif
+	DEBUG_WORD("laxperSToD")
 }
 
 void laxperDNegate(void) {
-#if defined (__DEBUG__)
-	printf("laxperDNegate\n");
-#endif
+	DEBUG_WORD("laxperDNegate")
 }
 
 void laxperDPLus(void) {
-#if defined (__DEBUG__)
-	printf("laxperDPLus\n");
-#endif
+	DEBUG_WORD("laxperDPLus")
 }
 
 void laxperTwoRot(void) {
-#if defined (__DEBUG__)
-	printf("laxperTwoRot\n");
-#endif
+	DEBUG_WORD("laxperTwoRot")
 }
 
 void laxperFourDup(void) {
-#if defined (__DEBUG__)
-	printf("laxperFourDup\n");
-#endif
+	DEBUG_WORD("laxperFourDup")
 }
 
 void laxperThreeDup(void) {
-#if defined (__DEBUG__)
-	printf("laxperThreeDup\n");
-#endif
+	DEBUG_WORD("laxperThreeDup")
 }
 
 void laxperTwoOver(void) {
-#if defined (__DEBUG__)
-	printf("laxperTwoOver\n");
-#endif
+	DEBUG_WORD("laxperTwoOver")
 }
 
 void laxperTwoSwap(void) {
-#if defined (__DEBUG__)
-	printf("laxperTwoSwap\n");
-#endif
+	DEBUG_WORD("laxperTwoSwap")
 }
 
 void laxperTwoDup(void) {
-#if defined (__DEBUG__)
-	printf("laxperTwoDup\n");
-#endif
+	DEBUG_WORD("laxperTwoDup")
 }
 
 void laxperTwoDrop(void) {
-#if defined (__DEBUG__)
-	printf("laxperTwoDrop\n");
-#endif
+	DEBUG_WORD("laxperTwoDrop")
 }
 
 void laxperTwoStore(void) {
-#if defined (__DEBUG__)
-	printf("laxperTwoStore\n");
-#endif
+	DEBUG_WORD("laxperTwoStore")
 }
 
 void laxperTwoFetch(void) {
-#if defined (__DEBUG__)
-	printf("laxperTwoFetch\n");
-#endif
+	DEBUG_WORD("laxperTwoFetch")
 }
 
 void laxperWithin(void) {
-#if defined (__DEBUG__)
-	printf("laxperWithin\n");
-#endif
+	DEBUG_WORD("laxperWithin")
 }
 
 void laxperBetween(void) {
-#if defined (__DEBUG__)
-	printf("laxperBetween\n");
-#endif
+	DEBUG_WORD("laxperBetween")
 }
 
 void laxperMax(void) {
-#if defined (__DEBUG__)
-	printf("laxperMax\n");
-#endif
+	DEBUG_WORD("laxperMax")
 }
 
 void laxperMin(void) {
-#if defined (__DEBUG__)
-	printf("laxperMin\n");
-#endif
+	DEBUG_WORD("laxperMin")
 }
 
 void laxperGreater(void) {
-#if defined (__DEBUG__)
-	printf("laxperGreater\n");
-#endif
+	DEBUG_WORD("laxperGreater")
 }
 
 void laxperLess(void) {
-#if defined (__DEBUG__)
-	printf("laxperLess\n");
-#endif
+	DEBUG_WORD("laxperLess")
 }
 
 void laxperUGreater(void) {
-#if defined (__DEBUG__)
-	printf("laxperUGreater\n");
-#endif
+	DEBUG_WORD("laxperUGreater")
 }
 
 void laxperULess(void) {
-#if defined (__DEBUG__)
-	printf("laxperULess\n");
-#endif
+	DEBUG_WORD("laxperULess")
 }
 
 void laxperQNegate(void) {
-#if defined (__DEBUG__)
-	printf("laxperQNegate\n");
-#endif
+	DEBUG_WORD("laxperQNegate")
 }
 
 void laxperUnequal(void) {
-#if defined (__DEBUG__)
-	printf("laxperUnequal\n");
-#endif
+	DEBUG_WORD("laxperUnequal")
 }
 
 void laxperEqual(void) {
-#if defined (__DEBUG__)
-	printf("laxperEqual\n");
-#endif
+	DEBUG_WORD("laxperEqual")
 }
 
 void laxperZeroUnequal(void) {
-#if defined (__DEBUG__)
-	printf("laxperZeroUnequal\n");
-#endif
+	DEBUG_WORD("laxperZeroUnequal")
 }
 
 void laxperZeroGreater(void) {
-#if defined (__DEBUG__)
-	printf("laxperZeroGreater\n");
-#endif
+	DEBUG_WORD("laxperZeroGreater")
 }
 
 void laxperZeroLess(void) {
-#if defined (__DEBUG__)
-	printf("laxperZeroLess\n");
-#endif
+	DEBUG_WORD("laxperZeroLess")
 }
 
 void laxperZeroEqual(void) {
-#if defined (__DEBUG__)
-	printf("laxperZeroEqual\n");
-#endif
+	DEBUG_WORD("laxperZeroEqual")
 }
 
 void laxperUmSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("laxperUmSlashMod\n");
-#endif
+	DEBUG_WORD("laxperUmSlashMod")
 }
 
 void laxperUStarD(void) {
-#if defined (__DEBUG__)
-	printf("laxperUStarD\n");
-#endif
+	DEBUG_WORD("laxperUStarD")
 }
 
 void laxperUmStar(void) {
-#if defined (__DEBUG__)
-	printf("laxperUmStar\n");
-#endif
+	DEBUG_WORD("laxperUmStar")
 }
 
 void laxperTwoMinus(void) {
-#if defined (__DEBUG__)
-	printf("laxperTwoMinus\n");
-#endif
+	DEBUG_WORD("laxperTwoMinus")
 }
 
 void laxperOneMinus(void) {
-#if defined (__DEBUG__)
-	printf("laxperOneMinus\n");
-#endif
+	DEBUG_WORD("laxperOneMinus")
 }
 
 void laxperTwoPlus(void) {
-#if defined (__DEBUG__)
-	printf("laxperTwoPlus\n");
-#endif
+	DEBUG_WORD("laxperTwoPlus")
 }
 
 void laxperOnePlus(void) {
-#if defined (__DEBUG__)
-	printf("laxperOnePlus\n");
-#endif
+	DEBUG_WORD("laxperOnePlus")
 }
 
 void laxperEightStar(void) {
-#if defined (__DEBUG__)
-	printf("laxperEightStar\n");
-#endif
+	DEBUG_WORD("laxperEightStar")
 }
 
 void laxperU2Slash(void) {
-#if defined (__DEBUG__)
-	printf("laxperU2Slash\n");
-#endif
+	DEBUG_WORD("laxperU2Slash")
 }
 
 void laxperTwoSlash(void) {
-#if defined (__DEBUG__)
-	printf("laxperTwoSlash\n");
-#endif
+	DEBUG_WORD("laxperTwoSlash")
 }
 
 void laxperTwoStar(void) {
-#if defined (__DEBUG__)
-	printf("laxperTwoStar\n");
-#endif
+	DEBUG_WORD("laxperTwoStar")
 }
 
 void laxperThree(void) {
-#if defined (__DEBUG__)
-	printf("laxperThree\n");
-#endif
+	DEBUG_WORD("laxperThree")
 }
 
 void laxperTwo(void) {
-#if defined (__DEBUG__)
-	printf("laxperTwo\n");
-#endif
+	DEBUG_WORD("laxperTwo")
 }
 
 void laxperOne(void) {
-#if defined (__DEBUG__)
-	printf("laxperOne\n");
-#endif
+	DEBUG_WORD("laxperOne")
 }
 
 void laxperZero(void) {
-#if defined (__DEBUG__)
-	printf("laxperZero\n");
-#endif
+	DEBUG_WORD("laxperZero")
 }
 
 void laxperPlusStore(void) {
-#if defined (__DEBUG__)
-	printf("laxperPlusStore\n");
-#endif
+	DEBUG_WORD("laxperPlusStore")
 }
 
 void laxperAbs(void) {
-#if defined (__DEBUG__)
-	printf("laxperAbs\n");
-#endif
+	DEBUG_WORD("laxperAbs")
 }
 
 void laxperMinus(void) {
-#if defined (__DEBUG__)
-	printf("laxperMinus\n");
-#endif
+	DEBUG_WORD("laxperMinus")
 }
 
 void laxperNegate(void) {
-#if defined (__DEBUG__)
-	printf("laxperNegate\n");
-#endif
+	DEBUG_WORD("laxperNegate")
 }
 
 void laxperPlus(void) {
-#if defined (__DEBUG__)
-	printf("laxperPlus\n");
-#endif
+	DEBUG_WORD("laxperPlus")
 }
 
 void laxperOff(void) {
-#if defined (__DEBUG__)
-	printf("laxperOff\n");
-#endif
+	DEBUG_WORD("laxperOff")
 }
 
 void laxperOn(void) {
-#if defined (__DEBUG__)
-	printf("laxperOn\n");
-#endif
+	DEBUG_WORD("laxperOn")
 }
 
 void laxperCToggle(void) {
-#if defined (__DEBUG__)
-	printf("laxperCToggle\n");
-#endif
+	DEBUG_WORD("laxperCToggle")
 }
 
 void laxperCReset(void) {
-#if defined (__DEBUG__)
-	printf("laxperCReset\n");
-#endif
+	DEBUG_WORD("laxperCReset")
 }
 
 void laxperCSet(void) {
-#if defined (__DEBUG__)
-	printf("laxperCSet\n");
-#endif
+	DEBUG_WORD("laxperCSet")
 }
 
 void laxperFalse(void) {
-#if defined (__DEBUG__)
-	printf("laxperFalse\n");
-#endif
+	DEBUG_WORD("laxperFalse")
 }
 
 void laxperTrue(void) {
-#if defined (__DEBUG__)
-	printf("laxperTrue\n");
-#endif
+	DEBUG_WORD("laxperTrue")
 }
 
 void laxperNot(void) {
-#if defined (__DEBUG__)
-	printf("laxperNot\n");
-#endif
+	DEBUG_WORD("laxperNot")
 }
 
 void laxperYor(void) {
-#if defined (__DEBUG__)
-	printf("laxperYor\n");
-#endif
+	DEBUG_WORD("laxperYor")
 }
 
 void laxperOr(void) {
-#if defined (__DEBUG__)
-	printf("laxperOr\n");
-#endif
+	DEBUG_WORD("laxperOr")
 }
 
 void laxperAnd(void) {
-#if defined (__DEBUG__)
-	printf("laxperAnd\n");
-#endif
+	DEBUG_WORD("laxperAnd")
 }
 
 void laxperRoll(void) {
-#if defined (__DEBUG__)
-	printf("laxperRoll\n");
-#endif
+	DEBUG_WORD("laxperRoll")
 }
 
 void laxperPick(void) {
-#if defined (__DEBUG__)
-	printf("laxperPick\n");
-#endif
+	DEBUG_WORD("laxperPick")
 }
 
 void laxperRFetch(void) {
-#if defined (__DEBUG__)
-	printf("laxperRFetch\n");
-#endif
+	DEBUG_WORD("laxperRFetch")
 }
 
 void laxperToR(void) {
-#if defined (__DEBUG__)
-	printf("laxperToR\n");
-#endif
+	DEBUG_WORD("laxperToR")
 }
 
 void laxperRFrom(void) {
-#if defined (__DEBUG__)
-	printf("laxperRFrom\n");
-#endif
+	DEBUG_WORD("laxperRFrom")
 }
 
 void laxperQDup(void) {
-#if defined (__DEBUG__)
-	printf("laxperQDup\n");
-#endif
+	DEBUG_WORD("laxperQDup")
 }
 
 void laxperFlip(void) {
-#if defined (__DEBUG__)
-	printf("laxperFlip\n");
-#endif
+	DEBUG_WORD("laxperFlip")
 }
 
 void laxperMinusRot(void) {
-#if defined (__DEBUG__)
-	printf("laxperMinusRot\n");
-#endif
+	DEBUG_WORD("laxperMinusRot")
 }
 
 void laxperRot(void) {
-#if defined (__DEBUG__)
-	printf("laxperRot\n");
-#endif
+	DEBUG_WORD("laxperRot")
 }
 
 void laxperNip(void) {
-#if defined (__DEBUG__)
-	printf("laxperNip\n");
-#endif
+	DEBUG_WORD("laxperNip")
 }
 
 void laxperTuck(void) {
-#if defined (__DEBUG__)
-	printf("laxperTuck\n");
-#endif
+	DEBUG_WORD("laxperTuck")
 }
 
 void laxperOver(void) {
-#if defined (__DEBUG__)
-	printf("laxperOver\n");
-#endif
+	DEBUG_WORD("laxperOver")
 }
 
 void laxperSwap(void) {
-#if defined (__DEBUG__)
-	printf("laxperSwap\n");
-#endif
+	DEBUG_WORD("laxperSwap")
 }
 
 void laxperDup(void) {
-#if defined (__DEBUG__)
-	printf("laxperDup\n");
-#endif
+	DEBUG_WORD("laxperDup")
 }
 
 void laxperDrop(void) {
-#if defined (__DEBUG__)
-	printf("laxperDrop\n");
-#endif
+	DEBUG_WORD("laxperDrop")
 }
 
 void laxperRPStore(void) {
-#if defined (__DEBUG__)
-	printf("laxperRPStore\n");
-#endif
+	DEBUG_WORD("laxperRPStore")
 }
 
 void laxperRPFetch(void) {
-#if defined (__DEBUG__)
-	printf("laxperRPFetch\n");
-#endif
+	DEBUG_WORD("laxperRPFetch")
 }
 
 void laxperSPStore(void) {
-#if defined (__DEBUG__)
-	printf("laxperSPStore\n");
-#endif
+	DEBUG_WORD("laxperSPStore")
 }
 
 void laxperSPFetch(void) {
-#if defined (__DEBUG__)
-	printf("laxperSPFetch\n");
-#endif
+	DEBUG_WORD("laxperSPFetch")
 }
 
 void laxperCMoveFrom(void) {
-#if defined (__DEBUG__)
-	printf("laxperCMoveFrom\n");
-#endif
+	DEBUG_WORD("laxperCMoveFrom")
 }
 
 void laxperCMove(void) {
-#if defined (__DEBUG__)
-	printf("laxperCMove\n");
-#endif
+	DEBUG_WORD("laxperCMove")
 }
 
 void laxperCStore(void) {
-#if defined (__DEBUG__)
-	printf("laxperCStore\n");
-#endif
+	DEBUG_WORD("laxperCStore")
 }
 
 void laxperCFetch(void) {
-#if defined (__DEBUG__)
-	printf("laxperCFetch\n");
-#endif
+	DEBUG_WORD("laxperCFetch")
 }
 
 void laxperStore(void) {
-#if defined (__DEBUG__)
-	printf("laxperStore\n");
-#endif
+	DEBUG_WORD("laxperStore")
 }
 
 void laxperFetch(void) {
-#if defined (__DEBUG__)
-	printf("laxperFetch\n");
-#endif
+	DEBUG_WORD("laxperFetch")
 }
 
 void laxperYQLeave(void) {
-#if defined (__DEBUG__)
-	printf("laxperYQLeave\n");
-#endif
+	DEBUG_WORD("laxperYQLeave")
 }
 
 void laxperYLeave(void) {
-#if defined (__DEBUG__)
-	printf("laxperYLeave\n");
-#endif
+	DEBUG_WORD("laxperYLeave")
 }
 
 void laxperJ(void) {
-#if defined (__DEBUG__)
-	printf("laxperJ\n");
-#endif
+	DEBUG_WORD("laxperJ")
 }
 
 void laxperI(void) {
-#if defined (__DEBUG__)
-	printf("laxperI\n");
-#endif
+	DEBUG_WORD("laxperI")
 }
 
 void laxperPause(void) {
-#if defined (__DEBUG__)
-	printf("laxperPause\n");
-#endif
+	DEBUG_WORD("laxperPause")
 }
 
 void laxperNoop(void) {
-#if defined (__DEBUG__)
-	printf("laxperNoop\n");
-#endif
+	DEBUG_WORD("laxperNoop")
 }
 
 void laxperGo(void) {
-#if defined (__DEBUG__)
-	printf("laxperGo\n");
-#endif
+	DEBUG_WORD("laxperGo")
 }
 
 void laxperPerform(void) {
-#if defined (__DEBUG__)
-	printf("laxperPerform\n");
-#endif
+	DEBUG_WORD("laxperPerform")
 }
 
 void laxperExecute(void) {
-#if defined (__DEBUG__)
-	printf("laxperExecute\n");
-#endif
+	DEBUG_WORD("laxperExecute")
 }
 
 void laxperToNext(void) {
-#if defined (__DEBUG__)
-	printf("laxperToNext\n");
-#endif
+	DEBUG_WORD("laxperToNext")
 }
 
 void laxperBounds(void) {
-#if defined (__DEBUG__)
-	printf("laxperBounds\n");
-#endif
+	DEBUG_WORD("laxperBounds")
 }
 
 void laxperYQDo(void) {
-#if defined (__DEBUG__)
-	printf("laxperYQDo\n");
-#endif
+	DEBUG_WORD("laxperYQDo")
 }
 
 void laxperYDo(void) {
-#if defined (__DEBUG__)
-	printf("laxperYDo\n");
-#endif
+	DEBUG_WORD("laxperYDo")
 }
 
 void laxperYPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("laxperYPlusLoop\n");
-#endif
+	DEBUG_WORD("laxperYPlusLoop")
 }
 
 void laxperYLoop(void) {
-#if defined (__DEBUG__)
-	printf("laxperYLoop\n");
-#endif
+	DEBUG_WORD("laxperYLoop")
 }
 
 void laxperQBranch(void) {
-#if defined (__DEBUG__)
-	printf("laxperQBranch\n");
-#endif
+	DEBUG_WORD("laxperQBranch")
 }
 
 void laxperBranch(void) {
-#if defined (__DEBUG__)
-	printf("laxperBranch\n");
-#endif
+	DEBUG_WORD("laxperBranch")
 }
 
 void laxperYLit(void) {
-#if defined (__DEBUG__)
-	printf("laxperYLit\n");
-#endif
+	DEBUG_WORD("laxperYLit")
 }
 
 void laxperUp(void) {
-#if defined (__DEBUG__)
-	printf("laxperUp\n");
-#endif
+	DEBUG_WORD("laxperUp")
 }
 
 void laxperUnnest(void) {
-#if defined (__DEBUG__)
-	printf("laxperUnnest\n");
-#endif
+	DEBUG_WORD("laxperUnnest")
 }
 
 void laxperExit(void) {
-#if defined (__DEBUG__)
-	printf("laxperExit\n");
-#endif
+	DEBUG_WORD("laxperExit")
 }
 
 void laxperForth(void) {
-#if defined (__DEBUG__)
-	printf("laxperForth\n");
-#endif
+	DEBUG_WORD("laxperForth")
 }
 
 #endif
@@ -3290,106 +2198,74 @@ void laxperForth(void) {
 #if (H2O_FORTH_PRIMITIVES == LAXONPERRY_FORTH) || \
     (H2O_FORTH_PRIMITIVES == LAXONPERRY_PC_FORTH)
 void laxperPStore(void) {
-#if defined (__DEBUG__)
-	printf("laxperPStore\n");
-#endif
+	DEBUG_WORD("laxperPStore")
 }
 
 void laxperPFetch(void) {
-#if defined (__DEBUG__)
-	printf("laxperPFetch\n");
-#endif
+	DEBUG_WORD("laxperPFetch")
 }
 
 void laxperIntNum(void) {
-#if defined (__DEBUG__)
-	printf("laxperIntNum\n");
-#endif
+	DEBUG_WORD("laxperIntNum")
 }
 
 void laxperCpu8086DotBlk(void) {
-#if defined (__DEBUG__)
-	printf("laxperCpu8086DotBlk\n");
-#endif
+	DEBUG_WORD("laxperCpu8086DotBlk")
 }
 
 void laxperExtend86DotBlk(void) {
-#if defined (__DEBUG__)
-	printf("laxperExtend86DotBlk\n");
-#endif
+	DEBUG_WORD("laxperExtend86DotBlk")
 }
 
 void laxperKernel86DotBlk(void) {
-#if defined (__DEBUG__)
-	printf("laxperKernel86DotBlk\n");
-#endif
+	DEBUG_WORD("laxperKernel86DotBlk")
 }
 #endif
 
 #if (H2O_FORTH_PRIMITIVES == LAXONPERRY_FORTH) || \
     (H2O_FORTH_PRIMITIVES == LAXONPERRY_CPM_FORTH)
 void laxperCpu8080DotBlk(void) {
-#if defined (__DEBUG__)
-	printf("laxperCpu8080DotBlk\n");
-#endif
+	DEBUG_WORD("laxperCpu8080DotBlk")
 }
 
 void laxperExtend80DotBlk(void) {
-#if defined (__DEBUG__)
-	printf("laxperExtend80DotBlk\n");
-#endif
+	DEBUG_WORD("laxperExtend80DotBlk")
 }
 
 void laxperKernel80DotBlk(void) {
-#if defined (__DEBUG__)
-	printf("laxperKernel80DotBlk\n");
-#endif
+	DEBUG_WORD("laxperKernel80DotBlk")
 }
 
 void laxperBios(void) {
-#if defined (__DEBUG__)
-	printf("laxperBios\n");
-#endif
+	DEBUG_WORD("laxperBios")
 }
 
 void laxperRP(void) {
-#if defined (__DEBUG__)
-	printf("laxperRP\n");
-#endif
+	DEBUG_WORD("laxperRP")
 }
 #endif
 
 #if (H2O_FORTH_PRIMITIVES == LAXONPERRY_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == LAXONPERRY_CPM68K_FORTH)
 void laxperCpu68000DotBlk(void) {
-#if defined (__DEBUG__)
-	printf("laxperCpu68000DotBlk\n");
-#endif
+	DEBUG_WORD("laxperCpu68000DotBlk")
 }
 
 void laxperExtend68DotBlk(void) {
-#if defined (__DEBUG__)
-	printf("laxperExtend68DotBlk\n");
-#endif
+	DEBUG_WORD("laxperExtend68DotBlk")
 }
 
 void laxperKernel68DotBlk(void) {
-#if defined (__DEBUG__)
-	printf("laxperKernel68DotBlk\n");
-#endif
+	DEBUG_WORD("laxperKernel68DotBlk")
 }
 
 /* unchecked: */
 void laxperBios(void) {
-#if defined (__DEBUG__)
-	printf("laxperBios\n");
-#endif
+	DEBUG_WORD("laxperBios")
 }
 
 void laxperRP(void) {
-#if defined (__DEBUG__)
-	printf("laxperRP\n");
-#endif
+	DEBUG_WORD("laxperRP")
 }
 
 #endif

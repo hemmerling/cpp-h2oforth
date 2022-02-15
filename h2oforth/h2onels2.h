@@ -9,1554 +9,1038 @@
 	H2O_FORTH_PRIMITIVES == NELSON_ESP_FORTH || \
 	H2O_FORTH_PRIMITIVES == NELSON_UE_FORTH
 void nelsonForth(void) {
-#if defined (__DEBUG__)
-	printf("nelsonForth\n");
-#endif
+	DEBUG_WORD("nelsonForth")
 }
 
 void nelsonTo(void) {
-#if defined (__DEBUG__)
-	printf("nelsonTo\n");
-#endif
+	DEBUG_WORD("nelsonTo")
 }
 
 void nelsonPlusTo(void) {
-#if defined (__DEBUG__)
-	printf("nelsonPlusTo\n");
-#endif
+	DEBUG_WORD("nelsonPlusTo")
 }
 
 void nelsonSemicolon(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSemicolon\n");
-#endif
+	DEBUG_WORD("nelsonSemicolon")
 }
 
 void nelsonLeftBrace(void) {
-#if defined (__DEBUG__)
-	printf("nelsonLeftBrace\n");
-#endif
+	DEBUG_WORD("nelsonLeftBrace")
 }
 
 void nelsonEditor(void) {
-#if defined (__DEBUG__)
-	printf("nelsonEditor\n");
-#endif
+	DEBUG_WORD("nelsonEditor")
 }
 
 void nelsonList(void) {
-#if defined (__DEBUG__)
-	printf("nelsonList\n");
-#endif
+	DEBUG_WORD("nelsonList")
 }
 
 void nelsonCopy(void) {
-#if defined (__DEBUG__)
-	printf("nelsonCopy\n");
-#endif
+	DEBUG_WORD("nelsonCopy")
 }
 
 void nelsonThru(void) {
-#if defined (__DEBUG__)
-	printf("nelsonThru\n");
-#endif
+	DEBUG_WORD("nelsonThru")
 }
 
 void nelsonLoad(void) {
-#if defined (__DEBUG__)
-	printf("nelsonLoad\n");
-#endif
+	DEBUG_WORD("nelsonLoad")
 }
 
 void nelsonFlush(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFlush\n");
-#endif
+	DEBUG_WORD("nelsonFlush")
 }
 
 void nelsonUpdate(void) {
-#if defined (__DEBUG__)
-	printf("nelsonUpdate\n");
-#endif
+	DEBUG_WORD("nelsonUpdate")
 }
 
 void nelsonEmptyBuffers(void) {
-#if defined (__DEBUG__)
-	printf("nelsonEmptyBuffers\n");
-#endif
+	DEBUG_WORD("nelsonEmptyBuffers")
 }
 
 void nelsonBuffer(void) {
-#if defined (__DEBUG__)
-	printf("nelsonBuffer\n");
-#endif
+	DEBUG_WORD("nelsonBuffer")
 }
 
 void nelsonBlock(void) {
-#if defined (__DEBUG__)
-	printf("nelsonBlock\n");
-#endif
+	DEBUG_WORD("nelsonBlock")
 }
 
 void nelsonSaveBuffers(void) {
-#if defined (__DEBUG__)
-	printf("nelsonBlock\n");
-#endif
+	DEBUG_WORD("nelsonBlock")
 }
 
 void nelsonDefaultUse(void) {
-#if defined (__DEBUG__)
-	printf("nelsonDefaultUse\n");
-#endif
+	DEBUG_WORD("nelsonDefaultUse")
 }
 
 void nelsonUse(void) {
-#if defined (__DEBUG__)
-	printf("nelsonUse\n");
-#endif
+	DEBUG_WORD("nelsonUse")
 }
 
 void nelsonOpenBlocks(void) {
-#if defined (__DEBUG__)
-	printf("nelsonOpenBlocks\n");
-#endif
+	DEBUG_WORD("nelsonOpenBlocks")
 }
 
 void nelsonBlockId(void) {
-#if defined (__DEBUG__)
-	printf("nelsonBlockId\n");
-#endif
+	DEBUG_WORD("nelsonBlockId")
 }
 
 void nelsonScr(void) {
-#if defined (__DEBUG__)
-	printf("nelsonScr\n");
-#endif
+	DEBUG_WORD("nelsonScr")
 }
 
 void nelsonBlockFid(void) {
-#if defined (__DEBUG__)
-	printf("nelsonBlockFid\n");
-#endif
+	DEBUG_WORD("nelsonBlockFid")
 }
 
 void nelsonStreams(void) {
-#if defined (__DEBUG__)
-	printf("nelsonStreams\n");
-#endif
+	DEBUG_WORD("nelsonStreams")
 }
 
 void nelsonReset(void) {
-#if defined (__DEBUG__)
-	printf("nelsonReset\n");
-#endif
+	DEBUG_WORD("nelsonReset")
 }
 
 void nelsonRevive(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRevive\n");
-#endif
+	DEBUG_WORD("nelsonRevive")
 }
 
 void nelsonStartup(void) {
-#if defined (__DEBUG__)
-	printf("nelsonStartup\n");
-#endif
+	DEBUG_WORD("nelsonStartup")
 }
 
 void nelsonRemember(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRemember\n");
-#endif
+	DEBUG_WORD("nelsonRemember")
 }
 
 void nelsonRestore(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRestore\n");
-#endif
+	DEBUG_WORD("nelsonRestore")
 }
 
 void nelsonSave(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSave\n");
-#endif
+	DEBUG_WORD("nelsonSave")
 }
 
 void nelsonDumpFile(void) {
-#if defined (__DEBUG__)
-	printf("nelsonDumpFile\n");
-#endif
+	DEBUG_WORD("nelsonDumpFile")
 }
 
 void nelsonWords(void) {
-#if defined (__DEBUG__)
-	printf("nelsonWords\n");
-#endif
+	DEBUG_WORD("nelsonWords")
 }
 
 void nelsonVlist(void) {
-#if defined (__DEBUG__)
-	printf("nelsonWords\n");
-#endif
+	DEBUG_WORD("nelsonWords")
 }
 
 void nelsonOrder(void) {
-#if defined (__DEBUG__)
-	printf("nelsonOrder\n");
-#endif
+	DEBUG_WORD("nelsonOrder")
 }
 
 void nelsonSee(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSee\n");
-#endif
+	DEBUG_WORD("nelsonSee")
 }
 
 void nelsonDotS(void) {
-#if defined (__DEBUG__)
-	printf("nelsonDotS\n");
-#endif
+	DEBUG_WORD("nelsonDotS")
 }
 
 void nelsonStartsWithQ(void) {
-#if defined (__DEBUG__)
-	printf("nelsonStartsWithQ\n");
-#endif
+	DEBUG_WORD("nelsonStartsWithQ")
 }
 
 void nelsonStrEqual(void) {
-#if defined (__DEBUG__)
-	printf("nelsonStrEqual\n");
-#endif
+	DEBUG_WORD("nelsonStrEqual")
 }
 
 void nelsonColonNoname(void) {
-#if defined (__DEBUG__)
-	printf("nelsonColonNoname\n");
-#endif
+	DEBUG_WORD("nelsonColonNoname")
 }
 
 void nelsonSmudge(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSmudge\n");
-#endif
+	DEBUG_WORD("nelsonSmudge")
 }
 
 void nelsonForget(void) {
-#if defined (__DEBUG__)
-	printf("nelsonForget\n");
-#endif
+	DEBUG_WORD("nelsonForget")
 }
 
 void nelsonDump(void) {
-#if defined (__DEBUG__)
-	printf("nelsonDump\n");
-#endif
+	DEBUG_WORD("nelsonDump")
 }
 
 void nelsonAssert(void) {
-#if defined (__DEBUG__)
-	printf("nelsonAssert\n");
-#endif
+	DEBUG_WORD("nelsonAssert")
 }
 
 void nelsonStartTask(void) {
-#if defined (__DEBUG__)
-	printf("nelsonStartTask\n");
-#endif
+	DEBUG_WORD("nelsonStartTask")
 }
 
 void nelsonTask(void) {
-#if defined (__DEBUG__)
-	printf("nelsonTask\n");
-#endif
+	DEBUG_WORD("nelsonTask")
 }
 
 void nelsonPause(void) {
-#if defined (__DEBUG__)
-	printf("nelsonPause\n");
-#endif
+	DEBUG_WORD("nelsonPause")
 }
 
 void nelsonTasks(void) {
-#if defined (__DEBUG__)
-	printf("nelsonTasks\n");
-#endif
+	DEBUG_WORD("nelsonTasks")
 }
 
 void nelsonInclude(void) {
-#if defined (__DEBUG__)
-	printf("nelsonInclude\n");
-#endif
+	DEBUG_WORD("nelsonInclude")
 }
 
 void nelsonIncluded(void) {
-#if defined (__DEBUG__)
-	printf("nelsonIncluded\n");
-#endif
+	DEBUG_WORD("nelsonIncluded")
 }
 
 void nelsonResize(void) {
-#if defined (__DEBUG__)
-	printf("nelsonResize\n");
-#endif
+	DEBUG_WORD("nelsonResize")
 }
 
 void nelsonFree(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFree\n");
-#endif
+	DEBUG_WORD("nelsonFree")
 }
 
 void nelsonAllocate(void) {
-#if defined (__DEBUG__)
-	printf("nelsonAllocate\n");
-#endif
+	DEBUG_WORD("nelsonAllocate")
 }
 
 void nelsonOk(void) {
-#if defined (__DEBUG__)
-	printf("nelsonOk\n");
-#endif
+	DEBUG_WORD("nelsonOk")
 }
 
 void nelsonMs(void) {
-#if defined (__DEBUG__)
-	printf("nelsonMs\n");
-#endif
+	DEBUG_WORD("nelsonMs")
 }
 
 void nelsonFileSize(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFileSize\n");
-#endif
+	DEBUG_WORD("nelsonFileSize")
 }
 
 void nelsonResizeFile(void) {
-#if defined (__DEBUG__)
-	printf("nelsonResizeFile\n");
-#endif
+	DEBUG_WORD("nelsonResizeFile")
 }
 
 void nelsonRepositionFile(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRepositionFile\n");
-#endif
+	DEBUG_WORD("nelsonRepositionFile")
 }
 
 void nelsonFilePosition(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFilePosition\n");
-#endif
+	DEBUG_WORD("nelsonFilePosition")
 }
 
 void nelsonReadFile(void) {
-#if defined (__DEBUG__)
-	printf("nelsonReadFile\n");
-#endif
+	DEBUG_WORD("nelsonReadFile")
 }
 
 void nelsonWriteFile(void) {
-#if defined (__DEBUG__)
-	printf("nelsonWriteFile\n");
-#endif
+	DEBUG_WORD("nelsonWriteFile")
 }
 
 void nelsonDeleteFile(void) {
-#if defined (__DEBUG__)
-	printf("nelsonDeleteFile\n");
-#endif
+	DEBUG_WORD("nelsonDeleteFile")
 }
 
 void nelsonCreateFile(void) {
-#if defined (__DEBUG__)
-	printf("nelsonCreateFile\n");
-#endif
+	DEBUG_WORD("nelsonCreateFile")
 }
 
 void nelsonOpenFile(void) {
-#if defined (__DEBUG__)
-	printf("nelsonOpenFile\n");
-#endif
+	DEBUG_WORD("nelsonOpenFile")
 }
 
 void nelsonFlushFile(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFlushFile\n");
-#endif
+	DEBUG_WORD("nelsonFlushFile")
 }
 
 void nelsonCloseFile(void) {
-#if defined (__DEBUG__)
-	printf("nelsonCloseFile\n");
-#endif
+	DEBUG_WORD("nelsonCloseFile")
 }
 
 void nelsonRSlashW(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRSlashW\n");
-#endif
+	DEBUG_WORD("nelsonRSlashW")
 }
 
 void nelsonWSlashO(void) {
-#if defined (__DEBUG__)
-	printf("nelsonWSlashO\n");
-#endif
+	DEBUG_WORD("nelsonWSlashO")
 }
 
 void nelsonRSlashO(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRSlashO\n");
-#endif
+	DEBUG_WORD("nelsonRSlashO")
 }
 
 void nelsonPage(void) {
-#if defined (__DEBUG__)
-	printf("nelsonPage\n");
-#endif
+	DEBUG_WORD("nelsonPage")
 }
 
 
 
 void nelsonInternals(void) {
-#if defined (__DEBUG__)
-	printf("nelsonInternals\n");
-#endif
+	DEBUG_WORD("nelsonInternals")
 }
 
 void nelsonSealed(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSealed\n");
-#endif
+	DEBUG_WORD("nelsonSealed")
 }
 
 void nelsonAlso(void) {
-#if defined (__DEBUG__)
-	printf("nelsonAlso\n");
-#endif
+	DEBUG_WORD("nelsonAlso")
 }
 
 void nelsonOnly(void) {
-#if defined (__DEBUG__)
-	printf("nelsonOnly\n");
-#endif
+	DEBUG_WORD("nelsonOnly")
 }
 
 void nelsonTransferLeftBrace(void) {
-#if defined (__DEBUG__)
-	printf("nelsonTransferLeftBrace\n");
-#endif
+	DEBUG_WORD("nelsonTransferLeftBrace")
 }
 
 void nelsonRightBraceTransfer(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRightBraceTransfer\n");
-#endif
+	DEBUG_WORD("nelsonRightBraceTransfer")
 }
 
 void nelsonTransfer(void) {
-#if defined (__DEBUG__)
-	printf("nelsonTransfer\n");
-#endif
+	DEBUG_WORD("nelsonTransfer")
 }
 
 void nelsonDefinitions(void) {
-#if defined (__DEBUG__)
-	printf("nelsonDefinitions\n");
-#endif
+	DEBUG_WORD("nelsonDefinitions")
 }
 
 void nelsonVocabulary(void) {
-#if defined (__DEBUG__)
-	printf("nelsonVocabulary\n");
-#endif
+	DEBUG_WORD("nelsonVocabulary")
 }
 
 void nelsonXif(void) {
-#if defined (__DEBUG__)
-	printf("nelsonXif\n");
-#endif
+	DEBUG_WORD("nelsonXif")
 }
 
 void nelsonXElse(void) {
-#if defined (__DEBUG__)
-	printf("nelsonXElse\n");
-#endif
+	DEBUG_WORD("nelsonXElse")
 }
 
 void nelsonXThen(void) {
-#if defined (__DEBUG__)
-	printf("nelsonXThen\n");
-#endif
+	DEBUG_WORD("nelsonXThen")
 }
 
 void nelsonDefinedQ(void) {
-#if defined (__DEBUG__)
-	printf("nelsonDefinedQ\n");
-#endif
+	DEBUG_WORD("nelsonDefinedQ")
 }
 
 void nelsonQuit(void) {
-#if defined (__DEBUG__)
-	printf("nelsonQuit\n");
-#endif
+	DEBUG_WORD("nelsonQuit")
 }
 
 void nelsonEvaluate(void) {
-#if defined (__DEBUG__)
-	printf("nelsonEvaluate\n");
-#endif
+	DEBUG_WORD("nelsonEvaluate")
 }
 
 void nelsonPrompt(void) {
-#if defined (__DEBUG__)
-	printf("nelsonPrompt\n");
-#endif
+	DEBUG_WORD("nelsonPrompt")
 }
 
 void nelsonRefill(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRefill\n");
-#endif
+	DEBUG_WORD("nelsonRefill")
 }
 
 void nelsonTib(void) {
-#if defined (__DEBUG__)
-	printf("nelsonTib\n");
-#endif
+	DEBUG_WORD("nelsonTib")
 }
 
 void nelsonAccept(void) {
-#if defined (__DEBUG__)
-	printf("nelsonAccept\n");
-#endif
+	DEBUG_WORD("nelsonAccept")
 }
 
 void nelsonEcho(void) {
-#if defined (__DEBUG__)
-	printf("nelsonEcho\n");
-#endif
+	DEBUG_WORD("nelsonEcho")
 }
 
 
 void nelsonFill(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFill\n");
-#endif
+	DEBUG_WORD("nelsonFill")
 }
 
 void nelsonCMoveFrom(void) {
-#if defined (__DEBUG__)
-	printf("nelsonCMoveFrom\n");
-#endif
+	DEBUG_WORD("nelsonCMoveFrom")
 }
 
 void nelsonCMove(void) {
-#if defined (__DEBUG__)
-	printf("nelsonCMove\n");
-#endif
+	DEBUG_WORD("nelsonCMove")
 }
 
 void nelsonYGreaterS(void) {
-#if defined (__DEBUG__)
-	printf("nelsonYGreaterS\n");
-#endif
+	DEBUG_WORD("nelsonYGreaterS")
 }
 
 void nelsonSGreaterZ(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSGreaterZ\n");
-#endif
+	DEBUG_WORD("nelsonSGreaterZ")
 }
 
 void nelsonRVerticalBar(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRVerticalBar\n");
-#endif
+	DEBUG_WORD("nelsonRVerticalBar")
 }
 
 void nelsonRQuote(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRVerticalBar\n");
-#endif
+	DEBUG_WORD("nelsonRVerticalBar")
 }
 
 void nelsonYQuote(void) {
-#if defined (__DEBUG__)
-	printf("nelsonYQuote\n");
-#endif
+	DEBUG_WORD("nelsonYQuote")
 }
 
 void nelsonDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("nelsonDotQuote\n");
-#endif
+	DEBUG_WORD("nelsonDotQuote")
 }
 
 void nelsonSQuote(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSQuote\n");
-#endif
+	DEBUG_WORD("nelsonSQuote")
 }
 
 void nelsonDollarPlace(void) {
-#if defined (__DEBUG__)
-	printf("nelsonDollarPlace\n");
-#endif
+	DEBUG_WORD("nelsonDollarPlace")
 }
 
 void nelsonNDot(void) {
-#if defined (__DEBUG__)
-	printf("nelsonNDot\n");
-#endif
+	DEBUG_WORD("nelsonNDot")
 }
 
 void nelsonQ(void) {
-#if defined (__DEBUG__)
-	printf("nelsonQ\n");
-#endif
+	DEBUG_WORD("nelsonQ")
 }
 
 void nelsonDot(void) {
-#if defined (__DEBUG__)
-	printf("nelsonDot\n");
-#endif
+	DEBUG_WORD("nelsonDot")
 }
 
 void nelsonUDot(void) {
-#if defined (__DEBUG__)
-	printf("nelsonUDot\n");
-#endif
+	DEBUG_WORD("nelsonUDot")
 }
 
 void nelsonBinary(void) {
-#if defined (__DEBUG__)
-	printf("nelsonBinary\n");
-#endif
+	DEBUG_WORD("nelsonBinary")
 }
 
 void nelsonDecimal(void) {
-#if defined (__DEBUG__)
-	printf("nelsonDecimal\n");
-#endif
+	DEBUG_WORD("nelsonDecimal")
 }
 
 void nelsonOctal(void) {
-#if defined (__DEBUG__)
-	printf("nelsonOctal\n");
-#endif
+	DEBUG_WORD("nelsonOctal")
 }
 
 void nelsonHex(void) {
-#if defined (__DEBUG__)
-	printf("nelsonHex\n");
-#endif
+	DEBUG_WORD("nelsonHex")
 }
 
 void nelsonStr(void) {
-#if defined (__DEBUG__)
-	printf("nelsonStr\n");
-#endif
+	DEBUG_WORD("nelsonStr")
 }
 
 void nelsonNumFrom(void) {
-#if defined (__DEBUG__)
-	printf("nelsonNumFrom\n");
-#endif
+	DEBUG_WORD("nelsonNumFrom")
 }
 
 void nelsonSign(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSign\n");
-#endif
+	DEBUG_WORD("nelsonSign")
 }
 
 void nelsonNumS(void) {
-#if defined (__DEBUG__)
-	printf("nelsonNumS\n");
-#endif
+	DEBUG_WORD("nelsonNumS")
 }
 
 void nelsonNum(void) {
-#if defined (__DEBUG__)
-	printf("nelsonNum\n");
-#endif
+	DEBUG_WORD("nelsonNum")
 }
 
 void nelsonHold(void) {
-#if defined (__DEBUG__)
-	printf("nelsonHold\n");
-#endif
+	DEBUG_WORD("nelsonHold")
 }
 
 void nelsonLessNum(void) {
-#if defined (__DEBUG__)
-	printf("nelsonLessNum\n");
-#endif
+	DEBUG_WORD("nelsonLessNum")
 }
 
 void nelsonExtract(void) {
-#if defined (__DEBUG__)
-	printf("nelsonExtractm\n");
-#endif
+	DEBUG_WORD("nelsonExtractm")
 }
 
 void nelsonPad(void) {
-#if defined (__DEBUG__)
-	printf("nelsonPad\n");
-#endif
+	DEBUG_WORD("nelsonPad")
 }
 
 void nelsonHld(void) {
-#if defined (__DEBUG__)
-	printf("nelsonHld\n");
-#endif
+	DEBUG_WORD("nelsonHld")
 }
 
 void nelsonCr(void) {
-#if defined (__DEBUG__)
-	printf("nelsonCr\n");
-#endif
+	DEBUG_WORD("nelsonCr")
 }
 
 void nelsonSpace(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSpace\n");
-#endif
+	DEBUG_WORD("nelsonSpace")
 }
 
 void nelsonEmit(void) {
-#if defined (__DEBUG__)
-	printf("nelsonEmit\n");
-#endif
+	DEBUG_WORD("nelsonEmit")
 }
 
 void nelsonBye(void) {
-#if defined (__DEBUG__)
-	printf("nelsonBye\n");
-#endif
+	DEBUG_WORD("nelsonBye")
 }
 
 void nelsonKeyQ(void) {
-#if defined (__DEBUG__)
-	printf("nelsonKeyQ\n");
-#endif
+	DEBUG_WORD("nelsonKeyQ")
 }
 
 void nelsonKey(void) {
-#if defined (__DEBUG__)
-	printf("nelsonKey\n");
-#endif
+	DEBUG_WORD("nelsonKey")
 }
 
 void nelsonType(void) {
-#if defined (__DEBUG__)
-	printf("nelsonType\n");
-#endif
+	DEBUG_WORD("nelsonType")
 }
 
 void nelsonIs(void) {
-#if defined (__DEBUG__)
-	printf("nelsonIs\n");
-#endif
+	DEBUG_WORD("nelsonIs")
 }
 
 void nelsonDefer(void) {
-#if defined (__DEBUG__)
-	printf("nelsonDefer\n");
-#endif
+	DEBUG_WORD("nelsonDefer")
 }
 
 void nelsonValue(void) {
-#if defined (__DEBUG__)
-	printf("nelsonValue\n");
-#endif
+	DEBUG_WORD("nelsonValue")
 }
 
 void nelsonThrow(void) {
-#if defined (__DEBUG__)
-	printf("nelsonThrow\n");
-#endif
+	DEBUG_WORD("nelsonThrow")
 }
 
 void nelsonCatch(void) {
-#if defined (__DEBUG__)
-	printf("nelsonCatch\n");
-#endif
+	DEBUG_WORD("nelsonCatch")
 }
 
 void nelsonHandler(void) {
-#if defined (__DEBUG__)
-	printf("nelsonHandler\n");
-#endif
+	DEBUG_WORD("nelsonHandler")
 }
 
 void nelsonJ(void) {
-#if defined (__DEBUG__)
-	printf("nelsonJ\n");
-#endif
+	DEBUG_WORD("nelsonJ")
 }
 
 void nelsonI(void) {
-#if defined (__DEBUG__)
-	printf("nelsonI\n");
-#endif
+	DEBUG_WORD("nelsonI")
 }
 
 void nelsonLoop(void) {
-#if defined (__DEBUG__)
-	printf("nelsonLoop\n");
-#endif
+	DEBUG_WORD("nelsonLoop")
 }
 
 void nelsonPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("nelsonPlusLoop\n");
-#endif
+	DEBUG_WORD("nelsonPlusLoop")
 }
 
 void nelsonLeave(void) {
-#if defined (__DEBUG__)
-	printf("nelsonLeave\n");
-#endif
+	DEBUG_WORD("nelsonLeave")
 }
 
 void nelsonUnLoop(void) {
-#if defined (__DEBUG__)
-	printf("nelsonUnLoop\n");
-#endif
+	DEBUG_WORD("nelsonUnLoop")
 }
 
 void nelsonQDo(void) {
-#if defined (__DEBUG__)
-	printf("nelsonQDo\n");
-#endif
+	DEBUG_WORD("nelsonQDo")
 }
 
 void nelsonDo(void) {
-#if defined (__DEBUG__)
-	printf("nelsonDo\n");
-#endif
+	DEBUG_WORD("nelsonDo")
 }
 
 void nelsonNext(void) {
-#if defined (__DEBUG__)
-	printf("nelsonNext\n");
-#endif
+	DEBUG_WORD("nelsonNext")
 }
 
 void nelsonFor(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFor\n");
-#endif
+	DEBUG_WORD("nelsonFor")
 }
 
 void nelsonDepth(void) {
-#if defined (__DEBUG__)
-	printf("nelsonDepth\n");
-#endif
+	DEBUG_WORD("nelsonDepth")
 }
 
 void nelsonRP0(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRP0\n");
-#endif
+	DEBUG_WORD("nelsonRP0")
 }
 
 void nelsonSP0(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSP0\n");
-#endif
+	DEBUG_WORD("nelsonSP0")
 }
 
 void nelsonVariable(void) {
-#if defined (__DEBUG__)
-	printf("nelsonVariable\n");
-#endif
+	DEBUG_WORD("nelsonVariable")
 }
 
 void nelsonConstant(void) {
-#if defined (__DEBUG__)
-	printf("nelsonConstant\n");
-#endif
+	DEBUG_WORD("nelsonConstant")
 }
 
 void nelsonPostpone(void) {
-#if defined (__DEBUG__)
-	printf("nelsonPostpone\n");
-#endif
+	DEBUG_WORD("nelsonPostpone")
 }
 
 void nelsonToBody(void) {
-#if defined (__DEBUG__)
-	printf("nelsonToBody\n");
-#endif
+	DEBUG_WORD("nelsonToBody")
 }
 
 void nelsonToFlags(void) {
-#if defined (__DEBUG__)
-	printf("nelsonToFlags\n");
-#endif
+	DEBUG_WORD("nelsonToFlags")
 }
 
 void nelsonToLink(void) {
-#if defined (__DEBUG__)
-	printf("nelsonToLink\n");
-#endif
+	DEBUG_WORD("nelsonToLink")
 }
 
 void nelsonToLinkAmpersand(void) {
-#if defined (__DEBUG__)
-	printf("nelsonToLinkAmpersand\n");
-#endif
+	DEBUG_WORD("nelsonToLinkAmpersand")
 }
 
 void nelsonToName(void) {
-#if defined (__DEBUG__)
-	printf("nelsonToName\n");
-#endif
+	DEBUG_WORD("nelsonToName")
 }
 
 void nelsonAbs(void) {
-#if defined (__DEBUG__)
-	printf("nelsonAbs\n");
-#endif
+	DEBUG_WORD("nelsonAbs")
 }
 
 void nelsonMax(void) {
-#if defined (__DEBUG__)
-	printf("nelsonMax\n");
-#endif
+	DEBUG_WORD("nelsonMax")
 }
 
 void nelsonMin(void) {
-#if defined (__DEBUG__)
-	printf("nelsonMin\n");
-#endif
+	DEBUG_WORD("nelsonMin")
 }
 
 void nelsonAft(void) {
-#if defined (__DEBUG__)
-	printf("nelsonAft\n");
-#endif
+	DEBUG_WORD("nelsonAft")
 }
 
 void nelsonRepeat(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRepeat\n");
-#endif
+	DEBUG_WORD("nelsonRepeat")
 }
 
 void nelsonWhile(void) {
-#if defined (__DEBUG__)
-	printf("nelsonWhile\n");
-#endif
+	DEBUG_WORD("nelsonWhile")
 }
 
 void nelsonElse(void) {
-#if defined (__DEBUG__)
-	printf("nelsonElse\n");
-#endif
+	DEBUG_WORD("nelsonElse")
 }
 
 void nelsonIf(void) {
-#if defined (__DEBUG__)
-	printf("nelsonIf\n");
-#endif
+	DEBUG_WORD("nelsonIf")
 }
 
 void nelsonThen(void) {
-#if defined (__DEBUG__)
-	printf("nelsonThen\n");
-#endif
+	DEBUG_WORD("nelsonThen")
 }
 
 void nelsonAhead(void) {
-#if defined (__DEBUG__)
-	printf("nelsonAhead\n");
-#endif
+	DEBUG_WORD("nelsonAhead")
 }
 
 void nelsonUntil(void) {
-#if defined (__DEBUG__)
-	printf("nelsonUntil\n");
-#endif
+	DEBUG_WORD("nelsonUntil")
 }
 
 void nelsonAgain(void) {
-#if defined (__DEBUG__)
-	printf("nelsonAgain\n");
-#endif
+	DEBUG_WORD("nelsonAgain")
 }
 
 void nelsonBegin(void) {
-#if defined (__DEBUG__)
-	printf("nelsonBegin\n");
-#endif
+	DEBUG_WORD("nelsonBegin")
 }
 
 void nelsonLiteral(void) {
-#if defined (__DEBUG__)
-	printf("nelsonLiteral\n");
-#endif
+	DEBUG_WORD("nelsonLiteral")
 }
 
 void nelsonXChar(void) {
-#if defined (__DEBUG__)
-	printf("nelsonXChar\n");
-#endif
+	DEBUG_WORD("nelsonXChar")
 }
 
 void nelsonChar(void) {
-#if defined (__DEBUG__)
-	printf("nelsonChar\n");
-#endif
+	DEBUG_WORD("nelsonChar")
 }
 
 void nelsonXNick(void) {
-#if defined (__DEBUG__)
-	printf("nelsonXNick\n");
-#endif
+	DEBUG_WORD("nelsonXNick")
 }
 
 void nelsonNick(void) {
-#if defined (__DEBUG__)
-	printf("nelsonNick\n");
-#endif
+	DEBUG_WORD("nelsonNick")
 }
 
 void nelsonRightBracket(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRightBracket\n");
-#endif
+	DEBUG_WORD("nelsonRightBracket")
 }
 
 void nelsonLeftBracket(void) {
-#if defined (__DEBUG__)
-	printf("nelsonLeftBracket\n");
-#endif
+	DEBUG_WORD("nelsonLeftBracket")
 }
 
 void nelsonCComma(void) {
-#if defined (__DEBUG__)
-	printf("nelsonCComma\n");
-#endif
+	DEBUG_WORD("nelsonCComma")
 }
 
 void nelsonComma(void) {
-#if defined (__DEBUG__)
-	printf("nelsonComma\n");
-#endif
+	DEBUG_WORD("nelsonComma")
 }
 
 void nelsonAlign(void) {
-#if defined (__DEBUG__)
-	printf("nelsonAlign\n");
-#endif
+	DEBUG_WORD("nelsonAlign")
 }
 
 void nelsonAligned(void) {
-#if defined (__DEBUG__)
-	printf("nelsonAligned\n");
-#endif
+	DEBUG_WORD("nelsonAligned")
 }
 
 void nelsonAllot(void) {
-#if defined (__DEBUG__)
-	printf("nelsonAllot\n");
-#endif
+	DEBUG_WORD("nelsonAllot")
 }
 
 void nelsonHere(void) {
-#if defined (__DEBUG__)
-	printf("nelsonHere\n");
-#endif
+	DEBUG_WORD("nelsonHere")
 }
 
 void nelsonContext(void) {
-#if defined (__DEBUG__)
-	printf("nelsonContext\n");
-#endif
+	DEBUG_WORD("nelsonContext")
 }
 
 void nelsonCurrent(void) {
-#if defined (__DEBUG__)
-	printf("nelsonCurrent\n");
-#endif
+	DEBUG_WORD("nelsonCurrent")
 }
 
 void nelsonBase(void) {
-#if defined (__DEBUG__)
-	printf("nelsonBase\n");
-#endif
+	DEBUG_WORD("nelsonBase")
 }
 
 void nelsonState(void) {
-#if defined (__DEBUG__)
-	printf("nelsonState\n");
-#endif
+	DEBUG_WORD("nelsonState")
 }
 
 void nelsonToIn(void) {
-#if defined (__DEBUG__)
-	printf("nelsonToIn\n");
-#endif
+	DEBUG_WORD("nelsonToIn")
 }
 
 void nelsonNumTib(void) {
-#if defined (__DEBUG__)
-	printf("nelsonNumTib\n");
-#endif
+	DEBUG_WORD("nelsonNumTib")
 }
 
 void nelsonTickTib(void) {
-#if defined (__DEBUG__)
-	printf("nelsonTickTib\n");
-#endif
+	DEBUG_WORD("nelsonTickTib")
 }
 
 void nelsonTwoStore(void) {
-#if defined (__DEBUG__)
-	printf("nelsonTwoStore\n");
-#endif
+	DEBUG_WORD("nelsonTwoStore")
 }
 
 void nelsonTwoFetch(void) {
-#if defined (__DEBUG__)
-	printf("nelsonTwoFetch\n");
-#endif
+	DEBUG_WORD("nelsonTwoFetch")
 }
 
 void nelsonTwoDup(void) {
-#if defined (__DEBUG__)
-	printf("nelsonTwoDup\n");
-#endif
+	DEBUG_WORD("nelsonTwoDup")
 }
 
 void nelsonTwoDrop(void) {
-#if defined (__DEBUG__)
-	printf("nelsonTwoDrop\n");
-#endif
+	DEBUG_WORD("nelsonTwoDrop")
 }
 
 void nelsonCellSlash(void) {
-#if defined (__DEBUG__)
-	printf("nelsonCellSlash\n");
-#endif
+	DEBUG_WORD("nelsonCellSlash")
 }
 
 void nelsonCells(void) {
-#if defined (__DEBUG__)
-	printf("nelsonCells\n");
-#endif
+	DEBUG_WORD("nelsonCells")
 }
 
 void nelsonCellPlus(void) {
-#if defined (__DEBUG__)
-	printf("nelsonCellPlus\n");
-#endif
+	DEBUG_WORD("nelsonCellPlus")
 }
 
 void nelsonPlusStore(void) {
-#if defined (__DEBUG__)
-	printf("nelsonPlusStore\n");
-#endif
+	DEBUG_WORD("nelsonPlusStore")
 }
 
 void nelsonFourSlash(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFourSlash\n");
-#endif
+	DEBUG_WORD("nelsonFourSlash")
 }
 
 void nelsonFourStar(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFourStar\n");
-#endif
+	DEBUG_WORD("nelsonFourStar")
 }
 
 void nelsonTwoSlash(void) {
-#if defined (__DEBUG__)
-	printf("nelsonTwoSlash\n");
-#endif
+	DEBUG_WORD("nelsonTwoSlash")
 }
 
 void nelsonTwoStar(void) {
-#if defined (__DEBUG__)
-	printf("nelsonTwoStar\n");
-#endif
+	DEBUG_WORD("nelsonTwoStar")
 }
 
 void nelsonOneMinus(void) {
-#if defined (__DEBUG__)
-	printf("nelsonOneMinus\n");
-#endif
+	DEBUG_WORD("nelsonOneMinus")
 }
 
 void nelsonOnePlus(void) {
-#if defined (__DEBUG__)
-	printf("nelsonOnePlus\n");
-#endif
+	DEBUG_WORD("nelsonOnePlus")
 }
 
 void nelsonNl(void) {
-#if defined (__DEBUG__)
-	printf("nelsonNl\n");
-#endif
+	DEBUG_WORD("nelsonNl")
 }
 
 void nelsonBl(void) {
-#if defined (__DEBUG__)
-	printf("nelsonBl\n");
-#endif
+	DEBUG_WORD("nelsonBl")
 }
 
 void nelsonZeroUnequal(void) {
-#if defined (__DEBUG__)
-	printf("nelsonZeroUnequal\n");
-#endif
+	DEBUG_WORD("nelsonZeroUnequal")
 }
 
 void nelsonUnequal(void) {
-#if defined (__DEBUG__)
-	printf("nelsonUnequal\n");
-#endif
+	DEBUG_WORD("nelsonUnequal")
 }
 
 void nelsonEqual(void) {
-#if defined (__DEBUG__)
-	printf("nelsonEqual\n");
-#endif
+	DEBUG_WORD("nelsonEqual")
 }
 
 void nelsonGreaterEqual(void) {
-#if defined (__DEBUG__)
-	printf("nelsonGreaterEqual\n");
-#endif
+	DEBUG_WORD("nelsonGreaterEqual")
 }
 
 void nelsonLessEqual(void) {
-#if defined (__DEBUG__)
-	printf("nelsonLessEqual\n");
-#endif
+	DEBUG_WORD("nelsonLessEqual")
 }
 
 void nelsonGreater(void) {
-#if defined (__DEBUG__)
-	printf("nelsonGreater\n");
-#endif
+	DEBUG_WORD("nelsonGreater")
 }
 
 void nelsonLess(void) {
-#if defined (__DEBUG__)
-	printf("nelsonLess\n");
-#endif
+	DEBUG_WORD("nelsonLess")
 }
 
 void nelsonMinusRot(void) {
-#if defined (__DEBUG__)
-	printf("nelsonMinusRot\n");
-#endif
+	DEBUG_WORD("nelsonMinusRot")
 }
 
 void nelsonRot(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRot\n");
-#endif
+	DEBUG_WORD("nelsonRot")
 }
 
 void nelsonMinus(void) {
-#if defined (__DEBUG__)
-	printf("nelsonMinus\n");
-#endif
+	DEBUG_WORD("nelsonMinus")
 }
 
 void nelsonNegate(void) {
-#if defined (__DEBUG__)
-	printf("nelsonNegate\n");
-#endif
+	DEBUG_WORD("nelsonNegate")
 }
 
 void nelsonInvert(void) {
-#if defined (__DEBUG__)
-	printf("nelsonInvert\n");
-#endif
+	DEBUG_WORD("nelsonInvert")
 }
 
 void nelsonMod(void) {
-#if defined (__DEBUG__)
-	printf("nelsonMod\n");
-#endif
+	DEBUG_WORD("nelsonMod")
 }
 
 void nelsonSlash(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSlash\n");
-#endif
+	DEBUG_WORD("nelsonSlash")
 }
 
 void nelsonSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSlashMod\n");
-#endif
+	DEBUG_WORD("nelsonSlashMod")
 }
 
 void nelsonStar(void) {
-#if defined (__DEBUG__)
-	printf("nelsonStar\n");
-#endif
+	DEBUG_WORD("nelsonStar")
 }
 
 void nelsonStarSlash(void) {
-#if defined (__DEBUG__)
-	printf("nelsonStarSlash\n");
-#endif
+	DEBUG_WORD("nelsonStarSlash")
 }
 
 void nelsonRDrop(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRDrop\n");
-#endif
+	DEBUG_WORD("nelsonRDrop")
 }
 
 void nelsonNip(void) {
-#if defined (__DEBUG__)
-	printf("nelsonNip\n");
-#endif
+	DEBUG_WORD("nelsonNip")
 }
 
 void nelsonBackslash(void) {
-#if defined (__DEBUG__)
-	printf("nelsonBackslash\n");
-#endif
+	DEBUG_WORD("nelsonBackslash")
 }
 
 void nelsonParen(void) {
-#if defined (__DEBUG__)
-	printf("nelsonParen\n");
-#endif
+	DEBUG_WORD("nelsonParen")
 }
 
 void nelsonExit(void) {
-#if defined (__DEBUG__)
-	printf("nelsonExit\n");
-#endif
+	DEBUG_WORD("nelsonExit")
 }
 
 void nelsonColon(void) {
-#if defined (__DEBUG__)
-	printf("nelsonColon\n");
-#endif
+	DEBUG_WORD("nelsonColon")
 }
 
 void nelsonImmediate(void) {
-#if defined (__DEBUG__)
-	printf("nelsonImmediate\n");
-#endif
+	DEBUG_WORD("nelsonImmediate")
 }
 
 void nelsonDoes(void) {
-#if defined (__DEBUG__)
-	printf("nelsonDoes\n");
-#endif
+	DEBUG_WORD("nelsonDoes")
 }
 
 void nelsonCreate(void) {
-#if defined (__DEBUG__)
-	printf("nelsonCreate\n");
-#endif
+	DEBUG_WORD("nelsonCreate")
 }
 
 void nelsonSGreaterNumberQ(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSGreaterNumberQ\n");
-#endif
+	DEBUG_WORD("nelsonSGreaterNumberQ")
 }
 
 void nelsonParse(void) {
-#if defined (__DEBUG__)
-	printf("nelsonParse\n");
-#endif
+	DEBUG_WORD("nelsonParse")
 }
 
 void nelsonFind(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFind\n");
-#endif
+	DEBUG_WORD("nelsonFind")
 }
 
 void nelsonCell(void) {
-#if defined (__DEBUG__)
-	printf("nelsonCell\n");
-#endif
+	DEBUG_WORD("nelsonCell")
 }
 
 void nelsonExecute(void) {
-#if defined (__DEBUG__)
-	printf("nelsonExecute\n");
-#endif
+	DEBUG_WORD("nelsonExecute")
 }
 
 void nelsonRFetch(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRFetch\n");
-#endif
+	DEBUG_WORD("nelsonRFetch")
 }
 
 void nelsonRFrom(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRFrom\n");
-#endif
+	DEBUG_WORD("nelsonRFrom")
 }
 
 void nelsonToR(void) {
-#if defined (__DEBUG__)
-	printf("nelsonToR\n");
-#endif
+	DEBUG_WORD("nelsonToR")
 }
 
 void nelsonRPStore(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRPStore\n");
-#endif
+	DEBUG_WORD("nelsonRPStore")
 }
 
 void nelsonRPFetch(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRPFetch\n");
-#endif
+	DEBUG_WORD("nelsonRPFetch")
 }
 
 void nelsonSPStore(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSPStore\n");
-#endif
+	DEBUG_WORD("nelsonSPStore")
 }
 
 void nelsonSPFetch(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSPFetch\n");
-#endif
+	DEBUG_WORD("nelsonSPFetch")
 }
 
 void nelsonCStore(void) {
-#if defined (__DEBUG__)
-	printf("nelsonCStore\n");
-#endif
+	DEBUG_WORD("nelsonCStore")
 }
 
 void nelsonLStore(void) {
-#if defined (__DEBUG__)
-	printf("nelsonLStore\n");
-#endif
+	DEBUG_WORD("nelsonLStore")
 }
 
 void nelsonStore(void) {
-#if defined (__DEBUG__)
-	printf("nelsonStore\n");
-#endif
+	DEBUG_WORD("nelsonStore")
 }
 
 void nelsonCFetch(void) {
-#if defined (__DEBUG__)
-	printf("nelsonCFetch\n");
-#endif
+	DEBUG_WORD("nelsonCFetch")
 }
 
 void nelsonLFetch(void) {
-#if defined (__DEBUG__)
-	printf("nelsonLFetch\n");
-#endif
+	DEBUG_WORD("nelsonLFetch")
 }
 
 void nelsonFetch(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFetch\n");
-#endif
+	DEBUG_WORD("nelsonFetch")
 }
 
 void nelsonDrop(void) {
-#if defined (__DEBUG__)
-	printf("nelsonDrop\n");
-#endif
+	DEBUG_WORD("nelsonDrop")
 }
 
 void nelsonOver(void) {
-#if defined (__DEBUG__)
-	printf("nelsonOver\n");
-#endif
+	DEBUG_WORD("nelsonOver")
 }
 
 void nelsonSwap(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSwap\n");
-#endif
+	DEBUG_WORD("nelsonSwap")
 }
 
 void nelsonDup(void) {
-#if defined (__DEBUG__)
-	printf("nelsonDup\n");
-#endif
+	DEBUG_WORD("nelsonDup")
 }
 
 void nelsonXor(void) {
-#if defined (__DEBUG__)
-	printf("nelsonXor\n");
-#endif
+	DEBUG_WORD("nelsonXor")
 }
 
 void nelsonOr(void) {
-#if defined (__DEBUG__)
-	printf("nelsonOr\n");
-#endif
+	DEBUG_WORD("nelsonOr")
 }
 
 void nelsonAnd(void) {
-#if defined (__DEBUG__)
-	printf("nelsonAnd\n");
-#endif
+	DEBUG_WORD("nelsonAnd")
 }
 
 void nelsonRShift(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRShift\n");
-#endif
+	DEBUG_WORD("nelsonRShift")
 }
 
 void nelsonLShift(void) {
-#if defined (__DEBUG__)
-	printf("nelsonLShift\n");
-#endif
+	DEBUG_WORD("nelsonLShift")
 }
 
 void nelsonStarSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("nelsonStarSlashMod\n");
-#endif
+	DEBUG_WORD("nelsonStarSlashMod")
 }
 
 void nelsonUSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("nelsonUSlashMod\n");
-#endif
+	DEBUG_WORD("nelsonUSlashMod")
 }
 
 void nelsonPlus(void) {
-#if defined (__DEBUG__)
-	printf("nelsonPlus\n");
-#endif
+	DEBUG_WORD("nelsonPlus")
 }
 
 void nelsonZeroLess(void) {
-#if defined (__DEBUG__)
-	printf("nelsonZeroLess\n");
-#endif
+	DEBUG_WORD("nelsonZeroLess")
 }
 
 void nelsonZeroEqual(void) {
-#if defined (__DEBUG__)
-	printf("nelsonZeroEqual\n");
-#endif
+	DEBUG_WORD("nelsonZeroEqual")
 }
 
 #endif
@@ -1566,399 +1050,267 @@ void nelsonZeroEqual(void) {
 	H2O_FORTH_PRIMITIVES == NELSON_UE_FORTH
 
 void nelsonYLocal(void) {
-#if defined (__DEBUG__)
-	printf("nelsonYLocal\n");
-#endif
+	DEBUG_WORD("nelsonYLocal")
 }
 
 void nelsonProcessHeap(void) {
-#if defined (__DEBUG__)
-	printf("nelsonProcessHeap\n");
-#endif
+	DEBUG_WORD("nelsonProcessHeap")
 }
 
 void nelsonHeapReAlloc(void) {
-#if defined (__DEBUG__)
-	printf("nelsonHeapReAlloc\n");
-#endif
+	DEBUG_WORD("nelsonHeapReAlloc")
 }
 
 void nelsonHeapFree(void) {
-#if defined (__DEBUG__)
-	printf("nelsonHeapFree\n");
-#endif
+	DEBUG_WORD("nelsonHeapFree")
 }
 
 void nelsonHeapAlloc(void) {
-#if defined (__DEBUG__)
-	printf("nelsonHeapAlloc\n");
-#endif
+	DEBUG_WORD("nelsonHeapAlloc")
 }
 
 void nelsonGetProcessHeap(void) {
-#if defined (__DEBUG__)
-	printf("nelsonGetProcessHeap\n");
-#endif
+	DEBUG_WORD("nelsonGetProcessHeap")
 }
 
 void nelsonRenameFile(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRenameFile\n");
-#endif
+	DEBUG_WORD("nelsonRenameFile")
 }
 
 void nelsonWindows(void) {
-#if defined (__DEBUG__)
-	printf("nelsonWindows\n");
-#endif
+	DEBUG_WORD("nelsonWindows")
 }
 
 void nelsonFDotS(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFDotS\n");
-#endif
+	DEBUG_WORD("nelsonFDotS")
 }
 
 void nelsonFDot(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFDot\n");
-#endif
+	DEBUG_WORD("nelsonFDot")
 }
 
 void nelsonNumFS(void) {
-#if defined (__DEBUG__)
-	printf("nelsonNumFS\n");
-#endif
+	DEBUG_WORD("nelsonNumFS")
 }
 
 void nelsonSetPrecision(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSetPrecision\n");
-#endif
+	DEBUG_WORD("nelsonSetPrecision")
 }
 
 void nelsonPrecision(void) {
-#if defined (__DEBUG__)
-	printf("nelsonPrecision\n");
-#endif
+	DEBUG_WORD("nelsonPrecision")
 }
 
 void nelsonFSqrt(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFSqrt\n");
-#endif
+	DEBUG_WORD("nelsonFSqrt")
 }
 
 void nelsonPi(void) {
-#if defined (__DEBUG__)
-	printf("nelsonPi\n");
-#endif
+	DEBUG_WORD("nelsonPi")
 }
 
 void nelsonFVariable(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFVariable\n");
-#endif
+	DEBUG_WORD("nelsonFVariable")
 }
 
 void nelsonFConstant(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFConstant\n");
-#endif
+	DEBUG_WORD("nelsonFConstant")
 }
 
 void nelsonFLiteral(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFLiteral\n");
-#endif
+	DEBUG_WORD("nelsonFLiteral")
 }
 
 void nelsonAFLiteral(void) {
-#if defined (__DEBUG__)
-	printf("nelsonAFLiteral\n");
-#endif
+	DEBUG_WORD("nelsonAFLiteral")
 }
 
 void nelsonSFComma(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSFComma\n");
-#endif
+	DEBUG_WORD("nelsonSFComma")
 }
 
 void nelsonSFloatPlus(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSFloatPlus\n");
-#endif
+	DEBUG_WORD("nelsonSFloatPlus")
 }
 
 void nelsonSFloats(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSFloats\n");
-#endif
+	DEBUG_WORD("nelsonSFloats")
 }
 
 void nelsonSFloat(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSFloat\n");
-#endif
+	DEBUG_WORD("nelsonSFloat")
 }
 
 void nelsonSFGreaterEqual(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSFGreaterEqual\n");
-#endif
+	DEBUG_WORD("nelsonSFGreaterEqual")
 }
 
 void nelsonSFLessEqual(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSFLessEqual\n");
-#endif
+	DEBUG_WORD("nelsonSFLessEqual")
 }
 
 void nelsonSFUnequal(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSFUnequal\n");
-#endif
+	DEBUG_WORD("nelsonSFUnequal")
 }
 
 void nelsonSFGreater(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSFGreater\n");
-#endif
+	DEBUG_WORD("nelsonSFGreater")
 }
 
 void nelsonSFLess(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSFLess\n");
-#endif
+	DEBUG_WORD("nelsonSFLess")
 }
 
 void nelsonSFEqual(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSFEqual\n");
-#endif
+	DEBUG_WORD("nelsonSFEqual")
 }
 
 void nelsonAtXy(void) {
-#if defined (__DEBUG__)
-	printf("nelsonAtXy\n");
-#endif
+	DEBUG_WORD("nelsonAtXy")
 }
 
 void nelsonNormal(void) {
-#if defined (__DEBUG__)
-	printf("nelsonNormal\n");
-#endif
+	DEBUG_WORD("nelsonNormal")
 }
 
 void nelsonBg(void) {
-#if defined (__DEBUG__)
-	printf("nelsonBg\n");
-#endif
+	DEBUG_WORD("nelsonBg")
 }
 
 void nelsonFg(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFg\n");
-#endif
+	DEBUG_WORD("nelsonFg")
 }
 
 void nelsonAnsi(void) {
-#if defined (__DEBUG__)
-	printf("nelsonAnsi\n");
-#endif
+	DEBUG_WORD("nelsonAnsi")
 }
 
 void nelsonBlank(void) {
-#if defined (__DEBUG__)
-	printf("nelsonBlank\n");
-#endif
+	DEBUG_WORD("nelsonBlank")
 }
 
 void nelsonErase(void) {
-#if defined (__DEBUG__)
-	printf("nelsonErase\n");
-#endif
+	DEBUG_WORD("nelsonErase")
 }
 
 void nelsonYPlace(void) {
-#if defined (__DEBUG__)
-	printf("nelsonYPlace\n");
-#endif
+	DEBUG_WORD("nelsonYPlace")
 }
 
 void nelsonValueBins(void) {
-#if defined (__DEBUG__)
-	printf("nelsonValueBins\n");
-#endif
+	DEBUG_WORD("nelsonValueBins")
 }
 
 void nelsonNestDepth(void) {
-#if defined (__DEBUG__)
-	printf("nelsonNestDepth\n");
-#endif
+	DEBUG_WORD("nelsonNestDepth")
 }
 
 void nelsonFDepth(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFDepth\n");
-#endif
+	DEBUG_WORD("nelsonFDepth")
 }
 
 void nelsonFP0(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFP0\n");
-#endif
+	DEBUG_WORD("nelsonFP0")
 }
 
 void nelsonRecurse(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRecurse\n");
-#endif
+	DEBUG_WORD("nelsonRecurse")
 }
 
 void nelsonYield(void) {
-#if defined (__DEBUG__)
-	printf("nelsonYield\n");
-#endif
+	DEBUG_WORD("nelsonYield")
 }
 
 void nelsonFGreaterNumberQ(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFGreaterNumberQ\n");
-#endif
+	DEBUG_WORD("nelsonFGreaterNumberQ")
 }
 
 void nelsonFToS(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFToS\n");
-#endif
+	DEBUG_WORD("nelsonFToS")
 }
 
 void nelsonSToF(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSToF\n");
-#endif
+	DEBUG_WORD("nelsonSToF")
 }
 
 void nelsonOneSlashF(void) {
-#if defined (__DEBUG__)
-	printf("nelsonOneSlashF\n");
-#endif
+	DEBUG_WORD("nelsonOneSlashF")
 }
 
 void nelsonFSlash(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFSlash\n");
-#endif
+	DEBUG_WORD("nelsonFSlash")
 }
 
 void nelsonFStar(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFStar\n");
-#endif
+	DEBUG_WORD("nelsonFStar")
 }
 
 void nelsonFMinus(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFMinus\n");
-#endif
+	DEBUG_WORD("nelsonFMinus")
 }
 
 void nelsonFPlus(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFPlus\n");
-#endif
+	DEBUG_WORD("nelsonFPlus")
 }
 
 void nelsonF0Equal(void) {
-#if defined (__DEBUG__)
-	printf("nelsonF0Equal\n");
-#endif
+	DEBUG_WORD("nelsonF0Equal")
 }
 
 void nelsonF0Less(void) {
-#if defined (__DEBUG__)
-	printf("nelsonF0Less\n");
-#endif
+	DEBUG_WORD("nelsonF0Less")
 }
 
 void nelsonFNegate(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFNegate\n");
-#endif
+	DEBUG_WORD("nelsonFNegate")
 }
 
 void nelsonFswa(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFswa\n");
-#endif
+	DEBUG_WORD("nelsonFswa")
 }
 
 void nelsonFOver(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFOver\n");
-#endif
+	DEBUG_WORD("nelsonFOver")
 }
 
 void nelsonFDrop(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFDrop\n");
-#endif
+	DEBUG_WORD("nelsonFDrop")
 }
 
 void nelsonFNip(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFNip\n");
-#endif
+	DEBUG_WORD("nelsonFNip")
 }
 
 void nelsonFDup(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFDup\n");
-#endif
+	DEBUG_WORD("nelsonFDup")
 }
 
 void nelsonSFStore(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSFStore\n");
-#endif
+	DEBUG_WORD("nelsonSFStore")
 }
 
 void nelsonSFFetch(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSFFetch\n");
-#endif
+	DEBUG_WORD("nelsonSFFetch")
 }
 
 void nelsonSF(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSF\n");
-#endif
+	DEBUG_WORD("nelsonSF")
 }
 
 void nelsonFPStore(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFPStore\n");
-#endif
+	DEBUG_WORD("nelsonFPStore")
 }
 
 void nelsonFPFetch(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFPFetch\n");
-#endif
+	DEBUG_WORD("nelsonFPFetch")
 }
 
 void nelsonLoadLibraryA(void) {
-#if defined (__DEBUG__)
-	printf("nelsonLoadLibraryA\n");
-#endif
+	DEBUG_WORD("nelsonLoadLibraryA")
 }
 
 void nelsonGetProcAddress(void) {
-#if defined (__DEBUG__)
-	printf("nelsonGetProcAddress\n");
-#endif
+	DEBUG_WORD("nelsonGetProcAddress")
 }
 
 
@@ -1969,237 +1321,159 @@ void nelsonGetProcAddress(void) {
 	H2O_FORTH_PRIMITIVES == NELSON_ESP_FORTH
 
 void nelsonTelnetD(void) {
-#if defined (__DEBUG__)
-	printf("nelsonTelnetD\n");
-#endif
+	DEBUG_WORD("nelsonTelnetD")
 }
 
 void nelsonBTerm(void) {
-#if defined (__DEBUG__)
-	printf("nelsonBTerm\n");
-#endif
+	DEBUG_WORD("nelsonBTerm")
 }
 
 void nelsonTimers(void) {
-#if defined (__DEBUG__)
-	printf("nelsonTimers\n");
-#endif
+	DEBUG_WORD("nelsonTimers")
 }
 
 void nelsonRegisters(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRegisters\n");
-#endif
+	DEBUG_WORD("nelsonRegisters")
 }
 
 void nelsonWebUI(void) {
-#if defined (__DEBUG__)
-	printf("nelsonWebUI\n");
-#endif
+	DEBUG_WORD("nelsonWebUI")
 }
 
 void nelsonLogin(void) {
-#if defined (__DEBUG__)
-	printf("nelsonLogin\n");
-#endif
+	DEBUG_WORD("nelsonLogin")
 }
 
 void nelsonWebInterface(void) {
-#if defined (__DEBUG__)
-	printf("nelsonWebInterface\n");
-#endif
+	DEBUG_WORD("nelsonWebInterface")
 }
 
 void nelsonRtos(void) {
-#if defined (__DEBUG__)
-	printf("nelsonRtos\n");
-#endif
+	DEBUG_WORD("nelsonRtos")
 }
 
 void nelsonInterrupts(void) {
-#if defined (__DEBUG__)
-	printf("nelsonInterrupts\n");
-#endif
+	DEBUG_WORD("nelsonInterrupts")
 }
 
 void nelsonSockets(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSockets\n");
-#endif
+	DEBUG_WORD("nelsonSockets")
 }
 
 void nelsonSerial(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSerial\n");
-#endif
+	DEBUG_WORD("nelsonSerial")
 }
 
 void nelsonLedC(void) {
-#if defined (__DEBUG__)
-	printf("nelsonLedC\n");
-#endif
+	DEBUG_WORD("nelsonLedC")
 }
 
 void nelsonSpiffs(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSpiffs\n");
-#endif
+	DEBUG_WORD("nelsonSpiffs")
 }
 
 void nelsonSdMmc(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSdMmc\n");
-#endif
+	DEBUG_WORD("nelsonSdMmc")
 }
 
 void nelsonWifi(void) {
-#if defined (__DEBUG__)
-	printf("nelsonWifi\n");
-#endif
+	DEBUG_WORD("nelsonWifi")
 }
 
 void nelsonWebserver(void) {
-#if defined (__DEBUG__)
-	printf("nelsonWebserver\n");
-#endif
+	DEBUG_WORD("nelsonWebserver")
 }
 
 void nelsonWire(void) {
-#if defined (__DEBUG__)
-	printf("nelsonWire\n");
-#endif
+	DEBUG_WORD("nelsonWire")
 }
 
 void nelsonLed(void) {
-#if defined (__DEBUG__)
-	printf("nelsonLed\n");
-#endif
+	DEBUG_WORD("nelsonLed")
 }
 
 void nelsonOutput(void) {
-#if defined (__DEBUG__)
-	printf("nelsonOutput\n");
-#endif
+	DEBUG_WORD("nelsonOutput")
 }
 
 void nelsonInput(void) {
-#if defined (__DEBUG__)
-	printf("nelsonInput\n");
-#endif
+	DEBUG_WORD("nelsonInput")
 }
 
 void nelsonHigh(void) {
-#if defined (__DEBUG__)
-	printf("nelsonHigh\n");
-#endif
+	DEBUG_WORD("nelsonHigh")
 }
 
 void nelsonLow(void) {
-#if defined (__DEBUG__)
-	printf("nelsonLow\n");
-#endif
+	DEBUG_WORD("nelsonLow")
 }
 
 void nelsonTone(void) {
-#if defined (__DEBUG__)
-	printf("nelsonTone\n");
-#endif
+	DEBUG_WORD("nelsonTone")
 }
 
 void nelsonFreq(void) {
-#if defined (__DEBUG__)
-	printf("nelsonFreq\n");
-#endif
+	DEBUG_WORD("nelsonFreq")
 }
 
 void nelsonDuty(void) {
-#if defined (__DEBUG__)
-	printf("nelsonDuty\n");
-#endif
+	DEBUG_WORD("nelsonDuty")
 }
 
 void nelsonAdc(void) {
-#if defined (__DEBUG__)
-	printf("nelsonAdc\n");
-#endif
+	DEBUG_WORD("nelsonAdc")
 }
 
 void nelsonPin(void) {
-#if defined (__DEBUG__)
-	printf("nelsonPin\n");
-#endif
+	DEBUG_WORD("nelsonPin")
 }
 
 void nelsonTimerIsrRegister(void) {
-#if defined (__DEBUG__)
-	printf("nelsonTimerIsrRegister\n");
-#endif
+	DEBUG_WORD("nelsonTimerIsrRegister")
 }
 
 void nelsonSdMmcDotBegin(void) {
-#if defined (__DEBUG__)
-	printf("nelsonSdMmcDotBegin\n");
-#endif
+	DEBUG_WORD("nelsonSdMmcDotBegin")
 }
 
 void nelsonMdnsDotBegin(void) {
-#if defined (__DEBUG__)
-	printf("nelsonMdnsDotBegin\n");
-#endif
+	DEBUG_WORD("nelsonMdnsDotBegin")
 }
 
 void nelsonBin(void) {
-#if defined (__DEBUG__)
-	printf("nelsonBin\n");
-#endif
+	DEBUG_WORD("nelsonBin")
 }
 
 void nelsonTerminate(void) {
-#if defined (__DEBUG__)
-	printf("nelsonTerminate\n");
-#endif
+	DEBUG_WORD("nelsonTerminate")
 }
 
 void nelsonMSTicks(void) {
-#if defined (__DEBUG__)
-	printf("nelsonMSTicks\n");
-#endif
+	DEBUG_WORD("nelsonMSTicks")
 }
 
 void nelsonDacWrite(void) {
-#if defined (__DEBUG__)
-	printf("nelsonDacWrite\n");
-#endif
+	DEBUG_WORD("nelsonDacWrite")
 }
 
 void nelsonPulsIn(void) {
-#if defined (__DEBUG__)
-	printf("nelsonPulsIn\n");
-#endif
+	DEBUG_WORD("nelsonPulsIn")
 }
 
 void nelsonAnalogRead(void) {
-#if defined (__DEBUG__)
-	printf("nelsonAnalogRead\n");
-#endif
+	DEBUG_WORD("nelsonAnalogRead")
 }
 
 void nelsonDigitalRead(void) {
-#if defined (__DEBUG__)
-	printf("nelsonDigitalRead\n");
-#endif
+	DEBUG_WORD("nelsonDigitalRead")
 }
 
 void nelsonDigitalWrite(void) {
-#if defined (__DEBUG__)
-	printf("nelsonDigitalWrite\n");
-#endif
+	DEBUG_WORD("nelsonDigitalWrite")
 }
 
 void nelsonPinMode(void) {
-#if defined (__DEBUG__)
-	printf("nelsonPinMode\n");
-#endif
+	DEBUG_WORD("nelsonPinMode")
 }
 
 #endif

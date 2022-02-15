@@ -7,2189 +7,1461 @@
 
 /* Unavailable words */
 void coinupMinusMove(void) {
-#if defined (__DEBUG__)
-	printf("coinupMinusMove\n");
-#endif
+	DEBUG_WORD("coinupMinusMove")
 }
 
 void coinupDollar(void) {
-#if defined (__DEBUG__)
-	printf("coinupDollar\n");
-#endif
+	DEBUG_WORD("coinupDollar")
 }
 
 void coinupPercent(void) {
-#if defined (__DEBUG__)
-	printf("coinupPercent\n");
-#endif
+	DEBUG_WORD("coinupPercent")
 }
 
 void coinupDl(void) {
-#if defined (__DEBUG__)
-	printf("coinupDl\n");
-#endif
+	DEBUG_WORD("coinupDl")
 }
 
 void coinupDoit(void) {
-#if defined (__DEBUG__)
-	printf("coinupDoit\n");
-#endif
+	DEBUG_WORD("coinupDoit")
 }
 
 void coinupHl(void) {
-#if defined (__DEBUG__)
-	printf("coinupHl\n");
-#endif
+	DEBUG_WORD("coinupHl")
 }
 
 void coinupIl(void) {
-#if defined (__DEBUG__)
-	printf("coinupIl\n");
-#endif
+	DEBUG_WORD("coinupIl")
 }
 
 void coinupLl(void) {
-#if defined (__DEBUG__)
-	printf("coinupLl\n");
-#endif
+	DEBUG_WORD("coinupLl")
 }
 
 void coinupRl(void) {
-#if defined (__DEBUG__)
-	printf("coinupRl\n");
-#endif
+	DEBUG_WORD("coinupRl")
 }
 
 void coinupSl(void) {
-#if defined (__DEBUG__)
-	printf("coinupSl\n");
-#endif
+	DEBUG_WORD("coinupSl")
 }
 
 void coinupTl(void) {
-#if defined (__DEBUG__)
-	printf("coinupTl\n");
-#endif
+	DEBUG_WORD("coinupTl")
 }
 
 void coinupTopFlag(void) {
-#if defined (__DEBUG__)
-	printf("coinupTopFlag\n");
-#endif
+	DEBUG_WORD("coinupTopFlag")
 }
 
 void coinupUl(void) {
-#if defined (__DEBUG__)
-	printf("coinupUl\n");
-#endif
+	DEBUG_WORD("coinupUl")
 }
 
 void coinupUll(void) {
-#if defined (__DEBUG__)
-	printf("coinupUll\n");
-#endif
+	DEBUG_WORD("coinupUll")
 }
 
 void coinupR0(void) {
-#if defined (__DEBUG__)
-	printf("coinupR0\n");
-#endif
+	DEBUG_WORD("coinupR0")
 }
 
 void coinupS0(void) {
-#if defined (__DEBUG__)
-	printf("coinupS0\n");
-#endif
+	DEBUG_WORD("coinupS0")
 }
 
 void coinupX(void) {
-#if defined (__DEBUG__)
-	printf("coinupX\n");
-#endif
+	DEBUG_WORD("coinupX")
 }
 
 
 /* Words */
 void coinupTask(void) {
-#if defined (__DEBUG__)
-	printf("coinupTask\n");
-#endif
+	DEBUG_WORD("coinupTask")
 }
 
 void coinupSaveNfas(void) {
-#if defined (__DEBUG__)
-	printf("coinupSaveNfas\n");
-#endif
+	DEBUG_WORD("coinupSaveNfas")
 }
 
 void coinupFormy(void) {
-#if defined (__DEBUG__)
-	printf("coinupFormy\n");
-#endif
+	DEBUG_WORD("coinupFormy")
 }
 
 void coinupLpWords(void) {
-#if defined (__DEBUG__)
-	printf("coinupLpWords\n");
-#endif
+	DEBUG_WORD("coinupLpWords")
 }
 
 void coinupWhere(void) {
-#if defined (__DEBUG__)
-	printf("coinupWhere\n");
-#endif
+	DEBUG_WORD("coinupWhere")
 }
 
 void coinupN(void) {
-#if defined (__DEBUG__)
-	printf("coinupN\n");
-#endif
+	DEBUG_WORD("coinupN")
 }
 
 void coinupL(void) {
-#if defined (__DEBUG__)
-	printf("coinupL\n");
-#endif
+	DEBUG_WORD("coinupL")
 }
 
 void coinupShow(void) {
-#if defined (__DEBUG__)
-	printf("coinupShow\n");
-#endif
+	DEBUG_WORD("coinupShow")
 }
 
 void coinupList(void) {
-#if defined (__DEBUG__)
-	printf("coinupList\n");
-#endif
+	DEBUG_WORD("coinupList")
 }
 
 void coinupCopy(void) {
-#if defined (__DEBUG__)
-	printf("coinupCopy\n");
-#endif
+	DEBUG_WORD("coinupCopy")
 }
 
 void coinupLine(void) {
-#if defined (__DEBUG__)
-	printf("coinupLine\n");
-#endif
+	DEBUG_WORD("coinupLine")
 }
 
 void coinupNumOfLines(void) {
-#if defined (__DEBUG__)
-	printf("coinupNumOfLines\n");
-#endif
+	DEBUG_WORD("coinupNumOfLines")
 }
 
 void coinupText(void) {
-#if defined (__DEBUG__)
-	printf("coinupText\n");
-#endif
+	DEBUG_WORD("coinupText")
 }
 
 void coinupEdit(void) {
-#if defined (__DEBUG__)
-	printf("coinupEdit\n");
-#endif
+	DEBUG_WORD("coinupEdit")
 }
 
 void coinupNoPly(void) {
-#if defined (__DEBUG__)
-	printf("coinupNoPly\n");
-#endif
+	DEBUG_WORD("coinupNoPly")
 }
 
 void coinupColpmStore(void) {
-#if defined (__DEBUG__)
-	printf("coinupColpmStore\n");
-#endif
+	DEBUG_WORD("coinupColpmStore")
 }
 
 void coinupSizeStore(void) {
-#if defined (__DEBUG__)
-	printf("coinupSizeStore\n");
-#endif
+	DEBUG_WORD("coinupSizeStore")
 }
 
 void coinupHPosStore(void) {
-#if defined (__DEBUG__)
-	printf("coinupHPosStore\n");
-#endif
+	DEBUG_WORD("coinupHPosStore")
 }
 
 void coinupPlayer(void) {
-#if defined (__DEBUG__)
-	printf("coinupPlayer\n");
-#endif
+	DEBUG_WORD("coinupPlayer")
 }
 
 void coinupGPrior(void) {
-#if defined (__DEBUG__)
-	printf("coinupGPrior\n");
-#endif
+	DEBUG_WORD("coinupGPrior")
 }
 
 void coinupColpm(void) {
-#if defined (__DEBUG__)
-	printf("coinupColpm\n");
-#endif
+	DEBUG_WORD("coinupColpm")
 }
 
 void coinupVDelay(void) {
-#if defined (__DEBUG__)
-	printf("coinupVDelay\n");
-#endif
+	DEBUG_WORD("coinupVDelay")
 }
 
 void coinupPrior(void) {
-#if defined (__DEBUG__)
-	printf("coinupPrior\n");
-#endif
+	DEBUG_WORD("coinupPrior")
 }
 
 void coinupPmBase(void) {
-#if defined (__DEBUG__)
-	printf("coinupPmBase\n");
-#endif
+	DEBUG_WORD("coinupPmBase")
 }
 
 void coinupGractl(void) {
-#if defined (__DEBUG__)
-	printf("coinupGractl\n");
-#endif
+	DEBUG_WORD("coinupGractl")
 }
 
 void coinupDmaCtl(void) {
-#if defined (__DEBUG__)
-	printf("coinupDmaCtl\n");
-#endif
+	DEBUG_WORD("coinupDmaCtl")
 }
 
 void coinupRnd(void) {
-#if defined (__DEBUG__)
-	printf("coinupRnd\n");
-#endif
+	DEBUG_WORD("coinupRnd")
 }
 
 void coinupStrig(void) {
-#if defined (__DEBUG__)
-	printf("coinupStrig\n");
-#endif
+	DEBUG_WORD("coinupStrig")
 }
 
 void coinupStick(void) {
-#if defined (__DEBUG__)
-	printf("coinupStick\n");
-#endif
+	DEBUG_WORD("coinupStick")
 }
 
 void coinupPTrig(void) {
-#if defined (__DEBUG__)
-	printf("coinupPTrig\n");
-#endif
+	DEBUG_WORD("coinupPTrig")
 }
 
 void coinupPaddle(void) {
-#if defined (__DEBUG__)
-	printf("coinupPaddle\n");
-#endif
+	DEBUG_WORD("coinupPaddle")
 }
 
 void coinupSound(void) {
-#if defined (__DEBUG__)
-	printf("coinupSound\n");
-#endif
+	DEBUG_WORD("coinupSound")
 }
 
 void coinupXio18(void) {
-#if defined (__DEBUG__)
-	printf("coinupXio18\n");
-#endif
+	DEBUG_WORD("coinupXio18")
 }
 
 void coinupClear(void) {
-#if defined (__DEBUG__)
-	printf("coinupClear\n");
-#endif
+	DEBUG_WORD("coinupClear")
 }
 
 void coinupDrawTo(void) {
-#if defined (__DEBUG__)
-	printf("coinupDrawTo\n");
-#endif
+	DEBUG_WORD("coinupDrawTo")
 }
 
 void coinupPosition(void) {
-#if defined (__DEBUG__)
-	printf("coinupPosition\n");
-#endif
+	DEBUG_WORD("coinupPosition")
 }
 
 void coinupColor(void) {
-#if defined (__DEBUG__)
-	printf("coinupColor\n");
-#endif
+	DEBUG_WORD("coinupColor")
 }
 
 void coinupSetColor(void) {
-#if defined (__DEBUG__)
-	printf("coinupSetColor\n");
-#endif
+	DEBUG_WORD("coinupSetColor")
 }
 
 void coinupLocate(void) {
-#if defined (__DEBUG__)
-	printf("coinupLocate\n");
-#endif
+	DEBUG_WORD("coinupLocate")
 }
 
 void coinupPlot(void) {
-#if defined (__DEBUG__)
-	printf("coinupPlot\n");
-#endif
+	DEBUG_WORD("coinupPlot")
 }
 
 void coinupDrDot(void) {
-#if defined (__DEBUG__)
-	printf("coinupDrDot\n");
-#endif
+	DEBUG_WORD("coinupDrDot")
 }
 
 void coinupSeDot(void) {
-#if defined (__DEBUG__)
-	printf("coinupSeDot\n");
-#endif
+	DEBUG_WORD("coinupSeDot")
 }
 
 void coinupPlDot(void) {
-#if defined (__DEBUG__)
-	printf("coinupPlDot\n");
-#endif
+	DEBUG_WORD("coinupPlDot")
 }
 
 void coinupPut(void) {
-#if defined (__DEBUG__)
-	printf("coinupPut\n");
-#endif
+	DEBUG_WORD("coinupPut")
 }
 
 void coinupCDot(void) {
-#if defined (__DEBUG__)
-	printf("coinupCDot\n");
-#endif
+	DEBUG_WORD("coinupCDot")
 }
 
 void coinupLocDot(void) {
-#if defined (__DEBUG__)
-	printf("coinupLocDot\n");
-#endif
+	DEBUG_WORD("coinupLocDot")
 }
 
 void coinupGraphics(void) {
-#if defined (__DEBUG__)
-	printf("coinupGraphics\n");
-#endif
+	DEBUG_WORD("coinupGraphics")
 }
 
 void coinupGrDot(void) {
-#if defined (__DEBUG__)
-	printf("coinupGrDot\n");
-#endif
+	DEBUG_WORD("coinupGrDot")
 }
 
 void coinupPosDot(void) {
-#if defined (__DEBUG__)
-	printf("coinupPosDot\n");
-#endif
+	DEBUG_WORD("coinupPosDot")
 }
 
 void coinupSpb(void) {
-#if defined (__DEBUG__)
-	printf("coinupSpb\n");
-#endif
+	DEBUG_WORD("coinupSpb")
 }
 
 void coinupPBase(void) {
-#if defined (__DEBUG__)
-	printf("coinupPBase\n");
-#endif
+	DEBUG_WORD("coinupPBase")
 }
 
 void coinupQBase(void) {
-#if defined (__DEBUG__)
-	printf("coinupQBase\n");
-#endif
+	DEBUG_WORD("coinupQBase")
 }
 
 void coinupFilDat(void) {
-#if defined (__DEBUG__)
-	printf("coinupFilDat\n");
-#endif
+	DEBUG_WORD("coinupFilDat")
 }
 
 void coinupSColon(void) {
-#if defined (__DEBUG__)
-	printf("coinupSColon\n");
-#endif
+	DEBUG_WORD("coinupSColon")
 }
 
 void coinupAcIo(void) {
-#if defined (__DEBUG__)
-	printf("coinupAcIo\n");
-#endif
+	DEBUG_WORD("coinupAcIo")
 }
 
 void coinupOpen(void) {
-#if defined (__DEBUG__)
-	printf("coinupOpen\n");
-#endif
+	DEBUG_WORD("coinupOpen")
 }
 
 void coinupClose(void) {
-#if defined (__DEBUG__)
-	printf("coinupClose\n");
-#endif
+	DEBUG_WORD("coinupClose")
 }
 
 void coinupGet(void) {
-#if defined (__DEBUG__)
-	printf("coinupGet\n");
-#endif
+	DEBUG_WORD("coinupGet")
 }
 
 void coinupCIo(void) {
-#if defined (__DEBUG__)
-	printf("coinupCIo\n");
-#endif
+	DEBUG_WORD("coinupCIo")
 }
 
 void coinupI2Cax(void) {
-#if defined (__DEBUG__)
-	printf("coinupI2Cax\n");
-#endif
+	DEBUG_WORD("coinupI2Cax")
 }
 
 void coinupI1Cax(void) {
-#if defined (__DEBUG__)
-	printf("coinupI1Cax\n");
-#endif
+	DEBUG_WORD("coinupI1Cax")
 }
 
 void coinupIcbll(void) {
-#if defined (__DEBUG__)
-	printf("coinupIcbll\n");
-#endif
+	DEBUG_WORD("coinupIcbll")
 }
 
 void coinupIcptl(void) {
-#if defined (__DEBUG__)
-	printf("coinupIcptl\n");
-#endif
+	DEBUG_WORD("coinupIcptl")
 }
 
 void coinupIcbal(void) {
-#if defined (__DEBUG__)
-	printf("coinupIcbal\n");
-#endif
+	DEBUG_WORD("coinupIcbal")
 }
 
 void coinupIcsta(void) {
-#if defined (__DEBUG__)
-	printf("coinupIcsta\n");
-#endif
+	DEBUG_WORD("coinupIcsta")
 }
 
 void coinupIccom(void) {
-#if defined (__DEBUG__)
-	printf("coinupIccom\n");
-#endif
+	DEBUG_WORD("coinupIccom")
 }
 
 void coinupIcdno(void) {
-#if defined (__DEBUG__)
-	printf("coinupIcdno\n");
-#endif
+	DEBUG_WORD("coinupIcdno")
 }
 
 void coinupDotIoc(void) {
-#if defined (__DEBUG__)
-	printf("coinupDotIoc\n");
-#endif
+	DEBUG_WORD("coinupDotIoc")
 }
 
 void coinupIocb(void) {
-#if defined (__DEBUG__)
-	printf("coinupIocb\n");
-#endif
+	DEBUG_WORD("coinupIocb")
 }
 
 void coinupIob(void) {
-#if defined (__DEBUG__)
-	printf("coinupIob\n");
-#endif
+	DEBUG_WORD("coinupIob")
 }
 
 void coinupIoc(void) {
-#if defined (__DEBUG__)
-	printf("coinupIoc\n");
-#endif
+	DEBUG_WORD("coinupIoc")
 }
 
 void coinupAtaChr(void) {
-#if defined (__DEBUG__)
-	printf("coinupAtaChr\n");
-#endif
+	DEBUG_WORD("coinupAtaChr")
 }
 
 void coinupLMargn(void) {
-#if defined (__DEBUG__)
-	printf("coinupLMargn\n");
-#endif
+	DEBUG_WORD("coinupLMargn")
 }
 
 void coinupBotsC(void) {
-#if defined (__DEBUG__)
-	printf("coinupBotsC\n");
-#endif
+	DEBUG_WORD("coinupBotsC")
 }
 
 void coinupCh(void) {
-#if defined (__DEBUG__)
-	printf("coinupCh\n");
-#endif
+	DEBUG_WORD("coinupCh")
 }
 
 void coinupConsol(void) {
-#if defined (__DEBUG__)
-	printf("coinupConsol\n");
-#endif
+	DEBUG_WORD("coinupConsol")
 }
 
 void coinupCol4(void) {
-#if defined (__DEBUG__)
-	printf("coinupCol4\n");
-#endif
+	DEBUG_WORD("coinupCol4")
 }
 
 void coinupCol3(void) {
-#if defined (__DEBUG__)
-	printf("coinupCol3\n");
-#endif
+	DEBUG_WORD("coinupCol3")
 }
 
 void coinupCol2(void) {
-#if defined (__DEBUG__)
-	printf("coinupCol2\n");
-#endif
+	DEBUG_WORD("coinupCol2")
 }
 
 void coinupCol1(void) {
-#if defined (__DEBUG__)
-	printf("coinupCol1\n");
-#endif
+	DEBUG_WORD("coinupCol1")
 }
 
 void coinupCol0(void) {
-#if defined (__DEBUG__)
-	printf("coinupCol0\n");
-#endif
+	DEBUG_WORD("coinupCol0")
 }
 
 void coinupChBas(void) {
-#if defined (__DEBUG__)
-	printf("coinupChBas\n");
-#endif
+	DEBUG_WORD("coinupChBas")
 }
 
 void coinupCrsinh(void) {
-#if defined (__DEBUG__)
-	printf("coinupCrsinh\n");
-#endif
+	DEBUG_WORD("coinupCrsinh")
 }
 
 void coinupRtClk(void) {
-#if defined (__DEBUG__)
-	printf("coinupRtClk\n");
-#endif
+	DEBUG_WORD("coinupRtClk")
 }
 
 void coinupDmct(void) {
-#if defined (__DEBUG__)
-	printf("coinupDmct\n");
-#endif
+	DEBUG_WORD("coinupDmct")
 }
 
 void coinupDlst(void) {
-#if defined (__DEBUG__)
-	printf("coinupDlst\n");
-#endif
+	DEBUG_WORD("coinupDlst")
 }
 
 void coinupAudCtl(void) {
-#if defined (__DEBUG__)
-	printf("coinupAudCtl\n");
-#endif
+	DEBUG_WORD("coinupAudCtl")
 }
 
 void coinupSkCtl(void) {
-#if defined (__DEBUG__)
-	printf("coinupSkCtl\n");
-#endif
+	DEBUG_WORD("coinupSkCtl")
 }
 
 void coinupC4Aud(void) {
-#if defined (__DEBUG__)
-	printf("coinupC4Aud\n");
-#endif
+	DEBUG_WORD("coinupC4Aud")
 }
 
 void coinupF4Aud(void) {
-#if defined (__DEBUG__)
-	printf("coinupF4Aud\n");
-#endif
+	DEBUG_WORD("coinupF4Aud")
 }
 
 void coinupC3Aud(void) {
-#if defined (__DEBUG__)
-	printf("coinupC3Aud\n");
-#endif
+	DEBUG_WORD("coinupC3Aud")
 }
 
 void coinupF3Aud(void) {
-#if defined (__DEBUG__)
-	printf("coinupF3Aud\n");
-#endif
+	DEBUG_WORD("coinupF3Aud")
 }
 
 void coinupC2Aud(void) {
-#if defined (__DEBUG__)
-	printf("coinupC2Aud\n");
-#endif
+	DEBUG_WORD("coinupC2Aud")
 }
 
 void coinupF2Aud(void) {
-#if defined (__DEBUG__)
-	printf("coinupF2Aud\n");
-#endif
+	DEBUG_WORD("coinupF2Aud")
 }
 
 void coinupC1Aud(void) {
-#if defined (__DEBUG__)
-	printf("coinupC1Aud\n");
-#endif
+	DEBUG_WORD("coinupC1Aud")
 }
 
 void coinupF1Aud(void) {
-#if defined (__DEBUG__)
-	printf("coinupF1Aud\n");
-#endif
+	DEBUG_WORD("coinupF1Aud")
 }
 
 void coinupCn(void) {
-#if defined (__DEBUG__)
-	printf("coinupCn\n");
-#endif
+	DEBUG_WORD("coinupCn")
 }
 
 void coinupEditor(void) {
-#if defined (__DEBUG__)
-	printf("coinupEditor\n");
-#endif
+	DEBUG_WORD("coinupEditor")
 }
 
 void coinupArray(void) {
-#if defined (__DEBUG__)
-	printf("coinupArray\n");
-#endif
+	DEBUG_WORD("coinupArray")
 }
 
 void coinupAlloc(void) {
-#if defined (__DEBUG__)
-	printf("coinupAlloc\n");
-#endif
+	DEBUG_WORD("coinupAlloc")
 }
 
 void coinupTbl(void) {
-#if defined (__DEBUG__)
-	printf("coinupTbl\n");
-#endif
+	DEBUG_WORD("coinupTbl")
 }
 
 void coinupBackslashBackslash(void) {
-#if defined (__DEBUG__)
-	printf("coinupBackslashBackslash\n");
-#endif
+	DEBUG_WORD("coinupBackslashBackslash")
 }
 
 void coinupBDump(void) {
-#if defined (__DEBUG__)
-	printf("coinupBDump\n");
-#endif
+	DEBUG_WORD("coinupBDump")
 }
 
 void coinupHQ(void) {
-#if defined (__DEBUG__)
-	printf("coinupHQ\n");
-#endif
+	DEBUG_WORD("coinupHQ")
 }
 
 void coinupHh(void) {
-#if defined (__DEBUG__)
-	printf("coinupHh\n");
-#endif
+	DEBUG_WORD("coinupHh")
 }
 
 void coinupChQ(void) {
-#if defined (__DEBUG__)
-	printf("coinupChQ\n");
-#endif
+	DEBUG_WORD("coinupChQ")
 }
 
 void coinupChH(void) {
-#if defined (__DEBUG__)
-	printf("coinupChH\n");
-#endif
+	DEBUG_WORD("coinupChH")
 }
 
 void coinupHd(void) {
-#if defined (__DEBUG__)
-	printf("coinupHd\n");
-#endif
+	DEBUG_WORD("coinupHd")
 }
 
 void coinupTwoStar(void) {
-#if defined (__DEBUG__)
-	printf("coinupTwoStar\n");
-#endif
+	DEBUG_WORD("coinupTwoStar")
 }
 
 void coinupZeroSet(void) {
-#if defined (__DEBUG__)
-	printf("coinupZeroSet\n");
-#endif
+	DEBUG_WORD("coinupZeroSet")
 }
 
 void coinupOneMinus(void) {
-#if defined (__DEBUG__)
-	printf("coinupOneMinus\n");
-#endif
+	DEBUG_WORD("coinupOneMinus")
 }
 
 void coinupOnePlusStore(void) {
-#if defined (__DEBUG__)
-	printf("coinupOnePlusStore\n");
-#endif
+	DEBUG_WORD("coinupOnePlusStore")
 }
 
 void coinupCode(void) {
-#if defined (__DEBUG__)
-	printf("coinupCode\n");
-#endif
+	DEBUG_WORD("coinupCode")
 }
 
 void coinupAssembler(void) {
-#if defined (__DEBUG__)
-	printf("coinupAssembler\n");
-#endif
+	DEBUG_WORD("coinupAssembler")
 }
 
 void coinupVList(void) {
-#if defined (__DEBUG__)
-	printf("coinupVList\n");
-#endif
+	DEBUG_WORD("coinupVList")
 }
 
 void coinupTriad(void) {
-#if defined (__DEBUG__)
-	printf("coinupTriad\n");
-#endif
+	DEBUG_WORD("coinupTriad")
 }
 
 void coinupIndex(void) {
-#if defined (__DEBUG__)
-	printf("coinupIndex\n");
-#endif
+	DEBUG_WORD("coinupIndex")
 }
 
 void coinupQ(void) {
-#if defined (__DEBUG__)
-	printf("coinupQ\n");
-#endif
+	DEBUG_WORD("coinupQ")
 }
 
 void coinupDot(void) {
-#if defined (__DEBUG__)
-	printf("coinupDot\n");
-#endif
+	DEBUG_WORD("coinupDot")
 }
 
 void coinupDotR(void) {
-#if defined (__DEBUG__)
-	printf("coinupDotR\n");
-#endif
+	DEBUG_WORD("coinupDotR")
 }
 
 void coinupDDot(void) {
-#if defined (__DEBUG__)
-	printf("coinupDDot\n");
-#endif
+	DEBUG_WORD("coinupDDot")
 }
 
 void coinupDDotR(void) {
-#if defined (__DEBUG__)
-	printf("coinupDDotR\n");
-#endif
+	DEBUG_WORD("coinupDDotR")
 }
 
 void coinupNumS(void) {
-#if defined (__DEBUG__)
-	printf("coinupNumS\n");
-#endif
+	DEBUG_WORD("coinupNumS")
 }
 
 void coinupNum(void) {
-#if defined (__DEBUG__)
-	printf("coinupNum\n");
-#endif
+	DEBUG_WORD("coinupNum")
 }
 
 void coinupSign(void) {
-#if defined (__DEBUG__)
-	printf("coinupSign\n");
-#endif
+	DEBUG_WORD("coinupSign")
 }
 
 void coinupNumGreater(void) {
-#if defined (__DEBUG__)
-	printf("coinupNumGreater\n");
-#endif
+	DEBUG_WORD("coinupNumGreater")
 }
 
 void coinupLessNum(void) {
-#if defined (__DEBUG__)
-	printf("coinupLessNum\n");
-#endif
+	DEBUG_WORD("coinupLessNum")
 }
 
 void coinupSpaces(void) {
-#if defined (__DEBUG__)
-	printf("coinupSpaces\n");
-#endif
+	DEBUG_WORD("coinupSpaces")
 }
 
 void coinupWhile(void) {
-#if defined (__DEBUG__)
-	printf("coinupWhile\n");
-#endif
+	DEBUG_WORD("coinupWhile")
 }
 
 void coinupElse(void) {
-#if defined (__DEBUG__)
-	printf("coinupElse\n");
-#endif
+	DEBUG_WORD("coinupElse")
 }
 
 void coinupIf(void) {
-#if defined (__DEBUG__)
-	printf("coinupIf\n");
-#endif
+	DEBUG_WORD("coinupIf")
 }
 
 void coinupRepeat(void) {
-#if defined (__DEBUG__)
-	printf("coinupRepeat\n");
-#endif
+	DEBUG_WORD("coinupRepeat")
 }
 
 void coinupAgain(void) {
-#if defined (__DEBUG__)
-	printf("coinupAgain\n");
-#endif
+	DEBUG_WORD("coinupAgain")
 }
 
 void coinupEnd(void) {
-#if defined (__DEBUG__)
-	printf("coinupEnd\n");
-#endif
+	DEBUG_WORD("coinupEnd")
 }
 
 void coinupUntil(void) {
-#if defined (__DEBUG__)
-	printf("coinupUntil\n");
-#endif
+	DEBUG_WORD("coinupUntil")
 }
 
 void coinupPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("coinupPlusLoop\n");
-#endif
+	DEBUG_WORD("coinupPlusLoop")
 }
 
 void coinupLoop(void) {
-#if defined (__DEBUG__)
-	printf("coinupLoop\n");
-#endif
+	DEBUG_WORD("coinupLoop")
 }
 
 void coinupDo(void) {
-#if defined (__DEBUG__)
-	printf("coinupDo\n");
-#endif
+	DEBUG_WORD("coinupDo")
 }
 
 void coinupThen(void) {
-#if defined (__DEBUG__)
-	printf("coinupThen\n");
-#endif
+	DEBUG_WORD("coinupThen")
 }
 
 void coinupEndIf(void) {
-#if defined (__DEBUG__)
-	printf("coinupEndIf\n");
-#endif
+	DEBUG_WORD("coinupEndIf")
 }
 
 void coinupBegin(void) {
-#if defined (__DEBUG__)
-	printf("coinupBegin\n");
-#endif
+	DEBUG_WORD("coinupBegin")
 }
 
 void coinupBack(void) {
-#if defined (__DEBUG__)
-	printf("coinupBack\n");
-#endif
+	DEBUG_WORD("coinupBack")
 }
 
 void coinupForget(void) {
-#if defined (__DEBUG__)
-	printf("coinupForget\n");
-#endif
+	DEBUG_WORD("coinupForget")
 }
 
 void coinupTick(void) {
-#if defined (__DEBUG__)
-	printf("coinupTick\n");
-#endif
+	DEBUG_WORD("coinupTick")
 }
 
 void coinupUpdate(void) {
-#if defined (__DEBUG__)
-	printf("coinupUpdate\n");
-#endif
+	DEBUG_WORD("coinupUpdate")
 }
 
 void coinupFlush(void) {
-#if defined (__DEBUG__)
-	printf("coinupFlush\n");
-#endif
+	DEBUG_WORD("coinupFlush")
 }
 
 void coinupRSlashW(void) {
-#if defined (__DEBUG__)
-	printf("coinupRSlashW\n");
-#endif
+	DEBUG_WORD("coinupRSlashW")
 }
 
 void coinupDdIo(void) {
-#if defined (__DEBUG__)
-	printf("coinupDdIo\n");
-#endif
+	DEBUG_WORD("coinupDdIo")
 }
 
 void coinupDIo(void) {
-#if defined (__DEBUG__)
-	printf("coinupDIo\n");
-#endif
+	DEBUG_WORD("coinupDIo")
 }
 
 void coinupSecIo(void) {
-#if defined (__DEBUG__)
-	printf("coinupSecIo\n");
-#endif
+	DEBUG_WORD("coinupSecIo")
 }
 
 void coinupSio(void) {
-#if defined (__DEBUG__)
-	printf("coinupSio\n");
-#endif
+	DEBUG_WORD("coinupSio")
 }
 
 void coinupDecMap(void) {
-#if defined (__DEBUG__)
-	printf("coinupDecMap\n");
-#endif
+	DEBUG_WORD("coinupDecMap")
 }
 
 void coinupType(void) {
-#if defined (__DEBUG__)
-	printf("coinupType\n");
-#endif
+	DEBUG_WORD("coinupType")
 }
 
 void coinupQTerminal(void) {
-#if defined (__DEBUG__)
-	printf("coinupQTerminal\n");
-#endif
+	DEBUG_WORD("coinupQTerminal")
 }
 
 void coinupCr(void) {
-#if defined (__DEBUG__)
-	printf("coinupCr\n");
-#endif
+	DEBUG_WORD("coinupCr")
 }
 
 void coinupEmit(void) {
-#if defined (__DEBUG__)
-	printf("coinupEmit\n");
-#endif
+	DEBUG_WORD("coinupEmit")
 }
 
 void coinupKey(void) {
-#if defined (__DEBUG__)
-	printf("coinupKey\n");
-#endif
+	DEBUG_WORD("coinupKey")
 }
 
 void coinupTciov(void) {
-#if defined (__DEBUG__)
-	printf("coinupTciov\n");
-#endif
+	DEBUG_WORD("coinupTciov")
 }
 
 void coinupIcAl(void) {
-#if defined (__DEBUG__)
-	printf("coinupIcAl\n");
-#endif
+	DEBUG_WORD("coinupIcAl")
 }
 
 void coinupIcLl(void) {
-#if defined (__DEBUG__)
-	printf("coinupIcLl\n");
-#endif
+	DEBUG_WORD("coinupIcLl")
 }
 
 void coinupIcCm(void) {
-#if defined (__DEBUG__)
-	printf("coinupIcCm\n");
-#endif
+	DEBUG_WORD("coinupIcCm")
 }
 
 void coinupTo(void) {
-#if defined (__DEBUG__)
-	printf("coinupTo\n");
-#endif
+	DEBUG_WORD("coinupTo")
 }
 
 void coinupLoad(void) {
-#if defined (__DEBUG__)
-	printf("coinupLoad\n");
-#endif
+	DEBUG_WORD("coinupLoad")
 }
 
 void coinupMessage(void) {
-#if defined (__DEBUG__)
-	printf("coinupMessage\n");
-#endif
+	DEBUG_WORD("coinupMessage")
 }
 
 void coinupDotLine(void) {
-#if defined (__DEBUG__)
-	printf("coinupDotLine\n");
-#endif
+	DEBUG_WORD("coinupDotLine")
 }
 
 void coinupYLine(void) {
-#if defined (__DEBUG__)
-	printf("coinupYLine\n");
-#endif
+	DEBUG_WORD("coinupYLine")
 }
 
 void coinupBlock(void) {
-#if defined (__DEBUG__)
-	printf("coinupBlock\n");
-#endif
+	DEBUG_WORD("coinupBlock")
 }
 
 void coinupBuffer(void) {
-#if defined (__DEBUG__)
-	printf("coinupBuffer\n");
-#endif
+	DEBUG_WORD("coinupBuffer")
 }
 
 void coinupBfnd(void) {
-#if defined (__DEBUG__)
-	printf("coinupBfnd\n");
-#endif
+	DEBUG_WORD("coinupBfnd")
 }
 
 void coinupDr1(void) {
-#if defined (__DEBUG__)
-	printf("coinupDr1\n");
-#endif
+	DEBUG_WORD("coinupDr1")
 }
 
 void coinupDr0(void) {
-#if defined (__DEBUG__)
-	printf("coinupDr0\n");
-#endif
+	DEBUG_WORD("coinupDr0")
 }
 
 void coinupEmptyBuffers(void) {
-#if defined (__DEBUG__)
-	printf("coinupEmptyBuffers\n");
-#endif
+	DEBUG_WORD("coinupEmptyBuffers")
 }
 
 void coinupAlt(void) {
-#if defined (__DEBUG__)
-	printf("coinupAlt\n");
-#endif
+	DEBUG_WORD("coinupAlt")
 }
 
 void coinupPrev(void) {
-#if defined (__DEBUG__)
-	printf("coinupPrev\n");
-#endif
+	DEBUG_WORD("coinupPrev")
 }
 
 void coinupPtab(void) {
-#if defined (__DEBUG__)
-	printf("coinupPtab\n");
-#endif
+	DEBUG_WORD("coinupPtab")
 }
 
 void coinupMSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("coinupMSlashMod\n");
-#endif
+	DEBUG_WORD("coinupMSlashMod")
 }
 
 void coinupStarSlash(void) {
-#if defined (__DEBUG__)
-	printf("coinupStarSlash\n");
-#endif
+	DEBUG_WORD("coinupStarSlash")
 }
 
 void coinupStarSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("coinupStarSlashMod\n");
-#endif
+	DEBUG_WORD("coinupStarSlashMod")
 }
 
 void coinupMod(void) {
-#if defined (__DEBUG__)
-	printf("coinupMod\n");
-#endif
+	DEBUG_WORD("coinupMod")
 }
 
 void coinupSlash(void) {
-#if defined (__DEBUG__)
-	printf("coinupSlash\n");
-#endif
+	DEBUG_WORD("coinupSlash")
 }
 
 void coinupslashMod(void) {
-#if defined (__DEBUG__)
-	printf("coinupslashMod\n");
-#endif
+	DEBUG_WORD("coinupslashMod")
 }
 
 void coinupStar(void) {
-#if defined (__DEBUG__)
-	printf("coinupStar\n");
-#endif
+	DEBUG_WORD("coinupStar")
 }
 
 void coinupMSlash(void) {
-#if defined (__DEBUG__)
-	printf("coinupMSlash\n");
-#endif
+	DEBUG_WORD("coinupMSlash")
 }
 
 void coinupMStar(void) {
-#if defined (__DEBUG__)
-	printf("coinupMStar\n");
-#endif
+	DEBUG_WORD("coinupMStar")
 }
 
 void coinupMax(void) {
-#if defined (__DEBUG__)
-	printf("coinupMax\n");
-#endif
+	DEBUG_WORD("coinupMax")
 }
 
 void coinupMin(void) {
-#if defined (__DEBUG__)
-	printf("coinupMin\n");
-#endif
+	DEBUG_WORD("coinupMin")
 }
 
 void coinupDAbs(void) {
-#if defined (__DEBUG__)
-	printf("coinupDAbs\n");
-#endif
+	DEBUG_WORD("coinupDAbs")
 }
 
 void coinupAbs(void) {
-#if defined (__DEBUG__)
-	printf("coinupAbs\n");
-#endif
+	DEBUG_WORD("coinupAbs")
 }
 
 void coinupDPlusMinus(void) {
-#if defined (__DEBUG__)
-	printf("coinupDPlusMinus\n");
-#endif
+	DEBUG_WORD("coinupDPlusMinus")
 }
 
 void coinupPlusMinus(void) {
-#if defined (__DEBUG__)
-	printf("coinupPlusMinus\n");
-#endif
+	DEBUG_WORD("coinupPlusMinus")
 }
 
 void coinupSToD(void) {
-#if defined (__DEBUG__)
-	printf("coinupSToD\n");
-#endif
+	DEBUG_WORD("coinupSToD")
 }
 
 void coinupCold(void) {
-#if defined (__DEBUG__)
-	printf("coinupCold\n");
-#endif
+	DEBUG_WORD("coinupCold")
 }
 
 void coinupAbort(void) {
-#if defined (__DEBUG__)
-	printf("coinupAbort\n");
-#endif
+	DEBUG_WORD("coinupAbort")
 }
 
 void coinupQuit(void) {
-#if defined (__DEBUG__)
-	printf("coinupQuit\n");
-#endif
+	DEBUG_WORD("coinupQuit")
 }
 
 void coinupParen(void) {
-#if defined (__DEBUG__)
-	printf("coinupParen\n");
-#endif
+	DEBUG_WORD("coinupParen")
 }
 
 void coinupDefinitions(void) {
-#if defined (__DEBUG__)
-	printf("coinupDefinitions\n");
-#endif
+	DEBUG_WORD("coinupDefinitions")
 }
 
 void coinupForth(void) {
-#if defined (__DEBUG__)
-	printf("coinupForth\n");
-#endif
+	DEBUG_WORD("coinupForth")
 }
 
 void coinupVocabulary(void) {
-#if defined (__DEBUG__)
-	printf("coinupVocabulary\n");
-#endif
+	DEBUG_WORD("coinupVocabulary")
 }
 
 void coinupImmediate(void) {
-#if defined (__DEBUG__)
-	printf("coinupImmediate\n");
-#endif
+	DEBUG_WORD("coinupImmediate")
 }
 
 void coinupInterpret(void) {
-#if defined (__DEBUG__)
-	printf("coinupInterpret\n");
-#endif
+	DEBUG_WORD("coinupInterpret")
 }
 
 void coinupQStack(void) {
-#if defined (__DEBUG__)
-	printf("coinupQStack\n");
-#endif
+	DEBUG_WORD("coinupQStack")
 }
 
 void coinupDLiteral(void) {
-#if defined (__DEBUG__)
-	printf("coinupDLiteral\n");
-#endif
+	DEBUG_WORD("coinupDLiteral")
 }
 
 void coinupLiteral(void) {
-#if defined (__DEBUG__)
-	printf("coinupLiteral\n");
-#endif
+	DEBUG_WORD("coinupLiteral")
 }
 
 void coinupXCompile(void) {
-#if defined (__DEBUG__)
-	printf("coinupXCompile\n");
-#endif
+	DEBUG_WORD("coinupXCompile")
 }
 
 void coinupCreate(void) {
-#if defined (__DEBUG__)
-	printf("coinupCreate\n");
-#endif
+	DEBUG_WORD("coinupCreate")
 }
 
 void coinupIdDot(void) {
-#if defined (__DEBUG__)
-	printf("coinupIdDot\n");
-#endif
+	DEBUG_WORD("coinupIdDot")
 }
 
 void coinupError(void) {
-#if defined (__DEBUG__)
-	printf("coinupError\n");
-#endif
+	DEBUG_WORD("coinupError")
 }
 
 void coinupYAbort(void) {
-#if defined (__DEBUG__)
-	printf("coinupYAbort\n");
-#endif
+	DEBUG_WORD("coinupYAbort")
 }
 
 void coinupMinusFind(void) {
-#if defined (__DEBUG__)
-	printf("coinupMinusFind\n");
-#endif
+	DEBUG_WORD("coinupMinusFind")
 }
 
 void coinupHash(void) {
-#if defined (__DEBUG__)
-	printf("coinupHash\n");
-#endif
+	DEBUG_WORD("coinupHash")
 }
 
 void coinupNumber(void) {
-#if defined (__DEBUG__)
-	printf("coinupNumber\n");
-#endif
+	DEBUG_WORD("coinupNumber")
 }
 
 void coinupYNumber(void) {
-#if defined (__DEBUG__)
-	printf("coinupYNumber\n");
-#endif
+	DEBUG_WORD("coinupYNumber")
 }
 
 void coinup7Bits(void) {
-#if defined (__DEBUG__)
-	printf("coinup7Bits\n");
-#endif
+	DEBUG_WORD("coinup7Bits")
 }
 
 void coinupWord(void) {
-#if defined (__DEBUG__)
-	printf("coinupWord\n");
-#endif
+	DEBUG_WORD("coinupWord")
 }
 
 void coinupPad(void) {
-#if defined (__DEBUG__)
-	printf("coinupPad\n");
-#endif
+	DEBUG_WORD("coinupPad")
 }
 
 void coinupHold(void) {
-#if defined (__DEBUG__)
-	printf("coinupHold\n");
-#endif
+	DEBUG_WORD("coinupHold")
 }
 
 void coinupBlanks(void) {
-#if defined (__DEBUG__)
-	printf("coinupBlanks\n");
-#endif
+	DEBUG_WORD("coinupBlanks")
 }
 
 void coinupErase(void) {
-#if defined (__DEBUG__)
-	printf("coinupErase\n");
-#endif
+	DEBUG_WORD("coinupErase")
 }
 
 void coinupFill(void) {
-#if defined (__DEBUG__)
-	printf("coinupFill\n");
-#endif
+	DEBUG_WORD("coinupFill")
 }
 
 void coinupHeart(void) {
-#if defined (__DEBUG__)
-	printf("coinupHeart\n");
-#endif
+	DEBUG_WORD("coinupHeart")
 }
 
 void coinupQuery(void) {
-#if defined (__DEBUG__)
-	printf("coinupQuery\n");
-#endif
+	DEBUG_WORD("coinupQuery")
 }
 
 void coinupExpect(void) {
-#if defined (__DEBUG__)
-	printf("coinupExpect\n");
-#endif
+	DEBUG_WORD("coinupExpect")
 }
 
 void coinupDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("coinupDotQuote\n");
-#endif
+	DEBUG_WORD("coinupDotQuote")
 }
 
 void coinupParenDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("coinupParenDotQuote\n");
-#endif
+	DEBUG_WORD("coinupParenDotQuote")
 }
 
 void coinupTrailing(void) {
-#if defined (__DEBUG__)
-	printf("coinupTrailing\n");
-#endif
+	DEBUG_WORD("coinupTrailing")
 }
 
 void coinupCount(void) {
-#if defined (__DEBUG__)
-	printf("coinupCount\n");
-#endif
+	DEBUG_WORD("coinupCount")
 }
 
 void coinupDoes(void) {
-#if defined (__DEBUG__)
-	printf("coinupDoes\n");
-#endif
+	DEBUG_WORD("coinupDoes")
 }
 
 void coinupBuilds(void) {
-#if defined (__DEBUG__)
-	printf("coinupBuilds\n");
-#endif
+	DEBUG_WORD("coinupBuilds")
 }
 
 void coinupSemicolonCode(void) {
-#if defined (__DEBUG__)
-	printf("coinupSemicolonCode\n");
-#endif
+	DEBUG_WORD("coinupSemicolonCode")
 }
 
 void coinupYSemicolonCode(void) {
-#if defined (__DEBUG__)
-	printf("coinupYSemicolonCode\n");
-#endif
+	DEBUG_WORD("coinupYSemicolonCode")
 }
 
 void coinupDecimal(void) {
-#if defined (__DEBUG__)
-	printf("coinupDecimal\n");
-#endif
+	DEBUG_WORD("coinupDecimal")
 }
 
 void coinupHex(void) {
-#if defined (__DEBUG__)
-	printf("coinupHex\n");
-#endif
+	DEBUG_WORD("coinupHex")
 }
 
 void coinupSmudge(void) {
-#if defined (__DEBUG__)
-	printf("coinupSmudge\n");
-#endif
+	DEBUG_WORD("coinupSmudge")
 }
 
 void coinupRightBracket(void) {
-#if defined (__DEBUG__)
-	printf("coinupRightBracket\n");
-#endif
+	DEBUG_WORD("coinupRightBracket")
 }
 
 void coinupLeftBracket(void) {
-#if defined (__DEBUG__)
-	printf("coinupLeftBracket\n");
-#endif
+	DEBUG_WORD("coinupLeftBracket")
 }
 
 void coinupCompile(void) {
-#if defined (__DEBUG__)
-	printf("coinupCompile\n");
-#endif
+	DEBUG_WORD("coinupCompile")
 }
 
 void coinupQLoading(void) {
-#if defined (__DEBUG__)
-	printf("coinupQLoading\n");
-#endif
+	DEBUG_WORD("coinupQLoading")
 }
 
 void coinupQCsp(void) {
-#if defined (__DEBUG__)
-	printf("coinupQCsp\n");
-#endif
+	DEBUG_WORD("coinupQCsp")
 }
 
 void coinupQPairs(void) {
-#if defined (__DEBUG__)
-	printf("coinupQPairs\n");
-#endif
+	DEBUG_WORD("coinupQPairs")
 }
 
 void coinupQExec(void) {
-#if defined (__DEBUG__)
-	printf("coinupQExec\n");
-#endif
+	DEBUG_WORD("coinupQExec")
 }
 
 void coinupQComp(void) {
-#if defined (__DEBUG__)
-	printf("coinupQComp\n");
-#endif
+	DEBUG_WORD("coinupQComp")
 }
 
 void coinupQError(void) {
-#if defined (__DEBUG__)
-	printf("coinupQError\n");
-#endif
+	DEBUG_WORD("coinupQError")
 }
 
 void coinupStoreCsp(void) {
-#if defined (__DEBUG__)
-	printf("coinupStoreCsp\n");
-#endif
+	DEBUG_WORD("coinupStoreCsp")
 }
 
 void coinupLfa(void) {
-#if defined (__DEBUG__)
-	printf("coinupLfa\n");
-#endif
+	DEBUG_WORD("coinupLfa")
 }
 
 void coinupPfa(void) {
-#if defined (__DEBUG__)
-	printf("coinupPfa\n");
-#endif
+	DEBUG_WORD("coinupPfa")
 }
 
 void coinupNfa(void) {
-#if defined (__DEBUG__)
-	printf("coinupNfa\n");
-#endif
+	DEBUG_WORD("coinupNfa")
 }
 
 void coinupCfa(void) {
-#if defined (__DEBUG__)
-	printf("coinupCfa\n");
-#endif
+	DEBUG_WORD("coinupCfa")
 }
 
 void coinupLatest(void) {
-#if defined (__DEBUG__)
-	printf("coinupLatest\n");
-#endif
+	DEBUG_WORD("coinupLatest")
 }
 
 void coinupTraverse(void) {
-#if defined (__DEBUG__)
-	printf("coinupTraverse\n");
-#endif
+	DEBUG_WORD("coinupTraverse")
 }
 
 void coinupMinusDup(void) {
-#if defined (__DEBUG__)
-	printf("coinupMinusDup\n");
-#endif
+	DEBUG_WORD("coinupMinusDup")
 }
 
 void coinupSpace(void) {
-#if defined (__DEBUG__)
-	printf("coinupSpace\n");
-#endif
+	DEBUG_WORD("coinupSpace")
 }
 
 void coinupRot(void) {
-#if defined (__DEBUG__)
-	printf("coinupRot\n");
-#endif
+	DEBUG_WORD("coinupRot")
 }
 
 void coinupGreater(void) {
-#if defined (__DEBUG__)
-	printf("coinupGreater\n");
-#endif
+	DEBUG_WORD("coinupGreater")
 }
 
 void coinupEqual(void) {
-#if defined (__DEBUG__)
-	printf("coinupEqual\n");
-#endif
+	DEBUG_WORD("coinupEqual")
 }
 
 void coinupMinus(void) {
-#if defined (__DEBUG__)
-	printf("coinupMinus\n");
-#endif
+	DEBUG_WORD("coinupMinus")
 }
 
 void coinupCComma(void) {
-#if defined (__DEBUG__)
-	printf("coinupCComma\n");
-#endif
+	DEBUG_WORD("coinupCComma")
 }
 
 void coinupComma(void) {
-#if defined (__DEBUG__)
-	printf("coinupComma\n");
-#endif
+	DEBUG_WORD("coinupComma")
 }
 
 void coinupAllot(void) {
-#if defined (__DEBUG__)
-	printf("coinupAllot\n");
-#endif
+	DEBUG_WORD("coinupAllot")
 }
 
 void coinupHere(void) {
-#if defined (__DEBUG__)
-	printf("coinupHere\n");
-#endif
+	DEBUG_WORD("coinupHere")
 }
 
 void coinupTwoPlus(void) {
-#if defined (__DEBUG__)
-	printf("coinupTwoPlus\n");
-#endif
+	DEBUG_WORD("coinupTwoPlus")
 }
 
 void coinupOnePlus(void) {
-#if defined (__DEBUG__)
-	printf("coinupOnePlus\n");
-#endif
+	DEBUG_WORD("coinupOnePlus")
 }
 
 void coinupPhysOff(void) {
-#if defined (__DEBUG__)
-	printf("coinupPhysOff\n");
-#endif
+	DEBUG_WORD("coinupPhysOff")
 }
 
 void coinupInpt(void) {
-#if defined (__DEBUG__)
-	printf("coinupInpt\n");
-#endif
+	DEBUG_WORD("coinupInpt")
 }
 
 void coinupHld(void) {
-#if defined (__DEBUG__)
-	printf("coinupHld\n");
-#endif
+	DEBUG_WORD("coinupHld")
 }
 
 void coinupRNum(void) {
-#if defined (__DEBUG__)
-	printf("coinupRNum\n");
-#endif
+	DEBUG_WORD("coinupRNum")
 }
 
 void coinupCsp(void) {
-#if defined (__DEBUG__)
-	printf("coinupCsp\n");
-#endif
+	DEBUG_WORD("coinupCsp")
 }
 
 void coinupFld(void) {
-#if defined (__DEBUG__)
-	printf("coinupFld\n");
-#endif
+	DEBUG_WORD("coinupFld")
 }
 
 void coinupDpl(void) {
-#if defined (__DEBUG__)
-	printf("coinupDpl\n");
-#endif
+	DEBUG_WORD("coinupDpl")
 }
 
 void coinupBase(void) {
-#if defined (__DEBUG__)
-	printf("coinupBase\n");
-#endif
+	DEBUG_WORD("coinupBase")
 }
 
 void coinupState(void) {
-#if defined (__DEBUG__)
-	printf("coinupState\n");
-#endif
+	DEBUG_WORD("coinupState")
 }
 
 void coinupCurrent(void) {
-#if defined (__DEBUG__)
-	printf("coinupCurrent\n");
-#endif
+	DEBUG_WORD("coinupCurrent")
 }
 
 void coinupContext(void) {
-#if defined (__DEBUG__)
-	printf("coinupContext\n");
-#endif
+	DEBUG_WORD("coinupContext")
 }
 
 void coinupOffset(void) {
-#if defined (__DEBUG__)
-	printf("coinupOffset\n");
-#endif
+	DEBUG_WORD("coinupOffset")
 }
 
 void coinupScr(void) {
-#if defined (__DEBUG__)
-	printf("coinupScr\n");
-#endif
+	DEBUG_WORD("coinupScr")
 }
 
 void coinupOut(void) {
-#if defined (__DEBUG__)
-	printf("coinupOut\n");
-#endif
+	DEBUG_WORD("coinupOut")
 }
 
 void coinupIn(void) {
-#if defined (__DEBUG__)
-	printf("coinupIn\n");
-#endif
+	DEBUG_WORD("coinupIn")
 }
 
 void coinupBlk(void) {
-#if defined (__DEBUG__)
-	printf("coinupBlk\n");
-#endif
+	DEBUG_WORD("coinupBlk")
 }
 
 void coinupVocLink(void) {
-#if defined (__DEBUG__)
-	printf("coinupVocLink\n");
-#endif
+	DEBUG_WORD("coinupVocLink")
 }
 
 void coinupDp(void) {
-#if defined (__DEBUG__)
-	printf("coinupDp\n");
-#endif
+	DEBUG_WORD("coinupDp")
 }
 
 void coinupFence(void) {
-#if defined (__DEBUG__)
-	printf("coinupFence\n");
-#endif
+	DEBUG_WORD("coinupFence")
 }
 
 void coinupWarning(void) {
-#if defined (__DEBUG__)
-	printf("coinupWarning\n");
-#endif
+	DEBUG_WORD("coinupWarning")
 }
 
 void coinupWidth(void) {
-#if defined (__DEBUG__)
-	printf("coinupWidth\n");
-#endif
+	DEBUG_WORD("coinupWidth")
 }
 
 void coinupTib(void) {
-#if defined (__DEBUG__)
-	printf("coinupTib\n");
-#endif
+	DEBUG_WORD("coinupTib")
 }
 
 void coinupPlusOrigin(void) {
-#if defined (__DEBUG__)
-	printf("coinupPlusOrigin\n");
-#endif
+	DEBUG_WORD("coinupPlusOrigin")
 }
 
 void coinupHimem(void) {
-#if defined (__DEBUG__)
-	printf("coinupHimem\n");
-#endif
+	DEBUG_WORD("coinupHimem")
 }
 
 void coinupBSlashScr(void) {
-#if defined (__DEBUG__)
-	printf("coinupBSlashScr\n");
-#endif
+	DEBUG_WORD("coinupBSlashScr")
 }
 
 void coinupBSlashBuf(void) {
-#if defined (__DEBUG__)
-	printf("coinupBSlashScr\n");
-#endif
+	DEBUG_WORD("coinupBSlashScr")
 }
 
 void coinupLimit(void) {
-#if defined (__DEBUG__)
-	printf("coinupLimit\n");
-#endif
+	DEBUG_WORD("coinupLimit")
 }
 
 void coinupFirst(void) {
-#if defined (__DEBUG__)
-	printf("coinupFirst\n");
-#endif
+	DEBUG_WORD("coinupFirst")
 }
 
 void coinupNumLinks(void) {
-#if defined (__DEBUG__)
-	printf("coinupNumLinks\n");
-#endif
+	DEBUG_WORD("coinupNumLinks")
 }
 
 void coinupCSlashL(void) {
-#if defined (__DEBUG__)
-	printf("coinupCSlashL\n");
-#endif
+	DEBUG_WORD("coinupCSlashL")
 }
 
 void coinupCl(void) {
-#if defined (__DEBUG__)
-	printf("coinupCl\n");
-#endif
+	DEBUG_WORD("coinupCl")
 }
 
 void coinupBl(void) {
-#if defined (__DEBUG__)
-	printf("coinupBl\n");
-#endif
+	DEBUG_WORD("coinupBl")
 }
 
 void coinupThree(void) {
-#if defined (__DEBUG__)
-	printf("coinupThree\n");
-#endif
+	DEBUG_WORD("coinupThree")
 }
 
 void coinupTwo(void) {
-#if defined (__DEBUG__)
-	printf("coinupTwo\n");
-#endif
+	DEBUG_WORD("coinupTwo")
 }
 
 void coinupOne(void) {
-#if defined (__DEBUG__)
-	printf("coinupOne\n");
-#endif
+	DEBUG_WORD("coinupOne")
 }
 
 void coinupZero(void) {
-#if defined (__DEBUG__)
-	printf("coinupZero\n");
-#endif
+	DEBUG_WORD("coinupZero")
 }
 
 void coinupUser(void) {
-#if defined (__DEBUG__)
-	printf("coinupUser\n");
-#endif
+	DEBUG_WORD("coinupUser")
 }
 
 void coinupVariable(void) {
-#if defined (__DEBUG__)
-	printf("coinupVariable\n");
-#endif
+	DEBUG_WORD("coinupVariable")
 }
 
 void coinupConstant(void) {
-#if defined (__DEBUG__)
-	printf("coinupConstant\n");
-#endif
+	DEBUG_WORD("coinupConstant")
 }
 
 void coinupSemicolon(void) {
-#if defined (__DEBUG__)
-	printf("coinupSemicolon\n");
-#endif
+	DEBUG_WORD("coinupSemicolon")
 }
 
 void coinupColon(void) {
-#if defined (__DEBUG__)
-	printf("coinupColon\n");
-#endif
+	DEBUG_WORD("coinupColon")
 }
 
 void coinupCStore(void) {
-#if defined (__DEBUG__)
-	printf("coinupCStore\n");
-#endif
+	DEBUG_WORD("coinupCStore")
 }
 
 void coinupStore(void) {
-#if defined (__DEBUG__)
-	printf("coinupStore\n");
-#endif
+	DEBUG_WORD("coinupStore")
 }
 
 void coinupCFetch(void) {
-#if defined (__DEBUG__)
-	printf("coinupCFetch\n");
-#endif
+	DEBUG_WORD("coinupCFetch")
 }
 
 void coinupFetch(void) {
-#if defined (__DEBUG__)
-	printf("coinupCFetch\n");
-#endif
+	DEBUG_WORD("coinupCFetch")
 }
 
 void coinupToggle(void) {
-#if defined (__DEBUG__)
-	printf("coinupToggle\n");
-#endif
+	DEBUG_WORD("coinupToggle")
 }
 
 void coinupPlusStore(void) {
-#if defined (__DEBUG__)
-	printf("coinupPlusStore\n");
-#endif
+	DEBUG_WORD("coinupPlusStore")
 }
 
 void coinupDup(void) {
-#if defined (__DEBUG__)
-	printf("coinupDup\n");
-#endif
+	DEBUG_WORD("coinupDup")
 }
 
 void coinupSwap(void) {
-#if defined (__DEBUG__)
-	printf("coinupSwap\n");
-#endif
+	DEBUG_WORD("coinupSwap")
 }
 
 void coinupDrop(void) {
-#if defined (__DEBUG__)
-	printf("coinupDrop\n");
-#endif
+	DEBUG_WORD("coinupDrop")
 }
 
 void coinupOver(void) {
-#if defined (__DEBUG__)
-	printf("coinupOver\n");
-#endif
+	DEBUG_WORD("coinupOver")
 }
 
 void coinupDMinus(void) {
-#if defined (__DEBUG__)
-	printf("coinupDMinus\n");
-#endif
+	DEBUG_WORD("coinupDMinus")
 }
 
 void coinupMinusWord(void) {
-#if defined (__DEBUG__)
-	printf("coinupMinusWord\n");
-#endif
+	DEBUG_WORD("coinupMinusWord")
 }
 
 void coinupDPlus(void) {
-#if defined (__DEBUG__)
-	printf("coinupDPlus\n");
-#endif
+	DEBUG_WORD("coinupDPlus")
 }
 
 void coinupPlus(void) {
-#if defined (__DEBUG__)
-	printf("coinupPlus\n");
-#endif
+	DEBUG_WORD("coinupPlus")
 }
 
 void coinupLess(void) {
-#if defined (__DEBUG__)
-	printf("coinupLess\n");
-#endif
+	DEBUG_WORD("coinupLess")
 }
 
 void coinupULess(void) {
-#if defined (__DEBUG__)
-	printf("coinupULess\n");
-#endif
+	DEBUG_WORD("coinupULess")
 }
 
 void coinupZeroLess(void) {
-#if defined (__DEBUG__)
-	printf("coinupZeroLess\n");
-#endif
+	DEBUG_WORD("coinupZeroLess")
 }
 
 void coinupZeroEqual(void) {
-#if defined (__DEBUG__)
-	printf("coinupZeroEqual\n");
-#endif
+	DEBUG_WORD("coinupZeroEqual")
 }
 
 void coinupR(void) {
-#if defined (__DEBUG__)
-	printf("coinupR\n");
-#endif
+	DEBUG_WORD("coinupR")
 }
 
 void coinupRTo(void) {
-#if defined (__DEBUG__)
-	printf("coinupRTo\n");
-#endif
+	DEBUG_WORD("coinupRTo")
 }
 
 void coinupGreaterR(void) {
-#if defined (__DEBUG__)
-	printf("coinupGreaterR\n");
-#endif
+	DEBUG_WORD("coinupGreaterR")
 }
 
 void coinupLeave(void) {
-#if defined (__DEBUG__)
-	printf("coinupLeave\n");
-#endif
+	DEBUG_WORD("coinupLeave")
 }
 
 void coinupSemicolonS(void) {
-#if defined (__DEBUG__)
-	printf("coinupSemicolonS\n");
-#endif
+	DEBUG_WORD("coinupSemicolonS")
 }
 
 void coinupRPStoreye(void) {
-#if defined (__DEBUG__)
-	printf("coinupRPStoreye\n");
-#endif
+	DEBUG_WORD("coinupRPStoreye")
 }
 
 void coinupSPStore(void) {
-#if defined (__DEBUG__)
-	printf("coinupSPStore\n");
-#endif
+	DEBUG_WORD("coinupSPStore")
 }
 
 void coinupSPFetch(void) {
-#if defined (__DEBUG__)
-	printf("coinupSPFetch\n");
-#endif
+	DEBUG_WORD("coinupSPFetch")
 }
 
 void coinupXor(void) {
-#if defined (__DEBUG__)
-	printf("coinupXor\n");
-#endif
+	DEBUG_WORD("coinupXor")
 }
 
 void coinupOr(void) {
-#if defined (__DEBUG__)
-	printf("coinupOr\n");
-#endif
+	DEBUG_WORD("coinupOr")
 }
 
 void coinupAnd(void) {
-#if defined (__DEBUG__)
-	printf("coinupAnd\n");
-#endif
+	DEBUG_WORD("coinupAnd")
 }
 
 void coinupUSlash(void) {
-#if defined (__DEBUG__)
-	printf("coinupUSlash\n");
-#endif
+	DEBUG_WORD("coinupUSlash")
 }
 
 void coinupUStar(void) {
-#if defined (__DEBUG__)
-	printf("coinupUStar\n");
-#endif
+	DEBUG_WORD("coinupUStar")
 }
 
 void coinupCMove(void) {
-#if defined (__DEBUG__)
-	printf("coinupCMove\n");
-#endif
+	DEBUG_WORD("coinupCMove")
 }
 
 void coinupD8uStar(void) {
-#if defined (__DEBUG__)
-	printf("coinupD8uStar\n");
-#endif
+	DEBUG_WORD("coinupD8uStar")
 }
 
 void coinupEnclose(void) {
-#if defined (__DEBUG__)
-	printf("coinupEnclose\n");
-#endif
+	DEBUG_WORD("coinupEnclose")
 }
 
 void coinupYFind(void) {
-#if defined (__DEBUG__)
-	printf("coinupYFind\n");
-#endif
+	DEBUG_WORD("coinupYFind")
 }
 
 void coinupDigit(void) {
-#if defined (__DEBUG__)
-	printf("coinupDigit\n");
-#endif
+	DEBUG_WORD("coinupDigit")
 }
 
 void coinupJ(void) {
-#if defined (__DEBUG__)
-	printf("coinupJ\n");
-#endif
+	DEBUG_WORD("coinupJ")
 }
 
 void coinupI(void) {
-#if defined (__DEBUG__)
-	printf("coinupI\n");
-#endif
+	DEBUG_WORD("coinupI")
 }
 
 void coinupYDo(void) {
-#if defined (__DEBUG__)
-	printf("coinupYDo\n");
-#endif
+	DEBUG_WORD("coinupYDo")
 }
 
 void coinupYPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("coinupYPlusLoop\n");
-#endif
+	DEBUG_WORD("coinupYPlusLoop")
 }
 
 void coinupYLoop(void) {
-#if defined (__DEBUG__)
-	printf("coinupYLoop\n");
-#endif
+	DEBUG_WORD("coinupYLoop")
 }
 
 void coinupZeroBranch(void) {
-#if defined (__DEBUG__)
-	printf("coinupZeroBranch\n");
-#endif
+	DEBUG_WORD("coinupZeroBranch")
 }
 
 void coinupBranch(void) {
-#if defined (__DEBUG__)
-	printf("coinupBranch\n");
-#endif
+	DEBUG_WORD("coinupBranch")
 }
 
 void coinupExecute(void) {
-#if defined (__DEBUG__)
-	printf("coinupExecute\n");
-#endif
+	DEBUG_WORD("coinupExecute")
 }
 
 void coinupLit(void) {
-#if defined (__DEBUG__)
-	printf("coinupLit\n");
-#endif
+	DEBUG_WORD("coinupLit")
 }
 
 

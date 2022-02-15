@@ -7,1403 +7,939 @@
 /* Required Word Set */
 
 void snineStore(void) {
-#if defined (__DEBUG__)
-	printf("snineStore\n");
-#endif
+	DEBUG_WORD("snineStore")
 }
 
 void snineNum(void) {
-#if defined (__DEBUG__)
-	printf("snineNum\n");
-#endif
+	DEBUG_WORD("snineNum")
 }
 
 void snineNumGreater(void) {
-#if defined (__DEBUG__)
-	printf("snineNumGreater\n");
-#endif
+	DEBUG_WORD("snineNumGreater")
 }
 
 void snineNumS(void) {
-#if defined (__DEBUG__)
-	printf("snineNumS\n");
-#endif
+	DEBUG_WORD("snineNumS")
 }
 
 void snineTick(void) {
-#if defined (__DEBUG__)
-	printf("snineTick\n");
-#endif
+	DEBUG_WORD("snineTick")
 }
 
 void snineParen(void) {
-#if defined (__DEBUG__)
-	printf("snineParen\n");
-#endif
+	DEBUG_WORD("snineParen")
 }
 
 void snineStar(void) {
-#if defined (__DEBUG__)
-	printf("snineStar\n");
-#endif
+	DEBUG_WORD("snineStar")
 }
 
 void snineStarSlash(void) {
-#if defined (__DEBUG__)
-	printf("snineStarSlash\n");
-#endif
+	DEBUG_WORD("snineStarSlash")
 }
 
 void snineStarSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("snineStarSlashMod\n");
-#endif
+	DEBUG_WORD("snineStarSlashMod")
 }
 
 void sninePlus(void) {
-#if defined (__DEBUG__)
-	printf("sninePlus\n");
-#endif
+	DEBUG_WORD("sninePlus")
 }
 
 void sninePlusStore(void) {
-#if defined (__DEBUG__)
-	printf("sninePlusStore\n");
-#endif
+	DEBUG_WORD("sninePlusStore")
 }
 
 void sninePlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("sninePlusLoop\n");
-#endif
+	DEBUG_WORD("sninePlusLoop")
 }
 
 void snineComma(void) {
-#if defined (__DEBUG__)
-	printf("snineComma\n");
-#endif
+	DEBUG_WORD("snineComma")
 }
 
 void snineMinus(void) {
-#if defined (__DEBUG__)
-	printf("snineMinus\n");
-#endif
+	DEBUG_WORD("snineMinus")
 }
 
 void snineTrailing(void) {
-#if defined (__DEBUG__)
-	printf("snineTrailing\n");
-#endif
+	DEBUG_WORD("snineTrailing")
 }
 
 void snineDot(void) {
-#if defined (__DEBUG__)
-	printf("snineDot\n");
-#endif
+	DEBUG_WORD("snineDot")
 }
 
 void snineDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("snineDotQuote\n");
-#endif
+	DEBUG_WORD("snineDotQuote")
 }
 
 void snineSlash(void) {
-#if defined (__DEBUG__)
-	printf("snineSlash\n");
-#endif
+	DEBUG_WORD("snineSlash")
 }
 
 void snineSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("snineSlashMod\n");
-#endif
+	DEBUG_WORD("snineSlashMod")
 }
 
 void snineZeroLess(void) {
-#if defined (__DEBUG__)
-	printf("snineZeroLess\n");
-#endif
+	DEBUG_WORD("snineZeroLess")
 }
 
 void snineZeroEqual(void) {
-#if defined (__DEBUG__)
-	printf("snineZeroEqual\n");
-#endif
+	DEBUG_WORD("snineZeroEqual")
 }
 
 void snineZeroGreater(void) {
-#if defined (__DEBUG__)
-	printf("snineZeroGreater\n");
-#endif
+	DEBUG_WORD("snineZeroGreater")
 }
 
 void snineOnePlus(void) {
-#if defined (__DEBUG__)
-	printf("snineOnePlus\n");
-#endif
+	DEBUG_WORD("snineOnePlus")
 }
 
 void snineOneMinus(void) {
-#if defined (__DEBUG__)
-	printf("snineOneMinus\n");
-#endif
+	DEBUG_WORD("snineOneMinus")
 }
 
 void snineTwoPlus(void) {
-#if defined (__DEBUG__)
-	printf("snineTwoPlus\n");
-#endif
+	DEBUG_WORD("snineTwoPlus")
 }
 
 void snineTwoMinus(void) {
-#if defined (__DEBUG__)
-	printf("snineTwoMinus\n");
-#endif
+	DEBUG_WORD("snineTwoMinus")
 }
 
 void snineSnineStandard(void) {
-#if defined (__DEBUG__)
-	printf("snineSnineStandard\n");
-#endif
+	DEBUG_WORD("snineSnineStandard")
 }
 
 void snineColon(void) {
-#if defined (__DEBUG__)
-	printf("snineColon\n");
-#endif
+	DEBUG_WORD("snineColon")
 }
 
 void snineSemicolon(void) {
-#if defined (__DEBUG__)
-	printf("snineSemicolon\n");
-#endif
+	DEBUG_WORD("snineSemicolon")
 }
 
 void snineLess(void) {
-#if defined (__DEBUG__)
-	printf("snineLess\n");
-#endif
+	DEBUG_WORD("snineLess")
 }
 
 void snineLessNum(void) {
-#if defined (__DEBUG__)
-	printf("snineLessNum\n");
-#endif
+	DEBUG_WORD("snineLessNum")
 }
 
 void snineEqual(void) {
-#if defined (__DEBUG__)
-	printf("snineEqual\n");
-#endif
+	DEBUG_WORD("snineEqual")
 }
 
 void snineGreater(void) {
-#if defined (__DEBUG__)
-	printf("snineGreater\n");
-#endif
+	DEBUG_WORD("snineGreater")
 }
 
 void snineToIn(void) {
-#if defined (__DEBUG__)
-	printf("snineToIn\n");
-#endif
+	DEBUG_WORD("snineToIn")
 }
 
 void snineToR(void) {
-#if defined (__DEBUG__)
-	printf("snineToR\n");
-#endif
+	DEBUG_WORD("snineToR")
 }
 
 void snineQ(void) {
-#if defined (__DEBUG__)
-	printf("snineQ\n");
-#endif
+	DEBUG_WORD("snineQ")
 }
 
 void snineQDup(void) {
-#if defined (__DEBUG__)
-	printf("snineQDup\n");
-#endif
+	DEBUG_WORD("snineQDup")
 }
 
 void snineFetch(void) {
-#if defined (__DEBUG__)
-	printf("snineFetch\n");
-#endif
+	DEBUG_WORD("snineFetch")
 }
 
 void snineAbort(void) {
-#if defined (__DEBUG__)
-	printf("snineAbort\n");
-#endif
+	DEBUG_WORD("snineAbort")
 }
 
 void snineAbs(void) {
-#if defined (__DEBUG__)
-	printf("snineAbs\n");
-#endif
+	DEBUG_WORD("snineAbs")
 }
 
 void snineAllot(void) {
-#if defined (__DEBUG__)
-	printf("snineAllot\n");
-#endif
+	DEBUG_WORD("snineAllot")
 }
 
 void snineAnd(void) {
-#if defined (__DEBUG__)
-	printf("snineAnd\n");
-#endif
+	DEBUG_WORD("snineAnd")
 }
 
 void snineBase(void) {
-#if defined (__DEBUG__)
-	printf("snineBase\n");
-#endif
+	DEBUG_WORD("snineBase")
 }
 
 void snineBegin(void) {
-#if defined (__DEBUG__)
-	printf("snineBegin\n");
-#endif
+	DEBUG_WORD("snineBegin")
 }
 
 void snineBlk(void) {
-#if defined (__DEBUG__)
-	printf("snineBlk\n");
-#endif
+	DEBUG_WORD("snineBlk")
 }
 
 void snineBlock(void) {
-#if defined (__DEBUG__)
-	printf("snineBlock\n");
-#endif
+	DEBUG_WORD("snineBlock")
 }
 
 void snineBuffer(void) {
-#if defined (__DEBUG__)
-	printf("snineBuffer\n");
-#endif
+	DEBUG_WORD("snineBuffer")
 }
 
 void snineCStore(void) {
-#if defined (__DEBUG__)
-	printf("snineCStore\n");
-#endif
+	DEBUG_WORD("snineCStore")
 }
 
 void snineCFetch(void) {
-#if defined (__DEBUG__)
-	printf("snineCFetch\n");
-#endif
+	DEBUG_WORD("snineCFetch")
 }
 
 void snineCMove(void) {
-#if defined (__DEBUG__)
-	printf("snineCMove\n");
-#endif
+	DEBUG_WORD("snineCMove")
 }
 
 void snineCompile(void) {
-#if defined (__DEBUG__)
-	printf("snineCompile\n");
-#endif
+	DEBUG_WORD("snineCompile")
 }
 
 void snineConstant(void) {
-#if defined (__DEBUG__)
-	printf("snineConstant\n");
-#endif
+	DEBUG_WORD("snineConstant")
 }
 
 void snineContext(void) {
-#if defined (__DEBUG__)
-	printf("snineContext\n");
-#endif
+	DEBUG_WORD("snineContext")
 }
 
 void snineConvert(void) {
-#if defined (__DEBUG__)
-	printf("snineConvert\n");
-#endif
+	DEBUG_WORD("snineConvert")
 }
 
 void snineCount(void) {
-#if defined (__DEBUG__)
-	printf("snineCount\n");
-#endif
+	DEBUG_WORD("snineCount")
 }
 
 void snineCr(void) {
-#if defined (__DEBUG__)
-	printf("snineCr\n");
-#endif
+	DEBUG_WORD("snineCr")
 }
 
 void snineCreate(void) {
-#if defined (__DEBUG__)
-	printf("snineCreate\n");
-#endif
+	DEBUG_WORD("snineCreate")
 }
 
 void snineCurrent(void) {
-#if defined (__DEBUG__)
-	printf("snineCurrent\n");
-#endif
+	DEBUG_WORD("snineCurrent")
 }
 
 void snineDecimal(void) {
-#if defined (__DEBUG__)
-	printf("snineDecimal\n");
-#endif
+	DEBUG_WORD("snineDecimal")
 }
 
 void snineDefinitions(void) {
-#if defined (__DEBUG__)
-	printf("snineDefinitions\n");
-#endif
+	DEBUG_WORD("snineDefinitions")
 }
 
 void snineDepth(void) {
-#if defined (__DEBUG__)
-	printf("snineDepth\n");
-#endif
+	DEBUG_WORD("snineDepth")
 }
 
 void snineDo(void) {
-#if defined (__DEBUG__)
-	printf("snineDo\n");
-#endif
+	DEBUG_WORD("snineDo")
 }
 
 void snineDoes(void) {
-#if defined (__DEBUG__)
-	printf("snineDoes\n");
-#endif
+	DEBUG_WORD("snineDoes")
 }
 
 void snineDrop(void) {
-#if defined (__DEBUG__)
-	printf("snineDrop\n");
-#endif
+	DEBUG_WORD("snineDrop")
 }
 
 void snineDup(void) {
-#if defined (__DEBUG__)
-	printf("snineDup\n");
-#endif
+	DEBUG_WORD("snineDup")
 }
 
 void snineElse(void) {
-#if defined (__DEBUG__)
-	printf("snineElse\n");
-#endif
+	DEBUG_WORD("snineElse")
 }
 
 void snineEmit(void) {
-#if defined (__DEBUG__)
-	printf("snineEmit\n");
-#endif
+	DEBUG_WORD("snineEmit")
 }
 
 void snineEmptyBuffers(void) {
-#if defined (__DEBUG__)
-	printf("snineEmptyBuffers\n");
-#endif
+	DEBUG_WORD("snineEmptyBuffers")
 }
 
 void snineExecute(void) {
-#if defined (__DEBUG__)
-	printf("snineExecute\n");
-#endif
+	DEBUG_WORD("snineExecute")
 }
 
 void snineExit(void) {
-#if defined (__DEBUG__)
-	printf("snineExit\n");
-#endif
+	DEBUG_WORD("snineExit")
 }
 
 void snineExpect(void) {
-#if defined (__DEBUG__)
-	printf("snineExpect\n");
-#endif
+	DEBUG_WORD("snineExpect")
 }
 
 void snineFill(void) {
-#if defined (__DEBUG__)
-	printf("snineFill\n");
-#endif
+	DEBUG_WORD("snineFill")
 }
 
 void snineFind(void) {
-#if defined (__DEBUG__)
-	printf("snineFind\n");
-#endif
+	DEBUG_WORD("snineFind")
 }
 
 void snineForget(void) {
-#if defined (__DEBUG__)
-	printf("snineForget\n");
-#endif
+	DEBUG_WORD("snineForget")
 }
 
 void snineForth(void) {
-#if defined (__DEBUG__)
-	printf("snineForth\n");
-#endif
+	DEBUG_WORD("snineForth")
 }
 
 void snineHere(void) {
-#if defined (__DEBUG__)
-	printf("snineHere\n");
-#endif
+	DEBUG_WORD("snineHere")
 }
 
 void snineHold(void) {
-#if defined (__DEBUG__)
-	printf("snineHold\n");
-#endif
+	DEBUG_WORD("snineHold")
 }
 
 void snineI(void) {
-#if defined (__DEBUG__)
-	printf("snineI\n");
-#endif
+	DEBUG_WORD("snineI")
 }
 
 void snineIf(void) {
-#if defined (__DEBUG__)
-	printf("snineIf\n");
-#endif
+	DEBUG_WORD("snineIf")
 }
 
 void snineImmediate(void) {
-#if defined (__DEBUG__)
-	printf("snineImmediate\n");
-#endif
+	DEBUG_WORD("snineImmediate")
 }
 
 void snineJ(void) {
-#if defined (__DEBUG__)
-	printf("snineJ\n");
-#endif
+	DEBUG_WORD("snineJ")
 }
 
 void snineKey(void) {
-#if defined (__DEBUG__)
-	printf("snineKey\n");
-#endif
+	DEBUG_WORD("snineKey")
 }
 
 void snineLeave(void) {
-#if defined (__DEBUG__)
-	printf("snineLeave\n");
-#endif
+	DEBUG_WORD("snineLeave")
 }
 
 void snineList(void) {
-#if defined (__DEBUG__)
-	printf("snineList\n");
-#endif
+	DEBUG_WORD("snineList")
 }
 
 void snineLiteral(void) {
-#if defined (__DEBUG__)
-	printf("snineLiteral\n");
-#endif
+	DEBUG_WORD("snineLiteral")
 }
 
 void snineLoad(void) {
-#if defined (__DEBUG__)
-	printf("snineLoad\n");
-#endif
+	DEBUG_WORD("snineLoad")
 }
 
 void snineLoop(void) {
-#if defined (__DEBUG__)
-	printf("snineLoop\n");
-#endif
+	DEBUG_WORD("snineLoop")
 }
 
 void snineMax(void) {
-#if defined (__DEBUG__)
-	printf("snineMax\n");
-#endif
+	DEBUG_WORD("snineMax")
 }
 
 void snineMin(void) {
-#if defined (__DEBUG__)
-	printf("snineMin\n");
-#endif
+	DEBUG_WORD("snineMin")
 }
 
 void snineMod(void) {
-#if defined (__DEBUG__)
-	printf("snineMod\n");
-#endif
+	DEBUG_WORD("snineMod")
 }
 
 void snineMove(void) {
-#if defined (__DEBUG__)
-	printf("snineMove\n");
-#endif
+	DEBUG_WORD("snineMove")
 }
 
 void snineNegate(void) {
-#if defined (__DEBUG__)
-	printf("snineNegate\n");
-#endif
+	DEBUG_WORD("snineNegate")
 }
 
 void snineNot(void) {
-#if defined (__DEBUG__)
-	printf("snineNot\n");
-#endif
+	DEBUG_WORD("snineNot")
 }
 
 void snineOr(void) {
-#if defined (__DEBUG__)
-	printf("snineOr\n");
-#endif
+	DEBUG_WORD("snineOr")
 }
 
 void snineOver(void) {
-#if defined (__DEBUG__)
-	printf("snineOver\n");
-#endif
+	DEBUG_WORD("snineOver")
 }
 
 void sninePad(void) {
-#if defined (__DEBUG__)
-	printf("sninePad\n");
-#endif
+	DEBUG_WORD("sninePad")
 }
 
 void sninePick(void) {
-#if defined (__DEBUG__)
-	printf("sninePick\n");
-#endif
+	DEBUG_WORD("sninePick")
 }
 
 void snineQuery(void) {
-#if defined (__DEBUG__)
-	printf("snineQuery\n");
-#endif
+	DEBUG_WORD("snineQuery")
 }
 
 void snineQuit(void) {
-#if defined (__DEBUG__)
-	printf("snineQuit\n");
-#endif
+	DEBUG_WORD("snineQuit")
 }
 
 void snineRGreater(void) {
-#if defined (__DEBUG__)
-	printf("snineRGreater\n");
-#endif
+	DEBUG_WORD("snineRGreater")
 }
 
 void snineRFetch(void) {
-#if defined (__DEBUG__)
-	printf("snineRFetch\n");
-#endif
+	DEBUG_WORD("snineRFetch")
 }
 
 void snineRepeat(void) {
-#if defined (__DEBUG__)
-	printf("snineRepeat\n");
-#endif
+	DEBUG_WORD("snineRepeat")
 }
 
 void snineRoll(void) {
-#if defined (__DEBUG__)
-	printf("snineRoll\n");
-#endif
+	DEBUG_WORD("snineRoll")
 }
 
 void snineRot(void) {
-#if defined (__DEBUG__)
-	printf("snineRot\n");
-#endif
+	DEBUG_WORD("snineRot")
 }
 
 void snineSaveBuffers(void) {
-#if defined (__DEBUG__)
-	printf("snineSaveBuffers\n");
-#endif
+	DEBUG_WORD("snineSaveBuffers")
 }
 
 void snineScr(void) {
-#if defined (__DEBUG__)
-	printf("snineScr\n");
-#endif
+	DEBUG_WORD("snineScr")
 }
 
 void snineSign(void) {
-#if defined (__DEBUG__)
-	printf("snineSign\n");
-#endif
+	DEBUG_WORD("snineSign")
 }
 
 void snineSpace(void) {
-#if defined (__DEBUG__)
-	printf("snineSpace\n");
-#endif
+	DEBUG_WORD("snineSpace")
 }
 
 void snineSpaces(void) {
-#if defined (__DEBUG__)
-	printf("snineSpaces\n");
-#endif
+	DEBUG_WORD("snineSpaces")
 }
 
 void snineState(void) {
-#if defined (__DEBUG__)
-	printf("snineState\n");
-#endif
+	DEBUG_WORD("snineState")
 }
 
 void snineSwap(void) {
-#if defined (__DEBUG__)
-	printf("snineSwap\n");
-#endif
+	DEBUG_WORD("snineSwap")
 }
 
 void snineThen(void) {
-#if defined (__DEBUG__)
-	printf("snineThen\n");
-#endif
+	DEBUG_WORD("snineThen")
 }
 
 void snineType(void) {
-#if defined (__DEBUG__)
-	printf("snineType\n");
-#endif
+	DEBUG_WORD("snineType")
 }
 
 void snineUStar(void) {
-#if defined (__DEBUG__)
-	printf("snineUStar\n");
-#endif
+	DEBUG_WORD("snineUStar")
 }
 
 void snineUDot(void) {
-#if defined (__DEBUG__)
-	printf("snineUDot\n");
-#endif
+	DEBUG_WORD("snineUDot")
 }
 
 void snineUSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("snineUSlashMod\n");
-#endif
+	DEBUG_WORD("snineUSlashMod")
 }
 
 void snineULess(void) {
-#if defined (__DEBUG__)
-	printf("snineULess\n");
-#endif
+	DEBUG_WORD("snineULess")
 }
 
 void snineUntil(void) {
-#if defined (__DEBUG__)
-	printf("snineUntil\n");
-#endif
+	DEBUG_WORD("snineUntil")
 }
 
 void snineUpdate(void) {
-#if defined (__DEBUG__)
-	printf("snineUpdate\n");
-#endif
+	DEBUG_WORD("snineUpdate")
 }
 
 void snineVariable(void) {
-#if defined (__DEBUG__)
-	printf("snineVariable\n");
-#endif
+	DEBUG_WORD("snineVariable")
 }
 
 void snineVocabulary(void) {
-#if defined (__DEBUG__)
-	printf("snineVocabulary\n");
-#endif
+	DEBUG_WORD("snineVocabulary")
 }
 
 void snineWhile(void) {
-#if defined (__DEBUG__)
-	printf("snineWhile\n");
-#endif
+	DEBUG_WORD("snineWhile")
 }
 
 void snineWord(void) {
-#if defined (__DEBUG__)
-	printf("snineWord\n");
-#endif
+	DEBUG_WORD("snineWord")
 }
 
 void snineXor(void) {
-#if defined (__DEBUG__)
-	printf("snineXor\n");
-#endif
+	DEBUG_WORD("snineXor")
 }
 
 void snineLeftParen(void) {
-#if defined (__DEBUG__)
-	printf("snineLeftParen\n");
-#endif
+	DEBUG_WORD("snineLeftParen")
 }
 
 void snineXCompile(void) {
-#if defined (__DEBUG__)
-	printf("snineXCompile\n");
-#endif
+	DEBUG_WORD("snineXCompile")
 }
 
 void snineRightParen(void) {
-#if defined (__DEBUG__)
-	printf("snineRightParen\n");
-#endif
+	DEBUG_WORD("snineRightParen")
 }
 
 /* Extension Word Sets */
 /* 1. Double Number Word Set */
 
 void snineTwoStore(void) {
-#if defined (__DEBUG__)
-	printf("snineTwoStore\n");
-#endif
+	DEBUG_WORD("snineTwoStore")
 }
 
 void snineTwoFetch(void) {
-#if defined (__DEBUG__)
-	printf("snineTwoFetch\n");
-#endif
+	DEBUG_WORD("snineTwoFetch")
 }
 
 void snineTwoConstant(void) {
-#if defined (__DEBUG__)
-	printf("snineTwoConstant\n");
-#endif
+	DEBUG_WORD("snineTwoConstant")
 }
 
 void snineTwoDrop(void) {
-#if defined (__DEBUG__)
-	printf("snineTwoDrop\n");
-#endif
+	DEBUG_WORD("snineTwoDrop")
 }
 
 void snineTwoDup(void) {
-#if defined (__DEBUG__)
-	printf("snineTwoDup\n");
-#endif
+	DEBUG_WORD("snineTwoDup")
 }
 
 void snineTwoOver(void) {
-#if defined (__DEBUG__)
-	printf("snineTwoOver\n");
-#endif
+	DEBUG_WORD("snineTwoOver")
 }
 
 void snineTwoRot(void) {
-#if defined (__DEBUG__)
-	printf("snineTwoRot\n");
-#endif
+	DEBUG_WORD("snineTwoRot")
 }
 
 void snineTwoSwap(void) {
-#if defined (__DEBUG__)
-	printf("snineTwoSwap\n");
-#endif
+	DEBUG_WORD("snineTwoSwap")
 }
 
 void snineTwoVariable(void) {
-#if defined (__DEBUG__)
-	printf("snineTwoVariable\n");
-#endif
+	DEBUG_WORD("snineTwoVariable")
 }
 
 void snineDPlus(void) {
-#if defined (__DEBUG__)
-	printf("snineDPlus\n");
-#endif
+	DEBUG_WORD("snineDPlus")
 }
 
 void snineDMinus(void) {
-#if defined (__DEBUG__)
-	printf("snineDMinus\n");
-#endif
+	DEBUG_WORD("snineDMinus")
 }
 
 void snineDDot(void) {
-#if defined (__DEBUG__)
-	printf("snineDDot\n");
-#endif
+	DEBUG_WORD("snineDDot")
 }
 
 void snineDDotR(void) {
-#if defined (__DEBUG__)
-	printf("snineDDotR\n");
-#endif
+	DEBUG_WORD("snineDDotR")
 }
 
 void snineDZeroEqual(void) {
-#if defined (__DEBUG__)
-	printf("snineDZeroEqual\n");
-#endif
+	DEBUG_WORD("snineDZeroEqual")
 }
 
 void snineDLess(void) {
-#if defined (__DEBUG__)
-	printf("snineDLess\n");
-#endif
+	DEBUG_WORD("snineDLess")
 }
 
 void snineDEqual(void) {
-#if defined (__DEBUG__)
-	printf("snineDEqual\n");
-#endif
+	DEBUG_WORD("snineDEqual")
 }
 
 void snineDAbs(void) {
-#if defined (__DEBUG__)
-	printf("snineDAbs\n");
-#endif
+	DEBUG_WORD("snineDAbs")
 }
 
 void snineDMax(void) {
-#if defined (__DEBUG__)
-	printf("snineDMax\n");
-#endif
+	DEBUG_WORD("snineDMax")
 }
 
 void snineDMin(void) {
-#if defined (__DEBUG__)
-	printf("snineDMin\n");
-#endif
+	DEBUG_WORD("snineDMin")
 }
 
 void snineDnegate(void) {
-#if defined (__DEBUG__)
-	printf("snineDnegate\n");
-#endif
+	DEBUG_WORD("snineDnegate")
 }
 
 void snineDULess(void) {
-#if defined (__DEBUG__)
-	printf("snineDULess\n");
-#endif
+	DEBUG_WORD("snineDULess")
 }
 
 /* 2. Assembler Word Set */
 
 void snineSemicolonCode(void) {
-#if defined (__DEBUG__)
-	printf("snineSemicolonCode\n");
-#endif
+	DEBUG_WORD("snineSemicolonCode")
 }
 
 void snineAssembler(void) {
-#if defined (__DEBUG__)
-	printf("snineAssembler\n");
-#endif
+	DEBUG_WORD("snineAssembler")
 }
 
 void snineCode(void) {
-#if defined (__DEBUG__)
-	printf("snineCode\n");
-#endif
+	DEBUG_WORD("snineCode")
 }
 
 void snineEndCode(void) {
-#if defined (__DEBUG__)
-	printf("snineEndCode\n");
-#endif
+	DEBUG_WORD("snineEndCode")
 }
 
 /* Experimental Proposals */
 /* Reference Word Set */
 
 void snineStoreBits(void) {
-#if defined (__DEBUG__)
-	printf("snineStoreBits\n");
-#endif
+	DEBUG_WORD("snineStoreBits")
 }
 
 void snineStarStar(void) {
-#if defined (__DEBUG__)
-	printf("snineStarStar\n");
-#endif
+	DEBUG_WORD("snineStarStar")
 }
 
 void sninePlusBlock(void) {
-#if defined (__DEBUG__)
-	printf("sninePlusBlock\n");
-#endif
+	DEBUG_WORD("sninePlusBlock")
 }
 
 void snineMinusTick(void) {
-#if defined (__DEBUG__)
-	printf("snineMinusTick\n");
-#endif
+	DEBUG_WORD("snineMinusTick")
 }
 
 void snineTo(void) {
-#if defined (__DEBUG__)
-	printf("snineTo\n");
-#endif
+	DEBUG_WORD("snineTo")
 }
 
 void snineMatch(void) {
-#if defined (__DEBUG__)
-	printf("snineMatch\n");
-#endif
+	DEBUG_WORD("snineMatch")
 }
 
 void snineMinusText(void) {
-#if defined (__DEBUG__)
-	printf("snineMinusText\n");
-#endif
+	DEBUG_WORD("snineMinusText")
 }
 
 void snineDotR(void) {
-#if defined (__DEBUG__)
-	printf("snineDotR\n");
-#endif
+	DEBUG_WORD("snineDotR")
 }
 
 void snineSlashLoop(void) {
-#if defined (__DEBUG__)
-	printf("snineSlashLoop\n");
-#endif
+	DEBUG_WORD("snineSlashLoop")
 }
 
 void snineOnePlusStore(void) {
-#if defined (__DEBUG__)
-	printf("snineOnePlusStore\n");
-#endif
+	DEBUG_WORD("snineOnePlusStore")
 }
 
 void snineOneMinusStore(void) {
-#if defined (__DEBUG__)
-	printf("snineOneMinusStore\n");
-#endif
+	DEBUG_WORD("snineOneMinusStore")
 }
 
 void snineTwoStar(void) {
-#if defined (__DEBUG__)
-	printf("snineTwoStar\n");
-#endif
+	DEBUG_WORD("snineTwoStar")
 }
 
 void snineTwoSlash(void) {
-#if defined (__DEBUG__)
-	printf("snineTwoSlash\n");
-#endif
+	DEBUG_WORD("snineTwoSlash")
 }
 
 void snineSemicolonColon(void) {
-#if defined (__DEBUG__)
-	printf("snineSemicolonColon\n");
-#endif
+	DEBUG_WORD("snineSemicolonColon")
 }
 
 void snineSemicolonS(void) {
-#if defined (__DEBUG__)
-	printf("snineSemicolonS\n");
-#endif
+	DEBUG_WORD("snineSemicolonS")
 }
 
 void snineUnequal(void) {
-#if defined (__DEBUG__)
-	printf("snineUnequal\n");
-#endif
+	DEBUG_WORD("snineUnequal")
 }
 
 void snineBuilds(void) {
-#if defined (__DEBUG__)
-	printf("snineBuilds\n");
-#endif
+	DEBUG_WORD("snineBuilds")
 }
 
 void snineLessCmove(void) {
-#if defined (__DEBUG__)
-	printf("snineLessCmove\n");
-#endif
+	DEBUG_WORD("snineLessCmove")
 }
 
 void snineveSwap(void) {
-#if defined (__DEBUG__)
-	printf("snineveSwap\n");
-#endif
+	DEBUG_WORD("snineveSwap")
 }
 
 void snineveSwapMove(void) {
-#if defined (__DEBUG__)
-	printf("snineveSwapMove\n");
-#endif
+	DEBUG_WORD("snineveSwapMove")
 }
 
 void snineveFetchBits(void) {
-#if defined (__DEBUG__)
-	printf("snineveFetchBits\n");
-#endif
+	DEBUG_WORD("snineveFetchBits")
 }
 
 void snineAbortQuote(void) {
-#if defined (__DEBUG__)
-	printf("snineAbortQuote\n");
-#endif
+	DEBUG_WORD("snineAbortQuote")
 }
 
 void snineAgain(void) {
-#if defined (__DEBUG__)
-	printf("snineAgain\n");
-#endif
+	DEBUG_WORD("snineAgain")
 }
 
 void snineAscii(void) {
-#if defined (__DEBUG__)
-	printf("snineAscii\n");
-#endif
+	DEBUG_WORD("snineAscii")
 }
 
 void snineAShift(void) {
-#if defined (__DEBUG__)
-	printf("snineAShift\n");
-#endif
+	DEBUG_WORD("snineAShift")
 }
 
 void snineBSlashBuf(void) {
-#if defined (__DEBUG__)
-	printf("snineBSlashBuf\n");
-#endif
+	DEBUG_WORD("snineBSlashBuf")
 }
 
 void snineBell(void) {
-#if defined (__DEBUG__)
-	printf("snineBell\n");
-#endif
+	DEBUG_WORD("snineBell")
 }
 
 void snineBl(void) {
-#if defined (__DEBUG__)
-	printf("snineBl\n");
-#endif
+	DEBUG_WORD("snineBl")
 }
 
 void snineBlanks(void) {
-#if defined (__DEBUG__)
-	printf("snineBlanks\n");
-#endif
+	DEBUG_WORD("snineBlanks")
 }
 
 void snineCComma(void) {
-#if defined (__DEBUG__)
-	printf("snineCComma\n");
-#endif
+	DEBUG_WORD("snineCComma")
 }
 
 void snineChain(void) {
-#if defined (__DEBUG__)
-	printf("snineChain\n");
-#endif
+	DEBUG_WORD("snineChain")
 }
 
 void snineCom(void) {
-#if defined (__DEBUG__)
-	printf("snineCom\n");
-#endif
+	DEBUG_WORD("snineCom")
 }
 
 void snineContinued(void) {
-#if defined (__DEBUG__)
-	printf("snineContinued\n");
-#endif
+	DEBUG_WORD("snineContinued")
 }
 
 void snineCur(void) {
-#if defined (__DEBUG__)
-	printf("snineCur\n");
-#endif
+	DEBUG_WORD("snineCur")
 }
 
 void snineDBlock(void) {
-#if defined (__DEBUG__)
-	printf("snineDBlock\n");
-#endif
+	DEBUG_WORD("snineDBlock")
 }
 
 void snineDpl(void) {
-#if defined (__DEBUG__)
-	printf("snineDpl\n");
-#endif
+	DEBUG_WORD("snineDpl")
 }
 
 void snineDump(void) {
-#if defined (__DEBUG__)
-	printf("snineDump\n");
-#endif
+	DEBUG_WORD("snineDump")
 }
 
 void snineEditor(void) {
-#if defined (__DEBUG__)
-	printf("snineEditor\n");
-#endif
+	DEBUG_WORD("snineEditor")
 }
 
 void snineEnd(void) {
-#if defined (__DEBUG__)
-	printf("snineEnd\n");
-#endif
+	DEBUG_WORD("snineEnd")
 }
 
 void snineErase(void) {
-#if defined (__DEBUG__)
-	printf("snineErase\n");
-#endif
+	DEBUG_WORD("snineErase")
 }
 
 void snineFld(void) {
-#if defined (__DEBUG__)
-	printf("snineFld\n");
-#endif
+	DEBUG_WORD("snineFld")
 }
 
 void snineFlush(void) {
-#if defined (__DEBUG__)
-	printf("snineFlush\n");
-#endif
+	DEBUG_WORD("snineFlush")
 }
 
 void snineHDot(void) {
-#if defined (__DEBUG__)
-	printf("snineHDot\n");
-#endif
+	DEBUG_WORD("snineHDot")
 }
 
 void snineHex(void) {
-#if defined (__DEBUG__)
-	printf("snineHex\n");
-#endif
+	DEBUG_WORD("snineHex")
 }
 
 void snineITick(void) {
-#if defined (__DEBUG__)
-	printf("snineITick\n");
-#endif
+	DEBUG_WORD("snineITick")
 }
 
 void snineIfEnd(void) {
-#if defined (__DEBUG__)
-	printf("snineIfEnd\n");
-#endif
+	DEBUG_WORD("snineIfEnd")
 }
 
 void snineIfTrue(void) {
-#if defined (__DEBUG__)
-	printf("snineIfTrue\n");
-#endif
+	DEBUG_WORD("snineIfTrue")
 }
 
 void snineIndex(void) {
-#if defined (__DEBUG__)
-	printf("snineIndex\n");
-#endif
+	DEBUG_WORD("snineIndex")
 }
 
 void snineInterpret(void) {
-#if defined (__DEBUG__)
-	printf("snineInterpret\n");
-#endif
+	DEBUG_WORD("snineInterpret")
 }
 
 void snineK(void) {
-#if defined (__DEBUG__)
-	printf("snineK\n");
-#endif
+	DEBUG_WORD("snineK")
 }
 
 void snineLast(void) {
-#if defined (__DEBUG__)
-	printf("snineLast\n");
-#endif
+	DEBUG_WORD("snineLast")
 }
 
 void snineLine(void) {
-#if defined (__DEBUG__)
-	printf("snineLine\n");
-#endif
+	DEBUG_WORD("snineLine")
 }
 
 void snineLineLoad(void) {
-#if defined (__DEBUG__)
-	printf("snineLineLoad\n");
-#endif
+	DEBUG_WORD("snineLineLoad")
 }
 
 void snineLoads(void) {
-#if defined (__DEBUG__)
-	printf("snineLoads\n");
-#endif
+	DEBUG_WORD("snineLoads")
 }
 
 void snineMap0(void) {
-#if defined (__DEBUG__)
-	printf("snineMap0\n");
-#endif
+	DEBUG_WORD("snineMap0")
 }
 
 void snineMask(void) {
-#if defined (__DEBUG__)
-	printf("snineMask\n");
-#endif
+	DEBUG_WORD("snineMask")
 }
 
 void snineMs(void) {
-#if defined (__DEBUG__)
-	printf("snineMs\n");
-#endif
+	DEBUG_WORD("snineMs")
 }
 
 void snineNand(void) {
-#if defined (__DEBUG__)
-	printf("snineNand\n");
-#endif
+	DEBUG_WORD("snineNand")
 }
 
 void snineNor(void) {
-#if defined (__DEBUG__)
-	printf("snineNor\n");
-#endif
+	DEBUG_WORD("snineNor")
 }
 
 void snineNumber(void) {
-#if defined (__DEBUG__)
-	printf("snineNumber\n");
-#endif
+	DEBUG_WORD("snineNumber")
 }
 
 void snineODot(void) {
-#if defined (__DEBUG__)
-	printf("snineODot\n");
-#endif
+	DEBUG_WORD("snineODot")
 }
 
 void snineOctal(void) {
-#if defined (__DEBUG__)
-	printf("snineOctal\n");
-#endif
+	DEBUG_WORD("snineOctal")
 }
 
 void snineOffset(void) {
-#if defined (__DEBUG__)
-	printf("snineOffset\n");
-#endif
+	DEBUG_WORD("snineOffset")
 }
 
 void snineOtherwise(void) {
-#if defined (__DEBUG__)
-	printf("snineOtherwise\n");
-#endif
+	DEBUG_WORD("snineOtherwise")
 }
 
 void sninePage(void) {
-#if defined (__DEBUG__)
-	printf("sninePage\n");
-#endif
+	DEBUG_WORD("sninePage")
 }
 
 void snineReadMap(void) {
-#if defined (__DEBUG__)
-	printf("snineReadMap\n");
-#endif
+	DEBUG_WORD("snineReadMap")
 }
 
 void snineRemember(void) {
-#if defined (__DEBUG__)
-	printf("snineRemember\n");
-#endif
+	DEBUG_WORD("snineRemember")
 }
 
 void snineRewind(void) {
-#if defined (__DEBUG__)
-	printf("snineRewind\n");
-#endif
+	DEBUG_WORD("snineRewind")
 }
 
 void snineRotate(void) {
-#if defined (__DEBUG__)
-	printf("snineRotate\n");
-#endif
+	DEBUG_WORD("snineRotate")
 }
 
 void snineS0(void) {
-#if defined (__DEBUG__)
-	printf("snineS0\n");
-#endif
+	DEBUG_WORD("snineS0")
 }
 
 void snineSet(void) {
-#if defined (__DEBUG__)
-	printf("snineSet\n");
-#endif
+	DEBUG_WORD("snineSet")
 }
 
 void snineShift(void) {
-#if defined (__DEBUG__)
-	printf("snineShift\n");
-#endif
+	DEBUG_WORD("snineShift")
 }
 
 void snineSPFetch(void) {
-#if defined (__DEBUG__)
-	printf("snineSPFetch\n");
-#endif
+	DEBUG_WORD("snineSPFetch")
 }
 
 void snineText(void) {
-#if defined (__DEBUG__)
-	printf("snineText\n");
-#endif
+	DEBUG_WORD("snineText")
 }
 
 void snineThru(void) {
-#if defined (__DEBUG__)
-	printf("snineThru\n");
-#endif
+	DEBUG_WORD("snineThru")
 }
 
 void snineUDotR(void) {
-#if defined (__DEBUG__)
-	printf("snineUDotR\n");
-#endif
+	DEBUG_WORD("snineUDotR")
 }
 
 void snineUser(void) {
-#if defined (__DEBUG__)
-	printf("snineUser\n");
-#endif
+	DEBUG_WORD("snineUser")
 }
 
 void snineVList(void) {
-#if defined (__DEBUG__)
-	printf("snineVList\n");
-#endif
+	DEBUG_WORD("snineVList")
 }
 
 void snineWhere(void) {
-#if defined (__DEBUG__)
-	printf("snineWhere\n");
-#endif
+	DEBUG_WORD("snineWhere")
 }
 
 void snineBackslashLoop(void) {
-#if defined (__DEBUG__)
-	printf("snineBackslashLoop\n");
-#endif
+	DEBUG_WORD("snineBackslashLoop")
 }
 
 #endif

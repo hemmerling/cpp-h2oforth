@@ -6,1372 +6,916 @@
 /* Primitives */
 
 void terseRotn(void) {
-#if defined (__DEBUG__)
-	printf("terseRotn\n");
-#endif
+	DEBUG_WORD("terseRotn")
 }
 
 void terseVector(void) {
-#if defined (__DEBUG__)
-	printf("terseVector\n");
-#endif
+	DEBUG_WORD("terseVector")
 }
 
 void terseLimit(void) {
-#if defined (__DEBUG__)
-	printf("terseLimit\n");
-#endif
+	DEBUG_WORD("terseLimit")
 }
 
 void terseNegStore(void) {
-#if defined (__DEBUG__)
-	printf("terseNegStore\n");
-#endif
+	DEBUG_WORD("terseNegStore")
 }
 
 void terseRelabs(void) {
-#if defined (__DEBUG__)
-	printf("terseRelabs\n");
-#endif
+	DEBUG_WORD("terseRelabs")
 }
 
 void terseZeroShow(void) {
-#if defined (__DEBUG__)
-	printf("terseZeroShow\n");
-#endif
+	DEBUG_WORD("terseZeroShow")
 }
 
 void terseOneShow(void) {
-#if defined (__DEBUG__)
-	printf("terseOneShow\n");
-#endif
+	DEBUG_WORD("terseOneShow")
 }
 
 void terseTwoShow(void) {
-#if defined (__DEBUG__)
-	printf("terseTwoShow\n");
-#endif
+	DEBUG_WORD("terseTwoShow")
 }
 
 void terseThreeShow(void) {
-#if defined (__DEBUG__)
-	printf("terseThreeShow\n");
-#endif
+	DEBUG_WORD("terseThreeShow")
 }
 
 void terseFourShow(void) {
-#if defined (__DEBUG__)
-	printf("terseFourShow\n");
-#endif
+	DEBUG_WORD("terseFourShow")
 }
 
 void terseFiveShow(void) {
-#if defined (__DEBUG__)
-	printf("terseFiveShow\n");
-#endif
+	DEBUG_WORD("terseFiveShow")
 }
 
 void terseSixShow(void) {
-#if defined (__DEBUG__)
-	printf("terseSixShow\n");
-#endif
+	DEBUG_WORD("terseSixShow")
 }
 
 void terseSevenShow(void) {
-#if defined (__DEBUG__)
-	printf("terseSevenShow\n");
-#endif
+	DEBUG_WORD("terseSevenShow")
 }
 
 void terseZeroShowI(void) {
-#if defined (__DEBUG__)
-	printf("terseZeroShowI\n");
-#endif
+	DEBUG_WORD("terseZeroShowI")
 }
 
 void tersePost(void) {
-#if defined (__DEBUG__)
-	printf("tersePost\n");
-#endif
+	DEBUG_WORD("tersePost")
 }
 
 void terseOnePost(void) {
-#if defined (__DEBUG__)
-	printf("terseOnePost\n");
-#endif
+	DEBUG_WORD("terseOnePost")
 }
 
 void terseNumPost(void) {
-#if defined (__DEBUG__)
-	printf("terseNumPost\n");
-#endif
+	DEBUG_WORD("terseNumPost")
 }
 
 void terseNumToa(void) {
-#if defined (__DEBUG__)
-	printf("terseNumToa\n");
-#endif
+	DEBUG_WORD("terseNumToa")
 }
 
 void terseClock(void) {
-#if defined (__DEBUG__)
-	printf("terseClock\n");
-#endif
+	DEBUG_WORD("terseClock")
 }
 
 void terseErase(void) {
-#if defined (__DEBUG__)
-	printf("terseErase\n");
-#endif
+	DEBUG_WORD("terseErase")
 }
 
 void terseOneDot(void) {
-#if defined (__DEBUG__)
-	printf("terseOneDot\n");
-#endif
+	DEBUG_WORD("terseOneDot")
 }
 
 void terseDraw(void) {
-#if defined (__DEBUG__)
-	printf("terseDraw\n");
-#endif
+	DEBUG_WORD("terseDraw")
 }
 
 void terseBox(void) {
-#if defined (__DEBUG__)
-	printf("terseBox\n");
-#endif
+	DEBUG_WORD("terseBox")
 }
 
 void terseEllipse(void) {
-#if defined (__DEBUG__)
-	printf("terseEllipse\n");
-#endif
+	DEBUG_WORD("terseEllipse")
 }
 
 void terseColor(void) {
-#if defined (__DEBUG__)
-	printf("terseColor\n");
-#endif
+	DEBUG_WORD("terseColor")
 }
 
 void terseFlood(void) {
-#if defined (__DEBUG__)
-	printf("terseFlood\n");
-#endif
+	DEBUG_WORD("terseFlood")
 }
 
 void terseVertical(void) {
-#if defined (__DEBUG__)
-	printf("terseVertical\n");
-#endif
+	DEBUG_WORD("terseVertical")
 }
 
 void terseHorizontal(void) {
-#if defined (__DEBUG__)
-	printf("terseHorizontal\n");
-#endif
+	DEBUG_WORD("terseHorizontal")
 }
 
 void terseRandom(void) {
-#if defined (__DEBUG__)
-	printf("terseRandom\n");
-#endif
+	DEBUG_WORD("terseRandom")
 }
 
 void terseSow(void) {
-#if defined (__DEBUG__)
-	printf("terseSow\n");
-#endif
+	DEBUG_WORD("terseSow")
 }
 
 
 void terseStore(void) {
-#if defined (__DEBUG__)
-	printf("terseStore\n");
-#endif
+	DEBUG_WORD("terseStore")
 }
 
 void terseTick(void) {
-#if defined (__DEBUG__)
-	printf("terseTick\n");
-#endif
+	DEBUG_WORD("terseTick")
 }
 
 void terseParen(void) {
-#if defined (__DEBUG__)
-	printf("terseParen\n");
-#endif
+	DEBUG_WORD("terseParen")
 }
 
 void terseStar(void) {
-#if defined (__DEBUG__)
-	printf("terseStar\n");
-#endif
+	DEBUG_WORD("terseStar")
 }
 
 void tersePlus(void) {
-#if defined (__DEBUG__)
-	printf("tersePlus\n");
-#endif
+	DEBUG_WORD("tersePlus")
 }
 
 void tersePlusStore(void) {
-#if defined (__DEBUG__)
-	printf("tersePlusStore\n");
-#endif
+	DEBUG_WORD("tersePlusStore")
 }
 
 void tersePlusBlock(void) {
-#if defined (__DEBUG__)
-	printf("tersePlusBlock\n");
-#endif
+	DEBUG_WORD("tersePlusBlock")
 }
 
 void tersePlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("tersePlusLoop\n");
-#endif
+	DEBUG_WORD("tersePlusLoop")
 }
 
 void terseComma(void) {
-#if defined (__DEBUG__)
-	printf("terseComma\n");
-#endif
+	DEBUG_WORD("terseComma")
 }
 
 void terseMinusWord(void) {
-#if defined (__DEBUG__)
-	printf("terseMinusWord\n");
-#endif
+	DEBUG_WORD("terseMinusWord")
 }
 
 void terseTo(void) {
-#if defined (__DEBUG__)
-	printf("terseTo\n");
-#endif
+	DEBUG_WORD("terseTo")
 }
 
 void terseDot(void) {
-#if defined (__DEBUG__)
-	printf("terseDot\n");
-#endif
+	DEBUG_WORD("terseDot")
 }
 
 void terseDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("terseDotQuote\n");
-#endif
+	DEBUG_WORD("terseDotQuote")
 }
 
 void terseDotList(void) {
-#if defined (__DEBUG__)
-	printf("terseDotList\n");
-#endif
+	DEBUG_WORD("terseDotList")
 }
 
 void terseDotNList(void) {
-#if defined (__DEBUG__)
-	printf("terseDotNList\n");
-#endif
+	DEBUG_WORD("terseDotNList")
 }
 
 void terseSlash(void) {
-#if defined (__DEBUG__)
-	printf("terseSlash\n");
-#endif
+	DEBUG_WORD("terseSlash")
 }
 
 void terseSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("terseSlashMod\n");
-#endif
+	DEBUG_WORD("terseSlashMod")
 }
 
 void terseZero(void) {
-#if defined (__DEBUG__)
-	printf("terseZero\n");
-#endif
+	DEBUG_WORD("terseZero")
 }
 
 void terseZeroLess(void) {
-#if defined (__DEBUG__)
-	printf("terseZeroLess\n");
-#endif
+	DEBUG_WORD("terseZeroLess")
 }
 
 void terseZeroEqual(void) {
-#if defined (__DEBUG__)
-	printf("terseZeroEqual\n");
-#endif
+	DEBUG_WORD("terseZeroEqual")
 }
 
 void terseZeroGreater(void) {
-#if defined (__DEBUG__)
-	printf("terseZeroGreater\n");
-#endif
+	DEBUG_WORD("terseZeroGreater")
 }
 
 void terseZeroEnd(void) {
-#if defined (__DEBUG__)
-	printf("terseZeroEnd\n");
-#endif
+	DEBUG_WORD("terseZeroEnd")
 }
 
 void terseOne(void) {
-#if defined (__DEBUG__)
-	printf("terseOne\n");
-#endif
+	DEBUG_WORD("terseOne")
 }
 
 void terseOnePlus(void) {
-#if defined (__DEBUG__)
-	printf("terseOnePlus\n");
-#endif
+	DEBUG_WORD("terseOnePlus")
 }
 
 void terseOnePlusStore(void) {
-#if defined (__DEBUG__)
-	printf("terseOnePlusStore\n");
-#endif
+	DEBUG_WORD("terseOnePlusStore")
 }
 
 void terseOneMinus(void) {
-#if defined (__DEBUG__)
-	printf("terseOneMinus\n");
-#endif
+	DEBUG_WORD("terseOneMinus")
 }
 
 void terseOneMinusStore(void) {
-#if defined (__DEBUG__)
-	printf("terseOneMinusStore\n");
-#endif
+	DEBUG_WORD("terseOneMinusStore")
 }
 
 void terseTwoStar(void) {
-#if defined (__DEBUG__)
-	printf("terseTwoStar\n");
-#endif
+	DEBUG_WORD("terseTwoStar")
 }
 
 void terseTwoPlus(void) {
-#if defined (__DEBUG__)
-	printf("terseTwoPlus\n");
-#endif
+	DEBUG_WORD("terseTwoPlus")
 }
 
 void terseTwoMinus(void) {
-#if defined (__DEBUG__)
-	printf("terseTwoMinus\n");
-#endif
+	DEBUG_WORD("terseTwoMinus")
 }
 
 void terseTwoSlash(void) {
-#if defined (__DEBUG__)
-	printf("terseTwoSlash\n");
-#endif
+	DEBUG_WORD("terseTwoSlash")
 }
 
 void terseTwoDrop(void) {
-#if defined (__DEBUG__)
-	printf("terseTwoDrop\n");
-#endif
+	DEBUG_WORD("terseTwoDrop")
 }
 
 void terseTwoDup(void) {
-#if defined (__DEBUG__)
-	printf("terseTwoDup\n");
-#endif
+	DEBUG_WORD("terseTwoDup")
 }
 
 void terseTwoSwap(void) {
-#if defined (__DEBUG__)
-	printf("terseTwoSwap\n");
-#endif
+	DEBUG_WORD("terseTwoSwap")
 }
 
 void terseColon(void) {
-#if defined (__DEBUG__)
-	printf("terseColon\n");
-#endif
+	DEBUG_WORD("terseColon")
 }
 
 void terseSemicolon(void) {
-#if defined (__DEBUG__)
-	printf("terseSemicolon\n");
-#endif
+	DEBUG_WORD("terseSemicolon")
 }
 
 void terseSemicolonS(void) {
-#if defined (__DEBUG__)
-	printf("terseSemicolonS\n");
-#endif
+	DEBUG_WORD("terseSemicolonS")
 }
 
 void terseLess(void) {
-#if defined (__DEBUG__)
-	printf("terseLess\n");
-#endif
+	DEBUG_WORD("terseLess")
 }
 
 void terseStartConditionalInterpretation(void) {
-#if defined (__DEBUG__)
-	printf("terseStartConditionalInterpretation\n");
-#endif
+	DEBUG_WORD("terseStartConditionalInterpretation")
 }
 
 void terseLessEqual(void) {
-#if defined (__DEBUG__)
-	printf("terseLessEqual\n");
-#endif
+	DEBUG_WORD("terseLessEqual")
 }
 
 void terseUnequal(void) {
-#if defined (__DEBUG__)
-	printf("terseUnequal\n");
-#endif
+	DEBUG_WORD("terseUnequal")
 }
 
 void terseEqual(void) {
-#if defined (__DEBUG__)
-	printf("terseEqual\n");
-#endif
+	DEBUG_WORD("terseEqual")
 }
 
 void terseGreater(void) {
-#if defined (__DEBUG__)
-	printf("terseGreater\n");
-#endif
+	DEBUG_WORD("terseGreater")
 }
 
 void terseGreaterEqual(void) {
-#if defined (__DEBUG__)
-	printf("terseGreaterEqual\n");
-#endif
+	DEBUG_WORD("terseGreaterEqual")
 }
 
 void terseStopConditionalInterpretation(void) {
-#if defined (__DEBUG__)
-	printf("terseStopConditionalInterpretation\n");
-#endif
+	DEBUG_WORD("terseStopConditionalInterpretation")
 }
 
 void terseToR(void) {
-#if defined (__DEBUG__)
-	printf("terseToR\n");
-#endif
+	DEBUG_WORD("terseToR")
 }
 
 void terseQ(void) {
-#if defined (__DEBUG__)
-	printf("terseQ\n");
-#endif
+	DEBUG_WORD("terseQ")
 }
 
 void terseFetch(void) {
-#if defined (__DEBUG__)
-	printf("terseFetch\n");
-#endif
+	DEBUG_WORD("terseFetch")
 }
 
 void terseAQuote(void) {
-#if defined (__DEBUG__)
-	printf("terseAQuote\n");
-#endif
+	DEBUG_WORD("terseAQuote")
 }
 
 void terseAbort(void) {
-#if defined (__DEBUG__)
-	printf("terseAbort\n");
-#endif
+	DEBUG_WORD("terseAbort")
 }
 
 void terseAbs(void) {
-#if defined (__DEBUG__)
-	printf("terseAbs\n");
-#endif
+	DEBUG_WORD("terseAbs")
 }
 
 void terseAnd(void) {
-#if defined (__DEBUG__)
-	printf("terseAnd\n");
-#endif
+	DEBUG_WORD("terseAnd")
 }
 
 void terseArray(void) {
-#if defined (__DEBUG__)
-	printf("terseArray\n");
-#endif
+	DEBUG_WORD("terseArray")
 }
 
 void terseAsm(void) {
-#if defined (__DEBUG__)
-	printf("terseAsm\n");
-#endif
+	DEBUG_WORD("terseAsm")
 }
 
 void terseBStore(void) {
-#if defined (__DEBUG__)
-	printf("terseBStore\n");
-#endif
+	DEBUG_WORD("terseBStore")
 }
 
 void terseBColon(void) {
-#if defined (__DEBUG__)
-	printf("terseBColon\n");
-#endif
+	DEBUG_WORD("terseBColon")
 }
 
 void terseBFetch(void) {
-#if defined (__DEBUG__)
-	printf("terseBFetch\n");
-#endif
+	DEBUG_WORD("terseBFetch")
 }
 
 void terseBArray(void) {
-#if defined (__DEBUG__)
-	printf("terseBArray\n");
-#endif
+	DEBUG_WORD("terseBArray")
 }
 
 void terseBase(void) {
-#if defined (__DEBUG__)
-	printf("terseBase\n");
-#endif
+	DEBUG_WORD("terseBase")
 }
 
 void terseBegin(void) {
-#if defined (__DEBUG__)
-	printf("terseBegin\n");
-#endif
+	DEBUG_WORD("terseBegin")
 }
 
 void terseBell(void) {
-#if defined (__DEBUG__)
-	printf("terseBell\n");
-#endif
+	DEBUG_WORD("terseBell")
 }
 
 void terseBlk(void) {
-#if defined (__DEBUG__)
-	printf("terseBlk\n");
-#endif
+	DEBUG_WORD("terseBlk")
 }
 
 void terseBlock(void) {
-#if defined (__DEBUG__)
-	printf("terseBlock\n");
-#endif
+	DEBUG_WORD("terseBlock")
 }
 
 void terseBMove(void) {
-#if defined (__DEBUG__)
-	printf("terseBMove\n");
-#endif
+	DEBUG_WORD("terseBMove")
 }
 
 void terseBPtr(void) {
-#if defined (__DEBUG__)
-	printf("terseBPtr\n");
-#endif
+	DEBUG_WORD("terseBPtr")
 }
 
 void terseBTa(void) {
-#if defined (__DEBUG__)
-	printf("terseBTa\n");
-#endif
+	DEBUG_WORD("terseBTa")
 }
 
 void terseBTable(void) {
-#if defined (__DEBUG__)
-	printf("terseBTable\n");
-#endif
+	DEBUG_WORD("terseBTable")
 }
 
 void terseBuffer(void) {
-#if defined (__DEBUG__)
-	printf("terseBuffer\n");
-#endif
+	DEBUG_WORD("terseBuffer")
 }
 
 void terseBuild(void) {
-#if defined (__DEBUG__)
-	printf("terseBuild\n");
-#endif
+	DEBUG_WORD("terseBuild")
 }
 
 void terseBye(void) {
-#if defined (__DEBUG__)
-	printf("terseBye\n");
-#endif
+	DEBUG_WORD("terseBye")
 }
 
 void terseByte(void) {
-#if defined (__DEBUG__)
-	printf("terseByte\n");
-#endif
+	DEBUG_WORD("terseByte")
 }
 
 void terseCase(void) {
-#if defined (__DEBUG__)
-	printf("terseCase\n");
-#endif
+	DEBUG_WORD("terseCase")
 }
 
 void terseCCalc(void) {
-#if defined (__DEBUG__)
-	printf("terseCCalc\n");
-#endif
+	DEBUG_WORD("terseCCalc")
 }
 
 void terseCin(void) {
-#if defined (__DEBUG__)
-	printf("terseCin\n");
-#endif
+	DEBUG_WORD("terseCin")
 }
 
 void terseCode(void) {
-#if defined (__DEBUG__)
-	printf("terseCode\n");
-#endif
+	DEBUG_WORD("terseCode")
 }
 
 void terseCom(void) {
-#if defined (__DEBUG__)
-	printf("terseCom\n");
-#endif
+	DEBUG_WORD("terseCom")
 }
 
 void terseConstant(void) {
-#if defined (__DEBUG__)
-	printf("terseConstant\n");
-#endif
+	DEBUG_WORD("terseConstant")
 }
 
 void terseContext(void) {
-#if defined (__DEBUG__)
-	printf("terseContext\n");
-#endif
+	DEBUG_WORD("terseContext")
 }
 
 void terseContinued(void) {
-#if defined (__DEBUG__)
-	printf("terseContinued\n");
-#endif
+	DEBUG_WORD("terseContinued")
 }
 
 void terseCopy(void) {
-#if defined (__DEBUG__)
-	printf("terseCopy\n");
-#endif
+	DEBUG_WORD("terseCopy")
 }
 
 void terseCount(void) {
-#if defined (__DEBUG__)
-	printf("terseCount\n");
-#endif
+	DEBUG_WORD("terseCount")
 }
 
 void terseCout(void) {
-#if defined (__DEBUG__)
-	printf("terseCout\n");
-#endif
+	DEBUG_WORD("terseCout")
 }
 
 void terseCr(void) {
-#if defined (__DEBUG__)
-	printf("terseCr\n");
-#endif
+	DEBUG_WORD("terseCr")
 }
 
 void terseCurrent(void) {
-#if defined (__DEBUG__)
-	printf("terseCurrent\n");
-#endif
+	DEBUG_WORD("terseCurrent")
 }
 
 void terseDecimal(void) {
-#if defined (__DEBUG__)
-	printf("terseDecimal\n");
-#endif
+	DEBUG_WORD("terseDecimal")
 }
 
 void terseDecimalDelim(void) {
-#if defined (__DEBUG__)
-	printf("terseDecimalDelim\n");
-#endif
+	DEBUG_WORD("terseDecimalDelim")
 }
 
 void terseDgts(void) {
-#if defined (__DEBUG__)
-	printf("terseDgts\n");
-#endif
+	DEBUG_WORD("terseDgts")
 }
 
 void terseDir(void) {
-#if defined (__DEBUG__)
-	printf("terseDir\n");
-#endif
+	DEBUG_WORD("terseDir")
 }
 
 void terseDiskCopy(void) {
-#if defined (__DEBUG__)
-	printf("terseDiskCopy\n");
-#endif
+	DEBUG_WORD("terseDiskCopy")
 }
 
 void terseDLit(void) {
-#if defined (__DEBUG__)
-	printf("terseDLit\n");
-#endif
+	DEBUG_WORD("terseDLit")
 }
 
 void terseDo(void) {
-#if defined (__DEBUG__)
-	printf("terseDo\n");
-#endif
+	DEBUG_WORD("terseDo")
 }
 
 void terseDP(void) {
-#if defined (__DEBUG__)
-	printf("terseDP\n");
-#endif
+	DEBUG_WORD("terseDP")
 }
 
 void terseDPPlusStore(void) {
-#if defined (__DEBUG__)
-	printf("terseDPPlusStore\n");
-#endif
+	DEBUG_WORD("terseDPPlusStore")
 }
 
 void terseDPRec(void) {
-#if defined (__DEBUG__)
-	printf("terseDPRec\n");
-#endif
+	DEBUG_WORD("terseDPRec")
 }
 
 void terseDrop(void) {
-#if defined (__DEBUG__)
-	printf("terseDrop\n");
-#endif
+	DEBUG_WORD("terseDrop")
 }
 
 void terseDump(void) {
-#if defined (__DEBUG__)
-	printf("terseDump\n");
-#endif
+	DEBUG_WORD("terseDump")
 }
 
 void terseDup(void) {
-#if defined (__DEBUG__)
-	printf("terseDup\n");
-#endif
+	DEBUG_WORD("terseDup")
 }
 
 void terseEDotB(void) {
-#if defined (__DEBUG__)
-	printf("terseEDotB\n");
-#endif
+	DEBUG_WORD("terseEDotB")
 }
 
 void terseEDotO(void) {
-#if defined (__DEBUG__)
-	printf("terseEDotO\n");
-#endif
+	DEBUG_WORD("terseEDotO")
 }
 
 void terseEdit(void) {
-#if defined (__DEBUG__)
-	printf("terseEdit\n");
-#endif
+	DEBUG_WORD("terseEdit")
 }
 
 void terseElse(void) {
-#if defined (__DEBUG__)
-	printf("terseElse\n");
-#endif
+	DEBUG_WORD("terseElse")
 }
 
 void terseEmpty(void) {
-#if defined (__DEBUG__)
-	printf("terseEmpty\n");
-#endif
+	DEBUG_WORD("terseEmpty")
 }
 
 void terseEnd(void) {
-#if defined (__DEBUG__)
-	printf("terseEnd\n");
-#endif
+	DEBUG_WORD("terseEnd")
 }
 
 void terseEnter(void) {
-#if defined (__DEBUG__)
-	printf("terseEnter\n");
-#endif
+	DEBUG_WORD("terseEnter")
 }
 
 void terseEraseCore(void) {
-#if defined (__DEBUG__)
-	printf("terseEraseCore\n");
-#endif
+	DEBUG_WORD("terseEraseCore")
 }
 
 void terseExec(void) {
-#if defined (__DEBUG__)
-	printf("terseExec\n");
-#endif
+	DEBUG_WORD("terseExec")
 }
 
 void terseExpect(void) {
-#if defined (__DEBUG__)
-	printf("terseExpect\n");
-#endif
+	DEBUG_WORD("terseExpect")
 }
 
 void terseFileCopy(void) {
-#if defined (__DEBUG__)
-	printf("terseFileCopy\n");
-#endif
+	DEBUG_WORD("terseFileCopy")
 }
 
 void terseFind(void) {
-#if defined (__DEBUG__)
-	printf("terseFind\n");
-#endif
+	DEBUG_WORD("terseFind")
 }
 
 void terseFld(void) {
-#if defined (__DEBUG__)
-	printf("terseFld\n");
-#endif
+	DEBUG_WORD("terseFld")
 }
 
 void terseFlush(void) {
-#if defined (__DEBUG__)
-	printf("terseFlush\n");
-#endif
+	DEBUG_WORD("terseFlush")
 }
 
 void terseFName(void) {
-#if defined (__DEBUG__)
-	printf("terseFName\n");
-#endif
+	DEBUG_WORD("terseFName")
 }
 
 void terseGetC(void) {
-#if defined (__DEBUG__)
-	printf("terseGetC\n");
-#endif
+	DEBUG_WORD("terseGetC")
 }
 
 void terseGoodbye(void) {
-#if defined (__DEBUG__)
-	printf("terseGoodbye\n");
-#endif
+	DEBUG_WORD("terseGoodbye")
 }
 
 void terseHDot(void) {
-#if defined (__DEBUG__)
-	printf("terseHDot\n");
-#endif
+	DEBUG_WORD("terseHDot")
 }
 
 void terseHelp(void) {
-#if defined (__DEBUG__)
-	printf("terseHelp\n");
-#endif
+	DEBUG_WORD("terseHelp")
 }
 
 void terseHere(void) {
-#if defined (__DEBUG__)
-	printf("terseHere\n");
-#endif
+	DEBUG_WORD("terseHere")
 }
 
 void terseHex(void) {
-#if defined (__DEBUG__)
-	printf("terseHex\n");
-#endif
+	DEBUG_WORD("terseHex")
 }
 
 void terseHexList(void) {
-#if defined (__DEBUG__)
-	printf("terseHexList\n");
-#endif
+	DEBUG_WORD("terseHexList")
 }
 
 void terseHexShow(void) {
-#if defined (__DEBUG__)
-	printf("terseHexShow\n");
-#endif
+	DEBUG_WORD("terseHexShow")
 }
 
 void terseI(void) {
-#if defined (__DEBUG__)
-	printf("terseI\n");
-#endif
+	DEBUG_WORD("terseI")
 }
 
 void terseIPlus(void) {
-#if defined (__DEBUG__)
-	printf("terseIPlus\n");
-#endif
+	DEBUG_WORD("terseIPlus")
 }
 
 void terseIf(void) {
-#if defined (__DEBUG__)
-	printf("terseIf\n");
-#endif
+	DEBUG_WORD("terseIf")
 }
 
 void terseIfEnd(void) {
-#if defined (__DEBUG__)
-	printf("terseIfEnd\n");
-#endif
+	DEBUG_WORD("terseIfEnd")
 }
 
 void terseIfTrue(void) {
-#if defined (__DEBUG__)
-	printf("terseIfTrue\n");
-#endif
+	DEBUG_WORD("terseIfTrue")
 }
 
 void terseImmed(void) {
-#if defined (__DEBUG__)
-	printf("terseImmed\n");
-#endif
+	DEBUG_WORD("terseImmed")
 }
 
 void terseInp(void) {
-#if defined (__DEBUG__)
-	printf("terseInp\n");
-#endif
+	DEBUG_WORD("terseInp")
 }
 
 void terseIOff(void) {
-#if defined (__DEBUG__)
-	printf("terseIOff\n");
-#endif
+	DEBUG_WORD("terseIOff")
 }
 
 void terseJ(void) {
-#if defined (__DEBUG__)
-	printf("terseJ\n");
-#endif
+	DEBUG_WORD("terseJ")
 }
 
 void terseJPlus(void) {
-#if defined (__DEBUG__)
-	printf("terseJPlus\n");
-#endif
+	DEBUG_WORD("terseJPlus")
 }
 
 void terseK(void) {
-#if defined (__DEBUG__)
-	printf("terseK\n");
-#endif
+	DEBUG_WORD("terseK")
 }
 
 void terseKPlus(void) {
-#if defined (__DEBUG__)
-	printf("terseKPlus\n");
-#endif
+	DEBUG_WORD("terseKPlus")
 }
 
 void terseLast(void) {
-#if defined (__DEBUG__)
-	printf("terseLast\n");
-#endif
+	DEBUG_WORD("terseLast")
 }
 
 void terseLeave(void) {
-#if defined (__DEBUG__)
-	printf("terseLeave\n");
-#endif
+	DEBUG_WORD("terseLeave")
 }
 
 void terseLine(void) {
-#if defined (__DEBUG__)
-	printf("terseLine\n");
-#endif
+	DEBUG_WORD("terseLine")
 }
 
 void terseLineLoad(void) {
-#if defined (__DEBUG__)
-	printf("terseLineLoad\n");
-#endif
+	DEBUG_WORD("terseLineLoad")
 }
 
 void terseList(void) {
-#if defined (__DEBUG__)
-	printf("terseList\n");
-#endif
+	DEBUG_WORD("terseList")
 }
 
 void terseLit(void) {
-#if defined (__DEBUG__)
-	printf("terseLit\n");
-#endif
+	DEBUG_WORD("terseLit")
 }
 
 void terseLiteral(void) {
-#if defined (__DEBUG__)
-	printf("terseLiteral\n");
-#endif
+	DEBUG_WORD("terseLiteral")
 }
 
 void terseLoad(void) {
-#if defined (__DEBUG__)
-	printf("terseLoad\n");
-#endif
+	DEBUG_WORD("terseLoad")
 }
 
 void terseLoop(void) {
-#if defined (__DEBUG__)
-	printf("terseLoop\n");
-#endif
+	DEBUG_WORD("terseLoop")
 }
 
 void terseLOut(void) {
-#if defined (__DEBUG__)
-	printf("terseLOut\n");
-#endif
+	DEBUG_WORD("terseLOut")
 }
 
 void terseMax(void) {
-#if defined (__DEBUG__)
-	printf("terseMax\n");
-#endif
+	DEBUG_WORD("terseMax")
 }
 
 void terseMin(void) {
-#if defined (__DEBUG__)
-	printf("terseMin\n");
-#endif
+	DEBUG_WORD("terseMin")
 }
 
 void terseMinus(void) {
-#if defined (__DEBUG__)
-	printf("terseMinus\n");
-#endif
+	DEBUG_WORD("terseMinus")
 }
 
 void terseMod(void) {
-#if defined (__DEBUG__)
-	printf("terseMod\n");
-#endif
+	DEBUG_WORD("terseMod")
 }
 
 void terseMove(void) {
-#if defined (__DEBUG__)
-	printf("terseMove\n");
-#endif
+	DEBUG_WORD("terseMove")
 }
 
 void terseNand(void) {
-#if defined (__DEBUG__)
-	printf("terseNand\n");
-#endif
+	DEBUG_WORD("terseNand")
 }
 
 void terseNext(void) {
-#if defined (__DEBUG__)
-	printf("terseNext\n");
-#endif
+	DEBUG_WORD("terseNext")
 }
 
 void terseNor(void) {
-#if defined (__DEBUG__)
-	printf("terseNor\n");
-#endif
+	DEBUG_WORD("terseNor")
 }
 
 void terseNot(void) {
-#if defined (__DEBUG__)
-	printf("terseNot\n");
-#endif
+	DEBUG_WORD("terseNot")
 }
 
 void terseNumber(void) {
-#if defined (__DEBUG__)
-	printf("terseNumber\n");
-#endif
+	DEBUG_WORD("terseNumber")
 }
 
 void terseOctal(void) {
-#if defined (__DEBUG__)
-	printf("terseOctal\n");
-#endif
+	DEBUG_WORD("terseOctal")
 }
 
 void terseOr(void) {
-#if defined (__DEBUG__)
-	printf("terseOr\n");
-#endif
+	DEBUG_WORD("terseOr")
 }
 
 void terseOtherwise(void) {
-#if defined (__DEBUG__)
-	printf("terseOtherwise\n");
-#endif
+	DEBUG_WORD("terseOtherwise")
 }
 
 void terseOutP(void) {
-#if defined (__DEBUG__)
-	printf("terseOutP\n");
-#endif
+	DEBUG_WORD("terseOutP")
 }
 
 void terseOver(void) {
-#if defined (__DEBUG__)
-	printf("terseOver\n");
-#endif
+	DEBUG_WORD("terseOver")
 }
 
 void tersePage(void) {
-#if defined (__DEBUG__)
-	printf("tersePage\n");
-#endif
+	DEBUG_WORD("tersePage")
 }
 
 void tersePick(void) {
-#if defined (__DEBUG__)
-	printf("tersePick\n");
-#endif
+	DEBUG_WORD("tersePick")
 }
 
 void tersePrintOut(void) {
-#if defined (__DEBUG__)
-	printf("tersePrintOut\n");
-#endif
+	DEBUG_WORD("tersePrintOut")
 }
 
 void terseProt(void) {
-#if defined (__DEBUG__)
-	printf("terseProt\n");
-#endif
+	DEBUG_WORD("terseProt")
 }
 
 void tersePutC(void) {
-#if defined (__DEBUG__)
-	printf("tersePutC\n");
-#endif
+	DEBUG_WORD("tersePutC")
 }
 
 void terseRTo(void) {
-#if defined (__DEBUG__)
-	printf("terseRTo\n");
-#endif
+	DEBUG_WORD("terseRTo")
 }
 
 void terseRepeat(void) {
-#if defined (__DEBUG__)
-	printf("terseRepeat\n");
-#endif
+	DEBUG_WORD("terseRepeat")
 }
 
 void terseRot(void) {
-#if defined (__DEBUG__)
-	printf("terseRot\n");
-#endif
+	DEBUG_WORD("terseRot")
 }
 
 void terseScr(void) {
-#if defined (__DEBUG__)
-	printf("terseScr\n");
-#endif
+	DEBUG_WORD("terseScr")
 }
 
 void terseSet(void) {
-#if defined (__DEBUG__)
-	printf("terseSet\n");
-#endif
+	DEBUG_WORD("terseSet")
 }
 
 void terseShow(void) {
-#if defined (__DEBUG__)
-	printf("terseShow\n");
-#endif
+	DEBUG_WORD("terseShow")
 }
 
 void terseSkip(void) {
-#if defined (__DEBUG__)
-	printf("terseSkip\n");
-#endif
+	DEBUG_WORD("terseSkip")
 }
 
 void terseSPFetch(void) {
-#if defined (__DEBUG__)
-	printf("terseSPFetch\n");
-#endif
+	DEBUG_WORD("terseSPFetch")
 }
 
 void terseSpace(void) {
-#if defined (__DEBUG__)
-	printf("terseSpace\n");
-#endif
+	DEBUG_WORD("terseSpace")
 }
 
 void terseSpaces(void) {
-#if defined (__DEBUG__)
-	printf("terseSpaces\n");
-#endif
+	DEBUG_WORD("terseSpaces")
 }
 
 void terseState(void) {
-#if defined (__DEBUG__)
-	printf("terseState\n");
-#endif
+	DEBUG_WORD("terseState")
 }
 
 void terseSpacesQ(void) {
-#if defined (__DEBUG__)
-	printf("terseSpacesQ\n");
-#endif
+	DEBUG_WORD("terseSpacesQ")
 }
 
 void terseSType(void) {
-#if defined (__DEBUG__)
-	printf("terseSType\n");
-#endif
+	DEBUG_WORD("terseSType")
 }
 
 void terseSwab(void) {
-#if defined (__DEBUG__)
-	printf("terseSwab\n");
-#endif
+	DEBUG_WORD("terseSwab")
 }
 
 void terseSwap(void) {
-#if defined (__DEBUG__)
-	printf("terseSwap\n");
-#endif
+	DEBUG_WORD("terseSwap")
 }
 
 void terseSysCopy(void) {
-#if defined (__DEBUG__)
-	printf("terseSysCopy\n");
-#endif
+	DEBUG_WORD("terseSysCopy")
 }
 
 void terseTable(void) {
-#if defined (__DEBUG__)
-	printf("terseTable\n");
-#endif
+	DEBUG_WORD("terseTable")
 }
 
 void terseTeco(void) {
-#if defined (__DEBUG__)
-	printf("terseTeco\n");
-#endif
+	DEBUG_WORD("terseTeco")
 }
 
 void terseTFlag(void) {
-#if defined (__DEBUG__)
-	printf("terseTFlag\n");
-#endif
+	DEBUG_WORD("terseTFlag")
 }
 
 void terseThen(void) {
-#if defined (__DEBUG__)
-	printf("terseThen\n");
-#endif
+	DEBUG_WORD("terseThen")
 }
 
 void terseType(void) {
-#if defined (__DEBUG__)
-	printf("terseType\n");
-#endif
+	DEBUG_WORD("terseType")
 }
 
 void terseUStore(void) {
-#if defined (__DEBUG__)
-	printf("terseUStore\n");
-#endif
+	DEBUG_WORD("terseUStore")
 }
 
 void terseUErr(void) {
-#if defined (__DEBUG__)
-	printf("terseUErr\n");
-#endif
+	DEBUG_WORD("terseUErr")
 }
 
 void terseUpdate(void) {
-#if defined (__DEBUG__)
-	printf("terseUpdate\n");
-#endif
+	DEBUG_WORD("terseUpdate")
 }
 
 void terseUnProt(void) {
-#if defined (__DEBUG__)
-	printf("terseUnProt\n");
-#endif
+	DEBUG_WORD("terseUnProt")
 }
 
 void terseVariable(void) {
-#if defined (__DEBUG__)
-	printf("terseVariable\n");
-#endif
+	DEBUG_WORD("terseVariable")
 }
 
 void terseVPtr(void) {
-#if defined (__DEBUG__)
-	printf("terseVPtr\n");
-#endif
+	DEBUG_WORD("terseVPtr")
 }
 
 void terseWhile(void) {
-#if defined (__DEBUG__)
-	printf("terseWhile\n");
-#endif
+	DEBUG_WORD("terseWhile")
 }
 
 void terseWhere(void) {
-#if defined (__DEBUG__)
-	printf("terseWhere\n");
-#endif
+	DEBUG_WORD("terseWhere")
 }
 
 void terseWord(void) {
-#if defined (__DEBUG__)
-	printf("terseWord\n");
-#endif
+	DEBUG_WORD("terseWord")
 }
 
 void terseXor(void) {
-#if defined (__DEBUG__)
-	printf("terseXor\n");
-#endif
+	DEBUG_WORD("terseXor")
 }
 
 void terseZeroWord(void) {
-#if defined (__DEBUG__)
-	printf("terseZeroWord\n");
-#endif
+	DEBUG_WORD("terseZeroWord")
 }
 
 void terseLeftBracket(void) {
-#if defined (__DEBUG__)
-	printf("terseLeftBracket\n");
-#endif
+	DEBUG_WORD("terseLeftBracket")
 }
 
 void terseLeftBracketLeftBracket(void) {
-#if defined (__DEBUG__)
-	printf("terseLeftBracketLeftBracket\n");
-#endif
+	DEBUG_WORD("terseLeftBracketLeftBracket")
 }
 
 void terseRightBracket(void) {
-#if defined (__DEBUG__)
-	printf("terseRightBracket\n");
-#endif
+	DEBUG_WORD("terseRightBracket")
 }
 
 void terseRightBracketRightBracket(void) {
-#if defined (__DEBUG__)
-	printf("terseRightBracketRightBracket\n");
-#endif
+	DEBUG_WORD("terseRightBracketRightBracket")
 }
 
 #endif

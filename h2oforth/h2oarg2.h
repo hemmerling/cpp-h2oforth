@@ -119,8 +119,7 @@ int parameterHelp(void) {
 #ifdef FLOAT_SUPPORT
 	printf(", FLOAT_CELL=%zd", sizeof(CELL_FLOAT));
 #endif
-	printf(" )\n");
-#endif
+	printf(" )")
 	printf("\n");
 	printf("H2oForth [%c%s][%c%s][%c%s]\n", PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName2,
@@ -145,8 +144,7 @@ int parameterHelp(void) {
 #if defined(H2O_DISPLAY_HELP_WITH_NO_PARAMETERS)
 	printf("Without parameters: Display this help screen\n");
 #else
-	printf("Without parameters: Wait for first for terminal input, then for keyboard input\n");
-#endif
+	printf("Without parameters: Wait for first for terminal input, then for keyboard input")
 	printf("%c%s, %c%s, %c%s       Display this help screen\n", PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName2,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).name);

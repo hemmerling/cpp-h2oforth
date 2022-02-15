@@ -11,6 +11,7 @@
 #include <sys/stat.h> 
 #include <fcntl.h>
 #include <limits.h>
+#include <setjmp.h>
 
 #if defined(__MINGW32__)
 #include <direct.h>

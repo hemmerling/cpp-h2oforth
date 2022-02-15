@@ -7,610 +7,412 @@
 
 /* Definitions */
 void rcamicroImmediate(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroImmediate\n");
-#endif
+	DEBUG_WORD("rcamicroImmediate")
 }
 
 void rcamicroParen(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroParen\n");
-#endif
+	DEBUG_WORD("rcamicroParen")
 }
 
 void rcamicroEightStar(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroEightStar\n");
-#endif
+	DEBUG_WORD("rcamicroEightStar")
 }
 
 void rcamicroLoad(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroLoad\n");
-#endif
+	DEBUG_WORD("rcamicroLoad")
 }
 
 void rcamicroBuilds(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroBuilds\n");
-#endif
+	DEBUG_WORD("rcamicroBuilds")
 }
 
 void rcamicroBlock(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroBlock\n");
-#endif
+	DEBUG_WORD("rcamicroBlock")
 }
 
 void rcamicroTick(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroTick\n");
-#endif
+	DEBUG_WORD("rcamicroTick")
 }
 
 void rcamicroEraseCore(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroEraseCore\n");
-#endif
+	DEBUG_WORD("rcamicroEraseCore")
 }
 
 void rcamicroFlush(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroFlush\n");
-#endif
+	DEBUG_WORD("rcamicroFlush")
 }
 
 void rcamicroTask(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroTask\n");
-#endif
+	DEBUG_WORD("rcamicroTask")
 }
 
 /* Vocabulary Assembler */
 void rcamicroVanish(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroVanish\n");
-#endif
+	DEBUG_WORD("rcamicroVanish")
 }
 
 void rcamicroCode(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroCode\n");
-#endif
+	DEBUG_WORD("rcamicroCode")
 }
 
 void rcamicroColonCode(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroColonCode\n");
-#endif
+	DEBUG_WORD("rcamicroColonCode")
 }
 
 void rcamicroPage(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroPage\n");
-#endif
+	DEBUG_WORD("rcamicroPage")
 }
 
 void rcamicroOctal(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroOctal\n");
-#endif
+	DEBUG_WORD("rcamicroOctal")
 }
 
 void rcamicroDecimal(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroDecimal\n");
-#endif
+	DEBUG_WORD("rcamicroDecimal")
 }
 
 void rcamicroHex(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroHex\n");
-#endif
+	DEBUG_WORD("rcamicroHex")
 }
 
 void rcamicroCVariable(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroCVariable\n");
-#endif
+	DEBUG_WORD("rcamicroCVariable")
 }
 
 void rcamicroVariable(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroVariable\n");
-#endif
+	DEBUG_WORD("rcamicroVariable")
 }
 
 /* Arithmetic Operators */
 void rcamicroGreater(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroGreater\n");
-#endif
+	DEBUG_WORD("rcamicroGreater")
 }
 
 void rcamicroMStar(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroMStar\n");
-#endif
+	DEBUG_WORD("rcamicroMStar")
 }
 
 void rcamicroMSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroMSlashMod\n");
-#endif
+	DEBUG_WORD("rcamicroMSlashMod")
 }
 
 void rcamicroStarSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroStarSlashMod\n");
-#endif
+	DEBUG_WORD("rcamicroStarSlashMod")
 }
 
 void rcamicroStarSlash(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroStarSlashMod\n");
-#endif
+	DEBUG_WORD("rcamicroStarSlashMod")
 }
 
 void rcamicroSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroSlashMod\n");
-#endif
+	DEBUG_WORD("rcamicroSlashMod")
 }
 
 void rcamicroMod(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroMod\n");
-#endif
+	DEBUG_WORD("rcamicroMod")
 }
 
 void rcamicroStar(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroStar\n");
-#endif
+	DEBUG_WORD("rcamicroStar")
 }
 
 void rcamicroSlash(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroSlash\n");
-#endif
+	DEBUG_WORD("rcamicroSlash")
 }
 
 void rcamicroMax(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroMax\n");
-#endif
+	DEBUG_WORD("rcamicroMax")
 }
 
 void rcamicroMin(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroMin\n");
-#endif
+	DEBUG_WORD("rcamicroMin")
 }
 
 void rcamicroNum(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroNum\n");
-#endif
+	DEBUG_WORD("rcamicroNum")
 }
 
 void rcamicroPlusC(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroPlusC\n");
-#endif
+	DEBUG_WORD("rcamicroPlusC")
 }
 
 void rcamicroOneRg(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroOneRg\n");
-#endif
+	DEBUG_WORD("rcamicroOneRg")
 }
 
 void rcamicroAlu(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroAlu\n");
-#endif
+	DEBUG_WORD("rcamicroAlu")
 }
 
 /* Macros */
 void rcamicroEntry(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroEntry\n");
-#endif
+	DEBUG_WORD("rcamicroEntry")
 }
 
 void rcamicroNext(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroNext\n");
-#endif
+	DEBUG_WORD("rcamicroNext")
 }
 
 void rcamicroZeroNumLd(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroZeroNumLd\n");
-#endif
+	DEBUG_WORD("rcamicroZeroNumLd")
 }
 
 void rcamicroDst(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroDst\n");
-#endif
+	DEBUG_WORD("rcamicroDst")
 }
 
 void rcamicroPush(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroPush\n");
-#endif
+	DEBUG_WORD("rcamicroPush")
 }
 
 /* Transfers */
 void rcamicroEfl(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroEfl\n");
-#endif
+	DEBUG_WORD("rcamicroEfl")
 }
 
 void rcamicroLess(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroLess\n");
-#endif
+	DEBUG_WORD("rcamicroLess")
 }
 
 void rcamicroZeroLess(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroZeroLess\n");
-#endif
+	DEBUG_WORD("rcamicroZeroLess")
 }
 
 void rcamicroIf(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroIf\n");
-#endif
+	DEBUG_WORD("rcamicroIf")
 }
 
 void rcamicroThen(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroThen\n");
-#endif
+	DEBUG_WORD("rcamicroThen")
 }
 
 void rcamicroElse(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroElse\n");
-#endif
+	DEBUG_WORD("rcamicroElse")
 }
 
 void rcamicroEnd(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroEnd\n");
-#endif
+	DEBUG_WORD("rcamicroEnd")
 }
 
 void rcamicroBr(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroBr\n");
-#endif
+	DEBUG_WORD("rcamicroBr")
 }
 
 void rcamicroLs(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroLs\n");
-#endif
+	DEBUG_WORD("rcamicroLs")
 }
 
 /* Compiler */
 void rcamicroYMark(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroYMark\n");
-#endif
+	DEBUG_WORD("rcamicroYMark")
 }
 
 void rcamicroYThen(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroYThen\n");
-#endif
+	DEBUG_WORD("rcamicroYThen")
 }
 
 void rcamicroDo(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroDo\n");
-#endif
+	DEBUG_WORD("rcamicroDo")
 }
 
 void rcamicroLoop(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroLoop\n");
-#endif
+	DEBUG_WORD("rcamicroLoop")
 }
 
 void rcamicroPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroPlusLoop\n");
-#endif
+	DEBUG_WORD("rcamicroPlusLoop")
 }
 
 void rcamicroWhile(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroWhile\n");
-#endif
+	DEBUG_WORD("rcamicroWhile")
 }
 
 void rcamicroBegin(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroBegin\n");
-#endif
+	DEBUG_WORD("rcamicroBegin")
 }
 
 /* Errors */
 void rcamicroMessage(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroMessage\n");
-#endif
+	DEBUG_WORD("rcamicroMessage")
 }
 
 void rcamicroQuestion(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroQuestion\n");
-#endif
+	DEBUG_WORD("rcamicroQuestion")
 }
 
 void rcamicroQStack(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroQStack\n");
-#endif
+	DEBUG_WORD("rcamicroQStack")
 }
 
 void rcamicroYNumber(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroYNumber\n");
-#endif
+	DEBUG_WORD("rcamicroYNumber")
 }
 
 /* Vocabularies */
 void rcamicroVocabulary(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroVocabulary\n");
-#endif
+	DEBUG_WORD("rcamicroVocabulary")
 }
 
 void rcamicroDefinitions(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroDefinitions\n");
-#endif
+	DEBUG_WORD("rcamicroDefinitions")
 }
 
 void rcamicroForget(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroForget\n");
-#endif
+	DEBUG_WORD("rcamicroForget")
 }
 
 void rcamicroInLine(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroInLine\n");
-#endif
+	DEBUG_WORD("rcamicroInLine")
 }
 
 void rcamicroXTick(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroXTick\n");
-#endif
+	DEBUG_WORD("rcamicroXTick")
 }
 
 void rcamicroXSwap(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroXSwap\n");
-#endif
+	DEBUG_WORD("rcamicroXSwap")
 }
 
 /* Number Formatting */
 void rcamicroSpaces(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroSpaces\n");
-#endif
+	DEBUG_WORD("rcamicroSpaces")
 }
 
 void rcamicroPad(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroPad\n");
-#endif
+	DEBUG_WORD("rcamicroPad")
 }
 
 void rcamicroLessNum(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroLessNum\n");
-#endif
+	DEBUG_WORD("rcamicroLessNum")
 }
 
 void rcamicroNumGreater(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroNumGreater\n");
-#endif
+	DEBUG_WORD("rcamicroNumGreater")
 }
 
 void rcamicroSign(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroSign\n");
-#endif
+	DEBUG_WORD("rcamicroSign")
 }
 
 void rcamicroNumS(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroNumS\n");
-#endif
+	DEBUG_WORD("rcamicroNumS")
 }
 
 void rcamicroYDot(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroYDot\n");
-#endif
+	DEBUG_WORD("rcamicroYDot")
 }
 
 void rcamicroQ(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroQ\n");
-#endif
+	DEBUG_WORD("rcamicroQ")
 }
 
 void rcamicroDot(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroDot\n");
-#endif
+	DEBUG_WORD("rcamicroDot")
 }
 
 /* Output Vocabulary */
 void rcamicroDotR(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroDotR\n");
-#endif
+	DEBUG_WORD("rcamicroDotR")
 }
 
 void rcamicroDump(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroDump\n");
-#endif
+	DEBUG_WORD("rcamicroDump")
 }
 
 void rcamicroTrailing(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroTrailing\n");
-#endif
+	DEBUG_WORD("rcamicroTrailing")
 }
 
 void rcamicroLine(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroLine\n");
-#endif
+	DEBUG_WORD("rcamicroLine")
 }
 
 void rcamicroText(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroText\n");
-#endif
+	DEBUG_WORD("rcamicroText")
 }
 
 void rcamicroList(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroList\n");
-#endif
+	DEBUG_WORD("rcamicroList")
 }
 
 void rcamicroL(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroL\n");
-#endif
+	DEBUG_WORD("rcamicroL")
 }
 
 void rcamicroRightBracket(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroRightBracket\n");
-#endif
+	DEBUG_WORD("rcamicroRightBracket")
 }
 
 /* Editor */
 void rcamicroHold(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroHold\n");
-#endif
+	DEBUG_WORD("rcamicroHold")
 }
 
 void rcamicroGap(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroGap\n");
-#endif
+	DEBUG_WORD("rcamicroGap")
 }
 
 void rcamicroT(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroT\n");
-#endif
+	DEBUG_WORD("rcamicroT")
 }
 
 void rcamicroD(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroD\n");
-#endif
+	DEBUG_WORD("rcamicroD")
 }
 
 void rcamicroR(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroR\n");
-#endif
+	DEBUG_WORD("rcamicroR")
 }
 
 void rcamicroI(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroI\n");
-#endif
+	DEBUG_WORD("rcamicroI")
 }
 
 void rcamicroQuote(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroQuote\n");
-#endif
+	DEBUG_WORD("rcamicroQuote")
 }
 
 void rcamicroP(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroP\n");
-#endif
+	DEBUG_WORD("rcamicroP")
 }
 
 void rcamicroA(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroA\n");
-#endif
+	DEBUG_WORD("rcamicroA")
 }
 
 void rcamicroCopy(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroCopy\n");
-#endif
+	DEBUG_WORD("rcamicroCopy")
 }
 
 void rcamicroDelete(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroDelete\n");
-#endif
+	DEBUG_WORD("rcamicroDelete")
 }
 
 void rcamicroTop(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroTop\n");
-#endif
+	DEBUG_WORD("rcamicroTop")
 }
 
 /* Lower Baud Serial I/O */
 
 /* Terminal I/O */
 void rcamicroType(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroType\n");
-#endif
+	DEBUG_WORD("rcamicroType")
 }
 
 void rcamicroCount(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroCount\n");
-#endif
+	DEBUG_WORD("rcamicroCount")
 }
 
 void rcamicroMsg(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroMsg\n");
-#endif
+	DEBUG_WORD("rcamicroMsg")
 }
 
 void rcamicroExpect(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroExpect\n");
-#endif
+	DEBUG_WORD("rcamicroExpect")
 }
 
 void rcamicroQuit(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroQuit\n");
-#endif
+	DEBUG_WORD("rcamicroQuit")
 }
 
 /* Higher Baud Serial I/O */
@@ -619,637 +421,433 @@ void rcamicroQuit(void) {
 
 /* Options */
 void rcamicroDro(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroDro\n");
-#endif
+	DEBUG_WORD("rcamicroDro")
 }
 
 void rcamicroDri(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroDri\n");
-#endif
+	DEBUG_WORD("rcamicroDri")
 }
 
 /* Assembler */
 
 /* String Editor */
 void rcamicroCNum(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroCNum\n");
-#endif
+	DEBUG_WORD("rcamicroCNum")
 }
 
 void rcamicroNumLeft(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroNumLeft\n");
-#endif
+	DEBUG_WORD("rcamicroNumLeft")
 }
 
 void rcamicroLNum(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroLNum\n");
-#endif
+	DEBUG_WORD("rcamicroLNum")
 }
 
 void rcamicroAt(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroAt\n");
-#endif
+	DEBUG_WORD("rcamicroAt")
 }
 
 void rcamicroString(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroString\n");
-#endif
+	DEBUG_WORD("rcamicroString")
 }
 
 void rcamicroErr(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroErr\n");
-#endif
+	DEBUG_WORD("rcamicroErr")
 }
 
 void rcamicroOneLine(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroOneLine\n");
-#endif
+	DEBUG_WORD("rcamicroOneLine")
 }
 
 void rcamicroFind(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroFind\n");
-#endif
+	DEBUG_WORD("rcamicroFind")
 }
 
 void rcamicroRemove(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroRemove\n");
-#endif
+	DEBUG_WORD("rcamicroRemove")
 }
 
 void rcamicroM(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroM\n");
-#endif
+	DEBUG_WORD("rcamicroM")
 }
 
 void rcamicroB(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroB\n");
-#endif
+	DEBUG_WORD("rcamicroB")
 }
 
 void rcamicroN(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroN\n");
-#endif
+	DEBUG_WORD("rcamicroN")
 }
 
 void rcamicroF(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroF\n");
-#endif
+	DEBUG_WORD("rcamicroF")
 }
 
 void rcamicroX(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroX\n");
-#endif
+	DEBUG_WORD("rcamicroX")
 }
 
 void rcamicroTill(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroTill\n");
-#endif
+	DEBUG_WORD("rcamicroTill")
 }
 
 void rcamicroC(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroC\n");
-#endif
+	DEBUG_WORD("rcamicroC")
 }
 
 /* Character Editor Primitives */
 void rcamicroMove(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroMove\n");
-#endif
+	DEBUG_WORD("rcamicroMove")
 }
 
 /* Disk Utilities */
 void rcamicroFill(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroFill\n");
-#endif
+	DEBUG_WORD("rcamicroFill")
 }
 
 void rcamicroRight(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroRight\n");
-#endif
+	DEBUG_WORD("rcamicroRight")
 }
 
 void rcamicroBackup(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroBackup\n");
-#endif
+	DEBUG_WORD("rcamicroBackup")
 }
 
 void rcamicroSweep(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroSweep\n");
-#endif
+	DEBUG_WORD("rcamicroSweep")
 }
 
 /* Disk Compare */
 void rcamicroMatch(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroMatch\n");
-#endif
+	DEBUG_WORD("rcamicroMatch")
 }
 
 /* Disk Error Checking */
 void rcamicroStatus(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroStatus\n");
-#endif
+	DEBUG_WORD("rcamicroStatus")
 }
 
 void rcamicroError(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroError\n");
-#endif
+	DEBUG_WORD("rcamicroError")
 }
 
 void rcamicroLog(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroLog\n");
-#endif
+	DEBUG_WORD("rcamicroLog")
 }
 
 void rcamicroNotify(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroNotify\n");
-#endif
+	DEBUG_WORD("rcamicroNotify")
 }
 
 void rcamicroDup(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroDup\n");
-#endif
+	DEBUG_WORD("rcamicroDup")
 }
 
 void rcamicroXBlock(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroXBlock\n");
-#endif
+	DEBUG_WORD("rcamicroXBlock")
 }
 
 /* Documentation */
 void rcamicroIndex(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroIndex\n");
-#endif
+	DEBUG_WORD("rcamicroIndex")
 }
 
 void rcamicroTriad(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroTriad\n");
-#endif
+	DEBUG_WORD("rcamicroTriad")
 }
 
 void rcamicroShow(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroShow\n");
-#endif
+	DEBUG_WORD("rcamicroShow")
 }
 
 /* Reconfiguration */
 void rcamicroBStore(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroBStore\n");
-#endif
+	DEBUG_WORD("rcamicroBStore")
 }
 
 void rcamicroPStore(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroPStore\n");
-#endif
+	DEBUG_WORD("rcamicroPStore")
 }
 
 void rcamicroDisk(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroDisk\n");
-#endif
+	DEBUG_WORD("rcamicroDisk")
 }
 
 /* Compiler */
 void rcamicroAdrs(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroAdrs\n");
-#endif
+	DEBUG_WORD("rcamicroAdrs")
 }
 
 void rcamicroHere(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroHere\n");
-#endif
+	DEBUG_WORD("rcamicroHere")
 }
 
 void rcamicroOrg(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroOrg\n");
-#endif
+	DEBUG_WORD("rcamicroOrg")
 }
 
 void rcamicroCComma(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroCComma\n");
-#endif
+	DEBUG_WORD("rcamicroCComma")
 }
 
 void rcamicroComma(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroComma\n");
-#endif
+	DEBUG_WORD("rcamicroComma")
 }
 
 /* Target Vocabulary */
 void rcamicroClear(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroClear\n");
-#endif
+	DEBUG_WORD("rcamicroClear")
 }
 
 void rcamicroSmudge(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroSmudge\n");
-#endif
+	DEBUG_WORD("rcamicroSmudge")
 }
 
 void rcamicroEmplace(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroEmplace\n");
-#endif
+	DEBUG_WORD("rcamicroEmplace")
 }
 
 /* Target Dictionary */
 void rcamicroHFetch(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroHFetch\n");
-#endif
+	DEBUG_WORD("rcamicroHFetch")
 }
 
 void rcamicroHStore(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroHStore\n");
-#endif
+	DEBUG_WORD("rcamicroHStore")
 }
 
 void rcamicroInside(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroInside\n");
-#endif
+	DEBUG_WORD("rcamicroInside")
 }
 
 void rcamicroCFetch(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroCFetch\n");
-#endif
+	DEBUG_WORD("rcamicroCFetch")
 }
 
 void rcamicroCStore(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroCStore\n");
-#endif
+	DEBUG_WORD("rcamicroCStore")
 }
 
 void rcamicroFetch(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroFetch\n");
-#endif
+	DEBUG_WORD("rcamicroFetch")
 }
 
 void rcamicroStore(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroStore\n");
-#endif
+	DEBUG_WORD("rcamicroStore")
 }
 
 /* Target Compiler */
 void rcamicroCommaHost(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroCommaHost\n");
-#endif
+	DEBUG_WORD("rcamicroCommaHost")
 }
 
 void rcamicroSemicolonCode(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroSemicolonCode\n");
-#endif
+	DEBUG_WORD("rcamicroSemicolonCode")
 }
 
 void rcamicroMinusTick(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroMinusTick\n");
-#endif
+	DEBUG_WORD("rcamicroMinusTick")
 }
 
 void rcamicroBackslash(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroBackslash\n");
-#endif
+	DEBUG_WORD("rcamicroBackslash")
 }
 
 void rcamicroCompile(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroCompile\n");
-#endif
+	DEBUG_WORD("rcamicroCompile")
 }
 
 /* Target Assembler */
 void rcamicroEqu(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroEqu\n");
-#endif
+	DEBUG_WORD("rcamicroEqu")
 }
 
 void rcamicroLabel(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroLabel\n");
-#endif
+	DEBUG_WORD("rcamicroLabel")
 }
 
 void rcamicroCr(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroCr\n");
-#endif
+	DEBUG_WORD("rcamicroCr")
 }
 
 void rcamicroComputer(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroComputer\n");
-#endif
+	DEBUG_WORD("rcamicroComputer")
 }
 
 /* RAM Defining */
 void rcamicroAccessible(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroAccessible\n");
-#endif
+	DEBUG_WORD("rcamicroAccessible")
 }
 
 void rcamicroConstant(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroConstant\n");
-#endif
+	DEBUG_WORD("rcamicroConstant")
 }
 
 void rcamicroUser(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroUser\n");
-#endif
+	DEBUG_WORD("rcamicroUser")
 }
 
 void rcamicroTable(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroTable\n");
-#endif
+	DEBUG_WORD("rcamicroTable")
 }
 
 void rcamicroDoes(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroDoes\n");
-#endif
+	DEBUG_WORD("rcamicroDoes")
 }
 
 /* PROM Defining */
 void rcamicroThere(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroThere\n");
-#endif
+	DEBUG_WORD("rcamicroThere")
 }
 
 void rcamicroRes(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroRes\n");
-#endif
+	DEBUG_WORD("rcamicroRes")
 }
 
 /* Compiling Words */
 void rcamicroSemicolon(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroSemicolon\n");
-#endif
+	DEBUG_WORD("rcamicroSemicolon")
 }
 
 void rcamicroHColon(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroHColon\n");
-#endif
+	DEBUG_WORD("rcamicroHColon")
 }
 
 void rcamicroColon(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroColon\n");
-#endif
+	DEBUG_WORD("rcamicroColon")
 }
 
 /* Initialize Symbols */
 
 /* Compiler Output */
 void rcamicroLeader(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroLeader\n");
-#endif
+	DEBUG_WORD("rcamicroLeader")
 }
 
 void rcamicroProms(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroProms\n");
-#endif
+	DEBUG_WORD("rcamicroProms")
 }
 
 void rcamicroEntire(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroEntire\n");
-#endif
+	DEBUG_WORD("rcamicroEntire")
 }
 
 void rcamicroSimulate(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroSimulate\n");
-#endif
+	DEBUG_WORD("rcamicroSimulate")
 }
 
 void rcamicroZero(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroZero\n");
-#endif
+	DEBUG_WORD("rcamicroZero")
 }
 
 void rcamicroLit(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroLit\n");
-#endif
+	DEBUG_WORD("rcamicroLit")
 }
 
 void rcamicroExecute(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroExecute\n");
-#endif
+	DEBUG_WORD("rcamicroExecute")
 }
 
 void rcamicroSemicolonS(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroSemicolonS\n");
-#endif
+	DEBUG_WORD("rcamicroSemicolonS")
 }
 
 void rcamicroUStar(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroUStar\n");
-#endif
+	DEBUG_WORD("rcamicroUStar")
 }
 
 void rcamicroUSlash(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroUSlash\n");
-#endif
+	DEBUG_WORD("rcamicroUSlash")
 }
 
 void rcamicroCz(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroCz\n");
-#endif
+	DEBUG_WORD("rcamicroCz")
 }
 
 void rcamicroZeroEqual(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroZeroEqual\n");
-#endif
+	DEBUG_WORD("rcamicroZeroEqual")
 }
 
 void rcamicroPlus(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroPlus\n");
-#endif
+	DEBUG_WORD("rcamicroPlus")
 }
 
 void rcamicroTwoStar(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroTwoStar\n");
-#endif
+	DEBUG_WORD("rcamicroTwoStar")
 }
 
 void rcamicroMinus(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroMinus\n");
-#endif
+	DEBUG_WORD("rcamicroMinus")
 }
 
 void rcamicroAnd(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroAnd\n");
-#endif
+	DEBUG_WORD("rcamicroAnd")
 }
 
 void rcamicroBinary(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroBinary\n");
-#endif
+	DEBUG_WORD("rcamicroBinary")
 }
 
 void rcamicroOnePlus(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroOnePlus\n");
-#endif
+	DEBUG_WORD("rcamicroOnePlus")
 }
 
 void rcamicroTwoPlus(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroTwoPlus\n");
-#endif
+	DEBUG_WORD("rcamicroTwoPlus")
 }
 
 void rcamicroOver(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroOver\n");
-#endif
+	DEBUG_WORD("rcamicroOver")
 }
 
 void rcamicroMinusDup(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroMinusDup\n");
-#endif
+	DEBUG_WORD("rcamicroMinusDup")
 }
 
 void rcamicroSwap(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroSwap\n");
-#endif
+	DEBUG_WORD("rcamicroSwap")
 }
 
 void rcamicroPlusStore(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroPlusStore\n");
-#endif
+	DEBUG_WORD("rcamicroPlusStore")
 }
 
 void rcamicroFromR(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroFromR\n");
-#endif
+	DEBUG_WORD("rcamicroFromR")
 }
 
 void rcamicroRTo(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroRTo\n");
-#endif
+	DEBUG_WORD("rcamicroRTo")
 }
 
 void rcamicroRot(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroRot\n");
-#endif
+	DEBUG_WORD("rcamicroRot")
 }
 
 void rcamicroTwoPop(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroTwoPop\n");
-#endif
+	DEBUG_WORD("rcamicroTwoPop")
 }
 
 void rcamicroOnePop(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroOnePop\n");
-#endif
+	DEBUG_WORD("rcamicroOnePop")
 }
 
 /* More Definitions */
 void rcamicroEqual(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroEqual\n");
-#endif
+	DEBUG_WORD("rcamicroEqual")
 }
 
 /* Cross Illustration */
 void rcamicroLittle(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroLittle\n");
-#endif
+	DEBUG_WORD("rcamicroLittle")
 }
 
 void rcamicroTimes(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroTimes\n");
-#endif
+	DEBUG_WORD("rcamicroTimes")
 }
 
 void rcamicroTest(void) {
-#if defined (__DEBUG__)
-	printf("rcamicroTest\n");
-#endif
+	DEBUG_WORD("rcamicroTest")
 }
 
 #endif

@@ -8,76 +8,56 @@
 void sectorFetch(void) {
 	// unsigned long varAddr
 	// return (unsigned long)sectorSP
-#if defined (__DEBUG__)
-	printf("sectorFetch\n");
-#endif
+	DEBUG_WORD("sectorFetch")
 }
 
 /* ! ( x +addr – ) Store x at addr */
 void sectorStore(void) {
 	// unsigned long varAddr
-#if defined (__DEBUG__)
-	printf("sectorStore\n");
-#endif
+	DEBUG_WORD("sectorStore")
 }
 
 /* sp@ ( – sp ) Get pointer to top of data stack */
 void sectorSP(void) {
 	// return ( unsigned long )
-#if defined (__DEBUG__)
-	printf("sectorStore\n");
-#endif
+	DEBUG_WORD("sectorStore")
 }
 
 /* rp@ ( – rp ) Get pointer to top of return stack */
 void sectorRP(void) {
 	// return ( unsigned long )
-#if defined (__DEBUG__)
-	printf("sectorRP\n");
-#endif
+	DEBUG_WORD("sectorRP")
 }
 
 /* 0= ( x – flag ) -1 if top of stack is 0, 0 otherwise */
 void sectorTestTopOfStack(void) {
 	// return ( int )
-#if defined (__DEBUG__)
-	printf("sectorTestTopOfStack\n");
-#endif
+	DEBUG_WORD("sectorTestTopOfStack")
 }
 
 /* + ( x y – z ) Sum the two numbers at the top of the stack */
 void sectorSum(void) {
-#if defined (__DEBUG__)
-	printf("sectorSum\n");
-#endif
+	DEBUG_WORD("sectorSum")
 }
 
 /* nand ( x y – z ) NAND the two numbers at the top of the stack */
 void sectorNAND(void) {
-#if defined (__DEBUG__)
-	printf("sectorNAND\n");
-#endif
+	DEBUG_WORD("sectorNAND")
 }
 
 /* exit ( r:addr – ) Pop return stack and resume execution at addr */
 void sectorExit(void) {
-#if defined (__DEBUG__)
-	printf("sectorNAND\n");
-#endif
+	DEBUG_WORD("sectorNAND")
 }
 
 /* : - Start a new word by a colon */
 void sectorStartWord(void) {
-#if defined (__DEBUG__)
-	printf("sectorStartWord\n");
-#endif
+	DEBUG_WORD("sectorStartWord")
 }
 
 /* ; - Immediate */
 void sectorImmediate(void) {
-#if defined (__DEBUG__)
-	printf("sectorImmediate\n");
-#endif
+	DEBUG_WORD("sectorImmediate")
 }
 
 /* Extra words */

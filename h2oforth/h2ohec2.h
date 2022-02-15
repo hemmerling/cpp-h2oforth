@@ -6,1839 +6,1227 @@
 /* Primitives */
 
 void hectorForth(void) {
-#if defined (__DEBUG__)
-	printf("hectorForth\n");
-#endif
+	DEBUG_WORD("hectorForth")
 }
 
 void hectorEditor(void) {
-#if defined (__DEBUG__)
-	printf("hectorEditor\n");
-#endif
+	DEBUG_WORD("hectorEditor")
 }
 
 void hectorList(void) {
-#if defined (__DEBUG__)
-	printf("hectorList\n");
-#endif
+	DEBUG_WORD("hectorList")
 }
 
 void hectorTape(void) {
-#if defined (__DEBUG__)
-	printf("hectorTape\n");
-#endif
+	DEBUG_WORD("hectorTape")
 }
 
 void hectorName(void) {
-#if defined (__DEBUG__)
-	printf("hectorName\n");
-#endif
+	DEBUG_WORD("hectorName")
 }
 
 void hectorFlush(void) {
-#if defined (__DEBUG__)
-	printf("hectorFlush\n");
-#endif
+	DEBUG_WORD("hectorFlush")
 }
 
 void hectorDotName(void) {
-#if defined (__DEBUG__)
-	printf("hectorDotName\n");
-#endif
+	DEBUG_WORD("hectorDotName")
 }
 
 void hectorBlock(void) {
-#if defined (__DEBUG__)
-	printf("hectorBlock\n");
-#endif
+	DEBUG_WORD("hectorBlock")
 }
 
 void hectorZText(void) {
-#if defined (__DEBUG__)
-	printf("hectorZText\n");
-#endif
+	DEBUG_WORD("hectorZText")
 }
 
 void hectorOpen(void) {
-#if defined (__DEBUG__)
-	printf("hectorOpen\n");
-#endif
+	DEBUG_WORD("hectorOpen")
 }
 
 void hectorBuffer(void) {
-#if defined (__DEBUG__)
-	printf("hectorBuffer\n");
-#endif
+	DEBUG_WORD("hectorBuffer")
 }
 
 void hectorNextBlock(void) {
-#if defined (__DEBUG__)
-	printf("hectorNextBlock\n");
-#endif
+	DEBUG_WORD("hectorNextBlock")
 }
 
 void hectorLoad(void) {
-#if defined (__DEBUG__)
-	printf("hectorLoad\n");
-#endif
+	DEBUG_WORD("hectorLoad")
 }
 
 void hectorUpdate(void) {
-#if defined (__DEBUG__)
-	printf("hectorUpdate\n");
-#endif
+	DEBUG_WORD("hectorUpdate")
 }
 
 void hectorPlusBuf(void) {
-#if defined (__DEBUG__)
-	printf("hectorPlusBuf\n");
-#endif
+	DEBUG_WORD("hectorPlusBuf")
 }
 
 void hectorPass(void) {
-#if defined (__DEBUG__)
-	printf("hectorPass\n");
-#endif
+	DEBUG_WORD("hectorPass")
 }
 
 void hectorVlist(void) {
-#if defined (__DEBUG__)
-	printf("hectorVlist\n");
-#endif
+	DEBUG_WORD("hectorVlist")
 }
 
 void hectorRND(void) {
-#if defined (__DEBUG__)
-	printf("hectorRND\n");
-#endif
+	DEBUG_WORD("hectorRND")
 }
 
 void hectorRandom(void) {
-#if defined (__DEBUG__)
-	printf("hectorRandom\n");
-#endif
+	DEBUG_WORD("hectorRandom")
 }
 
 void hectorImage(void) {
-#if defined (__DEBUG__)
-	printf("hectorImage\n");
-#endif
+	DEBUG_WORD("hectorImage")
 }
 
 void hectorMask(void) {
-#if defined (__DEBUG__)
-	printf("hectorMask\n");
-#endif
+	DEBUG_WORD("hectorMask")
 }
 
 void hectorEndcase(void) {
-#if defined (__DEBUG__)
-	printf("hectorEndcase\n");
-#endif
+	DEBUG_WORD("hectorEndcase")
 }
 
 void hectorEndof(void) {
-#if defined (__DEBUG__)
-	printf("hectorEndof\n");
-#endif
+	DEBUG_WORD("hectorEndof")
 }
 
 void hectorOf(void) {
-#if defined (__DEBUG__)
-	printf("hectorOf\n");
-#endif
+	DEBUG_WORD("hectorOf")
 }
 
 void hectorZOf(void) {
-#if defined (__DEBUG__)
-	printf("hectorZOf\n");
-#endif
+	DEBUG_WORD("hectorZOf")
 }
 
 void hectorCase(void) {
-#if defined (__DEBUG__)
-	printf("hectorCase\n");
-#endif
+	DEBUG_WORD("hectorCase")
 }
 
 void hectorUDot(void) {
-#if defined (__DEBUG__)
-	printf("hectorUDot\n");
-#endif
+	DEBUG_WORD("hectorUDot")
 }
 
 void hectorQ(void) {
-#if defined (__DEBUG__)
-	printf("hectorQ\n");
-#endif
+	DEBUG_WORD("hectorQ")
 }
 
 void hectorDot(void) {
-#if defined (__DEBUG__)
-	printf("hectorDot\n");
-#endif
+	DEBUG_WORD("hectorDot")
 }
 
 void hectorDDot(void) {
-#if defined (__DEBUG__)
-	printf("hectorDDot\n");
-#endif
+	DEBUG_WORD("hectorDDot")
 }
 
 void hectorDotR(void) {
-#if defined (__DEBUG__)
-	printf("hectorDotR\n");
-#endif
+	DEBUG_WORD("hectorDotR")
 }
 
 void hectorDDOtR(void) {
-#if defined (__DEBUG__)
-	printf("hectorDDOtR\n");
-#endif
+	DEBUG_WORD("hectorDDOtR")
 }
 
 void hectorNums(void) {
-#if defined (__DEBUG__)
-	printf("hectorNums\n");
-#endif
+	DEBUG_WORD("hectorNums")
 }
 
 void hectorNum(void) {
-#if defined (__DEBUG__)
-	printf("hectorNum\n");
-#endif
+	DEBUG_WORD("hectorNum")
 }
 
 void hectorSign(void) {
-#if defined (__DEBUG__)
-	printf("hectorSign\n");
-#endif
+	DEBUG_WORD("hectorSign")
 }
 
 void hectorNumFrom(void) {
-#if defined (__DEBUG__)
-	printf("hectorNumFrom\n");
-#endif
+	DEBUG_WORD("hectorNumFrom")
 }
 
 void hectorToNum(void) {
-#if defined (__DEBUG__)
-	printf("hectorToNum\n");
-#endif
+	DEBUG_WORD("hectorToNum")
 }
 
 void hectorSpaces(void) {
-#if defined (__DEBUG__)
-	printf("hectorSpaces\n");
-#endif
+	DEBUG_WORD("hectorSpaces")
 }
 
 void hectorPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("hectorPlusLoop\n");
-#endif
+	DEBUG_WORD("hectorPlusLoop")
 }
 
 void hectorLoop(void) {
-#if defined (__DEBUG__)
-	printf("hectorLoop\n");
-#endif
+	DEBUG_WORD("hectorLoop")
 }
 
 void hectorDo(void) {
-#if defined (__DEBUG__)
-	printf("hectorDo\n");
-#endif
+	DEBUG_WORD("hectorDo")
 }
 
 void hectorForget(void) {
-#if defined (__DEBUG__)
-	printf("hectorForget\n");
-#endif
+	DEBUG_WORD("hectorForget")
 }
 
 void hectorTick(void) {
-#if defined (__DEBUG__)
-	printf("hectorTick\n");
-#endif
+	DEBUG_WORD("hectorTick")
 }
 
 void hectorWhile(void) {
-#if defined (__DEBUG__)
-	printf("hectorWhile\n");
-#endif
+	DEBUG_WORD("hectorWhile")
 }
 
 void hectorRepeat(void) {
-#if defined (__DEBUG__)
-	printf("hectorRepeat\n");
-#endif
+	DEBUG_WORD("hectorRepeat")
 }
 
 void hectorAgain(void) {
-#if defined (__DEBUG__)
-	printf("hectorAgain\n");
-#endif
+	DEBUG_WORD("hectorAgain")
 }
 
 void hectorEnd(void) {
-#if defined (__DEBUG__)
-	printf("hectorEnd\n");
-#endif
+	DEBUG_WORD("hectorEnd")
 }
 
 void hectorUntil(void) {
-#if defined (__DEBUG__)
-	printf("hectorUntil\n");
-#endif
+	DEBUG_WORD("hectorUntil")
 }
 
 void hectorBegin(void) {
-#if defined (__DEBUG__)
-	printf("hectorBegin\n");
-#endif
+	DEBUG_WORD("hectorBegin")
 }
 
 void hectorElse(void) {
-#if defined (__DEBUG__)
-	printf("hectorElse\n");
-#endif
+	DEBUG_WORD("hectorElse")
 }
 
 void hectorIf(void) {
-#if defined (__DEBUG__)
-	printf("hectorIf\n");
-#endif
+	DEBUG_WORD("hectorIf")
 }
 
 void hectorThen(void) {
-#if defined (__DEBUG__)
-	printf("hectorThen\n");
-#endif
+	DEBUG_WORD("hectorThen")
 }
 
 void hectorEndIf(void) {
-#if defined (__DEBUG__)
-	printf("hectorEndIf\n");
-#endif
+	DEBUG_WORD("hectorEndIf")
 }
 
 void hectorBack(void) {
-#if defined (__DEBUG__)
-	printf("hectorBack\n");
-#endif
+	DEBUG_WORD("hectorBack")
 }
 
 void hectorBStack(void) {
-#if defined (__DEBUG__)
-	printf("hectorBStack\n");
-#endif
+	DEBUG_WORD("hectorBStack")
 }
 
 void hectorDraw(void) {
-#if defined (__DEBUG__)
-	printf("hectorDraw\n");
-#endif
+	DEBUG_WORD("hectorDraw")
 }
 
 void hectorBInit(void) {
-#if defined (__DEBUG__)
-	printf("hectorBInit\n");
-#endif
+	DEBUG_WORD("hectorBInit")
 }
 
 void hectorBPush(void) {
-#if defined (__DEBUG__)
-	printf("hectorBPush\n");
-#endif
+	DEBUG_WORD("hectorBPush")
 }
 
 void hectorBPop(void) {
-#if defined (__DEBUG__)
-	printf("hectorBPop\n");
-#endif
+	DEBUG_WORD("hectorBPop")
 }
 
 void hectorBDrop(void) {
-#if defined (__DEBUG__)
-	printf("hectorBDrop\n");
-#endif
+	DEBUG_WORD("hectorBDrop")
 }
 
 void hectorBClear(void) {
-#if defined (__DEBUG__)
-	printf("hectorBClear\n");
-#endif
+	DEBUG_WORD("hectorBClear")
 }
 
 void hectorCLS(void) {
-#if defined (__DEBUG__)
-	printf("hectorCLS\n");
-#endif
+	DEBUG_WORD("hectorCLS")
 }
 
 void hectorPage(void) {
-#if defined (__DEBUG__)
-	printf("hectorPage\n");
-#endif
+	DEBUG_WORD("hectorPage")
 }
 
 void hectorHome(void) {
-#if defined (__DEBUG__)
-	printf("hectorHome\n");
-#endif
+	DEBUG_WORD("hectorHome")
 }
 
 void hectorWindow(void) {
-#if defined (__DEBUG__)
-	printf("hectorWindow\n");
-#endif
+	DEBUG_WORD("hectorWindow")
 }
 
 void hectorAt(void) {
-#if defined (__DEBUG__)
-	printf("hectorAt\n");
-#endif
+	DEBUG_WORD("hectorAt")
 }
 
 void hectorScale(void) {
-#if defined (__DEBUG__)
-	printf("hectorScale\n");
-#endif
+	DEBUG_WORD("hectorScale")
 }
 
 void hectorPaper(void) {
-#if defined (__DEBUG__)
-	printf("hectorPaper\n");
-#endif
+	DEBUG_WORD("hectorPaper")
 }
 
 void hectorPen(void) {
-#if defined (__DEBUG__)
-	printf("hectorPen\n");
-#endif
+	DEBUG_WORD("hectorPen")
 }
 
 void hectorStandard(void) {
-#if defined (__DEBUG__)
-	printf("hectorStandard\n");
-#endif
+	DEBUG_WORD("hectorStandard")
 }
 
 void hectorSpecial(void) {
-#if defined (__DEBUG__)
-	printf("hectorSpecial\n");
-#endif
+	DEBUG_WORD("hectorSpecial")
 }
 
 void hectorDelay(void) {
-#if defined (__DEBUG__)
-	printf("hectorDelay\n");
-#endif
+	DEBUG_WORD("hectorDelay")
 }
 
 void hectorCursor(void) {
-#if defined (__DEBUG__)
-	printf("hectorCursor\n");
-#endif
+	DEBUG_WORD("hectorCursor")
 }
 
 void hectorLInit(void) {
-#if defined (__DEBUG__)
-	printf("hectorLInit\n");
-#endif
+	DEBUG_WORD("hectorLInit")
 }
 
 void hectorMode(void) {
-#if defined (__DEBUG__)
-	printf("hectorMode\n");
-#endif
+	DEBUG_WORD("hectorMode")
 }
 
 void hectorLemit(void) {
-#if defined (__DEBUG__)
-	printf("hectorLemit\n");
-#endif
+	DEBUG_WORD("hectorLemit")
 }
 
 void hectorRectify(void) {
-#if defined (__DEBUG__)
-	printf("hectorRectify\n");
-#endif
+	DEBUG_WORD("hectorRectify")
 }
 
 void hectorTone(void) {
-#if defined (__DEBUG__)
-	printf("hectorTone\n");
-#endif
+	DEBUG_WORD("hectorTone")
 }
 
 void hectorTo(void) {
-#if defined (__DEBUG__)
-	printf("hectorTo\n");
-#endif
+	DEBUG_WORD("hectorTo")
 }
 
 void hectorSound(void) {
-#if defined (__DEBUG__)
-	printf("hectorSound\n");
-#endif
+	DEBUG_WORD("hectorSound")
 }
 
 void hectorRink(void) {
-#if defined (__DEBUG__)
-	printf("hectorRink\n");
-#endif
+	DEBUG_WORD("hectorRink")
 }
 
 void hectorPot(void) {
-#if defined (__DEBUG__)
-	printf("hectorPot\n");
-#endif
+	DEBUG_WORD("hectorPot")
 }
 
 void hectorPoint(void) {
-#if defined (__DEBUG__)
-	printf("hectorPoint\n");
-#endif
+	DEBUG_WORD("hectorPoint")
 }
 
 void hectorPlot(void) {
-#if defined (__DEBUG__)
-	printf("hectorPlot\n");
-#endif
+	DEBUG_WORD("hectorPlot")
 }
 
 void hectorPaint(void) {
-#if defined (__DEBUG__)
-	printf("hectorPaint\n");
-#endif
+	DEBUG_WORD("hectorPaint")
 }
 
 void hectorLittle(void) {
-#if defined (__DEBUG__)
-	printf("hectorLittle\n");
-#endif
+	DEBUG_WORD("hectorLittle")
 }
 
 void hectorLine(void) {
-#if defined (__DEBUG__)
-	printf("hectorLine\n");
-#endif
+	DEBUG_WORD("hectorLine")
 }
 
 void hectorJoy(void) {
-#if defined (__DEBUG__)
-	printf("hectorJoy\n");
-#endif
+	DEBUG_WORD("hectorJoy")
 }
 
 void hectorInk(void) {
-#if defined (__DEBUG__)
-	printf("hectorInk\n");
-#endif
+	DEBUG_WORD("hectorInk")
 }
 
 void hectorHush(void) {
-#if defined (__DEBUG__)
-	printf("hectorHush\n");
-#endif
+	DEBUG_WORD("hectorHush")
 }
 
 void hectorFrom(void) {
-#if defined (__DEBUG__)
-	printf("hectorFrom\n");
-#endif
+	DEBUG_WORD("hectorFrom")
 }
 
 void hectorFire(void) {
-#if defined (__DEBUG__)
-	printf("hectorFire\n");
-#endif
+	DEBUG_WORD("hectorFire")
 }
 
 void hectorColor(void) {
-#if defined (__DEBUG__)
-	printf("hectorColor\n");
-#endif
+	DEBUG_WORD("hectorColor")
 }
 
 void hectorBright(void) {
-#if defined (__DEBUG__)
-	printf("hectorBright\n");
-#endif
+	DEBUG_WORD("hectorBright")
 }
 
 void hectorBox(void) {
-#if defined (__DEBUG__)
-	printf("hectorBox\n");
-#endif
+	DEBUG_WORD("hectorBox")
 }
 
 void hectorBig(void) {
-#if defined (__DEBUG__)
-	printf("hectorBig\n");
-#endif
+	DEBUG_WORD("hectorBig")
 }
 
 void hectorBar(void) {
-#if defined (__DEBUG__)
-	printf("hectorBar\n");
-#endif
+	DEBUG_WORD("hectorBar")
 }
 
 void hectorRSlashWQ(void) {
-#if defined (__DEBUG__)
-	printf("hectorRSlashWQ\n");
-#endif
+	DEBUG_WORD("hectorRSlashWQ")
 }
 
 void hectorRSlashW(void) {
-#if defined (__DEBUG__)
-	printf("hectorRSlashW\n");
-#endif
+	DEBUG_WORD("hectorRSlashW")
 }
 
 void hectorLSlashSCR(void) {
-#if defined (__DEBUG__)
-	printf("hectorLSlashSCR\n");
-#endif
+	DEBUG_WORD("hectorLSlashSCR")
 }
 
 void hectorUse(void) {
-#if defined (__DEBUG__)
-	printf("hectorUse\n");
-#endif
+	DEBUG_WORD("hectorUse")
 }
 
 void hectorExpect(void) {
-#if defined (__DEBUG__)
-	printf("hectorExpect\n");
-#endif
+	DEBUG_WORD("hectorExpect")
 }
 
 void hectorCR(void) {
-#if defined (__DEBUG__)
-	printf("hectorCR\n");
-#endif
+	DEBUG_WORD("hectorCR")
 }
 
 void hectorEmit(void) {
-#if defined (__DEBUG__)
-	printf("hectorEmit\n");
-#endif
+	DEBUG_WORD("hectorEmit")
 }
 
 void hectorCapital(void) {
-#if defined (__DEBUG__)
-	printf("hectorCapital\n");
-#endif
+	DEBUG_WORD("hectorCapital")
 }
 
 void hectorRewind(void) {
-#if defined (__DEBUG__)
-	printf("hectorRewind\n");
-#endif
+	DEBUG_WORD("hectorRewind")
 }
 
 void hectorMotor(void) {
-#if defined (__DEBUG__)
-	printf("hectorMotor\n");
-#endif
+	DEBUG_WORD("hectorMotor")
 }
 
 void hectorMSGQuote(void) {
-#if defined (__DEBUG__)
-	printf("hectorMSGQuote\n");
-#endif
+	DEBUG_WORD("hectorMSGQuote")
 }
 
 void hectorZMSG(void) {
-#if defined (__DEBUG__)
-	printf("hectorZMSG\n");
-#endif
+	DEBUG_WORD("hectorZMSG")
 }
 
 void hectorMessage(void) {
-#if defined (__DEBUG__)
-	printf("hectorMessage\n");
-#endif
+	DEBUG_WORD("hectorMessage")
 }
 
 void hectorMSlashMOD(void) {
-#if defined (__DEBUG__)
-	printf("hectorMSlashMOD\n");
-#endif
+	DEBUG_WORD("hectorMSlashMOD")
 }
 
 void hectorStarSlash(void) {
-#if defined (__DEBUG__)
-	printf("hectorStarSlash\n");
-#endif
+	DEBUG_WORD("hectorStarSlash")
 }
 
 void hectorStarSlashMOD(void) {
-#if defined (__DEBUG__)
-	printf("hectorStarSlashMOD\n");
-#endif
+	DEBUG_WORD("hectorStarSlashMOD")
 }
 
 void hectorMOD(void) {
-#if defined (__DEBUG__)
-	printf("hectorMOD\n");
-#endif
+	DEBUG_WORD("hectorMOD")
 }
 
 void hectorSlash(void) {
-#if defined (__DEBUG__)
-	printf("hectorSlash\n");
-#endif
+	DEBUG_WORD("hectorSlash")
 }
 
 void hectorSlashMOD(void) {
-#if defined (__DEBUG__)
-	printf("hectorSlashMOD\n");
-#endif
+	DEBUG_WORD("hectorSlashMOD")
 }
 
 void hectorStar(void) {
-#if defined (__DEBUG__)
-	printf("hectorStar\n");
-#endif
+	DEBUG_WORD("hectorStar")
 }
 
 void hectorMSlash(void) {
-#if defined (__DEBUG__)
-	printf("hectorMSlash\n");
-#endif
+	DEBUG_WORD("hectorMSlash")
 }
 
 void hectorMStar(void) {
-#if defined (__DEBUG__)
-	printf("hectorMStar\n");
-#endif
+	DEBUG_WORD("hectorMStar")
 }
 
 void hectorWipe(void) {
-#if defined (__DEBUG__)
-	printf("hectorWipe\n");
-#endif
+	DEBUG_WORD("hectorWipe")
 }
 
 void hectorMax(void) {
-#if defined (__DEBUG__)
-	printf("hectorMax\n");
-#endif
+	DEBUG_WORD("hectorMax")
 }
 
 void hectorMin(void) {
-#if defined (__DEBUG__)
-	printf("hectorMin\n");
-#endif
+	DEBUG_WORD("hectorMin")
 }
 
 void hectorDAbs(void) {
-#if defined (__DEBUG__)
-	printf("hectorDAbs\n");
-#endif
+	DEBUG_WORD("hectorDAbs")
 }
 
 void hectorAbs(void) {
-#if defined (__DEBUG__)
-	printf("hectorAbs\n");
-#endif
+	DEBUG_WORD("hectorAbs")
 }
 
 void hectorDPlusMinus(void) {
-#if defined (__DEBUG__)
-	printf("hectorDPlusMinus\n");
-#endif
+	DEBUG_WORD("hectorDPlusMinus")
 }
 
 void hectorPlusMinus(void) {
-#if defined (__DEBUG__)
-	printf("hectorPlusMinus\n");
-#endif
+	DEBUG_WORD("hectorPlusMinus")
 }
 
 void hectorSToD(void) {
-#if defined (__DEBUG__)
-	printf("hectorSToD\n");
-#endif
+	DEBUG_WORD("hectorSToD")
 }
 
 void hectorEmptyBuffers(void) {
-#if defined (__DEBUG__)
-	printf("hectorEmptyBuffers\n");
-#endif
+	DEBUG_WORD("hectorEmptyBuffers")
 }
 
 void hectorCold(void) {
-#if defined (__DEBUG__)
-	printf("hectorCold\n");
-#endif
+	DEBUG_WORD("hectorCold")
 }
 
 void hectorAbort(void) {
-#if defined (__DEBUG__)
-	printf("hectorAbort\n");
-#endif
+	DEBUG_WORD("hectorAbort")
 }
 
 void hectorQuit(void) {
-#if defined (__DEBUG__)
-	printf("hectorQuit\n");
-#endif
+	DEBUG_WORD("hectorQuit")
 }
 
 void hectorEmptySpace(void) {
-#if defined (__DEBUG__)
-	printf("hectorEmptySpace\n");
-#endif
+	DEBUG_WORD("hectorEmptySpace")
 }
 
 void hectorParen(void) {
-#if defined (__DEBUG__)
-	printf("hectorParen\n");
-#endif
+	DEBUG_WORD("hectorParen")
 }
 
 void hectorDefinitions(void) {
-#if defined (__DEBUG__)
-	printf("hectorDefinitions\n");
-#endif
+	DEBUG_WORD("hectorDefinitions")
 }
 
 void hectorVFill(void) {
-#if defined (__DEBUG__)
-	printf("hectorVFill\n");
-#endif
+	DEBUG_WORD("hectorVFill")
 }
 
 void hectorVFromCMode(void) {
-#if defined (__DEBUG__)
-	printf("hectorVFromCMode\n");
-#endif
+	DEBUG_WORD("hectorVFromCMode")
 }
 
 void hectorVCMode(void) {
-#if defined (__DEBUG__)
-	printf("hectorVCMode\n");
-#endif
+	DEBUG_WORD("hectorVCMode")
 }
 
 void hectorVCStore(void) {
-#if defined (__DEBUG__)
-	printf("hectorVCStore\n");
-#endif
+	DEBUG_WORD("hectorVCStore")
 }
 
 void hectorVStore(void) {
-#if defined (__DEBUG__)
-	printf("hectorVStore\n");
-#endif
+	DEBUG_WORD("hectorVStore")
 }
 
 void hectorVCFetch(void) {
-#if defined (__DEBUG__)
-	printf("hectorVCFetch\n");
-#endif
+	DEBUG_WORD("hectorVCFetch")
 }
 
 void hectorVFetch(void) {
-#if defined (__DEBUG__)
-	printf("hectorVFetch\n");
-#endif
+	DEBUG_WORD("hectorVFetch")
 }
 
 void hectorQTerminal(void) {
-#if defined (__DEBUG__)
-	printf("hectorQTerminal\n");
-#endif
+	DEBUG_WORD("hectorQTerminal")
 }
 
 void hectorKey(void) {
-#if defined (__DEBUG__)
-	printf("hectorKey\n");
-#endif
+	DEBUG_WORD("hectorKey")
 }
 
 void hectorGet(void) {
-#if defined (__DEBUG__)
-	printf("hectorGet\n");
-#endif
+	DEBUG_WORD("hectorGet")
 }
 
 void hectorSlow(void) {
-#if defined (__DEBUG__)
-	printf("hectorSlow\n");
-#endif
+	DEBUG_WORD("hectorSlow")
 }
 
 void hectorFast(void) {
-#if defined (__DEBUG__)
-	printf("hectorFast\n");
-#endif
+	DEBUG_WORD("hectorFast")
 }
 
 void hector256RND(void) {
-#if defined (__DEBUG__)
-	printf("hector256RND\n");
-#endif
+	DEBUG_WORD("hector256RND")
 }
 
 void hectorCStar(void) {
-#if defined (__DEBUG__)
-	printf("hectorCStar\n");
-#endif
+	DEBUG_WORD("hectorCStar")
 }
 
 void hectorVocabulary(void) {
-#if defined (__DEBUG__)
-	printf("hectorVocabulary\n");
-#endif
+	DEBUG_WORD("hectorVocabulary")
 }
 
 void hectorImmediate(void) {
-#if defined (__DEBUG__)
-	printf("hectorImmediate\n");
-#endif
+	DEBUG_WORD("hectorImmediate")
 }
 
 void hectorInterpret(void) {
-#if defined (__DEBUG__)
-	printf("hectorInterpret\n");
-#endif
+	DEBUG_WORD("hectorInterpret")
 }
 
 void hectorQStack(void) {
-#if defined (__DEBUG__)
-	printf("hectorQStack\n");
-#endif
+	DEBUG_WORD("hectorQStack")
 }
 
 void hectorDLiteral(void) {
-#if defined (__DEBUG__)
-	printf("hectorDLiteral\n");
-#endif
+	DEBUG_WORD("hectorDLiteral")
 }
 
 void hectorLiteral(void) {
-#if defined (__DEBUG__)
-	printf("hectorLiteral\n");
-#endif
+	DEBUG_WORD("hectorLiteral")
 }
 
 void hectorXCompile(void) {
-#if defined (__DEBUG__)
-	printf("hectorZCompile\n");
-#endif
+	DEBUG_WORD("hectorZCompile")
 }
 
 void hectorCreate(void) {
-#if defined (__DEBUG__)
-	printf("hectorCreate\n");
-#endif
+	DEBUG_WORD("hectorCreate")
 }
 
 void hectorIDDot(void) {
-#if defined (__DEBUG__)
-	printf("hectorIDDot\n");
-#endif
+	DEBUG_WORD("hectorIDDot")
 }
 
 void hectorError(void) {
-#if defined (__DEBUG__)
-	printf("hectorError\n");
-#endif
+	DEBUG_WORD("hectorError")
 }
 
 void hectorMinusFind(void) {
-#if defined (__DEBUG__)
-	printf("hectorMinusFind\n");
-#endif
+	DEBUG_WORD("hectorMinusFind")
 }
 
 void hectorNumber(void) {
-#if defined (__DEBUG__)
-	printf("hectorNumber\n");
-#endif
+	DEBUG_WORD("hectorNumber")
 }
 
 void hectorZNumber(void) {
-#if defined (__DEBUG__)
-	printf("hectorZNumber\n");
-#endif
+	DEBUG_WORD("hectorZNumber")
 }
 
 void hectorWord(void) {
-#if defined (__DEBUG__)
-	printf("hectorWord\n");
-#endif
+	DEBUG_WORD("hectorWord")
 }
 
 void hectorPad(void) {
-#if defined (__DEBUG__)
-	printf("hectorPad\n");
-#endif
+	DEBUG_WORD("hectorPad")
 }
 
 void hectorHold(void) {
-#if defined (__DEBUG__)
-	printf("hectorHold\n");
-#endif
+	DEBUG_WORD("hectorHold")
 }
 
 void hectorBlanks(void) {
-#if defined (__DEBUG__)
-	printf("hectorBlanks\n");
-#endif
+	DEBUG_WORD("hectorBlanks")
 }
 
 void hectorErase(void) {
-#if defined (__DEBUG__)
-	printf("hectorErase\n");
-#endif
+	DEBUG_WORD("hectorErase")
 }
 
 void hectorFill(void) {
-#if defined (__DEBUG__)
-	printf("hectorFill\n");
-#endif
+	DEBUG_WORD("hectorFill")
 }
 
 void hectorQuery(void) {
-#if defined (__DEBUG__)
-	printf("hectorQuery\n");
-#endif
+	DEBUG_WORD("hectorQuery")
 }
 
 void hectorDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("hectorDotQuote\n");
-#endif
+	DEBUG_WORD("hectorDotQuote")
 }
 
 void hectorZDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("hectorZDotQuote\n");
-#endif
+	DEBUG_WORD("hectorZDotQuote")
 }
 
 void hectorMinusTrailing(void) {
-#if defined (__DEBUG__)
-	printf("hectorMinusTrailing\n");
-#endif
+	DEBUG_WORD("hectorMinusTrailing")
 }
 
 void hectorType(void) {
-#if defined (__DEBUG__)
-	printf("hectorType\n");
-#endif
+	DEBUG_WORD("hectorType")
 }
 
 void hectorCount(void) {
-#if defined (__DEBUG__)
-	printf("hectorCount\n");
-#endif
+	DEBUG_WORD("hectorCount")
 }
 
 void hectorDoes(void) {
-#if defined (__DEBUG__)
-	printf("hectorDoes\n");
-#endif
+	DEBUG_WORD("hectorDoes")
 }
 
 void hectorBuilds(void) {
-#if defined (__DEBUG__)
-	printf("hectorBuilds\n");
-#endif
+	DEBUG_WORD("hectorBuilds")
 }
 
 void hectorSemicolonCode(void) {
-#if defined (__DEBUG__)
-	printf("hectorSemicolonCode\n");
-#endif
+	DEBUG_WORD("hectorSemicolonCode")
 }
 
 void hectorZSemicolonCode(void) {
-#if defined (__DEBUG__)
-	printf("hectorZSemicolonCode\n");
-#endif
+	DEBUG_WORD("hectorZSemicolonCode")
 }
 
 void hectorDecimal(void) {
-#if defined (__DEBUG__)
-	printf("hectorDecimal\n");
-#endif
+	DEBUG_WORD("hectorDecimal")
 }
 
 void hectorHex(void) {
-#if defined (__DEBUG__)
-	printf("hectorHex\n");
-#endif
+	DEBUG_WORD("hectorHex")
 }
 
 void hectorSmudge(void) {
-#if defined (__DEBUG__)
-	printf("hectorSmudge\n");
-#endif
+	DEBUG_WORD("hectorSmudge")
 }
 
 void hectorRightBracket(void) {
-#if defined (__DEBUG__)
-	printf("hectorRightBracket\n");
-#endif
+	DEBUG_WORD("hectorRightBracket")
 }
 
 void hectorLeftBracket(void) {
-#if defined (__DEBUG__)
-	printf("hectorLeftBracket\n");
-#endif
+	DEBUG_WORD("hectorLeftBracket")
 }
 
 void hectorCompile(void) {
-#if defined (__DEBUG__)
-	printf("hectorCompile\n");
-#endif
+	DEBUG_WORD("hectorCompile")
 }
 
 void hectorQCSP(void) {
-#if defined (__DEBUG__)
-	printf("hectorQCSP\n");
-#endif
+	DEBUG_WORD("hectorQCSP")
 }
 
 void hectorQPairs(void) {
-#if defined (__DEBUG__)
-	printf("hectorQPairs\n");
-#endif
+	DEBUG_WORD("hectorQPairs")
 }
 
 void hectorQExec(void) {
-#if defined (__DEBUG__)
-	printf("hectorQExec\n");
-#endif
+	DEBUG_WORD("hectorQExec")
 }
 
 void hectorQComp(void) {
-#if defined (__DEBUG__)
-	printf("hectorQComp\n");
-#endif
+	DEBUG_WORD("hectorQComp")
 }
 
 void hectorQError(void) {
-#if defined (__DEBUG__)
-	printf("hectorQError\n");
-#endif
+	DEBUG_WORD("hectorQError")
 }
 
 void hectorStoreCSP(void) {
-#if defined (__DEBUG__)
-	printf("hectorStoreCSP\n");
-#endif
+	DEBUG_WORD("hectorStoreCSP")
 }
 
 void hectorPFA(void) {
-#if defined (__DEBUG__)
-	printf("hectorPFA\n");
-#endif
+	DEBUG_WORD("hectorPFA")
 }
 
 void hectorNFA(void) {
-#if defined (__DEBUG__)
-	printf("hectorNFA\n");
-#endif
+	DEBUG_WORD("hectorNFA")
 }
 
 void hectorLFA(void) {
-#if defined (__DEBUG__)
-	printf("hectorLFA\n");
-#endif
+	DEBUG_WORD("hectorLFA")
 }
 
 void hectorCFA(void) {
-#if defined (__DEBUG__)
-	printf("hectorCFA\n");
-#endif
+	DEBUG_WORD("hectorCFA")
 }
 
 void hectorLatest(void) {
-#if defined (__DEBUG__)
-	printf("hectorLatest\n");
-#endif
+	DEBUG_WORD("hectorLatest")
 }
 
 void hectorTraverse(void) {
-#if defined (__DEBUG__)
-	printf("hectorTraverse\n");
-#endif
+	DEBUG_WORD("hectorTraverse")
 }
 
 void hectorMinusDUP(void) {
-#if defined (__DEBUG__)
-	printf("hectorMinusDUP\n");
-#endif
+	DEBUG_WORD("hectorMinusDUP")
 }
 
 void hectorSpace(void) {
-#if defined (__DEBUG__)
-	printf("hectorSpace\n");
-#endif
+	DEBUG_WORD("hectorSpace")
 }
 
 void hectorUGreater(void) {
-#if defined (__DEBUG__)
-	printf("hectorUGreater\n");
-#endif
+	DEBUG_WORD("hectorUGreater")
 }
 
 void hectorCComma(void) {
-#if defined (__DEBUG__)
-	printf("hectorCComma\n");
-#endif
+	DEBUG_WORD("hectorCComma")
 }
 
 void hectorComma(void) {
-#if defined (__DEBUG__)
-	printf("hectorComma\n");
-#endif
+	DEBUG_WORD("hectorComma")
 }
 
 void hectorAllot(void) {
-#if defined (__DEBUG__)
-	printf("hectorAllot\n");
-#endif
+	DEBUG_WORD("hectorAllot")
 }
 
 void hectorHere(void) {
-#if defined (__DEBUG__)
-	printf("hectorHere\n");
-#endif
+	DEBUG_WORD("hectorHere")
 }
 
 void hectorPrev(void) {
-#if defined (__DEBUG__)
-	printf("hectorPrev\n");
-#endif
+	DEBUG_WORD("hectorPrev")
 }
 
 void hectorOffset(void) {
-#if defined (__DEBUG__)
-	printf("hectorOffset\n");
-#endif
+	DEBUG_WORD("hectorOffset")
 }
 
 void hectorHLD(void) {
-#if defined (__DEBUG__)
-	printf("hectorHLD\n");
-#endif
+	DEBUG_WORD("hectorHLD")
 }
 
 void hectorRNum(void) {
-#if defined (__DEBUG__)
-	printf("hectorRNum\n");
-#endif
+	DEBUG_WORD("hectorRNum")
 }
 
 void hectorCSP(void) {
-#if defined (__DEBUG__)
-	printf("hectorCSP\n");
-#endif
+	DEBUG_WORD("hectorCSP")
 }
 
 void hectorDPL(void) {
-#if defined (__DEBUG__)
-	printf("hectorDPL\n");
-#endif
+	DEBUG_WORD("hectorDPL")
 }
 
 void hectorBase(void) {
-#if defined (__DEBUG__)
-	printf("hectorBase\n");
-#endif
+	DEBUG_WORD("hectorBase")
 }
 
 void hectorState(void) {
-#if defined (__DEBUG__)
-	printf("hectorState\n");
-#endif
+	DEBUG_WORD("hectorState")
 }
 
 void hectorCurrent(void) {
-#if defined (__DEBUG__)
-	printf("hectorCurrent\n");
-#endif
+	DEBUG_WORD("hectorCurrent")
 }
 
 void hectorContext(void) {
-#if defined (__DEBUG__)
-	printf("hectorContext\n");
-#endif
+	DEBUG_WORD("hectorContext")
 }
 
 void hectorSCR(void) {
-#if defined (__DEBUG__)
-	printf("hectorSCR\n");
-#endif
+	DEBUG_WORD("hectorSCR")
 }
 
 void hectorIN(void) {
-#if defined (__DEBUG__)
-	printf("hectorIN\n");
-#endif
+	DEBUG_WORD("hectorIN")
 }
 
 void hectorBLK(void) {
-#if defined (__DEBUG__)
-	printf("hectorBLK\n");
-#endif
+	DEBUG_WORD("hectorBLK")
 }
 
 void hectorVocMinusLink(void) {
-#if defined (__DEBUG__)
-	printf("hectorVocMinusLink\n");
-#endif
+	DEBUG_WORD("hectorVocMinusLink")
 }
 
 void hectorDP(void) {
-#if defined (__DEBUG__)
-	printf("hectorDP\n");
-#endif
+	DEBUG_WORD("hectorDP")
 }
 
 void hectorFence(void) {
-#if defined (__DEBUG__)
-	printf("hectorFence\n");
-#endif
+	DEBUG_WORD("hectorFence")
 }
 
 void hectorWidth(void) {
-#if defined (__DEBUG__)
-	printf("hectorWidth\n");
-#endif
+	DEBUG_WORD("hectorWidth")
 }
 
 void hectorTIB(void) {
-#if defined (__DEBUG__)
-	printf("hectorTIB\n");
-#endif
+	DEBUG_WORD("hectorTIB")
 }
 
 void hectorRO(void) {
-#if defined (__DEBUG__)
-	printf("hectorRO\n");
-#endif
+	DEBUG_WORD("hectorRO")
 }
 
 void hectorSO(void) {
-#if defined (__DEBUG__)
-	printf("hectorSO\n");
-#endif
+	DEBUG_WORD("hectorSO")
 }
 
 void hectorCSlashName(void) {
-#if defined (__DEBUG__)
-	printf("hectorCSlashName\n");
-#endif
+	DEBUG_WORD("hectorCSlashName")
 }
 
 void hectorBSlashBuf(void) {
-#if defined (__DEBUG__)
-	printf("hectorBSlashBuf\n");
-#endif
+	DEBUG_WORD("hectorBSlashBuf")
 }
 
 void hectorLimit(void) {
-#if defined (__DEBUG__)
-	printf("hectorLimit\n");
-#endif
+	DEBUG_WORD("hectorLimit")
 }
 
 void hectorFirst(void) {
-#if defined (__DEBUG__)
-	printf("hectorFirst\n");
-#endif
+	DEBUG_WORD("hectorFirst")
 }
 
 void hectorCSlashL(void) {
-#if defined (__DEBUG__)
-	printf("hectorCSlashL\n");
-#endif
+	DEBUG_WORD("hectorCSlashL")
 }
 
 void hectorBL(void) {
-#if defined (__DEBUG__)
-	printf("hectorBL\n");
-#endif
+	DEBUG_WORD("hectorBL")
 }
 
 void hectorThree(void) {
-#if defined (__DEBUG__)
-	printf("hectorThree\n");
-#endif
+	DEBUG_WORD("hectorThree")
 }
 
 void hectorTwo(void) {
-#if defined (__DEBUG__)
-	printf("hectorTwo\n");
-#endif
+	DEBUG_WORD("hectorTwo")
 }
 
 void hectorOne(void) {
-#if defined (__DEBUG__)
-	printf("hectorOne\n");
-#endif
+	DEBUG_WORD("hectorOne")
 }
 
 void hectorZero(void) {
-#if defined (__DEBUG__)
-	printf("hectorZero\n");
-#endif
+	DEBUG_WORD("hectorZero")
 }
 
 void hectorVariable(void) {
-#if defined (__DEBUG__)
-	printf("hectorVariable\n");
-#endif
+	DEBUG_WORD("hectorVariable")
 }
 
 void hectorConstant(void) {
-#if defined (__DEBUG__)
-	printf("hectorConstant\n");
-#endif
+	DEBUG_WORD("hectorConstant")
 }
 
 void hectorSemicolon(void) {
-#if defined (__DEBUG__)
-	printf("hectorSemicolon\n");
-#endif
+	DEBUG_WORD("hectorSemicolon")
 }
 
 void hectorColon(void) {
-#if defined (__DEBUG__)
-	printf("hectorColon\n");
-#endif
+	DEBUG_WORD("hectorColon")
 }
 
 void hectorFromCMove(void) {
-#if defined (__DEBUG__)
-	printf("hectorFromCMove\n");
-#endif
+	DEBUG_WORD("hectorFromCMove")
 }
 
 void hectorDMinussign(void) {
-#if defined (__DEBUG__)
-	printf("hectorDMinussign\n");
-#endif
+	DEBUG_WORD("hectorDMinussign")
 }
 
 void hectorTwoRot(void) {
-#if defined (__DEBUG__)
-	printf("hectorTwoRot\n");
-#endif
+	DEBUG_WORD("hectorTwoRot")
 }
 
 void hectorTwoDrop(void) {
-#if defined (__DEBUG__)
-	printf("hectorTwoDrop\n");
-#endif
+	DEBUG_WORD("hectorTwoDrop")
 }
 
 void hectorTwoOver(void) {
-#if defined (__DEBUG__)
-	printf("hectorTwoOver\n");
-#endif
+	DEBUG_WORD("hectorTwoOver")
 }
 
 void hectorTwoSwap(void) {
-#if defined (__DEBUG__)
-	printf("hectorTwoSwap\n");
-#endif
+	DEBUG_WORD("hectorTwoSwap")
 }
 
 void hectorTwoSlash(void) {
-#if defined (__DEBUG__)
-	printf("hectorTwoSlash\n");
-#endif
+	DEBUG_WORD("hectorTwoSlash")
 }
 
 void hectorTwoStar(void) {
-#if defined (__DEBUG__)
-	printf("hectorTwoStar\n");
-#endif
+	DEBUG_WORD("hectorTwoStar")
 }
 
 void hectorTwoMinus(void) {
-#if defined (__DEBUG__)
-	printf("hectorTwoMinus\n");
-#endif
+	DEBUG_WORD("hectorTwoMinus")
 }
 
 void hectorOneMinus(void) {
-#if defined (__DEBUG__)
-	printf("hectorOneMinus\n");
-#endif
+	DEBUG_WORD("hectorOneMinus")
 }
 
 void hectorZeroGreater(void) {
-#if defined (__DEBUG__)
-	printf("hectorZeroGreater\n");
-#endif
+	DEBUG_WORD("hectorZeroGreater")
 }
 
 void hectorJ(void) {
-#if defined (__DEBUG__)
-	printf("hectorJ\n");
-#endif
+	DEBUG_WORD("hectorJ")
 }
 
 void hectorITick(void) {
-#if defined (__DEBUG__)
-	printf("hectorITick\n");
-#endif
+	DEBUG_WORD("hectorITick")
 }
 
 void hectorSDrop(void) {
-#if defined (__DEBUG__)
-	printf("hectorSDrop\n");
-#endif
+	DEBUG_WORD("hectorSDrop")
 }
 
 void hectorNot(void) {
-#if defined (__DEBUG__)
-	printf("hectorNot\n");
-#endif
+	DEBUG_WORD("hectorNot")
 }
 
 void hectorExit(void) {
-#if defined (__DEBUG__)
-	printf("hectorExit\n");
-#endif
+	DEBUG_WORD("hectorExit")
 }
 
 void hectorRoll(void) {
-#if defined (__DEBUG__)
-	printf("hectorRoll\n");
-#endif
+	DEBUG_WORD("hectorRoll")
 }
 
 void hectorPick(void) {
-#if defined (__DEBUG__)
-	printf("hectorPick\n");
-#endif
+	DEBUG_WORD("hectorPick")
 }
 
 void hectorRot(void) {
-#if defined (__DEBUG__)
-	printf("hectorRot\n");
-#endif
+	DEBUG_WORD("hectorRot")
 }
 
 void hectorGreater(void) {
-#if defined (__DEBUG__)
-	printf("hectorGreater\n");
-#endif
+	DEBUG_WORD("hectorGreater")
 }
 
 void hectorSmaller(void) {
-#if defined (__DEBUG__)
-	printf("hectorSmaller\n");
-#endif
+	DEBUG_WORD("hectorSmaller")
 }
 
 void hectorEqual(void) {
-#if defined (__DEBUG__)
-	printf("hectorEqual\n");
-#endif
+	DEBUG_WORD("hectorEqual")
 }
 
 void hectorMinussign(void) {
-#if defined (__DEBUG__)
-	printf("hectorMinussign\n");
-#endif
+	DEBUG_WORD("hectorMinussign")
 }
 
 void hectorTwoPlus(void) {
-#if defined (__DEBUG__)
-	printf("hectorTwoPlus\n");
-#endif
+	DEBUG_WORD("hectorTwoPlus")
 }
 
 void hectorOnePlus(void) {
-#if defined (__DEBUG__)
-	printf("hectorOnePlus\n");
-#endif
+	DEBUG_WORD("hectorOnePlus")
 }
 
 void hectorTwoStore(void) {
-#if defined (__DEBUG__)
-	printf("hectorTwoStore\n");
-#endif
+	DEBUG_WORD("hectorTwoStore")
 }
 
 void hectorCStore(void) {
-#if defined (__DEBUG__)
-	printf("hectorCStore\n");
-#endif
+	DEBUG_WORD("hectorCStore")
 }
 
 void hectorStore(void) {
-#if defined (__DEBUG__)
-	printf("hectorStore\n");
-#endif
+	DEBUG_WORD("hectorStore")
 }
 
 void hectorTwoFetch(void) {
-#if defined (__DEBUG__)
-	printf("hectorTwoFetch\n");
-#endif
+	DEBUG_WORD("hectorTwoFetch")
 }
 
 void hectorCFetch(void) {
-#if defined (__DEBUG__)
-	printf("hectorCFetch\n");
-#endif
+	DEBUG_WORD("hectorCFetch")
 }
 
 void hectorFetch(void) {
-#if defined (__DEBUG__)
-	printf("hectorCFetch\n");
-#endif
+	DEBUG_WORD("hectorCFetch")
 }
 
 void hectorToggle(void) {
-#if defined (__DEBUG__)
-	printf("hectorToggle\n");
-#endif
+	DEBUG_WORD("hectorToggle")
 }
 
 void hectorPlusStore(void) {
-#if defined (__DEBUG__)
-	printf("hectorPlusStore\n");
-#endif
+	DEBUG_WORD("hectorPlusStore")
 }
 
 void hectorTwoDup(void) {
-#if defined (__DEBUG__)
-	printf("hectorTwoDup\n");
-#endif
+	DEBUG_WORD("hectorTwoDup")
 }
 
 void hectorDup(void) {
-#if defined (__DEBUG__)
-	printf("hectorDup\n");
-#endif
+	DEBUG_WORD("hectorDup")
 }
 
 void hectorSwap(void) {
-#if defined (__DEBUG__)
-	printf("hectorSwap\n");
-#endif
+	DEBUG_WORD("hectorSwap")
 }
 
 void hectorDrop(void) {
-#if defined (__DEBUG__)
-	printf("hectorDrop\n");
-#endif
+	DEBUG_WORD("hectorDrop")
 }
 
 void hectorOver(void) {
-#if defined (__DEBUG__)
-	printf("hectorOver\n");
-#endif
+	DEBUG_WORD("hectorOver")
 }
 
 void hectorDMinus(void) {
-#if defined (__DEBUG__)
-	printf("hectorDMinus\n");
-#endif
+	DEBUG_WORD("hectorDMinus")
 }
 
 void hectorMinus(void) {
-#if defined (__DEBUG__)
-	printf("hectorMinus\n");
-#endif
+	DEBUG_WORD("hectorMinus")
 }
 
 void hectorDPlus(void) {
-#if defined (__DEBUG__)
-	printf("hectorDPlus\n");
-#endif
+	DEBUG_WORD("hectorDPlus")
 }
 
 void hectorPlus(void) {
-#if defined (__DEBUG__)
-	printf("hectorPlus\n");
-#endif
+	DEBUG_WORD("hectorPlus")
 }
 
 void hectorZeroLess(void) {
-#if defined (__DEBUG__)
-	printf("hectorZeroLess\n");
-#endif
+	DEBUG_WORD("hectorZeroLess")
 }
 
 void hectorZeroEqual(void) {
-#if defined (__DEBUG__)
-	printf("hectorZeroEqual\n");
-#endif
+	DEBUG_WORD("hectorZeroEqual")
 }
 
 void hectorR(void) {
-#if defined (__DEBUG__)
-	printf("hectorR\n");
-#endif
+	DEBUG_WORD("hectorR")
 }
 
 void hectorRFrom(void) {
-#if defined (__DEBUG__)
-	printf("hectorRFrom\n");
-#endif
+	DEBUG_WORD("hectorRFrom")
 }
 
 void hectorToR(void) {
-#if defined (__DEBUG__)
-	printf("hectorToR\n");
-#endif
+	DEBUG_WORD("hectorToR")
 }
 
 void hectorLeave(void) {
-#if defined (__DEBUG__)
-	printf("hectorLeave\n");
-#endif
+	DEBUG_WORD("hectorLeave")
 }
 
 void hectorSemicolonS(void) {
-#if defined (__DEBUG__)
-	printf("hectorSemicolonS\n");
-#endif
+	DEBUG_WORD("hectorSemicolonS")
 }
 
 void hectorRPStore(void) {
-#if defined (__DEBUG__)
-	printf("hectorRPStore\n");
-#endif
+	DEBUG_WORD("hectorRPStore")
 }
 
 void hectorRPFetch(void) {
-#if defined (__DEBUG__)
-	printf("hectorRPFetch\n");
-#endif
+	DEBUG_WORD("hectorRPFetch")
 }
 
 void hectorSPStore(void) {
-#if defined (__DEBUG__)
-	printf("hectorSPStore\n");
-#endif
+	DEBUG_WORD("hectorSPStore")
 }
 
 void hectorSPFetch(void) {
-#if defined (__DEBUG__)
-	printf("hectorSPFetch\n");
-#endif
+	DEBUG_WORD("hectorSPFetch")
 }
 
 void hectorXor(void) {
-#if defined (__DEBUG__)
-	printf("hectorZOR\n");
-#endif
+	DEBUG_WORD("hectorZOR")
 }
 
 void hectorOr(void) {
-#if defined (__DEBUG__)
-	printf("hectorOr\n");
-#endif
+	DEBUG_WORD("hectorOr")
 }
 
 void hectorAnd(void) {
-#if defined (__DEBUG__)
-	printf("hectorAnd\n");
-#endif
+	DEBUG_WORD("hectorAnd")
 }
 
 void hectorUSlash(void) {
-#if defined (__DEBUG__)
-	printf("hectorUSlash\n");
-#endif
+	DEBUG_WORD("hectorUSlash")
 }
 
 void hectorUStar(void) {
-#if defined (__DEBUG__)
-	printf("hectorUStar\n");
-#endif
+	DEBUG_WORD("hectorUStar")
 }
 
 void hectorCMove(void) {
-#if defined (__DEBUG__)
-	printf("hectorCMove\n");
-#endif
+	DEBUG_WORD("hectorCMove")
 }
 
 void hectorEnclose(void) {
-#if defined (__DEBUG__)
-	printf("hectorEnclose\n");
-#endif
+	DEBUG_WORD("hectorEnclose")
 }
 
 void hectorZFind(void) {
-#if defined (__DEBUG__)
-	printf("hectorZFind\n");
-#endif
+	DEBUG_WORD("hectorZFind")
 }
 
 void hectorDigit(void) {
-#if defined (__DEBUG__)
-	printf("hectorDigit\n");
-#endif
+	DEBUG_WORD("hectorDigit")
 }
 
 void hectorI(void) {
-#if defined (__DEBUG__)
-	printf("hectorI\n");
-#endif
+	DEBUG_WORD("hectorI")
 }
 
 void hectorZDo(void) {
-#if defined (__DEBUG__)
-	printf("hectorZDoI\n");
-#endif
+	DEBUG_WORD("hectorZDoI")
 }
 
 void hectorZPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("hectorZPlusLoop\n");
-#endif
+	DEBUG_WORD("hectorZPlusLoop")
 }
 
 void hectorZLoop(void) {
-#if defined (__DEBUG__)
-	printf("hectorZLoop\n");
-#endif
+	DEBUG_WORD("hectorZLoop")
 }
 
 void hectorBranch(void) {
-#if defined (__DEBUG__)
-	printf("hectorBranch\n");
-#endif
+	DEBUG_WORD("hectorBranch")
 }
 
 void hectorOBranch(void) {
-#if defined (__DEBUG__)
-	printf("hectorOBranch\n");
-#endif
+	DEBUG_WORD("hectorOBranch")
 }
 
 void hectorExecute(void) {
-#if defined (__DEBUG__)
-	printf("hectorExecute\n");
-#endif
+	DEBUG_WORD("hectorExecute")
 }
 
 void hectorLit(void) {
-#if defined (__DEBUG__)
-	printf("hectorLit\n");
-#endif
+	DEBUG_WORD("hectorLit")
 }
 
 #endif

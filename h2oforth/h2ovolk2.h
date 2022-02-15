@@ -11,1863 +11,1243 @@
 	(H2O_FORTH_PRIMITIVES == VOLK_CPM_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == VOLK_PC_FORTH)
 void volkForth83(void) {
-#if defined (__DEBUG__)
-	printf("volkForth83\n");
-#endif
+	DEBUG_WORD("volkForth83")
 }
 
 void volkBSlashBlk(void) {
-#if defined (__DEBUG__)
-	printf("volkBSlashBlk\n");
-#endif
+	DEBUG_WORD("volkBSlashBlk")
 }
 
 void volkDisplay(void) {
-#if defined (__DEBUG__)
-	printf("volkDisplay\n");
-#endif
+	DEBUG_WORD("volkDisplay")
 }
 
 void volkKeyboard(void) {
-#if defined (__DEBUG__)
-	printf("volkKeyboard\n");
-#endif
+	DEBUG_WORD("volkKeyboard")
 }
 
 void volkNumCr(void) {
-#if defined (__DEBUG__)
-	printf("volkNumCr\n");
-#endif
+	DEBUG_WORD("volkNumCr")
 }
 
 void volkNumBs(void) {
-#if defined (__DEBUG__)
-	printf("volkNumBs\n");
-#endif
+	DEBUG_WORD("volkNumBs")
 }
 
 void volkCurOff(void) {
-#if defined (__DEBUG__)
-	printf("volkCurOff\n");
-#endif
+	DEBUG_WORD("volkCurOff")
 }
 
 void volkCurOn(void) {
-#if defined (__DEBUG__)
-	printf("volkCurOn\n");
-#endif
+	DEBUG_WORD("volkCurOn")
 }
 
 void volkRestart(void) {
-#if defined (__DEBUG__)
-	printf("volkRestart\n");
-#endif
+	DEBUG_WORD("volkRestart")
 }
 
 void volkTickCold(void) {
-#if defined (__DEBUG__)
-	printf("volkTickCold\n");
-#endif
+	DEBUG_WORD("volkTickCold")
 }
 
 void volkTickRestart(void) {
-#if defined (__DEBUG__)
-	printf("volkTickRestart\n");
-#endif
+	DEBUG_WORD("volkTickRestart")
 }
 
 void volkExpect(void) {
-#if defined (__DEBUG__)
-	printf("volkExpect\n");
-#endif
+	DEBUG_WORD("volkExpect")
 }
 
 void volkDecode(void) {
-#if defined (__DEBUG__)
-	printf("volkDecode\n");
-#endif
+	DEBUG_WORD("volkDecode")
 }
 
 void volkKeyQ(void) {
-#if defined (__DEBUG__)
-	printf("volkKeyQ\n");
-#endif
+	DEBUG_WORD("volkKeyQ")
 }
 
 void volkKey(void) {
-#if defined (__DEBUG__)
-	printf("volkKey\n");
-#endif
+	DEBUG_WORD("volkKey")
 }
 
 void volkInputColon(void) {
-#if defined (__DEBUG__)
-	printf("volkInputColon\n");
-#endif
+	DEBUG_WORD("volkInputColon")
 }
 
 void volkCol(void) {
-#if defined (__DEBUG__)
-	printf("volkCol\n");
-#endif
+	DEBUG_WORD("volkCol")
 }
 
 void volkRow(void) {
-#if defined (__DEBUG__)
-	printf("volkRow\n");
-#endif
+	DEBUG_WORD("volkRow")
 }
 
 void volkAtQ(void) {
-#if defined (__DEBUG__)
-	printf("volkAtQ\n");
-#endif
+	DEBUG_WORD("volkAtQ")
 }
 
 void volkAt(void) {
-#if defined (__DEBUG__)
-	printf("volkAt\n");
-#endif
+	DEBUG_WORD("volkAt")
 }
 
 void volkPage(void) {
-#if defined (__DEBUG__)
-	printf("volkPage\n");
-#endif
+	DEBUG_WORD("volkPage")
 }
 
 void volkDel(void) {
-#if defined (__DEBUG__)
-	printf("volkDel\n");
-#endif
+	DEBUG_WORD("volkDel")
 }
 
 void volkType(void) {
-#if defined (__DEBUG__)
-	printf("volkType\n");
-#endif
+	DEBUG_WORD("volkType")
 }
 
 void volkCr(void) {
-#if defined (__DEBUG__)
-	printf("volkCr\n");
-#endif
+	DEBUG_WORD("volkCr")
 }
 
 void volkEmit(void) {
-#if defined (__DEBUG__)
-	printf("volkEmit\n");
-#endif
+	DEBUG_WORD("volkEmit")
 }
 
 void volkOutputColon(void) {
-#if defined (__DEBUG__)
-	printf("volkOutputColon\n");
-#endif
+	DEBUG_WORD("volkOutputColon")
 }
 
 void volkZForget(void) {
-#if defined (__DEBUG__)
-	printf("volkZForget\n");
-#endif
+	DEBUG_WORD("volkZForget")
 }
 
 void volkClear(void) {
-#if defined (__DEBUG__)
-	printf("volkClear\n");
-#endif
+	DEBUG_WORD("volkClear")
 }
 
 void volkCustomRemove(void) {
-#if defined (__DEBUG__)
-	printf("volkCustomRemove\n");
-#endif
+	DEBUG_WORD("volkCustomRemove")
 }
 
 void volkAllBuffers(void) {
-#if defined (__DEBUG__)
-	printf("volkAllBuffers\n");
-#endif
+	DEBUG_WORD("volkAllBuffers")
 }
 
 void volkConvey(void) {
-#if defined (__DEBUG__)
-	printf("volkConvey\n");
-#endif
+	DEBUG_WORD("volkConvey")
 }
 
 void volkCopy(void) {
-#if defined (__DEBUG__)
-	printf("volkCopy\n");
-#endif
+	DEBUG_WORD("volkCopy")
 }
 
 void volkUpdate(void) {
-#if defined (__DEBUG__)
-	printf("volkUpdate\n");
-#endif
+	DEBUG_WORD("volkUpdate")
 }
 
 void volkBlock(void) {
-#if defined (__DEBUG__)
-	printf("volkBlock\n");
-#endif
+	DEBUG_WORD("volkBlock")
 }
 
 void volkBuffer(void) {
-#if defined (__DEBUG__)
-	printf("volkBuffer\n");
-#endif
+	DEBUG_WORD("volkBuffer")
 }
 
 void volkZBlock(void) {
-#if defined (__DEBUG__)
-	printf("volkZBlock\n");
-#endif
+	DEBUG_WORD("volkZBlock")
 }
 
 void volkZBuffer(void) {
-#if defined (__DEBUG__)
-	printf("volkZBuffer\n");
-#endif
+	DEBUG_WORD("volkZBuffer")
 }
 
 void volkCoreQ(void) {
-#if defined (__DEBUG__)
-	printf("volkCoreQ\n");
-#endif
+	DEBUG_WORD("volkCoreQ")
 }
 
 void volkFile(void) {
-#if defined (__DEBUG__)
-	printf("volkFile\n");
-#endif
+	DEBUG_WORD("volkFile")
 }
 
 void volkUnlock(void) {
-#if defined (__DEBUG__)
-	printf("volkUnlock\n");
-#endif
+	DEBUG_WORD("volkUnlock")
 }
 
 void volkLock(void) {
-#if defined (__DEBUG__)
-	printf("volkLock\n");
-#endif
+	DEBUG_WORD("volkLock")
 }
 
 void volkPause(void) {
-#if defined (__DEBUG__)
-	printf("volkPause\n");
-#endif
+	DEBUG_WORD("volkPause")
 }
 
 void volkList(void) {
-#if defined (__DEBUG__)
-	printf("volkList\n");
-#endif
+	DEBUG_WORD("volkList")
 }
 
 void volkLSlashS(void) {
-#if defined (__DEBUG__)
-	printf("volkLSlashS\n");
-#endif
+	DEBUG_WORD("volkLSlashS")
 }
 
 void volkCSlashL(void) {
-#if defined (__DEBUG__)
-	printf("volkCSlashL\n");
-#endif
+	DEBUG_WORD("volkCSlashL")
 }
 
 void volkDotS(void) {
-#if defined (__DEBUG__)
-	printf("volkDotS\n");
-#endif
+	DEBUG_WORD("volkDotS")
 }
 
 void volkUDot(void) {
-#if defined (__DEBUG__)
-	printf("volkUDot\n");
-#endif
+	DEBUG_WORD("volkUDot")
 }
 
 void volkDot(void) {
-#if defined (__DEBUG__)
-	printf("volkDot\n");
-#endif
+	DEBUG_WORD("volkDot")
 }
 
 void volkDColon(void) {
-#if defined (__DEBUG__)
-	printf("volkDColon\n");
-#endif
+	DEBUG_WORD("volkDColon")
 }
 
 void volkUDotR(void) {
-#if defined (__DEBUG__)
-	printf("volkUDotR\n");
-#endif
+	DEBUG_WORD("volkUDotR")
 }
 
 void volkDotR(void) {
-#if defined (__DEBUG__)
-	printf("volkDotR\n");
-#endif
+	DEBUG_WORD("volkDotR")
 }
 
 void volkDDotR(void) {
-#if defined (__DEBUG__)
-	printf("volkDDotR\n");
-#endif
+	DEBUG_WORD("volkDDotR")
 }
 
 void volkNumS(void) {
-#if defined (__DEBUG__)
-	printf("volkNumS\n");
-#endif
+	DEBUG_WORD("volkNumS")
 }
 
 void volkNum(void) {
-#if defined (__DEBUG__)
-	printf("volkNum\n");
-#endif
+	DEBUG_WORD("volkNum")
 }
 
 void volkSign(void) {
-#if defined (__DEBUG__)
-	printf("volkSign\n");
-#endif
+	DEBUG_WORD("volkSign")
 }
 
 void volkNumGreater(void) {
-#if defined (__DEBUG__)
-	printf("volkNumGreater\n");
-#endif
+	DEBUG_WORD("volkNumGreater")
 }
 
 void volkLessNum(void) {
-#if defined (__DEBUG__)
-	printf("volkLessNum\n");
-#endif
+	DEBUG_WORD("volkLessNum")
 }
 
 void volkHold(void) {
-#if defined (__DEBUG__)
-	printf("volkHold\n");
-#endif
+	DEBUG_WORD("volkHold")
 }
 
 void volkSpaces(void) {
-#if defined (__DEBUG__)
-	printf("volkSpaces\n");
-#endif
+	DEBUG_WORD("volkSpaces")
 }
 
 void volkSpace(void) {
-#if defined (__DEBUG__)
-	printf("volkSpace\n");
-#endif
+	DEBUG_WORD("volkSpace")
 }
 
 void volkTrailing(void) {
-#if defined (__DEBUG__)
-	printf("volkTrailing\n");
-#endif
+	DEBUG_WORD("volkTrailing")
 }
 
 void volkBl(void) {
-#if defined (__DEBUG__)
-	printf("volkBl\n");
-#endif
+	DEBUG_WORD("volkBl")
 }
 
 void volkErrorQuote(void) {
-#if defined (__DEBUG__)
-	printf("volkErrorQuote\n");
-#endif
+	DEBUG_WORD("volkErrorQuote")
 }
 
 void volkAbortQuote(void) {
-#if defined (__DEBUG__)
-	printf("volkAbortQuote\n");
-#endif
+	DEBUG_WORD("volkAbortQuote")
 }
 
 void volkZAbortQuote(void) {
-#if defined (__DEBUG__)
-	printf("volkZAbortQuote\n");
-#endif
+	DEBUG_WORD("volkZAbortQuote")
 }
 
 void volkZError(void) {
-#if defined (__DEBUG__)
-	printf("volkZError\n");
-#endif
+	DEBUG_WORD("volkZError")
 }
 
 void volkQuit(void) {
-#if defined (__DEBUG__)
-	printf("volkQuit\n");
-#endif
+	DEBUG_WORD("volkQuit")
 }
 
 void volkTickQuit(void) {
-#if defined (__DEBUG__)
-	printf("volkTickQuit\n");
-#endif
+	DEBUG_WORD("volkTickQuit")
 }
 
 void volkZQuit(void) {
-#if defined (__DEBUG__)
-	printf("volkZQuit\n");
-#endif
+	DEBUG_WORD("volkZQuit")
 }
 
 void volkDepth(void) {
-#if defined (__DEBUG__)
-	printf("volkDepth\n");
-#endif
+	DEBUG_WORD("volkDepth")
 }
 
 void volkRDepth(void) {
-#if defined (__DEBUG__)
-	printf("volkRDepth\n");
-#endif
+	DEBUG_WORD("volkRDepth")
 }
 
 void volkTo(void) {
-#if defined (__DEBUG__)
-	printf("volkTo\n");
-#endif
+	DEBUG_WORD("volkTo")
 }
 
 void volkPlusThru(void) {
-#if defined (__DEBUG__)
-	printf("volkPlusThru\n");
-#endif
+	DEBUG_WORD("volkPlusThru")
 }
 
 void volkThru(void) {
-#if defined (__DEBUG__)
-	printf("volkThru\n");
-#endif
+	DEBUG_WORD("volkThru")
 }
 
 void volkPlusLoad(void) {
-#if defined (__DEBUG__)
-	printf("volkPlusLoad\n");
-#endif
+	DEBUG_WORD("volkPlusLoad")
 }
 
 void volkLoad(void) {
-#if defined (__DEBUG__)
-	printf("volkLoad\n");
-#endif
+	DEBUG_WORD("volkLoad")
 }
 
 void volkPush(void) {
-#if defined (__DEBUG__)
-	printf("volkPush\n");
-#endif
+	DEBUG_WORD("volkPush")
 }
 
 void volkDotStatus(void) {
-#if defined (__DEBUG__)
-	printf("volkDotStatus\n");
-#endif
+	DEBUG_WORD("volkDotStatus")
 }
 
 void volkQStack(void) {
-#if defined (__DEBUG__)
-	printf("volkQStack\n");
-#endif
+	DEBUG_WORD("volkQStack")
 }
 
 void volkIs(void) {
-#if defined (__DEBUG__)
-	printf("volkIs\n");
-#endif
+	DEBUG_WORD("volkIs")
 }
 
 void volkZIs(void) {
-#if defined (__DEBUG__)
-	printf("volkZIs\n");
-#endif
+	DEBUG_WORD("volkZIs")
 }
 
 void volkDefer(void) {
-#if defined (__DEBUG__)
-	printf("volkDefer\n");
-#endif
+	DEBUG_WORD("volkDefer")
 }
 
 void volkRightBracket(void) {
-#if defined (__DEBUG__)
-	printf("volkRightBracket\n");
-#endif
+	DEBUG_WORD("volkRightBracket")
 }
 
 void volkLeftBracket(void) {
-#if defined (__DEBUG__)
-	printf("volkLeftBracket\n");
-#endif
+	DEBUG_WORD("volkLeftBracket")
 }
 
 void volkInterpret(void) {
-#if defined (__DEBUG__)
-	printf("volkInterpret\n");
-#endif
+	DEBUG_WORD("volkInterpret")
 }
 
 void volkNoDotExtensions(void) {
-#if defined (__DEBUG__)
-	printf("volkNoDotExtensions\n");
-#endif
+	DEBUG_WORD("volkNoDotExtensions")
 }
 
 void volkNotFound(void) {
-#if defined (__DEBUG__)
-	printf("volkNotFound\n");
-#endif
+	DEBUG_WORD("volkNotFound")
 }
 
 void volkXTick(void) {
-#if defined (__DEBUG__)
-	printf("volkXTick\n");
-#endif
+	DEBUG_WORD("volkXTick")
 }
 
 void volkXCompile(void) {
-#if defined (__DEBUG__)
-	printf("volkXCompile\n");
-#endif
+	DEBUG_WORD("volkXCompile")
 }
 
 void volkFind(void) {
-#if defined (__DEBUG__)
-	printf("volkFind\n");
-#endif
+	DEBUG_WORD("volkFind")
 }
 
 void volkZFind(void) {
-#if defined (__DEBUG__)
-	printf("volkZFind\n");
-#endif
+	DEBUG_WORD("volkZFind")
 }
 
 void volkWords(void) {
-#if defined (__DEBUG__)
-	printf("volkWords\n");
-#endif
+	DEBUG_WORD("volkWords")
 }
 
 void volkOrder(void) {
-#if defined (__DEBUG__)
-	printf("volkOrder\n");
-#endif
+	DEBUG_WORD("volkOrder")
 }
 
 void volkDefinitions(void) {
-#if defined (__DEBUG__)
-	printf("volkDefinitions\n");
-#endif
+	DEBUG_WORD("volkDefinitions")
 }
 
 void volkOnlyForth(void) {
-#if defined (__DEBUG__)
-	printf("volkOnlyForth\n");
-#endif
+	DEBUG_WORD("volkOnlyForth")
 }
 
 void volkOnly(void) {
-#if defined (__DEBUG__)
-	printf("volkOnly\n");
-#endif
+	DEBUG_WORD("volkOnly")
 }
 
 void volkForth(void) {
-#if defined (__DEBUG__)
-	printf("volkForth\n");
-#endif
+	DEBUG_WORD("volkForth")
 }
 
 void volkVocabulary(void) {
-#if defined (__DEBUG__)
-	printf("volkVocabulary\n");
-#endif
+	DEBUG_WORD("volkVocabulary")
 }
 
 void volkToss(void) {
-#if defined (__DEBUG__)
-	printf("volkToss\n");
-#endif
+	DEBUG_WORD("volkToss")
 }
 
 void volkAlso(void) {
-#if defined (__DEBUG__)
-	printf("volkAlso\n");
-#endif
+	DEBUG_WORD("volkAlso")
 }
 
 void volkUAllot(void) {
-#if defined (__DEBUG__)
-	printf("volkUAllot\n");
-#endif
+	DEBUG_WORD("volkUAllot")
 }
 
 void volkVariable(void) {
-#if defined (__DEBUG__)
-	printf("volkVariable\n");
-#endif
+	DEBUG_WORD("volkVariable")
 }
 
 void volkConstant(void) {
-#if defined (__DEBUG__)
-	printf("volkConstant\n");
-#endif
+	DEBUG_WORD("volkConstant")
 }
 
 void volkSemicolon(void) {
-#if defined (__DEBUG__)
-	printf("volkSemicolon\n");
-#endif
+	DEBUG_WORD("volkSemicolon")
 }
 
 void volkColon(void) {
-#if defined (__DEBUG__)
-	printf("volkColon\n");
-#endif
+	DEBUG_WORD("volkColon")
 }
 
 void volkCreateColon(void) {
-#if defined (__DEBUG__)
-	printf("volkCreateColon\n");
-#endif
+	DEBUG_WORD("volkCreateColon")
 }
 
 void volkDotName(void) {
-#if defined (__DEBUG__)
-	printf("volkDotName\n");
-#endif
+	DEBUG_WORD("volkDotName")
 }
 
 void volkToBody(void) {
-#if defined (__DEBUG__)
-	printf("volkToBody\n");
-#endif
+	DEBUG_WORD("volkToBody")
 }
 
 void volkNameFrom(void) {
-#if defined (__DEBUG__)
-	printf("volkNameFrom\n");
-#endif
+	DEBUG_WORD("volkNameFrom")
 }
 
 void volkToName(void) {
-#if defined (__DEBUG__)
-	printf("volkToName\n");
-#endif
+	DEBUG_WORD("volkToName")
 }
 
 void volkNFaq(void) {
-#if defined (__DEBUG__)
-	printf("volkNFaq\n");
-#endif
+	DEBUG_WORD("volkNFaq")
 }
 
 void volkCreate(void) {
-#if defined (__DEBUG__)
-	printf("volkCreate\n");
-#endif
+	DEBUG_WORD("volkCreate")
 }
 
 void volkWarning(void) {
-#if defined (__DEBUG__)
-	printf("volkWarning\n");
-#endif
+	DEBUG_WORD("volkWarning")
 }
 
 void volkVerticalBar(void) {
-#if defined (__DEBUG__)
-	printf("volkVerticalBar\n");
-#endif
+	DEBUG_WORD("volkVerticalBar")
 }
 
 void volkQHead(void) {
-#if defined (__DEBUG__)
-	printf("volkQHead\n");
-#endif
+	DEBUG_WORD("volkQHead")
 }
 
 void volkDoes(void) {
-#if defined (__DEBUG__)
-	printf("volkDoes\n");
-#endif
+	DEBUG_WORD("volkDoes")
 }
 
 void volkHeapQ(void) {
-#if defined (__DEBUG__)
-	printf("volkHeapQ\n");
-#endif
+	DEBUG_WORD("volkHeapQ")
 }
 
 void volkHeap(void) {
-#if defined (__DEBUG__)
-	printf("volkHeap\n");
-#endif
+	DEBUG_WORD("volkHeap")
 }
 
 void volkHallot(void) {
-#if defined (__DEBUG__)
-	printf("volkHallot\n");
-#endif
+	DEBUG_WORD("volkHallot")
 }
 
 void volkClearStack(void) {
-#if defined (__DEBUG__)
-	printf("volkClearStack\n");
-#endif
+	DEBUG_WORD("volkClearStack")
 }
 
 void volkRestrict(void) {
-#if defined (__DEBUG__)
-	printf("volkRestrict\n");
-#endif
+	DEBUG_WORD("volkRestrict")
 }
 
 void volkImmediate(void) {
-#if defined (__DEBUG__)
-	printf("volkImmediate\n");
-#endif
+	DEBUG_WORD("volkImmediate")
 }
 
 void volkRecursive(void) {
-#if defined (__DEBUG__)
-	printf("volkRecursive\n");
-#endif
+	DEBUG_WORD("volkRecursive")
 }
 
 void volkReveal(void) {
-#if defined (__DEBUG__)
-	printf("volkReveal\n");
-#endif
+	DEBUG_WORD("volkReveal")
 }
 
 void volkHide(void) {
-#if defined (__DEBUG__)
-	printf("volkHide\n");
-#endif
+	DEBUG_WORD("volkHide")
 }
 
 void volkLast(void) {
-#if defined (__DEBUG__)
-	printf("volkLast\n");
-#endif
+	DEBUG_WORD("volkLast")
 }
 
 void volkNumber(void) {
-#if defined (__DEBUG__)
-	printf("volkNumber\n");
-#endif
+	DEBUG_WORD("volkNumber")
 }
 
 void volkNumberQ(void) {
-#if defined (__DEBUG__)
-	printf("volkNumberQ\n");
-#endif
+	DEBUG_WORD("volkNumberQ")
 }
 
 void volkConvert(void) {
-#if defined (__DEBUG__)
-	printf("volkConvert\n");
-#endif
+	DEBUG_WORD("volkConvert")
 }
 
 void volkAccumulate(void) {
-#if defined (__DEBUG__)
-	printf("volkAccumulate\n");
-#endif
+	DEBUG_WORD("volkAccumulate")
 }
 
 void volkDecimal(void) {
-#if defined (__DEBUG__)
-	printf("volkDecimal\n");
-#endif
+	DEBUG_WORD("volkDecimal")
 }
 
 void volkBackslashNeeds(void) {
-#if defined (__DEBUG__)
-	printf("volkBackslashNeeds\n");
-#endif
+	DEBUG_WORD("volkBackslashNeeds")
 }
 
 void volkBackslashBackslash(void) {
-#if defined (__DEBUG__)
-	printf("volkBackslashBackslash\n");
-#endif
+	DEBUG_WORD("volkBackslashBackslash")
 }
 
 void volkBackslash(void) {
-#if defined (__DEBUG__)
-	printf("volkBackslash\n");
-#endif
+	DEBUG_WORD("volkBackslash")
 }
 
 void volkDotParen(void) {
-#if defined (__DEBUG__)
-	printf("volkDotParen\n");
-#endif
+	DEBUG_WORD("volkDotParen")
 }
 
 void volkParen(void) {
-#if defined (__DEBUG__)
-	printf("volkParen\n");
-#endif
+	DEBUG_WORD("volkParen")
 }
 
 void volkDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("volkDotQuote\n");
-#endif
+	DEBUG_WORD("volkDotQuote")
 }
 
 void volkParenDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("volkParenDotQuote\n");
-#endif
+	DEBUG_WORD("volkParenDotQuote")
 }
 
 void volkQuote(void) {
-#if defined (__DEBUG__)
-	printf("volkQuote\n");
-#endif
+	DEBUG_WORD("volkQuote")
 }
 
 void volkParenQuote(void) {
-#if defined (__DEBUG__)
-	printf("volkParenQuote\n");
-#endif
+	DEBUG_WORD("volkParenQuote")
 }
 
 void volkQuoteLit(void) {
-#if defined (__DEBUG__)
-	printf("volkQuoteLit\n");
-#endif
+	DEBUG_WORD("volkQuoteLit")
 }
 
 void volkAscii(void) {
-#if defined (__DEBUG__)
-	printf("volkAscii\n");
-#endif
+	DEBUG_WORD("volkAscii")
 }
 
 void volkState(void) {
-#if defined (__DEBUG__)
-	printf("volkState\n");
-#endif
+	DEBUG_WORD("volkState")
 }
 
 void volkName(void) {
-#if defined (__DEBUG__)
-	printf("volkName\n");
-#endif
+	DEBUG_WORD("volkName")
 }
 
 void volkParse(void) {
-#if defined (__DEBUG__)
-	printf("volkParse\n");
-#endif
+	DEBUG_WORD("volkParse")
 }
 
 void volkWord(void) {
-#if defined (__DEBUG__)
-	printf("volkWord\n");
-#endif
+	DEBUG_WORD("volkWord")
 }
 
 void volkSource(void) {
-#if defined (__DEBUG__)
-	printf("volkSource\n");
-#endif
+	DEBUG_WORD("volkSource")
 }
 
 void volkCapital(void) {
-#if defined (__DEBUG__)
-	printf("volkCapital\n");
-#endif
+	DEBUG_WORD("volkCapital")
 }
 
 void volkSlashString(void) {
-#if defined (__DEBUG__)
-	printf("volkSlashString\n");
-#endif
+	DEBUG_WORD("volkSlashString")
 }
 
 void volkSkip(void) {
-#if defined (__DEBUG__)
-	printf("volkSkip\n");
-#endif
+	DEBUG_WORD("volkSkip")
 }
 
 void volkScan(void) {
-#if defined (__DEBUG__)
-	printf("volkScan\n");
-#endif
+	DEBUG_WORD("volkScan")
 }
 
 void volkQuery(void) {
-#if defined (__DEBUG__)
-	printf("volkQuery\n");
-#endif
+	DEBUG_WORD("volkQuery")
 }
 
 void volkTib(void) {
-#if defined (__DEBUG__)
-	printf("volkTib\n");
-#endif
+	DEBUG_WORD("volkTib")
 }
 
 void volkSpan(void) {
-#if defined (__DEBUG__)
-	printf("volkSpan\n");
-#endif
+	DEBUG_WORD("volkSpan")
 }
 
 void volkBlk(void) {
-#if defined (__DEBUG__)
-	printf("volkBlk\n");
-#endif
+	DEBUG_WORD("volkBlk")
 }
 
 void volkToIn(void) {
-#if defined (__DEBUG__)
-	printf("volkToIn\n");
-#endif
+	DEBUG_WORD("volkToIn")
 }
 
 void volkToTib(void) {
-#if defined (__DEBUG__)
-	printf("volkToTib\n");
-#endif
+	DEBUG_WORD("volkToTib")
 }
 
 void volkNumTib(void) {
-#if defined (__DEBUG__)
-	printf("volkNumTib\n");
-#endif
+	DEBUG_WORD("volkNumTib")
 }
 
 void volkCompile(void) {
-#if defined (__DEBUG__)
-	printf("volkCompile\n");
-#endif
+	DEBUG_WORD("volkCompile")
 }
 
 void volkCComma(void) {
-#if defined (__DEBUG__)
-	printf("volkCComma\n");
-#endif
+	DEBUG_WORD("volkCComma")
 }
 
 void volkComma(void) {
-#if defined (__DEBUG__)
-	printf("volkComma\n");
-#endif
+	DEBUG_WORD("volkComma")
 }
 
 void volkAllot(void) {
-#if defined (__DEBUG__)
-	printf("volkAllot\n");
-#endif
+	DEBUG_WORD("volkAllot")
 }
 
 void volkPad(void) {
-#if defined (__DEBUG__)
-	printf("volkPad\n");
-#endif
+	DEBUG_WORD("volkPad")
 }
 
 void volkHere(void) {
-#if defined (__DEBUG__)
-	printf("volkHere\n");
-#endif
+	DEBUG_WORD("volkHere")
 }
 
 void volkFill(void) {
-#if defined (__DEBUG__)
-	printf("volkFill\n");
-#endif
+	DEBUG_WORD("volkFill")
 }
 
 void volkErase(void) {
-#if defined (__DEBUG__)
-	printf("volkErase\n");
-#endif
+	DEBUG_WORD("volkErase")
 }
 
 void volkCount(void) {
-#if defined (__DEBUG__)
-	printf("volkCount\n");
-#endif
+	DEBUG_WORD("volkCount")
 }
 
 void volkPlace(void) {
-#if defined (__DEBUG__)
-	printf("volkPlace\n");
-#endif
+	DEBUG_WORD("volkPlace")
 }
 
 void volkMove(void) {
-#if defined (__DEBUG__)
-	printf("volkMove\n");
-#endif
+	DEBUG_WORD("volkMove")
 }
 
 void volkCMoveTo(void) {
-#if defined (__DEBUG__)
-	printf("volkCMoveTo\n");
-#endif
+	DEBUG_WORD("volkCMoveTo")
 }
 
 void volkCMove(void) {
-#if defined (__DEBUG__)
-	printf("volkCMove\n");
-#endif
+	DEBUG_WORD("volkCMove")
 }
 
 void volkUdSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("volkUdSlashMod\n");
-#endif
+	DEBUG_WORD("volkUdSlashMod")
 }
 
 void volkUSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("volkUSlashMod\n");
-#endif
+	DEBUG_WORD("volkUSlashMod")
 }
 
 void volkStarSlash(void) {
-#if defined (__DEBUG__)
-	printf("volkStarSlash\n");
-#endif
+	DEBUG_WORD("volkStarSlash")
 }
 
 void volkStarSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("volkStarSlashMod\n");
-#endif
+	DEBUG_WORD("volkStarSlashMod")
 }
 
 void volkMod(void) {
-#if defined (__DEBUG__)
-	printf("volkMod\n");
-#endif
+	DEBUG_WORD("volkMod")
 }
 
 void volkSlash(void) {
-#if defined (__DEBUG__)
-	printf("volkSlash\n");
-#endif
+	DEBUG_WORD("volkSlash")
 }
 
 void volkSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("volkSlashMod\n");
-#endif
+	DEBUG_WORD("volkSlashMod")
 }
 
 void volkTwoSlash(void) {
-#if defined (__DEBUG__)
-	printf("volkTwoSlash\n");
-#endif
+	DEBUG_WORD("volkTwoSlash")
 }
 
 void volkMSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("volkMSlashMod\n");
-#endif
+	DEBUG_WORD("volkMSlashMod")
 }
 
 void volkUmSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("volkUmSlashMod\n");
-#endif
+	DEBUG_WORD("volkUmSlashMod")
 }
 
 void volkTwoStar(void) {
-#if defined (__DEBUG__)
-	printf("volkTwoStar\n");
-#endif
+	DEBUG_WORD("volkTwoStar")
 }
 
 void volkStar(void) {
-#if defined (__DEBUG__)
-	printf("volkStar\n");
-#endif
+	DEBUG_WORD("volkStar")
 }
 
 void volkMStar(void) {
-#if defined (__DEBUG__)
-	printf("volkMStar\n");
-#endif
+	DEBUG_WORD("volkMStar")
 }
 
 void volkUmStar(void) {
-#if defined (__DEBUG__)
-	printf("volkUmStar\n");
-#endif
+	DEBUG_WORD("volkUmStar")
 }
 
 void volkLeave(void) {
-#if defined (__DEBUG__)
-	printf("volkLeave\n");
-#endif
+	DEBUG_WORD("volkLeave")
 }
 
 void volkLoop(void) {
-#if defined (__DEBUG__)
-	printf("volkLoop\n");
-#endif
+	DEBUG_WORD("volkLoop")
 }
 
 void volkQDo(void) {
-#if defined (__DEBUG__)
-	printf("volkQDo\n");
-#endif
+	DEBUG_WORD("volkQDo")
 }
 
 void volkDo(void) {
-#if defined (__DEBUG__)
-	printf("volkDo\n");
-#endif
+	DEBUG_WORD("volkDo")
 }
 
 void volkUntil(void) {
-#if defined (__DEBUG__)
-	printf("volkUntil\n");
-#endif
+	DEBUG_WORD("volkUntil")
 }
 
 void volkRepeat(void) {
-#if defined (__DEBUG__)
-	printf("volkRepeat\n");
-#endif
+	DEBUG_WORD("volkRepeat")
 }
 
 void volkWhile(void) {
-#if defined (__DEBUG__)
-	printf("volkWhile\n");
-#endif
+	DEBUG_WORD("volkWhile")
 }
 
 void volkBegin(void) {
-#if defined (__DEBUG__)
-	printf("volkBegin\n");
-#endif
+	DEBUG_WORD("volkBegin")
 }
 
 void volkElse(void) {
-#if defined (__DEBUG__)
-	printf("volkElse\n");
-#endif
+	DEBUG_WORD("volkElse")
 }
 
 void volkThen(void) {
-#if defined (__DEBUG__)
-	printf("volkThen\n");
-#endif
+	DEBUG_WORD("volkThen")
 }
 
 void volkIf(void) {
-#if defined (__DEBUG__)
-	printf("volkIf\n");
-#endif
+	DEBUG_WORD("volkIf")
 }
 
 void volkQPairs(void) {
-#if defined (__DEBUG__)
-	printf("volkQPairs\n");
-#endif
+	DEBUG_WORD("volkQPairs")
 }
 
 void volkFromResolve(void) {
-#if defined (__DEBUG__)
-	printf("volkFromResolve\n");
-#endif
+	DEBUG_WORD("volkFromResolve")
 }
 
 void volkFromMark(void) {
-#if defined (__DEBUG__)
-	printf("volkFromMark\n");
-#endif
+	DEBUG_WORD("volkFromMark")
 }
 
 void volkToResolve(void) {
-#if defined (__DEBUG__)
-	printf("volkToResolve\n");
-#endif
+	DEBUG_WORD("volkToResolve")
 }
 
 void volkToMark(void) {
-#if defined (__DEBUG__)
-	printf("volkToMark\n");
-#endif
+	DEBUG_WORD("volkToMark")
 }
 
 void volkQBranch(void) {
-#if defined (__DEBUG__)
-	printf("volkQBranch\n");
-#endif
+	DEBUG_WORD("volkQBranch")
 }
 
 void volkBranch(void) {
-#if defined (__DEBUG__)
-	printf("volkBranch\n");
-#endif
+	DEBUG_WORD("volkBranch")
 }
 
 void volkJ(void) {
-#if defined (__DEBUG__)
-	printf("volkJ\n");
-#endif
+	DEBUG_WORD("volkJ")
 }
 
 void volkI(void) {
-#if defined (__DEBUG__)
-	printf("volkI\n");
-#endif
+	DEBUG_WORD("volkI")
 }
 
 void volkZPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("volkZPlusLoop\n");
-#endif
+	DEBUG_WORD("volkZPlusLoop")
 }
 
 void volkZLoop(void) {
-#if defined (__DEBUG__)
-	printf("volkZLoop\n");
-#endif
+	DEBUG_WORD("volkZLoop")
 }
 
 void volkEndLoop(void) {
-#if defined (__DEBUG__)
-	printf("volkEndLoop\n");
-#endif
+	DEBUG_WORD("volkEndLoop")
 }
 
 void volkBounds(void) {
-#if defined (__DEBUG__)
-	printf("volkBounds\n");
-#endif
+	DEBUG_WORD("volkBounds")
 }
 
 void volkZQDo(void) {
-#if defined (__DEBUG__)
-	printf("volkZQDo\n");
-#endif
+	DEBUG_WORD("volkZQDo")
 }
 
 void volkZDo(void) {
-#if defined (__DEBUG__)
-	printf("volkZDo\n");
-#endif
+	DEBUG_WORD("volkZDo")
 }
 
 void volkAbs(void) {
-#if defined (__DEBUG__)
-	printf("volkAbs\n");
-#endif
+	DEBUG_WORD("volkAbs")
 }
 
 void volkDAbs(void) {
-#if defined (__DEBUG__)
-	printf("volkDAbs\n");
-#endif
+	DEBUG_WORD("volkDAbs")
 }
 
 void volkUGreater(void) {
-#if defined (__DEBUG__)
-	printf("volkUGreater\n");
-#endif
+	DEBUG_WORD("volkUGreater")
 }
 
 void volkZeroUnequal(void) {
-#if defined (__DEBUG__)
-	printf("volkZeroUnequal\n");
-#endif
+	DEBUG_WORD("volkZeroUnequal")
 }
 
 void volkZeroGreater(void) {
-#if defined (__DEBUG__)
-	printf("volkZeroGreater\n");
-#endif
+	DEBUG_WORD("volkZeroGreater")
 }
 
 void volkGreater(void) {
-#if defined (__DEBUG__)
-	printf("volkGreater\n");
-#endif
+	DEBUG_WORD("volkGreater")
 }
 
 void volkULess(void) {
-#if defined (__DEBUG__)
-	printf("volkULess\n");
-#endif
+	DEBUG_WORD("volkULess")
 }
 
 void volkLess(void) {
-#if defined (__DEBUG__)
-	printf("volkLess\n");
-#endif
+	DEBUG_WORD("volkLess")
 }
 
 void volkZeroEqual(void) {
-#if defined (__DEBUG__)
-	printf("volkZeroEqual\n");
-#endif
+	DEBUG_WORD("volkZeroEqual")
 }
 
 void volkLiteral(void) {
-#if defined (__DEBUG__)
-	printf("volkLiteral\n");
-#endif
+	DEBUG_WORD("volkLiteral")
 }
 
 void volkLit(void) {
-#if defined (__DEBUG__)
-	printf("volkLit\n");
-#endif
+	DEBUG_WORD("volkLit")
 }
 
 void volkOff(void) {
-#if defined (__DEBUG__)
-	printf("volkOff\n");
-#endif
+	DEBUG_WORD("volkOff")
 }
 
 void volkFour(void) {
-#if defined (__DEBUG__)
-	printf("volkFour\n");
-#endif
+	DEBUG_WORD("volkFour")
 }
 
 void volkThree(void) {
-#if defined (__DEBUG__)
-	printf("volkThree\n");
-#endif
+	DEBUG_WORD("volkThree")
 }
 
 void volkTwo(void) {
-#if defined (__DEBUG__)
-	printf("volkTwo\n");
-#endif
+	DEBUG_WORD("volkTwo")
 }
 
 void volkOne(void) {
-#if defined (__DEBUG__)
-	printf("volkOne\n");
-#endif
+	DEBUG_WORD("volkOne")
 }
 
 void volkZero(void) {
-#if defined (__DEBUG__)
-	printf("volkZero\n");
-#endif
+	DEBUG_WORD("volkZero")
 }
 
 void volkMinusOne(void) {
-#if defined (__DEBUG__)
-	printf("volkMinusOne\n");
-#endif
+	DEBUG_WORD("volkMinusOne")
 }
 
 void volkFalse(void) {
-#if defined (__DEBUG__)
-	printf("volkFalse\n");
-#endif
+	DEBUG_WORD("volkFalse")
 }
 
 void volkTrue(void) {
-#if defined (__DEBUG__)
-	printf("volkTrue\n");
-#endif
+	DEBUG_WORD("volkTrue")
 }
 
 void volkTwoMinus(void) {
-#if defined (__DEBUG__)
-	printf("volkTwoMinus\n");
-#endif
+	DEBUG_WORD("volkTwoMinus")
 }
 
 void volkOneMinus(void) {
-#if defined (__DEBUG__)
-	printf("volkOneMinus\n");
-#endif
+	DEBUG_WORD("volkOneMinus")
 }
 
 void volkThreePlus(void) {
-#if defined (__DEBUG__)
-	printf("volkThreePlus\n");
-#endif
+	DEBUG_WORD("volkThreePlus")
 }
 
 void volkTwoPlus(void) {
-#if defined (__DEBUG__)
-	printf("volkTwoPlus\n");
-#endif
+	DEBUG_WORD("volkTwoPlus")
 }
 
 void volkOnePlus(void) {
-#if defined (__DEBUG__)
-	printf("volkOnePlus\n");
-#endif
+	DEBUG_WORD("volkOnePlus")
 }
 
 void volkDPlus(void) {
-#if defined (__DEBUG__)
-	printf("volkDPlus\n");
-#endif
+	DEBUG_WORD("volkDPlus")
 }
 
 void volkDNegate(void) {
-#if defined (__DEBUG__)
-	printf("volkDNegate\n");
-#endif
+	DEBUG_WORD("volkDNegate")
 }
 
 void volkNegate(void) {
-#if defined (__DEBUG__)
-	printf("volkNegate\n");
-#endif
+	DEBUG_WORD("volkNegate")
 }
 
 void volkNot(void) {
-#if defined (__DEBUG__)
-	printf("volkNot\n");
-#endif
+	DEBUG_WORD("volkNot")
 }
 
 void volkMinus(void) {
-#if defined (__DEBUG__)
-	printf("volkMinus\n");
-#endif
+	DEBUG_WORD("volkMinus")
 }
 
 void volkXOR(void) {
-#if defined (__DEBUG__)
-	printf("volkXOR\n");
-#endif
+	DEBUG_WORD("volkXOR")
 }
 
 void volkAnd(void) {
-#if defined (__DEBUG__)
-	printf("volkAnd\n");
-#endif
+	DEBUG_WORD("volkAnd")
 }
 
 void volkOr(void) {
-#if defined (__DEBUG__)
-	printf("volkOr\n");
-#endif
+	DEBUG_WORD("volkOr")
 }
 
 void volkPlus(void) {
-#if defined (__DEBUG__)
-	printf("volkPlus\n");
-#endif
+	DEBUG_WORD("volkPlus")
 }
 
 void volkTwoDup(void) {
-#if defined (__DEBUG__)
-	printf("volkTwoDup\n");
-#endif
+	DEBUG_WORD("volkTwoDup")
 }
 
 void volkTwoSwap(void) {
-#if defined (__DEBUG__)
-	printf("volkTwoSwap\n");
-#endif
+	DEBUG_WORD("volkTwoSwap")
 }
 
 void volkRoll(void) {
-#if defined (__DEBUG__)
-	printf("volkRoll\n");
-#endif
+	DEBUG_WORD("volkRoll")
 }
 
 void volkPick(void) {
-#if defined (__DEBUG__)
-	printf("volkPick\n");
-#endif
+	DEBUG_WORD("volkPick")
 }
 
 void volkUnder(void) {
-#if defined (__DEBUG__)
-	printf("volkUnder\n");
-#endif
+	DEBUG_WORD("volkUnder")
 }
 
 void volkNip(void) {
-#if defined (__DEBUG__)
-	printf("volkNip\n");
-#endif
+	DEBUG_WORD("volkNip")
 }
 
 void volkMinusRot(void) {
-#if defined (__DEBUG__)
-	printf("volkMinusRot\n");
-#endif
+	DEBUG_WORD("volkMinusRot")
 }
 
 void volkRot(void) {
-#if defined (__DEBUG__)
-	printf("volkRot\n");
-#endif
+	DEBUG_WORD("volkRot")
 }
 
 void volkOver(void) {
-#if defined (__DEBUG__)
-	printf("volkOver\n");
-#endif
+	DEBUG_WORD("volkOver")
 }
 
 void volkQDup(void) {
-#if defined (__DEBUG__)
-	printf("volkQDup\n");
-#endif
+	DEBUG_WORD("volkQDup")
 }
 
 void volkDup(void) {
-#if defined (__DEBUG__)
-	printf("volkDup\n");
-#endif
+	DEBUG_WORD("volkDup")
 }
 
 void volkSwap(void) {
-#if defined (__DEBUG__)
-	printf("volkSwap\n");
-#endif
+	DEBUG_WORD("volkSwap")
 }
 
 void volkDrop(void) {
-#if defined (__DEBUG__)
-	printf("volkDrop\n");
-#endif
+	DEBUG_WORD("volkDrop")
 }
 
 void volkPlusStore(void) {
-#if defined (__DEBUG__)
-	printf("volkPlusStore\n");
-#endif
+	DEBUG_WORD("volkPlusStore")
 }
 
 void volkStore(void) {
-#if defined (__DEBUG__)
-	printf("volkStore\n");
-#endif
+	DEBUG_WORD("volkStore")
 }
 
 void volkFetch(void) {
-#if defined (__DEBUG__)
-	printf("volkFetch\n");
-#endif
+	DEBUG_WORD("volkFetch")
 }
 
 void volkCToggle(void) {
-#if defined (__DEBUG__)
-	printf("volkCToggle\n");
-#endif
+	DEBUG_WORD("volkCToggle")
 }
 
 void volkCStore(void) {
-#if defined (__DEBUG__)
-	printf("volkCStore\n");
-#endif
+	DEBUG_WORD("volkCStore")
 }
 
 void volkCFetch(void) {
-#if defined (__DEBUG__)
-	printf("volkCFetch\n");
-#endif
+	DEBUG_WORD("volkCFetch")
 }
 
 void volkPerform(void) {
-#if defined (__DEBUG__)
-	printf("volkPerform\n");
-#endif
+	DEBUG_WORD("volkPerform")
 }
 
 void volkExecute(void) {
-#if defined (__DEBUG__)
-	printf("volkExecute\n");
-#endif
+	DEBUG_WORD("volkExecute")
 }
 
 void volkQExit(void) {
-#if defined (__DEBUG__)
-	printf("volkQExit\n");
-#endif
+	DEBUG_WORD("volkQExit")
 }
 
 void volkUnnest(void) {
-#if defined (__DEBUG__)
-	printf("volkUnnest\n");
-#endif
+	DEBUG_WORD("volkUnnest")
 }
 
 void volkExit(void) {
-#if defined (__DEBUG__)
-	printf("volkExit\n");
-#endif
+	DEBUG_WORD("volkExit")
 }
 
 void volkRDrop(void) {
-#if defined (__DEBUG__)
-	printf("volkRDrop\n");
-#endif
+	DEBUG_WORD("volkRDrop")
 }
 
 void volkRFetch(void) {
-#if defined (__DEBUG__)
-	printf("volkRFetch\n");
-#endif
+	DEBUG_WORD("volkRFetch")
 }
 
 void volkRFrom(void) {
-#if defined (__DEBUG__)
-	printf("volkRFrom\n");
-#endif
+	DEBUG_WORD("volkRFrom")
 }
 
 void volkToR(void) {
-#if defined (__DEBUG__)
-	printf("volkToR\n");
-#endif
+	DEBUG_WORD("volkToR")
 }
 
 void volkRPStore(void) {
-#if defined (__DEBUG__)
-	printf("volkRPStore\n");
-#endif
+	DEBUG_WORD("volkRPStore")
 }
 
 void volkRPFetch(void) {
-#if defined (__DEBUG__)
-	printf("volkRPFetch\n");
-#endif
+	DEBUG_WORD("volkRPFetch")
 }
 
 void volkUPStore(void) {
-#if defined (__DEBUG__)
-	printf("volkUPStore\n");
-#endif
+	DEBUG_WORD("volkUPStore")
 }
 
 void volkUPFetch(void) {
-#if defined (__DEBUG__)
-	printf("volkUPFetch\n");
-#endif
+	DEBUG_WORD("volkUPFetch")
 }
 
 void volkSPStore(void) {
-#if defined (__DEBUG__)
-	printf("volkSPStore\n");
-#endif
+	DEBUG_WORD("volkSPStore")
 }
 
 void volkSPFetch(void) {
-#if defined (__DEBUG__)
-	printf("volkSPFetch\n");
-#endif
+	DEBUG_WORD("volkSPFetch")
 }
 
 void volkUdp(void) {
-#if defined (__DEBUG__)
-	printf("volkUdp\n");
-#endif
+	DEBUG_WORD("volkUdp")
 }
 
 void volkVocLink(void) {
-#if defined (__DEBUG__)
-	printf("volkVocLink\n");
-#endif
+	DEBUG_WORD("volkVocLink")
 }
 
 void volkErrorhandler(void) {
-#if defined (__DEBUG__)
-	printf("volkErrorhandler\n");
-#endif
+	DEBUG_WORD("volkErrorhandler")
 }
 
 void volkInput(void) {
-#if defined (__DEBUG__)
-	printf("volkInput\n");
-#endif
+	DEBUG_WORD("volkInput")
 }
 
 void volkOutput(void) {
-#if defined (__DEBUG__)
-	printf("volkOutput\n");
-#endif
+	DEBUG_WORD("volkOutput")
 }
 
 void volkBase(void) {
-#if defined (__DEBUG__)
-	printf("volkBase\n");
-#endif
+	DEBUG_WORD("volkBase")
 }
 
 void volkOffset(void) {
-#if defined (__DEBUG__)
-	printf("volkOffset\n");
-#endif
+	DEBUG_WORD("volkOffset")
 }
 
 void volkDP(void) {
-#if defined (__DEBUG__)
-	printf("volkDP\n");
-#endif
+	DEBUG_WORD("volkDP")
 }
 
 void volkR0(void) {
-#if defined (__DEBUG__)
-	printf("volkR0\n");
-#endif
+	DEBUG_WORD("volkR0")
 }
 
 void volkS0(void) {
-#if defined (__DEBUG__)
-	printf("volkS0\n");
-#endif
+	DEBUG_WORD("volkS0")
 }
 
 void volkOrigin(void) {
-#if defined (__DEBUG__)
-	printf("volkOrigin\n");
-#endif
+	DEBUG_WORD("volkOrigin")
 }
 
 void volkNoop(void) {
-#if defined (__DEBUG__)
-	printf("volkNoop\n");
-#endif
+	DEBUG_WORD("volkNoop")
 }
 
 void volkRecover(void) {
-#if defined (__DEBUG__)
-	printf("volkRecover\n");
-#endif
+	DEBUG_WORD("volkRecover")
 }
 
 void volkEndTrace(void) {
-#if defined (__DEBUG__)
-	printf("volkEndTrace\n");
-#endif
+	DEBUG_WORD("volkEndTrace")
 }
 
 void volkZeroLess(void) {
-#if defined (__DEBUG__)
-	printf("volkZeroLess\n");
-#endif
+	DEBUG_WORD("volkZeroLess")
 }
 
 void volkEqual(void) {
-#if defined (__DEBUG__)
-	printf("volkEqual\n");
-#endif
+	DEBUG_WORD("volkEqual")
 }
 
 void volkExtend(void) {
-#if defined (__DEBUG__)
-	printf("volkExtend\n");
-#endif
+	DEBUG_WORD("volkExtend")
 }
 
 void volkUMin(void) {
-#if defined (__DEBUG__)
-	printf("volkUMin\n");
-#endif
+	DEBUG_WORD("volkUMin")
 }
 
 void volkUMax(void) {
-#if defined (__DEBUG__)
-	printf("volkUMax\n");
-#endif
+	DEBUG_WORD("volkUMax")
 }
 
 void volkMax(void) {
-#if defined (__DEBUG__)
-	printf("volkMax\n");
-#endif
+	DEBUG_WORD("volkMax")
 }
 
 void volkMin(void) {
-#if defined (__DEBUG__)
-	printf("volkMin\n");
-#endif
+	DEBUG_WORD("volkMin")
 }
 
 void volkDLess(void) {
-#if defined (__DEBUG__)
-	printf("volkDLess\n");
-#endif
+	DEBUG_WORD("volkDLess")
 }
 
 void volkDEqual(void) {
-#if defined (__DEBUG__)
-	printf("volkDEqual\n");
-#endif
+	DEBUG_WORD("volkDEqual")
 }
 
 void volkCaseQ(void) {
-#if defined (__DEBUG__)
-	printf("volkDEqual\n");
-#endif
+	DEBUG_WORD("volkDEqual")
 }
 
 void volkDZeroEqual(void) {
-#if defined (__DEBUG__)
-	printf("volkDZeroEqual\n");
-#endif
+	DEBUG_WORD("volkDZeroEqual")
 }
 
 void volkUWithin(void) {
-#if defined (__DEBUG__)
-	printf("volkUWithin\n");
-#endif
+	DEBUG_WORD("volkUWithin")
 }
 
 void volkDigitQ(void) {
-#if defined (__DEBUG__)
-	printf("volkDigitQ\n");
-#endif
+	DEBUG_WORD("volkDigitQ")
 }
 
 void volkCold(void) {
-#if defined (__DEBUG__)
-	printf("volkCold\n");
-#endif
+	DEBUG_WORD("volkCold")
 }
 
 void volkCommaQuote(void) {
-#if defined (__DEBUG__)
-	printf("volkCommaQuote\n");
-#endif
+	DEBUG_WORD("volkCommaQuote")
 }
 
 void volkNullStringQ(void) {
-#if defined (__DEBUG__)
-	printf("volkNullStringQ\n");
-#endif
+	DEBUG_WORD("volkNullStringQ")
 }
 
 void volkDpl(void) {
-#if defined (__DEBUG__)
-	printf("volkDpl\n");
-#endif
+	DEBUG_WORD("volkDpl")
 }
 
 #endif
@@ -1877,381 +1257,255 @@ void volkDpl(void) {
 	(H2O_FORTH_PRIMITIVES == VOLK_CPM_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == VOLK_PC_FORTH)
 void volkListing(void) {
-#if defined (__DEBUG__)
-	printf("volkListing\n");
-#endif
+	DEBUG_WORD("volkListing")
 }
 
 void volkDocument(void) {
-#if defined (__DEBUG__)
-	printf("volkDocument\n");
-#endif
+	DEBUG_WORD("volkDocument")
 }
 
 void volkPThru(void) {
-#if defined (__DEBUG__)
-	printf("volkPThru\n");
-#endif
+	DEBUG_WORD("volkPThru")
 }
 
 void volkPrint(void) {
-#if defined (__DEBUG__)
-	printf("volkPrint\n");
-#endif
+	DEBUG_WORD("volkPrint")
 }
 
 void volkPrinter(void) {
-#if defined (__DEBUG__)
-	printf("volkPrinter\n");
-#endif
+	DEBUG_WORD("volkPrinter")
 }
 
 void volkDump(void) {
-#if defined (__DEBUG__)
-	printf("volkDump\n");
-#endif
+	DEBUG_WORD("volkDump")
 }
 
 void volkTools(void) {
-#if defined (__DEBUG__)
-	printf("volkTools\n");
-#endif
+	DEBUG_WORD("volkTools")
 }
 
 void volkToolsDotFb(void) {
-#if defined (__DEBUG__)
-	printf("volkToolsDotFb\n");
-#endif
+	DEBUG_WORD("volkToolsDotFb")
 }
 
 void volkBye(void) {
-#if defined (__DEBUG__)
-	printf("volkBye\n");
-#endif
+	DEBUG_WORD("volkBye")
 }
 
 void volkView(void) {
-#if defined (__DEBUG__)
-	printf("volkView\n");
-#endif
+	DEBUG_WORD("volkView")
 }
 
 void volkL(void) {
-#if defined (__DEBUG__)
-	printf("volkL\n");
-#endif
+	DEBUG_WORD("volkL")
 }
 
 void volkV(void) {
-#if defined (__DEBUG__)
-	printf("volkV\n");
-#endif
+	DEBUG_WORD("volkV")
 }
 
 void volkDelete(void) {
-#if defined (__DEBUG__)
-	printf("volkDelete\n");
-#endif
+	DEBUG_WORD("volkDelete")
 }
 
 void volkCaps(void) {
-#if defined (__DEBUG__)
-	printf("volkCaps\n");
-#endif
+	DEBUG_WORD("volkCaps")
 }
 
 void volkCColon(void) {
-#if defined (__DEBUG__)
-	printf("volkCColon\n");
-#endif
+	DEBUG_WORD("volkCColon")
 }
 
 void volkBColon(void) {
-#if defined (__DEBUG__)
-	printf("volkBColon\n");
-#endif
+	DEBUG_WORD("volkBColon")
 }
 
 void volkAColon(void) {
-#if defined (__DEBUG__)
-	printf("volkAColon\n");
-#endif
+	DEBUG_WORD("volkAColon")
 }
 
 void volkDir(void) {
-#if defined (__DEBUG__)
-	printf("volkDir\n");
-#endif
+	DEBUG_WORD("volkDir")
 }
 
 void volkMore(void) {
-#if defined (__DEBUG__)
-	printf("volkDir\n");
-#endif
+	DEBUG_WORD("volkDir")
 }
 
 void volkFiles(void) {
-#if defined (__DEBUG__)
-	printf("volkFiles\n");
-#endif
+	DEBUG_WORD("volkFiles")
 }
 
 void volkInclude(void) {
-#if defined (__DEBUG__)
-	printf("volkInclude\n");
-#endif
+	DEBUG_WORD("volkInclude")
 }
 
 void volkLoadFrom(void) {
-#if defined (__DEBUG__)
-	printf("volkLoadFrom\n");
-#endif
+	DEBUG_WORD("volkLoadFrom")
 }
 
 void volkFrom(void) {
-#if defined (__DEBUG__)
-	printf("volkLoadFrom\n");
-#endif
+	DEBUG_WORD("volkLoadFrom")
 }
 
 void volkMakefile(void) {
-#if defined (__DEBUG__)
-	printf("volkMakefile\n");
-#endif
+	DEBUG_WORD("volkMakefile")
 }
 
 void volkUse(void) {
-#if defined (__DEBUG__)
-	printf("volkUse\n");
-#endif
+	DEBUG_WORD("volkUse")
 }
 
 void volkMake(void) {
-#if defined (__DEBUG__)
-	printf("volkMake\n");
-#endif
+	DEBUG_WORD("volkMake")
 }
 
 void volkAssign(void) {
-#if defined (__DEBUG__)
-	printf("volkAssign\n");
-#endif
+	DEBUG_WORD("volkAssign")
 }
 
 void volkClose(void) {
-#if defined (__DEBUG__)
-	printf("volkClose\n");
-#endif
+	DEBUG_WORD("volkClose")
 }
 
 void volkOpen(void) {
-#if defined (__DEBUG__)
-	printf("volkOpen\n");
-#endif
+	DEBUG_WORD("volkOpen")
 }
 
 void volkFileQ(void) {
-#if defined (__DEBUG__)
-	printf("volkFileQ\n");
-#endif
+	DEBUG_WORD("volkFileQ")
 }
 
 void volkCapacity(void) {
-#if defined (__DEBUG__)
-	printf("volkCapacity\n");
-#endif
+	DEBUG_WORD("volkCapacity")
 }
 
 void volkNumEsc(void) {
-#if defined (__DEBUG__)
-	printf("volkNumEsc\n");
-#endif
+	DEBUG_WORD("volkNumEsc")
 }
 
 void volkNumLf(void) {
-#if defined (__DEBUG__)
-	printf("volkNumLf\n");
-#endif
+	DEBUG_WORD("volkNumLf")
 }
 
 void volkQCr(void) {
-#if defined (__DEBUG__)
-	printf("volkQCr\n");
-#endif
+	DEBUG_WORD("volkQCr")
 }
 
 void volkStopQ(void) {
-#if defined (__DEBUG__)
-	printf("volkStopQ\n");
-#endif
+	DEBUG_WORD("volkStopQ")
 }
 
 void volkSave(void) {
-#if defined (__DEBUG__)
-	printf("volkSave\n");
-#endif
+	DEBUG_WORD("volkSave")
 }
 
 void volkEmpty(void) {
-#if defined (__DEBUG__)
-	printf("volkEmpty\n");
-#endif
+	DEBUG_WORD("volkEmpty")
 }
 
 void volkForget(void) {
-#if defined (__DEBUG__)
-	printf("volkForget\n");
-#endif
+	DEBUG_WORD("volkForget")
 }
 
 void volkIsFileFetch(void) {
-#if defined (__DEBUG__)
-	printf("volkIsFileFetch\n");
-#endif
+	DEBUG_WORD("volkIsFileFetch")
 }
 
 void volkDDot(void) {
-#if defined (__DEBUG__)
-	printf("volkDDot\n");
-#endif
+	DEBUG_WORD("volkDDot")
 }
 
 void volkRNum(void) {
-#if defined (__DEBUG__)
-	printf("volkRNum\n");
-#endif
+	DEBUG_WORD("volkRNum")
 }
 
 void volkScr(void) {
-#if defined (__DEBUG__)
-	printf("volkScr\n");
-#endif
+	DEBUG_WORD("volkScr")
 }
 
 void volkAbort(void) {
-#if defined (__DEBUG__)
-	printf("volkAbort\n");
-#endif
+	DEBUG_WORD("volkAbort")
 }
 
 void volkTickAbort(void) {
-#if defined (__DEBUG__)
-	printf("volkTickAbort\n");
-#endif
+	DEBUG_WORD("volkTickAbort")
 }
 
 void volkStandardISlashO(void) {
-#if defined (__DEBUG__)
-	printf("volkStandardISlashO\n");
-#endif
+	DEBUG_WORD("volkStandardISlashO")
 }
 
 void volkZLoad(void) {
-#if defined (__DEBUG__)
-	printf("volkZLoad\n");
-#endif
+	DEBUG_WORD("volkZLoad")
 }
 
 void volkContext(void) {
-#if defined (__DEBUG__)
-	printf("volkContext\n");
-#endif
+	DEBUG_WORD("volkContext")
 }
 
 void volkCurrent(void) {
-#if defined (__DEBUG__)
-	printf("volkCurrent\n");
-#endif
+	DEBUG_WORD("volkCurrent")
 }
 
 void volkVp(void) {
-#if defined (__DEBUG__)
-	printf("volkVp\n");
-#endif
+	DEBUG_WORD("volkVp")
 }
 
 void volkAlias(void) {
-#if defined (__DEBUG__)
-	printf("volkAlias\n");
-#endif
+	DEBUG_WORD("volkAlias")
 }
 
 void volkUser(void) {
-#if defined (__DEBUG__)
-	printf("volkUser\n");
-#endif
+	DEBUG_WORD("volkUser")
 }
 
 void volkMakeView(void) {
-#if defined (__DEBUG__)
-	printf("volkMakeView\n");
-#endif
+	DEBUG_WORD("volkMakeView")
 }
 
 void volkHAlign(void) {
-#if defined (__DEBUG__)
-	printf("volkHAlign\n");
-#endif
+	DEBUG_WORD("volkHAlign")
 }
 
 void volkAlign(void) {
-#if defined (__DEBUG__)
-	printf("volkAlign\n");
-#endif
+	DEBUG_WORD("volkAlign")
 }
 
 void volkLoadFile(void) {
-#if defined (__DEBUG__)
-	printf("volkLoadFile\n");
-#endif
+	DEBUG_WORD("volkLoadFile")
 }
 
 void volkEven(void) {
-#if defined (__DEBUG__)
-	printf("volkEven\n");
-#endif
+	DEBUG_WORD("volkEven")
 }
 
 void volkOn(void) {
-#if defined (__DEBUG__)
-	printf("volkOn\n");
-#endif
+	DEBUG_WORD("volkOn")
 }
 
 void volkFourMinus(void) {
-#if defined (__DEBUG__)
-	printf("volkFourMinus\n");
-#endif
+	DEBUG_WORD("volkFourMinus")
 }
 
 void volkFourPlus(void) {
-#if defined (__DEBUG__)
-	printf("volkFourPlus\n");
-#endif
+	DEBUG_WORD("volkFourPlus")
 }
 
 void volkTwoStore(void) {
-#if defined (__DEBUG__)
-	printf("volkTwoStore\n");
-#endif
+	DEBUG_WORD("volkTwoStore")
 }
 
 void volkTwoFetch(void) {
-#if defined (__DEBUG__)
-	printf("volkTwoFetch\n");
-#endif
+	DEBUG_WORD("volkTwoFetch")
 }
 
 void volkMinusRoll(void) {
-#if defined (__DEBUG__)
-	printf("volkMinusRoll\n");
-#endif
+	DEBUG_WORD("volkMinusRoll")
 }
 
 void volkSaveSystem(void) {
-#if defined (__DEBUG__)
-	printf("volkDebug\n");
-#endif
+	DEBUG_WORD("volkDebug")
 }
 
 #endif
@@ -2261,51 +1515,35 @@ void volkSaveSystem(void) {
 	(H2O_FORTH_PRIMITIVES == VOLK_CPM_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == VOLK_PC_FORTH)
 void volkAssembler(void) {
-#if defined (__DEBUG__)
-	printf("volkAssembler\n");
-#endif
+	DEBUG_WORD("volkAssembler")
 }
 
 void volkBSlashBuf(void) {
-#if defined (__DEBUG__)
-	printf("volkBSlashBuf\n");
-#endif
+	DEBUG_WORD("volkBSlashBuf")
 }
 
 void volkPrev(void) {
-#if defined (__DEBUG__)
-	printf("volkPrev\n");
-#endif
+	DEBUG_WORD("volkPrev")
 }
 
 void volkTick(void) {
-#if defined (__DEBUG__)
-	printf("volkTick\n");
-#endif
+	DEBUG_WORD("volkTick")
 }
 
 void volkHex(void) {
-#if defined (__DEBUG__)
-	printf("volkHex\n");
-#endif
+	DEBUG_WORD("volkHex")
 }
 
 void volkCLit(void) {
-#if defined (__DEBUG__)
-	printf("volkCLit\n");
-#endif
+	DEBUG_WORD("volkCLit")
 }
 
 void volkTwoDrop(void) {
-#if defined (__DEBUG__)
-	printf("volkTwoDrop\n");
-#endif
+	DEBUG_WORD("volkTwoDrop")
 }
 
 void volkRSlashW(void) {
-#if defined (__DEBUG__)
-	printf("volkRSlashW\n");
-#endif
+	DEBUG_WORD("volkRSlashW")
 }
 
 #endif
@@ -2315,15 +1553,11 @@ void volkRSlashW(void) {
     (H2O_FORTH_PRIMITIVES == VOLK_ST_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == VOLK_PC_FORTH)
 void volkToDrive(void) {
-#if defined (__DEBUG__)
-	printf("volkToDrive\n");
-#endif
+	DEBUG_WORD("volkToDrive")
 }
 
 void volkLDump(void) {
-#if defined (__DEBUG__)
-	printf("volkLDump\n");
-#endif
+	DEBUG_WORD("volkLDump")
 }
 
 #endif
@@ -2333,75 +1567,51 @@ void volkLDump(void) {
     (H2O_FORTH_PRIMITIVES == VOLK_ST_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == VOLK_CPM_FORTH)
 void volkDrvInit(void) {
-#if defined (__DEBUG__)
-	printf("volkDrvInit\n");
-#endif
+	DEBUG_WORD("volkDrvInit")
 }
 
 void volkConStore(void) {
-#if defined (__DEBUG__)
-	printf("volkConStore\n");
-#endif
+	DEBUG_WORD("volkConStore")
 }
 
 void volkGetKey(void) {
-#if defined (__DEBUG__)
-	printf("volkGetKey\n");
-#endif
+	DEBUG_WORD("volkGetKey")
 }
 
 void volkFreeBuffer(void) {
-#if defined (__DEBUG__)
-	printf("volkFreeBuffer\n");
-#endif
+	DEBUG_WORD("volkFreeBuffer")
 }
 
 void volkAllotBuffer(void) {
-#if defined (__DEBUG__)
-	printf("volkAllotBuffer\n");
-#endif
+	DEBUG_WORD("volkAllotBuffer")
 }
 
 void volkFirst(void) {
-#if defined (__DEBUG__)
-	printf("volkFirst\n");
-#endif
+	DEBUG_WORD("volkFirst")
 }
 
 void volkLimit(void) {
-#if defined (__DEBUG__)
-	printf("volkLimit\n");
-#endif
+	DEBUG_WORD("volkLimit")
 }
 
 void volkBuffers(void) {
-#if defined (__DEBUG__)
-	printf("volkBuffers\n");
-#endif
+	DEBUG_WORD("volkBuffers")
 }
 
 void volkPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("volkPlusLoop\n");
-#endif
+	DEBUG_WORD("volkPlusLoop")
 }
 
 void volkFlush(void) {
-#if defined (__DEBUG__)
-	printf("volkFlush\n");
-#endif
+	DEBUG_WORD("volkFlush")
 }
 
 void volkEmptyBuffers(void) {
-#if defined (__DEBUG__)
-	printf("volkEmptyBuffers\n");
-#endif
+	DEBUG_WORD("volkEmptyBuffers")
 }
 
 void volkSaveBuffers(void) {
-#if defined (__DEBUG__)
-	printf("volkSaveBuffers\n");
-#endif
+	DEBUG_WORD("volkSaveBuffers")
 }
 
 #endif
@@ -2411,33 +1621,23 @@ void volkSaveBuffers(void) {
     (H2O_FORTH_PRIMITIVES == VOLK_C64_FORTH) || \
     (H2O_FORTH_PRIMITIVES == VOLK_ST_FORTH)
 void volkIndex(void) {
-#if defined (__DEBUG__)
-	printf("volkIndex\n");
-#endif
+	DEBUG_WORD("volkIndex")
 }
 
 void volkDrvQ(void) {
-#if defined (__DEBUG__)
-	printf("volkDrvQ\n");
-#endif
+	DEBUG_WORD("volkDrvQ")
 }
 
 void volkToInterpret(void) {
-#if defined (__DEBUG__)
-	printf("volkToInterpret\n");
-#endif
+	DEBUG_WORD("volkToInterpret")
 }
 
 void volkCapitalize(void) {
-#if defined (__DEBUG__)
-	printf("volkCapitalize\n");
-#endif
+	DEBUG_WORD("volkCapitalize")
 }
 
 void volkBlkSlashDrv(void) {
-#if defined (__DEBUG__)
-	printf("volkBlkSlashDrv\n");
-#endif
+	DEBUG_WORD("volkBlkSlashDrv")
 }
 
 #endif
@@ -2446,99 +1646,67 @@ void volkBlkSlashDrv(void) {
     (H2O_FORTH_PRIMITIVES == VOLK_ST_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == VOLK_CPM_FORTH)
 void volkPrinterDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkPrinterDotScr\n");
-#endif
+	DEBUG_WORD("volkPrinterDotScr")
 }
 
 void volkRelocateDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkRelocateDotScr\n");
-#endif
+	DEBUG_WORD("volkRelocateDotScr")
 }
 
 void volkTraceTick(void) {
-#if defined (__DEBUG__)
-	printf("volkTraceTick\n");
-#endif
+	DEBUG_WORD("volkTraceTick")
 }
 
 void volkDebug(void) {
-#if defined (__DEBUG__)
-	printf("volkDebug\n");
-#endif
+	DEBUG_WORD("volkDebug")
 }
 
 void volkDotBlk(void) {
-#if defined (__DEBUG__)
-	printf("volkDotBlk\n");
-#endif
+	DEBUG_WORD("volkDotBlk")
 }
 
 void volkStartupDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkStartupDotScr\n");
-#endif
+	DEBUG_WORD("volkStartupDotScr")
 }
 
 void volkFileIntDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkFileIntDotScr\n");
-#endif
+	DEBUG_WORD("volkFileIntDotScr")
 }
 
 void volkFilesQuote(void) {
-#if defined (__DEBUG__)
-	printf("volkFilesQuote\n");
-#endif
+	DEBUG_WORD("volkFilesQuote")
 }
 
 void volkEof(void) {
-#if defined (__DEBUG__)
-	printf("volkEof\n");
-#endif
+	DEBUG_WORD("volkEof")
 }
 
 void volkCurRite(void) {
-#if defined (__DEBUG__)
-	printf("volkCurRite\n");
-#endif
+	DEBUG_WORD("volkCurRite")
 }
 
 void volkCurLeft(void) {
-#if defined (__DEBUG__)
-	printf("volkCurLeft\n");
-#endif
+	DEBUG_WORD("volkCurLeft")
 }
 
 void volkZWord(void) {
-#if defined (__DEBUG__)
-	printf("volkZWord\n");
-#endif
+	DEBUG_WORD("volkZWord")
 }
 
 void volkUP(void) {
-#if defined (__DEBUG__)
-	printf("volkUP\n");
-#endif
+	DEBUG_WORD("volkUP")
 }
 
 void volkToolsDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkToolsDotScr\n");
-#endif
+	DEBUG_WORD("volkToolsDotScr")
 }
 
 void volkEditorDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkEditorDotScr\n");
-#endif
+	DEBUG_WORD("volkEditorDotScr")
 }
 
 void volkZView(void) {
-#if defined (__DEBUG__)
-	printf("volkZView\n");
-#endif
+	DEBUG_WORD("volkZView")
 }
 
 #endif
@@ -2547,327 +1715,219 @@ void volkZView(void) {
 	(H2O_FORTH_PRIMITIVES == VOLK_CPM_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == VOLK_PC_FORTH)
 void volkRendezvous(void) {
-#if defined (__DEBUG__)
-	printf("volkRendezvous\n");
-#endif
+	DEBUG_WORD("volkRendezvous")
 }
 
 void volkTask(void) {
-#if defined (__DEBUG__)
-	printf("volkTask\n");
-#endif
+	DEBUG_WORD("volkTask")
 }
 
 void volkWake(void) {
-#if defined (__DEBUG__)
-	printf("volkWake\n");
-#endif
+	DEBUG_WORD("volkWake")
 }
 
 void volkSleep(void) {
-#if defined (__DEBUG__)
-	printf("volkSleep\n");
-#endif
+	DEBUG_WORD("volkSleep")
 }
 
 void volkActivate(void) {
-#if defined (__DEBUG__)
-	printf("volkActivate\n");
-#endif
+	DEBUG_WORD("volkActivate")
 }
 
 void volkPass(void) {
-#if defined (__DEBUG__)
-	printf("volkPass\n");
-#endif
+	DEBUG_WORD("volkPass")
 }
 
 void volkMultiTask(void) {
-#if defined (__DEBUG__)
-	printf("volkMultiTask\n");
-#endif
+	DEBUG_WORD("volkMultiTask")
 }
 
 void volkSingleTask(void) {
-#if defined (__DEBUG__)
-	printf("volkSingleTask\n");
-#endif
+	DEBUG_WORD("volkSingleTask")
 }
 
 void volkStop(void) {
-#if defined (__DEBUG__)
-	printf("volkStop\n");
-#endif
+	DEBUG_WORD("volkStop")
 }
 
 void volkFix(void) {
-#if defined (__DEBUG__)
-	printf("volkFix\n");
-#endif
+	DEBUG_WORD("volkFix")
 }
 
 void volkNumDel(void) {
-#if defined (__DEBUG__)
-	printf("volkNumDel\n");
-#endif
+	DEBUG_WORD("volkNumDel")
 }
 
 void volkCtrl(void) {
-#if defined (__DEBUG__)
-	printf("volkCtrl\n");
-#endif
+	DEBUG_WORD("volkCtrl")
 }
 
 void volkUpdatedQ(void) {
-#if defined (__DEBUG__)
-	printf("volkUpdatedQ\n");
-#endif
+	DEBUG_WORD("volkUpdatedQ")
 }
 
 void volkEditor(void) {
-#if defined (__DEBUG__)
-	printf("volkEditor\n");
-#endif
+	DEBUG_WORD("volkEditor")
 }
 
 void volkBlank(void) {
-#if defined (__DEBUG__)
-	printf("volkBlank\n");
-#endif
+	DEBUG_WORD("volkBlank")
 }
 
 void volkZKey(void) {
-#if defined (__DEBUG__)
-	printf("volkZKey\n");
-#endif
+	DEBUG_WORD("volkZKey")
 }
 
 void volkZExpect(void) {
-#if defined (__DEBUG__)
-	printf("volkZExpect\n");
-#endif
+	DEBUG_WORD("volkZExpect")
 }
 
 void volkZDecode(void) {
-#if defined (__DEBUG__)
-	printf("volkZDecode\n");
-#endif
+	DEBUG_WORD("volkZDecode")
 }
 
 void volkZDel(void) {
-#if defined (__DEBUG__)
-	printf("volkZDel\n");
-#endif
+	DEBUG_WORD("volkZDel")
 }
 
 void volkZCr(void) {
-#if defined (__DEBUG__)
-	printf("volkZCr\n");
-#endif
+	DEBUG_WORD("volkZCr")
 }
 
 void volkZEmit(void) {
-#if defined (__DEBUG__)
-	printf("volkZEmit\n");
-#endif
+	DEBUG_WORD("volkZEmit")
 }
 
 void volkZType(void) {
-#if defined (__DEBUG__)
-	printf("volkZType\n");
-#endif
+	DEBUG_WORD("volkZType")
 }
 
 void volkZPage(void) {
-#if defined (__DEBUG__)
-	printf("volkZPage\n");
-#endif
+	DEBUG_WORD("volkZPage")
 }
 
 void volkZAtQ(void) {
-#if defined (__DEBUG__)
-	printf("volkZAtQ\n");
-#endif
+	DEBUG_WORD("volkZAtQ")
 }
 
 void volkZAt(void) {
-#if defined (__DEBUG__)
-	printf("volkZAt\n");
-#endif
+	DEBUG_WORD("volkZAt")
 }
 
 void volkCSlashCol(void) {
-#if defined (__DEBUG__)
-	printf("volkCSlashCol\n");
-#endif
+	DEBUG_WORD("volkCSlashCol")
 }
 
 void volkCSlashRow(void) {
-#if defined (__DEBUG__)
-	printf("volkCSlashRow\n");
-#endif
+	DEBUG_WORD("volkCSlashRow")
 }
 
 void volkLabel(void) {
-#if defined (__DEBUG__)
-	printf("volkLabel\n");
-#endif
+	DEBUG_WORD("volkLabel")
 }
 
 void volkToLabel(void) {
-#if defined (__DEBUG__)
-	printf("volkToLabel\n");
-#endif
+	DEBUG_WORD("volkToLabel")
 }
 
 void volkSemicolonCode(void) {
-#if defined (__DEBUG__)
-	printf("volkSemicolonCode\n");
-#endif
+	DEBUG_WORD("volkSemicolonCode")
 }
 
 void volkCode(void) {
-#if defined (__DEBUG__)
-	printf("volkCode\n");
-#endif
+	DEBUG_WORD("volkCode")
 }
 
 void volkSaveFile(void) {
-#if defined (__DEBUG__)
-	printf("volkSaveFile\n");
-#endif
+	DEBUG_WORD("volkSaveFile")
 }
 
 void volkDirect(void) {
-#if defined (__DEBUG__)
-	printf("volkDirect\n");
-#endif
+	DEBUG_WORD("volkDirect")
 }
 
 void volkZRSlashW(void) {
-#if defined (__DEBUG__)
-	printf("volkZRSlashW\n");
-#endif
+	DEBUG_WORD("volkZRSlashW")
 }
 
 void volkNumBel(void) {
-#if defined (__DEBUG__)
-	printf("volkNumBel\n");
-#endif
+	DEBUG_WORD("volkNumBel")
 }
 
 void volkNumTab(void) {
-#if defined (__DEBUG__)
-	printf("volkNumTab\n");
-#endif
+	DEBUG_WORD("volkNumTab")
 }
 
 void volkDos(void) {
-#if defined (__DEBUG__)
-	printf("volkDos\n");
-#endif
+	DEBUG_WORD("volkDos")
 }
 
 void volkEmptyBuf(void) {
-#if defined (__DEBUG__)
-	printf("volkEmptyBuf\n");
-#endif
+	DEBUG_WORD("volkEmptyBuf")
 }
 
 void volkZCoreQ(void) {
-#if defined (__DEBUG__)
-	printf("volkZCoreQ\n");
-#endif
+	DEBUG_WORD("volkZCoreQ")
 }
 
 void volkFromFile(void) {
-#if defined (__DEBUG__)
-	printf("volkFromFile\n");
-#endif
+	DEBUG_WORD("volkFromFile")
 }
 
 void volkIsFile(void) {
-#if defined (__DEBUG__)
-	printf("volkIsFile\n");
-#endif
+	DEBUG_WORD("volkIsFile")
 }
 
 void volkPrompt(void) {
-#if defined (__DEBUG__)
-	printf("volkPrompt\n");
-#endif
+	DEBUG_WORD("volkPrompt")
 }
 
 void volkZPrompt(void) {
-#if defined (__DEBUG__)
-	printf("volkZPrompt\n");
-#endif
+	DEBUG_WORD("volkZPrompt")
 }
 
 void volkParser(void) {
-#if defined (__DEBUG__)
-	printf("volkParser\n");
-#endif
+	DEBUG_WORD("volkParser")
 }
 
 void volkRoot(void) {
-#if defined (__DEBUG__)
-	printf("volkRoot\n");
-#endif
+	DEBUG_WORD("volkRoot")
 }
 
 void volkBodyFrom(void) {
-#if defined (__DEBUG__)
-	printf("volkBodyFrom\n");
-#endif
+	DEBUG_WORD("volkBodyFrom")
 }
 
 void volkZNameFrom(void) {
-#if defined (__DEBUG__)
-	printf("volkZNameFrom\n");
-#endif
+	DEBUG_WORD("volkZNameFrom")
 }
 
 void volkZSemicolonCode(void) {
-#if defined (__DEBUG__)
-	printf("volkZSemicolonCode\n");
-#endif
+	DEBUG_WORD("volkZSemicolonCode")
 }
 
 void volkUpper(void) {
-#if defined (__DEBUG__)
-	printf("volkUpper\n");
-#endif
+	DEBUG_WORD("volkUpper")
 }
 
 void volkFlip(void) {
-#if defined (__DEBUG__)
-	printf("volkFlip\n");
-#endif
+	DEBUG_WORD("volkFlip")
 }
 
 void volkZeroEqualExit(void) {
-#if defined (__DEBUG__)
-	printf("volkZeroEqualExit\n");
-#endif
+	DEBUG_WORD("volkZeroEqualExit")
 }
 
 void volkRemove(void) {
-#if defined (__DEBUG__)
-	printf("volkRemove\n");
-#endif
+	DEBUG_WORD("volkRemove")
 }
 
 void volkZKeyQ(void) {
-#if defined (__DEBUG__)
-	printf("volkZKeyQ\n");
-#endif
+	DEBUG_WORD("volkZKeyQ")
 }
 
 void volkTipp(void) {
-#if defined (__DEBUG__)
-	printf("volkTipp\n");
-#endif
+	DEBUG_WORD("volkTipp")
 }
 
 #endif
@@ -2876,21 +1936,15 @@ void volkTipp(void) {
     (H2O_FORTH_PRIMITIVES == VOLK_C64_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == VOLK_CPM_FORTH)
 void volkPrintableQ(void) {
-#if defined (__DEBUG__)
-	printf("volkPrintableQ\n");
-#endif
+	DEBUG_WORD("volkPrintableQ")
 }
 
 void volkDiskErr(void) {
-#if defined (__DEBUG__)
-	printf("volkDiskErr\n");
-#endif
+	DEBUG_WORD("volkDiskErr")
 }
 
 void volkZDiskErr(void) {
-#if defined (__DEBUG__)
-	printf("volkZDiskErr\n");
-#endif
+	DEBUG_WORD("volkZDiskErr")
 }
 
 #endif
@@ -2899,9 +1953,7 @@ void volkZDiskErr(void) {
     (H2O_FORTH_PRIMITIVES == VOLK_C64_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == VOLK_PC_FORTH)
 void volkDrive(void) {
-#if defined (__DEBUG__)
-	printf("volkDrive\n");
-#endif
+	DEBUG_WORD("volkDrive")
 }
 
 #endif
@@ -2910,57 +1962,39 @@ void volkDrive(void) {
     (H2O_FORTH_PRIMITIVES == VOLK_ST_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == VOLK_PC_FORTH)
 void volkBell(void) {
-#if defined (__DEBUG__)
-	printf("volkBell\n");
-#endif
+	DEBUG_WORD("volkBell")
 }
 
 void volkAbortZ(void) {
-#if defined (__DEBUG__)
-	printf("volkAbortZ\n");
-#endif
+	DEBUG_WORD("volkAbortZ")
 }
 
 void volkPath(void) {
-#if defined (__DEBUG__)
-	printf("volkPath\n");
-#endif
+	DEBUG_WORD("volkPath")
 }
 
 void volkArguments(void) {
-#if defined (__DEBUG__)
-	printf("volkArguments\n");
-#endif
+	DEBUG_WORD("volkArguments")
 }
 
 void volkTwoOver(void) {
-#if defined (__DEBUG__)
-	printf("volkTwoOver\n");
-#endif
+	DEBUG_WORD("volkTwoOver")
 }
 
 void volkLFetch(void) {
-#if defined (__DEBUG__)
-	printf("volkLFetch\n");
-#endif
+	DEBUG_WORD("volkLFetch")
 }
 
 void volkLStore(void) {
-#if defined (__DEBUG__)
-	printf("volkLStore\n");
-#endif
+	DEBUG_WORD("volkLStore")
 }
 
 void volkLCStore(void) {
-#if defined (__DEBUG__)
-	printf("volkLCStore\n");
-#endif
+	DEBUG_WORD("volkLCStore")
 }
 
 void volkNextLink(void) {
-#if defined (__DEBUG__)
-	printf("volkNextLink\n");
-#endif
+	DEBUG_WORD("volkNextLink")
 }
 
 #endif
@@ -2969,261 +2003,175 @@ void volkNextLink(void) {
 #if (H2O_FORTH_PRIMITIVES == VOLK_FORTH) || \
    (H2O_FORTH_PRIMITIVES == VOLK_C64_FORTH)
 void volkZ64(void) {
-#if defined (__DEBUG__)
-	printf("volkZ64\n");
-#endif
+	DEBUG_WORD("volkZ64")
 }
 
 void volkCZ(void) {
-#if defined (__DEBUG__)
-	printf("volkCZ\n");
-#endif
+	DEBUG_WORD("volkCZ")
 }
 
 void volkZ16(void) {
-#if defined (__DEBUG__)
-	printf("volkZ16\n");
-#endif
+	DEBUG_WORD("volkZ16")
 }
 
 void volkC64Init(void) {
-#if defined (__DEBUG__)
-	printf("volkC64Init\n");
-#endif
+	DEBUG_WORD("volkC64Init")
 }
 
 void volkInitSystem(void) {
-#if defined (__DEBUG__)
-	printf("volkInitSystem\n");
-#endif
+	DEBUG_WORD("volkInitSystem")
 }
 
 void volkInkPot(void) {
-#if defined (__DEBUG__)
-	printf("volkInkPot\n");
-#endif
+	DEBUG_WORD("volkInkPot")
 }
 
 void volkFIndex(void) {
-#if defined (__DEBUG__)
-	printf("volkFIndex\n");
-#endif
+	DEBUG_WORD("volkFIndex")
 }
 
 void volkCBM1541RSlashW(void) {
-#if defined (__DEBUG__)
-	printf("volkCBM1541RSlashW\n");
-#endif
+	DEBUG_WORD("volkCBM1541RSlashW")
 }
 
 void volkDiskClose(void) {
-#if defined (__DEBUG__)
-	printf("volkDiskClose\n");
-#endif
+	DEBUG_WORD("volkDiskClose")
 }
 
 void volkDiskOpen(void) {
-#if defined (__DEBUG__)
-	printf("volkDiskOpen\n");
-#endif
+	DEBUG_WORD("volkDiskOpen")
 }
 
 void volkWriteSector(void) {
-#if defined (__DEBUG__)
-	printf("volkWriteSector\n");
-#endif
+	DEBUG_WORD("volkWriteSector")
 }
 
 void volkReadSector(void) {
-#if defined (__DEBUG__)
-	printf("volkReadSector\n");
-#endif
+	DEBUG_WORD("volkReadSector")
 }
 
 void volkDErrorQ(void) {
-#if defined (__DEBUG__)
-	printf("volkDErrorQ\n");
-#endif
+	DEBUG_WORD("volkDErrorQ")
 }
 
 void volkBusInput(void) {
-#if defined (__DEBUG__)
-	printf("volkBusInput\n");
-#endif
+	DEBUG_WORD("volkBusInput")
 }
 
 void volkBusFetch(void) {
-#if defined (__DEBUG__)
-	printf("volkBusFetch\n");
-#endif
+	DEBUG_WORD("volkBusFetch")
 }
 
 void volkBusType(void) {
-#if defined (__DEBUG__)
-	printf("volkBusType\n");
-#endif
+	DEBUG_WORD("volkBusType")
 }
 
 void volkBusStore(void) {
-#if defined (__DEBUG__)
-	printf("volkBusStore\n");
-#endif
+	DEBUG_WORD("volkBusStore")
 }
 
 void volkBusIn(void) {
-#if defined (__DEBUG__)
-	printf("volkBusIn\n");
-#endif
+	DEBUG_WORD("volkBusIn")
 }
 
 void volkZBusIn(void) {
-#if defined (__DEBUG__)
-	printf("volkZBusIn\n");
-#endif
+	DEBUG_WORD("volkZBusIn")
 }
 
 void volkBusClose(void) {
-#if defined (__DEBUG__)
-	printf("volkBusClose\n");
-#endif
+	DEBUG_WORD("volkBusClose")
 }
 
 void volkBusOpen(void) {
-#if defined (__DEBUG__)
-	printf("volkBusOpen\n");
-#endif
+	DEBUG_WORD("volkBusOpen")
 }
 
 void volkBusOff(void) {
-#if defined (__DEBUG__)
-	printf("volkBusOff\n");
-#endif
+	DEBUG_WORD("volkBusOff")
 }
 
 void volkISlashO(void) {
-#if defined (__DEBUG__)
-	printf("volkISlashO\n");
-#endif
+	DEBUG_WORD("volkISlashO")
 }
 
 void volkZDrv(void) {
-#if defined (__DEBUG__)
-	printf("volkZDrv\n");
-#endif
+	DEBUG_WORD("volkZDrv")
 }
 
 void volkC64Type(void) {
-#if defined (__DEBUG__)
-	printf("volkC64Type\n");
-#endif
+	DEBUG_WORD("volkC64Type")
 }
 
 void volkC64AtQ(void) {
-#if defined (__DEBUG__)
-	printf("volkC64AtQ\n");
-#endif
+	DEBUG_WORD("volkC64AtQ")
 }
 
 void volkC64At(void) {
-#if defined (__DEBUG__)
-	printf("volkC64At\n");
-#endif
+	DEBUG_WORD("volkC64At")
 }
 
 void volkC64Page(void) {
-#if defined (__DEBUG__)
-	printf("volkC64Page\n");
-#endif
+	DEBUG_WORD("volkC64Page")
 }
 
 void volkC64Del(void) {
-#if defined (__DEBUG__)
-	printf("volkC64Del\n");
-#endif
+	DEBUG_WORD("volkC64Del")
 }
 
 void volkC64Cr(void) {
-#if defined (__DEBUG__)
-	printf("volkC64Cr\n");
-#endif
+	DEBUG_WORD("volkC64Cr")
 }
 
 void volkC64Emit(void) {
-#if defined (__DEBUG__)
-	printf("volkC64Emit\n");
-#endif
+	DEBUG_WORD("volkC64Emit")
 }
 
 void volkC64Expect(void) {
-#if defined (__DEBUG__)
-	printf("volkC64Expect\n");
-#endif
+	DEBUG_WORD("volkC64Expect")
 }
 
 void volkC64Decode(void) {
-#if defined (__DEBUG__)
-	printf("volkC64Decode\n");
-#endif
+	DEBUG_WORD("volkC64Decode")
 }
 
 void volkC64Key(void) {
-#if defined (__DEBUG__)
-	printf("volkC64Key\n");
-#endif
+	DEBUG_WORD("volkC64Key")
 }
 
 void volkC64KeyQ(void) {
-#if defined (__DEBUG__)
-	printf("volkC64KeyQ\n");
-#endif
+	DEBUG_WORD("volkC64KeyQ")
 }
 
 void volkBlkMove(void) {
-#if defined (__DEBUG__)
-	printf("volkBlkMove\n");
-#endif
+	DEBUG_WORD("volkBlkMove")
 }
 
 void volkZCopy(void) {
-#if defined (__DEBUG__)
-	printf("volkZCopy\n");
-#endif
+	DEBUG_WORD("volkZCopy")
 }
 
 void volkTickNumberQ(void) {
-#if defined (__DEBUG__)
-	printf("volkTickNumberQ\n");
-#endif
+	DEBUG_WORD("volkTickNumberQ")
 }
 
 void volkPrevious(void) {
-#if defined (__DEBUG__)
-	printf("volkPrevious\n");
-#endif
+	DEBUG_WORD("volkPrevious")
 }
 
 void volkChar(void) {
-#if defined (__DEBUG__)
-	printf("volkChar\n");
-#endif
+	DEBUG_WORD("volkChar")
 }
 
 void volkEndQ(void) {
-#if defined (__DEBUG__)
-	printf("volkEndQ\n");
-#endif
+	DEBUG_WORD("volkEndQ")
 }
 
 void volkBasOn(void) {
-#if defined (__DEBUG__)
-	printf("volkBasOn\n");
-#endif
+	DEBUG_WORD("volkBasOn")
 }
 
 void volkLogo(void) {
-#if defined (__DEBUG__)
-	printf("volkLogo\n");
-#endif
+	DEBUG_WORD("volkLogo")
 }
 
 #endif
@@ -3231,406 +2179,272 @@ void volkLogo(void) {
 #if (H2O_FORTH_PRIMITIVES == VOLK_FORTH) || \
     (H2O_FORTH_PRIMITIVES == VOLK_ST_FORTH)
 void volkPrintALL(void) {
-#if defined (__DEBUG__)
-	printf("volkPrintALL\n");
-#endif
+	DEBUG_WORD("volkPrintALL")
 }
 
 void volkRelocate(void) {
-#if defined (__DEBUG__)
-	printf("volkRelocate\n");
-#endif
+	DEBUG_WORD("volkRelocate")
 }
 
 void volkIndexDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkIndexDotScr\n");
-#endif
+	DEBUG_WORD("volkIndexDotScr")
 }
 
 void volkTickEditFile(void) {
-#if defined (__DEBUG__)
-	printf("volkTickEditFile\n");
-#endif
+	DEBUG_WORD("volkTickEditFile")
 }
 
 void volkTickRNum(void) {
-#if defined (__DEBUG__)
-	printf("volkTickRNum\n");
-#endif
+	DEBUG_WORD("volkTickRNum")
 }
 
 void volkTickScr(void) {
-#if defined (__DEBUG__)
-	printf("volkTickScr\n");
-#endif
+	DEBUG_WORD("volkTickScr")
 }
 
 void volkEdWindowDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkEdWindowDotScr\n");
-#endif
+	DEBUG_WORD("volkEdWindowDotScr")
 }
 
 void volkGemBackslashVdiDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkGemBackslashVdiDotScr\n");
-#endif
+	DEBUG_WORD("volkGemBackslashVdiDotScr")
 }
 
 void volkGemBackslashSuperGemDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkGemBackslashSuperGemDotScr\n");
-#endif
+	DEBUG_WORD("volkGemBackslashSuperGemDotScr")
 }
 
 void volkEdiConDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkEdiConDotScr\n");
-#endif
+	DEBUG_WORD("volkEdiConDotScr")
 }
 
 void volkGem(void) {
-#if defined (__DEBUG__)
-	printf("volkGem\n");
-#endif
+	DEBUG_WORD("volkGem")
 }
 
 void volkGemBackslashBsicDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkGemBackslashBsicDotScr\n");
-#endif
+	DEBUG_WORD("volkGemBackslashBsicDotScr")
 }
 
 void volkGemBackslashAesDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkGemBackslashAesDotScr\n");
-#endif
+	DEBUG_WORD("volkGemBackslashAesDotScr")
 }
 
 void volkMFree(void) {
-#if defined (__DEBUG__)
-	printf("volkMFree\n");
-#endif
+	DEBUG_WORD("volkMFree")
 }
 
 void volkMalloc(void) {
-#if defined (__DEBUG__)
-	printf("volkMalloc\n");
-#endif
+	DEBUG_WORD("volkMalloc")
 }
 
 void volkAllocateDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkAllocateDotScr\n");
-#endif
+	DEBUG_WORD("volkAllocateDotScr")
 }
 
 void volkZeroQuote(void) {
-#if defined (__DEBUG__)
-	printf("volkZeroQuote\n");
-#endif
+	DEBUG_WORD("volkZeroQuote")
 }
 
 void volkCommaZeroQuote(void) {
-#if defined (__DEBUG__)
-	printf("volkCommaZeroQuote\n");
-#endif
+	DEBUG_WORD("volkCommaZeroQuote")
 }
 
 void volkZeroGreaterCQuote(void) {
-#if defined (__DEBUG__)
-	printf("volkZeroGreaterCQuote\n");
-#endif
+	DEBUG_WORD("volkZeroGreaterCQuote")
 }
 
 void volkCGreaterZeroQuote(void) {
-#if defined (__DEBUG__)
-	printf("volkCGreaterZeroQuote\n");
-#endif
+	DEBUG_WORD("volkCGreaterZeroQuote")
 }
 
 void volkDollarAdd(void) {
-#if defined (__DEBUG__)
-	printf("volkDollarAdd\n");
-#endif
+	DEBUG_WORD("volkDollarAdd")
 }
 
 void volkDollarSum(void) {
-#if defined (__DEBUG__)
-	printf("volkDollarSum\n");
-#endif
+	DEBUG_WORD("volkDollarSum")
 }
 
 void volkSearch(void) {
-#if defined (__DEBUG__)
-	printf("volkSearch\n");
-#endif
+	DEBUG_WORD("volkSearch")
 }
 
 void volkCompareText(void) {
-#if defined (__DEBUG__)
-	printf("volkCompareText\n");
-#endif
+	DEBUG_WORD("volkCompareText")
 }
 
 void volkringsDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkringsDotScr\n");
-#endif
+	DEBUG_WORD("volkringsDotScr")
 }
 
 void volkAssembleDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkAssembleDotScr\n");
-#endif
+	DEBUG_WORD("volkAssembleDotScr")
 }
 
 void volkBlak(void) {
-#if defined (__DEBUG__)
-	printf("volkBlak\n");
-#endif
+	DEBUG_WORD("volkBlak")
 }
 
 void volkCPush(void) {
-#if defined (__DEBUG__)
-	printf("volkCPush\n");
-#endif
+	DEBUG_WORD("volkCPush")
 }
 
 void volkAbsAddr(void) {
-#if defined (__DEBUG__)
-	printf("volkAbsAddr\n");
-#endif
+	DEBUG_WORD("volkAbsAddr")
 }
 
 void volkDiversesDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkDiversesDotScr\n");
-#endif
+	DEBUG_WORD("volkDiversesDotScr")
 }
 
 void volkForth83DotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkForth83DotScr\n");
-#endif
+	DEBUG_WORD("volkForth83DotScr")
 }
 
 void volkRemoveQ(void) {
-#if defined (__DEBUG__)
-	printf("volkRemoveQ\n");
-#endif
+	DEBUG_WORD("volkRemoveQ")
 }
 
 void volkMakeDir(void) {
 	/* = volkMd */
-#if defined (__DEBUG__)
-	printf("volkMakeDir\n");
-#endif
+	DEBUG_WORD("volkMakeDir")
 }
 
 void volkZMore(void) {
-#if defined (__DEBUG__)
-	printf("volkZMore\n");
-#endif
+	DEBUG_WORD("volkZMore")
 }
 
 void volkDirekt(void) {
-#if defined (__DEBUG__)
-	printf("volkDirekt\n");
-#endif
+	DEBUG_WORD("volkDirekt")
 }
 
 void volkSTRSlashW(void) {
-#if defined (__DEBUG__)
-	printf("volkSTRSlashW\n");
-#endif
+	DEBUG_WORD("volkSTRSlashW")
 }
 
 void volkRWAbs(void) {
-#if defined (__DEBUG__)
-	printf("volkRWAbs\n");
-#endif
+	DEBUG_WORD("volkRWAbs")
 }
 
 void volkDrv1(void) {
-#if defined (__DEBUG__)
-	printf("volkDrv1\n");
-#endif
+	DEBUG_WORD("volkDrv1")
 }
 
 void volkDrv0(void) {
-#if defined (__DEBUG__)
-	printf("volkDrv0\n");
-#endif
+	DEBUG_WORD("volkDrv0")
 }
 
 void volkZBlkSlashDrv(void) {
-#if defined (__DEBUG__)
-	printf("volkZBlkSlashDrv\n");
-#endif
+	DEBUG_WORD("volkZBlkSlashDrv")
 }
 
 void volkStType(void) {
-#if defined (__DEBUG__)
-	printf("volkStType\n");
-#endif
+	DEBUG_WORD("volkStType")
 }
 
 void volkStAtQ(void) {
-#if defined (__DEBUG__)
-	printf("volkStAtQ\n");
-#endif
+	DEBUG_WORD("volkStAtQ")
 }
 
 void volkStAt(void) {
-#if defined (__DEBUG__)
-	printf("volkStAt\n");
-#endif
+	DEBUG_WORD("volkStAt")
 }
 
 void volkStPage(void) {
-#if defined (__DEBUG__)
-	printf("volkStPage\n");
-#endif
+	DEBUG_WORD("volkStPage")
 }
 
 void volkStDel(void) {
-#if defined (__DEBUG__)
-	printf("volkStDel\n");
-#endif
+	DEBUG_WORD("volkStDel")
 }
 
 void volkStCR(void) {
-#if defined (__DEBUG__)
-	printf("volkStCR\n");
-#endif
+	DEBUG_WORD("volkStCR")
 }
 
 void volkStEmit(void) {
-#if defined (__DEBUG__)
-	printf("volkStEmit\n");
-#endif
+	DEBUG_WORD("volkStEmit")
 }
 
 void volkStExpect(void) {
-#if defined (__DEBUG__)
-	printf("volkStExpect\n");
-#endif
+	DEBUG_WORD("volkStExpect")
 }
 
 void volkStDecode(void) {
-#if defined (__DEBUG__)
-	printf("volkStDecode\n");
-#endif
+	DEBUG_WORD("volkStDecode")
 }
 
 void volkStKey(void) {
-#if defined (__DEBUG__)
-	printf("volkStKey\n");
-#endif
+	DEBUG_WORD("volkStKey")
 }
 
 void volkStKeyQ(void) {
-#if defined (__DEBUG__)
-	printf("volkStKeyQ\n");
-#endif
+	DEBUG_WORD("volkStKeyQ")
 }
 
 void volkWrap(void) {
-#if defined (__DEBUG__)
-	printf("volkWrap\n");
-#endif
+	DEBUG_WORD("volkWrap")
 }
 
 void volkBConOut(void) {
-#if defined (__DEBUG__)
-	printf("volkBConOut\n");
-#endif
+	DEBUG_WORD("volkBConOut")
 }
 
 void volkBConIn(void) {
-#if defined (__DEBUG__)
-	printf("volkBConIn\n");
-#endif
+	DEBUG_WORD("volkBConIn")
 }
 
 void volkBcoStat(void) {
-#if defined (__DEBUG__)
-	printf("volkBcoStat\n");
-#endif
+	DEBUG_WORD("volkBcoStat")
 }
 
 void volkBconStat(void) {
-#if defined (__DEBUG__)
-	printf("volkBconStat\n");
-#endif
+	DEBUG_WORD("volkBconStat")
 }
 
 void volkTwoVariable(void) {
-#if defined (__DEBUG__)
-	printf("volkTwoVariable\n");
-#endif
+	DEBUG_WORD("volkTwoVariable")
 }
 
 void volkTwoConstant(void) {
-#if defined (__DEBUG__)
-	printf("volkTwoConstant\n");
-#endif
+	DEBUG_WORD("volkTwoConstant")
 }
 
 void volkBlkFetch(void) {
-#if defined (__DEBUG__)
-	printf("volkBlkFetch\n");
-#endif
+	DEBUG_WORD("volkBlkFetch")
 }
 
 void volkDStar(void) {
-#if defined (__DEBUG__)
-	printf("volkDStar\n");
-#endif
+	DEBUG_WORD("volkDStar")
 }
 
 void volkDMinus(void) {
-#if defined (__DEBUG__)
-	printf("volkDMinus\n");
-#endif
+	DEBUG_WORD("volkDMinus")
 }
 
 void volkQuoteDrop(void) {
-#if defined (__DEBUG__)
-	printf("volkQuoteDrop\n");
-#endif
+	DEBUG_WORD("volkQuoteDrop")
 }
 
 void volkLNPlusStore(void) {
-#if defined (__DEBUG__)
-	printf("volkLNPlusStore\n");
-#endif
+	DEBUG_WORD("volkLNPlusStore")
 }
 
 void volkL2Store(void) {
-#if defined (__DEBUG__)
-	printf("volkL2Store\n");
-#endif
+	DEBUG_WORD("volkL2Store")
 }
 
 void volkL2Fetch(void) {
-#if defined (__DEBUG__)
-	printf("volkL2Fetch\n");
-#endif
+	DEBUG_WORD("volkL2Fetch")
 }
 
 void volkLCMove(void) {
-#if defined (__DEBUG__)
-	printf("volkLCMove\n");
-#endif
+	DEBUG_WORD("volkLCMove")
 }
 
 void volkForthStart(void) {
-#if defined (__DEBUG__)
-	printf("volkForthStart\n");
-#endif
+	DEBUG_WORD("volkForthStart")
 }
 
 #endif
@@ -3638,273 +2452,183 @@ void volkForthStart(void) {
 #if (H2O_FORTH_PRIMITIVES == VOLK_FORTH) || \
     (H2O_FORTH_PRIMITIVES == VOLK_CPM_FORTH)
 void volkSpool(void) {
-#if defined (__DEBUG__)
-	printf("volkSpool\n");
-#endif
+	DEBUG_WORD("volkSpool")
 }
 
 void volkSpooler(void) {
-#if defined (__DEBUG__)
-	printf("volkSpooler\n");
-#endif
+	DEBUG_WORD("volkSpooler")
 }
 
 void volkShadow(void) {
-#if defined (__DEBUG__)
-	printf("volkShadow\n");
-#endif
+	DEBUG_WORD("volkShadow")
 }
 
 void volkTasks(void) {
-#if defined (__DEBUG__)
-	printf("volkTasks\n");
-#endif
+	DEBUG_WORD("volkTasks")
 }
 
 void volkTickS(void) {
 	/* "'S" => Capital "S" */
-#if defined (__DEBUG__)
-	printf("volkTasks\n");
-#endif
+	DEBUG_WORD("volkTasks")
 }
 void volkTaskerDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkTaskerDotScr\n");
-#endif
+	DEBUG_WORD("volkTaskerDotScr")
 }
 
 void volkSee(void) {
-#if defined (__DEBUG__)
-	printf("volkSee\n");
-#endif
+	DEBUG_WORD("volkSee")
 }
 
 void volkSeeDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkSeeDotScr\n");
-#endif
+	DEBUG_WORD("volkSeeDotScr")
 }
 
 void volkExternal(void) {
-#if defined (__DEBUG__)
-	printf("volkExternal\n");
-#endif
+	DEBUG_WORD("volkExternal")
 }
 
 void volkInternal(void) {
-#if defined (__DEBUG__)
-	printf("volkInternal\n");
-#endif
+	DEBUG_WORD("volkInternal")
 }
 
 void volkQAbortZ(void) {
-#if defined (__DEBUG__)
-	printf("volkQAbortZ\n");
-#endif
+	DEBUG_WORD("volkQAbortZ")
 }
 
 void volkQEnough(void) {
-#if defined (__DEBUG__)
-	printf("volkQEnough\n");
-#endif
+	DEBUG_WORD("volkQEnough")
 }
 
 void volkReplace(void) {
-#if defined (__DEBUG__)
-	printf("volkReplace\n");
-#endif
+	DEBUG_WORD("volkReplace")
 }
 
 void volkInsert(void) {
-#if defined (__DEBUG__)
-	printf("volkInsert\n");
-#endif
+	DEBUG_WORD("volkInsert")
 }
 
 void volkSaveSysDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkSaveSysDotScr\n");
-#endif
+	DEBUG_WORD("volkSaveSysDotScr")
 }
 
 void volkCopyDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkSaveSysDotScr\n");
-#endif
+	DEBUG_WORD("volkSaveSysDotScr")
 }
 
 void volkAnsi(void) {
-#if defined (__DEBUG__)
-	printf("volkAnsi\n");
-#endif
+	DEBUG_WORD("volkAnsi")
 }
 
 void volkTerminalDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkTerminalDotScr\n");
-#endif
+	DEBUG_WORD("volkTerminalDotScr")
 }
 
 void volkDumb(void) {
-#if defined (__DEBUG__)
-	printf("volkDumb\n");
-#endif
+	DEBUG_WORD("volkDumb")
 }
 
 void volkLocate(void) {
-#if defined (__DEBUG__)
-	printf("volkLocate\n");
-#endif
+	DEBUG_WORD("volkLocate")
 }
 
 void volkDark(void) {
-#if defined (__DEBUG__)
-	printf("volkDark\n");
-#endif
+	DEBUG_WORD("volkDark")
 }
 
 void volkRvsOff(void) {
-#if defined (__DEBUG__)
-	printf("volkRvsOff\n");
-#endif
+	DEBUG_WORD("volkRvsOff")
 }
 
 void volkRvsOn(void) {
-#if defined (__DEBUG__)
-	printf("volkRvsOn\n");
-#endif
+	DEBUG_WORD("volkRvsOn")
 }
 
 void volkTerminalColon(void) {
-#if defined (__DEBUG__)
-	printf("volkTerminalColon\n");
-#endif
+	DEBUG_WORD("volkTerminalColon")
 }
 
 void volkTermColon(void) {
-#if defined (__DEBUG__)
-	printf("volkTermColon\n");
-#endif
+	DEBUG_WORD("volkTermColon")
 }
 
 void volkXinOutDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkXinOutDotScr\n");
-#endif
+	DEBUG_WORD("volkXinOutDotScr")
 }
 
 void volkAss8080DotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkAss8080DotScr\n");
-#endif
+	DEBUG_WORD("volkAss8080DotScr")
 }
 
 void volkSourceDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkSourceDotScr\n");
-#endif
+	DEBUG_WORD("volkSourceDotScr")
 }
 
 void volkJColon(void) {
-#if defined (__DEBUG__)
-	printf("volkJColon\n");
-#endif
+	DEBUG_WORD("volkJColon")
 }
 
 void volkDriveColon(void) {
-#if defined (__DEBUG__)
-	printf("volkDriveColon\n");
-#endif
+	DEBUG_WORD("volkDriveColon")
 }
 
 void volkDirQuote(void) {
-#if defined (__DEBUG__)
-	printf("volkDirQuote\n");
-#endif
+	DEBUG_WORD("volkDirQuote")
 }
 
 void volkDotBuffers(void) {
-#if defined (__DEBUG__)
-	printf("volkDotBuffers\n");
-#endif
+	DEBUG_WORD("volkDotBuffers")
 }
 
 void volkZMakeView(void) {
-#if defined (__DEBUG__)
-	printf("volkZMakeView\n");
-#endif
+	DEBUG_WORD("volkZMakeView")
 }
 
 void volkForthFiles(void) {
-#if defined (__DEBUG__)
-	printf("volkForthFiles\n");
-#endif
+	DEBUG_WORD("volkForthFiles")
 }
 
 void volkDotSize(void) {
-#if defined (__DEBUG__)
-	printf("volkDotSize\n");
-#endif
+	DEBUG_WORD("volkDotSize")
 }
 
 void volkPostlude(void) {
-#if defined (__DEBUG__)
-	printf("volkPostlude\n");
-#endif
+	DEBUG_WORD("volkPostlude")
 }
 
 void volkRecSlashBlk(void) {
-#if defined (__DEBUG__)
-	printf("volkRecSlashBlk\n");
-#endif
+	DEBUG_WORD("volkRecSlashBlk")
 }
 
 void volkBSlashRec(void) {
-#if defined (__DEBUG__)
-	printf("volkBSlashRec\n");
-#endif
+	DEBUG_WORD("volkBSlashRec")
 }
 
 void volkNumFf(void) {
-#if defined (__DEBUG__)
-	printf("volkNumFf\n");
-#endif
+	DEBUG_WORD("volkNumFf")
 }
 
 void volkQuoteSearch(void) {
-#if defined (__DEBUG__)
-	printf("volkQuoteSearch\n");
-#endif
+	DEBUG_WORD("volkQuoteSearch")
 }
 
 void volkSaveDosBuffers(void) {
-#if defined (__DEBUG__)
-	printf("volkSaveDosBuffers\n");
-#endif
+	DEBUG_WORD("volkSaveDosBuffers")
 }
 
 void volkCreateZ(void) {
-#if defined (__DEBUG__)
-	printf("volkCreateZ\n");
-#endif
+	DEBUG_WORD("volkCreateZ")
 }
 
 void volkPlusToMark(void) {
-#if defined (__DEBUG__)
-	printf("volkPlusToMark\n");
-#endif
+	DEBUG_WORD("volkPlusToMark")
 }
 
 void volkIPSave(void) {
-#if defined (__DEBUG__)
-	printf("volkIPSave\n");
-#endif
+	DEBUG_WORD("volkIPSave")
 }
 
 void volkRP(void) {
-#if defined (__DEBUG__)
-	printf("volkRP\n");
-#endif
+	DEBUG_WORD("volkRP")
 }
 
 #endif
@@ -3912,736 +2636,492 @@ void volkRP(void) {
 #if (H2O_FORTH_PRIMITIVES == VOLK_FORTH) || \
     (H2O_FORTH_PRIMITIVES == VOLK_PC_FORTH)
 void volkPList(void) {
-#if defined (__DEBUG__)
-	printf("volkPList\n");
-#endif
+	DEBUG_WORD("volkPList")
 }
 
 void volkPlusPrint(void) {
-#if defined (__DEBUG__)
-	printf("volkPlusPrint\n");
-#endif
+	DEBUG_WORD("volkPlusPrint")
 }
 
 void volkGraphicsDotPrn(void) {
-#if defined (__DEBUG__)
-	printf("volkGraphicsDotPrn\n");
-#endif
+	DEBUG_WORD("volkGraphicsDotPrn")
 }
 
 void volkEdit(void) {
-#if defined (__DEBUG__)
-	printf("volkEdit\n");
-#endif
+	DEBUG_WORD("volkEdit")
 }
 
 void volkED(void) {
-#if defined (__DEBUG__)
-	printf("volkED\n");
-#endif
+	DEBUG_WORD("volkED")
 }
 
 void volkEditorDotFb(void) {
-#if defined (__DEBUG__)
-	printf("volkEditorDotFb\n");
-#endif
+	DEBUG_WORD("volkEditorDotFb")
 }
 
 void volkTimes(void) {
-#if defined (__DEBUG__)
-	printf("volkTimes\n");
-#endif
+	DEBUG_WORD("volkTimes")
 }
 
 void volkOften(void) {
-#if defined (__DEBUG__)
-	printf("volkOften\n");
-#endif
+	DEBUG_WORD("volkOften")
 }
 
 void volkTimeFetch(void) {
-#if defined (__DEBUG__)
-	printf("volkTimeFetch\n");
-#endif
+	DEBUG_WORD("volkTimeFetch")
 }
 
 void volkDateFetch(void) {
-#if defined (__DEBUG__)
-	printf("volkDateFetch\n");
-#endif
+	DEBUG_WORD("volkDateFetch")
 }
 
 void volkMinutes(void) {
-#if defined (__DEBUG__)
-	printf("volkMinutes\n");
-#endif
+	DEBUG_WORD("volkMinutes")
 }
 
 void volkSeconds(void) {
-#if defined (__DEBUG__)
-	printf("volkSeconds\n");
-#endif
+	DEBUG_WORD("volkSeconds")
 }
 
 void volkWait(void) {
-#if defined (__DEBUG__)
-	printf("volkWait\n");
-#endif
+	DEBUG_WORD("volkWait")
 }
 
 void volkTime(void) {
-#if defined (__DEBUG__)
-	printf("volkTime\n");
-#endif
+	DEBUG_WORD("volkTime")
 }
 
 void volkTill(void) {
-#if defined (__DEBUG__)
-	printf("volkTill\n");
-#endif
+	DEBUG_WORD("volkTill")
 }
 
 void volkTimeoutQ(void) {
-#if defined (__DEBUG__)
-	printf("volkTimeoutQ\n");
-#endif
+	DEBUG_WORD("volkTimeoutQ")
 }
 
 /* Ticks */
 void volkTicks(void) {
-#if defined (__DEBUG__)
-	printf("volkTimeoutQ\n");
-#endif
+	DEBUG_WORD("volkTimeoutQ")
 }
 
 void volkTimerDotFb(void) {
-#if defined (__DEBUG__)
-	printf("volkTimerDotFb\n");
-#endif
+	DEBUG_WORD("volkTimerDotFb")
 }
 
 void volkTaskerDotFb(void) {
-#if defined (__DEBUG__)
-	printf("volkTaskerDotFb\n");
-#endif
+	DEBUG_WORD("volkTaskerDotFb")
 }
 
 void volkCall(void) {
-#if defined (__DEBUG__)
-	printf("volkCall\n");
-#endif
+	DEBUG_WORD("volkCall")
 }
 
 void volkMsdos(void) {
-#if defined (__DEBUG__)
-	printf("volkMsdos\n");
-#endif
+	DEBUG_WORD("volkMsdos")
 }
 
 void volkFType(void) {
-#if defined (__DEBUG__)
-	printf("volkFType\n");
-#endif
+	DEBUG_WORD("volkFType")
 }
 
 void volkFcopy(void) {
-#if defined (__DEBUG__)
-	printf("volkFcopy\n");
-#endif
+	DEBUG_WORD("volkFcopy")
 }
 
 void volkRd(void) {
-#if defined (__DEBUG__)
-	printf("volkRd\n");
-#endif
+	DEBUG_WORD("volkRd")
 }
 
 void volkCd(void) {
-#if defined (__DEBUG__)
-	printf("volkCd\n");
-#endif
+	DEBUG_WORD("volkCd")
 }
 
 void volkMd(void) {
-#if defined (__DEBUG__)
-	printf("volkMd\n");
-#endif
+	DEBUG_WORD("volkMd")
 }
 
 void volkRen(void) {
-#if defined (__DEBUG__)
-	printf("volkRen\n");
-#endif
+	DEBUG_WORD("volkRen")
 }
 
 void volkDotPath(void) {
-#if defined (__DEBUG__)
-	printf("volkDotPath\n");
-#endif
+	DEBUG_WORD("volkDotPath")
 }
 
 void volkEmptyFile(void) {
-#if defined (__DEBUG__)
-	printf("volkEmptyFile\n");
-#endif
+	DEBUG_WORD("volkEmptyFile")
 }
 
 void volkKillfile(void) {
-#if defined (__DEBUG__)
-	printf("volkKillfile\n");
-#endif
+	DEBUG_WORD("volkKillfile")
 }
 
 void volkQFile(void) {
-#if defined (__DEBUG__)
-	printf("volkQFile\n");
-#endif
+	DEBUG_WORD("volkQFile")
 }
 
 void volkUsedQ(void) {
-#if defined (__DEBUG__)
-	printf("volkUsedQ\n");
-#endif
+	DEBUG_WORD("volkUsedQ")
 }
 
 void volkDTA(void) {
-#if defined (__DEBUG__)
-	printf("volkDTA\n");
-#endif
+	DEBUG_WORD("volkDTA")
 }
 
 void volkFSwap(void) {
-#if defined (__DEBUG__)
-	printf("volkFSwap\n");
-#endif
+	DEBUG_WORD("volkFSwap")
 }
 
 void volkDosDotFb(void) {
-#if defined (__DEBUG__)
-	printf("volkDosDotFb\n");
-#endif
+	DEBUG_WORD("volkDosDotFb")
 }
 
 void volkZDotStatus(void) {
-#if defined (__DEBUG__)
-	printf("volkZDotStatus\n");
-#endif
+	DEBUG_WORD("volkZDotStatus")
 }
 
 void volkDotSpace(void) {
-#if defined (__DEBUG__)
-	printf("volkDotSpace\n");
-#endif
+	DEBUG_WORD("volkDotSpace")
 }
 
 void volkDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkDotScr\n");
-#endif
+	DEBUG_WORD("volkDotScr")
 }
 
 void volkDotDR(void) {
-#if defined (__DEBUG__)
-	printf("volkDotDR\n");
-#endif
+	DEBUG_WORD("volkDotDR")
 }
 
 void volkZDotDrv(void) {
-#if defined (__DEBUG__)
-	printf("volkZDotDrv\n");
-#endif
+	DEBUG_WORD("volkZDotDrv")
 }
 
 void volkDotSP(void) {
-#if defined (__DEBUG__)
-	printf("volkDotSP\n");
-#endif
+	DEBUG_WORD("volkDotSP")
 }
 
 void volkDotBase(void) {
-#if defined (__DEBUG__)
-	printf("volkDotBase\n");
-#endif
+	DEBUG_WORD("volkDotBase")
 }
 
 void volkScroll(void) {
-#if defined (__DEBUG__)
-	printf("volkScroll\n");
-#endif
+	DEBUG_WORD("volkScroll")
 }
 
 void volkBlankLine(void) {
-#if defined (__DEBUG__)
-	printf("volkBlankLine\n");
-#endif
+	DEBUG_WORD("volkBlankLine")
 }
 
 void volkBright(void) {
-#if defined (__DEBUG__)
-	printf("volkBright\n");
-#endif
+	DEBUG_WORD("volkBright")
 }
 
 void volkUnderline(void) {
-#if defined (__DEBUG__)
-	printf("volkUnderline\n");
-#endif
+	DEBUG_WORD("volkUnderline")
 }
 
 void volkInvers(void) {
-#if defined (__DEBUG__)
-	printf("volkInvers\n");
-#endif
+	DEBUG_WORD("volkInvers")
 }
 
 void volkNormal(void) {
-#if defined (__DEBUG__)
-	printf("volkNormal\n");
-#endif
+	DEBUG_WORD("volkNormal")
 }
 
 void volkSetPage(void) {
-#if defined (__DEBUG__)
-	printf("volkSetPage\n");
-#endif
+	DEBUG_WORD("volkSetPage")
 }
 
 void volkCurShape(void) {
-#if defined (__DEBUG__)
-	printf("volkCurShape\n");
-#endif
+	DEBUG_WORD("volkCurShape")
 }
 
 void volkCurStore(void) {
-#if defined (__DEBUG__)
-	printf("volkCurStore\n");
-#endif
+	DEBUG_WORD("volkCurStore")
 }
 
 void volkCurAtQ(void) {
-#if defined (__DEBUG__)
-	printf("volkCurAtQ\n");
-#endif
+	DEBUG_WORD("volkCurAtQ")
 }
 
 void volkFull(void) {
-#if defined (__DEBUG__)
-	printf("volkFull\n");
-#endif
+	DEBUG_WORD("volkFull")
 }
 
 void volkWindow(void) {
-#if defined (__DEBUG__)
-	printf("volkWindow\n");
-#endif
+	DEBUG_WORD("volkWindow")
 }
 
 void volkCatt(void) {
-#if defined (__DEBUG__)
-	printf("volkCatt\n");
-#endif
+	DEBUG_WORD("volkCatt")
 }
 
 void volkZArea(void) {
-#if defined (__DEBUG__)
-	printf("volkZArea\n");
-#endif
+	DEBUG_WORD("volkZArea")
 }
 
 void volkTerminal(void) {
-#if defined (__DEBUG__)
-	printf("volkTerminal\n");
-#endif
+	DEBUG_WORD("volkTerminal")
 }
 
 void volkAreaColon(void) {
-#if defined (__DEBUG__)
-	printf("volkAreaColon\n");
-#endif
+	DEBUG_WORD("volkAreaColon")
 }
 
 void volkStatus(void) {
-#if defined (__DEBUG__)
-	printf("volkStatus\n");
-#endif
+	DEBUG_WORD("volkStatus")
 }
 
 void volkArea(void) {
-#if defined (__DEBUG__)
-	printf("volkArea\n");
-#endif
+	DEBUG_WORD("volkArea")
 }
 
 void volkMultiDotVid(void) {
-#if defined (__DEBUG__)
-	printf("volkMultiDotVid\n");
-#endif
+	DEBUG_WORD("volkMultiDotVid")
 }
 
 void volkDotIf(void) {
-#if defined (__DEBUG__)
-	printf("volkDotIf\n");
-#endif
+	DEBUG_WORD("volkDotIf")
 }
 
 void volkDotElse(void) {
-#if defined (__DEBUG__)
-	printf("volkDotElse\n");
-#endif
+	DEBUG_WORD("volkDotElse")
 }
 
 void volkDotThen(void) {
-#if defined (__DEBUG__)
-	printf("volkDotThen\n");
-#endif
+	DEBUG_WORD("volkDotThen")
 }
 
 void volkQQuote(void) {
-#if defined (__DEBUG__)
-	printf("volkQQuote\n");
-#endif
+	DEBUG_WORD("volkQQuote")
 }
 
 void volkToMonth(void) {
-#if defined (__DEBUG__)
-	printf("volkToMonth\n");
-#endif
+	DEBUG_WORD("volkToMonth")
 }
 
 void volkAttach(void) {
-#if defined (__DEBUG__)
-	printf("volkAttach\n");
-#endif
+	DEBUG_WORD("volkAttach")
 }
 
 void volkAppend(void) {
-#if defined (__DEBUG__)
-	printf("volkAppend\n");
-#endif
+	DEBUG_WORD("volkAppend")
 }
 
 void volkRestoreVideo(void) {
-#if defined (__DEBUG__)
-	printf("volkRestoreVideo\n");
-#endif
+	DEBUG_WORD("volkRestoreVideo")
 }
 
 void volkSaveVideo(void) {
-#if defined (__DEBUG__)
-	printf("volkSaveVideo\n");
-#endif
+	DEBUG_WORD("volkSaveVideo")
 }
 
 void volkVideoFetch(void) {
-#if defined (__DEBUG__)
-	printf("volkVideoFetch\n");
-#endif
+	DEBUG_WORD("volkVideoFetch")
 }
 
 void volkCSlashDIS(void) {
-#if defined (__DEBUG__)
-	printf("volkCSlashDIS\n");
-#endif
+	DEBUG_WORD("volkCSlashDIS")
 }
 
 void volkLFree(void) {
-#if defined (__DEBUG__)
-	printf("volkLFree\n");
-#endif
+	DEBUG_WORD("volkLFree")
 }
 
 void volkLAllocate(void) {
-#if defined (__DEBUG__)
-	printf("volkLAllocate\n");
-#endif
+	DEBUG_WORD("volkLAllocate")
 }
 
 void volkAdr(void) {
-#if defined (__DEBUG__)
-	printf("volkAdr\n");
-#endif
+	DEBUG_WORD("volkAdr")
 }
 
 void volkUQ(void) {
-#if defined (__DEBUG__)
-	printf("volkUQ\n");
-#endif
+	DEBUG_WORD("volkUQ")
 }
 
 void volkTab(void) {
-#if defined (__DEBUG__)
-	printf("volkTab\n");
-#endif
+	DEBUG_WORD("volkTab")
 }
 
 void volkDotField(void) {
-#if defined (__DEBUG__)
-	printf("volkDotField\n");
-#endif
+	DEBUG_WORD("volkDotField")
 }
 
 void volkToExpect(void) {
-#if defined (__DEBUG__)
-	printf("volkToExpect\n");
-#endif
+	DEBUG_WORD("volkToExpect")
 }
 
 void volkStash(void) {
-#if defined (__DEBUG__)
-	printf("volkStash\n");
-#endif
+	DEBUG_WORD("volkStash")
 }
 
 void volkCls(void) {
-#if defined (__DEBUG__)
-	printf("volkCls\n");
-#endif
+	DEBUG_WORD("volkCls")
 }
 
 void volkTickName(void) {
-#if defined (__DEBUG__)
-	printf("volkTickName\n");
-#endif
+	DEBUG_WORD("volkTickName")
 }
 
 void volkSav(void) {
-#if defined (__DEBUG__)
-	printf("volkSav\n");
-#endif
+	DEBUG_WORD("volkSav")
 }
 
 void volkExtendDotFb(void) {
-#if defined (__DEBUG__)
-	printf("volkExtendDotFb\n");
-#endif
+	DEBUG_WORD("volkExtendDotFb")
 }
 
 void volkEndCode(void) {
-#if defined (__DEBUG__)
-	printf("volkEndCode\n");
-#endif
+	DEBUG_WORD("volkEndCode")
 }
 
 void volkASmDotFb(void) {
-#if defined (__DEBUG__)
-	printf("volkASmDotFb\n");
-#endif
+	DEBUG_WORD("volkASmDotFb")
 }
 
 void volkVolks4THDotSys(void) {
-#if defined (__DEBUG__)
-	printf("volkvolks4THDotSys\n");
-#endif
+	DEBUG_WORD("volkvolks4THDotSys")
 }
 
 void volkHelp(void) {
-#if defined (__DEBUG__)
-	printf("volkHelp\n");
-#endif
+	DEBUG_WORD("volkHelp")
 }
 
 void volkLFSave(void) {
-#if defined (__DEBUG__)
-	printf("volkLFSave\n");
-#endif
+	DEBUG_WORD("volkLFSave")
 }
 
 void volkHColon(void) {
-#if defined (__DEBUG__)
-	printf("volkHColon\n");
-#endif
+	DEBUG_WORD("volkHColon")
 }
 
 void volkGColon(void) {
-#if defined (__DEBUG__)
-	printf("volkGColon\n");
-#endif
+	DEBUG_WORD("volkGColon")
 }
 
 void volkFColon(void) {
-#if defined (__DEBUG__)
-	printf("volkFColon\n");
-#endif
+	DEBUG_WORD("volkFColon")
 }
 
 void volkEColon(void) {
-#if defined (__DEBUG__)
-	printf("volkEColon\n");
-#endif
+	DEBUG_WORD("volkEColon")
 }
 
 void volkDrv(void) {
-#if defined (__DEBUG__)
-	printf("volkDrv\n");
-#endif
+	DEBUG_WORD("volkDrv")
 }
 
 void volkPushFile(void) {
-#if defined (__DEBUG__)
-	printf("volkPushFile\n");
-#endif
+	DEBUG_WORD("volkPushFile")
 }
 
 void volkXFCB(void) {
-#if defined (__DEBUG__)
-	printf("volkXFCB\n");
-#endif
+	DEBUG_WORD("volkXFCB")
 }
 
 void volkKernelDotScr(void) {
-#if defined (__DEBUG__)
-	printf("volkKernelDotScr\n");
-#endif
+	DEBUG_WORD("volkKernelDotScr")
 }
 
 void volkAsciz(void) {
-#if defined (__DEBUG__)
-	printf("volkAsciz\n");
-#endif
+	DEBUG_WORD("volkAsciz")
 }
 
 void volkToAsciz(void) {
-#if defined (__DEBUG__)
-	printf("volkToAsciz\n");
-#endif
+	DEBUG_WORD("volkToAsciz")
 }
 
 void volkCounted(void) {
-#if defined (__DEBUG__)
-	printf("volkCounted\n");
-#endif
+	DEBUG_WORD("volkCounted")
 }
 
 void volkPCStore(void) {
-#if defined (__DEBUG__)
-	printf("volkPCStore\n");
-#endif
+	DEBUG_WORD("volkPCStore")
 }
 
 void volkPCFetch(void) {
-#if defined (__DEBUG__)
-	printf("volkPCFetch\n");
-#endif
+	DEBUG_WORD("volkPCFetch")
 }
 
 void volkListStore(void) {
-#if defined (__DEBUG__)
-	printf("volkListStore\n");
-#endif
+	DEBUG_WORD("volkListStore")
 }
 
 void volkCharOut(void) {
-#if defined (__DEBUG__)
-	printf("volkCharOut\n");
-#endif
+	DEBUG_WORD("volkCharOut")
 }
 
 void volkEmptyKeys(void) {
-#if defined (__DEBUG__)
-	printf("volkEmptyKeys\n");
-#endif
+	DEBUG_WORD("volkEmptyKeys")
 }
 
 void volkZKeyFetch(void) {
-#if defined (__DEBUG__)
-	printf("volkZKeyFetch\n");
-#endif
+	DEBUG_WORD("volkZKeyFetch")
 }
 
 void volkLMove(void) {
-#if defined (__DEBUG__)
-	printf("volkLMove\n");
-#endif
+	DEBUG_WORD("volkLMove")
 }
 
 void volkLType(void) {
-#if defined (__DEBUG__)
-	printf("volkLType\n");
-#endif
+	DEBUG_WORD("volkLType")
 }
 
 void volkLCFetch(void) {
-#if defined (__DEBUG__)
-	printf("volkLCFetch\n");
-#endif
+	DEBUG_WORD("volkLCFetch")
 }
 
 void volkReturnCode(void) {
-#if defined (__DEBUG__)
-	printf("volkReturnCode\n");
-#endif
+	DEBUG_WORD("volkReturnCode")
 }
 
 void volkTrim(void) {
-#if defined (__DEBUG__)
-	printf("volkTrim\n");
-#endif
+	DEBUG_WORD("volkTrim")
 }
 
 void volkQDiskError(void) {
-#if defined (__DEBUG__)
-	printf("volkQDiskError\n");
-#endif
+	DEBUG_WORD("volkQDiskError")
 }
 
 void volkErrorNum(void) {
-#if defined (__DEBUG__)
-	printf("volkErrorNum\n");
-#endif
+	DEBUG_WORD("volkErrorNum")
 }
 
 void volkVocs(void) {
-#if defined (__DEBUG__)
-	printf("volkVocs\n");
-#endif
+	DEBUG_WORD("volkVocs")
 }
 
 void volkLastTick(void) {
-#if defined (__DEBUG__)
-	printf("volkLastTick\n");
-#endif
+	DEBUG_WORD("volkLastTick")
 }
 
 void volkHave(void) {
-#if defined (__DEBUG__)
-	printf("volkHave\n");
-#endif
+	DEBUG_WORD("volkHave")
 }
 
 void volkZCapital(void) {
-#if defined (__DEBUG__)
-	printf("volkZCapital\n");
-#endif
+	DEBUG_WORD("volkZCapital")
 }
 
 void volkStarLoop(void) {
-#if defined (__DEBUG__)
-	printf("volkStarLoop\n");
-#endif
+	DEBUG_WORD("volkStarLoop")
 }
 
 void volkBSlashSeg(void) {
-#if defined (__DEBUG__)
-	printf("volkBSlashSeg\n");
-#endif
+	DEBUG_WORD("volkBSlashSeg")
 }
 
 void volkDSFetch(void) {
-#if defined (__DEBUG__)
-	printf("volkDSFetch\n");
-#endif
+	DEBUG_WORD("volkDSFetch")
 }
 
 void volkFileLink(void) {
-#if defined (__DEBUG__)
-	printf("volkFileLink\n");
-#endif
+	DEBUG_WORD("volkFileLink")
 }
 
 void volkAborted(void) {
-#if defined (__DEBUG__)
-	printf("volkAborted\n");
-#endif
+	DEBUG_WORD("volkAborted")
 }
 
 #endif

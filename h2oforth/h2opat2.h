@@ -6,86 +6,62 @@
 
 /* >r ( x – ) */
 void patelToRS(void) {
-#if defined (__DEBUG__)
-	printf("patelToRS\n");
-#endif
+	DEBUG_WORD("patelToRS")
 }
 
 /* r> ( – x ) */
 void patelRSFrom(void) {
-#if defined (__DEBUG__)
-	printf("patelRSFrom\n");
-#endif
+	DEBUG_WORD("patelRSFrom")
 }
 
 /* 1+ ( x – y ) */
 void patelAdd1(void) {
-#if defined (__DEBUG__)
-	printf("patelAdd1\n");
-#endif
+	DEBUG_WORD("patelAdd1")
 }
 
 /* 0= ( x – flag ) */
 void patelTestTopOfStack(void) {
-#if defined (__DEBUG__)
-	printf("patelTestTopOfStack\n");
-#endif
+	DEBUG_WORD("patelTestTopOfStack")
 }
 
 /* nand ( x y – z ) */
 void patelNAND(void) {
-#if defined (__DEBUG__)
-	printf("patelNAND\n");
-#endif
+	DEBUG_WORD("patelNAND")
 }
 
 /* @ ( addr – x ) */
 void patelFetch(void) {
-#if defined (__DEBUG__)
-	printf("patelFetch\n");
-#endif
+	DEBUG_WORD("patelFetch")
 }
 
 /* dup! ( x addr – x ) */
 void patelDupStore(void) {
-#if defined (__DEBUG__)
-	printf("patelDupStore\n");
-#endif
+	DEBUG_WORD("patelDupStore")
 }
 
 /* execute ( addr – ) */
 void patelExecute(void) {
-#if defined (__DEBUG__)
-	printf("patelExecute\n");
-#endif
+	DEBUG_WORD("patelExecute")
 }
 
 /* exit ( – )  */
 void patelExit(void) {
-#if defined (__DEBUG__)
-	printf("patelExit\n");
-#endif
+	DEBUG_WORD("patelExit")
 }
 
 /* drop ( x – ) */
 void patelDrop(void) {
-#if defined (__DEBUG__)
-	printf("patelDrop\n");
-#endif
+	DEBUG_WORD("patelDrop")
 }
 
 /* dup ( x – x x ) */
 void patelDup(void) {
-#if defined (__DEBUG__)
-	printf("patelDup\n");
-#endif
+	DEBUG_WORD("patelDup")
 }
 
 /* swap ( x y – y x ) */
 void patelSwap(void) {
-#if defined (__DEBUG__)
-	printf("patelSwap\n");
-#endif
+	DEBUG_WORD("patelSwap")
 }
 
 /* Extra words */

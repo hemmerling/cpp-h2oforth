@@ -6,1455 +6,971 @@
 /* Primitives */
 
 void aimTASK(void) {
-#if defined (__DEBUG__)
-	printf("aimTASK\n");
-#endif
+	DEBUG_WORD("aimTASK")
 }
 
 void aimDotS(void) {
-#if defined (__DEBUG__)
-	printf("aimDotS\n");
-#endif
+	DEBUG_WORD("aimDotS")
 }
 
 void aimMon(void) {
-#if defined (__DEBUG__)
-	printf("aimMon\n");
-#endif
+	DEBUG_WORD("aimMon")
 }
 
 void aimHang(void) {
-#if defined (__DEBUG__)
-	printf("aimHang\n");
-#endif
+	DEBUG_WORD("aimHang")
 }
 
 void aimQTTY(void) {
-#if defined (__DEBUG__)
-	printf("aimQTTY\n");
-#endif
+	DEBUG_WORD("aimQTTY")
 }
 
 void aimVList(void) {
-#if defined (__DEBUG__)
-	printf("aimVList\n");
-#endif
+	DEBUG_WORD("aimVList")
 }
 
 void aimQ(void) {
-#if defined (__DEBUG__)
-	printf("aimQ\n");
-#endif
+	DEBUG_WORD("aimQ")
 }
 
 void aimDot(void) {
-#if defined (__DEBUG__)
-	printf("aimDot\n");
-#endif
+	DEBUG_WORD("aimDot")
 }
 
 void aimDotR(void) {
-#if defined (__DEBUG__)
-	printf("aimDotR\n");
-#endif
+	DEBUG_WORD("aimDotR")
 }
 
 void aimDDot(void) {
-#if defined (__DEBUG__)
-	printf("aimDDot\n");
-#endif
+	DEBUG_WORD("aimDDot")
 }
 
 void aimDDotR(void) {
-#if defined (__DEBUG__)
-	printf("aimDDotR\n");
-#endif
+	DEBUG_WORD("aimDDotR")
 }
 
 void aimNumS(void) {
-#if defined (__DEBUG__)
-	printf("aimNumS\n");
-#endif
+	DEBUG_WORD("aimNumS")
 }
 
 void aimNum(void) {
-#if defined (__DEBUG__)
-	printf("aimNum\n");
-#endif
+	DEBUG_WORD("aimNum")
 }
 
 void aimSign(void) {
-#if defined (__DEBUG__)
-	printf("aimSign\n");
-#endif
+	DEBUG_WORD("aimSign")
 }
 
 void aimNumGreater(void) {
-#if defined (__DEBUG__)
-	printf("aimNumGreater\n");
-#endif
+	DEBUG_WORD("aimNumGreater")
 }
 
 void aimLessNum(void) {
-#if defined (__DEBUG__)
-	printf("aimLessNum\n");
-#endif
+	DEBUG_WORD("aimLessNum")
 }
 
 void aimSpaces(void) {
-#if defined (__DEBUG__)
-	printf("aimSpaces\n");
-#endif
+	DEBUG_WORD("aimSpaces")
 }
 
 void aimWhile(void) {
-#if defined (__DEBUG__)
-	printf("aimWhile\n");
-#endif
+	DEBUG_WORD("aimWhile")
 }
 
 void aimElse(void) {
-#if defined (__DEBUG__)
-	printf("aimElse\n");
-#endif
+	DEBUG_WORD("aimElse")
 }
 
 void aimIf(void) {
-#if defined (__DEBUG__)
-	printf("aimIf\n");
-#endif
+	DEBUG_WORD("aimIf")
 }
 
 void aimRepeat(void) {
-#if defined (__DEBUG__)
-	printf("aimRepeat\n");
-#endif
+	DEBUG_WORD("aimRepeat")
 }
 
 void aimAgain(void) {
-#if defined (__DEBUG__)
-	printf("aimAgain\n");
-#endif
+	DEBUG_WORD("aimAgain")
 }
 
 void aimEnd(void) {
-#if defined (__DEBUG__)
-	printf("aimEnd\n");
-#endif
+	DEBUG_WORD("aimEnd")
 }
 
 void aimUntil(void) {
-#if defined (__DEBUG__)
-	printf("aimUntil\n");
-#endif
+	DEBUG_WORD("aimUntil")
 }
 
 void aimPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("aimPlusLoop\n");
-#endif
+	DEBUG_WORD("aimPlusLoop")
 }
 
 void aimLoop(void) {
-#if defined (__DEBUG__)
-	printf("aimLoop\n");
-#endif
+	DEBUG_WORD("aimLoop")
 }
 
 void aimDo(void) {
-#if defined (__DEBUG__)
-	printf("aimDo\n");
-#endif
+	DEBUG_WORD("aimDo")
 }
 
 void aimThen(void) {
-#if defined (__DEBUG__)
-	printf("aimThen\n");
-#endif
+	DEBUG_WORD("aimThen")
 }
 
 void aimEndIf(void) {
-#if defined (__DEBUG__)
-	printf("aimEndIf\n");
-#endif
+	DEBUG_WORD("aimEndIf")
 }
 
 void aimBegin(void) {
-#if defined (__DEBUG__)
-	printf("aimBegin\n");
-#endif
+	DEBUG_WORD("aimBegin")
 }
 
 void aimForget(void) {
-#if defined (__DEBUG__)
-	printf("aimForget\n");
-#endif
+	DEBUG_WORD("aimForget")
 }
 
 void aimTick(void) {
-#if defined (__DEBUG__)
-	printf("aimTick\n");
-#endif
+	DEBUG_WORD("aimTick")
 }
 
 void aimRSlashW(void) {
-#if defined (__DEBUG__)
-	printf("aimRSlashW\n");
-#endif
+	DEBUG_WORD("aimRSlashW")
 }
 
 void aimTo(void) {
-#if defined (__DEBUG__)
-	printf("aimTo\n");
-#endif
+	DEBUG_WORD("aimTo")
 }
 
 void aimLoad(void) {
-#if defined (__DEBUG__)
-	printf("aimLoad\n");
-#endif
+	DEBUG_WORD("aimLoad")
 }
 
 void aimMessage(void) {
-#if defined (__DEBUG__)
-	printf("aimMessage\n");
-#endif
+	DEBUG_WORD("aimMessage")
 }
 
 void aimDotLine(void) {
-#if defined (__DEBUG__)
-	printf("aimDotLine\n");
-#endif
+	DEBUG_WORD("aimDotLine")
 }
 
 void aimZLine(void) {
-#if defined (__DEBUG__)
-	printf("aimZLine\n");
-#endif
+	DEBUG_WORD("aimZLine")
 }
 
 void aimDump(void) {
-#if defined (__DEBUG__)
-	printf("aimDump\n");
-#endif
+	DEBUG_WORD("aimDump")
 }
 
 void aimFlush(void) {
-#if defined (__DEBUG__)
-	printf("aimFlush\n");
-#endif
+	DEBUG_WORD("aimFlush")
 }
 
 void aimBlock(void) {
-#if defined (__DEBUG__)
-	printf("aimBlock\n");
-#endif
+	DEBUG_WORD("aimBlock")
 }
 
 void aimBuffer(void) {
-#if defined (__DEBUG__)
-	printf("aimBuffer\n");
-#endif
+	DEBUG_WORD("aimBuffer")
 }
 
 void aimEmptyBuffers(void) {
-#if defined (__DEBUG__)
-	printf("aimEmptyBuffers\n");
-#endif
+	DEBUG_WORD("aimEmptyBuffers")
 }
 
 void aimUpdate(void) {
-#if defined (__DEBUG__)
-	printf("aimUpdate\n");
-#endif
+	DEBUG_WORD("aimUpdate")
 }
 
 void aimPlusBuf(void) {
-#if defined (__DEBUG__)
-	printf("aimPlusBuf\n");
-#endif
+	DEBUG_WORD("aimPlusBuf")
 }
 
 void aimMSlashMOD(void) {
-#if defined (__DEBUG__)
-	printf("aimMSlashMOD\n");
-#endif
+	DEBUG_WORD("aimMSlashMOD")
 }
 
 void aimStarSlash(void) {
-#if defined (__DEBUG__)
-	printf("aimStarSlash\n");
-#endif
+	DEBUG_WORD("aimStarSlash")
 }
 
 void aimStarSlashMOD(void) {
-#if defined (__DEBUG__)
-	printf("aimStarSlashMOD\n");
-#endif
+	DEBUG_WORD("aimStarSlashMOD")
 }
 
 void aimMOD(void) {
-#if defined (__DEBUG__)
-	printf("aimMOD\n");
-#endif
+	DEBUG_WORD("aimMOD")
 }
 
 void aimSlash(void) {
-#if defined (__DEBUG__)
-	printf("aimSlash\n");
-#endif
+	DEBUG_WORD("aimSlash")
 }
 
 void aimSlashMOD(void) {
-#if defined (__DEBUG__)
-	printf("aimSlashMOD\n");
-#endif
+	DEBUG_WORD("aimSlashMOD")
 }
 
 void aimStar(void) {
-#if defined (__DEBUG__)
-	printf("aimStar\n");
-#endif
+	DEBUG_WORD("aimStar")
 }
 
 void aimMSlash(void) {
-#if defined (__DEBUG__)
-	printf("aimMSlash\n");
-#endif
+	DEBUG_WORD("aimMSlash")
 }
 
 void aimMStar(void) {
-#if defined (__DEBUG__)
-	printf("aimMStar\n");
-#endif
+	DEBUG_WORD("aimMStar")
 }
 
 void aimMax(void) {
-#if defined (__DEBUG__)
-	printf("aimMax\n");
-#endif
+	DEBUG_WORD("aimMax")
 }
 
 void aimMin(void) {
-#if defined (__DEBUG__)
-	printf("aimMin\n");
-#endif
+	DEBUG_WORD("aimMin")
 }
 
 void aimDAbs(void) {
-#if defined (__DEBUG__)
-	printf("aimDAbs\n");
-#endif
+	DEBUG_WORD("aimDAbs")
 }
 
 void aimAbs(void) {
-#if defined (__DEBUG__)
-	printf("aimAbs\n");
-#endif
+	DEBUG_WORD("aimAbs")
 }
 
 void aimDPlusMinus(void) {
-#if defined (__DEBUG__)
-	printf("aimDPlusMinus\n");
-#endif
+	DEBUG_WORD("aimDPlusMinus")
 }
 
 void aimPlusMinus(void) {
-#if defined (__DEBUG__)
-	printf("aimPlusMinus\n");
-#endif
+	DEBUG_WORD("aimPlusMinus")
 }
 
 void aimSToD(void) {
-#if defined (__DEBUG__)
-	printf("aimSToD\n");
-#endif
+	DEBUG_WORD("aimSToD")
 }
 
 void aimCold(void) {
-#if defined (__DEBUG__)
-	printf("aimCold\n");
-#endif
+	DEBUG_WORD("aimCold")
 }
 
 void aimAbort(void) {
-#if defined (__DEBUG__)
-	printf("aimAbort\n");
-#endif
+	DEBUG_WORD("aimAbort")
 }
 
 void aimQuit(void) {
-#if defined (__DEBUG__)
-	printf("aimQuit\n");
-#endif
+	DEBUG_WORD("aimQuit")
 }
 
 void aimParen(void) {
-#if defined (__DEBUG__)
-	printf("aimParen\n");
-#endif
+	DEBUG_WORD("aimParen")
 }
 
 void aimDefinitions(void) {
-#if defined (__DEBUG__)
-	printf("aimDefinitions\n");
-#endif
+	DEBUG_WORD("aimDefinitions")
 }
 
 void aimAssembler(void) {
-#if defined (__DEBUG__)
-	printf("aimAssembler\n");
-#endif
+	DEBUG_WORD("aimAssembler")
 }
 
 void aimForth(void) {
-#if defined (__DEBUG__)
-	printf("aimForth\n");
-#endif
+	DEBUG_WORD("aimForth")
 }
 
 void aimVocabulary(void) {
-#if defined (__DEBUG__)
-	printf("aimVocabulary\n");
-#endif
+	DEBUG_WORD("aimVocabulary")
 }
 
 void aimImmediate(void) {
-#if defined (__DEBUG__)
-	printf("aimImmediate\n");
-#endif
+	DEBUG_WORD("aimImmediate")
 }
 
 void aimInterpret(void) {
-#if defined (__DEBUG__)
-	printf("aimInterpret\n");
-#endif
+	DEBUG_WORD("aimInterpret")
 }
 
 void aimQStack(void) {
-#if defined (__DEBUG__)
-	printf("aimQStack\n");
-#endif
+	DEBUG_WORD("aimQStack")
 }
 
 void aimDLiteral(void) {
-#if defined (__DEBUG__)
-	printf("aimDLiteral\n");
-#endif
+	DEBUG_WORD("aimDLiteral")
 }
 
 void aimLiteral(void) {
-#if defined (__DEBUG__)
-	printf("aimLiteral\n");
-#endif
+	DEBUG_WORD("aimLiteral")
 }
 
 void aimXCompile(void) {
-#if defined (__DEBUG__)
-	printf("aimXCompile\n");
-#endif
+	DEBUG_WORD("aimXCompile")
 }
 
 void aimCreate(void) {
-#if defined (__DEBUG__)
-	printf("aimCreate\n");
-#endif
+	DEBUG_WORD("aimCreate")
 }
 
 void aimIDDot(void) {
-#if defined (__DEBUG__)
-	printf("aimIDDot\n");
-#endif
+	DEBUG_WORD("aimIDDot")
 }
 
 void aimError(void) {
-#if defined (__DEBUG__)
-	printf("aimIDDot\n");
-#endif
+	DEBUG_WORD("aimIDDot")
 }
 
 void aimZABORT(void) {
-#if defined (__DEBUG__)
-	printf("aimZABORT\n");
-#endif
+	DEBUG_WORD("aimZABORT")
 }
 
 void aimMinusFind(void) {
-#if defined (__DEBUG__)
-	printf("aimMinusFind\n");
-#endif
+	DEBUG_WORD("aimMinusFind")
 }
 
 void aimNumber(void) {
-#if defined (__DEBUG__)
-	printf("aimNumber\n");
-#endif
+	DEBUG_WORD("aimNumber")
 }
 
 void aimZNumber(void) {
-#if defined (__DEBUG__)
-	printf("aimZNumber\n");
-#endif
+	DEBUG_WORD("aimZNumber")
 }
 
 void aimWord(void) {
-#if defined (__DEBUG__)
-	printf("aimWord\n");
-#endif
+	DEBUG_WORD("aimWord")
 }
 
 void aimPad(void) {
-#if defined (__DEBUG__)
-	printf("aimPad\n");
-#endif
+	DEBUG_WORD("aimPad")
 }
 
 void aimHold(void) {
-#if defined (__DEBUG__)
-	printf("aimHold\n");
-#endif
+	DEBUG_WORD("aimHold")
 }
 
 void aimBlanks(void) {
-#if defined (__DEBUG__)
-	printf("aimBlanks\n");
-#endif
+	DEBUG_WORD("aimBlanks")
 }
 
 void aimErase(void) {
-#if defined (__DEBUG__)
-	printf("aimErase\n");
-#endif
+	DEBUG_WORD("aimErase")
 }
 
 void aimFill(void) {
-#if defined (__DEBUG__)
-	printf("aimFill\n");
-#endif
+	DEBUG_WORD("aimFill")
 }
 
 void aimFetch(void) {
-#if defined (__DEBUG__)
-	printf("aimFetch\n");
-#endif
+	DEBUG_WORD("aimFetch")
 }
 
 void aimQuery(void) {
-#if defined (__DEBUG__)
-	printf("aimQuery\n");
-#endif
+	DEBUG_WORD("aimQuery")
 }
 
 void aimExpect(void) {
-#if defined (__DEBUG__)
-	printf("aimExpect\n");
-#endif
+	DEBUG_WORD("aimExpect")
 }
 
 void aimDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("aimDotQuote\n");
-#endif
+	DEBUG_WORD("aimDotQuote")
 }
 
 void aimParenDotQuote(void) {
-#if defined (__DEBUG__)
-	printf("aimParenDotQuote\n");
-#endif
+	DEBUG_WORD("aimParenDotQuote")
 }
 
 void aimMinusTrailing(void) {
-#if defined (__DEBUG__)
-	printf("aimMinusTrailing\n");
-#endif
+	DEBUG_WORD("aimMinusTrailing")
 }
 
 void aimType(void) {
-#if defined (__DEBUG__)
-	printf("aimType\n");
-#endif
+	DEBUG_WORD("aimType")
 }
 
 void aimCount(void) {
-#if defined (__DEBUG__)
-	printf("aimCount\n");
-#endif
+	DEBUG_WORD("aimCount")
 }
 
 void aimDoes(void) {
-#if defined (__DEBUG__)
-	printf("aimDoes\n");
-#endif
+	DEBUG_WORD("aimDoes")
 }
 
 void aimBuilds(void) {
-#if defined (__DEBUG__)
-	printf("aimBuilds\n");
-#endif
+	DEBUG_WORD("aimBuilds")
 }
 
 void aimSemicolonCode(void) {
-#if defined (__DEBUG__)
-	printf("aimSemicolonCode\n");
-#endif
+	DEBUG_WORD("aimSemicolonCode")
 }
 
 void aimZSemicolonCode(void) {
-#if defined (__DEBUG__)
-	printf("aimZSemicolonCode\n");
-#endif
+	DEBUG_WORD("aimZSemicolonCode")
 }
 
 void aimDecimal(void) {
-#if defined (__DEBUG__)
-	printf("aimDecimal\n");
-#endif
+	DEBUG_WORD("aimDecimal")
 }
 
 void aimHex(void) {
-#if defined (__DEBUG__)
-	printf("aimHex\n");
-#endif
+	DEBUG_WORD("aimHex")
 }
 
 void aimSmudge(void) {
-#if defined (__DEBUG__)
-	printf("aimSmudge\n");
-#endif
+	DEBUG_WORD("aimSmudge")
 }
 
 void aimRightBracket(void) {
-#if defined (__DEBUG__)
-	printf("aimRightBracket\n");
-#endif
+	DEBUG_WORD("aimRightBracket")
 }
 
 void aimLeftBracket(void) {
-#if defined (__DEBUG__)
-	printf("aimLeftBracket\n");
-#endif
+	DEBUG_WORD("aimLeftBracket")
 }
 
 void aimCompile(void) {
-#if defined (__DEBUG__)
-	printf("aimCompile\n");
-#endif
+	DEBUG_WORD("aimCompile")
 }
 
 void aimQCSP(void) {
-#if defined (__DEBUG__)
-	printf("aimQCSP\n");
-#endif
+	DEBUG_WORD("aimQCSP")
 }
 
 void aimQPairs(void) {
-#if defined (__DEBUG__)
-	printf("aimQPairs\n");
-#endif
+	DEBUG_WORD("aimQPairs")
 }
 
 void aimQExec(void) {
-#if defined (__DEBUG__)
-	printf("aimQExec\n");
-#endif
+	DEBUG_WORD("aimQExec")
 }
 
 void aimQComp(void) {
-#if defined (__DEBUG__)
-	printf("aimQComp\n");
-#endif
+	DEBUG_WORD("aimQComp")
 }
 
 void aimQError(void) {
-#if defined (__DEBUG__)
-	printf("aimQError\n");
-#endif
+	DEBUG_WORD("aimQError")
 }
 
 void aimStoreCSP(void) {
-#if defined (__DEBUG__)
-	printf("aimStoreCSP\n");
-#endif
+	DEBUG_WORD("aimStoreCSP")
 }
 
 void aimPFA(void) {
-#if defined (__DEBUG__)
-	printf("aimPFA\n");
-#endif
+	DEBUG_WORD("aimPFA")
 }
 
 void aimNFA(void) {
-#if defined (__DEBUG__)
-	printf("aimNFA\n");
-#endif
+	DEBUG_WORD("aimNFA")
 }
 
 void aimCFA(void) {
-#if defined (__DEBUG__)
-	printf("aimCFA\n");
-#endif
+	DEBUG_WORD("aimCFA")
 }
 
 void aimLFA(void) {
-#if defined (__DEBUG__)
-	printf("aimLFA\n");
-#endif
+	DEBUG_WORD("aimLFA")
 }
 
 void aimLatest(void) {
-#if defined (__DEBUG__)
-	printf("aimLatest\n");
-#endif
+	DEBUG_WORD("aimLatest")
 }
 
 void aimMinusDup(void) {
-#if defined (__DEBUG__)
-	printf("aimMinusDup\n");
-#endif
+	DEBUG_WORD("aimMinusDup")
 }
 
 void aimSpace(void) {
-#if defined (__DEBUG__)
-	printf("aimSpace\n");
-#endif
+	DEBUG_WORD("aimSpace")
 }
 
 void aimPick(void) {
-#if defined (__DEBUG__)
-	printf("aimSpace\n");
-#endif
+	DEBUG_WORD("aimSpace")
 }
 
 void aimRot(void) {
-#if defined (__DEBUG__)
-	printf("aimRot\n");
-#endif
+	DEBUG_WORD("aimRot")
 }
 
 void aimGreater(void) {
-#if defined (__DEBUG__)
-	printf("aimGreater\n");
-#endif
+	DEBUG_WORD("aimGreater")
 }
 
 void aimLess(void) {
-#if defined (__DEBUG__)
-	printf("aimLess\n");
-#endif
+	DEBUG_WORD("aimLess")
 }
 
 void aimULess(void) {
-#if defined (__DEBUG__)
-	printf("aimULess\n");
-#endif
+	DEBUG_WORD("aimULess")
 }
 
 void aimEqual(void) {
-#if defined (__DEBUG__)
-	printf("aimULess\n");
-#endif
+	DEBUG_WORD("aimULess")
 }
 
 void aimMinus(void) {
-#if defined (__DEBUG__)
-	printf("aimMinus\n");
-#endif
+	DEBUG_WORD("aimMinus")
 }
 
 void aimCComma(void) {
-#if defined (__DEBUG__)
-	printf("aimCComma\n");
-#endif
+	DEBUG_WORD("aimCComma")
 }
 
 void aimComma(void) {
-#if defined (__DEBUG__)
-	printf("aimComma\n");
-#endif
+	DEBUG_WORD("aimComma")
 }
 
 void aimAllot(void) {
-#if defined (__DEBUG__)
-	printf("aimAllot\n");
-#endif
+	DEBUG_WORD("aimAllot")
 }
 
 void aimHere(void) {
-#if defined (__DEBUG__)
-	printf("aimHere\n");
-#endif
+	DEBUG_WORD("aimHere")
 }
 
 void aimTwoMinus(void) {
-#if defined (__DEBUG__)
-	printf("aimTwoMinus\n");
-#endif
+	DEBUG_WORD("aimTwoMinus")
 }
 
 void aimOneMinus(void) {
-#if defined (__DEBUG__)
-	printf("aimOneMinus\n");
-#endif
+	DEBUG_WORD("aimOneMinus")
 }
 
 void aimTwoPlus(void) {
-#if defined (__DEBUG__)
-	printf("aimTwoPlus\n");
-#endif
+	DEBUG_WORD("aimTwoPlus")
 }
 
 void aimOnePLus(void) {
-#if defined (__DEBUG__)
-	printf("aimOnePLus\n");
-#endif
+	DEBUG_WORD("aimOnePLus")
 }
 
 void aimBSlashSCR(void) {
-#if defined (__DEBUG__)
-	printf("aimBSlashSCR\n");
-#endif
+	DEBUG_WORD("aimBSlashSCR")
 }
 
 void aimBSlashBUF(void) {
-#if defined (__DEBUG__)
-	printf("aimBSlashBUF\n");
-#endif
+	DEBUG_WORD("aimBSlashBUF")
 }
 
 void aimLimit(void) {
-#if defined (__DEBUG__)
-	printf("aimLimit\n");
-#endif
+	DEBUG_WORD("aimLimit")
 }
 
 void aimFirst(void) {
-#if defined (__DEBUG__)
-	printf("aimFirst\n");
-#endif
+	DEBUG_WORD("aimFirst")
 }
 
 void aimCSlashL(void) {
-#if defined (__DEBUG__)
-	printf("aimCSlashL\n");
-#endif
+	DEBUG_WORD("aimCSlashL")
 }
 
 void aimMode(void) {
-#if defined (__DEBUG__)
-	printf("aimMode\n");
-#endif
+	DEBUG_WORD("aimMode")
 }
 
 void aimHLD(void) {
-#if defined (__DEBUG__)
-	printf("aimHLD\n");
-#endif
+	DEBUG_WORD("aimHLD")
 }
 
 void aimCSP(void) {
-#if defined (__DEBUG__)
-	printf("aimCSP\n");
-#endif
+	DEBUG_WORD("aimCSP")
 }
 
 void aimDPL(void) {
-#if defined (__DEBUG__)
-	printf("aimDPL\n");
-#endif
+	DEBUG_WORD("aimDPL")
 }
 
 void aimBase(void) {
-#if defined (__DEBUG__)
-	printf("aimBase\n");
-#endif
+	DEBUG_WORD("aimBase")
 }
 
 void aimState(void) {
-#if defined (__DEBUG__)
-	printf("aimState\n");
-#endif
+	DEBUG_WORD("aimState")
 }
 
 void aimCurrent(void) {
-#if defined (__DEBUG__)
-	printf("aimCurrent\n");
-#endif
+	DEBUG_WORD("aimCurrent")
 }
 
 void aimContext(void) {
-#if defined (__DEBUG__)
-	printf("aimContext\n");
-#endif
+	DEBUG_WORD("aimContext")
 }
 
 void aimOffset(void) {
-#if defined (__DEBUG__)
-	printf("aimOffset\n");
-#endif
+	DEBUG_WORD("aimOffset")
 }
 
 void aimSCR(void) {
-#if defined (__DEBUG__)
-	printf("aimSCR\n");
-#endif
+	DEBUG_WORD("aimSCR")
 }
 
 void aimIn(void) {
-#if defined (__DEBUG__)
-	printf("aimIn\n");
-#endif
+	DEBUG_WORD("aimIn")
 }
 
 void aimBLK(void) {
-#if defined (__DEBUG__)
-	printf("aimBLK\n");
-#endif
+	DEBUG_WORD("aimBLK")
 }
 
 void aimUEmit(void) {
-#if defined (__DEBUG__)
-	printf("aimUEmit\n");
-#endif
+	DEBUG_WORD("aimUEmit")
 }
 
 void aimUKey(void) {
-#if defined (__DEBUG__)
-	printf("aimUKey\n");
-#endif
+	DEBUG_WORD("aimUKey")
 }
 
 void aimURSlashW(void) {
-#if defined (__DEBUG__)
-	printf("aimURSlashW\n");
-#endif
+	DEBUG_WORD("aimURSlashW")
 }
 
 void aimUAbort(void) {
-#if defined (__DEBUG__)
-	printf("aimUAbort\n");
-#endif
+	DEBUG_WORD("aimUAbort")
 }
 
 void aimUBSlashSCR(void) {
-#if defined (__DEBUG__)
-	printf("aimUBSlashSCR\n");
-#endif
+	DEBUG_WORD("aimUBSlashSCR")
 }
 
 void aimUBSlashBUF(void) {
-#if defined (__DEBUG__)
-	printf("aimUBSlashBUF\n");
-#endif
+	DEBUG_WORD("aimUBSlashBUF")
 }
 
 void aimULimit(void) {
-#if defined (__DEBUG__)
-	printf("aimULimit\n");
-#endif
+	DEBUG_WORD("aimULimit")
 }
 
 void aimUFirst(void) {
-#if defined (__DEBUG__)
-	printf("aimUFirst\n");
-#endif
+	DEBUG_WORD("aimUFirst")
 }
 
 void aimUCSlashL(void) {
-#if defined (__DEBUG__)
-	printf("aimUCSlashL\n");
-#endif
+	DEBUG_WORD("aimUCSlashL")
 }
 
 void aimPrev(void) {
-#if defined (__DEBUG__)
-	printf("aimPrev\n");
-#endif
+	DEBUG_WORD("aimPrev")
 }
 
 void aimUse(void) {
-#if defined (__DEBUG__)
-	printf("aimUse\n");
-#endif
+	DEBUG_WORD("aimUse")
 }
 
 void aimVocLink(void) {
-#if defined (__DEBUG__)
-	printf("aimVocLink\n");
-#endif
+	DEBUG_WORD("aimVocLink")
 }
 
 void aimDP(void) {
-#if defined (__DEBUG__)
-	printf("aimDP\n");
-#endif
+	DEBUG_WORD("aimDP")
 }
 
 void aimFence(void) {
-#if defined (__DEBUG__)
-	printf("aimFence\n");
-#endif
+	DEBUG_WORD("aimFence")
 }
 
 void aimWarning(void) {
-#if defined (__DEBUG__)
-	printf("aimWarning\n");
-#endif
+	DEBUG_WORD("aimWarning")
 }
 
 void aimWidth(void) {
-#if defined (__DEBUG__)
-	printf("aimWidth\n");
-#endif
+	DEBUG_WORD("aimWidth")
 }
 
 void aimTIB(void) {
-#if defined (__DEBUG__)
-	printf("aimTIB\n");
-#endif
+	DEBUG_WORD("aimTIB")
 }
 
 void aimR0(void) {
-#if defined (__DEBUG__)
-	printf("aimR0\n");
-#endif
+	DEBUG_WORD("aimR0")
 }
 
 void aimS0(void) {
-#if defined (__DEBUG__)
-	printf("aimS0\n");
-#endif
+	DEBUG_WORD("aimS0")
 }
 
 void aimBL(void) {
-#if defined (__DEBUG__)
-	printf("aimBL\n");
-#endif
+	DEBUG_WORD("aimBL")
 }
 
 void aimThree(void) {
-#if defined (__DEBUG__)
-	printf("aimThree\n");
-#endif
+	DEBUG_WORD("aimThree")
 }
 
 void aimTwo(void) {
-#if defined (__DEBUG__)
-	printf("aimTwo\n");
-#endif
+	DEBUG_WORD("aimTwo")
 }
 
 void aimOne(void) {
-#if defined (__DEBUG__)
-	printf("aimOne\n");
-#endif
+	DEBUG_WORD("aimOne")
 }
 
 void aimZero(void) {
-#if defined (__DEBUG__)
-	printf("aimZero\n");
-#endif
+	DEBUG_WORD("aimZero")
 }
 
 void aimUser(void) {
-#if defined (__DEBUG__)
-	printf("aimUser\n");
-#endif
+	DEBUG_WORD("aimUser")
 }
 
 void aimCode(void) {
-#if defined (__DEBUG__)
-	printf("aimCode\n");
-#endif
+	DEBUG_WORD("aimCode")
 }
 
 void aimVariable(void) {
-#if defined (__DEBUG__)
-	printf("aimVariable\n");
-#endif
+	DEBUG_WORD("aimVariable")
 }
 
 void aimConstant(void) {
-#if defined (__DEBUG__)
-	printf("aimConstant\n");
-#endif
+	DEBUG_WORD("aimConstant")
 }
 
 void aimSemicolon(void) {
-#if defined (__DEBUG__)
-	printf("aimSemicolon\n");
-#endif
+	DEBUG_WORD("aimSemicolon")
 }
 
 void aimColon(void) {
-#if defined (__DEBUG__)
-	printf("aimColon\n");
-#endif
+	DEBUG_WORD("aimColon")
 }
 
 void aimCStore(void) {
-#if defined (__DEBUG__)
-	printf("aimCStore\n");
-#endif
+	DEBUG_WORD("aimCStore")
 }
 
 void aimStore(void) {
-#if defined (__DEBUG__)
-	printf("aimStore\n");
-#endif
+	DEBUG_WORD("aimStore")
 }
 
 void aimCFetch(void) {
-#if defined (__DEBUG__)
-	printf("aimCFetch\n");
-#endif
+	DEBUG_WORD("aimCFetch")
 }
 
 void aimToggle(void) {
-#if defined (__DEBUG__)
-	printf("aimToggle\n");
-#endif
+	DEBUG_WORD("aimToggle")
 }
 
 void aimPlusStore(void) {
-#if defined (__DEBUG__)
-	printf("aimPlusStore\n");
-#endif
+	DEBUG_WORD("aimPlusStore")
 }
 
 void aimBounds(void) {
-#if defined (__DEBUG__)
-	printf("aimBounds\n");
-#endif
+	DEBUG_WORD("aimBounds")
 }
 
 void aimTwoDup(void) {
-#if defined (__DEBUG__)
-	printf("aimTwoDup\n");
-#endif
+	DEBUG_WORD("aimTwoDup")
 }
 
 void aimDup(void) {
-#if defined (__DEBUG__)
-	printf("aimDup\n");
-#endif
+	DEBUG_WORD("aimDup")
 }
 
 void aimSwap(void) {
-#if defined (__DEBUG__)
-	printf("aimSwap\n");
-#endif
+	DEBUG_WORD("aimSwap")
 }
 
 void aimTwoDrop(void) {
-#if defined (__DEBUG__)
-	printf("aimTwoDrop\n");
-#endif
+	DEBUG_WORD("aimTwoDrop")
 }
 
 void aimDrop(void) {
-#if defined (__DEBUG__)
-	printf("aimDrop\n");
-#endif
+	DEBUG_WORD("aimDrop")
 }
 
 void aimOver(void) {
-#if defined (__DEBUG__)
-	printf("aimOver\n");
-#endif
+	DEBUG_WORD("aimOver")
 }
 
 void aimDNegate(void) {
-#if defined (__DEBUG__)
-	printf("aimDNegate\n");
-#endif
+	DEBUG_WORD("aimDNegate")
 }
 
 void aimNegate(void) {
-#if defined (__DEBUG__)
-	printf("aimNegate\n");
-#endif
+	DEBUG_WORD("aimNegate")
 }
 
 void aimDPlus(void) {
-#if defined (__DEBUG__)
-	printf("aimDPlus\n");
-#endif
+	DEBUG_WORD("aimDPlus")
 }
 
 void aimPlus(void) {
-#if defined (__DEBUG__)
-	printf("aimPlus\n");
-#endif
+	DEBUG_WORD("aimPlus")
 }
 
 void aimZeroLess(void) {
-#if defined (__DEBUG__)
-	printf("aimZeroLess\n");
-#endif
+	DEBUG_WORD("aimZeroLess")
 }
 
 void aimNot(void) {
-#if defined (__DEBUG__)
-	printf("aimNot\n");
-#endif
+	DEBUG_WORD("aimNot")
 }
 
 void aimZeroEqual(void) {
-#if defined (__DEBUG__)
-	printf("aimZeroEqual\n");
-#endif
+	DEBUG_WORD("aimZeroEqual")
 }
 
 void aimR(void) {
-#if defined (__DEBUG__)
-	printf("aimR\n");
-#endif
+	DEBUG_WORD("aimR")
 }
 
 void aimRGreater(void) {
-#if defined (__DEBUG__)
-	printf("aimRGreater\n");
-#endif
+	DEBUG_WORD("aimRGreater")
 }
 
 void aimToR(void) {
-#if defined (__DEBUG__)
-	printf("aimToR\n");
-#endif
+	DEBUG_WORD("aimToR")
 }
 
 void aimLeave(void) {
-#if defined (__DEBUG__)
-	printf("aimLeave\n");
-#endif
+	DEBUG_WORD("aimLeave")
 }
 
 void aimSemicolonS(void) {
-#if defined (__DEBUG__)
-	printf("aimSemicolonS\n");
-#endif
+	DEBUG_WORD("aimSemicolonS")
 }
 
 void aimRPFetch(void) {
-#if defined (__DEBUG__)
-	printf("aimRPFetch\n");
-#endif
+	DEBUG_WORD("aimRPFetch")
 }
 
 void aimRPStore(void) {
-#if defined (__DEBUG__)
-	printf("aimRPStore\n");
-#endif
+	DEBUG_WORD("aimRPStore")
 }
 
 void aimSPStore(void) {
-#if defined (__DEBUG__)
-	printf("aimSPStore\n");
-#endif
+	DEBUG_WORD("aimSPStore")
 }
 
 void aimSPFetch(void) {
-#if defined (__DEBUG__)
-	printf("aimSPFetch\n");
-#endif
+	DEBUG_WORD("aimSPFetch")
 }
 
 void aimXor(void) {
-#if defined (__DEBUG__)
-	printf("aimXor\n");
-#endif
+	DEBUG_WORD("aimXor")
 }
 
 void aimOr(void) {
-#if defined (__DEBUG__)
-	printf("aimOr\n");
-#endif
+	DEBUG_WORD("aimOr")
 }
 
 void aimAnd(void) {
-#if defined (__DEBUG__)
-	printf("aimAnd\n");
-#endif
+	DEBUG_WORD("aimAnd")
 }
 
 void aimUSlash(void) {
-#if defined (__DEBUG__)
-	printf("aimUSlash\n");
-#endif
+	DEBUG_WORD("aimUSlash")
 }
 
 void aimUStar(void) {
-#if defined (__DEBUG__)
-	printf("aimUStar\n");
-#endif
+	DEBUG_WORD("aimUStar")
 }
 
 void aimCMove(void) {
-#if defined (__DEBUG__)
-	printf("aimCMove\n");
-#endif
+	DEBUG_WORD("aimCMove")
 }
 
 void aimMinusCR(void) {
-#if defined (__DEBUG__)
-	printf("aimMinusCR\n");
-#endif
+	DEBUG_WORD("aimMinusCR")
 }
 
 void aimClose(void) {
-#if defined (__DEBUG__)
-	printf("aimClose\n");
-#endif
+	DEBUG_WORD("aimClose")
 }
 
 void aimChain(void) {
-#if defined (__DEBUG__)
-	printf("aimChain\n");
-#endif
+	DEBUG_WORD("aimChain")
 }
 
 void aimFinis(void) {
-#if defined (__DEBUG__)
-	printf("aimFinis\n");
-#endif
+	DEBUG_WORD("aimFinis")
 }
 
 void aimSource(void) {
-#if defined (__DEBUG__)
-	printf("aimSource\n");
-#endif
+	DEBUG_WORD("aimSource")
 }
 
 void aimBaud(void) {
-#if defined (__DEBUG__)
-	printf("aimBaud\n");
-#endif
+	DEBUG_WORD("aimBaud")
 }
 
 void aimWrite(void) {
-#if defined (__DEBUG__)
-	printf("aimWrite\n");
-#endif
+	DEBUG_WORD("aimWrite")
 }
 
 void aimRead(void) {
-#if defined (__DEBUG__)
-	printf("aimRead\n");
-#endif
+	DEBUG_WORD("aimRead")
 }
 
 void aimQOut(void) {
-#if defined (__DEBUG__)
-	printf("aimQOut\n");
-#endif
+	DEBUG_WORD("aimQOut")
 }
 
 void aimQIn(void) {
-#if defined (__DEBUG__)
-	printf("aimQIn\n");
-#endif
+	DEBUG_WORD("aimQIn")
 }
 
 void aimPut(void) {
-#if defined (__DEBUG__)
-	printf("aimPut\n");
-#endif
+	DEBUG_WORD("aimPut")
 }
 
 void aimGet(void) {
-#if defined (__DEBUG__)
-	printf("aimGet\n");
-#endif
+	DEBUG_WORD("aimGet")
 }
 
 void aimCR(void) {
-#if defined (__DEBUG__)
-	printf("aimCR\n");
-#endif
+	DEBUG_WORD("aimCR")
 }
 
 void aimQTerminal(void) {
-#if defined (__DEBUG__)
-	printf("aimQTerminal\n");
-#endif
+	DEBUG_WORD("aimQTerminal")
 }
 
 void aimKey(void) {
-#if defined (__DEBUG__)
-	printf("aimKey\n");
-#endif
+	DEBUG_WORD("aimKey")
 }
 
 void aimEmit(void) {
-#if defined (__DEBUG__)
-	printf("aimEmit\n");
-#endif
+	DEBUG_WORD("aimEmit")
 }
 
 void aimEnclose(void) {
-#if defined (__DEBUG__)
-	printf("aimEnclose\n");
-#endif
+	DEBUG_WORD("aimEnclose")
 }
 
 void aimZFind(void) {
-#if defined (__DEBUG__)
-	printf("aimZFind\n");
-#endif
+	DEBUG_WORD("aimZFind")
 }
 
 void aimDigit(void) {
-#if defined (__DEBUG__)
-	printf("aimDigit\n");
-#endif
+	DEBUG_WORD("aimDigit")
 }
 
 void aimI(void) {
-#if defined (__DEBUG__)
-	printf("aimI\n");
-#endif
+	DEBUG_WORD("aimI")
 }
 
 void aimZDo(void) {
-#if defined (__DEBUG__)
-	printf("aimZDo\n");
-#endif
+	DEBUG_WORD("aimZDo")
 }
 
 void aimZPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("aimZPlusLoop\n");
-#endif
+	DEBUG_WORD("aimZPlusLoop")
 }
 
 void aimZeroBranch(void) {
-#if defined (__DEBUG__)
-	printf("aimZeroBranch\n");
-#endif
+	DEBUG_WORD("aimZeroBranch")
 }
 
 void aimBranch(void) {
-#if defined (__DEBUG__)
-	printf("aimBranch\n");
-#endif
+	DEBUG_WORD("aimBranch")
 }
 
 void aimExecute(void) {
-#if defined (__DEBUG__)
-	printf("aimExecute\n");
-#endif
+	DEBUG_WORD("aimExecute")
 }
 
 void aimClit(void) {
-#if defined (__DEBUG__)
-	printf("aimClit\n");
-#endif
+	DEBUG_WORD("aimClit")
 }
 
 void aimLit(void) {
-#if defined (__DEBUG__)
-	printf("aimClit\n");
-#endif
+	DEBUG_WORD("aimClit")
 }
 
 #endif

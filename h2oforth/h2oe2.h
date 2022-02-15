@@ -8,223 +8,161 @@
 
 /* BYE ( ) */
 void eforthBYE(void) {
-#if defined (__DEBUG__)
-	printf("eforthBYE\n");
-#endif
+	DEBUG_WORD("eforthBYE")
 }
 
 /* ?rx ( ) */
 /* ?key ( ) */
 void eforthKey(void) {
-#if defined (__DEBUG__)
-	printf("eforthKey\n");
-#endif
+	DEBUG_WORD("eforthKey")
 }
 
 /* tx! ( ) */
 /* emit ( ) */
 void eforthEmit(void) {
-#if defined (__DEBUG__)
-	printf("eforthEmit\n");
-#endif
+	DEBUG_WORD("eforthEmit")
 }
 
 /* !io ( ) */
 void eforthInitIO(void) {
-#if defined (__DEBUG__)
-	printf("eforthInitIO\n");
-#endif
+	DEBUG_WORD("eforthInitIO")
 }
 
 /* Inner interpreters */
 
 /* doLIT ( ) */
 void eforthDoLIT(void) {
-#if defined (__DEBUG__)
-	printf("eforthDoLIT\n");
-#endif
+	DEBUG_WORD("eforthDoLIT")
 }
 
 /* doLIST ( ) */
 void eforthDoLIST(void) {
-#if defined (__DEBUG__)
-	printf("eforthDoLIST\n");
-#endif
+	DEBUG_WORD("eforthDoLIST")
 }
 
 /* next ( ) */
 void eforthNext(void) {
-#if defined (__DEBUG__)
-	printf("eforthNext\n");
-#endif
+	DEBUG_WORD("eforthNext")
 }
 
 /* ?branch ( ) */
 void eforthBranchIfZero(void) {
-#if defined (__DEBUG__)
-	printf("eforthBranchIfZero\n");
-#endif
+	DEBUG_WORD("eforthBranchIfZero")
 }
 
 /* branch ( ) */
 void eforthBranch(void) {
-#if defined (__DEBUG__)
-	printf("eforthBranch\n");
-#endif
+	DEBUG_WORD("eforthBranch")
 }
 
 /* EXECUTE ( ) */
 void eforthEXECUTE(void) {
-#if defined (__DEBUG__)
-	printf("eforthEXECUTE\n");
-#endif
+	DEBUG_WORD("eforthEXECUTE")
 }
 
 /* EXIT ( ) */
 void eforthEXIT(void) {
-#if defined (__DEBUG__)
-	printf("eforthEXIT\n");
-#endif
+	DEBUG_WORD("eforthEXIT")
 }
 
 /* ! ( ) */
 void eforthStore(void) {
-#if defined (__DEBUG__)
-	printf("eforthStore\n");
-#endif
+	DEBUG_WORD("eforthStore")
 }
 
 /* @ ( ) */
 void eforthFetch(void) {
-#if defined (__DEBUG__)
-	printf("eforthFetch\n");
-#endif
+	DEBUG_WORD("eforthFetch")
 }
 
 /* C! ( ) */
 void eforthStoreChar(void) {
-#if defined (__DEBUG__)
-	printf("eforthStoreChar\n");
-#endif
+	DEBUG_WORD("eforthStoreChar")
 }
 
 /* C@ ( ) */
 void eforthFetchChar(void) {
-#if defined (__DEBUG__)
-	printf("eforthFetchChar\n");
-#endif
+	DEBUG_WORD("eforthFetchChar")
 }
 
 /* RP@ ( ) */
 void eforthFetchRP(void) {
-#if defined (__DEBUG__)
-	printf("eforthRP\n");
-#endif
+	DEBUG_WORD("eforthRP")
 }
 
 /* RP! ( ) */
 void eforthStoreRP(void) {
-#if defined (__DEBUG__)
-	printf("eforthStoreRP\n");
-#endif
+	DEBUG_WORD("eforthStoreRP")
 }
 
 /* R> ( ) */
 void eforthRSFrom(void) {
-#if defined (__DEBUG__)
-	printf("eforthRSFrom\n");
-#endif
+	DEBUG_WORD("eforthRSFrom")
 }
 
 /* R@ ( ) */
 void eforthRSFetch(void) {
-#if defined (__DEBUG__)
-	printf("eforthRSFrom\n");
-#endif
+	DEBUG_WORD("eforthRSFrom")
 }
 
 /* >R ( ) */
 void eforthToRS(void) {
-#if defined (__DEBUG__)
-	printf("eforthToRS\n");
-#endif
+	DEBUG_WORD("eforthToRS")
 }
 
 /* SP@ ( ) */
 void eforthFetchSP(void) {
-#if defined (__DEBUG__)
-	printf("eforthFetchSP\n");
-#endif
+	DEBUG_WORD("eforthFetchSP")
 }
 
 /* SP! ( ) */
 void eforthStoreSP(void) {
-#if defined (__DEBUG__)
-	printf("eforthStoreSP\n");
-#endif
+	DEBUG_WORD("eforthStoreSP")
 }
 
 /* DROP ( ) */
 void eforthDROP(void) {
-#if defined (__DEBUG__)
-	printf("eforthDROP\n");
-#endif
+	DEBUG_WORD("eforthDROP")
 }
 
 /* DUP ( ) */
 void eforthDUP(void) {
-#if defined (__DEBUG__)
-	printf("eforthDUP\n");
-#endif
+	DEBUG_WORD("eforthDUP")
 }
 
 /* SWAP ( ) */
 void eforthSWAP(void) {
-#if defined (__DEBUG__)
-	printf("eforthSWAP\n");
-#endif
+	DEBUG_WORD("eforthSWAP")
 }
 
 /* OVER ( ) */
 void eforthOVER(void) {
-#if defined (__DEBUG__)
-	printf("eforthOVER\n");
-#endif
+	DEBUG_WORD("eforthOVER")
 }
 
 /* 0< ( ) */
 void eforthLessThanZero(void) {
-#if defined (__DEBUG__)
-	printf("eforthLessThanZero\n");
-#endif
+	DEBUG_WORD("eforthLessThanZero")
 }
 
 /* AND ( ) */
 void eforthAND(void) {
-#if defined (__DEBUG__)
-	printf("eforthAND\n");
-#endif
+	DEBUG_WORD("eforthAND")
 }
 
 /* OR ( ) */
 void eforthOR(void) {
-#if defined (__DEBUG__)
-	printf("eforthOR\n");
-#endif
+	DEBUG_WORD("eforthOR")
 }
 
 /* XOR ( ) */
 void eforthXOR(void) {
-#if defined (__DEBUG__)
-	printf("eforthXOR\n");
-#endif
+	DEBUG_WORD("eforthXOR")
 }
 
 /* UM+ ( ) */
 void eforthAddWithCarry(void) {
-#if defined (__DEBUG__)
-	printf("eforthAddWithCarry\n");
-#endif
+	DEBUG_WORD("eforthAddWithCarry")
 }
 
 #endif

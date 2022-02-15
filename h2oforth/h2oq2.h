@@ -6,796 +6,534 @@
 
 /* Control Commands */
 void qforthAgain(void) {
-#if defined (__DEBUG__)
-	printf("qforthAgain\n");
-#endif
+	DEBUG_WORD("qforthAgain")
 }
 
 void qforthBegin(void) {
-#if defined (__DEBUG__)
-	printf("qforthBegin\n");
-#endif
+	DEBUG_WORD("qforthBegin")
 }
 
 void qforthDo(void) {
-#if defined (__DEBUG__)
-	printf("qforthDo\n");
-#endif
+	DEBUG_WORD("qforthDo")
 }
 
 void qforthNumDo(void) {
-#if defined (__DEBUG__)
-	printf("qforthNumDo\n");
-#endif
+	DEBUG_WORD("qforthNumDo")
 }
 
 void qforthQDo(void) {
-#if defined (__DEBUG__)
-	printf("qforthQDo\n");
-#endif
+	DEBUG_WORD("qforthQDo")
 }
 
 void qforthLoop(void) {
-#if defined (__DEBUG__)
-	printf("qforthLoop\n");
-#endif
+	DEBUG_WORD("qforthLoop")
 }
 
 void qforthNumLoop(void) {
-#if defined (__DEBUG__)
-	printf("qforthNumLoop\n");
-#endif
+	DEBUG_WORD("qforthNumLoop")
 }
 
 void qforthPlusLoop(void) {
-#if defined (__DEBUG__)
-	printf("qforthPlusLoop\n");
-#endif
+	DEBUG_WORD("qforthPlusLoop")
 }
 
 void qforthQLeave(void) {
-#if defined (__DEBUG__)
-	printf("qforthQLeave\n");
-#endif
+	DEBUG_WORD("qforthQLeave")
 }
 
 void qforthMinusQLeave(void) {
-#if defined (__DEBUG__)
-	printf("qforthMinusQLeave\n");
-#endif
+	DEBUG_WORD("qforthMinusQLeave")
 }
 
 void qforthRepeat(void) {
-#if defined (__DEBUG__)
-	printf("qforthRepeat\n");
-#endif
+	DEBUG_WORD("qforthRepeat")
 }
 
 void qforthUntil(void) {
-#if defined (__DEBUG__)
-	printf("qforthUntil\n");
-#endif
+	DEBUG_WORD("qforthUntil")
 }
 
 void qforthWhile(void) {
-#if defined (__DEBUG__)
-	printf("qforthWhile\n");
-#endif
+	DEBUG_WORD("qforthWhile")
 }
 
 void qforthCase(void) {
-#if defined (__DEBUG__)
-	printf("qforthCase\n");
-#endif
+	DEBUG_WORD("qforthCase")
 }
 
 void qforthElse(void) {
-#if defined (__DEBUG__)
-	printf("qforthElse\n");
-#endif
+	DEBUG_WORD("qforthElse")
 }
 
 void qforthEndCase(void) {
-#if defined (__DEBUG__)
-	printf("qforthEndCase\n");
-#endif
+	DEBUG_WORD("qforthEndCase")
 }
 
 void qforthEndOf(void) {
-#if defined (__DEBUG__)
-	printf("qforthEndOf\n");
-#endif
+	DEBUG_WORD("qforthEndOf")
 }
 
 void qforthExecute(void) {
 	/* Atmel 2004, but not Temic 1994 */
-#if defined (__DEBUG__)
-	printf("qforthExecute\n");
-#endif
+	DEBUG_WORD("qforthExecute")
 }
 
 void qforthIf(void) {
-#if defined (__DEBUG__)
-	printf("qforthIf\n");
-#endif
+	DEBUG_WORD("qforthIf")
 }
 
 void qforthOf(void) {
-#if defined (__DEBUG__)
-	printf("qforthOf\n");
-#endif
+	DEBUG_WORD("qforthOf")
 }
 
 void qforthThen(void) {
-#if defined (__DEBUG__)
-	printf("qforthThen\n");
-#endif
+	DEBUG_WORD("qforthThen")
 }
 
 void qforthCcrFetch(void) {
-#if defined (__DEBUG__)
-	printf("qforthCcrFetch\n");
-#endif
+	DEBUG_WORD("qforthCcrFetch")
 }
 
 void qforthCcrStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthCcrStore\n");
-#endif
+	DEBUG_WORD("qforthCcrStore")
 }
 
 void qforthClrBcf(void) {
-#if defined (__DEBUG__)
-	printf("qforthClrBcf\n");
-#endif
+	DEBUG_WORD("qforthClrBcf")
 }
 
 void qforthEi(void) {
-#if defined (__DEBUG__)
-	printf("qforthEi\n");
-#endif
+	DEBUG_WORD("qforthEi")
 }
 
 void qforthExit(void) {
-#if defined (__DEBUG__)
-	printf("qforthExit\n");
-#endif
+	DEBUG_WORD("qforthExit")
 }
 
 void qforthDi(void) {
-#if defined (__DEBUG__)
-	printf("qforthDi\n");
-#endif
+	DEBUG_WORD("qforthDi")
 }
 
 void qforthSetBcf(void) {
-#if defined (__DEBUG__)
-	printf("qforthSetBcf\n");
-#endif
+	DEBUG_WORD("qforthSetBcf")
 }
 
 void qforthSwi0To7(void) {
-#if defined (__DEBUG__)
-	printf("qforthSwi0To7\n");
-#endif
+	DEBUG_WORD("qforthSwi0To7")
 }
 
 void qforthTogBf(void) {
-#if defined (__DEBUG__)
-	printf("qforthTogBf\n");
-#endif
+	DEBUG_WORD("qforthTogBf")
 }
 
 /* Mathematic Commands */
 void qforthAdd(void) {
-#if defined (__DEBUG__)
-	printf("qforthAdd\n");
-#endif
+	DEBUG_WORD("qforthAdd")
 }
 
 void qforthPlus(void) {
-#if defined (__DEBUG__)
-	printf("qforthPlus\n");
-#endif
+	DEBUG_WORD("qforthPlus")
 }
 
 void qforthPlusStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthPlusStore\n");
-#endif
+	DEBUG_WORD("qforthPlusStore")
 }
 
 void qforthInc(void) {
-#if defined (__DEBUG__)
-	printf("qforthInc\n");
-#endif
+	DEBUG_WORD("qforthInc")
 }
 
 void qforthOnePlus(void) {
-#if defined (__DEBUG__)
-	printf("qforthOnePlus\n");
-#endif
+	DEBUG_WORD("qforthOnePlus")
 }
 
 void qforthOnePlusStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthOnePlusStore\n");
-#endif
+	DEBUG_WORD("qforthOnePlusStore")
 }
 
 void qforthAddC(void) {
-#if defined (__DEBUG__)
-	printf("qforthAddC\n");
-#endif
+	DEBUG_WORD("qforthAddC")
 }
 
 void qforthPlusC(void) {
-#if defined (__DEBUG__)
-	printf("qforthPlusC\n");
-#endif
+	DEBUG_WORD("qforthPlusC")
 }
 
 void qforthDPlus(void) {
-#if defined (__DEBUG__)
-	printf("qforthDPlus\n");
-#endif
+	DEBUG_WORD("qforthDPlus")
 }
 
 void qforthDPlusStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthDPlusStore\n");
-#endif
+	DEBUG_WORD("qforthDPlusStore")
 }
 
 void qforthMPlus(void) {
-#if defined (__DEBUG__)
-	printf("qforthMPlus\n");
-#endif
+	DEBUG_WORD("qforthMPlus")
 }
 
 void qforthTPlusStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthTPlusStore\n");
-#endif
+	DEBUG_WORD("qforthTPlusStore")
 }
 
 void qforthTDPlusStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthTDPlusStore\n");
-#endif
+	DEBUG_WORD("qforthTDPlusStore")
 }
 
 void qforthDaa(void) {
-#if defined (__DEBUG__)
-	printf("qforthDaa\n");
-#endif
+	DEBUG_WORD("qforthDaa")
 }
 
 void qforthSub(void) {
-#if defined (__DEBUG__)
-	printf("qforthSub\n");
-#endif
+	DEBUG_WORD("qforthSub")
 }
 
 void qforthMinus(void) {
-#if defined (__DEBUG__)
-	printf("qforthMinus\n");
-#endif
+	DEBUG_WORD("qforthMinus")
 }
 
 void qforthDec(void) {
-#if defined (__DEBUG__)
-	printf("qforthDec\n");
-#endif
+	DEBUG_WORD("qforthDec")
 }
 
 void qforthOneMinus(void) {
-#if defined (__DEBUG__)
-	printf("qforthOneMinus\n");
-#endif
+	DEBUG_WORD("qforthOneMinus")
 }
 
 void qforthOneMinusStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthOneMinusStore\n");
-#endif
+	DEBUG_WORD("qforthOneMinusStore")
 }
 
 void qforthSubb(void) {
-#if defined (__DEBUG__)
-	printf("qforthSubb\n");
-#endif
+	DEBUG_WORD("qforthSubb")
 }
 
 void qforthMinusC(void) {
-#if defined (__DEBUG__)
-	printf("qforthMinusC\n");
-#endif
+	DEBUG_WORD("qforthMinusC")
 }
 
 void qforthDMinus(void) {
-#if defined (__DEBUG__)
-	printf("qforthDMinus\n");
-#endif
+	DEBUG_WORD("qforthDMinus")
 }
 
 void qforthDMinusStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthDMinusStore\n");
-#endif
+	DEBUG_WORD("qforthDMinusStore")
 }
 
 void qforthMMinus(void) {
-#if defined (__DEBUG__)
-	printf("qforthMMinus\n");
-#endif
+	DEBUG_WORD("qforthMMinus")
 }
 
 void qforthTMinusStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthTMinusStore\n");
-#endif
+	DEBUG_WORD("qforthTMinusStore")
 }
 
 void qforthTDMinus(void) {
-#if defined (__DEBUG__)
-	printf("qforthTDMinus\n");
-#endif
+	DEBUG_WORD("qforthTDMinus")
 }
 
 void qforthDas(void) {
-#if defined (__DEBUG__)
-	printf("qforthDas\n");
-#endif
+	DEBUG_WORD("qforthDas")
 }
 
 void qforthTwoStar(void) {
-#if defined (__DEBUG__)
-	printf("qforthTwoStar\n");
-#endif
+	DEBUG_WORD("qforthTwoStar")
 }
 
 void qforthD2Star(void) {
-#if defined (__DEBUG__)
-	printf("qforthD2Star\n");
-#endif
+	DEBUG_WORD("qforthD2Star")
 }
 
 void qforthTwoSlash(void) {
-#if defined (__DEBUG__)
-	printf("qforthTwoSlash\n");
-#endif
+	DEBUG_WORD("qforthTwoSlash")
 }
 
 void qforthD2Slash(void) {
-#if defined (__DEBUG__)
-	printf("qforthD2Slash\n");
-#endif
+	DEBUG_WORD("qforthD2Slash")
 }
 
 void qforthCmpEq(void) {
-#if defined (__DEBUG__)
-	printf("qforthCmpEq\n");
-#endif
+	DEBUG_WORD("qforthCmpEq")
 }
 
 void qforthEqual(void) {
-#if defined (__DEBUG__)
-	printf("qforthEqual\n");
-#endif
+	DEBUG_WORD("qforthEqual")
 }
 
 void qforthZeroEqual(void) {
-#if defined (__DEBUG__)
-	printf("qforthZeroEqual\n");
-#endif
+	DEBUG_WORD("qforthZeroEqual")
 }
 
 void qforthDEqual(void) {
-#if defined (__DEBUG__)
-	printf("qforthDEqual\n");
-#endif
+	DEBUG_WORD("qforthDEqual")
 }
 
 void qforthD0Equal(void) {
-#if defined (__DEBUG__)
-	printf("qforthD0Equal\n");
-#endif
+	DEBUG_WORD("qforthD0Equal")
 }
 
 void qforthCmpGe(void) {
-#if defined (__DEBUG__)
-	printf("qforthCmpGe\n");
-#endif
+	DEBUG_WORD("qforthCmpGe")
 }
 
 void qforthGreaterEqual(void) {
 	/* Temic 1994, but not Atmel 2004 */
-#if defined (__DEBUG__)
-	printf("qforthCmpGe\n");
-#endif
+	DEBUG_WORD("qforthCmpGe")
 }
 
 void qforthDGreaterEqual(void) {
-#if defined (__DEBUG__)
-	printf("qforthDGreaterEqual\n");
-#endif
+	DEBUG_WORD("qforthDGreaterEqual")
 }
 
 void qforthCmpGt(void) {
-#if defined (__DEBUG__)
-	printf("qforthCmpGt\n");
-#endif
+	DEBUG_WORD("qforthCmpGt")
 }
 
 void qforthGreater(void) {
-#if defined (__DEBUG__)
-	printf("qforthGreater\n");
-#endif
+	DEBUG_WORD("qforthGreater")
 }
 
 void qforthDGreater(void) {
-#if defined (__DEBUG__)
-	printf("qforthDGreater\n");
-#endif
+	DEBUG_WORD("qforthDGreater")
 }
 
 void qforthCmpLe(void) {
-#if defined (__DEBUG__)
-	printf("qforthCmpLe\n");
-#endif
+	DEBUG_WORD("qforthCmpLe")
 }
 
 void qforthLessEqual(void) {
-#if defined (__DEBUG__)
-	printf("qforthLessEqual\n");
-#endif
+	DEBUG_WORD("qforthLessEqual")
 }
 
 void qforthDLessEqual(void) {
-#if defined (__DEBUG__)
-	printf("qforthDLessEqual\n");
-#endif
+	DEBUG_WORD("qforthDLessEqual")
 }
 
 void qforthCmpLt(void) {
-#if defined (__DEBUG__)
-	printf("qforthCmpLt\n");
-#endif
+	DEBUG_WORD("qforthCmpLt")
 }
 
 void qforthLess(void) {
-#if defined (__DEBUG__)
-	printf("qforthLess\n");
-#endif
+	DEBUG_WORD("qforthLess")
 }
 
 void qforthDLess(void) {
-#if defined (__DEBUG__)
-	printf("qforthDLess\n");
-#endif
+	DEBUG_WORD("qforthDLess")
 }
 
 void qforthCmpNe(void) {
-#if defined (__DEBUG__)
-	printf("qforthCmpNe\n");
-#endif
+	DEBUG_WORD("qforthCmpNe")
 }
 
 void qforthUnequal(void) {
-#if defined (__DEBUG__)
-	printf("qforthUnequal\n");
-#endif
+	DEBUG_WORD("qforthUnequal")
 }
 
 void qforthZeroUnequal(void) {
-#if defined (__DEBUG__)
-	printf("qforthZeroUnequal\n");
-#endif
+	DEBUG_WORD("qforthZeroUnequal")
 }
 
 void qforthD0Unequal(void) {
-#if defined (__DEBUG__)
-	printf("qforthD0Unequal\n");
-#endif
+	DEBUG_WORD("qforthD0Unequal")
 }
 
 void qforthDUnequal(void) {
-#if defined (__DEBUG__)
-	printf("qforthDUnequal\n");
-#endif
+	DEBUG_WORD("qforthDUnequal")
 }
 
 void qforthMax(void) {
-#if defined (__DEBUG__)
-	printf("qforthMax\n");
-#endif
+	DEBUG_WORD("qforthMax")
 }
 
 void qforthDMax(void) {
-#if defined (__DEBUG__)
-	printf("qforthDMax\n");
-#endif
+	DEBUG_WORD("qforthDMax")
 }
 
 void qforthMin(void) {
-#if defined (__DEBUG__)
-	printf("qforthMin\n");
-#endif
+	DEBUG_WORD("qforthMin")
 }
 
 void qforthDMin(void) {
-#if defined (__DEBUG__)
-	printf("qforthDMin\n");
-#endif
+	DEBUG_WORD("qforthDMin")
 }
 
 void qforthNegate(void) {
-#if defined (__DEBUG__)
-	printf("qforthNegate\n");
-#endif
+	DEBUG_WORD("qforthNegate")
 }
 
 void qforthDNegate(void) {
-#if defined (__DEBUG__)
-	printf("qforthDNegate\n");
-#endif
+	DEBUG_WORD("qforthDNegate")
 }
 
 void qforthNot(void) {
-#if defined (__DEBUG__)
-	printf("qforthNot\n");
-#endif
+	DEBUG_WORD("qforthNot")
 }
 
 void qforthRoL(void) {
-#if defined (__DEBUG__)
-	printf("qforthRoL\n");
-#endif
+	DEBUG_WORD("qforthRoL")
 }
 
 void qforthRoR(void) {
-#if defined (__DEBUG__)
-	printf("qforthRoR\n");
-#endif
+	DEBUG_WORD("qforthRoR")
 }
 
 void qforthShL(void) {
-#if defined (__DEBUG__)
-	printf("qforthShL\n");
-#endif
+	DEBUG_WORD("qforthShL")
 }
 
 void qforthShR(void) {
-#if defined (__DEBUG__)
-	printf("qforthShR\n");
-#endif
+	DEBUG_WORD("qforthShR")
 }
 
 void qforthAnd(void) {
-#if defined (__DEBUG__)
-	printf("qforthAnd\n");
-#endif
+	DEBUG_WORD("qforthAnd")
 }
 
 void qforthOr(void) {
-#if defined (__DEBUG__)
-	printf("qforthOr\n");
-#endif
+	DEBUG_WORD("qforthOr")
 }
 
 void qforthXor(void) {
-#if defined (__DEBUG__)
-	printf("qforthXor\n");
-#endif
+	DEBUG_WORD("qforthXor")
 }
 
 void qforthToggle(void) {
-#if defined (__DEBUG__)
-	printf("qforthToggle\n");
-#endif
+	DEBUG_WORD("qforthToggle")
 }
 
 void qforthDToS(void) {
-#if defined (__DEBUG__)
-	printf("qforthDToS\n");
-#endif
+	DEBUG_WORD("qforthDToS")
 }
 
 void qforthSToD(void) {
-#if defined (__DEBUG__)
-	printf("qforthSToD\n");
-#endif
+	DEBUG_WORD("qforthSToD")
 }
 
 /* Memory Commands */
 void qforthFetch(void) {
-#if defined (__DEBUG__)
-	printf("qforthFetch\n");
-#endif
+	DEBUG_WORD("qforthFetch")
 }
 
 void qforthTwoFetch(void) {
-#if defined (__DEBUG__)
-	printf("qforthTwoFetch\n");
-#endif
+	DEBUG_WORD("qforthTwoFetch")
 }
 
 void qforthThreeFetch(void) {
-#if defined (__DEBUG__)
-	printf("qforthThreeFetch\n");
-#endif
+	DEBUG_WORD("qforthThreeFetch")
 }
 
 void qforthXFetch(void) {
-#if defined (__DEBUG__)
-	printf("qforthXFetch\n");
-#endif
+	DEBUG_WORD("qforthXFetch")
 }
 
 void qforthXXFetch(void) {
-#if defined (__DEBUG__)
-	printf("qforthXXFetch\n");
-#endif
+	DEBUG_WORD("qforthXXFetch")
 }
 
 void qforthXPlusXFetch(void) {
-#if defined (__DEBUG__)
-	printf("qforthXPlusXFetch\n");
-#endif
+	DEBUG_WORD("qforthXPlusXFetch")
 }
 
 void qforthXXMinusFetch(void) {
-#if defined (__DEBUG__)
-	printf("qforthXXMinusFetch\n");
-#endif
+	DEBUG_WORD("qforthXXMinusFetch")
 }
 
 void qforthYFetch(void) {
-#if defined (__DEBUG__)
-	printf("qforthYFetch\n");
-#endif
+	DEBUG_WORD("qforthYFetch")
 }
 
 void qforthXYFetch(void) {
-#if defined (__DEBUG__)
-	printf("qforthXYFetch\n");
-#endif
+	DEBUG_WORD("qforthXYFetch")
 }
 
 void qforthXPlusYFetch(void) {
-#if defined (__DEBUG__)
-	printf("qforthXPlusYFetch\n");
-#endif
+	DEBUG_WORD("qforthXPlusYFetch")
 }
 
 void qforthXYMinusFetch(void) {
-#if defined (__DEBUG__)
-	printf("qforthXYMinusFetch\n");
-#endif
+	DEBUG_WORD("qforthXYMinusFetch")
 }
 
 void qforthDTableFetch(void) {
-#if defined (__DEBUG__)
-	printf("qforthDTableFetch\n");
-#endif
+	DEBUG_WORD("qforthDTableFetch")
 }
 
 void qforthRomByteFetch(void) {
-#if defined (__DEBUG__)
-	printf("qforthRomByteFetch\n");
-#endif
+	DEBUG_WORD("qforthRomByteFetch")
 }
 
 void qforthStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthStore\n");
-#endif
+	DEBUG_WORD("qforthStore")
 }
 
 void qforthTwoStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthTwoStore\n");
-#endif
+	DEBUG_WORD("qforthTwoStore")
 }
 
 void qforthThreeStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthThreeStore\n");
-#endif
+	DEBUG_WORD("qforthThreeStore")
 }
 
 void qforthXStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthXStore\n");
-#endif
+	DEBUG_WORD("qforthXStore")
 }
 
 void qforthXXStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthXXStore\n");
-#endif
+	DEBUG_WORD("qforthXXStore")
 }
 
 void qforthXPlusXStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthXPlusXStore\n");
-#endif
+	DEBUG_WORD("qforthXPlusXStore")
 }
 
 void qforthXXMinusStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthXXMinusStore\n");
-#endif
+	DEBUG_WORD("qforthXXMinusStore")
 }
 
 void qforthYStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthYStore\n");
-#endif
+	DEBUG_WORD("qforthYStore")
 }
 
 void qforthXYStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthXYStore\n");
-#endif
+	DEBUG_WORD("qforthXYStore")
 }
 
 void qforthXPlusYStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthXPlusYStore\n");
-#endif
+	DEBUG_WORD("qforthXPlusYStore")
 }
 
 void qforthXYMinusStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthXYMinusStore\n");
-#endif
+	DEBUG_WORD("qforthXYMinusStore")
 }
 
 void qforthErase(void) {
-#if defined (__DEBUG__)
-	printf("qforthErase\n");
-#endif
+	DEBUG_WORD("qforthErase")
 }
 
 void qforthFill(void) {
-#if defined (__DEBUG__)
-	printf("qforthFill\n");
-#endif
+	DEBUG_WORD("qforthFill")
 }
 
 void qforthMove(void) {
-#if defined (__DEBUG__)
-	printf("qforthMove\n");
-#endif
+	DEBUG_WORD("qforthMove")
 }
 
 void qforthMoveTo(void) {
-#if defined (__DEBUG__)
-	printf("qforthMoveTo\n");
-#endif
+	DEBUG_WORD("qforthMoveTo")
 }
 
 void qforthIn(void) {
-#if defined (__DEBUG__)
-	printf("qforthIn\n");
-#endif
+	DEBUG_WORD("qforthIn")
 }
 
 void qforthOut(void) {
-#if defined (__DEBUG__)
-	printf("qforthOut\n");
-#endif
+	DEBUG_WORD("qforthOut")
 }
 
 /* Commands */
 /* qforthStore(void) */
 
 void qforthTick(void) {
-#if defined (__DEBUG__)
-	printf("qforthTick\n");
-#endif
+	DEBUG_WORD("qforthTick")
 }
 
 /* qforthNumDo(void) */
@@ -804,21 +542,15 @@ void qforthTick(void) {
 /* qforthMinusQLeave(void) */
 
 void qforthLessR(void) {
-#if defined (__DEBUG__)
-	printf("qforthLessR\n");
-#endif
+	DEBUG_WORD("qforthLessR")
 }
 
 void qforthToRP(void) {
-#if defined (__DEBUG__)
-	printf("qforthToRP\n");
-#endif
+	DEBUG_WORD("qforthToRP")
 }
 
 void qforthToSP(void) {
-#if defined (__DEBUG__)
-	printf("qforthToSP\n");
-#endif
+	DEBUG_WORD("qforthToSP")
 }
 
 /* qforthQDo */
@@ -836,9 +568,7 @@ void qforthToSP(void) {
 /* qforthXYMinusStore */
 
 void qforthXYMinuSFetch(void) {
-#if defined (__DEBUG__)
-	printf("qforthXYMinuSFetch\n");
-#endif
+	DEBUG_WORD("qforthXYMinuSFetch")
 }
 
 /* qforthXYStore */
@@ -853,9 +583,7 @@ void qforthXYMinuSFetch(void) {
 /* qforthRFetch */
 
 void qforthTwoRFetch(void) {
-#if defined (__DEBUG__)
-	printf("qforthTwoRFetch\n");
-#endif
+	DEBUG_WORD("qforthTwoRFetch")
 }
 
 /* qforthTwoRot */
@@ -885,9 +613,7 @@ void qforthTwoRFetch(void) {
 /* qforthOneMinusStore */
 
 void qforthSubB(void) {
-#if defined (__DEBUG__)
-	printf("qforthSubB\n");
-#endif
+	DEBUG_WORD("qforthSubB")
 }
 
 /* qforthMinusC */
@@ -938,9 +664,7 @@ void qforthSubB(void) {
 /* qforthDTableFetch */
 
 void qforthDToggle(void) {
-#if defined (__DEBUG__)
-	printf("qforthDToggle\n");
-#endif
+	DEBUG_WORD("qforthDToggle")
 }
 
 /* qforthDup */
@@ -970,9 +694,7 @@ void qforthDToggle(void) {
 /* qforthDToS */
 
 void qforthNop(void) {
-#if defined (__DEBUG__)
-	printf("qforthNop\n");
-#endif
+	DEBUG_WORD("qforthNop")
 }
 
 /* qforthNot */
@@ -993,9 +715,7 @@ void qforthNop(void) {
 /* qforthRoL */
 
 void qforthRoLL(void) {
-#if defined (__DEBUG__)
-	printf("qforthRoLL\n");
-#endif
+	DEBUG_WORD("qforthRoLL")
 }
 
 /* qforthRomByteFetch */
@@ -1008,18 +728,14 @@ void qforthRoLL(void) {
 /* qforthShR */
 
 void qforthSPStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthSPStore\n");
-#endif
+	DEBUG_WORD("qforthSPStore")
 }
 
 /* qforthSPFetch */
 /* qforthSwap */
 
 void qforthSwi0ToSw17(void) {
-#if defined (__DEBUG__)
-	printf("qforthSwi0ToSw17\n");
-#endif
+	DEBUG_WORD("qforthSwi0ToSw17")
 }
 
 /* qforthTPlusStore */
@@ -1027,9 +743,7 @@ void qforthSwi0ToSw17(void) {
 /* qforthTDPlusStore */
 
 void qforthTDMinusStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthTDMinusStore\n");
-#endif
+	DEBUG_WORD("qforthTDMinusStore")
 }
 
 /* qforthThen */
@@ -1043,254 +757,172 @@ void qforthTDMinusStore(void) {
 /* qforthXStore */
 
 void qforthXorYStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthXorYStore\n");
-#endif
+	DEBUG_WORD("qforthXorYStore")
 }
 
 /* qforthYFetch */
 
 /* STACK Commands */
 void qforthDecR(void) {
-#if defined (__DEBUG__)
-	printf("qforthDecR\n");
-#endif
+	DEBUG_WORD("qforthDecR")
 }
 
 void qforthDepth(void) {
-#if defined (__DEBUG__)
-	printf("qforthDepth\n");
-#endif
+	DEBUG_WORD("qforthDepth")
 }
 
 void qforthDrop(void) {
-#if defined (__DEBUG__)
-	printf("qforthDrop\n");
-#endif
+	DEBUG_WORD("qforthDrop")
 }
 
 void qforthTwoDrop(void) {
-#if defined (__DEBUG__)
-	printf("qforthTwoDrop\n");
-#endif
+	DEBUG_WORD("qforthTwoDrop")
 }
 
 void qforthThreeDrop(void) {
-#if defined (__DEBUG__)
-	printf("qforthThreeDrop\n");
-#endif
+	DEBUG_WORD("qforthThreeDrop")
 }
 
 void qforthDropR(void) {
-#if defined (__DEBUG__)
-	printf("qforthDropR\n");
-#endif
+	DEBUG_WORD("qforthDropR")
 }
 
 void qforthDup(void) {
-#if defined (__DEBUG__)
-	printf("qforthDup\n");
-#endif
+	DEBUG_WORD("qforthDup")
 }
 
 void qforthQDup(void) {
-#if defined (__DEBUG__)
-	printf("qforthQDup\n");
-#endif
+	DEBUG_WORD("qforthQDup")
 }
 
 void qforthTwoDup(void) {
-#if defined (__DEBUG__)
-	printf("qforthTwoDup\n");
-#endif
+	DEBUG_WORD("qforthTwoDup")
 }
 
 void qforthThreeDup(void) {
-#if defined (__DEBUG__)
-	printf("qforthThreeDup\n");
-#endif
+	DEBUG_WORD("qforthThreeDup")
 }
 
 void qforthI(void) {
-#if defined (__DEBUG__)
-	printf("qforthI\n");
-#endif
+	DEBUG_WORD("qforthI")
 }
 
 void qforthIndex(void) {
-#if defined (__DEBUG__)
-	printf("qforthIndex\n");
-#endif
+	DEBUG_WORD("qforthIndex")
 }
 
 void qforthJ(void) {
-#if defined (__DEBUG__)
-	printf("qforthJ\n");
-#endif
+	DEBUG_WORD("qforthJ")
 }
 
 void qforthNip(void) {
-#if defined (__DEBUG__)
-	printf("qforthNip\n");
-#endif
+	DEBUG_WORD("qforthNip")
 }
 
 void qforthTwoNip(void) {
-#if defined (__DEBUG__)
-	printf("qforthTwoNip\n");
-#endif
+	DEBUG_WORD("qforthTwoNip")
 }
 
 void qforthOver(void) {
-#if defined (__DEBUG__)
-	printf("qforthOver\n");
-#endif
+	DEBUG_WORD("qforthOver")
 }
 
 void qforthTwoOver(void) {
-#if defined (__DEBUG__)
-	printf("qforthTwoOver\n");
-#endif
+	DEBUG_WORD("qforthTwoOver")
 }
 
 void qforthPick(void) {
-#if defined (__DEBUG__)
-	printf("qforthPick\n");
-#endif
+	DEBUG_WORD("qforthPick")
 }
 
 void qforthRFetch(void) {
-#if defined (__DEBUG__)
-	printf("qforthRFetch\n");
-#endif
+	DEBUG_WORD("qforthRFetch")
 }
 
 /* qforthTwoFetch */
 
 void qforthThreeRFetch(void) {
-#if defined (__DEBUG__)
-	printf("qforthThreeRFetch\n");
-#endif
+	DEBUG_WORD("qforthThreeRFetch")
 }
 
 void qforthToR(void) {
-#if defined (__DEBUG__)
-	printf("qforthToR\n");
-#endif
+	DEBUG_WORD("qforthToR")
 }
 
 void qforthTwoToR(void) {
-#if defined (__DEBUG__)
-	printf("qforthTwoToR\n");
-#endif
+	DEBUG_WORD("qforthTwoToR")
 }
 
 void qforthThreeToR(void) {
-#if defined (__DEBUG__)
-	printf("qforthThreeToR\n");
-#endif
+	DEBUG_WORD("qforthThreeToR")
 }
 
 void qforthRTo(void) {
-#if defined (__DEBUG__)
-	printf("qforthRTo\n");
-#endif
+	DEBUG_WORD("qforthRTo")
 }
 
 void qforthTwoRTo(void) {
-#if defined (__DEBUG__)
-	printf("qforthTwoRTo\n");
-#endif
+	DEBUG_WORD("qforthTwoRTo")
 }
 
 void qforthThreeRTo(void) {
-#if defined (__DEBUG__)
-	printf("qforthThreeRTo\n");
-#endif
+	DEBUG_WORD("qforthThreeRTo")
 }
 
 void qforthRDepth(void) {
-#if defined (__DEBUG__)
-	printf("qforthRDepth\n");
-#endif
+	DEBUG_WORD("qforthRDepth")
 }
 
 void qforthRFree(void) {
-#if defined (__DEBUG__)
-	printf("qforthRFree\n");
-#endif
+	DEBUG_WORD("qforthRFree")
 }
 
 void qforthRot(void) {
-#if defined (__DEBUG__)
-	printf("qforthRot\n");
-#endif
+	DEBUG_WORD("qforthRot")
 }
 
 void qforthTwoRot(void) {
-#if defined (__DEBUG__)
-	printf("qforthTwoRot\n");
-#endif
+	DEBUG_WORD("qforthTwoRot")
 }
 
 void qforthLessRot(void) {
-#if defined (__DEBUG__)
-	printf("qforthLessRot\n");
-#endif
+	DEBUG_WORD("qforthLessRot")
 }
 
 void qforthTwoLessRot(void) {
-#if defined (__DEBUG__)
-	printf("qforthTwoLessRot\n");
-#endif
+	DEBUG_WORD("qforthTwoLessRot")
 }
 
 void qforthRPFetch(void) {
-#if defined (__DEBUG__)
-	printf("qforthRPFetch\n");
-#endif
+	DEBUG_WORD("qforthRPFetch")
 }
 
 void qforthRPStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthRPStore\n");
-#endif
+	DEBUG_WORD("qforthRPStore")
 }
 
 void qforthSPFetch(void) {
-#if defined (__DEBUG__)
-	printf("qforthSPFetch\n");
-#endif
+	DEBUG_WORD("qforthSPFetch")
 }
 
 void qforthSpStore(void) {
-#if defined (__DEBUG__)
-	printf("qforthSpStore\n");
-#endif
+	DEBUG_WORD("qforthSpStore")
 }
 
 void qforthSwap(void) {
-#if defined (__DEBUG__)
-	printf("qforthSwap\n");
-#endif
+	DEBUG_WORD("qforthSwap")
 }
 
 void qforthTwoSwap(void) {
-#if defined (__DEBUG__)
-	printf("qforthTwoSwap\n");
-#endif
+	DEBUG_WORD("qforthTwoSwap")
 }
 
 void qforthTuck(void) {
-#if defined (__DEBUG__)
-	printf("qforthTuck\n");
-#endif
+	DEBUG_WORD("qforthTuck")
 }
 
 void qforthTwoTuck(void) {
-#if defined (__DEBUG__)
-	printf("qforthTwoTuck\n");
-#endif
+	DEBUG_WORD("qforthTwoTuck")
 }
 
 #endif

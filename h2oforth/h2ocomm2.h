@@ -468,6 +468,10 @@ void fpointFNegate(void) {
 	DEBUG_WORD("fpointFNegate")
 }
 
+void fpointUFLoat(void) {
+	DEBUG_WORD("fpointUFLoat")
+}
+
 void fpointFSlash(void) {
 	DEBUG_WORD("fpointFSlash")
 }

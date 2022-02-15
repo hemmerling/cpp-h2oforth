@@ -5,417 +5,279 @@
 /* Primitives */
 
 void knaggsbennetStore(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetStore\n");
-#endif
+	DEBUG_WORD("knaggsbennetStore")
 }
 
 void knaggsbennetComma(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetComma\n");
-#endif
+	DEBUG_WORD("knaggsbennetComma")
 }
 
 void knaggsbennetFetch(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetFetch\n");
-#endif
+	DEBUG_WORD("knaggsbennetFetch")
 }
 
 void knaggsbennetAlign(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetAlign\n");
-#endif
+	DEBUG_WORD("knaggsbennetAlign")
 }
 
 void knaggsbennetAligned(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetAligned\n");
-#endif
+	DEBUG_WORD("knaggsbennetAligned")
 }
 
 void knaggsbennetCellPlus(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetCellPlus\n");
-#endif
+	DEBUG_WORD("knaggsbennetCellPlus")
 }
 
 void knaggsbennetCells(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetCells\n");
-#endif
+	DEBUG_WORD("knaggsbennetCells")
 }
 
 void knaggsbennetCStore(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetCStore\n");
-#endif
+	DEBUG_WORD("knaggsbennetCStore")
 }
 
 void knaggsbennetC(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetC\n");
-#endif
+	DEBUG_WORD("knaggsbennetC")
 }
 
 void knaggsbennetCCommaCFetch(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetCCommaCFetch\n");
-#endif
+	DEBUG_WORD("knaggsbennetCCommaCFetch")
 }
 
 void knaggsbennetCAlign(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetCAlign\n");
-#endif
+	DEBUG_WORD("knaggsbennetCAlign")
 }
 
 void knaggsbennetCAligned(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetCAligned\n");
-#endif
+	DEBUG_WORD("knaggsbennetCAligned")
 }
 
 void knaggsbennetCharPlus(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetCharPlus\n");
-#endif
+	DEBUG_WORD("knaggsbennetCharPlus")
 }
 
 void knaggsbennetChars(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetChars\n");
-#endif
+	DEBUG_WORD("knaggsbennetChars")
 }
 
 void knaggsbennetPlus(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetPlus\n");
-#endif
+	DEBUG_WORD("knaggsbennetPlus")
 }
 
 void knaggsbennetStar(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetStar\n");
-#endif
+	DEBUG_WORD("knaggsbennetStar")
 }
 
 void knaggsbennetTwoStar(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetTwoStar\n");
-#endif
+	DEBUG_WORD("knaggsbennetTwoStar")
 }
 
 void knaggsbennetStarSlashMod(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetStarSlashMod\n");
-#endif
+	DEBUG_WORD("knaggsbennetStarSlashMod")
 }
 
 void knaggsbennetMinus(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetMinus\n");
-#endif
+	DEBUG_WORD("knaggsbennetMinus")
 }
 
 void knaggsbennetSlash(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetSlash\n");
-#endif
+	DEBUG_WORD("knaggsbennetSlash")
 }
 
 void knaggsbennetTwoSlash(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetTwoSlash\n");
-#endif
+	DEBUG_WORD("knaggsbennetTwoSlash")
 }
 
 void knaggsbennetMod(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetMod\n");
-#endif
+	DEBUG_WORD("knaggsbennetMod")
 }
 
 void knaggsbennetZeroEquals(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetZeroEquals\n");
-#endif
+	DEBUG_WORD("knaggsbennetZeroEquals")
 }
 
 void knaggsbennetLessThen(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetLessThen\n");
-#endif
+	DEBUG_WORD("knaggsbennetLessThen")
 }
 
 void knaggsbennetAnd(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetAnd\n");
-#endif
+	DEBUG_WORD("knaggsbennetAnd")
 }
 
 void knaggsbennetInvert(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetInvert\n");
-#endif
+	DEBUG_WORD("knaggsbennetInvert")
 }
 
 void knaggsbennetTrue(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetTrue\n");
-#endif
+	DEBUG_WORD("knaggsbennetTrue")
 }
 
 void knaggsbennetLShift(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetLShift\n");
-#endif
+	DEBUG_WORD("knaggsbennetLShift")
 }
 
 void knaggsbennetEquals(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetEquals\n");
-#endif
+	DEBUG_WORD("knaggsbennetEquals")
 }
 
 void knaggsbennetGreaterThan(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetGreaterThan\n");
-#endif
+	DEBUG_WORD("knaggsbennetGreaterThan")
 }
 
 void knaggsbennetOr(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetOr\n");
-#endif
+	DEBUG_WORD("knaggsbennetOr")
 }
 
 void knaggsbennetXor(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetXor\n");
-#endif
+	DEBUG_WORD("knaggsbennetXor")
 }
 
 void knaggsbennetFalse(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetFalse\n");
-#endif
+	DEBUG_WORD("knaggsbennetFalse")
 }
 
 void knaggsbennetRShift(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetRShift\n");
-#endif
+	DEBUG_WORD("knaggsbennetRShift")
 }
 
 void knaggsbennetDupe(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetDupe\n");
-#endif
+	DEBUG_WORD("knaggsbennetDupe")
 }
 
 void knaggsbennetSwap(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetSwap\n");
-#endif
+	DEBUG_WORD("knaggsbennetSwap")
 }
 
 void knaggsbennetToR(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetToR\n");
-#endif
+	DEBUG_WORD("knaggsbennetToR")
 }
 
 void knaggsbennetRFetch(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetRFetch\n");
-#endif
+	DEBUG_WORD("knaggsbennetRFetch")
 }
 
 void knaggsbennetDrop(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetDrop\n");
-#endif
+	DEBUG_WORD("knaggsbennetDrop")
 }
 
 void knaggsbennetOver(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetOver\n");
-#endif
+	DEBUG_WORD("knaggsbennetOver")
 }
 
 void knaggsbennetRFrom(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetRFrom\n");
-#endif
+	DEBUG_WORD("knaggsbennetRFrom")
 }
 
 void knaggsbennetRote(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetRote\n");
-#endif
+	DEBUG_WORD("knaggsbennetRote")
 }
 
 void knaggsbennetIf(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetIf\n");
-#endif
+	DEBUG_WORD("knaggsbennetIf")
 }
 
 void knaggsbennetThen(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetThen\n");
-#endif
+	DEBUG_WORD("knaggsbennetThen")
 }
 
 void knaggsbennetWhile(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetWhile\n");
-#endif
+	DEBUG_WORD("knaggsbennetWhile")
 }
 
 void knaggsbennetRepeat(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetRepeat\n");
-#endif
+	DEBUG_WORD("knaggsbennetRepeat")
 }
 
 void knaggsbennetDo(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetDo\n");
-#endif
+	DEBUG_WORD("knaggsbennetDo")
 }
 
 void knaggsbennetI(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetI\n");
-#endif
+	DEBUG_WORD("knaggsbennetI")
 }
 
 void knaggsbennetTick(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetTick\n");
-#endif
+	DEBUG_WORD("knaggsbennetTick")
 }
 
 void knaggsbennetElse(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetElse\n");
-#endif
+	DEBUG_WORD("knaggsbennetElse")
 }
 
 void knaggsbennetBegin(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetBegin\n");
-#endif
+	DEBUG_WORD("knaggsbennetBegin")
 }
 
 void knaggsbennetAgain(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetAgain\n");
-#endif
+	DEBUG_WORD("knaggsbennetAgain")
 }
 
 void knaggsbennetUntil(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetUntil\n");
-#endif
+	DEBUG_WORD("knaggsbennetUntil")
 }
 
 void knaggsbennetLoop(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetLoop\n");
-#endif
+	DEBUG_WORD("knaggsbennetLoop")
 }
 
 void knaggsbennetJ(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetJ\n");
-#endif
+	DEBUG_WORD("knaggsbennetJ")
 }
 
 void knaggsbennetExecute(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetExecute\n");
-#endif
+	DEBUG_WORD("knaggsbennetExecute")
 }
 
 void knaggsbennetColon(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetColon\n");
-#endif
+	DEBUG_WORD("knaggsbennetColon")
 }
 
 void knaggsbennetConstant(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetConstant\n");
-#endif
+	DEBUG_WORD("knaggsbennetConstant")
 }
 
 void knaggsbennetCreate(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetCreate\n");
-#endif
+	DEBUG_WORD("knaggsbennetCreate")
 }
 
 void knaggsbennetSemicolon(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetSemicolon\n");
-#endif
+	DEBUG_WORD("knaggsbennetSemicolon")
 }
 
 void knaggsbennetVariable(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetVariable\n");
-#endif
+	DEBUG_WORD("knaggsbennetVariable")
 }
 
 void knaggsbennetDoes(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetDoes\n");
-#endif
+	DEBUG_WORD("knaggsbennetDoes")
 }
 
 void knaggsbennetKey(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetKey\n");
-#endif
+	DEBUG_WORD("knaggsbennetKey")
 }
 
 void knaggsbennetEmit(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetEmit\n");
-#endif
+	DEBUG_WORD("knaggsbennetEmit")
 }
 
 void knaggsbennetKeyQuestion(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetKeyQuestion\n");
-#endif
+	DEBUG_WORD("knaggsbennetKeyQuestion")
 }
 
 void knaggsbennetCr(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetCr\n");
-#endif
+	DEBUG_WORD("knaggsbennetCr")
 }
 
 void knaggsbennetParen(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetParen\n");
-#endif
+	DEBUG_WORD("knaggsbennetParen")
 }
 
 void knaggsbennetDotS(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetDotS\n");
-#endif
+	DEBUG_WORD("knaggsbennetDotS")
 }
 
 void knaggsbennetBackslash(void) {
-#if defined (__DEBUG__)
-	printf("knaggsbennetBackslash\n");
-#endif
+	DEBUG_WORD("knaggsbennetBackslash")
 }
 
 #endif

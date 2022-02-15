@@ -104,6 +104,7 @@ void fpointRepresent(void);
 #endif
 #if (FLOATSTD == FLOAT_JUPITER)
 void fpointFNegate(void);
+void fpointUFLoat(void);
 void fpointFSlash(void);
 void fpointFStar(void);
 void fpointFPlus(void);
@@ -375,6 +376,7 @@ static const typedef_forthWord fpointWords[] = {
 #if (FLOATSTD == FLOAT_JUPITER)
 static const typedef_forthWord fpointWords[] = {
 			{ "FNEGATE", "FNEGATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFNegate },
+			{ "UFLOAT", "UFLOAT", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointUFLoat },
 			{ "F/", "F/", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFSlash },
 			{ "F*", "F*", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFStar },
 			{ "F+", "F+", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFPlus },
