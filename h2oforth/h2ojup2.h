@@ -13,6 +13,10 @@ void jupiterUFLoat(void) {
 	DEBUG_WORD("jupiterUFLoat")
 }
 
+void jupiterInt(void) {
+	DEBUG_WORD("jupiterInt")
+}
+
 void jupiterFNegate(void) {
 	DEBUG_WORD("jupiterFNegate")
 }

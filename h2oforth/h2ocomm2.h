@@ -464,12 +464,16 @@ void fpointRepresent(void) {
 
 #endif
 #if (FLOATSTD == FLOAT_JUPITER)
-void fpointFNegate(void) {
-	DEBUG_WORD("fpointFNegate")
-}
-
 void fpointUFLoat(void) {
 	DEBUG_WORD("fpointUFLoat")
+}
+
+void fpointInt(void) {
+	DEBUG_WORD("fpointInt")
+}
+
+void fpointFNegate(void) {
+	DEBUG_WORD("fpointFNegate")
 }
 
 void fpointFSlash(void) {
