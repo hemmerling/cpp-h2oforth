@@ -129,8 +129,8 @@
 #endif
 
 #undef FLOATSTORAGE
-//#define FLOATSTORAGE ON_FLOATSTACK
-#define FLOATSTORAGE ON_DATASTACK
+//#define FLOATSTORAGE ON_DATASTACK
+#define FLOATSTORAGE ON_FLOATSTACK
 
 /* FLOAT options end ----------- */
 
