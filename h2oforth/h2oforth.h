@@ -67,6 +67,10 @@
 #define FLOAT_NELSON 4
 #define FLOAT_TURBO 5
 
+#undef FLOATSTORAGE
+#define ON_FLOATSTACK 1
+#define ON_DATASTACK 2
+
 #undef TASKINGSTANDARD
 #define TASKINGSTD_VOLK_ 1
 #define TASKINGSTD_FORTH83 2
@@ -109,7 +113,7 @@
 
 /* FLOAT options start --------- */
 #undef FLOAT_SUPPORT
-//#define FLOAT_SUPPORT
+#define FLOAT_SUPPORT
 
 #ifdef FLOAT_SUPPORT
 //#define FLOATSTD FLOAT_ANS94
@@ -123,6 +127,11 @@
 //#define CELL_FLOAT float
 #define CELL_FLOAT double
 #endif
+
+#undef FLOATSTORAGE
+//#define FLOATSTORAGE ON_FLOATSTACK
+#define FLOATSTORAGE ON_DATASTACK
+
 /* FLOAT options end ----------- */
 
 #undef TESTING_SUPPORT
@@ -256,7 +265,7 @@
 #define CELLSIZE4 4
 #define CELLSIZE8 8
 
-#define MAX_FORTHWORD_ID 65535UL
+#define MAX_FORTHWORD_ID 65535U
 
 #if (SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_HOST)
 #if !defined( INT_MIN ) || !defined( INT_MAX )

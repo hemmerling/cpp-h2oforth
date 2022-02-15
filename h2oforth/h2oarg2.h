@@ -119,7 +119,8 @@ int parameterHelp(void) {
 #ifdef FLOAT_SUPPORT
 	printf(", FLOAT_CELL=%zd", sizeof(CELL_FLOAT));
 #endif
-	printf(" )")
+	printf(" )\n");
+#endif
 	printf("\n");
 	printf("H2oForth [%c%s][%c%s][%c%s]\n", PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName2,
@@ -164,6 +165,7 @@ int parameterHelp(void) {
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_KEYBOARD]).name);
 	printf("%c%s, %c%s           Save a code file. TBD\n", PARAMETER_IDENTIFIER, (parameters[PARAMETER_SAVE]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_SAVE]).name);
+#endif
 	forthState.forthIsExit = TRUE;
 	exitCode = EXIT_HELP;
 	return(TRUE);
