@@ -12,6 +12,7 @@
 #include <fcntl.h>
 #include <limits.h>
 #include <setjmp.h>
+#include <math.h>
 
 #if defined(__MINGW32__)
 #include <direct.h>
@@ -222,8 +223,6 @@ static /*const */ char aListofHex[] = { '-', '0', '1', '2', '3', '4', '5', '6', 
 static /*const */ char aListOfBase[NUMBERTABLE_SIZE] = { '-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', \
 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', ',', '.' };
 
-/* zzzz */
-
 /******** Typedefs ********************/
 
 /*
@@ -248,7 +247,7 @@ typedef  struct _forthTask {
 	typedef_forthMessage* forthOsErrors;
 #ifdef FLOAT_SUPPORT
 #ifdef FLOAT_ON_DATASTACK
-    int floatFloatIntRatio;
+	int floatFloatIntRatio;
 #else
 #endif
 	int floatStackIndex;
@@ -419,7 +418,7 @@ void forthInit(void) {
 		forthTasks[ii].forthOsErrors = (typedef_forthMessage*)forthOsErrors;
 #ifdef FLOAT_SUPPORT
 #ifdef FLOAT_ON_DATASTACK
-		forthTasks[ii].floatFloatIntRatio = sizeof(CELL_FLOAT)/sizeof(CELL_INTEGER);
+		forthTasks[ii].floatFloatIntRatio = sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER);
 #endif
 		forthTasks[ii].floatStackIndex = 0;
 #endif
@@ -485,7 +484,6 @@ int isSPInteger(void) {
 				endIndex = lenAllowedCharactersBuffer;
 			};
 			for (ii = startIndex; ii < endIndex; ii++) {
-				// printf("[%d] [%c]  [%c] \n", ii, wordBuffer[aWordIndex], aListPointer[ii] );
 				if (wordBuffer[aWordIndex] == aListPointer[ii]) {
 					isNumeric = TRUE;
 					break;
@@ -775,7 +773,6 @@ void storeDPInteger(void) {
 	highValue = value / ((LONG_LONG)INT_MAX + 1);
 #endif
 
-	//printf("final value = %lld; low = %d, high = %d \n", value, lowValue, highValue);
 	forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex++] = lowValue;
 	forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex++] = highValue;
 }
@@ -789,7 +786,6 @@ static /*const */ char aListofFloat[] = { '-', '+', '.', '0', '1', '2', '3', '4'
 static /*const */ char aListofExponent[] = { '-', '+', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ',' };
 
 int isFloat(void) {
-	/* TBD */
 	int result = FALSE;
 	int aWordIndex = 0;
 	int lenWordBuffer = (int)strlen(wordBuffer);
@@ -797,6 +793,8 @@ int isFloat(void) {
 	char* aListPointer2 = (char*)NULL;
 	int lenAllowedCharactersBuffer1 = 0;
 	int lenAllowedCharactersBuffer2 = 0;
+	int eDetected = FALSE;
+	int dotDetected = FALSE;
 
 	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
 	case DECIMAL:
@@ -808,24 +806,19 @@ int isFloat(void) {
 	default:
 		return(result);
 	};
-	/* zzzz */
-	/* Don't proceed 
-	   1) if just 1 character => "E" is necessary, but is no valid Float
-	   2) if no valid mantissa.
-	 */ 
-	result = !( (lenWordBuffer == 1) || 
-				( (lenWordBuffer >= 2) && ( wordBuffer[0] == 'E') ) || \
-				( (lenWordBuffer >= 2) && ( wordBuffer[0] == '.') && ( wordBuffer[1] == 'E') ) || \
-				( (lenWordBuffer >= 2) && ( wordBuffer[0] == '+') && ( wordBuffer[1] == 'E') ) || \
-				( (lenWordBuffer >= 2) && ( wordBuffer[0] == '-') && ( wordBuffer[1] == 'E') ) || \
-				( (lenWordBuffer >= 2) && ( wordBuffer[0] == '.') && ( wordBuffer[1] == '+') ) || \
-				( (lenWordBuffer >= 2) && ( wordBuffer[0] == '.') && ( wordBuffer[1] == '-') ) || \
-				( (lenWordBuffer >= 3) && ( wordBuffer[0] == '+') && ( wordBuffer[1] == '.') && ( wordBuffer[2] == 'E') ) || \
-				( (lenWordBuffer >= 3) && ( wordBuffer[0] == '-') && ( wordBuffer[1] == '.') && ( wordBuffer[2] == 'E')	)
-			  );
+
+	/* Don't proceed 1) if just 1 character => "E" is necessary, but is no valid Float 2) if no valid mantissa */
+	result = !((lenWordBuffer == 1) ||
+		((lenWordBuffer >= 2) && (wordBuffer[0] == 'E')) || \
+		((lenWordBuffer >= 2) && (wordBuffer[0] == '.') && (wordBuffer[1] == 'E')) || \
+		((lenWordBuffer >= 2) && (wordBuffer[0] == '+') && (wordBuffer[1] == 'E')) || \
+		((lenWordBuffer >= 2) && (wordBuffer[0] == '-') && (wordBuffer[1] == 'E')) || \
+		((lenWordBuffer >= 2) && (wordBuffer[0] == '.') && (wordBuffer[1] == '+')) || \
+		((lenWordBuffer >= 2) && (wordBuffer[0] == '.') && (wordBuffer[1] == '-')) || \
+		((lenWordBuffer >= 3) && (wordBuffer[0] == '+') && (wordBuffer[1] == '.') && (wordBuffer[2] == 'E')) || \
+		((lenWordBuffer >= 3) && (wordBuffer[0] == '-') && (wordBuffer[1] == '.') && (wordBuffer[2] == 'E'))
+		);
 	if (result) {
-		int eDetected = FALSE;
-		int dotDetected = FALSE;
 		/* check until an "E" is found */
 		while ((aWordIndex < lenWordBuffer) && (!eDetected)) {
 			int isNumeric = FALSE;
@@ -842,19 +835,19 @@ int isFloat(void) {
 				/* "-", "+" may just be the first digit */
 				/* No further "." allowed */
 				startIndex = 3;
-				endIndex = lenAllowedCharactersBuffer1-1;
-			} else {
+				endIndex = lenAllowedCharactersBuffer1 - 1;
+			}
+			else {
 				/* "-", "+" may just be the first digit */
 				/* "," and "." are ok */
 				startIndex = 2;
 				endIndex = lenAllowedCharactersBuffer1;
 			};
 			for (ii = startIndex; ii < endIndex; ii++) {
-				//printf("[%d] [%c]  [%c] \n", ii, wordBuffer[aWordIndex], aListPointer[ii] );
 				if (wordBuffer[aWordIndex] == aListPointer1[ii]) {
 					isNumeric = TRUE;
-					eDetected = (ii==lenAllowedCharactersBuffer1-2);
-					dotDetected = dotDetected || (ii==2);
+					eDetected = (ii == lenAllowedCharactersBuffer1 - 2);
+					dotDetected = dotDetected || (ii == 2);
 					break;
 				};
 			};
@@ -866,9 +859,9 @@ int isFloat(void) {
 		result = result && eDetected;
 
 		/* No valid Float, if "," is at end of mantissa, minimum example "1,E" */
-		result = result && 
-				 !( (lenWordBuffer >= 3) && ( wordBuffer[aWordIndex-2] == ',') );
-		
+		result = result &&
+			!((lenWordBuffer >= 3) && (wordBuffer[aWordIndex - 2] == ','));
+
 		/* check after "E" was found */
 		int aExponentStart = aWordIndex;
 		while (aWordIndex < lenWordBuffer) {
@@ -882,22 +875,23 @@ int isFloat(void) {
 				/* The exponent of a Float number may not start with "," */
 				startIndex = 0;
 				endIndex = lenAllowedCharactersBuffer2 - 1;
-			} else if (aWordIndex == (lenWordBuffer - 1)) {
+			}
+			else if (aWordIndex == (lenWordBuffer - 1)) {
 				/* "-", "+" may just be the first digit */
 				/* Digit is last digit, so it can't be "," */
 				startIndex = 1;
 				endIndex = lenAllowedCharactersBuffer2 - 1;
-			} else {
+			}
+			else {
 				/* "-", "+" may just be the first digit */
 				/* "," is ok */
 				startIndex = 2;
 				endIndex = lenAllowedCharactersBuffer2;
 			};
 			for (ii = startIndex; ii < endIndex; ii++) {
-				//printf("[%d] [%c]  [%c] \n", ii, wordBuffer[aWordIndex], aListPointer[ii] );
 				if (wordBuffer[aWordIndex] == aListPointer2[ii]) {
 					isNumeric = TRUE;
-					eDetected = (ii==lenAllowedCharactersBuffer2);
+					eDetected = (ii == lenAllowedCharactersBuffer2);
 					break;
 				};
 			};
@@ -912,20 +906,136 @@ int isFloat(void) {
 /* Convert word to an Float and store it on the FloatStack */
 #ifdef FLOAT_SUPPORT
 void storeFloat(void) {
-	CELL_FLOAT value = 1.4;
+	/* TBD, wrong code here */
+	CELL_FLOAT value_mantissa = 0;
+	CELL_FLOAT value_exponent = 0;
 	int valueIsNegative = FALSE;
 	int aWordIndex = 0;
 	int lenWordBuffer = (int)strlen(wordBuffer);
-	char* aListPointer = (char*)NULL;
-	int lenAllowedCharactersBuffer = 0;
-	/* TBD */
-		//printf("final value = %f \n", value);
+	char* aListPointer1 = (char*)NULL;
+	char* aListPointer2 = (char*)NULL;
+	int lenAllowedCharactersBuffer1 = 0;
+	int lenAllowedCharactersBuffer2 = 0;
+	int eDetected = FALSE;
+	int dotDetected = FALSE;
+
+	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
+	case DECIMAL:
+		aListPointer1 = aListofFloat;
+		aListPointer2 = aListofExponent;
+		lenAllowedCharactersBuffer1 = sizeof(aListofFloat);
+		lenAllowedCharactersBuffer2 = sizeof(aListofExponent);
+		break;
+	default:
+		return;
+	};
+
+	/* check until an "E" is found */
+	while ((aWordIndex < lenWordBuffer) && (!eDetected)) {
+		int isNumeric = FALSE;
+		int startIndex = 0;
+		int endIndex = 0;
+		int ii = 0;
+		if (aWordIndex == 0) {
+			/* Number may start with "-", "+" or "." */
+			/* The mantissa of a Float number may not start with "," or "E" */
+			startIndex = 0;
+			endIndex = lenAllowedCharactersBuffer1 - 2;
+		}
+		else if (dotDetected) {
+			/* "-", "+" may just be the first digit */
+			/* No further "." allowed */
+			startIndex = 3;
+			endIndex = lenAllowedCharactersBuffer1 - 1;
+		}
+		else {
+			/* "-", "+" may just be the first digit */
+			/* "," and "." are ok */
+			startIndex = 2;
+			endIndex = lenAllowedCharactersBuffer1;
+		};
+		for (ii = startIndex; ii < endIndex; ii++) {
+			if (wordBuffer[aWordIndex] == aListPointer1[ii]) {
+				isNumeric = TRUE;
+				eDetected = (ii == lenAllowedCharactersBuffer1 - 2);
+				
+				if(dotDetected) {
+					value_mantissa = value_mantissa * forthTasks[forthState.forthCurrentTask].forthBase + ii - 1;
+				} else {
+					value_mantissa = value_mantissa * forthTasks[forthState.forthCurrentTask].forthBase + ii - 1;
+				};
+
+				// printf("nachher ii =%d, new value = %d \n", ii, value);
+	
+				if (wordBuffer[aWordIndex] == DIGIT_COMMA) {
+					break;
+				};
+
+				if (wordBuffer[aWordIndex] == DIGIT_DOT) {
+					dotDetected = DIGIT_DOT;
+					break;
+				};
+
+			if (wordBuffer[aWordIndex] == DIGIT_MINUS) {
+					valueIsNegative = TRUE;
+					break;
+				};
+
+				break;
+
+				// printf("nachher ii =%d, new value = %lld \n", ii, value);
+			};
+		};
+		aWordIndex++;
+	};
+
+	if (valueIsNegative) {
+		value_mantissa = value_mantissa * (-1);
+	};
+
+	/* check after "E" was found */
+	int aExponentStart = aWordIndex;
+	while (aWordIndex < lenWordBuffer) {
+		int isNumeric = FALSE;
+		int dotDetected = FALSE;
+		int startIndex = 0;
+		int endIndex = 0;
+		int ii = 0;
+		if (aWordIndex == aExponentStart) {
+			/* Exponent may start with "-", "+" */
+			/* The exponent of a Float number may not start with "," */
+			startIndex = 0;
+			endIndex = lenAllowedCharactersBuffer2 - 1;
+		}
+		else if (aWordIndex == (lenWordBuffer - 1)) {
+			/* "-", "+" may just be the first digit */
+			/* Digit is last digit, so it can't be "," */
+			startIndex = 1;
+			endIndex = lenAllowedCharactersBuffer2 - 1;
+		}
+		else {
+			/* "-", "+" may just be the first digit */
+			/* "," is ok */
+			startIndex = 2;
+			endIndex = lenAllowedCharactersBuffer2;
+		};
+		for (ii = startIndex; ii < endIndex; ii++) {
+			if (wordBuffer[aWordIndex] == aListPointer2[ii]) {
+				isNumeric = TRUE;
+				eDetected = (ii == lenAllowedCharactersBuffer2);
+				break;
+			};
+		};
+		aWordIndex++;
+	};
 #ifdef FLOAT_ON_DATASTACK
-	forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex] = value;
-	forthTasks[forthState.forthCurrentTask].dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex + 
-															 forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
+	forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex] = 
+		value_mantissa * pow(forthTasks[forthState.forthCurrentTask].forthBase, value_exponent);
+	forthTasks[forthState.forthCurrentTask].dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex +
+	forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
 #else
-	forthTasks[forthState.forthCurrentTask].floatStackSpace[forthTasks[forthState.forthCurrentTask].floatStackIndex++] = value;
+	forthTasks[forthState.forthCurrentTask].floatStackSpace[forthTasks[forthState.forthCurrentTask].floatStackIndex++] = 
+		value_mantissa * pow(forthTasks[forthState.forthCurrentTask].forthBase, value_exponent);
 #endif
 }
 #endif
@@ -1010,7 +1120,7 @@ void forthParseTib(void) {
 #endif
 #ifdef FLOAT_SUPPORT
 					if (isFloatWord) {
-						//storeFloat();
+						storeFloat();
 					};
 #endif
 					if (!isSPIntegerWord
@@ -1072,7 +1182,7 @@ void noParameterPreProcessing(void) {
 #ifdef FLOAT_SUPPORT
 		printf(", FLOAT_CELL=%d", sizeof(CELL_FLOAT));
 #ifdef FLOAT_ON_DATASTACK
-		printf(", FLOAT_CELL/INTEGER_CELL=%d", sizeof(CELL_FLOAT)/sizeof(CELL_INTEGER));
+		printf(", FLOAT_CELL/INTEGER_CELL=%d", sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
 #endif
 #endif
 		printf(" )\n");
@@ -1082,7 +1192,7 @@ void noParameterPreProcessing(void) {
 #ifdef FLOAT_SUPPORT
 		printf(", FLOAT_CELL=%zd", sizeof(CELL_FLOAT));
 #ifdef FLOAT_ON_DATASTACK
-		printf(", FLOAT_CELL/INTEGER_CELL=%zd", sizeof(CELL_FLOAT)/sizeof(CELL_INTEGER));
+		printf(", FLOAT_CELL/INTEGER_CELL=%zd", sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
 #endif
 #endif
 		printf(" )\n");
@@ -1097,16 +1207,16 @@ void noParameterPreProcessing(void) {
 /* Arduino setup */
 void setup(void) {
 	/* Arduino: put your setup code here, to run once */
-	TERMINAL_SETUP(9600L, SERIAL_8N1); 
+	TERMINAL_SETUP(9600L, SERIAL_8N1);
 	PUTS(COPYRIGHT_MESSAGE);
-  	PUTS("This is setup code");
+	PUTS("This is setup code");
 	/*TBD*/
 }
 
 /* Arduino Loop */
 void loop(void) {
 	/* Arduino: put your main code here, to run repeatedly */
-  	PUTS("This is loop code");
+	PUTS("This is loop code");
 	DELAY(1000);
 	/*TBD*/
 }

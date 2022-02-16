@@ -501,7 +501,7 @@ void fpointFPlus(void) {
 
 		printf("val = %f, val = %f\n", value1, value2 );
 
-		value1 = value1 + value2 +1.2;
+		value1 = value1 + value2;
 		*floatStackPointer = value1;
 
 		printf("val = %f, val = %f\n", value1, value2 );
