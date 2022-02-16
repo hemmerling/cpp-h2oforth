@@ -269,9 +269,6 @@ void bbc79Pick(void) {
 	DEBUG_WORD("bbc79Pick")
 }
 
-#define DEBUG_CHECK_DATASTACK(X, ERROR_NUMBER) if (forthTasks[forthState.forthCurrentTask].dataStackIndex+X <= 0) { \
-forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY; } 
-
 void bbc79DotS(void) {
 	int ii = 0;
 	int dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex;

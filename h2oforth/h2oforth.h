@@ -112,7 +112,7 @@
 //#define EXCEPTION_SUPPORT
 
 /* FLOAT options start --------- */
-#undef FLOAT_SUPPORT
+//#undef FLOAT_SUPPORT
 #define FLOAT_SUPPORT
 
 #ifdef FLOAT_SUPPORT
@@ -124,13 +124,12 @@
 #endif
 
 #ifdef FLOAT_SUPPORT
-//#define CELL_FLOAT float
-#define CELL_FLOAT double
+#define CELL_FLOAT float
+//#define CELL_FLOAT double
 #endif
 
-#undef FLOATSTORAGE
-//#define FLOATSTORAGE ON_DATASTACK
-#define FLOATSTORAGE ON_FLOATSTACK
+//#undef FLOAT_ON_DATASTACK
+#define FLOAT_ON_DATASTACK
 
 /* FLOAT options end ----------- */
 
@@ -340,9 +339,7 @@
 #undef DPINTEGER_SUPPORT
 #endif
 
-
 #if defined (__WATCOMC__)
-
 /* Open Watcom C/C++ 1.9 */
 #ifdef __DOS__
 #undef CELL_INTEGER
@@ -377,12 +374,29 @@
 #endif
 #endif
 
-#if defined(AVR_UNO) || defined(AVR_ADK)
+#if defined(AVR_ADK) || defined(AVR_BT) || defined(AVR_DUEMILANOVE) || \
+    defined(AVR_ESPLORA) || defined(AVR_ETHERNET) || defined(AVR_FIO) || \
+    defined(AVR_GEMMA) || defined(AVR_LEONARDO) || defined(AVR_LILYPAD) || \
+    defined(AVR_LILYPAD_USB) || defined(AVR_MEGA) || defined(AVR_MEGA2560) || \
+    defined(AVR_MICRO) || defined(AVR_MINI) || defined(AVR_NANO) || \
+    defined(AVR_NG) || defined(AVR_PRO) || defined(AVR_ROBOT_CONTROL) || \
+    defined(AVR_ROBOT_MOTOR) || defined(AVR_UNO) || defined(AVR_YUN)
+#define ARDUINO
+#endif
+
+#ifdef ARDUINO
+#define DELAY(TICKS) delay(TICKS)
+#define PUTS(STRING) Serial.println(STRING)
+#define TERMINAL_SETUP(SPEED, CONFIG) Serial.begin(SPEED CONFIG)
 /* "long long" is not available with Arduino AVR C/C++ */
 #define CELL_INTEGER int
 #undef LONG_LONG
 #define LONG_LONG long
 #undef DPINTEGER_SUPPORT
+#else
+#define DELAY(TICKS)
+#define PUTS(X) puts(X)
+#define TERMINAL_SETUP(SPEED, CONFIG) 
 #endif
 
 #endif
@@ -475,5 +489,7 @@ int istPermWord(void);
 void forthParseTib(void);
 void processTib(void);
 void noParameterPreProcessing(void);
+void setup(void);
+void loop(void);
 int main(int, char**);
 #endif

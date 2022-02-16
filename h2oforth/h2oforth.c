@@ -219,9 +219,10 @@ static /*const */ char aListofBinary[] = { '-', '0', '1', ',', '.' };
 static /*const */ char aListofOctal[] = { '-', '0', '1', '2', '3', '4', '5', '6', '7', ',', '.' };
 static /*const */ char aListofDecimal[] = { '-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ',', '.' };
 static /*const */ char aListofHex[] = { '-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', ',', '.' };
-
 static /*const */ char aListOfBase[NUMBERTABLE_SIZE] = { '-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', \
 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', ',', '.' };
+
+/* zzzz */
 
 /******** Typedefs ********************/
 
@@ -246,8 +247,12 @@ typedef  struct _forthTask {
 	typedef_forthMessage* forthMessages;
 	typedef_forthMessage* forthOsErrors;
 #ifdef FLOAT_SUPPORT
+#ifdef FLOAT_ON_DATASTACK
+    int floatFloatIntRatio;
+#else
+#endif
 	int floatStackIndex;
-	float floatStackSpace[MAX_FLOATSTACK];
+	CELL_FLOAT floatStackSpace[MAX_FLOATSTACK];
 #endif
 } typedef_forthTask;
 
@@ -413,6 +418,9 @@ void forthInit(void) {
 		forthTasks[ii].forthMessages = (typedef_forthMessage*)forthMessages;
 		forthTasks[ii].forthOsErrors = (typedef_forthMessage*)forthOsErrors;
 #ifdef FLOAT_SUPPORT
+#ifdef FLOAT_ON_DATASTACK
+		forthTasks[ii].floatFloatIntRatio = sizeof(CELL_FLOAT)/sizeof(CELL_INTEGER);
+#endif
 		forthTasks[ii].floatStackIndex = 0;
 #endif
 	};
@@ -466,13 +474,13 @@ int isSPInteger(void) {
 			}
 			else if (aWordIndex == (lenWordBuffer - 1)) {
 				/* "-" may just be the first digit */
-				/* Digit is last digit, so it can't be "," or "." */
+				/* Digit is last digit, so it can't be "," */
 				startIndex = 1;
 				endIndex = lenAllowedCharactersBuffer - 2;
 			}
 			else {
 				/* "-" may just be the first digit */
-				/* Digit ist not the last digit, so it can be  ","  and "." */
+				/* Digit ist not the last digit, so it can be "," */
 				startIndex = 1;
 				endIndex = lenAllowedCharactersBuffer;
 			};
@@ -529,13 +537,13 @@ void storeSPInteger(void) {
 		}
 		else  if (aWordIndex == (lenWordBuffer - 1)) {
 			/* "-" may just be the first digit */
-			/* Digit is last digit, so it can't be "," or "." */
+			/* Digit is last digit, so it can't be ","  */
 			startIndex = 1;
 			endIndex = lenAllowedCharactersBuffer - 2;
 		}
 		else {
 			/* "-" may just be the first digit */
-			/* Digit ist not the last digit, so it can be  ","  and "." */
+			/* Digit ist not the last digit, so it can be "," */
 			startIndex = 1;
 			endIndex = lenAllowedCharactersBuffer;
 		};
@@ -651,7 +659,7 @@ int isDPInteger(void) {
 			}
 			else {
 				/* "-" may just be the first digit */
-				/* Digit ist not the last digit, so it can be ","  and "." */
+				/* Digit ist not the last digit, so it can be "," */
 				startIndex = 1;
 				endIndex = lenAllowedCharactersBuffer;
 			};
@@ -777,59 +785,106 @@ void storeDPInteger(void) {
 /* I was told: According to the ANS standard, floating-point numbers are always
    interpreted as decimal (regardless of the content of the BASE variable) */
 #ifdef FLOAT_SUPPORT
+static /*const */ char aListofFloat[] = { '-', '+', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ',', 'E', '.' };
+static /*const */ char aListofExponent[] = { '-', '+', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+
 int isFloat(void) {
 	/* TBD */
 	int result = FALSE;
 	int aWordIndex = 0;
 	int lenWordBuffer = (int)strlen(wordBuffer);
-	char* aListPointer = (char*)NULL;
-	int lenAllowedCharactersBuffer = 0;
+	char* aListPointer1 = (char*)NULL;
+	char* aListPointer2 = (char*)NULL;
+	int lenAllowedCharactersBuffer1 = 0;
+	int lenAllowedCharactersBuffer2 = 0;
 
 	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
 	case DECIMAL:
-		aListPointer = aListofDecimal;
-		lenAllowedCharactersBuffer = sizeof(aListofDecimal);
+		aListPointer1 = aListofFloat;
+		aListPointer2 = aListofExponent;
+		lenAllowedCharactersBuffer1 = sizeof(aListofFloat);
+		lenAllowedCharactersBuffer2 = sizeof(aListofExponent);
 		break;
 	default:
 		return(result);
 	};
+	/* zzzz */
 	/* Don't proceed if just 1 character => "E" is necessary, but is no valid Float */
 	result = !(lenWordBuffer == 1); /*TBD*/
 	if (result) {
-		/* check if number */
-		while (aWordIndex < lenWordBuffer) {
+		int eDetected = FALSE;
+		/* check until an "E" is found */
+		while ((aWordIndex < lenWordBuffer) && (!eDetected)) {
 			int isNumeric = FALSE;
+			int dotDetected = FALSE;
 			int startIndex = 0;
 			int endIndex = 0;
 			int ii = 0;
 			if (aWordIndex == 0) {
-				/* Number may start with "-" or "." */
+				/* Number may start with "-", "+" or "." */
 				/* Float number can't start with "," or "E" */
 				startIndex = 0;
-				endIndex = lenAllowedCharactersBuffer - 2;
+				endIndex = lenAllowedCharactersBuffer1 - 2;
 			}
-			else if (aWordIndex == (lenWordBuffer - 1)) {
-				/* "-" may just be the first digit */
-				/* Digit is last digit, so it must be "." */
-				startIndex = lenAllowedCharactersBuffer - 1;
-				endIndex = lenAllowedCharactersBuffer;
-			}
-			else {
-				/* "-" may just be the first digit */
-				/* Digit ist not the last digit, so it can be ","  and "." */
-				startIndex = 1;
-				endIndex = lenAllowedCharactersBuffer;
+			else if (dotDetected) {
+				/* "-", "+" may just be the first digit */
+				/* No further "." allowed */
+				startIndex = 2;
+				endIndex = lenAllowedCharactersBuffer1-1;
+			} else {
+				/* "-", "+" may just be the first digit */
+				/* ","  and "." are ok */
+				startIndex = 2;
+				endIndex = lenAllowedCharactersBuffer1;
 			};
 			for (ii = startIndex; ii < endIndex; ii++) {
 				//printf("[%d] [%c]  [%c] \n", ii, wordBuffer[aWordIndex], aListPointer[ii] );
-				if (wordBuffer[aWordIndex] == aListPointer[ii]) {
+				if (wordBuffer[aWordIndex] == aListPointer1[ii]) {
 					isNumeric = TRUE;
+					eDetected = (ii==lenAllowedCharactersBuffer1-1);
+					dotDetected = (ii==lenAllowedCharactersBuffer1);
+					printf("e = %d, dot =%d \n", eDetected, dotDetected);
 					break;
 				};
 			};
 			result = result && isNumeric;
 			aWordIndex++;
 		};
+		printf("%d - %s\n", aWordIndex, wordBuffer);
+		/* check after "E" was found */
+		while (aWordIndex < lenWordBuffer) {
+			int isNumeric = FALSE;
+			int dotDetected = FALSE;
+			int startIndex = 0;
+			int endIndex = 0;
+			int ii = 0;
+			if (aWordIndex == 0) {
+				/* Exponent may start with "-", "+" */
+				startIndex = 0;
+				endIndex = lenAllowedCharactersBuffer2 - 2;
+			}
+			else if (dotDetected) {
+				/* "-", "+" may just be the first digit */
+				/* "-", "+" may just be the first digit */
+				startIndex = 2;
+				endIndex = lenAllowedCharactersBuffer2;
+			} else {
+				/* "-", "+" may just be the first digit */
+				startIndex = 2;
+				endIndex = lenAllowedCharactersBuffer2;
+			};
+			for (ii = startIndex; ii < endIndex; ii++) {
+				//printf("[%d] [%c]  [%c] \n", ii, wordBuffer[aWordIndex], aListPointer[ii] );
+				if (wordBuffer[aWordIndex] == aListPointer2[ii]) {
+					isNumeric = TRUE;
+					eDetected = (ii==lenAllowedCharactersBuffer2);
+					break;
+				};
+			};
+			result = result && isNumeric;
+			aWordIndex++;
+		};
+
 	};
 	return(result);
 }
@@ -838,17 +893,21 @@ int isFloat(void) {
 /* Convert word to an Float and store it on the FloatStack */
 #ifdef FLOAT_SUPPORT
 void storeFloat(void) {
-	float value = 0;
+	CELL_FLOAT value = 1.4;
 	int valueIsNegative = FALSE;
 	int aWordIndex = 0;
 	int lenWordBuffer = (int)strlen(wordBuffer);
 	char* aListPointer = (char*)NULL;
 	int lenAllowedCharactersBuffer = 0;
-	int lowValue = 0;
-	int highValue = 0;
 	/* TBD */
 		//printf("final value = %f \n", value);
+#ifdef FLOAT_ON_DATASTACK
+	forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex] = value;
+	forthTasks[forthState.forthCurrentTask].dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex + 
+															 forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
+#else
 	forthTasks[forthState.forthCurrentTask].floatStackSpace[forthTasks[forthState.forthCurrentTask].floatStackIndex++] = value;
+#endif
 }
 #endif
 
@@ -907,7 +966,7 @@ void forthParseTib(void) {
 				isDPIntegerWord = isDPInteger();
 #endif
 #ifdef FLOAT_SUPPORT
-				isFloatWord = isFloat();
+				//isFloatWord = isFloat();
 #endif
 				/* Check if a permanent word, and execute it */
 				isWordFound = isPermWord();
@@ -935,12 +994,12 @@ void forthParseTib(void) {
 						storeFloat();
 					};
 #endif
-					if (!isSPInteger()
+					if (!isSPIntegerWord
 #ifdef DPINTEGER_SUPPORT
-						&& !isDPInteger()
+						&& !isDPIntegerWord
 #endif
 #ifdef FLOAT_SUPPORT
-						&& !isFloat()
+						&& !isFloatWord
 #endif
 						) {
 						forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_NOT_IN_CURRENT_DIRECTORY;
@@ -993,6 +1052,9 @@ void noParameterPreProcessing(void) {
 			sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
 #ifdef FLOAT_SUPPORT
 		printf(", FLOAT_CELL=%d", sizeof(CELL_FLOAT));
+#ifdef FLOAT_ON_DATASTACK
+		printf(", FLOAT_CELL/INTEGER_CELL=%d", sizeof(CELL_FLOAT)/sizeof(CELL_INTEGER));
+#endif
 #endif
 		printf(" )\n");
 #else
@@ -1000,6 +1062,9 @@ void noParameterPreProcessing(void) {
 			sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
 #ifdef FLOAT_SUPPORT
 		printf(", FLOAT_CELL=%zd", sizeof(CELL_FLOAT));
+#ifdef FLOAT_ON_DATASTACK
+		printf(", FLOAT_CELL/INTEGER_CELL=%zd", sizeof(CELL_FLOAT)/sizeof(CELL_INTEGER));
+#endif
 #endif
 		printf(" )\n");
 #endif
@@ -1009,6 +1074,25 @@ void noParameterPreProcessing(void) {
 	forthState.forthReadsKeyboard = FALSE;
 }
 
+
+/* Arduino setup */
+void setup(void) {
+	/* Arduino: put your setup code here, to run once */
+	TERMINAL_SETUP(9600L, SERIAL_8N1); 
+	PUTS(COPYRIGHT_MESSAGE);
+  	PUTS("This is setup code");
+	/*TBD*/
+}
+
+/* Arduino Loop */
+void loop(void) {
+	/* Arduino: put your main code here, to run repeatedly */
+  	PUTS("This is loop code");
+	DELAY(1000);
+	/*TBD*/
+}
+
+/* Main routine, for all systems besides Arduino  */
 int main(int argc, char* argv[])
 {
 	forthInit();

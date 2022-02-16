@@ -111,6 +111,9 @@ int parameterHelp(void) {
 		sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
 #ifdef FLOAT_SUPPORT
 	printf(", FLOAT_CELL=%d", sizeof(CELL_FLOAT));
+#ifdef FLOAT_ON_DATASTACK
+	printf(", FLOAT_CELL/INTEGER_CELL=%d", sizeof(CELL_FLOAT)/sizeof(CELL_INTEGER));
+#endif
 #endif
 	printf(" )\n");
 #else
@@ -118,6 +121,9 @@ int parameterHelp(void) {
 		sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
 #ifdef FLOAT_SUPPORT
 	printf(", FLOAT_CELL=%zd", sizeof(CELL_FLOAT));
+#ifdef FLOAT_ON_DATASTACK
+	printf(", FLOAT_CELL/INTEGER_CELL=%zd", sizeof(CELL_FLOAT)/sizeof(CELL_INTEGER));
+#endif
 #endif
 	printf(" )\n");
 #endif
