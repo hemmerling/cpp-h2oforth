@@ -785,8 +785,8 @@ void storeDPInteger(void) {
 /* I was told: According to the ANS standard, floating-point numbers are always
    interpreted as decimal (regardless of the content of the BASE variable) */
 #ifdef FLOAT_SUPPORT
-static /*const */ char aListofFloat[] = { '-', '+', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ',', 'E', '.' };
-static /*const */ char aListofExponent[] = { '-', '+', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+static /*const */ char aListofFloat[] = { '-', '+', '.', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'E', ',' };
+static /*const */ char aListofExponent[] = { '-', '+', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ',' };
 
 int isFloat(void) {
 	/* TBD */
@@ -809,31 +809,43 @@ int isFloat(void) {
 		return(result);
 	};
 	/* zzzz */
-	/* Don't proceed if just 1 character => "E" is necessary, but is no valid Float */
-	result = !(lenWordBuffer == 1); /*TBD*/
+	/* Don't proceed 
+	   1) if just 1 character => "E" is necessary, but is no valid Float
+	   2) if no valid mantissa.
+	 */ 
+	result = !( (lenWordBuffer == 1) || 
+				( (lenWordBuffer >= 2) && ( wordBuffer[0] == 'E') ) || \
+				( (lenWordBuffer >= 2) && ( wordBuffer[0] == '.') && ( wordBuffer[1] == 'E') ) || \
+				( (lenWordBuffer >= 2) && ( wordBuffer[0] == '+') && ( wordBuffer[1] == 'E') ) || \
+				( (lenWordBuffer >= 2) && ( wordBuffer[0] == '-') && ( wordBuffer[1] == 'E') ) || \
+				( (lenWordBuffer >= 2) && ( wordBuffer[0] == '.') && ( wordBuffer[1] == '+') ) || \
+				( (lenWordBuffer >= 2) && ( wordBuffer[0] == '.') && ( wordBuffer[1] == '-') ) || \
+				( (lenWordBuffer >= 3) && ( wordBuffer[0] == '+') && ( wordBuffer[1] == '.') && ( wordBuffer[2] == 'E') ) || \
+				( (lenWordBuffer >= 3) && ( wordBuffer[0] == '-') && ( wordBuffer[1] == '.') && ( wordBuffer[2] == 'E')	)
+			  );
 	if (result) {
 		int eDetected = FALSE;
+		int dotDetected = FALSE;
 		/* check until an "E" is found */
 		while ((aWordIndex < lenWordBuffer) && (!eDetected)) {
 			int isNumeric = FALSE;
-			int dotDetected = FALSE;
 			int startIndex = 0;
 			int endIndex = 0;
 			int ii = 0;
 			if (aWordIndex == 0) {
 				/* Number may start with "-", "+" or "." */
-				/* Float number can't start with "," or "E" */
+				/* The mantissa of a Float number may not start with "," or "E" */
 				startIndex = 0;
 				endIndex = lenAllowedCharactersBuffer1 - 2;
 			}
 			else if (dotDetected) {
 				/* "-", "+" may just be the first digit */
 				/* No further "." allowed */
-				startIndex = 2;
+				startIndex = 3;
 				endIndex = lenAllowedCharactersBuffer1-1;
 			} else {
 				/* "-", "+" may just be the first digit */
-				/* ","  and "." are ok */
+				/* "," and "." are ok */
 				startIndex = 2;
 				endIndex = lenAllowedCharactersBuffer1;
 			};
@@ -841,35 +853,43 @@ int isFloat(void) {
 				//printf("[%d] [%c]  [%c] \n", ii, wordBuffer[aWordIndex], aListPointer[ii] );
 				if (wordBuffer[aWordIndex] == aListPointer1[ii]) {
 					isNumeric = TRUE;
-					eDetected = (ii==lenAllowedCharactersBuffer1-1);
-					dotDetected = (ii==lenAllowedCharactersBuffer1);
-					printf("e = %d, dot =%d \n", eDetected, dotDetected);
+					eDetected = (ii==lenAllowedCharactersBuffer1-2);
+					dotDetected = dotDetected || (ii==2);
 					break;
 				};
 			};
 			result = result && isNumeric;
 			aWordIndex++;
 		};
-		printf("%d - %s\n", aWordIndex, wordBuffer);
+
+		/* Valid float just if "E" was detected */
+		result = result && eDetected;
+
+		/* No valid Float, if "," is at end of mantissa, minimum example "1,E" */
+		result = result && 
+				 !( (lenWordBuffer >= 3) && ( wordBuffer[aWordIndex-2] == ',') );
+		
 		/* check after "E" was found */
+		int aExponentStart = aWordIndex;
 		while (aWordIndex < lenWordBuffer) {
 			int isNumeric = FALSE;
 			int dotDetected = FALSE;
 			int startIndex = 0;
 			int endIndex = 0;
 			int ii = 0;
-			if (aWordIndex == 0) {
+			if (aWordIndex == aExponentStart) {
 				/* Exponent may start with "-", "+" */
+				/* The exponent of a Float number may not start with "," */
 				startIndex = 0;
-				endIndex = lenAllowedCharactersBuffer2 - 2;
-			}
-			else if (dotDetected) {
+				endIndex = lenAllowedCharactersBuffer2 - 1;
+			} else if (aWordIndex == (lenWordBuffer - 1)) {
 				/* "-", "+" may just be the first digit */
-				/* "-", "+" may just be the first digit */
-				startIndex = 2;
-				endIndex = lenAllowedCharactersBuffer2;
+				/* Digit is last digit, so it can't be "," */
+				startIndex = 1;
+				endIndex = lenAllowedCharactersBuffer2 - 1;
 			} else {
 				/* "-", "+" may just be the first digit */
+				/* "," is ok */
 				startIndex = 2;
 				endIndex = lenAllowedCharactersBuffer2;
 			};
@@ -884,7 +904,6 @@ int isFloat(void) {
 			result = result && isNumeric;
 			aWordIndex++;
 		};
-
 	};
 	return(result);
 }
@@ -966,7 +985,7 @@ void forthParseTib(void) {
 				isDPIntegerWord = isDPInteger();
 #endif
 #ifdef FLOAT_SUPPORT
-				//isFloatWord = isFloat();
+				isFloatWord = isFloat();
 #endif
 				/* Check if a permanent word, and execute it */
 				isWordFound = isPermWord();
@@ -991,7 +1010,7 @@ void forthParseTib(void) {
 #endif
 #ifdef FLOAT_SUPPORT
 					if (isFloatWord) {
-						storeFloat();
+						//storeFloat();
 					};
 #endif
 					if (!isSPIntegerWord
