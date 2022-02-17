@@ -231,6 +231,7 @@
 #define DIGIT_COMMA ','
 #define DIGIT_DOT '.'
 #define DIGIT_MINUS '-'
+#define DIGIT_PLUS '+'
 #define DIGIT_E 'E'
 
 #define STRING_SPACE " "
@@ -255,6 +256,9 @@
 #define BASE_FORMAT_HEX "%p"
 //#define BASE_FORMAT_HEX "%x"
 #define BASE_FORMAT_OCTAL "%o"
+
+#define BASE_FORMAT_FLOAT "%f"
+#define BASE_FORMAT_EXPONENTIAL "%e"
 
 #define BASE_FORMAT_LDECIMAL "%lld"
 #define BASE_FORMAT_LHEX "%llp"

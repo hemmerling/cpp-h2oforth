@@ -483,7 +483,7 @@ void fpointInt(void) {
 		value2 = (CELL_INTEGER) value1;
 		forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex] = value2;
 
-		printf("val = %f, val = %d\n", value1, value2);
+		//printf("f = %e, f = %f, int = %d\n", value1, value1, value2);
 
 		forthTasks[forthState.forthCurrentTask].dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex + forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
 	}
@@ -509,9 +509,9 @@ void fpointFStar(void) {
 
 void fpointFPlus(void) {
 #ifdef FLOAT_ON_DATASTACK
+	CELL_FLOAT value1 = 0.0;
+	CELL_FLOAT value2 = 0.0;
 	CELL_FLOAT *floatStackPointer;
-	CELL_FLOAT value1;
-	CELL_FLOAT value2;
 	if (forthTasks[forthState.forthCurrentTask].dataStackIndex >= 
 	    2*forthTasks[forthState.forthCurrentTask].floatFloatIntRatio) {
 
@@ -525,12 +525,12 @@ void fpointFPlus(void) {
 		floatStackPointer = (CELL_FLOAT *)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
 		value2 = *floatStackPointer;
 
-		printf("val = %f, val = %f\n", value1, value2 );
+		//printf("e1 = %f, f1 = %f, e2 = %f, f2 = %f \n", value1, value1, value2, value2 );
 
 		value1 = value1 + value2;
 		*floatStackPointer = value1;
 
-		printf("val = %f, val = %f\n", value1, value2 );
+		//printf("resultf1 = %e, resultf1 = %f \n", value1, value1 );
 
 		forthTasks[forthState.forthCurrentTask].dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex + forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
 	}

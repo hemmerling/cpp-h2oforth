@@ -904,8 +904,10 @@ int isFloat(void) {
 /* Convert word to an Float and store it on the FloatStack */
 #ifdef FLOAT_SUPPORT
 void storeFloat(void) {
-	CELL_FLOAT valueMantissa = 0;
-	CELL_FLOAT valueExponent = 0;
+	CELL_FLOAT valueMantissa = 0.0;
+	CELL_INTEGER valueMantissaInteger = 0;
+	CELL_FLOAT valueMantissaFraction = 0.0;
+	CELL_INTEGER valueExponent = 0;
 #ifdef FLOAT_ON_DATASTACK
 	CELL_FLOAT value = 0;
 	CELL_FLOAT *floatStackPointer;
@@ -921,6 +923,7 @@ void storeFloat(void) {
 	int eDetected = FALSE;
 	int dotDetected = FALSE;
 	int aExponentStart = 0;
+	int positionOfExponentDigit = 1;
 
 	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
 	case DECIMAL:
@@ -980,18 +983,20 @@ void storeFloat(void) {
 				};
 
 				if(dotDetected) {
-					valueMantissa = valueMantissa / forthTasks[forthState.forthCurrentTask].forthBase + ii - 3;
+					valueMantissaFraction = valueMantissaFraction + 1.0 * ( ii - 3 ) / (forthTasks[forthState.forthCurrentTask].forthBase*positionOfExponentDigit);
+					positionOfExponentDigit = forthTasks[forthState.forthCurrentTask].forthBase*positionOfExponentDigit;
 				} else {
-					valueMantissa = valueMantissa * forthTasks[forthState.forthCurrentTask].forthBase + ii - 3;
+					valueMantissaInteger = valueMantissaInteger * forthTasks[forthState.forthCurrentTask].forthBase + ii - 3;
 				};
 
-				printf("charindex ii =%d, valueMantissa = %f\n", ii, valueMantissa);	
+				//printf("charindex ii =%d, valueMantissaInteger = %d, valueMantissaFraction = %f\n,  \n", ii, valueMantissaInteger, valueMantissaFraction);	
 				break;
 			};
 		};
 		aWordIndex++;
 	};
 
+	valueMantissa = valueMantissaInteger + valueMantissaFraction; 
 	if (mantissaIsNegative) {
 		valueMantissa = valueMantissa * (-1);
 	};
@@ -1028,8 +1033,12 @@ void storeFloat(void) {
 					break;
 				};
 
+				if (wordBuffer[aWordIndex] == DIGIT_PLUS) {
+					break;
+				};
+
 				valueExponent = valueExponent * forthTasks[forthState.forthCurrentTask].forthBase + ii - 2;
-				printf("charindex ii =%d, valueExponent = %f\n", ii, valueExponent);	
+				//printf("charindex ii =%d, valueExponent = %d\n", ii, valueExponent);	
 				break;
 			};
 		};
@@ -1042,7 +1051,7 @@ void storeFloat(void) {
 	
 #ifdef FLOAT_ON_DATASTACK
 	value = valueMantissa * pow(forthTasks[forthState.forthCurrentTask].forthBase, valueExponent);
-	printf("value = %f %f %f\n", value, valueMantissa, valueExponent);
+	//printf("value = %e %f %f\n", value, valueMantissa, valueExponent);
 	floatStackPointer = (CELL_FLOAT *)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
 	*floatStackPointer = value;
 	forthTasks[forthState.forthCurrentTask].dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex +
