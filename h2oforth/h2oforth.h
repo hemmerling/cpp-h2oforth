@@ -231,6 +231,7 @@
 #define DIGIT_COMMA ','
 #define DIGIT_DOT '.'
 #define DIGIT_MINUS '-'
+#define DIGIT_E 'E'
 
 #define STRING_SPACE " "
 #define STRING_CR "\n"

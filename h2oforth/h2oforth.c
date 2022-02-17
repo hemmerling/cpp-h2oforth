@@ -222,6 +222,8 @@ static /*const */ char aListofDecimal[] = { '-', '0', '1', '2', '3', '4', '5', '
 static /*const */ char aListofHex[] = { '-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', ',', '.' };
 static /*const */ char aListOfBase[NUMBERTABLE_SIZE] = { '-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', \
 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', ',', '.' };
+static /*const */ char aListofFloat[] = { '-', '+', '.', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'E', ',' };
+static /*const */ char aListofExponent[] = { '-', '+', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ',' };
 
 /******** Typedefs ********************/
 
@@ -731,7 +733,6 @@ void storeDPInteger(void) {
 				endIndex = lenAllowedCharactersBuffer;
 			};
 			for (ii = startIndex; ii < endIndex; ii++) {
-				//printf("[%d] [%c]  [%c] \n", ii, wordBuffer[aWordIndex], aListPointer[ii] );
 				if (wordBuffer[aWordIndex] == aListPointer[ii]) {
 					if ((wordBuffer[aWordIndex] == DIGIT_COMMA) || (wordBuffer[aWordIndex] == DIGIT_DOT)) {
 						break;
@@ -741,7 +742,6 @@ void storeDPInteger(void) {
 						break;
 					};
 					value = value * forthTasks[forthState.forthCurrentTask].forthBase + ii - 1;
-					// printf("nachher ii =%d, new value = %lld \n", ii, value);
 					break;
 				};
 			};
@@ -782,8 +782,6 @@ void storeDPInteger(void) {
 /* I was told: According to the ANS standard, floating-point numbers are always
    interpreted as decimal (regardless of the content of the BASE variable) */
 #ifdef FLOAT_SUPPORT
-static /*const */ char aListofFloat[] = { '-', '+', '.', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'E', ',' };
-static /*const */ char aListofExponent[] = { '-', '+', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ',' };
 
 int isFloat(void) {
 	int result = FALSE;
@@ -795,6 +793,7 @@ int isFloat(void) {
 	int lenAllowedCharactersBuffer2 = 0;
 	int eDetected = FALSE;
 	int dotDetected = FALSE;
+	int aExponentStart  = 0;
 
 	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
 	case DECIMAL:
@@ -846,8 +845,8 @@ int isFloat(void) {
 			for (ii = startIndex; ii < endIndex; ii++) {
 				if (wordBuffer[aWordIndex] == aListPointer1[ii]) {
 					isNumeric = TRUE;
-					eDetected = (ii == lenAllowedCharactersBuffer1 - 2);
-					dotDetected = dotDetected || (ii == 2);
+					dotDetected = dotDetected || (wordBuffer[aWordIndex] == DIGIT_DOT);
+					eDetected = wordBuffer[aWordIndex] == DIGIT_E;
 					break;
 				};
 			};
@@ -863,7 +862,7 @@ int isFloat(void) {
 			!((lenWordBuffer >= 3) && (wordBuffer[aWordIndex - 2] == ','));
 
 		/* check after "E" was found */
-		int aExponentStart = aWordIndex;
+		aExponentStart = aWordIndex;
 		while (aWordIndex < lenWordBuffer) {
 			int isNumeric = FALSE;
 			int dotDetected = FALSE;
@@ -891,7 +890,6 @@ int isFloat(void) {
 			for (ii = startIndex; ii < endIndex; ii++) {
 				if (wordBuffer[aWordIndex] == aListPointer2[ii]) {
 					isNumeric = TRUE;
-					eDetected = (ii == lenAllowedCharactersBuffer2);
 					break;
 				};
 			};
@@ -906,10 +904,14 @@ int isFloat(void) {
 /* Convert word to an Float and store it on the FloatStack */
 #ifdef FLOAT_SUPPORT
 void storeFloat(void) {
-	/* TBD, wrong code here */
-	CELL_FLOAT value_mantissa = 0;
-	CELL_FLOAT value_exponent = 0;
-	int valueIsNegative = FALSE;
+	CELL_FLOAT valueMantissa = 0;
+	CELL_FLOAT valueExponent = 0;
+#ifdef FLOAT_ON_DATASTACK
+	CELL_FLOAT value = 0;
+	CELL_FLOAT *floatStackPointer;
+#endif
+	int mantissaIsNegative = FALSE;
+	int exponentIsNegative = FALSE;
 	int aWordIndex = 0;
 	int lenWordBuffer = (int)strlen(wordBuffer);
 	char* aListPointer1 = (char*)NULL;
@@ -918,6 +920,7 @@ void storeFloat(void) {
 	int lenAllowedCharactersBuffer2 = 0;
 	int eDetected = FALSE;
 	int dotDetected = FALSE;
+	int aExponentStart = 0;
 
 	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
 	case DECIMAL:
@@ -941,14 +944,12 @@ void storeFloat(void) {
 			/* The mantissa of a Float number may not start with "," or "E" */
 			startIndex = 0;
 			endIndex = lenAllowedCharactersBuffer1 - 2;
-		}
-		else if (dotDetected) {
+		} else if (dotDetected) {
 			/* "-", "+" may just be the first digit */
 			/* No further "." allowed */
 			startIndex = 3;
 			endIndex = lenAllowedCharactersBuffer1 - 1;
-		}
-		else {
+		} else {
 			/* "-", "+" may just be the first digit */
 			/* "," and "." are ok */
 			startIndex = 2;
@@ -958,46 +959,47 @@ void storeFloat(void) {
 			if (wordBuffer[aWordIndex] == aListPointer1[ii]) {
 				isNumeric = TRUE;
 				eDetected = (ii == lenAllowedCharactersBuffer1 - 2);
-				
-				if(dotDetected) {
-					value_mantissa = value_mantissa * forthTasks[forthState.forthCurrentTask].forthBase + ii - 1;
-				} else {
-					value_mantissa = value_mantissa * forthTasks[forthState.forthCurrentTask].forthBase + ii - 1;
+
+				if (wordBuffer[aWordIndex] == DIGIT_MINUS) {
+					mantissaIsNegative = TRUE;
+					break;
 				};
 
-				// printf("nachher ii =%d, new value = %d \n", ii, value);
-	
 				if (wordBuffer[aWordIndex] == DIGIT_COMMA) {
 					break;
 				};
 
 				if (wordBuffer[aWordIndex] == DIGIT_DOT) {
-					dotDetected = DIGIT_DOT;
+					dotDetected = TRUE;
 					break;
 				};
 
-			if (wordBuffer[aWordIndex] == DIGIT_MINUS) {
-					valueIsNegative = TRUE;
+				if (wordBuffer[aWordIndex] == DIGIT_E) {
+					eDetected = TRUE;
 					break;
 				};
 
+				if(dotDetected) {
+					valueMantissa = valueMantissa / forthTasks[forthState.forthCurrentTask].forthBase + ii - 3;
+				} else {
+					valueMantissa = valueMantissa * forthTasks[forthState.forthCurrentTask].forthBase + ii - 3;
+				};
+
+				printf("charindex ii =%d, valueMantissa = %f\n", ii, valueMantissa);	
 				break;
-
-				// printf("nachher ii =%d, new value = %lld \n", ii, value);
 			};
 		};
 		aWordIndex++;
 	};
 
-	if (valueIsNegative) {
-		value_mantissa = value_mantissa * (-1);
+	if (mantissaIsNegative) {
+		valueMantissa = valueMantissa * (-1);
 	};
 
 	/* check after "E" was found */
-	int aExponentStart = aWordIndex;
+	aExponentStart = aWordIndex;
 	while (aWordIndex < lenWordBuffer) {
 		int isNumeric = FALSE;
-		int dotDetected = FALSE;
 		int startIndex = 0;
 		int endIndex = 0;
 		int ii = 0;
@@ -1006,14 +1008,12 @@ void storeFloat(void) {
 			/* The exponent of a Float number may not start with "," */
 			startIndex = 0;
 			endIndex = lenAllowedCharactersBuffer2 - 1;
-		}
-		else if (aWordIndex == (lenWordBuffer - 1)) {
+		} else if (aWordIndex == (lenWordBuffer - 1)) {
 			/* "-", "+" may just be the first digit */
 			/* Digit is last digit, so it can't be "," */
 			startIndex = 1;
 			endIndex = lenAllowedCharactersBuffer2 - 1;
-		}
-		else {
+		} else {
 			/* "-", "+" may just be the first digit */
 			/* "," is ok */
 			startIndex = 2;
@@ -1022,20 +1022,34 @@ void storeFloat(void) {
 		for (ii = startIndex; ii < endIndex; ii++) {
 			if (wordBuffer[aWordIndex] == aListPointer2[ii]) {
 				isNumeric = TRUE;
-				eDetected = (ii == lenAllowedCharactersBuffer2);
+
+				if (wordBuffer[aWordIndex] == DIGIT_MINUS) {
+					exponentIsNegative = TRUE;
+					break;
+				};
+
+				valueExponent = valueExponent * forthTasks[forthState.forthCurrentTask].forthBase + ii - 2;
+				printf("charindex ii =%d, valueExponent = %f\n", ii, valueExponent);	
 				break;
 			};
 		};
 		aWordIndex++;
 	};
+
+	if (exponentIsNegative) {
+		valueExponent = valueExponent * (-1);
+	};
+	
 #ifdef FLOAT_ON_DATASTACK
-	forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex] = 
-		value_mantissa * pow(forthTasks[forthState.forthCurrentTask].forthBase, value_exponent);
+	value = valueMantissa * pow(forthTasks[forthState.forthCurrentTask].forthBase, valueExponent);
+	printf("value = %f %f %f\n", value, valueMantissa, valueExponent);
+	floatStackPointer = (CELL_FLOAT *)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
+	*floatStackPointer = value;
 	forthTasks[forthState.forthCurrentTask].dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex +
 	forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
 #else
 	forthTasks[forthState.forthCurrentTask].floatStackSpace[forthTasks[forthState.forthCurrentTask].floatStackIndex++] = 
-		value_mantissa * pow(forthTasks[forthState.forthCurrentTask].forthBase, value_exponent);
+		valueMantissa * pow(forthTasks[forthState.forthCurrentTask].forthBase, valueExponent);
 #endif
 }
 #endif
