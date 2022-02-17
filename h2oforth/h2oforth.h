@@ -294,11 +294,14 @@
 #ifdef __MINGW32__
 /* MinGW, Win32 compiler */
 #define CELL_INTEGER int
+#define CELL_UNSIGNED unsigned int
+
 #define LONG_LONG long long
 #define DPINTEGER_SUPPORT
 #else
 /* Microsoft C/C++, Win64 compilation target */
 #define CELL_INTEGER long long
+#define CELL_UNSIGNED unsigned long long
 #define LONG_LONG long long
 #undef DPINTEGER_SUPPORT
 #endif
@@ -308,6 +311,7 @@
 /* Open Watcom C/C++ 1.9, Win32 (NT/Win95/Win32s) */
 #undef CELL_INTEGER
 #define CELL_INTEGER int
+#define CELL_UNSIGNED unsigned int
 #define LONG_LONG long long
 #define DPINTEGER_SUPPORT
 #endif
@@ -316,12 +320,14 @@
 #if(__WORDSIZE == 32)
 #undef CELL_INTEGER
 #define CELL_INTEGER int
+#define CELL_UNSIGNED unsigned int
 #define LONG_LONG long long
 #define DPINTEGER_SUPPORT
 #endif
 #if(__WORDSIZE == 64)
 #undef CELL_INTEGER
 #define CELL_INTEGER long long
+#define CELL_UNSIGNED unsigned long long
 #define LONG_LONG long long
 #undef DPINTEGER_SUPPORT
 #endif
@@ -330,6 +336,7 @@
 #if defined (__DJGPP__)
 #undef CELL_INTEGER
 #define CELL_INTEGER int
+#define CELL_UNSIGNED unsigned int
 #define LONG_LONG long long
 #define DPINTEGER_SUPPORT
 #endif
@@ -339,6 +346,7 @@
 /* "long long" is rejected by the error message "Too many types in declaration".                              */
 /* Therefore, FORTH Double Integers arithmetic therefore does not work properly, as implemented :-(           */
 #define CELL_INTEGER int
+#define CELL_UNSIGNED unsigned int
 #undef LONG_LONG
 #define LONG_LONG long
 #undef DPINTEGER_SUPPORT
@@ -349,6 +357,7 @@
 #ifdef __DOS__
 #undef CELL_INTEGER
 #define CELL_INTEGER int
+#define CELL_UNSIGNED unsigned int
 #define LONG_LONG long long
 #define DPINTEGER_SUPPORT
 #ifdef __I86__
@@ -361,6 +370,7 @@
 /* Open Watcom C/C++ 1.9, Win16 & Win386(Watcom Extender) */
 #undef CELL_INTEGER
 #define CELL_INTEGER int
+#define CELL_UNSIGNED unsigned int
 #define LONG_LONG long long
 #define DPINTEGER_SUPPORT
 #ifdef __I86__
@@ -373,6 +383,7 @@
 /* Open Watcom C/C++ 1.9, Win32 (NT/Win95/Win32s) */
 #undef CELL_INTEGER
 #define CELL_INTEGER int
+#define CELL_UNSIGNED unsigned int
 #define LONG_LONG long long
 #define DPINTEGER_SUPPORT
 #endif
@@ -395,6 +406,7 @@
 #define TERMINAL_SETUP(SPEED, CONFIG) Serial.begin(SPEED CONFIG)
 /* "long long" is not available with Arduino AVR C/C++ */
 #define CELL_INTEGER int
+#define CELL_UNSIGNED unsigned int
 #undef LONG_LONG
 #define LONG_LONG long
 #undef DPINTEGER_SUPPORT
@@ -413,6 +425,7 @@
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_081616BIT )
 /* Emulation of 081616BIT targets */
 #define CELL_INTEGER int
+#define CELL_UNSIGNED unsigned int
 #define LONG_LONG long
 #define DPINTEGER_SUPPORT
 #undef INT_MIN
@@ -428,6 +441,7 @@
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_161632BIT )
 /* Emulation of 161632BIT targets */
 #define CELL_INTEGER int
+#define CELL_UNSIGNED unsigned int
 #define LONG_LONG long
 #define DPINTEGER_SUPPORT
 #undef INT_MIN
@@ -454,24 +468,28 @@
 
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_323232BIT ) 
 #define CELL_INTEGER int
+#define CELL_UNSIGNED unsigned int
 #define LONG_LONG long
 #undef DPINTEGER_SUPPORT
 #endif
 
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_326464BIT )
 #define CELL_INTEGER long long
+#define CELL_UNSIGNED unsigned long long
 #define LONG_LONG long long
 #define DPINTEGER_SUPPORT
 #endif
 
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_646464BIT )
 #define CELL_INTEGER int
+#define CELL_UNSIGNED unsigned int
 #define LONG_LONG long long
 #undef DPINTEGER_SUPPORT
 #endif
 
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_6464128BIT )
 #define CELL_INTEGER int
+#define CELL_UNSIGNED unsigned int
 #define LONG_LONG __int128
 #define DPINTEGER_SUPPORT
 #endif
