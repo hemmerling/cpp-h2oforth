@@ -277,7 +277,7 @@ void bbc79DotS(void) {
 		printf("[%d] ", dataStackIndex);
 		for (ii = 0; ii < dataStackIndex; ii++) {
 			printf(forthTasks[forthState.forthCurrentTask].baseFormat, forthTasks[forthState.forthCurrentTask].dataStackSpace[ii]);
-			printf("%s", STRING_SPACE);
+			puts(STRING_SPACE);
 		};
 		printf("\n");
 	}
@@ -435,7 +435,7 @@ void bbc79Dot(void) {
 		privateSetBaseFormat();
 		printf(forthTasks[forthState.forthCurrentTask].baseFormat,
 			forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
-		printf("%s", STRING_CR);
+		puts(STRING_SPACE);
 	}
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
@@ -444,20 +444,6 @@ void bbc79Dot(void) {
 }
 
 void bbc79DotR(void) {
-	int ii = 0;
-	int returnStackIndex = forthTasks[forthState.forthCurrentTask].returnStackIndex;
-	if (returnStackIndex) {
-		privateSetBaseFormat();
-		printf("[%d] ", returnStackIndex);
-		for (ii = 0; ii < returnStackIndex; ii++) {
-			printf(forthTasks[forthState.forthCurrentTask].baseFormat, forthTasks[forthState.forthCurrentTask].returnStackSpace[ii]);
-			printf("%s", STRING_SPACE);
-		};
-		printf("\n");
-	}
-	else {
-		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_RETURNSTACK_EMPTY;
-	};
 	DEBUG_WORD("bbc79DotR")
 }
 
@@ -470,7 +456,7 @@ void bbc79DDot(void) {
 			<< (sizeof(forthTasks[forthState.forthCurrentTask].dataStackSpace[0]) * 4); /* ?? */
 		printf(forthTasks[forthState.forthCurrentTask].baseFormat, value +
 			forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
-		printf("%s", STRING_CR);
+		puts(STRING_SPACE);
 	}
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
@@ -1280,7 +1266,18 @@ void bbc79ToR(void) {
 }
 
 void bbc79RFetch(void) {
+	int returnStackIndex = forthTasks[forthState.forthCurrentTask].returnStackIndex;
+	int dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex;
 
+	if (returnStackIndex && (dataStackIndex < MAX_DATASTACK - 1)){
+		forthTasks[forthState.forthCurrentTask].dataStackSpace[dataStackIndex] = (CELL_INTEGER) 
+			forthTasks[forthState.forthCurrentTask].returnStackSpace[returnStackIndex];
+	} else {
+		/* ERROR_DATASTACK_FULL is not handled :-( */
+		/* TBD: Error handler should be able to handle more than 1 error */
+		//forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_FULL;
+		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_RETURNSTACK_EMPTY;
+	};
 
 	DEBUG_WORD("bbc79RFetch")
 }

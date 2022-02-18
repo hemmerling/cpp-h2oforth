@@ -124,8 +124,8 @@
 #endif
 
 #ifdef FLOAT_SUPPORT
-#define CELL_FLOAT float
-//#define CELL_FLOAT double
+//#define CELL_FLOAT float
+#define CELL_FLOAT double
 #endif
 
 //#undef FLOAT_ON_DATASTACK

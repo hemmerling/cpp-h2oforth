@@ -6,7 +6,7 @@
 /* Internal functions */
 #if defined (__DEBUG__)
 void privateDebugWord(char* nameOfWord) {
-	printf("%s\n", nameOfWord);
+	printf("\n%s\n", nameOfWord);
 }
 #endif	
 
@@ -119,6 +119,25 @@ void commonOctDot(void) {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 	DEBUG_WORD("commonOctDot")
+}
+
+/* Display the ReturnStack ( H2OForth unique ) */
+void commonRDotS(void) {
+	int ii = 0;
+	int returnStackIndex = forthTasks[forthState.forthCurrentTask].returnStackIndex;
+	if (returnStackIndex) {
+		privateSetBaseFormat();
+		printf("[%d] ", returnStackIndex);
+		for (ii = 0; ii < returnStackIndex; ii++) {
+			printf(forthTasks[forthState.forthCurrentTask].baseFormat, forthTasks[forthState.forthCurrentTask].returnStackSpace[ii]);
+			printf("%s", STRING_SPACE);
+		};
+		printf("\n");
+	}
+	else {
+		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_RETURNSTACK_EMPTY;
+	};
+	DEBUG_WORD("commonRDot")
 }
 
 
@@ -569,6 +588,19 @@ void fpointFMinus(void) {
 }
 
 void fpointFDot(void){
+	CELL_FLOAT value = 0.0;
+	CELL_FLOAT *floatStackPointer;
+	if (forthTasks[forthState.forthCurrentTask].dataStackIndex >= 
+	    forthTasks[forthState.forthCurrentTask].floatFloatIntRatio) {
+		forthTasks[forthState.forthCurrentTask].dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex - forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
+		floatStackPointer = (CELL_FLOAT *)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
+		value = *floatStackPointer;
+		printf("%f", value);
+		puts(STRING_SPACE);
+		forthTasks[forthState.forthCurrentTask].dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex - forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
+	} else {
+		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
+	};
 	DEBUG_WORD("fpointFDot")
 }
 

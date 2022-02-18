@@ -12,6 +12,7 @@ void privateSetBaseLFormat(void);
 void commonOctal(void);
 void commonHexDot(void);
 void commonOctDot(void);
+void commonRDotS(void);
 
 void exceptionAbort(void);
 void exceptionAbortQ(void);
@@ -277,7 +278,9 @@ static const typedef_forthWord commonWords[] = {
 			{ "OCTAL", "OCTAL", TRUE, FALSE, FALSE, 0UL, (forthOperation)commonOctal },
 			{ "HEX.", "HEX.", TRUE, FALSE, FALSE, 0UL, (forthOperation)commonHexDot },
 			{ "OCT.", "OCT.", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)commonOctDot },
+			{ "R.S", "R.S", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)commonRDotS },
 };
+
 
 #ifdef EXCEPTION_SUPPORT
 static const typedef_forthWord exceptionWords[] = {
