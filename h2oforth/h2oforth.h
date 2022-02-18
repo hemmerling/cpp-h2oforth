@@ -225,7 +225,7 @@
 #define OCTAL 8
 #define DECIMAL 10
 #define HEX 16
-#define MAX_BASE 36
+#define MAX_BASE 26*2+10
 #define NUMBERTABLE_SIZE MAX_BASE+3
 
 #define DIGIT_COMMA ','
