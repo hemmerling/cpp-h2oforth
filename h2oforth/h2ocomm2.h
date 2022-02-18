@@ -130,7 +130,7 @@ void commonRDotS(void) {
 		printf("[%d] ", returnStackIndex);
 		for (ii = 0; ii < returnStackIndex; ii++) {
 			printf(forthTasks[forthState.forthCurrentTask].baseFormat, forthTasks[forthState.forthCurrentTask].returnStackSpace[ii]);
-			printf("%s", STRING_SPACE);
+			putchar(CHAR_SPACE);
 		};
 		printf("\n");
 	}
@@ -596,7 +596,7 @@ void fpointFDot(void){
 		floatStackPointer = (CELL_FLOAT *)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
 		value = *floatStackPointer;
 		printf("%f", value);
-		puts(STRING_SPACE);
+		putchar(CHAR_SPACE);
 		forthTasks[forthState.forthCurrentTask].dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex - forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
 	} else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;

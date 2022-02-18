@@ -234,7 +234,7 @@ static /*const */ char aListofExponent[] = { '-', '+', '0', '1', '2', '3', '4', 
 */
 typedef  struct _forthTask {
 	char* baseFormat;
-	int forthBase;
+	CELL_INTEGER forthBase; /* instead of int */
 	int errorNumber;
 	int messageNumber;
 	int osErrorNumber;

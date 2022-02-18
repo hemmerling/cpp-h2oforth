@@ -233,6 +233,7 @@
 #define DIGIT_MINUS '-'
 #define DIGIT_PLUS '+'
 #define DIGIT_E 'E'
+#define CHAR_SPACE ' '
 
 #define STRING_SPACE " "
 #define STRING_CR "\n"
