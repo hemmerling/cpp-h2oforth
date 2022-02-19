@@ -222,7 +222,10 @@ static /*const */ char aListofDecimal[] = { '-', '0', '1', '2', '3', '4', '5', '
 static /*const */ char aListofHex[] = { '-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', ',', '.' };
 static /*const */ char aListOfAllBases[NUMBERTABLE_SIZE] = { '-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
 	'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 
-	'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', ',', '.' };
+#ifdef LOWERCASE_BASE_SUPPORT
+	'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+#endif
+	 ',', '.' };
 static /*const */ char aListofFloat[] = { '-', '+', '.', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'E', ',' };
 static /*const */ char aListofExponent[] = { '-', '+', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ',' };
 
@@ -235,7 +238,7 @@ static /*const */ char aListofExponent[] = { '-', '+', '0', '1', '2', '3', '4', 
 */
 typedef  struct _forthTask {
 	char* baseFormat;
-	CELL_INTEGER forthBase; /* instead of int */
+	CELL_INTEGER forthBase; /* instead of int, for safety if somebody tries to store a BASE by ! instead of C! */
 	int errorNumber;
 	int messageNumber;
 	int osErrorNumber;
@@ -454,9 +457,9 @@ int isSPInteger(void) {
 		lenAllowedCharactersBuffer = sizeof(aListofHex);
 		break;
 	default:
-		aListPointer = aListOfBase;
+		aListPointer = aListOfAllBases;
 		lenAllowedCharactersBuffer = sizeof(aListOfAllBases);
-		return(result);
+		//return(result);
 	};
 
 	/* Don't proceed if it is Minus operator */
@@ -476,15 +479,15 @@ int isSPInteger(void) {
 			}
 			else if (aWordIndex == (lenWordBuffer - 1)) {
 				/* "-" may just be the first digit */
-				/* Digit is last digit, so it can't be "," */
+				/* Digit is last digit, so it can't be "," nor "." */
 				startIndex = 1;
 				endIndex = lenAllowedCharactersBuffer - 2;
 			}
 			else {
 				/* "-" may just be the first digit */
-				/* Digit ist not the last digit, so it can be "," */
+				/* Digit ist not the last digit, so it can be ",", but not "." */
 				startIndex = 1;
-				endIndex = lenAllowedCharactersBuffer;
+				endIndex = lenAllowedCharactersBuffer-1;
 			};
 			for (ii = startIndex; ii < endIndex; ii++) {
 				if (wordBuffer[aWordIndex] == aListPointer[ii]) {
@@ -523,9 +526,9 @@ void storeSPInteger(void) {
 		lenAllowedCharactersBuffer = sizeof(aListofHex);
 		break;
 	default:
-		aListPointer = aListOfBase;
+		aListPointer = aListOfAllBases;
 		lenAllowedCharactersBuffer = sizeof(aListOfAllBases);
-		return;
+		//return;
 	};
 
 	while (aWordIndex < lenWordBuffer) {
@@ -540,15 +543,15 @@ void storeSPInteger(void) {
 		}
 		else  if (aWordIndex == (lenWordBuffer - 1)) {
 			/* "-" may just be the first digit */
-			/* Digit is last digit, so it can't be ","  */
+			/* Digit is last digit, so it can't be "," nor "." */
 			startIndex = 1;
 			endIndex = lenAllowedCharactersBuffer - 2;
 		}
 		else {
 			/* "-" may just be the first digit */
-			/* Digit ist not the last digit, so it can be "," */
+			/* Digit ist not the last digit, so it can be ",", but not "." */
 			startIndex = 1;
-			endIndex = lenAllowedCharactersBuffer;
+			endIndex = lenAllowedCharactersBuffer-1;
 		};
 		for (ii = startIndex; ii < endIndex; ii++) {
 			// printf("[%d] [%c]  [%c] \n", ii, wordBuffer[aWordIndex], aListPointer[ii] );
@@ -637,9 +640,9 @@ int isDPInteger(void) {
 		lenAllowedCharactersBuffer = sizeof(aListofHex);
 		break;
 	default:
-		aListPointer = aListOfBase;
+		aListPointer = aListOfAllBases;
 		lenAllowedCharactersBuffer = sizeof(aListOfAllBases);
-		return(result);
+		//return(result);
 	};
 	/* Don't proceed if just 1 character => "." is necessary, but is no valid Double Precision Integer */
 	result = !(lenWordBuffer == 1);
@@ -710,9 +713,9 @@ void storeDPInteger(void) {
 		lenAllowedCharactersBuffer = sizeof(aListofHex);
 		break;
 	default:
-		aListPointer = aListOfBase;
+		aListPointer = aListOfAllBases;
 		lenAllowedCharactersBuffer = sizeof(aListOfAllBases);
-		return;
+		//return;
 	};
 	/* Don't proceed if just 1 character => "." is necessary, but is no valid Double Precision Integer */
 	if (!(lenWordBuffer == 1)) {

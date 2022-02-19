@@ -277,7 +277,7 @@ void bbc79DotS(void) {
 		printf("[%d] ", dataStackIndex);
 		for (ii = 0; ii < dataStackIndex; ii++) {
 			printf(forthTasks[forthState.forthCurrentTask].baseFormat, forthTasks[forthState.forthCurrentTask].dataStackSpace[ii]);
-			printf("%s",STRING_SPACE);
+			printf("%s", STRING_SPACE);
 		};
 		printf("\n");
 	}
@@ -432,13 +432,21 @@ void bbc79UDot(void) {
 
 void bbc79Dot(void) {
 	if (forthTasks[forthState.forthCurrentTask].dataStackIndex) {
+		CELL_INTEGER value =
+			forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex];
+		char* value2;
 		privateSetBaseFormat();
-		printf(forthTasks[forthState.forthCurrentTask].baseFormat,
-			forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
+		if (forthTasks[forthState.forthCurrentTask].baseFormat == BASE_FORMAT_EMPTY) {
+			value2 = privatBaseConversion(forthTasks[forthState.forthCurrentTask].forthBase, value);
+			printf(forthTasks[forthState.forthCurrentTask].baseFormat, value2);
+		}
+		else {
+			printf(forthTasks[forthState.forthCurrentTask].baseFormat, value);
+		};
 		putchar(CHAR_SPACE);
 	}
-	else {
-		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
+ else {
+ forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 	DEBUG_WORD("bbc79Dot")
 }
@@ -1283,10 +1291,11 @@ void bbc79RFetch(void) {
 	int returnStackIndex = forthTasks[forthState.forthCurrentTask].returnStackIndex;
 	int dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex;
 
-	if (returnStackIndex && (dataStackIndex < MAX_DATASTACK - 1)){
-		forthTasks[forthState.forthCurrentTask].dataStackSpace[dataStackIndex] = (CELL_INTEGER) 
+	if (returnStackIndex && (dataStackIndex < MAX_DATASTACK - 1)) {
+		forthTasks[forthState.forthCurrentTask].dataStackSpace[dataStackIndex] = (CELL_INTEGER)
 			forthTasks[forthState.forthCurrentTask].returnStackSpace[returnStackIndex];
-	} else {
+	}
+	else {
 		/* ERROR_DATASTACK_FULL is not handled :-( */
 		/* TBD: Error handler should be able to handle more than 1 error */
 		//forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_FULL;

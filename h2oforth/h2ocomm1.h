@@ -6,6 +6,7 @@
 #if defined (__DEBUG__)
 void privateDebugWord(char*);
 #endif
+char *privatBaseConversion(CELL_INTEGER, CELL_INTEGER);
 void privateMessageHandler(void);
 void privateSetBaseFormat(void);
 void privateSetBaseLFormat(void);

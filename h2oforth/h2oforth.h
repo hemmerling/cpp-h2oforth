@@ -90,6 +90,9 @@
 #define ERROR_CAUSES_RESET 3
 #define ERROR_CAUSES_EXIT_TO_OS 4
 
+#define MAX_BASE_CAPITALS_ONLY 26+10
+#define MAX_BASE_MIXEDCASE 26*2+10
+
 /*********************************/
 /* Configuration switches        */
 /*********************************/
@@ -110,6 +113,9 @@
 
 #undef EXCEPTION_SUPPORT
 //#define EXCEPTION_SUPPORT
+
+//#undef LOWERCASE_BASE_SUPPORT
+#define LOWERCASE_BASE_SUPPORT
 
 /* FLOAT options start --------- */
 //#undef FLOAT_SUPPORT
@@ -225,8 +231,6 @@
 #define OCTAL 8
 #define DECIMAL 10
 #define HEX 16
-#define MAX_BASE 26*2+10
-#define NUMBERTABLE_SIZE MAX_BASE+3
 
 #define DIGIT_COMMA ','
 #define DIGIT_DOT '.'
@@ -253,7 +257,7 @@
 #define BLOCK_LINES 16
 
 #define BASE_FORMAT_DECIMAL "%d"
-#define BASE_FORMAT_EMPTY ""
+#define BASE_FORMAT_EMPTY "%s"
 #define BASE_FORMAT_HEX "%p"
 //#define BASE_FORMAT_HEX "%x"
 #define BASE_FORMAT_OCTAL "%o"
@@ -271,6 +275,14 @@
 #define CELLSIZE8 8
 
 #define MAX_FORTHWORD_ID 65535U
+
+#ifdef LOWERCASE_BASE_SUPPORT
+#define MAX_BASE MAX_BASE_MIXEDCASE
+#define NUMBERTABLE_SIZE MAX_BASE+3
+#else
+#define MAX_BASE MAX_BASE_CAPITALS_ONLY
+#define NUMBERTABLE_SIZE MAX_BASE+3
+#endif
 
 #if (SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_HOST)
 #if !defined( INT_MIN ) || !defined( INT_MAX )

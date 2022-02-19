@@ -8,7 +8,12 @@
 void privateDebugWord(char* nameOfWord) {
 	printf("\n%s\n", nameOfWord);
 }
-#endif	
+#endif
+
+char *privatBaseConversion(CELL_INTEGER base, CELL_INTEGER value) {
+	char *value2;
+	return (value2);
+}
 
 void privateMessageHandler(void) {
 	int errorNumber = forthTasks[forthState.forthCurrentTask].errorNumber;
