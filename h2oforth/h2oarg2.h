@@ -107,7 +107,7 @@ void writeCode(char* filename) {
 /* Parameter help screen */
 int parameterHelp(void) {
 #if defined(__BORLANDC__) || defined(__TURBOC__)
-	printf("%s, Built %d\n( Int=%d, INTEGER_CELL=%d, *Int=%d, Long Long=%d", COPYRIGHT_MESSAGE, BUILT, \
+	printf("%s, Version%d - Built %d\n( Int=%d, INTEGER_CELL=%d, *Int=%d, Long Long=%d", COPYRIGHT_MESSAGE, VERSION, BUILT, \
 		sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
 #ifdef FLOAT_SUPPORT
 	printf(", FLOAT_CELL=%d", sizeof(CELL_FLOAT));
@@ -117,7 +117,7 @@ int parameterHelp(void) {
 #endif
 	printf(" )\n");
 #else
-	printf("%s, Built %d\n( Int=%zd, INTEGER_CELL=%zd, *Int=%zd, Long Long=%zd", COPYRIGHT_MESSAGE, BUILT, \
+	printf("%s, Version%d - Built %d\n( Int=%zd, INTEGER_CELL=%zd, *Int=%zd, Long Long=%zd", COPYRIGHT_MESSAGE, VERSION, BUILT, \
 		sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
 #ifdef FLOAT_SUPPORT
 	printf(", FLOAT_CELL=%zd", sizeof(CELL_FLOAT));

@@ -276,7 +276,15 @@ void bbc79DotS(void) {
 		privateSetBaseFormat();
 		printf("[%d] ", dataStackIndex);
 		for (ii = 0; ii < dataStackIndex; ii++) {
-			printf(forthTasks[forthState.forthCurrentTask].baseFormat, forthTasks[forthState.forthCurrentTask].dataStackSpace[ii]);
+			CELL_INTEGER value = forthTasks[forthState.forthCurrentTask].dataStackSpace[ii];
+			char* value2;
+			if (forthTasks[forthState.forthCurrentTask].baseFormat == BASE_FORMAT_EMPTY) {
+				value2 = privatBaseConversion(forthTasks[forthState.forthCurrentTask].forthBase, value);
+				printf(forthTasks[forthState.forthCurrentTask].baseFormat, value2);
+			}
+			else {
+				printf(forthTasks[forthState.forthCurrentTask].baseFormat, value);
+			};
 			printf("%s", STRING_SPACE);
 		};
 		printf("\n");

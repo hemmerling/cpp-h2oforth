@@ -97,6 +97,7 @@
 /* Configuration switches        */
 /*********************************/
 
+#define VERSION 1
 #define BUILT 1
 
 //#undef __DEBUG__

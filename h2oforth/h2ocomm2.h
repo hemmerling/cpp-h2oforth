@@ -10,9 +10,21 @@ void privateDebugWord(char* nameOfWord) {
 }
 #endif
 
+/* BaseConversion => non-reantrant function */
 char *privatBaseConversion(CELL_INTEGER base, CELL_INTEGER value) {
-	char *value2;
-	return (value2);
+	CELL_INTEGER quotient = value;
+	CELL_INTEGER  reminder = 0;
+	char static value2[MAX_INPUTBUFFER]; /* must be static */
+	char *result= (char *)0;
+	int ii = 0;
+	while(quotient != 0){
+		quotient = quotient / base;
+		reminder = quotient % base;
+	    value2[ii++]= (char)(reminder + (int)'0');
+	};
+	result = (char *)&value2;
+	value2[ii]= (char)0;
+	return (result);
 }
 
 void privateMessageHandler(void) {
