@@ -1,3 +1,3 @@
-@ren h2oforth.c h2oforth.cpp
+@rem @ren h2oforth.cpp h2oforth.c
 gcc h2oforth.cpp -o h2oforth.exe -pedantic
-@ren h2oforth.cpp h2oforth.c
+@rem @ren h2oforth.c h2oforth.cpp
