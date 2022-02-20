@@ -1,1 +1,0 @@
-gcc h2oforth.cpp -o h2oforth.exe -pedantic

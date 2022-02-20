@@ -4,12 +4,12 @@
 /* Messages and error messages */
 
 typedef  struct _forthWordList {
-	const int lenForthWords;
+	int lenForthWords;
 	const typedef_forthWord* forthWords;
 } typedef_forthWordList;
 
 typedef  struct _forthMessage {
-	const int messageNumber;
+	int messageNumber;
 	const char* messageText;
 } typedef_forthMessage;
 

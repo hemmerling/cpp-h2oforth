@@ -326,11 +326,11 @@ typedef void (*forthOperation)(void);
 typedef  struct _forthWord {
 	const char* forthWordName;
 	const char* forthAlternativeName;
-	const short int interpreted;
-	const short int immediate;
-	const short int implemented;
-	const unsigned long forthWordNumber;
-	const forthOperation  forthOpt; // function pointer 
+	short int interpreted;
+	short int immediate;
+	short int implemented;
+	unsigned long forthWordNumber;
+	forthOperation  forthOpt; // function pointer 
 } typedef_forthWord;
 
 /* Variables */

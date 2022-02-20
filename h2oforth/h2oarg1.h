@@ -38,9 +38,9 @@ typedef  struct _parameterSet {
 	const char* shortName2;
 	const char* name;
 	const char* defaultName;
-	const commandLineParameter function; /* function pointer */
+	commandLineParameter function; /* function pointer */
 	int isWaitingFor;
-	const getData2 function2; /* function pointer */
+	getData2 function2; /* function pointer */
 } typedef_parameterSet;
 
 void readDatabase(char*);
