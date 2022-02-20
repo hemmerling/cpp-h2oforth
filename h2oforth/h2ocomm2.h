@@ -1408,6 +1408,29 @@ void taskingRtfActivate(void) {
 
 #endif
 
+#if TASKINGSTANDARD == TASKINGSTD_CAMEL
+void taskingCamelSwitch(void) {
+	DEBUG_WORD("taskingCamelSwitch")
+}
+
+void taskingCamelInitTask(void) {
+	DEBUG_WORD("taskingCamelInitTask")
+}
+
+void taskingCamelDetach(void) {
+	DEBUG_WORD("taskingCamelDetach")
+}
+
+void taskingCamelAttach(void) {
+	DEBUG_WORD("taskingCamelAttach")
+}
+
+void taskingCamelPreempt(void) {
+	DEBUG_WORD("taskingCamelPreempt")
+}
+
+#endif
+
 #ifdef TESTING_SUPPORT
 void testingTCurlyBracket(void) {
 	DEBUG_WORD("testingTCurlyBracket")

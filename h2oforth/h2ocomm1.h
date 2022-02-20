@@ -324,6 +324,12 @@ void taskingRtfStop(void);
 void taskingRtfPause(void);
 void taskingRtfActivate(void);
 
+void taskingCamelSwitch(void);
+void taskingCamelInitTask(void);
+void taskingCamelDetach(void);
+void taskingCamelAttach(void);
+void taskingCamelPreempt(void);
+
 void testingTCurlyBracket(void);
 void testingCurlyBracketT(void);
 
@@ -680,6 +686,17 @@ static const typedef_forthWord taskingWords[] = {
 			{ "ACTIVATE", "ACTIVATE", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingRtfActivate }
 };
 #endif
+
+#if TASKINGSTANDARD == TASKINGSTD_CAMEL
+static const typedef_forthWord taskingWords[] = {
+			{ "SWITCH", "SWITCH", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingCamelSwitch },
+			{ "INITTASK", "INITTASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingCamelInitTask },
+			{ "DETACH", "DETACH", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingCamelDetach },
+			{ "ATTACH", "ATTACH", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingCamelAttach },
+			{ "PREEMPT", "PREEMPT", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingCamelPreempt }
+};
+#endif
+
 
 #ifdef TESTING_SUPPORT
 static const typedef_forthWord testingWords[] = {
