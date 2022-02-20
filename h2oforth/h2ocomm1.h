@@ -236,22 +236,6 @@ void fpointQFPErr(void);
 #endif
 #endif
 
-void taskingVfActivate(void);
-void taskingVfLock(void);
-void taskingVfMultiTask(void);
-void taskingVfPass(void);
-void taskingVfPause(void);
-void taskingVfRendezvous(void);
-void taskingVfSingleTask(void);
-void taskingVfSleep(void);
-void taskingVfStop(void);
-void taskingVfTask(void);
-void taskingVfTasks(void);
-void taskingVfUnlock(void);
-void taskingVfWake(void);
-void taskingVfUPFetch(void);
-void taskingVfUPStore(void);
-
 void taskingF83Allot(void);
 void taskingF83Create(void);
 void taskingF83Variable(void);
@@ -270,6 +254,75 @@ void taskingF83Task(void);
 void taskingF83SetTask(void);
 void taskingF83Activate(void);
 void taskingF83Background(void);
+
+void taskingFPCPause(void);
+void taskingFPCRestart(void);
+void taskingFPCLocal(void);
+void taskingFPCFetchLink(void);
+void taskingFPCStoreLink(void);
+void taskingFPCSleep(void);
+void taskingFPCWake(void);
+void taskingFPCStop(void);
+void taskingFPCSingle(void);
+void taskingFPCMulti(void);
+void taskingFPCWake(void);
+void taskingFPCTask(void);
+void taskingFPCSetTask(void);
+void taskingFPCActivate(void);
+void taskingFPCBackground(void);
+
+void taskingVolkActivate(void);
+void taskingVolkLock(void);
+void taskingVolkMultiTask(void);
+void taskingVolkPass(void);
+void taskingVolkPause(void);
+void taskingVolkRendezvous(void);
+void taskingVolkSingleTask(void);
+void taskingVolkSleep(void);
+void taskingVolkStop(void);
+void taskingTaskerDotScr(void);
+void taskingVolkTask(void);
+void taskingVolkTasks(void);
+void taskingVolkUnlock(void);
+void taskingVolkWake(void);
+void taskingVolkUPFetch(void);
+void taskingVolkUPStore(void);
+
+void taskingBigTaskerDotScr(void);
+void taskingBigStop(void);
+void taskingBigSingleTask(void);
+void taskingBigMultiTask(void);
+void taskingBigActivate(void);
+void taskingBigPass(void);
+void taskingBigAutostart(void);
+void taskingBigSleep(void);
+void taskingBigWake(void);
+void taskingBigTimerFetch(void);
+void taskingBigSyncTime(void);
+void taskingBigSyncStore(void);
+void taskingBigSync(void);
+void taskingBigTask(void);
+void taskingBigRendezvous(void);
+void taskingBigSTick(void);
+void taskingBigTasks(void);
+void taskingBigClockTask(void);
+void taskingBigClock(void);
+void taskingBigWaitC(void);
+void taskingBigStartC(void);
+void taskingBigNoClock(void);
+void taskingBigSetClock(void);
+void taskingBigPause(void);
+void taskingBigLock(void);
+void taskingBigUnlock(void);
+
+void taskingRtfSingle(void);
+void taskingRtfMulti(void);
+void taskingRtfBackground(void);
+void taskingRtfWake(void);
+void taskingRtfSleep(void);
+void taskingRtfStop(void);
+void taskingRtfPause(void);
+void taskingRtfActivate(void);
 
 void testingTCurlyBracket(void);
 void testingCurlyBracketT(void);
@@ -516,26 +569,6 @@ static const typedef_forthWord fpointWords[] = {
 #endif
 #endif
 
-#if TASKINGSTANDARD == TASKINGSTD_VOLK
-static const typedef_forthWord taskingWords[] = {
-			{ "ACTIVATE", "ACTIVATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVfActivate },
-			{ "LOCK", "LOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVfLock },
-			{ "MULTITASK", "MULTITASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVfMultiTask },
-			{ "PASS", "PASS", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVfPass },
-			{ "PAUSE", "PAUSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVfPause },
-			{ "RENDEZVOUS", "RENDEZVOUS", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVfRendezvous },
-			{ "SINGLETASK", "SINGLETASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVfSingleTask },
-			{ "SLEEP", "SLEEP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVfSleep },
-			{ "STOP", "STOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVfStop },
-			{ "TASK", "TASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVfTask },
-			{ "TASKS", "TASKS", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVfTasks },
-			{ "UNLOCK", "UNLOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVfUnlock },
-			{ "STOP", "STOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVfStop },
-			{ "WAKE", "WAKE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVfWake },
-			{ "UP@", "UP@", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVfUPFetch },
-			{ "UP!", "UP!", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingVfUPStore }
-};
-#endif
 #if TASKINGSTANDARD == TASKINGSTD_FORTH83
 static const typedef_forthWord taskingWords[] = {
 			{ "TSKALLOT", "TSKALLOT", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Allot },
@@ -556,6 +589,95 @@ static const typedef_forthWord taskingWords[] = {
 			{ "SET-TASK", "SET-TASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83SetTask },
 			{ "ACTIVATE", "ACTIVATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Activate },
 			{ "BACKGROUND", "BACKGROUND", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingF83Background }
+};
+#endif
+
+#if TASKINGSTANDARD == TASKINGSTD_FPC
+static const typedef_forthWord taskingWords[] = {
+			{ "PAUSE", "PAUSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCPause },
+			{ "RESTART", "RESTART", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCRestart },
+			{ "LOCAL", "LOCAL", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCLocal },
+			{ "@LINK", "@LINK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCFetchLink },
+			{ "!LINK", "!LINK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCStoreLink },
+			{ "SLEEP", "SLEEP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCSleep },
+			{ "WAKE", "WAKE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCWake },
+			{ "STOP", "STOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCStop },
+			{ "SINGLE", "SINGLE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCSingle },
+			{ "MULTI", "MULTI", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCMulti },
+			{ "WAKE", "WAKE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCWake },
+			{ "TASK", "TASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCTask },
+			{ "SET-TASK", "SET-TASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCSetTask },
+			{ "ACTIVATE", "ACTIVATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCActivate },
+			{ "BACKGROUND", "BACKGROUND", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingFPCBackground }
+
+};
+#endif 
+
+#if TASKINGSTANDARD == TASKINGSTD_VOLK
+static const typedef_forthWord taskingWords[] = {
+			{ "ACTIVATE", "ACTIVATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkActivate },
+			{ "LOCK", "LOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkLock },
+			{ "MULTITASK", "MULTITASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkMultiTask },
+			{ "PASS", "PASS", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkPass },
+			{ "PAUSE", "PAUSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkPause },
+			{ "RENDEZVOUS", "RENDEZVOUS", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkRendezvous },
+			{ "SINGLETASK", "SINGLETASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkSingleTask },
+			{ "SLEEP", "SLEEP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkSleep },
+			{ "STOP", "STOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkStop },
+/*			{ "TASKER.SCR", "TASKER.SCR", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingTaskerDotScr }, */
+			{ "TASK", "TASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkTask },
+			{ "TASKS", "TASKS", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkTasks },
+			{ "UNLOCK", "UNLOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkUnlock },
+			{ "STOP", "STOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkStop },
+			{ "WAKE", "WAKE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkWake },
+			{ "UP@", "UP@", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkUPFetch },
+			{ "UP!", "UP!", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingVolkUPStore }
+};
+#endif
+
+#if TASKINGSTANDARD == TASKINGSTD_BIG
+static const typedef_forthWord taskingWords[] = {
+			/* Der Tasker */
+/*			{ "TASKER.SCR", "TASKER.SCR", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigTaskerDotScr }, */
+			{ "STOP", "STOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigStop },
+			{ "SINGLETASK", "SINGLETASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigSingleTask },
+			{ "MULTITASK", "MULTITASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigMultiTask },
+			{ "ACTIVATE", "ACTIVATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigActivate },
+			{ "PASS", "PASS", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigPass },
+			{ "AUTOSTART", "AUTOSTART", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigAutostart },
+			{ "SLEEP", "SLEEP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigSleep },
+			{ "WAKE", "WAKE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigWake },
+			{ "TIMER@", "TIMER@", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigTimerFetch },
+			{ "SYNCTIME", "SYNCTIME", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigSyncTime },
+			{ "SYNC!", "SYNC!", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigSyncStore },
+			{ "SYNC", "SYNC", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigSync },
+			{ "TASK", "TASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigTask },
+			{ "RENDEZVOUS", "RENDEZVOUS", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigRendezvous },
+			{ "S'", "S'", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigSTick },
+			{ "TASKS", "TASKS", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigTasks },
+			{ "CLOCKTASK", "CLOCKTASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigClockTask },
+			{ "CLOCK", "CLOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigClock },
+			{ "WAITC", "WAITC", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigWaitC },
+			{ "STARTC", "STARTC", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigStartC },
+			{ "NOCLOCK", "NOCLOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigNoClock },
+			{ "SETCLOCK", "SETCLOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigSetClock },
+			/* Tasker Primitives */
+			{ "PAUSE", "PAUSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigPause },
+			{ "LOCK", "LOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigLock },
+			{ "UNLOCK", "UNLOCK", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingBigUnlock }
+};
+#endif
+
+#if TASKINGSTANDARD == TASKINGSTD_RTF
+static const typedef_forthWord taskingWords[] = {
+			{ "SINGLE", "SINGLE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfSingle },
+			{ "MULTI", "MULTI", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfMulti },
+			{ "BACKGROUND", "BACKGROUND", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfBackground },
+			{ "WAKE", "WAKE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfWake },
+			{ "SLEEP", "SLEEP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfSleep },
+			{ "STOP", "STOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfStop },
+			{ "PAUSE", "PAUSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfPause },
+			{ "ACTIVATE", "ACTIVATE", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingRtfActivate }
 };
 #endif
 

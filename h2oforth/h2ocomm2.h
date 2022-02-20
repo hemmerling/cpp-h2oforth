@@ -1069,80 +1069,6 @@ void fpointQFPErr(void) {
 #endif
 #endif
 
-
-#if TASKINGSTANDARD == TASKINGSTD_VOLK
-void taskingVfActivate(void) {
-	DEBUG_WORD("taskingVfActivate")
-}
-
-void taskingVfLock(void) {
-	DEBUG_WORD("taskingVfLock")
-}
-
-void taskingVfMultiTask(void) {
-	DEBUG_WORD("taskingVfMultiTask")
-}
-
-void taskingVfPass(void) {
-	DEBUG_WORD("taskingVfPass")
-}
-
-void taskingVfPause(void) {
-	DEBUG_WORD("taskingVfPause")
-}
-
-void taskingVfRendezvous(void) {
-	DEBUG_WORD("taskingVfRendezvous")
-}
-
-void taskingVfSingleTask(void) {
-	DEBUG_WORD("taskingVfSingleTask")
-}
-
-void taskingVfSleep(void) {
-	DEBUG_WORD("taskingVfSleep")
-}
-
-void taskingVfStop(void) {
-	DEBUG_WORD("taskingVfStop")
-}
-
-void taskingVfTask(void) {
-	DEBUG_WORD("taskingVfTask")
-}
-
-void taskingVfTasks(void) {
-	DEBUG_WORD("taskingVfTasks")
-}
-
-void taskingVfUnlock(void) {
-	DEBUG_WORD("taskingVfUnlock")
-}
-
-void taskingVfWake(void) {
-	DEBUG_WORD("taskingVfWake")
-}
-
-void taskingVfUPFetch(void) {
-	DEBUG_WORD("taskingVfUPFetch")
-}
-
-void taskingVfUPStore(void) {
-	DEBUG_WORD("taskingVfUPStore")
-}
-#endif
-
-
-#ifdef TESTING_SUPPORT
-void testingTCurlyBracket(void) {
-	DEBUG_WORD("testingTCurlyBracket")
-}
-
-void testingCurlyBracketT(void) {
-	DEBUG_WORD("testingCurlyBracketT")
-}
-#endif
-
 #if TASKINGSTANDARD == TASKINGSTD_FORTH83
 void taskingF83Allot(void) {
 	DEBUG_WORD("taskingF83Allot")
@@ -1216,7 +1142,280 @@ void taskingF83Background(void) {
 	DEBUG_WORD("taskingF83Background")
 }
 
+#endif
 
+#if TASKINGSTANDARD == TASKINGSTD_FPC
+void taskingFPCPause(void) {
+	DEBUG_WORD("taskingFPCPause")
+}
+
+void taskingFPCRestart(void) {
+	DEBUG_WORD("taskingFPCRestart")
+}
+
+void taskingFPCLocal(void) {
+	DEBUG_WORD("taskingFPCLocal")
+}
+
+void taskingFPCFetchLink(void) {
+	DEBUG_WORD("taskingFPCFetchLink")
+}
+
+void taskingFPCStoreLink(void) {
+	DEBUG_WORD("taskingFPCStoreLink")
+}
+
+void taskingFPCSleep(void) {
+	DEBUG_WORD("taskingFPCSleep")
+}
+
+void taskingFPCWake(void) {
+	DEBUG_WORD("taskingFPCWake")
+}
+
+void taskingFPCStop(void) {
+	DEBUG_WORD("taskingFPCStop")
+}
+
+void taskingFPCSingle(void) {
+	DEBUG_WORD("taskingFPCSingle")
+}
+
+void taskingFPCMulti(void) {
+	DEBUG_WORD("taskingFPCMulti")
+}
+
+void taskingFPCTask(void) {
+	DEBUG_WORD("taskingFPCTask")
+}
+
+void taskingFPCSetTask(void) {
+	DEBUG_WORD("taskingFPCSetTask")
+}
+
+void taskingFPCActivate(void) {
+	DEBUG_WORD("taskingFPCActivate")
+}
+
+void taskingFPCBackground(void) {
+	DEBUG_WORD("taskingFPCBackground")
+}
+
+#endif
+
+#if TASKINGSTANDARD == TASKINGSTD_VOLK
+void taskingVolkActivate(void) {
+	DEBUG_WORD("taskingVolkActivate")
+}
+
+void taskingVolkLock(void) {
+	DEBUG_WORD("taskingVolkLock")
+}
+
+void taskingVolkMultiTask(void) {
+	DEBUG_WORD("taskingVolkMultiTask")
+}
+
+void taskingVolkPass(void) {
+	DEBUG_WORD("taskingVolkPass")
+}
+
+void taskingVolkPause(void) {
+	DEBUG_WORD("taskingVolkPause")
+}
+
+void taskingVolkRendezvous(void) {
+	DEBUG_WORD("taskingVolkRendezvous")
+}
+
+void taskingVolkSingleTask(void) {
+	DEBUG_WORD("taskingVolkSingleTask")
+}
+
+void taskingVolkSleep(void) {
+	DEBUG_WORD("taskingVolkSleep")
+}
+
+void taskingVolkStop(void) {
+	DEBUG_WORD("taskingVolkStop")
+}
+
+void taskingVolkTask(void) {
+	DEBUG_WORD("taskingVolkTask")
+}
+
+void taskingVolkTasks(void) {
+	DEBUG_WORD("taskingVolkTasks")
+}
+
+void taskingVolkUnlock(void) {
+	DEBUG_WORD("taskingVolkUnlock")
+}
+
+void taskingVolkWake(void) {
+	DEBUG_WORD("taskingVolkWake")
+}
+
+void taskingVolkUPFetch(void) {
+	DEBUG_WORD("taskingVolkUPFetch")
+}
+
+void taskingVolkUPStore(void) {
+	DEBUG_WORD("taskingVolkUPStore")
+}
+
+#endif
+
+#if TASKINGSTANDARD == TASKINGSTD_BIGFORTH
+void taskingBigTaskerDotScr(void) {
+	DEBUG_WORD("taskingBigTaskerDotScr")
+}
+
+void taskingBigStop(void) {
+	DEBUG_WORD("taskingBigStop")
+}
+
+void taskingBigSingleTask(void) {
+	DEBUG_WORD("taskingBigSingleTask")
+}
+
+void taskingBigMultiTask(void) {
+	DEBUG_WORD("taskingBigMultiTask")
+}
+
+void taskingBigActivate(void) {
+	DEBUG_WORD("taskingBigActivate")
+}
+
+void taskingBigPass(void) {
+	DEBUG_WORD("taskingBigPass")
+}
+
+void taskingBigAutostart(void) {
+	DEBUG_WORD("taskingBigAutostart")
+}
+
+void taskingBigSleep(void) {
+	DEBUG_WORD("taskingBigSleep")
+}
+
+void taskingBigWake(void) {
+	DEBUG_WORD("taskingBigWake")
+}
+
+void taskingBigTimerFetch(void) {
+	DEBUG_WORD("taskingBigTimerFetch")
+}
+
+void taskingBigSyncTime(void) {
+	DEBUG_WORD("taskingBigSyncTime")
+}
+
+void taskingBigSyncStore(void) {
+	DEBUG_WORD("taskingBigSyncStore")
+}
+
+void taskingBigSync(void) {
+	DEBUG_WORD("taskingBigSync")
+}
+
+void taskingBigTask(void) {
+	DEBUG_WORD("taskingBigTask")
+}
+
+void taskingBigRendezvous(void) {
+	DEBUG_WORD("taskingBigRendezvous")
+}
+
+void taskingBigSTick(void) {
+	DEBUG_WORD("taskingBigSTick")
+}
+
+void taskingBigTasks(void) {
+	DEBUG_WORD("taskingBigTasks")
+}
+
+void taskingBigClockTask(void) {
+	DEBUG_WORD("taskingBigClockTask")
+}
+
+void taskingBigClock(void) {
+	DEBUG_WORD("taskingBigClock")
+}
+
+void taskingBigWaitC(void) {
+	DEBUG_WORD("taskingBigWaitC")
+}
+
+void taskingBigStartC(void) {
+	DEBUG_WORD("taskingBigStartC")
+}
+
+void taskingBigNoClock(void) {
+	DEBUG_WORD("taskingBigNoClock")
+}
+
+void taskingBigSetClock(void) {
+	DEBUG_WORD("taskingBigSetClock")
+}
+
+void taskingBigPause(void) {
+	DEBUG_WORD("taskingBigPause")
+}
+
+void taskingBigLock(void) {
+	DEBUG_WORD("taskingBigLock")
+}
+
+void taskingBigUnlock(void) {
+	DEBUG_WORD("taskingBigUnlock")
+}
+
+#endif
+
+#if TASKINGSTANDARD == TASKINGSTD_RTF
+void taskingRtfSingle(void) {
+	DEBUG_WORD("taskingRtfSingle")
+}
+
+void taskingRtfMulti(void) {
+	DEBUG_WORD("taskingRtfMulti")
+}
+
+void taskingRtfBackground(void) {
+	DEBUG_WORD("taskingRtfBackground")
+}
+
+void taskingRtfWake(void) {
+	DEBUG_WORD("taskingRtfWake")
+}
+
+void taskingRtfSleep(void) {
+	DEBUG_WORD("taskingRtfSleep")
+}
+
+void taskingRtfStop(void) {
+	DEBUG_WORD("taskingRtfStop")
+}
+
+void taskingRtfPause(void) {
+	DEBUG_WORD("taskingRtfPause")
+}
+
+void taskingRtfActivate(void) {
+	DEBUG_WORD("taskingRtfActivate")
+}
+
+#endif
+
+#ifdef TESTING_SUPPORT
+void testingTCurlyBracket(void) {
+	DEBUG_WORD("testingTCurlyBracket")
+}
+
+void testingCurlyBracketT(void) {
+	DEBUG_WORD("testingCurlyBracketT")
+}
 #endif
 
 #endif
