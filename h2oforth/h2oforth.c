@@ -21,7 +21,9 @@
 #include <setjmp.h>
 #include <math.h>
 
-#ifndef ARDUINO
+#ifdef ARDUINO
+#include  <Arduino.h> 
+#else
 #include <io.h>
 #include <conio.h>
 #include <sys/stat.h> 
