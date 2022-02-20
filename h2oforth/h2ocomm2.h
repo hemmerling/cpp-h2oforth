@@ -15,15 +15,15 @@ char *privatBaseConversion(CELL_INTEGER base, CELL_INTEGER value) {
 	CELL_INTEGER quotient = value;
 	CELL_INTEGER  reminder = 0;
 	char static value2[MAX_INPUTBUFFER]; /* must be static */
-	char *result= (char *)0;
-	int ii = 0;
-	while(quotient != 0){
-		quotient = quotient / base;
-		reminder = quotient % base;
-	    value2[ii++]= (char)(reminder + (int)'0');
-	};
-	result = (char *)&value2;
-	value2[ii]= (char)0;
+	char *result;
+	int ii = MAX_INPUTBUFFER-1;
+	value2[MAX_INPUTBUFFER-1]= (char)0;
+	do {
+		reminder = quotient % base; /* first reminder calculation */
+		quotient = quotient / base; 
+	    value2[--ii]= (char)(reminder + (int)'0');
+	} while(quotient != 0);
+	result = (char *)&value2[ii];
 	return (result);
 }
 
