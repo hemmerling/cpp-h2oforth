@@ -823,12 +823,12 @@ void bbc79NoOp(void) {
 	DEBUG_WORD("bbc79NoOp")
 }
 
-void bbc79To(void) {
-	DEBUG_WORD("bbc79To")
+void bbc79RightBracket(void) {
+	DEBUG_WORD("RightBracket")
 }
 
-void bbc79From(void) {
-	DEBUG_WORD("bbc79From")
+void bbc79LeftBracket(void) {
+	DEBUG_WORD("LeftBracket")
 }
 
 void bbc79Compile(void) {

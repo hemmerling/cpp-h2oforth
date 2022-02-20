@@ -185,8 +185,8 @@ void bbc79CR(void);
 void bbc79Hex(void);
 void bbc79QTab(void);
 void bbc79NoOp(void);
-void bbc79To(void);
-void bbc79From(void);
+void bbc79RightBracket(void);
+void bbc79LeftBracket(void);
 void bbc79Compile(void);
 void bbc79Immediate(void);
 void bbc79QLoading(void);
@@ -522,8 +522,8 @@ static const typedef_forthWord forthWords[] = {
 			{ "HEX", "HEX", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Hex },
 			{ "?TAB", "?TAB", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79QTab },
 			{ "NOOP", "NOOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79NoOp },
-			{ "->", "->", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79To },
-			{ "<-", "<-", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79From },
+			{ "]", "]", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79RightBracket }, /* Display: -> */
+			{ "[", "[", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79LeftBracket }, /* Display: <- */
 			{ "COMPILE", "COMPILE", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Compile },
 			{ "IMMEDIATE", "IMMEDIATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Immediate },
 			{ "?LOADING", "?LOADING", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79QLoading },
