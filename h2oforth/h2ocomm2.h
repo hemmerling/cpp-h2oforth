@@ -69,32 +69,32 @@ void privateMessageHandler(void) {
 void privateSetBaseFormat(void) {
 	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
 	case OCTAL:
-		forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_OCTAL;
+		forthTasks[forthState.forthCurrentTask].baseFormat = (char*)BASE_FORMAT_OCTAL;
 		break;
 	case DECIMAL:
-		forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_DECIMAL;
+		forthTasks[forthState.forthCurrentTask].baseFormat = (char*)BASE_FORMAT_DECIMAL;
 		break;
 	case HEX:
-		forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_HEX;
+		forthTasks[forthState.forthCurrentTask].baseFormat = (char*)BASE_FORMAT_HEX;
 		break;
 	default:
-		forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_EMPTY;
+		forthTasks[forthState.forthCurrentTask].baseFormat = (char*)BASE_FORMAT_EMPTY;
 	};
 }
 
 void privateSetBaseLFormat(void) {
 	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
 	case OCTAL:
-		forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_LOCTAL;
+		forthTasks[forthState.forthCurrentTask].baseFormat = (char*)BASE_FORMAT_LOCTAL;
 		break;
 	case DECIMAL:
-		forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_LDECIMAL;
+		forthTasks[forthState.forthCurrentTask].baseFormat = (char*)BASE_FORMAT_LDECIMAL;
 		break;
 	case HEX:
-		forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_LHEX;
+		forthTasks[forthState.forthCurrentTask].baseFormat = (char*)BASE_FORMAT_LHEX;
 		break;
 	default:
-		forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_EMPTY;
+		forthTasks[forthState.forthCurrentTask].baseFormat = (char*)BASE_FORMAT_EMPTY;
 	};
 }
 
@@ -102,7 +102,7 @@ void privateSetBaseLFormat(void) {
 
 void commonOctal(void) {
 	forthTasks[forthState.forthCurrentTask].forthBase = OCTAL;
-	forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_OCTAL;
+	forthTasks[forthState.forthCurrentTask].baseFormat = (char*)BASE_FORMAT_OCTAL;
 	DEBUG_WORD("commonOctal")
 }
 

@@ -801,7 +801,7 @@ void bbc79ZSemicolonCode(void) {
 
 void bbc79Decimal(void) {
 	forthTasks[forthState.forthCurrentTask].forthBase = DECIMAL;
-	forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_DECIMAL;
+	forthTasks[forthState.forthCurrentTask].baseFormat = (char*)BASE_FORMAT_DECIMAL;
 	DEBUG_WORD("bbc79Decimal")
 }
 
@@ -811,7 +811,7 @@ void bbc79CR(void) {
 
 void bbc79Hex(void) {
 	forthTasks[forthState.forthCurrentTask].forthBase = HEX;
-	forthTasks[forthState.forthCurrentTask].baseFormat = BASE_FORMAT_HEX;
+	forthTasks[forthState.forthCurrentTask].baseFormat = (char*)BASE_FORMAT_HEX;
 	DEBUG_WORD("bbc79Hex")
 }
 

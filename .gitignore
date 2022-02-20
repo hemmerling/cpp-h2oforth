@@ -55,3 +55,7 @@
 **/*.exe
 **/*.map
 **/*.obj
+
+
+# Arduino IDE
+# Just synchonize the configuration file "*.ino"

@@ -424,9 +424,12 @@
 #endif
 
 #ifdef ARDUINO
+#include <arduino.h>
 #define DELAY(TICKS) delay(TICKS)
 #define PUTS(STRING) Serial.println(STRING)
-#define TERMINAL_SETUP(SPEED, CONFIG) Serial.begin(SPEED CONFIG)
+#define _PUTCH(CHAR) Serial.print(CHAR)
+#define PUTCHAR(CHAR) Serial.print(CHAR)
+#define TERMINAL_SETUP(SPEED, CONFIG) Serial.begin(SPEED, CONFIG)
 /* "long long" is not available with Arduino AVR C/C++ */
 #define CELL_INTEGER int
 #define CELL_UNSIGNED unsigned int
@@ -436,6 +439,8 @@
 #else
 #define DELAY(TICKS)
 #define PUTS(X) puts(X)
+#define _PUTCH(CHAR) _putch(CHAR)
+#define PUTCHAR(CHAR) putchar(CHAR)
 #define TERMINAL_SETUP(SPEED, CONFIG) 
 #endif
 
@@ -519,7 +524,7 @@
 
 /* Macros */
 #if defined (__DEBUG__)
-#define DEBUG_WORD(X) privateDebugWord(X);
+#define DEBUG_WORD(X) privateDebugWord((char*)X);
 #else
 #define DEBUG_WORD(X)
 #endif

@@ -33,14 +33,14 @@ void ioEmit(unsigned int varByte) {
 	if (forthState.forthReadsKeyboard) {
 #if defined (__WATCOMC__)
 		/* With WATCOMC, console input is not echoed, if written to standard output by putchar() */
-		_putch((char)varByte);
+		_PUTCH((char)varByte);
 #else
 		/*Console input is written to console output or to standard output */
-		_putch((char)varByte);
+		_PUTCH((char)varByte);
 #endif
 	}
 	else {
-		putchar((char)varByte);
+		PUTCHAR((char)varByte);
 	};
 }
 

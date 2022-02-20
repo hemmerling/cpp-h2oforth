@@ -2,22 +2,37 @@
 #define _CRT_SECURE_NO_WARNINGS
 #endif
 
+#if defined(AVR_ADK) || defined(AVR_BT) || defined(AVR_DUEMILANOVE) || \
+    defined(AVR_ESPLORA) || defined(AVR_ETHERNET) || defined(AVR_FIO) || \
+    defined(AVR_GEMMA) || defined(AVR_LEONARDO) || defined(AVR_LILYPAD) || \
+    defined(AVR_LILYPAD_USB) || defined(AVR_MEGA) || defined(AVR_MEGA2560) || \
+    defined(AVR_MICRO) || defined(AVR_MINI) || defined(AVR_NANO) || \
+    defined(AVR_NG) || defined(AVR_PRO) || defined(AVR_ROBOT_CONTROL) || \
+    defined(AVR_ROBOT_MOTOR) || defined(AVR_UNO) || defined(AVR_YUN)
+#define ARDUINO
+#endif
+
 #include <stdio.h>
 #include <stdlib.h>
-#include <io.h>
-#include <conio.h>
 #include <string.h>
 #include <sys/types.h> 
-#include <sys/stat.h> 
 #include <fcntl.h>
 #include <limits.h>
 #include <setjmp.h>
 #include <math.h>
 
+#ifndef ARDUINO
+#include <io.h>
+#include <conio.h>
+#include <sys/stat.h> 
+#endif
+
 #if defined(__MINGW32__)
 #include <direct.h>
 #else
+#ifndef ARDUINO
 #include <dos.h>
+#endif
 #endif
 
 #include "h2oforth.h"
@@ -411,7 +426,7 @@ void forthInit(void) {
 	forthState.forthCurrentTask = 0;
 
 	for (ii = 0; ii < MAX_FORTHTASKS; ii++) {
-		forthTasks[ii].baseFormat = BASE_FORMAT_DECIMAL;
+		forthTasks[ii].baseFormat = (char*)BASE_FORMAT_DECIMAL;
 		forthTasks[ii].forthBase = DECIMAL;
 		forthTasks[ii].errorNumber = 0;
 		forthTasks[ii].messageNumber = 0;
@@ -1280,5 +1295,9 @@ int main(int argc, char* argv[])
 		parameterPostProcessing();
 #endif
 	} while (H2O_NOEXIT);
+#ifdef H2O_NOEXIT
+	return(EXIT_OK);
+#else
 	return(exitCode);
+#endif
 }

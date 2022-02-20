@@ -25,7 +25,7 @@ void readCode(char* filename) {
 void createDefaultBlock(void) {
 	int ii, jj;
 	int kk = 0;
-	char* filename = DEFAULT_BLOCKSNAME;
+	char* filename = (char*)DEFAULT_BLOCKSNAME;
 	int fd = _open(filename, O_CREAT | O_WRONLY | O_TRUNC);
 	if (fd == FILEIO_ERROR) {
 		fputs("H2oForth - Unable to create a blocks file\n", stderr);
