@@ -232,18 +232,18 @@ char wordBuffer[MAX_INPUTBUFFER];
 
 /********Global Constants *****************************/
 
-static /*const */ char aListofBinary[] = { '-', '0', '1', ',', '.' };
-static /*const */ char aListofOctal[] = { '-', '0', '1', '2', '3', '4', '5', '6', '7', ',', '.' };
-static /*const */ char aListofDecimal[] = { '-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ',', '.' };
-static /*const */ char aListofHex[] = { '-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', ',', '.' };
-static /*const */ char aListOfAllBases[NUMBERTABLE_SIZE] = { '-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
-	'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 
+static const PROGMEM char aListofBinary[] = { '-', '0', '1', ',', '.' };
+static const PROGMEM char aListofOctal[] = { '-', '0', '1', '2', '3', '4', '5', '6', '7', ',', '.' };
+static const PROGMEM char aListofDecimal[] = { '-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ',', '.' };
+static const PROGMEM char aListofHex[] = { '-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', ',', '.' };
+static const PROGMEM char aListOfAllBases[NUMBERTABLE_SIZE] = { '-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+	'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
 #ifdef LOWERCASE_BASE_SUPPORT
 	'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 #endif
 	 ',', '.' };
-static /*const */ char aListofFloat[] = { '-', '+', '.', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'E', ',' };
-static /*const */ char aListofExponent[] = { '-', '+', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ',' };
+static const PROGMEM char aListofFloat[] = { '-', '+', '.', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'E', ',' };
+static const PROGMEM char aListofExponent[] = { '-', '+', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ',' };
 
 /******** Typedefs ********************/
 
@@ -460,23 +460,23 @@ int isSPInteger(void) {
 
 	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
 	case BINARY:
-		aListPointer = aListofBinary;
+		aListPointer = (char*)aListofBinary;
 		lenAllowedCharactersBuffer = sizeof(aListofBinary);
 		break;
 	case OCTAL:
-		aListPointer = aListofOctal;
+		aListPointer = (char*)aListofOctal;
 		lenAllowedCharactersBuffer = sizeof(aListofOctal);
 		break;
 	case DECIMAL:
-		aListPointer = aListofDecimal;
+		aListPointer = (char*)aListofDecimal;
 		lenAllowedCharactersBuffer = sizeof(aListofDecimal);
 		break;
 	case HEX:
-		aListPointer = aListofHex;
+		aListPointer = (char*)aListofHex;
 		lenAllowedCharactersBuffer = sizeof(aListofHex);
 		break;
 	default:
-		aListPointer = aListOfAllBases;
+		aListPointer = (char*)aListOfAllBases;
 		lenAllowedCharactersBuffer = sizeof(aListOfAllBases);
 		//return(result);
 	};
@@ -506,7 +506,7 @@ int isSPInteger(void) {
 				/* "-" may just be the first digit */
 				/* Digit ist not the last digit, so it can be ",", but not "." */
 				startIndex = 1;
-				endIndex = lenAllowedCharactersBuffer-1;
+				endIndex = lenAllowedCharactersBuffer - 1;
 			};
 			for (ii = startIndex; ii < endIndex; ii++) {
 				if (wordBuffer[aWordIndex] == aListPointer[ii]) {
@@ -533,21 +533,20 @@ void storeSPInteger(void) {
 
 	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
 	case OCTAL:
-		aListPointer = aListofOctal;
+		aListPointer = (char*)aListofOctal;
 		lenAllowedCharactersBuffer = sizeof(aListofOctal);
 		break;
 	case DECIMAL:
-		aListPointer = aListofDecimal;
+		aListPointer = (char*)aListofDecimal;
 		lenAllowedCharactersBuffer = sizeof(aListofDecimal);
 		break;
 	case HEX:
-		aListPointer = aListofHex;
+		aListPointer = (char*)aListofHex;
 		lenAllowedCharactersBuffer = sizeof(aListofHex);
 		break;
 	default:
-		aListPointer = aListOfAllBases;
+		aListPointer = (char*)aListOfAllBases;
 		lenAllowedCharactersBuffer = sizeof(aListOfAllBases);
-		//return;
 	};
 
 	while (aWordIndex < lenWordBuffer) {
@@ -570,7 +569,7 @@ void storeSPInteger(void) {
 			/* "-" may just be the first digit */
 			/* Digit ist not the last digit, so it can be ",", but not "." */
 			startIndex = 1;
-			endIndex = lenAllowedCharactersBuffer-1;
+			endIndex = lenAllowedCharactersBuffer - 1;
 		};
 		for (ii = startIndex; ii < endIndex; ii++) {
 			// printf("[%d] [%c]  [%c] \n", ii, wordBuffer[aWordIndex], aListPointer[ii] );
@@ -647,21 +646,20 @@ int isDPInteger(void) {
 
 	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
 	case OCTAL:
-		aListPointer = aListofOctal;
+		aListPointer = (char*)aListofOctal;
 		lenAllowedCharactersBuffer = sizeof(aListofOctal);
 		break;
 	case DECIMAL:
-		aListPointer = aListofDecimal;
+		aListPointer = (char*)aListofDecimal;
 		lenAllowedCharactersBuffer = sizeof(aListofDecimal);
 		break;
 	case HEX:
-		aListPointer = aListofHex;
+		aListPointer = (char*)aListofHex;
 		lenAllowedCharactersBuffer = sizeof(aListofHex);
 		break;
 	default:
-		aListPointer = aListOfAllBases;
+		aListPointer = (char*)aListOfAllBases;
 		lenAllowedCharactersBuffer = sizeof(aListOfAllBases);
-		//return(result);
 	};
 	/* Don't proceed if just 1 character => "." is necessary, but is no valid Double Precision Integer */
 	result = !(lenWordBuffer == 1);
@@ -720,19 +718,19 @@ void storeDPInteger(void) {
 
 	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
 	case OCTAL:
-		aListPointer = aListofOctal;
+		aListPointer = (char*)aListofOctal;
 		lenAllowedCharactersBuffer = sizeof(aListofOctal);
 		break;
 	case DECIMAL:
-		aListPointer = aListofDecimal;
+		aListPointer = (char*)aListofDecimal;
 		lenAllowedCharactersBuffer = sizeof(aListofDecimal);
 		break;
 	case HEX:
-		aListPointer = aListofHex;
+		aListPointer = (char*)aListofHex;
 		lenAllowedCharactersBuffer = sizeof(aListofHex);
 		break;
 	default:
-		aListPointer = aListOfAllBases;
+		aListPointer = (char*)aListOfAllBases;
 		lenAllowedCharactersBuffer = sizeof(aListOfAllBases);
 		//return;
 	};
@@ -821,7 +819,7 @@ int isFloat(void) {
 	int lenAllowedCharactersBuffer2 = 0;
 	int eDetected = FALSE;
 	int dotDetected = FALSE;
-	int aExponentStart  = 0;
+	int aExponentStart = 0;
 
 	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
 	case DECIMAL:
@@ -938,7 +936,7 @@ void storeFloat(void) {
 	CELL_INTEGER valueExponent = 0;
 #ifdef FLOAT_ON_DATASTACK
 	CELL_FLOAT value = 0;
-	CELL_FLOAT *floatStackPointer;
+	CELL_FLOAT* floatStackPointer;
 #endif
 	int mantissaIsNegative = FALSE;
 	int exponentIsNegative = FALSE;
@@ -975,12 +973,14 @@ void storeFloat(void) {
 			/* The mantissa of a Float number may not start with "," or "E" */
 			startIndex = 0;
 			endIndex = lenAllowedCharactersBuffer1 - 2;
-		} else if (dotDetected) {
+		}
+		else if (dotDetected) {
 			/* "-", "+" may just be the first digit */
 			/* No further "." allowed */
 			startIndex = 3;
 			endIndex = lenAllowedCharactersBuffer1 - 1;
-		} else {
+		}
+		else {
 			/* "-", "+" may just be the first digit */
 			/* "," and "." are ok */
 			startIndex = 2;
@@ -1010,10 +1010,11 @@ void storeFloat(void) {
 					break;
 				};
 
-				if(dotDetected) {
-					valueMantissaFraction = valueMantissaFraction + 1.0 * ( ii - 3 ) / (forthTasks[forthState.forthCurrentTask].forthBase*positionOfExponentDigit);
-					positionOfExponentDigit = forthTasks[forthState.forthCurrentTask].forthBase*positionOfExponentDigit;
-				} else {
+				if (dotDetected) {
+					valueMantissaFraction = valueMantissaFraction + 1.0 * (ii - 3) / (forthTasks[forthState.forthCurrentTask].forthBase * positionOfExponentDigit);
+					positionOfExponentDigit = forthTasks[forthState.forthCurrentTask].forthBase * positionOfExponentDigit;
+				}
+				else {
 					valueMantissaInteger = valueMantissaInteger * forthTasks[forthState.forthCurrentTask].forthBase + ii - 3;
 				};
 
@@ -1024,7 +1025,7 @@ void storeFloat(void) {
 		aWordIndex++;
 	};
 
-	valueMantissa = valueMantissaInteger + valueMantissaFraction; 
+	valueMantissa = valueMantissaInteger + valueMantissaFraction;
 	if (mantissaIsNegative) {
 		valueMantissa = valueMantissa * (-1);
 	};
@@ -1041,12 +1042,14 @@ void storeFloat(void) {
 			/* The exponent of a Float number may not start with "," */
 			startIndex = 0;
 			endIndex = lenAllowedCharactersBuffer2 - 1;
-		} else if (aWordIndex == (lenWordBuffer - 1)) {
+		}
+		else if (aWordIndex == (lenWordBuffer - 1)) {
 			/* "-", "+" may just be the first digit */
 			/* Digit is last digit, so it can't be "," */
 			startIndex = 1;
 			endIndex = lenAllowedCharactersBuffer2 - 1;
-		} else {
+		}
+		else {
 			/* "-", "+" may just be the first digit */
 			/* "," is ok */
 			startIndex = 2;
@@ -1076,16 +1079,16 @@ void storeFloat(void) {
 	if (exponentIsNegative) {
 		valueExponent = valueExponent * (-1);
 	};
-	
+
 #ifdef FLOAT_ON_DATASTACK
 	value = valueMantissa * pow(forthTasks[forthState.forthCurrentTask].forthBase, valueExponent);
 	//printf("value = %e %f %f\n", value, valueMantissa, valueExponent);
-	floatStackPointer = (CELL_FLOAT *)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
+	floatStackPointer = (CELL_FLOAT*)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
 	*floatStackPointer = value;
 	forthTasks[forthState.forthCurrentTask].dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex +
-	forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
+		forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
 #else
-	forthTasks[forthState.forthCurrentTask].floatStackSpace[forthTasks[forthState.forthCurrentTask].floatStackIndex++] = 
+	forthTasks[forthState.forthCurrentTask].floatStackSpace[forthTasks[forthState.forthCurrentTask].floatStackIndex++] =
 		valueMantissa * pow(forthTasks[forthState.forthCurrentTask].forthBase, valueExponent);
 #endif
 }

@@ -129,13 +129,13 @@ static const PROGMEM typedef_forthMessage forthErrors[] = {
 #endif
 
 /* Messages, which are not errors */
-static const typedef_forthMessage forthMessages[] = {
+static const PROGMEM typedef_forthMessage forthMessages[] = {
 			{ 0, "No message" }, /* not for display */
 			{ 1, "Stack Empty" }, /* Original message, but no original error code */
 };
 
 /* Error messages of the operating system, e.g with file I/O */
-static const typedef_forthMessage forthOsErrors[] = {
+static const PROGMEM typedef_forthMessage forthOsErrors[] = {
 			{ 0, "No message" }, /* not for display */
 			{ 1, "File Open" }, /* No original error code */
 };

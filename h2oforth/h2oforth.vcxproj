@@ -19,9 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="h2oforth.c" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="h2oaim1.h" />
     <ClInclude Include="h2oaim2.h" />
     <ClInclude Include="h2oarc1.h" />
@@ -83,6 +80,9 @@
     <ClInclude Include="h2ovolk1.h" />
     <ClInclude Include="h2ovolk2.h" />
     <ClInclude Include="Header.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="h2oforth.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

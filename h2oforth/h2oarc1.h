@@ -23,9 +23,9 @@
 /* Systems with EXIT just sometimes have file systems */
 #undef SYSTEM_WITH_FILEIO
 #else
-/* 
-    Systems with EXIT are expected to have an OS with file system, 
-    also for passing FORTH files by command line parameters 
+/*
+	Systems with EXIT are expected to have an OS with file system,
+	also for passing FORTH files by command line parameters
 */
 //#undef SYSTEM_WITH_FILEIO
 //#define SYSTEM_WITH_FILEIO

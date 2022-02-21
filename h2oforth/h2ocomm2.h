@@ -11,19 +11,19 @@ void privateDebugWord(char* nameOfWord) {
 #endif
 
 /* BaseConversion => non-reantrant function */
-char *privatBaseConversion(CELL_INTEGER base, CELL_INTEGER value) {
+char* privatBaseConversion(CELL_INTEGER base, CELL_INTEGER value) {
 	CELL_INTEGER quotient = value;
 	CELL_INTEGER  reminder = 0;
 	char static value2[MAX_INPUTBUFFER]; /* must be static */
-	char *result;
-	int ii = MAX_INPUTBUFFER-1;
-	value2[MAX_INPUTBUFFER-1]= (char)0;
+	char* result;
+	int ii = MAX_INPUTBUFFER - 1;
+	value2[MAX_INPUTBUFFER - 1] = (char)0;
 	do {
 		reminder = quotient % base; /* first reminder calculation */
-		quotient = quotient / base; 
-	    value2[--ii]= (char)(reminder + (int)'0');
-	} while(quotient != 0);
-	result = (char *)&value2[ii];
+		quotient = quotient / base;
+		value2[--ii] = (char)(reminder + (int)'0');
+	} while (quotient != 0);
+	result = (char*)&value2[ii];
 	return (result);
 }
 
@@ -502,44 +502,45 @@ void fpointRepresent(void) {
 #if (FLOATSTD == FLOAT_JUPITER)
 void fpointUFLoat(void) {
 #ifdef FLOAT_ON_DATASTACK
-	CELL_FLOAT *floatStackPointer;
+	CELL_FLOAT* floatStackPointer;
 	CELL_FLOAT value1;
-	CELL_UNSIGNED value2; 
+	CELL_UNSIGNED value2;
 	if ((forthTasks[forthState.forthCurrentTask].dataStackIndex) && \
-		(forthTasks[forthState.forthCurrentTask].dataStackIndex < MAX_DATASTACK - forthTasks[forthState.forthCurrentTask].floatFloatIntRatio +1)) {
+		(forthTasks[forthState.forthCurrentTask].dataStackIndex < MAX_DATASTACK - forthTasks[forthState.forthCurrentTask].floatFloatIntRatio + 1)) {
 
 		/* Step 1: Decrease stackpointer by CELL_INTEGER, get CELL_INTEGER */
 		value2 = (CELL_UNSIGNED)forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex];
 
 		/* Step 2: Save CELL_FLOAT, increase stackpointer by CELL_FLOAT */
-		floatStackPointer = (CELL_FLOAT *)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
+		floatStackPointer = (CELL_FLOAT*)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
 		value1 = (CELL_FLOAT)value2;
 		*floatStackPointer = value1;
 		//printf("f = %e, f = %f, int = %d\n", value1, value1, value2);
-		forthTasks[forthState.forthCurrentTask].dataStackIndex = 
-		    forthTasks[forthState.forthCurrentTask].dataStackIndex + forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
-	} else {
+		forthTasks[forthState.forthCurrentTask].dataStackIndex =
+			forthTasks[forthState.forthCurrentTask].dataStackIndex + forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
+	}
+	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 #else
-    /* TBD */
+	/* TBD */
 #endif
 	DEBUG_WORD("fpointUFLoat")
 }
 
 void fpointInt(void) {
 #ifdef FLOAT_ON_DATASTACK
-	CELL_FLOAT *floatStackPointer;
+	CELL_FLOAT* floatStackPointer;
 	CELL_FLOAT value1;
-	CELL_INTEGER value2; 
-	if (forthTasks[forthState.forthCurrentTask].dataStackIndex >= 
-	    forthTasks[forthState.forthCurrentTask].floatFloatIntRatio) {
+	CELL_INTEGER value2;
+	if (forthTasks[forthState.forthCurrentTask].dataStackIndex >=
+		forthTasks[forthState.forthCurrentTask].floatFloatIntRatio) {
 		/* Step 1: Decrease stackpointer by CELL_FLOAT, get CELL_FLOAT */
 		forthTasks[forthState.forthCurrentTask].dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex - forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
 
-		floatStackPointer = (CELL_FLOAT *)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
+		floatStackPointer = (CELL_FLOAT*)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
 		value1 = *floatStackPointer;
-		value2 = (CELL_INTEGER) value1;
+		value2 = (CELL_INTEGER)value1;
 		/* Step 1: Save CELL_INTEGER, increase stackpointer by CELL_INTEGER */
 		forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex++] = value2;
 		//printf("f = %e, f = %f, int = %d\n", value1, value1, value2);
@@ -548,7 +549,7 @@ void fpointInt(void) {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 #else
-    /* TBD */
+	/* TBD */
 #endif
 	DEBUG_WORD("fpointInt")
 }
@@ -569,18 +570,18 @@ void fpointFPlus(void) {
 #ifdef FLOAT_ON_DATASTACK
 	CELL_FLOAT value1 = 0.0;
 	CELL_FLOAT value2 = 0.0;
-	CELL_FLOAT *floatStackPointer;
-	if (forthTasks[forthState.forthCurrentTask].dataStackIndex >= 
-	    2*forthTasks[forthState.forthCurrentTask].floatFloatIntRatio) {
+	CELL_FLOAT* floatStackPointer;
+	if (forthTasks[forthState.forthCurrentTask].dataStackIndex >=
+		2 * forthTasks[forthState.forthCurrentTask].floatFloatIntRatio) {
 
 		forthTasks[forthState.forthCurrentTask].dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex - forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
 
-		floatStackPointer = (CELL_FLOAT *)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
+		floatStackPointer = (CELL_FLOAT*)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
 		value1 = *floatStackPointer;
 
 		forthTasks[forthState.forthCurrentTask].dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex - forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
 
-		floatStackPointer = (CELL_FLOAT *)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
+		floatStackPointer = (CELL_FLOAT*)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
 		value2 = *floatStackPointer;
 
 		//printf("e1 = %f, f1 = %f, e2 = %f, f2 = %f \n", value1, value1, value2, value2 );
@@ -604,18 +605,19 @@ void fpointFMinus(void) {
 	DEBUG_WORD("fpointFMinus")
 }
 
-void fpointFDot(void){
+void fpointFDot(void) {
 	CELL_FLOAT value = 0.0;
-	CELL_FLOAT *floatStackPointer;
-	if (forthTasks[forthState.forthCurrentTask].dataStackIndex >= 
-	    forthTasks[forthState.forthCurrentTask].floatFloatIntRatio) {
+	CELL_FLOAT* floatStackPointer;
+	if (forthTasks[forthState.forthCurrentTask].dataStackIndex >=
+		forthTasks[forthState.forthCurrentTask].floatFloatIntRatio) {
 		forthTasks[forthState.forthCurrentTask].dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex - forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
-		floatStackPointer = (CELL_FLOAT *)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
+		floatStackPointer = (CELL_FLOAT*)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
 		value = *floatStackPointer;
 		printf("%f", value);
 		putchar(CHAR_SPACE);
 		forthTasks[forthState.forthCurrentTask].dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex - forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
-	} else {
+	}
+	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 	DEBUG_WORD("fpointFDot")

@@ -103,8 +103,19 @@
 #define VERSION 1
 #define BUILT 1
 
+#ifdef ARDUINO
+#define SYSTEM_EMBEDDED_SMALL
+#else
+//#define SYSTEM_EMBEDDED_SMALL
+#endif
+
+/* __DEBUG__ */
+#ifdef SYSTEM_EMBEDDED_SMALL
 #undef __DEBUG__
-//#define __DEBUG__
+#else
+//#undef __DEBUG__
+#define __DEBUG__
+#endif
 
 //#undef __DEVELOP__
 #define __DEVELOP__
@@ -415,16 +426,6 @@
 #define DPINTEGER_SUPPORT
 #endif
 #endif
-#endif
-
-#if defined(AVR_ADK) || defined(AVR_BT) || defined(AVR_DUEMILANOVE) || \
-    defined(AVR_ESPLORA) || defined(AVR_ETHERNET) || defined(AVR_FIO) || \
-    defined(AVR_GEMMA) || defined(AVR_LEONARDO) || defined(AVR_LILYPAD) || \
-    defined(AVR_LILYPAD_USB) || defined(AVR_MEGA) || defined(AVR_MEGA2560) || \
-    defined(AVR_MICRO) || defined(AVR_MINI) || defined(AVR_NANO) || \
-    defined(AVR_NG) || defined(AVR_PRO) || defined(AVR_ROBOT_CONTROL) || \
-    defined(AVR_ROBOT_MOTOR) || defined(AVR_UNO) || defined(AVR_YUN)
-#define ARDUINO
 #endif
 
 #ifdef ARDUINO

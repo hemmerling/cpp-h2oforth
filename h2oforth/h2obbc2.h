@@ -453,8 +453,8 @@ void bbc79Dot(void) {
 		};
 		putchar(CHAR_SPACE);
 	}
- else {
- forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
+	else {
+		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 	DEBUG_WORD("bbc79Dot")
 }

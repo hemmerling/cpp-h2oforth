@@ -112,7 +112,7 @@ int parameterHelp(void) {
 #ifdef FLOAT_SUPPORT
 	printf(", FLOAT_CELL=%d", sizeof(CELL_FLOAT));
 #ifdef FLOAT_ON_DATASTACK
-	printf(", FLOAT_CELL/INTEGER_CELL=%d", sizeof(CELL_FLOAT)/sizeof(CELL_INTEGER));
+	printf(", FLOAT_CELL/INTEGER_CELL=%d", sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
 #endif
 #endif
 	printf(" )\n");
@@ -122,7 +122,7 @@ int parameterHelp(void) {
 #ifdef FLOAT_SUPPORT
 	printf(", FLOAT_CELL=%zd", sizeof(CELL_FLOAT));
 #ifdef FLOAT_ON_DATASTACK
-	printf(", FLOAT_CELL/INTEGER_CELL=%zd", sizeof(CELL_FLOAT)/sizeof(CELL_INTEGER));
+	printf(", FLOAT_CELL/INTEGER_CELL=%zd", sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
 #endif
 #endif
 	printf(" )\n");
@@ -152,9 +152,9 @@ int parameterHelp(void) {
 	printf("Without parameters: Display this help screen\n");
 #else
 	printf("Without parameters: Wait for first for terminal input, then for keyboard input")
-	printf("%c%s, %c%s, %c%s       Display this help screen\n", PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName,
-		PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName2,
-		PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).name);
+		printf("%c%s, %c%s, %c%s       Display this help screen\n", PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName,
+			PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName2,
+			PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).name);
 	printf("%c%s, %c%s        Verbose output off\n", PARAMETER_IDENTIFIER, (parameters[PARAMETER_VERBOSE]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_VERBOSE]).name);
 	printf("%c%s, %c%s       Read words from a database or some databases. TBD\n", PARAMETER_IDENTIFIER, (parameters[PARAMETER_DATABASE]).shortName,
