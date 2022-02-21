@@ -1257,21 +1257,15 @@ void noParameterPreProcessing(void) {
 	forthState.forthReadsKeyboard = FALSE;
 }
 
-
 /* Arduino setup */
 void setup(void) {
 	/* Arduino: put your setup code here, to run once */
-	TERMINAL_SETUP(9600L, SERIAL_8N1);
-	PUTS(COPYRIGHT_MESSAGE);
-	PUTS("This is setup code");
 	/*TBD*/
 }
 
 /* Arduino Loop */
 void loop(void) {
 	/* Arduino: put your main code here, to run repeatedly */
-	PUTS("This is loop code");
-	DELAY(1000);
 	/*TBD*/
 }
 

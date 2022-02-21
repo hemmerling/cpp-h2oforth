@@ -706,4 +706,3 @@ static const PROGMEM typedef_forthWord testingWords[] = {
 #endif
 
 #endif
-

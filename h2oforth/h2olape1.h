@@ -2286,5 +2286,3 @@ static const typedef_forthWord forthWords[] = { /* CP/M 68 K, unchecked wordlist
 };
 #endif
 #endif
-
-
