@@ -23,10 +23,12 @@
 
 #ifdef ARDUINO
 #include  <Arduino.h> 
+#include <avr/pgmspace.h>
 #else
 #include <io.h>
 #include <conio.h>
 #include <sys/stat.h> 
+#define PROGMEM
 #endif
 
 #if defined(__MINGW32__)
@@ -42,12 +44,12 @@
 /* Architecture detection & configuration & architecture-specific code  */
 #include "h2oarc1.h"
 
-#if !H2O_NOEXIT
+#if defined(SYSTEM_WITH_FILEIO)
 /* Support for command line arguments / command line parameters */
 #include "h2oarg1.h"
 #endif
 
-#ifdef H2O_INTERACTIVE
+#ifdef SYSTEM_INTERACTIVE
 /* Support for interactive applications with user input */
 #include "h2oint1.h"
 #endif
@@ -74,9 +76,6 @@ char ioTib[MAX_INPUTBUFFER];
 
 /* Word buffer */
 char wordBuffer[MAX_INPUTBUFFER];
-
-/* Block buffer, used to read Blocks files, by command line parameter support functions */
-char ioBlockBuffer[MAX_BLOCKBUFFER];
 
 /********Global FORTH Variables ********************/
 
@@ -263,7 +262,10 @@ typedef  struct _forthTask {
 	int returnStackIndex;
 	CELL_INTEGER dataStackSpace[MAX_DATASTACK];
 	void* returnStackSpace[MAX_RETURNSTACK];
+#ifdef SYSTEM_WITH_FILEIO
+	/* Block buffer, used to read Blocks files, by command line parameter support functions */
 	char ioBlockBuffer[MAX_BLOCKBUFFER];
+#endif
 	typedef_forthWordList* forthWordLists;
 	typedef_forthMessage* forthErrors;
 	typedef_forthMessage* forthMessages;
@@ -411,7 +413,7 @@ static const typedef_forthWordList forthWordLists[] = {
 
 /******** Command line argument checking *******/
 
-#if !H2O_NOEXIT
+#if defined(SYSTEM_WITH_FILEIO) 
 #include "h2oarg2.h"
 #endif
 
@@ -1218,7 +1220,7 @@ void processTib(void) {
 }
 /**************************/
 
-#ifdef H2O_INTERACTIVE
+#ifdef SYSTEM_INTERACTIVE
 #include "h2oint2.h"
 #endif
 
@@ -1275,12 +1277,12 @@ int main(int argc, char* argv[])
 {
 	forthInit();
 	do {
-#if H2O_NOEXIT 
+#if defined(SYSTEM_NOEXIT) || !defined(SYSTEM_WITH_FILEIO) 
 		noParameterPreProcessing();
 #else
 		parameterPreProcessing(argc, argv);
 #endif
-#ifdef H2O_INTERACTIVE
+#ifdef SYSTEM_INTERACTIVE
 		if (!forthState.forthIsExit) {
 			/* Tib is now an empty string */
 			//ioTib[0] = 0;
@@ -1291,15 +1293,13 @@ int main(int argc, char* argv[])
 			} while (!forthState.forthIsExit);
 		};
 #endif
-#if H2O_NOEXIT
+#if defined(SYSTEM_NOEXIT) || !defined(SYSTEM_WITH_FILEIO) 
 		forthState.forthIsExit = FALSE;
+	} while (TRUE);
+	return(EXIT_OK);
 #else 
 		parameterPostProcessing();
-#endif
-	} while (H2O_NOEXIT);
-#ifdef H2O_NOEXIT
-	return(EXIT_OK);
-#else
+	} while (FALSE);
 	return(exitCode);
 #endif
 }

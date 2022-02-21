@@ -54,7 +54,7 @@ typedef  struct _forthWord {
 /* Variables */
 /* This vocabulary is not in the order of the VLIST / WORDS listing! */
 
-static  const typedef_forthWord forthWords[] = {
+static  const PROGMEM typedef_forthWord forthWords[] = {
 			{ "BYE", "BYE", TRUE, FALSE, FALSE, 0UL, (forthOperation)eforthBYE }, /* System interface */
 			{ "?rx", "?key", TRUE, FALSE, FALSE, 0UL, (forthOperation)eforthKey },
 			{ "tx!", "emit", TRUE, FALSE, FALSE, 0UL, (forthOperation)eforthEmit },

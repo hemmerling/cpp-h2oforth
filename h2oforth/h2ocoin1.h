@@ -389,7 +389,7 @@ typedef  struct _forthWord {
 
 /* List of FORTH words */
 
-static const typedef_forthWord forthWords[] = {
+static const PROGMEM typedef_forthWord forthWords[] = {
 			{ "-MOVE", "-MOVE", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupMinusMove }, /* Unavailable words, for fig Editor */
 			{ "$", "$", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupDollar },
 			{ "%", "%", TRUE, FALSE, FALSE, 0UL, (forthOperation)coinupPercent },

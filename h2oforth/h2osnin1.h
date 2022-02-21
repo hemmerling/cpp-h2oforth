@@ -268,7 +268,7 @@ typedef  struct _forthWord {
 
 #if H2O_FORTH_PRIMITIVES == FORTH79 ||\
 	H2O_FORTH_PRIMITIVES == FORTH79_REQ_DBL_ASM_EXP_REF
-static const typedef_forthWord forthWords[] = {
+static const PROGMEM typedef_forthWord forthWords[] = {
 	/* Required Word Set */
 	{ "!", "!", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineStore },
 	{ "#", "#", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineNum },

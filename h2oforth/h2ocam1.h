@@ -256,7 +256,7 @@ typedef  struct _forthWord {
 
 /* Variables */
 
-static const typedef_forthWord forthWords[] = {
+static const PROGMEM typedef_forthWord forthWords[] = {
 			{ "EXIT", "EXIT", TRUE, FALSE, FALSE, 0UL, (forthOperation)camelExit },
 			{ "EXECUTE", "EXECUTE", TRUE, FALSE, FALSE, 0UL, (forthOperation)camelExecute },
 			{ "lit", "lit", TRUE, FALSE, FALSE, 0UL, (forthOperation)camelLit },

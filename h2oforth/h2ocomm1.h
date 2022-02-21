@@ -334,7 +334,7 @@ void testingTCurlyBracket(void);
 void testingCurlyBracketT(void);
 
 
-static const typedef_forthWord commonWords[] = {
+static const PROGMEM typedef_forthWord commonWords[] = {
 			{ "OCTAL", "OCTAL", TRUE, FALSE, FALSE, 0UL, (forthOperation)commonOctal },
 			{ "HEX.", "HEX.", TRUE, FALSE, FALSE, 0UL, (forthOperation)commonHexDot },
 			{ "OCT.", "OCT.", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)commonOctDot },
@@ -343,7 +343,7 @@ static const typedef_forthWord commonWords[] = {
 
 
 #ifdef EXCEPTION_SUPPORT
-static const typedef_forthWord exceptionWords[] = {
+static const PROGMEM typedef_forthWord exceptionWords[] = {
 			{ "ABORT", "ABORT", TRUE, FALSE, FALSE, 0UL, (forthOperation)exceptionAbort },
 			{ "ABORT\"", "ABORT\"", TRUE, FALSE, FALSE, 0UL, (forthOperation)exceptionAbortQ },
 			{ "CATCH", "CATCH", TRUE, FALSE, FALSE, 0UL, (forthOperation)exceptionCatch },
@@ -354,7 +354,7 @@ static const typedef_forthWord exceptionWords[] = {
 
 #ifdef FLOAT_SUPPORT
 #if (FLOATSTD == FLOAT_ANS94) || (FLOATSTD == FLOAT_FORTH2012)
-static const typedef_forthWord fpointWords[] = {
+static const PROGMEM typedef_forthWord fpointWords[] = {
 			/* Floating-Point extension words */
 			{ "DF!", "DF!", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointDFStore },
 			{ "DF@", "DF@", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointDFFetch },
@@ -438,7 +438,7 @@ static const typedef_forthWord fpointWords[] = {
 };
 #endif
 #if (FLOATSTD == FLOAT_JUPITER)
-static const typedef_forthWord fpointWords[] = {
+static const PROGMEM typedef_forthWord fpointWords[] = {
 			{ "UFLOAT", "UFLOAT", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointUFLoat },
 			{ "INT", "INT", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointInt },
 			{ "FNEGATE", "FNEGATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFNegate },
@@ -450,7 +450,7 @@ static const typedef_forthWord fpointWords[] = {
 };
 #endif
 #if (FLOATSTD == FLOAT_NELSON)
-static const typedef_forthWord fpointWords[] = {
+static const PROGMEM typedef_forthWord fpointWords[] = {
 			{ "F.S", "f.s", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDotS },
 			{ "F.", "f.", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDot },
 			{ "#FS", "#fs", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointNumFS },
@@ -499,7 +499,7 @@ static const typedef_forthWord fpointWords[] = {
 };
 #endif
 #if (FLOATSTD == FLOAT_TURBO)
-static const typedef_forthWord fpointWords[] = {
+static const PROGMEM typedef_forthWord fpointWords[] = {
 			/* 10 Floating-Point Stack Manipulation Words */
 			{ "FDUP", "FDUP", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDup },
 			{ "FDROP", "FDROP", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDrop },
@@ -576,7 +576,7 @@ static const typedef_forthWord fpointWords[] = {
 #endif
 
 #if TASKINGSTANDARD == TASKINGSTD_FORTH83
-static const typedef_forthWord taskingWords[] = {
+static const PROGMEM typedef_forthWord taskingWords[] = {
 			{ "TSKALLOT", "TSKALLOT", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Allot },
 			{ "TSKCREATE", "TSKCREATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Create },
 			{ "TSKVARIABLE", "TSKVARIABLE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Variable },
@@ -599,7 +599,7 @@ static const typedef_forthWord taskingWords[] = {
 #endif
 
 #if TASKINGSTANDARD == TASKINGSTD_FPC
-static const typedef_forthWord taskingWords[] = {
+static const PROGMEM typedef_forthWord taskingWords[] = {
 			{ "PAUSE", "PAUSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCPause },
 			{ "RESTART", "RESTART", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCRestart },
 			{ "LOCAL", "LOCAL", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCLocal },
@@ -620,7 +620,7 @@ static const typedef_forthWord taskingWords[] = {
 #endif 
 
 #if TASKINGSTANDARD == TASKINGSTD_VOLK
-static const typedef_forthWord taskingWords[] = {
+static const PROGMEM typedef_forthWord taskingWords[] = {
 			{ "ACTIVATE", "ACTIVATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkActivate },
 			{ "LOCK", "LOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkLock },
 			{ "MULTITASK", "MULTITASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkMultiTask },
@@ -642,7 +642,7 @@ static const typedef_forthWord taskingWords[] = {
 #endif
 
 #if TASKINGSTANDARD == TASKINGSTD_BIG
-static const typedef_forthWord taskingWords[] = {
+static const PROGMEM typedef_forthWord taskingWords[] = {
 			/* Der Tasker */
 /*			{ "TASKER.SCR", "TASKER.SCR", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigTaskerDotScr }, */
 			{ "STOP", "STOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigStop },
@@ -675,7 +675,7 @@ static const typedef_forthWord taskingWords[] = {
 #endif
 
 #if TASKINGSTANDARD == TASKINGSTD_RTF
-static const typedef_forthWord taskingWords[] = {
+static const PROGMEM typedef_forthWord taskingWords[] = {
 			{ "SINGLE", "SINGLE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfSingle },
 			{ "MULTI", "MULTI", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfMulti },
 			{ "BACKGROUND", "BACKGROUND", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfBackground },
@@ -688,7 +688,7 @@ static const typedef_forthWord taskingWords[] = {
 #endif
 
 #if TASKINGSTANDARD == TASKINGSTD_CAMEL
-static const typedef_forthWord taskingWords[] = {
+static const PROGMEM typedef_forthWord taskingWords[] = {
 			{ "SWITCH", "SWITCH", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingCamelSwitch },
 			{ "INITTASK", "INITTASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingCamelInitTask },
 			{ "DETACH", "DETACH", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingCamelDetach },
@@ -699,7 +699,7 @@ static const typedef_forthWord taskingWords[] = {
 
 
 #ifdef TESTING_SUPPORT
-static const typedef_forthWord testingWords[] = {
+static const PROGMEM typedef_forthWord testingWords[] = {
 			{ "T{", "T{", TRUE, FALSE, FALSE, 0UL, (forthOperation)testingTCurlyBracket },
 			{ "}T", "}T", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)testingCurlyBracketT }
 };

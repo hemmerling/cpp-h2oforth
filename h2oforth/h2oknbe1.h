@@ -88,7 +88,7 @@ typedef  struct _forthWord {
 } typedef_forthWord;
 
 
-static const typedef_forthWord forthWords[] = {
+static const PROGMEM typedef_forthWord forthWords[] = {
 			{ "!", "!", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetStore }, /* 1 Memory Access */
 			{ ",", ",", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetComma },
 			{ "@", "@", TRUE, FALSE, FALSE, 0UL, (forthOperation)knaggsbennetFetch },

@@ -36,22 +36,22 @@ void createDefaultBlock(void) {
 		int result;
 		for (ii = 0; ii < BLOCK_LINES; ++ii) {
 			for (jj = 0; jj < BLOCK_COLUMNS; ++jj) {
-				ioBlockBuffer[kk++] = SPACE;
+				forthTasks[forthState.forthCurrentTask].ioBlockBuffer[kk++] = SPACE;
 			};
 			/*
-			   ioBlockBuffer[kk++] = CR;
-			   ioBlockBuffer[kk++] = LF;
-			   ioBlockBuffer[kk++] = CHAR_NULL;
+			   forthTasks[forthState.forthCurrentTask].ioBlockBuffer[kk++] = CR;
+			   forthTasks[forthState.forthCurrentTask].ioBlockBuffer[kk++] = LF;
+			   forthTasks[forthState.forthCurrentTask].ioBlockBuffer[kk++] = CHAR_NULL;
 			 */
 		};
-		ioBlockBuffer[0] = '1';
-		ioBlockBuffer[0 + BLOCK_COLUMNS] = '2';
-		ioBlockBuffer[0 + BLOCK_COLUMNS * 2] = '+';
-		_write(fd, ioBlockBuffer, sizeof(ioBlockBuffer));
-		ioBlockBuffer[0] = '3';
-		ioBlockBuffer[0 + BLOCK_COLUMNS] = '4';
-		ioBlockBuffer[0 + BLOCK_COLUMNS * 2] = '+';
-		result = _write(fd, ioBlockBuffer, sizeof(ioBlockBuffer)); // result is not checked
+		forthTasks[forthState.forthCurrentTask].ioBlockBuffer[0] = '1';
+		forthTasks[forthState.forthCurrentTask].ioBlockBuffer[0 + BLOCK_COLUMNS] = '2';
+		forthTasks[forthState.forthCurrentTask].ioBlockBuffer[0 + BLOCK_COLUMNS * 2] = '+';
+		_write(fd, forthTasks[forthState.forthCurrentTask].ioBlockBuffer, sizeof(forthTasks[forthState.forthCurrentTask].ioBlockBuffer));
+		forthTasks[forthState.forthCurrentTask].ioBlockBuffer[0] = '3';
+		forthTasks[forthState.forthCurrentTask].ioBlockBuffer[0 + BLOCK_COLUMNS] = '4';
+		forthTasks[forthState.forthCurrentTask].ioBlockBuffer[0 + BLOCK_COLUMNS * 2] = '+';
+		result = _write(fd, forthTasks[forthState.forthCurrentTask].ioBlockBuffer, sizeof(forthTasks[forthState.forthCurrentTask].ioBlockBuffer)); // result is not checked
 		_close(fd);
 	};
 }
@@ -69,12 +69,12 @@ void readBlocks(char* filename) {
 		exit(EXIT_BLOCKS_NOTFOUND);
 	};
 
-	while (_read(fd, ioBlockBuffer, sizeof(ioBlockBuffer))) {
+	while (_read(fd, forthTasks[forthState.forthCurrentTask].ioBlockBuffer, sizeof(forthTasks[forthState.forthCurrentTask].ioBlockBuffer))) {
 		int ii;
 		char lineBuffer[67];
 		for (ii = 0; ii < BLOCK_LINES; ii++) {
 			memset(lineBuffer, '\0', sizeof(lineBuffer));
-			strncpy(lineBuffer, ioBlockBuffer + ii * BLOCK_COLUMNS, BLOCK_COLUMNS);
+			strncpy(lineBuffer, forthTasks[forthState.forthCurrentTask].ioBlockBuffer + ii * BLOCK_COLUMNS, BLOCK_COLUMNS);
 			strncpy(ioTib, lineBuffer, BLOCK_COLUMNS);
 			lineBuffer[BLOCK_COLUMNS] = 0;
 			processTib();

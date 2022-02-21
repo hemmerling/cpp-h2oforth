@@ -537,7 +537,7 @@ typedef  struct _forthWord {
    which are named with other FORTH implementations with surrounding parentheses "(word)" */
 
 #if H2O_FORTH_PRIMITIVES == VOLK_CPM_FORTH
-static const typedef_forthWord forthWords[] = { /* CP/M */
+static const PROGMEM typedef_forthWord forthWords[] = { /* CP/M */
 			{ "BUFFERS", "BUFFERS", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkBuffers },
 			{ "RELOCATE.SCR", "RELOCATE.SCR", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkRelocateDotScr },
 			{ "SPOOL", "SPOOL", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkSpool },

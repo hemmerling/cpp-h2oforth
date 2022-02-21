@@ -330,7 +330,7 @@ typedef  struct _forthWord {
 /* Variables */
 /* This vocabulary is not in the order of the VLIST / WORDS listing! */
 
-static const typedef_forthWord forthWords[] = {
+static const PROGMEM typedef_forthWord forthWords[] = {
 			{ "IMMEDIATE", "IMMEDIATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroImmediate },
 			/* Compiler */
 			{ "IMMEDIATE", "IMMEDIATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)rcamicroImmediate },

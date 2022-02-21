@@ -335,7 +335,7 @@ typedef  struct _forthWord {
 
 /* Variables */
 
-static const typedef_forthWord forthWords[] = {
+static const PROGMEM typedef_forthWord forthWords[] = {
 			{ "$MSG", "$MSG", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79DollarMSG },
 			{ "PLOT", "PLOT", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79Plot },
 			{ "MOVE-BUFFERS", "MOVE-BUFFERS", TRUE, FALSE, FALSE, 0UL, (forthOperation)bbc79MoveBuffers },

@@ -103,14 +103,18 @@
 #define VERSION 1
 #define BUILT 1
 
-//#undef __DEBUG__
-#define __DEBUG__
+#undef __DEBUG__
+//#define __DEBUG__
 
 //#undef __DEVELOP__
 #define __DEVELOP__
 
-//#undef H2O_INTERACTiVE
-#define H2O_INTERACTIVE
+//#undef SYSTEM_INTERACTIVE
+#define SYSTEM_INTERACTIVE
+
+/* SYSTEM_WITH_FILEIO might be changed by NO_EXIT setting in "h2oarc1.h" */
+//#undef SYSTEM_WITH_FILEIO
+#define SYSTEM_WITH_FILEIO
 
 //#undef ECHO_KEYBOARD_INPUT
 #define ECHO_KEYBOARD_INPUT
@@ -122,8 +126,8 @@
 #define LOWERCASE_BASE_SUPPORT
 
 /* FLOAT options start --------- */
-//#undef FLOAT_SUPPORT
-#define FLOAT_SUPPORT
+#undef FLOAT_SUPPORT
+//#define FLOAT_SUPPORT
 
 #ifdef FLOAT_SUPPORT
 //#define FLOATSTD FLOAT_ANS94
@@ -254,9 +258,9 @@
 
 #define COPYRIGHT_MESSAGE "H2oForth by Rolf Hemmerling, (c) 2021-2022, MIT License"
 
-#define MAX_DATASTACK 256
-#define MAX_FLOATSTACK 256
-#define MAX_RETURNSTACK 256
+#define MAX_DATASTACK 64
+#define MAX_FLOATSTACK 64
+#define MAX_RETURNSTACK 64
 /* Blocks are always 1024 bytes */
 #define MAX_BLOCKBUFFER 1024
 /* Maximum length of a text file line, usually 255 */

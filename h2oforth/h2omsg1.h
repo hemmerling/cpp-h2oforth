@@ -41,7 +41,7 @@ typedef  struct _forthMessage {
 #define ERROR_DPINTEGER_UNDERFLOW 30
 #define ERROR_DPINTEGER_OVERFLOW 31
 
-static const typedef_forthMessage forthErrors[] = {
+static const PROGMEM typedef_forthMessage forthErrors[] = {
 			{ 0, "No Error" }, /* not for display, was: "( Error Messages )" */
 			{ 1, "Empty Stack" },
 			{ 2, "Dictionary Full" },
@@ -91,7 +91,7 @@ static const typedef_forthMessage forthErrors[] = {
 #define ERROR_DPINTEGER_OVERFLOW 31
 
 /* Richard De Grandis-Harrison: FORTH on the BBC Microcomputer", page 159ff */
-static const typedef_forthMessage forthErrors[] = {
+static const PROGMEM typedef_forthMessage forthErrors[] = {
 			{ 0, "No error" }, /* not for display, was: "reserved!" */
 			{ 1, "Stack Empty" },
 			{ 2, "Dictionary Full" },

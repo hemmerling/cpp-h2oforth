@@ -159,7 +159,7 @@ typedef  struct _forthWord {
 
 /* Variables */
 
-static const typedef_forthWord forthWords[] = {
+static const PROGMEM typedef_forthWord forthWords[] = {
 			{ "FORTH", "FORTH", TRUE, FALSE, FALSE, 0UL, (forthOperation)jupiterForth },
 			{ "UFLOAT", "UFLOAT", TRUE, FALSE, FALSE, 0UL, (forthOperation)jupiterUFLoat },
 			{ "INT", "INT", TRUE, FALSE, FALSE, 0UL, (forthOperation)jupiterInt },

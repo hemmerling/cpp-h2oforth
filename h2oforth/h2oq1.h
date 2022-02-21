@@ -373,7 +373,7 @@ typedef  struct _forthWord {
 /* Variables */
 /* This vocabulary is not in the order of any VLIST or WORDS listing, as there are no such words at all! */
 
-static  const typedef_forthWord forthWords[] = {
+static  const PROGMEM typedef_forthWord forthWords[] = {
 
 	/* Control Commands */
 

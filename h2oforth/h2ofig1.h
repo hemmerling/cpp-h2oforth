@@ -244,7 +244,7 @@ typedef  struct _forthWord {
 /* Variables */
 /* This vocabulary is in alphabetic order! */
 
-static const typedef_forthWord forthWords[] = {
+static const PROGMEM typedef_forthWord forthWords[] = {
 			{ "!", "!", TRUE, FALSE, FALSE, 0UL, (forthOperation)figStore },
 			{ "!CSP", "!CSP", TRUE, FALSE, FALSE, 0UL, (forthOperation)figStoreCsp },
 			{ "#", "#", TRUE, FALSE, FALSE, 0UL, (forthOperation)figNum },

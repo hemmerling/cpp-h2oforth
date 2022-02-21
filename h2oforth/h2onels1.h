@@ -399,7 +399,7 @@ typedef  struct _forthWord {
 /* Variables */
 
 #if H2O_FORTH_PRIMITIVES == NELSON_UE_FORTH
-static const typedef_forthWord forthWords[] = { /* converted to uppercase, original case */
+static const PROGMEM typedef_forthWord forthWords[] = { /* converted to uppercase, original case */
 			{ "FORTH", "forth", TRUE, FALSE, FALSE, 0UL, (forthOperation)nelsonForth },
 			{ "TO", "to", TRUE, FALSE, FALSE, 0UL, (forthOperation)nelsonTo },
 			{ "+TO", "+to", TRUE, FALSE, FALSE, 0UL, (forthOperation)nelsonPlusTo },

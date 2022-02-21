@@ -65,7 +65,7 @@ void parameterPreProcessing(int, char**);
 void parameterPostProcessing(void);
 
 int exitCode = EXIT_OK;
-static typedef_parameterSet parameters[] = {
+static PROGMEM typedef_parameterSet parameters[] = {
 			{ "h", "?", "help", "", (commandLineParameter)parameterHelp, FALSE },
 			{ "v", "V", "verbose", "", (commandLineParameter)parameterVerbose, FALSE },
 			{ "t", "T", "terminal", "", (commandLineParameter)parameterTerminal, FALSE },

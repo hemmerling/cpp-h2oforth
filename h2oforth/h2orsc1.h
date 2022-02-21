@@ -308,7 +308,7 @@ typedef  struct _forthWord {
 /* Variables */
 /* This vocabulary is not in the order of the VLIST / WORDS listing! */
 
-static const typedef_forthWord forthWords[] = {
+static const PROGMEM typedef_forthWord forthWords[] = {
 			{ "#", "#", TRUE, FALSE, FALSE, 0UL, (forthOperation)rscNum }, /* not listed by VLIST, but detailed description in the documentation */
 			{ "TASK", "TASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)rscTask },
 			{ "ADMP", "ADMP", TRUE, FALSE, FALSE, 0UL, (forthOperation)rscAdmp }, /* RSC specific, not figFORTH */

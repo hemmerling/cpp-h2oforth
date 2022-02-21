@@ -511,7 +511,7 @@ typedef  struct _forthWord {
    which are named with other FORTH implementations with surrounding parentheses "(word)" */
 
 #if H2O_FORTH_PRIMITIVES == volk_ST_FORTH
-static const typedef_forthWord forthWords[] = { /* ATARI-ST */
+static const PROGMEM typedef_forthWord forthWords[] = { /* ATARI-ST */
 			{ "LISTING", "LISTING", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkListing },
 			{ "DOCUMENT", "DOCUMENT", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkDocument },
 			{ "PRINTALL", "PRINTALL", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkPrintALL },

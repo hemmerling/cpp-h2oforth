@@ -13,10 +13,22 @@
 #endif
 
 #if defined(__MSDOS__) || defined(__WINDOWS__) || defined(__linux__)
-//#define H2O_NOEXIT TRUE
-#define H2O_NOEXIT FALSE
+#undef SYSTEM_NOEXIT
+//#define SYSTEM_NOEXIT
 #else
-#define H2O_NOEXIT TRUE
+#define SYSTEM_NOEXIT
+#endif
+
+#ifdef SYSTEM_NOEXIT
+/* Systems with EXIT just sometimes have file systems */
+#undef SYSTEM_WITH_FILEIO
+#else
+/* 
+    Systems with EXIT are expected to have an OS with file system, 
+    also for passing FORTH files by command line parameters 
+*/
+//#undef SYSTEM_WITH_FILEIO
+//#define SYSTEM_WITH_FILEIO
 #endif
 
 #if defined(__BORLANDC__) || defined(__TURBOC__)

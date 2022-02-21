@@ -448,7 +448,7 @@ typedef  struct _forthWord {
 			{ "SHIFT", "SHIFT", TRUE, FALSE, FALSE, 0UL, (forthOperation)snineShift },
  */
 
-static const typedef_forthWord forthWords[] = {
+static const PROGMEM typedef_forthWord forthWords[] = {
 			{ ";CODE", ";CODE", TRUE, FALSE, FALSE, 0UL, (forthOperation)mvpSemicolonCode },
 			{ "CODE", "CODE", TRUE, FALSE, FALSE, 0UL, (forthOperation)mvpCode },
 			{ "ENTERCODE", "ENTERCODE", TRUE, FALSE, FALSE, 0UL, (forthOperation)mvpEnterCode },

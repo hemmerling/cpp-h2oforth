@@ -607,7 +607,7 @@ typedef  struct _forthWord {
 #endif
 
 #if	H2O_FORTH_PRIMITIVES == LAXONPERRY_PC_FORTH
-static const typedef_forthWord forthWords[] = { /* PC */
+static const PROGMEM typedef_forthWord forthWords[] = { /* PC */
 			{ "EMPTY", "EMPTY", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperEmpty },
 			{ "MARK", "MARK", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperMark },
 			{ "HELLO", "HELLO", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperHello },

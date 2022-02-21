@@ -52,7 +52,7 @@ typedef  struct _forthWord {
 
 /* Variables */
 
-static const typedef_forthWord forthWords[] = {
+static const PROGMEM typedef_forthWord forthWords[] = {
 			{ ";", ";", TRUE, FALSE, FALSE, 0UL, (forthOperation)colorRet }, /* Jump Instructions */
 			{ "ex", ";:", TRUE, FALSE, FALSE, 0UL, (forthOperation)colorExec },
 			{ "jump", "jump", TRUE, FALSE, FALSE, 0UL, (forthOperation)colorJmp },

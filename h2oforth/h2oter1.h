@@ -252,7 +252,7 @@ typedef  struct _forthWord {
 /* Variables */
 /* This vocabulary is not in the order of the VLIST / WORDS listing! */
 
-static const typedef_forthWord forthWords[] = {
+static const PROGMEM typedef_forthWord forthWords[] = {
 			{ "SWAB", "SWAB", TRUE, FALSE, FALSE, 0UL, (forthOperation)terseSwab }, /* FORTH words of the proposed Video Game System Vocabulary */
 			{ "ROTN", "ROTN", TRUE, FALSE, FALSE, 0UL, (forthOperation)terseRotn },
 			{ "VECTOR", "VECTOR", TRUE, FALSE, FALSE, 0UL, (forthOperation)terseVector },
