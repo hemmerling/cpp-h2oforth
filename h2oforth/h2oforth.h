@@ -112,6 +112,7 @@
 /* __DEBUG__ */
 #ifdef SYSTEM_EMBEDDED_SMALL
 #undef __DEBUG__
+//#define __DEBUG__
 #else
 //#undef __DEBUG__
 #define __DEBUG__
@@ -530,7 +531,7 @@
 
 /* Macros */
 #if defined (__DEBUG__)
-#define DEBUG_WORD(X) privateDebugWord(PROGMEM (char*)X);
+#define DEBUG_WORD(X) privateDebugWord((char*) X);
 #else
 #define DEBUG_WORD(X)
 #endif

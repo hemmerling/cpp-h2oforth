@@ -24,6 +24,8 @@
 **/*.mk
 **/*.mk1
 **/*.obj
+**/*.rex
+**/*.tgt
 **/*.sym
 
 # Borland C/C++ 5.5 commandline tools
@@ -55,7 +57,6 @@
 **/*.exe
 **/*.map
 **/*.obj
-
 
 # Arduino IDE
 # Just synchonize the C++ file "*.ino", if it exists

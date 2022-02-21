@@ -4,13 +4,15 @@ del /q *.exe
 del /q /s DEBUG
 del /q /s .vs
 
-rem del /q /s *.err
-del /q /s *.exe
+del /q /s *.err
+rem del /q /s *.exe
 del /q /s *.lk1
 del /q /s *.map
 del /q /s *.mk
 del /q /s *.mk1
 del /q /s *.obj
+del /q /s *.rex
+del /q /s *.tgt
 del /q /s *.sym
 
 rem del /q *.exe
