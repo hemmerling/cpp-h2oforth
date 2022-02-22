@@ -60,3 +60,4 @@
 
 # Arduino IDE
 # Just synchonize the C++ file "*.ino", if it exists
+**/*.hex

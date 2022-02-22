@@ -39,4 +39,6 @@ rem del /q /s *.exe
 del /q /s *.map
 del /q /s *.obj
 
+del /q /s *.hex
+
 cd dev

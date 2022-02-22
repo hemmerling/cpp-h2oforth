@@ -429,13 +429,19 @@
 #endif
 #endif
 
+/* Size of local printBuffer, for use with sprintf() */
+#define PRINTBUFFER_MAX 255
+
 #ifdef ARDUINO
 #include <arduino.h>
 #define DELAY(TICKS) delay(TICKS)
 #define PUTS(STRING) Serial.println(STRING)
+#define FPUTS(STRING) Serial.print(STRING)
 #define _PUTCH(CHAR) Serial.write(CHAR)
 #define PUTCHAR(CHAR) Serial.write(CHAR)
 #define TERMINAL_SETUP(SPEED, CONFIG) Serial.begin(SPEED, CONFIG)
+#define PINMODE(PIN, IODIRECTION) pinMode(PIN, IODIRECTION)
+#define DIGITAL_WRITE(PIN, LEVEL) digitalWrite(PIN, LEVEL)
 /* "long long" is not available with Arduino AVR C/C++ */
 #define CELL_INTEGER int
 #define CELL_UNSIGNED unsigned int
@@ -446,9 +452,17 @@
 #define DELAY(TICKS)
 #define digital_write(PIN, OUTPUT)
 #define PUTS(X) puts(X)
+#define FPUTS(STRING) fputs(STRING, stdout)
 #define _PUTCH(CHAR) _putch(CHAR)
 #define PUTCHAR(CHAR) putchar(CHAR)
+#define SERIAL_8N1 6
+#define LED_BUILTIN 13
+#define OUTPUT 1
+#define HIGH 1
+#define LOW 0
 #define TERMINAL_SETUP(SPEED, CONFIG) 
+#define PINMODE(PIN, IODIRECTION)
+#define DIGITAL_WRITE(PIN, LEVEL)
 #endif
 
 #endif
@@ -536,7 +550,6 @@
 #define DEBUG_WORD(X)
 #endif
 
-void forthInit(void);
 int isSPInteger(void);
 void storeSPInteger(void);
 int isDPInteger(void);

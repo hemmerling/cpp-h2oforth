@@ -419,37 +419,6 @@ static const typedef_forthWordList forthWordLists[] = {
 
 /**************************/
 
-void forthInit(void) {
-	int ii = 0;
-	forthState.forthIsWaitingForParameter = FALSE;
-	forthState.forthIsWaitingForKeyboard = FALSE;
-	forthState.forthReadsTerminal = FALSE;
-	forthState.forthReadsKeyboard = FALSE;
-	forthState.forthIsVerbose = FALSE;
-	forthState.forthIsExit = FALSE;
-	forthState.forthCurrentTask = 0;
-
-	for (ii = 0; ii < MAX_FORTHTASKS; ii++) {
-		forthTasks[ii].baseFormat = (char*)BASE_FORMAT_DECIMAL;
-		forthTasks[ii].forthBase = DECIMAL;
-		forthTasks[ii].errorNumber = 0;
-		forthTasks[ii].messageNumber = 0;
-		forthTasks[ii].osErrorNumber = 0;
-		forthTasks[ii].dataStackIndex = 0;
-		forthTasks[ii].returnStackIndex = 0;
-		forthTasks[ii].forthWordLists = (typedef_forthWordList*)forthWordLists;
-		forthTasks[ii].forthErrors = (typedef_forthMessage*)forthErrors;
-		forthTasks[ii].forthMessages = (typedef_forthMessage*)forthMessages;
-		forthTasks[ii].forthOsErrors = (typedef_forthMessage*)forthOsErrors;
-#ifdef FLOAT_SUPPORT
-#ifdef FLOAT_ON_DATASTACK
-		forthTasks[ii].floatFloatIntRatio = sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER);
-#endif
-		forthTasks[ii].floatStackIndex = 0;
-#endif
-	};
-}
-
 /* Check if word is a Single Precision Integer */
 int isSPInteger(void) {
 	int result = FALSE;
@@ -1229,27 +1198,39 @@ void processTib(void) {
 
 /* No processing of commands passed by the command line interface */
 void noParameterPreProcessing(void) {
+	char printBuffer [PRINTBUFFER_MAX];
+	int nn; /* < 128 */
 	if (forthState.forthIsVerbose) {
-#if defined(__BORLANDC__) || defined(__TURBOC__)
-		printf("%s, Version%d - Built %d\n( Int=%d, INTEGER_CELL=%d, *Int=%d, Long Long=%d", COPYRIGHT_MESSAGE, VERSION, BUILT, \
+#if defined(__BORLANDC__) || defined(__TURBOC__) || defined(ARDUINO)
+		nn = sprintf(printBuffer, "%s, Version %d - Built %d\n( Int=%d, INTEGER_CELL=%d, *Int=%d, Long Long=%d", COPYRIGHT_MESSAGE, VERSION, BUILT, \
 			sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
+		FPUTS(printBuffer);
 #ifdef FLOAT_SUPPORT
-		printf(", FLOAT_CELL=%d", sizeof(CELL_FLOAT));
+    nn = sprintf(printBuffer, ", FLOAT_CELL=%d", sizeof(CELL_FLOAT));
+    FPUTS(printBuffer);
 #ifdef FLOAT_ON_DATASTACK
-		printf(", FLOAT_CELL/INTEGER_CELL=%d", sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
+    nn = sprintf(printBuffer, ", FLOAT_CELL/INTEGER_CELL=%d", sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
+    FPUTS(printBuffer);
 #endif
 #endif
-		printf(" )\n");
+    PUTS(" )");
+    PUTS(nn);
 #else
-		printf("%s, Version%d - Built %d\n( Int=%zd, INTEGER_CELL=%zd, *Int=%zd, Long Long=%zd", COPYRIGHT_MESSAGE, VERSION, BUILT, \
+		nn = sprintf(printBuffer, "%s, Version %d - Built %d\n( Int=%zd, INTEGER_CELL=%zd, *Int=%zd, Long Long=%zd", COPYRIGHT_MESSAGE, VERSION, BUILT, \
 			sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
+		FPUTS(printBuffer);
+    nn = sprintf(printBuffer, "%s, Version %d - Built %d\n( Int=%zd, INTEGER_CELL=%zd, *Int=%zd, Long Long=%zd", COPYRIGHT_MESSAGE, VERSION, BUILT, \
+      sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
+    FPUTS(printBuffer);
 #ifdef FLOAT_SUPPORT
-		printf(", FLOAT_CELL=%zd", sizeof(CELL_FLOAT));
+		nn = sprintf(printBuffer, ", FLOAT_CELL=%zd", sizeof(CELL_FLOAT));
+		FPUTS(buffer);
 #ifdef FLOAT_ON_DATASTACK
-		printf(", FLOAT_CELL/INTEGER_CELL=%zd", sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
+		nn = sprintf(printBuffer, ", FLOAT_CELL/INTEGER_CELL=%zd", sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
+		FPUTS(buffer);
 #endif
 #endif
-		printf(" )\n");
+		PUTS(" )");
 #endif
 	};
 	forthState.forthIsWaitingForKeyboard = FALSE;
@@ -1257,39 +1238,92 @@ void noParameterPreProcessing(void) {
 	forthState.forthReadsKeyboard = FALSE;
 }
 
-/* Arduino setup */
-void setup(void) {
-	/* Arduino: put your setup code here, to run once */
-	/*TBD*/
+void loop2()
+{
+  char buffer [255];
+  int n;
+  n=sprintf (buffer, "SERIAL_8N1 = %d, LED_BUILTIN = %d, OUTPUT = %d, HIGH =%d, LOW =%d", SERIAL_8N1, LED_BUILTIN, OUTPUT, HIGH, LOW);
+  //printf ("[%s] is a string %d chars long\n",buffer,n);
+  PUTS(buffer);
+	PUTS("Hello my Computer");
+	//Set the LED pin to HIGH. This gives power to the LED and turns it on
+	DIGITAL_WRITE(LED_BUILTIN, HIGH);
+	//Wait for a second
+	DELAY(1000);
+	//Set the LED pin to LOW. This turns it off
+	DIGITAL_WRITE(LED_BUILTIN, LOW);
+	//Wait for a second
+	DELAY(1000);
 }
 
-/* Arduino Loop */
+/* setup(). Name is fixed as Arduino setup function */
+void setup(void) {
+	/* Arduino: put your setup code here, to run once */
+	/* Open the serial port at 9600 bps */
+ 	TERMINAL_SETUP(9600, SERIAL_8N1);
+	/* Arduino Mega also has a builtin LED and a Macro to use it */
+	PINMODE(LED_BUILTIN, OUTPUT);
+
+	int ii = 0;
+	forthState.forthIsWaitingForParameter = FALSE;
+	forthState.forthIsWaitingForKeyboard = FALSE;
+	forthState.forthReadsTerminal = FALSE;
+	forthState.forthReadsKeyboard = FALSE;
+	forthState.forthIsVerbose = TRUE;
+	forthState.forthIsExit = FALSE;
+	forthState.forthCurrentTask = 0;
+
+	for (ii = 0; ii < MAX_FORTHTASKS; ii++) {
+		forthTasks[ii].baseFormat = (char*)BASE_FORMAT_DECIMAL;
+		forthTasks[ii].forthBase = DECIMAL;
+		forthTasks[ii].errorNumber = 0;
+		forthTasks[ii].messageNumber = 0;
+		forthTasks[ii].osErrorNumber = 0;
+		forthTasks[ii].dataStackIndex = 0;
+		forthTasks[ii].returnStackIndex = 0;
+		forthTasks[ii].forthWordLists = (typedef_forthWordList*)forthWordLists;
+		forthTasks[ii].forthErrors = (typedef_forthMessage*)forthErrors;
+		forthTasks[ii].forthMessages = (typedef_forthMessage*)forthMessages;
+		forthTasks[ii].forthOsErrors = (typedef_forthMessage*)forthOsErrors;
+#ifdef FLOAT_SUPPORT
+#ifdef FLOAT_ON_DATASTACK
+		forthTasks[ii].floatFloatIntRatio = sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER);
+#endif
+		forthTasks[ii].floatStackIndex = 0;
+#endif
+	};
+#if defined(SYSTEM_NOEXIT) || !defined(SYSTEM_WITH_FILEIO) 
+	noParameterPreProcessing();
+#endif
+}
+
+/* loop(). Name is fixed as Arduino loop function */
 void loop(void) {
 	/* Arduino: put your main code here, to run repeatedly */
-	/*TBD*/
+#ifdef SYSTEM_INTERACTIVE
+	if (!forthState.forthIsExit) {
+		/* Tib is now an empty string */
+		//ioTib[0] = 0;
+		do {
+			/* Main FORTH input loop */
+			readInput();
+			processTib();
+		} while (!forthState.forthIsExit);
+	};
+#endif
 }
 
 /* Main routine, for all systems besides Arduino  */
+#ifndef ARDUINO
 int main(int argc, char* argv[])
 {
-	forthInit();
-	do {
+	setup();
 #if defined(SYSTEM_NOEXIT) || !defined(SYSTEM_WITH_FILEIO) 
-		noParameterPreProcessing();
 #else
-		parameterPreProcessing(argc, argv);
+	parameterPreProcessing(argc, argv);
 #endif
-#ifdef SYSTEM_INTERACTIVE
-		if (!forthState.forthIsExit) {
-			/* Tib is now an empty string */
-			//ioTib[0] = 0;
-			do {
-				/* Main FORTH input loop */
-				readInput();
-				processTib();
-			} while (!forthState.forthIsExit);
-		};
-#endif
+	do {
+		loop();
 #if defined(SYSTEM_NOEXIT) || !defined(SYSTEM_WITH_FILEIO) 
 		forthState.forthIsExit = FALSE;
 	} while (TRUE);
@@ -1300,3 +1334,4 @@ int main(int argc, char* argv[])
 	return(exitCode);
 #endif
 }
+#endif
