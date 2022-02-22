@@ -139,7 +139,7 @@
 
 /* FLOAT options start --------- */
 #undef FLOAT_SUPPORT
-//#define FLOAT_SUPPORT
+#define FLOAT_SUPPORT
 
 #ifdef FLOAT_SUPPORT
 //#define FLOATSTD FLOAT_ANS94
@@ -264,6 +264,7 @@
 #define DIGIT_PLUS '+'
 #define DIGIT_E 'E'
 #define CHAR_SPACE ' '
+#define CHAR_CR '\n'
 
 #define STRING_SPACE " "
 #define STRING_CR "\n"
@@ -278,6 +279,9 @@
 /* Maximum length of a text file line, usually 255 */
 #define MAX_INPUTBUFFER 255
 #define MAX_FORTHTASKS 1
+
+/* Size of local printBuffer, for use with sprintf() */
+#define MAX_PRINTBUFFER 256
 
 #define BLOCK_COLUMNS 64
 #define BLOCK_LINES 16
@@ -428,9 +432,6 @@
 #endif
 #endif
 #endif
-
-/* Size of local printBuffer, for use with sprintf() */
-#define PRINTBUFFER_MAX 255
 
 #ifdef ARDUINO
 #include <arduino.h>

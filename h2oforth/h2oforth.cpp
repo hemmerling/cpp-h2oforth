@@ -262,6 +262,7 @@ typedef  struct _forthTask {
 	int returnStackIndex;
 	CELL_INTEGER dataStackSpace[MAX_DATASTACK];
 	void* returnStackSpace[MAX_RETURNSTACK];
+	char printBuffer [MAX_PRINTBUFFER];
 #ifdef SYSTEM_WITH_FILEIO
 	/* Block buffer, used to read Blocks files, by command line parameter support functions */
 	char ioBlockBuffer[MAX_BLOCKBUFFER];
@@ -499,6 +500,7 @@ void storeSPInteger(void) {
 	char* aListPointer = (char*)NULL;
 	int lenAllowedCharactersBuffer = 0;
 	int lowValue = 0;
+	int nn; /* < 32 */
 
 	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
 	case OCTAL:
@@ -541,7 +543,6 @@ void storeSPInteger(void) {
 			endIndex = lenAllowedCharactersBuffer - 1;
 		};
 		for (ii = startIndex; ii < endIndex; ii++) {
-			// printf("[%d] [%c]  [%c] \n", ii, wordBuffer[aWordIndex], aListPointer[ii] );
 			if (wordBuffer[aWordIndex] == aListPointer[ii]) {
 				if ((wordBuffer[aWordIndex] == DIGIT_COMMA) || (wordBuffer[aWordIndex] == DIGIT_DOT)) {
 					break;
@@ -551,11 +552,9 @@ void storeSPInteger(void) {
 					break;
 				};
 				value = value * forthTasks[forthState.forthCurrentTask].forthBase + ii - 1;
-				// printf("nachher ii =%d, new value = %d \n", ii, value);
 				break;
 			};
 		};
-		//printf("value %lld\n",value);
 		aWordIndex++;
 	};
 
@@ -569,13 +568,13 @@ void storeSPInteger(void) {
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_161632BIT )
 	if (value > UINT_MAX) {
 		/* Overflow: ... value .. UINT_MAX[ */
-		printf("SP Integer Overflow!\n");
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "SP Integer Overflow!");
+		PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 	}
 	else if (value > INT_MAX) {
 		/* [UINT_MAX ... value .. INT_MAX[ */
 		short int shortValue = value & INT_MAX;
 		lowValue = -(shortValue ^ INT_MAX);
-		//printf("short = %d, low = %d\n", shortValue, lowValue);
 	}
 	else if (value >= INT_MIN) {
 		/* [INT_MAX ... value .. INT_MIN] */
@@ -585,11 +584,11 @@ void storeSPInteger(void) {
 		/*  ]INT_MIN... value .. UINT_MIN] */
 		short int shortValue = value & INT_MAX;
 		lowValue = shortValue;
-		//printf("short = %d, low = %d\n", shortValue, lowValue);
 	}
 	else if (value < UINT_MIN) {
 		/* Underflow */
-		printf("SP Integer Underflow!\n");
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "SP Integer Underflow!");
+		PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 	};
 #endif  
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_323232BIT ) || \
@@ -599,7 +598,6 @@ void storeSPInteger(void) {
 	lowValue = value;
 #endif
 
-	//printf("final value = %lld, lowValue = %d \n", value, lowValue);
 	forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex++] = lowValue;
 
 }
@@ -658,7 +656,6 @@ int isDPInteger(void) {
 				endIndex = lenAllowedCharactersBuffer;
 			};
 			for (ii = startIndex; ii < endIndex; ii++) {
-				//printf("[%d] [%c]  [%c] \n", ii, wordBuffer[aWordIndex], aListPointer[ii] );
 				if (wordBuffer[aWordIndex] == aListPointer[ii]) {
 					isNumeric = TRUE;
 					break;
@@ -761,7 +758,8 @@ void storeDPInteger(void) {
 
 	if (highValue != 0) {
 		/* Overflow */
-		printf("DP Integer Overflow!\n");
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "DP Integer Overflow!");
+		PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 	};
 #endif  
 #if ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_32BIT ) || ( SYSTEM_ARCHITECTURE == SYSTEM_ARCHITECTURE_646464BIT )
@@ -792,8 +790,8 @@ int isFloat(void) {
 
 	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
 	case DECIMAL:
-		aListPointer1 = aListofFloat;
-		aListPointer2 = aListofExponent;
+		aListPointer1 = (char *)aListofFloat;
+		aListPointer2 = (char *)aListofExponent;
 		lenAllowedCharactersBuffer1 = sizeof(aListofFloat);
 		lenAllowedCharactersBuffer2 = sizeof(aListofExponent);
 		break;
@@ -922,8 +920,8 @@ void storeFloat(void) {
 
 	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
 	case DECIMAL:
-		aListPointer1 = aListofFloat;
-		aListPointer2 = aListofExponent;
+		aListPointer1 = (char *)aListofFloat;
+		aListPointer2 = (char *)aListofExponent;
 		lenAllowedCharactersBuffer1 = sizeof(aListofFloat);
 		lenAllowedCharactersBuffer2 = sizeof(aListofExponent);
 		break;
@@ -987,7 +985,6 @@ void storeFloat(void) {
 					valueMantissaInteger = valueMantissaInteger * forthTasks[forthState.forthCurrentTask].forthBase + ii - 3;
 				};
 
-				//printf("charindex ii =%d, valueMantissaInteger = %d, valueMantissaFraction = %f\n,  \n", ii, valueMantissaInteger, valueMantissaFraction);	
 				break;
 			};
 		};
@@ -1038,7 +1035,6 @@ void storeFloat(void) {
 				};
 
 				valueExponent = valueExponent * forthTasks[forthState.forthCurrentTask].forthBase + ii - 2;
-				//printf("charindex ii =%d, valueExponent = %d\n", ii, valueExponent);	
 				break;
 			};
 		};
@@ -1051,7 +1047,6 @@ void storeFloat(void) {
 
 #ifdef FLOAT_ON_DATASTACK
 	value = valueMantissa * pow(forthTasks[forthState.forthCurrentTask].forthBase, valueExponent);
-	//printf("value = %e %f %f\n", value, valueMantissa, valueExponent);
 	floatStackPointer = (CELL_FLOAT*)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
 	*floatStackPointer = value;
 	forthTasks[forthState.forthCurrentTask].dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex +
@@ -1071,11 +1066,8 @@ int isPermWord(void) {
 	/* TBD: lenForthWordLists should be calculated by forthTasks[forthState.forthCurrentTask].forthWordLists */
 	int lenForthWordLists = sizeof(forthWordLists) /
 		sizeof(forthWordLists[0]);
-	//printf("sizeof wordsLists %d\n", lenForthWordLists);
 	for (ii = 0; ii < lenForthWordLists; ii++) {
-		//printf("wordsQuantity %d, %d\n", ii, forthTasks[forthState.forthCurrentTask].forthWordLists[ii].lenForthWords);
 		for (jj = 0; jj < forthTasks[forthState.forthCurrentTask].forthWordLists[ii].lenForthWords; jj++) {
-			//printf("wordlists %d, %s\n", ii, forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName);
 			if (strcmp(wordBuffer, forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName) == 0) {
 				result = TRUE;
 				if (forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthOpt != NULL) {
@@ -1096,6 +1088,7 @@ void forthParseTib(void) {
 	int aWordDetected = FALSE;
 	int lenIoTib = (int)strlen(ioTib);
 	int isSPIntegerWord = FALSE, isWordFound = FALSE;
+	int nn; /* < 32 */
 #ifdef DPINTEGER_SUPPORT
 	int isDPIntegerWord = FALSE;
 #endif
@@ -1123,14 +1116,22 @@ void forthParseTib(void) {
 				/* Check if a permanent word, and execute it */
 				isWordFound = isPermWord();
 #if defined (__DEBUG__)
-				printf("word = [%s], isSPInteger = [%d]", wordBuffer, isSPIntegerWord);
+				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
+							 "word = [%s], isSPInteger = [%d]", wordBuffer, isSPIntegerWord);
+				FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef DPINTEGER_SUPPORT
-				printf(", isDPInteger = [%d]", isDPIntegerWord);
+				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
+							 ", isDPInteger = [%d]", isDPIntegerWord);
+				FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 #ifdef FLOAT_SUPPORT
-				printf(", isDPFloat = [%d]", isFloatWord);
+				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
+							 ", isDPFloat = [%d]", isFloatWord);
+				FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
-				printf(", isWordFound = [%d]\n", isWordFound);
+				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
+							 ", isWordFound = [%d]", isWordFound);
+				PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 				if (!isWordFound) {
 					if (isSPIntegerWord) {
@@ -1180,7 +1181,8 @@ void forthParseTib(void) {
 		};
 		aTibIndex++;
 #if defined (__DEBUG__)
-		//              printf("continue [%d]\n", aTibIndex);
+	    nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "continue [%d]", aTibIndex);
+    	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 
 	};
@@ -1198,36 +1200,40 @@ void processTib(void) {
 
 /* No processing of commands passed by the command line interface */
 void noParameterPreProcessing(void) {
-	char printBuffer [PRINTBUFFER_MAX];
 	int nn; /* < 128 */
 	if (forthState.forthIsVerbose) {
 #if defined(__BORLANDC__) || defined(__TURBOC__) || defined(ARDUINO)
-		nn = sprintf(printBuffer, "%s, Version %d - Built %d\n( Int=%d, INTEGER_CELL=%d, *Int=%d, Long Long=%d", COPYRIGHT_MESSAGE, VERSION, BUILT, \
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%s, Version %d - Built %d\n( Int=%d, INTEGER_CELL=%d, *Int=%d, Long Long=%d", COPYRIGHT_MESSAGE, VERSION, BUILT, \
 			sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
-		FPUTS(printBuffer);
+		FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef FLOAT_SUPPORT
-    nn = sprintf(printBuffer, ", FLOAT_CELL=%d", sizeof(CELL_FLOAT));
-    FPUTS(printBuffer);
+    nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL=%d", sizeof(CELL_FLOAT));
+    FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef FLOAT_ON_DATASTACK
-    nn = sprintf(printBuffer, ", FLOAT_CELL/INTEGER_CELL=%d", sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
-    FPUTS(printBuffer);
+    nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL/INTEGER_CELL=%d", sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
+    FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 #endif
     PUTS(" )");
     PUTS(nn);
 #else
-		nn = sprintf(printBuffer, "%s, Version %d - Built %d\n( Int=%zd, INTEGER_CELL=%zd, *Int=%zd, Long Long=%zd", COPYRIGHT_MESSAGE, VERSION, BUILT, \
-			sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
-		FPUTS(printBuffer);
-    nn = sprintf(printBuffer, "%s, Version %d - Built %d\n( Int=%zd, INTEGER_CELL=%zd, *Int=%zd, Long Long=%zd", COPYRIGHT_MESSAGE, VERSION, BUILT, \
-      sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
-    FPUTS(printBuffer);
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
+				 "%s, Version %d - Built %d\n( Int=%zd, INTEGER_CELL=%zd, *Int=%zd, Long Long=%zd", 
+				 COPYRIGHT_MESSAGE, VERSION, BUILT,
+				 sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
+	FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+    nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
+				 "%s, Version %d - Built %d\n( Int=%zd, INTEGER_CELL=%zd, *Int=%zd, Long Long=%zd",
+				 COPYRIGHT_MESSAGE, VERSION, BUILT, \
+      			 sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
+    FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef FLOAT_SUPPORT
-		nn = sprintf(printBuffer, ", FLOAT_CELL=%zd", sizeof(CELL_FLOAT));
-		FPUTS(buffer);
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL=%zd", sizeof(CELL_FLOAT));
+		FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef FLOAT_ON_DATASTACK
-		nn = sprintf(printBuffer, ", FLOAT_CELL/INTEGER_CELL=%zd", sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
-		FPUTS(buffer);
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL/INTEGER_CELL=%zd", 
+		sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
+		FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 #endif
 		PUTS(" )");
@@ -1240,12 +1246,7 @@ void noParameterPreProcessing(void) {
 
 void loop2()
 {
-  char buffer [255];
-  int n;
-  n=sprintf (buffer, "SERIAL_8N1 = %d, LED_BUILTIN = %d, OUTPUT = %d, HIGH =%d, LOW =%d", SERIAL_8N1, LED_BUILTIN, OUTPUT, HIGH, LOW);
-  //printf ("[%s] is a string %d chars long\n",buffer,n);
-  PUTS(buffer);
-	PUTS("Hello my Computer");
+  	PUTS("Hello my Computer");
 	//Set the LED pin to HIGH. This gives power to the LED and turns it on
 	DIGITAL_WRITE(LED_BUILTIN, HIGH);
 	//Wait for a second

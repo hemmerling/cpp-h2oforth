@@ -6,7 +6,9 @@
 /* Internal functions */
 #if defined (__DEBUG__)
 void privateDebugWord(char* nameOfWord) {
-	printf("\n%s\n", nameOfWord);
+	int nn; /* < 32 */
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "\n%s", nameOfWord);
+	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 }
 #endif
 
@@ -28,6 +30,7 @@ char* privatBaseConversion(CELL_INTEGER base, CELL_INTEGER value) {
 }
 
 void privateMessageHandler(void) {
+	int nn; /* < 32 */
 	int errorNumber = forthTasks[forthState.forthCurrentTask].errorNumber;
 	int messageNumber = forthTasks[forthState.forthCurrentTask].messageNumber;
 	int osErrorNumber = forthTasks[forthState.forthCurrentTask].osErrorNumber;
@@ -41,25 +44,28 @@ void privateMessageHandler(void) {
 		&& (errorNumber < sizeOfErrors)
 #endif
 		) {
-		printf("? %s %s # %d\n", wordBuffer,
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "? %s %s # %d", wordBuffer,
 			forthTasks[forthState.forthCurrentTask].forthErrors[forthTasks[forthState.forthCurrentTask].errorNumber].messageText,
 			forthTasks[forthState.forthCurrentTask].errorNumber);
+		PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 	};
 	if (messageNumber
 #if defined (__DEVELOP__)
 		&& (messageNumber < sizeOfMessages)
 #endif
 		) {
-		printf("%s\n",
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%s",
 			forthTasks[forthState.forthCurrentTask].forthMessages[forthTasks[forthState.forthCurrentTask].messageNumber].messageText);
+		PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 	};
 	if (osErrorNumber
 #if defined (__DEVELOP__)
 		&& (osErrorNumber < sizeOfOsErrors)
 #endif
 		) {
-		printf("%s\n",
-			forthTasks[forthState.forthCurrentTask].forthOsErrors[forthTasks[forthState.forthCurrentTask].osErrorNumber].messageText);
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%s",
+					 forthTasks[forthState.forthCurrentTask].forthOsErrors[forthTasks[forthState.forthCurrentTask].osErrorNumber].messageText);
+		PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 	};
 	forthTasks[forthState.forthCurrentTask].errorNumber = 0;
 	forthTasks[forthState.forthCurrentTask].messageNumber = 0;
@@ -108,12 +114,17 @@ void commonOctal(void) {
 
 /* Display in hexadecimal base in the format of <.> */
 void commonHexDot(void) {
+	int nn; /* < 32 */
 	if (forthTasks[forthState.forthCurrentTask].dataStackIndex) {
 		if (sizeof(CELL_INTEGER) == CELLSIZE8) {
-			printf("%llx ", forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
+			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%llx ", 
+						 forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
+			FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 		}
 		else {
-			printf("%x ", forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
+			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%x ", 
+						 forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
+			FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 		}
 	}
 	else {
@@ -124,12 +135,17 @@ void commonHexDot(void) {
 
 /* Display in octal base in the format of <.> */
 void commonOctDot(void) {
+	int nn; /* < 32 */
 	if (forthTasks[forthState.forthCurrentTask].dataStackIndex) {
 		if (sizeof(CELL_INTEGER) == CELLSIZE8) {
-			printf("%llo ", forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
+			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%llo ", 
+						 forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
+			FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 		}
 		else {
-			printf("%o ", forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
+			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%o ",
+						 forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
+			FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 		};
 	}
 	else {
@@ -141,15 +157,20 @@ void commonOctDot(void) {
 /* Display the ReturnStack ( H2OForth unique ) */
 void commonRDotS(void) {
 	int ii = 0;
+	int nn; /* < 32 */
 	int returnStackIndex = forthTasks[forthState.forthCurrentTask].returnStackIndex;
 	if (returnStackIndex) {
 		privateSetBaseFormat();
-		printf("[%d] ", returnStackIndex);
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "[%d] ", returnStackIndex);
+		FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 		for (ii = 0; ii < returnStackIndex; ii++) {
-			printf(forthTasks[forthState.forthCurrentTask].baseFormat, forthTasks[forthState.forthCurrentTask].returnStackSpace[ii]);
-			putchar(CHAR_SPACE);
+			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
+						 forthTasks[forthState.forthCurrentTask].baseFormat, 
+						 forthTasks[forthState.forthCurrentTask].returnStackSpace[ii]);
+			FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+			PUTCHAR(CHAR_SPACE);
 		};
-		printf("\n");
+		PUTCHAR(CHAR_CR);
 	}
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_RETURNSTACK_EMPTY;
@@ -515,7 +536,6 @@ void fpointUFLoat(void) {
 		floatStackPointer = (CELL_FLOAT*)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
 		value1 = (CELL_FLOAT)value2;
 		*floatStackPointer = value1;
-		//printf("f = %e, f = %f, int = %d\n", value1, value1, value2);
 		forthTasks[forthState.forthCurrentTask].dataStackIndex =
 			forthTasks[forthState.forthCurrentTask].dataStackIndex + forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
 	}
@@ -543,7 +563,6 @@ void fpointInt(void) {
 		value2 = (CELL_INTEGER)value1;
 		/* Step 1: Save CELL_INTEGER, increase stackpointer by CELL_INTEGER */
 		forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex++] = value2;
-		//printf("f = %e, f = %f, int = %d\n", value1, value1, value2);
 	}
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
@@ -584,12 +603,8 @@ void fpointFPlus(void) {
 		floatStackPointer = (CELL_FLOAT*)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
 		value2 = *floatStackPointer;
 
-		//printf("e1 = %f, f1 = %f, e2 = %f, f2 = %f \n", value1, value1, value2, value2 );
-
 		value1 = value1 + value2;
 		*floatStackPointer = value1;
-
-		//printf("resultf1 = %e, resultf1 = %f \n", value1, value1 );
 
 		forthTasks[forthState.forthCurrentTask].dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex + forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
 	}
@@ -608,13 +623,15 @@ void fpointFMinus(void) {
 void fpointFDot(void) {
 	CELL_FLOAT value = 0.0;
 	CELL_FLOAT* floatStackPointer;
+	int nn; /* < 32 */
 	if (forthTasks[forthState.forthCurrentTask].dataStackIndex >=
 		forthTasks[forthState.forthCurrentTask].floatFloatIntRatio) {
 		forthTasks[forthState.forthCurrentTask].dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex - forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
 		floatStackPointer = (CELL_FLOAT*)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
 		value = *floatStackPointer;
-		printf("%f", value);
-		putchar(CHAR_SPACE);
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%f", value);
+		FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+		PUTCHAR(CHAR_SPACE);
 		forthTasks[forthState.forthCurrentTask].dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex - forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
 	}
 	else {
@@ -629,12 +646,16 @@ void fpointFDot(void) {
 void fpointFDotS(void) {
 	int ii = 0;
 	int floatStackIndex = forthTasks[forthState.forthCurrentTask].floatStackIndex;
+	int nn; /* < 32 */
 	if (floatStackIndex) {
-		printf("[%d] ", floatStackIndex);
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "[%d] ", floatStackIndex);
+		FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 		for (ii = 0; ii < floatStackIndex; ii++) {
-			printf("%f ", forthTasks[forthState.forthCurrentTask].floatStackSpace[ii]);
+			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%f", 
+						 forthTasks[forthState.forthCurrentTask].floatStackSpace[ii]);
+			FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 		};
-		printf("\n");
+		PUTCHAR(CHAR_CR);
 	}
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
