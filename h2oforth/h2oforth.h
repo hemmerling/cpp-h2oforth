@@ -112,7 +112,7 @@
 /* __DEBUG__ */
 #ifdef SYSTEM_EMBEDDED_SMALL
 #undef __DEBUG__
-//#define __DEBUG__
+#define __DEBUG__
 #else
 //#undef __DEBUG__
 #define __DEBUG__
@@ -546,7 +546,9 @@
 
 /* Macros */
 #if defined (__DEBUG__)
-#define DEBUG_WORD(X) privateDebugWord((char*) X);
+//#define DEBUG_WORD(X) privateDebugWord(X);
+//#define DEBUG_WORD(X) {char *nameOfFunction=X;privateDebugWord(nameOfFunction);};
+#define DEBUG_WORD(X) {static const PROGMEM char nameOfFunction[] = X;privateDebugWord(nameOfFunction);};
 #else
 #define DEBUG_WORD(X)
 #endif
