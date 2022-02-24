@@ -119,12 +119,12 @@ void commonHexDot(void) {
 		if (sizeof(CELL_INTEGER) == CELLSIZE8) {
 			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%llx ", 
 						 forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
-			FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 		}
 		else {
 			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%x ", 
 						 forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
-			FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 		}
 	}
 	else {
@@ -140,12 +140,12 @@ void commonOctDot(void) {
 		if (sizeof(CELL_INTEGER) == CELLSIZE8) {
 			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%llo ", 
 						 forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
-			FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 		}
 		else {
 			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%o ",
 						 forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
-			FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 		};
 	}
 	else {
@@ -162,12 +162,12 @@ void commonRDotS(void) {
 	if (returnStackIndex) {
 		privateSetBaseFormat();
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "[%d] ", returnStackIndex);
-		FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 		for (ii = 0; ii < returnStackIndex; ii++) {
 			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
 						 forthTasks[forthState.forthCurrentTask].baseFormat, 
 						 forthTasks[forthState.forthCurrentTask].returnStackSpace[ii]);
-			FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 			PUTCHAR(CHAR_SPACE);
 		};
 		PUTCHAR(CHAR_CR);
@@ -630,7 +630,7 @@ void fpointFDot(void) {
 		floatStackPointer = (CELL_FLOAT*)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
 		value = *floatStackPointer;
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%f", value);
-		FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 		PUTCHAR(CHAR_SPACE);
 		forthTasks[forthState.forthCurrentTask].dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex - forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
 	}
@@ -649,11 +649,11 @@ void fpointFDotS(void) {
 	int nn; /* < 32 */
 	if (floatStackIndex) {
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "[%d] ", floatStackIndex);
-		FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 		for (ii = 0; ii < floatStackIndex; ii++) {
 			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%f", 
 						 forthTasks[forthState.forthCurrentTask].floatStackSpace[ii]);
-			FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 		};
 		PUTCHAR(CHAR_CR);
 	}

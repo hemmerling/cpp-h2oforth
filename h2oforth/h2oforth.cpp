@@ -1118,16 +1118,16 @@ void forthParseTib(void) {
 #if defined (__DEBUG__)
 				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
 							 "word = [%s], isSPInteger = [%d]", wordBuffer, isSPIntegerWord);
-				FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+				FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef DPINTEGER_SUPPORT
 				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
 							 ", isDPInteger = [%d]", isDPIntegerWord);
-				FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+				FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 #ifdef FLOAT_SUPPORT
 				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
 							 ", isDPFloat = [%d]", isFloatWord);
-				FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+				FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
 							 ", isWordFound = [%d]", isWordFound);
@@ -1181,8 +1181,8 @@ void forthParseTib(void) {
 		};
 		aTibIndex++;
 #if defined (__DEBUG__)
-	    nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "continue [%d]", aTibIndex);
-    	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+	    //nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "continue [%d]", aTibIndex);
+    	//PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 
 	};
@@ -1205,35 +1205,29 @@ void noParameterPreProcessing(void) {
 #if defined(__BORLANDC__) || defined(__TURBOC__) || defined(ARDUINO)
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%s, Version %d - Built %d\n( Int=%d, INTEGER_CELL=%d, *Int=%d, Long Long=%d", COPYRIGHT_MESSAGE, VERSION, BUILT, \
 			sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
-		FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef FLOAT_SUPPORT
     nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL=%d", sizeof(CELL_FLOAT));
-    FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+    FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef FLOAT_ON_DATASTACK
     nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL/INTEGER_CELL=%d", sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
-    FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+    FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 #endif
     PUTS(" )");
-    //PUTS(nn);
 #else
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
 				 "%s, Version %d - Built %d\n( Int=%zd, INTEGER_CELL=%zd, *Int=%zd, Long Long=%zd", 
 				 COPYRIGHT_MESSAGE, VERSION, BUILT,
 				 sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
-	FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
-    nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-				 "%s, Version %d - Built %d\n( Int=%zd, INTEGER_CELL=%zd, *Int=%zd, Long Long=%zd",
-				 COPYRIGHT_MESSAGE, VERSION, BUILT, \
-      			 sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
-    FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+	FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef FLOAT_SUPPORT
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL=%zd", sizeof(CELL_FLOAT));
-		FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef FLOAT_ON_DATASTACK
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL/INTEGER_CELL=%zd", 
 		sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
-		FPUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 #endif
 		PUTS(" )");
