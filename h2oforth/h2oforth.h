@@ -224,6 +224,9 @@
 //#define H2O_FORTH_PRIMITIVES VOLK_PC_FORTH
 //#define H2O_FORTH_PRIMITIVES WIN32_FORTH
 
+#define ARDUINO_CHARCHECK 1
+//#define ARDUINO_CHARCHECK 2
+
 /*********************************/
 /* End of configuration switches */
 /*********************************/
@@ -276,8 +279,6 @@
 #define MAX_RETURNSTACK 64
 /* Blocks are always 1024 bytes */
 #define MAX_BLOCKBUFFER 1024
-/* Maximum length of a text file line, usually 255 */
-#define MAX_INPUTBUFFER 255
 #define MAX_FORTHTASKS 1
 
 /* Size of local printBuffer, for use with sprintf() */
@@ -435,6 +436,8 @@
 
 #ifdef ARDUINO
 #include <arduino.h>
+/* Arduino Firmware serial receive buffer = 64, but here set to 255 */
+#define MAX_INPUTBUFFER 255 
 #define DELAY(TICKS) delay(TICKS)
 #define PUTS(STRING) Serial.println(STRING)
 #define FPUTS_OUT(STRING) Serial.print(STRING)
@@ -444,6 +447,7 @@
 #define PUTCHAR(CHAR) Serial.write(CHAR)
 #define _GETCH(CHAR) Serial.read(CHAR)
 #define GETCHAR(CHAR) Serial.read(CHAR)
+#define CHAR_AVAILABLE Serial.available()
 #define TERMINAL_SETUP(SPEED, CONFIG) Serial.begin(SPEED, CONFIG)
 #define PINMODE(PIN, IODIRECTION) pinMode(PIN, IODIRECTION)
 #define DIGITAL_WRITE(PIN, LEVEL) digitalWrite(PIN, LEVEL)
@@ -454,8 +458,9 @@
 #define LONG_LONG long
 #undef DPINTEGER_SUPPORT
 #else
+/* Maximum length of a text file line, usually 255 */
+#define MAX_INPUTBUFFER 255
 #define DELAY(TICKS)
-#define digital_write(PIN, OUTPUT)
 #define PUTS(X) puts(X)
 #define FPUTS_OUT(STRING) fputs(STRING, stdout)
 #define FPUTS_ERR(STRING) fputs(STRING, stderr)
@@ -464,6 +469,7 @@
 #define PUTCHAR(CHAR) putchar(CHAR)
 #define _GETCH(CHAR) _getch()
 #define GETCHAR(CHAR) getchar()
+#define CHAR_AVAILABLE 1
 #define SERIAL_8N1 6
 #define LED_BUILTIN 13
 #define OUTPUT 1

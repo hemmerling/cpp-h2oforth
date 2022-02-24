@@ -22,9 +22,32 @@ unsigned int ioKey(void) {
 		return(GETCHAR());
 	};
 #else
+	/*
+		This generic Arduino Firmware function 
+		reads characters from keyboard until the user presses the RETURN key.
+		Characters are not echoed.
+	 */
+#ifdef ARDUINO
+ 	unsigned int result;
+	int nn; /* < 32 */
+#if (ARDUINO_CHARCHECK==1)
+	do {
+    	result = _GETCH();
+	} while (result == -1);
+#else
+	while (CHAR_AVAILABLE <=0) {;};
+	result = _GETCH();
+#endif
+    //nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "\ninput = %d\n\n", result);
+	//PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+	//PUTS("\nTest\n");
+	return(result);
+#else
 	/* Linux, bare-metall microcontroller systems .. */
-	/* This generic os function reads characters from keyboard until the user presses the RETURN key */
+	/* This generic os function reads characters from keyboard 
+	   until the user presses the RETURN key */
 	return(GETCHAR());
+#endif
 #endif
 }
 
