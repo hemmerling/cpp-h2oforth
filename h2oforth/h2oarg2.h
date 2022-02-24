@@ -299,7 +299,7 @@ int parameterFile(void) {
 int parameterUnknown(char* parParameter) {
 	int nn; /* < 32 */
 	FPUTS_ERR("H2oForth - Unknown parameter: ");
-	//perror(parParameter);
+	//PERROR(parParameter);
 	FPUTS_ERR(parParameter);
 	FPUTS_ERR("\n");
 	forthState.forthIsExit = TRUE;
