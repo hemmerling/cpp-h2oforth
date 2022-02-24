@@ -12,19 +12,19 @@ unsigned int ioKey(void) {
 		   This generic os function reads a single character stroke from the keyboard.
 		   Characters are not echoed.
 		*/
-		return(_getch());
+		return(_GETCH());
 	}
 	else {
 		/*
 			This generic os function reads characters from keyboard until the user presses the RETURN key.
 			Characters are echoed on the screen during input.
 		 */
-		return(getchar());
+		return(GETCHAR());
 	};
 #else
 	/* Linux, bare-metall microcontroller systems .. */
 	/* This generic os function reads characters from keyboard until the user presses the RETURN key */
-	return(getchar());
+	return(GETCHAR());
 #endif
 }
 

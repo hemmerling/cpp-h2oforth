@@ -1215,7 +1215,7 @@ void noParameterPreProcessing(void) {
 #endif
 #endif
     PUTS(" )");
-    PUTS(nn);
+    //PUTS(nn);
 #else
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
 				 "%s, Version %d - Built %d\n( Int=%zd, INTEGER_CELL=%zd, *Int=%zd, Long Long=%zd", 
@@ -1307,8 +1307,8 @@ void loop(void) {
 		//ioTib[0] = 0;
 		do {
 			/* Main FORTH input loop */
-			readInput();
-			processTib();
+		  readInput();
+		  processTib();
 		} while (!forthState.forthIsExit);
 	};
 #endif

@@ -112,7 +112,7 @@
 /* __DEBUG__ */
 #ifdef SYSTEM_EMBEDDED_SMALL
 #undef __DEBUG__
-#define __DEBUG__
+//#define __DEBUG__
 #else
 //#undef __DEBUG__
 #define __DEBUG__
@@ -440,6 +440,8 @@
 #define FPUTS(STRING) Serial.print(STRING)
 #define _PUTCH(CHAR) Serial.write(CHAR)
 #define PUTCHAR(CHAR) Serial.write(CHAR)
+#define _GETCH(CHAR) Serial.read(CHAR)
+#define GETCHAR(CHAR) Serial.read(CHAR)
 #define TERMINAL_SETUP(SPEED, CONFIG) Serial.begin(SPEED, CONFIG)
 #define PINMODE(PIN, IODIRECTION) pinMode(PIN, IODIRECTION)
 #define DIGITAL_WRITE(PIN, LEVEL) digitalWrite(PIN, LEVEL)
@@ -456,6 +458,8 @@
 #define FPUTS(STRING) fputs(STRING, stdout)
 #define _PUTCH(CHAR) _putch(CHAR)
 #define PUTCHAR(CHAR) putchar(CHAR)
+#define _GETCH(CHAR) _getch()
+#define GETCHAR(CHAR) getchar()
 #define SERIAL_8N1 6
 #define LED_BUILTIN 13
 #define OUTPUT 1
@@ -546,9 +550,9 @@
 
 /* Macros */
 #if defined (__DEBUG__)
-//#define DEBUG_WORD(X) privateDebugWord(X);
-//#define DEBUG_WORD(X) {char *nameOfFunction=X;privateDebugWord(nameOfFunction);};
-#define DEBUG_WORD(X) {static const PROGMEM char nameOfFunction[] = X;privateDebugWord(nameOfFunction);};
+//#define DEBUG_WORD(X) privateDebugWord((char *)X);
+//#define DEBUG_WORD(X) {char *nameOfFunction=(char *)X; privateDebugWord(nameOfFunction);};
+#define DEBUG_WORD(X) {static const PROGMEM char nameOfFunction[] = X; privateDebugWord((char *)nameOfFunction);};
 #else
 #define DEBUG_WORD(X)
 #endif
