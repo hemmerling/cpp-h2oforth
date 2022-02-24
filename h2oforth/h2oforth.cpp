@@ -262,7 +262,7 @@ typedef  struct _forthTask {
 	int returnStackIndex;
 	CELL_INTEGER dataStackSpace[MAX_DATASTACK];
 	void* returnStackSpace[MAX_RETURNSTACK];
-	char printBuffer [MAX_PRINTBUFFER];
+	char printBuffer[MAX_PRINTBUFFER];
 #ifdef SYSTEM_WITH_FILEIO
 	/* Block buffer, used to read Blocks files, by command line parameter support functions */
 	char ioBlockBuffer[MAX_BLOCKBUFFER];
@@ -790,8 +790,8 @@ int isFloat(void) {
 
 	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
 	case DECIMAL:
-		aListPointer1 = (char *)aListofFloat;
-		aListPointer2 = (char *)aListofExponent;
+		aListPointer1 = (char*)aListofFloat;
+		aListPointer2 = (char*)aListofExponent;
 		lenAllowedCharactersBuffer1 = sizeof(aListofFloat);
 		lenAllowedCharactersBuffer2 = sizeof(aListofExponent);
 		break;
@@ -920,8 +920,8 @@ void storeFloat(void) {
 
 	switch (forthTasks[forthState.forthCurrentTask].forthBase) {
 	case DECIMAL:
-		aListPointer1 = (char *)aListofFloat;
-		aListPointer2 = (char *)aListofExponent;
+		aListPointer1 = (char*)aListofFloat;
+		aListPointer2 = (char*)aListofExponent;
 		lenAllowedCharactersBuffer1 = sizeof(aListofFloat);
 		lenAllowedCharactersBuffer2 = sizeof(aListofExponent);
 		break;
@@ -1116,21 +1116,21 @@ void forthParseTib(void) {
 				/* Check if a permanent word, and execute it */
 				isWordFound = isPermWord();
 #if defined (__DEBUG__)
-				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-							 "word = [%s], isSPInteger = [%d]", wordBuffer, isSPIntegerWord);
+				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+					"word = [%s], isSPInteger = [%d]", wordBuffer, isSPIntegerWord);
 				FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef DPINTEGER_SUPPORT
-				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-							 ", isDPInteger = [%d]", isDPIntegerWord);
+				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+					", isDPInteger = [%d]", isDPIntegerWord);
 				FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 #ifdef FLOAT_SUPPORT
-				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-							 ", isDPFloat = [%d]", isFloatWord);
+				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+					", isDPFloat = [%d]", isFloatWord);
 				FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
-				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-							 ", isWordFound = [%d]", isWordFound);
+				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+					", isWordFound = [%d]", isWordFound);
 				PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 				if (!isWordFound) {
@@ -1181,8 +1181,8 @@ void forthParseTib(void) {
 		};
 		aTibIndex++;
 #if defined (__DEBUG__)
-	    //nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "continue [%d]", aTibIndex);
-    	//PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+		//nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "continue [%d]", aTibIndex);
+		//PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 
 	};
@@ -1207,26 +1207,26 @@ void noParameterPreProcessing(void) {
 			sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
 		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef FLOAT_SUPPORT
-    nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL=%d", sizeof(CELL_FLOAT));
-    FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL=%d", sizeof(CELL_FLOAT));
+		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef FLOAT_ON_DATASTACK
-    nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL/INTEGER_CELL=%d", sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
-    FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL/INTEGER_CELL=%d", sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
+		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 #endif
-    PUTS(" )");
+		PUTS(" )");
 #else
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-				 "%s, Version %d - Built %d\n( Int=%zd, INTEGER_CELL=%zd, *Int=%zd, Long Long=%zd", 
-				 COPYRIGHT_MESSAGE, VERSION, BUILT,
-				 sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
-	FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+			"%s, Version %d - Built %d\n( Int=%zd, INTEGER_CELL=%zd, *Int=%zd, Long Long=%zd",
+			COPYRIGHT_MESSAGE, VERSION, BUILT,
+			sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
+		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef FLOAT_SUPPORT
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL=%zd", sizeof(CELL_FLOAT));
 		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef FLOAT_ON_DATASTACK
-		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL/INTEGER_CELL=%zd", 
-		sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL/INTEGER_CELL=%zd",
+			sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
 		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 #endif
@@ -1240,7 +1240,7 @@ void noParameterPreProcessing(void) {
 
 void loop2()
 {
-  	PUTS("Hello my Computer");
+	PUTS("Hello my Computer");
 	//Set the LED pin to HIGH. This gives power to the LED and turns it on
 	DIGITAL_WRITE(LED_BUILTIN, HIGH);
 	//Wait for a second
@@ -1255,7 +1255,7 @@ void loop2()
 void setup(void) {
 	/* Arduino: put your setup code here, to run once */
 	/* Open the serial port at 9600 bps */
- 	TERMINAL_SETUP(9600, SERIAL_8N1);
+	TERMINAL_SETUP(9600, SERIAL_8N1);
 	/* Arduino Mega also has a builtin LED and a Macro to use it */
 	PINMODE(LED_BUILTIN, OUTPUT);
 
@@ -1301,8 +1301,8 @@ void loop(void) {
 		//ioTib[0] = 0;
 		do {
 			/* Main FORTH input loop */
-		  readInput();
-		  processTib();
+			readInput();
+			processTib();
 		} while (!forthState.forthIsExit);
 	};
 #endif

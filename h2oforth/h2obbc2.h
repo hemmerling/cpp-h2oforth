@@ -282,13 +282,13 @@ void bbc79DotS(void) {
 			char* value2;
 			if (forthTasks[forthState.forthCurrentTask].baseFormat == BASE_FORMAT_EMPTY) {
 				value2 = privatBaseConversion(forthTasks[forthState.forthCurrentTask].forthBase, value);
-				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-							 forthTasks[forthState.forthCurrentTask].baseFormat, value2);
+				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+					forthTasks[forthState.forthCurrentTask].baseFormat, value2);
 				FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 			}
 			else {
-				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-							 forthTasks[forthState.forthCurrentTask].baseFormat, value);
+				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+					forthTasks[forthState.forthCurrentTask].baseFormat, value);
 				FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 			};
 			PUTCHAR(CHAR_SPACE);
@@ -425,13 +425,13 @@ void bbc79DecDot(void) {
 	int nn; /* < 32 */
 	if (forthTasks[forthState.forthCurrentTask].dataStackIndex) {
 		if (sizeof(CELL_INTEGER) == CELLSIZE8) {
-			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%lld ", 
-						 forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
+			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%lld ",
+				forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
 			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 		}
 		else {
-			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%d ", 
-						 forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
+			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%d ",
+				forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
 			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 		}
 	}
@@ -458,13 +458,13 @@ void bbc79Dot(void) {
 		privateSetBaseFormat();
 		if (forthTasks[forthState.forthCurrentTask].baseFormat == BASE_FORMAT_EMPTY) {
 			value2 = privatBaseConversion(forthTasks[forthState.forthCurrentTask].forthBase, value);
-			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-						 forthTasks[forthState.forthCurrentTask].baseFormat, value2);
+			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+				forthTasks[forthState.forthCurrentTask].baseFormat, value2);
 			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 		}
 		else {
-			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-						 forthTasks[forthState.forthCurrentTask].baseFormat, value);
+			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+				forthTasks[forthState.forthCurrentTask].baseFormat, value);
 			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 		};
 		putchar(CHAR_SPACE);
@@ -487,9 +487,9 @@ void bbc79DDot(void) {
 		privateSetBaseLFormat();
 		value = (LONG_LONG)(forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex])
 			<< (sizeof(forthTasks[forthState.forthCurrentTask].dataStackSpace[0]) * 4); /* ?? */
-		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-					 forthTasks[forthState.forthCurrentTask].baseFormat, value +
-					 forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+			forthTasks[forthState.forthCurrentTask].baseFormat, value +
+			forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
 		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 		PUTCHAR(CHAR_SPACE);
 	}
@@ -888,8 +888,8 @@ void bbc79QError(void) {
 		CELL_INTEGER errorNumber = forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex];
 		if (forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]) {
 			forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex++] = errorNumber;
-			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-						 "test %d %d\n", forthTasks[forthState.forthCurrentTask].dataStackIndex, errorNumber);
+			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+				"test %d %d\n", forthTasks[forthState.forthCurrentTask].dataStackIndex, errorNumber);
 			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 			/* Call another FORTH word */
 			bbc79Error();

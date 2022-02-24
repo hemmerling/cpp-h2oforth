@@ -114,136 +114,136 @@ void writeCode(char* filename) {
 int parameterHelp(void) {
 	int nn; /* < 32 */
 #if defined(__BORLANDC__) || defined(__TURBOC__) || defined(ARDUINO)
-		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%s, Version %d - Built %d\n( Int=%d, INTEGER_CELL=%d, *Int=%d, Long Long=%d", COPYRIGHT_MESSAGE, VERSION, BUILT, \
-			sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
-		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
-#ifdef FLOAT_SUPPORT
-    nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL=%d", sizeof(CELL_FLOAT));
-    FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
-#ifdef FLOAT_ON_DATASTACK
-    nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL/INTEGER_CELL=%d", sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
-    FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
-#endif
-#endif
-    PUTS(" )");
-#else
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-				 "%s, Version %d - Built %d\n( Int=%zd, INTEGER_CELL=%zd, *Int=%zd, Long Long=%zd", 
-				 COPYRIGHT_MESSAGE, VERSION, BUILT,
-				 sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%s, Version %d - Built %d\n( Int=%d, INTEGER_CELL=%d, *Int=%d, Long Long=%d", COPYRIGHT_MESSAGE, VERSION, BUILT, \
+		sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
 	FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef FLOAT_SUPPORT
-		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL=%zd", sizeof(CELL_FLOAT));
-		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL=%d", sizeof(CELL_FLOAT));
+	FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef FLOAT_ON_DATASTACK
-		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL/INTEGER_CELL=%zd", 
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL/INTEGER_CELL=%d", sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
+	FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+#endif
+#endif
+	PUTS(" )");
+#else
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+		"%s, Version %d - Built %d\n( Int=%zd, INTEGER_CELL=%zd, *Int=%zd, Long Long=%zd",
+		COPYRIGHT_MESSAGE, VERSION, BUILT,
+		sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
+	FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+#ifdef FLOAT_SUPPORT
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL=%zd", sizeof(CELL_FLOAT));
+	FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+#ifdef FLOAT_ON_DATASTACK
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL/INTEGER_CELL=%zd",
 		sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
-		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+	FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 #endif
-		PUTS(" )");
+	PUTS(" )");
 #endif
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-				 "\nH2oForth [%c%s][%c%s][%c%s]", PARAMETER_IDENTIFIER, 
-				 (parameters[PARAMETER_HELP]).shortName,
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName2,
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).name);
-    PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-				 "H2oForth [%c%s][%c%s]", PARAMETER_IDENTIFIER, 
-				 (parameters[PARAMETER_VERBOSE]).shortName,
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_VERBOSE]).name);
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+		"\nH2oForth [%c%s][%c%s][%c%s]", PARAMETER_IDENTIFIER,
+		(parameters[PARAMETER_HELP]).shortName,
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName2,
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).name);
 	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-				 "H2oForth [%c%s][%c%s] %s", PARAMETER_IDENTIFIER, 
-				 (parameters[PARAMETER_DATABASE]).shortName,
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_DATABASE]).name, 
-				 DEFAULT_DATABASE);
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+		"H2oForth [%c%s][%c%s]", PARAMETER_IDENTIFIER,
+		(parameters[PARAMETER_VERBOSE]).shortName,
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_VERBOSE]).name);
 	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-				 "H2oForth [%c%s][%c%s] code.fc code*.fc", PARAMETER_IDENTIFIER,
-				 (parameters[PARAMETER_LOAD]).shortName,
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_LOAD]).name);
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+		"H2oForth [%c%s][%c%s] %s", PARAMETER_IDENTIFIER,
+		(parameters[PARAMETER_DATABASE]).shortName,
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_DATABASE]).name,
+		DEFAULT_DATABASE);
 	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-				 "H2oForth [%c%s][%c%s] blocks.fb blocks*.fb", PARAMETER_IDENTIFIER, 
-				 (parameters[PARAMETER_BLOCKS]).shortName,
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_BLOCKS]).name);
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+		"H2oForth [%c%s][%c%s] code.fc code*.fc", PARAMETER_IDENTIFIER,
+		(parameters[PARAMETER_LOAD]).shortName,
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_LOAD]).name);
 	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-				 "H2oForth [%c%s][%c%s] file.f file*.f", PARAMETER_IDENTIFIER, 
-				 (parameters[PARAMETER_FILE]).shortName,
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_FILE]).name);
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+		"H2oForth [%c%s][%c%s] blocks.fb blocks*.fb", PARAMETER_IDENTIFIER,
+		(parameters[PARAMETER_BLOCKS]).shortName,
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_BLOCKS]).name);
 	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-				 "H2oForth [%c%s][%c%s]", PARAMETER_IDENTIFIER, 
-				 (parameters[PARAMETER_TERMINAL]).shortName,
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_TERMINAL]).name);
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+		"H2oForth [%c%s][%c%s] file.f file*.f", PARAMETER_IDENTIFIER,
+		(parameters[PARAMETER_FILE]).shortName,
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_FILE]).name);
 	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-				 "H2oForth [%c%s][%c%s] < file.f", PARAMETER_IDENTIFIER, 
-				 (parameters[PARAMETER_TERMINAL]).shortName,
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_TERMINAL]).name);
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+		"H2oForth [%c%s][%c%s]", PARAMETER_IDENTIFIER,
+		(parameters[PARAMETER_TERMINAL]).shortName,
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_TERMINAL]).name);
 	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-				 "H2oForth [%c%s][%c%s]", PARAMETER_IDENTIFIER, 
-				 (parameters[PARAMETER_KEYBOARD]).shortName,
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_KEYBOARD]).name);
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+		"H2oForth [%c%s][%c%s] < file.f", PARAMETER_IDENTIFIER,
+		(parameters[PARAMETER_TERMINAL]).shortName,
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_TERMINAL]).name);
 	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-				 "H2oForth [%c%s][%c%s] code.fc\n", PARAMETER_IDENTIFIER, 
-				 (parameters[PARAMETER_SAVE]).shortName, PARAMETER_IDENTIFIER, 
-				 (parameters[PARAMETER_SAVE]).name);
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+		"H2oForth [%c%s][%c%s]", PARAMETER_IDENTIFIER,
+		(parameters[PARAMETER_KEYBOARD]).shortName,
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_KEYBOARD]).name);
+	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+		"H2oForth [%c%s][%c%s] code.fc\n", PARAMETER_IDENTIFIER,
+		(parameters[PARAMETER_SAVE]).shortName, PARAMETER_IDENTIFIER,
+		(parameters[PARAMETER_SAVE]).name);
 	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #if defined(H2O_DISPLAY_HELP_WITH_NO_PARAMETERS)
 	PUTS("Without parameters: Display this help screen");
 #else
 	PUTS("Without parameters: Wait for first for terminal input, then for keyboard input")
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-				 "%c%s, %c%s, %c%s       Display this help screen", 
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName,
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName2,
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).name);
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+			"%c%s, %c%s, %c%s       Display this help screen",
+			PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName,
+			PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName2,
+			PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).name);
 	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-				 "%c%s, %c%s        Verbose output off", PARAMETER_IDENTIFIER, 
-				 (parameters[PARAMETER_VERBOSE]).shortName,
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_VERBOSE]).name);
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+		"%c%s, %c%s        Verbose output off", PARAMETER_IDENTIFIER,
+		(parameters[PARAMETER_VERBOSE]).shortName,
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_VERBOSE]).name);
 	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-				 "%c%s, %c%s       Read words from a database or some databases. TBD", 
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_DATABASE]).shortName,
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_DATABASE]).name);
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+		"%c%s, %c%s       Read words from a database or some databases. TBD",
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_DATABASE]).shortName,
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_DATABASE]).name);
 	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-				 "%c%s, %c%s           Load a single code file or some code files. TBD", 
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_LOAD]).shortName,
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_LOAD]).name);
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+		"%c%s, %c%s           Load a single code file or some code files. TBD",
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_LOAD]).shortName,
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_LOAD]).name);
 	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-				 "%c%s, %c%s         Read a single blocks file or some blocks files", 
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_BLOCKS]).shortName,
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_BLOCKS]).name);
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+		"%c%s, %c%s         Read a single blocks file or some blocks files",
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_BLOCKS]).shortName,
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_BLOCKS]).name);
 	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-				 "%c%s, %c%s           Read a single file or some files", 
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_FILE]).shortName,
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_FILE]).name);
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+		"%c%s, %c%s           Read a single file or some files",
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_FILE]).shortName,
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_FILE]).name);
 	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-				 "%c%s, %c%s       Wait for terminal input", PARAMETER_IDENTIFIER, 
-				 (parameters[PARAMETER_TERMINAL]).shortName,
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_TERMINAL]).name);
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+		"%c%s, %c%s       Wait for terminal input", PARAMETER_IDENTIFIER,
+		(parameters[PARAMETER_TERMINAL]).shortName,
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_TERMINAL]).name);
 	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-				 "%c%s, %c%s       Wait for keyboard input", PARAMETER_IDENTIFIER, 
-				 (parameters[PARAMETER_KEYBOARD]).shortName,
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_KEYBOARD]).name);
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+		"%c%s, %c%s       Wait for keyboard input", PARAMETER_IDENTIFIER,
+		(parameters[PARAMETER_KEYBOARD]).shortName,
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_KEYBOARD]).name);
 	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-				 "%c%s, %c%s           Save a code file. TBD", 
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_SAVE]).shortName,
-				 PARAMETER_IDENTIFIER, (parameters[PARAMETER_SAVE]).name);
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+		"%c%s, %c%s           Save a code file. TBD",
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_SAVE]).shortName,
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_SAVE]).name);
 #endif
 	forthState.forthIsExit = TRUE;
 	exitCode = EXIT_HELP;

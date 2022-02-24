@@ -64,7 +64,7 @@ void privateMessageHandler(void) {
 #endif
 		) {
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%s",
-					 forthTasks[forthState.forthCurrentTask].forthOsErrors[forthTasks[forthState.forthCurrentTask].osErrorNumber].messageText);
+			forthTasks[forthState.forthCurrentTask].forthOsErrors[forthTasks[forthState.forthCurrentTask].osErrorNumber].messageText);
 		PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 	};
 	forthTasks[forthState.forthCurrentTask].errorNumber = 0;
@@ -117,13 +117,13 @@ void commonHexDot(void) {
 	int nn; /* < 32 */
 	if (forthTasks[forthState.forthCurrentTask].dataStackIndex) {
 		if (sizeof(CELL_INTEGER) == CELLSIZE8) {
-			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%llx ", 
-						 forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
+			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%llx ",
+				forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
 			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 		}
 		else {
-			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%x ", 
-						 forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
+			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%x ",
+				forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
 			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 		}
 	}
@@ -138,13 +138,13 @@ void commonOctDot(void) {
 	int nn; /* < 32 */
 	if (forthTasks[forthState.forthCurrentTask].dataStackIndex) {
 		if (sizeof(CELL_INTEGER) == CELLSIZE8) {
-			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%llo ", 
-						 forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
+			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%llo ",
+				forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
 			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 		}
 		else {
 			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%o ",
-						 forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
+				forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
 			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 		};
 	}
@@ -164,9 +164,9 @@ void commonRDotS(void) {
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "[%d] ", returnStackIndex);
 		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 		for (ii = 0; ii < returnStackIndex; ii++) {
-			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-						 forthTasks[forthState.forthCurrentTask].baseFormat, 
-						 forthTasks[forthState.forthCurrentTask].returnStackSpace[ii]);
+			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+				forthTasks[forthState.forthCurrentTask].baseFormat,
+				forthTasks[forthState.forthCurrentTask].returnStackSpace[ii]);
 			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 			PUTCHAR(CHAR_SPACE);
 		};
@@ -651,8 +651,8 @@ void fpointFDotS(void) {
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "[%d] ", floatStackIndex);
 		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 		for (ii = 0; ii < floatStackIndex; ii++) {
-			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%f", 
-						 forthTasks[forthState.forthCurrentTask].floatStackSpace[ii]);
+			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%f",
+				forthTasks[forthState.forthCurrentTask].floatStackSpace[ii]);
 			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
 		};
 		PUTCHAR(CHAR_CR);
