@@ -31,8 +31,8 @@ void readInput(void) {
 	if (forthState.forthReadsKeyboard) {
 		if (doInput == CTRLZ_GETCHAR) {
 			forthState.forthIsExit = TRUE;
-			//printf("CTRLZ_GETCH - Exit\n");
-			//printf("H2oForth is terminating\n");
+			//PUTS("CTRLZ_GETCH - Exit");
+			//PUTS("H2oForth is terminating");
 		};
 	};
 
@@ -42,13 +42,13 @@ void readInput(void) {
 				forthState.forthReadsKeyboard = TRUE;
 				forthState.forthReadsTerminal = FALSE;
 				if (forthState.forthIsVerbose) {
-					printf("\nH2OForth - Wait for keyboard input(2)\n");
+					PUTS("\nH2OForth - Wait for keyboard input(2)");
 				};
 			}
 			else {
 				forthState.forthIsExit = TRUE;
-				//printf("CTRLZ_GETCHAR - Exit\n");
-				//printf("H2oForth is terminating\n");
+				//PUTS("CTRLZ_GETCHAR - Exit");
+				//PUTS("H2oForth is terminating");
 			};
 		};
 
