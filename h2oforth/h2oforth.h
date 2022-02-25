@@ -440,7 +440,6 @@
 #include <arduino.h>
 /* Arduino Firmware serial receive buffer = 64, but here set to 255 */
 #define MAX_INPUTBUFFER 255 
-#define DELAY(TICKS) delay(TICKS)
 #define PUTS(STRING) Serial.println(STRING)
 #define FPUTS_OUT(STRING) Serial.print(STRING)
 #define FPUTS_ERR(STRING) Serial.print(STRING)
@@ -450,9 +449,6 @@
 #define _GETCH(CHAR) Serial.read(CHAR)
 #define GETCHAR(CHAR) Serial.read(CHAR)
 #define CHAR_AVAILABLE Serial.available()
-#define TERMINAL_SETUP(SPEED, CONFIG) Serial.begin(SPEED, CONFIG)
-#define PINMODE(PIN, IODIRECTION) pinMode(PIN, IODIRECTION)
-#define DIGITAL_WRITE(PIN, LEVEL) digitalWrite(PIN, LEVEL)
 /* "long long" is not available with Arduino AVR C/C++ */
 #define CELL_INTEGER int
 #define CELL_UNSIGNED unsigned int
@@ -462,7 +458,6 @@
 #else
 /* Maximum length of a text file line, usually 255 */
 #define MAX_INPUTBUFFER 255
-#define DELAY(TICKS)
 #define PUTS(X) puts(X)
 #define FPUTS_OUT(STRING) fputs(STRING, stdout)
 #define FPUTS_ERR(STRING) fputs(STRING, stderr)
@@ -474,12 +469,16 @@
 #define CHAR_AVAILABLE 1
 #define SERIAL_8N1 6
 #define LED_BUILTIN 13
+#define INPUT 0
 #define OUTPUT 1
+#define INPUT_PULLUP 2
 #define HIGH 1
 #define LOW 0
-#define TERMINAL_SETUP(SPEED, CONFIG) 
-#define PINMODE(PIN, IODIRECTION)
-#define DIGITAL_WRITE(PIN, LEVEL)
+/* Analog Reference for Arduino Mega */
+#define EXTERNAL 0
+#define DEFAULT 1
+#define INTERNAL1V1 2
+#define INTERNAL2V56 3
 #endif
 
 #endif

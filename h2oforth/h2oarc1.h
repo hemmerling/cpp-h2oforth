@@ -91,5 +91,15 @@ unsigned int ioKey(void);
 void ioEmit(unsigned int);
 void ioStorePort(unsigned long, unsigned int);
 unsigned int ioGetPort(unsigned long);
+#ifndef ARDUINO
+void delay(unsigned long);
+void pinMode(unsigned int, unsigned int);
+void digitalWrite(unsigned int, unsigned int);
+unsigned int digitalRead(unsigned int);
+void analogReference(unsigned int);
+void analogWrite(unsigned int, unsigned int);
+unsigned int analogRead(unsigned int);
+#endif
+void setupTerminal(unsigned int, unsigned int);
 
 #endif

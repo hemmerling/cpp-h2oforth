@@ -1242,25 +1242,26 @@ void loop2()
 {
 	PUTS("Hello my Computer");
 	//Set the LED pin to HIGH. This gives power to the LED and turns it on
-	DIGITAL_WRITE(LED_BUILTIN, HIGH);
+	digitalWrite(LED_BUILTIN, HIGH);
 	//Wait for a second
-	DELAY(1000);
+	delay(1000);
 	//Set the LED pin to LOW. This turns it off
-	DIGITAL_WRITE(LED_BUILTIN, LOW);
+	digitalWrite(LED_BUILTIN, LOW);
 	//Wait for a second
-	DELAY(1000);
+	delay(1000);
 }
 
 /* setup(). Name is fixed as Arduino setup function */
 void setup(void) {
 	/* Arduino: put your setup code here, to run once */
+  int ii = 0;
+	
 	/* Open the serial port at 9600 bps */
-	TERMINAL_SETUP(9600, SERIAL_8N1);
+	setupTerminal(9600, SERIAL_8N1);
 	/* Arduino Mega also has a builtin LED and a Macro to use it */
-	PINMODE(LED_BUILTIN, OUTPUT);
+	pinMode(LED_BUILTIN, OUTPUT);
 
-	int ii = 0;
-	forthState.forthIsWaitingForParameter = FALSE;
+ 	forthState.forthIsWaitingForParameter = FALSE;
 	forthState.forthIsWaitingForKeyboard = FALSE;
 	forthState.forthReadsTerminal = FALSE;
 	forthState.forthReadsKeyboard = FALSE;
@@ -1288,13 +1289,16 @@ void setup(void) {
 #endif
 	};
 #if defined(SYSTEM_NOEXIT) || !defined(SYSTEM_WITH_FILEIO) 
+  //PUTS("before noParameterPreProcessing");
 	noParameterPreProcessing();
+  //PUTS("after noParameterPreProcessing");
 #endif
 }
 
 /* loop(). Name is fixed as Arduino loop function */
 void loop(void) {
 	/* Arduino: put your main code here, to run repeatedly */
+	int nn; /* < 32 */
 #ifdef SYSTEM_INTERACTIVE
 	if (!forthState.forthIsExit) {
 		/* Tib is now an empty string */
@@ -1302,6 +1306,10 @@ void loop(void) {
 		do {
 			/* Main FORTH input loop */
 			readInput();
+
+			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "Buffer = %s", ioTib);
+			PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+		
 			processTib();
 		} while (!forthState.forthIsExit);
 	};

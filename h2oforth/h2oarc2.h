@@ -122,4 +122,44 @@ unsigned int ioGetPort(unsigned long varPortAddress) {
 	return(0);
 }
 
+#ifndef ARDUINO
+
+/* Delay ( Arduino Firmware ) */
+void delay(unsigned long) {
+}
+
+/* Setup Port ( Arduino Firmware ) */
+void pinMode(unsigned int pin, unsigned int ioDirection) {
+}
+
+/* Write digital Data to Port ( Arduino Firmware ) */
+void digitalWrite(unsigned int pin, unsigned int value) {
+}
+
+/* Read digital Data from Port ( Arduino Firmware ) */
+unsigned int digitalRead(unsigned int pin) {
+	return(0);
+}
+
+/* Analog Reference ( Arduino Firmware ) */
+void analogReference(unsigned int type) {
+}
+
+/* Write analog Data to Port ( Arduino Firmware ) */
+void analogWrite(unsigned int pin, unsigned int value) {
+}
+
+/* Write analog Data to Port ( Arduino Firmware ) */
+unsigned int analogRead(unsigned int pin) {
+	return(0);
+}
+#endif
+
+/* Setup Terminal ( on Arduino,... ) */
+void setupTerminal(unsigned int speed, unsigned int config) {
+#ifdef ARDUINO
+	Serial.begin(speed, config);
+#endif
+}
+
 #endif
