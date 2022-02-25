@@ -96,6 +96,9 @@
 #define MAX_BASE_CAPITALS_ONLY 26+10
 #define MAX_BASE_MIXEDCASE 26*2+10
 
+#define TPOLLING1 1
+#define TPOLLING2 2
+
 /*********************************/
 /* Configuration switches        */
 /*********************************/
@@ -224,8 +227,7 @@
 //#define H2O_FORTH_PRIMITIVES VOLK_PC_FORTH
 //#define H2O_FORTH_PRIMITIVES WIN32_FORTH
 
-#define ARDUINO_CHARCHECK 1
-//#define ARDUINO_CHARCHECK 2
+#define ARDUINO_TERMINAL_POLLING TPOLLING1
 
 /*********************************/
 /* End of configuration switches */

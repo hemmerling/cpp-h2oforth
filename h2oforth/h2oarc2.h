@@ -30,7 +30,7 @@ unsigned int ioKey(void) {
 #ifdef ARDUINO
  	unsigned int result;
 	int nn; /* < 32 */
-#if (ARDUINO_CHARCHECK==1)
+#if (ARDUINO_TERMINAL_POLLING == TPOLLING1)
 	do {
     	result = _GETCH();
 	} while (result == -1);
