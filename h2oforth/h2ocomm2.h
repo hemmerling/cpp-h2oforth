@@ -47,7 +47,7 @@ void privateMessageHandler(void) {
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "? %s %s # %d", wordBuffer,
 			forthTasks[forthState.forthCurrentTask].forthErrors[forthTasks[forthState.forthCurrentTask].errorNumber].messageText,
 			forthTasks[forthState.forthCurrentTask].errorNumber);
-		PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+		 PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 	};
 	if (messageNumber
 #if defined (__DEVELOP__)

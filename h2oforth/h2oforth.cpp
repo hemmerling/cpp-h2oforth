@@ -1095,12 +1095,12 @@ void forthParseTib(void) {
 #ifdef FLOAT_SUPPORT
 	int isFloatWord = FALSE;
 #endif
-	while (aTibIndex < lenIoTib) {
+  while (aTibIndex < lenIoTib) {
 		if (aWordDetected) {
+      //PUTS("WORD_DETECTION_IN_PROGRESS");
 			if (ioTib[aTibIndex] <= SPACE) {
 				/* Finish word detection */
 				aWordDetected = FALSE;
-
 				/* Reset message numbers */
 				forthTasks[forthState.forthCurrentTask].messageNumber = 0;
 				forthTasks[forthState.forthCurrentTask].errorNumber = 0;
@@ -1156,12 +1156,13 @@ void forthParseTib(void) {
 #endif
 						) {
 						forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_NOT_IN_CURRENT_DIRECTORY;
+            PUTS("word not found");
 					};
 					privateMessageHandler();
 				};
 				privateMessageHandler();
 				// int aWordIndex = 0;
-						// wordBuffer[aWordIndex] = 0;
+				// wordBuffer[aWordIndex] = 0;
 			}
 			else {
 				/* Continue word detection */
@@ -1180,9 +1181,9 @@ void forthParseTib(void) {
 			};
 		};
 		aTibIndex++;
-#if defined (__DEBUG__)
-		//nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "continue [%d]", aTibIndex);
-		//PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+#if defined (__DEBUG2__)
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "continue [%d]", aTibIndex);
+		PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 
 	};

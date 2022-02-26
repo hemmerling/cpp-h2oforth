@@ -115,7 +115,7 @@
 /* __DEBUG__ */
 #ifdef SYSTEM_EMBEDDED_SMALL
 #undef __DEBUG__
-//#define __DEBUG__
+#define __DEBUG__
 #else
 //#undef __DEBUG__
 #define __DEBUG__
@@ -142,7 +142,7 @@
 
 /* FLOAT options start --------- */
 #undef FLOAT_SUPPORT
-#define FLOAT_SUPPORT
+//#define FLOAT_SUPPORT
 
 #ifdef FLOAT_SUPPORT
 //#define FLOATSTD FLOAT_ANS94
@@ -157,8 +157,10 @@
 #define CELL_FLOAT double
 #endif
 
+#ifdef FLOAT_SUPPORT
 //#undef FLOAT_ON_DATASTACK
 #define FLOAT_ON_DATASTACK
+#endif
 
 /* FLOAT options end ----------- */
 
