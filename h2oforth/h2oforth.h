@@ -142,7 +142,7 @@
 
 /* FLOAT options start --------- */
 #undef FLOAT_SUPPORT
-//#define FLOAT_SUPPORT
+#define FLOAT_SUPPORT
 
 #ifdef FLOAT_SUPPORT
 //#define FLOATSTD FLOAT_ANS94
@@ -153,8 +153,8 @@
 #endif
 
 #ifdef FLOAT_SUPPORT
-//#define CELL_FLOAT float
-#define CELL_FLOAT double
+#define CELL_FLOAT float
+//#define CELL_FLOAT double
 #endif
 
 #ifdef FLOAT_SUPPORT

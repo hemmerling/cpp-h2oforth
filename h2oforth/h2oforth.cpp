@@ -450,7 +450,6 @@ int isSPInteger(void) {
 		lenAllowedCharactersBuffer = sizeof(aListOfAllBases);
 		//return(result);
 	};
-
 	/* Don't proceed if it is Minus operator */
 	result = !((lenWordBuffer == 1) && (wordBuffer[0] == '-'));
 	if (result) {
@@ -479,7 +478,12 @@ int isSPInteger(void) {
 				endIndex = lenAllowedCharactersBuffer - 1;
 			};
 			for (ii = startIndex; ii < endIndex; ii++) {
-				if (wordBuffer[aWordIndex] == aListPointer[ii]) {
+				if (wordBuffer[aWordIndex] ==
+#ifdef ARDUINO
+					(char)pgm_read_ptr(aListPointer + ii)) {
+#else
+					aListPointer[ii]) {
+#endif
 					isNumeric = TRUE;
 					break;
 				};
@@ -543,7 +547,12 @@ void storeSPInteger(void) {
 			endIndex = lenAllowedCharactersBuffer - 1;
 		};
 		for (ii = startIndex; ii < endIndex; ii++) {
-			if (wordBuffer[aWordIndex] == aListPointer[ii]) {
+			if (wordBuffer[aWordIndex] ==
+#ifdef ARDUINO
+					(char)pgm_read_ptr(aListPointer + ii)) {
+#else
+					aListPointer[ii]) {
+#endif
 				if ((wordBuffer[aWordIndex] == DIGIT_COMMA) || (wordBuffer[aWordIndex] == DIGIT_DOT)) {
 					break;
 				};
@@ -656,7 +665,12 @@ int isDPInteger(void) {
 				endIndex = lenAllowedCharactersBuffer;
 			};
 			for (ii = startIndex; ii < endIndex; ii++) {
-				if (wordBuffer[aWordIndex] == aListPointer[ii]) {
+				if (wordBuffer[aWordIndex] ==
+#ifdef ARDUINO
+					(char)pgm_read_ptr(aListPointer + ii)) {
+#else
+					aListPointer[ii]) {
+#endif
 					isNumeric = TRUE;
 					break;
 				};
@@ -726,7 +740,12 @@ void storeDPInteger(void) {
 				endIndex = lenAllowedCharactersBuffer;
 			};
 			for (ii = startIndex; ii < endIndex; ii++) {
-				if (wordBuffer[aWordIndex] == aListPointer[ii]) {
+				if (wordBuffer[aWordIndex] ==
+#ifdef ARDUINO
+					(char)pgm_read_ptr(aListPointer + ii)) {
+#else
+					aListPointer[ii]) {
+#endif
 					if ((wordBuffer[aWordIndex] == DIGIT_COMMA) || (wordBuffer[aWordIndex] == DIGIT_DOT)) {
 						break;
 					};
@@ -836,7 +855,12 @@ int isFloat(void) {
 				endIndex = lenAllowedCharactersBuffer1;
 			};
 			for (ii = startIndex; ii < endIndex; ii++) {
-				if (wordBuffer[aWordIndex] == aListPointer1[ii]) {
+				if (wordBuffer[aWordIndex] ==
+#ifdef ARDUINO
+					(char)pgm_read_ptr(aListPointer1 + ii)) {
+#else
+					aListPointer1[ii]) {
+#endif
 					isNumeric = TRUE;
 					dotDetected = dotDetected || (wordBuffer[aWordIndex] == DIGIT_DOT);
 					eDetected = wordBuffer[aWordIndex] == DIGIT_E;
@@ -881,7 +905,12 @@ int isFloat(void) {
 				endIndex = lenAllowedCharactersBuffer2;
 			};
 			for (ii = startIndex; ii < endIndex; ii++) {
-				if (wordBuffer[aWordIndex] == aListPointer2[ii]) {
+				if (wordBuffer[aWordIndex] ==
+#ifdef ARDUINO
+					(char)pgm_read_ptr(aListPointer2 + ii)) {
+#else
+					aListPointer2[ii]) {
+#endif
 					isNumeric = TRUE;
 					break;
 				};
@@ -954,7 +983,13 @@ void storeFloat(void) {
 			endIndex = lenAllowedCharactersBuffer1;
 		};
 		for (ii = startIndex; ii < endIndex; ii++) {
-			if (wordBuffer[aWordIndex] == aListPointer1[ii]) {
+
+			if (wordBuffer[aWordIndex] ==
+#ifdef ARDUINO
+				(char)pgm_read_ptr(aListPointer1 + ii)) {
+#else
+				aListPointer1[ii]) {
+#endif
 				isNumeric = TRUE;
 				eDetected = (ii == lenAllowedCharactersBuffer1 - 2);
 
@@ -1022,7 +1057,12 @@ void storeFloat(void) {
 			endIndex = lenAllowedCharactersBuffer2;
 		};
 		for (ii = startIndex; ii < endIndex; ii++) {
-			if (wordBuffer[aWordIndex] == aListPointer2[ii]) {
+			if (wordBuffer[aWordIndex] ==
+#ifdef ARDUINO
+				(char)pgm_read_ptr(aListPointer2 + ii)) {
+#else
+				aListPointer2[ii]) {
+#endif
 				isNumeric = TRUE;
 
 				if (wordBuffer[aWordIndex] == DIGIT_MINUS) {
@@ -1095,9 +1135,9 @@ void forthParseTib(void) {
 #ifdef FLOAT_SUPPORT
 	int isFloatWord = FALSE;
 #endif
-  while (aTibIndex < lenIoTib) {
+	while (aTibIndex < lenIoTib) {
 		if (aWordDetected) {
-      //PUTS("WORD_DETECTION_IN_PROGRESS");
+			//PUTS("WORD_DETECTION_IN_PROGRESS");
 			if (ioTib[aTibIndex] <= SPACE) {
 				/* Finish word detection */
 				aWordDetected = FALSE;
@@ -1156,7 +1196,6 @@ void forthParseTib(void) {
 #endif
 						) {
 						forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_NOT_IN_CURRENT_DIRECTORY;
-            PUTS("word not found");
 					};
 					privateMessageHandler();
 				};
@@ -1255,14 +1294,14 @@ void loop2()
 /* setup(). Name is fixed as Arduino setup function */
 void setup(void) {
 	/* Arduino: put your setup code here, to run once */
-  int ii = 0;
-	
+	int ii = 0;
+
 	/* Open the serial port at 9600 bps */
 	setupTerminal(9600, SERIAL_8N1);
 	/* Arduino Mega also has a builtin LED and a Macro to use it */
 	pinMode(LED_BUILTIN, OUTPUT);
 
- 	forthState.forthIsWaitingForParameter = FALSE;
+	forthState.forthIsWaitingForParameter = FALSE;
 	forthState.forthIsWaitingForKeyboard = FALSE;
 	forthState.forthReadsTerminal = FALSE;
 	forthState.forthReadsKeyboard = FALSE;
@@ -1290,9 +1329,9 @@ void setup(void) {
 #endif
 	};
 #if defined(SYSTEM_NOEXIT) || !defined(SYSTEM_WITH_FILEIO) 
-  //PUTS("before noParameterPreProcessing");
+	//PUTS("before noParameterPreProcessing");
 	noParameterPreProcessing();
-  //PUTS("after noParameterPreProcessing");
+	//PUTS("after noParameterPreProcessing");
 #endif
 }
 
@@ -1307,10 +1346,6 @@ void loop(void) {
 		do {
 			/* Main FORTH input loop */
 			readInput();
-
-			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "Buffer = %s", ioTib);
-			PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
-		
 			processTib();
 		} while (!forthState.forthIsExit);
 	};

@@ -45,7 +45,12 @@ void privateMessageHandler(void) {
 #endif
 		) {
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "? %s %s # %d", wordBuffer,
+#ifdef ARDUINO
+			pgm_read_ptr(
+			forthTasks[forthState.forthCurrentTask].forthErrors[forthTasks[forthState.forthCurrentTask].errorNumber].messageText),
+#else
 			forthTasks[forthState.forthCurrentTask].forthErrors[forthTasks[forthState.forthCurrentTask].errorNumber].messageText,
+#endif
 			forthTasks[forthState.forthCurrentTask].errorNumber);
 		 PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 	};
@@ -55,7 +60,12 @@ void privateMessageHandler(void) {
 #endif
 		) {
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%s",
+#ifdef ARDUINO
+			pgm_read_ptr(
+			forthTasks[forthState.forthCurrentTask].forthMessages[forthTasks[forthState.forthCurrentTask].messageNumber].messageText));
+#else
 			forthTasks[forthState.forthCurrentTask].forthMessages[forthTasks[forthState.forthCurrentTask].messageNumber].messageText);
+#endif
 		PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 	};
 	if (osErrorNumber
@@ -64,7 +74,12 @@ void privateMessageHandler(void) {
 #endif
 		) {
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%s",
+#ifdef ARDUINO
+			pgm_read_ptr(
+			forthTasks[forthState.forthCurrentTask].forthOsErrors[forthTasks[forthState.forthCurrentTask].osErrorNumber].messageText));
+#else
 			forthTasks[forthState.forthCurrentTask].forthOsErrors[forthTasks[forthState.forthCurrentTask].osErrorNumber].messageText);
+#endif
 		PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 	};
 	forthTasks[forthState.forthCurrentTask].errorNumber = 0;
