@@ -563,9 +563,15 @@
 
 /* Macros */
 #if defined (__DEBUG__)
-//#define DEBUG_WORD(X) privateDebugWord((char *)X);
+#ifdef ARDUINO
+#define DEBUG_WORD(X) {static const PROGMEM char nameOfFunction[] = X; privateDebugWord((char *)pgm_read_ptr(nameOfFunction));};
+//#define DEBUG_WORD(X) {static const char nameOfFunction[] = X; privateDebugWord((char *)nameOfFunction);};
 //#define DEBUG_WORD(X) {char *nameOfFunction=(char *)X; privateDebugWord(nameOfFunction);};
-#define DEBUG_WORD(X) {static const PROGMEM char nameOfFunction[] = X; privateDebugWord((char *)nameOfFunction);};
+#else
+#define DEBUG_WORD(X) privateDebugWord((char *)X);
+//#define DEBUG_WORD(X) {static const char nameOfFunction[] = X; privateDebugWord((char *)nameOfFunction);};
+//#define DEBUG_WORD(X) {char *nameOfFunction=(char *)X; privateDebugWord(nameOfFunction);};
+#endif
 #else
 #define DEBUG_WORD(X)
 #endif

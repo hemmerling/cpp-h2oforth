@@ -1147,6 +1147,12 @@ void forthParseTib(void) {
 				forthTasks[forthState.forthCurrentTask].osErrorNumber = 0;
 
 				isSPIntegerWord = isSPInteger();
+
+        // nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+        //   "word = [%s], isSPInteger = [%d]", wordBuffer, isSPIntegerWord);
+        // FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+        // return;
+        
 #ifdef DPINTEGER_SUPPORT
 				isDPIntegerWord = isDPInteger();
 #endif
