@@ -122,12 +122,13 @@ unsigned int ioGetPort(unsigned long varPortAddress) {
 	return(0);
 }
 
-#ifndef ARDUINO
-
+#if !defined(ARDUINO) && !defined (__DJGPP__) && !defined (__WATCOMC__)
 /* Delay ( Arduino Firmware ) */
 void delay(unsigned long) {
 }
+#endif
 
+#ifndef ARDUINO
 /* Setup Port ( Arduino Firmware ) */
 void pinMode(unsigned int pin, unsigned int ioDirection) {
 }
@@ -159,6 +160,7 @@ unsigned int analogRead(unsigned int pin) {
 void setupTerminal(unsigned int speed, unsigned int config) {
 #ifdef ARDUINO
 	Serial.begin(speed, config);
+	while(!Serial); /* Wait until the serial port is available */
 #endif
 }
 

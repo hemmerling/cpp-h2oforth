@@ -164,6 +164,19 @@
 
 /* FLOAT options end ----------- */
 
+/* ARDUINO options start --------- */
+
+#define ARDUINO_TERMINAL_POLLING TPOLLING1
+
+/* 
+   If you are using the "Serial Monitor" of the original "Arduino IDE 1" 
+   as terminal, please define ARDUINO_IDE1,
+   so that the input from the input window is echoed to the output window  
+ */
+#define ARDUINO_SERIAL_MONITOR
+
+/* ARDUINO options end ----------- */
+
 #undef TESTING_SUPPORT
 //#define TESTING_SUPPORT
 
@@ -228,8 +241,6 @@
 //#define H2O_FORTH_PRIMITIVES VOLK_CPM_FORTH
 //#define H2O_FORTH_PRIMITIVES VOLK_PC_FORTH
 //#define H2O_FORTH_PRIMITIVES WIN32_FORTH
-
-#define ARDUINO_TERMINAL_POLLING TPOLLING1
 
 /*********************************/
 /* End of configuration switches */
@@ -440,6 +451,7 @@
 
 #ifdef ARDUINO
 #include <arduino.h>
+#include <avr/pgmspace.h>
 /* Arduino Firmware serial receive buffer = 64, but here set to 255 */
 #define MAX_INPUTBUFFER 255 
 #define PUTS(STRING) Serial.println(STRING)
@@ -448,8 +460,8 @@
 #define PERROR(STRING) Serial.println(STRING)
 #define _PUTCH(CHAR) Serial.write(CHAR)
 #define PUTCHAR(CHAR) Serial.write(CHAR)
-#define _GETCH(CHAR) Serial.read(CHAR)
-#define GETCHAR(CHAR) Serial.read(CHAR)
+#define _GETCH() Serial.read()
+#define GETCHAR() Serial.read()
 #define CHAR_AVAILABLE Serial.available()
 /* "long long" is not available with Arduino AVR C/C++ */
 #define CELL_INTEGER int
@@ -466,8 +478,8 @@
 #define PERROR(STRING) perror(STRING)
 #define _PUTCH(CHAR) _putch(CHAR)
 #define PUTCHAR(CHAR) putchar(CHAR)
-#define _GETCH(CHAR) _getch()
-#define GETCHAR(CHAR) getchar()
+#define _GETCH() _getch()
+#define GETCHAR() getchar()
 #define CHAR_AVAILABLE 1
 #define SERIAL_8N1 6
 #define LED_BUILTIN 13
@@ -564,9 +576,11 @@
 /* Macros */
 #if defined (__DEBUG__)
 #ifdef ARDUINO
-#define DEBUG_WORD(X) {static const PROGMEM char nameOfFunction[] = X; privateDebugWord((char *)pgm_read_ptr(nameOfFunction));};
-//#define DEBUG_WORD(X) {static const char nameOfFunction[] = X; privateDebugWord((char *)nameOfFunction);};
-//#define DEBUG_WORD(X) {char *nameOfFunction=(char *)X; privateDebugWord(nameOfFunction);};
+//#define DEBUG_WORD(X)
+#define DEBUG_WORD(X) Serial.println(F(X));
+//#define DEBUG_WORD(X) privateDebugWord((char *)X);
+/* TBD: Storage of Strings in Flash ROM does not yet work: */
+//#define DEBUG_WORD(X) {static const PROGMEM char nameOfFunction[] = X; privateDebugWord((char *)pgm_read_ptr(nameOfFunction));};
 #else
 #define DEBUG_WORD(X) privateDebugWord((char *)X);
 //#define DEBUG_WORD(X) {static const char nameOfFunction[] = X; privateDebugWord((char *)nameOfFunction);};

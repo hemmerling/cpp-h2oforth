@@ -268,6 +268,7 @@ typedef  struct _forthTask {
 	char ioBlockBuffer[MAX_BLOCKBUFFER];
 #endif
 	typedef_forthWordList* forthWordLists;
+  typedef_forthWord* forthWords;
 	typedef_forthMessage* forthErrors;
 	typedef_forthMessage* forthMessages;
 	typedef_forthMessage* forthOsErrors;
@@ -1108,12 +1109,28 @@ int isPermWord(void) {
 		sizeof(forthWordLists[0]);
 	for (ii = 0; ii < lenForthWordLists; ii++) {
 		for (jj = 0; jj < forthTasks[forthState.forthCurrentTask].forthWordLists[ii].lenForthWords; jj++) {
-			if (strcmp(wordBuffer, forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName) == 0) {
+#ifdef ARDUINO
+      if (strcmp(wordBuffer, 
+                 pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName)) 
+                 == 0) {
+#else
+      if (strcmp(wordBuffer, 
+                 forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName) 
+                 == 0) {
+#endif			
 				result = TRUE;
+#ifdef ARDUINO
+        forthOperation funcPtr = pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthOpt);
+        if (funcPtr != NULL) {
+          /* Execute word */
+          funcPtr();
+        };
+#else  
 				if (forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthOpt != NULL) {
 					/* Execute word */
 					forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthOpt();
 				};
+#endif      
 				break;
 			};
 		};
@@ -1145,14 +1162,7 @@ void forthParseTib(void) {
 				forthTasks[forthState.forthCurrentTask].messageNumber = 0;
 				forthTasks[forthState.forthCurrentTask].errorNumber = 0;
 				forthTasks[forthState.forthCurrentTask].osErrorNumber = 0;
-
-				isSPIntegerWord = isSPInteger();
-
-        // nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
-        //   "word = [%s], isSPInteger = [%d]", wordBuffer, isSPIntegerWord);
-        // FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
-        // return;
-        
+				isSPIntegerWord = isSPInteger();    
 #ifdef DPINTEGER_SUPPORT
 				isDPIntegerWord = isDPInteger();
 #endif
@@ -1179,6 +1189,48 @@ void forthParseTib(void) {
 					", isWordFound = [%d]", isWordFound);
 				PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
+
+#ifdef POINTER_TEST
+    static const char string_0[] PROGMEM = "String 0"; // Definiere deine Strings "String 0" ist hier nur ein Beispiel
+    static const char string_1[] PROGMEM = "String 1"; // Definiere deine Strings "String 1" ist hier nur ein Beispiel
+    static const char string_2[] PROGMEM = "String 2"; // Definiere deine Strings "String 2" ist hier nur ein Beispiel
+    static const char string_3[] PROGMEM = "String 3"; // Definiere deine Strings "String 3" ist hier nur ein Beispiel
+    static const char string_4[] PROGMEM = "String 4"; // Definiere deine Strings "String 4" ist hier nur ein Beispiel
+    static const char string_5[] PROGMEM = "String 5"; // Definiere deine Strings "String 5" ist hier nur ein Beispiel
+
+    // Initialisiere die Tabelle von Strings
+    static const char* const string_table[] PROGMEM = { string_0, string_1, string_2, string_3, string_4, string_5 };
+    char buffer[30];
+
+    typedef  struct _forthWord2 {
+      const char* forthWordName;
+    } typedef_forthWord2;
+
+    static const PROGMEM typedef_forthWord2 forthWord2 = { "TEST2" };
+    static const PROGMEM typedef_forthWord2 forthWord3[] = { "TEST3a", "TEST3b"};
+
+//    for (int i = 0; i < 6; i++) {
+//      strcpy_P(buffer, (char*)pgm_read_word(&(string_table[1])));
+//      Serial.println(buffer); // Gib den gelesenen Wert aus
+      char *myptr = pgm_read_word(&(forthWord2.forthWordName));
+      Serial.println(myptr);
+      myptr = pgm_read_word(&(forthWord3[0].forthWordName));
+      Serial.println(myptr);
+      myptr = pgm_read_word(&(forthWords[0].forthWordName));
+      Serial.println(myptr);
+      myptr = pgm_read_word(&(forthTasks[forthState.forthCurrentTask].forthWordLists[0].forthWords[0].forthWordName));
+      Serial.println(myptr);
+      myptr = pgm_read_ptr(&(forthTasks[forthState.forthCurrentTask].forthWordLists[0].forthWords[0].forthWordName));
+      Serial.println(myptr);
+      forthOperation funcptr = pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[0].forthWords[0].forthOpt);
+      funcptr();
+      //strcpy_P(buffer, (char*)pgm_read_word(&(forthWord2.forthWordName))); // Casts und Dereferenzierung des Speichers
+ //     Serial.println(buffer); // Gib den gelesenen Wert aus
+  //    delay(500); // Warte eine halbe Sekunde
+  //  };
+#endif
+    // return; // zzz
+
 				if (!isWordFound) {
 					if (isSPIntegerWord) {
 						storeSPInteger();
@@ -1324,6 +1376,7 @@ void setup(void) {
 		forthTasks[ii].dataStackIndex = 0;
 		forthTasks[ii].returnStackIndex = 0;
 		forthTasks[ii].forthWordLists = (typedef_forthWordList*)forthWordLists;
+    forthTasks[ii].forthWords = (typedef_forthWord*)forthWords;
 		forthTasks[ii].forthErrors = (typedef_forthMessage*)forthErrors;
 		forthTasks[ii].forthMessages = (typedef_forthMessage*)forthMessages;
 		forthTasks[ii].forthOsErrors = (typedef_forthMessage*)forthOsErrors;

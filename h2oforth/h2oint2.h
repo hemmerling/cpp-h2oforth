@@ -12,10 +12,14 @@ void readInput(void) {
 		doInput = ioKey();
 		/* TBD: Line editing for MSDOS, Windows */
 #ifdef ECHO_KEYBOARD_INPUT
+#if defined(ARDUINO) && defined(ARDUINO_SERIAL_MONITOR)
+		ioEmit(doInput);
+#else
 		if (forthState.forthReadsKeyboard) {
 			/* Just for keyboard input, echo the character */
 			ioEmit(doInput);
 		};
+#endif
 #endif
 		if (doInput >= SPACE) {
 			ioTib[doTibPointer++] = doInput;

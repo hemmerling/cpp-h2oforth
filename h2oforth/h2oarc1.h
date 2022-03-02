@@ -91,8 +91,14 @@ unsigned int ioKey(void);
 void ioEmit(unsigned int);
 void ioStorePort(unsigned long, unsigned int);
 unsigned int ioGetPort(unsigned long);
-#ifndef ARDUINO
+#ifndef ARDUINO 
+#if defined(__DJGPP__) || defined (__WATCOMC__)
+void delay(unsigned int ); /* unsigned _msec */
+#else
 void delay(unsigned long);
+#endif
+#endif
+#ifndef ARDUINO
 void pinMode(unsigned int, unsigned int);
 void digitalWrite(unsigned int, unsigned int);
 unsigned int digitalRead(unsigned int);

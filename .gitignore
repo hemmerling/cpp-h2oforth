@@ -25,7 +25,6 @@
 **/*.mk1
 **/*.obj
 **/*.rex
-**/*.tgt
 **/*.sym
 
 # Borland C/C++ 5.5 commandline tools
