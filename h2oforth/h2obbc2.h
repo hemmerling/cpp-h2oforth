@@ -486,7 +486,7 @@ void bbc79DDot(void) {
 		LONG_LONG value = 0;
 		privateSetBaseLFormat();
 		value = (LONG_LONG)(forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex])
-			<< (sizeof(forthTasks[forthState.forthCurrentTask].dataStackSpace[0]) * 4); /* ?? */
+			<< (sizeof(forthTasks[forthState.forthCurrentTask].dataStackSpace[0]) * 4);
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 			forthTasks[forthState.forthCurrentTask].baseFormat, value +
 			forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
@@ -888,9 +888,11 @@ void bbc79QError(void) {
 		CELL_INTEGER errorNumber = forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex];
 		if (forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]) {
 			forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex++] = errorNumber;
+#if defined (__DEBUG2__)
 			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
-				"test %d %d\n", forthTasks[forthState.forthCurrentTask].dataStackIndex, errorNumber);
+				"Error %d %d\n", forthTasks[forthState.forthCurrentTask].dataStackIndex, errorNumber);
 			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+#endif
 			/* Call another FORTH word */
 			bbc79Error();
 		};

@@ -67,13 +67,15 @@ void readBlocks(char* filename) {
 		FPUTS_ERR("\n");
 		createDefaultBlock();
 		if (forthState.forthIsVerbose) {
-			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "H2oForth - Done Writing the default blocks file %s", filename);
+			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
+						 "H2oForth - Done Writing the default blocks file %s", filename);
 			PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 		};
 		exit(EXIT_BLOCKS_NOTFOUND);
 	};
 
-	while (_read(fd, forthTasks[forthState.forthCurrentTask].ioBlockBuffer, sizeof(forthTasks[forthState.forthCurrentTask].ioBlockBuffer))) {
+	while (_read(fd, forthTasks[forthState.forthCurrentTask].ioBlockBuffer, 
+	       sizeof(forthTasks[forthState.forthCurrentTask].ioBlockBuffer))) {
 		int ii;
 		char lineBuffer[67];
 		for (ii = 0; ii < BLOCK_LINES; ii++) {

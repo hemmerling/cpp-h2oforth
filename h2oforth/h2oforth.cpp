@@ -1278,11 +1278,6 @@ void forthParseTib(void) {
 			};
 		};
 		aTibIndex++;
-#if defined (__DEBUG2__)
-		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "continue [%d]", aTibIndex);
-		PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
-#endif
-
 	};
 }
 
