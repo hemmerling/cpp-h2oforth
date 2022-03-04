@@ -576,15 +576,10 @@
 /* Macros */
 #if defined (__DEBUG__)
 #ifdef ARDUINO
-//#define DEBUG_WORD(X)
-#define DEBUG_WORD(X) Serial.println(F(X));
-//#define DEBUG_WORD(X) privateDebugWord((char *)X);
-/* TBD: Storage of Strings in Flash ROM does not yet work: */
-//#define DEBUG_WORD(X) {static const PROGMEM char nameOfFunction[] = X; privateDebugWord((char *)pgm_read_ptr(nameOfFunction));};
+#define DEBUG_WORD(X) privateDebugWord((char *)F(X));
+//#define DEBUG_WORD(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateDebugWord(buffer);};
 #else
 #define DEBUG_WORD(X) privateDebugWord((char *)X);
-//#define DEBUG_WORD(X) {static const char nameOfFunction[] = X; privateDebugWord((char *)nameOfFunction);};
-//#define DEBUG_WORD(X) {char *nameOfFunction=(char *)X; privateDebugWord(nameOfFunction);};
 #endif
 #else
 #define DEBUG_WORD(X)

@@ -1138,6 +1138,7 @@ int isPermWord(void) {
 	return(result);
 }
 
+
 /* Parse the terminal input buffer (tib) */
 void forthParseTib(void) {
 	int aTibIndex = 0;
@@ -1190,6 +1191,7 @@ void forthParseTib(void) {
 				PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 
+//#define POINTER_TEST
 #ifdef POINTER_TEST
     static const char string_0[] PROGMEM = "String 0"; // Definiere deine Strings "String 0" ist hier nur ein Beispiel
     static const char string_1[] PROGMEM = "String 1"; // Definiere deine Strings "String 1" ist hier nur ein Beispiel
@@ -1207,7 +1209,12 @@ void forthParseTib(void) {
     } typedef_forthWord2;
 
     static const PROGMEM typedef_forthWord2 forthWord2 = { "TEST2" };
-    static const PROGMEM typedef_forthWord2 forthWord3[] = { "TEST3a", "TEST3b"};
+    static const PROGMEM typedef_forthWord2 forthWord3[] = { "TEST3a", "TEST3b" };
+
+    static const PROGMEM char forthWord4a[] = "Single TEST4a";
+    static const PROGMEM char forthWord4b[] = "Single TEST4b";
+    static const PROGMEM char* const forthWord4[] = { "TEST4a", "TEST4b"};
+    static const PROGMEM char* const forthWord5[] = { forthWord4a, forthWord4b };
 
 //    for (int i = 0; i < 6; i++) {
 //      strcpy_P(buffer, (char*)pgm_read_word(&(string_table[1])));
@@ -1224,13 +1231,49 @@ void forthParseTib(void) {
       Serial.println(myptr);
       forthOperation funcptr = pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[0].forthWords[0].forthOpt);
       funcptr();
+
+      Serial.println("Start");
+      int a;
+      a = strlen_P(forthWord4a);
+      Serial.println(a); 
+ 
+      //strcpy_PF(buffer, (char*)pgm_read_word(forthWord4a));
+      strcpy_P(buffer, PSTR("Here you go!"));
+      Serial.println(buffer); 
+      strcpy_P(buffer, forthWord4a);
+      Serial.println(buffer); 
+
+// #define DEBUG_WORD2(X) {static const PROGMEM char nameOfFunction[] = X; \
+// char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, nameOfFunction); \ 
+// Serial.println(buffer); \
+//;};
+//#define DEBUG_WORD3(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); \ 
+//Serial.println(buffer);};
+
+#define DEBUG_WORD3(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateDebugWord(buffer);};
+
+      DEBUG_WORD3("test debug funktioniert");
+
+//      myptr = (char *)pgm_read_ptr(forthWord4a);
+//      Serial.println(myptr);
+
+      Serial.println("Finish");
+
+      myptr = (char *)pgm_read_ptr(&forthWord4[1]);
+      Serial.println(myptr);
+      
+      strcpy_P(buffer, (char*)pgm_read_word(&(forthWord5[1])));
+      Serial.println(buffer); 
+
+      //myptr = (char *)pgm_read_ptr(&string_0);
+      //Serial.println(myptr);
+        // privateDebugWord((char *)pgm_read_ptr(&(nameOfFunction)));
+   
       //strcpy_P(buffer, (char*)pgm_read_word(&(forthWord2.forthWordName))); // Casts und Dereferenzierung des Speichers
  //     Serial.println(buffer); // Gib den gelesenen Wert aus
   //    delay(500); // Warte eine halbe Sekunde
   //  };
 #endif
-    // return; // zzz
-
 				if (!isWordFound) {
 					if (isSPIntegerWord) {
 						storeSPInteger();
