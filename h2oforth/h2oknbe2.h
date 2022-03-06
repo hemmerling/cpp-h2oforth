@@ -5,279 +5,279 @@
 /* Primitives */
 
 void knaggsbennetStore(void) {
-	DEBUG_WORD("knaggsbennetStore")
+	MESSSAGE_DEBUG("knaggsbennetStore")
 }
 
 void knaggsbennetComma(void) {
-	DEBUG_WORD("knaggsbennetComma")
+	MESSSAGE_DEBUG("knaggsbennetComma")
 }
 
 void knaggsbennetFetch(void) {
-	DEBUG_WORD("knaggsbennetFetch")
+	MESSSAGE_DEBUG("knaggsbennetFetch")
 }
 
 void knaggsbennetAlign(void) {
-	DEBUG_WORD("knaggsbennetAlign")
+	MESSSAGE_DEBUG("knaggsbennetAlign")
 }
 
 void knaggsbennetAligned(void) {
-	DEBUG_WORD("knaggsbennetAligned")
+	MESSSAGE_DEBUG("knaggsbennetAligned")
 }
 
 void knaggsbennetCellPlus(void) {
-	DEBUG_WORD("knaggsbennetCellPlus")
+	MESSSAGE_DEBUG("knaggsbennetCellPlus")
 }
 
 void knaggsbennetCells(void) {
-	DEBUG_WORD("knaggsbennetCells")
+	MESSSAGE_DEBUG("knaggsbennetCells")
 }
 
 void knaggsbennetCStore(void) {
-	DEBUG_WORD("knaggsbennetCStore")
+	MESSSAGE_DEBUG("knaggsbennetCStore")
 }
 
 void knaggsbennetC(void) {
-	DEBUG_WORD("knaggsbennetC")
+	MESSSAGE_DEBUG("knaggsbennetC")
 }
 
 void knaggsbennetCCommaCFetch(void) {
-	DEBUG_WORD("knaggsbennetCCommaCFetch")
+	MESSSAGE_DEBUG("knaggsbennetCCommaCFetch")
 }
 
 void knaggsbennetCAlign(void) {
-	DEBUG_WORD("knaggsbennetCAlign")
+	MESSSAGE_DEBUG("knaggsbennetCAlign")
 }
 
 void knaggsbennetCAligned(void) {
-	DEBUG_WORD("knaggsbennetCAligned")
+	MESSSAGE_DEBUG("knaggsbennetCAligned")
 }
 
 void knaggsbennetCharPlus(void) {
-	DEBUG_WORD("knaggsbennetCharPlus")
+	MESSSAGE_DEBUG("knaggsbennetCharPlus")
 }
 
 void knaggsbennetChars(void) {
-	DEBUG_WORD("knaggsbennetChars")
+	MESSSAGE_DEBUG("knaggsbennetChars")
 }
 
 void knaggsbennetPlus(void) {
-	DEBUG_WORD("knaggsbennetPlus")
+	MESSSAGE_DEBUG("knaggsbennetPlus")
 }
 
 void knaggsbennetStar(void) {
-	DEBUG_WORD("knaggsbennetStar")
+	MESSSAGE_DEBUG("knaggsbennetStar")
 }
 
 void knaggsbennetTwoStar(void) {
-	DEBUG_WORD("knaggsbennetTwoStar")
+	MESSSAGE_DEBUG("knaggsbennetTwoStar")
 }
 
 void knaggsbennetStarSlashMod(void) {
-	DEBUG_WORD("knaggsbennetStarSlashMod")
+	MESSSAGE_DEBUG("knaggsbennetStarSlashMod")
 }
 
 void knaggsbennetMinus(void) {
-	DEBUG_WORD("knaggsbennetMinus")
+	MESSSAGE_DEBUG("knaggsbennetMinus")
 }
 
 void knaggsbennetSlash(void) {
-	DEBUG_WORD("knaggsbennetSlash")
+	MESSSAGE_DEBUG("knaggsbennetSlash")
 }
 
 void knaggsbennetTwoSlash(void) {
-	DEBUG_WORD("knaggsbennetTwoSlash")
+	MESSSAGE_DEBUG("knaggsbennetTwoSlash")
 }
 
 void knaggsbennetMod(void) {
-	DEBUG_WORD("knaggsbennetMod")
+	MESSSAGE_DEBUG("knaggsbennetMod")
 }
 
 void knaggsbennetZeroEquals(void) {
-	DEBUG_WORD("knaggsbennetZeroEquals")
+	MESSSAGE_DEBUG("knaggsbennetZeroEquals")
 }
 
 void knaggsbennetLessThen(void) {
-	DEBUG_WORD("knaggsbennetLessThen")
+	MESSSAGE_DEBUG("knaggsbennetLessThen")
 }
 
 void knaggsbennetAnd(void) {
-	DEBUG_WORD("knaggsbennetAnd")
+	MESSSAGE_DEBUG("knaggsbennetAnd")
 }
 
 void knaggsbennetInvert(void) {
-	DEBUG_WORD("knaggsbennetInvert")
+	MESSSAGE_DEBUG("knaggsbennetInvert")
 }
 
 void knaggsbennetTrue(void) {
-	DEBUG_WORD("knaggsbennetTrue")
+	MESSSAGE_DEBUG("knaggsbennetTrue")
 }
 
 void knaggsbennetLShift(void) {
-	DEBUG_WORD("knaggsbennetLShift")
+	MESSSAGE_DEBUG("knaggsbennetLShift")
 }
 
 void knaggsbennetEquals(void) {
-	DEBUG_WORD("knaggsbennetEquals")
+	MESSSAGE_DEBUG("knaggsbennetEquals")
 }
 
 void knaggsbennetGreaterThan(void) {
-	DEBUG_WORD("knaggsbennetGreaterThan")
+	MESSSAGE_DEBUG("knaggsbennetGreaterThan")
 }
 
 void knaggsbennetOr(void) {
-	DEBUG_WORD("knaggsbennetOr")
+	MESSSAGE_DEBUG("knaggsbennetOr")
 }
 
 void knaggsbennetXor(void) {
-	DEBUG_WORD("knaggsbennetXor")
+	MESSSAGE_DEBUG("knaggsbennetXor")
 }
 
 void knaggsbennetFalse(void) {
-	DEBUG_WORD("knaggsbennetFalse")
+	MESSSAGE_DEBUG("knaggsbennetFalse")
 }
 
 void knaggsbennetRShift(void) {
-	DEBUG_WORD("knaggsbennetRShift")
+	MESSSAGE_DEBUG("knaggsbennetRShift")
 }
 
 void knaggsbennetDupe(void) {
-	DEBUG_WORD("knaggsbennetDupe")
+	MESSSAGE_DEBUG("knaggsbennetDupe")
 }
 
 void knaggsbennetSwap(void) {
-	DEBUG_WORD("knaggsbennetSwap")
+	MESSSAGE_DEBUG("knaggsbennetSwap")
 }
 
 void knaggsbennetToR(void) {
-	DEBUG_WORD("knaggsbennetToR")
+	MESSSAGE_DEBUG("knaggsbennetToR")
 }
 
 void knaggsbennetRFetch(void) {
-	DEBUG_WORD("knaggsbennetRFetch")
+	MESSSAGE_DEBUG("knaggsbennetRFetch")
 }
 
 void knaggsbennetDrop(void) {
-	DEBUG_WORD("knaggsbennetDrop")
+	MESSSAGE_DEBUG("knaggsbennetDrop")
 }
 
 void knaggsbennetOver(void) {
-	DEBUG_WORD("knaggsbennetOver")
+	MESSSAGE_DEBUG("knaggsbennetOver")
 }
 
 void knaggsbennetRFrom(void) {
-	DEBUG_WORD("knaggsbennetRFrom")
+	MESSSAGE_DEBUG("knaggsbennetRFrom")
 }
 
 void knaggsbennetRote(void) {
-	DEBUG_WORD("knaggsbennetRote")
+	MESSSAGE_DEBUG("knaggsbennetRote")
 }
 
 void knaggsbennetIf(void) {
-	DEBUG_WORD("knaggsbennetIf")
+	MESSSAGE_DEBUG("knaggsbennetIf")
 }
 
 void knaggsbennetThen(void) {
-	DEBUG_WORD("knaggsbennetThen")
+	MESSSAGE_DEBUG("knaggsbennetThen")
 }
 
 void knaggsbennetWhile(void) {
-	DEBUG_WORD("knaggsbennetWhile")
+	MESSSAGE_DEBUG("knaggsbennetWhile")
 }
 
 void knaggsbennetRepeat(void) {
-	DEBUG_WORD("knaggsbennetRepeat")
+	MESSSAGE_DEBUG("knaggsbennetRepeat")
 }
 
 void knaggsbennetDo(void) {
-	DEBUG_WORD("knaggsbennetDo")
+	MESSSAGE_DEBUG("knaggsbennetDo")
 }
 
 void knaggsbennetI(void) {
-	DEBUG_WORD("knaggsbennetI")
+	MESSSAGE_DEBUG("knaggsbennetI")
 }
 
 void knaggsbennetTick(void) {
-	DEBUG_WORD("knaggsbennetTick")
+	MESSSAGE_DEBUG("knaggsbennetTick")
 }
 
 void knaggsbennetElse(void) {
-	DEBUG_WORD("knaggsbennetElse")
+	MESSSAGE_DEBUG("knaggsbennetElse")
 }
 
 void knaggsbennetBegin(void) {
-	DEBUG_WORD("knaggsbennetBegin")
+	MESSSAGE_DEBUG("knaggsbennetBegin")
 }
 
 void knaggsbennetAgain(void) {
-	DEBUG_WORD("knaggsbennetAgain")
+	MESSSAGE_DEBUG("knaggsbennetAgain")
 }
 
 void knaggsbennetUntil(void) {
-	DEBUG_WORD("knaggsbennetUntil")
+	MESSSAGE_DEBUG("knaggsbennetUntil")
 }
 
 void knaggsbennetLoop(void) {
-	DEBUG_WORD("knaggsbennetLoop")
+	MESSSAGE_DEBUG("knaggsbennetLoop")
 }
 
 void knaggsbennetJ(void) {
-	DEBUG_WORD("knaggsbennetJ")
+	MESSSAGE_DEBUG("knaggsbennetJ")
 }
 
 void knaggsbennetExecute(void) {
-	DEBUG_WORD("knaggsbennetExecute")
+	MESSSAGE_DEBUG("knaggsbennetExecute")
 }
 
 void knaggsbennetColon(void) {
-	DEBUG_WORD("knaggsbennetColon")
+	MESSSAGE_DEBUG("knaggsbennetColon")
 }
 
 void knaggsbennetConstant(void) {
-	DEBUG_WORD("knaggsbennetConstant")
+	MESSSAGE_DEBUG("knaggsbennetConstant")
 }
 
 void knaggsbennetCreate(void) {
-	DEBUG_WORD("knaggsbennetCreate")
+	MESSSAGE_DEBUG("knaggsbennetCreate")
 }
 
 void knaggsbennetSemicolon(void) {
-	DEBUG_WORD("knaggsbennetSemicolon")
+	MESSSAGE_DEBUG("knaggsbennetSemicolon")
 }
 
 void knaggsbennetVariable(void) {
-	DEBUG_WORD("knaggsbennetVariable")
+	MESSSAGE_DEBUG("knaggsbennetVariable")
 }
 
 void knaggsbennetDoes(void) {
-	DEBUG_WORD("knaggsbennetDoes")
+	MESSSAGE_DEBUG("knaggsbennetDoes")
 }
 
 void knaggsbennetKey(void) {
-	DEBUG_WORD("knaggsbennetKey")
+	MESSSAGE_DEBUG("knaggsbennetKey")
 }
 
 void knaggsbennetEmit(void) {
-	DEBUG_WORD("knaggsbennetEmit")
+	MESSSAGE_DEBUG("knaggsbennetEmit")
 }
 
 void knaggsbennetKeyQuestion(void) {
-	DEBUG_WORD("knaggsbennetKeyQuestion")
+	MESSSAGE_DEBUG("knaggsbennetKeyQuestion")
 }
 
 void knaggsbennetCr(void) {
-	DEBUG_WORD("knaggsbennetCr")
+	MESSSAGE_DEBUG("knaggsbennetCr")
 }
 
 void knaggsbennetParen(void) {
-	DEBUG_WORD("knaggsbennetParen")
+	MESSSAGE_DEBUG("knaggsbennetParen")
 }
 
 void knaggsbennetDotS(void) {
-	DEBUG_WORD("knaggsbennetDotS")
+	MESSSAGE_DEBUG("knaggsbennetDotS")
 }
 
 void knaggsbennetBackslash(void) {
-	DEBUG_WORD("knaggsbennetBackslash")
+	MESSSAGE_DEBUG("knaggsbennetBackslash")
 }
 
 #endif

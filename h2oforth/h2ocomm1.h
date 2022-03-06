@@ -3,10 +3,8 @@
 
 /* Definitions of FORTH words common to one or more FORTH standards & FORTH implementations */
 
-#if defined (__DEBUG__)
-void privateDebugWord(char*);
-#endif
-char* privatBaseConversion(CELL_INTEGER, CELL_INTEGER);
+void privateMessage(char*, int, int, int);
+char* privateBaseConversion(CELL_INTEGER, CELL_INTEGER);
 void privateMessageHandler(void);
 void privateSetBaseFormat(void);
 void privateSetBaseLFormat(void);

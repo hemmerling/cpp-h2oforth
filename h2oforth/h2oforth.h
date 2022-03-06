@@ -287,6 +287,19 @@
 #define STRING_SPACE " "
 #define STRING_CR "\n"
 
+/* Linux & MSDOS & Windows shell streams */
+#define STREAM_STDIN 0
+#define STREAM_STDOUT 1
+#define STREAM_STDERR 2
+/* Powershell streams */
+#define STREAM_INPUT 0
+#define STREAM_SUCCESS 1
+#define STREAM_ERROR 2
+#define STREAM_WARNING 3
+#define STREAM_VERBOSE 4
+#define STREAM_DEBUG 5
+#define STREAM_INFORMATION 6
+
 #define COPYRIGHT_MESSAGE "H2oForth by Rolf Hemmerling, (c) 2021-2022, MIT License"
 
 #define MAX_DATASTACK 64
@@ -458,6 +471,8 @@
 #define FPUTS_OUT(STRING) Serial.print(STRING)
 #define FPUTS_ERR(STRING) Serial.print(STRING)
 #define PERROR(STRING) Serial.println(STRING)
+#define FPUTC_OUT(CHAR) Serial.write(CHAR)
+#define FPUTC_ERR(CHAR) Serial.write(CHAR)
 #define _PUTCH(CHAR) Serial.write(CHAR)
 #define PUTCHAR(CHAR) Serial.write(CHAR)
 #define _GETCH() Serial.read()
@@ -476,6 +491,8 @@
 #define FPUTS_OUT(STRING) fputs(STRING, stdout)
 #define FPUTS_ERR(STRING) fputs(STRING, stderr)
 #define PERROR(STRING) perror(STRING)
+#define FPUTC_OUT(CHAR) fputc(CHAR, stdout)
+#define FPUTC_ERR(CHAR) fputc(CHAR, stderr)
 #define _PUTCH(CHAR) _putch(CHAR)
 #define PUTCHAR(CHAR) putchar(CHAR)
 #define _GETCH() _getch()
@@ -576,13 +593,20 @@
 /* Macros */
 #if defined (__DEBUG__)
 #ifdef ARDUINO
-#define DEBUG_WORD(X) privateDebugWord((char *)F(X));
-//#define DEBUG_WORD(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateDebugWord(buffer);};
+#define MESSSAGE_SUCCESS(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateMessage(buffer, STREAM_SUCCESS, FALSE, TRUE);};
+#define MESSSAGE_DEBUG(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateMessage(buffer, STREAM_DEBUG, TRUE, TRUE);};
+#define MESSSAGE_INFORMATION(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateMessage(buffer, STREAM_INFORMATION, FALSE, TRUE);};
+/* This macro works :-): */
+//#define MESSSAGE_DEBUG(X) {FPUTC_ERR(CHAR_CR); FPUTS_ERR(F(X)); FPUTC_ERR(CHAR_CR);};
+/* This macro does not (yet) work :-(: */
+//#define MESSSAGE_DEBUG(X) privateMessage(F(X), STREAM_DEBUG, TRUE, TRUE);
 #else
-#define DEBUG_WORD(X) privateDebugWord((char *)X);
+#define MESSSAGE_DEBUG(X) privateMessage((char *)X, STREAM_DEBUG, TRUE, TRUE);
+#define MESSAGE_SUCCESS(X) privateMessage((char *)X, STREAM_SUCCESS, FALSE, TRUE);
+#define MESSAGE_INFORMATION(X) privateMessage((char *)X, STREAM_INFORMATION, FALSE, TRUE);
 #endif
 #else
-#define DEBUG_WORD(X)
+#define MESSSAGE_DEBUG(X)
 #endif
 
 int isSPInteger(void);

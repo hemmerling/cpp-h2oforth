@@ -6,941 +6,941 @@
 /* Primitives */
 
 void camelExit(void) {
-	DEBUG_WORD("camelExit")
+	MESSSAGE_DEBUG("camelExit")
 }
 
 void camelExecute(void) {
-	DEBUG_WORD("camelExecute")
+	MESSSAGE_DEBUG("camelExecute")
 }
 
 void camelLit(void) {
-	DEBUG_WORD("camelLit")
+	MESSSAGE_DEBUG("camelLit")
 }
 
 void camelDup(void) {
-	DEBUG_WORD("camelDup")
+	MESSSAGE_DEBUG("camelDup")
 }
 
 void camelQDup(void) {
-	DEBUG_WORD("camelQDup")
+	MESSSAGE_DEBUG("camelQDup")
 }
 
 void camelDrop(void) {
-	DEBUG_WORD("camelDrop")
+	MESSSAGE_DEBUG("camelDrop")
 }
 
 void camelSwap(void) {
-	DEBUG_WORD("camelSwap")
+	MESSSAGE_DEBUG("camelSwap")
 }
 
 void camelOver(void) {
-	DEBUG_WORD("camelOver")
+	MESSSAGE_DEBUG("camelOver")
 }
 
 void camelRot(void) {
-	DEBUG_WORD("camelRot")
+	MESSSAGE_DEBUG("camelRot")
 }
 
 void camelNip(void) {
-	DEBUG_WORD("camelNip")
+	MESSSAGE_DEBUG("camelNip")
 }
 
 void camelTuck(void) {
-	DEBUG_WORD("camelTuck")
+	MESSSAGE_DEBUG("camelTuck")
 }
 
 void camelToR(void) {
-	DEBUG_WORD("camelToR")
+	MESSSAGE_DEBUG("camelToR")
 }
 
 void camelRFrom(void) {
-	DEBUG_WORD("camelRFrom")
+	MESSSAGE_DEBUG("camelRFrom")
 }
 
 void camelRFetch(void) {
-	DEBUG_WORD("camelRFetch")
+	MESSSAGE_DEBUG("camelRFetch")
 }
 
 void camelSPFetch(void) {
-	DEBUG_WORD("camelSPFetch")
+	MESSSAGE_DEBUG("camelSPFetch")
 }
 
 void camelSPStore(void) {
-	DEBUG_WORD("camelSPStore")
+	MESSSAGE_DEBUG("camelSPStore")
 }
 
 void camelRPfetch(void) {
-	DEBUG_WORD("camelRPfetch")
+	MESSSAGE_DEBUG("camelRPfetch")
 }
 
 void camelRPStore(void) {
-	DEBUG_WORD("camelRPStore")
+	MESSSAGE_DEBUG("camelRPStore")
 }
 
 void camelFetch(void) {
-	DEBUG_WORD("camelFetch")
+	MESSSAGE_DEBUG("camelFetch")
 }
 
 void camelStore(void) {
-	DEBUG_WORD("camelStore")
+	MESSSAGE_DEBUG("camelStore")
 }
 
 void camelCFetch(void) {
-	DEBUG_WORD("camelCFetch")
+	MESSSAGE_DEBUG("camelCFetch")
 }
 
 void camelCStore(void) {
-	DEBUG_WORD("camelCStore")
+	MESSSAGE_DEBUG("camelCStore")
 }
 
 void camelIFetch(void) {
-	DEBUG_WORD("camelIFetch")
+	MESSSAGE_DEBUG("camelIFetch")
 }
 
 void camelIStore(void) {
-	DEBUG_WORD("camelIStore")
+	MESSSAGE_DEBUG("camelIStore")
 }
 
 void camelICFetch(void) {
-	DEBUG_WORD("camelICFetch")
+	MESSSAGE_DEBUG("camelICFetch")
 }
 
 void camelICStore(void) {
-	DEBUG_WORD("camelICStore")
+	MESSSAGE_DEBUG("camelICStore")
 }
 
 void camelHFetch(void) {
-	DEBUG_WORD("camelHFetch")
+	MESSSAGE_DEBUG("camelHFetch")
 }
 
 void camelHStore(void) {
-	DEBUG_WORD("camelHStore")
+	MESSSAGE_DEBUG("camelHStore")
 }
 
 void camelHCFetch(void) {
-	DEBUG_WORD("camelHCFetch")
+	MESSSAGE_DEBUG("camelHCFetch")
 }
 
 void camelHCStore(void) {
-	DEBUG_WORD("camelHCStore")
+	MESSSAGE_DEBUG("camelHCStore")
 }
 
 void camelPlus(void) {
-	DEBUG_WORD("camelPlus")
+	MESSSAGE_DEBUG("camelPlus")
 }
 
 void camelPlusStore(void) {
-	DEBUG_WORD("camelPlusStore")
+	MESSSAGE_DEBUG("camelPlusStore")
 }
 
 void camelMPlus(void) {
-	DEBUG_WORD("camelMPlus")
+	MESSSAGE_DEBUG("camelMPlus")
 }
 
 void camelMinus(void) {
-	DEBUG_WORD("camelMinus")
+	MESSSAGE_DEBUG("camelMinus")
 }
 
 void camelMult(void) {
-	DEBUG_WORD("camelMult")
+	MESSSAGE_DEBUG("camelMult")
 }
 
 void camelDiv(void) {
-	DEBUG_WORD("camelDiv")
+	MESSSAGE_DEBUG("camelDiv")
 }
 
 void camelAnd(void) {
-	DEBUG_WORD("camelAnd")
+	MESSSAGE_DEBUG("camelAnd")
 }
 
 void camelOr(void) {
-	DEBUG_WORD("camelOr")
+	MESSSAGE_DEBUG("camelOr")
 }
 
 void camelXor(void) {
-	DEBUG_WORD("camelXor")
+	MESSSAGE_DEBUG("camelXor")
 }
 
 void camelInvert(void) {
-	DEBUG_WORD("camelInvert")
+	MESSSAGE_DEBUG("camelInvert")
 }
 
 void camelNegate(void) {
-	DEBUG_WORD("camelNegate")
+	MESSSAGE_DEBUG("camelNegate")
 }
 
 void camelOnePlus(void) {
-	DEBUG_WORD("camelOnePlus")
+	MESSSAGE_DEBUG("camelOnePlus")
 }
 
 void camelOneMinus(void) {
-	DEBUG_WORD("camelOneMinus")
+	MESSSAGE_DEBUG("camelOneMinus")
 }
 
 void camelSwapBytes(void) {
-	DEBUG_WORD("camelSwapBytes")
+	MESSSAGE_DEBUG("camelSwapBytes")
 }
 
 void camelTwoStar(void) {
-	DEBUG_WORD("camelTwoStar")
+	MESSSAGE_DEBUG("camelTwoStar")
 }
 
 void camelTwoSlash(void) {
-	DEBUG_WORD("camelTwoSlash")
+	MESSSAGE_DEBUG("camelTwoSlash")
 }
 
 void camelLShift(void) {
-	DEBUG_WORD("camelLShift")
+	MESSSAGE_DEBUG("camelLShift")
 }
 
 void camelRShift(void) {
-	DEBUG_WORD("camelRShift")
+	MESSSAGE_DEBUG("camelRShift")
 }
 
 void camelZeroEqual(void) {
-	DEBUG_WORD("camelZeroEqual")
+	MESSSAGE_DEBUG("camelZeroEqual")
 }
 
 void camelZeroLess(void) {
-	DEBUG_WORD("camelZeroLess")
+	MESSSAGE_DEBUG("camelZeroLess")
 }
 
 void camelEqual(void) {
-	DEBUG_WORD("camelEqual")
+	MESSSAGE_DEBUG("camelEqual")
 }
 
 void camelNotEqual(void) {
-	DEBUG_WORD("camelNotEqual")
+	MESSSAGE_DEBUG("camelNotEqual")
 }
 
 void camelLess(void) {
-	DEBUG_WORD("camelLess")
+	MESSSAGE_DEBUG("camelLess")
 }
 
 void camelGreater(void) {
-	DEBUG_WORD("camelGreater")
+	MESSSAGE_DEBUG("camelGreater")
 }
 
 void camelULess(void) {
-	DEBUG_WORD("camelULess")
+	MESSSAGE_DEBUG("camelULess")
 }
 
 void camelUGreater(void) {
-	DEBUG_WORD("camelUGreater")
+	MESSSAGE_DEBUG("camelUGreater")
 }
 
 void camelUBranch(void) {
-	DEBUG_WORD("camelUBranch")
+	MESSSAGE_DEBUG("camelUBranch")
 }
 
 void camelBranch(void) {
-	DEBUG_WORD("camelBranch")
+	MESSSAGE_DEBUG("camelBranch")
 }
 
 void camelQBranch(void) {
-	DEBUG_WORD("camelQBranch")
+	MESSSAGE_DEBUG("camelQBranch")
 }
 
 void camelZPlusLoop(void) {
-	DEBUG_WORD("camelZPlusLoop")
+	MESSSAGE_DEBUG("camelZPlusLoop")
 }
 
 void camelZLoop(void) {
-	DEBUG_WORD("camelZLoop")
+	MESSSAGE_DEBUG("camelZLoop")
 }
 
 void camelZdo(void) {
-	DEBUG_WORD("camelZdo")
+	MESSSAGE_DEBUG("camelZdo")
 }
 
 void camelI(void) {
-	DEBUG_WORD("camelI")
+	MESSSAGE_DEBUG("camelI")
 }
 
 void camelJ(void) {
-	DEBUG_WORD("camelJ")
+	MESSSAGE_DEBUG("camelJ")
 }
 
 void camelUnLoop(void) {
-	DEBUG_WORD("camelUnLoop")
+	MESSSAGE_DEBUG("camelUnLoop")
 }
 
 void camelUmStar(void) {
-	DEBUG_WORD("camelUmStar")
+	MESSSAGE_DEBUG("camelUmStar")
 }
 
 void camelUmSlashMod(void) {
-	DEBUG_WORD("camelUmSlashMod")
+	MESSSAGE_DEBUG("camelUmSlashMod")
 }
 
 void camelFill(void) {
-	DEBUG_WORD("camelFill")
+	MESSSAGE_DEBUG("camelFill")
 }
 
 void camelCMove(void) {
-	DEBUG_WORD("camelCMove")
+	MESSSAGE_DEBUG("camelCMove")
 }
 
 void camelCMoveUp(void) {
-	DEBUG_WORD("camelCMoveUp")
+	MESSSAGE_DEBUG("camelCMoveUp")
 }
 
 void camelIToD(void) {
-	DEBUG_WORD("camelIToD")
+	MESSSAGE_DEBUG("camelIToD")
 }
 
 void camelSkip(void) {
-	DEBUG_WORD("camelSkip")
+	MESSSAGE_DEBUG("camelSkip")
 }
 
 void camelScan(void) {
-	DEBUG_WORD("camelScan")
+	MESSSAGE_DEBUG("camelScan")
 }
 
 void camelSEqual(void) {
-	DEBUG_WORD("camelSEqual")
+	MESSSAGE_DEBUG("camelSEqual")
 }
 
 void camelNEqual(void) {
-	DEBUG_WORD("camelNEqual")
+	MESSSAGE_DEBUG("camelNEqual")
 }
 
 void camelKey(void) {
-	DEBUG_WORD("camelKey")
+	MESSSAGE_DEBUG("camelKey")
 }
 
 void camelEmit(void) {
-	DEBUG_WORD("camelEmit")
+	MESSSAGE_DEBUG("camelEmit")
 }
 
 void camelKeyQ(void) {
-	DEBUG_WORD("camelKeyQ")
+	MESSSAGE_DEBUG("camelKeyQ")
 }
 
 void camelDotHH(void) {
-	DEBUG_WORD("camelDotHH")
+	MESSSAGE_DEBUG("camelDotHH")
 }
 
 void camelDotHHH(void) {
-	DEBUG_WORD("camelDotHHH")
+	MESSSAGE_DEBUG("camelDotHHH")
 }
 
 void camelDotS(void) {
-	DEBUG_WORD("camelDotS")
+	MESSSAGE_DEBUG("camelDotS")
 }
 
 void camelDump(void) {
-	DEBUG_WORD("camelDump")
+	MESSSAGE_DEBUG("camelDump")
 }
 
 void camelBye(void) {
-	DEBUG_WORD("camelBye")
+	MESSSAGE_DEBUG("camelBye")
 }
 
 /* High level words */
 
 void camelU0(void) {
-	DEBUG_WORD("camelU0")
+	MESSSAGE_DEBUG("camelU0")
 }
 
 void camelToIN(void) {
-	DEBUG_WORD("camelToIN")
+	MESSSAGE_DEBUG("camelToIN")
 }
 
 void camelBase(void) {
-	DEBUG_WORD("camelBase")
+	MESSSAGE_DEBUG("camelBase")
 }
 
 void camelState(void) {
-	DEBUG_WORD("camelState")
+	MESSSAGE_DEBUG("camelState")
 }
 
 void camelDp(void) {
-	DEBUG_WORD("camelDp")
+	MESSSAGE_DEBUG("camelDp")
 }
 
 void camelTickSource(void) {
-	DEBUG_WORD("camelTickSource")
+	MESSSAGE_DEBUG("camelTickSource")
 }
 
 void camelLatest(void) {
-	DEBUG_WORD("camelLatest")
+	MESSSAGE_DEBUG("camelLatest")
 }
 
 void camelHp(void) {
-	DEBUG_WORD("camelHp")
+	MESSSAGE_DEBUG("camelHp")
 }
 
 void camelLp(void) {
-	DEBUG_WORD("camelLp")
+	MESSSAGE_DEBUG("camelLp")
 }
 
 void camelIdp(void) {
-	DEBUG_WORD("camelIdp")
+	MESSSAGE_DEBUG("camelIdp")
 }
 
 void camelNewest(void) {
-	DEBUG_WORD("camelNewest")
+	MESSSAGE_DEBUG("camelNewest")
 }
 
 void camelUInit(void) {
-	DEBUG_WORD("camelUInit")
+	MESSSAGE_DEBUG("camelUInit")
 }
 
 void camelNInit(void) {
-	DEBUG_WORD("camelNInit")
+	MESSSAGE_DEBUG("camelNInit")
 }
 
 void camelPad(void) {
-	DEBUG_WORD("camelPad")
+	MESSSAGE_DEBUG("camelPad")
 }
 
 void camelL0(void) {
-	DEBUG_WORD("camelL0")
+	MESSSAGE_DEBUG("camelL0")
 }
 
 void camelS0(void) {
-	DEBUG_WORD("camelS0")
+	MESSSAGE_DEBUG("camelS0")
 }
 
 void camelR0(void) {
-	DEBUG_WORD("camelR0")
+	MESSSAGE_DEBUG("camelR0")
 }
 
 void camelTib(void) {
-	DEBUG_WORD("camelTib")
+	MESSSAGE_DEBUG("camelTib")
 }
 
 void camelTibSize(void) {
-	DEBUG_WORD("camelTibSize")
+	MESSSAGE_DEBUG("camelTibSize")
 }
 
 void camelZero(void) {
-	DEBUG_WORD("camelZero")
+	MESSSAGE_DEBUG("camelZero")
 }
 
 void camelOne(void) {
-	DEBUG_WORD("camelOne")
+	MESSSAGE_DEBUG("camelOne")
 }
 
 void camelTwo(void) {
-	DEBUG_WORD("camelTwo")
+	MESSSAGE_DEBUG("camelTwo")
 }
 
 void camelThree(void) {
-	DEBUG_WORD("camelThree")
+	MESSSAGE_DEBUG("camelThree")
 }
 
 void camelMinusOne(void) {
-	DEBUG_WORD("camelMinusOne")
+	MESSSAGE_DEBUG("camelMinusOne")
 }
 
 void camelCell(void) {
-	DEBUG_WORD("camelCell")
+	MESSSAGE_DEBUG("camelCell")
 }
 
 void camelHere(void) {
-	DEBUG_WORD("camelHere")
+	MESSSAGE_DEBUG("camelHere")
 }
 
 void camelAllot(void) {
-	DEBUG_WORD("camelAllot")
+	MESSSAGE_DEBUG("camelAllot")
 }
 
 void camelComma(void) {
-	DEBUG_WORD("camelComma")
+	MESSSAGE_DEBUG("camelComma")
 }
 
 void camelCComma(void) {
-	DEBUG_WORD("camelCComma")
+	MESSSAGE_DEBUG("camelCComma")
 }
 
 void camelAligned(void) {
-	DEBUG_WORD("camelAligned")
+	MESSSAGE_DEBUG("camelAligned")
 }
 
 void camelAlign(void) {
-	DEBUG_WORD("camelAlign")
+	MESSSAGE_DEBUG("camelAlign")
 }
 
 void camelCellPlus(void) {
-	DEBUG_WORD("camelCellPlus")
+	MESSSAGE_DEBUG("camelCellPlus")
 }
 
 void camelCharPlus(void) {
-	DEBUG_WORD("camelCharPlus")
+	MESSSAGE_DEBUG("camelCharPlus")
 }
 
 void camelToBody(void) {
-	DEBUG_WORD("camelToBody")
+	MESSSAGE_DEBUG("camelToBody")
 }
 
 void camelCommaXt(void) {
-	DEBUG_WORD("camelCommaXt")
+	MESSSAGE_DEBUG("camelCommaXt")
 }
 
 void camelStoreCF(void) {
-	DEBUG_WORD("camelStoreCF")
+	MESSSAGE_DEBUG("camelStoreCF")
 }
 
 void camelCommaCF(void) {
-	DEBUG_WORD("camelCommaCF")
+	MESSSAGE_DEBUG("camelCommaCF")
 }
 
 void camelStoreColon(void) {
-	DEBUG_WORD("camelStoreColon")
+	MESSSAGE_DEBUG("camelStoreColon")
 }
 
 void camelCommaExit(void) {
-	DEBUG_WORD("camelCommaExit")
+	MESSSAGE_DEBUG("camelCommaExit")
 }
 
 void camelCommaBranch(void) {
-	DEBUG_WORD("camelCommaBranch")
+	MESSSAGE_DEBUG("camelCommaBranch")
 }
 
 void camelCommaDest(void) {
-	DEBUG_WORD("camelCommaDest")
+	MESSSAGE_DEBUG("camelCommaDest")
 }
 
 void camelStoreDest(void) {
-	DEBUG_WORD("camelStoreDest")
+	MESSSAGE_DEBUG("camelStoreDest")
 }
 
 void camelCommaNone(void) {
-	DEBUG_WORD("camelCommaNone")
+	MESSSAGE_DEBUG("camelCommaNone")
 }
 
 void camelTwoFetch(void) {
-	DEBUG_WORD("camelTwoFetch")
+	MESSSAGE_DEBUG("camelTwoFetch")
 }
 
 void camelTwoStore(void) {
-	DEBUG_WORD("camelTwoStore")
+	MESSSAGE_DEBUG("camelTwoStore")
 }
 
 void camelTwoDrop(void) {
-	DEBUG_WORD("camelTwoDrop")
+	MESSSAGE_DEBUG("camelTwoDrop")
 }
 
 void camelTwoDup(void) {
-	DEBUG_WORD("camelTwoDup")
+	MESSSAGE_DEBUG("camelTwoDup")
 }
 
 void camelTwoSwap(void) {
-	DEBUG_WORD("camelTwoSwap")
+	MESSSAGE_DEBUG("camelTwoSwap")
 }
 
 void camelTwoOver(void) {
-	DEBUG_WORD("camelTwoOver")
+	MESSSAGE_DEBUG("camelTwoOver")
 }
 
 void camelSToD(void) {
-	DEBUG_WORD("camelSToD")
+	MESSSAGE_DEBUG("camelSToD")
 }
 
 void camelAbs(void) {
-	DEBUG_WORD("camelAbs")
+	MESSSAGE_DEBUG("camelAbs")
 }
 
 void camelDNegate(void) {
-	DEBUG_WORD("camelDNegate")
+	MESSSAGE_DEBUG("camelDNegate")
 }
 
 void camelQDNegate(void) {
-	DEBUG_WORD("camelQDNegate")
+	MESSSAGE_DEBUG("camelQDNegate")
 }
 
 void camelDAbs(void) {
-	DEBUG_WORD("camelDAbs")
+	MESSSAGE_DEBUG("camelDAbs")
 }
 
 void camelMStar(void) {
-	DEBUG_WORD("camelMStar")
+	MESSSAGE_DEBUG("camelMStar")
 }
 
 void camelSMSlashREM(void) {
-	DEBUG_WORD("camelSMSlashREM")
+	MESSSAGE_DEBUG("camelSMSlashREM")
 }
 
 void camelFMSlashMod(void) {
-	DEBUG_WORD("camelFMSlashMod")
+	MESSSAGE_DEBUG("camelFMSlashMod")
 }
 
 void camelSlashMod(void) {
-	DEBUG_WORD("camelSlashMod")
+	MESSSAGE_DEBUG("camelSlashMod")
 }
 
 void camelMod(void) {
-	DEBUG_WORD("camelMod")
+	MESSSAGE_DEBUG("camelMod")
 }
 
 void camelStarSlashMod(void) {
-	DEBUG_WORD("camelStarSlashMod")
+	MESSSAGE_DEBUG("camelStarSlashMod")
 }
 
 void camelStarSlash(void) {
-	DEBUG_WORD("camelStarSlash")
+	MESSSAGE_DEBUG("camelStarSlash")
 }
 
 void camelMax(void) {
-	DEBUG_WORD("camelMax")
+	MESSSAGE_DEBUG("camelMax")
 }
 
 void camelMin(void) {
-	DEBUG_WORD("camelMin")
+	MESSSAGE_DEBUG("camelMin")
 }
 
 void camelUMax(void) {
-	DEBUG_WORD("camelUMax")
+	MESSSAGE_DEBUG("camelUMax")
 }
 
 void camelUMin(void) {
-	DEBUG_WORD("camelUMin")
+	MESSSAGE_DEBUG("camelUMin")
 }
 
 void camelCells(void) {
-	DEBUG_WORD("camelCells")
+	MESSSAGE_DEBUG("camelCells")
 }
 
 void camelCount(void) {
-	DEBUG_WORD("camelCount")
+	MESSSAGE_DEBUG("camelCount")
 }
 
 void camelCR(void) {
-	DEBUG_WORD("camelCR")
+	MESSSAGE_DEBUG("camelCR")
 }
 
 void camelSpace(void) {
-	DEBUG_WORD("camelSpace")
+	MESSSAGE_DEBUG("camelSpace")
 }
 
 void camelSpaces(void) {
-	DEBUG_WORD("camelSpaces")
+	MESSSAGE_DEBUG("camelSpaces")
 }
 
 void camelAccept(void) {
-	DEBUG_WORD("camelAccept")
+	MESSSAGE_DEBUG("camelAccept")
 }
 
 void camelType(void) {
-	DEBUG_WORD("camelType")
+	MESSSAGE_DEBUG("camelType")
 }
 
 void camelUDSlashMod(void) {
-	DEBUG_WORD("camelUDSlashMod")
+	MESSSAGE_DEBUG("camelUDSlashMod")
 }
 
 void camelUDStar(void) {
-	DEBUG_WORD("camelUDStar")
+	MESSSAGE_DEBUG("camelUDStar")
 }
 
 void camelHold(void) {
-	DEBUG_WORD("camelHold")
+	MESSSAGE_DEBUG("camelHold")
 }
 
 void camelLessNum(void) {
-	DEBUG_WORD("camelLessNum")
+	MESSSAGE_DEBUG("camelLessNum")
 }
 
 void camelToDigit(void) {
-	DEBUG_WORD("camelToDigit")
+	MESSSAGE_DEBUG("camelToDigit")
 }
 
 void camelNum(void) {
-	DEBUG_WORD("camelNum")
+	MESSSAGE_DEBUG("camelNum")
 }
 
 void camelNums(void) {
-	DEBUG_WORD("camelNums")
+	MESSSAGE_DEBUG("camelNums")
 }
 
 void camelNumGreater(void) {
-	DEBUG_WORD("camelNumGreater")
+	MESSSAGE_DEBUG("camelNumGreater")
 }
 
 void camelSign(void) {
-	DEBUG_WORD("camelSign")
+	MESSSAGE_DEBUG("camelSign")
 }
 
 void camelUDot(void) {
-	DEBUG_WORD("camelUDot")
+	MESSSAGE_DEBUG("camelUDot")
 }
 
 void camelDot(void) {
-	DEBUG_WORD("camelDot")
+	MESSSAGE_DEBUG("camelDot")
 }
 
 void camelDecimal(void) {
-	DEBUG_WORD("camelDecimal")
+	MESSSAGE_DEBUG("camelDecimal")
 }
 
 void camelHex(void) {
-	DEBUG_WORD("camelHex")
+	MESSSAGE_DEBUG("camelHex")
 }
 
 void camelSource(void) {
-	DEBUG_WORD("camelSource")
+	MESSSAGE_DEBUG("camelSource")
 }
 
 void camelSlashString(void) {
-	DEBUG_WORD("camelSlashString")
+	MESSSAGE_DEBUG("camelSlashString")
 }
 
 void camelToCounted(void) {
-	DEBUG_WORD("camelToCounted")
+	MESSSAGE_DEBUG("camelToCounted")
 }
 
 void camelAdrToIN(void) {
-	DEBUG_WORD("camelAdrToIN")
+	MESSSAGE_DEBUG("camelAdrToIN")
 }
 
 void camelParse(void) {
-	DEBUG_WORD("camelParse")
+	MESSSAGE_DEBUG("camelParse")
 }
 
 void camelWord(void) {
-	DEBUG_WORD("camelWord")
+	MESSSAGE_DEBUG("camelWord")
 }
 
 void camelZSQuote(void) {
-	DEBUG_WORD("camelZSQuote")
+	MESSSAGE_DEBUG("camelZSQuote")
 }
 
 void camelSQuote(void) {
-	DEBUG_WORD("camelSQuote")
+	MESSSAGE_DEBUG("camelSQuote")
 }
 
 void camelDotQuote(void) {
-	DEBUG_WORD("camelDotQuote")
+	MESSSAGE_DEBUG("camelDotQuote")
 }
 
 void camelNFAToLFA(void) {
-	DEBUG_WORD("camelNFAToLFA")
+	MESSSAGE_DEBUG("camelNFAToLFA")
 }
 
 void camelNFAToCFA(void) {
-	DEBUG_WORD("camelNFAToCFA")
+	MESSSAGE_DEBUG("camelNFAToCFA")
 }
 
 void camelImmedQ(void) {
-	DEBUG_WORD("camelImmedQ")
+	MESSSAGE_DEBUG("camelImmedQ")
 }
 
 void camelFind(void) {
-	DEBUG_WORD("camelFind")
+	MESSSAGE_DEBUG("camelFind")
 }
 
 void camelLiteral(void) {
-	DEBUG_WORD("camelLiteral")
+	MESSSAGE_DEBUG("camelLiteral")
 }
 
 void camelDigitQ(void) {
-	DEBUG_WORD("camelDigitQ")
+	MESSSAGE_DEBUG("camelDigitQ")
 }
 
 void camelQSign(void) {
-	DEBUG_WORD("camelQSign")
+	MESSSAGE_DEBUG("camelQSign")
 }
 
 void camelToNumber(void) {
-	DEBUG_WORD("camelToNumber")
+	MESSSAGE_DEBUG("camelToNumber")
 }
 
 void camelQNumber(void) {
-	DEBUG_WORD("camelQNumber")
+	MESSSAGE_DEBUG("camelQNumber")
 }
 
 void camelInterpret(void) {
-	DEBUG_WORD("camelInterpret")
+	MESSSAGE_DEBUG("camelInterpret")
 }
 
 void camelEvaluate(void) {
-	DEBUG_WORD("camelEvaluate")
+	MESSSAGE_DEBUG("camelEvaluate")
 }
 
 void camelQuit(void) {
-	DEBUG_WORD("camelQuit")
+	MESSSAGE_DEBUG("camelQuit")
 }
 
 void camelAbort(void) {
-	DEBUG_WORD("camelAbort")
+	MESSSAGE_DEBUG("camelAbort")
 }
 
 void camelQAbort(void) {
-	DEBUG_WORD("camelQAbort")
+	MESSSAGE_DEBUG("camelQAbort")
 }
 
 void camelAbortQuote(void) {
-	DEBUG_WORD("camelAbortQuote")
+	MESSSAGE_DEBUG("camelAbortQuote")
 }
 
 void camelTick(void) {
-	DEBUG_WORD("camelTick")
+	MESSSAGE_DEBUG("camelTick")
 }
 
 void camelChar(void) {
-	DEBUG_WORD("camelChar")
+	MESSSAGE_DEBUG("camelChar")
 }
 
 void camelXChar(void) {
-	DEBUG_WORD("camelXChar")
+	MESSSAGE_DEBUG("camelXChar")
 }
 
 void camelParen(void) {
-	DEBUG_WORD("camelParen")
+	MESSSAGE_DEBUG("camelParen")
 }
 
 void camelHeader(void) {
-	DEBUG_WORD("camelHeader")
+	MESSSAGE_DEBUG("camelHeader")
 }
 
 void camelBuilds(void) {
-	DEBUG_WORD("camelBuilds")
+	MESSSAGE_DEBUG("camelBuilds")
 }
 
 void camelVariable(void) {
-	DEBUG_WORD("camelVariable")
+	MESSSAGE_DEBUG("camelVariable")
 }
 
 void camelConstant(void) {
-	DEBUG_WORD("camelConstant")
+	MESSSAGE_DEBUG("camelConstant")
 }
 
 void camelUser(void) {
-	DEBUG_WORD("camelUser")
+	MESSSAGE_DEBUG("camelUser")
 }
 
 void camelCreate(void) {
-	DEBUG_WORD("camelCreate")
+	MESSSAGE_DEBUG("camelCreate")
 }
 
 void camelZDoes(void) {
-	DEBUG_WORD("camelZDoes")
+	MESSSAGE_DEBUG("camelZDoes")
 }
 
 void camelRecurse(void) {
-	DEBUG_WORD("camelRecurse")
+	MESSSAGE_DEBUG("camelRecurse")
 }
 
 void camelLeftBracket(void) {
-	DEBUG_WORD("camelLeftBracket")
+	MESSSAGE_DEBUG("camelLeftBracket")
 }
 
 void camelRightBracket(void) {
-	DEBUG_WORD("camelRightBracket")
+	MESSSAGE_DEBUG("camelRightBracket")
 }
 
 void camelHide(void) {
-	DEBUG_WORD("camelHide")
+	MESSSAGE_DEBUG("camelHide")
 }
 
 void camelReveal(void) {
-	DEBUG_WORD("camelReveal")
+	MESSSAGE_DEBUG("camelReveal")
 }
 
 void camelImmediate(void) {
-	DEBUG_WORD("camelImmediate")
+	MESSSAGE_DEBUG("camelImmediate")
 }
 
 void camelColon(void) {
-	DEBUG_WORD("camelColon")
+	MESSSAGE_DEBUG("camelColon")
 }
 
 void camelSemicolon(void) {
-	DEBUG_WORD("camelSemicolon")
+	MESSSAGE_DEBUG("camelSemicolon")
 }
 
 void camelXTick(void) {
-	DEBUG_WORD("camelXTick")
+	MESSSAGE_DEBUG("camelXTick")
 }
 
 void camelPostpone(void) {
-	DEBUG_WORD("camelPostpone")
+	MESSSAGE_DEBUG("camelPostpone")
 }
 
 void camelCompile(void) {
-	DEBUG_WORD("camelCompile")
+	MESSSAGE_DEBUG("camelCompile")
 }
 
 void camelIf(void) {
-	DEBUG_WORD("camelIf")
+	MESSSAGE_DEBUG("camelIf")
 }
 
 void camelThen(void) {
-	DEBUG_WORD("camelThen")
+	MESSSAGE_DEBUG("camelThen")
 }
 
 void camelElse(void) {
-	DEBUG_WORD("camelElse")
+	MESSSAGE_DEBUG("camelElse")
 }
 
 void camelBegin(void) {
-	DEBUG_WORD("camelBegin")
+	MESSSAGE_DEBUG("camelBegin")
 }
 
 void camelUntil(void) {
-	DEBUG_WORD("camelUntil")
+	MESSSAGE_DEBUG("camelUntil")
 }
 
 void camelAgain(void) {
-	DEBUG_WORD("camelAgain")
+	MESSSAGE_DEBUG("camelAgain")
 }
 
 void camelWhile(void) {
-	DEBUG_WORD("camelWhile")
+	MESSSAGE_DEBUG("camelWhile")
 }
 
 void camelRepeat(void) {
-	DEBUG_WORD("camelRepeat")
+	MESSSAGE_DEBUG("camelRepeat")
 }
 
 void camelToL(void) {
-	DEBUG_WORD("camelToL")
+	MESSSAGE_DEBUG("camelToL")
 }
 
 void camelLFrom(void) {
-	DEBUG_WORD("camelLFrom")
+	MESSSAGE_DEBUG("camelLFrom")
 }
 
 void camelDo(void) {
-	DEBUG_WORD("camelDo")
+	MESSSAGE_DEBUG("camelDo")
 }
 
 void camelEndLoop(void) {
-	DEBUG_WORD("camelEndLoop")
+	MESSSAGE_DEBUG("camelEndLoop")
 }
 
 void camelLoop(void) {
-	DEBUG_WORD("camelLoop")
+	MESSSAGE_DEBUG("camelLoop")
 }
 
 void camelPlusLoop(void) {
-	DEBUG_WORD("camelPlusLoop")
+	MESSSAGE_DEBUG("camelPlusLoop")
 }
 
 void camelLeave(void) {
-	DEBUG_WORD("camelLeave")
+	MESSSAGE_DEBUG("camelLeave")
 }
 
 void camelWithin(void) {
-	DEBUG_WORD("camelWithin")
+	MESSSAGE_DEBUG("camelWithin")
 }
 
 void camelMove(void) {
-	DEBUG_WORD("camelMove")
+	MESSSAGE_DEBUG("camelMove")
 }
 
 void camelDepth(void) {
-	DEBUG_WORD("camelDepth")
+	MESSSAGE_DEBUG("camelDepth")
 }
 
 void camelEnvironmentQ(void) {
-	DEBUG_WORD("camelEnvironmentQ")
+	MESSSAGE_DEBUG("camelEnvironmentQ")
 }
 
 void camelMarker(void) {
-	DEBUG_WORD("camelMarker")
+	MESSSAGE_DEBUG("camelMarker")
 }
 
 #endif

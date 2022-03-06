@@ -6,534 +6,534 @@
 
 /* Control Commands */
 void qforthAgain(void) {
-	DEBUG_WORD("qforthAgain")
+	MESSSAGE_DEBUG("qforthAgain")
 }
 
 void qforthBegin(void) {
-	DEBUG_WORD("qforthBegin")
+	MESSSAGE_DEBUG("qforthBegin")
 }
 
 void qforthDo(void) {
-	DEBUG_WORD("qforthDo")
+	MESSSAGE_DEBUG("qforthDo")
 }
 
 void qforthNumDo(void) {
-	DEBUG_WORD("qforthNumDo")
+	MESSSAGE_DEBUG("qforthNumDo")
 }
 
 void qforthQDo(void) {
-	DEBUG_WORD("qforthQDo")
+	MESSSAGE_DEBUG("qforthQDo")
 }
 
 void qforthLoop(void) {
-	DEBUG_WORD("qforthLoop")
+	MESSSAGE_DEBUG("qforthLoop")
 }
 
 void qforthNumLoop(void) {
-	DEBUG_WORD("qforthNumLoop")
+	MESSSAGE_DEBUG("qforthNumLoop")
 }
 
 void qforthPlusLoop(void) {
-	DEBUG_WORD("qforthPlusLoop")
+	MESSSAGE_DEBUG("qforthPlusLoop")
 }
 
 void qforthQLeave(void) {
-	DEBUG_WORD("qforthQLeave")
+	MESSSAGE_DEBUG("qforthQLeave")
 }
 
 void qforthMinusQLeave(void) {
-	DEBUG_WORD("qforthMinusQLeave")
+	MESSSAGE_DEBUG("qforthMinusQLeave")
 }
 
 void qforthRepeat(void) {
-	DEBUG_WORD("qforthRepeat")
+	MESSSAGE_DEBUG("qforthRepeat")
 }
 
 void qforthUntil(void) {
-	DEBUG_WORD("qforthUntil")
+	MESSSAGE_DEBUG("qforthUntil")
 }
 
 void qforthWhile(void) {
-	DEBUG_WORD("qforthWhile")
+	MESSSAGE_DEBUG("qforthWhile")
 }
 
 void qforthCase(void) {
-	DEBUG_WORD("qforthCase")
+	MESSSAGE_DEBUG("qforthCase")
 }
 
 void qforthElse(void) {
-	DEBUG_WORD("qforthElse")
+	MESSSAGE_DEBUG("qforthElse")
 }
 
 void qforthEndCase(void) {
-	DEBUG_WORD("qforthEndCase")
+	MESSSAGE_DEBUG("qforthEndCase")
 }
 
 void qforthEndOf(void) {
-	DEBUG_WORD("qforthEndOf")
+	MESSSAGE_DEBUG("qforthEndOf")
 }
 
 void qforthExecute(void) {
 	/* Atmel 2004, but not Temic 1994 */
-	DEBUG_WORD("qforthExecute")
+	MESSSAGE_DEBUG("qforthExecute")
 }
 
 void qforthIf(void) {
-	DEBUG_WORD("qforthIf")
+	MESSSAGE_DEBUG("qforthIf")
 }
 
 void qforthOf(void) {
-	DEBUG_WORD("qforthOf")
+	MESSSAGE_DEBUG("qforthOf")
 }
 
 void qforthThen(void) {
-	DEBUG_WORD("qforthThen")
+	MESSSAGE_DEBUG("qforthThen")
 }
 
 void qforthCcrFetch(void) {
-	DEBUG_WORD("qforthCcrFetch")
+	MESSSAGE_DEBUG("qforthCcrFetch")
 }
 
 void qforthCcrStore(void) {
-	DEBUG_WORD("qforthCcrStore")
+	MESSSAGE_DEBUG("qforthCcrStore")
 }
 
 void qforthClrBcf(void) {
-	DEBUG_WORD("qforthClrBcf")
+	MESSSAGE_DEBUG("qforthClrBcf")
 }
 
 void qforthEi(void) {
-	DEBUG_WORD("qforthEi")
+	MESSSAGE_DEBUG("qforthEi")
 }
 
 void qforthExit(void) {
-	DEBUG_WORD("qforthExit")
+	MESSSAGE_DEBUG("qforthExit")
 }
 
 void qforthDi(void) {
-	DEBUG_WORD("qforthDi")
+	MESSSAGE_DEBUG("qforthDi")
 }
 
 void qforthSetBcf(void) {
-	DEBUG_WORD("qforthSetBcf")
+	MESSSAGE_DEBUG("qforthSetBcf")
 }
 
 void qforthSwi0To7(void) {
-	DEBUG_WORD("qforthSwi0To7")
+	MESSSAGE_DEBUG("qforthSwi0To7")
 }
 
 void qforthTogBf(void) {
-	DEBUG_WORD("qforthTogBf")
+	MESSSAGE_DEBUG("qforthTogBf")
 }
 
 /* Mathematic Commands */
 void qforthAdd(void) {
-	DEBUG_WORD("qforthAdd")
+	MESSSAGE_DEBUG("qforthAdd")
 }
 
 void qforthPlus(void) {
-	DEBUG_WORD("qforthPlus")
+	MESSSAGE_DEBUG("qforthPlus")
 }
 
 void qforthPlusStore(void) {
-	DEBUG_WORD("qforthPlusStore")
+	MESSSAGE_DEBUG("qforthPlusStore")
 }
 
 void qforthInc(void) {
-	DEBUG_WORD("qforthInc")
+	MESSSAGE_DEBUG("qforthInc")
 }
 
 void qforthOnePlus(void) {
-	DEBUG_WORD("qforthOnePlus")
+	MESSSAGE_DEBUG("qforthOnePlus")
 }
 
 void qforthOnePlusStore(void) {
-	DEBUG_WORD("qforthOnePlusStore")
+	MESSSAGE_DEBUG("qforthOnePlusStore")
 }
 
 void qforthAddC(void) {
-	DEBUG_WORD("qforthAddC")
+	MESSSAGE_DEBUG("qforthAddC")
 }
 
 void qforthPlusC(void) {
-	DEBUG_WORD("qforthPlusC")
+	MESSSAGE_DEBUG("qforthPlusC")
 }
 
 void qforthDPlus(void) {
-	DEBUG_WORD("qforthDPlus")
+	MESSSAGE_DEBUG("qforthDPlus")
 }
 
 void qforthDPlusStore(void) {
-	DEBUG_WORD("qforthDPlusStore")
+	MESSSAGE_DEBUG("qforthDPlusStore")
 }
 
 void qforthMPlus(void) {
-	DEBUG_WORD("qforthMPlus")
+	MESSSAGE_DEBUG("qforthMPlus")
 }
 
 void qforthTPlusStore(void) {
-	DEBUG_WORD("qforthTPlusStore")
+	MESSSAGE_DEBUG("qforthTPlusStore")
 }
 
 void qforthTDPlusStore(void) {
-	DEBUG_WORD("qforthTDPlusStore")
+	MESSSAGE_DEBUG("qforthTDPlusStore")
 }
 
 void qforthDaa(void) {
-	DEBUG_WORD("qforthDaa")
+	MESSSAGE_DEBUG("qforthDaa")
 }
 
 void qforthSub(void) {
-	DEBUG_WORD("qforthSub")
+	MESSSAGE_DEBUG("qforthSub")
 }
 
 void qforthMinus(void) {
-	DEBUG_WORD("qforthMinus")
+	MESSSAGE_DEBUG("qforthMinus")
 }
 
 void qforthDec(void) {
-	DEBUG_WORD("qforthDec")
+	MESSSAGE_DEBUG("qforthDec")
 }
 
 void qforthOneMinus(void) {
-	DEBUG_WORD("qforthOneMinus")
+	MESSSAGE_DEBUG("qforthOneMinus")
 }
 
 void qforthOneMinusStore(void) {
-	DEBUG_WORD("qforthOneMinusStore")
+	MESSSAGE_DEBUG("qforthOneMinusStore")
 }
 
 void qforthSubb(void) {
-	DEBUG_WORD("qforthSubb")
+	MESSSAGE_DEBUG("qforthSubb")
 }
 
 void qforthMinusC(void) {
-	DEBUG_WORD("qforthMinusC")
+	MESSSAGE_DEBUG("qforthMinusC")
 }
 
 void qforthDMinus(void) {
-	DEBUG_WORD("qforthDMinus")
+	MESSSAGE_DEBUG("qforthDMinus")
 }
 
 void qforthDMinusStore(void) {
-	DEBUG_WORD("qforthDMinusStore")
+	MESSSAGE_DEBUG("qforthDMinusStore")
 }
 
 void qforthMMinus(void) {
-	DEBUG_WORD("qforthMMinus")
+	MESSSAGE_DEBUG("qforthMMinus")
 }
 
 void qforthTMinusStore(void) {
-	DEBUG_WORD("qforthTMinusStore")
+	MESSSAGE_DEBUG("qforthTMinusStore")
 }
 
 void qforthTDMinus(void) {
-	DEBUG_WORD("qforthTDMinus")
+	MESSSAGE_DEBUG("qforthTDMinus")
 }
 
 void qforthDas(void) {
-	DEBUG_WORD("qforthDas")
+	MESSSAGE_DEBUG("qforthDas")
 }
 
 void qforthTwoStar(void) {
-	DEBUG_WORD("qforthTwoStar")
+	MESSSAGE_DEBUG("qforthTwoStar")
 }
 
 void qforthD2Star(void) {
-	DEBUG_WORD("qforthD2Star")
+	MESSSAGE_DEBUG("qforthD2Star")
 }
 
 void qforthTwoSlash(void) {
-	DEBUG_WORD("qforthTwoSlash")
+	MESSSAGE_DEBUG("qforthTwoSlash")
 }
 
 void qforthD2Slash(void) {
-	DEBUG_WORD("qforthD2Slash")
+	MESSSAGE_DEBUG("qforthD2Slash")
 }
 
 void qforthCmpEq(void) {
-	DEBUG_WORD("qforthCmpEq")
+	MESSSAGE_DEBUG("qforthCmpEq")
 }
 
 void qforthEqual(void) {
-	DEBUG_WORD("qforthEqual")
+	MESSSAGE_DEBUG("qforthEqual")
 }
 
 void qforthZeroEqual(void) {
-	DEBUG_WORD("qforthZeroEqual")
+	MESSSAGE_DEBUG("qforthZeroEqual")
 }
 
 void qforthDEqual(void) {
-	DEBUG_WORD("qforthDEqual")
+	MESSSAGE_DEBUG("qforthDEqual")
 }
 
 void qforthD0Equal(void) {
-	DEBUG_WORD("qforthD0Equal")
+	MESSSAGE_DEBUG("qforthD0Equal")
 }
 
 void qforthCmpGe(void) {
-	DEBUG_WORD("qforthCmpGe")
+	MESSSAGE_DEBUG("qforthCmpGe")
 }
 
 void qforthGreaterEqual(void) {
 	/* Temic 1994, but not Atmel 2004 */
-	DEBUG_WORD("qforthCmpGe")
+	MESSSAGE_DEBUG("qforthCmpGe")
 }
 
 void qforthDGreaterEqual(void) {
-	DEBUG_WORD("qforthDGreaterEqual")
+	MESSSAGE_DEBUG("qforthDGreaterEqual")
 }
 
 void qforthCmpGt(void) {
-	DEBUG_WORD("qforthCmpGt")
+	MESSSAGE_DEBUG("qforthCmpGt")
 }
 
 void qforthGreater(void) {
-	DEBUG_WORD("qforthGreater")
+	MESSSAGE_DEBUG("qforthGreater")
 }
 
 void qforthDGreater(void) {
-	DEBUG_WORD("qforthDGreater")
+	MESSSAGE_DEBUG("qforthDGreater")
 }
 
 void qforthCmpLe(void) {
-	DEBUG_WORD("qforthCmpLe")
+	MESSSAGE_DEBUG("qforthCmpLe")
 }
 
 void qforthLessEqual(void) {
-	DEBUG_WORD("qforthLessEqual")
+	MESSSAGE_DEBUG("qforthLessEqual")
 }
 
 void qforthDLessEqual(void) {
-	DEBUG_WORD("qforthDLessEqual")
+	MESSSAGE_DEBUG("qforthDLessEqual")
 }
 
 void qforthCmpLt(void) {
-	DEBUG_WORD("qforthCmpLt")
+	MESSSAGE_DEBUG("qforthCmpLt")
 }
 
 void qforthLess(void) {
-	DEBUG_WORD("qforthLess")
+	MESSSAGE_DEBUG("qforthLess")
 }
 
 void qforthDLess(void) {
-	DEBUG_WORD("qforthDLess")
+	MESSSAGE_DEBUG("qforthDLess")
 }
 
 void qforthCmpNe(void) {
-	DEBUG_WORD("qforthCmpNe")
+	MESSSAGE_DEBUG("qforthCmpNe")
 }
 
 void qforthUnequal(void) {
-	DEBUG_WORD("qforthUnequal")
+	MESSSAGE_DEBUG("qforthUnequal")
 }
 
 void qforthZeroUnequal(void) {
-	DEBUG_WORD("qforthZeroUnequal")
+	MESSSAGE_DEBUG("qforthZeroUnequal")
 }
 
 void qforthD0Unequal(void) {
-	DEBUG_WORD("qforthD0Unequal")
+	MESSSAGE_DEBUG("qforthD0Unequal")
 }
 
 void qforthDUnequal(void) {
-	DEBUG_WORD("qforthDUnequal")
+	MESSSAGE_DEBUG("qforthDUnequal")
 }
 
 void qforthMax(void) {
-	DEBUG_WORD("qforthMax")
+	MESSSAGE_DEBUG("qforthMax")
 }
 
 void qforthDMax(void) {
-	DEBUG_WORD("qforthDMax")
+	MESSSAGE_DEBUG("qforthDMax")
 }
 
 void qforthMin(void) {
-	DEBUG_WORD("qforthMin")
+	MESSSAGE_DEBUG("qforthMin")
 }
 
 void qforthDMin(void) {
-	DEBUG_WORD("qforthDMin")
+	MESSSAGE_DEBUG("qforthDMin")
 }
 
 void qforthNegate(void) {
-	DEBUG_WORD("qforthNegate")
+	MESSSAGE_DEBUG("qforthNegate")
 }
 
 void qforthDNegate(void) {
-	DEBUG_WORD("qforthDNegate")
+	MESSSAGE_DEBUG("qforthDNegate")
 }
 
 void qforthNot(void) {
-	DEBUG_WORD("qforthNot")
+	MESSSAGE_DEBUG("qforthNot")
 }
 
 void qforthRoL(void) {
-	DEBUG_WORD("qforthRoL")
+	MESSSAGE_DEBUG("qforthRoL")
 }
 
 void qforthRoR(void) {
-	DEBUG_WORD("qforthRoR")
+	MESSSAGE_DEBUG("qforthRoR")
 }
 
 void qforthShL(void) {
-	DEBUG_WORD("qforthShL")
+	MESSSAGE_DEBUG("qforthShL")
 }
 
 void qforthShR(void) {
-	DEBUG_WORD("qforthShR")
+	MESSSAGE_DEBUG("qforthShR")
 }
 
 void qforthAnd(void) {
-	DEBUG_WORD("qforthAnd")
+	MESSSAGE_DEBUG("qforthAnd")
 }
 
 void qforthOr(void) {
-	DEBUG_WORD("qforthOr")
+	MESSSAGE_DEBUG("qforthOr")
 }
 
 void qforthXor(void) {
-	DEBUG_WORD("qforthXor")
+	MESSSAGE_DEBUG("qforthXor")
 }
 
 void qforthToggle(void) {
-	DEBUG_WORD("qforthToggle")
+	MESSSAGE_DEBUG("qforthToggle")
 }
 
 void qforthDToS(void) {
-	DEBUG_WORD("qforthDToS")
+	MESSSAGE_DEBUG("qforthDToS")
 }
 
 void qforthSToD(void) {
-	DEBUG_WORD("qforthSToD")
+	MESSSAGE_DEBUG("qforthSToD")
 }
 
 /* Memory Commands */
 void qforthFetch(void) {
-	DEBUG_WORD("qforthFetch")
+	MESSSAGE_DEBUG("qforthFetch")
 }
 
 void qforthTwoFetch(void) {
-	DEBUG_WORD("qforthTwoFetch")
+	MESSSAGE_DEBUG("qforthTwoFetch")
 }
 
 void qforthThreeFetch(void) {
-	DEBUG_WORD("qforthThreeFetch")
+	MESSSAGE_DEBUG("qforthThreeFetch")
 }
 
 void qforthXFetch(void) {
-	DEBUG_WORD("qforthXFetch")
+	MESSSAGE_DEBUG("qforthXFetch")
 }
 
 void qforthXXFetch(void) {
-	DEBUG_WORD("qforthXXFetch")
+	MESSSAGE_DEBUG("qforthXXFetch")
 }
 
 void qforthXPlusXFetch(void) {
-	DEBUG_WORD("qforthXPlusXFetch")
+	MESSSAGE_DEBUG("qforthXPlusXFetch")
 }
 
 void qforthXXMinusFetch(void) {
-	DEBUG_WORD("qforthXXMinusFetch")
+	MESSSAGE_DEBUG("qforthXXMinusFetch")
 }
 
 void qforthYFetch(void) {
-	DEBUG_WORD("qforthYFetch")
+	MESSSAGE_DEBUG("qforthYFetch")
 }
 
 void qforthXYFetch(void) {
-	DEBUG_WORD("qforthXYFetch")
+	MESSSAGE_DEBUG("qforthXYFetch")
 }
 
 void qforthXPlusYFetch(void) {
-	DEBUG_WORD("qforthXPlusYFetch")
+	MESSSAGE_DEBUG("qforthXPlusYFetch")
 }
 
 void qforthXYMinusFetch(void) {
-	DEBUG_WORD("qforthXYMinusFetch")
+	MESSSAGE_DEBUG("qforthXYMinusFetch")
 }
 
 void qforthDTableFetch(void) {
-	DEBUG_WORD("qforthDTableFetch")
+	MESSSAGE_DEBUG("qforthDTableFetch")
 }
 
 void qforthRomByteFetch(void) {
-	DEBUG_WORD("qforthRomByteFetch")
+	MESSSAGE_DEBUG("qforthRomByteFetch")
 }
 
 void qforthStore(void) {
-	DEBUG_WORD("qforthStore")
+	MESSSAGE_DEBUG("qforthStore")
 }
 
 void qforthTwoStore(void) {
-	DEBUG_WORD("qforthTwoStore")
+	MESSSAGE_DEBUG("qforthTwoStore")
 }
 
 void qforthThreeStore(void) {
-	DEBUG_WORD("qforthThreeStore")
+	MESSSAGE_DEBUG("qforthThreeStore")
 }
 
 void qforthXStore(void) {
-	DEBUG_WORD("qforthXStore")
+	MESSSAGE_DEBUG("qforthXStore")
 }
 
 void qforthXXStore(void) {
-	DEBUG_WORD("qforthXXStore")
+	MESSSAGE_DEBUG("qforthXXStore")
 }
 
 void qforthXPlusXStore(void) {
-	DEBUG_WORD("qforthXPlusXStore")
+	MESSSAGE_DEBUG("qforthXPlusXStore")
 }
 
 void qforthXXMinusStore(void) {
-	DEBUG_WORD("qforthXXMinusStore")
+	MESSSAGE_DEBUG("qforthXXMinusStore")
 }
 
 void qforthYStore(void) {
-	DEBUG_WORD("qforthYStore")
+	MESSSAGE_DEBUG("qforthYStore")
 }
 
 void qforthXYStore(void) {
-	DEBUG_WORD("qforthXYStore")
+	MESSSAGE_DEBUG("qforthXYStore")
 }
 
 void qforthXPlusYStore(void) {
-	DEBUG_WORD("qforthXPlusYStore")
+	MESSSAGE_DEBUG("qforthXPlusYStore")
 }
 
 void qforthXYMinusStore(void) {
-	DEBUG_WORD("qforthXYMinusStore")
+	MESSSAGE_DEBUG("qforthXYMinusStore")
 }
 
 void qforthErase(void) {
-	DEBUG_WORD("qforthErase")
+	MESSSAGE_DEBUG("qforthErase")
 }
 
 void qforthFill(void) {
-	DEBUG_WORD("qforthFill")
+	MESSSAGE_DEBUG("qforthFill")
 }
 
 void qforthMove(void) {
-	DEBUG_WORD("qforthMove")
+	MESSSAGE_DEBUG("qforthMove")
 }
 
 void qforthMoveTo(void) {
-	DEBUG_WORD("qforthMoveTo")
+	MESSSAGE_DEBUG("qforthMoveTo")
 }
 
 void qforthIn(void) {
-	DEBUG_WORD("qforthIn")
+	MESSSAGE_DEBUG("qforthIn")
 }
 
 void qforthOut(void) {
-	DEBUG_WORD("qforthOut")
+	MESSSAGE_DEBUG("qforthOut")
 }
 
 /* Commands */
 /* qforthStore(void) */
 
 void qforthTick(void) {
-	DEBUG_WORD("qforthTick")
+	MESSSAGE_DEBUG("qforthTick")
 }
 
 /* qforthNumDo(void) */
@@ -542,15 +542,15 @@ void qforthTick(void) {
 /* qforthMinusQLeave(void) */
 
 void qforthLessR(void) {
-	DEBUG_WORD("qforthLessR")
+	MESSSAGE_DEBUG("qforthLessR")
 }
 
 void qforthToRP(void) {
-	DEBUG_WORD("qforthToRP")
+	MESSSAGE_DEBUG("qforthToRP")
 }
 
 void qforthToSP(void) {
-	DEBUG_WORD("qforthToSP")
+	MESSSAGE_DEBUG("qforthToSP")
 }
 
 /* qforthQDo */
@@ -568,7 +568,7 @@ void qforthToSP(void) {
 /* qforthXYMinusStore */
 
 void qforthXYMinuSFetch(void) {
-	DEBUG_WORD("qforthXYMinuSFetch")
+	MESSSAGE_DEBUG("qforthXYMinuSFetch")
 }
 
 /* qforthXYStore */
@@ -583,7 +583,7 @@ void qforthXYMinuSFetch(void) {
 /* qforthRFetch */
 
 void qforthTwoRFetch(void) {
-	DEBUG_WORD("qforthTwoRFetch")
+	MESSSAGE_DEBUG("qforthTwoRFetch")
 }
 
 /* qforthTwoRot */
@@ -613,7 +613,7 @@ void qforthTwoRFetch(void) {
 /* qforthOneMinusStore */
 
 void qforthSubB(void) {
-	DEBUG_WORD("qforthSubB")
+	MESSSAGE_DEBUG("qforthSubB")
 }
 
 /* qforthMinusC */
@@ -664,7 +664,7 @@ void qforthSubB(void) {
 /* qforthDTableFetch */
 
 void qforthDToggle(void) {
-	DEBUG_WORD("qforthDToggle")
+	MESSSAGE_DEBUG("qforthDToggle")
 }
 
 /* qforthDup */
@@ -694,7 +694,7 @@ void qforthDToggle(void) {
 /* qforthDToS */
 
 void qforthNop(void) {
-	DEBUG_WORD("qforthNop")
+	MESSSAGE_DEBUG("qforthNop")
 }
 
 /* qforthNot */
@@ -715,7 +715,7 @@ void qforthNop(void) {
 /* qforthRoL */
 
 void qforthRoLL(void) {
-	DEBUG_WORD("qforthRoLL")
+	MESSSAGE_DEBUG("qforthRoLL")
 }
 
 /* qforthRomByteFetch */
@@ -728,14 +728,14 @@ void qforthRoLL(void) {
 /* qforthShR */
 
 void qforthSPStore(void) {
-	DEBUG_WORD("qforthSPStore")
+	MESSSAGE_DEBUG("qforthSPStore")
 }
 
 /* qforthSPFetch */
 /* qforthSwap */
 
 void qforthSwi0ToSw17(void) {
-	DEBUG_WORD("qforthSwi0ToSw17")
+	MESSSAGE_DEBUG("qforthSwi0ToSw17")
 }
 
 /* qforthTPlusStore */
@@ -743,7 +743,7 @@ void qforthSwi0ToSw17(void) {
 /* qforthTDPlusStore */
 
 void qforthTDMinusStore(void) {
-	DEBUG_WORD("qforthTDMinusStore")
+	MESSSAGE_DEBUG("qforthTDMinusStore")
 }
 
 /* qforthThen */
@@ -757,172 +757,172 @@ void qforthTDMinusStore(void) {
 /* qforthXStore */
 
 void qforthXorYStore(void) {
-	DEBUG_WORD("qforthXorYStore")
+	MESSSAGE_DEBUG("qforthXorYStore")
 }
 
 /* qforthYFetch */
 
 /* STACK Commands */
 void qforthDecR(void) {
-	DEBUG_WORD("qforthDecR")
+	MESSSAGE_DEBUG("qforthDecR")
 }
 
 void qforthDepth(void) {
-	DEBUG_WORD("qforthDepth")
+	MESSSAGE_DEBUG("qforthDepth")
 }
 
 void qforthDrop(void) {
-	DEBUG_WORD("qforthDrop")
+	MESSSAGE_DEBUG("qforthDrop")
 }
 
 void qforthTwoDrop(void) {
-	DEBUG_WORD("qforthTwoDrop")
+	MESSSAGE_DEBUG("qforthTwoDrop")
 }
 
 void qforthThreeDrop(void) {
-	DEBUG_WORD("qforthThreeDrop")
+	MESSSAGE_DEBUG("qforthThreeDrop")
 }
 
 void qforthDropR(void) {
-	DEBUG_WORD("qforthDropR")
+	MESSSAGE_DEBUG("qforthDropR")
 }
 
 void qforthDup(void) {
-	DEBUG_WORD("qforthDup")
+	MESSSAGE_DEBUG("qforthDup")
 }
 
 void qforthQDup(void) {
-	DEBUG_WORD("qforthQDup")
+	MESSSAGE_DEBUG("qforthQDup")
 }
 
 void qforthTwoDup(void) {
-	DEBUG_WORD("qforthTwoDup")
+	MESSSAGE_DEBUG("qforthTwoDup")
 }
 
 void qforthThreeDup(void) {
-	DEBUG_WORD("qforthThreeDup")
+	MESSSAGE_DEBUG("qforthThreeDup")
 }
 
 void qforthI(void) {
-	DEBUG_WORD("qforthI")
+	MESSSAGE_DEBUG("qforthI")
 }
 
 void qforthIndex(void) {
-	DEBUG_WORD("qforthIndex")
+	MESSSAGE_DEBUG("qforthIndex")
 }
 
 void qforthJ(void) {
-	DEBUG_WORD("qforthJ")
+	MESSSAGE_DEBUG("qforthJ")
 }
 
 void qforthNip(void) {
-	DEBUG_WORD("qforthNip")
+	MESSSAGE_DEBUG("qforthNip")
 }
 
 void qforthTwoNip(void) {
-	DEBUG_WORD("qforthTwoNip")
+	MESSSAGE_DEBUG("qforthTwoNip")
 }
 
 void qforthOver(void) {
-	DEBUG_WORD("qforthOver")
+	MESSSAGE_DEBUG("qforthOver")
 }
 
 void qforthTwoOver(void) {
-	DEBUG_WORD("qforthTwoOver")
+	MESSSAGE_DEBUG("qforthTwoOver")
 }
 
 void qforthPick(void) {
-	DEBUG_WORD("qforthPick")
+	MESSSAGE_DEBUG("qforthPick")
 }
 
 void qforthRFetch(void) {
-	DEBUG_WORD("qforthRFetch")
+	MESSSAGE_DEBUG("qforthRFetch")
 }
 
 /* qforthTwoFetch */
 
 void qforthThreeRFetch(void) {
-	DEBUG_WORD("qforthThreeRFetch")
+	MESSSAGE_DEBUG("qforthThreeRFetch")
 }
 
 void qforthToR(void) {
-	DEBUG_WORD("qforthToR")
+	MESSSAGE_DEBUG("qforthToR")
 }
 
 void qforthTwoToR(void) {
-	DEBUG_WORD("qforthTwoToR")
+	MESSSAGE_DEBUG("qforthTwoToR")
 }
 
 void qforthThreeToR(void) {
-	DEBUG_WORD("qforthThreeToR")
+	MESSSAGE_DEBUG("qforthThreeToR")
 }
 
 void qforthRTo(void) {
-	DEBUG_WORD("qforthRTo")
+	MESSSAGE_DEBUG("qforthRTo")
 }
 
 void qforthTwoRTo(void) {
-	DEBUG_WORD("qforthTwoRTo")
+	MESSSAGE_DEBUG("qforthTwoRTo")
 }
 
 void qforthThreeRTo(void) {
-	DEBUG_WORD("qforthThreeRTo")
+	MESSSAGE_DEBUG("qforthThreeRTo")
 }
 
 void qforthRDepth(void) {
-	DEBUG_WORD("qforthRDepth")
+	MESSSAGE_DEBUG("qforthRDepth")
 }
 
 void qforthRFree(void) {
-	DEBUG_WORD("qforthRFree")
+	MESSSAGE_DEBUG("qforthRFree")
 }
 
 void qforthRot(void) {
-	DEBUG_WORD("qforthRot")
+	MESSSAGE_DEBUG("qforthRot")
 }
 
 void qforthTwoRot(void) {
-	DEBUG_WORD("qforthTwoRot")
+	MESSSAGE_DEBUG("qforthTwoRot")
 }
 
 void qforthLessRot(void) {
-	DEBUG_WORD("qforthLessRot")
+	MESSSAGE_DEBUG("qforthLessRot")
 }
 
 void qforthTwoLessRot(void) {
-	DEBUG_WORD("qforthTwoLessRot")
+	MESSSAGE_DEBUG("qforthTwoLessRot")
 }
 
 void qforthRPFetch(void) {
-	DEBUG_WORD("qforthRPFetch")
+	MESSSAGE_DEBUG("qforthRPFetch")
 }
 
 void qforthRPStore(void) {
-	DEBUG_WORD("qforthRPStore")
+	MESSSAGE_DEBUG("qforthRPStore")
 }
 
 void qforthSPFetch(void) {
-	DEBUG_WORD("qforthSPFetch")
+	MESSSAGE_DEBUG("qforthSPFetch")
 }
 
 void qforthSpStore(void) {
-	DEBUG_WORD("qforthSpStore")
+	MESSSAGE_DEBUG("qforthSpStore")
 }
 
 void qforthSwap(void) {
-	DEBUG_WORD("qforthSwap")
+	MESSSAGE_DEBUG("qforthSwap")
 }
 
 void qforthTwoSwap(void) {
-	DEBUG_WORD("qforthTwoSwap")
+	MESSSAGE_DEBUG("qforthTwoSwap")
 }
 
 void qforthTuck(void) {
-	DEBUG_WORD("qforthTuck")
+	MESSSAGE_DEBUG("qforthTuck")
 }
 
 void qforthTwoTuck(void) {
-	DEBUG_WORD("qforthTwoTuck")
+	MESSSAGE_DEBUG("qforthTwoTuck")
 }
 
 #endif

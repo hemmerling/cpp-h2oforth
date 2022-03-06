@@ -6,267 +6,267 @@
 /* Primitives */
 
 void bbc79DollarMSG(void) {
-	DEBUG_WORD("bbc79DollarMSG")
+	MESSSAGE_DEBUG("bbc79DollarMSG")
 }
 
 void bbc79Plot(void) {
-	DEBUG_WORD("bbc79Plot")
+	MESSSAGE_DEBUG("bbc79Plot")
 }
 
 void bbc79MoveBuffers(void) {
-	DEBUG_WORD("bbc79MoveBuffers")
+	MESSSAGE_DEBUG("bbc79MoveBuffers")
 }
 
 void bbc79FromCMove(void) {
-	DEBUG_WORD("bbc79FromCMove")
+	MESSSAGE_DEBUG("bbc79FromCMove")
 }
 
 void bbc79Where(void) {
-	DEBUG_WORD("bbc79Where")
+	MESSSAGE_DEBUG("bbc79Where")
 }
 
 void bbc79Line(void) {
-	DEBUG_WORD("bbc79Line")
+	MESSSAGE_DEBUG("bbc79Line")
 }
 
 void bbc79Text(void) {
-	DEBUG_WORD("bbc79Text")
+	MESSSAGE_DEBUG("bbc79Text")
 }
 
 void bbc79More(void) {
-	DEBUG_WORD("bbc79More")
+	MESSSAGE_DEBUG("bbc79More")
 }
 
 void bbc79Another(void) {
-	DEBUG_WORD("bbc79Another")
+	MESSSAGE_DEBUG("bbc79Another")
 }
 
 void bbc79Program(void) {
-	DEBUG_WORD("bbc79Program")
+	MESSSAGE_DEBUG("bbc79Program")
 }
 
 void bbc79ClrScr(void) {
-	DEBUG_WORD("bbc79ClrScr")
+	MESSSAGE_DEBUG("bbc79ClrScr")
 }
 
 void bbc79Save(void) {
-	DEBUG_WORD("bbc79Save")
+	MESSSAGE_DEBUG("bbc79Save")
 }
 
 void bbc79Locate(void) {
-	DEBUG_WORD("bbc79Locate")
+	MESSSAGE_DEBUG("bbc79Locate")
 }
 
 void bbc79Editor(void) {
-	DEBUG_WORD("bbc79Editor")
+	MESSSAGE_DEBUG("bbc79Editor")
 }
 
 void bbc79Code(void) {
-	DEBUG_WORD("bbc79Code")
+	MESSSAGE_DEBUG("bbc79Code")
 }
 
 void bbc79QCurrent(void) {
-	DEBUG_WORD("bbc79QCurrent")
+	MESSSAGE_DEBUG("bbc79QCurrent")
 }
 
 void bbc79Assembler(void) {
-	DEBUG_WORD("bbc79Assembler")
+	MESSSAGE_DEBUG("bbc79Assembler")
 }
 
 void bbc79Triad(void) {
-	DEBUG_WORD("bbc79Triad")
+	MESSSAGE_DEBUG("bbc79Triad")
 }
 
 void bbc79Index(void) {
-	DEBUG_WORD("bbc79Index")
+	MESSSAGE_DEBUG("bbc79Index")
 }
 
 void bbc79SnineStandard(void) {
-	DEBUG_WORD("bbc79SnineStandard")
+	MESSSAGE_DEBUG("bbc79SnineStandard")
 }
 
 void bbc79List(void) {
-	DEBUG_WORD("bbc79List")
+	MESSSAGE_DEBUG("bbc79List")
 }
 
 void bbc79CreateScreens(void) {
-	DEBUG_WORD("bbc79CreateScreens")
+	MESSSAGE_DEBUG("bbc79CreateScreens")
 }
 
 void bbc79Tape(void) {
-	DEBUG_WORD("bbc79Tape")
+	MESSSAGE_DEBUG("bbc79Tape")
 }
 
 void bbc79QRSlashW(void) {
-	DEBUG_WORD("bbc79QRSlashW")
+	MESSSAGE_DEBUG("bbc79QRSlashW")
 }
 
 void bbc79TRSlashW(void) {
-	DEBUG_WORD("bbc79TRSlashW")
+	MESSSAGE_DEBUG("bbc79TRSlashW")
 }
 
 void bbc79TW(void) {
-	DEBUG_WORD("bbc79TW")
+	MESSSAGE_DEBUG("bbc79TW")
 }
 
 void bbc79TR(void) {
-	DEBUG_WORD("bbc79TR")
+	MESSSAGE_DEBUG("bbc79TR")
 }
 
 void bbc79FourHEX(void) {
-	DEBUG_WORD("bbc79FourHEX")
+	MESSSAGE_DEBUG("bbc79FourHEX")
 }
 
 void bbc79SSTo(void) {
-	DEBUG_WORD("bbc79SSTo")
+	MESSSAGE_DEBUG("bbc79SSTo")
 }
 
 void bbc79Flush(void) {
-	DEBUG_WORD("bbc79Flush")
+	MESSSAGE_DEBUG("bbc79Flush")
 }
 
 void bbc79SaveBuffers(void) {
-	DEBUG_WORD("bbc79SaveBuffers")
+	MESSSAGE_DEBUG("bbc79SaveBuffers")
 }
 
 void bbc79Disk(void) {
-	DEBUG_WORD("bbc79Disk")
+	MESSSAGE_DEBUG("bbc79Disk")
 }
 
 void bbc79ZDisk(void) {
-	DEBUG_WORD("bbc79ZDisk")
+	MESSSAGE_DEBUG("bbc79ZDisk")
 }
 
 void bbc79Load(void) {
-	DEBUG_WORD("bbc79Load")
+	MESSSAGE_DEBUG("bbc79Load")
 }
 
 void bbc79Block(void) {
-	DEBUG_WORD("bbc79Block")
+	MESSSAGE_DEBUG("bbc79Block")
 }
 
 void bbc79Buffer(void) {
-	DEBUG_WORD("bbc79Buffer")
+	MESSSAGE_DEBUG("bbc79Buffer")
 }
 
 void bbc79Update(void) {
-	DEBUG_WORD("bbc79Update")
+	MESSSAGE_DEBUG("bbc79Update")
 }
 
 void bbc79ZUpdate(void) {
-	DEBUG_WORD("bbc79ZUpdate")
+	MESSSAGE_DEBUG("bbc79ZUpdate")
 }
 
 void bbc79PlusBuf(void) {
-	DEBUG_WORD("bbc79PlusBuf")
+	MESSSAGE_DEBUG("bbc79PlusBuf")
 }
 
 void bbc79InitBuf(void) {
-	DEBUG_WORD("bbc79InitBuf")
+	MESSSAGE_DEBUG("bbc79InitBuf")
 }
 
 void bbc79SetBuf(void) {
-	DEBUG_WORD("bbc79SetBuf")
+	MESSSAGE_DEBUG("bbc79SetBuf")
 }
 
 void bbc79EmptyBuffers(void) {
-	DEBUG_WORD("bbc79EmptyBuffers")
+	MESSSAGE_DEBUG("bbc79EmptyBuffers")
 }
 
 void bbc79NumBuf(void) {
-	DEBUG_WORD("bbc79NumBuf")
+	MESSSAGE_DEBUG("bbc79NumBuf")
 }
 
 void bbc79Prev(void) {
-	DEBUG_WORD("bbc79Prev")
+	MESSSAGE_DEBUG("bbc79Prev")
 }
 
 void bbc79Use(void) {
-	DEBUG_WORD("bbc79Use")
+	MESSSAGE_DEBUG("bbc79Use")
 }
 
 void bbc79BufSZ(void) {
-	DEBUG_WORD("bbc79BufSZ")
+	MESSSAGE_DEBUG("bbc79BufSZ")
 }
 
 void bbc79MinBUF(void) {
-	DEBUG_WORD("bbc79MinBUF")
+	MESSSAGE_DEBUG("bbc79MinBUF")
 }
 
 void bbc79RSlashW(void) {
-	DEBUG_WORD("bbc79RSlashW")
+	MESSSAGE_DEBUG("bbc79RSlashW")
 }
 
 void bbc79DRSlashW(void) {
-	DEBUG_WORD("bbc79DRSlashW")
+	MESSSAGE_DEBUG("bbc79DRSlashW")
 }
 
 void bbc79Open(void) {
-	DEBUG_WORD("bbc79Open")
+	MESSSAGE_DEBUG("bbc79Open")
 }
 
 void bbc79FName(void) {
-	DEBUG_WORD("bbc79FName")
+	MESSSAGE_DEBUG("bbc79FName")
 }
 
 void bbc79Channel(void) {
-	DEBUG_WORD("bbc79Channel")
+	MESSSAGE_DEBUG("bbc79Channel")
 }
 
 void bbc79MaxFiles(void) {
-	DEBUG_WORD("bbc79MaxFiles")
+	MESSSAGE_DEBUG("bbc79MaxFiles")
 }
 
 void bbc79SSlashFile(void) {
-	DEBUG_WORD("bbc79SSlashFile")
+	MESSSAGE_DEBUG("bbc79SSlashFile")
 }
 
 void bbc79ZRSlashW(void) {
-	DEBUG_WORD("bbc79ZRSlashW")
+	MESSSAGE_DEBUG("bbc79ZRSlashW")
 }
 
 void bbc79Close(void) {
-	DEBUG_WORD("bbc79Close")
+	MESSSAGE_DEBUG("bbc79Close")
 }
 
 void bbc79ZOpen(void) {
-	DEBUG_WORD("bbc79ZOpen")
+	MESSSAGE_DEBUG("bbc79ZOpen")
 }
 
 void bbc79KeyTick(void) {
-	DEBUG_WORD("bbc79KeyTick")
+	MESSSAGE_DEBUG("bbc79KeyTick")
 }
 
 void bbc79OSTick(void) {
-	DEBUG_WORD("bbc79OSTick")
+	MESSSAGE_DEBUG("bbc79OSTick")
 }
 
 void bbc79ToCLI(void) {
-	DEBUG_WORD("bbc79ToCLI")
+	MESSSAGE_DEBUG("bbc79ToCLI")
 }
 
 void bbc79ZCLI(void) {
-	DEBUG_WORD("bbc79ZCLI")
+	MESSSAGE_DEBUG("bbc79ZCLI")
 }
 
 void bbc79ZDollarPlus(void) {
-	DEBUG_WORD("bbc79ZDollarPlus")
+	MESSSAGE_DEBUG("bbc79ZDollarPlus")
 }
 
 void bbc79String(void) {
-	DEBUG_WORD("bbc79String")
+	MESSSAGE_DEBUG("bbc79String")
 }
 
 void bbc79OSCLI(void) {
-	DEBUG_WORD("bbc79OSCLI")
+	MESSSAGE_DEBUG("bbc79OSCLI")
 }
 
 void bbc79Roll(void) {
-	DEBUG_WORD("bbc79Roll")
+	MESSSAGE_DEBUG("bbc79Roll")
 }
 
 void bbc79Pick(void) {
-	DEBUG_WORD("bbc79Pick")
+	MESSSAGE_DEBUG("bbc79Pick")
 }
 
 void bbc79DotS(void) {
@@ -281,7 +281,7 @@ void bbc79DotS(void) {
 			CELL_INTEGER value = forthTasks[forthState.forthCurrentTask].dataStackSpace[ii];
 			char* value2;
 			if (forthTasks[forthState.forthCurrentTask].baseFormat == BASE_FORMAT_EMPTY) {
-				value2 = privatBaseConversion(forthTasks[forthState.forthCurrentTask].forthBase, value);
+				value2 = privateBaseConversion(forthTasks[forthState.forthCurrentTask].forthBase, value);
 				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 					forthTasks[forthState.forthCurrentTask].baseFormat, value2);
 				FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
@@ -299,125 +299,125 @@ void bbc79DotS(void) {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 		// forthTasks[forthState.forthCurrentTask].messageNumber = MESSAGE_DATASTACK_EMPTY;
 	};
-	DEBUG_WORD("bbc79DotS")
+	MESSSAGE_DEBUG("bbc79DotS")
 }
 
 void bbc79Depth(void) {
-	DEBUG_WORD("bbc79Depth")
+	MESSSAGE_DEBUG("bbc79Depth")
 }
 
 void bbc79Forget(void) {
-	DEBUG_WORD("bbc79Forget")
+	MESSSAGE_DEBUG("bbc79Forget")
 }
 
 void bbc79Prune(void) {
-	DEBUG_WORD("bbc79Prune")
+	MESSSAGE_DEBUG("bbc79Prune")
 }
 
 void bbc79InitVecs(void) {
-	DEBUG_WORD("bbc79InitVecs")
+	MESSSAGE_DEBUG("bbc79InitVecs")
 }
 
 void bbc79ToDo(void) {
-	DEBUG_WORD("bbc79ToDo")
+	MESSSAGE_DEBUG("bbc79ToDo")
 }
 
 void bbc79DoVec(void) {
-	DEBUG_WORD("bbc79DoVec")
+	MESSSAGE_DEBUG("bbc79DoVec")
 }
 
 void bbc79Assign(void) {
-	DEBUG_WORD("bbc79Assign")
+	MESSSAGE_DEBUG("bbc79Assign")
 }
 
 void bbc79ExVec(void) {
-	DEBUG_WORD("bbc79ExVec")
+	MESSSAGE_DEBUG("bbc79ExVec")
 }
 
 void bbc79Novec(void) {
-	DEBUG_WORD("bbc79Novec")
+	MESSSAGE_DEBUG("bbc79Novec")
 }
 
 void bbc79Vlist(void) {
-	DEBUG_WORD("bbc79Vlist")
+	MESSSAGE_DEBUG("bbc79Vlist")
 }
 
 void bbc79Tick(void) {
-	DEBUG_WORD("bbc79Tick")
+	MESSSAGE_DEBUG("bbc79Tick")
 }
 
 void bbc79Repeat(void) {
-	DEBUG_WORD("bbc79Repeat")
+	MESSSAGE_DEBUG("bbc79Repeat")
 }
 
 void bbc79While(void) {
-	DEBUG_WORD("bbc79While")
+	MESSSAGE_DEBUG("bbc79While")
 }
 
 void bbc79Again(void) {
-	DEBUG_WORD("bbc79Again")
+	MESSSAGE_DEBUG("bbc79Again")
 }
 
 void bbc79Until(void) {
-	DEBUG_WORD("bbc79Until")
+	MESSSAGE_DEBUG("bbc79Until")
 }
 
 void bbc79Begin(void) {
-	DEBUG_WORD("bbc79Begin")
+	MESSSAGE_DEBUG("bbc79Begin")
 }
 
 void bbc79Else(void) {
-	DEBUG_WORD("bbc79Else")
+	MESSSAGE_DEBUG("bbc79Else")
 }
 
 void bbc79Then(void) {
-	DEBUG_WORD("bbc79Then")
+	MESSSAGE_DEBUG("bbc79Then")
 }
 
 void bbc79If(void) {
-	DEBUG_WORD("bbc79If")
+	MESSSAGE_DEBUG("bbc79If")
 }
 
 void bbc79PlusLoop(void) {
-	DEBUG_WORD("bbc79PlusLoop")
+	MESSSAGE_DEBUG("bbc79PlusLoop")
 }
 
 void bbc79Loop(void) {
-	DEBUG_WORD("bbc79Loop")
+	MESSSAGE_DEBUG("bbc79Loop")
 }
 
 void bbc79Do(void) {
-	DEBUG_WORD("bbc79Do")
+	MESSSAGE_DEBUG("bbc79Do")
 }
 
 void bbc79Back(void) {
-	DEBUG_WORD("bbc79Back")
+	MESSSAGE_DEBUG("bbc79Back")
 }
 
 void bbc79J(void) {
-	DEBUG_WORD("bbc79J")
+	MESSSAGE_DEBUG("bbc79J")
 }
 
 void bbc79TwoSlash(void) {
-	DEBUG_WORD("bbc79TwoSlash")
+	MESSSAGE_DEBUG("bbc79TwoSlash")
 }
 
 void bbc79TwoStar(void) {
-	DEBUG_WORD("bbc79TwoStar")
+	MESSSAGE_DEBUG("bbc79TwoStar")
 }
 
 void bbc79Message(void) {
-	DEBUG_WORD("bbc79Message")
+	MESSSAGE_DEBUG("bbc79Message")
 }
 
 void bbc79MSGNum(void) {
-	DEBUG_WORD("bbc79MSGNum")
+	MESSSAGE_DEBUG("bbc79MSGNum")
 }
 
 /* Display in hexadecimal base in the format of <.> */
 void bbc79HDot(void) {
 	commonHexDot();
-	DEBUG_WORD("bbc79HDot")
+	MESSSAGE_DEBUG("bbc79HDot")
 }
 
 /* Display in decimal base in the format of <.> */
@@ -438,15 +438,15 @@ void bbc79DecDot(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-	DEBUG_WORD("bbc79DecDot")
+	MESSSAGE_DEBUG("bbc79DecDot")
 }
 
 void bbc79Q(void) {
-	DEBUG_WORD("bbc79Q")
+	MESSSAGE_DEBUG("bbc79Q")
 }
 
 void bbc79UDot(void) {
-	DEBUG_WORD("bbc79UDot")
+	MESSSAGE_DEBUG("bbc79UDot")
 }
 
 void bbc79Dot(void) {
@@ -457,7 +457,7 @@ void bbc79Dot(void) {
 		char* value2;
 		privateSetBaseFormat();
 		if (forthTasks[forthState.forthCurrentTask].baseFormat == BASE_FORMAT_EMPTY) {
-			value2 = privatBaseConversion(forthTasks[forthState.forthCurrentTask].forthBase, value);
+			value2 = privateBaseConversion(forthTasks[forthState.forthCurrentTask].forthBase, value);
 			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 				forthTasks[forthState.forthCurrentTask].baseFormat, value2);
 			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
@@ -472,11 +472,11 @@ void bbc79Dot(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-	DEBUG_WORD("bbc79Dot")
+	MESSSAGE_DEBUG("bbc79Dot")
 }
 
 void bbc79DotR(void) {
-	DEBUG_WORD("bbc79DotR")
+	MESSSAGE_DEBUG("bbc79DotR")
 }
 
 #ifdef DPINTEGER_SUPPORT
@@ -496,7 +496,7 @@ void bbc79DDot(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-	DEBUG_WORD("bbc79DDot")
+	MESSSAGE_DEBUG("bbc79DDot")
 }
 #endif
 
@@ -515,192 +515,192 @@ void bbc79DDotRDot(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_RETURNSTACK_EMPTY;
 	};
-	DEBUG_WORD("bbc79DDotRDot")
+	MESSSAGE_DEBUG("bbc79DDotRDot")
 }
 #endif
 
 void bbc79NumS(void) {
-	DEBUG_WORD("bbc79NumS")
+	MESSSAGE_DEBUG("bbc79NumS")
 }
 
 void bbc79Num(void) {
-	DEBUG_WORD("bbc79Num")
+	MESSSAGE_DEBUG("bbc79Num")
 }
 
 void bbc79Sign(void) {
-	DEBUG_WORD("bbc79Sign")
+	MESSSAGE_DEBUG("bbc79Sign")
 }
 
 void bbc79NumGreater(void) {
-	DEBUG_WORD("bbc79NumGreater")
+	MESSSAGE_DEBUG("bbc79NumGreater")
 }
 
 void bbc79LessNum(void) {
-	DEBUG_WORD("bbc79LessNum")
+	MESSSAGE_DEBUG("bbc79LessNum")
 }
 
 void bbc79Spaces(void) {
-	DEBUG_WORD("bbc79Spaces")
+	MESSSAGE_DEBUG("bbc79Spaces")
 }
 
 void bbc79MSlashMod(void) {
-	DEBUG_WORD("bbc79MSlashMod")
+	MESSSAGE_DEBUG("bbc79MSlashMod")
 }
 
 void bbc79StarSlash(void) {
-	DEBUG_WORD("bbc79StarSlash")
+	MESSSAGE_DEBUG("bbc79StarSlash")
 }
 
 void bbc79StarSlashMod(void) {
-	DEBUG_WORD("bbc79StarSlashMod")
+	MESSSAGE_DEBUG("bbc79StarSlashMod")
 }
 
 void bbc79Mod(void) {
-	DEBUG_WORD("bbc79Mod")
+	MESSSAGE_DEBUG("bbc79Mod")
 }
 
 void bbc79Slash(void) {
-	DEBUG_WORD("bbc79Slash")
+	MESSSAGE_DEBUG("bbc79Slash")
 }
 
 void bbc79SlashMod(void) {
-	DEBUG_WORD("bbc79SlashMod")
+	MESSSAGE_DEBUG("bbc79SlashMod")
 }
 
 void bbc79Star(void) {
-	DEBUG_WORD("bbc79Star")
+	MESSSAGE_DEBUG("bbc79Star")
 }
 
 void bbc79MSlash(void) {
-	DEBUG_WORD("bbc79MSlash")
+	MESSSAGE_DEBUG("bbc79MSlash")
 }
 
 void bbc79MAbs(void) {
-	DEBUG_WORD("bbc79MAbs")
+	MESSSAGE_DEBUG("bbc79MAbs")
 }
 
 #ifdef DPINTEGER_SUPPORT
 void bbc79DPlusMinus(void) {
-	DEBUG_WORD("bbc79DPlusMinus")
+	MESSSAGE_DEBUG("bbc79DPlusMinus")
 }
 #endif
 
 void bbc79PlusMinus(void) {
-	DEBUG_WORD("bbc79PlusMinus")
+	MESSSAGE_DEBUG("bbc79PlusMinus")
 }
 
 #ifdef DPINTEGER_SUPPORT
 void bbc79SToD(void) {
-	DEBUG_WORD("bbc79SToD")
+	MESSSAGE_DEBUG("bbc79SToD")
 }
 #endif
 
 void bbc79Warm(void) {
-	DEBUG_WORD("bbc79Warm")
+	MESSSAGE_DEBUG("bbc79Warm")
 }
 
 void bbc79Cold(void) {
-	DEBUG_WORD("bbc79Cold")
+	MESSSAGE_DEBUG("bbc79Cold")
 }
 
 void bbc79Start(void) {
-	DEBUG_WORD("bbc79Start")
+	MESSSAGE_DEBUG("bbc79Start")
 }
 
 void bbc79Mode(void) {
-	DEBUG_WORD("bbc79Mode")
+	MESSSAGE_DEBUG("bbc79Mode")
 }
 
 void bbc79OSError(void) {
-	DEBUG_WORD("bbc79OSError")
+	MESSSAGE_DEBUG("bbc79OSError")
 }
 
 void bbc79Escape(void) {
-	DEBUG_WORD("bbc79Escape")
+	MESSSAGE_DEBUG("bbc79Escape")
 }
 
 void bbc79Abort(void) {
-	DEBUG_WORD("bbc79Abort")
+	MESSSAGE_DEBUG("bbc79Abort")
 }
 
 void bbc79ZAbort(void) {
-	DEBUG_WORD("bbc79ZAbort")
+	MESSSAGE_DEBUG("bbc79ZAbort")
 }
 
 void bbc79ZWarm(void) {
-	DEBUG_WORD("bbc79ZWarm")
+	MESSSAGE_DEBUG("bbc79ZWarm")
 }
 
 void bbc79Definitions(void) {
-	DEBUG_WORD("bbc79Definitions")
+	MESSSAGE_DEBUG("bbc79Definitions")
 }
 
 void bbc79Quit(void) {
-	DEBUG_WORD("bbc79Quit")
+	MESSSAGE_DEBUG("bbc79Quit")
 }
 
 void bbc79Forth(void) {
-	DEBUG_WORD("bbc79Forth")
+	MESSSAGE_DEBUG("bbc79Forth")
 }
 
 void bbc79Vocabulary(void) {
-	DEBUG_WORD("bbc79Vocabulary")
+	MESSSAGE_DEBUG("bbc79Vocabulary")
 }
 
 void bbc79Interpret(void) {
-	DEBUG_WORD("bbc79Interpret")
+	MESSSAGE_DEBUG("bbc79Interpret")
 }
 
 void bbc79NumericInterpret(void) {
-	DEBUG_WORD("bbc79NumericInterpret")
+	MESSSAGE_DEBUG("bbc79NumericInterpret")
 }
 
 void bbc79ZNumericInterpret(void) {
-	DEBUG_WORD("bbc79ZNumericInterpret")
+	MESSSAGE_DEBUG("bbc79ZNumericInterpret")
 }
 
 void bbc79Paren(void) {
-	DEBUG_WORD("bbc79Paren")
+	MESSSAGE_DEBUG("bbc79Paren")
 }
 
 void bbc79Number(void) {
-	DEBUG_WORD("bbc79Number")
+	MESSSAGE_DEBUG("bbc79Number")
 }
 
 void bbc79Semicolon(void) {
-	DEBUG_WORD("bbc79Semicolon")
+	MESSSAGE_DEBUG("bbc79Semicolon")
 }
 
 void bbc79Colon(void) {
-	DEBUG_WORD("bbc79Colon")
+	MESSSAGE_DEBUG("bbc79Colon")
 }
 
 void bbc79QStack(void) {
-	DEBUG_WORD("bbc79QStack")
+	MESSSAGE_DEBUG("bbc79QStack")
 }
 
 void bbc79Dliteral(void) {
-	DEBUG_WORD("bbc79Dliteral")
+	MESSSAGE_DEBUG("bbc79Dliteral")
 }
 
 void bbc79Literal(void) {
-	DEBUG_WORD("bbc79Literal")
+	MESSSAGE_DEBUG("bbc79Literal")
 }
 
 void bbc79ZCompile(void) {
-	DEBUG_WORD("bbc79Literal")
+	MESSSAGE_DEBUG("bbc79Literal")
 }
 
 void bbc79Create(void) {
-	DEBUG_WORD("bbc79Create")
+	MESSSAGE_DEBUG("bbc79Create")
 }
 
 void bbc79ZCreate(void) {
-	DEBUG_WORD("bbc79ZCreate")
+	MESSSAGE_DEBUG("bbc79ZCreate")
 }
 
 void bbc79IDDot(void) {
-	DEBUG_WORD("bbc79IDDot")
+	MESSSAGE_DEBUG("bbc79IDDot")
 }
 
 void bbc79Error(void) {
@@ -715,171 +715,171 @@ void bbc79Error(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-	DEBUG_WORD("bbc79Error")
+	MESSSAGE_DEBUG("bbc79Error")
 }
 
 void bbc79Find(void) {
-	DEBUG_WORD("bbc79Find")
+	MESSSAGE_DEBUG("bbc79Find")
 }
 
 void bbc79MinusFind(void) {
-	DEBUG_WORD("bbc79MinusFind")
+	MESSSAGE_DEBUG("bbc79MinusFind")
 }
 
 void bbc79Convert(void) {
-	DEBUG_WORD("bbc79Convert")
+	MESSSAGE_DEBUG("bbc79Convert")
 }
 
 void bbc79Word(void) {
-	DEBUG_WORD("bbc79Word")
+	MESSSAGE_DEBUG("bbc79Word")
 }
 
 void bbc79OneWord(void) {
-	DEBUG_WORD("bbc79OneWord")
+	MESSSAGE_DEBUG("bbc79OneWord")
 }
 
 void bbc79WBFR(void) {
-	DEBUG_WORD("bbc79WBFR")
+	MESSSAGE_DEBUG("bbc79WBFR")
 }
 
 void bbc79WDSZ(void) {
-	DEBUG_WORD("bbc79WDSZ")
+	MESSSAGE_DEBUG("bbc79WDSZ")
 }
 
 void bbc79ZWord(void) {
-	DEBUG_WORD("bbc79ZWord")
+	MESSSAGE_DEBUG("bbc79ZWord")
 }
 
 void bbc79Hold(void) {
-	DEBUG_WORD("bbc79Hold")
+	MESSSAGE_DEBUG("bbc79Hold")
 }
 
 void bbc79Blanks(void) {
-	DEBUG_WORD("bbc79Blanks")
+	MESSSAGE_DEBUG("bbc79Blanks")
 }
 
 void bbc79Erase(void) {
-	DEBUG_WORD("bbc79Erase")
+	MESSSAGE_DEBUG("bbc79Erase")
 }
 
 void bbc79Fill(void) {
-	DEBUG_WORD("bbc79Fill")
+	MESSSAGE_DEBUG("bbc79Fill")
 }
 
 void bbc79Move(void) {
-	DEBUG_WORD("bbc79Move")
+	MESSSAGE_DEBUG("bbc79Move")
 }
 
 void bbc79Query(void) {
-	DEBUG_WORD("bbc79Query")
+	MESSSAGE_DEBUG("bbc79Query")
 }
 
 void bbc79Expect(void) {
-	DEBUG_WORD("bbc79Expect")
+	MESSSAGE_DEBUG("bbc79Expect")
 }
 
 void bbc79ZExpect(void) {
-	DEBUG_WORD("bbc79ZExpect")
+	MESSSAGE_DEBUG("bbc79ZExpect")
 }
 
 void bbc79DotQuote(void) {
-	DEBUG_WORD("bbc79DotQuote")
+	MESSSAGE_DEBUG("bbc79DotQuote")
 }
 
 void bbc79ZDotQuote(void) {
-	DEBUG_WORD("bbc79ZDotQuote")
+	MESSSAGE_DEBUG("bbc79ZDotQuote")
 }
 
 void bbc79TextComma(void) {
-	DEBUG_WORD("bbc79TextComma")
+	MESSSAGE_DEBUG("bbc79TextComma")
 }
 
 void bbc79MinusTrailing(void) {
-	DEBUG_WORD("bbc79MinusTrailing")
+	MESSSAGE_DEBUG("bbc79MinusTrailing")
 }
 
 void bbc79Type(void) {
-	DEBUG_WORD("bbc79Type")
+	MESSSAGE_DEBUG("bbc79Type")
 }
 
 void bbc79Count(void) {
-	DEBUG_WORD("bbc79Type")
+	MESSSAGE_DEBUG("bbc79Type")
 }
 
 void bbc79ZeroGreater(void) {
-	DEBUG_WORD("bbc79ZeroGreater")
+	MESSSAGE_DEBUG("bbc79ZeroGreater")
 }
 
 void bbc79Does(void) {
-	DEBUG_WORD("bbc79Does")
+	MESSSAGE_DEBUG("bbc79Does")
 }
 
 void bbc79SemicolonCode(void) {
-	DEBUG_WORD("bbc79SemicolonCode")
+	MESSSAGE_DEBUG("bbc79SemicolonCode")
 }
 
 void bbc79ZSemicolonCode(void) {
-	DEBUG_WORD("bbc79ZSemicolonCode")
+	MESSSAGE_DEBUG("bbc79ZSemicolonCode")
 }
 
 void bbc79Decimal(void) {
 	forthTasks[forthState.forthCurrentTask].forthBase = DECIMAL;
 	forthTasks[forthState.forthCurrentTask].baseFormat = (char*)BASE_FORMAT_DECIMAL;
-	DEBUG_WORD("bbc79Decimal")
+	MESSSAGE_DEBUG("bbc79Decimal")
 }
 
 void bbc79CR(void) {
-	DEBUG_WORD("bbc79CR")
+	MESSSAGE_DEBUG("bbc79CR")
 }
 
 void bbc79Hex(void) {
 	forthTasks[forthState.forthCurrentTask].forthBase = HEX;
 	forthTasks[forthState.forthCurrentTask].baseFormat = (char*)BASE_FORMAT_HEX;
-	DEBUG_WORD("bbc79Hex")
+	MESSSAGE_DEBUG("bbc79Hex")
 }
 
 void bbc79QTab(void) {
-	DEBUG_WORD("bbc79QTab")
+	MESSSAGE_DEBUG("bbc79QTab")
 }
 
 void bbc79NoOp(void) {
-	DEBUG_WORD("bbc79NoOp")
+	MESSSAGE_DEBUG("bbc79NoOp")
 }
 
 void bbc79RightBracket(void) {
-	DEBUG_WORD("RightBracket")
+	MESSSAGE_DEBUG("RightBracket")
 }
 
 void bbc79LeftBracket(void) {
-	DEBUG_WORD("LeftBracket")
+	MESSSAGE_DEBUG("LeftBracket")
 }
 
 void bbc79Compile(void) {
-	DEBUG_WORD("bbc79Compile")
+	MESSSAGE_DEBUG("bbc79Compile")
 }
 
 void bbc79Immediate(void) {
-	DEBUG_WORD("bbc79Immediate")
+	MESSSAGE_DEBUG("bbc79Immediate")
 }
 
 void bbc79QLoading(void) {
-	DEBUG_WORD("bbc79QLoading")
+	MESSSAGE_DEBUG("bbc79QLoading")
 }
 
 void bbc79QCSP(void) {
-	DEBUG_WORD("bbc79QCSP")
+	MESSSAGE_DEBUG("bbc79QCSP")
 }
 
 void bbc79QPairs(void) {
-	DEBUG_WORD("bbc79QPairs")
+	MESSSAGE_DEBUG("bbc79QPairs")
 }
 
 void bbc79QExec(void) {
-	DEBUG_WORD("bbc79QExec")
+	MESSSAGE_DEBUG("bbc79QExec")
 }
 
 void bbc79QComp(void) {
-	DEBUG_WORD("bbc79QComp")
+	MESSSAGE_DEBUG("bbc79QComp")
 }
 
 void bbc79QError(void) {
@@ -900,107 +900,107 @@ void bbc79QError(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-	DEBUG_WORD("bbc79QError")
+	MESSSAGE_DEBUG("bbc79QError")
 }
 
 void bbc79StoreCSP(void) {
-	DEBUG_WORD("bbc79StoreCSP")
+	MESSSAGE_DEBUG("bbc79StoreCSP")
 }
 
 void bbc79Not(void) {
-	DEBUG_WORD("bbc79Not")
+	MESSSAGE_DEBUG("bbc79Not")
 }
 
 void bbc79PFA(void) {
-	DEBUG_WORD("bbc79PFA")
+	MESSSAGE_DEBUG("bbc79PFA")
 }
 
 void bbc79CFA(void) {
-	DEBUG_WORD("bbc79CFA")
+	MESSSAGE_DEBUG("bbc79CFA")
 }
 
 void bbc79NFA(void) {
-	DEBUG_WORD("bbc79NFA")
+	MESSSAGE_DEBUG("bbc79NFA")
 }
 
 void bbc79LFA(void) {
-	DEBUG_WORD("bbc79LFA")
+	MESSSAGE_DEBUG("bbc79LFA")
 }
 
 void bbc79ULess(void) {
-	DEBUG_WORD("bbc79ULess")
+	MESSSAGE_DEBUG("bbc79ULess")
 }
 
 void bbc79Greater(void) {
-	DEBUG_WORD("bbc79Greater")
+	MESSSAGE_DEBUG("bbc79Greater")
 }
 
 void bbc79Equal(void) {
-	DEBUG_WORD("bbc79Equal")
+	MESSSAGE_DEBUG("bbc79Equal")
 }
 
 void bbc79Minus(void) {
-	DEBUG_WORD("bbc79Minus")
+	MESSSAGE_DEBUG("bbc79Minus")
 }
 
 void bbc79Smudge(void) {
-	DEBUG_WORD("bbc79Smudge")
+	MESSSAGE_DEBUG("bbc79Smudge")
 }
 
 void bbc79Last(void) {
-	DEBUG_WORD("bbc79Last")
+	MESSSAGE_DEBUG("bbc79Last")
 }
 
 void bbc79CComma(void) {
-	DEBUG_WORD("bbc79CComma")
+	MESSSAGE_DEBUG("bbc79CComma")
 }
 
 void bbc79Comma(void) {
-	DEBUG_WORD("bbc79Comma")
+	MESSSAGE_DEBUG("bbc79Comma")
 }
 
 void bbc79Space(void) {
-	DEBUG_WORD("bbc79Comma")
+	MESSSAGE_DEBUG("bbc79Comma")
 }
 
 void bbc79Allot(void) {
-	DEBUG_WORD("bbc79Allot")
+	MESSSAGE_DEBUG("bbc79Allot")
 }
 
 void bbc79Here(void) {
-	DEBUG_WORD("bbc79Here")
+	MESSSAGE_DEBUG("bbc79Here")
 }
 
 void bbc79TwoMinus(void) {
-	DEBUG_WORD("bbc79TwoMinus")
+	MESSSAGE_DEBUG("bbc79TwoMinus")
 }
 
 void bbc79OneMinus(void) {
-	DEBUG_WORD("bbc79OneMinus")
+	MESSSAGE_DEBUG("bbc79OneMinus")
 }
 
 void bbc79TwoPlus(void) {
-	DEBUG_WORD("bbc79TwoPlus")
+	MESSSAGE_DEBUG("bbc79TwoPlus")
 }
 
 void bbc79OnePlus(void) {
-	DEBUG_WORD("bbc79OnePlus")
+	MESSSAGE_DEBUG("bbc79OnePlus")
 }
 
 void bbc79HLD(void) {
-	DEBUG_WORD("bbc79HLD")
+	MESSSAGE_DEBUG("bbc79HLD")
 }
 
 void bbc79RNum(void) {
-	DEBUG_WORD("bbc79RNum")
+	MESSSAGE_DEBUG("bbc79RNum")
 }
 
 void bbc79CSP(void) {
-	DEBUG_WORD("bbc79CSP")
+	MESSSAGE_DEBUG("bbc79CSP")
 }
 
 void bbc79DPL(void) {
-	DEBUG_WORD("bbc79DPL")
+	MESSSAGE_DEBUG("bbc79DPL")
 }
 
 /* ": HEX 16 BASE ! ; ( MAKE HEX THE IN-OUT BASE *)" */
@@ -1014,151 +1014,151 @@ void bbc79Base(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_FULL;
 	};
-	DEBUG_WORD("bbc79Base")
+	MESSSAGE_DEBUG("bbc79Base")
 }
 
 void bbc79State(void) {
-	DEBUG_WORD("bbc79State")
+	MESSSAGE_DEBUG("bbc79State")
 }
 
 void bbc79Current(void) {
-	DEBUG_WORD("bbc79Current")
+	MESSSAGE_DEBUG("bbc79Current")
 }
 
 void bbc79Context(void) {
-	DEBUG_WORD("bbc79Context")
+	MESSSAGE_DEBUG("bbc79Context")
 }
 
 void bbc79Offset(void) {
-	DEBUG_WORD("bbc79Offset")
+	MESSSAGE_DEBUG("bbc79Offset")
 }
 
 void bbc79SCR(void) {
-	DEBUG_WORD("bbc79SCR")
+	MESSSAGE_DEBUG("bbc79SCR")
 }
 
 void bbc79Out(void) {
-	DEBUG_WORD("bbc79Out")
+	MESSSAGE_DEBUG("bbc79Out")
 }
 
 void bbc79ToIn(void) {
-	DEBUG_WORD("bbc79ToIn")
+	MESSSAGE_DEBUG("bbc79ToIn")
 }
 
 void bbc79BLK(void) {
-	DEBUG_WORD("bbc79BLK")
+	MESSSAGE_DEBUG("bbc79BLK")
 }
 
 void bbc79VocLink(void) {
-	DEBUG_WORD("bbc79VocLink")
+	MESSSAGE_DEBUG("bbc79VocLink")
 }
 
 void bbc79DP(void) {
-	DEBUG_WORD("bbc79DP")
+	MESSSAGE_DEBUG("bbc79DP")
 }
 
 void bbc79Fence(void) {
-	DEBUG_WORD("bbc79Fence")
+	MESSSAGE_DEBUG("bbc79Fence")
 }
 
 void bbc79Warnung(void) {
-	DEBUG_WORD("bbc79Warnung")
+	MESSSAGE_DEBUG("bbc79Warnung")
 }
 
 void bbc79Width(void) {
-	DEBUG_WORD("bbc79Width")
+	MESSSAGE_DEBUG("bbc79Width")
 }
 
 void bbc79TIB(void) {
-	DEBUG_WORD("bbc79TIB")
+	MESSSAGE_DEBUG("bbc79TIB")
 }
 
 void bbc79R0(void) {
-	DEBUG_WORD("bbc79R0")
+	MESSSAGE_DEBUG("bbc79R0")
 }
 
 void bbc79S0(void) {
-	DEBUG_WORD("bbc79S0")
+	MESSSAGE_DEBUG("bbc79S0")
 }
 
 void bbc79PlusOrigin(void) {
-	DEBUG_WORD("bbc79PlusOrigin")
+	MESSSAGE_DEBUG("bbc79PlusOrigin")
 }
 
 void bbc79BSlashSCR(void) {
-	DEBUG_WORD("bbc79BSlashSCR")
+	MESSSAGE_DEBUG("bbc79BSlashSCR")
 }
 
 void bbc79BSlashBUF(void) {
-	DEBUG_WORD("bbc79BSlashBUF")
+	MESSSAGE_DEBUG("bbc79BSlashBUF")
 }
 
 void bbc79Limit(void) {
-	DEBUG_WORD("bbc79Limit")
+	MESSSAGE_DEBUG("bbc79Limit")
 }
 
 void bbc79First(void) {
-	DEBUG_WORD("bbc79First")
+	MESSSAGE_DEBUG("bbc79First")
 }
 
 void bbc79PAD(void) {
-	DEBUG_WORD("bbc79PAD")
+	MESSSAGE_DEBUG("bbc79PAD")
 }
 
 void CSlashL(void) {
-	DEBUG_WORD("CSlashL")
+	MESSSAGE_DEBUG("CSlashL")
 }
 
 void bbc79BL(void) {
-	DEBUG_WORD("bbc79BL")
+	MESSSAGE_DEBUG("bbc79BL")
 }
 
 void bbc79Two(void) {
-	DEBUG_WORD("bbc79Two")
+	MESSSAGE_DEBUG("bbc79Two")
 }
 
 void bbc79One(void) {
-	DEBUG_WORD("bbc79One")
+	MESSSAGE_DEBUG("bbc79One")
 }
 
 void bbc79Null(void) {
-	DEBUG_WORD("bbc79Null")
+	MESSSAGE_DEBUG("bbc79Null")
 }
 
 void bbc79MinusOne(void) {
-	DEBUG_WORD("bbc79MinusOne")
+	MESSSAGE_DEBUG("bbc79MinusOne")
 }
 
 void bbc79MinusTwo(void) {
-	DEBUG_WORD("bbc79MinusTwo")
+	MESSSAGE_DEBUG("bbc79MinusTwo")
 }
 
 void bbc79User(void) {
-	DEBUG_WORD("bbc79User")
+	MESSSAGE_DEBUG("bbc79User")
 }
 
 void bbc79Variable(void) {
-	DEBUG_WORD("bbc79Variable")
+	MESSSAGE_DEBUG("bbc79Variable")
 }
 
 void bbc79Constant(void) {
-	DEBUG_WORD("bbc79Constant")
+	MESSSAGE_DEBUG("bbc79Constant")
 }
 
 void bbc79RSemicolon(void) {
-	DEBUG_WORD("bbc79RSemicolon")
+	MESSSAGE_DEBUG("bbc79RSemicolon")
 }
 
 void bbc79RColon(void) {
-	DEBUG_WORD("bbc79RColon")
+	MESSSAGE_DEBUG("bbc79RColon")
 }
 
 void bbc79Toggle(void) {
-	DEBUG_WORD("bbc79Toggle")
+	MESSSAGE_DEBUG("bbc79Toggle")
 }
 
 void bbc79PlusStore(void) {
-	DEBUG_WORD("bbc79PlusStore")
+	MESSSAGE_DEBUG("bbc79PlusStore")
 }
 
 void bbc79Store(void) {
@@ -1169,7 +1169,7 @@ void bbc79Store(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-	DEBUG_WORD("bbc79Store")
+	MESSSAGE_DEBUG("bbc79Store")
 }
 
 void bbc79CStore(void) {
@@ -1180,7 +1180,7 @@ void bbc79CStore(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-	DEBUG_WORD("bbc79CStore")
+	MESSSAGE_DEBUG("bbc79CStore")
 }
 
 void bbc79Fetch(void) {
@@ -1192,7 +1192,7 @@ void bbc79Fetch(void) {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
 
-	DEBUG_WORD("bbc79Fetch")
+	MESSSAGE_DEBUG("bbc79Fetch")
 }
 
 void bbc79CFetch(void) {
@@ -1203,76 +1203,76 @@ void bbc79CFetch(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-	DEBUG_WORD("bbc79CFetch")
+	MESSSAGE_DEBUG("bbc79CFetch")
 }
 
 void bbc79QFile(void) {
-	DEBUG_WORD("bbc79QFile")
+	MESSSAGE_DEBUG("bbc79QFile")
 }
 
 void bbc79Himem(void) {
-	DEBUG_WORD("bbc79Himem")
+	MESSSAGE_DEBUG("bbc79Himem")
 }
 
 void bbc79Page(void) {
-	DEBUG_WORD("bbc79Page")
+	MESSSAGE_DEBUG("bbc79Page")
 }
 
 void bbc79Traverse(void) {
-	DEBUG_WORD("bbc79Traverse")
+	MESSSAGE_DEBUG("bbc79Traverse")
 }
 
 void bbc79Rot(void) {
-	DEBUG_WORD("bbc79Rot")
+	MESSSAGE_DEBUG("bbc79Rot")
 }
 
 void bbc79TwentyVer(void) {
-	DEBUG_WORD("bbc79TwentyVer")
+	MESSSAGE_DEBUG("bbc79TwentyVer")
 }
 
 void bbc79Over(void) {
-	DEBUG_WORD("bbc79Over")
+	MESSSAGE_DEBUG("bbc79Over")
 }
 
 void bbc79TwoSwap(void) {
-	DEBUG_WORD("bbc79TwoSwap")
+	MESSSAGE_DEBUG("bbc79TwoSwap")
 }
 
 void bbc79Swap(void) {
-	DEBUG_WORD("bbc79Swap")
+	MESSSAGE_DEBUG("bbc79Swap")
 }
 
 void bbc79TwoDup(void) {
-	DEBUG_WORD("bbc79TwoDup")
+	MESSSAGE_DEBUG("bbc79TwoDup")
 }
 
 void bbc79QDup(void) {
-	DEBUG_WORD("bbc79QDup")
+	MESSSAGE_DEBUG("bbc79QDup")
 }
 
 void bbc79Dup(void) {
-	DEBUG_WORD("bbc79Dup")
+	MESSSAGE_DEBUG("bbc79Dup")
 }
 
 void bbc79TwoDrop(void) {
-	DEBUG_WORD("bbc79TwoDrop")
+	MESSSAGE_DEBUG("bbc79TwoDrop")
 }
 
 void bbc79Drop(void) {
-	DEBUG_WORD("bbc79Drop")
+	MESSSAGE_DEBUG("bbc79Drop")
 }
 
 void bbc79DNegate(void) {
-	DEBUG_WORD("bbc79DNegate")
+	MESSSAGE_DEBUG("bbc79DNegate")
 }
 
 void bbc79Negate(void) {
-	DEBUG_WORD("bbc79Negate")
+	MESSSAGE_DEBUG("bbc79Negate")
 }
 
 #ifdef DPINTEGER_SUPPORT
 void bbc79DPlus(void) {
-	DEBUG_WORD("bbc79DPlus")
+	MESSSAGE_DEBUG("bbc79DPlus")
 }
 #endif
 
@@ -1286,41 +1286,41 @@ void bbc79Plus(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-	DEBUG_WORD("bbc79Plus")
+	MESSSAGE_DEBUG("bbc79Plus")
 }
 
 #ifdef DPINTEGER_SUPPORT
 void bbc79DLess(void) {
-	DEBUG_WORD("bbc79DLess")
+	MESSSAGE_DEBUG("bbc79DLess")
 }
 #endif
 
 void bbc79Less(void) {
-	DEBUG_WORD("bbc79Less")
+	MESSSAGE_DEBUG("bbc79Less")
 }
 
 void bbc79ZeroLess(void) {
-	DEBUG_WORD("bbc79ZeroLess")
+	MESSSAGE_DEBUG("bbc79ZeroLess")
 }
 
 void bbc79ZeroEqual(void) {
-	DEBUG_WORD("bbc79ZeroEqual")
+	MESSSAGE_DEBUG("bbc79ZeroEqual")
 }
 
 void bbc79Leave(void) {
-	DEBUG_WORD("bbc79Leave")
+	MESSSAGE_DEBUG("bbc79Leave")
 }
 
 void bbc79SwapBytes(void) {
-	DEBUG_WORD("bbc79SwapBytes")
+	MESSSAGE_DEBUG("bbc79SwapBytes")
 }
 
 void bbc79RFrom(void) {
-	DEBUG_WORD("bbc79RFrom")
+	MESSSAGE_DEBUG("bbc79RFrom")
 }
 
 void bbc79ToR(void) {
-	DEBUG_WORD("bbc79ToR")
+	MESSSAGE_DEBUG("bbc79ToR")
 }
 
 void bbc79RFetch(void) {
@@ -1338,135 +1338,135 @@ void bbc79RFetch(void) {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_RETURNSTACK_EMPTY;
 	};
 
-	DEBUG_WORD("bbc79RFetch")
+	MESSSAGE_DEBUG("bbc79RFetch")
 }
 
 void bbc79Exit(void) {
-	DEBUG_WORD("bbc79Exit")
+	MESSSAGE_DEBUG("bbc79Exit")
 }
 
 void bbc79Key(void) {
-	DEBUG_WORD("bbc79Key")
+	MESSSAGE_DEBUG("bbc79Key")
 }
 
 void bbc79ZKey(void) {
-	DEBUG_WORD("bbc79ZKey")
+	MESSSAGE_DEBUG("bbc79ZKey")
 }
 
 void bbc79QKey(void) {
-	DEBUG_WORD("bbc79QKey")
+	MESSSAGE_DEBUG("bbc79QKey")
 }
 
 void bbc79Xor(void) {
-	DEBUG_WORD("bbc79Xor")
+	MESSSAGE_DEBUG("bbc79Xor")
 }
 
 void bbc79Or(void) {
-	DEBUG_WORD("bbc79Or")
+	MESSSAGE_DEBUG("bbc79Or")
 }
 
 void bbc79And(void) {
-	DEBUG_WORD("bbc79And")
+	MESSSAGE_DEBUG("bbc79And")
 }
 
 void bbc79USlash(void) {
-	DEBUG_WORD("bbc79USlash")
+	MESSSAGE_DEBUG("bbc79USlash")
 }
 
 void bbc79UStar(void) {
-	DEBUG_WORD("bbc79UStar")
+	MESSSAGE_DEBUG("bbc79UStar")
 }
 
 void bbc79CMove(void) {
-	DEBUG_WORD("bbc79CMove")
+	MESSSAGE_DEBUG("bbc79CMove")
 }
 
 void bbc79ToVDU(void) {
-	DEBUG_WORD("bbc79ToVDU")
+	MESSSAGE_DEBUG("bbc79ToVDU")
 }
 
 void bbc79Emit(void) {
-	DEBUG_WORD("bbc79Emit")
+	MESSSAGE_DEBUG("bbc79Emit")
 }
 
 void bbc79ZEmit(void) {
-	DEBUG_WORD("bbc79ZEmit")
+	MESSSAGE_DEBUG("bbc79ZEmit")
 }
 
 void bbc79RPStore(void) {
-	DEBUG_WORD("bbc79RPStore")
+	MESSSAGE_DEBUG("bbc79RPStore")
 }
 
 void bbc79SPStore(void) {
-	DEBUG_WORD("bbc79SPStore")
+	MESSSAGE_DEBUG("bbc79SPStore")
 }
 
 void bbc79RPFetch(void) {
-	DEBUG_WORD("bbc79RPFetch")
+	MESSSAGE_DEBUG("bbc79RPFetch")
 }
 
 void bbc79SPFetch(void) {
-	DEBUG_WORD("bbc79SPFetch")
+	MESSSAGE_DEBUG("bbc79SPFetch")
 }
 
 void bbc79Enclose(void) {
-	DEBUG_WORD("bbc79Enclose")
+	MESSSAGE_DEBUG("bbc79Enclose")
 }
 
 void bbc79ZFind(void) {
-	DEBUG_WORD("bbc79ZFind")
+	MESSSAGE_DEBUG("bbc79ZFind")
 }
 
 void bbc79Digit(void) {
-	DEBUG_WORD("bbc79Digit")
+	MESSSAGE_DEBUG("bbc79Digit")
 }
 
 void bbc79ModeAddr(void) {
-	DEBUG_WORD("bbc79ModeAddr")
+	MESSSAGE_DEBUG("bbc79ModeAddr")
 }
 
 void bbc79HIAddr(void) {
-	DEBUG_WORD("bbc79HIAddr")
+	MESSSAGE_DEBUG("bbc79HIAddr")
 }
 
 void bbc79ZDO(void) {
-	DEBUG_WORD("bbc79ZDO")
+	MESSSAGE_DEBUG("bbc79ZDO")
 }
 
 void bbc79I(void) {
-	DEBUG_WORD("bbc79I")
+	MESSSAGE_DEBUG("bbc79I")
 }
 
 void bbc79ZULoop(void) {
-	DEBUG_WORD("bbc79ZULoop")
+	MESSSAGE_DEBUG("bbc79ZULoop")
 }
 
 void bbc79ZPlusLoop(void) {
-	DEBUG_WORD("bbc79ZPlusLoop")
+	MESSSAGE_DEBUG("bbc79ZPlusLoop")
 }
 
 void bbc79ZLoop(void) {
-	DEBUG_WORD("bbc79ZLoop")
+	MESSSAGE_DEBUG("bbc79ZLoop")
 }
 
 void bbc79ZeroBranch(void) {
-	DEBUG_WORD("bbc79ZeroBranch")
+	MESSSAGE_DEBUG("bbc79ZeroBranch")
 }
 
 void bbc79Branch(void) {
-	DEBUG_WORD("bbc79Branch")
+	MESSSAGE_DEBUG("bbc79Branch")
 }
 
 void bbc79FetchExecute(void) {
-	DEBUG_WORD("bbc79FetchExecute")
+	MESSSAGE_DEBUG("bbc79FetchExecute")
 }
 
 void bbc79Execute(void) {
-	DEBUG_WORD("bbc79Execute")
+	MESSSAGE_DEBUG("bbc79Execute")
 }
 
 void bbc79Lit(void) {
-	DEBUG_WORD("bbc79Lit")
+	MESSSAGE_DEBUG("bbc79Lit")
 }
 
 #endif

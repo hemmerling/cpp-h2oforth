@@ -6,898 +6,898 @@
 /* Primitives */
 
 void figStore(void) {
-	DEBUG_WORD("figStore")
+	MESSSAGE_DEBUG("figStore")
 }
 
 void figStoreCsp(void) {
-	DEBUG_WORD("figStoreCsp")
+	MESSSAGE_DEBUG("figStoreCsp")
 }
 
 void figNum(void) {
-	DEBUG_WORD("figNum")
+	MESSSAGE_DEBUG("figNum")
 }
 
 void figNumGreater(void) {
-	DEBUG_WORD("figNumGreater")
+	MESSSAGE_DEBUG("figNumGreater")
 }
 
 void figNumS(void) {
-	DEBUG_WORD("figNumS")
+	MESSSAGE_DEBUG("figNumS")
 }
 
 void figTick(void) {
-	DEBUG_WORD("figTick")
+	MESSSAGE_DEBUG("figTick")
 }
 
 void figParen(void) {
-	DEBUG_WORD("figParen")
+	MESSSAGE_DEBUG("figParen")
 }
 
 void figYDotQuote(void) {
-	DEBUG_WORD("figYDotQuote")
+	MESSSAGE_DEBUG("figYDotQuote")
 }
 
 void figYSemicolonCode(void) {
-	DEBUG_WORD("figYSemicolonCode")
+	MESSSAGE_DEBUG("figYSemicolonCode")
 }
 
 void figYPlusLoop(void) {
-	DEBUG_WORD("figYPlusLoop")
+	MESSSAGE_DEBUG("figYPlusLoop")
 }
 
 void figYAbort(void) {
-	DEBUG_WORD("figYAbort")
+	MESSSAGE_DEBUG("figYAbort")
 }
 
 void figYDo(void) {
-	DEBUG_WORD("figYDo")
+	MESSSAGE_DEBUG("figYDo")
 }
 
 void figYFind(void) {
-	DEBUG_WORD("figYFind")
+	MESSSAGE_DEBUG("figYFind")
 }
 
 void figYLine(void) {
-	DEBUG_WORD("figYLine")
+	MESSSAGE_DEBUG("figYLine")
 }
 
 void figYLoop(void) {
-	DEBUG_WORD("figYLoop")
+	MESSSAGE_DEBUG("figYLoop")
 }
 
 void figYNumber(void) {
-	DEBUG_WORD("figYNumber")
+	MESSSAGE_DEBUG("figYNumber")
 }
 
 void figStar(void) {
-	DEBUG_WORD("figStar")
+	MESSSAGE_DEBUG("figStar")
 }
 
 void figStarSlash(void) {
-	DEBUG_WORD("figStarSlash")
+	MESSSAGE_DEBUG("figStarSlash")
 }
 
 void figStarSlashMod(void) {
-	DEBUG_WORD("figStarSlashMod")
+	MESSSAGE_DEBUG("figStarSlashMod")
 }
 
 void figPlus(void) {
-	DEBUG_WORD("figPlus")
+	MESSSAGE_DEBUG("figPlus")
 }
 
 void figPlusStore(void) {
-	DEBUG_WORD("figPlusStore")
+	MESSSAGE_DEBUG("figPlusStore")
 }
 
 void figPlusMinus(void) {
-	DEBUG_WORD("figPlusMinus")
+	MESSSAGE_DEBUG("figPlusMinus")
 }
 
 void figPlusBuf(void) {
-	DEBUG_WORD("figPlusBuf")
+	MESSSAGE_DEBUG("figPlusBuf")
 }
 
 void figPlusLoop(void) {
-	DEBUG_WORD("figPlusLoop")
+	MESSSAGE_DEBUG("figPlusLoop")
 }
 
 void figOrigin(void) {
-	DEBUG_WORD("figOrigin")
+	MESSSAGE_DEBUG("figOrigin")
 }
 
 void figComma(void) {
-	DEBUG_WORD("figComma")
+	MESSSAGE_DEBUG("figComma")
 }
 
 void figMinus(void) {
-	DEBUG_WORD("figMinus")
+	MESSSAGE_DEBUG("figMinus")
 }
 
 void figTo(void) {
-	DEBUG_WORD("figTo")
+	MESSSAGE_DEBUG("figTo")
 }
 
 void figMinusDup(void) {
-	DEBUG_WORD("figMinusDup")
+	MESSSAGE_DEBUG("figMinusDup")
 }
 
 void figFind(void) {
-	DEBUG_WORD("figFind")
+	MESSSAGE_DEBUG("figFind")
 }
 
 void figTrailing(void) {
-	DEBUG_WORD("figTrailing")
+	MESSSAGE_DEBUG("figTrailing")
 }
 
 void figDot(void) {
-	DEBUG_WORD("figDot")
+	MESSSAGE_DEBUG("figDot")
 }
 
 void figDotQuote(void) {
-	DEBUG_WORD("figDotQuote")
+	MESSSAGE_DEBUG("figDotQuote")
 }
 
 void figDotLine(void) {
-	DEBUG_WORD("figDotLine")
+	MESSSAGE_DEBUG("figDotLine")
 }
 
 void figDotR(void) {
-	DEBUG_WORD("figDotR")
+	MESSSAGE_DEBUG("figDotR")
 }
 
 void figSlash(void) {
-	DEBUG_WORD("figSlash")
+	MESSSAGE_DEBUG("figSlash")
 }
 
 void figSlashMod(void) {
-	DEBUG_WORD("figSlashMod")
+	MESSSAGE_DEBUG("figSlashMod")
 }
 
 void figZero(void) {
-	DEBUG_WORD("figZero")
+	MESSSAGE_DEBUG("figZero")
 }
 
 void figOne(void) {
-	DEBUG_WORD("figOne")
+	MESSSAGE_DEBUG("figOne")
 }
 
 void figTwo(void) {
-	DEBUG_WORD("figTwo")
+	MESSSAGE_DEBUG("figTwo")
 }
 
 void figThree(void) {
-	DEBUG_WORD("figThree")
+	MESSSAGE_DEBUG("figThree")
 }
 
 void figZeroLess(void) {
-	DEBUG_WORD("figZeroLess")
+	MESSSAGE_DEBUG("figZeroLess")
 }
 
 void figZeroEqual(void) {
-	DEBUG_WORD("figZeroEqual")
+	MESSSAGE_DEBUG("figZeroEqual")
 }
 
 void figZeroBranch(void) {
-	DEBUG_WORD("figZeroBranch")
+	MESSSAGE_DEBUG("figZeroBranch")
 }
 
 void figOnePlus(void) {
-	DEBUG_WORD("figOnePlus")
+	MESSSAGE_DEBUG("figOnePlus")
 }
 
 void figTwoPlus(void) {
-	DEBUG_WORD("figTwoPlus")
+	MESSSAGE_DEBUG("figTwoPlus")
 }
 
 void figColon(void) {
-	DEBUG_WORD("figColon")
+	MESSSAGE_DEBUG("figColon")
 }
 
 void figSemicolon(void) {
-	DEBUG_WORD("figSemicolon")
+	MESSSAGE_DEBUG("figSemicolon")
 }
 
 void figSemicolonCode(void) {
-	DEBUG_WORD("figSemicolonCode")
+	MESSSAGE_DEBUG("figSemicolonCode")
 }
 
 void figSemicolonS(void) {
-	DEBUG_WORD("figSemicolonS")
+	MESSSAGE_DEBUG("figSemicolonS")
 }
 
 void figLess(void) {
-	DEBUG_WORD("figLess")
+	MESSSAGE_DEBUG("figLess")
 }
 
 void figLessNum(void) {
-	DEBUG_WORD("figLessNum")
+	MESSSAGE_DEBUG("figLessNum")
 }
 
 void figBuilds(void) {
-	DEBUG_WORD("figBuilds")
+	MESSSAGE_DEBUG("figBuilds")
 }
 
 void figEqual(void) {
-	DEBUG_WORD("figEqual")
+	MESSSAGE_DEBUG("figEqual")
 }
 
 void figGreater(void) {
-	DEBUG_WORD("figGreater")
+	MESSSAGE_DEBUG("figGreater")
 }
 
 void figToR(void) {
-	DEBUG_WORD("figToR")
+	MESSSAGE_DEBUG("figToR")
 }
 
 void figQ(void) {
-	DEBUG_WORD("figQ")
+	MESSSAGE_DEBUG("figQ")
 }
 
 void figQComp(void) {
-	DEBUG_WORD("figQComp")
+	MESSSAGE_DEBUG("figQComp")
 }
 
 void figQCsp(void) {
-	DEBUG_WORD("figQCsp")
+	MESSSAGE_DEBUG("figQCsp")
 }
 
 void figQError(void) {
-	DEBUG_WORD("figQError")
+	MESSSAGE_DEBUG("figQError")
 }
 
 void figQExec(void) {
-	DEBUG_WORD("figQExec")
+	MESSSAGE_DEBUG("figQExec")
 }
 
 void figQLoading(void) {
-	DEBUG_WORD("figQLoading")
+	MESSSAGE_DEBUG("figQLoading")
 }
 
 void figQPairs(void) {
-	DEBUG_WORD("figQPairs")
+	MESSSAGE_DEBUG("figQPairs")
 }
 
 void figQStack(void) {
-	DEBUG_WORD("figQStack")
+	MESSSAGE_DEBUG("figQStack")
 }
 
 void figQTerminal(void) {
-	DEBUG_WORD("figQTerminal")
+	MESSSAGE_DEBUG("figQTerminal")
 }
 
 void figFetch(void) {
-	DEBUG_WORD("figFetch")
+	MESSSAGE_DEBUG("figFetch")
 }
 
 void figAbort(void) {
-	DEBUG_WORD("figAbort")
+	MESSSAGE_DEBUG("figAbort")
 }
 
 void figAbs(void) {
-	DEBUG_WORD("figAbs")
+	MESSSAGE_DEBUG("figAbs")
 }
 
 void figAgain(void) {
-	DEBUG_WORD("figAgain")
+	MESSSAGE_DEBUG("figAgain")
 }
 
 void figAllot(void) {
-	DEBUG_WORD("figAllot")
+	MESSSAGE_DEBUG("figAllot")
 }
 
 void figAnd(void) {
-	DEBUG_WORD("figAnd")
+	MESSSAGE_DEBUG("figAnd")
 }
 
 void figBSlashBuf(void) {
-	DEBUG_WORD("figBSlashBuf")
+	MESSSAGE_DEBUG("figBSlashBuf")
 }
 
 void figBSlashScr(void) {
-	DEBUG_WORD("figBSlashScr")
+	MESSSAGE_DEBUG("figBSlashScr")
 }
 
 void figBack(void) {
-	DEBUG_WORD("figBack")
+	MESSSAGE_DEBUG("figBack")
 }
 
 void figBase(void) {
-	DEBUG_WORD("figBase")
+	MESSSAGE_DEBUG("figBase")
 }
 
 void figBegin(void) {
-	DEBUG_WORD("figBegin")
+	MESSSAGE_DEBUG("figBegin")
 }
 
 void figBl(void) {
-	DEBUG_WORD("figBl")
+	MESSSAGE_DEBUG("figBl")
 }
 
 void figBlanks(void) {
-	DEBUG_WORD("figBlanks")
+	MESSSAGE_DEBUG("figBlanks")
 }
 
 void figBlk(void) {
-	DEBUG_WORD("figBlk")
+	MESSSAGE_DEBUG("figBlk")
 }
 
 void figBlock(void) {
-	DEBUG_WORD("figBlock")
+	MESSSAGE_DEBUG("figBlock")
 }
 
 void figBlockRead(void) {
-	DEBUG_WORD("figBlockRead")
+	MESSSAGE_DEBUG("figBlockRead")
 }
 
 void figBlockWrite(void) {
-	DEBUG_WORD("figBlockWrite")
+	MESSSAGE_DEBUG("figBlockWrite")
 }
 
 void figBranch(void) {
-	DEBUG_WORD("figBranch")
+	MESSSAGE_DEBUG("figBranch")
 }
 
 void figBuffer(void) {
-	DEBUG_WORD("figBuffer")
+	MESSSAGE_DEBUG("figBuffer")
 }
 
 void figCStore(void) {
-	DEBUG_WORD("figCStore")
+	MESSSAGE_DEBUG("figCStore")
 }
 
 void figCComma(void) {
-	DEBUG_WORD("figCComma")
+	MESSSAGE_DEBUG("figCComma")
 }
 
 void figCFetch(void) {
-	DEBUG_WORD("figCFetch")
+	MESSSAGE_DEBUG("figCFetch")
 }
 
 void figCfa(void) {
-	DEBUG_WORD("figCfa")
+	MESSSAGE_DEBUG("figCfa")
 }
 
 void figCMove(void) {
-	DEBUG_WORD("figCMove")
+	MESSSAGE_DEBUG("figCMove")
 }
 
 void figCold(void) {
-	DEBUG_WORD("figCold")
+	MESSSAGE_DEBUG("figCold")
 }
 
 void figCompile(void) {
-	DEBUG_WORD("figCompile")
+	MESSSAGE_DEBUG("figCompile")
 }
 
 void figConstant(void) {
-	DEBUG_WORD("figConstant")
+	MESSSAGE_DEBUG("figConstant")
 }
 
 void figContext(void) {
-	DEBUG_WORD("figContext")
+	MESSSAGE_DEBUG("figContext")
 }
 
 void figCount(void) {
-	DEBUG_WORD("figCount")
+	MESSSAGE_DEBUG("figCount")
 }
 
 void figCr(void) {
-	DEBUG_WORD("figCr")
+	MESSSAGE_DEBUG("figCr")
 }
 
 void figCreate(void) {
-	DEBUG_WORD("figCreate")
+	MESSSAGE_DEBUG("figCreate")
 }
 
 void figCsp(void) {
-	DEBUG_WORD("figCsp")
+	MESSSAGE_DEBUG("figCsp")
 }
 
 void figDPlus(void) {
-	DEBUG_WORD("figDPlus")
+	MESSSAGE_DEBUG("figDPlus")
 }
 
 void figDPlusMinus(void) {
-	DEBUG_WORD("figAbsrscDPlusMinus")
+	MESSSAGE_DEBUG("figAbsrscDPlusMinus")
 }
 
 void figDDot(void) {
-	DEBUG_WORD("figDDot")
+	MESSSAGE_DEBUG("figDDot")
 }
 
 void figDDotR(void) {
-	DEBUG_WORD("figDDotR")
+	MESSSAGE_DEBUG("figDDotR")
 }
 
 void figDAbs(void) {
-	DEBUG_WORD("figDAbs")
+	MESSSAGE_DEBUG("figDAbs")
 }
 
 void figDecimal(void) {
-	DEBUG_WORD("figDecimal")
+	MESSSAGE_DEBUG("figDecimal")
 }
 
 void figDefinitions(void) {
-	DEBUG_WORD("figDefinitions")
+	MESSSAGE_DEBUG("figDefinitions")
 }
 
 void figDigit(void) {
-	DEBUG_WORD("figDigit")
+	MESSSAGE_DEBUG("figDigit")
 }
 
 void figDList(void) {
-	DEBUG_WORD("figDList")
+	MESSSAGE_DEBUG("figDList")
 }
 
 void figDLiteral(void) {
-	DEBUG_WORD("figDLiteral")
+	MESSSAGE_DEBUG("figDLiteral")
 }
 
 void figDMinus(void) {
-	DEBUG_WORD("figDMinus")
+	MESSSAGE_DEBUG("figDMinus")
 }
 
 void figDo(void) {
-	DEBUG_WORD("figDo")
+	MESSSAGE_DEBUG("figDo")
 }
 
 void figDoes(void) {
-	DEBUG_WORD("figDoes")
+	MESSSAGE_DEBUG("figDoes")
 }
 
 void figDP(void) {
-	DEBUG_WORD("figDP")
+	MESSSAGE_DEBUG("figDP")
 }
 
 void figDpl(void) {
-	DEBUG_WORD("figDpl")
+	MESSSAGE_DEBUG("figDpl")
 }
 
 void figDr0(void) {
-	DEBUG_WORD("figDr0")
+	MESSSAGE_DEBUG("figDr0")
 }
 
 void figDr1(void) {
-	DEBUG_WORD("figDr1")
+	MESSSAGE_DEBUG("figDr1")
 }
 
 void figDrop(void) {
-	DEBUG_WORD("figDrop")
+	MESSSAGE_DEBUG("figDrop")
 }
 
 void figDump(void) {
-	DEBUG_WORD("figDump")
+	MESSSAGE_DEBUG("figDump")
 }
 
 void figDup(void) {
-	DEBUG_WORD("figDup")
+	MESSSAGE_DEBUG("figDup")
 }
 
 void figElse(void) {
-	DEBUG_WORD("figElse")
+	MESSSAGE_DEBUG("figElse")
 }
 
 void figEmit(void) {
-	DEBUG_WORD("figEmit")
+	MESSSAGE_DEBUG("figEmit")
 }
 
 void figEmptyBuffers(void) {
-	DEBUG_WORD("figEmptyBuffers")
+	MESSSAGE_DEBUG("figEmptyBuffers")
 }
 
 void figEnclose(void) {
-	DEBUG_WORD("figEnclose")
+	MESSSAGE_DEBUG("figEnclose")
 }
 
 void figEnd(void) {
-	DEBUG_WORD("figEnd")
+	MESSSAGE_DEBUG("figEnd")
 }
 
 void figEndIf(void) {
-	DEBUG_WORD("figEndIf")
+	MESSSAGE_DEBUG("figEndIf")
 }
 
 void figErase(void) {
-	DEBUG_WORD("figErase")
+	MESSSAGE_DEBUG("figErase")
 }
 
 void figError(void) {
-	DEBUG_WORD("figError")
+	MESSSAGE_DEBUG("figError")
 }
 
 void figExecute(void) {
-	DEBUG_WORD("figExecute")
+	MESSSAGE_DEBUG("figExecute")
 }
 
 void figExpect(void) {
-	DEBUG_WORD("figExpect")
+	MESSSAGE_DEBUG("figExpect")
 }
 
 void figFence(void) {
-	DEBUG_WORD("figFence")
+	MESSSAGE_DEBUG("figFence")
 }
 
 void figFill(void) {
-	DEBUG_WORD("figFill")
+	MESSSAGE_DEBUG("figFill")
 }
 
 void figFirst(void) {
-	DEBUG_WORD("figFirst")
+	MESSSAGE_DEBUG("figFirst")
 }
 
 void figFld(void) {
-	DEBUG_WORD("figFld")
+	MESSSAGE_DEBUG("figFld")
 }
 
 void figForget(void) {
-	DEBUG_WORD("figForget")
+	MESSSAGE_DEBUG("figForget")
 }
 
 void figForth(void) {
-	DEBUG_WORD("figForth")
+	MESSSAGE_DEBUG("figForth")
 }
 
 void figHere(void) {
-	DEBUG_WORD("figHere")
+	MESSSAGE_DEBUG("figHere")
 }
 
 void figHex(void) {
-	DEBUG_WORD("figHex")
+	MESSSAGE_DEBUG("figHex")
 }
 
 void figHld(void) {
-	DEBUG_WORD("figHld")
+	MESSSAGE_DEBUG("figHld")
 }
 
 void figHold(void) {
-	DEBUG_WORD("figHold")
+	MESSSAGE_DEBUG("figHold")
 }
 
 void figI(void) {
-	DEBUG_WORD("figI")
+	MESSSAGE_DEBUG("figI")
 }
 
 void figIDDot(void) {
-	DEBUG_WORD("figIDDot")
+	MESSSAGE_DEBUG("figIDDot")
 }
 
 void figIf(void) {
-	DEBUG_WORD("figIf")
+	MESSSAGE_DEBUG("figIf")
 }
 
 void figImmediate(void) {
-	DEBUG_WORD("figImmediate")
+	MESSSAGE_DEBUG("figImmediate")
 }
 
 void figIn(void) {
-	DEBUG_WORD("figIn")
+	MESSSAGE_DEBUG("figIn")
 }
 
 void figIndex(void) {
-	DEBUG_WORD("figIndex")
+	MESSSAGE_DEBUG("figIndex")
 }
 
 void figInterpret(void) {
-	DEBUG_WORD("figInterpret")
+	MESSSAGE_DEBUG("figInterpret")
 }
 
 void figKey(void) {
-	DEBUG_WORD("figKey")
+	MESSSAGE_DEBUG("figKey")
 }
 
 void figLatest(void) {
-	DEBUG_WORD("figLatest")
+	MESSSAGE_DEBUG("figLatest")
 }
 
 void figLeave(void) {
-	DEBUG_WORD("figLeave")
+	MESSSAGE_DEBUG("figLeave")
 }
 
 void figLfa(void) {
-	DEBUG_WORD("figLfa")
+	MESSSAGE_DEBUG("figLfa")
 }
 
 void figLimit(void) {
-	DEBUG_WORD("figLimit")
+	MESSSAGE_DEBUG("figLimit")
 }
 
 void figList(void) {
-	DEBUG_WORD("figList")
+	MESSSAGE_DEBUG("figList")
 }
 
 void figLit(void) {
-	DEBUG_WORD("figLit")
+	MESSSAGE_DEBUG("figLit")
 }
 
 void figLiteral(void) {
-	DEBUG_WORD("figLiteral")
+	MESSSAGE_DEBUG("figLiteral")
 }
 
 void figLoad(void) {
-	DEBUG_WORD("figLoad")
+	MESSSAGE_DEBUG("figLoad")
 }
 
 void figLoop(void) {
-	DEBUG_WORD("figLoop")
+	MESSSAGE_DEBUG("figLoop")
 }
 
 void figMStar(void) {
-	DEBUG_WORD("figMStar")
+	MESSSAGE_DEBUG("figMStar")
 }
 
 void figMSlash(void) {
-	DEBUG_WORD("figMSlash")
+	MESSSAGE_DEBUG("figMSlash")
 }
 
 void figMSlashMod(void) {
-	DEBUG_WORD("figMSlashMod")
+	MESSSAGE_DEBUG("figMSlashMod")
 }
 
 void figMax(void) {
-	DEBUG_WORD("figMax")
+	MESSSAGE_DEBUG("figMax")
 }
 
 void figMessage(void) {
-	DEBUG_WORD("figMessage")
+	MESSSAGE_DEBUG("figMessage")
 }
 
 void figMin(void) {
-	DEBUG_WORD("figMin")
+	MESSSAGE_DEBUG("figMin")
 }
 
 void figMod(void) {
-	DEBUG_WORD("figMod")
+	MESSSAGE_DEBUG("figMod")
 }
 
 void figMon(void) {
-	DEBUG_WORD("figMon")
+	MESSSAGE_DEBUG("figMon")
 }
 
 void figMove(void) {
-	DEBUG_WORD("figMove")
+	MESSSAGE_DEBUG("figMove")
 }
 
 void figNext(void) {
-	DEBUG_WORD("figNext")
+	MESSSAGE_DEBUG("figNext")
 }
 
 
 
 void figNumber(void) {
-	DEBUG_WORD("figNumber")
+	MESSSAGE_DEBUG("figNumber")
 }
 
 void figOffset(void) {
-	DEBUG_WORD("figOffset")
+	MESSSAGE_DEBUG("figOffset")
 }
 
 void figOr(void) {
-	DEBUG_WORD("figOr")
+	MESSSAGE_DEBUG("figOr")
 }
 
 void figOut(void) {
-	DEBUG_WORD("figOut")
+	MESSSAGE_DEBUG("figOut")
 }
 
 void figOver(void) {
-	DEBUG_WORD("figOver")
+	MESSSAGE_DEBUG("figOver")
 }
 
 void figPad(void) {
-	DEBUG_WORD("figPad")
+	MESSSAGE_DEBUG("figPad")
 }
 
 void figNfa(void) {
-	DEBUG_WORD("figNfa")
+	MESSSAGE_DEBUG("figNfa")
 }
 
 void figPfa(void) {
-	DEBUG_WORD("figPfa")
+	MESSSAGE_DEBUG("figPfa")
 }
 
 void figPop(void) {
-	DEBUG_WORD("figPop")
+	MESSSAGE_DEBUG("figPop")
 }
 
 void figPrev(void) {
-	DEBUG_WORD("figPrev")
+	MESSSAGE_DEBUG("figPrev")
 }
 
 void figPush(void) {
-	DEBUG_WORD("figPush")
+	MESSSAGE_DEBUG("figPush")
 }
 
 void figPut(void) {
-	DEBUG_WORD("figPut")
+	MESSSAGE_DEBUG("figPut")
 }
 
 void figQuery(void) {
-	DEBUG_WORD("figQuery")
+	MESSSAGE_DEBUG("figQuery")
 }
 
 void figQuit(void) {
-	DEBUG_WORD("figQuit")
+	MESSSAGE_DEBUG("figQuit")
 }
 
 void figR(void) {
-	DEBUG_WORD("figR")
+	MESSSAGE_DEBUG("figR")
 }
 
 void figRNum(void) {
-	DEBUG_WORD("figRNum")
+	MESSSAGE_DEBUG("figRNum")
 }
 
 void figRSlashW(void) {
-	DEBUG_WORD("figRSlashW")
+	MESSSAGE_DEBUG("figRSlashW")
 }
 
 void figRFrom(void) {
-	DEBUG_WORD("figRFrom")
+	MESSSAGE_DEBUG("figRFrom")
 }
 
 void figR0(void) {
-	DEBUG_WORD("figR0L")
+	MESSSAGE_DEBUG("figR0L")
 }
 
 void figRepeat(void) {
-	DEBUG_WORD("figRepeat")
+	MESSSAGE_DEBUG("figRepeat")
 }
 
 void figRot(void) {
-	DEBUG_WORD("figRot")
+	MESSSAGE_DEBUG("figRot")
 }
 
 void figRPStore(void) {
-	DEBUG_WORD("figRPStore")
+	MESSSAGE_DEBUG("figRPStore")
 }
 
 void figSToD(void) {
-	DEBUG_WORD("figSToD")
+	MESSSAGE_DEBUG("figSToD")
 }
 
 void figS0(void) {
-	DEBUG_WORD("figS0")
+	MESSSAGE_DEBUG("figS0")
 }
 
 void figScr(void) {
-	DEBUG_WORD("figScr")
+	MESSSAGE_DEBUG("figScr")
 }
 
 void figSign(void) {
-	DEBUG_WORD("figSign")
+	MESSSAGE_DEBUG("figSign")
 }
 
 void figSmudge(void) {
-	DEBUG_WORD("figSmudge")
+	MESSSAGE_DEBUG("figSmudge")
 }
 
 void figSPStore(void) {
-	DEBUG_WORD("figSPStore")
+	MESSSAGE_DEBUG("figSPStore")
 }
 
 void figSPFetch(void) {
-	DEBUG_WORD("figSPFetch")
+	MESSSAGE_DEBUG("figSPFetch")
 }
 
 void figSpace(void) {
-	DEBUG_WORD("figSpace")
+	MESSSAGE_DEBUG("figSpace")
 }
 
 void figSpaces(void) {
-	DEBUG_WORD("figSpaces")
+	MESSSAGE_DEBUG("figSpaces")
 }
 
 
 void figState(void) {
-	DEBUG_WORD("figState")
+	MESSSAGE_DEBUG("figState")
 }
 
 void figSwap(void) {
-	DEBUG_WORD("figSwap")
+	MESSSAGE_DEBUG("figSwap")
 }
 
 void figTask(void) {
-	DEBUG_WORD("figTask")
+	MESSSAGE_DEBUG("figTask")
 }
 
 void figThen(void) {
-	DEBUG_WORD("figThen")
+	MESSSAGE_DEBUG("figThen")
 }
 
 void figTib(void) {
-	DEBUG_WORD("figTib")
+	MESSSAGE_DEBUG("figTib")
 }
 
 void figToggle(void) {
-	DEBUG_WORD("figToggle")
+	MESSSAGE_DEBUG("figToggle")
 }
 
 void figTraverse(void) {
-	DEBUG_WORD("figTraverse")
+	MESSSAGE_DEBUG("figTraverse")
 }
 
 void figTriad(void) {
-	DEBUG_WORD("figTriad")
+	MESSSAGE_DEBUG("figTriad")
 }
 
 void figType(void) {
-	DEBUG_WORD("figType")
+	MESSSAGE_DEBUG("figType")
 }
 
 void figUStar(void) {
-	DEBUG_WORD("figUStar")
+	MESSSAGE_DEBUG("figUStar")
 }
 
 void figUSlash(void) {
-	DEBUG_WORD("figUSlash")
+	MESSSAGE_DEBUG("figUSlash")
 }
 
 void figUntil(void) {
-	DEBUG_WORD("figUntil")
+	MESSSAGE_DEBUG("figUntil")
 }
 
 void figUpdate(void) {
-	DEBUG_WORD("figUpdate")
+	MESSSAGE_DEBUG("figUpdate")
 }
 
 void figUse(void) {
-	DEBUG_WORD("figUse")
+	MESSSAGE_DEBUG("figUse")
 }
 
 void figUser(void) {
-	DEBUG_WORD("figUser")
+	MESSSAGE_DEBUG("figUser")
 }
 
 void figVariable(void) {
-	DEBUG_WORD("figVariable")
+	MESSSAGE_DEBUG("figVariable")
 }
 
 void figVocLink(void) {
-	DEBUG_WORD("figVocLink")
+	MESSSAGE_DEBUG("figVocLink")
 }
 
 void figVocabulary(void) {
-	DEBUG_WORD("figVocabulary")
+	MESSSAGE_DEBUG("figVocabulary")
 }
 
 void figVlist(void) {
-	DEBUG_WORD("figVlist")
+	MESSSAGE_DEBUG("figVlist")
 }
 
 void figWarning(void) {
-	DEBUG_WORD("figWarning")
+	MESSSAGE_DEBUG("figWarning")
 }
 
 void figWhile(void) {
-	DEBUG_WORD("figWhile")
+	MESSSAGE_DEBUG("figWhile")
 }
 
 void figWidth(void) {
-	DEBUG_WORD("figWidth")
+	MESSSAGE_DEBUG("figWidth")
 }
 
 void figWord(void) {
-	DEBUG_WORD("figWord")
+	MESSSAGE_DEBUG("figWord")
 }
 
 void figX(void) {
-	DEBUG_WORD("figX")
+	MESSSAGE_DEBUG("figX")
 }
 
 void figXor(void) {
-	DEBUG_WORD("figXor")
+	MESSSAGE_DEBUG("figXor")
 }
 
 void figRightBracket(void) {
-	DEBUG_WORD("figRightBracket")
+	MESSSAGE_DEBUG("figRightBracket")
 }
 
 void figXCompile(void) {
-	DEBUG_WORD("figXCompile")
+	MESSSAGE_DEBUG("figXCompile")
 }
 
 void figLeftBracket(void) {
-	DEBUG_WORD("figLeftBracket")
+	MESSSAGE_DEBUG("figLeftBracket")
 }
 
 #endif

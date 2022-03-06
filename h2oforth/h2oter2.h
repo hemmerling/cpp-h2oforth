@@ -6,916 +6,916 @@
 /* Primitives */
 
 void terseRotn(void) {
-	DEBUG_WORD("terseRotn")
+	MESSSAGE_DEBUG("terseRotn")
 }
 
 void terseVector(void) {
-	DEBUG_WORD("terseVector")
+	MESSSAGE_DEBUG("terseVector")
 }
 
 void terseLimit(void) {
-	DEBUG_WORD("terseLimit")
+	MESSSAGE_DEBUG("terseLimit")
 }
 
 void terseNegStore(void) {
-	DEBUG_WORD("terseNegStore")
+	MESSSAGE_DEBUG("terseNegStore")
 }
 
 void terseRelabs(void) {
-	DEBUG_WORD("terseRelabs")
+	MESSSAGE_DEBUG("terseRelabs")
 }
 
 void terseZeroShow(void) {
-	DEBUG_WORD("terseZeroShow")
+	MESSSAGE_DEBUG("terseZeroShow")
 }
 
 void terseOneShow(void) {
-	DEBUG_WORD("terseOneShow")
+	MESSSAGE_DEBUG("terseOneShow")
 }
 
 void terseTwoShow(void) {
-	DEBUG_WORD("terseTwoShow")
+	MESSSAGE_DEBUG("terseTwoShow")
 }
 
 void terseThreeShow(void) {
-	DEBUG_WORD("terseThreeShow")
+	MESSSAGE_DEBUG("terseThreeShow")
 }
 
 void terseFourShow(void) {
-	DEBUG_WORD("terseFourShow")
+	MESSSAGE_DEBUG("terseFourShow")
 }
 
 void terseFiveShow(void) {
-	DEBUG_WORD("terseFiveShow")
+	MESSSAGE_DEBUG("terseFiveShow")
 }
 
 void terseSixShow(void) {
-	DEBUG_WORD("terseSixShow")
+	MESSSAGE_DEBUG("terseSixShow")
 }
 
 void terseSevenShow(void) {
-	DEBUG_WORD("terseSevenShow")
+	MESSSAGE_DEBUG("terseSevenShow")
 }
 
 void terseZeroShowI(void) {
-	DEBUG_WORD("terseZeroShowI")
+	MESSSAGE_DEBUG("terseZeroShowI")
 }
 
 void tersePost(void) {
-	DEBUG_WORD("tersePost")
+	MESSSAGE_DEBUG("tersePost")
 }
 
 void terseOnePost(void) {
-	DEBUG_WORD("terseOnePost")
+	MESSSAGE_DEBUG("terseOnePost")
 }
 
 void terseNumPost(void) {
-	DEBUG_WORD("terseNumPost")
+	MESSSAGE_DEBUG("terseNumPost")
 }
 
 void terseNumToa(void) {
-	DEBUG_WORD("terseNumToa")
+	MESSSAGE_DEBUG("terseNumToa")
 }
 
 void terseClock(void) {
-	DEBUG_WORD("terseClock")
+	MESSSAGE_DEBUG("terseClock")
 }
 
 void terseErase(void) {
-	DEBUG_WORD("terseErase")
+	MESSSAGE_DEBUG("terseErase")
 }
 
 void terseOneDot(void) {
-	DEBUG_WORD("terseOneDot")
+	MESSSAGE_DEBUG("terseOneDot")
 }
 
 void terseDraw(void) {
-	DEBUG_WORD("terseDraw")
+	MESSSAGE_DEBUG("terseDraw")
 }
 
 void terseBox(void) {
-	DEBUG_WORD("terseBox")
+	MESSSAGE_DEBUG("terseBox")
 }
 
 void terseEllipse(void) {
-	DEBUG_WORD("terseEllipse")
+	MESSSAGE_DEBUG("terseEllipse")
 }
 
 void terseColor(void) {
-	DEBUG_WORD("terseColor")
+	MESSSAGE_DEBUG("terseColor")
 }
 
 void terseFlood(void) {
-	DEBUG_WORD("terseFlood")
+	MESSSAGE_DEBUG("terseFlood")
 }
 
 void terseVertical(void) {
-	DEBUG_WORD("terseVertical")
+	MESSSAGE_DEBUG("terseVertical")
 }
 
 void terseHorizontal(void) {
-	DEBUG_WORD("terseHorizontal")
+	MESSSAGE_DEBUG("terseHorizontal")
 }
 
 void terseRandom(void) {
-	DEBUG_WORD("terseRandom")
+	MESSSAGE_DEBUG("terseRandom")
 }
 
 void terseSow(void) {
-	DEBUG_WORD("terseSow")
+	MESSSAGE_DEBUG("terseSow")
 }
 
 
 void terseStore(void) {
-	DEBUG_WORD("terseStore")
+	MESSSAGE_DEBUG("terseStore")
 }
 
 void terseTick(void) {
-	DEBUG_WORD("terseTick")
+	MESSSAGE_DEBUG("terseTick")
 }
 
 void terseParen(void) {
-	DEBUG_WORD("terseParen")
+	MESSSAGE_DEBUG("terseParen")
 }
 
 void terseStar(void) {
-	DEBUG_WORD("terseStar")
+	MESSSAGE_DEBUG("terseStar")
 }
 
 void tersePlus(void) {
-	DEBUG_WORD("tersePlus")
+	MESSSAGE_DEBUG("tersePlus")
 }
 
 void tersePlusStore(void) {
-	DEBUG_WORD("tersePlusStore")
+	MESSSAGE_DEBUG("tersePlusStore")
 }
 
 void tersePlusBlock(void) {
-	DEBUG_WORD("tersePlusBlock")
+	MESSSAGE_DEBUG("tersePlusBlock")
 }
 
 void tersePlusLoop(void) {
-	DEBUG_WORD("tersePlusLoop")
+	MESSSAGE_DEBUG("tersePlusLoop")
 }
 
 void terseComma(void) {
-	DEBUG_WORD("terseComma")
+	MESSSAGE_DEBUG("terseComma")
 }
 
 void terseMinusWord(void) {
-	DEBUG_WORD("terseMinusWord")
+	MESSSAGE_DEBUG("terseMinusWord")
 }
 
 void terseTo(void) {
-	DEBUG_WORD("terseTo")
+	MESSSAGE_DEBUG("terseTo")
 }
 
 void terseDot(void) {
-	DEBUG_WORD("terseDot")
+	MESSSAGE_DEBUG("terseDot")
 }
 
 void terseDotQuote(void) {
-	DEBUG_WORD("terseDotQuote")
+	MESSSAGE_DEBUG("terseDotQuote")
 }
 
 void terseDotList(void) {
-	DEBUG_WORD("terseDotList")
+	MESSSAGE_DEBUG("terseDotList")
 }
 
 void terseDotNList(void) {
-	DEBUG_WORD("terseDotNList")
+	MESSSAGE_DEBUG("terseDotNList")
 }
 
 void terseSlash(void) {
-	DEBUG_WORD("terseSlash")
+	MESSSAGE_DEBUG("terseSlash")
 }
 
 void terseSlashMod(void) {
-	DEBUG_WORD("terseSlashMod")
+	MESSSAGE_DEBUG("terseSlashMod")
 }
 
 void terseZero(void) {
-	DEBUG_WORD("terseZero")
+	MESSSAGE_DEBUG("terseZero")
 }
 
 void terseZeroLess(void) {
-	DEBUG_WORD("terseZeroLess")
+	MESSSAGE_DEBUG("terseZeroLess")
 }
 
 void terseZeroEqual(void) {
-	DEBUG_WORD("terseZeroEqual")
+	MESSSAGE_DEBUG("terseZeroEqual")
 }
 
 void terseZeroGreater(void) {
-	DEBUG_WORD("terseZeroGreater")
+	MESSSAGE_DEBUG("terseZeroGreater")
 }
 
 void terseZeroEnd(void) {
-	DEBUG_WORD("terseZeroEnd")
+	MESSSAGE_DEBUG("terseZeroEnd")
 }
 
 void terseOne(void) {
-	DEBUG_WORD("terseOne")
+	MESSSAGE_DEBUG("terseOne")
 }
 
 void terseOnePlus(void) {
-	DEBUG_WORD("terseOnePlus")
+	MESSSAGE_DEBUG("terseOnePlus")
 }
 
 void terseOnePlusStore(void) {
-	DEBUG_WORD("terseOnePlusStore")
+	MESSSAGE_DEBUG("terseOnePlusStore")
 }
 
 void terseOneMinus(void) {
-	DEBUG_WORD("terseOneMinus")
+	MESSSAGE_DEBUG("terseOneMinus")
 }
 
 void terseOneMinusStore(void) {
-	DEBUG_WORD("terseOneMinusStore")
+	MESSSAGE_DEBUG("terseOneMinusStore")
 }
 
 void terseTwoStar(void) {
-	DEBUG_WORD("terseTwoStar")
+	MESSSAGE_DEBUG("terseTwoStar")
 }
 
 void terseTwoPlus(void) {
-	DEBUG_WORD("terseTwoPlus")
+	MESSSAGE_DEBUG("terseTwoPlus")
 }
 
 void terseTwoMinus(void) {
-	DEBUG_WORD("terseTwoMinus")
+	MESSSAGE_DEBUG("terseTwoMinus")
 }
 
 void terseTwoSlash(void) {
-	DEBUG_WORD("terseTwoSlash")
+	MESSSAGE_DEBUG("terseTwoSlash")
 }
 
 void terseTwoDrop(void) {
-	DEBUG_WORD("terseTwoDrop")
+	MESSSAGE_DEBUG("terseTwoDrop")
 }
 
 void terseTwoDup(void) {
-	DEBUG_WORD("terseTwoDup")
+	MESSSAGE_DEBUG("terseTwoDup")
 }
 
 void terseTwoSwap(void) {
-	DEBUG_WORD("terseTwoSwap")
+	MESSSAGE_DEBUG("terseTwoSwap")
 }
 
 void terseColon(void) {
-	DEBUG_WORD("terseColon")
+	MESSSAGE_DEBUG("terseColon")
 }
 
 void terseSemicolon(void) {
-	DEBUG_WORD("terseSemicolon")
+	MESSSAGE_DEBUG("terseSemicolon")
 }
 
 void terseSemicolonS(void) {
-	DEBUG_WORD("terseSemicolonS")
+	MESSSAGE_DEBUG("terseSemicolonS")
 }
 
 void terseLess(void) {
-	DEBUG_WORD("terseLess")
+	MESSSAGE_DEBUG("terseLess")
 }
 
 void terseStartConditionalInterpretation(void) {
-	DEBUG_WORD("terseStartConditionalInterpretation")
+	MESSSAGE_DEBUG("terseStartConditionalInterpretation")
 }
 
 void terseLessEqual(void) {
-	DEBUG_WORD("terseLessEqual")
+	MESSSAGE_DEBUG("terseLessEqual")
 }
 
 void terseUnequal(void) {
-	DEBUG_WORD("terseUnequal")
+	MESSSAGE_DEBUG("terseUnequal")
 }
 
 void terseEqual(void) {
-	DEBUG_WORD("terseEqual")
+	MESSSAGE_DEBUG("terseEqual")
 }
 
 void terseGreater(void) {
-	DEBUG_WORD("terseGreater")
+	MESSSAGE_DEBUG("terseGreater")
 }
 
 void terseGreaterEqual(void) {
-	DEBUG_WORD("terseGreaterEqual")
+	MESSSAGE_DEBUG("terseGreaterEqual")
 }
 
 void terseStopConditionalInterpretation(void) {
-	DEBUG_WORD("terseStopConditionalInterpretation")
+	MESSSAGE_DEBUG("terseStopConditionalInterpretation")
 }
 
 void terseToR(void) {
-	DEBUG_WORD("terseToR")
+	MESSSAGE_DEBUG("terseToR")
 }
 
 void terseQ(void) {
-	DEBUG_WORD("terseQ")
+	MESSSAGE_DEBUG("terseQ")
 }
 
 void terseFetch(void) {
-	DEBUG_WORD("terseFetch")
+	MESSSAGE_DEBUG("terseFetch")
 }
 
 void terseAQuote(void) {
-	DEBUG_WORD("terseAQuote")
+	MESSSAGE_DEBUG("terseAQuote")
 }
 
 void terseAbort(void) {
-	DEBUG_WORD("terseAbort")
+	MESSSAGE_DEBUG("terseAbort")
 }
 
 void terseAbs(void) {
-	DEBUG_WORD("terseAbs")
+	MESSSAGE_DEBUG("terseAbs")
 }
 
 void terseAnd(void) {
-	DEBUG_WORD("terseAnd")
+	MESSSAGE_DEBUG("terseAnd")
 }
 
 void terseArray(void) {
-	DEBUG_WORD("terseArray")
+	MESSSAGE_DEBUG("terseArray")
 }
 
 void terseAsm(void) {
-	DEBUG_WORD("terseAsm")
+	MESSSAGE_DEBUG("terseAsm")
 }
 
 void terseBStore(void) {
-	DEBUG_WORD("terseBStore")
+	MESSSAGE_DEBUG("terseBStore")
 }
 
 void terseBColon(void) {
-	DEBUG_WORD("terseBColon")
+	MESSSAGE_DEBUG("terseBColon")
 }
 
 void terseBFetch(void) {
-	DEBUG_WORD("terseBFetch")
+	MESSSAGE_DEBUG("terseBFetch")
 }
 
 void terseBArray(void) {
-	DEBUG_WORD("terseBArray")
+	MESSSAGE_DEBUG("terseBArray")
 }
 
 void terseBase(void) {
-	DEBUG_WORD("terseBase")
+	MESSSAGE_DEBUG("terseBase")
 }
 
 void terseBegin(void) {
-	DEBUG_WORD("terseBegin")
+	MESSSAGE_DEBUG("terseBegin")
 }
 
 void terseBell(void) {
-	DEBUG_WORD("terseBell")
+	MESSSAGE_DEBUG("terseBell")
 }
 
 void terseBlk(void) {
-	DEBUG_WORD("terseBlk")
+	MESSSAGE_DEBUG("terseBlk")
 }
 
 void terseBlock(void) {
-	DEBUG_WORD("terseBlock")
+	MESSSAGE_DEBUG("terseBlock")
 }
 
 void terseBMove(void) {
-	DEBUG_WORD("terseBMove")
+	MESSSAGE_DEBUG("terseBMove")
 }
 
 void terseBPtr(void) {
-	DEBUG_WORD("terseBPtr")
+	MESSSAGE_DEBUG("terseBPtr")
 }
 
 void terseBTa(void) {
-	DEBUG_WORD("terseBTa")
+	MESSSAGE_DEBUG("terseBTa")
 }
 
 void terseBTable(void) {
-	DEBUG_WORD("terseBTable")
+	MESSSAGE_DEBUG("terseBTable")
 }
 
 void terseBuffer(void) {
-	DEBUG_WORD("terseBuffer")
+	MESSSAGE_DEBUG("terseBuffer")
 }
 
 void terseBuild(void) {
-	DEBUG_WORD("terseBuild")
+	MESSSAGE_DEBUG("terseBuild")
 }
 
 void terseBye(void) {
-	DEBUG_WORD("terseBye")
+	MESSSAGE_DEBUG("terseBye")
 }
 
 void terseByte(void) {
-	DEBUG_WORD("terseByte")
+	MESSSAGE_DEBUG("terseByte")
 }
 
 void terseCase(void) {
-	DEBUG_WORD("terseCase")
+	MESSSAGE_DEBUG("terseCase")
 }
 
 void terseCCalc(void) {
-	DEBUG_WORD("terseCCalc")
+	MESSSAGE_DEBUG("terseCCalc")
 }
 
 void terseCin(void) {
-	DEBUG_WORD("terseCin")
+	MESSSAGE_DEBUG("terseCin")
 }
 
 void terseCode(void) {
-	DEBUG_WORD("terseCode")
+	MESSSAGE_DEBUG("terseCode")
 }
 
 void terseCom(void) {
-	DEBUG_WORD("terseCom")
+	MESSSAGE_DEBUG("terseCom")
 }
 
 void terseConstant(void) {
-	DEBUG_WORD("terseConstant")
+	MESSSAGE_DEBUG("terseConstant")
 }
 
 void terseContext(void) {
-	DEBUG_WORD("terseContext")
+	MESSSAGE_DEBUG("terseContext")
 }
 
 void terseContinued(void) {
-	DEBUG_WORD("terseContinued")
+	MESSSAGE_DEBUG("terseContinued")
 }
 
 void terseCopy(void) {
-	DEBUG_WORD("terseCopy")
+	MESSSAGE_DEBUG("terseCopy")
 }
 
 void terseCount(void) {
-	DEBUG_WORD("terseCount")
+	MESSSAGE_DEBUG("terseCount")
 }
 
 void terseCout(void) {
-	DEBUG_WORD("terseCout")
+	MESSSAGE_DEBUG("terseCout")
 }
 
 void terseCr(void) {
-	DEBUG_WORD("terseCr")
+	MESSSAGE_DEBUG("terseCr")
 }
 
 void terseCurrent(void) {
-	DEBUG_WORD("terseCurrent")
+	MESSSAGE_DEBUG("terseCurrent")
 }
 
 void terseDecimal(void) {
-	DEBUG_WORD("terseDecimal")
+	MESSSAGE_DEBUG("terseDecimal")
 }
 
 void terseDecimalDelim(void) {
-	DEBUG_WORD("terseDecimalDelim")
+	MESSSAGE_DEBUG("terseDecimalDelim")
 }
 
 void terseDgts(void) {
-	DEBUG_WORD("terseDgts")
+	MESSSAGE_DEBUG("terseDgts")
 }
 
 void terseDir(void) {
-	DEBUG_WORD("terseDir")
+	MESSSAGE_DEBUG("terseDir")
 }
 
 void terseDiskCopy(void) {
-	DEBUG_WORD("terseDiskCopy")
+	MESSSAGE_DEBUG("terseDiskCopy")
 }
 
 void terseDLit(void) {
-	DEBUG_WORD("terseDLit")
+	MESSSAGE_DEBUG("terseDLit")
 }
 
 void terseDo(void) {
-	DEBUG_WORD("terseDo")
+	MESSSAGE_DEBUG("terseDo")
 }
 
 void terseDP(void) {
-	DEBUG_WORD("terseDP")
+	MESSSAGE_DEBUG("terseDP")
 }
 
 void terseDPPlusStore(void) {
-	DEBUG_WORD("terseDPPlusStore")
+	MESSSAGE_DEBUG("terseDPPlusStore")
 }
 
 void terseDPRec(void) {
-	DEBUG_WORD("terseDPRec")
+	MESSSAGE_DEBUG("terseDPRec")
 }
 
 void terseDrop(void) {
-	DEBUG_WORD("terseDrop")
+	MESSSAGE_DEBUG("terseDrop")
 }
 
 void terseDump(void) {
-	DEBUG_WORD("terseDump")
+	MESSSAGE_DEBUG("terseDump")
 }
 
 void terseDup(void) {
-	DEBUG_WORD("terseDup")
+	MESSSAGE_DEBUG("terseDup")
 }
 
 void terseEDotB(void) {
-	DEBUG_WORD("terseEDotB")
+	MESSSAGE_DEBUG("terseEDotB")
 }
 
 void terseEDotO(void) {
-	DEBUG_WORD("terseEDotO")
+	MESSSAGE_DEBUG("terseEDotO")
 }
 
 void terseEdit(void) {
-	DEBUG_WORD("terseEdit")
+	MESSSAGE_DEBUG("terseEdit")
 }
 
 void terseElse(void) {
-	DEBUG_WORD("terseElse")
+	MESSSAGE_DEBUG("terseElse")
 }
 
 void terseEmpty(void) {
-	DEBUG_WORD("terseEmpty")
+	MESSSAGE_DEBUG("terseEmpty")
 }
 
 void terseEnd(void) {
-	DEBUG_WORD("terseEnd")
+	MESSSAGE_DEBUG("terseEnd")
 }
 
 void terseEnter(void) {
-	DEBUG_WORD("terseEnter")
+	MESSSAGE_DEBUG("terseEnter")
 }
 
 void terseEraseCore(void) {
-	DEBUG_WORD("terseEraseCore")
+	MESSSAGE_DEBUG("terseEraseCore")
 }
 
 void terseExec(void) {
-	DEBUG_WORD("terseExec")
+	MESSSAGE_DEBUG("terseExec")
 }
 
 void terseExpect(void) {
-	DEBUG_WORD("terseExpect")
+	MESSSAGE_DEBUG("terseExpect")
 }
 
 void terseFileCopy(void) {
-	DEBUG_WORD("terseFileCopy")
+	MESSSAGE_DEBUG("terseFileCopy")
 }
 
 void terseFind(void) {
-	DEBUG_WORD("terseFind")
+	MESSSAGE_DEBUG("terseFind")
 }
 
 void terseFld(void) {
-	DEBUG_WORD("terseFld")
+	MESSSAGE_DEBUG("terseFld")
 }
 
 void terseFlush(void) {
-	DEBUG_WORD("terseFlush")
+	MESSSAGE_DEBUG("terseFlush")
 }
 
 void terseFName(void) {
-	DEBUG_WORD("terseFName")
+	MESSSAGE_DEBUG("terseFName")
 }
 
 void terseGetC(void) {
-	DEBUG_WORD("terseGetC")
+	MESSSAGE_DEBUG("terseGetC")
 }
 
 void terseGoodbye(void) {
-	DEBUG_WORD("terseGoodbye")
+	MESSSAGE_DEBUG("terseGoodbye")
 }
 
 void terseHDot(void) {
-	DEBUG_WORD("terseHDot")
+	MESSSAGE_DEBUG("terseHDot")
 }
 
 void terseHelp(void) {
-	DEBUG_WORD("terseHelp")
+	MESSSAGE_DEBUG("terseHelp")
 }
 
 void terseHere(void) {
-	DEBUG_WORD("terseHere")
+	MESSSAGE_DEBUG("terseHere")
 }
 
 void terseHex(void) {
-	DEBUG_WORD("terseHex")
+	MESSSAGE_DEBUG("terseHex")
 }
 
 void terseHexList(void) {
-	DEBUG_WORD("terseHexList")
+	MESSSAGE_DEBUG("terseHexList")
 }
 
 void terseHexShow(void) {
-	DEBUG_WORD("terseHexShow")
+	MESSSAGE_DEBUG("terseHexShow")
 }
 
 void terseI(void) {
-	DEBUG_WORD("terseI")
+	MESSSAGE_DEBUG("terseI")
 }
 
 void terseIPlus(void) {
-	DEBUG_WORD("terseIPlus")
+	MESSSAGE_DEBUG("terseIPlus")
 }
 
 void terseIf(void) {
-	DEBUG_WORD("terseIf")
+	MESSSAGE_DEBUG("terseIf")
 }
 
 void terseIfEnd(void) {
-	DEBUG_WORD("terseIfEnd")
+	MESSSAGE_DEBUG("terseIfEnd")
 }
 
 void terseIfTrue(void) {
-	DEBUG_WORD("terseIfTrue")
+	MESSSAGE_DEBUG("terseIfTrue")
 }
 
 void terseImmed(void) {
-	DEBUG_WORD("terseImmed")
+	MESSSAGE_DEBUG("terseImmed")
 }
 
 void terseInp(void) {
-	DEBUG_WORD("terseInp")
+	MESSSAGE_DEBUG("terseInp")
 }
 
 void terseIOff(void) {
-	DEBUG_WORD("terseIOff")
+	MESSSAGE_DEBUG("terseIOff")
 }
 
 void terseJ(void) {
-	DEBUG_WORD("terseJ")
+	MESSSAGE_DEBUG("terseJ")
 }
 
 void terseJPlus(void) {
-	DEBUG_WORD("terseJPlus")
+	MESSSAGE_DEBUG("terseJPlus")
 }
 
 void terseK(void) {
-	DEBUG_WORD("terseK")
+	MESSSAGE_DEBUG("terseK")
 }
 
 void terseKPlus(void) {
-	DEBUG_WORD("terseKPlus")
+	MESSSAGE_DEBUG("terseKPlus")
 }
 
 void terseLast(void) {
-	DEBUG_WORD("terseLast")
+	MESSSAGE_DEBUG("terseLast")
 }
 
 void terseLeave(void) {
-	DEBUG_WORD("terseLeave")
+	MESSSAGE_DEBUG("terseLeave")
 }
 
 void terseLine(void) {
-	DEBUG_WORD("terseLine")
+	MESSSAGE_DEBUG("terseLine")
 }
 
 void terseLineLoad(void) {
-	DEBUG_WORD("terseLineLoad")
+	MESSSAGE_DEBUG("terseLineLoad")
 }
 
 void terseList(void) {
-	DEBUG_WORD("terseList")
+	MESSSAGE_DEBUG("terseList")
 }
 
 void terseLit(void) {
-	DEBUG_WORD("terseLit")
+	MESSSAGE_DEBUG("terseLit")
 }
 
 void terseLiteral(void) {
-	DEBUG_WORD("terseLiteral")
+	MESSSAGE_DEBUG("terseLiteral")
 }
 
 void terseLoad(void) {
-	DEBUG_WORD("terseLoad")
+	MESSSAGE_DEBUG("terseLoad")
 }
 
 void terseLoop(void) {
-	DEBUG_WORD("terseLoop")
+	MESSSAGE_DEBUG("terseLoop")
 }
 
 void terseLOut(void) {
-	DEBUG_WORD("terseLOut")
+	MESSSAGE_DEBUG("terseLOut")
 }
 
 void terseMax(void) {
-	DEBUG_WORD("terseMax")
+	MESSSAGE_DEBUG("terseMax")
 }
 
 void terseMin(void) {
-	DEBUG_WORD("terseMin")
+	MESSSAGE_DEBUG("terseMin")
 }
 
 void terseMinus(void) {
-	DEBUG_WORD("terseMinus")
+	MESSSAGE_DEBUG("terseMinus")
 }
 
 void terseMod(void) {
-	DEBUG_WORD("terseMod")
+	MESSSAGE_DEBUG("terseMod")
 }
 
 void terseMove(void) {
-	DEBUG_WORD("terseMove")
+	MESSSAGE_DEBUG("terseMove")
 }
 
 void terseNand(void) {
-	DEBUG_WORD("terseNand")
+	MESSSAGE_DEBUG("terseNand")
 }
 
 void terseNext(void) {
-	DEBUG_WORD("terseNext")
+	MESSSAGE_DEBUG("terseNext")
 }
 
 void terseNor(void) {
-	DEBUG_WORD("terseNor")
+	MESSSAGE_DEBUG("terseNor")
 }
 
 void terseNot(void) {
-	DEBUG_WORD("terseNot")
+	MESSSAGE_DEBUG("terseNot")
 }
 
 void terseNumber(void) {
-	DEBUG_WORD("terseNumber")
+	MESSSAGE_DEBUG("terseNumber")
 }
 
 void terseOctal(void) {
-	DEBUG_WORD("terseOctal")
+	MESSSAGE_DEBUG("terseOctal")
 }
 
 void terseOr(void) {
-	DEBUG_WORD("terseOr")
+	MESSSAGE_DEBUG("terseOr")
 }
 
 void terseOtherwise(void) {
-	DEBUG_WORD("terseOtherwise")
+	MESSSAGE_DEBUG("terseOtherwise")
 }
 
 void terseOutP(void) {
-	DEBUG_WORD("terseOutP")
+	MESSSAGE_DEBUG("terseOutP")
 }
 
 void terseOver(void) {
-	DEBUG_WORD("terseOver")
+	MESSSAGE_DEBUG("terseOver")
 }
 
 void tersePage(void) {
-	DEBUG_WORD("tersePage")
+	MESSSAGE_DEBUG("tersePage")
 }
 
 void tersePick(void) {
-	DEBUG_WORD("tersePick")
+	MESSSAGE_DEBUG("tersePick")
 }
 
 void tersePrintOut(void) {
-	DEBUG_WORD("tersePrintOut")
+	MESSSAGE_DEBUG("tersePrintOut")
 }
 
 void terseProt(void) {
-	DEBUG_WORD("terseProt")
+	MESSSAGE_DEBUG("terseProt")
 }
 
 void tersePutC(void) {
-	DEBUG_WORD("tersePutC")
+	MESSSAGE_DEBUG("tersePutC")
 }
 
 void terseRTo(void) {
-	DEBUG_WORD("terseRTo")
+	MESSSAGE_DEBUG("terseRTo")
 }
 
 void terseRepeat(void) {
-	DEBUG_WORD("terseRepeat")
+	MESSSAGE_DEBUG("terseRepeat")
 }
 
 void terseRot(void) {
-	DEBUG_WORD("terseRot")
+	MESSSAGE_DEBUG("terseRot")
 }
 
 void terseScr(void) {
-	DEBUG_WORD("terseScr")
+	MESSSAGE_DEBUG("terseScr")
 }
 
 void terseSet(void) {
-	DEBUG_WORD("terseSet")
+	MESSSAGE_DEBUG("terseSet")
 }
 
 void terseShow(void) {
-	DEBUG_WORD("terseShow")
+	MESSSAGE_DEBUG("terseShow")
 }
 
 void terseSkip(void) {
-	DEBUG_WORD("terseSkip")
+	MESSSAGE_DEBUG("terseSkip")
 }
 
 void terseSPFetch(void) {
-	DEBUG_WORD("terseSPFetch")
+	MESSSAGE_DEBUG("terseSPFetch")
 }
 
 void terseSpace(void) {
-	DEBUG_WORD("terseSpace")
+	MESSSAGE_DEBUG("terseSpace")
 }
 
 void terseSpaces(void) {
-	DEBUG_WORD("terseSpaces")
+	MESSSAGE_DEBUG("terseSpaces")
 }
 
 void terseState(void) {
-	DEBUG_WORD("terseState")
+	MESSSAGE_DEBUG("terseState")
 }
 
 void terseSpacesQ(void) {
-	DEBUG_WORD("terseSpacesQ")
+	MESSSAGE_DEBUG("terseSpacesQ")
 }
 
 void terseSType(void) {
-	DEBUG_WORD("terseSType")
+	MESSSAGE_DEBUG("terseSType")
 }
 
 void terseSwab(void) {
-	DEBUG_WORD("terseSwab")
+	MESSSAGE_DEBUG("terseSwab")
 }
 
 void terseSwap(void) {
-	DEBUG_WORD("terseSwap")
+	MESSSAGE_DEBUG("terseSwap")
 }
 
 void terseSysCopy(void) {
-	DEBUG_WORD("terseSysCopy")
+	MESSSAGE_DEBUG("terseSysCopy")
 }
 
 void terseTable(void) {
-	DEBUG_WORD("terseTable")
+	MESSSAGE_DEBUG("terseTable")
 }
 
 void terseTeco(void) {
-	DEBUG_WORD("terseTeco")
+	MESSSAGE_DEBUG("terseTeco")
 }
 
 void terseTFlag(void) {
-	DEBUG_WORD("terseTFlag")
+	MESSSAGE_DEBUG("terseTFlag")
 }
 
 void terseThen(void) {
-	DEBUG_WORD("terseThen")
+	MESSSAGE_DEBUG("terseThen")
 }
 
 void terseType(void) {
-	DEBUG_WORD("terseType")
+	MESSSAGE_DEBUG("terseType")
 }
 
 void terseUStore(void) {
-	DEBUG_WORD("terseUStore")
+	MESSSAGE_DEBUG("terseUStore")
 }
 
 void terseUErr(void) {
-	DEBUG_WORD("terseUErr")
+	MESSSAGE_DEBUG("terseUErr")
 }
 
 void terseUpdate(void) {
-	DEBUG_WORD("terseUpdate")
+	MESSSAGE_DEBUG("terseUpdate")
 }
 
 void terseUnProt(void) {
-	DEBUG_WORD("terseUnProt")
+	MESSSAGE_DEBUG("terseUnProt")
 }
 
 void terseVariable(void) {
-	DEBUG_WORD("terseVariable")
+	MESSSAGE_DEBUG("terseVariable")
 }
 
 void terseVPtr(void) {
-	DEBUG_WORD("terseVPtr")
+	MESSSAGE_DEBUG("terseVPtr")
 }
 
 void terseWhile(void) {
-	DEBUG_WORD("terseWhile")
+	MESSSAGE_DEBUG("terseWhile")
 }
 
 void terseWhere(void) {
-	DEBUG_WORD("terseWhere")
+	MESSSAGE_DEBUG("terseWhere")
 }
 
 void terseWord(void) {
-	DEBUG_WORD("terseWord")
+	MESSSAGE_DEBUG("terseWord")
 }
 
 void terseXor(void) {
-	DEBUG_WORD("terseXor")
+	MESSSAGE_DEBUG("terseXor")
 }
 
 void terseZeroWord(void) {
-	DEBUG_WORD("terseZeroWord")
+	MESSSAGE_DEBUG("terseZeroWord")
 }
 
 void terseLeftBracket(void) {
-	DEBUG_WORD("terseLeftBracket")
+	MESSSAGE_DEBUG("terseLeftBracket")
 }
 
 void terseLeftBracketLeftBracket(void) {
-	DEBUG_WORD("terseLeftBracketLeftBracket")
+	MESSSAGE_DEBUG("terseLeftBracketLeftBracket")
 }
 
 void terseRightBracket(void) {
-	DEBUG_WORD("terseRightBracket")
+	MESSSAGE_DEBUG("terseRightBracket")
 }
 
 void terseRightBracketRightBracket(void) {
-	DEBUG_WORD("terseRightBracketRightBracket")
+	MESSSAGE_DEBUG("terseRightBracketRightBracket")
 }
 
 #endif

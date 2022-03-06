@@ -4,16 +4,40 @@
 /* Declarations of FORTH words common to one or more FORTH standards & FORTH implementations */
 
 /* Internal functions */
-#if defined (__DEBUG__)
-void privateDebugWord(char* nameOfWord) {
-	int nn; /* < 32 */
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "\n%s", nameOfWord);
-	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+void privateMessage(char* message, int stream, int cr1, int cr2) {
+	Serial.println(message);
+		return;
+	switch (stream)
+	{
+    	case STREAM_SUCCESS:
+			if (cr1){
+				FPUTC_OUT(CHAR_CR);
+			};
+			FPUTS_OUT(message);
+			if (cr2){
+				FPUTC_OUT(CHAR_CR);
+			};
+      		break;
+    	case STREAM_ERROR:
+    	case STREAM_WARNING:
+    	case STREAM_VERBOSE:
+    	case STREAM_DEBUG:
+    	case STREAM_INFORMATION:
+			if (cr1){
+				FPUTC_ERR(CHAR_CR);
+			};
+			FPUTS_ERR(message);
+			if (cr2){
+				FPUTC_ERR(CHAR_CR);
+			};
+      		break;
+    	default:
+      		return;
+	};
 }
-#endif
 
 /* BaseConversion => non-reantrant function */
-char* privatBaseConversion(CELL_INTEGER base, CELL_INTEGER value) {
+char* privateBaseConversion(CELL_INTEGER base, CELL_INTEGER value) {
 	CELL_INTEGER quotient = value;
 	CELL_INTEGER  reminder = 0;
 	char static value2[MAX_INPUTBUFFER]; /* must be static */
@@ -124,7 +148,7 @@ void privateSetBaseLFormat(void) {
 void commonOctal(void) {
 	forthTasks[forthState.forthCurrentTask].forthBase = OCTAL;
 	forthTasks[forthState.forthCurrentTask].baseFormat = (char*)BASE_FORMAT_OCTAL;
-	DEBUG_WORD("commonOctal")
+	MESSSAGE_DEBUG("commonOctal")
 }
 
 /* Display in hexadecimal base in the format of <.> */
@@ -145,7 +169,7 @@ void commonHexDot(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-	DEBUG_WORD("commonHexDot")
+	MESSSAGE_DEBUG("commonHexDot")
 }
 
 /* Display in octal base in the format of <.> */
@@ -166,7 +190,7 @@ void commonOctDot(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-	DEBUG_WORD("commonOctDot")
+	MESSSAGE_DEBUG("commonOctDot")
 }
 
 /* Display the ReturnStack ( H2OForth unique ) */
@@ -190,30 +214,30 @@ void commonRDotS(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_RETURNSTACK_EMPTY;
 	};
-	DEBUG_WORD("commonRDot")
+	MESSSAGE_DEBUG("commonRDot")
 }
 
 
 #ifdef EXCEPTION_SUPPORT
 void exceptionAbort(void) {
-	DEBUG_WORD("exceptionAbort")
+	MESSSAGE_DEBUG("exceptionAbort")
 }
 
 void exceptionAbortQ(void) {
-	DEBUG_WORD("exceptionAbortQ")
+	MESSSAGE_DEBUG("exceptionAbortQ")
 }
 
 void exceptionCatch(void) {
-	DEBUG_WORD("exceptionCatch")
+	MESSSAGE_DEBUG("exceptionCatch")
 }
 
 void exceptionThrow(void) {
-	DEBUG_WORD("exceptionThrow")
+	MESSSAGE_DEBUG("exceptionThrow")
 }
 
 /* Quit with exception handling. Overrides standard implementation in forthWords */
 void exceptionQuit(void) {
-	DEBUG_WORD("exceptionQuit")
+	MESSSAGE_DEBUG("exceptionQuit")
 }
 #endif
 
@@ -222,316 +246,316 @@ void exceptionQuit(void) {
 #if (FLOATSTD == FLOAT_ANS94) || (FLOATSTD == FLOAT_FORTH2012)
 /* Floating-Point extension words */
 void fpointDFStore(void) {
-	DEBUG_WORD("fpointDFStore")
+	MESSSAGE_DEBUG("fpointDFStore")
 }
 
 void fpointDFFetch(void) {
-	DEBUG_WORD("fpointDFFetch")
+	MESSSAGE_DEBUG("fpointDFFetch")
 }
 
 void fpointDFAlign(void) {
-	DEBUG_WORD("fpointDFAlign")
+	MESSSAGE_DEBUG("fpointDFAlign")
 }
 
 void fpointDFFieldColon(void) {
-	DEBUG_WORD("fpointDFFieldColon")
+	MESSSAGE_DEBUG("fpointDFFieldColon")
 }
 
 void fpointDFloatPlus(void) {
-	DEBUG_WORD("fpointDFloatPlus")
+	MESSSAGE_DEBUG("fpointDFloatPlus")
 }
 
 void fpointDFloatS(void) {
-	DEBUG_WORD("fpointDFloatS")
+	MESSSAGE_DEBUG("fpointDFloatS")
 }
 
 void fpointFStarStar(void) {
-	DEBUG_WORD("fpointFStarStar")
+	MESSSAGE_DEBUG("fpointFStarStar")
 }
 
 void fpointFDot(void) {
-	DEBUG_WORD("fpointFDot")
+	MESSSAGE_DEBUG("fpointFDot")
 }
 
 void fpointFToS(void) {
-	DEBUG_WORD("fpointFToS")
+	MESSSAGE_DEBUG("fpointFToS")
 }
 
 void fpointFAbs(void) {
-	DEBUG_WORD("fpointFAbs")
+	MESSSAGE_DEBUG("fpointFAbs")
 }
 
 void fpointFAcos(void) {
-	DEBUG_WORD("fpointFAcos")
+	MESSSAGE_DEBUG("fpointFAcos")
 }
 
 void fpointFAcosh(void) {
-	DEBUG_WORD("fpointFAcosh")
+	MESSSAGE_DEBUG("fpointFAcosh")
 }
 
 void fpointFAlog(void) {
-	DEBUG_WORD("fpointFAlog")
+	MESSSAGE_DEBUG("fpointFAlog")
 }
 
 void fpointFAsin(void) {
-	DEBUG_WORD("fpointFAsin")
+	MESSSAGE_DEBUG("fpointFAsin")
 }
 
 void fpointAsinh(void) {
-	DEBUG_WORD("fpointAsinh")
+	MESSSAGE_DEBUG("fpointAsinh")
 }
 
 void fpointAtan(void) {
-	DEBUG_WORD("fpointAtan")
+	MESSSAGE_DEBUG("fpointAtan")
 }
 
 void fpointAtan2(void) {
-	DEBUG_WORD("fpointAtan2")
+	MESSSAGE_DEBUG("fpointAtan2")
 }
 
 void fpointFAtanh(void) {
-	DEBUG_WORD("fpointFAtanh")
+	MESSSAGE_DEBUG("fpointFAtanh")
 }
 
 void fpointFCos(void) {
-	DEBUG_WORD("fpointFCos")
+	MESSSAGE_DEBUG("fpointFCos")
 }
 
 void fpointFCosh(void) {
-	DEBUG_WORD("fpointFCosh")
+	MESSSAGE_DEBUG("fpointFCosh")
 }
 
 void fpointFEDot(void) {
-	DEBUG_WORD("fpointFEDot")
+	MESSSAGE_DEBUG("fpointFEDot")
 }
 
 void fpointFExp(void) {
-	DEBUG_WORD("fpointFExp")
+	MESSSAGE_DEBUG("fpointFExp")
 }
 
 void fpointFExpm1(void) {
-	DEBUG_WORD("fpointFExpm1")
+	MESSSAGE_DEBUG("fpointFExpm1")
 }
 
 void fpointFFieldColon(void) {
-	DEBUG_WORD("fpointFFieldColon")
+	MESSSAGE_DEBUG("fpointFFieldColon")
 }
 
 void fpointFLn(void) {
-	DEBUG_WORD("fpointFLn")
+	MESSSAGE_DEBUG("fpointFLn")
 }
 
 void fpointFLnp1(void) {
-	DEBUG_WORD("fpointFLnp1")
+	MESSSAGE_DEBUG("fpointFLnp1")
 }
 
 void fpointFLog(void) {
-	DEBUG_WORD("fpointFLog")
+	MESSSAGE_DEBUG("fpointFLog")
 }
 
 void fpointFSDot(void) {
-	DEBUG_WORD("fpointFSDot")
+	MESSSAGE_DEBUG("fpointFSDot")
 }
 
 void fpointFSin(void) {
-	DEBUG_WORD("fpointFSin")
+	MESSSAGE_DEBUG("fpointFSin")
 }
 
 void fpointFSincos(void) {
-	DEBUG_WORD("fpointFSincos")
+	MESSSAGE_DEBUG("fpointFSincos")
 }
 
 void fpointFSinH(void) {
-	DEBUG_WORD("fpointFSinH")
+	MESSSAGE_DEBUG("fpointFSinH")
 }
 
 void fpointFSqrt(void) {
-	DEBUG_WORD("fpointFSqrt")
+	MESSSAGE_DEBUG("fpointFSqrt")
 }
 
 void fpointFTan(void) {
-	DEBUG_WORD("fpointFTan")
+	MESSSAGE_DEBUG("fpointFTan")
 }
 
 void fpointFTanh(void) {
-	DEBUG_WORD("fpointFTanh")
+	MESSSAGE_DEBUG("fpointFTanh")
 }
 
 void fpointFTrunc(void) {
-	DEBUG_WORD("fpointFTrunc")
+	MESSSAGE_DEBUG("fpointFTrunc")
 }
 
 void fpointFValue(void) {
-	DEBUG_WORD("fpointFValue")
+	MESSSAGE_DEBUG("fpointFValue")
 }
 
 void fpointFTilde(void) {
-	DEBUG_WORD("fpointFTilde")
+	MESSSAGE_DEBUG("fpointFTilde")
 }
 
 void fpointPrecision(void) {
-	DEBUG_WORD("fpointPrecision")
+	MESSSAGE_DEBUG("fpointPrecision")
 }
 
 void fpointSToF(void) {
-	DEBUG_WORD("fpointSToF")
+	MESSSAGE_DEBUG("fpointSToF")
 }
 
 void fpointSetPrecision(void) {
-	DEBUG_WORD("fpointSetPrecision")
+	MESSSAGE_DEBUG("fpointSetPrecision")
 }
 
 void fpointSFStore(void) {
-	DEBUG_WORD("fpointSFStore")
+	MESSSAGE_DEBUG("fpointSFStore")
 }
 
 void fpointSFFetch(void) {
-	DEBUG_WORD("fpointSFFetch")
+	MESSSAGE_DEBUG("fpointSFFetch")
 }
 
 void fpointSFAlign(void) {
-	DEBUG_WORD("fpointSFAlign")
+	MESSSAGE_DEBUG("fpointSFAlign")
 }
 
 void fpointSFAligned(void) {
-	DEBUG_WORD("fpointSFAligned")
+	MESSSAGE_DEBUG("fpointSFAligned")
 }
 
 void fpointSFFieldColon(void) {
-	DEBUG_WORD("fpointSFFieldColon")
+	MESSSAGE_DEBUG("fpointSFFieldColon")
 }
 
 void fpointSFloatPlus(void) {
-	DEBUG_WORD("fpointSFloatPlus")
+	MESSSAGE_DEBUG("fpointSFloatPlus")
 }
 
 void fpointSFloatS(void) {
-	DEBUG_WORD("fpointSFloatS")
+	MESSSAGE_DEBUG("fpointSFloatS")
 }
 
 /* Floating-Point words */
 void fpointToFloat(void) {
-	DEBUG_WORD("fpointToFloat")
+	MESSSAGE_DEBUG("fpointToFloat")
 }
 
 void fpointDToF(void) {
-	DEBUG_WORD("fpointDToF")
+	MESSSAGE_DEBUG("fpointDToF")
 }
 
 void fpointFStore(void) {
-	DEBUG_WORD("fpointFStore")
+	MESSSAGE_DEBUG("fpointFStore")
 }
 
 void fpointFMultiply(void) {
-	DEBUG_WORD("fpointFMultiply")
+	MESSSAGE_DEBUG("fpointFMultiply")
 }
 
 void fpointFPlus(void) {
-	DEBUG_WORD("fpointFPlus")
+	MESSSAGE_DEBUG("fpointFPlus")
 }
 
 void fpointFMinus(void) {
-	DEBUG_WORD("fpointFMinus")
+	MESSSAGE_DEBUG("fpointFMinus")
 }
 
 void fpointFfpointFSlash(void) {
-	DEBUG_WORD("fpointFfpointFSlash")
+	MESSSAGE_DEBUG("fpointFfpointFSlash")
 }
 
 void fpointF0Less(void) {
-	DEBUG_WORD("fpointF0Less")
+	MESSSAGE_DEBUG("fpointF0Less")
 }
 
 void fpointF0Equal(void) {
-	DEBUG_WORD("fpointF0Equal")
+	MESSSAGE_DEBUG("fpointF0Equal")
 }
 
 void fpointFLess(void) {
-	DEBUG_WORD("fpointFLess")
+	MESSSAGE_DEBUG("fpointFLess")
 }
 
 void fpointFToD(void) {
-	DEBUG_WORD("fpointFToD")
+	MESSSAGE_DEBUG("fpointFToD")
 }
 
 void fpointFFetch(void) {
-	DEBUG_WORD("fpointFFetch")
+	MESSSAGE_DEBUG("fpointFFetch")
 }
 
 void fpointtFAlign(void) {
-	DEBUG_WORD("fpointtFAlign")
+	MESSSAGE_DEBUG("fpointtFAlign")
 }
 
 void fpointFAligned(void) {
-	DEBUG_WORD("fpointFAligned")
+	MESSSAGE_DEBUG("fpointFAligned")
 }
 
 void fpointFConstant(void) {
-	DEBUG_WORD("fpointFConstant")
+	MESSSAGE_DEBUG("fpointFConstant")
 }
 
 void fpointFDepth(void) {
-	DEBUG_WORD("fpointFDepth")
+	MESSSAGE_DEBUG("fpointFDepth")
 }
 
 void fpointFDrop(void) {
-	DEBUG_WORD("fpointFDrop")
+	MESSSAGE_DEBUG("fpointFDrop")
 }
 
 void fpointFDup(void) {
-	DEBUG_WORD("fpointFDup")
+	MESSSAGE_DEBUG("fpointFDup")
 }
 
 void fpointFLiteral(void) {
-	DEBUG_WORD("fpointFLiteral")
+	MESSSAGE_DEBUG("fpointFLiteral")
 }
 
 void fpointFloatPlus(void) {
-	DEBUG_WORD("fpointFloatPlus")
+	MESSSAGE_DEBUG("fpointFloatPlus")
 }
 
 void fpointFloatS(void) {
-	DEBUG_WORD("fpointFloatS")
+	MESSSAGE_DEBUG("fpointFloatS")
 }
 
 void fpointFloor(void) {
-	DEBUG_WORD("fpointFloor")
+	MESSSAGE_DEBUG("fpointFloor")
 }
 
 void fpointFMax(void) {
-	DEBUG_WORD("fpointFMax")
+	MESSSAGE_DEBUG("fpointFMax")
 }
 
 void fpointFMin(void) {
-	DEBUG_WORD("fpointFMin")
+	MESSSAGE_DEBUG("fpointFMin")
 }
 
 void fpointFNegate(void) {
-	DEBUG_WORD("fpointFNegate")
+	MESSSAGE_DEBUG("fpointFNegate")
 }
 
 void fpointFOver(void) {
-	DEBUG_WORD("fpointFOver")
+	MESSSAGE_DEBUG("fpointFOver")
 }
 
 void fpointFRot(void) {
-	DEBUG_WORD("fpointFRot")
+	MESSSAGE_DEBUG("fpointFRot")
 }
 
 void fpointFRound(void) {
-	DEBUG_WORD("fpointFRound")
+	MESSSAGE_DEBUG("fpointFRound")
 }
 
 void fpointFSwap(void) {
-	DEBUG_WORD("fpointFSwap")
+	MESSSAGE_DEBUG("fpointFSwap")
 }
 
 void fpointFVariable(void) {
-	DEBUG_WORD("fpointFVariable")
+	MESSSAGE_DEBUG("fpointFVariable")
 }
 
 void fpointRepresent(void) {
-	DEBUG_WORD("fpointRepresent")
+	MESSSAGE_DEBUG("fpointRepresent")
 }
 
 #endif
@@ -560,7 +584,7 @@ void fpointUFLoat(void) {
 #else
 	/* TBD */
 #endif
-	DEBUG_WORD("fpointUFLoat")
+	MESSSAGE_DEBUG("fpointUFLoat")
 }
 
 void fpointInt(void) {
@@ -585,19 +609,19 @@ void fpointInt(void) {
 #else
 	/* TBD */
 #endif
-	DEBUG_WORD("fpointInt")
+	MESSSAGE_DEBUG("fpointInt")
 }
 
 void fpointFNegate(void) {
-	DEBUG_WORD("fpointFNegate")
+	MESSSAGE_DEBUG("fpointFNegate")
 }
 
 void fpointFSlash(void) {
-	DEBUG_WORD("fpointFSlash")
+	MESSSAGE_DEBUG("fpointFSlash")
 }
 
 void fpointFStar(void) {
-	DEBUG_WORD("fpointFStar")
+	MESSSAGE_DEBUG("fpointFStar")
 }
 
 void fpointFPlus(void) {
@@ -628,11 +652,11 @@ void fpointFPlus(void) {
 	};
 #else
 #endif
-	DEBUG_WORD("fpointFPlus")
+	MESSSAGE_DEBUG("fpointFPlus")
 }
 
 void fpointFMinus(void) {
-	DEBUG_WORD("fpointFMinus")
+	MESSSAGE_DEBUG("fpointFMinus")
 }
 
 void fpointFDot(void) {
@@ -652,7 +676,7 @@ void fpointFDot(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-	DEBUG_WORD("fpointFDot")
+	MESSSAGE_DEBUG("fpointFDot")
 }
 
 
@@ -675,433 +699,433 @@ void fpointFDotS(void) {
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-	DEBUG_WORD("fpointDotF")
+	MESSSAGE_DEBUG("fpointDotF")
 }
 
 void fpointFDot(void) {
-	DEBUG_WORD("fpoinFtDot")
+	MESSSAGE_DEBUG("fpoinFtDot")
 }
 
 void fpointNumFS(void) {
-	DEBUG_WORD("fpointNumFS")
+	MESSSAGE_DEBUG("fpointNumFS")
 }
 
 void fpointSetPrecision(void) {
-	DEBUG_WORD("fpointSetPrecision")
+	MESSSAGE_DEBUG("fpointSetPrecision")
 }
 
 void fpointPrecision(void) {
-	DEBUG_WORD("fpointPrecision")
+	MESSSAGE_DEBUG("fpointPrecision")
 }
 
 void fpointFSqrt(void) {
-	DEBUG_WORD("fpointFSqrt")
+	MESSSAGE_DEBUG("fpointFSqrt")
 }
 
 void fpointPi(void) {
-	DEBUG_WORD("fpointPi")
+	MESSSAGE_DEBUG("fpointPi")
 }
 
 void fpointFVariable(void) {
-	DEBUG_WORD("fpointFVariable")
+	MESSSAGE_DEBUG("fpointFVariable")
 }
 
 void fpointFConstant(void) {
-	DEBUG_WORD("fpointFConstant")
+	MESSSAGE_DEBUG("fpointFConstant")
 }
 
 void fpointFLiteral(void) {
-	DEBUG_WORD("fpointFLiteral")
+	MESSSAGE_DEBUG("fpointFLiteral")
 }
 
 void fpointAFLiteral(void) {
-	DEBUG_WORD("fpointAFLiteral")
+	MESSSAGE_DEBUG("fpointAFLiteral")
 }
 
 void fpointSFComma(void) {
-	DEBUG_WORD("fpointSFComma")
+	MESSSAGE_DEBUG("fpointSFComma")
 }
 
 void fpointSFloatPlus(void) {
-	DEBUG_WORD("fpointSFloatPlus")
+	MESSSAGE_DEBUG("fpointSFloatPlus")
 }
 
 void fpointSFloats(void) {
-	DEBUG_WORD("fpointSFloats")
+	MESSSAGE_DEBUG("fpointSFloats")
 }
 
 void fpointSFloat(void) {
-	DEBUG_WORD("fpointSFloat")
+	MESSSAGE_DEBUG("fpointSFloat")
 }
 
 void fpointSFGreaterEqual(void) {
-	DEBUG_WORD("fpointSFGreaterEqual")
+	MESSSAGE_DEBUG("fpointSFGreaterEqual")
 }
 
 void fpointSFLessEqual(void) {
-	DEBUG_WORD("fpointSFLessEqual")
+	MESSSAGE_DEBUG("fpointSFLessEqual")
 }
 
 void fpointSFUnequal(void) {
-	DEBUG_WORD("fpointSFUnequal")
+	MESSSAGE_DEBUG("fpointSFUnequal")
 }
 
 void fpointSFGreater(void) {
-	DEBUG_WORD("fpointSFGreater")
+	MESSSAGE_DEBUG("fpointSFGreater")
 }
 
 void fpointSFLess(void) {
-	DEBUG_WORD("fpointSFLess")
+	MESSSAGE_DEBUG("fpointSFLess")
 }
 
 void fpointSFEqual(void) {
-	DEBUG_WORD("fpointSFEqual")
+	MESSSAGE_DEBUG("fpointSFEqual")
 }
 
 void fpointFg(void) {
-	DEBUG_WORD("fpointFg")
+	MESSSAGE_DEBUG("fpointFg")
 }
 
 void fpointFDepth(void) {
-	DEBUG_WORD("fpointFDepth")
+	MESSSAGE_DEBUG("fpointFDepth")
 }
 
 void fpointFP0(void) {
-	DEBUG_WORD("fpointFP0")
+	MESSSAGE_DEBUG("fpointFP0")
 }
 
 void fpointFGreaterNumberQ(void) {
-	DEBUG_WORD("fpointFGreaterNumberQ")
+	MESSSAGE_DEBUG("fpointFGreaterNumberQ")
 }
 
 void fpointFToS(void) {
-	DEBUG_WORD("fpointFToS")
+	MESSSAGE_DEBUG("fpointFToS")
 }
 
 void fpointSToF(void) {
-	DEBUG_WORD("fpointSToF")
+	MESSSAGE_DEBUG("fpointSToF")
 }
 
 void fpointOneSlashF(void) {
-	DEBUG_WORD("fpointOneSlashF")
+	MESSSAGE_DEBUG("fpointOneSlashF")
 }
 
 void fpointFSlash(void) {
-	DEBUG_WORD("fpointFSlash")
+	MESSSAGE_DEBUG("fpointFSlash")
 }
 
 void fpointFStar(void) {
-	DEBUG_WORD("fpointFStar")
+	MESSSAGE_DEBUG("fpointFStar")
 }
 
 void fpointFMinus(void) {
-	DEBUG_WORD("fpointFMinus")
+	MESSSAGE_DEBUG("fpointFMinus")
 }
 
 void fpointFPlus(void) {
-	DEBUG_WORD("fpointFPlus")
+	MESSSAGE_DEBUG("fpointFPlus")
 }
 
 void fpointF0Equal(void) {
-	DEBUG_WORD("fpointF0Equal")
+	MESSSAGE_DEBUG("fpointF0Equal")
 }
 
 void fpointF0Less(void) {
-	DEBUG_WORD("fpointF0Less")
+	MESSSAGE_DEBUG("fpointF0Less")
 }
 
 void fpointFNegate(void) {
-	DEBUG_WORD("fpointFNegate")
+	MESSSAGE_DEBUG("fpointFNegate")
 }
 
 void fpointFswa(void) {
-	DEBUG_WORD("fpointFswa")
+	MESSSAGE_DEBUG("fpointFswa")
 }
 
 void fpointFOver(void) {
-	DEBUG_WORD("fpointFOver")
+	MESSSAGE_DEBUG("fpointFOver")
 }
 
 void fpointFDrop(void) {
-	DEBUG_WORD("fpointFDrop")
+	MESSSAGE_DEBUG("fpointFDrop")
 }
 
 void fpointFNip(void) {
-	DEBUG_WORD("fpointFNip")
+	MESSSAGE_DEBUG("fpointFNip")
 }
 
 void fpointFDup(void) {
-	DEBUG_WORD("fpointFDup")
+	MESSSAGE_DEBUG("fpointFDup")
 }
 
 void fpointSFStore(void) {
-	DEBUG_WORD("fpointSFStore")
+	MESSSAGE_DEBUG("fpointSFStore")
 }
 
 void fpointSFFetch(void) {
-	DEBUG_WORD("fpointSFFetch")
+	MESSSAGE_DEBUG("fpointSFFetch")
 }
 
 void fpointSF(void) {
-	DEBUG_WORD("fpointSF")
+	MESSSAGE_DEBUG("fpointSF")
 }
 
 void fpointFPStore(void) {
-	DEBUG_WORD("fpointFPStore")
+	MESSSAGE_DEBUG("fpointFPStore")
 }
 
 void fpointFPFetch(void) {
-	DEBUG_WORD("fpointFPFetch")
+	MESSSAGE_DEBUG("fpointFPFetch")
 }
 
 #endif
 #if (FLOATSTD == FLOAT_TURBO)
 /* 10 Floating-Point Stack Manipulation Words */
 void fpointFDup(void) {
-	DEBUG_WORD("fpointFDup")
+	MESSSAGE_DEBUG("fpointFDup")
 }
 
 void fpointFDrop(void) {
-	DEBUG_WORD("fpointFDrop")
+	MESSSAGE_DEBUG("fpointFDrop")
 }
 
 void fpointFSwap(void) {
-	DEBUG_WORD("fpointFSwap")
+	MESSSAGE_DEBUG("fpointFSwap")
 }
 
 void fpointFOver(void) {
-	DEBUG_WORD("fpointFOver")
+	MESSSAGE_DEBUG("fpointFOver")
 }
 
 void fpointFPClear(void) {
-	DEBUG_WORD("fpointFPClear")
+	MESSSAGE_DEBUG("fpointFPClear")
 }
 
 /* 11 Math Words */
 void fpointFPlus(void) {
-	DEBUG_WORD("fpointFPlus")
+	MESSSAGE_DEBUG("fpointFPlus")
 }
 
 void fpointFMinus(void) {
-	DEBUG_WORD("fpointFMinus")
+	MESSSAGE_DEBUG("fpointFMinus")
 }
 
 void fpointFStar(void) {
-	DEBUG_WORD("fpointFStar")
+	MESSSAGE_DEBUG("fpointFStar")
 }
 
 void fpointFSlash(void) {
-	DEBUG_WORD("fpointFSlash")
+	MESSSAGE_DEBUG("fpointFSlash")
 }
 
 void fpointFNegate(void) {
-	DEBUG_WORD("fpointFNegate")
+	MESSSAGE_DEBUG("fpointFNegate")
 }
 
 void fpointFAbs(void) {
-	DEBUG_WORD("fpointFAbs")
+	MESSSAGE_DEBUG("fpointFAbs")
 }
 
 void fpointFloor(void) {
-	DEBUG_WORD("fpointFloor")
+	MESSSAGE_DEBUG("fpointFloor")
 }
 
 void fpointCeil(void) {
-	DEBUG_WORD("fpointCeil")
+	MESSSAGE_DEBUG("fpointCeil")
 }
 
 void fpointTrunc(void) {
-	DEBUG_WORD("fpointTrunc")
+	MESSSAGE_DEBUG("fpointTrunc")
 }
 
 void fpointFrac(void) {
-	DEBUG_WORD("fpointFrac")
+	MESSSAGE_DEBUG("fpointFrac")
 }
 
 /* 12 Comparison Words */
 void fpointFEqual(void) {
-	DEBUG_WORD("fpointFEqual")
+	MESSSAGE_DEBUG("fpointFEqual")
 }
 
 void fpointF0Equal(void) {
-	DEBUG_WORD("fpointF0Equal")
+	MESSSAGE_DEBUG("fpointF0Equal")
 }
 
 void fpointFLess(void) {
-	DEBUG_WORD("fpointFLess")
+	MESSSAGE_DEBUG("fpointFLess")
 }
 
 void fpointFGreater(void) {
-	DEBUG_WORD("fpointFGreater")
+	MESSSAGE_DEBUG("fpointFGreater")
 }
 
 void fpointF0Less(void) {
-	DEBUG_WORD("fpointF0Less")
+	MESSSAGE_DEBUG("fpointF0Less")
 }
 
 /* 13 Floating-Point Literal Handling */
 void fpointToF(void) {
-	DEBUG_WORD("fpointToF")
+	MESSSAGE_DEBUG("fpointToF")
 }
 
 void fpointFLiteral(void) {
-	DEBUG_WORD("fpointFLiteral")
+	MESSSAGE_DEBUG("fpointFLiteral")
 }
 
 void fpointFLit(void) {
-	DEBUG_WORD("fpointFLit")
+	MESSSAGE_DEBUG("fpointFLit")
 }
 
 /* 14 Floating-Point Variables */
 void fpointFVariable(void) {
-	DEBUG_WORD("fpointFVariable")
+	MESSSAGE_DEBUG("fpointFVariable")
 }
 
 void fpointFStore(void) {
-	DEBUG_WORD("fpointFStore")
+	MESSSAGE_DEBUG("fpointFStore")
 }
 
 void fpointFFetch(void) {
-	DEBUG_WORD("fpointFFetch")
+	MESSSAGE_DEBUG("fpointFFetch")
 }
 
 /* 15 Floating-Point Constants */
 void fpointFConstant(void) {
-	DEBUG_WORD("fpointFConstant")
+	MESSSAGE_DEBUG("fpointFConstant")
 }
 
 /* 16 Floating-Point Values */
 void fpointFValue(void) {
-	DEBUG_WORD("fpointFValue")
+	MESSSAGE_DEBUG("fpointFValue")
 }
 
 void fpointFTo(void) {
-	DEBUG_WORD("fpointFTo")
+	MESSSAGE_DEBUG("fpointFTo")
 }
 
 void fpointPlusFTo(void) {
-	DEBUG_WORD("fpointPlusFTo")
+	MESSSAGE_DEBUG("fpointPlusFTo")
 }
 
 /* 17 Displaying Floating-Point Numbers */
 void fpointFDot(void) {
-	DEBUG_WORD("fpointFDot")
+	MESSSAGE_DEBUG("fpointFDot")
 }
 
 void fpointFFDpt(void) {
-	DEBUG_WORD("fpointFFDpt")
+	MESSSAGE_DEBUG("fpointFFDpt")
 }
 
 void fpointFFPlusDot(void) {
-	DEBUG_WORD("fpointFFPlusDot")
+	MESSSAGE_DEBUG("fpointFFPlusDot")
 }
 
 void fpointFFEDot(void) {
-	DEBUG_WORD("fpointFFEDot")
+	MESSSAGE_DEBUG("fpointFFEDot")
 }
 
 void fpointFFEPlusDot(void) {
-	DEBUG_WORD("fpointFFEPlusDot")
+	MESSSAGE_DEBUG("fpointFFEPlusDot")
 }
 
 void fpointFFXDot(void) {
-	DEBUG_WORD("fpointFFXDot")
+	MESSSAGE_DEBUG("fpointFFXDot")
 }
 
 void fpointFFXPlusDot(void) {
-	DEBUG_WORD("fpointFFXPlusDot")
+	MESSSAGE_DEBUG("fpointFFXPlusDot")
 }
 
 void fpointFDollarDot(void) {
-	DEBUG_WORD("fpointFDollarDot")
+	MESSSAGE_DEBUG("fpointFDollarDot")
 }
 
 void fpointDotFS(void) {
-	DEBUG_WORD("fpointDotFS")
+	MESSSAGE_DEBUG("fpointDotFS")
 }
 
 void fpointDotFDollar(void) {
-	DEBUG_WORD("fpointDotFDollar")
+	MESSSAGE_DEBUG("fpointDotFDollar")
 }
 
 /* 18 Floating-Point Number Conversion */
 void fpointSToFP(void) {
-	DEBUG_WORD("fpointSToFP")
+	MESSSAGE_DEBUG("fpointSToFP")
 }
 
 void fpointFPToS(void) {
-	DEBUG_WORD("fpointFPToS")
+	MESSSAGE_DEBUG("fpointFPToS")
 }
 
 /* 19 Transcendental Constants and Conversion Functions */
 void fpointPi(void) {
-	DEBUG_WORD("fpointPi")
+	MESSSAGE_DEBUG("fpointPi")
 }
 
 void fpointEulerE(void) {
-	DEBUG_WORD("fpointEulerE")
+	MESSSAGE_DEBUG("fpointEulerE")
 }
 
 void fpointRadDeg(void) {
-	DEBUG_WORD("fpointRadDeg")
+	MESSSAGE_DEBUG("fpointRadDeg")
 }
 
 void fpointDegRad(void) {
-	DEBUG_WORD("fpointDegRad")
+	MESSSAGE_DEBUG("fpointDegRad")
 }
 
 void fpointToRad(void) {
-	DEBUG_WORD("fpointToRad")
+	MESSSAGE_DEBUG("fpointToRad")
 }
 
 void fpointToDeg(void) {
-	DEBUG_WORD("fpointToDeg")
+	MESSSAGE_DEBUG("fpointToDeg")
 }
 
 /* 20 Transcendental Functions */
 void fpointExp(void) {
-	DEBUG_WORD("fpointExp")
+	MESSSAGE_DEBUG("fpointExp")
 }
 
 void fpointLog(void) {
-	DEBUG_WORD("fpointLog")
+	MESSSAGE_DEBUG("fpointLog")
 }
 
 void fpointSqrt(void) {
-	DEBUG_WORD("fpointSqrt")
+	MESSSAGE_DEBUG("fpointSqrt")
 }
 
 void fpointCos(void) {
-	DEBUG_WORD("fpointCos")
+	MESSSAGE_DEBUG("fpointCos")
 }
 
 void fpointSin(void) {
-	DEBUG_WORD("fpointSin")
+	MESSSAGE_DEBUG("fpointSin")
 }
 
 void fpointTan(void) {
-	DEBUG_WORD("fpointTan")
+	MESSSAGE_DEBUG("fpointTan")
 }
 
 void fpointAtn(void) {
-	DEBUG_WORD("fpointAtn")
+	MESSSAGE_DEBUG("fpointAtn")
 }
 
 void fpointPow(void) {
-	DEBUG_WORD("fpointPow")
+	MESSSAGE_DEBUG("fpointPow")
 }
 
 void fpointLog10(void) {
-	DEBUG_WORD("fpointLog10")
+	MESSSAGE_DEBUG("fpointLog10")
 }
 
 void fpointExp10(void) {
-	DEBUG_WORD("fpointExp10")
+	MESSSAGE_DEBUG("fpointExp10")
 }
 
 /* 21.3 Floating Point Error Handling */
 void fpointQFPErr(void) {
-	DEBUG_WORD("fpointQFPErr")
+	MESSSAGE_DEBUG("fpointQFPErr")
 }
 
 #endif
@@ -1109,373 +1133,373 @@ void fpointQFPErr(void) {
 
 #if TASKINGSTANDARD == TASKINGSTD_FORTH83
 void taskingF83Allot(void) {
-	DEBUG_WORD("taskingF83Allot")
+	MESSSAGE_DEBUG("taskingF83Allot")
 }
 
 void taskingF83Create(void) {
-	DEBUG_WORD("taskingF83Create")
+	MESSSAGE_DEBUG("taskingF83Create")
 }
 
 void taskingF83Variable(void) {
-	DEBUG_WORD("taskingF83Variable")
+	MESSSAGE_DEBUG("taskingF83Variable")
 }
 
 void taskingF83Defer(void) {
-	DEBUG_WORD("taskingF83Defer")
+	MESSSAGE_DEBUG("taskingF83Defer")
 }
 
 void taskingF83Pause(void) {
-	DEBUG_WORD("taskingF83Pause")
+	MESSSAGE_DEBUG("taskingF83Pause")
 }
 
 void taskingF83Restart(void) {
-	DEBUG_WORD("taskingF83Restart")
+	MESSSAGE_DEBUG("taskingF83Restart")
 }
 
 void taskingF83Local(void) {
-	DEBUG_WORD("taskingF83Local")
+	MESSSAGE_DEBUG("taskingF83Local")
 }
 
 void taskingF83FetchLink(void) {
-	DEBUG_WORD("taskingF83FetchLink")
+	MESSSAGE_DEBUG("taskingF83FetchLink")
 }
 
 void taskingF83StoreLink(void) {
-	DEBUG_WORD("taskingF83StoreLink")
+	MESSSAGE_DEBUG("taskingF83StoreLink")
 }
 
 void taskingF83Sleep(void) {
-	DEBUG_WORD("taskingF83Sleep")
+	MESSSAGE_DEBUG("taskingF83Sleep")
 }
 
 void taskingF83Wake(void) {
-	DEBUG_WORD("taskingF83Wake")
+	MESSSAGE_DEBUG("taskingF83Wake")
 }
 
 void taskingF83Stop(void) {
-	DEBUG_WORD("taskingF83Stop")
+	MESSSAGE_DEBUG("taskingF83Stop")
 }
 
 void taskingF83Multi(void) {
-	DEBUG_WORD("taskingF83Multi")
+	MESSSAGE_DEBUG("taskingF83Multi")
 }
 
 void taskingF83Single(void) {
-	DEBUG_WORD("taskingF83Single")
+	MESSSAGE_DEBUG("taskingF83Single")
 }
 
 void taskingF83Task(void) {
-	DEBUG_WORD("taskingF83Task")
+	MESSSAGE_DEBUG("taskingF83Task")
 }
 
 void taskingF83SetTask(void) {
-	DEBUG_WORD("taskingF83SetTask")
+	MESSSAGE_DEBUG("taskingF83SetTask")
 }
 
 void taskingF83Activate(void) {
-	DEBUG_WORD("taskingF83Activate")
+	MESSSAGE_DEBUG("taskingF83Activate")
 }
 
 void taskingF83Background(void) {
-	DEBUG_WORD("taskingF83Background")
+	MESSSAGE_DEBUG("taskingF83Background")
 }
 
 #endif
 
 #if TASKINGSTANDARD == TASKINGSTD_FPC
 void taskingFPCPause(void) {
-	DEBUG_WORD("taskingFPCPause")
+	MESSSAGE_DEBUG("taskingFPCPause")
 }
 
 void taskingFPCRestart(void) {
-	DEBUG_WORD("taskingFPCRestart")
+	MESSSAGE_DEBUG("taskingFPCRestart")
 }
 
 void taskingFPCLocal(void) {
-	DEBUG_WORD("taskingFPCLocal")
+	MESSSAGE_DEBUG("taskingFPCLocal")
 }
 
 void taskingFPCFetchLink(void) {
-	DEBUG_WORD("taskingFPCFetchLink")
+	MESSSAGE_DEBUG("taskingFPCFetchLink")
 }
 
 void taskingFPCStoreLink(void) {
-	DEBUG_WORD("taskingFPCStoreLink")
+	MESSSAGE_DEBUG("taskingFPCStoreLink")
 }
 
 void taskingFPCSleep(void) {
-	DEBUG_WORD("taskingFPCSleep")
+	MESSSAGE_DEBUG("taskingFPCSleep")
 }
 
 void taskingFPCWake(void) {
-	DEBUG_WORD("taskingFPCWake")
+	MESSSAGE_DEBUG("taskingFPCWake")
 }
 
 void taskingFPCStop(void) {
-	DEBUG_WORD("taskingFPCStop")
+	MESSSAGE_DEBUG("taskingFPCStop")
 }
 
 void taskingFPCSingle(void) {
-	DEBUG_WORD("taskingFPCSingle")
+	MESSSAGE_DEBUG("taskingFPCSingle")
 }
 
 void taskingFPCMulti(void) {
-	DEBUG_WORD("taskingFPCMulti")
+	MESSSAGE_DEBUG("taskingFPCMulti")
 }
 
 void taskingFPCTask(void) {
-	DEBUG_WORD("taskingFPCTask")
+	MESSSAGE_DEBUG("taskingFPCTask")
 }
 
 void taskingFPCSetTask(void) {
-	DEBUG_WORD("taskingFPCSetTask")
+	MESSSAGE_DEBUG("taskingFPCSetTask")
 }
 
 void taskingFPCActivate(void) {
-	DEBUG_WORD("taskingFPCActivate")
+	MESSSAGE_DEBUG("taskingFPCActivate")
 }
 
 void taskingFPCBackground(void) {
-	DEBUG_WORD("taskingFPCBackground")
+	MESSSAGE_DEBUG("taskingFPCBackground")
 }
 
 #endif
 
 #if TASKINGSTANDARD == TASKINGSTD_VOLK
 void taskingVolkActivate(void) {
-	DEBUG_WORD("taskingVolkActivate")
+	MESSSAGE_DEBUG("taskingVolkActivate")
 }
 
 void taskingVolkLock(void) {
-	DEBUG_WORD("taskingVolkLock")
+	MESSSAGE_DEBUG("taskingVolkLock")
 }
 
 void taskingVolkMultiTask(void) {
-	DEBUG_WORD("taskingVolkMultiTask")
+	MESSSAGE_DEBUG("taskingVolkMultiTask")
 }
 
 void taskingVolkPass(void) {
-	DEBUG_WORD("taskingVolkPass")
+	MESSSAGE_DEBUG("taskingVolkPass")
 }
 
 void taskingVolkPause(void) {
-	DEBUG_WORD("taskingVolkPause")
+	MESSSAGE_DEBUG("taskingVolkPause")
 }
 
 void taskingVolkRendezvous(void) {
-	DEBUG_WORD("taskingVolkRendezvous")
+	MESSSAGE_DEBUG("taskingVolkRendezvous")
 }
 
 void taskingVolkSingleTask(void) {
-	DEBUG_WORD("taskingVolkSingleTask")
+	MESSSAGE_DEBUG("taskingVolkSingleTask")
 }
 
 void taskingVolkSleep(void) {
-	DEBUG_WORD("taskingVolkSleep")
+	MESSSAGE_DEBUG("taskingVolkSleep")
 }
 
 void taskingVolkStop(void) {
-	DEBUG_WORD("taskingVolkStop")
+	MESSSAGE_DEBUG("taskingVolkStop")
 }
 
 void taskingVolkTask(void) {
-	DEBUG_WORD("taskingVolkTask")
+	MESSSAGE_DEBUG("taskingVolkTask")
 }
 
 void taskingVolkTasks(void) {
-	DEBUG_WORD("taskingVolkTasks")
+	MESSSAGE_DEBUG("taskingVolkTasks")
 }
 
 void taskingVolkUnlock(void) {
-	DEBUG_WORD("taskingVolkUnlock")
+	MESSSAGE_DEBUG("taskingVolkUnlock")
 }
 
 void taskingVolkWake(void) {
-	DEBUG_WORD("taskingVolkWake")
+	MESSSAGE_DEBUG("taskingVolkWake")
 }
 
 void taskingVolkUPFetch(void) {
-	DEBUG_WORD("taskingVolkUPFetch")
+	MESSSAGE_DEBUG("taskingVolkUPFetch")
 }
 
 void taskingVolkUPStore(void) {
-	DEBUG_WORD("taskingVolkUPStore")
+	MESSSAGE_DEBUG("taskingVolkUPStore")
 }
 
 #endif
 
 #if TASKINGSTANDARD == TASKINGSTD_BIGFORTH
 void taskingBigTaskerDotScr(void) {
-	DEBUG_WORD("taskingBigTaskerDotScr")
+	MESSSAGE_DEBUG("taskingBigTaskerDotScr")
 }
 
 void taskingBigStop(void) {
-	DEBUG_WORD("taskingBigStop")
+	MESSSAGE_DEBUG("taskingBigStop")
 }
 
 void taskingBigSingleTask(void) {
-	DEBUG_WORD("taskingBigSingleTask")
+	MESSSAGE_DEBUG("taskingBigSingleTask")
 }
 
 void taskingBigMultiTask(void) {
-	DEBUG_WORD("taskingBigMultiTask")
+	MESSSAGE_DEBUG("taskingBigMultiTask")
 }
 
 void taskingBigActivate(void) {
-	DEBUG_WORD("taskingBigActivate")
+	MESSSAGE_DEBUG("taskingBigActivate")
 }
 
 void taskingBigPass(void) {
-	DEBUG_WORD("taskingBigPass")
+	MESSSAGE_DEBUG("taskingBigPass")
 }
 
 void taskingBigAutostart(void) {
-	DEBUG_WORD("taskingBigAutostart")
+	MESSSAGE_DEBUG("taskingBigAutostart")
 }
 
 void taskingBigSleep(void) {
-	DEBUG_WORD("taskingBigSleep")
+	MESSSAGE_DEBUG("taskingBigSleep")
 }
 
 void taskingBigWake(void) {
-	DEBUG_WORD("taskingBigWake")
+	MESSSAGE_DEBUG("taskingBigWake")
 }
 
 void taskingBigTimerFetch(void) {
-	DEBUG_WORD("taskingBigTimerFetch")
+	MESSSAGE_DEBUG("taskingBigTimerFetch")
 }
 
 void taskingBigSyncTime(void) {
-	DEBUG_WORD("taskingBigSyncTime")
+	MESSSAGE_DEBUG("taskingBigSyncTime")
 }
 
 void taskingBigSyncStore(void) {
-	DEBUG_WORD("taskingBigSyncStore")
+	MESSSAGE_DEBUG("taskingBigSyncStore")
 }
 
 void taskingBigSync(void) {
-	DEBUG_WORD("taskingBigSync")
+	MESSSAGE_DEBUG("taskingBigSync")
 }
 
 void taskingBigTask(void) {
-	DEBUG_WORD("taskingBigTask")
+	MESSSAGE_DEBUG("taskingBigTask")
 }
 
 void taskingBigRendezvous(void) {
-	DEBUG_WORD("taskingBigRendezvous")
+	MESSSAGE_DEBUG("taskingBigRendezvous")
 }
 
 void taskingBigSTick(void) {
-	DEBUG_WORD("taskingBigSTick")
+	MESSSAGE_DEBUG("taskingBigSTick")
 }
 
 void taskingBigTasks(void) {
-	DEBUG_WORD("taskingBigTasks")
+	MESSSAGE_DEBUG("taskingBigTasks")
 }
 
 void taskingBigClockTask(void) {
-	DEBUG_WORD("taskingBigClockTask")
+	MESSSAGE_DEBUG("taskingBigClockTask")
 }
 
 void taskingBigClock(void) {
-	DEBUG_WORD("taskingBigClock")
+	MESSSAGE_DEBUG("taskingBigClock")
 }
 
 void taskingBigWaitC(void) {
-	DEBUG_WORD("taskingBigWaitC")
+	MESSSAGE_DEBUG("taskingBigWaitC")
 }
 
 void taskingBigStartC(void) {
-	DEBUG_WORD("taskingBigStartC")
+	MESSSAGE_DEBUG("taskingBigStartC")
 }
 
 void taskingBigNoClock(void) {
-	DEBUG_WORD("taskingBigNoClock")
+	MESSSAGE_DEBUG("taskingBigNoClock")
 }
 
 void taskingBigSetClock(void) {
-	DEBUG_WORD("taskingBigSetClock")
+	MESSSAGE_DEBUG("taskingBigSetClock")
 }
 
 void taskingBigPause(void) {
-	DEBUG_WORD("taskingBigPause")
+	MESSSAGE_DEBUG("taskingBigPause")
 }
 
 void taskingBigLock(void) {
-	DEBUG_WORD("taskingBigLock")
+	MESSSAGE_DEBUG("taskingBigLock")
 }
 
 void taskingBigUnlock(void) {
-	DEBUG_WORD("taskingBigUnlock")
+	MESSSAGE_DEBUG("taskingBigUnlock")
 }
 
 #endif
 
 #if TASKINGSTANDARD == TASKINGSTD_RTF
 void taskingRtfSingle(void) {
-	DEBUG_WORD("taskingRtfSingle")
+	MESSSAGE_DEBUG("taskingRtfSingle")
 }
 
 void taskingRtfMulti(void) {
-	DEBUG_WORD("taskingRtfMulti")
+	MESSSAGE_DEBUG("taskingRtfMulti")
 }
 
 void taskingRtfBackground(void) {
-	DEBUG_WORD("taskingRtfBackground")
+	MESSSAGE_DEBUG("taskingRtfBackground")
 }
 
 void taskingRtfWake(void) {
-	DEBUG_WORD("taskingRtfWake")
+	MESSSAGE_DEBUG("taskingRtfWake")
 }
 
 void taskingRtfSleep(void) {
-	DEBUG_WORD("taskingRtfSleep")
+	MESSSAGE_DEBUG("taskingRtfSleep")
 }
 
 void taskingRtfStop(void) {
-	DEBUG_WORD("taskingRtfStop")
+	MESSSAGE_DEBUG("taskingRtfStop")
 }
 
 void taskingRtfPause(void) {
-	DEBUG_WORD("taskingRtfPause")
+	MESSSAGE_DEBUG("taskingRtfPause")
 }
 
 void taskingRtfActivate(void) {
-	DEBUG_WORD("taskingRtfActivate")
+	MESSSAGE_DEBUG("taskingRtfActivate")
 }
 
 #endif
 
 #if TASKINGSTANDARD == TASKINGSTD_CAMEL
 void taskingCamelSwitch(void) {
-	DEBUG_WORD("taskingCamelSwitch")
+	MESSSAGE_DEBUG("taskingCamelSwitch")
 }
 
 void taskingCamelInitTask(void) {
-	DEBUG_WORD("taskingCamelInitTask")
+	MESSSAGE_DEBUG("taskingCamelInitTask")
 }
 
 void taskingCamelDetach(void) {
-	DEBUG_WORD("taskingCamelDetach")
+	MESSSAGE_DEBUG("taskingCamelDetach")
 }
 
 void taskingCamelAttach(void) {
-	DEBUG_WORD("taskingCamelAttach")
+	MESSSAGE_DEBUG("taskingCamelAttach")
 }
 
 void taskingCamelPreempt(void) {
-	DEBUG_WORD("taskingCamelPreempt")
+	MESSSAGE_DEBUG("taskingCamelPreempt")
 }
 
 #endif
 
 #ifdef TESTING_SUPPORT
 void testingTCurlyBracket(void) {
-	DEBUG_WORD("testingTCurlyBracket")
+	MESSSAGE_DEBUG("testingTCurlyBracket")
 }
 
 void testingCurlyBracketT(void) {
-	DEBUG_WORD("testingCurlyBracketT")
+	MESSSAGE_DEBUG("testingCurlyBracketT")
 }
 #endif
 

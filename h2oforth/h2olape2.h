@@ -10,2187 +10,2187 @@
     (H2O_FORTH_PRIMITIVES == LAXONPERRY_CPM_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == LAXONPERRY_CPM68K_FORTH)
 void laxperEmpty(void) {
-	DEBUG_WORD("laxperEmpty")
+	MESSSAGE_DEBUG("laxperEmpty")
 }
 
 void laxperMark(void) {
-	DEBUG_WORD("laxperMark")
+	MESSSAGE_DEBUG("laxperMark")
 }
 
 void laxperHello(void) {
-	DEBUG_WORD("laxperHello")
+	MESSSAGE_DEBUG("laxperHello")
 }
 
 void laxperBackgroundColon(void) {
-	DEBUG_WORD("laxperBackgroundColon")
+	MESSSAGE_DEBUG("laxperBackgroundColon")
 }
 
 void laxperActivate(void) {
-	DEBUG_WORD("laxperActivate")
+	MESSSAGE_DEBUG("laxperActivate")
 }
 
 void laxperSetTask(void) {
-	DEBUG_WORD("laxperSetTask")
+	MESSSAGE_DEBUG("laxperSetTask")
 }
 
 void laxperTaskColon(void) {
-	DEBUG_WORD("laxperTaskColon")
+	MESSSAGE_DEBUG("laxperTaskColon")
 }
 
 void laxperResume(void) {
-	DEBUG_WORD("laxperResume")
+	MESSSAGE_DEBUG("laxperResume")
 }
 
 void laxperDebug(void) {
-	DEBUG_WORD("laxperDebug")
+	MESSSAGE_DEBUG("laxperDebug")
 }
 
 void laxperListing(void) {
-	DEBUG_WORD("laxperListing")
+	MESSSAGE_DEBUG("laxperListing")
 }
 
 void laxperShow(void) {
-	DEBUG_WORD("laxperShow")
+	MESSSAGE_DEBUG("laxperShow")
 }
 
 void laxperYSemit(void) {
-	DEBUG_WORD("laxperYSemit")
+	MESSSAGE_DEBUG("laxperYSemit")
 }
 
 void laxperYPage(void) {
-	DEBUG_WORD("laxperYPage")
+	MESSSAGE_DEBUG("laxperYPage")
 }
 
 void laxperFormFeed(void) {
-	DEBUG_WORD("laxperFormFeed")
+	MESSSAGE_DEBUG("laxperFormFeed")
 }
 
 void laxperPage(void) {
-	DEBUG_WORD("laxperPage")
+	MESSSAGE_DEBUG("laxperPage")
 }
 
 void laxperNumPage(void) {
-	DEBUG_WORD("laxperNumPage")
+	MESSSAGE_DEBUG("laxperNumPage")
 }
 
 void laxperLogo(void) {
-	DEBUG_WORD("laxperLogo")
+	MESSSAGE_DEBUG("laxperLogo")
 }
 
 void laxperLSlashPage(void) {
-	DEBUG_WORD("laxperLSlashPage")
+	MESSSAGE_DEBUG("laxperLSlashPage")
 }
 
 void laxperFooting(void) {
-	DEBUG_WORD("laxperFooting")
+	MESSSAGE_DEBUG("laxperFooting")
 }
 
 void laxperInitPr(void) {
-	DEBUG_WORD("laxperInitPr")
+	MESSSAGE_DEBUG("laxperInitPr")
 }
 
 void laxperEpson(void) {
-	DEBUG_WORD("laxperEpson")
+	MESSSAGE_DEBUG("laxperEpson")
 }
 
 void laxperSee(void) {
-	DEBUG_WORD("laxperSee")
+	MESSSAGE_DEBUG("laxperSee")
 }
 
 void laxperYSee(void) {
-	DEBUG_WORD("laxperYSee")
+	MESSSAGE_DEBUG("laxperYSee")
 }
 
 void laxperAssociativeColon(void) {
-	DEBUG_WORD("laxperAssociativeColon")
+	MESSSAGE_DEBUG("laxperAssociativeColon")
 }
 
 void laxperCaseColon(void) {
-	DEBUG_WORD("laxperCaseColon")
+	MESSSAGE_DEBUG("laxperCaseColon")
 }
 
 void laxperMap(void) {
-	DEBUG_WORD("laxperMap")
+	MESSSAGE_DEBUG("laxperMap")
 }
 
 void laxperOut(void) {
-	DEBUG_WORD("laxperOut")
+	MESSSAGE_DEBUG("laxperOut")
 }
 
 void laxperDL(void) {
-	DEBUG_WORD("laxperDL")
+	MESSSAGE_DEBUG("laxperDL")
 }
 
 void laxperDU(void) {
-	DEBUG_WORD("laxperDU")
+	MESSSAGE_DEBUG("laxperDU")
 }
 
 void laxperDump(void) {
-	DEBUG_WORD("laxperDump")
+	MESSSAGE_DEBUG("laxperDump")
 }
 
 void laxperDotHead(void) {
-	DEBUG_WORD("laxperDotHead")
+	MESSSAGE_DEBUG("laxperDotHead")
 }
 
 void laxperQDotA(void) {
-	DEBUG_WORD("laxperQDotA")
+	MESSSAGE_DEBUG("laxperQDotA")
 }
 
 void laxperQDotN(void) {
-	DEBUG_WORD("laxperQDotN")
+	MESSSAGE_DEBUG("laxperQDotN")
 }
 
 void laxperDln(void) {
-	DEBUG_WORD("laxperDln")
+	MESSSAGE_DEBUG("laxperDln")
 }
 
 void laxperEmitDot(void) {
-	DEBUG_WORD("laxperEmitDot")
+	MESSSAGE_DEBUG("laxperEmitDot")
 }
 
 void laxperDDotTwo(void) {
-	DEBUG_WORD("laxperDDotTwo")
+	MESSSAGE_DEBUG("laxperDDotTwo")
 }
 
 void laxperDotTwo(void) {
-	DEBUG_WORD("laxperDotTwo")
+	MESSSAGE_DEBUG("laxperDotTwo")
 }
 
 void laxperA(void) {
-	DEBUG_WORD("laxperA")
+	MESSSAGE_DEBUG("laxperA")
 }
 
 void laxperShadow(void) {
-	DEBUG_WORD("laxperShadow")
+	MESSSAGE_DEBUG("laxperShadow")
 }
 
 void laxperYWhere(void) {
-	DEBUG_WORD("laxperYWhere")
+	MESSSAGE_DEBUG("laxperYWhere")
 }
 
 void laxperFix(void) {
-	DEBUG_WORD("laxperFix")
+	MESSSAGE_DEBUG("laxperFix")
 }
 
 void laxperEdit(void) {
-	DEBUG_WORD("laxperEdit")
+	MESSSAGE_DEBUG("laxperEdit")
 }
 
 void laxperEd(void) {
-	DEBUG_WORD("laxperEd")
+	MESSSAGE_DEBUG("laxperEd")
 }
 
 void laxperDone(void) {
-	DEBUG_WORD("laxperDone")
+	MESSSAGE_DEBUG("laxperDone")
 }
 
 void laxperEditor(void) {
-	DEBUG_WORD("laxperEditor")
+	MESSSAGE_DEBUG("laxperEditor")
 }
 
 void laxperDark(void) {
-	DEBUG_WORD("laxperDark")
+	MESSSAGE_DEBUG("laxperDark")
 }
 
 void laxperAt(void) {
-	DEBUG_WORD("laxperAt")
+	MESSSAGE_DEBUG("laxperAt")
 }
 
 void laxperMinusLine(void) {
-	DEBUG_WORD("laxperMinusLine")
+	MESSSAGE_DEBUG("laxperMinusLine")
 }
 
 void laxperBlot(void) {
-	DEBUG_WORD("laxperBlot")
+	MESSSAGE_DEBUG("laxperBlot")
 }
 
 void laxperReplace(void) {
-	DEBUG_WORD("laxperReplace")
+	MESSSAGE_DEBUG("laxperReplace")
 }
 
 void laxperInsert(void) {
-	DEBUG_WORD("laxperInsert")
+	MESSSAGE_DEBUG("laxperInsert")
 }
 
 void laxperDelete(void) {
-	DEBUG_WORD("laxperDelete")
+	MESSSAGE_DEBUG("laxperDelete")
 }
 
 void laxperSearch(void) {
-	DEBUG_WORD("laxperSearch")
+	MESSSAGE_DEBUG("laxperSearch")
 }
 
 void laxperScanFirst(void) {
-	DEBUG_WORD("laxperScanFirst")
+	MESSSAGE_DEBUG("laxperScanFirst")
 }
 
 void laxperFound(void) {
-	DEBUG_WORD("laxperFound")
+	MESSSAGE_DEBUG("laxperFound")
 }
 
 void laxperTo(void) {
-	DEBUG_WORD("laxperTo")
+	MESSSAGE_DEBUG("laxperTo")
 }
 
 void laxperCorvey(void) {
-	DEBUG_WORD("laxperCorvey")
+	MESSSAGE_DEBUG("laxperCorvey")
 }
 
 void laxperYConvey(void) {
-	DEBUG_WORD("laxperYConvey")
+	MESSSAGE_DEBUG("laxperYConvey")
 }
 
 void laxperDotTo(void) {
-	DEBUG_WORD("laxperDotTo")
+	MESSSAGE_DEBUG("laxperDotTo")
 }
 
 void laxperHop(void) {
-	DEBUG_WORD("laxperHop")
+	MESSSAGE_DEBUG("laxperHop")
 }
 
 void laxperConveyCopy(void) {
-	DEBUG_WORD("laxperConveyCopy")
+	MESSSAGE_DEBUG("laxperConveyCopy")
 }
 
 void laxperUSlashD(void) {
-	DEBUG_WORD("laxperUSlashD")
+	MESSSAGE_DEBUG("laxperUSlashD")
 }
 
 void laxperHopped(void) {
-	DEBUG_WORD("laxperHopped")
+	MESSSAGE_DEBUG("laxperHopped")
 }
 
 void laxperView(void) {
-	DEBUG_WORD("laxperView")
+	MESSSAGE_DEBUG("laxperView")
 }
 
 void laxperFetchView(void) {
-	DEBUG_WORD("laxperFetchView")
+	MESSSAGE_DEBUG("laxperFetchView")
 }
 
 void laxperCopy(void) {
-	DEBUG_WORD("laxperCopy")
+	MESSSAGE_DEBUG("laxperCopy")
 }
 
 void laxperYCopy(void) {
-	DEBUG_WORD("laxperYCopy")
+	MESSSAGE_DEBUG("laxperYCopy")
 }
 
 void laxperEstablish(void) {
-	DEBUG_WORD("laxperEstablish")
+	MESSSAGE_DEBUG("laxperEstablish")
 }
 
 void laxperL(void) {
-	DEBUG_WORD("laxperL")
+	MESSSAGE_DEBUG("laxperL")
 }
 
 void laxperB(void) {
-	DEBUG_WORD("laxperB")
+	MESSSAGE_DEBUG("laxperB")
 }
 
 void laxperN(void) {
-	DEBUG_WORD("laxperN")
+	MESSSAGE_DEBUG("laxperN")
 }
 
 void laxperColonColon(void) {
-	DEBUG_WORD("laxperColonColon")
+	MESSSAGE_DEBUG("laxperColonColon")
 }
 
 void laxperMany(void) {
-	DEBUG_WORD("laxperMany")
+	MESSSAGE_DEBUG("laxperMany")
 }
 
 void laxperTimes(void) {
-	DEBUG_WORD("laxperTimes")
+	MESSSAGE_DEBUG("laxperTimes")
 }
 
 void laxperNumTimes(void) {
-	DEBUG_WORD("laxperNumTimes")
+	MESSSAGE_DEBUG("laxperNumTimes")
 }
 
 void laxperWords(void) {
-	DEBUG_WORD("laxperWords")
+	MESSSAGE_DEBUG("laxperWords")
 }
 
 void laxperLargest(void) {
-	DEBUG_WORD("laxperLargest")
+	MESSSAGE_DEBUG("laxperLargest")
 }
 
 void laxperInd(void) {
-	DEBUG_WORD("laxperInd")
+	MESSSAGE_DEBUG("laxperInd")
 }
 
 void laxperIndex(void) {
-	DEBUG_WORD("laxperIndex")
+	MESSSAGE_DEBUG("laxperIndex")
 }
 
 void laxperDotLineZero(void) {
-	DEBUG_WORD("laxperDotLineZero")
+	MESSSAGE_DEBUG("laxperDotLineZero")
 }
 
 void laxperTriad(void) {
-	DEBUG_WORD("laxperTriad")
+	MESSSAGE_DEBUG("laxperTriad")
 }
 
 void laxperList(void) {
-	DEBUG_WORD("laxperList")
+	MESSSAGE_DEBUG("laxperList")
 }
 
 void laxperDotScr(void) {
-	DEBUG_WORD("laxperDotScr")
+	MESSSAGE_DEBUG("laxperDotScr")
 }
 
 void laxperQCr(void) {
-	DEBUG_WORD("laxperQCr")
+	MESSSAGE_DEBUG("laxperQCr")
 }
 
 void laxperQLine(void) {
-	DEBUG_WORD("laxperQLine")
+	MESSSAGE_DEBUG("laxperQLine")
 }
 
 void laxperRMargin(void) {
-	DEBUG_WORD("laxperRMargin")
+	MESSSAGE_DEBUG("laxperRMargin")
 }
 
 void laxperLMargin(void) {
-	DEBUG_WORD("laxperLMargin")
+	MESSSAGE_DEBUG("laxperLMargin")
 }
 
 void laxperHidden(void) {
-	DEBUG_WORD("laxperHidden")
+	MESSSAGE_DEBUG("laxperHidden")
 }
 
 void laxperZeroLessEqual(void) {
-	DEBUG_WORD("laxperZeroLessEqual")
+	MESSSAGE_DEBUG("laxperZeroLessEqual")
 }
 
 void laxperZeroGreaterEqual(void) {
-	DEBUG_WORD("laxperZeroGreaterEqual")
+	MESSSAGE_DEBUG("laxperZeroGreaterEqual")
 }
 
 void laxperGreaterEqual(void) {
-	DEBUG_WORD("laxperGreaterEqual")
+	MESSSAGE_DEBUG("laxperGreaterEqual")
 }
 
 void laxperLessEqual(void) {
-	DEBUG_WORD("laxperLessEqual")
+	MESSSAGE_DEBUG("laxperLessEqual")
 }
 
 void laxperUGreaterEqual(void) {
-	DEBUG_WORD("laxperUGreaterEqual")
+	MESSSAGE_DEBUG("laxperUGreaterEqual")
 }
 
 void laxperULessEqual(void) {
-	DEBUG_WORD("laxperULessEqual")
+	MESSSAGE_DEBUG("laxperULessEqual")
 }
 
 void laxperMs(void) {
-	DEBUG_WORD("laxperMs")
+	MESSSAGE_DEBUG("laxperMs")
 }
 
 void laxperFudge(void) {
-	DEBUG_WORD("laxperFudge")
+	MESSSAGE_DEBUG("laxperFudge")
 }
 
 void laxperPCStore(void) {
-	DEBUG_WORD("laxperPCStore")
+	MESSSAGE_DEBUG("laxperPCStore")
 }
 
 void laxperPCFetch(void) {
-	DEBUG_WORD("laxperPCFetch")
+	MESSSAGE_DEBUG("laxperPCFetch")
 }
 
 void laxperMulti(void) {
-	DEBUG_WORD("laxperMulti")
+	MESSSAGE_DEBUG("laxperMulti")
 }
 
 void laxperSingle(void) {
-	DEBUG_WORD("laxperSingle")
+	MESSSAGE_DEBUG("laxperSingle")
 }
 
 void laxperStop(void) {
-	DEBUG_WORD("laxperStop")
+	MESSSAGE_DEBUG("laxperStop")
 }
 
 void laxperWake(void) {
-	DEBUG_WORD("laxperWake")
+	MESSSAGE_DEBUG("laxperWake")
 }
 
 void laxperSleep(void) {
-	DEBUG_WORD("laxperSleep")
+	MESSSAGE_DEBUG("laxperSleep")
 }
 
 void laxperStoreLink(void) {
-	DEBUG_WORD("laxperStoreLink")
+	MESSSAGE_DEBUG("laxperStoreLink")
 }
 
 void laxperFetchLink(void) {
-	DEBUG_WORD("laxperFetchLink")
+	MESSSAGE_DEBUG("laxperFetchLink")
 }
 
 void laxperLocal(void) {
-	DEBUG_WORD("laxperLocal")
+	MESSSAGE_DEBUG("laxperLocal")
 }
 
 void laxperRestart(void) {
-	DEBUG_WORD("laxperRestart")
+	MESSSAGE_DEBUG("laxperRestart")
 }
 
 void laxperYPause(void) {
-	DEBUG_WORD("laxperYPause")
+	MESSSAGE_DEBUG("laxperYPause")
 }
 
 void laxperUnbug(void) {
-	DEBUG_WORD("laxperUnbug")
+	MESSSAGE_DEBUG("laxperUnbug")
 }
 
 void laxperBug(void) {
-	DEBUG_WORD("laxperBug")
+	MESSSAGE_DEBUG("laxperBug")
 }
 
 void laxperDoesQ(void) {
-	DEBUG_WORD("laxperDoesQ")
+	MESSSAGE_DEBUG("laxperDoesQ")
 }
 
 void laxperDoesSize(void) {
-	DEBUG_WORD("laxperDoesSize")
+	MESSSAGE_DEBUG("laxperDoesSize")
 }
 
 void laxperDoesOp(void) {
-	DEBUG_WORD("laxperDoesOp")
+	MESSSAGE_DEBUG("laxperDoesOp")
 }
 
 void laxperLabel(void) {
-	DEBUG_WORD("laxperLabel")
+	MESSSAGE_DEBUG("laxperLabel")
 }
 
 void laxperUtilityDotBlk(void) {
-	DEBUG_WORD("laxperUtilityDotBlk")
+	MESSSAGE_DEBUG("laxperUtilityDotBlk")
 }
 
 void laxperViews(void) {
-	DEBUG_WORD("laxperViews")
+	MESSSAGE_DEBUG("laxperViews")
 }
 
 void laxperViewFiles(void) {
-	DEBUG_WORD("laxperViewFiles")
+	MESSSAGE_DEBUG("laxperViewFiles")
 }
 
 void laxperSaveSystem(void) {
-	DEBUG_WORD("laxperSaveSystem")
+	MESSSAGE_DEBUG("laxperSaveSystem")
 }
 
 void laxperForm(void) {
-	DEBUG_WORD("laxperForm")
+	MESSSAGE_DEBUG("laxperForm")
 }
 
 void laxperOpen(void) {
-	DEBUG_WORD("laxperOpen")
+	MESSSAGE_DEBUG("laxperOpen")
 }
 
 void laxperDefine(void) {
-	DEBUG_WORD("laxperDefine")
+	MESSSAGE_DEBUG("laxperDefine")
 }
 
 void laxperBColon(void) {
-	DEBUG_WORD("laxperBColon")
+	MESSSAGE_DEBUG("laxperBColon")
 }
 
 void laxperAColon(void) {
-	DEBUG_WORD("laxperAColon")
+	MESSSAGE_DEBUG("laxperAColon")
 }
 
 void laxperDriveQ(void) {
-	DEBUG_WORD("laxperDriveQ")
+	MESSSAGE_DEBUG("laxperDriveQ")
 }
 
 void laxperDir(void) {
-	DEBUG_WORD("laxperDir")
+	MESSSAGE_DEBUG("laxperDir")
 }
 
 void laxperCreateFile(void) {
-	DEBUG_WORD("laxperCreateFile")
+	MESSSAGE_DEBUG("laxperCreateFile")
 }
 
 void laxperMore(void) {
-	DEBUG_WORD("laxperMore")
+	MESSSAGE_DEBUG("laxperMore")
 }
 
 void laxperRoot(void) {
-	DEBUG_WORD("laxperRoot")
+	MESSSAGE_DEBUG("laxperRoot")
 }
 
 void laxperNextBlock(void) {
-	DEBUG_WORD("laxperNextBlock")
+	MESSSAGE_DEBUG("laxperNextBlock")
 }
 
 void laxperPlusThru(void) {
-	DEBUG_WORD("laxperPlusThru")
+	MESSSAGE_DEBUG("laxperPlusThru")
 }
 
 void laxperThru(void) {
-	DEBUG_WORD("laxperThru")
+	MESSSAGE_DEBUG("laxperThru")
 }
 
 void laxperQEnough(void) {
-	DEBUG_WORD("laxperQEnough")
+	MESSSAGE_DEBUG("laxperQEnough")
 }
 
 void laxperQ(void) {
-	DEBUG_WORD("laxperQ")
+	MESSSAGE_DEBUG("laxperQ")
 }
 
 void laxperParenS(void) {
-	DEBUG_WORD("laxperParenS")
+	MESSSAGE_DEBUG("laxperParenS")
 }
 
 void laxperBackslash(void) {
-	DEBUG_WORD("laxperBackslash")
+	MESSSAGE_DEBUG("laxperBackslash")
 }
 
 void laxperLSlashScr(void) {
-	DEBUG_WORD("laxperLSlashScr")
+	MESSSAGE_DEBUG("laxperLSlashScr")
 }
 
 void laxperCSlashL(void) {
-	DEBUG_WORD("laxperCSlashL")
+	MESSSAGE_DEBUG("laxperCSlashL")
 }
 
 void laxperRecurse(void) {
-	DEBUG_WORD("laxperRecurse")
+	MESSSAGE_DEBUG("laxperRecurse")
 }
 
 void laxperDotId(void) {
-	DEBUG_WORD("laxperDotId")
+	MESSSAGE_DEBUG("laxperDotId")
 }
 
 void laxperDotS(void) {
-	DEBUG_WORD("laxperDotS")
+	MESSSAGE_DEBUG("laxperDotS")
 }
 
 void laxperDepth(void) {
-	DEBUG_WORD("laxperDepth")
+	MESSSAGE_DEBUG("laxperDepth")
 }
 
 void laxperBye(void) {
-	DEBUG_WORD("laxperBye")
+	MESSSAGE_DEBUG("laxperBye")
 }
 
 void laxperStart(void) {
-	DEBUG_WORD("laxperStart")
+	MESSSAGE_DEBUG("laxperStart")
 }
 
 void laxperOk(void) {
-	DEBUG_WORD("laxperOk")
+	MESSSAGE_DEBUG("laxperOk")
 }
 
 void laxperInitial(void) {
-	DEBUG_WORD("laxperInitial")
+	MESSSAGE_DEBUG("laxperInitial")
 }
 
 void laxperCold(void) {
-	DEBUG_WORD("laxperCold")
+	MESSSAGE_DEBUG("laxperCold")
 }
 
 void laxperWarm(void) {
-	DEBUG_WORD("laxperWarm")
+	MESSSAGE_DEBUG("laxperWarm")
 }
 
 void laxperBoot(void) {
-	DEBUG_WORD("laxperBoot")
+	MESSSAGE_DEBUG("laxperBoot")
 }
 
 void laxperQuit(void) {
-	DEBUG_WORD("laxperQuit")
+	MESSSAGE_DEBUG("laxperQuit")
 }
 
 void laxperRun(void) {
-	DEBUG_WORD("laxperRun")
+	MESSSAGE_DEBUG("laxperRun")
 }
 
 void laxperIs(void) {
-	DEBUG_WORD("laxperIs")
+	MESSSAGE_DEBUG("laxperIs")
 }
 
 void laxperYIs(void) {
-	DEBUG_WORD("laxperYIs")
+	MESSSAGE_DEBUG("laxperYIs")
 }
 
 void laxperToIs(void) {
-	DEBUG_WORD("laxperToIs")
+	MESSSAGE_DEBUG("laxperToIs")
 }
 
 void laxperUser(void) {
-	DEBUG_WORD("laxperUser")
+	MESSSAGE_DEBUG("laxperUser")
 }
 
 void laxperNumUser(void) {
-	DEBUG_WORD("laxperNumUser")
+	MESSSAGE_DEBUG("laxperNumUser")
 }
 
 void laxperCode(void) {
-	DEBUG_WORD("laxperCode")
+	MESSSAGE_DEBUG("laxperCode")
 }
 
 void laxperAvoc(void) {
-	DEBUG_WORD("laxperAvoc")
+	MESSSAGE_DEBUG("laxperAvoc")
 }
 
 void laxperTwoVariable(void) {
-	DEBUG_WORD("laxperTwoVariable")
+	MESSSAGE_DEBUG("laxperTwoVariable")
 }
 
 void laxperTwoConstant(void) {
-	DEBUG_WORD("laxperTwoConstant")
+	MESSSAGE_DEBUG("laxperTwoConstant")
 }
 
 void laxperDefinitions(void) {
-	DEBUG_WORD("laxperDefinitions")
+	MESSSAGE_DEBUG("laxperDefinitions")
 }
 
 void laxperVocabulary(void) {
-	DEBUG_WORD("laxperVocabulary")
+	MESSSAGE_DEBUG("laxperVocabulary")
 }
 
 void laxperDefer(void) {
-	DEBUG_WORD("laxperDefer")
+	MESSSAGE_DEBUG("laxperDefer")
 }
 
 void laxperVariable(void) {
-	DEBUG_WORD("laxperVariable")
+	MESSSAGE_DEBUG("laxperVariable")
 }
 
 void laxperConstant(void) {
-	DEBUG_WORD("laxperConstant")
+	MESSSAGE_DEBUG("laxperConstant")
 }
 
 void laxperRecursive(void) {
-	DEBUG_WORD("laxperRecursive")
+	MESSSAGE_DEBUG("laxperRecursive")
 }
 
 void laxperSemicolon(void) {
-	DEBUG_WORD("laxperSemicolon")
+	MESSSAGE_DEBUG("laxperSemicolon")
 }
 
 void laxperColon(void) {
-	DEBUG_WORD("laxperColon")
+	MESSSAGE_DEBUG("laxperColon")
 }
 
 void laxperRightBracket(void) {
-	DEBUG_WORD("laxperRightBracket")
+	MESSSAGE_DEBUG("laxperRightBracket")
 }
 
 void laxperLeftBracket(void) {
-	DEBUG_WORD("laxperLeftBracket")
+	MESSSAGE_DEBUG("laxperLeftBracket")
 }
 
 void laxperDoes(void) {
-	DEBUG_WORD("laxperDoes")
+	MESSSAGE_DEBUG("laxperDoes")
 }
 
 void laxperSemicolonCode(void) {
-	DEBUG_WORD("laxperSemicolonCode")
+	MESSSAGE_DEBUG("laxperSemicolonCode")
 }
 
 void laxperYSemicolonCode(void) {
-	DEBUG_WORD("laxperYSemicolonCode")
+	MESSSAGE_DEBUG("laxperYSemicolonCode")
 }
 
 void laxperSemicolonUses(void) {
-	DEBUG_WORD("laxperSemicolonUses")
+	MESSSAGE_DEBUG("laxperSemicolonUses")
 }
 
 void laxperAssembler(void) {
-	DEBUG_WORD("laxperAssembler")
+	MESSSAGE_DEBUG("laxperAssembler")
 }
 
 void laxperYSemicolonUses(void) {
-	DEBUG_WORD("laxperYSemicolonUses")
+	MESSSAGE_DEBUG("laxperYSemicolonUses")
 }
 
 void laxperReveal(void) {
-	DEBUG_WORD("laxperReveal")
+	MESSSAGE_DEBUG("laxperReveal")
 }
 
 void laxperHide(void) {
-	DEBUG_WORD("laxperHide")
+	MESSSAGE_DEBUG("laxperHide")
 }
 
 void laxperQCsp(void) {
-	DEBUG_WORD("laxperQCsp")
+	MESSSAGE_DEBUG("laxperQCsp")
 }
 
 void laxperStoreCsp(void) {
-	DEBUG_WORD("laxperStoreCsp")
+	MESSSAGE_DEBUG("laxperStoreCsp")
 }
 
 void laxperCreate(void) {
-	DEBUG_WORD("laxperCreate")
+	MESSSAGE_DEBUG("laxperCreate")
 }
 
 void laxperBackslashCreate(void) {
-	DEBUG_WORD("laxperBackslashCreate")
+	MESSSAGE_DEBUG("laxperBackslashCreate")
 }
 
 void laxperCommaView(void) {
-	DEBUG_WORD("laxperCommaView")
+	MESSSAGE_DEBUG("laxperCommaView")
 }
 
 void laxperWhile(void) {
-	DEBUG_WORD("laxperWhile")
+	MESSSAGE_DEBUG("laxperWhile")
 }
 
 void laxperElse(void) {
-	DEBUG_WORD("laxperElse")
+	MESSSAGE_DEBUG("laxperElse")
 }
 
 void laxperIf(void) {
-	DEBUG_WORD("laxperIf")
+	MESSSAGE_DEBUG("laxperIf")
 }
 
 void laxperRepeat(void) {
-	DEBUG_WORD("laxperRepeat")
+	MESSSAGE_DEBUG("laxperRepeat")
 }
 
 void laxperAgain(void) {
-	DEBUG_WORD("laxperAgain")
+	MESSSAGE_DEBUG("laxperAgain")
 }
 
 void laxperUntil(void) {
-	DEBUG_WORD("laxperUntil")
+	MESSSAGE_DEBUG("laxperUntil")
 }
 
 void laxperPlusLoop(void) {
-	DEBUG_WORD("laxperPlusLoop")
+	MESSSAGE_DEBUG("laxperPlusLoop")
 }
 
 void laxperLoop(void) {
-	DEBUG_WORD("laxperLoop")
+	MESSSAGE_DEBUG("laxperLoop")
 }
 
 void laxperQDo(void) {
-	DEBUG_WORD("laxperQDo")
+	MESSSAGE_DEBUG("laxperQDo")
 }
 
 void laxperDo(void) {
-	DEBUG_WORD("laxperDo")
+	MESSSAGE_DEBUG("laxperDo")
 }
 
 void laxperThen(void) {
-	DEBUG_WORD("laxperThen")
+	MESSSAGE_DEBUG("laxperThen")
 }
 
 void laxperBegin(void) {
-	DEBUG_WORD("laxperBegin")
+	MESSSAGE_DEBUG("laxperBegin")
 }
 
 void laxperQLeave(void) {
-	DEBUG_WORD("laxperQLeave")
+	MESSSAGE_DEBUG("laxperQLeave")
 }
 
 void laxperLeave(void) {
-	DEBUG_WORD("laxperLeave")
+	MESSSAGE_DEBUG("laxperLeave")
 }
 
 void laxperQLessResolve(void) {
-	DEBUG_WORD("laxperQLessResolve")
+	MESSSAGE_DEBUG("laxperQLessResolve")
 }
 
 void laxperQLessMark(void) {
-	DEBUG_WORD("laxperQLessMark")
+	MESSSAGE_DEBUG("laxperQLessMark")
 }
 
 void laxperQGreaterResolve(void) {
-	DEBUG_WORD("laxperQGreaterResolve")
+	MESSSAGE_DEBUG("laxperQGreaterResolve")
 }
 
 void laxperQGreaterMark(void) {
-	DEBUG_WORD("laxperQGreaterMark")
+	MESSSAGE_DEBUG("laxperQGreaterMark")
 }
 
 void laxperLessResolve(void) {
-	DEBUG_WORD("laxperLessResolve")
+	MESSSAGE_DEBUG("laxperLessResolve")
 }
 
 void laxperLessMark(void) {
-	DEBUG_WORD("laxperLessMark")
+	MESSSAGE_DEBUG("laxperLessMark")
 }
 
 void laxperToResolve(void) {
-	DEBUG_WORD("laxperToResolve")
+	MESSSAGE_DEBUG("laxperToResolve")
 }
 
 void laxperToMark(void) {
-	DEBUG_WORD("laxperToMark")
+	MESSSAGE_DEBUG("laxperToMark")
 }
 
 void laxperQCondition(void) {
-	DEBUG_WORD("laxperQCondition")
+	MESSSAGE_DEBUG("laxperQCondition")
 }
 
 void laxperAbort(void) {
-	DEBUG_WORD("laxperAbort")
+	MESSSAGE_DEBUG("laxperAbort")
 }
 
 void laxperAbortQuote(void) {
-	DEBUG_WORD("laxperAbortQuote")
+	MESSSAGE_DEBUG("laxperAbortQuote")
 }
 
 void laxperYAbortQuote(void) {
-	DEBUG_WORD("laxperYAbortQuote")
+	MESSSAGE_DEBUG("laxperYAbortQuote")
 }
 
 void laxperYQError(void) {
-	DEBUG_WORD("laxperYQError")
+	MESSSAGE_DEBUG("laxperYQError")
 }
 
 void laxperQError(void) {
-	DEBUG_WORD("laxperQError")
+	MESSSAGE_DEBUG("laxperQError")
 }
 
 void laxperWhere(void) {
-	DEBUG_WORD("laxperWhere")
+	MESSSAGE_DEBUG("laxperWhere")
 }
 
 void laxperForget(void) {
-	DEBUG_WORD("laxperForget")
+	MESSSAGE_DEBUG("laxperForget")
 }
 
 void laxperYForget(void) {
-	DEBUG_WORD("laxperYForget")
+	MESSSAGE_DEBUG("laxperYForget")
 }
 
 void laxperTrim(void) {
-	DEBUG_WORD("laxperTrim")
+	MESSSAGE_DEBUG("laxperTrim")
 }
 
 void laxperFence(void) {
-	DEBUG_WORD("laxperFence")
+	MESSSAGE_DEBUG("laxperFence")
 }
 
 void laxperQuote(void) {
-	DEBUG_WORD("laxperQuoten")
+	MESSSAGE_DEBUG("laxperQuoten")
 }
 
 void laxperDotQuote(void) {
-	DEBUG_WORD("laxperDotQuote")
+	MESSSAGE_DEBUG("laxperDotQuote")
 }
 
 void laxperCommaQuote(void) {
-	DEBUG_WORD("laxperCommaQuote")
+	MESSSAGE_DEBUG("laxperCommaQuote")
 }
 
 void laxperYDotQuote(void) {
-	DEBUG_WORD("laxperYDotQuote")
+	MESSSAGE_DEBUG("laxperYDotQuote")
 }
 
 void laxperYQuote(void) {
-	DEBUG_WORD("laxperYQuote")
+	MESSSAGE_DEBUG("laxperYQuote")
 }
 
 void laxperXCompile(void) {
-	DEBUG_WORD("laxperXCompile")
+	MESSSAGE_DEBUG("laxperXCompile")
 }
 
 void laxperXTick(void) {
-	DEBUG_WORD("laxperXTick")
+	MESSSAGE_DEBUG("laxperXTick")
 }
 
 void laxperTick(void) {
-	DEBUG_WORD("laxperTick")
+	MESSSAGE_DEBUG("laxperTick")
 }
 
 void laxperQMissing(void) {
-	DEBUG_WORD("laxperQMissing")
+	MESSSAGE_DEBUG("laxperQMissing")
 }
 
 void laxperCrash(void) {
-	DEBUG_WORD("laxperCrash")
+	MESSSAGE_DEBUG("laxperCrash")
 }
 
 void laxperControl(void) {
-	DEBUG_WORD("laxperControl")
+	MESSSAGE_DEBUG("laxperControl")
 }
 
 void laxperAscii(void) {
-	DEBUG_WORD("laxperAscii")
+	MESSSAGE_DEBUG("laxperAscii")
 }
 
 void laxperDLiteral(void) {
-	DEBUG_WORD("laxperDLiteral")
+	MESSSAGE_DEBUG("laxperDLiteral")
 }
 
 void laxperLiteral(void) {
-	DEBUG_WORD("laxperLiteral")
+	MESSSAGE_DEBUG("laxperLiteral")
 }
 
 void laxperImmediate(void) {
-	DEBUG_WORD("laxperImmediate")
+	MESSSAGE_DEBUG("laxperImmediate")
 }
 
 void laxperCompile(void) {
-	DEBUG_WORD("laxperCompile")
+	MESSSAGE_DEBUG("laxperCompile")
 }
 
 void laxperEven(void) {
-	DEBUG_WORD("laxperEven")
+	MESSSAGE_DEBUG("laxperEven")
 }
 
 void laxperAlign(void) {
-	DEBUG_WORD("laxperAlign")
+	MESSSAGE_DEBUG("laxperAlign")
 }
 
 void laxperCComma(void) {
-	DEBUG_WORD("laxperCComma")
+	MESSSAGE_DEBUG("laxperCComma")
 }
 
 void laxperComma(void) {
-	DEBUG_WORD("laxperComma")
+	MESSSAGE_DEBUG("laxperComma")
 }
 
 void laxperAllot(void) {
-	DEBUG_WORD("laxperAllot")
+	MESSSAGE_DEBUG("laxperAllot")
 }
 
 void laxperInterpret(void) {
-	DEBUG_WORD("laxperInterpret")
+	MESSSAGE_DEBUG("laxperInterpret")
 }
 
 void laxperStatus(void) {
-	DEBUG_WORD("laxperStatus")
+	MESSSAGE_DEBUG("laxperStatus")
 }
 
 void laxperQStatus(void) {
-	DEBUG_WORD("laxperQStatus")
+	MESSSAGE_DEBUG("laxperQStatus")
 }
 
 void laxperDefined(void) {
-	DEBUG_WORD("laxperDefined")
+	MESSSAGE_DEBUG("laxperDefined")
 }
 
 void laxperQUppercase(void) {
-	DEBUG_WORD("laxperQUppercase")
+	MESSSAGE_DEBUG("laxperQUppercase")
 }
 
 void laxperFind(void) {
-	DEBUG_WORD("laxperFind")
+	MESSSAGE_DEBUG("laxperFind")
 }
 
 void laxperNumThreads(void) {
-	DEBUG_WORD("laxperNumThreads")
+	MESSSAGE_DEBUG("laxperNumThreads")
 }
 
 void laxperYFind(void) {
-	DEBUG_WORD("laxperYFind")
+	MESSSAGE_DEBUG("laxperYFind")
 }
 
 void laxperHash(void) {
-	DEBUG_WORD("laxperHash")
+	MESSSAGE_DEBUG("laxperHash")
 }
 
 void laxperViewFrom(void) {
-	DEBUG_WORD("laxperViewFrom")
+	MESSSAGE_DEBUG("laxperViewFrom")
 }
 
 void laxperToView(void) {
-	DEBUG_WORD("laxperToView")
+	MESSSAGE_DEBUG("laxperToView")
 }
 
 void laxperToLink(void) {
-	DEBUG_WORD("laxperToLink")
+	MESSSAGE_DEBUG("laxperToLink")
 }
 
 void laxperToName(void) {
-	DEBUG_WORD("laxperToName")
+	MESSSAGE_DEBUG("laxperToName")
 }
 
 void laxperToBody(void) {
-	DEBUG_WORD("laxperToBody")
+	MESSSAGE_DEBUG("laxperToBody")
 }
 
 void laxperLinkFrom(void) {
-	DEBUG_WORD("laxperLinkFrom")
+	MESSSAGE_DEBUG("laxperLinkFrom")
 }
 
 void laxperNameFrom(void) {
-	DEBUG_WORD("laxperNameFrom")
+	MESSSAGE_DEBUG("laxperNameFrom")
 }
 
 void laxperBodyFrom(void) {
-	DEBUG_WORD("laxperBodyFrom")
+	MESSSAGE_DEBUG("laxperBodyFrom")
 }
 
 void laxperLGreaterName(void) {
-	DEBUG_WORD("laxperLGreaterName")
+	MESSSAGE_DEBUG("laxperLGreaterName")
 }
 
 void laxperNToLink(void) {
-	DEBUG_WORD("laxperNToLink")
+	MESSSAGE_DEBUG("laxperNToLink")
 }
 
 void laxperForth83(void) {
-	DEBUG_WORD("laxperForth83")
+	MESSSAGE_DEBUG("laxperForth83")
 }
 
 void laxperDoneQ(void) {
-	DEBUG_WORD("laxperDoneQ")
+	MESSSAGE_DEBUG("laxperDoneQ")
 }
 
 void laxperTraverse(void) {
-	DEBUG_WORD("laxperTraverse")
+	MESSSAGE_DEBUG("laxperTraverse")
 }
 
 void laxperBackslashS(void) {
-	DEBUG_WORD("laxperBackslashS")
+	MESSSAGE_DEBUG("laxperBackslashS")
 }
 
 void laxperParen(void) {
-	DEBUG_WORD("laxperParen")
+	MESSSAGE_DEBUG("laxperParen")
 }
 
 void laxperDotParen(void) {
-	DEBUG_WORD("laxperDotParen")
+	MESSSAGE_DEBUG("laxperDotParen")
 }
 
 void laxperToType(void) {
-	DEBUG_WORD("laxperToType")
+	MESSSAGE_DEBUG("laxperToType")
 }
 
 void laxperWord(void) {
-	DEBUG_WORD("laxperWord")
+	MESSSAGE_DEBUG("laxperWord")
 }
 
 void laxperTickWord(void) {
-	DEBUG_WORD("laxperTickWord")
+	MESSSAGE_DEBUG("laxperTickWord")
 }
 
 void laxperParse(void) {
-	DEBUG_WORD("laxperParse")
+	MESSSAGE_DEBUG("laxperParse")
 }
 
 void laxperParseWord(void) {
-	DEBUG_WORD("laxperParseWord")
+	MESSSAGE_DEBUG("laxperParseWord")
 }
 
 void laxperSource(void) {
-	DEBUG_WORD("laxperSource")
+	MESSSAGE_DEBUG("laxperSource")
 }
 
 void laxperYSource(void) {
-	DEBUG_WORD("laxperYSource")
+	MESSSAGE_DEBUG("laxperYSource")
 }
 
 void laxperPlace(void) {
-	DEBUG_WORD("laxperPlace")
+	MESSSAGE_DEBUG("laxperPlace")
 }
 
 void laxperSlashString(void) {
-	DEBUG_WORD("laxperSlashString")
+	MESSSAGE_DEBUG("laxperSlashString")
 }
 
 void laxperScan(void) {
-	DEBUG_WORD("laxperScan")
+	MESSSAGE_DEBUG("laxperScan")
 }
 
 void laxperSkip(void) {
-	DEBUG_WORD("laxperSkip")
+	MESSSAGE_DEBUG("laxperSkip")
 }
 
 void laxperDDotR(void) {
-	DEBUG_WORD("laxperDDotR")
+	MESSSAGE_DEBUG("laxperDDotR")
 }
 
 void laxperDDot(void) {
-	DEBUG_WORD("laxperDDot")
+	MESSSAGE_DEBUG("laxperDDot")
 }
 
 void laxperYDDot(void) {
-	DEBUG_WORD("laxperYDDot")
+	MESSSAGE_DEBUG("laxperYDDot")
 }
 
 void laxperUdDotR(void) {
-	DEBUG_WORD("laxperUdDotR")
+	MESSSAGE_DEBUG("laxperUdDotR")
 }
 
 void laxperUdDot(void) {
-	DEBUG_WORD("laxperUdDot")
+	MESSSAGE_DEBUG("laxperUdDot")
 }
 
 void laxperYUdDot(void) {
-	DEBUG_WORD("laxperYUdDo")
+	MESSSAGE_DEBUG("laxperYUdDo")
 }
 
 void laxperDotR(void) {
-	DEBUG_WORD("laxperDotR")
+	MESSSAGE_DEBUG("laxperDotR")
 }
 
 void laxperDot(void) {
-	DEBUG_WORD("laxperDot")
+	MESSSAGE_DEBUG("laxperDot")
 }
 
 void laxperYDot(void) {
-	DEBUG_WORD("laxperYDot")
+	MESSSAGE_DEBUG("laxperYDot")
 }
 
 void laxperUDotR(void) {
-	DEBUG_WORD("laxperUDotR")
+	MESSSAGE_DEBUG("laxperUDotR")
 }
 
 void laxperUDot(void) {
-	DEBUG_WORD("laxperUDot")
+	MESSSAGE_DEBUG("laxperUDot")
 }
 
 void laxperYUDot(void) {
-	DEBUG_WORD("laxperYUDot")
+	MESSSAGE_DEBUG("laxperYUDot")
 }
 
 void laxperOctal(void) {
-	DEBUG_WORD("laxperOctal")
+	MESSSAGE_DEBUG("laxperOctal")
 }
 
 void laxperDecimal(void) {
-	DEBUG_WORD("laxperDecimal")
+	MESSSAGE_DEBUG("laxperDecimal")
 }
 
 void laxperHex(void) {
-	DEBUG_WORD("laxperHex")
+	MESSSAGE_DEBUG("laxperHex")
 }
 
 void laxperNumS(void) {
-	DEBUG_WORD("laxperNumS")
+	MESSSAGE_DEBUG("laxperNumS")
 }
 
 void laxperNum(void) {
-	DEBUG_WORD("laxperNum")
+	MESSSAGE_DEBUG("laxperNum")
 }
 
 void laxperSign(void) {
-	DEBUG_WORD("laxperSign")
+	MESSSAGE_DEBUG("laxperSign")
 }
 
 void laxperNumGreater(void) {
-	DEBUG_WORD("laxperNumGreater")
+	MESSSAGE_DEBUG("laxperNumGreater")
 }
 
 void laxperLessNum(void) {
-	DEBUG_WORD("laxperLessNum")
+	MESSSAGE_DEBUG("laxperLessNum")
 }
 
 void laxperHold(void) {
-	DEBUG_WORD("laxperHold")
+	MESSSAGE_DEBUG("laxperHold")
 }
 
 void laxperNumber(void) {
-	DEBUG_WORD("laxperNumber")
+	MESSSAGE_DEBUG("laxperNumber")
 }
 
 void laxperYNumber(void) {
-	DEBUG_WORD("laxperYNumber")
+	MESSSAGE_DEBUG("laxperYNumber")
 }
 
 void laxperNumberQ(void) {
-	DEBUG_WORD("laxperNumberQ")
+	MESSSAGE_DEBUG("laxperNumberQ")
 }
 
 void laxperYNumberQ(void) {
-	DEBUG_WORD("laxperYNumberQ")
+	MESSSAGE_DEBUG("laxperYNumberQ")
 }
 
 void laxperConvert(void) {
-	DEBUG_WORD("laxperConvert")
+	MESSSAGE_DEBUG("laxperConvert")
 }
 
 void laxperDoubleQ(void) {
-	DEBUG_WORD("laxperDoubleQ")
+	MESSSAGE_DEBUG("laxperDoubleQ")
 }
 
 void laxperDigit(void) {
-	DEBUG_WORD("laxperDigit")
+	MESSSAGE_DEBUG("laxperDigit")
 }
 
 void laxperLoad(void) {
-	DEBUG_WORD("laxperLoad")
+	MESSSAGE_DEBUG("laxperLoad")
 }
 
 void laxperYLoad(void) {
-	DEBUG_WORD("laxperYLoad")
+	MESSSAGE_DEBUG("laxperYLoad")
 }
 
 void laxperDefault(void) {
-	DEBUG_WORD("laxperDefault")
+	MESSSAGE_DEBUG("laxperDefault")
 }
 
 void laxperViewNum(void) {
-	DEBUG_WORD("laxperViewNum")
+	MESSSAGE_DEBUG("laxperViewNum")
 }
 
 void laxperFlush(void) {
-	DEBUG_WORD("laxperFlush")
+	MESSSAGE_DEBUG("laxperFlush")
 }
 
 void laxperSaveBuffers(void) {
-	DEBUG_WORD("laxperSaveBuffers")
+	MESSSAGE_DEBUG("laxperSaveBuffers")
 }
 
 void laxperEmptyBuffers(void) {
-	DEBUG_WORD("laxperEmptyBuffers")
+	MESSSAGE_DEBUG("laxperEmptyBuffers")
 }
 
 void laxperInBlock(void) {
-	DEBUG_WORD("laxperInBlock")
+	MESSSAGE_DEBUG("laxperInBlock")
 }
 
 void laxperBlock(void) {
-	DEBUG_WORD("laxperBlock")
+	MESSSAGE_DEBUG("laxperBlock")
 }
 
 void laxperYBlock(void) {
-	DEBUG_WORD("laxperYBlock")
+	MESSSAGE_DEBUG("laxperYBlock")
 }
 
 void laxperBuffer(void) {
-	DEBUG_WORD("laxperBuffer")
+	MESSSAGE_DEBUG("laxperBuffer")
 }
 
 void laxperYBuffer(void) {
-	DEBUG_WORD("laxperYBuffer")
+	MESSSAGE_DEBUG("laxperYBuffer")
 }
 
 void laxperMissing(void) {
-	DEBUG_WORD("laxperMissing")
+	MESSSAGE_DEBUG("laxperMissing")
 }
 
 void laxperDiscord(void) {
-	DEBUG_WORD("laxperDiscord")
+	MESSSAGE_DEBUG("laxperDiscord")
 }
 
 void laxperUpdate(void) {
-	DEBUG_WORD("laxperUpdate")
+	MESSSAGE_DEBUG("laxperUpdate")
 }
 
 void laxperAbsentQ(void) {
-	DEBUG_WORD("laxperAbsentQ")
+	MESSSAGE_DEBUG("laxperAbsentQ")
 }
 
 void laxperLatestQ(void) {
-	DEBUG_WORD("laxperLatestQ")
+	MESSSAGE_DEBUG("laxperLatestQ")
 }
 
 void laxperCapacity(void) {
-	DEBUG_WORD("laxperCapacity")
+	MESSSAGE_DEBUG("laxperCapacity")
 }
 
 void laxperDos(void) {
-	DEBUG_WORD("laxperDos")
+	MESSSAGE_DEBUG("laxperDos")
 }
 
 void laxperSwitch(void) {
-	DEBUG_WORD("laxperSwitch")
+	MESSSAGE_DEBUG("laxperSwitch")
 }
 
 void laxperFileQ(void) {
-	DEBUG_WORD("laxperFileQ")
+	MESSSAGE_DEBUG("laxperFileQ")
 }
 
 void laxperDotFile(void) {
-	DEBUG_WORD("laxperDotFile")
+	MESSSAGE_DEBUG("laxperDotFile")
 }
 
 void laxperWriteBlock(void) {
-	DEBUG_WORD("laxperWriteBlock")
+	MESSSAGE_DEBUG("laxperWriteBlock")
 }
 
 void laxperReadBlock(void) {
-	DEBUG_WORD("laxperReadBlock")
+	MESSSAGE_DEBUG("laxperReadBlock")
 }
 
 void laxperToUpdate(void) {
-	DEBUG_WORD("laxperToUpdate")
+	MESSSAGE_DEBUG("laxperToUpdate")
 }
 
 void laxperBuffersNum(void) {
-	DEBUG_WORD("laxperBuffersNum")
+	MESSSAGE_DEBUG("laxperBuffersNum")
 }
 
 void laxperToEnd(void) {
-	DEBUG_WORD("laxperToEnd")
+	MESSSAGE_DEBUG("laxperToEnd")
 }
 
 void laxperToBuffers(void) {
-	DEBUG_WORD("laxperToBuffers")
+	MESSSAGE_DEBUG("laxperToBuffers")
 }
 
 void laxperInitR0(void) {
-	DEBUG_WORD("laxperInitR0")
+	MESSSAGE_DEBUG("laxperInitR0")
 }
 
 void laxperFirst(void) {
-	DEBUG_WORD("laxperFirst")
+	MESSSAGE_DEBUG("laxperFirst")
 }
 
 void laxperToSize(void) {
-	DEBUG_WORD("laxperToSize")
+	MESSSAGE_DEBUG("laxperToSize")
 }
 
 void laxperLimit(void) {
-	DEBUG_WORD("laxperLimit")
+	MESSSAGE_DEBUG("laxperLimit")
 }
 
 void laxperDiskError(void) {
-	DEBUG_WORD("laxperDiskError")
+	MESSSAGE_DEBUG("laxperDiskError")
 }
 
 void laxperBSlashFcb(void) {
-	DEBUG_WORD("laxperBSlashFcb")
+	MESSSAGE_DEBUG("laxperBSlashFcb")
 }
 
 void laxperRecSlashBlk(void) {
-	DEBUG_WORD("laxperRecSlashBlk")
+	MESSSAGE_DEBUG("laxperRecSlashBlk")
 }
 
 void laxperBSlashRec(void) {
-	DEBUG_WORD("laxperBSlashRec")
+	MESSSAGE_DEBUG("laxperBSlashRec")
 }
 
 void laxperBSlashBuf(void) {
-	DEBUG_WORD("laxperBSlashBuf")
+	MESSSAGE_DEBUG("laxperBSlashBuf")
 }
 
 void laxperNumBuffers(void) {
-	DEBUG_WORD("laxperNumBuffers")
+	MESSSAGE_DEBUG("laxperNumBuffers")
 }
 
 void laxperQuery(void) {
-	DEBUG_WORD("laxperQuery")
+	MESSSAGE_DEBUG("laxperQuery")
 }
 
 void laxperTib(void) {
-	DEBUG_WORD("laxperTib")
+	MESSSAGE_DEBUG("laxperTib")
 }
 
 void laxperExpect(void) {
-	DEBUG_WORD("laxperExpect")
+	MESSSAGE_DEBUG("laxperExpect")
 }
 
 void laxperCcForth(void) {
-	DEBUG_WORD("laxperCcForth")
+	MESSSAGE_DEBUG("laxperCcForth")
 }
 
 void laxperCc(void) {
-	DEBUG_WORD("laxperCc")
+	MESSSAGE_DEBUG("laxperCc")
 }
 
 void laxperDelIn(void) {
-	DEBUG_WORD("laxperDelIn")
+	MESSSAGE_DEBUG("laxperDelIn")
 }
 
 void laxperChar(void) {
-	DEBUG_WORD("laxperChar")
+	MESSSAGE_DEBUG("laxperChar")
 }
 
 void laxperYChar(void) {
-	DEBUG_WORD("laxperYChar")
+	MESSSAGE_DEBUG("laxperYChar")
 }
 
 void laxperCrIn(void) {
-	DEBUG_WORD("laxperCrIn")
+	MESSSAGE_DEBUG("laxperCrIn")
 }
 
 void laxperPIn(void) {
-	DEBUG_WORD("laxperPIn")
+	MESSSAGE_DEBUG("laxperPIn")
 }
 
 void laxperResIn(void) {
-	DEBUG_WORD("laxperResIn")
+	MESSSAGE_DEBUG("laxperResIn")
 }
 
 void laxperBackUp(void) {
-	DEBUG_WORD("laxperBackUp")
+	MESSSAGE_DEBUG("laxperBackUp")
 }
 
 void laxperYDelIn(void) {
-	DEBUG_WORD("laxperYDelIn")
+	MESSSAGE_DEBUG("laxperYDelIn")
 }
 
 void laxperBsIn(void) {
-	DEBUG_WORD("laxperBsIn")
+	MESSSAGE_DEBUG("laxperBsIn")
 }
 
 void laxperBeep(void) {
-	DEBUG_WORD("laxperBeep")
+	MESSSAGE_DEBUG("laxperBeep")
 }
 
 void laxperBackspaces(void) {
-	DEBUG_WORD("laxperBackspaces")
+	MESSSAGE_DEBUG("laxperBackspaces")
 }
 
 void laxperSpaces(void) {
-	DEBUG_WORD("laxperSpaces")
+	MESSSAGE_DEBUG("laxperSpaces")
 }
 
 void laxperSpace(void) {
-	DEBUG_WORD("laxperSpace")
+	MESSSAGE_DEBUG("laxperSpace")
 }
 
 void laxperType(void) {
-	DEBUG_WORD("laxperType")
+	MESSSAGE_DEBUG("laxperType")
 }
 
 void laxperCrLf(void) {
-	DEBUG_WORD("laxperCrLf")
+	MESSSAGE_DEBUG("laxperCrLf")
 }
 
 void laxperYEmit(void) {
-	DEBUG_WORD("laxperYEmit")
+	MESSSAGE_DEBUG("laxperYEmit")
 }
 
 void laxperYPrint(void) {
-	DEBUG_WORD("laxperYPrint")
+	MESSSAGE_DEBUG("laxperYPrint")
 }
 
 void laxperPrStat(void) {
-	DEBUG_WORD("laxperPrStat")
+	MESSSAGE_DEBUG("laxperPrStat")
 }
 
 void laxperCr(void) {
-	DEBUG_WORD("laxperCr")
+	MESSSAGE_DEBUG("laxperCr")
 }
 
 void laxperKey(void) {
-	DEBUG_WORD("laxperKey")
+	MESSSAGE_DEBUG("laxperKey")
 }
 
 void laxperKeyQ(void) {
-	DEBUG_WORD("laxperKeyQ")
+	MESSSAGE_DEBUG("laxperKeyQ")
 }
 
 void laxperYConsole(void) {
-	DEBUG_WORD("laxperYConsole")
+	MESSSAGE_DEBUG("laxperYConsole")
 }
 
 void laxperYKey(void) {
-	DEBUG_WORD("laxperYKey")
+	MESSSAGE_DEBUG("laxperYKey")
 }
 
 void laxperYKeyQ(void) {
-	DEBUG_WORD("laxperYKeyQ")
+	MESSSAGE_DEBUG("laxperYKeyQ")
 }
 
 void laxperBdos(void) {
-	DEBUG_WORD("laxperBdos")
+	MESSSAGE_DEBUG("laxperBdos")
 }
 
 void laxperCompare(void) {
-	DEBUG_WORD("laxperCompare")
+	MESSSAGE_DEBUG("laxperCompare")
 }
 
 void laxperCapsComp(void) {
-	DEBUG_WORD("laxperCapsComp")
+	MESSSAGE_DEBUG("laxperCapsComp")
 }
 
 void laxperComp(void) {
-	DEBUG_WORD("laxperComp")
+	MESSSAGE_DEBUG("laxperComp")
 }
 
 void laxperMinusTrailing(void) {
-	DEBUG_WORD("laxperMinusTrailing")
+	MESSSAGE_DEBUG("laxperMinusTrailing")
 }
 
 void laxperPad(void) {
-	DEBUG_WORD("laxperPad")
+	MESSSAGE_DEBUG("laxperPad")
 }
 
 void laxperHere(void) {
-	DEBUG_WORD("laxperHere")
+	MESSSAGE_DEBUG("laxperHere")
 }
 
 void laxperUpper(void) {
-	DEBUG_WORD("laxperUpper")
+	MESSSAGE_DEBUG("laxperUpper")
 }
 
 void laxperUpc(void) {
-	DEBUG_WORD("laxperUpc")
+	MESSSAGE_DEBUG("laxperUpc")
 }
 
 void laxperMove(void) {
-	DEBUG_WORD("laxperMove")
+	MESSSAGE_DEBUG("laxperMove")
 }
 
 void laxperLength(void) {
-	DEBUG_WORD("laxperLength")
+	MESSSAGE_DEBUG("laxperLength")
 }
 
 void laxperCount(void) {
-	DEBUG_WORD("laxperCount")
+	MESSSAGE_DEBUG("laxperCount")
 }
 
 void laxperBlank(void) {
-	DEBUG_WORD("laxperBlank")
+	MESSSAGE_DEBUG("laxperBlank")
 }
 
 void laxperErase(void) {
-	DEBUG_WORD("laxperErase")
+	MESSSAGE_DEBUG("laxperErase")
 }
 
 void laxperFill(void) {
-	DEBUG_WORD("laxperFill")
+	MESSSAGE_DEBUG("laxperFill")
 }
 
 void laxperCaps(void) {
-	DEBUG_WORD("laxperCaps")
+	MESSSAGE_DEBUG("laxperCaps")
 }
 
 void laxperBell(void) {
-	DEBUG_WORD("laxperBell")
+	MESSSAGE_DEBUG("laxperBell")
 }
 
 void laxperBs(void) {
-	DEBUG_WORD("laxperBs")
+	MESSSAGE_DEBUG("laxperBs")
 }
 
 void laxperBl(void) {
-	DEBUG_WORD("laxperBl")
+	MESSSAGE_DEBUG("laxperBl")
 }
 
 void laxperEndQ(void) {
-	DEBUG_WORD("laxperEndQ")
+	MESSSAGE_DEBUG("laxperEndQ")
 }
 
 void laxperNumTib(void) {
-	DEBUG_WORD("laxperNumTib")
+	MESSSAGE_DEBUG("laxperNumTib")
 }
 
 void laxperSpan(void) {
-	DEBUG_WORD("laxperSpan")
+	MESSSAGE_DEBUG("laxperSpan")
 }
 
 void laxperToIn(void) {
-	DEBUG_WORD("laxperToIn")
+	MESSSAGE_DEBUG("laxperToIn")
 }
 
 void laxperBlk(void) {
-	DEBUG_WORD("laxperBlk")
+	MESSSAGE_DEBUG("laxperBlk")
 }
 
 void laxperVocLink(void) {
-	DEBUG_WORD("laxperVocLink")
+	MESSSAGE_DEBUG("laxperVocLink")
 }
 
 void laxperWidth(void) {
-	DEBUG_WORD("laxperWidth")
+	MESSSAGE_DEBUG("laxperWidth")
 }
 
 void laxperTickTib(void) {
-	DEBUG_WORD("laxperTickTib")
+	MESSSAGE_DEBUG("laxperTickTib")
 }
 
 void laxperContext(void) {
-	DEBUG_WORD("laxperContext")
+	MESSSAGE_DEBUG("laxperContext")
 }
 
 void laxperNumVocs(void) {
-	DEBUG_WORD("laxperNumVocs")
+	MESSSAGE_DEBUG("laxperNumVocs")
 }
 
 void laxperCurrent(void) {
-	DEBUG_WORD("laxperCurrent")
+	MESSSAGE_DEBUG("laxperCurrent")
 }
 
 void laxperCsp(void) {
-	DEBUG_WORD("laxperCsp")
+	MESSSAGE_DEBUG("laxperCsp")
 }
 
 void laxperLast(void) {
-	DEBUG_WORD("laxperLast")
+	MESSSAGE_DEBUG("laxperLast")
 }
 
 void laxperRNum(void) {
-	DEBUG_WORD("laxperRNum")
+	MESSSAGE_DEBUG("laxperRNum")
 }
 
 void laxperDpl(void) {
-	DEBUG_WORD("laxperDpl")
+	MESSSAGE_DEBUG("laxperDpl")
 }
 
 void laxperWarning(void) {
-	DEBUG_WORD("laxperWarning")
+	MESSSAGE_DEBUG("laxperWarning")
 }
 
 void laxperState(void) {
-	DEBUG_WORD("laxperState")
+	MESSSAGE_DEBUG("laxperState")
 }
 
 void laxperPrior(void) {
-	DEBUG_WORD("laxperPrior")
+	MESSSAGE_DEBUG("laxperPrior")
 }
 
 void laxperScr(void) {
-	DEBUG_WORD("laxperScr")
+	MESSSAGE_DEBUG("laxperScr")
 }
 
 void laxperEmit(void) {
-	DEBUG_WORD("laxperEmit")
+	MESSSAGE_DEBUG("laxperEmit")
 }
 
 void laxperPrinting(void) {
-	DEBUG_WORD("laxperPrinting")
+	MESSSAGE_DEBUG("laxperPrinting")
 }
 
 void laxperInFile(void) {
-	DEBUG_WORD("laxperInFile")
+	MESSSAGE_DEBUG("laxperInFile")
 }
 
 void laxperFile(void) {
-	DEBUG_WORD("laxperFile")
+	MESSSAGE_DEBUG("laxperFile")
 }
 
 void laxperHld(void) {
-	DEBUG_WORD("laxperHld")
+	MESSSAGE_DEBUG("laxperHld")
 }
 
 void laxperBase(void) {
-	DEBUG_WORD("laxperBase")
+	MESSSAGE_DEBUG("laxperBase")
 }
 
 void laxperOffset(void) {
-	DEBUG_WORD("laxperOffset")
+	MESSSAGE_DEBUG("laxperOffset")
 }
 
 void laxperNumLine(void) {
-	DEBUG_WORD("laxperOffset")
+	MESSSAGE_DEBUG("laxperOffset")
 }
 
 void laxperNumOut(void) {
-	DEBUG_WORD("laxperNumOut")
+	MESSSAGE_DEBUG("laxperNumOut")
 }
 
 void laxperDP(void) {
-	DEBUG_WORD("laxperDP")
+	MESSSAGE_DEBUG("laxperDP")
 }
 
 void laxperRP0(void) {
-	DEBUG_WORD("laxperRP0")
+	MESSSAGE_DEBUG("laxperRP0")
 }
 
 void laxperSP0(void) {
-	DEBUG_WORD("laxperSP0")
+	MESSSAGE_DEBUG("laxperSP0")
 }
 
 void laxperLink(void) {
-	DEBUG_WORD("laxperLink")
+	MESSSAGE_DEBUG("laxperLink")
 }
 
 void laxperEntry(void) {
-	DEBUG_WORD("laxperEntry")
+	MESSSAGE_DEBUG("laxperEntry")
 }
 
 void laxperTos(void) {
-	DEBUG_WORD("laxperTos")
+	MESSSAGE_DEBUG("laxperTos")
 }
 
 void laxperStarSlash(void) {
-	DEBUG_WORD("laxperStarSlash")
+	MESSSAGE_DEBUG("laxperStarSlash")
 }
 
 void laxperStarSlashMod(void) {
-	DEBUG_WORD("laxperStarSlashMod")
+	MESSSAGE_DEBUG("laxperStarSlashMod")
 }
 
 void laxperMod(void) {
-	DEBUG_WORD("laxperMod")
+	MESSSAGE_DEBUG("laxperMod")
 }
 
 void laxperSlash(void) {
-	DEBUG_WORD("laxperSlash")
+	MESSSAGE_DEBUG("laxperSlash")
 }
 
 void laxperSlashMod(void) {
-	DEBUG_WORD("laxperSlashMod")
+	MESSSAGE_DEBUG("laxperSlashMod")
 }
 
 void laxperStar(void) {
-	DEBUG_WORD("laxperStar")
+	MESSSAGE_DEBUG("laxperStar")
 }
 
 void laxperMuSlashMod(void) {
-	DEBUG_WORD("laxperMuSlashMod")
+	MESSSAGE_DEBUG("laxperMuSlashMod")
 }
 
 void laxperMSlashMod(void) {
-	DEBUG_WORD("laxperMSlashMod")
+	MESSSAGE_DEBUG("laxperMSlashMod")
 }
 
 void laxperStarD(void) {
-	DEBUG_WORD("laxperStarD")
+	MESSSAGE_DEBUG("laxperStarD")
 }
 
 void laxperDMax(void) {
-	DEBUG_WORD("laxperDMax")
+	MESSSAGE_DEBUG("laxperDMax")
 }
 
 void laxperDMin(void) {
-	DEBUG_WORD("laxperDMin")
+	MESSSAGE_DEBUG("laxperDMin")
 }
 
 void laxperDGreater(void) {
-	DEBUG_WORD("laxperDGreater")
+	MESSSAGE_DEBUG("laxperDGreater")
 }
 
 void laxperDLess(void) {
-	DEBUG_WORD("laxperDLess")
+	MESSSAGE_DEBUG("laxperDLess")
 }
 
 void laxperDULess(void) {
-	DEBUG_WORD("laxperDULess")
+	MESSSAGE_DEBUG("laxperDULess")
 }
 
 void laxperDEqual(void) {
-	DEBUG_WORD("laxperDEqual")
+	MESSSAGE_DEBUG("laxperDEqual")
 }
 
 void laxperD0Equal(void) {
-	DEBUG_WORD("laxperD0Equal")
+	MESSSAGE_DEBUG("laxperD0Equal")
 }
 
 void laxperQDNegate(void) {
-	DEBUG_WORD("laxperQDNegate")
+	MESSSAGE_DEBUG("laxperQDNegate")
 }
 
 void laxperDMinus(void) {
-	DEBUG_WORD("laxperDMinus")
+	MESSSAGE_DEBUG("laxperDMinus")
 }
 
 void laxperD2Slash(void) {
-	DEBUG_WORD("laxperD2Slash")
+	MESSSAGE_DEBUG("laxperD2Slash")
 }
 
 void laxperD2Star(void) {
-	DEBUG_WORD("laxperD2Star")
+	MESSSAGE_DEBUG("laxperD2Star")
 }
 
 void laxperDAbs(void) {
-	DEBUG_WORD("laxperDAbs")
+	MESSSAGE_DEBUG("laxperDAbs")
 }
 
 void laxperSToD(void) {
-	DEBUG_WORD("laxperSToD")
+	MESSSAGE_DEBUG("laxperSToD")
 }
 
 void laxperDNegate(void) {
-	DEBUG_WORD("laxperDNegate")
+	MESSSAGE_DEBUG("laxperDNegate")
 }
 
 void laxperDPLus(void) {
-	DEBUG_WORD("laxperDPLus")
+	MESSSAGE_DEBUG("laxperDPLus")
 }
 
 void laxperTwoRot(void) {
-	DEBUG_WORD("laxperTwoRot")
+	MESSSAGE_DEBUG("laxperTwoRot")
 }
 
 void laxperFourDup(void) {
-	DEBUG_WORD("laxperFourDup")
+	MESSSAGE_DEBUG("laxperFourDup")
 }
 
 void laxperThreeDup(void) {
-	DEBUG_WORD("laxperThreeDup")
+	MESSSAGE_DEBUG("laxperThreeDup")
 }
 
 void laxperTwoOver(void) {
-	DEBUG_WORD("laxperTwoOver")
+	MESSSAGE_DEBUG("laxperTwoOver")
 }
 
 void laxperTwoSwap(void) {
-	DEBUG_WORD("laxperTwoSwap")
+	MESSSAGE_DEBUG("laxperTwoSwap")
 }
 
 void laxperTwoDup(void) {
-	DEBUG_WORD("laxperTwoDup")
+	MESSSAGE_DEBUG("laxperTwoDup")
 }
 
 void laxperTwoDrop(void) {
-	DEBUG_WORD("laxperTwoDrop")
+	MESSSAGE_DEBUG("laxperTwoDrop")
 }
 
 void laxperTwoStore(void) {
-	DEBUG_WORD("laxperTwoStore")
+	MESSSAGE_DEBUG("laxperTwoStore")
 }
 
 void laxperTwoFetch(void) {
-	DEBUG_WORD("laxperTwoFetch")
+	MESSSAGE_DEBUG("laxperTwoFetch")
 }
 
 void laxperWithin(void) {
-	DEBUG_WORD("laxperWithin")
+	MESSSAGE_DEBUG("laxperWithin")
 }
 
 void laxperBetween(void) {
-	DEBUG_WORD("laxperBetween")
+	MESSSAGE_DEBUG("laxperBetween")
 }
 
 void laxperMax(void) {
-	DEBUG_WORD("laxperMax")
+	MESSSAGE_DEBUG("laxperMax")
 }
 
 void laxperMin(void) {
-	DEBUG_WORD("laxperMin")
+	MESSSAGE_DEBUG("laxperMin")
 }
 
 void laxperGreater(void) {
-	DEBUG_WORD("laxperGreater")
+	MESSSAGE_DEBUG("laxperGreater")
 }
 
 void laxperLess(void) {
-	DEBUG_WORD("laxperLess")
+	MESSSAGE_DEBUG("laxperLess")
 }
 
 void laxperUGreater(void) {
-	DEBUG_WORD("laxperUGreater")
+	MESSSAGE_DEBUG("laxperUGreater")
 }
 
 void laxperULess(void) {
-	DEBUG_WORD("laxperULess")
+	MESSSAGE_DEBUG("laxperULess")
 }
 
 void laxperQNegate(void) {
-	DEBUG_WORD("laxperQNegate")
+	MESSSAGE_DEBUG("laxperQNegate")
 }
 
 void laxperUnequal(void) {
-	DEBUG_WORD("laxperUnequal")
+	MESSSAGE_DEBUG("laxperUnequal")
 }
 
 void laxperEqual(void) {
-	DEBUG_WORD("laxperEqual")
+	MESSSAGE_DEBUG("laxperEqual")
 }
 
 void laxperZeroUnequal(void) {
-	DEBUG_WORD("laxperZeroUnequal")
+	MESSSAGE_DEBUG("laxperZeroUnequal")
 }
 
 void laxperZeroGreater(void) {
-	DEBUG_WORD("laxperZeroGreater")
+	MESSSAGE_DEBUG("laxperZeroGreater")
 }
 
 void laxperZeroLess(void) {
-	DEBUG_WORD("laxperZeroLess")
+	MESSSAGE_DEBUG("laxperZeroLess")
 }
 
 void laxperZeroEqual(void) {
-	DEBUG_WORD("laxperZeroEqual")
+	MESSSAGE_DEBUG("laxperZeroEqual")
 }
 
 void laxperUmSlashMod(void) {
-	DEBUG_WORD("laxperUmSlashMod")
+	MESSSAGE_DEBUG("laxperUmSlashMod")
 }
 
 void laxperUStarD(void) {
-	DEBUG_WORD("laxperUStarD")
+	MESSSAGE_DEBUG("laxperUStarD")
 }
 
 void laxperUmStar(void) {
-	DEBUG_WORD("laxperUmStar")
+	MESSSAGE_DEBUG("laxperUmStar")
 }
 
 void laxperTwoMinus(void) {
-	DEBUG_WORD("laxperTwoMinus")
+	MESSSAGE_DEBUG("laxperTwoMinus")
 }
 
 void laxperOneMinus(void) {
-	DEBUG_WORD("laxperOneMinus")
+	MESSSAGE_DEBUG("laxperOneMinus")
 }
 
 void laxperTwoPlus(void) {
-	DEBUG_WORD("laxperTwoPlus")
+	MESSSAGE_DEBUG("laxperTwoPlus")
 }
 
 void laxperOnePlus(void) {
-	DEBUG_WORD("laxperOnePlus")
+	MESSSAGE_DEBUG("laxperOnePlus")
 }
 
 void laxperEightStar(void) {
-	DEBUG_WORD("laxperEightStar")
+	MESSSAGE_DEBUG("laxperEightStar")
 }
 
 void laxperU2Slash(void) {
-	DEBUG_WORD("laxperU2Slash")
+	MESSSAGE_DEBUG("laxperU2Slash")
 }
 
 void laxperTwoSlash(void) {
-	DEBUG_WORD("laxperTwoSlash")
+	MESSSAGE_DEBUG("laxperTwoSlash")
 }
 
 void laxperTwoStar(void) {
-	DEBUG_WORD("laxperTwoStar")
+	MESSSAGE_DEBUG("laxperTwoStar")
 }
 
 void laxperThree(void) {
-	DEBUG_WORD("laxperThree")
+	MESSSAGE_DEBUG("laxperThree")
 }
 
 void laxperTwo(void) {
-	DEBUG_WORD("laxperTwo")
+	MESSSAGE_DEBUG("laxperTwo")
 }
 
 void laxperOne(void) {
-	DEBUG_WORD("laxperOne")
+	MESSSAGE_DEBUG("laxperOne")
 }
 
 void laxperZero(void) {
-	DEBUG_WORD("laxperZero")
+	MESSSAGE_DEBUG("laxperZero")
 }
 
 void laxperPlusStore(void) {
-	DEBUG_WORD("laxperPlusStore")
+	MESSSAGE_DEBUG("laxperPlusStore")
 }
 
 void laxperAbs(void) {
-	DEBUG_WORD("laxperAbs")
+	MESSSAGE_DEBUG("laxperAbs")
 }
 
 void laxperMinus(void) {
-	DEBUG_WORD("laxperMinus")
+	MESSSAGE_DEBUG("laxperMinus")
 }
 
 void laxperNegate(void) {
-	DEBUG_WORD("laxperNegate")
+	MESSSAGE_DEBUG("laxperNegate")
 }
 
 void laxperPlus(void) {
-	DEBUG_WORD("laxperPlus")
+	MESSSAGE_DEBUG("laxperPlus")
 }
 
 void laxperOff(void) {
-	DEBUG_WORD("laxperOff")
+	MESSSAGE_DEBUG("laxperOff")
 }
 
 void laxperOn(void) {
-	DEBUG_WORD("laxperOn")
+	MESSSAGE_DEBUG("laxperOn")
 }
 
 void laxperCToggle(void) {
-	DEBUG_WORD("laxperCToggle")
+	MESSSAGE_DEBUG("laxperCToggle")
 }
 
 void laxperCReset(void) {
-	DEBUG_WORD("laxperCReset")
+	MESSSAGE_DEBUG("laxperCReset")
 }
 
 void laxperCSet(void) {
-	DEBUG_WORD("laxperCSet")
+	MESSSAGE_DEBUG("laxperCSet")
 }
 
 void laxperFalse(void) {
-	DEBUG_WORD("laxperFalse")
+	MESSSAGE_DEBUG("laxperFalse")
 }
 
 void laxperTrue(void) {
-	DEBUG_WORD("laxperTrue")
+	MESSSAGE_DEBUG("laxperTrue")
 }
 
 void laxperNot(void) {
-	DEBUG_WORD("laxperNot")
+	MESSSAGE_DEBUG("laxperNot")
 }
 
 void laxperYor(void) {
-	DEBUG_WORD("laxperYor")
+	MESSSAGE_DEBUG("laxperYor")
 }
 
 void laxperOr(void) {
-	DEBUG_WORD("laxperOr")
+	MESSSAGE_DEBUG("laxperOr")
 }
 
 void laxperAnd(void) {
-	DEBUG_WORD("laxperAnd")
+	MESSSAGE_DEBUG("laxperAnd")
 }
 
 void laxperRoll(void) {
-	DEBUG_WORD("laxperRoll")
+	MESSSAGE_DEBUG("laxperRoll")
 }
 
 void laxperPick(void) {
-	DEBUG_WORD("laxperPick")
+	MESSSAGE_DEBUG("laxperPick")
 }
 
 void laxperRFetch(void) {
-	DEBUG_WORD("laxperRFetch")
+	MESSSAGE_DEBUG("laxperRFetch")
 }
 
 void laxperToR(void) {
-	DEBUG_WORD("laxperToR")
+	MESSSAGE_DEBUG("laxperToR")
 }
 
 void laxperRFrom(void) {
-	DEBUG_WORD("laxperRFrom")
+	MESSSAGE_DEBUG("laxperRFrom")
 }
 
 void laxperQDup(void) {
-	DEBUG_WORD("laxperQDup")
+	MESSSAGE_DEBUG("laxperQDup")
 }
 
 void laxperFlip(void) {
-	DEBUG_WORD("laxperFlip")
+	MESSSAGE_DEBUG("laxperFlip")
 }
 
 void laxperMinusRot(void) {
-	DEBUG_WORD("laxperMinusRot")
+	MESSSAGE_DEBUG("laxperMinusRot")
 }
 
 void laxperRot(void) {
-	DEBUG_WORD("laxperRot")
+	MESSSAGE_DEBUG("laxperRot")
 }
 
 void laxperNip(void) {
-	DEBUG_WORD("laxperNip")
+	MESSSAGE_DEBUG("laxperNip")
 }
 
 void laxperTuck(void) {
-	DEBUG_WORD("laxperTuck")
+	MESSSAGE_DEBUG("laxperTuck")
 }
 
 void laxperOver(void) {
-	DEBUG_WORD("laxperOver")
+	MESSSAGE_DEBUG("laxperOver")
 }
 
 void laxperSwap(void) {
-	DEBUG_WORD("laxperSwap")
+	MESSSAGE_DEBUG("laxperSwap")
 }
 
 void laxperDup(void) {
-	DEBUG_WORD("laxperDup")
+	MESSSAGE_DEBUG("laxperDup")
 }
 
 void laxperDrop(void) {
-	DEBUG_WORD("laxperDrop")
+	MESSSAGE_DEBUG("laxperDrop")
 }
 
 void laxperRPStore(void) {
-	DEBUG_WORD("laxperRPStore")
+	MESSSAGE_DEBUG("laxperRPStore")
 }
 
 void laxperRPFetch(void) {
-	DEBUG_WORD("laxperRPFetch")
+	MESSSAGE_DEBUG("laxperRPFetch")
 }
 
 void laxperSPStore(void) {
-	DEBUG_WORD("laxperSPStore")
+	MESSSAGE_DEBUG("laxperSPStore")
 }
 
 void laxperSPFetch(void) {
-	DEBUG_WORD("laxperSPFetch")
+	MESSSAGE_DEBUG("laxperSPFetch")
 }
 
 void laxperCMoveFrom(void) {
-	DEBUG_WORD("laxperCMoveFrom")
+	MESSSAGE_DEBUG("laxperCMoveFrom")
 }
 
 void laxperCMove(void) {
-	DEBUG_WORD("laxperCMove")
+	MESSSAGE_DEBUG("laxperCMove")
 }
 
 void laxperCStore(void) {
-	DEBUG_WORD("laxperCStore")
+	MESSSAGE_DEBUG("laxperCStore")
 }
 
 void laxperCFetch(void) {
-	DEBUG_WORD("laxperCFetch")
+	MESSSAGE_DEBUG("laxperCFetch")
 }
 
 void laxperStore(void) {
-	DEBUG_WORD("laxperStore")
+	MESSSAGE_DEBUG("laxperStore")
 }
 
 void laxperFetch(void) {
-	DEBUG_WORD("laxperFetch")
+	MESSSAGE_DEBUG("laxperFetch")
 }
 
 void laxperYQLeave(void) {
-	DEBUG_WORD("laxperYQLeave")
+	MESSSAGE_DEBUG("laxperYQLeave")
 }
 
 void laxperYLeave(void) {
-	DEBUG_WORD("laxperYLeave")
+	MESSSAGE_DEBUG("laxperYLeave")
 }
 
 void laxperJ(void) {
-	DEBUG_WORD("laxperJ")
+	MESSSAGE_DEBUG("laxperJ")
 }
 
 void laxperI(void) {
-	DEBUG_WORD("laxperI")
+	MESSSAGE_DEBUG("laxperI")
 }
 
 void laxperPause(void) {
-	DEBUG_WORD("laxperPause")
+	MESSSAGE_DEBUG("laxperPause")
 }
 
 void laxperNoop(void) {
-	DEBUG_WORD("laxperNoop")
+	MESSSAGE_DEBUG("laxperNoop")
 }
 
 void laxperGo(void) {
-	DEBUG_WORD("laxperGo")
+	MESSSAGE_DEBUG("laxperGo")
 }
 
 void laxperPerform(void) {
-	DEBUG_WORD("laxperPerform")
+	MESSSAGE_DEBUG("laxperPerform")
 }
 
 void laxperExecute(void) {
-	DEBUG_WORD("laxperExecute")
+	MESSSAGE_DEBUG("laxperExecute")
 }
 
 void laxperToNext(void) {
-	DEBUG_WORD("laxperToNext")
+	MESSSAGE_DEBUG("laxperToNext")
 }
 
 void laxperBounds(void) {
-	DEBUG_WORD("laxperBounds")
+	MESSSAGE_DEBUG("laxperBounds")
 }
 
 void laxperYQDo(void) {
-	DEBUG_WORD("laxperYQDo")
+	MESSSAGE_DEBUG("laxperYQDo")
 }
 
 void laxperYDo(void) {
-	DEBUG_WORD("laxperYDo")
+	MESSSAGE_DEBUG("laxperYDo")
 }
 
 void laxperYPlusLoop(void) {
-	DEBUG_WORD("laxperYPlusLoop")
+	MESSSAGE_DEBUG("laxperYPlusLoop")
 }
 
 void laxperYLoop(void) {
-	DEBUG_WORD("laxperYLoop")
+	MESSSAGE_DEBUG("laxperYLoop")
 }
 
 void laxperQBranch(void) {
-	DEBUG_WORD("laxperQBranch")
+	MESSSAGE_DEBUG("laxperQBranch")
 }
 
 void laxperBranch(void) {
-	DEBUG_WORD("laxperBranch")
+	MESSSAGE_DEBUG("laxperBranch")
 }
 
 void laxperYLit(void) {
-	DEBUG_WORD("laxperYLit")
+	MESSSAGE_DEBUG("laxperYLit")
 }
 
 void laxperUp(void) {
-	DEBUG_WORD("laxperUp")
+	MESSSAGE_DEBUG("laxperUp")
 }
 
 void laxperUnnest(void) {
-	DEBUG_WORD("laxperUnnest")
+	MESSSAGE_DEBUG("laxperUnnest")
 }
 
 void laxperExit(void) {
-	DEBUG_WORD("laxperExit")
+	MESSSAGE_DEBUG("laxperExit")
 }
 
 void laxperForth(void) {
-	DEBUG_WORD("laxperForth")
+	MESSSAGE_DEBUG("laxperForth")
 }
 
 #endif
@@ -2198,74 +2198,74 @@ void laxperForth(void) {
 #if (H2O_FORTH_PRIMITIVES == LAXONPERRY_FORTH) || \
     (H2O_FORTH_PRIMITIVES == LAXONPERRY_PC_FORTH)
 void laxperPStore(void) {
-	DEBUG_WORD("laxperPStore")
+	MESSSAGE_DEBUG("laxperPStore")
 }
 
 void laxperPFetch(void) {
-	DEBUG_WORD("laxperPFetch")
+	MESSSAGE_DEBUG("laxperPFetch")
 }
 
 void laxperIntNum(void) {
-	DEBUG_WORD("laxperIntNum")
+	MESSSAGE_DEBUG("laxperIntNum")
 }
 
 void laxperCpu8086DotBlk(void) {
-	DEBUG_WORD("laxperCpu8086DotBlk")
+	MESSSAGE_DEBUG("laxperCpu8086DotBlk")
 }
 
 void laxperExtend86DotBlk(void) {
-	DEBUG_WORD("laxperExtend86DotBlk")
+	MESSSAGE_DEBUG("laxperExtend86DotBlk")
 }
 
 void laxperKernel86DotBlk(void) {
-	DEBUG_WORD("laxperKernel86DotBlk")
+	MESSSAGE_DEBUG("laxperKernel86DotBlk")
 }
 #endif
 
 #if (H2O_FORTH_PRIMITIVES == LAXONPERRY_FORTH) || \
     (H2O_FORTH_PRIMITIVES == LAXONPERRY_CPM_FORTH)
 void laxperCpu8080DotBlk(void) {
-	DEBUG_WORD("laxperCpu8080DotBlk")
+	MESSSAGE_DEBUG("laxperCpu8080DotBlk")
 }
 
 void laxperExtend80DotBlk(void) {
-	DEBUG_WORD("laxperExtend80DotBlk")
+	MESSSAGE_DEBUG("laxperExtend80DotBlk")
 }
 
 void laxperKernel80DotBlk(void) {
-	DEBUG_WORD("laxperKernel80DotBlk")
+	MESSSAGE_DEBUG("laxperKernel80DotBlk")
 }
 
 void laxperBios(void) {
-	DEBUG_WORD("laxperBios")
+	MESSSAGE_DEBUG("laxperBios")
 }
 
 void laxperRP(void) {
-	DEBUG_WORD("laxperRP")
+	MESSSAGE_DEBUG("laxperRP")
 }
 #endif
 
 #if (H2O_FORTH_PRIMITIVES == LAXONPERRY_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == LAXONPERRY_CPM68K_FORTH)
 void laxperCpu68000DotBlk(void) {
-	DEBUG_WORD("laxperCpu68000DotBlk")
+	MESSSAGE_DEBUG("laxperCpu68000DotBlk")
 }
 
 void laxperExtend68DotBlk(void) {
-	DEBUG_WORD("laxperExtend68DotBlk")
+	MESSSAGE_DEBUG("laxperExtend68DotBlk")
 }
 
 void laxperKernel68DotBlk(void) {
-	DEBUG_WORD("laxperKernel68DotBlk")
+	MESSSAGE_DEBUG("laxperKernel68DotBlk")
 }
 
 /* unchecked: */
 void laxperBios(void) {
-	DEBUG_WORD("laxperBios")
+	MESSSAGE_DEBUG("laxperBios")
 }
 
 void laxperRP(void) {
-	DEBUG_WORD("laxperRP")
+	MESSSAGE_DEBUG("laxperRP")
 }
 
 #endif

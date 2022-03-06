@@ -10,43 +10,43 @@
 
 /* "; ( )  Jump thru R (destructive) */
 void colorRet(void) {
-	DEBUG_WORD("colorRet")
+	MESSSAGE_DEBUG("colorRet")
 }
 
 /* ex ( )  Jump thru R, save P in R */
 /* ;: ( )  Jump thru R, save P in R */
 void colorExec(void) {
-	DEBUG_WORD("colorExec")
+	MESSSAGE_DEBUG("colorExec")
 }
 
 /* ;: ( )  Jump thru I ( The opcode is not used explicitly. The compiler generates it ) */
 void colorJmp(void) {
-	DEBUG_WORD("colorJmp")
+	MESSSAGE_DEBUG("colorJmp")
 }
 
 /* call ( )  Jump thru I, push current address to R ( The opcode is not used explicitly. Referencing any defined word generates a call )  */
 void colorCall(void) {
-	DEBUG_WORD("colorCall")
+	MESSSAGE_DEBUG("colorCall")
 }
 
 /* unext ( ) Jump to slot 0 ( Discards the address left by for ) */
 void colorUnext(void) {
-	DEBUG_WORD("colorUnext")
+	MESSSAGE_DEBUG("colorUnext")
 }
 
 /* next ( ) If R is non-zero, jump thru I and decrement R. Otherwise pop R */
 void colorNext(void) {
-	DEBUG_WORD("colorNext")
+	MESSSAGE_DEBUG("colorNext")
 }
 
 /* if ( ) Jump thru I if T is zero */
 void colorIf(void) {
-	DEBUG_WORD("colorIf")
+	MESSSAGE_DEBUG("colorIf")
 }
 
 /* -if ( ) Jump thru I if T is positive */
 void colorMinusIf(void) {
-	DEBUG_WORD("colorMinusIf")
+	MESSSAGE_DEBUG("colorMinusIf")
 }
 
 /***********************/
@@ -56,43 +56,43 @@ void colorMinusIf(void) {
 /* @p ( ) Fetch thru P, increment P */
 /* @p+ ( ) Fetch thru P, increment P */
 void colorFetchP(void) {
-	DEBUG_WORD("colorFetchP")
+	MESSSAGE_DEBUG("colorFetchP")
 }
 
 /* @+ ( ) Fetch thru A, increment A */
 void colorFetchPlus(void) {
-	DEBUG_WORD("colorFetchPlus")
+	MESSSAGE_DEBUG("colorFetchPlus")
 }
 
 /* @b ( ) Fetch thru B */
 void colorFetchB(void) {
-	DEBUG_WORD("colorFetchB")
+	MESSSAGE_DEBUG("colorFetchB")
 }
 
 /* @ ( ) Fetch thru A */
 void colorFetch(void) {
-	DEBUG_WORD("colorFetch")
+	MESSSAGE_DEBUG("colorFetch")
 }
 
 /* !p ( ) Store thru P, increment P */
 /* !p+ ( ) Store thru P, increment P */
 void colorFetchStoreP(void) {
-	DEBUG_WORD("colorFetchStoreP")
+	MESSSAGE_DEBUG("colorFetchStoreP")
 }
 
 /* !+ ( ) Store thru A, increment A */
 void colorFetchStorePlus(void) {
-	DEBUG_WORD("colorFetchStorePlus")
+	MESSSAGE_DEBUG("colorFetchStorePlus")
 }
 
 /* !b ( ) Store thru B */
 void colorStoreB(void) {
-	DEBUG_WORD("colorStoreB")
+	MESSSAGE_DEBUG("colorStoreB")
 }
 
 /* ! ( ) Store thru A */
 void colorStore(void) {
-	DEBUG_WORD("colorStore")
+	MESSSAGE_DEBUG("colorStore")
 }
 
 /********************/
@@ -101,43 +101,43 @@ void colorStore(void) {
 
 /* + ( ) Multiply step: add S to T if A0=1 then shift T and A right */
 void colorMultiplyStep(void) {
-	DEBUG_WORD("colorMultiplyStep")
+	MESSSAGE_DEBUG("colorMultiplyStep")
 }
 
 /* 2* ( ) Shift T left */
 void colorTimes2(void) {
-	DEBUG_WORD("colorTimes2")
+	MESSSAGE_DEBUG("colorTimes2")
 }
 
 /* 2/ ( ) Shift T right; sign fill */
 void colorDiv2(void) {
-	DEBUG_WORD("colorDiv2")
+	MESSSAGE_DEBUG("colorDiv2")
 }
 
 /* - ( ) One's complement T */
 void colorNot(void) {
-	DEBUG_WORD("colorNot")
+	MESSSAGE_DEBUG("colorNot")
 }
 
 /* + ( ) Add S to T (discard S) */
 /* + ( ) Add S to T with carry ( Requires bit 9 of P be set ) */
 void colorPlus(void) {
-	DEBUG_WORD("colorPlus")
+	MESSSAGE_DEBUG("colorPlus")
 }
 
 /* and ( ) Bit-wise and of S and T */
 void colorAnd(void) {
-	DEBUG_WORD("colorAnd")
+	MESSSAGE_DEBUG("colorAnd")
 }
 
 /* or ( ) Bit-wise exclusive-or of S and T */
 void colorOr(void) {
-	DEBUG_WORD("colorOr")
+	MESSSAGE_DEBUG("colorOr")
 }
 
 /* drop ( ) Discard T */
 void colorDrop(void) {
-	DEBUG_WORD("colorDrop")
+	MESSSAGE_DEBUG("colorDrop")
 }
 
 /**********************/
@@ -146,42 +146,42 @@ void colorDrop(void) {
 
 /* dup ( ) Create a working copy of T */
 void colorDup(void) {
-	DEBUG_WORD("colorDup")
+	MESSSAGE_DEBUG("colorDup")
 }
 
 /* pop ( ) Fetch R (destructive) */
 void colorPop(void) {
-	DEBUG_WORD("colorPop")
+	MESSSAGE_DEBUG("colorPop")
 }
 
 /* Over ( ) Fetch S (non-destructive) */
 void colorOver(void) {
-	DEBUG_WORD("colorOver")
+	MESSSAGE_DEBUG("colorOver")
 }
 
 /* a ( ) Fetch A (non-destructive) */
 void colorReadA(void) {
-	DEBUG_WORD("colorReadA")
+	MESSSAGE_DEBUG("colorReadA")
 }
 
 /* . ( ) Do nothing */
 void colorNop(void) {
-	DEBUG_WORD("colorNop")
+	MESSSAGE_DEBUG("colorNop")
 }
 
 /* push ( ) Push T into R */
 void colorPush(void) {
-	DEBUG_WORD("colorPush")
+	MESSSAGE_DEBUG("colorPush")
 }
 
 /* b! ( ) Store into B ( Be careful to distinguish b! and !b ) */
 void colorSetB(void) {
-	DEBUG_WORD("colorSetB")
+	MESSSAGE_DEBUG("colorSetB")
 }
 
 /* b! ( ) Store into A ) */
 void colorSetA(void) {
-	DEBUG_WORD("colorSetA")
+	MESSSAGE_DEBUG("colorSetA")
 }
 
 /* Extra words */

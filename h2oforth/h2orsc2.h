@@ -6,1147 +6,1147 @@
 /* Primitives */
 
 void rscNum(void) {
-	DEBUG_WORD("rscNum")
+	MESSSAGE_DEBUG("rscNum")
 }
 
 void rscTask(void) {
-	DEBUG_WORD("rscTask")
+	MESSSAGE_DEBUG("rscTask")
 }
 
 void rscAdmp(void) {
-	DEBUG_WORD("rscAdmp")
+	MESSSAGE_DEBUG("rscAdmp")
 }
 
 void rscSemicolonDump(void) {
-	DEBUG_WORD("rscSemicolonDump")
+	MESSSAGE_DEBUG("rscSemicolonDump")
 }
 
 void rscFormat(void) {
-	DEBUG_WORD("rscFormat")
+	MESSSAGE_DEBUG("rscFormat")
 }
 
 void rscFmTrk(void) {
-	DEBUG_WORD("rscFmTrk")
+	MESSSAGE_DEBUG("rscFmTrk")
 }
 
 void rscBankExecute(void) {
-	DEBUG_WORD("rscBankExecute")
+	MESSSAGE_DEBUG("rscBankExecute")
 }
 
 void rscBankEecStore(void) {
-	DEBUG_WORD("rscBankEecStore")
+	MESSSAGE_DEBUG("rscBankEecStore")
 }
 
 void rscBankCFetch(void) {
-	DEBUG_WORD("rscBankCFetch")
+	MESSSAGE_DEBUG("rscBankCFetch")
 }
 
 void rscBankCStore(void) {
-	DEBUG_WORD("rscBankCStore")
+	MESSSAGE_DEBUG("rscBankCStore")
 }
 
 void rscEecStore(void) {
-	DEBUG_WORD("rscEecStore")
+	MESSSAGE_DEBUG("rscEecStore")
 }
 
 void rscCaseColon(void) {
-	DEBUG_WORD("rscCaseColon")
+	MESSSAGE_DEBUG("rscCaseColon")
 }
 
 void rscMemTop(void) {
-	DEBUG_WORD("rscMemTop")
+	MESSSAGE_DEBUG("rscMemTop")
 }
 
 void rscScdr(void) {
-	DEBUG_WORD("rscScdr")
+	MESSSAGE_DEBUG("rscScdr")
 }
 
 void rscScsr(void) {
-	DEBUG_WORD("rscScsr")
+	MESSSAGE_DEBUG("rscScsr")
 }
 
 void rscSccr(void) {
-	DEBUG_WORD("rscSccr")
+	MESSSAGE_DEBUG("rscSccr")
 }
 
 void rscMcr(void) {
-	DEBUG_WORD("rscMcr")
+	MESSSAGE_DEBUG("rscMcr")
 }
 
 void rscIer(void) {
-	DEBUG_WORD("rscIer")
+	MESSSAGE_DEBUG("rscIer")
 }
 
 void rscIfr(void) {
-	DEBUG_WORD("rscIfr")
+	MESSSAGE_DEBUG("rscIfr")
 }
 
 void rscPg(void) {
-	DEBUG_WORD("rscPg")
+	MESSSAGE_DEBUG("rscPg")
 }
 
 void rscPf(void) {
-	DEBUG_WORD("rscPf")
+	MESSSAGE_DEBUG("rscPf")
 }
 
 void rscPe(void) {
-	DEBUG_WORD("rscPe")
+	MESSSAGE_DEBUG("rscPe")
 }
 
 void rscPd(void) {
-	DEBUG_WORD("rscPd")
+	MESSSAGE_DEBUG("rscPd")
 }
 
 void rscPc(void) {
-	DEBUG_WORD("rscPc")
+	MESSSAGE_DEBUG("rscPc")
 }
 
 void rscPb(void) {
-	DEBUG_WORD("rscPb")
+	MESSSAGE_DEBUG("rscPb")
 }
 
 void rscPa(void) {
-	DEBUG_WORD("rscPa")
+	MESSSAGE_DEBUG("rscPa")
 }
 
 void rscNmiVec(void) {
-	DEBUG_WORD("rscNmiVec")
+	MESSSAGE_DEBUG("rscNmiVec")
 }
 
 void rscIrqVec(void) {
-	DEBUG_WORD("rscIrqVec")
+	MESSSAGE_DEBUG("rscIrqVec")
 }
 
 void rscIntVec(void) {
-	DEBUG_WORD("rscIntVec")
+	MESSSAGE_DEBUG("rscIntVec")
 }
 
 void rscIntFlg(void) {
-	DEBUG_WORD("rscIntFlg")
+	MESSSAGE_DEBUG("rscIntFlg")
 }
 
 void rscCCommaCon(void) {
-	DEBUG_WORD("rscCCommaCon")
+	MESSSAGE_DEBUG("rscCCommaCon")
 }
 
 void rscDotS(void) {
-	DEBUG_WORD("rscDotS")
+	MESSSAGE_DEBUG("rscDotS")
 }
 
 void rscMon(void) {
-	DEBUG_WORD("rscMon")
+	MESSSAGE_DEBUG("rscMon")
 }
 
 void rscVlist(void) {
-	DEBUG_WORD("rscVlist")
+	MESSSAGE_DEBUG("rscVlist")
 }
 
 void rscIndex(void) {
-	DEBUG_WORD("rscIndex")
+	MESSSAGE_DEBUG("rscIndex")
 }
 
 void rscList(void) {
-	DEBUG_WORD("rscList")
+	MESSSAGE_DEBUG("rscList")
 }
 
 void rscQ(void) {
-	DEBUG_WORD("rscQ")
+	MESSSAGE_DEBUG("rscQ")
 }
 
 void rscDot(void) {
-	DEBUG_WORD("rscDot")
+	MESSSAGE_DEBUG("rscDot")
 }
 
 void rscDotR(void) {
-	DEBUG_WORD("rscDotR")
+	MESSSAGE_DEBUG("rscDotR")
 }
 
 void rscDDot(void) {
-	DEBUG_WORD("rscDDot")
+	MESSSAGE_DEBUG("rscDDot")
 }
 
 void rscDDotR(void) {
-	DEBUG_WORD("rscDDotR")
+	MESSSAGE_DEBUG("rscDDotR")
 }
 
 void rscNumS(void) {
-	DEBUG_WORD("rscNumS")
+	MESSSAGE_DEBUG("rscNumS")
 }
 
 void rscSign(void) {
-	DEBUG_WORD("rscSign")
+	MESSSAGE_DEBUG("rscSign")
 }
 
 void rscNumGreater(void) {
-	DEBUG_WORD("rscNumGreater")
+	MESSSAGE_DEBUG("rscNumGreater")
 }
 
 void rscLessNum(void) {
-	DEBUG_WORD("rscLessNum")
+	MESSSAGE_DEBUG("rscLessNum")
 }
 
 void rscSpaces(void) {
-	DEBUG_WORD("rscSpaces")
+	MESSSAGE_DEBUG("rscSpaces")
 }
 
 void rscWhile(void) {
-	DEBUG_WORD("rscWhile")
+	MESSSAGE_DEBUG("rscWhile")
 }
 
 void rscElse(void) {
-	DEBUG_WORD("rscElse")
+	MESSSAGE_DEBUG("rscElse")
 }
 
 void rscIf(void) {
-	DEBUG_WORD("rscIf")
+	MESSSAGE_DEBUG("rscIf")
 }
 
 void rscRepeat(void) {
-	DEBUG_WORD("rscRepeat")
+	MESSSAGE_DEBUG("rscRepeat")
 }
 
 void rscAgain(void) {
-	DEBUG_WORD("rscAgain")
+	MESSSAGE_DEBUG("rscAgain")
 }
 
 void rscEnd(void) {
-	DEBUG_WORD("rscEnd")
+	MESSSAGE_DEBUG("rscEnd")
 }
 
 void rscUntil(void) {
-	DEBUG_WORD("rscUntil")
+	MESSSAGE_DEBUG("rscUntil")
 }
 
 void rscPlusLoop(void) {
-	DEBUG_WORD("rscPlusLoop")
+	MESSSAGE_DEBUG("rscPlusLoop")
 }
 
 void rscLoop(void) {
-	DEBUG_WORD("rscLoop")
+	MESSSAGE_DEBUG("rscLoop")
 }
 
 void rscDo(void) {
-	DEBUG_WORD("rscDo")
+	MESSSAGE_DEBUG("rscDo")
 }
 
 void rscThen(void) {
-	DEBUG_WORD("rscThen")
+	MESSSAGE_DEBUG("rscThen")
 }
 
 void rscEndIf(void) {
-	DEBUG_WORD("rscEndIf")
+	MESSSAGE_DEBUG("rscEndIf")
 }
 
 void rscBegin(void) {
-	DEBUG_WORD("rscBegin")
+	MESSSAGE_DEBUG("rscBegin")
 }
 
 void rscForget(void) {
-	DEBUG_WORD("rscForget")
+	MESSSAGE_DEBUG("rscForget")
 }
 
 void rscAutostart(void) {
-	DEBUG_WORD("rscAutostart")
+	MESSSAGE_DEBUG("rscAutostart")
 }
 
 void rscQKernel(void) {
-	DEBUG_WORD("rscQKernel")
+	MESSSAGE_DEBUG("rscQKernel")
 }
 
 void rscHWord(void) {
-	DEBUG_WORD("rscHWord")
+	MESSSAGE_DEBUG("rscHWord")
 }
 
 void rscHSlashC(void) {
-	DEBUG_WORD("rscHSlashC")
+	MESSSAGE_DEBUG("rscHSlashC")
 }
 
 void rscTick(void) {
-	DEBUG_WORD("rscTick")
+	MESSSAGE_DEBUG("rscTick")
 }
 
 void rscSeek(void) {
-	DEBUG_WORD("rscSeek")
+	MESSSAGE_DEBUG("rscSeek")
 }
 
 void rscInit(void) {
-	DEBUG_WORD("rscInit")
+	MESSSAGE_DEBUG("rscInit")
 }
 
 void rscDWrite(void) {
-	DEBUG_WORD("rscDWrite")
+	MESSSAGE_DEBUG("rscDWrite")
 }
 
 void rscDRead(void) {
-	DEBUG_WORD("rscDRead")
+	MESSSAGE_DEBUG("rscDRead")
 }
 
 void rscSelect(void) {
-	DEBUG_WORD("rscSelect")
+	MESSSAGE_DEBUG("rscSelect")
 }
 
 void rscDisk(void) {
-	DEBUG_WORD("rscDisk")
+	MESSSAGE_DEBUG("rscDisk")
 }
 
 void rscRSlashW(void) {
-	DEBUG_WORD("rscRSlashW")
+	MESSSAGE_DEBUG("rscRSlashW")
 }
 
 void rscBSlashScr(void) {
-	DEBUG_WORD("rscBSlashScr")
+	MESSSAGE_DEBUG("rscBSlashScr")
 }
 
 void rscBSlashBuf(void) {
-	DEBUG_WORD("rscBSlashBuf")
+	MESSSAGE_DEBUG("rscBSlashBuf")
 }
 
 void rscMinusBCD(void) {
-	DEBUG_WORD("rscMinusBCD")
+	MESSSAGE_DEBUG("rscMinusBCD")
 }
 
 void rscTo(void) {
-	DEBUG_WORD("rscTo")
+	MESSSAGE_DEBUG("rscTo")
 }
 
 void rscLoad(void) {
-	DEBUG_WORD("rscLoad")
+	MESSSAGE_DEBUG("rscLoad")
 }
 
 void rscMessage(void) {
-	DEBUG_WORD("rscMessage")
+	MESSSAGE_DEBUG("rscMessage")
 }
 
 void rscToLine(void) {
-	DEBUG_WORD("rscToLine")
+	MESSSAGE_DEBUG("rscToLine")
 }
 
 void rscDotLine(void) {
-	DEBUG_WORD("rscDotLine")
+	MESSSAGE_DEBUG("rscDotLine")
 }
 
 void rscYLine(void) {
-	DEBUG_WORD("rscYLine")
+	MESSSAGE_DEBUG("rscYLine")
 }
 
 void rscDump(void) {
-	DEBUG_WORD("rscDump")
+	MESSSAGE_DEBUG("rscDump")
 }
 
 void rscFlush(void) {
-	DEBUG_WORD("rscFlush")
+	MESSSAGE_DEBUG("rscFlush")
 }
 
 void rscBlock(void) {
-	DEBUG_WORD("rscBlock")
+	MESSSAGE_DEBUG("rscBlock")
 }
 
 void rscBuffer(void) {
-	DEBUG_WORD("rscBuffer")
+	MESSSAGE_DEBUG("rscBuffer")
 }
 
 void rscEmptyBuffers(void) {
-	DEBUG_WORD("rscEmptyBuffers")
+	MESSSAGE_DEBUG("rscEmptyBuffers")
 }
 
 void rscUpdate(void) {
-	DEBUG_WORD("rscUpdate")
+	MESSSAGE_DEBUG("rscUpdate")
 }
 
 void rscPlusBuf(void) {
-	DEBUG_WORD("rscPlusBuf")
+	MESSSAGE_DEBUG("rscPlusBuf")
 }
 
 void rscMSlashMod(void) {
-	DEBUG_WORD("rscMSlashMod")
+	MESSSAGE_DEBUG("rscMSlashMod")
 }
 
 void rscStarSlash(void) {
-	DEBUG_WORD("rscStarSlash")
+	MESSSAGE_DEBUG("rscStarSlash")
 }
 
 void rscStarSlashMod(void) {
-	DEBUG_WORD("rscStarSlashMod")
+	MESSSAGE_DEBUG("rscStarSlashMod")
 }
 
 void rscMod(void) {
-	DEBUG_WORD("rscMod")
+	MESSSAGE_DEBUG("rscMod")
 }
 
 void rscSlash(void) {
-	DEBUG_WORD("rscSlash")
+	MESSSAGE_DEBUG("rscSlash")
 }
 
 void rscSlashMod(void) {
-	DEBUG_WORD("rscSlashMod")
+	MESSSAGE_DEBUG("rscSlashMod")
 }
 
 void rscStar(void) {
-	DEBUG_WORD("rscStar")
+	MESSSAGE_DEBUG("rscStar")
 }
 
 void rscMSlash(void) {
-	DEBUG_WORD("rscMSlash")
+	MESSSAGE_DEBUG("rscMSlash")
 }
 
 void rscMStar(void) {
-	DEBUG_WORD("rscMStar")
+	MESSSAGE_DEBUG("rscMStar")
 }
 
 void rscMax(void) {
-	DEBUG_WORD("rscMax")
+	MESSSAGE_DEBUG("rscMax")
 }
 
 void rscMin(void) {
-	DEBUG_WORD("rscMin")
+	MESSSAGE_DEBUG("rscMin")
 }
 
 void rscDAbs(void) {
-	DEBUG_WORD("rscDAbs")
+	MESSSAGE_DEBUG("rscDAbs")
 }
 
 void rscAbs(void) {
-	DEBUG_WORD("rscAbs")
+	MESSSAGE_DEBUG("rscAbs")
 }
 
 void rscDPlusMinus(void) {
-	DEBUG_WORD("rscAbsrscDPlusMinus")
+	MESSSAGE_DEBUG("rscAbsrscDPlusMinus")
 }
 
 void rscPlusMinus(void) {
-	DEBUG_WORD("rscPlusMinus")
+	MESSSAGE_DEBUG("rscPlusMinus")
 }
 
 void rscSToD(void) {
-	DEBUG_WORD("rscSToD")
+	MESSSAGE_DEBUG("rscSToD")
 }
 
 void rscCold(void) {
-	DEBUG_WORD("rscCold")
+	MESSSAGE_DEBUG("rscCold")
 }
 
 void rscAbort(void) {
-	DEBUG_WORD("rscAbort")
+	MESSSAGE_DEBUG("rscAbort")
 }
 
 void rscQuit(void) {
-	DEBUG_WORD("rscQuit")
+	MESSSAGE_DEBUG("rscQuit")
 }
 
 void rscParen(void) {
-	DEBUG_WORD("rscParen")
+	MESSSAGE_DEBUG("rscParen")
 }
 
 void rscDefinitions(void) {
-	DEBUG_WORD("rscDefinitions")
+	MESSSAGE_DEBUG("rscDefinitions")
 }
 
 void rscAssembler(void) {
-	DEBUG_WORD("rscAssembler")
+	MESSSAGE_DEBUG("rscAssembler")
 }
 
 void rscForth(void) {
-	DEBUG_WORD("rscForth")
+	MESSSAGE_DEBUG("rscForth")
 }
 
 void rscVocabulary(void) {
-	DEBUG_WORD("rscVocabulary")
+	MESSSAGE_DEBUG("rscVocabulary")
 }
 
 void rscImmediate(void) {
-	DEBUG_WORD("rscImmediate")
+	MESSSAGE_DEBUG("rscImmediate")
 }
 
 void rscInterpret(void) {
-	DEBUG_WORD("rscInterpret")
+	MESSSAGE_DEBUG("rscInterpret")
 }
 
 void rscQStack(void) {
-	DEBUG_WORD("rscQStack")
+	MESSSAGE_DEBUG("rscQStack")
 }
 
 void rscDLiteral(void) {
-	DEBUG_WORD("rscDLiteral")
+	MESSSAGE_DEBUG("rscDLiteral")
 }
 
 void rscLiteral(void) {
-	DEBUG_WORD("rscLiteral")
+	MESSSAGE_DEBUG("rscLiteral")
 }
 
 void rscXCompile(void) {
-	DEBUG_WORD("rscXCompile")
+	MESSSAGE_DEBUG("rscXCompile")
 }
 
 void rscCreate(void) {
-	DEBUG_WORD("rscCreate")
+	MESSSAGE_DEBUG("rscCreate")
 }
 
 void rscIDDot(void) {
-	DEBUG_WORD("rscIDDot")
+	MESSSAGE_DEBUG("rscIDDot")
 }
 
 void rscError(void) {
-	DEBUG_WORD("rscError")
+	MESSSAGE_DEBUG("rscError")
 }
 
 void rscYAbort(void) {
-	DEBUG_WORD("rscYAbort")
+	MESSSAGE_DEBUG("rscYAbort")
 }
 
 void rscFind(void) {
-	DEBUG_WORD("rscFind")
+	MESSSAGE_DEBUG("rscFind")
 }
 
 void rscNumber(void) {
-	DEBUG_WORD("rscNumber")
+	MESSSAGE_DEBUG("rscNumber")
 }
 
 void rscYNumber(void) {
-	DEBUG_WORD("rscYNumber")
+	MESSSAGE_DEBUG("rscYNumber")
 }
 
 void rscWord(void) {
-	DEBUG_WORD("rscWord")
+	MESSSAGE_DEBUG("rscWord")
 }
 
 void rscHold(void) {
-	DEBUG_WORD("rscHold")
+	MESSSAGE_DEBUG("rscHold")
 }
 
 void rscBlanks(void) {
-	DEBUG_WORD("rscBlanks")
+	MESSSAGE_DEBUG("rscBlanks")
 }
 
 void rscErase(void) {
-	DEBUG_WORD("rscErase")
+	MESSSAGE_DEBUG("rscErase")
 }
 
 void rscFill(void) {
-	DEBUG_WORD("rscFill")
+	MESSSAGE_DEBUG("rscFill")
 }
 
 void rscEmptySpace(void) {
-	DEBUG_WORD("rscEmptySpace")
+	MESSSAGE_DEBUG("rscEmptySpace")
 }
 
 void rscQuery(void) {
-	DEBUG_WORD("rscQuery")
+	MESSSAGE_DEBUG("rscQuery")
 }
 
 void rscExpect(void) {
-	DEBUG_WORD("rscExpect")
+	MESSSAGE_DEBUG("rscExpect")
 }
 
 void rscDotQuote(void) {
-	DEBUG_WORD("rscDotQuote")
+	MESSSAGE_DEBUG("rscDotQuote")
 }
 
 void rscYDotQuote(void) {
-	DEBUG_WORD("rscYDotQuote")
+	MESSSAGE_DEBUG("rscYDotQuote")
 }
 
 void rscTrailing(void) {
-	DEBUG_WORD("rscTrailing")
+	MESSSAGE_DEBUG("rscTrailing")
 }
 
 void rscType(void) {
-	DEBUG_WORD("rscType")
+	MESSSAGE_DEBUG("rscType")
 }
 
 void rscCount(void) {
-	DEBUG_WORD("rscCount")
+	MESSSAGE_DEBUG("rscCount")
 }
 
 void rscDoes(void) {
-	DEBUG_WORD("rscDoes")
+	MESSSAGE_DEBUG("rscDoes")
 }
 
 void rscBuilds(void) {
-	DEBUG_WORD("rscBuilds")
+	MESSSAGE_DEBUG("rscBuilds")
 }
 
 void rscSemicolonCode(void) {
-	DEBUG_WORD("rscSemicolonCode")
+	MESSSAGE_DEBUG("rscSemicolonCode")
 }
 
 void rscYSemicolonCode(void) {
-	DEBUG_WORD("rscYSemicolonCode")
+	MESSSAGE_DEBUG("rscYSemicolonCode")
 }
 
 void rscDecimal(void) {
-	DEBUG_WORD("rscDecimal")
+	MESSSAGE_DEBUG("rscDecimal")
 }
 
 void rscHex(void) {
-	DEBUG_WORD("rscHex")
+	MESSSAGE_DEBUG("rscHex")
 }
 
 void rscSmudge(void) {
-	DEBUG_WORD("rscSmudge")
+	MESSSAGE_DEBUG("rscSmudge")
 }
 
 void rscRightBracket(void) {
-	DEBUG_WORD("rscRightBracket")
+	MESSSAGE_DEBUG("rscRightBracket")
 }
 
 void rscLeftBracket(void) {
-	DEBUG_WORD("rscLeftBracket")
+	MESSSAGE_DEBUG("rscLeftBracket")
 }
 
 void rscCompile(void) {
-	DEBUG_WORD("rscCompile")
+	MESSSAGE_DEBUG("rscCompile")
 }
 
 void rscQCsp(void) {
-	DEBUG_WORD("rscQCsp")
+	MESSSAGE_DEBUG("rscQCsp")
 }
 
 void rscQPairs(void) {
-	DEBUG_WORD("rscQPairs")
+	MESSSAGE_DEBUG("rscQPairs")
 }
 
 void rscQExec(void) {
-	DEBUG_WORD("rscQExec")
+	MESSSAGE_DEBUG("rscQExec")
 }
 
 void rscQComp(void) {
-	DEBUG_WORD("rscQComp")
+	MESSSAGE_DEBUG("rscQComp")
 }
 
 void rscQError(void) {
-	DEBUG_WORD("rscQError")
+	MESSSAGE_DEBUG("rscQError")
 }
 
 void rscStoreCsp(void) {
-	DEBUG_WORD("rscStoreCsp")
+	MESSSAGE_DEBUG("rscStoreCsp")
 }
 
 void rscPfaptr(void) {
-	DEBUG_WORD("rscPfaptr")
+	MESSSAGE_DEBUG("rscPfaptr")
 }
 
 void rscNfa(void) {
-	DEBUG_WORD("rscNfa")
+	MESSSAGE_DEBUG("rscNfa")
 }
 
 void rscCfa(void) {
-	DEBUG_WORD("rscCfa")
+	MESSSAGE_DEBUG("rscCfa")
 }
 
 void rscLfa(void) {
-	DEBUG_WORD("rscLfa")
+	MESSSAGE_DEBUG("rscLfa")
 }
 
 void rscLatest(void) {
-	DEBUG_WORD("rscLatest")
+	MESSSAGE_DEBUG("rscLatest")
 }
 
 void rscTraverse(void) {
-	DEBUG_WORD("rscTraverse")
+	MESSSAGE_DEBUG("rscTraverse")
 }
 
 void rscMinusDup(void) {
-	DEBUG_WORD("rscMinusDup")
+	MESSSAGE_DEBUG("rscMinusDup")
 }
 
 void rscSpace(void) {
-	DEBUG_WORD("rscSpace")
+	MESSSAGE_DEBUG("rscSpace")
 }
 
 void rscPick(void) {
-	DEBUG_WORD("rscPick")
+	MESSSAGE_DEBUG("rscPick")
 }
 
 void rscRot(void) {
-	DEBUG_WORD("rscRot")
+	MESSSAGE_DEBUG("rscRot")
 }
 
 void rscGreater(void) {
-	DEBUG_WORD("rscGreater")
+	MESSSAGE_DEBUG("rscGreater")
 }
 
 void rscLess(void) {
-	DEBUG_WORD("rscLess")
+	MESSSAGE_DEBUG("rscLess")
 }
 
 void rscULess(void) {
-	DEBUG_WORD("rscULess")
+	MESSSAGE_DEBUG("rscULess")
 }
 
 void rscEqual(void) {
-	DEBUG_WORD("rscEqual")
+	MESSSAGE_DEBUG("rscEqual")
 }
 
 void rscMinus(void) {
-	DEBUG_WORD("rscMinus")
+	MESSSAGE_DEBUG("rscMinus")
 }
 
 void rscCComma(void) {
-	DEBUG_WORD("rscCComma")
+	MESSSAGE_DEBUG("rscCComma")
 }
 
 void rscComma(void) {
-	DEBUG_WORD("rscComma")
+	MESSSAGE_DEBUG("rscComma")
 }
 
 void rscAllot(void) {
-	DEBUG_WORD("rscAllot")
+	MESSSAGE_DEBUG("rscAllot")
 }
 
 void rscHere(void) {
-	DEBUG_WORD("rscHere")
+	MESSSAGE_DEBUG("rscHere")
 }
 
 void rscCommaSlash(void) {
-	DEBUG_WORD("rscCommaSlash")
+	MESSSAGE_DEBUG("rscCommaSlash")
 }
 
 void rscAllotSlash(void) {
-	DEBUG_WORD("rscAllotSlash")
+	MESSSAGE_DEBUG("rscAllotSlash")
 }
 
 void rscHereSlash(void) {
-	DEBUG_WORD("rscHereSlash")
+	MESSSAGE_DEBUG("rscHereSlash")
 }
 
 void rscDPSlash(void) {
-	DEBUG_WORD("rscDPSlash")
+	MESSSAGE_DEBUG("rscDPSlash")
 }
 
 void rscTwoMinus(void) {
-	DEBUG_WORD("rscTwoMinus")
+	MESSSAGE_DEBUG("rscTwoMinus")
 }
 
 void rscOneMinus(void) {
-	DEBUG_WORD("rscOneMinus")
+	MESSSAGE_DEBUG("rscOneMinus")
 }
 
 void rscTwoPlus(void) {
-	DEBUG_WORD("rscTwoPlus")
+	MESSSAGE_DEBUG("rscTwoPlus")
 }
 
 void rscOnePlus(void) {
-	DEBUG_WORD("rscOnePlus")
+	MESSSAGE_DEBUG("rscOnePlus")
 }
 
 void rscPad(void) {
-	DEBUG_WORD("rscPad")
+	MESSSAGE_DEBUG("rscPad")
 }
 
 void rscLimit(void) {
-	DEBUG_WORD("rscLimit")
+	MESSSAGE_DEBUG("rscLimit")
 }
 
 void rscFirst(void) {
-	DEBUG_WORD("rscFirst")
+	MESSSAGE_DEBUG("rscFirst")
 }
 
 void rscCSlashL(void) {
-	DEBUG_WORD("rscCSlashL")
+	MESSSAGE_DEBUG("rscCSlashL")
 }
 
 void rscKhz(void) {
-	DEBUG_WORD("rscKhz")
+	MESSSAGE_DEBUG("rscKhz")
 }
 
 void rscMode(void) {
-	DEBUG_WORD("rscMode")
+	MESSSAGE_DEBUG("rscMode")
 }
 
 void rscCsp(void) {
-	DEBUG_WORD("rscCsp")
+	MESSSAGE_DEBUG("rscCsp")
 }
 
 void rscState(void) {
-	DEBUG_WORD("rscState")
+	MESSSAGE_DEBUG("rscState")
 }
 
 void rscCurrent(void) {
-	DEBUG_WORD("rscCurrent")
+	MESSSAGE_DEBUG("rscCurrent")
 }
 
 void rscContext(void) {
-	DEBUG_WORD("rscContext")
+	MESSSAGE_DEBUG("rscContext")
 }
 
 void rscScr(void) {
-	DEBUG_WORD("rscScr")
+	MESSSAGE_DEBUG("rscScr")
 }
 
 void rscBlk(void) {
-	DEBUG_WORD("rscBlk")
+	MESSSAGE_DEBUG("rscBlk")
 }
 
 void rscPrev(void) {
-	DEBUG_WORD("rscPrev")
+	MESSSAGE_DEBUG("rscPrev")
 }
 
 void rscUse(void) {
-	DEBUG_WORD("rscUse")
+	MESSSAGE_DEBUG("rscUse")
 }
 
 void rscUAbort(void) {
-	DEBUG_WORD("rscUAbort")
+	MESSSAGE_DEBUG("rscUAbort")
 }
 
 void rscVocLink(void) {
-	DEBUG_WORD("rscVocLink")
+	MESSSAGE_DEBUG("rscVocLink")
 }
 
 void rscHeaderless(void) {
-	DEBUG_WORD("rscHeaderless")
+	MESSSAGE_DEBUG("rscHeaderless")
 }
 
 void rscDP(void) {
-	DEBUG_WORD("rscDP")
+	MESSSAGE_DEBUG("rscDP")
 }
 
 void rscFence(void) {
-	DEBUG_WORD("rscFence")
+	MESSSAGE_DEBUG("rscFence")
 }
 
 void rscWarning(void) {
-	DEBUG_WORD("rscWarning")
+	MESSSAGE_DEBUG("rscWarning")
 }
 
 void rscWidth(void) {
-	DEBUG_WORD("rscWidth")
+	MESSSAGE_DEBUG("rscWidth")
 }
 
 void rscOffset(void) {
-	DEBUG_WORD("rscOffset")
+	MESSSAGE_DEBUG("rscOffset")
 }
 
 void rscULimit(void) {
-	DEBUG_WORD("rscULimit")
+	MESSSAGE_DEBUG("rscULimit")
 }
 
 void rscUFirst(void) {
-	DEBUG_WORD("rscUFirst")
+	MESSSAGE_DEBUG("rscUFirst")
 }
 
 void rscBSlashSide(void) {
-	DEBUG_WORD("rscBSlashSide")
+	MESSSAGE_DEBUG("rscBSlashSide")
 }
 
 void rscCylinder(void) {
-	DEBUG_WORD("rscCylinder")
+	MESSSAGE_DEBUG("rscCylinder")
 }
 
 void rscDiskNo(void) {
-	DEBUG_WORD("rscDiskNo")
+	MESSSAGE_DEBUG("rscDiskNo")
 }
 
 void rscHld(void) {
-	DEBUG_WORD("rscHld")
+	MESSSAGE_DEBUG("rscHld")
 }
 
 void rscDpl(void) {
-	DEBUG_WORD("rscDpl")
+	MESSSAGE_DEBUG("rscDpl")
 }
 
 void rscIn(void) {
-	DEBUG_WORD("rscIn")
+	MESSSAGE_DEBUG("rscIn")
 }
 
 void rscCldSlashWrm(void) {
-	DEBUG_WORD("rscCldSlashWrm")
+	MESSSAGE_DEBUG("rscCldSlashWrm")
 }
 
 void rscBase(void) {
-	DEBUG_WORD("rscBase")
+	MESSSAGE_DEBUG("rscBase")
 }
 
 void rscURSlashW(void) {
-	DEBUG_WORD("rscURSlashW")
+	MESSSAGE_DEBUG("rscURSlashW")
 }
 
 void rscUPad(void) {
-	DEBUG_WORD("rscUPad")
+	MESSSAGE_DEBUG("rscUPad")
 }
 
 void rscUCSlashL(void) {
-	DEBUG_WORD("rscUCSlashL")
+	MESSSAGE_DEBUG("rscUCSlashL")
 }
 
 void rscR0(void) {
-	DEBUG_WORD("rscR0L")
+	MESSSAGE_DEBUG("rscR0L")
 }
 
 void rscS0(void) {
-	DEBUG_WORD("rscS0")
+	MESSSAGE_DEBUG("rscS0")
 }
 
 void rscTib(void) {
-	DEBUG_WORD("rscTib")
+	MESSSAGE_DEBUG("rscTib")
 }
 
 void rscBl(void) {
-	DEBUG_WORD("rscBl")
+	MESSSAGE_DEBUG("rscBl")
 }
 
 void rscFour(void) {
-	DEBUG_WORD("rscFour")
+	MESSSAGE_DEBUG("rscFour")
 }
 
 void rscThree(void) {
-	DEBUG_WORD("rscThree")
+	MESSSAGE_DEBUG("rscThree")
 }
 
 void rscTwo(void) {
-	DEBUG_WORD("rscTwo")
+	MESSSAGE_DEBUG("rscTwo")
 }
 
 void rscOne(void) {
-	DEBUG_WORD("rscOne")
+	MESSSAGE_DEBUG("rscOne")
 }
 
 void rscZero(void) {
-	DEBUG_WORD("rscZero")
+	MESSSAGE_DEBUG("rscZero")
 }
 
 void rscUser(void) {
-	DEBUG_WORD("rscUser")
+	MESSSAGE_DEBUG("rscUser")
 }
 
 void rscCode(void) {
-	DEBUG_WORD("rscCode")
+	MESSSAGE_DEBUG("rscCode")
 }
 
 void rscVariable(void) {
-	DEBUG_WORD("rscVariable")
+	MESSSAGE_DEBUG("rscVariable")
 }
 
 void rscConstant(void) {
-	DEBUG_WORD("rscConstant")
+	MESSSAGE_DEBUG("rscConstant")
 }
 
 void rscSemicolon(void) {
-	DEBUG_WORD("rscSemicolon")
+	MESSSAGE_DEBUG("rscSemicolon")
 }
 
 void rscColon(void) {
-	DEBUG_WORD("rscColon")
+	MESSSAGE_DEBUG("rscColon")
 }
 
 void rscCStore(void) {
-	DEBUG_WORD("rscCStore")
+	MESSSAGE_DEBUG("rscCStore")
 }
 
 void rscStore(void) {
-	DEBUG_WORD("rscStore")
+	MESSSAGE_DEBUG("rscStore")
 }
 
 void rscCFetch(void) {
-	DEBUG_WORD("rscCFetch")
+	MESSSAGE_DEBUG("rscCFetch")
 }
 
 void rscFetch(void) {
-	DEBUG_WORD("rscFetch")
+	MESSSAGE_DEBUG("rscFetch")
 }
 
 void rscToggle(void) {
-	DEBUG_WORD("rscToggle")
+	MESSSAGE_DEBUG("rscToggle")
 }
 
 void rscPlusStore(void) {
-	DEBUG_WORD("rscPlusStore")
+	MESSSAGE_DEBUG("rscPlusStore")
 }
 
 void rscBounds(void) {
-	DEBUG_WORD("rscBounds")
+	MESSSAGE_DEBUG("rscBounds")
 }
 
 void rscTwoDup(void) {
-	DEBUG_WORD("rscTwoDup")
+	MESSSAGE_DEBUG("rscTwoDup")
 }
 
 void rscDup(void) {
-	DEBUG_WORD("rscDup")
+	MESSSAGE_DEBUG("rscDup")
 }
 
 void rscSwap(void) {
-	DEBUG_WORD("rscSwap")
+	MESSSAGE_DEBUG("rscSwap")
 }
 
 void rscTwoDrop(void) {
-	DEBUG_WORD("rscTwoDrop")
+	MESSSAGE_DEBUG("rscTwoDrop")
 }
 
 void rscDrop(void) {
-	DEBUG_WORD("rscDrop")
+	MESSSAGE_DEBUG("rscDrop")
 }
 
 void rscOver(void) {
-	DEBUG_WORD("rscOver")
+	MESSSAGE_DEBUG("rscOver")
 }
 
 void rscDNegate(void) {
-	DEBUG_WORD("rscDNegate")
+	MESSSAGE_DEBUG("rscDNegate")
 }
 
 void rscNegate(void) {
-	DEBUG_WORD("rscNegate")
+	MESSSAGE_DEBUG("rscNegate")
 }
 
 void rscDPlus(void) {
-	DEBUG_WORD("rscDPlus")
+	MESSSAGE_DEBUG("rscDPlus")
 }
 
 void rscPlus(void) {
-	DEBUG_WORD("rscPlus")
+	MESSSAGE_DEBUG("rscPlus")
 }
 
 void rscZeroLess(void) {
-	DEBUG_WORD("rscZeroLess")
+	MESSSAGE_DEBUG("rscZeroLess")
 }
 
 void rscNot(void) {
-	DEBUG_WORD("rscNot")
+	MESSSAGE_DEBUG("rscNot")
 }
 
 void rscZeroEqual(void) {
-	DEBUG_WORD("rscZeroEqual")
+	MESSSAGE_DEBUG("rscZeroEqual")
 }
 
 void rscR(void) {
-	DEBUG_WORD("rscR")
+	MESSSAGE_DEBUG("rscR")
 }
 
 void rscRFrom(void) {
-	DEBUG_WORD("rscRFrom")
+	MESSSAGE_DEBUG("rscRFrom")
 }
 
 void rscToR(void) {
-	DEBUG_WORD("rscToR")
+	MESSSAGE_DEBUG("rscToR")
 }
 
 void rscLeave(void) {
-	DEBUG_WORD("rscLeave")
+	MESSSAGE_DEBUG("rscLeave")
 }
 
 void rscSemicolonS(void) {
-	DEBUG_WORD("rscSemicolonS")
+	MESSSAGE_DEBUG("rscSemicolonS")
 }
 
 void rscRPFetch(void) {
-	DEBUG_WORD("rscRPFetch")
+	MESSSAGE_DEBUG("rscRPFetch")
 }
 
 void rscRPStore(void) {
-	DEBUG_WORD("rscRPStore")
+	MESSSAGE_DEBUG("rscRPStore")
 }
 
 void rscSPStore(void) {
-	DEBUG_WORD("rscSPStore")
+	MESSSAGE_DEBUG("rscSPStore")
 }
 
 void rscSPFetch(void) {
-	DEBUG_WORD("rscSPFetch")
+	MESSSAGE_DEBUG("rscSPFetch")
 }
 
 void rscXor(void) {
-	DEBUG_WORD("rscXor")
+	MESSSAGE_DEBUG("rscXor")
 }
 
 void rscOr(void) {
-	DEBUG_WORD("rscOr")
+	MESSSAGE_DEBUG("rscOr")
 }
 
 void rscAnd(void) {
-	DEBUG_WORD("rscAnd")
+	MESSSAGE_DEBUG("rscAnd")
 }
 
 void rscUSlash(void) {
-	DEBUG_WORD("rscUSlash")
+	MESSSAGE_DEBUG("rscUSlash")
 }
 
 void rscUStar(void) {
-	DEBUG_WORD("rscUStar")
+	MESSSAGE_DEBUG("rscUStar")
 }
 
 void rscCMove(void) {
-	DEBUG_WORD("rscCMove")
+	MESSSAGE_DEBUG("rscCMove")
 }
 
 void rscFinis(void) {
-	DEBUG_WORD("rscFinis")
+	MESSSAGE_DEBUG("rscFinis")
 }
 
 void rscSource(void) {
-	DEBUG_WORD("rscSource")
+	MESSSAGE_DEBUG("rscSource")
 }
 
 void rscXOff(void) {
-	DEBUG_WORD("rscXOff")
+	MESSSAGE_DEBUG("rscXOff")
 }
 
 void rscXon(void) {
-	DEBUG_WORD("rscXon")
+	MESSSAGE_DEBUG("rscXon")
 }
 
 void rscCr(void) {
-	DEBUG_WORD("rscCr")
+	MESSSAGE_DEBUG("rscCr")
 }
 
 void rscQTerminal(void) {
-	DEBUG_WORD("rscQTerminal")
+	MESSSAGE_DEBUG("rscQTerminal")
 }
 
 void rscKey(void) {
-	DEBUG_WORD("rscKey")
+	MESSSAGE_DEBUG("rscKey")
 }
 
 void rscEmit(void) {
-	DEBUG_WORD("rscEmit")
+	MESSSAGE_DEBUG("rscEmit")
 }
 
 void rscEnclose(void) {
-	DEBUG_WORD("rscEnclose")
+	MESSSAGE_DEBUG("rscEnclose")
 }
 
 void rscYFind(void) {
-	DEBUG_WORD("rscYFind")
+	MESSSAGE_DEBUG("rscYFind")
 }
 
 void rscDigit(void) {
-	DEBUG_WORD("rscDigit")
+	MESSSAGE_DEBUG("rscDigit")
 }
 
 void rscI(void) {
-	DEBUG_WORD("rscI")
+	MESSSAGE_DEBUG("rscI")
 }
 
 void rscYDo(void) {
-	DEBUG_WORD("rscYDo")
+	MESSSAGE_DEBUG("rscYDo")
 }
 
 void rscYPlusLoop(void) {
-	DEBUG_WORD("rscYPlusLoop")
+	MESSSAGE_DEBUG("rscYPlusLoop")
 }
 
 void rscYLoop(void) {
-	DEBUG_WORD("rscYLoop")
+	MESSSAGE_DEBUG("rscYLoop")
 }
 
 void rscZeroBranch(void) {
-	DEBUG_WORD("rscZeroBranch")
+	MESSSAGE_DEBUG("rscZeroBranch")
 }
 
 void rscBranch(void) {
-	DEBUG_WORD("rscBranch")
+	MESSSAGE_DEBUG("rscBranch")
 }
 
 void rscExecute(void) {
-	DEBUG_WORD("rscExecute")
+	MESSSAGE_DEBUG("rscExecute")
 }
 
 void rscClit(void) {
-	DEBUG_WORD("rscClit")
+	MESSSAGE_DEBUG("rscClit")
 }
 
 void rscLit(void) {
-	DEBUG_WORD("rscLit")
+	MESSSAGE_DEBUG("rscLit")
 }
 
 #endif

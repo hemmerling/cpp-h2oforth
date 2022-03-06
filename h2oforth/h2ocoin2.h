@@ -7,1461 +7,1461 @@
 
 /* Unavailable words */
 void coinupMinusMove(void) {
-	DEBUG_WORD("coinupMinusMove")
+	MESSSAGE_DEBUG("coinupMinusMove")
 }
 
 void coinupDollar(void) {
-	DEBUG_WORD("coinupDollar")
+	MESSSAGE_DEBUG("coinupDollar")
 }
 
 void coinupPercent(void) {
-	DEBUG_WORD("coinupPercent")
+	MESSSAGE_DEBUG("coinupPercent")
 }
 
 void coinupDl(void) {
-	DEBUG_WORD("coinupDl")
+	MESSSAGE_DEBUG("coinupDl")
 }
 
 void coinupDoit(void) {
-	DEBUG_WORD("coinupDoit")
+	MESSSAGE_DEBUG("coinupDoit")
 }
 
 void coinupHl(void) {
-	DEBUG_WORD("coinupHl")
+	MESSSAGE_DEBUG("coinupHl")
 }
 
 void coinupIl(void) {
-	DEBUG_WORD("coinupIl")
+	MESSSAGE_DEBUG("coinupIl")
 }
 
 void coinupLl(void) {
-	DEBUG_WORD("coinupLl")
+	MESSSAGE_DEBUG("coinupLl")
 }
 
 void coinupRl(void) {
-	DEBUG_WORD("coinupRl")
+	MESSSAGE_DEBUG("coinupRl")
 }
 
 void coinupSl(void) {
-	DEBUG_WORD("coinupSl")
+	MESSSAGE_DEBUG("coinupSl")
 }
 
 void coinupTl(void) {
-	DEBUG_WORD("coinupTl")
+	MESSSAGE_DEBUG("coinupTl")
 }
 
 void coinupTopFlag(void) {
-	DEBUG_WORD("coinupTopFlag")
+	MESSSAGE_DEBUG("coinupTopFlag")
 }
 
 void coinupUl(void) {
-	DEBUG_WORD("coinupUl")
+	MESSSAGE_DEBUG("coinupUl")
 }
 
 void coinupUll(void) {
-	DEBUG_WORD("coinupUll")
+	MESSSAGE_DEBUG("coinupUll")
 }
 
 void coinupR0(void) {
-	DEBUG_WORD("coinupR0")
+	MESSSAGE_DEBUG("coinupR0")
 }
 
 void coinupS0(void) {
-	DEBUG_WORD("coinupS0")
+	MESSSAGE_DEBUG("coinupS0")
 }
 
 void coinupX(void) {
-	DEBUG_WORD("coinupX")
+	MESSSAGE_DEBUG("coinupX")
 }
 
 
 /* Words */
 void coinupTask(void) {
-	DEBUG_WORD("coinupTask")
+	MESSSAGE_DEBUG("coinupTask")
 }
 
 void coinupSaveNfas(void) {
-	DEBUG_WORD("coinupSaveNfas")
+	MESSSAGE_DEBUG("coinupSaveNfas")
 }
 
 void coinupFormy(void) {
-	DEBUG_WORD("coinupFormy")
+	MESSSAGE_DEBUG("coinupFormy")
 }
 
 void coinupLpWords(void) {
-	DEBUG_WORD("coinupLpWords")
+	MESSSAGE_DEBUG("coinupLpWords")
 }
 
 void coinupWhere(void) {
-	DEBUG_WORD("coinupWhere")
+	MESSSAGE_DEBUG("coinupWhere")
 }
 
 void coinupN(void) {
-	DEBUG_WORD("coinupN")
+	MESSSAGE_DEBUG("coinupN")
 }
 
 void coinupL(void) {
-	DEBUG_WORD("coinupL")
+	MESSSAGE_DEBUG("coinupL")
 }
 
 void coinupShow(void) {
-	DEBUG_WORD("coinupShow")
+	MESSSAGE_DEBUG("coinupShow")
 }
 
 void coinupList(void) {
-	DEBUG_WORD("coinupList")
+	MESSSAGE_DEBUG("coinupList")
 }
 
 void coinupCopy(void) {
-	DEBUG_WORD("coinupCopy")
+	MESSSAGE_DEBUG("coinupCopy")
 }
 
 void coinupLine(void) {
-	DEBUG_WORD("coinupLine")
+	MESSSAGE_DEBUG("coinupLine")
 }
 
 void coinupNumOfLines(void) {
-	DEBUG_WORD("coinupNumOfLines")
+	MESSSAGE_DEBUG("coinupNumOfLines")
 }
 
 void coinupText(void) {
-	DEBUG_WORD("coinupText")
+	MESSSAGE_DEBUG("coinupText")
 }
 
 void coinupEdit(void) {
-	DEBUG_WORD("coinupEdit")
+	MESSSAGE_DEBUG("coinupEdit")
 }
 
 void coinupNoPly(void) {
-	DEBUG_WORD("coinupNoPly")
+	MESSSAGE_DEBUG("coinupNoPly")
 }
 
 void coinupColpmStore(void) {
-	DEBUG_WORD("coinupColpmStore")
+	MESSSAGE_DEBUG("coinupColpmStore")
 }
 
 void coinupSizeStore(void) {
-	DEBUG_WORD("coinupSizeStore")
+	MESSSAGE_DEBUG("coinupSizeStore")
 }
 
 void coinupHPosStore(void) {
-	DEBUG_WORD("coinupHPosStore")
+	MESSSAGE_DEBUG("coinupHPosStore")
 }
 
 void coinupPlayer(void) {
-	DEBUG_WORD("coinupPlayer")
+	MESSSAGE_DEBUG("coinupPlayer")
 }
 
 void coinupGPrior(void) {
-	DEBUG_WORD("coinupGPrior")
+	MESSSAGE_DEBUG("coinupGPrior")
 }
 
 void coinupColpm(void) {
-	DEBUG_WORD("coinupColpm")
+	MESSSAGE_DEBUG("coinupColpm")
 }
 
 void coinupVDelay(void) {
-	DEBUG_WORD("coinupVDelay")
+	MESSSAGE_DEBUG("coinupVDelay")
 }
 
 void coinupPrior(void) {
-	DEBUG_WORD("coinupPrior")
+	MESSSAGE_DEBUG("coinupPrior")
 }
 
 void coinupPmBase(void) {
-	DEBUG_WORD("coinupPmBase")
+	MESSSAGE_DEBUG("coinupPmBase")
 }
 
 void coinupGractl(void) {
-	DEBUG_WORD("coinupGractl")
+	MESSSAGE_DEBUG("coinupGractl")
 }
 
 void coinupDmaCtl(void) {
-	DEBUG_WORD("coinupDmaCtl")
+	MESSSAGE_DEBUG("coinupDmaCtl")
 }
 
 void coinupRnd(void) {
-	DEBUG_WORD("coinupRnd")
+	MESSSAGE_DEBUG("coinupRnd")
 }
 
 void coinupStrig(void) {
-	DEBUG_WORD("coinupStrig")
+	MESSSAGE_DEBUG("coinupStrig")
 }
 
 void coinupStick(void) {
-	DEBUG_WORD("coinupStick")
+	MESSSAGE_DEBUG("coinupStick")
 }
 
 void coinupPTrig(void) {
-	DEBUG_WORD("coinupPTrig")
+	MESSSAGE_DEBUG("coinupPTrig")
 }
 
 void coinupPaddle(void) {
-	DEBUG_WORD("coinupPaddle")
+	MESSSAGE_DEBUG("coinupPaddle")
 }
 
 void coinupSound(void) {
-	DEBUG_WORD("coinupSound")
+	MESSSAGE_DEBUG("coinupSound")
 }
 
 void coinupXio18(void) {
-	DEBUG_WORD("coinupXio18")
+	MESSSAGE_DEBUG("coinupXio18")
 }
 
 void coinupClear(void) {
-	DEBUG_WORD("coinupClear")
+	MESSSAGE_DEBUG("coinupClear")
 }
 
 void coinupDrawTo(void) {
-	DEBUG_WORD("coinupDrawTo")
+	MESSSAGE_DEBUG("coinupDrawTo")
 }
 
 void coinupPosition(void) {
-	DEBUG_WORD("coinupPosition")
+	MESSSAGE_DEBUG("coinupPosition")
 }
 
 void coinupColor(void) {
-	DEBUG_WORD("coinupColor")
+	MESSSAGE_DEBUG("coinupColor")
 }
 
 void coinupSetColor(void) {
-	DEBUG_WORD("coinupSetColor")
+	MESSSAGE_DEBUG("coinupSetColor")
 }
 
 void coinupLocate(void) {
-	DEBUG_WORD("coinupLocate")
+	MESSSAGE_DEBUG("coinupLocate")
 }
 
 void coinupPlot(void) {
-	DEBUG_WORD("coinupPlot")
+	MESSSAGE_DEBUG("coinupPlot")
 }
 
 void coinupDrDot(void) {
-	DEBUG_WORD("coinupDrDot")
+	MESSSAGE_DEBUG("coinupDrDot")
 }
 
 void coinupSeDot(void) {
-	DEBUG_WORD("coinupSeDot")
+	MESSSAGE_DEBUG("coinupSeDot")
 }
 
 void coinupPlDot(void) {
-	DEBUG_WORD("coinupPlDot")
+	MESSSAGE_DEBUG("coinupPlDot")
 }
 
 void coinupPut(void) {
-	DEBUG_WORD("coinupPut")
+	MESSSAGE_DEBUG("coinupPut")
 }
 
 void coinupCDot(void) {
-	DEBUG_WORD("coinupCDot")
+	MESSSAGE_DEBUG("coinupCDot")
 }
 
 void coinupLocDot(void) {
-	DEBUG_WORD("coinupLocDot")
+	MESSSAGE_DEBUG("coinupLocDot")
 }
 
 void coinupGraphics(void) {
-	DEBUG_WORD("coinupGraphics")
+	MESSSAGE_DEBUG("coinupGraphics")
 }
 
 void coinupGrDot(void) {
-	DEBUG_WORD("coinupGrDot")
+	MESSSAGE_DEBUG("coinupGrDot")
 }
 
 void coinupPosDot(void) {
-	DEBUG_WORD("coinupPosDot")
+	MESSSAGE_DEBUG("coinupPosDot")
 }
 
 void coinupSpb(void) {
-	DEBUG_WORD("coinupSpb")
+	MESSSAGE_DEBUG("coinupSpb")
 }
 
 void coinupPBase(void) {
-	DEBUG_WORD("coinupPBase")
+	MESSSAGE_DEBUG("coinupPBase")
 }
 
 void coinupQBase(void) {
-	DEBUG_WORD("coinupQBase")
+	MESSSAGE_DEBUG("coinupQBase")
 }
 
 void coinupFilDat(void) {
-	DEBUG_WORD("coinupFilDat")
+	MESSSAGE_DEBUG("coinupFilDat")
 }
 
 void coinupSColon(void) {
-	DEBUG_WORD("coinupSColon")
+	MESSSAGE_DEBUG("coinupSColon")
 }
 
 void coinupAcIo(void) {
-	DEBUG_WORD("coinupAcIo")
+	MESSSAGE_DEBUG("coinupAcIo")
 }
 
 void coinupOpen(void) {
-	DEBUG_WORD("coinupOpen")
+	MESSSAGE_DEBUG("coinupOpen")
 }
 
 void coinupClose(void) {
-	DEBUG_WORD("coinupClose")
+	MESSSAGE_DEBUG("coinupClose")
 }
 
 void coinupGet(void) {
-	DEBUG_WORD("coinupGet")
+	MESSSAGE_DEBUG("coinupGet")
 }
 
 void coinupCIo(void) {
-	DEBUG_WORD("coinupCIo")
+	MESSSAGE_DEBUG("coinupCIo")
 }
 
 void coinupI2Cax(void) {
-	DEBUG_WORD("coinupI2Cax")
+	MESSSAGE_DEBUG("coinupI2Cax")
 }
 
 void coinupI1Cax(void) {
-	DEBUG_WORD("coinupI1Cax")
+	MESSSAGE_DEBUG("coinupI1Cax")
 }
 
 void coinupIcbll(void) {
-	DEBUG_WORD("coinupIcbll")
+	MESSSAGE_DEBUG("coinupIcbll")
 }
 
 void coinupIcptl(void) {
-	DEBUG_WORD("coinupIcptl")
+	MESSSAGE_DEBUG("coinupIcptl")
 }
 
 void coinupIcbal(void) {
-	DEBUG_WORD("coinupIcbal")
+	MESSSAGE_DEBUG("coinupIcbal")
 }
 
 void coinupIcsta(void) {
-	DEBUG_WORD("coinupIcsta")
+	MESSSAGE_DEBUG("coinupIcsta")
 }
 
 void coinupIccom(void) {
-	DEBUG_WORD("coinupIccom")
+	MESSSAGE_DEBUG("coinupIccom")
 }
 
 void coinupIcdno(void) {
-	DEBUG_WORD("coinupIcdno")
+	MESSSAGE_DEBUG("coinupIcdno")
 }
 
 void coinupDotIoc(void) {
-	DEBUG_WORD("coinupDotIoc")
+	MESSSAGE_DEBUG("coinupDotIoc")
 }
 
 void coinupIocb(void) {
-	DEBUG_WORD("coinupIocb")
+	MESSSAGE_DEBUG("coinupIocb")
 }
 
 void coinupIob(void) {
-	DEBUG_WORD("coinupIob")
+	MESSSAGE_DEBUG("coinupIob")
 }
 
 void coinupIoc(void) {
-	DEBUG_WORD("coinupIoc")
+	MESSSAGE_DEBUG("coinupIoc")
 }
 
 void coinupAtaChr(void) {
-	DEBUG_WORD("coinupAtaChr")
+	MESSSAGE_DEBUG("coinupAtaChr")
 }
 
 void coinupLMargn(void) {
-	DEBUG_WORD("coinupLMargn")
+	MESSSAGE_DEBUG("coinupLMargn")
 }
 
 void coinupBotsC(void) {
-	DEBUG_WORD("coinupBotsC")
+	MESSSAGE_DEBUG("coinupBotsC")
 }
 
 void coinupCh(void) {
-	DEBUG_WORD("coinupCh")
+	MESSSAGE_DEBUG("coinupCh")
 }
 
 void coinupConsol(void) {
-	DEBUG_WORD("coinupConsol")
+	MESSSAGE_DEBUG("coinupConsol")
 }
 
 void coinupCol4(void) {
-	DEBUG_WORD("coinupCol4")
+	MESSSAGE_DEBUG("coinupCol4")
 }
 
 void coinupCol3(void) {
-	DEBUG_WORD("coinupCol3")
+	MESSSAGE_DEBUG("coinupCol3")
 }
 
 void coinupCol2(void) {
-	DEBUG_WORD("coinupCol2")
+	MESSSAGE_DEBUG("coinupCol2")
 }
 
 void coinupCol1(void) {
-	DEBUG_WORD("coinupCol1")
+	MESSSAGE_DEBUG("coinupCol1")
 }
 
 void coinupCol0(void) {
-	DEBUG_WORD("coinupCol0")
+	MESSSAGE_DEBUG("coinupCol0")
 }
 
 void coinupChBas(void) {
-	DEBUG_WORD("coinupChBas")
+	MESSSAGE_DEBUG("coinupChBas")
 }
 
 void coinupCrsinh(void) {
-	DEBUG_WORD("coinupCrsinh")
+	MESSSAGE_DEBUG("coinupCrsinh")
 }
 
 void coinupRtClk(void) {
-	DEBUG_WORD("coinupRtClk")
+	MESSSAGE_DEBUG("coinupRtClk")
 }
 
 void coinupDmct(void) {
-	DEBUG_WORD("coinupDmct")
+	MESSSAGE_DEBUG("coinupDmct")
 }
 
 void coinupDlst(void) {
-	DEBUG_WORD("coinupDlst")
+	MESSSAGE_DEBUG("coinupDlst")
 }
 
 void coinupAudCtl(void) {
-	DEBUG_WORD("coinupAudCtl")
+	MESSSAGE_DEBUG("coinupAudCtl")
 }
 
 void coinupSkCtl(void) {
-	DEBUG_WORD("coinupSkCtl")
+	MESSSAGE_DEBUG("coinupSkCtl")
 }
 
 void coinupC4Aud(void) {
-	DEBUG_WORD("coinupC4Aud")
+	MESSSAGE_DEBUG("coinupC4Aud")
 }
 
 void coinupF4Aud(void) {
-	DEBUG_WORD("coinupF4Aud")
+	MESSSAGE_DEBUG("coinupF4Aud")
 }
 
 void coinupC3Aud(void) {
-	DEBUG_WORD("coinupC3Aud")
+	MESSSAGE_DEBUG("coinupC3Aud")
 }
 
 void coinupF3Aud(void) {
-	DEBUG_WORD("coinupF3Aud")
+	MESSSAGE_DEBUG("coinupF3Aud")
 }
 
 void coinupC2Aud(void) {
-	DEBUG_WORD("coinupC2Aud")
+	MESSSAGE_DEBUG("coinupC2Aud")
 }
 
 void coinupF2Aud(void) {
-	DEBUG_WORD("coinupF2Aud")
+	MESSSAGE_DEBUG("coinupF2Aud")
 }
 
 void coinupC1Aud(void) {
-	DEBUG_WORD("coinupC1Aud")
+	MESSSAGE_DEBUG("coinupC1Aud")
 }
 
 void coinupF1Aud(void) {
-	DEBUG_WORD("coinupF1Aud")
+	MESSSAGE_DEBUG("coinupF1Aud")
 }
 
 void coinupCn(void) {
-	DEBUG_WORD("coinupCn")
+	MESSSAGE_DEBUG("coinupCn")
 }
 
 void coinupEditor(void) {
-	DEBUG_WORD("coinupEditor")
+	MESSSAGE_DEBUG("coinupEditor")
 }
 
 void coinupArray(void) {
-	DEBUG_WORD("coinupArray")
+	MESSSAGE_DEBUG("coinupArray")
 }
 
 void coinupAlloc(void) {
-	DEBUG_WORD("coinupAlloc")
+	MESSSAGE_DEBUG("coinupAlloc")
 }
 
 void coinupTbl(void) {
-	DEBUG_WORD("coinupTbl")
+	MESSSAGE_DEBUG("coinupTbl")
 }
 
 void coinupBackslashBackslash(void) {
-	DEBUG_WORD("coinupBackslashBackslash")
+	MESSSAGE_DEBUG("coinupBackslashBackslash")
 }
 
 void coinupBDump(void) {
-	DEBUG_WORD("coinupBDump")
+	MESSSAGE_DEBUG("coinupBDump")
 }
 
 void coinupHQ(void) {
-	DEBUG_WORD("coinupHQ")
+	MESSSAGE_DEBUG("coinupHQ")
 }
 
 void coinupHh(void) {
-	DEBUG_WORD("coinupHh")
+	MESSSAGE_DEBUG("coinupHh")
 }
 
 void coinupChQ(void) {
-	DEBUG_WORD("coinupChQ")
+	MESSSAGE_DEBUG("coinupChQ")
 }
 
 void coinupChH(void) {
-	DEBUG_WORD("coinupChH")
+	MESSSAGE_DEBUG("coinupChH")
 }
 
 void coinupHd(void) {
-	DEBUG_WORD("coinupHd")
+	MESSSAGE_DEBUG("coinupHd")
 }
 
 void coinupTwoStar(void) {
-	DEBUG_WORD("coinupTwoStar")
+	MESSSAGE_DEBUG("coinupTwoStar")
 }
 
 void coinupZeroSet(void) {
-	DEBUG_WORD("coinupZeroSet")
+	MESSSAGE_DEBUG("coinupZeroSet")
 }
 
 void coinupOneMinus(void) {
-	DEBUG_WORD("coinupOneMinus")
+	MESSSAGE_DEBUG("coinupOneMinus")
 }
 
 void coinupOnePlusStore(void) {
-	DEBUG_WORD("coinupOnePlusStore")
+	MESSSAGE_DEBUG("coinupOnePlusStore")
 }
 
 void coinupCode(void) {
-	DEBUG_WORD("coinupCode")
+	MESSSAGE_DEBUG("coinupCode")
 }
 
 void coinupAssembler(void) {
-	DEBUG_WORD("coinupAssembler")
+	MESSSAGE_DEBUG("coinupAssembler")
 }
 
 void coinupVList(void) {
-	DEBUG_WORD("coinupVList")
+	MESSSAGE_DEBUG("coinupVList")
 }
 
 void coinupTriad(void) {
-	DEBUG_WORD("coinupTriad")
+	MESSSAGE_DEBUG("coinupTriad")
 }
 
 void coinupIndex(void) {
-	DEBUG_WORD("coinupIndex")
+	MESSSAGE_DEBUG("coinupIndex")
 }
 
 void coinupQ(void) {
-	DEBUG_WORD("coinupQ")
+	MESSSAGE_DEBUG("coinupQ")
 }
 
 void coinupDot(void) {
-	DEBUG_WORD("coinupDot")
+	MESSSAGE_DEBUG("coinupDot")
 }
 
 void coinupDotR(void) {
-	DEBUG_WORD("coinupDotR")
+	MESSSAGE_DEBUG("coinupDotR")
 }
 
 void coinupDDot(void) {
-	DEBUG_WORD("coinupDDot")
+	MESSSAGE_DEBUG("coinupDDot")
 }
 
 void coinupDDotR(void) {
-	DEBUG_WORD("coinupDDotR")
+	MESSSAGE_DEBUG("coinupDDotR")
 }
 
 void coinupNumS(void) {
-	DEBUG_WORD("coinupNumS")
+	MESSSAGE_DEBUG("coinupNumS")
 }
 
 void coinupNum(void) {
-	DEBUG_WORD("coinupNum")
+	MESSSAGE_DEBUG("coinupNum")
 }
 
 void coinupSign(void) {
-	DEBUG_WORD("coinupSign")
+	MESSSAGE_DEBUG("coinupSign")
 }
 
 void coinupNumGreater(void) {
-	DEBUG_WORD("coinupNumGreater")
+	MESSSAGE_DEBUG("coinupNumGreater")
 }
 
 void coinupLessNum(void) {
-	DEBUG_WORD("coinupLessNum")
+	MESSSAGE_DEBUG("coinupLessNum")
 }
 
 void coinupSpaces(void) {
-	DEBUG_WORD("coinupSpaces")
+	MESSSAGE_DEBUG("coinupSpaces")
 }
 
 void coinupWhile(void) {
-	DEBUG_WORD("coinupWhile")
+	MESSSAGE_DEBUG("coinupWhile")
 }
 
 void coinupElse(void) {
-	DEBUG_WORD("coinupElse")
+	MESSSAGE_DEBUG("coinupElse")
 }
 
 void coinupIf(void) {
-	DEBUG_WORD("coinupIf")
+	MESSSAGE_DEBUG("coinupIf")
 }
 
 void coinupRepeat(void) {
-	DEBUG_WORD("coinupRepeat")
+	MESSSAGE_DEBUG("coinupRepeat")
 }
 
 void coinupAgain(void) {
-	DEBUG_WORD("coinupAgain")
+	MESSSAGE_DEBUG("coinupAgain")
 }
 
 void coinupEnd(void) {
-	DEBUG_WORD("coinupEnd")
+	MESSSAGE_DEBUG("coinupEnd")
 }
 
 void coinupUntil(void) {
-	DEBUG_WORD("coinupUntil")
+	MESSSAGE_DEBUG("coinupUntil")
 }
 
 void coinupPlusLoop(void) {
-	DEBUG_WORD("coinupPlusLoop")
+	MESSSAGE_DEBUG("coinupPlusLoop")
 }
 
 void coinupLoop(void) {
-	DEBUG_WORD("coinupLoop")
+	MESSSAGE_DEBUG("coinupLoop")
 }
 
 void coinupDo(void) {
-	DEBUG_WORD("coinupDo")
+	MESSSAGE_DEBUG("coinupDo")
 }
 
 void coinupThen(void) {
-	DEBUG_WORD("coinupThen")
+	MESSSAGE_DEBUG("coinupThen")
 }
 
 void coinupEndIf(void) {
-	DEBUG_WORD("coinupEndIf")
+	MESSSAGE_DEBUG("coinupEndIf")
 }
 
 void coinupBegin(void) {
-	DEBUG_WORD("coinupBegin")
+	MESSSAGE_DEBUG("coinupBegin")
 }
 
 void coinupBack(void) {
-	DEBUG_WORD("coinupBack")
+	MESSSAGE_DEBUG("coinupBack")
 }
 
 void coinupForget(void) {
-	DEBUG_WORD("coinupForget")
+	MESSSAGE_DEBUG("coinupForget")
 }
 
 void coinupTick(void) {
-	DEBUG_WORD("coinupTick")
+	MESSSAGE_DEBUG("coinupTick")
 }
 
 void coinupUpdate(void) {
-	DEBUG_WORD("coinupUpdate")
+	MESSSAGE_DEBUG("coinupUpdate")
 }
 
 void coinupFlush(void) {
-	DEBUG_WORD("coinupFlush")
+	MESSSAGE_DEBUG("coinupFlush")
 }
 
 void coinupRSlashW(void) {
-	DEBUG_WORD("coinupRSlashW")
+	MESSSAGE_DEBUG("coinupRSlashW")
 }
 
 void coinupDdIo(void) {
-	DEBUG_WORD("coinupDdIo")
+	MESSSAGE_DEBUG("coinupDdIo")
 }
 
 void coinupDIo(void) {
-	DEBUG_WORD("coinupDIo")
+	MESSSAGE_DEBUG("coinupDIo")
 }
 
 void coinupSecIo(void) {
-	DEBUG_WORD("coinupSecIo")
+	MESSSAGE_DEBUG("coinupSecIo")
 }
 
 void coinupSio(void) {
-	DEBUG_WORD("coinupSio")
+	MESSSAGE_DEBUG("coinupSio")
 }
 
 void coinupDecMap(void) {
-	DEBUG_WORD("coinupDecMap")
+	MESSSAGE_DEBUG("coinupDecMap")
 }
 
 void coinupType(void) {
-	DEBUG_WORD("coinupType")
+	MESSSAGE_DEBUG("coinupType")
 }
 
 void coinupQTerminal(void) {
-	DEBUG_WORD("coinupQTerminal")
+	MESSSAGE_DEBUG("coinupQTerminal")
 }
 
 void coinupCr(void) {
-	DEBUG_WORD("coinupCr")
+	MESSSAGE_DEBUG("coinupCr")
 }
 
 void coinupEmit(void) {
-	DEBUG_WORD("coinupEmit")
+	MESSSAGE_DEBUG("coinupEmit")
 }
 
 void coinupKey(void) {
-	DEBUG_WORD("coinupKey")
+	MESSSAGE_DEBUG("coinupKey")
 }
 
 void coinupTciov(void) {
-	DEBUG_WORD("coinupTciov")
+	MESSSAGE_DEBUG("coinupTciov")
 }
 
 void coinupIcAl(void) {
-	DEBUG_WORD("coinupIcAl")
+	MESSSAGE_DEBUG("coinupIcAl")
 }
 
 void coinupIcLl(void) {
-	DEBUG_WORD("coinupIcLl")
+	MESSSAGE_DEBUG("coinupIcLl")
 }
 
 void coinupIcCm(void) {
-	DEBUG_WORD("coinupIcCm")
+	MESSSAGE_DEBUG("coinupIcCm")
 }
 
 void coinupTo(void) {
-	DEBUG_WORD("coinupTo")
+	MESSSAGE_DEBUG("coinupTo")
 }
 
 void coinupLoad(void) {
-	DEBUG_WORD("coinupLoad")
+	MESSSAGE_DEBUG("coinupLoad")
 }
 
 void coinupMessage(void) {
-	DEBUG_WORD("coinupMessage")
+	MESSSAGE_DEBUG("coinupMessage")
 }
 
 void coinupDotLine(void) {
-	DEBUG_WORD("coinupDotLine")
+	MESSSAGE_DEBUG("coinupDotLine")
 }
 
 void coinupYLine(void) {
-	DEBUG_WORD("coinupYLine")
+	MESSSAGE_DEBUG("coinupYLine")
 }
 
 void coinupBlock(void) {
-	DEBUG_WORD("coinupBlock")
+	MESSSAGE_DEBUG("coinupBlock")
 }
 
 void coinupBuffer(void) {
-	DEBUG_WORD("coinupBuffer")
+	MESSSAGE_DEBUG("coinupBuffer")
 }
 
 void coinupBfnd(void) {
-	DEBUG_WORD("coinupBfnd")
+	MESSSAGE_DEBUG("coinupBfnd")
 }
 
 void coinupDr1(void) {
-	DEBUG_WORD("coinupDr1")
+	MESSSAGE_DEBUG("coinupDr1")
 }
 
 void coinupDr0(void) {
-	DEBUG_WORD("coinupDr0")
+	MESSSAGE_DEBUG("coinupDr0")
 }
 
 void coinupEmptyBuffers(void) {
-	DEBUG_WORD("coinupEmptyBuffers")
+	MESSSAGE_DEBUG("coinupEmptyBuffers")
 }
 
 void coinupAlt(void) {
-	DEBUG_WORD("coinupAlt")
+	MESSSAGE_DEBUG("coinupAlt")
 }
 
 void coinupPrev(void) {
-	DEBUG_WORD("coinupPrev")
+	MESSSAGE_DEBUG("coinupPrev")
 }
 
 void coinupPtab(void) {
-	DEBUG_WORD("coinupPtab")
+	MESSSAGE_DEBUG("coinupPtab")
 }
 
 void coinupMSlashMod(void) {
-	DEBUG_WORD("coinupMSlashMod")
+	MESSSAGE_DEBUG("coinupMSlashMod")
 }
 
 void coinupStarSlash(void) {
-	DEBUG_WORD("coinupStarSlash")
+	MESSSAGE_DEBUG("coinupStarSlash")
 }
 
 void coinupStarSlashMod(void) {
-	DEBUG_WORD("coinupStarSlashMod")
+	MESSSAGE_DEBUG("coinupStarSlashMod")
 }
 
 void coinupMod(void) {
-	DEBUG_WORD("coinupMod")
+	MESSSAGE_DEBUG("coinupMod")
 }
 
 void coinupSlash(void) {
-	DEBUG_WORD("coinupSlash")
+	MESSSAGE_DEBUG("coinupSlash")
 }
 
 void coinupslashMod(void) {
-	DEBUG_WORD("coinupslashMod")
+	MESSSAGE_DEBUG("coinupslashMod")
 }
 
 void coinupStar(void) {
-	DEBUG_WORD("coinupStar")
+	MESSSAGE_DEBUG("coinupStar")
 }
 
 void coinupMSlash(void) {
-	DEBUG_WORD("coinupMSlash")
+	MESSSAGE_DEBUG("coinupMSlash")
 }
 
 void coinupMStar(void) {
-	DEBUG_WORD("coinupMStar")
+	MESSSAGE_DEBUG("coinupMStar")
 }
 
 void coinupMax(void) {
-	DEBUG_WORD("coinupMax")
+	MESSSAGE_DEBUG("coinupMax")
 }
 
 void coinupMin(void) {
-	DEBUG_WORD("coinupMin")
+	MESSSAGE_DEBUG("coinupMin")
 }
 
 void coinupDAbs(void) {
-	DEBUG_WORD("coinupDAbs")
+	MESSSAGE_DEBUG("coinupDAbs")
 }
 
 void coinupAbs(void) {
-	DEBUG_WORD("coinupAbs")
+	MESSSAGE_DEBUG("coinupAbs")
 }
 
 void coinupDPlusMinus(void) {
-	DEBUG_WORD("coinupDPlusMinus")
+	MESSSAGE_DEBUG("coinupDPlusMinus")
 }
 
 void coinupPlusMinus(void) {
-	DEBUG_WORD("coinupPlusMinus")
+	MESSSAGE_DEBUG("coinupPlusMinus")
 }
 
 void coinupSToD(void) {
-	DEBUG_WORD("coinupSToD")
+	MESSSAGE_DEBUG("coinupSToD")
 }
 
 void coinupCold(void) {
-	DEBUG_WORD("coinupCold")
+	MESSSAGE_DEBUG("coinupCold")
 }
 
 void coinupAbort(void) {
-	DEBUG_WORD("coinupAbort")
+	MESSSAGE_DEBUG("coinupAbort")
 }
 
 void coinupQuit(void) {
-	DEBUG_WORD("coinupQuit")
+	MESSSAGE_DEBUG("coinupQuit")
 }
 
 void coinupParen(void) {
-	DEBUG_WORD("coinupParen")
+	MESSSAGE_DEBUG("coinupParen")
 }
 
 void coinupDefinitions(void) {
-	DEBUG_WORD("coinupDefinitions")
+	MESSSAGE_DEBUG("coinupDefinitions")
 }
 
 void coinupForth(void) {
-	DEBUG_WORD("coinupForth")
+	MESSSAGE_DEBUG("coinupForth")
 }
 
 void coinupVocabulary(void) {
-	DEBUG_WORD("coinupVocabulary")
+	MESSSAGE_DEBUG("coinupVocabulary")
 }
 
 void coinupImmediate(void) {
-	DEBUG_WORD("coinupImmediate")
+	MESSSAGE_DEBUG("coinupImmediate")
 }
 
 void coinupInterpret(void) {
-	DEBUG_WORD("coinupInterpret")
+	MESSSAGE_DEBUG("coinupInterpret")
 }
 
 void coinupQStack(void) {
-	DEBUG_WORD("coinupQStack")
+	MESSSAGE_DEBUG("coinupQStack")
 }
 
 void coinupDLiteral(void) {
-	DEBUG_WORD("coinupDLiteral")
+	MESSSAGE_DEBUG("coinupDLiteral")
 }
 
 void coinupLiteral(void) {
-	DEBUG_WORD("coinupLiteral")
+	MESSSAGE_DEBUG("coinupLiteral")
 }
 
 void coinupXCompile(void) {
-	DEBUG_WORD("coinupXCompile")
+	MESSSAGE_DEBUG("coinupXCompile")
 }
 
 void coinupCreate(void) {
-	DEBUG_WORD("coinupCreate")
+	MESSSAGE_DEBUG("coinupCreate")
 }
 
 void coinupIdDot(void) {
-	DEBUG_WORD("coinupIdDot")
+	MESSSAGE_DEBUG("coinupIdDot")
 }
 
 void coinupError(void) {
-	DEBUG_WORD("coinupError")
+	MESSSAGE_DEBUG("coinupError")
 }
 
 void coinupYAbort(void) {
-	DEBUG_WORD("coinupYAbort")
+	MESSSAGE_DEBUG("coinupYAbort")
 }
 
 void coinupMinusFind(void) {
-	DEBUG_WORD("coinupMinusFind")
+	MESSSAGE_DEBUG("coinupMinusFind")
 }
 
 void coinupHash(void) {
-	DEBUG_WORD("coinupHash")
+	MESSSAGE_DEBUG("coinupHash")
 }
 
 void coinupNumber(void) {
-	DEBUG_WORD("coinupNumber")
+	MESSSAGE_DEBUG("coinupNumber")
 }
 
 void coinupYNumber(void) {
-	DEBUG_WORD("coinupYNumber")
+	MESSSAGE_DEBUG("coinupYNumber")
 }
 
 void coinup7Bits(void) {
-	DEBUG_WORD("coinup7Bits")
+	MESSSAGE_DEBUG("coinup7Bits")
 }
 
 void coinupWord(void) {
-	DEBUG_WORD("coinupWord")
+	MESSSAGE_DEBUG("coinupWord")
 }
 
 void coinupPad(void) {
-	DEBUG_WORD("coinupPad")
+	MESSSAGE_DEBUG("coinupPad")
 }
 
 void coinupHold(void) {
-	DEBUG_WORD("coinupHold")
+	MESSSAGE_DEBUG("coinupHold")
 }
 
 void coinupBlanks(void) {
-	DEBUG_WORD("coinupBlanks")
+	MESSSAGE_DEBUG("coinupBlanks")
 }
 
 void coinupErase(void) {
-	DEBUG_WORD("coinupErase")
+	MESSSAGE_DEBUG("coinupErase")
 }
 
 void coinupFill(void) {
-	DEBUG_WORD("coinupFill")
+	MESSSAGE_DEBUG("coinupFill")
 }
 
 void coinupHeart(void) {
-	DEBUG_WORD("coinupHeart")
+	MESSSAGE_DEBUG("coinupHeart")
 }
 
 void coinupQuery(void) {
-	DEBUG_WORD("coinupQuery")
+	MESSSAGE_DEBUG("coinupQuery")
 }
 
 void coinupExpect(void) {
-	DEBUG_WORD("coinupExpect")
+	MESSSAGE_DEBUG("coinupExpect")
 }
 
 void coinupDotQuote(void) {
-	DEBUG_WORD("coinupDotQuote")
+	MESSSAGE_DEBUG("coinupDotQuote")
 }
 
 void coinupParenDotQuote(void) {
-	DEBUG_WORD("coinupParenDotQuote")
+	MESSSAGE_DEBUG("coinupParenDotQuote")
 }
 
 void coinupTrailing(void) {
-	DEBUG_WORD("coinupTrailing")
+	MESSSAGE_DEBUG("coinupTrailing")
 }
 
 void coinupCount(void) {
-	DEBUG_WORD("coinupCount")
+	MESSSAGE_DEBUG("coinupCount")
 }
 
 void coinupDoes(void) {
-	DEBUG_WORD("coinupDoes")
+	MESSSAGE_DEBUG("coinupDoes")
 }
 
 void coinupBuilds(void) {
-	DEBUG_WORD("coinupBuilds")
+	MESSSAGE_DEBUG("coinupBuilds")
 }
 
 void coinupSemicolonCode(void) {
-	DEBUG_WORD("coinupSemicolonCode")
+	MESSSAGE_DEBUG("coinupSemicolonCode")
 }
 
 void coinupYSemicolonCode(void) {
-	DEBUG_WORD("coinupYSemicolonCode")
+	MESSSAGE_DEBUG("coinupYSemicolonCode")
 }
 
 void coinupDecimal(void) {
-	DEBUG_WORD("coinupDecimal")
+	MESSSAGE_DEBUG("coinupDecimal")
 }
 
 void coinupHex(void) {
-	DEBUG_WORD("coinupHex")
+	MESSSAGE_DEBUG("coinupHex")
 }
 
 void coinupSmudge(void) {
-	DEBUG_WORD("coinupSmudge")
+	MESSSAGE_DEBUG("coinupSmudge")
 }
 
 void coinupRightBracket(void) {
-	DEBUG_WORD("coinupRightBracket")
+	MESSSAGE_DEBUG("coinupRightBracket")
 }
 
 void coinupLeftBracket(void) {
-	DEBUG_WORD("coinupLeftBracket")
+	MESSSAGE_DEBUG("coinupLeftBracket")
 }
 
 void coinupCompile(void) {
-	DEBUG_WORD("coinupCompile")
+	MESSSAGE_DEBUG("coinupCompile")
 }
 
 void coinupQLoading(void) {
-	DEBUG_WORD("coinupQLoading")
+	MESSSAGE_DEBUG("coinupQLoading")
 }
 
 void coinupQCsp(void) {
-	DEBUG_WORD("coinupQCsp")
+	MESSSAGE_DEBUG("coinupQCsp")
 }
 
 void coinupQPairs(void) {
-	DEBUG_WORD("coinupQPairs")
+	MESSSAGE_DEBUG("coinupQPairs")
 }
 
 void coinupQExec(void) {
-	DEBUG_WORD("coinupQExec")
+	MESSSAGE_DEBUG("coinupQExec")
 }
 
 void coinupQComp(void) {
-	DEBUG_WORD("coinupQComp")
+	MESSSAGE_DEBUG("coinupQComp")
 }
 
 void coinupQError(void) {
-	DEBUG_WORD("coinupQError")
+	MESSSAGE_DEBUG("coinupQError")
 }
 
 void coinupStoreCsp(void) {
-	DEBUG_WORD("coinupStoreCsp")
+	MESSSAGE_DEBUG("coinupStoreCsp")
 }
 
 void coinupLfa(void) {
-	DEBUG_WORD("coinupLfa")
+	MESSSAGE_DEBUG("coinupLfa")
 }
 
 void coinupPfa(void) {
-	DEBUG_WORD("coinupPfa")
+	MESSSAGE_DEBUG("coinupPfa")
 }
 
 void coinupNfa(void) {
-	DEBUG_WORD("coinupNfa")
+	MESSSAGE_DEBUG("coinupNfa")
 }
 
 void coinupCfa(void) {
-	DEBUG_WORD("coinupCfa")
+	MESSSAGE_DEBUG("coinupCfa")
 }
 
 void coinupLatest(void) {
-	DEBUG_WORD("coinupLatest")
+	MESSSAGE_DEBUG("coinupLatest")
 }
 
 void coinupTraverse(void) {
-	DEBUG_WORD("coinupTraverse")
+	MESSSAGE_DEBUG("coinupTraverse")
 }
 
 void coinupMinusDup(void) {
-	DEBUG_WORD("coinupMinusDup")
+	MESSSAGE_DEBUG("coinupMinusDup")
 }
 
 void coinupSpace(void) {
-	DEBUG_WORD("coinupSpace")
+	MESSSAGE_DEBUG("coinupSpace")
 }
 
 void coinupRot(void) {
-	DEBUG_WORD("coinupRot")
+	MESSSAGE_DEBUG("coinupRot")
 }
 
 void coinupGreater(void) {
-	DEBUG_WORD("coinupGreater")
+	MESSSAGE_DEBUG("coinupGreater")
 }
 
 void coinupEqual(void) {
-	DEBUG_WORD("coinupEqual")
+	MESSSAGE_DEBUG("coinupEqual")
 }
 
 void coinupMinus(void) {
-	DEBUG_WORD("coinupMinus")
+	MESSSAGE_DEBUG("coinupMinus")
 }
 
 void coinupCComma(void) {
-	DEBUG_WORD("coinupCComma")
+	MESSSAGE_DEBUG("coinupCComma")
 }
 
 void coinupComma(void) {
-	DEBUG_WORD("coinupComma")
+	MESSSAGE_DEBUG("coinupComma")
 }
 
 void coinupAllot(void) {
-	DEBUG_WORD("coinupAllot")
+	MESSSAGE_DEBUG("coinupAllot")
 }
 
 void coinupHere(void) {
-	DEBUG_WORD("coinupHere")
+	MESSSAGE_DEBUG("coinupHere")
 }
 
 void coinupTwoPlus(void) {
-	DEBUG_WORD("coinupTwoPlus")
+	MESSSAGE_DEBUG("coinupTwoPlus")
 }
 
 void coinupOnePlus(void) {
-	DEBUG_WORD("coinupOnePlus")
+	MESSSAGE_DEBUG("coinupOnePlus")
 }
 
 void coinupPhysOff(void) {
-	DEBUG_WORD("coinupPhysOff")
+	MESSSAGE_DEBUG("coinupPhysOff")
 }
 
 void coinupInpt(void) {
-	DEBUG_WORD("coinupInpt")
+	MESSSAGE_DEBUG("coinupInpt")
 }
 
 void coinupHld(void) {
-	DEBUG_WORD("coinupHld")
+	MESSSAGE_DEBUG("coinupHld")
 }
 
 void coinupRNum(void) {
-	DEBUG_WORD("coinupRNum")
+	MESSSAGE_DEBUG("coinupRNum")
 }
 
 void coinupCsp(void) {
-	DEBUG_WORD("coinupCsp")
+	MESSSAGE_DEBUG("coinupCsp")
 }
 
 void coinupFld(void) {
-	DEBUG_WORD("coinupFld")
+	MESSSAGE_DEBUG("coinupFld")
 }
 
 void coinupDpl(void) {
-	DEBUG_WORD("coinupDpl")
+	MESSSAGE_DEBUG("coinupDpl")
 }
 
 void coinupBase(void) {
-	DEBUG_WORD("coinupBase")
+	MESSSAGE_DEBUG("coinupBase")
 }
 
 void coinupState(void) {
-	DEBUG_WORD("coinupState")
+	MESSSAGE_DEBUG("coinupState")
 }
 
 void coinupCurrent(void) {
-	DEBUG_WORD("coinupCurrent")
+	MESSSAGE_DEBUG("coinupCurrent")
 }
 
 void coinupContext(void) {
-	DEBUG_WORD("coinupContext")
+	MESSSAGE_DEBUG("coinupContext")
 }
 
 void coinupOffset(void) {
-	DEBUG_WORD("coinupOffset")
+	MESSSAGE_DEBUG("coinupOffset")
 }
 
 void coinupScr(void) {
-	DEBUG_WORD("coinupScr")
+	MESSSAGE_DEBUG("coinupScr")
 }
 
 void coinupOut(void) {
-	DEBUG_WORD("coinupOut")
+	MESSSAGE_DEBUG("coinupOut")
 }
 
 void coinupIn(void) {
-	DEBUG_WORD("coinupIn")
+	MESSSAGE_DEBUG("coinupIn")
 }
 
 void coinupBlk(void) {
-	DEBUG_WORD("coinupBlk")
+	MESSSAGE_DEBUG("coinupBlk")
 }
 
 void coinupVocLink(void) {
-	DEBUG_WORD("coinupVocLink")
+	MESSSAGE_DEBUG("coinupVocLink")
 }
 
 void coinupDp(void) {
-	DEBUG_WORD("coinupDp")
+	MESSSAGE_DEBUG("coinupDp")
 }
 
 void coinupFence(void) {
-	DEBUG_WORD("coinupFence")
+	MESSSAGE_DEBUG("coinupFence")
 }
 
 void coinupWarning(void) {
-	DEBUG_WORD("coinupWarning")
+	MESSSAGE_DEBUG("coinupWarning")
 }
 
 void coinupWidth(void) {
-	DEBUG_WORD("coinupWidth")
+	MESSSAGE_DEBUG("coinupWidth")
 }
 
 void coinupTib(void) {
-	DEBUG_WORD("coinupTib")
+	MESSSAGE_DEBUG("coinupTib")
 }
 
 void coinupPlusOrigin(void) {
-	DEBUG_WORD("coinupPlusOrigin")
+	MESSSAGE_DEBUG("coinupPlusOrigin")
 }
 
 void coinupHimem(void) {
-	DEBUG_WORD("coinupHimem")
+	MESSSAGE_DEBUG("coinupHimem")
 }
 
 void coinupBSlashScr(void) {
-	DEBUG_WORD("coinupBSlashScr")
+	MESSSAGE_DEBUG("coinupBSlashScr")
 }
 
 void coinupBSlashBuf(void) {
-	DEBUG_WORD("coinupBSlashScr")
+	MESSSAGE_DEBUG("coinupBSlashScr")
 }
 
 void coinupLimit(void) {
-	DEBUG_WORD("coinupLimit")
+	MESSSAGE_DEBUG("coinupLimit")
 }
 
 void coinupFirst(void) {
-	DEBUG_WORD("coinupFirst")
+	MESSSAGE_DEBUG("coinupFirst")
 }
 
 void coinupNumLinks(void) {
-	DEBUG_WORD("coinupNumLinks")
+	MESSSAGE_DEBUG("coinupNumLinks")
 }
 
 void coinupCSlashL(void) {
-	DEBUG_WORD("coinupCSlashL")
+	MESSSAGE_DEBUG("coinupCSlashL")
 }
 
 void coinupCl(void) {
-	DEBUG_WORD("coinupCl")
+	MESSSAGE_DEBUG("coinupCl")
 }
 
 void coinupBl(void) {
-	DEBUG_WORD("coinupBl")
+	MESSSAGE_DEBUG("coinupBl")
 }
 
 void coinupThree(void) {
-	DEBUG_WORD("coinupThree")
+	MESSSAGE_DEBUG("coinupThree")
 }
 
 void coinupTwo(void) {
-	DEBUG_WORD("coinupTwo")
+	MESSSAGE_DEBUG("coinupTwo")
 }
 
 void coinupOne(void) {
-	DEBUG_WORD("coinupOne")
+	MESSSAGE_DEBUG("coinupOne")
 }
 
 void coinupZero(void) {
-	DEBUG_WORD("coinupZero")
+	MESSSAGE_DEBUG("coinupZero")
 }
 
 void coinupUser(void) {
-	DEBUG_WORD("coinupUser")
+	MESSSAGE_DEBUG("coinupUser")
 }
 
 void coinupVariable(void) {
-	DEBUG_WORD("coinupVariable")
+	MESSSAGE_DEBUG("coinupVariable")
 }
 
 void coinupConstant(void) {
-	DEBUG_WORD("coinupConstant")
+	MESSSAGE_DEBUG("coinupConstant")
 }
 
 void coinupSemicolon(void) {
-	DEBUG_WORD("coinupSemicolon")
+	MESSSAGE_DEBUG("coinupSemicolon")
 }
 
 void coinupColon(void) {
-	DEBUG_WORD("coinupColon")
+	MESSSAGE_DEBUG("coinupColon")
 }
 
 void coinupCStore(void) {
-	DEBUG_WORD("coinupCStore")
+	MESSSAGE_DEBUG("coinupCStore")
 }
 
 void coinupStore(void) {
-	DEBUG_WORD("coinupStore")
+	MESSSAGE_DEBUG("coinupStore")
 }
 
 void coinupCFetch(void) {
-	DEBUG_WORD("coinupCFetch")
+	MESSSAGE_DEBUG("coinupCFetch")
 }
 
 void coinupFetch(void) {
-	DEBUG_WORD("coinupCFetch")
+	MESSSAGE_DEBUG("coinupCFetch")
 }
 
 void coinupToggle(void) {
-	DEBUG_WORD("coinupToggle")
+	MESSSAGE_DEBUG("coinupToggle")
 }
 
 void coinupPlusStore(void) {
-	DEBUG_WORD("coinupPlusStore")
+	MESSSAGE_DEBUG("coinupPlusStore")
 }
 
 void coinupDup(void) {
-	DEBUG_WORD("coinupDup")
+	MESSSAGE_DEBUG("coinupDup")
 }
 
 void coinupSwap(void) {
-	DEBUG_WORD("coinupSwap")
+	MESSSAGE_DEBUG("coinupSwap")
 }
 
 void coinupDrop(void) {
-	DEBUG_WORD("coinupDrop")
+	MESSSAGE_DEBUG("coinupDrop")
 }
 
 void coinupOver(void) {
-	DEBUG_WORD("coinupOver")
+	MESSSAGE_DEBUG("coinupOver")
 }
 
 void coinupDMinus(void) {
-	DEBUG_WORD("coinupDMinus")
+	MESSSAGE_DEBUG("coinupDMinus")
 }
 
 void coinupMinusWord(void) {
-	DEBUG_WORD("coinupMinusWord")
+	MESSSAGE_DEBUG("coinupMinusWord")
 }
 
 void coinupDPlus(void) {
-	DEBUG_WORD("coinupDPlus")
+	MESSSAGE_DEBUG("coinupDPlus")
 }
 
 void coinupPlus(void) {
-	DEBUG_WORD("coinupPlus")
+	MESSSAGE_DEBUG("coinupPlus")
 }
 
 void coinupLess(void) {
-	DEBUG_WORD("coinupLess")
+	MESSSAGE_DEBUG("coinupLess")
 }
 
 void coinupULess(void) {
-	DEBUG_WORD("coinupULess")
+	MESSSAGE_DEBUG("coinupULess")
 }
 
 void coinupZeroLess(void) {
-	DEBUG_WORD("coinupZeroLess")
+	MESSSAGE_DEBUG("coinupZeroLess")
 }
 
 void coinupZeroEqual(void) {
-	DEBUG_WORD("coinupZeroEqual")
+	MESSSAGE_DEBUG("coinupZeroEqual")
 }
 
 void coinupR(void) {
-	DEBUG_WORD("coinupR")
+	MESSSAGE_DEBUG("coinupR")
 }
 
 void coinupRTo(void) {
-	DEBUG_WORD("coinupRTo")
+	MESSSAGE_DEBUG("coinupRTo")
 }
 
 void coinupGreaterR(void) {
-	DEBUG_WORD("coinupGreaterR")
+	MESSSAGE_DEBUG("coinupGreaterR")
 }
 
 void coinupLeave(void) {
-	DEBUG_WORD("coinupLeave")
+	MESSSAGE_DEBUG("coinupLeave")
 }
 
 void coinupSemicolonS(void) {
-	DEBUG_WORD("coinupSemicolonS")
+	MESSSAGE_DEBUG("coinupSemicolonS")
 }
 
 void coinupRPStoreye(void) {
-	DEBUG_WORD("coinupRPStoreye")
+	MESSSAGE_DEBUG("coinupRPStoreye")
 }
 
 void coinupSPStore(void) {
-	DEBUG_WORD("coinupSPStore")
+	MESSSAGE_DEBUG("coinupSPStore")
 }
 
 void coinupSPFetch(void) {
-	DEBUG_WORD("coinupSPFetch")
+	MESSSAGE_DEBUG("coinupSPFetch")
 }
 
 void coinupXor(void) {
-	DEBUG_WORD("coinupXor")
+	MESSSAGE_DEBUG("coinupXor")
 }
 
 void coinupOr(void) {
-	DEBUG_WORD("coinupOr")
+	MESSSAGE_DEBUG("coinupOr")
 }
 
 void coinupAnd(void) {
-	DEBUG_WORD("coinupAnd")
+	MESSSAGE_DEBUG("coinupAnd")
 }
 
 void coinupUSlash(void) {
-	DEBUG_WORD("coinupUSlash")
+	MESSSAGE_DEBUG("coinupUSlash")
 }
 
 void coinupUStar(void) {
-	DEBUG_WORD("coinupUStar")
+	MESSSAGE_DEBUG("coinupUStar")
 }
 
 void coinupCMove(void) {
-	DEBUG_WORD("coinupCMove")
+	MESSSAGE_DEBUG("coinupCMove")
 }
 
 void coinupD8uStar(void) {
-	DEBUG_WORD("coinupD8uStar")
+	MESSSAGE_DEBUG("coinupD8uStar")
 }
 
 void coinupEnclose(void) {
-	DEBUG_WORD("coinupEnclose")
+	MESSSAGE_DEBUG("coinupEnclose")
 }
 
 void coinupYFind(void) {
-	DEBUG_WORD("coinupYFind")
+	MESSSAGE_DEBUG("coinupYFind")
 }
 
 void coinupDigit(void) {
-	DEBUG_WORD("coinupDigit")
+	MESSSAGE_DEBUG("coinupDigit")
 }
 
 void coinupJ(void) {
-	DEBUG_WORD("coinupJ")
+	MESSSAGE_DEBUG("coinupJ")
 }
 
 void coinupI(void) {
-	DEBUG_WORD("coinupI")
+	MESSSAGE_DEBUG("coinupI")
 }
 
 void coinupYDo(void) {
-	DEBUG_WORD("coinupYDo")
+	MESSSAGE_DEBUG("coinupYDo")
 }
 
 void coinupYPlusLoop(void) {
-	DEBUG_WORD("coinupYPlusLoop")
+	MESSSAGE_DEBUG("coinupYPlusLoop")
 }
 
 void coinupYLoop(void) {
-	DEBUG_WORD("coinupYLoop")
+	MESSSAGE_DEBUG("coinupYLoop")
 }
 
 void coinupZeroBranch(void) {
-	DEBUG_WORD("coinupZeroBranch")
+	MESSSAGE_DEBUG("coinupZeroBranch")
 }
 
 void coinupBranch(void) {
-	DEBUG_WORD("coinupBranch")
+	MESSSAGE_DEBUG("coinupBranch")
 }
 
 void coinupExecute(void) {
-	DEBUG_WORD("coinupExecute")
+	MESSSAGE_DEBUG("coinupExecute")
 }
 
 void coinupLit(void) {
-	DEBUG_WORD("coinupLit")
+	MESSSAGE_DEBUG("coinupLit")
 }
 
 

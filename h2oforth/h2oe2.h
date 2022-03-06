@@ -8,161 +8,161 @@
 
 /* BYE ( ) */
 void eforthBYE(void) {
-	DEBUG_WORD("eforthBYE")
+	MESSSAGE_DEBUG("eforthBYE")
 }
 
 /* ?rx ( ) */
 /* ?key ( ) */
 void eforthKey(void) {
-	DEBUG_WORD("eforthKey")
+	MESSSAGE_DEBUG("eforthKey")
 }
 
 /* tx! ( ) */
 /* emit ( ) */
 void eforthEmit(void) {
-	DEBUG_WORD("eforthEmit")
+	MESSSAGE_DEBUG("eforthEmit")
 }
 
 /* !io ( ) */
 void eforthInitIO(void) {
-	DEBUG_WORD("eforthInitIO")
+	MESSSAGE_DEBUG("eforthInitIO")
 }
 
 /* Inner interpreters */
 
 /* doLIT ( ) */
 void eforthDoLIT(void) {
-	DEBUG_WORD("eforthDoLIT")
+	MESSSAGE_DEBUG("eforthDoLIT")
 }
 
 /* doLIST ( ) */
 void eforthDoLIST(void) {
-	DEBUG_WORD("eforthDoLIST")
+	MESSSAGE_DEBUG("eforthDoLIST")
 }
 
 /* next ( ) */
 void eforthNext(void) {
-	DEBUG_WORD("eforthNext")
+	MESSSAGE_DEBUG("eforthNext")
 }
 
 /* ?branch ( ) */
 void eforthBranchIfZero(void) {
-	DEBUG_WORD("eforthBranchIfZero")
+	MESSSAGE_DEBUG("eforthBranchIfZero")
 }
 
 /* branch ( ) */
 void eforthBranch(void) {
-	DEBUG_WORD("eforthBranch")
+	MESSSAGE_DEBUG("eforthBranch")
 }
 
 /* EXECUTE ( ) */
 void eforthEXECUTE(void) {
-	DEBUG_WORD("eforthEXECUTE")
+	MESSSAGE_DEBUG("eforthEXECUTE")
 }
 
 /* EXIT ( ) */
 void eforthEXIT(void) {
-	DEBUG_WORD("eforthEXIT")
+	MESSSAGE_DEBUG("eforthEXIT")
 }
 
 /* ! ( ) */
 void eforthStore(void) {
-	DEBUG_WORD("eforthStore")
+	MESSSAGE_DEBUG("eforthStore")
 }
 
 /* @ ( ) */
 void eforthFetch(void) {
-	DEBUG_WORD("eforthFetch")
+	MESSSAGE_DEBUG("eforthFetch")
 }
 
 /* C! ( ) */
 void eforthStoreChar(void) {
-	DEBUG_WORD("eforthStoreChar")
+	MESSSAGE_DEBUG("eforthStoreChar")
 }
 
 /* C@ ( ) */
 void eforthFetchChar(void) {
-	DEBUG_WORD("eforthFetchChar")
+	MESSSAGE_DEBUG("eforthFetchChar")
 }
 
 /* RP@ ( ) */
 void eforthFetchRP(void) {
-	DEBUG_WORD("eforthRP")
+	MESSSAGE_DEBUG("eforthRP")
 }
 
 /* RP! ( ) */
 void eforthStoreRP(void) {
-	DEBUG_WORD("eforthStoreRP")
+	MESSSAGE_DEBUG("eforthStoreRP")
 }
 
 /* R> ( ) */
 void eforthRSFrom(void) {
-	DEBUG_WORD("eforthRSFrom")
+	MESSSAGE_DEBUG("eforthRSFrom")
 }
 
 /* R@ ( ) */
 void eforthRSFetch(void) {
-	DEBUG_WORD("eforthRSFrom")
+	MESSSAGE_DEBUG("eforthRSFrom")
 }
 
 /* >R ( ) */
 void eforthToRS(void) {
-	DEBUG_WORD("eforthToRS")
+	MESSSAGE_DEBUG("eforthToRS")
 }
 
 /* SP@ ( ) */
 void eforthFetchSP(void) {
-	DEBUG_WORD("eforthFetchSP")
+	MESSSAGE_DEBUG("eforthFetchSP")
 }
 
 /* SP! ( ) */
 void eforthStoreSP(void) {
-	DEBUG_WORD("eforthStoreSP")
+	MESSSAGE_DEBUG("eforthStoreSP")
 }
 
 /* DROP ( ) */
 void eforthDROP(void) {
-	DEBUG_WORD("eforthDROP")
+	MESSSAGE_DEBUG("eforthDROP")
 }
 
 /* DUP ( ) */
 void eforthDUP(void) {
-	DEBUG_WORD("eforthDUP")
+	MESSSAGE_DEBUG("eforthDUP")
 }
 
 /* SWAP ( ) */
 void eforthSWAP(void) {
-	DEBUG_WORD("eforthSWAP")
+	MESSSAGE_DEBUG("eforthSWAP")
 }
 
 /* OVER ( ) */
 void eforthOVER(void) {
-	DEBUG_WORD("eforthOVER")
+	MESSSAGE_DEBUG("eforthOVER")
 }
 
 /* 0< ( ) */
 void eforthLessThanZero(void) {
-	DEBUG_WORD("eforthLessThanZero")
+	MESSSAGE_DEBUG("eforthLessThanZero")
 }
 
 /* AND ( ) */
 void eforthAND(void) {
-	DEBUG_WORD("eforthAND")
+	MESSSAGE_DEBUG("eforthAND")
 }
 
 /* OR ( ) */
 void eforthOR(void) {
-	DEBUG_WORD("eforthOR")
+	MESSSAGE_DEBUG("eforthOR")
 }
 
 /* XOR ( ) */
 void eforthXOR(void) {
-	DEBUG_WORD("eforthXOR")
+	MESSSAGE_DEBUG("eforthXOR")
 }
 
 /* UM+ ( ) */
 void eforthAddWithCarry(void) {
-	DEBUG_WORD("eforthAddWithCarry")
+	MESSSAGE_DEBUG("eforthAddWithCarry")
 }
 
 #endif
