@@ -6,1227 +6,1227 @@
 /* Primitives */
 
 void hectorForth(void) {
-	MESSSAGE_DEBUG("hectorForth")
+	SMSG_DEBUG("hectorForth")
 }
 
 void hectorEditor(void) {
-	MESSSAGE_DEBUG("hectorEditor")
+	SMSG_DEBUG("hectorEditor")
 }
 
 void hectorList(void) {
-	MESSSAGE_DEBUG("hectorList")
+	SMSG_DEBUG("hectorList")
 }
 
 void hectorTape(void) {
-	MESSSAGE_DEBUG("hectorTape")
+	SMSG_DEBUG("hectorTape")
 }
 
 void hectorName(void) {
-	MESSSAGE_DEBUG("hectorName")
+	SMSG_DEBUG("hectorName")
 }
 
 void hectorFlush(void) {
-	MESSSAGE_DEBUG("hectorFlush")
+	SMSG_DEBUG("hectorFlush")
 }
 
 void hectorDotName(void) {
-	MESSSAGE_DEBUG("hectorDotName")
+	SMSG_DEBUG("hectorDotName")
 }
 
 void hectorBlock(void) {
-	MESSSAGE_DEBUG("hectorBlock")
+	SMSG_DEBUG("hectorBlock")
 }
 
 void hectorZText(void) {
-	MESSSAGE_DEBUG("hectorZText")
+	SMSG_DEBUG("hectorZText")
 }
 
 void hectorOpen(void) {
-	MESSSAGE_DEBUG("hectorOpen")
+	SMSG_DEBUG("hectorOpen")
 }
 
 void hectorBuffer(void) {
-	MESSSAGE_DEBUG("hectorBuffer")
+	SMSG_DEBUG("hectorBuffer")
 }
 
 void hectorNextBlock(void) {
-	MESSSAGE_DEBUG("hectorNextBlock")
+	SMSG_DEBUG("hectorNextBlock")
 }
 
 void hectorLoad(void) {
-	MESSSAGE_DEBUG("hectorLoad")
+	SMSG_DEBUG("hectorLoad")
 }
 
 void hectorUpdate(void) {
-	MESSSAGE_DEBUG("hectorUpdate")
+	SMSG_DEBUG("hectorUpdate")
 }
 
 void hectorPlusBuf(void) {
-	MESSSAGE_DEBUG("hectorPlusBuf")
+	SMSG_DEBUG("hectorPlusBuf")
 }
 
 void hectorPass(void) {
-	MESSSAGE_DEBUG("hectorPass")
+	SMSG_DEBUG("hectorPass")
 }
 
 void hectorVlist(void) {
-	MESSSAGE_DEBUG("hectorVlist")
+	SMSG_DEBUG("hectorVlist")
 }
 
 void hectorRND(void) {
-	MESSSAGE_DEBUG("hectorRND")
+	SMSG_DEBUG("hectorRND")
 }
 
 void hectorRandom(void) {
-	MESSSAGE_DEBUG("hectorRandom")
+	SMSG_DEBUG("hectorRandom")
 }
 
 void hectorImage(void) {
-	MESSSAGE_DEBUG("hectorImage")
+	SMSG_DEBUG("hectorImage")
 }
 
 void hectorMask(void) {
-	MESSSAGE_DEBUG("hectorMask")
+	SMSG_DEBUG("hectorMask")
 }
 
 void hectorEndcase(void) {
-	MESSSAGE_DEBUG("hectorEndcase")
+	SMSG_DEBUG("hectorEndcase")
 }
 
 void hectorEndof(void) {
-	MESSSAGE_DEBUG("hectorEndof")
+	SMSG_DEBUG("hectorEndof")
 }
 
 void hectorOf(void) {
-	MESSSAGE_DEBUG("hectorOf")
+	SMSG_DEBUG("hectorOf")
 }
 
 void hectorZOf(void) {
-	MESSSAGE_DEBUG("hectorZOf")
+	SMSG_DEBUG("hectorZOf")
 }
 
 void hectorCase(void) {
-	MESSSAGE_DEBUG("hectorCase")
+	SMSG_DEBUG("hectorCase")
 }
 
 void hectorUDot(void) {
-	MESSSAGE_DEBUG("hectorUDot")
+	SMSG_DEBUG("hectorUDot")
 }
 
 void hectorQ(void) {
-	MESSSAGE_DEBUG("hectorQ")
+	SMSG_DEBUG("hectorQ")
 }
 
 void hectorDot(void) {
-	MESSSAGE_DEBUG("hectorDot")
+	SMSG_DEBUG("hectorDot")
 }
 
 void hectorDDot(void) {
-	MESSSAGE_DEBUG("hectorDDot")
+	SMSG_DEBUG("hectorDDot")
 }
 
 void hectorDotR(void) {
-	MESSSAGE_DEBUG("hectorDotR")
+	SMSG_DEBUG("hectorDotR")
 }
 
 void hectorDDOtR(void) {
-	MESSSAGE_DEBUG("hectorDDOtR")
+	SMSG_DEBUG("hectorDDOtR")
 }
 
 void hectorNums(void) {
-	MESSSAGE_DEBUG("hectorNums")
+	SMSG_DEBUG("hectorNums")
 }
 
 void hectorNum(void) {
-	MESSSAGE_DEBUG("hectorNum")
+	SMSG_DEBUG("hectorNum")
 }
 
 void hectorSign(void) {
-	MESSSAGE_DEBUG("hectorSign")
+	SMSG_DEBUG("hectorSign")
 }
 
 void hectorNumFrom(void) {
-	MESSSAGE_DEBUG("hectorNumFrom")
+	SMSG_DEBUG("hectorNumFrom")
 }
 
 void hectorToNum(void) {
-	MESSSAGE_DEBUG("hectorToNum")
+	SMSG_DEBUG("hectorToNum")
 }
 
 void hectorSpaces(void) {
-	MESSSAGE_DEBUG("hectorSpaces")
+	SMSG_DEBUG("hectorSpaces")
 }
 
 void hectorPlusLoop(void) {
-	MESSSAGE_DEBUG("hectorPlusLoop")
+	SMSG_DEBUG("hectorPlusLoop")
 }
 
 void hectorLoop(void) {
-	MESSSAGE_DEBUG("hectorLoop")
+	SMSG_DEBUG("hectorLoop")
 }
 
 void hectorDo(void) {
-	MESSSAGE_DEBUG("hectorDo")
+	SMSG_DEBUG("hectorDo")
 }
 
 void hectorForget(void) {
-	MESSSAGE_DEBUG("hectorForget")
+	SMSG_DEBUG("hectorForget")
 }
 
 void hectorTick(void) {
-	MESSSAGE_DEBUG("hectorTick")
+	SMSG_DEBUG("hectorTick")
 }
 
 void hectorWhile(void) {
-	MESSSAGE_DEBUG("hectorWhile")
+	SMSG_DEBUG("hectorWhile")
 }
 
 void hectorRepeat(void) {
-	MESSSAGE_DEBUG("hectorRepeat")
+	SMSG_DEBUG("hectorRepeat")
 }
 
 void hectorAgain(void) {
-	MESSSAGE_DEBUG("hectorAgain")
+	SMSG_DEBUG("hectorAgain")
 }
 
 void hectorEnd(void) {
-	MESSSAGE_DEBUG("hectorEnd")
+	SMSG_DEBUG("hectorEnd")
 }
 
 void hectorUntil(void) {
-	MESSSAGE_DEBUG("hectorUntil")
+	SMSG_DEBUG("hectorUntil")
 }
 
 void hectorBegin(void) {
-	MESSSAGE_DEBUG("hectorBegin")
+	SMSG_DEBUG("hectorBegin")
 }
 
 void hectorElse(void) {
-	MESSSAGE_DEBUG("hectorElse")
+	SMSG_DEBUG("hectorElse")
 }
 
 void hectorIf(void) {
-	MESSSAGE_DEBUG("hectorIf")
+	SMSG_DEBUG("hectorIf")
 }
 
 void hectorThen(void) {
-	MESSSAGE_DEBUG("hectorThen")
+	SMSG_DEBUG("hectorThen")
 }
 
 void hectorEndIf(void) {
-	MESSSAGE_DEBUG("hectorEndIf")
+	SMSG_DEBUG("hectorEndIf")
 }
 
 void hectorBack(void) {
-	MESSSAGE_DEBUG("hectorBack")
+	SMSG_DEBUG("hectorBack")
 }
 
 void hectorBStack(void) {
-	MESSSAGE_DEBUG("hectorBStack")
+	SMSG_DEBUG("hectorBStack")
 }
 
 void hectorDraw(void) {
-	MESSSAGE_DEBUG("hectorDraw")
+	SMSG_DEBUG("hectorDraw")
 }
 
 void hectorBInit(void) {
-	MESSSAGE_DEBUG("hectorBInit")
+	SMSG_DEBUG("hectorBInit")
 }
 
 void hectorBPush(void) {
-	MESSSAGE_DEBUG("hectorBPush")
+	SMSG_DEBUG("hectorBPush")
 }
 
 void hectorBPop(void) {
-	MESSSAGE_DEBUG("hectorBPop")
+	SMSG_DEBUG("hectorBPop")
 }
 
 void hectorBDrop(void) {
-	MESSSAGE_DEBUG("hectorBDrop")
+	SMSG_DEBUG("hectorBDrop")
 }
 
 void hectorBClear(void) {
-	MESSSAGE_DEBUG("hectorBClear")
+	SMSG_DEBUG("hectorBClear")
 }
 
 void hectorCLS(void) {
-	MESSSAGE_DEBUG("hectorCLS")
+	SMSG_DEBUG("hectorCLS")
 }
 
 void hectorPage(void) {
-	MESSSAGE_DEBUG("hectorPage")
+	SMSG_DEBUG("hectorPage")
 }
 
 void hectorHome(void) {
-	MESSSAGE_DEBUG("hectorHome")
+	SMSG_DEBUG("hectorHome")
 }
 
 void hectorWindow(void) {
-	MESSSAGE_DEBUG("hectorWindow")
+	SMSG_DEBUG("hectorWindow")
 }
 
 void hectorAt(void) {
-	MESSSAGE_DEBUG("hectorAt")
+	SMSG_DEBUG("hectorAt")
 }
 
 void hectorScale(void) {
-	MESSSAGE_DEBUG("hectorScale")
+	SMSG_DEBUG("hectorScale")
 }
 
 void hectorPaper(void) {
-	MESSSAGE_DEBUG("hectorPaper")
+	SMSG_DEBUG("hectorPaper")
 }
 
 void hectorPen(void) {
-	MESSSAGE_DEBUG("hectorPen")
+	SMSG_DEBUG("hectorPen")
 }
 
 void hectorStandard(void) {
-	MESSSAGE_DEBUG("hectorStandard")
+	SMSG_DEBUG("hectorStandard")
 }
 
 void hectorSpecial(void) {
-	MESSSAGE_DEBUG("hectorSpecial")
+	SMSG_DEBUG("hectorSpecial")
 }
 
 void hectorDelay(void) {
-	MESSSAGE_DEBUG("hectorDelay")
+	SMSG_DEBUG("hectorDelay")
 }
 
 void hectorCursor(void) {
-	MESSSAGE_DEBUG("hectorCursor")
+	SMSG_DEBUG("hectorCursor")
 }
 
 void hectorLInit(void) {
-	MESSSAGE_DEBUG("hectorLInit")
+	SMSG_DEBUG("hectorLInit")
 }
 
 void hectorMode(void) {
-	MESSSAGE_DEBUG("hectorMode")
+	SMSG_DEBUG("hectorMode")
 }
 
 void hectorLemit(void) {
-	MESSSAGE_DEBUG("hectorLemit")
+	SMSG_DEBUG("hectorLemit")
 }
 
 void hectorRectify(void) {
-	MESSSAGE_DEBUG("hectorRectify")
+	SMSG_DEBUG("hectorRectify")
 }
 
 void hectorTone(void) {
-	MESSSAGE_DEBUG("hectorTone")
+	SMSG_DEBUG("hectorTone")
 }
 
 void hectorTo(void) {
-	MESSSAGE_DEBUG("hectorTo")
+	SMSG_DEBUG("hectorTo")
 }
 
 void hectorSound(void) {
-	MESSSAGE_DEBUG("hectorSound")
+	SMSG_DEBUG("hectorSound")
 }
 
 void hectorRink(void) {
-	MESSSAGE_DEBUG("hectorRink")
+	SMSG_DEBUG("hectorRink")
 }
 
 void hectorPot(void) {
-	MESSSAGE_DEBUG("hectorPot")
+	SMSG_DEBUG("hectorPot")
 }
 
 void hectorPoint(void) {
-	MESSSAGE_DEBUG("hectorPoint")
+	SMSG_DEBUG("hectorPoint")
 }
 
 void hectorPlot(void) {
-	MESSSAGE_DEBUG("hectorPlot")
+	SMSG_DEBUG("hectorPlot")
 }
 
 void hectorPaint(void) {
-	MESSSAGE_DEBUG("hectorPaint")
+	SMSG_DEBUG("hectorPaint")
 }
 
 void hectorLittle(void) {
-	MESSSAGE_DEBUG("hectorLittle")
+	SMSG_DEBUG("hectorLittle")
 }
 
 void hectorLine(void) {
-	MESSSAGE_DEBUG("hectorLine")
+	SMSG_DEBUG("hectorLine")
 }
 
 void hectorJoy(void) {
-	MESSSAGE_DEBUG("hectorJoy")
+	SMSG_DEBUG("hectorJoy")
 }
 
 void hectorInk(void) {
-	MESSSAGE_DEBUG("hectorInk")
+	SMSG_DEBUG("hectorInk")
 }
 
 void hectorHush(void) {
-	MESSSAGE_DEBUG("hectorHush")
+	SMSG_DEBUG("hectorHush")
 }
 
 void hectorFrom(void) {
-	MESSSAGE_DEBUG("hectorFrom")
+	SMSG_DEBUG("hectorFrom")
 }
 
 void hectorFire(void) {
-	MESSSAGE_DEBUG("hectorFire")
+	SMSG_DEBUG("hectorFire")
 }
 
 void hectorColor(void) {
-	MESSSAGE_DEBUG("hectorColor")
+	SMSG_DEBUG("hectorColor")
 }
 
 void hectorBright(void) {
-	MESSSAGE_DEBUG("hectorBright")
+	SMSG_DEBUG("hectorBright")
 }
 
 void hectorBox(void) {
-	MESSSAGE_DEBUG("hectorBox")
+	SMSG_DEBUG("hectorBox")
 }
 
 void hectorBig(void) {
-	MESSSAGE_DEBUG("hectorBig")
+	SMSG_DEBUG("hectorBig")
 }
 
 void hectorBar(void) {
-	MESSSAGE_DEBUG("hectorBar")
+	SMSG_DEBUG("hectorBar")
 }
 
 void hectorRSlashWQ(void) {
-	MESSSAGE_DEBUG("hectorRSlashWQ")
+	SMSG_DEBUG("hectorRSlashWQ")
 }
 
 void hectorRSlashW(void) {
-	MESSSAGE_DEBUG("hectorRSlashW")
+	SMSG_DEBUG("hectorRSlashW")
 }
 
 void hectorLSlashSCR(void) {
-	MESSSAGE_DEBUG("hectorLSlashSCR")
+	SMSG_DEBUG("hectorLSlashSCR")
 }
 
 void hectorUse(void) {
-	MESSSAGE_DEBUG("hectorUse")
+	SMSG_DEBUG("hectorUse")
 }
 
 void hectorExpect(void) {
-	MESSSAGE_DEBUG("hectorExpect")
+	SMSG_DEBUG("hectorExpect")
 }
 
 void hectorCR(void) {
-	MESSSAGE_DEBUG("hectorCR")
+	SMSG_DEBUG("hectorCR")
 }
 
 void hectorEmit(void) {
-	MESSSAGE_DEBUG("hectorEmit")
+	SMSG_DEBUG("hectorEmit")
 }
 
 void hectorCapital(void) {
-	MESSSAGE_DEBUG("hectorCapital")
+	SMSG_DEBUG("hectorCapital")
 }
 
 void hectorRewind(void) {
-	MESSSAGE_DEBUG("hectorRewind")
+	SMSG_DEBUG("hectorRewind")
 }
 
 void hectorMotor(void) {
-	MESSSAGE_DEBUG("hectorMotor")
+	SMSG_DEBUG("hectorMotor")
 }
 
 void hectorMSGQuote(void) {
-	MESSSAGE_DEBUG("hectorMSGQuote")
+	SMSG_DEBUG("hectorMSGQuote")
 }
 
 void hectorZMSG(void) {
-	MESSSAGE_DEBUG("hectorZMSG")
+	SMSG_DEBUG("hectorZMSG")
 }
 
 void hectorMessage(void) {
-	MESSSAGE_DEBUG("hectorMessage")
+	SMSG_DEBUG("hectorMessage")
 }
 
 void hectorMSlashMOD(void) {
-	MESSSAGE_DEBUG("hectorMSlashMOD")
+	SMSG_DEBUG("hectorMSlashMOD")
 }
 
 void hectorStarSlash(void) {
-	MESSSAGE_DEBUG("hectorStarSlash")
+	SMSG_DEBUG("hectorStarSlash")
 }
 
 void hectorStarSlashMOD(void) {
-	MESSSAGE_DEBUG("hectorStarSlashMOD")
+	SMSG_DEBUG("hectorStarSlashMOD")
 }
 
 void hectorMOD(void) {
-	MESSSAGE_DEBUG("hectorMOD")
+	SMSG_DEBUG("hectorMOD")
 }
 
 void hectorSlash(void) {
-	MESSSAGE_DEBUG("hectorSlash")
+	SMSG_DEBUG("hectorSlash")
 }
 
 void hectorSlashMOD(void) {
-	MESSSAGE_DEBUG("hectorSlashMOD")
+	SMSG_DEBUG("hectorSlashMOD")
 }
 
 void hectorStar(void) {
-	MESSSAGE_DEBUG("hectorStar")
+	SMSG_DEBUG("hectorStar")
 }
 
 void hectorMSlash(void) {
-	MESSSAGE_DEBUG("hectorMSlash")
+	SMSG_DEBUG("hectorMSlash")
 }
 
 void hectorMStar(void) {
-	MESSSAGE_DEBUG("hectorMStar")
+	SMSG_DEBUG("hectorMStar")
 }
 
 void hectorWipe(void) {
-	MESSSAGE_DEBUG("hectorWipe")
+	SMSG_DEBUG("hectorWipe")
 }
 
 void hectorMax(void) {
-	MESSSAGE_DEBUG("hectorMax")
+	SMSG_DEBUG("hectorMax")
 }
 
 void hectorMin(void) {
-	MESSSAGE_DEBUG("hectorMin")
+	SMSG_DEBUG("hectorMin")
 }
 
 void hectorDAbs(void) {
-	MESSSAGE_DEBUG("hectorDAbs")
+	SMSG_DEBUG("hectorDAbs")
 }
 
 void hectorAbs(void) {
-	MESSSAGE_DEBUG("hectorAbs")
+	SMSG_DEBUG("hectorAbs")
 }
 
 void hectorDPlusMinus(void) {
-	MESSSAGE_DEBUG("hectorDPlusMinus")
+	SMSG_DEBUG("hectorDPlusMinus")
 }
 
 void hectorPlusMinus(void) {
-	MESSSAGE_DEBUG("hectorPlusMinus")
+	SMSG_DEBUG("hectorPlusMinus")
 }
 
 void hectorSToD(void) {
-	MESSSAGE_DEBUG("hectorSToD")
+	SMSG_DEBUG("hectorSToD")
 }
 
 void hectorEmptyBuffers(void) {
-	MESSSAGE_DEBUG("hectorEmptyBuffers")
+	SMSG_DEBUG("hectorEmptyBuffers")
 }
 
 void hectorCold(void) {
-	MESSSAGE_DEBUG("hectorCold")
+	SMSG_DEBUG("hectorCold")
 }
 
 void hectorAbort(void) {
-	MESSSAGE_DEBUG("hectorAbort")
+	SMSG_DEBUG("hectorAbort")
 }
 
 void hectorQuit(void) {
-	MESSSAGE_DEBUG("hectorQuit")
+	SMSG_DEBUG("hectorQuit")
 }
 
 void hectorEmptySpace(void) {
-	MESSSAGE_DEBUG("hectorEmptySpace")
+	SMSG_DEBUG("hectorEmptySpace")
 }
 
 void hectorParen(void) {
-	MESSSAGE_DEBUG("hectorParen")
+	SMSG_DEBUG("hectorParen")
 }
 
 void hectorDefinitions(void) {
-	MESSSAGE_DEBUG("hectorDefinitions")
+	SMSG_DEBUG("hectorDefinitions")
 }
 
 void hectorVFill(void) {
-	MESSSAGE_DEBUG("hectorVFill")
+	SMSG_DEBUG("hectorVFill")
 }
 
 void hectorVFromCMode(void) {
-	MESSSAGE_DEBUG("hectorVFromCMode")
+	SMSG_DEBUG("hectorVFromCMode")
 }
 
 void hectorVCMode(void) {
-	MESSSAGE_DEBUG("hectorVCMode")
+	SMSG_DEBUG("hectorVCMode")
 }
 
 void hectorVCStore(void) {
-	MESSSAGE_DEBUG("hectorVCStore")
+	SMSG_DEBUG("hectorVCStore")
 }
 
 void hectorVStore(void) {
-	MESSSAGE_DEBUG("hectorVStore")
+	SMSG_DEBUG("hectorVStore")
 }
 
 void hectorVCFetch(void) {
-	MESSSAGE_DEBUG("hectorVCFetch")
+	SMSG_DEBUG("hectorVCFetch")
 }
 
 void hectorVFetch(void) {
-	MESSSAGE_DEBUG("hectorVFetch")
+	SMSG_DEBUG("hectorVFetch")
 }
 
 void hectorQTerminal(void) {
-	MESSSAGE_DEBUG("hectorQTerminal")
+	SMSG_DEBUG("hectorQTerminal")
 }
 
 void hectorKey(void) {
-	MESSSAGE_DEBUG("hectorKey")
+	SMSG_DEBUG("hectorKey")
 }
 
 void hectorGet(void) {
-	MESSSAGE_DEBUG("hectorGet")
+	SMSG_DEBUG("hectorGet")
 }
 
 void hectorSlow(void) {
-	MESSSAGE_DEBUG("hectorSlow")
+	SMSG_DEBUG("hectorSlow")
 }
 
 void hectorFast(void) {
-	MESSSAGE_DEBUG("hectorFast")
+	SMSG_DEBUG("hectorFast")
 }
 
 void hector256RND(void) {
-	MESSSAGE_DEBUG("hector256RND")
+	SMSG_DEBUG("hector256RND")
 }
 
 void hectorCStar(void) {
-	MESSSAGE_DEBUG("hectorCStar")
+	SMSG_DEBUG("hectorCStar")
 }
 
 void hectorVocabulary(void) {
-	MESSSAGE_DEBUG("hectorVocabulary")
+	SMSG_DEBUG("hectorVocabulary")
 }
 
 void hectorImmediate(void) {
-	MESSSAGE_DEBUG("hectorImmediate")
+	SMSG_DEBUG("hectorImmediate")
 }
 
 void hectorInterpret(void) {
-	MESSSAGE_DEBUG("hectorInterpret")
+	SMSG_DEBUG("hectorInterpret")
 }
 
 void hectorQStack(void) {
-	MESSSAGE_DEBUG("hectorQStack")
+	SMSG_DEBUG("hectorQStack")
 }
 
 void hectorDLiteral(void) {
-	MESSSAGE_DEBUG("hectorDLiteral")
+	SMSG_DEBUG("hectorDLiteral")
 }
 
 void hectorLiteral(void) {
-	MESSSAGE_DEBUG("hectorLiteral")
+	SMSG_DEBUG("hectorLiteral")
 }
 
 void hectorXCompile(void) {
-	MESSSAGE_DEBUG("hectorZCompile")
+	SMSG_DEBUG("hectorZCompile")
 }
 
 void hectorCreate(void) {
-	MESSSAGE_DEBUG("hectorCreate")
+	SMSG_DEBUG("hectorCreate")
 }
 
 void hectorIDDot(void) {
-	MESSSAGE_DEBUG("hectorIDDot")
+	SMSG_DEBUG("hectorIDDot")
 }
 
 void hectorError(void) {
-	MESSSAGE_DEBUG("hectorError")
+	SMSG_DEBUG("hectorError")
 }
 
 void hectorMinusFind(void) {
-	MESSSAGE_DEBUG("hectorMinusFind")
+	SMSG_DEBUG("hectorMinusFind")
 }
 
 void hectorNumber(void) {
-	MESSSAGE_DEBUG("hectorNumber")
+	SMSG_DEBUG("hectorNumber")
 }
 
 void hectorZNumber(void) {
-	MESSSAGE_DEBUG("hectorZNumber")
+	SMSG_DEBUG("hectorZNumber")
 }
 
 void hectorWord(void) {
-	MESSSAGE_DEBUG("hectorWord")
+	SMSG_DEBUG("hectorWord")
 }
 
 void hectorPad(void) {
-	MESSSAGE_DEBUG("hectorPad")
+	SMSG_DEBUG("hectorPad")
 }
 
 void hectorHold(void) {
-	MESSSAGE_DEBUG("hectorHold")
+	SMSG_DEBUG("hectorHold")
 }
 
 void hectorBlanks(void) {
-	MESSSAGE_DEBUG("hectorBlanks")
+	SMSG_DEBUG("hectorBlanks")
 }
 
 void hectorErase(void) {
-	MESSSAGE_DEBUG("hectorErase")
+	SMSG_DEBUG("hectorErase")
 }
 
 void hectorFill(void) {
-	MESSSAGE_DEBUG("hectorFill")
+	SMSG_DEBUG("hectorFill")
 }
 
 void hectorQuery(void) {
-	MESSSAGE_DEBUG("hectorQuery")
+	SMSG_DEBUG("hectorQuery")
 }
 
 void hectorDotQuote(void) {
-	MESSSAGE_DEBUG("hectorDotQuote")
+	SMSG_DEBUG("hectorDotQuote")
 }
 
 void hectorZDotQuote(void) {
-	MESSSAGE_DEBUG("hectorZDotQuote")
+	SMSG_DEBUG("hectorZDotQuote")
 }
 
 void hectorMinusTrailing(void) {
-	MESSSAGE_DEBUG("hectorMinusTrailing")
+	SMSG_DEBUG("hectorMinusTrailing")
 }
 
 void hectorType(void) {
-	MESSSAGE_DEBUG("hectorType")
+	SMSG_DEBUG("hectorType")
 }
 
 void hectorCount(void) {
-	MESSSAGE_DEBUG("hectorCount")
+	SMSG_DEBUG("hectorCount")
 }
 
 void hectorDoes(void) {
-	MESSSAGE_DEBUG("hectorDoes")
+	SMSG_DEBUG("hectorDoes")
 }
 
 void hectorBuilds(void) {
-	MESSSAGE_DEBUG("hectorBuilds")
+	SMSG_DEBUG("hectorBuilds")
 }
 
 void hectorSemicolonCode(void) {
-	MESSSAGE_DEBUG("hectorSemicolonCode")
+	SMSG_DEBUG("hectorSemicolonCode")
 }
 
 void hectorZSemicolonCode(void) {
-	MESSSAGE_DEBUG("hectorZSemicolonCode")
+	SMSG_DEBUG("hectorZSemicolonCode")
 }
 
 void hectorDecimal(void) {
-	MESSSAGE_DEBUG("hectorDecimal")
+	SMSG_DEBUG("hectorDecimal")
 }
 
 void hectorHex(void) {
-	MESSSAGE_DEBUG("hectorHex")
+	SMSG_DEBUG("hectorHex")
 }
 
 void hectorSmudge(void) {
-	MESSSAGE_DEBUG("hectorSmudge")
+	SMSG_DEBUG("hectorSmudge")
 }
 
 void hectorRightBracket(void) {
-	MESSSAGE_DEBUG("hectorRightBracket")
+	SMSG_DEBUG("hectorRightBracket")
 }
 
 void hectorLeftBracket(void) {
-	MESSSAGE_DEBUG("hectorLeftBracket")
+	SMSG_DEBUG("hectorLeftBracket")
 }
 
 void hectorCompile(void) {
-	MESSSAGE_DEBUG("hectorCompile")
+	SMSG_DEBUG("hectorCompile")
 }
 
 void hectorQCSP(void) {
-	MESSSAGE_DEBUG("hectorQCSP")
+	SMSG_DEBUG("hectorQCSP")
 }
 
 void hectorQPairs(void) {
-	MESSSAGE_DEBUG("hectorQPairs")
+	SMSG_DEBUG("hectorQPairs")
 }
 
 void hectorQExec(void) {
-	MESSSAGE_DEBUG("hectorQExec")
+	SMSG_DEBUG("hectorQExec")
 }
 
 void hectorQComp(void) {
-	MESSSAGE_DEBUG("hectorQComp")
+	SMSG_DEBUG("hectorQComp")
 }
 
 void hectorQError(void) {
-	MESSSAGE_DEBUG("hectorQError")
+	SMSG_DEBUG("hectorQError")
 }
 
 void hectorStoreCSP(void) {
-	MESSSAGE_DEBUG("hectorStoreCSP")
+	SMSG_DEBUG("hectorStoreCSP")
 }
 
 void hectorPFA(void) {
-	MESSSAGE_DEBUG("hectorPFA")
+	SMSG_DEBUG("hectorPFA")
 }
 
 void hectorNFA(void) {
-	MESSSAGE_DEBUG("hectorNFA")
+	SMSG_DEBUG("hectorNFA")
 }
 
 void hectorLFA(void) {
-	MESSSAGE_DEBUG("hectorLFA")
+	SMSG_DEBUG("hectorLFA")
 }
 
 void hectorCFA(void) {
-	MESSSAGE_DEBUG("hectorCFA")
+	SMSG_DEBUG("hectorCFA")
 }
 
 void hectorLatest(void) {
-	MESSSAGE_DEBUG("hectorLatest")
+	SMSG_DEBUG("hectorLatest")
 }
 
 void hectorTraverse(void) {
-	MESSSAGE_DEBUG("hectorTraverse")
+	SMSG_DEBUG("hectorTraverse")
 }
 
 void hectorMinusDUP(void) {
-	MESSSAGE_DEBUG("hectorMinusDUP")
+	SMSG_DEBUG("hectorMinusDUP")
 }
 
 void hectorSpace(void) {
-	MESSSAGE_DEBUG("hectorSpace")
+	SMSG_DEBUG("hectorSpace")
 }
 
 void hectorUGreater(void) {
-	MESSSAGE_DEBUG("hectorUGreater")
+	SMSG_DEBUG("hectorUGreater")
 }
 
 void hectorCComma(void) {
-	MESSSAGE_DEBUG("hectorCComma")
+	SMSG_DEBUG("hectorCComma")
 }
 
 void hectorComma(void) {
-	MESSSAGE_DEBUG("hectorComma")
+	SMSG_DEBUG("hectorComma")
 }
 
 void hectorAllot(void) {
-	MESSSAGE_DEBUG("hectorAllot")
+	SMSG_DEBUG("hectorAllot")
 }
 
 void hectorHere(void) {
-	MESSSAGE_DEBUG("hectorHere")
+	SMSG_DEBUG("hectorHere")
 }
 
 void hectorPrev(void) {
-	MESSSAGE_DEBUG("hectorPrev")
+	SMSG_DEBUG("hectorPrev")
 }
 
 void hectorOffset(void) {
-	MESSSAGE_DEBUG("hectorOffset")
+	SMSG_DEBUG("hectorOffset")
 }
 
 void hectorHLD(void) {
-	MESSSAGE_DEBUG("hectorHLD")
+	SMSG_DEBUG("hectorHLD")
 }
 
 void hectorRNum(void) {
-	MESSSAGE_DEBUG("hectorRNum")
+	SMSG_DEBUG("hectorRNum")
 }
 
 void hectorCSP(void) {
-	MESSSAGE_DEBUG("hectorCSP")
+	SMSG_DEBUG("hectorCSP")
 }
 
 void hectorDPL(void) {
-	MESSSAGE_DEBUG("hectorDPL")
+	SMSG_DEBUG("hectorDPL")
 }
 
 void hectorBase(void) {
-	MESSSAGE_DEBUG("hectorBase")
+	SMSG_DEBUG("hectorBase")
 }
 
 void hectorState(void) {
-	MESSSAGE_DEBUG("hectorState")
+	SMSG_DEBUG("hectorState")
 }
 
 void hectorCurrent(void) {
-	MESSSAGE_DEBUG("hectorCurrent")
+	SMSG_DEBUG("hectorCurrent")
 }
 
 void hectorContext(void) {
-	MESSSAGE_DEBUG("hectorContext")
+	SMSG_DEBUG("hectorContext")
 }
 
 void hectorSCR(void) {
-	MESSSAGE_DEBUG("hectorSCR")
+	SMSG_DEBUG("hectorSCR")
 }
 
 void hectorIN(void) {
-	MESSSAGE_DEBUG("hectorIN")
+	SMSG_DEBUG("hectorIN")
 }
 
 void hectorBLK(void) {
-	MESSSAGE_DEBUG("hectorBLK")
+	SMSG_DEBUG("hectorBLK")
 }
 
 void hectorVocMinusLink(void) {
-	MESSSAGE_DEBUG("hectorVocMinusLink")
+	SMSG_DEBUG("hectorVocMinusLink")
 }
 
 void hectorDP(void) {
-	MESSSAGE_DEBUG("hectorDP")
+	SMSG_DEBUG("hectorDP")
 }
 
 void hectorFence(void) {
-	MESSSAGE_DEBUG("hectorFence")
+	SMSG_DEBUG("hectorFence")
 }
 
 void hectorWidth(void) {
-	MESSSAGE_DEBUG("hectorWidth")
+	SMSG_DEBUG("hectorWidth")
 }
 
 void hectorTIB(void) {
-	MESSSAGE_DEBUG("hectorTIB")
+	SMSG_DEBUG("hectorTIB")
 }
 
 void hectorRO(void) {
-	MESSSAGE_DEBUG("hectorRO")
+	SMSG_DEBUG("hectorRO")
 }
 
 void hectorSO(void) {
-	MESSSAGE_DEBUG("hectorSO")
+	SMSG_DEBUG("hectorSO")
 }
 
 void hectorCSlashName(void) {
-	MESSSAGE_DEBUG("hectorCSlashName")
+	SMSG_DEBUG("hectorCSlashName")
 }
 
 void hectorBSlashBuf(void) {
-	MESSSAGE_DEBUG("hectorBSlashBuf")
+	SMSG_DEBUG("hectorBSlashBuf")
 }
 
 void hectorLimit(void) {
-	MESSSAGE_DEBUG("hectorLimit")
+	SMSG_DEBUG("hectorLimit")
 }
 
 void hectorFirst(void) {
-	MESSSAGE_DEBUG("hectorFirst")
+	SMSG_DEBUG("hectorFirst")
 }
 
 void hectorCSlashL(void) {
-	MESSSAGE_DEBUG("hectorCSlashL")
+	SMSG_DEBUG("hectorCSlashL")
 }
 
 void hectorBL(void) {
-	MESSSAGE_DEBUG("hectorBL")
+	SMSG_DEBUG("hectorBL")
 }
 
 void hectorThree(void) {
-	MESSSAGE_DEBUG("hectorThree")
+	SMSG_DEBUG("hectorThree")
 }
 
 void hectorTwo(void) {
-	MESSSAGE_DEBUG("hectorTwo")
+	SMSG_DEBUG("hectorTwo")
 }
 
 void hectorOne(void) {
-	MESSSAGE_DEBUG("hectorOne")
+	SMSG_DEBUG("hectorOne")
 }
 
 void hectorZero(void) {
-	MESSSAGE_DEBUG("hectorZero")
+	SMSG_DEBUG("hectorZero")
 }
 
 void hectorVariable(void) {
-	MESSSAGE_DEBUG("hectorVariable")
+	SMSG_DEBUG("hectorVariable")
 }
 
 void hectorConstant(void) {
-	MESSSAGE_DEBUG("hectorConstant")
+	SMSG_DEBUG("hectorConstant")
 }
 
 void hectorSemicolon(void) {
-	MESSSAGE_DEBUG("hectorSemicolon")
+	SMSG_DEBUG("hectorSemicolon")
 }
 
 void hectorColon(void) {
-	MESSSAGE_DEBUG("hectorColon")
+	SMSG_DEBUG("hectorColon")
 }
 
 void hectorFromCMove(void) {
-	MESSSAGE_DEBUG("hectorFromCMove")
+	SMSG_DEBUG("hectorFromCMove")
 }
 
 void hectorDMinussign(void) {
-	MESSSAGE_DEBUG("hectorDMinussign")
+	SMSG_DEBUG("hectorDMinussign")
 }
 
 void hectorTwoRot(void) {
-	MESSSAGE_DEBUG("hectorTwoRot")
+	SMSG_DEBUG("hectorTwoRot")
 }
 
 void hectorTwoDrop(void) {
-	MESSSAGE_DEBUG("hectorTwoDrop")
+	SMSG_DEBUG("hectorTwoDrop")
 }
 
 void hectorTwoOver(void) {
-	MESSSAGE_DEBUG("hectorTwoOver")
+	SMSG_DEBUG("hectorTwoOver")
 }
 
 void hectorTwoSwap(void) {
-	MESSSAGE_DEBUG("hectorTwoSwap")
+	SMSG_DEBUG("hectorTwoSwap")
 }
 
 void hectorTwoSlash(void) {
-	MESSSAGE_DEBUG("hectorTwoSlash")
+	SMSG_DEBUG("hectorTwoSlash")
 }
 
 void hectorTwoStar(void) {
-	MESSSAGE_DEBUG("hectorTwoStar")
+	SMSG_DEBUG("hectorTwoStar")
 }
 
 void hectorTwoMinus(void) {
-	MESSSAGE_DEBUG("hectorTwoMinus")
+	SMSG_DEBUG("hectorTwoMinus")
 }
 
 void hectorOneMinus(void) {
-	MESSSAGE_DEBUG("hectorOneMinus")
+	SMSG_DEBUG("hectorOneMinus")
 }
 
 void hectorZeroGreater(void) {
-	MESSSAGE_DEBUG("hectorZeroGreater")
+	SMSG_DEBUG("hectorZeroGreater")
 }
 
 void hectorJ(void) {
-	MESSSAGE_DEBUG("hectorJ")
+	SMSG_DEBUG("hectorJ")
 }
 
 void hectorITick(void) {
-	MESSSAGE_DEBUG("hectorITick")
+	SMSG_DEBUG("hectorITick")
 }
 
 void hectorSDrop(void) {
-	MESSSAGE_DEBUG("hectorSDrop")
+	SMSG_DEBUG("hectorSDrop")
 }
 
 void hectorNot(void) {
-	MESSSAGE_DEBUG("hectorNot")
+	SMSG_DEBUG("hectorNot")
 }
 
 void hectorExit(void) {
-	MESSSAGE_DEBUG("hectorExit")
+	SMSG_DEBUG("hectorExit")
 }
 
 void hectorRoll(void) {
-	MESSSAGE_DEBUG("hectorRoll")
+	SMSG_DEBUG("hectorRoll")
 }
 
 void hectorPick(void) {
-	MESSSAGE_DEBUG("hectorPick")
+	SMSG_DEBUG("hectorPick")
 }
 
 void hectorRot(void) {
-	MESSSAGE_DEBUG("hectorRot")
+	SMSG_DEBUG("hectorRot")
 }
 
 void hectorGreater(void) {
-	MESSSAGE_DEBUG("hectorGreater")
+	SMSG_DEBUG("hectorGreater")
 }
 
 void hectorSmaller(void) {
-	MESSSAGE_DEBUG("hectorSmaller")
+	SMSG_DEBUG("hectorSmaller")
 }
 
 void hectorEqual(void) {
-	MESSSAGE_DEBUG("hectorEqual")
+	SMSG_DEBUG("hectorEqual")
 }
 
 void hectorMinussign(void) {
-	MESSSAGE_DEBUG("hectorMinussign")
+	SMSG_DEBUG("hectorMinussign")
 }
 
 void hectorTwoPlus(void) {
-	MESSSAGE_DEBUG("hectorTwoPlus")
+	SMSG_DEBUG("hectorTwoPlus")
 }
 
 void hectorOnePlus(void) {
-	MESSSAGE_DEBUG("hectorOnePlus")
+	SMSG_DEBUG("hectorOnePlus")
 }
 
 void hectorTwoStore(void) {
-	MESSSAGE_DEBUG("hectorTwoStore")
+	SMSG_DEBUG("hectorTwoStore")
 }
 
 void hectorCStore(void) {
-	MESSSAGE_DEBUG("hectorCStore")
+	SMSG_DEBUG("hectorCStore")
 }
 
 void hectorStore(void) {
-	MESSSAGE_DEBUG("hectorStore")
+	SMSG_DEBUG("hectorStore")
 }
 
 void hectorTwoFetch(void) {
-	MESSSAGE_DEBUG("hectorTwoFetch")
+	SMSG_DEBUG("hectorTwoFetch")
 }
 
 void hectorCFetch(void) {
-	MESSSAGE_DEBUG("hectorCFetch")
+	SMSG_DEBUG("hectorCFetch")
 }
 
 void hectorFetch(void) {
-	MESSSAGE_DEBUG("hectorCFetch")
+	SMSG_DEBUG("hectorCFetch")
 }
 
 void hectorToggle(void) {
-	MESSSAGE_DEBUG("hectorToggle")
+	SMSG_DEBUG("hectorToggle")
 }
 
 void hectorPlusStore(void) {
-	MESSSAGE_DEBUG("hectorPlusStore")
+	SMSG_DEBUG("hectorPlusStore")
 }
 
 void hectorTwoDup(void) {
-	MESSSAGE_DEBUG("hectorTwoDup")
+	SMSG_DEBUG("hectorTwoDup")
 }
 
 void hectorDup(void) {
-	MESSSAGE_DEBUG("hectorDup")
+	SMSG_DEBUG("hectorDup")
 }
 
 void hectorSwap(void) {
-	MESSSAGE_DEBUG("hectorSwap")
+	SMSG_DEBUG("hectorSwap")
 }
 
 void hectorDrop(void) {
-	MESSSAGE_DEBUG("hectorDrop")
+	SMSG_DEBUG("hectorDrop")
 }
 
 void hectorOver(void) {
-	MESSSAGE_DEBUG("hectorOver")
+	SMSG_DEBUG("hectorOver")
 }
 
 void hectorDMinus(void) {
-	MESSSAGE_DEBUG("hectorDMinus")
+	SMSG_DEBUG("hectorDMinus")
 }
 
 void hectorMinus(void) {
-	MESSSAGE_DEBUG("hectorMinus")
+	SMSG_DEBUG("hectorMinus")
 }
 
 void hectorDPlus(void) {
-	MESSSAGE_DEBUG("hectorDPlus")
+	SMSG_DEBUG("hectorDPlus")
 }
 
 void hectorPlus(void) {
-	MESSSAGE_DEBUG("hectorPlus")
+	SMSG_DEBUG("hectorPlus")
 }
 
 void hectorZeroLess(void) {
-	MESSSAGE_DEBUG("hectorZeroLess")
+	SMSG_DEBUG("hectorZeroLess")
 }
 
 void hectorZeroEqual(void) {
-	MESSSAGE_DEBUG("hectorZeroEqual")
+	SMSG_DEBUG("hectorZeroEqual")
 }
 
 void hectorR(void) {
-	MESSSAGE_DEBUG("hectorR")
+	SMSG_DEBUG("hectorR")
 }
 
 void hectorRFrom(void) {
-	MESSSAGE_DEBUG("hectorRFrom")
+	SMSG_DEBUG("hectorRFrom")
 }
 
 void hectorToR(void) {
-	MESSSAGE_DEBUG("hectorToR")
+	SMSG_DEBUG("hectorToR")
 }
 
 void hectorLeave(void) {
-	MESSSAGE_DEBUG("hectorLeave")
+	SMSG_DEBUG("hectorLeave")
 }
 
 void hectorSemicolonS(void) {
-	MESSSAGE_DEBUG("hectorSemicolonS")
+	SMSG_DEBUG("hectorSemicolonS")
 }
 
 void hectorRPStore(void) {
-	MESSSAGE_DEBUG("hectorRPStore")
+	SMSG_DEBUG("hectorRPStore")
 }
 
 void hectorRPFetch(void) {
-	MESSSAGE_DEBUG("hectorRPFetch")
+	SMSG_DEBUG("hectorRPFetch")
 }
 
 void hectorSPStore(void) {
-	MESSSAGE_DEBUG("hectorSPStore")
+	SMSG_DEBUG("hectorSPStore")
 }
 
 void hectorSPFetch(void) {
-	MESSSAGE_DEBUG("hectorSPFetch")
+	SMSG_DEBUG("hectorSPFetch")
 }
 
 void hectorXor(void) {
-	MESSSAGE_DEBUG("hectorZOR")
+	SMSG_DEBUG("hectorZOR")
 }
 
 void hectorOr(void) {
-	MESSSAGE_DEBUG("hectorOr")
+	SMSG_DEBUG("hectorOr")
 }
 
 void hectorAnd(void) {
-	MESSSAGE_DEBUG("hectorAnd")
+	SMSG_DEBUG("hectorAnd")
 }
 
 void hectorUSlash(void) {
-	MESSSAGE_DEBUG("hectorUSlash")
+	SMSG_DEBUG("hectorUSlash")
 }
 
 void hectorUStar(void) {
-	MESSSAGE_DEBUG("hectorUStar")
+	SMSG_DEBUG("hectorUStar")
 }
 
 void hectorCMove(void) {
-	MESSSAGE_DEBUG("hectorCMove")
+	SMSG_DEBUG("hectorCMove")
 }
 
 void hectorEnclose(void) {
-	MESSSAGE_DEBUG("hectorEnclose")
+	SMSG_DEBUG("hectorEnclose")
 }
 
 void hectorZFind(void) {
-	MESSSAGE_DEBUG("hectorZFind")
+	SMSG_DEBUG("hectorZFind")
 }
 
 void hectorDigit(void) {
-	MESSSAGE_DEBUG("hectorDigit")
+	SMSG_DEBUG("hectorDigit")
 }
 
 void hectorI(void) {
-	MESSSAGE_DEBUG("hectorI")
+	SMSG_DEBUG("hectorI")
 }
 
 void hectorZDo(void) {
-	MESSSAGE_DEBUG("hectorZDoI")
+	SMSG_DEBUG("hectorZDoI")
 }
 
 void hectorZPlusLoop(void) {
-	MESSSAGE_DEBUG("hectorZPlusLoop")
+	SMSG_DEBUG("hectorZPlusLoop")
 }
 
 void hectorZLoop(void) {
-	MESSSAGE_DEBUG("hectorZLoop")
+	SMSG_DEBUG("hectorZLoop")
 }
 
 void hectorBranch(void) {
-	MESSSAGE_DEBUG("hectorBranch")
+	SMSG_DEBUG("hectorBranch")
 }
 
 void hectorOBranch(void) {
-	MESSSAGE_DEBUG("hectorOBranch")
+	SMSG_DEBUG("hectorOBranch")
 }
 
 void hectorExecute(void) {
-	MESSSAGE_DEBUG("hectorExecute")
+	SMSG_DEBUG("hectorExecute")
 }
 
 void hectorLit(void) {
-	MESSSAGE_DEBUG("hectorLit")
+	SMSG_DEBUG("hectorLit")
 }
 
 #endif

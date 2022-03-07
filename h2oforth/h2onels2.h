@@ -9,1038 +9,1038 @@
 	H2O_FORTH_PRIMITIVES == NELSON_ESP_FORTH || \
 	H2O_FORTH_PRIMITIVES == NELSON_UE_FORTH
 void nelsonForth(void) {
-	MESSSAGE_DEBUG("nelsonForth")
+	SMSG_DEBUG("nelsonForth")
 }
 
 void nelsonTo(void) {
-	MESSSAGE_DEBUG("nelsonTo")
+	SMSG_DEBUG("nelsonTo")
 }
 
 void nelsonPlusTo(void) {
-	MESSSAGE_DEBUG("nelsonPlusTo")
+	SMSG_DEBUG("nelsonPlusTo")
 }
 
 void nelsonSemicolon(void) {
-	MESSSAGE_DEBUG("nelsonSemicolon")
+	SMSG_DEBUG("nelsonSemicolon")
 }
 
 void nelsonLeftBrace(void) {
-	MESSSAGE_DEBUG("nelsonLeftBrace")
+	SMSG_DEBUG("nelsonLeftBrace")
 }
 
 void nelsonEditor(void) {
-	MESSSAGE_DEBUG("nelsonEditor")
+	SMSG_DEBUG("nelsonEditor")
 }
 
 void nelsonList(void) {
-	MESSSAGE_DEBUG("nelsonList")
+	SMSG_DEBUG("nelsonList")
 }
 
 void nelsonCopy(void) {
-	MESSSAGE_DEBUG("nelsonCopy")
+	SMSG_DEBUG("nelsonCopy")
 }
 
 void nelsonThru(void) {
-	MESSSAGE_DEBUG("nelsonThru")
+	SMSG_DEBUG("nelsonThru")
 }
 
 void nelsonLoad(void) {
-	MESSSAGE_DEBUG("nelsonLoad")
+	SMSG_DEBUG("nelsonLoad")
 }
 
 void nelsonFlush(void) {
-	MESSSAGE_DEBUG("nelsonFlush")
+	SMSG_DEBUG("nelsonFlush")
 }
 
 void nelsonUpdate(void) {
-	MESSSAGE_DEBUG("nelsonUpdate")
+	SMSG_DEBUG("nelsonUpdate")
 }
 
 void nelsonEmptyBuffers(void) {
-	MESSSAGE_DEBUG("nelsonEmptyBuffers")
+	SMSG_DEBUG("nelsonEmptyBuffers")
 }
 
 void nelsonBuffer(void) {
-	MESSSAGE_DEBUG("nelsonBuffer")
+	SMSG_DEBUG("nelsonBuffer")
 }
 
 void nelsonBlock(void) {
-	MESSSAGE_DEBUG("nelsonBlock")
+	SMSG_DEBUG("nelsonBlock")
 }
 
 void nelsonSaveBuffers(void) {
-	MESSSAGE_DEBUG("nelsonBlock")
+	SMSG_DEBUG("nelsonBlock")
 }
 
 void nelsonDefaultUse(void) {
-	MESSSAGE_DEBUG("nelsonDefaultUse")
+	SMSG_DEBUG("nelsonDefaultUse")
 }
 
 void nelsonUse(void) {
-	MESSSAGE_DEBUG("nelsonUse")
+	SMSG_DEBUG("nelsonUse")
 }
 
 void nelsonOpenBlocks(void) {
-	MESSSAGE_DEBUG("nelsonOpenBlocks")
+	SMSG_DEBUG("nelsonOpenBlocks")
 }
 
 void nelsonBlockId(void) {
-	MESSSAGE_DEBUG("nelsonBlockId")
+	SMSG_DEBUG("nelsonBlockId")
 }
 
 void nelsonScr(void) {
-	MESSSAGE_DEBUG("nelsonScr")
+	SMSG_DEBUG("nelsonScr")
 }
 
 void nelsonBlockFid(void) {
-	MESSSAGE_DEBUG("nelsonBlockFid")
+	SMSG_DEBUG("nelsonBlockFid")
 }
 
 void nelsonStreams(void) {
-	MESSSAGE_DEBUG("nelsonStreams")
+	SMSG_DEBUG("nelsonStreams")
 }
 
 void nelsonReset(void) {
-	MESSSAGE_DEBUG("nelsonReset")
+	SMSG_DEBUG("nelsonReset")
 }
 
 void nelsonRevive(void) {
-	MESSSAGE_DEBUG("nelsonRevive")
+	SMSG_DEBUG("nelsonRevive")
 }
 
 void nelsonStartup(void) {
-	MESSSAGE_DEBUG("nelsonStartup")
+	SMSG_DEBUG("nelsonStartup")
 }
 
 void nelsonRemember(void) {
-	MESSSAGE_DEBUG("nelsonRemember")
+	SMSG_DEBUG("nelsonRemember")
 }
 
 void nelsonRestore(void) {
-	MESSSAGE_DEBUG("nelsonRestore")
+	SMSG_DEBUG("nelsonRestore")
 }
 
 void nelsonSave(void) {
-	MESSSAGE_DEBUG("nelsonSave")
+	SMSG_DEBUG("nelsonSave")
 }
 
 void nelsonDumpFile(void) {
-	MESSSAGE_DEBUG("nelsonDumpFile")
+	SMSG_DEBUG("nelsonDumpFile")
 }
 
 void nelsonWords(void) {
-	MESSSAGE_DEBUG("nelsonWords")
+	SMSG_DEBUG("nelsonWords")
 }
 
 void nelsonVlist(void) {
-	MESSSAGE_DEBUG("nelsonWords")
+	SMSG_DEBUG("nelsonWords")
 }
 
 void nelsonOrder(void) {
-	MESSSAGE_DEBUG("nelsonOrder")
+	SMSG_DEBUG("nelsonOrder")
 }
 
 void nelsonSee(void) {
-	MESSSAGE_DEBUG("nelsonSee")
+	SMSG_DEBUG("nelsonSee")
 }
 
 void nelsonDotS(void) {
-	MESSSAGE_DEBUG("nelsonDotS")
+	SMSG_DEBUG("nelsonDotS")
 }
 
 void nelsonStartsWithQ(void) {
-	MESSSAGE_DEBUG("nelsonStartsWithQ")
+	SMSG_DEBUG("nelsonStartsWithQ")
 }
 
 void nelsonStrEqual(void) {
-	MESSSAGE_DEBUG("nelsonStrEqual")
+	SMSG_DEBUG("nelsonStrEqual")
 }
 
 void nelsonColonNoname(void) {
-	MESSSAGE_DEBUG("nelsonColonNoname")
+	SMSG_DEBUG("nelsonColonNoname")
 }
 
 void nelsonSmudge(void) {
-	MESSSAGE_DEBUG("nelsonSmudge")
+	SMSG_DEBUG("nelsonSmudge")
 }
 
 void nelsonForget(void) {
-	MESSSAGE_DEBUG("nelsonForget")
+	SMSG_DEBUG("nelsonForget")
 }
 
 void nelsonDump(void) {
-	MESSSAGE_DEBUG("nelsonDump")
+	SMSG_DEBUG("nelsonDump")
 }
 
 void nelsonAssert(void) {
-	MESSSAGE_DEBUG("nelsonAssert")
+	SMSG_DEBUG("nelsonAssert")
 }
 
 void nelsonStartTask(void) {
-	MESSSAGE_DEBUG("nelsonStartTask")
+	SMSG_DEBUG("nelsonStartTask")
 }
 
 void nelsonTask(void) {
-	MESSSAGE_DEBUG("nelsonTask")
+	SMSG_DEBUG("nelsonTask")
 }
 
 void nelsonPause(void) {
-	MESSSAGE_DEBUG("nelsonPause")
+	SMSG_DEBUG("nelsonPause")
 }
 
 void nelsonTasks(void) {
-	MESSSAGE_DEBUG("nelsonTasks")
+	SMSG_DEBUG("nelsonTasks")
 }
 
 void nelsonInclude(void) {
-	MESSSAGE_DEBUG("nelsonInclude")
+	SMSG_DEBUG("nelsonInclude")
 }
 
 void nelsonIncluded(void) {
-	MESSSAGE_DEBUG("nelsonIncluded")
+	SMSG_DEBUG("nelsonIncluded")
 }
 
 void nelsonResize(void) {
-	MESSSAGE_DEBUG("nelsonResize")
+	SMSG_DEBUG("nelsonResize")
 }
 
 void nelsonFree(void) {
-	MESSSAGE_DEBUG("nelsonFree")
+	SMSG_DEBUG("nelsonFree")
 }
 
 void nelsonAllocate(void) {
-	MESSSAGE_DEBUG("nelsonAllocate")
+	SMSG_DEBUG("nelsonAllocate")
 }
 
 void nelsonOk(void) {
-	MESSSAGE_DEBUG("nelsonOk")
+	SMSG_DEBUG("nelsonOk")
 }
 
 void nelsonMs(void) {
-	MESSSAGE_DEBUG("nelsonMs")
+	SMSG_DEBUG("nelsonMs")
 }
 
 void nelsonFileSize(void) {
-	MESSSAGE_DEBUG("nelsonFileSize")
+	SMSG_DEBUG("nelsonFileSize")
 }
 
 void nelsonResizeFile(void) {
-	MESSSAGE_DEBUG("nelsonResizeFile")
+	SMSG_DEBUG("nelsonResizeFile")
 }
 
 void nelsonRepositionFile(void) {
-	MESSSAGE_DEBUG("nelsonRepositionFile")
+	SMSG_DEBUG("nelsonRepositionFile")
 }
 
 void nelsonFilePosition(void) {
-	MESSSAGE_DEBUG("nelsonFilePosition")
+	SMSG_DEBUG("nelsonFilePosition")
 }
 
 void nelsonReadFile(void) {
-	MESSSAGE_DEBUG("nelsonReadFile")
+	SMSG_DEBUG("nelsonReadFile")
 }
 
 void nelsonWriteFile(void) {
-	MESSSAGE_DEBUG("nelsonWriteFile")
+	SMSG_DEBUG("nelsonWriteFile")
 }
 
 void nelsonDeleteFile(void) {
-	MESSSAGE_DEBUG("nelsonDeleteFile")
+	SMSG_DEBUG("nelsonDeleteFile")
 }
 
 void nelsonCreateFile(void) {
-	MESSSAGE_DEBUG("nelsonCreateFile")
+	SMSG_DEBUG("nelsonCreateFile")
 }
 
 void nelsonOpenFile(void) {
-	MESSSAGE_DEBUG("nelsonOpenFile")
+	SMSG_DEBUG("nelsonOpenFile")
 }
 
 void nelsonFlushFile(void) {
-	MESSSAGE_DEBUG("nelsonFlushFile")
+	SMSG_DEBUG("nelsonFlushFile")
 }
 
 void nelsonCloseFile(void) {
-	MESSSAGE_DEBUG("nelsonCloseFile")
+	SMSG_DEBUG("nelsonCloseFile")
 }
 
 void nelsonRSlashW(void) {
-	MESSSAGE_DEBUG("nelsonRSlashW")
+	SMSG_DEBUG("nelsonRSlashW")
 }
 
 void nelsonWSlashO(void) {
-	MESSSAGE_DEBUG("nelsonWSlashO")
+	SMSG_DEBUG("nelsonWSlashO")
 }
 
 void nelsonRSlashO(void) {
-	MESSSAGE_DEBUG("nelsonRSlashO")
+	SMSG_DEBUG("nelsonRSlashO")
 }
 
 void nelsonPage(void) {
-	MESSSAGE_DEBUG("nelsonPage")
+	SMSG_DEBUG("nelsonPage")
 }
 
 
 
 void nelsonInternals(void) {
-	MESSSAGE_DEBUG("nelsonInternals")
+	SMSG_DEBUG("nelsonInternals")
 }
 
 void nelsonSealed(void) {
-	MESSSAGE_DEBUG("nelsonSealed")
+	SMSG_DEBUG("nelsonSealed")
 }
 
 void nelsonAlso(void) {
-	MESSSAGE_DEBUG("nelsonAlso")
+	SMSG_DEBUG("nelsonAlso")
 }
 
 void nelsonOnly(void) {
-	MESSSAGE_DEBUG("nelsonOnly")
+	SMSG_DEBUG("nelsonOnly")
 }
 
 void nelsonTransferLeftBrace(void) {
-	MESSSAGE_DEBUG("nelsonTransferLeftBrace")
+	SMSG_DEBUG("nelsonTransferLeftBrace")
 }
 
 void nelsonRightBraceTransfer(void) {
-	MESSSAGE_DEBUG("nelsonRightBraceTransfer")
+	SMSG_DEBUG("nelsonRightBraceTransfer")
 }
 
 void nelsonTransfer(void) {
-	MESSSAGE_DEBUG("nelsonTransfer")
+	SMSG_DEBUG("nelsonTransfer")
 }
 
 void nelsonDefinitions(void) {
-	MESSSAGE_DEBUG("nelsonDefinitions")
+	SMSG_DEBUG("nelsonDefinitions")
 }
 
 void nelsonVocabulary(void) {
-	MESSSAGE_DEBUG("nelsonVocabulary")
+	SMSG_DEBUG("nelsonVocabulary")
 }
 
 void nelsonXif(void) {
-	MESSSAGE_DEBUG("nelsonXif")
+	SMSG_DEBUG("nelsonXif")
 }
 
 void nelsonXElse(void) {
-	MESSSAGE_DEBUG("nelsonXElse")
+	SMSG_DEBUG("nelsonXElse")
 }
 
 void nelsonXThen(void) {
-	MESSSAGE_DEBUG("nelsonXThen")
+	SMSG_DEBUG("nelsonXThen")
 }
 
 void nelsonDefinedQ(void) {
-	MESSSAGE_DEBUG("nelsonDefinedQ")
+	SMSG_DEBUG("nelsonDefinedQ")
 }
 
 void nelsonQuit(void) {
-	MESSSAGE_DEBUG("nelsonQuit")
+	SMSG_DEBUG("nelsonQuit")
 }
 
 void nelsonEvaluate(void) {
-	MESSSAGE_DEBUG("nelsonEvaluate")
+	SMSG_DEBUG("nelsonEvaluate")
 }
 
 void nelsonPrompt(void) {
-	MESSSAGE_DEBUG("nelsonPrompt")
+	SMSG_DEBUG("nelsonPrompt")
 }
 
 void nelsonRefill(void) {
-	MESSSAGE_DEBUG("nelsonRefill")
+	SMSG_DEBUG("nelsonRefill")
 }
 
 void nelsonTib(void) {
-	MESSSAGE_DEBUG("nelsonTib")
+	SMSG_DEBUG("nelsonTib")
 }
 
 void nelsonAccept(void) {
-	MESSSAGE_DEBUG("nelsonAccept")
+	SMSG_DEBUG("nelsonAccept")
 }
 
 void nelsonEcho(void) {
-	MESSSAGE_DEBUG("nelsonEcho")
+	SMSG_DEBUG("nelsonEcho")
 }
 
 
 void nelsonFill(void) {
-	MESSSAGE_DEBUG("nelsonFill")
+	SMSG_DEBUG("nelsonFill")
 }
 
 void nelsonCMoveFrom(void) {
-	MESSSAGE_DEBUG("nelsonCMoveFrom")
+	SMSG_DEBUG("nelsonCMoveFrom")
 }
 
 void nelsonCMove(void) {
-	MESSSAGE_DEBUG("nelsonCMove")
+	SMSG_DEBUG("nelsonCMove")
 }
 
 void nelsonYGreaterS(void) {
-	MESSSAGE_DEBUG("nelsonYGreaterS")
+	SMSG_DEBUG("nelsonYGreaterS")
 }
 
 void nelsonSGreaterZ(void) {
-	MESSSAGE_DEBUG("nelsonSGreaterZ")
+	SMSG_DEBUG("nelsonSGreaterZ")
 }
 
 void nelsonRVerticalBar(void) {
-	MESSSAGE_DEBUG("nelsonRVerticalBar")
+	SMSG_DEBUG("nelsonRVerticalBar")
 }
 
 void nelsonRQuote(void) {
-	MESSSAGE_DEBUG("nelsonRVerticalBar")
+	SMSG_DEBUG("nelsonRVerticalBar")
 }
 
 void nelsonYQuote(void) {
-	MESSSAGE_DEBUG("nelsonYQuote")
+	SMSG_DEBUG("nelsonYQuote")
 }
 
 void nelsonDotQuote(void) {
-	MESSSAGE_DEBUG("nelsonDotQuote")
+	SMSG_DEBUG("nelsonDotQuote")
 }
 
 void nelsonSQuote(void) {
-	MESSSAGE_DEBUG("nelsonSQuote")
+	SMSG_DEBUG("nelsonSQuote")
 }
 
 void nelsonDollarPlace(void) {
-	MESSSAGE_DEBUG("nelsonDollarPlace")
+	SMSG_DEBUG("nelsonDollarPlace")
 }
 
 void nelsonNDot(void) {
-	MESSSAGE_DEBUG("nelsonNDot")
+	SMSG_DEBUG("nelsonNDot")
 }
 
 void nelsonQ(void) {
-	MESSSAGE_DEBUG("nelsonQ")
+	SMSG_DEBUG("nelsonQ")
 }
 
 void nelsonDot(void) {
-	MESSSAGE_DEBUG("nelsonDot")
+	SMSG_DEBUG("nelsonDot")
 }
 
 void nelsonUDot(void) {
-	MESSSAGE_DEBUG("nelsonUDot")
+	SMSG_DEBUG("nelsonUDot")
 }
 
 void nelsonBinary(void) {
-	MESSSAGE_DEBUG("nelsonBinary")
+	SMSG_DEBUG("nelsonBinary")
 }
 
 void nelsonDecimal(void) {
-	MESSSAGE_DEBUG("nelsonDecimal")
+	SMSG_DEBUG("nelsonDecimal")
 }
 
 void nelsonOctal(void) {
-	MESSSAGE_DEBUG("nelsonOctal")
+	SMSG_DEBUG("nelsonOctal")
 }
 
 void nelsonHex(void) {
-	MESSSAGE_DEBUG("nelsonHex")
+	SMSG_DEBUG("nelsonHex")
 }
 
 void nelsonStr(void) {
-	MESSSAGE_DEBUG("nelsonStr")
+	SMSG_DEBUG("nelsonStr")
 }
 
 void nelsonNumFrom(void) {
-	MESSSAGE_DEBUG("nelsonNumFrom")
+	SMSG_DEBUG("nelsonNumFrom")
 }
 
 void nelsonSign(void) {
-	MESSSAGE_DEBUG("nelsonSign")
+	SMSG_DEBUG("nelsonSign")
 }
 
 void nelsonNumS(void) {
-	MESSSAGE_DEBUG("nelsonNumS")
+	SMSG_DEBUG("nelsonNumS")
 }
 
 void nelsonNum(void) {
-	MESSSAGE_DEBUG("nelsonNum")
+	SMSG_DEBUG("nelsonNum")
 }
 
 void nelsonHold(void) {
-	MESSSAGE_DEBUG("nelsonHold")
+	SMSG_DEBUG("nelsonHold")
 }
 
 void nelsonLessNum(void) {
-	MESSSAGE_DEBUG("nelsonLessNum")
+	SMSG_DEBUG("nelsonLessNum")
 }
 
 void nelsonExtract(void) {
-	MESSSAGE_DEBUG("nelsonExtractm")
+	SMSG_DEBUG("nelsonExtractm")
 }
 
 void nelsonPad(void) {
-	MESSSAGE_DEBUG("nelsonPad")
+	SMSG_DEBUG("nelsonPad")
 }
 
 void nelsonHld(void) {
-	MESSSAGE_DEBUG("nelsonHld")
+	SMSG_DEBUG("nelsonHld")
 }
 
 void nelsonCr(void) {
-	MESSSAGE_DEBUG("nelsonCr")
+	SMSG_DEBUG("nelsonCr")
 }
 
 void nelsonSpace(void) {
-	MESSSAGE_DEBUG("nelsonSpace")
+	SMSG_DEBUG("nelsonSpace")
 }
 
 void nelsonEmit(void) {
-	MESSSAGE_DEBUG("nelsonEmit")
+	SMSG_DEBUG("nelsonEmit")
 }
 
 void nelsonBye(void) {
-	MESSSAGE_DEBUG("nelsonBye")
+	SMSG_DEBUG("nelsonBye")
 }
 
 void nelsonKeyQ(void) {
-	MESSSAGE_DEBUG("nelsonKeyQ")
+	SMSG_DEBUG("nelsonKeyQ")
 }
 
 void nelsonKey(void) {
-	MESSSAGE_DEBUG("nelsonKey")
+	SMSG_DEBUG("nelsonKey")
 }
 
 void nelsonType(void) {
-	MESSSAGE_DEBUG("nelsonType")
+	SMSG_DEBUG("nelsonType")
 }
 
 void nelsonIs(void) {
-	MESSSAGE_DEBUG("nelsonIs")
+	SMSG_DEBUG("nelsonIs")
 }
 
 void nelsonDefer(void) {
-	MESSSAGE_DEBUG("nelsonDefer")
+	SMSG_DEBUG("nelsonDefer")
 }
 
 void nelsonValue(void) {
-	MESSSAGE_DEBUG("nelsonValue")
+	SMSG_DEBUG("nelsonValue")
 }
 
 void nelsonThrow(void) {
-	MESSSAGE_DEBUG("nelsonThrow")
+	SMSG_DEBUG("nelsonThrow")
 }
 
 void nelsonCatch(void) {
-	MESSSAGE_DEBUG("nelsonCatch")
+	SMSG_DEBUG("nelsonCatch")
 }
 
 void nelsonHandler(void) {
-	MESSSAGE_DEBUG("nelsonHandler")
+	SMSG_DEBUG("nelsonHandler")
 }
 
 void nelsonJ(void) {
-	MESSSAGE_DEBUG("nelsonJ")
+	SMSG_DEBUG("nelsonJ")
 }
 
 void nelsonI(void) {
-	MESSSAGE_DEBUG("nelsonI")
+	SMSG_DEBUG("nelsonI")
 }
 
 void nelsonLoop(void) {
-	MESSSAGE_DEBUG("nelsonLoop")
+	SMSG_DEBUG("nelsonLoop")
 }
 
 void nelsonPlusLoop(void) {
-	MESSSAGE_DEBUG("nelsonPlusLoop")
+	SMSG_DEBUG("nelsonPlusLoop")
 }
 
 void nelsonLeave(void) {
-	MESSSAGE_DEBUG("nelsonLeave")
+	SMSG_DEBUG("nelsonLeave")
 }
 
 void nelsonUnLoop(void) {
-	MESSSAGE_DEBUG("nelsonUnLoop")
+	SMSG_DEBUG("nelsonUnLoop")
 }
 
 void nelsonQDo(void) {
-	MESSSAGE_DEBUG("nelsonQDo")
+	SMSG_DEBUG("nelsonQDo")
 }
 
 void nelsonDo(void) {
-	MESSSAGE_DEBUG("nelsonDo")
+	SMSG_DEBUG("nelsonDo")
 }
 
 void nelsonNext(void) {
-	MESSSAGE_DEBUG("nelsonNext")
+	SMSG_DEBUG("nelsonNext")
 }
 
 void nelsonFor(void) {
-	MESSSAGE_DEBUG("nelsonFor")
+	SMSG_DEBUG("nelsonFor")
 }
 
 void nelsonDepth(void) {
-	MESSSAGE_DEBUG("nelsonDepth")
+	SMSG_DEBUG("nelsonDepth")
 }
 
 void nelsonRP0(void) {
-	MESSSAGE_DEBUG("nelsonRP0")
+	SMSG_DEBUG("nelsonRP0")
 }
 
 void nelsonSP0(void) {
-	MESSSAGE_DEBUG("nelsonSP0")
+	SMSG_DEBUG("nelsonSP0")
 }
 
 void nelsonVariable(void) {
-	MESSSAGE_DEBUG("nelsonVariable")
+	SMSG_DEBUG("nelsonVariable")
 }
 
 void nelsonConstant(void) {
-	MESSSAGE_DEBUG("nelsonConstant")
+	SMSG_DEBUG("nelsonConstant")
 }
 
 void nelsonPostpone(void) {
-	MESSSAGE_DEBUG("nelsonPostpone")
+	SMSG_DEBUG("nelsonPostpone")
 }
 
 void nelsonToBody(void) {
-	MESSSAGE_DEBUG("nelsonToBody")
+	SMSG_DEBUG("nelsonToBody")
 }
 
 void nelsonToFlags(void) {
-	MESSSAGE_DEBUG("nelsonToFlags")
+	SMSG_DEBUG("nelsonToFlags")
 }
 
 void nelsonToLink(void) {
-	MESSSAGE_DEBUG("nelsonToLink")
+	SMSG_DEBUG("nelsonToLink")
 }
 
 void nelsonToLinkAmpersand(void) {
-	MESSSAGE_DEBUG("nelsonToLinkAmpersand")
+	SMSG_DEBUG("nelsonToLinkAmpersand")
 }
 
 void nelsonToName(void) {
-	MESSSAGE_DEBUG("nelsonToName")
+	SMSG_DEBUG("nelsonToName")
 }
 
 void nelsonAbs(void) {
-	MESSSAGE_DEBUG("nelsonAbs")
+	SMSG_DEBUG("nelsonAbs")
 }
 
 void nelsonMax(void) {
-	MESSSAGE_DEBUG("nelsonMax")
+	SMSG_DEBUG("nelsonMax")
 }
 
 void nelsonMin(void) {
-	MESSSAGE_DEBUG("nelsonMin")
+	SMSG_DEBUG("nelsonMin")
 }
 
 void nelsonAft(void) {
-	MESSSAGE_DEBUG("nelsonAft")
+	SMSG_DEBUG("nelsonAft")
 }
 
 void nelsonRepeat(void) {
-	MESSSAGE_DEBUG("nelsonRepeat")
+	SMSG_DEBUG("nelsonRepeat")
 }
 
 void nelsonWhile(void) {
-	MESSSAGE_DEBUG("nelsonWhile")
+	SMSG_DEBUG("nelsonWhile")
 }
 
 void nelsonElse(void) {
-	MESSSAGE_DEBUG("nelsonElse")
+	SMSG_DEBUG("nelsonElse")
 }
 
 void nelsonIf(void) {
-	MESSSAGE_DEBUG("nelsonIf")
+	SMSG_DEBUG("nelsonIf")
 }
 
 void nelsonThen(void) {
-	MESSSAGE_DEBUG("nelsonThen")
+	SMSG_DEBUG("nelsonThen")
 }
 
 void nelsonAhead(void) {
-	MESSSAGE_DEBUG("nelsonAhead")
+	SMSG_DEBUG("nelsonAhead")
 }
 
 void nelsonUntil(void) {
-	MESSSAGE_DEBUG("nelsonUntil")
+	SMSG_DEBUG("nelsonUntil")
 }
 
 void nelsonAgain(void) {
-	MESSSAGE_DEBUG("nelsonAgain")
+	SMSG_DEBUG("nelsonAgain")
 }
 
 void nelsonBegin(void) {
-	MESSSAGE_DEBUG("nelsonBegin")
+	SMSG_DEBUG("nelsonBegin")
 }
 
 void nelsonLiteral(void) {
-	MESSSAGE_DEBUG("nelsonLiteral")
+	SMSG_DEBUG("nelsonLiteral")
 }
 
 void nelsonXChar(void) {
-	MESSSAGE_DEBUG("nelsonXChar")
+	SMSG_DEBUG("nelsonXChar")
 }
 
 void nelsonChar(void) {
-	MESSSAGE_DEBUG("nelsonChar")
+	SMSG_DEBUG("nelsonChar")
 }
 
 void nelsonXNick(void) {
-	MESSSAGE_DEBUG("nelsonXNick")
+	SMSG_DEBUG("nelsonXNick")
 }
 
 void nelsonNick(void) {
-	MESSSAGE_DEBUG("nelsonNick")
+	SMSG_DEBUG("nelsonNick")
 }
 
 void nelsonRightBracket(void) {
-	MESSSAGE_DEBUG("nelsonRightBracket")
+	SMSG_DEBUG("nelsonRightBracket")
 }
 
 void nelsonLeftBracket(void) {
-	MESSSAGE_DEBUG("nelsonLeftBracket")
+	SMSG_DEBUG("nelsonLeftBracket")
 }
 
 void nelsonCComma(void) {
-	MESSSAGE_DEBUG("nelsonCComma")
+	SMSG_DEBUG("nelsonCComma")
 }
 
 void nelsonComma(void) {
-	MESSSAGE_DEBUG("nelsonComma")
+	SMSG_DEBUG("nelsonComma")
 }
 
 void nelsonAlign(void) {
-	MESSSAGE_DEBUG("nelsonAlign")
+	SMSG_DEBUG("nelsonAlign")
 }
 
 void nelsonAligned(void) {
-	MESSSAGE_DEBUG("nelsonAligned")
+	SMSG_DEBUG("nelsonAligned")
 }
 
 void nelsonAllot(void) {
-	MESSSAGE_DEBUG("nelsonAllot")
+	SMSG_DEBUG("nelsonAllot")
 }
 
 void nelsonHere(void) {
-	MESSSAGE_DEBUG("nelsonHere")
+	SMSG_DEBUG("nelsonHere")
 }
 
 void nelsonContext(void) {
-	MESSSAGE_DEBUG("nelsonContext")
+	SMSG_DEBUG("nelsonContext")
 }
 
 void nelsonCurrent(void) {
-	MESSSAGE_DEBUG("nelsonCurrent")
+	SMSG_DEBUG("nelsonCurrent")
 }
 
 void nelsonBase(void) {
-	MESSSAGE_DEBUG("nelsonBase")
+	SMSG_DEBUG("nelsonBase")
 }
 
 void nelsonState(void) {
-	MESSSAGE_DEBUG("nelsonState")
+	SMSG_DEBUG("nelsonState")
 }
 
 void nelsonToIn(void) {
-	MESSSAGE_DEBUG("nelsonToIn")
+	SMSG_DEBUG("nelsonToIn")
 }
 
 void nelsonNumTib(void) {
-	MESSSAGE_DEBUG("nelsonNumTib")
+	SMSG_DEBUG("nelsonNumTib")
 }
 
 void nelsonTickTib(void) {
-	MESSSAGE_DEBUG("nelsonTickTib")
+	SMSG_DEBUG("nelsonTickTib")
 }
 
 void nelsonTwoStore(void) {
-	MESSSAGE_DEBUG("nelsonTwoStore")
+	SMSG_DEBUG("nelsonTwoStore")
 }
 
 void nelsonTwoFetch(void) {
-	MESSSAGE_DEBUG("nelsonTwoFetch")
+	SMSG_DEBUG("nelsonTwoFetch")
 }
 
 void nelsonTwoDup(void) {
-	MESSSAGE_DEBUG("nelsonTwoDup")
+	SMSG_DEBUG("nelsonTwoDup")
 }
 
 void nelsonTwoDrop(void) {
-	MESSSAGE_DEBUG("nelsonTwoDrop")
+	SMSG_DEBUG("nelsonTwoDrop")
 }
 
 void nelsonCellSlash(void) {
-	MESSSAGE_DEBUG("nelsonCellSlash")
+	SMSG_DEBUG("nelsonCellSlash")
 }
 
 void nelsonCells(void) {
-	MESSSAGE_DEBUG("nelsonCells")
+	SMSG_DEBUG("nelsonCells")
 }
 
 void nelsonCellPlus(void) {
-	MESSSAGE_DEBUG("nelsonCellPlus")
+	SMSG_DEBUG("nelsonCellPlus")
 }
 
 void nelsonPlusStore(void) {
-	MESSSAGE_DEBUG("nelsonPlusStore")
+	SMSG_DEBUG("nelsonPlusStore")
 }
 
 void nelsonFourSlash(void) {
-	MESSSAGE_DEBUG("nelsonFourSlash")
+	SMSG_DEBUG("nelsonFourSlash")
 }
 
 void nelsonFourStar(void) {
-	MESSSAGE_DEBUG("nelsonFourStar")
+	SMSG_DEBUG("nelsonFourStar")
 }
 
 void nelsonTwoSlash(void) {
-	MESSSAGE_DEBUG("nelsonTwoSlash")
+	SMSG_DEBUG("nelsonTwoSlash")
 }
 
 void nelsonTwoStar(void) {
-	MESSSAGE_DEBUG("nelsonTwoStar")
+	SMSG_DEBUG("nelsonTwoStar")
 }
 
 void nelsonOneMinus(void) {
-	MESSSAGE_DEBUG("nelsonOneMinus")
+	SMSG_DEBUG("nelsonOneMinus")
 }
 
 void nelsonOnePlus(void) {
-	MESSSAGE_DEBUG("nelsonOnePlus")
+	SMSG_DEBUG("nelsonOnePlus")
 }
 
 void nelsonNl(void) {
-	MESSSAGE_DEBUG("nelsonNl")
+	SMSG_DEBUG("nelsonNl")
 }
 
 void nelsonBl(void) {
-	MESSSAGE_DEBUG("nelsonBl")
+	SMSG_DEBUG("nelsonBl")
 }
 
 void nelsonZeroUnequal(void) {
-	MESSSAGE_DEBUG("nelsonZeroUnequal")
+	SMSG_DEBUG("nelsonZeroUnequal")
 }
 
 void nelsonUnequal(void) {
-	MESSSAGE_DEBUG("nelsonUnequal")
+	SMSG_DEBUG("nelsonUnequal")
 }
 
 void nelsonEqual(void) {
-	MESSSAGE_DEBUG("nelsonEqual")
+	SMSG_DEBUG("nelsonEqual")
 }
 
 void nelsonGreaterEqual(void) {
-	MESSSAGE_DEBUG("nelsonGreaterEqual")
+	SMSG_DEBUG("nelsonGreaterEqual")
 }
 
 void nelsonLessEqual(void) {
-	MESSSAGE_DEBUG("nelsonLessEqual")
+	SMSG_DEBUG("nelsonLessEqual")
 }
 
 void nelsonGreater(void) {
-	MESSSAGE_DEBUG("nelsonGreater")
+	SMSG_DEBUG("nelsonGreater")
 }
 
 void nelsonLess(void) {
-	MESSSAGE_DEBUG("nelsonLess")
+	SMSG_DEBUG("nelsonLess")
 }
 
 void nelsonMinusRot(void) {
-	MESSSAGE_DEBUG("nelsonMinusRot")
+	SMSG_DEBUG("nelsonMinusRot")
 }
 
 void nelsonRot(void) {
-	MESSSAGE_DEBUG("nelsonRot")
+	SMSG_DEBUG("nelsonRot")
 }
 
 void nelsonMinus(void) {
-	MESSSAGE_DEBUG("nelsonMinus")
+	SMSG_DEBUG("nelsonMinus")
 }
 
 void nelsonNegate(void) {
-	MESSSAGE_DEBUG("nelsonNegate")
+	SMSG_DEBUG("nelsonNegate")
 }
 
 void nelsonInvert(void) {
-	MESSSAGE_DEBUG("nelsonInvert")
+	SMSG_DEBUG("nelsonInvert")
 }
 
 void nelsonMod(void) {
-	MESSSAGE_DEBUG("nelsonMod")
+	SMSG_DEBUG("nelsonMod")
 }
 
 void nelsonSlash(void) {
-	MESSSAGE_DEBUG("nelsonSlash")
+	SMSG_DEBUG("nelsonSlash")
 }
 
 void nelsonSlashMod(void) {
-	MESSSAGE_DEBUG("nelsonSlashMod")
+	SMSG_DEBUG("nelsonSlashMod")
 }
 
 void nelsonStar(void) {
-	MESSSAGE_DEBUG("nelsonStar")
+	SMSG_DEBUG("nelsonStar")
 }
 
 void nelsonStarSlash(void) {
-	MESSSAGE_DEBUG("nelsonStarSlash")
+	SMSG_DEBUG("nelsonStarSlash")
 }
 
 void nelsonRDrop(void) {
-	MESSSAGE_DEBUG("nelsonRDrop")
+	SMSG_DEBUG("nelsonRDrop")
 }
 
 void nelsonNip(void) {
-	MESSSAGE_DEBUG("nelsonNip")
+	SMSG_DEBUG("nelsonNip")
 }
 
 void nelsonBackslash(void) {
-	MESSSAGE_DEBUG("nelsonBackslash")
+	SMSG_DEBUG("nelsonBackslash")
 }
 
 void nelsonParen(void) {
-	MESSSAGE_DEBUG("nelsonParen")
+	SMSG_DEBUG("nelsonParen")
 }
 
 void nelsonExit(void) {
-	MESSSAGE_DEBUG("nelsonExit")
+	SMSG_DEBUG("nelsonExit")
 }
 
 void nelsonColon(void) {
-	MESSSAGE_DEBUG("nelsonColon")
+	SMSG_DEBUG("nelsonColon")
 }
 
 void nelsonImmediate(void) {
-	MESSSAGE_DEBUG("nelsonImmediate")
+	SMSG_DEBUG("nelsonImmediate")
 }
 
 void nelsonDoes(void) {
-	MESSSAGE_DEBUG("nelsonDoes")
+	SMSG_DEBUG("nelsonDoes")
 }
 
 void nelsonCreate(void) {
-	MESSSAGE_DEBUG("nelsonCreate")
+	SMSG_DEBUG("nelsonCreate")
 }
 
 void nelsonSGreaterNumberQ(void) {
-	MESSSAGE_DEBUG("nelsonSGreaterNumberQ")
+	SMSG_DEBUG("nelsonSGreaterNumberQ")
 }
 
 void nelsonParse(void) {
-	MESSSAGE_DEBUG("nelsonParse")
+	SMSG_DEBUG("nelsonParse")
 }
 
 void nelsonFind(void) {
-	MESSSAGE_DEBUG("nelsonFind")
+	SMSG_DEBUG("nelsonFind")
 }
 
 void nelsonCell(void) {
-	MESSSAGE_DEBUG("nelsonCell")
+	SMSG_DEBUG("nelsonCell")
 }
 
 void nelsonExecute(void) {
-	MESSSAGE_DEBUG("nelsonExecute")
+	SMSG_DEBUG("nelsonExecute")
 }
 
 void nelsonRFetch(void) {
-	MESSSAGE_DEBUG("nelsonRFetch")
+	SMSG_DEBUG("nelsonRFetch")
 }
 
 void nelsonRFrom(void) {
-	MESSSAGE_DEBUG("nelsonRFrom")
+	SMSG_DEBUG("nelsonRFrom")
 }
 
 void nelsonToR(void) {
-	MESSSAGE_DEBUG("nelsonToR")
+	SMSG_DEBUG("nelsonToR")
 }
 
 void nelsonRPStore(void) {
-	MESSSAGE_DEBUG("nelsonRPStore")
+	SMSG_DEBUG("nelsonRPStore")
 }
 
 void nelsonRPFetch(void) {
-	MESSSAGE_DEBUG("nelsonRPFetch")
+	SMSG_DEBUG("nelsonRPFetch")
 }
 
 void nelsonSPStore(void) {
-	MESSSAGE_DEBUG("nelsonSPStore")
+	SMSG_DEBUG("nelsonSPStore")
 }
 
 void nelsonSPFetch(void) {
-	MESSSAGE_DEBUG("nelsonSPFetch")
+	SMSG_DEBUG("nelsonSPFetch")
 }
 
 void nelsonCStore(void) {
-	MESSSAGE_DEBUG("nelsonCStore")
+	SMSG_DEBUG("nelsonCStore")
 }
 
 void nelsonLStore(void) {
-	MESSSAGE_DEBUG("nelsonLStore")
+	SMSG_DEBUG("nelsonLStore")
 }
 
 void nelsonStore(void) {
-	MESSSAGE_DEBUG("nelsonStore")
+	SMSG_DEBUG("nelsonStore")
 }
 
 void nelsonCFetch(void) {
-	MESSSAGE_DEBUG("nelsonCFetch")
+	SMSG_DEBUG("nelsonCFetch")
 }
 
 void nelsonLFetch(void) {
-	MESSSAGE_DEBUG("nelsonLFetch")
+	SMSG_DEBUG("nelsonLFetch")
 }
 
 void nelsonFetch(void) {
-	MESSSAGE_DEBUG("nelsonFetch")
+	SMSG_DEBUG("nelsonFetch")
 }
 
 void nelsonDrop(void) {
-	MESSSAGE_DEBUG("nelsonDrop")
+	SMSG_DEBUG("nelsonDrop")
 }
 
 void nelsonOver(void) {
-	MESSSAGE_DEBUG("nelsonOver")
+	SMSG_DEBUG("nelsonOver")
 }
 
 void nelsonSwap(void) {
-	MESSSAGE_DEBUG("nelsonSwap")
+	SMSG_DEBUG("nelsonSwap")
 }
 
 void nelsonDup(void) {
-	MESSSAGE_DEBUG("nelsonDup")
+	SMSG_DEBUG("nelsonDup")
 }
 
 void nelsonXor(void) {
-	MESSSAGE_DEBUG("nelsonXor")
+	SMSG_DEBUG("nelsonXor")
 }
 
 void nelsonOr(void) {
-	MESSSAGE_DEBUG("nelsonOr")
+	SMSG_DEBUG("nelsonOr")
 }
 
 void nelsonAnd(void) {
-	MESSSAGE_DEBUG("nelsonAnd")
+	SMSG_DEBUG("nelsonAnd")
 }
 
 void nelsonRShift(void) {
-	MESSSAGE_DEBUG("nelsonRShift")
+	SMSG_DEBUG("nelsonRShift")
 }
 
 void nelsonLShift(void) {
-	MESSSAGE_DEBUG("nelsonLShift")
+	SMSG_DEBUG("nelsonLShift")
 }
 
 void nelsonStarSlashMod(void) {
-	MESSSAGE_DEBUG("nelsonStarSlashMod")
+	SMSG_DEBUG("nelsonStarSlashMod")
 }
 
 void nelsonUSlashMod(void) {
-	MESSSAGE_DEBUG("nelsonUSlashMod")
+	SMSG_DEBUG("nelsonUSlashMod")
 }
 
 void nelsonPlus(void) {
-	MESSSAGE_DEBUG("nelsonPlus")
+	SMSG_DEBUG("nelsonPlus")
 }
 
 void nelsonZeroLess(void) {
-	MESSSAGE_DEBUG("nelsonZeroLess")
+	SMSG_DEBUG("nelsonZeroLess")
 }
 
 void nelsonZeroEqual(void) {
-	MESSSAGE_DEBUG("nelsonZeroEqual")
+	SMSG_DEBUG("nelsonZeroEqual")
 }
 
 #endif
@@ -1050,267 +1050,267 @@ void nelsonZeroEqual(void) {
 	H2O_FORTH_PRIMITIVES == NELSON_UE_FORTH
 
 void nelsonYLocal(void) {
-	MESSSAGE_DEBUG("nelsonYLocal")
+	SMSG_DEBUG("nelsonYLocal")
 }
 
 void nelsonProcessHeap(void) {
-	MESSSAGE_DEBUG("nelsonProcessHeap")
+	SMSG_DEBUG("nelsonProcessHeap")
 }
 
 void nelsonHeapReAlloc(void) {
-	MESSSAGE_DEBUG("nelsonHeapReAlloc")
+	SMSG_DEBUG("nelsonHeapReAlloc")
 }
 
 void nelsonHeapFree(void) {
-	MESSSAGE_DEBUG("nelsonHeapFree")
+	SMSG_DEBUG("nelsonHeapFree")
 }
 
 void nelsonHeapAlloc(void) {
-	MESSSAGE_DEBUG("nelsonHeapAlloc")
+	SMSG_DEBUG("nelsonHeapAlloc")
 }
 
 void nelsonGetProcessHeap(void) {
-	MESSSAGE_DEBUG("nelsonGetProcessHeap")
+	SMSG_DEBUG("nelsonGetProcessHeap")
 }
 
 void nelsonRenameFile(void) {
-	MESSSAGE_DEBUG("nelsonRenameFile")
+	SMSG_DEBUG("nelsonRenameFile")
 }
 
 void nelsonWindows(void) {
-	MESSSAGE_DEBUG("nelsonWindows")
+	SMSG_DEBUG("nelsonWindows")
 }
 
 void nelsonFDotS(void) {
-	MESSSAGE_DEBUG("nelsonFDotS")
+	SMSG_DEBUG("nelsonFDotS")
 }
 
 void nelsonFDot(void) {
-	MESSSAGE_DEBUG("nelsonFDot")
+	SMSG_DEBUG("nelsonFDot")
 }
 
 void nelsonNumFS(void) {
-	MESSSAGE_DEBUG("nelsonNumFS")
+	SMSG_DEBUG("nelsonNumFS")
 }
 
 void nelsonSetPrecision(void) {
-	MESSSAGE_DEBUG("nelsonSetPrecision")
+	SMSG_DEBUG("nelsonSetPrecision")
 }
 
 void nelsonPrecision(void) {
-	MESSSAGE_DEBUG("nelsonPrecision")
+	SMSG_DEBUG("nelsonPrecision")
 }
 
 void nelsonFSqrt(void) {
-	MESSSAGE_DEBUG("nelsonFSqrt")
+	SMSG_DEBUG("nelsonFSqrt")
 }
 
 void nelsonPi(void) {
-	MESSSAGE_DEBUG("nelsonPi")
+	SMSG_DEBUG("nelsonPi")
 }
 
 void nelsonFVariable(void) {
-	MESSSAGE_DEBUG("nelsonFVariable")
+	SMSG_DEBUG("nelsonFVariable")
 }
 
 void nelsonFConstant(void) {
-	MESSSAGE_DEBUG("nelsonFConstant")
+	SMSG_DEBUG("nelsonFConstant")
 }
 
 void nelsonFLiteral(void) {
-	MESSSAGE_DEBUG("nelsonFLiteral")
+	SMSG_DEBUG("nelsonFLiteral")
 }
 
 void nelsonAFLiteral(void) {
-	MESSSAGE_DEBUG("nelsonAFLiteral")
+	SMSG_DEBUG("nelsonAFLiteral")
 }
 
 void nelsonSFComma(void) {
-	MESSSAGE_DEBUG("nelsonSFComma")
+	SMSG_DEBUG("nelsonSFComma")
 }
 
 void nelsonSFloatPlus(void) {
-	MESSSAGE_DEBUG("nelsonSFloatPlus")
+	SMSG_DEBUG("nelsonSFloatPlus")
 }
 
 void nelsonSFloats(void) {
-	MESSSAGE_DEBUG("nelsonSFloats")
+	SMSG_DEBUG("nelsonSFloats")
 }
 
 void nelsonSFloat(void) {
-	MESSSAGE_DEBUG("nelsonSFloat")
+	SMSG_DEBUG("nelsonSFloat")
 }
 
 void nelsonSFGreaterEqual(void) {
-	MESSSAGE_DEBUG("nelsonSFGreaterEqual")
+	SMSG_DEBUG("nelsonSFGreaterEqual")
 }
 
 void nelsonSFLessEqual(void) {
-	MESSSAGE_DEBUG("nelsonSFLessEqual")
+	SMSG_DEBUG("nelsonSFLessEqual")
 }
 
 void nelsonSFUnequal(void) {
-	MESSSAGE_DEBUG("nelsonSFUnequal")
+	SMSG_DEBUG("nelsonSFUnequal")
 }
 
 void nelsonSFGreater(void) {
-	MESSSAGE_DEBUG("nelsonSFGreater")
+	SMSG_DEBUG("nelsonSFGreater")
 }
 
 void nelsonSFLess(void) {
-	MESSSAGE_DEBUG("nelsonSFLess")
+	SMSG_DEBUG("nelsonSFLess")
 }
 
 void nelsonSFEqual(void) {
-	MESSSAGE_DEBUG("nelsonSFEqual")
+	SMSG_DEBUG("nelsonSFEqual")
 }
 
 void nelsonAtXy(void) {
-	MESSSAGE_DEBUG("nelsonAtXy")
+	SMSG_DEBUG("nelsonAtXy")
 }
 
 void nelsonNormal(void) {
-	MESSSAGE_DEBUG("nelsonNormal")
+	SMSG_DEBUG("nelsonNormal")
 }
 
 void nelsonBg(void) {
-	MESSSAGE_DEBUG("nelsonBg")
+	SMSG_DEBUG("nelsonBg")
 }
 
 void nelsonFg(void) {
-	MESSSAGE_DEBUG("nelsonFg")
+	SMSG_DEBUG("nelsonFg")
 }
 
 void nelsonAnsi(void) {
-	MESSSAGE_DEBUG("nelsonAnsi")
+	SMSG_DEBUG("nelsonAnsi")
 }
 
 void nelsonBlank(void) {
-	MESSSAGE_DEBUG("nelsonBlank")
+	SMSG_DEBUG("nelsonBlank")
 }
 
 void nelsonErase(void) {
-	MESSSAGE_DEBUG("nelsonErase")
+	SMSG_DEBUG("nelsonErase")
 }
 
 void nelsonYPlace(void) {
-	MESSSAGE_DEBUG("nelsonYPlace")
+	SMSG_DEBUG("nelsonYPlace")
 }
 
 void nelsonValueBins(void) {
-	MESSSAGE_DEBUG("nelsonValueBins")
+	SMSG_DEBUG("nelsonValueBins")
 }
 
 void nelsonNestDepth(void) {
-	MESSSAGE_DEBUG("nelsonNestDepth")
+	SMSG_DEBUG("nelsonNestDepth")
 }
 
 void nelsonFDepth(void) {
-	MESSSAGE_DEBUG("nelsonFDepth")
+	SMSG_DEBUG("nelsonFDepth")
 }
 
 void nelsonFP0(void) {
-	MESSSAGE_DEBUG("nelsonFP0")
+	SMSG_DEBUG("nelsonFP0")
 }
 
 void nelsonRecurse(void) {
-	MESSSAGE_DEBUG("nelsonRecurse")
+	SMSG_DEBUG("nelsonRecurse")
 }
 
 void nelsonYield(void) {
-	MESSSAGE_DEBUG("nelsonYield")
+	SMSG_DEBUG("nelsonYield")
 }
 
 void nelsonFGreaterNumberQ(void) {
-	MESSSAGE_DEBUG("nelsonFGreaterNumberQ")
+	SMSG_DEBUG("nelsonFGreaterNumberQ")
 }
 
 void nelsonFToS(void) {
-	MESSSAGE_DEBUG("nelsonFToS")
+	SMSG_DEBUG("nelsonFToS")
 }
 
 void nelsonSToF(void) {
-	MESSSAGE_DEBUG("nelsonSToF")
+	SMSG_DEBUG("nelsonSToF")
 }
 
 void nelsonOneSlashF(void) {
-	MESSSAGE_DEBUG("nelsonOneSlashF")
+	SMSG_DEBUG("nelsonOneSlashF")
 }
 
 void nelsonFSlash(void) {
-	MESSSAGE_DEBUG("nelsonFSlash")
+	SMSG_DEBUG("nelsonFSlash")
 }
 
 void nelsonFStar(void) {
-	MESSSAGE_DEBUG("nelsonFStar")
+	SMSG_DEBUG("nelsonFStar")
 }
 
 void nelsonFMinus(void) {
-	MESSSAGE_DEBUG("nelsonFMinus")
+	SMSG_DEBUG("nelsonFMinus")
 }
 
 void nelsonFPlus(void) {
-	MESSSAGE_DEBUG("nelsonFPlus")
+	SMSG_DEBUG("nelsonFPlus")
 }
 
 void nelsonF0Equal(void) {
-	MESSSAGE_DEBUG("nelsonF0Equal")
+	SMSG_DEBUG("nelsonF0Equal")
 }
 
 void nelsonF0Less(void) {
-	MESSSAGE_DEBUG("nelsonF0Less")
+	SMSG_DEBUG("nelsonF0Less")
 }
 
 void nelsonFNegate(void) {
-	MESSSAGE_DEBUG("nelsonFNegate")
+	SMSG_DEBUG("nelsonFNegate")
 }
 
 void nelsonFswa(void) {
-	MESSSAGE_DEBUG("nelsonFswa")
+	SMSG_DEBUG("nelsonFswa")
 }
 
 void nelsonFOver(void) {
-	MESSSAGE_DEBUG("nelsonFOver")
+	SMSG_DEBUG("nelsonFOver")
 }
 
 void nelsonFDrop(void) {
-	MESSSAGE_DEBUG("nelsonFDrop")
+	SMSG_DEBUG("nelsonFDrop")
 }
 
 void nelsonFNip(void) {
-	MESSSAGE_DEBUG("nelsonFNip")
+	SMSG_DEBUG("nelsonFNip")
 }
 
 void nelsonFDup(void) {
-	MESSSAGE_DEBUG("nelsonFDup")
+	SMSG_DEBUG("nelsonFDup")
 }
 
 void nelsonSFStore(void) {
-	MESSSAGE_DEBUG("nelsonSFStore")
+	SMSG_DEBUG("nelsonSFStore")
 }
 
 void nelsonSFFetch(void) {
-	MESSSAGE_DEBUG("nelsonSFFetch")
+	SMSG_DEBUG("nelsonSFFetch")
 }
 
 void nelsonSF(void) {
-	MESSSAGE_DEBUG("nelsonSF")
+	SMSG_DEBUG("nelsonSF")
 }
 
 void nelsonFPStore(void) {
-	MESSSAGE_DEBUG("nelsonFPStore")
+	SMSG_DEBUG("nelsonFPStore")
 }
 
 void nelsonFPFetch(void) {
-	MESSSAGE_DEBUG("nelsonFPFetch")
+	SMSG_DEBUG("nelsonFPFetch")
 }
 
 void nelsonLoadLibraryA(void) {
-	MESSSAGE_DEBUG("nelsonLoadLibraryA")
+	SMSG_DEBUG("nelsonLoadLibraryA")
 }
 
 void nelsonGetProcAddress(void) {
-	MESSSAGE_DEBUG("nelsonGetProcAddress")
+	SMSG_DEBUG("nelsonGetProcAddress")
 }
 
 
@@ -1321,159 +1321,159 @@ void nelsonGetProcAddress(void) {
 	H2O_FORTH_PRIMITIVES == NELSON_ESP_FORTH
 
 void nelsonTelnetD(void) {
-	MESSSAGE_DEBUG("nelsonTelnetD")
+	SMSG_DEBUG("nelsonTelnetD")
 }
 
 void nelsonBTerm(void) {
-	MESSSAGE_DEBUG("nelsonBTerm")
+	SMSG_DEBUG("nelsonBTerm")
 }
 
 void nelsonTimers(void) {
-	MESSSAGE_DEBUG("nelsonTimers")
+	SMSG_DEBUG("nelsonTimers")
 }
 
 void nelsonRegisters(void) {
-	MESSSAGE_DEBUG("nelsonRegisters")
+	SMSG_DEBUG("nelsonRegisters")
 }
 
 void nelsonWebUI(void) {
-	MESSSAGE_DEBUG("nelsonWebUI")
+	SMSG_DEBUG("nelsonWebUI")
 }
 
 void nelsonLogin(void) {
-	MESSSAGE_DEBUG("nelsonLogin")
+	SMSG_DEBUG("nelsonLogin")
 }
 
 void nelsonWebInterface(void) {
-	MESSSAGE_DEBUG("nelsonWebInterface")
+	SMSG_DEBUG("nelsonWebInterface")
 }
 
 void nelsonRtos(void) {
-	MESSSAGE_DEBUG("nelsonRtos")
+	SMSG_DEBUG("nelsonRtos")
 }
 
 void nelsonInterrupts(void) {
-	MESSSAGE_DEBUG("nelsonInterrupts")
+	SMSG_DEBUG("nelsonInterrupts")
 }
 
 void nelsonSockets(void) {
-	MESSSAGE_DEBUG("nelsonSockets")
+	SMSG_DEBUG("nelsonSockets")
 }
 
 void nelsonSerial(void) {
-	MESSSAGE_DEBUG("nelsonSerial")
+	SMSG_DEBUG("nelsonSerial")
 }
 
 void nelsonLedC(void) {
-	MESSSAGE_DEBUG("nelsonLedC")
+	SMSG_DEBUG("nelsonLedC")
 }
 
 void nelsonSpiffs(void) {
-	MESSSAGE_DEBUG("nelsonSpiffs")
+	SMSG_DEBUG("nelsonSpiffs")
 }
 
 void nelsonSdMmc(void) {
-	MESSSAGE_DEBUG("nelsonSdMmc")
+	SMSG_DEBUG("nelsonSdMmc")
 }
 
 void nelsonWifi(void) {
-	MESSSAGE_DEBUG("nelsonWifi")
+	SMSG_DEBUG("nelsonWifi")
 }
 
 void nelsonWebserver(void) {
-	MESSSAGE_DEBUG("nelsonWebserver")
+	SMSG_DEBUG("nelsonWebserver")
 }
 
 void nelsonWire(void) {
-	MESSSAGE_DEBUG("nelsonWire")
+	SMSG_DEBUG("nelsonWire")
 }
 
 void nelsonLed(void) {
-	MESSSAGE_DEBUG("nelsonLed")
+	SMSG_DEBUG("nelsonLed")
 }
 
 void nelsonOutput(void) {
-	MESSSAGE_DEBUG("nelsonOutput")
+	SMSG_DEBUG("nelsonOutput")
 }
 
 void nelsonInput(void) {
-	MESSSAGE_DEBUG("nelsonInput")
+	SMSG_DEBUG("nelsonInput")
 }
 
 void nelsonHigh(void) {
-	MESSSAGE_DEBUG("nelsonHigh")
+	SMSG_DEBUG("nelsonHigh")
 }
 
 void nelsonLow(void) {
-	MESSSAGE_DEBUG("nelsonLow")
+	SMSG_DEBUG("nelsonLow")
 }
 
 void nelsonTone(void) {
-	MESSSAGE_DEBUG("nelsonTone")
+	SMSG_DEBUG("nelsonTone")
 }
 
 void nelsonFreq(void) {
-	MESSSAGE_DEBUG("nelsonFreq")
+	SMSG_DEBUG("nelsonFreq")
 }
 
 void nelsonDuty(void) {
-	MESSSAGE_DEBUG("nelsonDuty")
+	SMSG_DEBUG("nelsonDuty")
 }
 
 void nelsonAdc(void) {
-	MESSSAGE_DEBUG("nelsonAdc")
+	SMSG_DEBUG("nelsonAdc")
 }
 
 void nelsonPin(void) {
-	MESSSAGE_DEBUG("nelsonPin")
+	SMSG_DEBUG("nelsonPin")
 }
 
 void nelsonTimerIsrRegister(void) {
-	MESSSAGE_DEBUG("nelsonTimerIsrRegister")
+	SMSG_DEBUG("nelsonTimerIsrRegister")
 }
 
 void nelsonSdMmcDotBegin(void) {
-	MESSSAGE_DEBUG("nelsonSdMmcDotBegin")
+	SMSG_DEBUG("nelsonSdMmcDotBegin")
 }
 
 void nelsonMdnsDotBegin(void) {
-	MESSSAGE_DEBUG("nelsonMdnsDotBegin")
+	SMSG_DEBUG("nelsonMdnsDotBegin")
 }
 
 void nelsonBin(void) {
-	MESSSAGE_DEBUG("nelsonBin")
+	SMSG_DEBUG("nelsonBin")
 }
 
 void nelsonTerminate(void) {
-	MESSSAGE_DEBUG("nelsonTerminate")
+	SMSG_DEBUG("nelsonTerminate")
 }
 
 void nelsonMSTicks(void) {
-	MESSSAGE_DEBUG("nelsonMSTicks")
+	SMSG_DEBUG("nelsonMSTicks")
 }
 
 void nelsonDacWrite(void) {
-	MESSSAGE_DEBUG("nelsonDacWrite")
+	SMSG_DEBUG("nelsonDacWrite")
 }
 
 void nelsonPulsIn(void) {
-	MESSSAGE_DEBUG("nelsonPulsIn")
+	SMSG_DEBUG("nelsonPulsIn")
 }
 
 void nelsonAnalogRead(void) {
-	MESSSAGE_DEBUG("nelsonAnalogRead")
+	SMSG_DEBUG("nelsonAnalogRead")
 }
 
 void nelsonDigitalRead(void) {
-	MESSSAGE_DEBUG("nelsonDigitalRead")
+	SMSG_DEBUG("nelsonDigitalRead")
 }
 
 void nelsonDigitalWrite(void) {
-	MESSSAGE_DEBUG("nelsonDigitalWrite")
+	SMSG_DEBUG("nelsonDigitalWrite")
 }
 
 void nelsonPinMode(void) {
-	MESSSAGE_DEBUG("nelsonPinMode")
+	SMSG_DEBUG("nelsonPinMode")
 }
 
 #endif

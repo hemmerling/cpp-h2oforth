@@ -5,279 +5,279 @@
 /* Primitives */
 
 void knaggsbennetStore(void) {
-	MESSSAGE_DEBUG("knaggsbennetStore")
+	SMSG_DEBUG("knaggsbennetStore")
 }
 
 void knaggsbennetComma(void) {
-	MESSSAGE_DEBUG("knaggsbennetComma")
+	SMSG_DEBUG("knaggsbennetComma")
 }
 
 void knaggsbennetFetch(void) {
-	MESSSAGE_DEBUG("knaggsbennetFetch")
+	SMSG_DEBUG("knaggsbennetFetch")
 }
 
 void knaggsbennetAlign(void) {
-	MESSSAGE_DEBUG("knaggsbennetAlign")
+	SMSG_DEBUG("knaggsbennetAlign")
 }
 
 void knaggsbennetAligned(void) {
-	MESSSAGE_DEBUG("knaggsbennetAligned")
+	SMSG_DEBUG("knaggsbennetAligned")
 }
 
 void knaggsbennetCellPlus(void) {
-	MESSSAGE_DEBUG("knaggsbennetCellPlus")
+	SMSG_DEBUG("knaggsbennetCellPlus")
 }
 
 void knaggsbennetCells(void) {
-	MESSSAGE_DEBUG("knaggsbennetCells")
+	SMSG_DEBUG("knaggsbennetCells")
 }
 
 void knaggsbennetCStore(void) {
-	MESSSAGE_DEBUG("knaggsbennetCStore")
+	SMSG_DEBUG("knaggsbennetCStore")
 }
 
 void knaggsbennetC(void) {
-	MESSSAGE_DEBUG("knaggsbennetC")
+	SMSG_DEBUG("knaggsbennetC")
 }
 
 void knaggsbennetCCommaCFetch(void) {
-	MESSSAGE_DEBUG("knaggsbennetCCommaCFetch")
+	SMSG_DEBUG("knaggsbennetCCommaCFetch")
 }
 
 void knaggsbennetCAlign(void) {
-	MESSSAGE_DEBUG("knaggsbennetCAlign")
+	SMSG_DEBUG("knaggsbennetCAlign")
 }
 
 void knaggsbennetCAligned(void) {
-	MESSSAGE_DEBUG("knaggsbennetCAligned")
+	SMSG_DEBUG("knaggsbennetCAligned")
 }
 
 void knaggsbennetCharPlus(void) {
-	MESSSAGE_DEBUG("knaggsbennetCharPlus")
+	SMSG_DEBUG("knaggsbennetCharPlus")
 }
 
 void knaggsbennetChars(void) {
-	MESSSAGE_DEBUG("knaggsbennetChars")
+	SMSG_DEBUG("knaggsbennetChars")
 }
 
 void knaggsbennetPlus(void) {
-	MESSSAGE_DEBUG("knaggsbennetPlus")
+	SMSG_DEBUG("knaggsbennetPlus")
 }
 
 void knaggsbennetStar(void) {
-	MESSSAGE_DEBUG("knaggsbennetStar")
+	SMSG_DEBUG("knaggsbennetStar")
 }
 
 void knaggsbennetTwoStar(void) {
-	MESSSAGE_DEBUG("knaggsbennetTwoStar")
+	SMSG_DEBUG("knaggsbennetTwoStar")
 }
 
 void knaggsbennetStarSlashMod(void) {
-	MESSSAGE_DEBUG("knaggsbennetStarSlashMod")
+	SMSG_DEBUG("knaggsbennetStarSlashMod")
 }
 
 void knaggsbennetMinus(void) {
-	MESSSAGE_DEBUG("knaggsbennetMinus")
+	SMSG_DEBUG("knaggsbennetMinus")
 }
 
 void knaggsbennetSlash(void) {
-	MESSSAGE_DEBUG("knaggsbennetSlash")
+	SMSG_DEBUG("knaggsbennetSlash")
 }
 
 void knaggsbennetTwoSlash(void) {
-	MESSSAGE_DEBUG("knaggsbennetTwoSlash")
+	SMSG_DEBUG("knaggsbennetTwoSlash")
 }
 
 void knaggsbennetMod(void) {
-	MESSSAGE_DEBUG("knaggsbennetMod")
+	SMSG_DEBUG("knaggsbennetMod")
 }
 
 void knaggsbennetZeroEquals(void) {
-	MESSSAGE_DEBUG("knaggsbennetZeroEquals")
+	SMSG_DEBUG("knaggsbennetZeroEquals")
 }
 
 void knaggsbennetLessThen(void) {
-	MESSSAGE_DEBUG("knaggsbennetLessThen")
+	SMSG_DEBUG("knaggsbennetLessThen")
 }
 
 void knaggsbennetAnd(void) {
-	MESSSAGE_DEBUG("knaggsbennetAnd")
+	SMSG_DEBUG("knaggsbennetAnd")
 }
 
 void knaggsbennetInvert(void) {
-	MESSSAGE_DEBUG("knaggsbennetInvert")
+	SMSG_DEBUG("knaggsbennetInvert")
 }
 
 void knaggsbennetTrue(void) {
-	MESSSAGE_DEBUG("knaggsbennetTrue")
+	SMSG_DEBUG("knaggsbennetTrue")
 }
 
 void knaggsbennetLShift(void) {
-	MESSSAGE_DEBUG("knaggsbennetLShift")
+	SMSG_DEBUG("knaggsbennetLShift")
 }
 
 void knaggsbennetEquals(void) {
-	MESSSAGE_DEBUG("knaggsbennetEquals")
+	SMSG_DEBUG("knaggsbennetEquals")
 }
 
 void knaggsbennetGreaterThan(void) {
-	MESSSAGE_DEBUG("knaggsbennetGreaterThan")
+	SMSG_DEBUG("knaggsbennetGreaterThan")
 }
 
 void knaggsbennetOr(void) {
-	MESSSAGE_DEBUG("knaggsbennetOr")
+	SMSG_DEBUG("knaggsbennetOr")
 }
 
 void knaggsbennetXor(void) {
-	MESSSAGE_DEBUG("knaggsbennetXor")
+	SMSG_DEBUG("knaggsbennetXor")
 }
 
 void knaggsbennetFalse(void) {
-	MESSSAGE_DEBUG("knaggsbennetFalse")
+	SMSG_DEBUG("knaggsbennetFalse")
 }
 
 void knaggsbennetRShift(void) {
-	MESSSAGE_DEBUG("knaggsbennetRShift")
+	SMSG_DEBUG("knaggsbennetRShift")
 }
 
 void knaggsbennetDupe(void) {
-	MESSSAGE_DEBUG("knaggsbennetDupe")
+	SMSG_DEBUG("knaggsbennetDupe")
 }
 
 void knaggsbennetSwap(void) {
-	MESSSAGE_DEBUG("knaggsbennetSwap")
+	SMSG_DEBUG("knaggsbennetSwap")
 }
 
 void knaggsbennetToR(void) {
-	MESSSAGE_DEBUG("knaggsbennetToR")
+	SMSG_DEBUG("knaggsbennetToR")
 }
 
 void knaggsbennetRFetch(void) {
-	MESSSAGE_DEBUG("knaggsbennetRFetch")
+	SMSG_DEBUG("knaggsbennetRFetch")
 }
 
 void knaggsbennetDrop(void) {
-	MESSSAGE_DEBUG("knaggsbennetDrop")
+	SMSG_DEBUG("knaggsbennetDrop")
 }
 
 void knaggsbennetOver(void) {
-	MESSSAGE_DEBUG("knaggsbennetOver")
+	SMSG_DEBUG("knaggsbennetOver")
 }
 
 void knaggsbennetRFrom(void) {
-	MESSSAGE_DEBUG("knaggsbennetRFrom")
+	SMSG_DEBUG("knaggsbennetRFrom")
 }
 
 void knaggsbennetRote(void) {
-	MESSSAGE_DEBUG("knaggsbennetRote")
+	SMSG_DEBUG("knaggsbennetRote")
 }
 
 void knaggsbennetIf(void) {
-	MESSSAGE_DEBUG("knaggsbennetIf")
+	SMSG_DEBUG("knaggsbennetIf")
 }
 
 void knaggsbennetThen(void) {
-	MESSSAGE_DEBUG("knaggsbennetThen")
+	SMSG_DEBUG("knaggsbennetThen")
 }
 
 void knaggsbennetWhile(void) {
-	MESSSAGE_DEBUG("knaggsbennetWhile")
+	SMSG_DEBUG("knaggsbennetWhile")
 }
 
 void knaggsbennetRepeat(void) {
-	MESSSAGE_DEBUG("knaggsbennetRepeat")
+	SMSG_DEBUG("knaggsbennetRepeat")
 }
 
 void knaggsbennetDo(void) {
-	MESSSAGE_DEBUG("knaggsbennetDo")
+	SMSG_DEBUG("knaggsbennetDo")
 }
 
 void knaggsbennetI(void) {
-	MESSSAGE_DEBUG("knaggsbennetI")
+	SMSG_DEBUG("knaggsbennetI")
 }
 
 void knaggsbennetTick(void) {
-	MESSSAGE_DEBUG("knaggsbennetTick")
+	SMSG_DEBUG("knaggsbennetTick")
 }
 
 void knaggsbennetElse(void) {
-	MESSSAGE_DEBUG("knaggsbennetElse")
+	SMSG_DEBUG("knaggsbennetElse")
 }
 
 void knaggsbennetBegin(void) {
-	MESSSAGE_DEBUG("knaggsbennetBegin")
+	SMSG_DEBUG("knaggsbennetBegin")
 }
 
 void knaggsbennetAgain(void) {
-	MESSSAGE_DEBUG("knaggsbennetAgain")
+	SMSG_DEBUG("knaggsbennetAgain")
 }
 
 void knaggsbennetUntil(void) {
-	MESSSAGE_DEBUG("knaggsbennetUntil")
+	SMSG_DEBUG("knaggsbennetUntil")
 }
 
 void knaggsbennetLoop(void) {
-	MESSSAGE_DEBUG("knaggsbennetLoop")
+	SMSG_DEBUG("knaggsbennetLoop")
 }
 
 void knaggsbennetJ(void) {
-	MESSSAGE_DEBUG("knaggsbennetJ")
+	SMSG_DEBUG("knaggsbennetJ")
 }
 
 void knaggsbennetExecute(void) {
-	MESSSAGE_DEBUG("knaggsbennetExecute")
+	SMSG_DEBUG("knaggsbennetExecute")
 }
 
 void knaggsbennetColon(void) {
-	MESSSAGE_DEBUG("knaggsbennetColon")
+	SMSG_DEBUG("knaggsbennetColon")
 }
 
 void knaggsbennetConstant(void) {
-	MESSSAGE_DEBUG("knaggsbennetConstant")
+	SMSG_DEBUG("knaggsbennetConstant")
 }
 
 void knaggsbennetCreate(void) {
-	MESSSAGE_DEBUG("knaggsbennetCreate")
+	SMSG_DEBUG("knaggsbennetCreate")
 }
 
 void knaggsbennetSemicolon(void) {
-	MESSSAGE_DEBUG("knaggsbennetSemicolon")
+	SMSG_DEBUG("knaggsbennetSemicolon")
 }
 
 void knaggsbennetVariable(void) {
-	MESSSAGE_DEBUG("knaggsbennetVariable")
+	SMSG_DEBUG("knaggsbennetVariable")
 }
 
 void knaggsbennetDoes(void) {
-	MESSSAGE_DEBUG("knaggsbennetDoes")
+	SMSG_DEBUG("knaggsbennetDoes")
 }
 
 void knaggsbennetKey(void) {
-	MESSSAGE_DEBUG("knaggsbennetKey")
+	SMSG_DEBUG("knaggsbennetKey")
 }
 
 void knaggsbennetEmit(void) {
-	MESSSAGE_DEBUG("knaggsbennetEmit")
+	SMSG_DEBUG("knaggsbennetEmit")
 }
 
 void knaggsbennetKeyQuestion(void) {
-	MESSSAGE_DEBUG("knaggsbennetKeyQuestion")
+	SMSG_DEBUG("knaggsbennetKeyQuestion")
 }
 
 void knaggsbennetCr(void) {
-	MESSSAGE_DEBUG("knaggsbennetCr")
+	SMSG_DEBUG("knaggsbennetCr")
 }
 
 void knaggsbennetParen(void) {
-	MESSSAGE_DEBUG("knaggsbennetParen")
+	SMSG_DEBUG("knaggsbennetParen")
 }
 
 void knaggsbennetDotS(void) {
-	MESSSAGE_DEBUG("knaggsbennetDotS")
+	SMSG_DEBUG("knaggsbennetDotS")
 }
 
 void knaggsbennetBackslash(void) {
-	MESSSAGE_DEBUG("knaggsbennetBackslash")
+	SMSG_DEBUG("knaggsbennetBackslash")
 }
 
 #endif

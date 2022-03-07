@@ -3,7 +3,8 @@
 
 /* Definitions of FORTH words common to one or more FORTH standards & FORTH implementations */
 
-void privateMessage(char*, int, int, int);
+void privateCMessage(char, int, int, int);
+void privateSMessage(char*, int, int, int);
 char* privateBaseConversion(CELL_INTEGER, CELL_INTEGER);
 void privateMessageHandler(void);
 void privateSetBaseFormat(void);

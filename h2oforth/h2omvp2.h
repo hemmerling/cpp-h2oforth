@@ -5,1519 +5,1519 @@
 /* Primitives */
 
 void mvpSemicolonCode(void) {
-	MESSSAGE_DEBUG("mvpSemicolonCode")
+	SMSG_DEBUG("mvpSemicolonCode")
 }
 
 void mvpCode(void) {
-	MESSSAGE_DEBUG("mvpCode")
+	SMSG_DEBUG("mvpCode")
 }
 
 void mvpEnterCode(void) {
-	MESSSAGE_DEBUG("mvpEnterCode")
+	SMSG_DEBUG("mvpEnterCode")
 }
 
 void mvpAssembler(void) {
-	MESSSAGE_DEBUG("mvpAssembler")
+	SMSG_DEBUG("mvpAssembler")
 }
 
 void mvpQError4(void) {
-	MESSSAGE_DEBUG("mvpQError4")
+	SMSG_DEBUG("mvpQError4")
 }
 
 void mvpQError3(void) {
-	MESSSAGE_DEBUG("mvpQError3")
+	SMSG_DEBUG("mvpQError3")
 }
 
 void mvpQError2(void) {
-	MESSSAGE_DEBUG("mvpQError2")
+	SMSG_DEBUG("mvpQError2")
 }
 
 void mvpQError1(void) {
-	MESSSAGE_DEBUG("mvpQError1")
+	SMSG_DEBUG("mvpQError1")
 }
 
 void mvpTo(void) {
-	MESSSAGE_DEBUG("mvpTo")
+	SMSG_DEBUG("mvpTo")
 }
 
 void mvpEditor(void) {
-	MESSSAGE_DEBUG("mvpEditor")
+	SMSG_DEBUG("mvpEditor")
 }
 
 void mvpWipe(void) {
-	MESSSAGE_DEBUG("mvpWipe")
+	SMSG_DEBUG("mvpWipe")
 }
 
 void mvpLine(void) {
-	MESSSAGE_DEBUG("mvpLine")
+	SMSG_DEBUG("mvpLine")
 }
 
 void mvpMatch(void) {
-	MESSSAGE_DEBUG("mvpMatch")
+	SMSG_DEBUG("mvpMatch")
 }
 
 void mvpZMatch(void) {
-	MESSSAGE_DEBUG("mvpZMatch")
+	SMSG_DEBUG("mvpZMatch")
 }
 
 void mvpXTick(void) {
-	MESSSAGE_DEBUG("mvpXTick")
+	SMSG_DEBUG("mvpXTick")
 }
 
 void mvpUDotR(void) {
-	MESSSAGE_DEBUG("mvpUDotR")
+	SMSG_DEBUG("mvpUDotR")
 }
 
 void mvpOctal(void) {
-	MESSSAGE_DEBUG("mvpOctal")
+	SMSG_DEBUG("mvpOctal")
 }
 
 void mvpH(void) {
-	MESSSAGE_DEBUG("mvpH")
+	SMSG_DEBUG("mvpH")
 }
 
 void mvpFlush(void) {
-	MESSSAGE_DEBUG("mvpFlush")
+	SMSG_DEBUG("mvpFlush")
 }
 
 void mvpErase(void) {
-	MESSSAGE_DEBUG("mvpErase")
+	SMSG_DEBUG("mvpErase")
 }
 
 void mvpEmpty(void) {
-	MESSSAGE_DEBUG("mvpEmpty")
+	SMSG_DEBUG("mvpEmpty")
 }
 
 void mvpToType(void) {
-	MESSSAGE_DEBUG("mvpToType")
+	SMSG_DEBUG("mvpToType")
 }
 
 void mvpToBinary(void) {
-	MESSSAGE_DEBUG("mvpToBinary")
+	SMSG_DEBUG("mvpToBinary")
 }
 
 void mvpTwoVariable(void) {
-	MESSSAGE_DEBUG("mvpTwoVariable")
+	SMSG_DEBUG("mvpTwoVariable")
 }
 
 void mvpTwoSwap(void) {
-	MESSSAGE_DEBUG("mvpTwoSwap")
+	SMSG_DEBUG("mvpTwoSwap")
 }
 
 void mvpTwoOver(void) {
-	MESSSAGE_DEBUG("mvpTwoOver")
+	SMSG_DEBUG("mvpTwoOver")
 }
 
 void mvpTwoDup(void) {
-	MESSSAGE_DEBUG("mvpTwoDup")
+	SMSG_DEBUG("mvpTwoDup")
 }
 
 void mvpTwoDrop(void) {
-	MESSSAGE_DEBUG("mvpTwoDrop")
+	SMSG_DEBUG("mvpTwoDrop")
 }
 
 void mvpTwoConstant(void) {
-	MESSSAGE_DEBUG("mvpTwoConstant")
+	SMSG_DEBUG("mvpTwoConstant")
 }
 
 void mvpTwoFetch(void) {
-	MESSSAGE_DEBUG("mvpTwoFetch")
+	SMSG_DEBUG("mvpTwoFetch")
 }
 
 void mvpTwoStore(void) {
-	MESSSAGE_DEBUG("mvpTwoStore")
+	SMSG_DEBUG("mvpTwoStore")
 }
 
 void mvpMinusText(void) {
-	MESSSAGE_DEBUG("mvpMinusText")
+	SMSG_DEBUG("mvpMinusText")
 }
 
 void mvpTickS(void) {
-	MESSSAGE_DEBUG("mvpTickS")
+	SMSG_DEBUG("mvpTickS")
 }
 
 void mvpSaveForth(void) {
-	MESSSAGE_DEBUG("mvpSaveForth")
+	SMSG_DEBUG("mvpSaveForth")
 }
 
 void mvpDotS(void) {
-	MESSSAGE_DEBUG("mvpDotS")
+	SMSG_DEBUG("mvpDotS")
 }
 
 void mvpDotSr(void) {
-	MESSSAGE_DEBUG("mvpDotSr")
+	SMSG_DEBUG("mvpDotSr")
 }
 
 void mvpDotSl(void) {
-	MESSSAGE_DEBUG("mvpDotSl")
+	SMSG_DEBUG("mvpDotSl")
 }
 
 void mvpDotSs(void) {
-	MESSSAGE_DEBUG("mvpDotSs")
+	SMSG_DEBUG("mvpDotSs")
 }
 
 void mvpVList(void) {
-	MESSSAGE_DEBUG("mvpVList")
+	SMSG_DEBUG("mvpVList")
 }
 
 void mvpIndex(void) {
-	MESSSAGE_DEBUG("mvpIndex")
+	SMSG_DEBUG("mvpIndex")
 }
 
 void mvpIDDot(void) {
-	MESSSAGE_DEBUG("mvpIDDot")
+	SMSG_DEBUG("mvpIDDot")
 }
 
 void mvpDVariable(void) {
-	MESSSAGE_DEBUG("mvpDVariable")
+	SMSG_DEBUG("mvpDVariable")
 }
 
 void mvpDumpL(void) {
-	MESSSAGE_DEBUG("mvpDumpL")
+	SMSG_DEBUG("mvpDumpL")
 }
 
 void mvpDump(void) {
-	MESSSAGE_DEBUG("mvpDump")
+	SMSG_DEBUG("mvpDump")
 }
 
 void mvpDumpHeader(void) {
-	MESSSAGE_DEBUG("mvpDumpHeader")
+	SMSG_DEBUG("mvpDumpHeader")
 }
 
 void mvpPause(void) {
-	MESSSAGE_DEBUG("mvpPause")
+	SMSG_DEBUG("mvpPause")
 }
 
 void mvpDotIndex(void) {
-	MESSSAGE_DEBUG("mvpDotIndex")
+	SMSG_DEBUG("mvpDotIndex")
 }
 
 void mvpDMin(void) {
-	MESSSAGE_DEBUG("mvpDMin")
+	SMSG_DEBUG("mvpDMin")
 }
 
 void mvpDMax(void) {
-	MESSSAGE_DEBUG("mvpDMax")
+	SMSG_DEBUG("mvpDMax")
 }
 
 void mvpDConstant(void) {
-	MESSSAGE_DEBUG("mvpDConstant")
+	SMSG_DEBUG("mvpDConstant")
 }
 
 void mvpDFetch(void) {
-	MESSSAGE_DEBUG("mvpDFetch")
+	SMSG_DEBUG("mvpDFetch")
 }
 
 void mvpDGreater(void) {
-	MESSSAGE_DEBUG("mvpDGreater")
+	SMSG_DEBUG("mvpDGreater")
 }
 
 void mvpDEqual(void) {
-	MESSSAGE_DEBUG("mvpDEqual")
+	SMSG_DEBUG("mvpDEqual")
 }
 
 void mvpDZeroEqual(void) {
-	MESSSAGE_DEBUG("mvpDZeroEqual")
+	SMSG_DEBUG("mvpDZeroEqual")
 }
 
 void mvpDMinus(void) {
-	MESSSAGE_DEBUG("mvpDMinus")
+	SMSG_DEBUG("mvpDMinus")
 }
 
 void mvpDULess(void) {
-	MESSSAGE_DEBUG("mvpDULess")
+	SMSG_DEBUG("mvpDULess")
 }
 
 void mvpDSwap(void) {
-	MESSSAGE_DEBUG("mvpDSwap")
+	SMSG_DEBUG("mvpDSwap")
 }
 
 void mvpDOver(void) {
-	MESSSAGE_DEBUG("mvpDOver")
+	SMSG_DEBUG("mvpDOver")
 }
 
 void mvpCopy(void) {
-	MESSSAGE_DEBUG("mvpCopy")
+	SMSG_DEBUG("mvpCopy")
 }
 
 void mvpBMove(void) {
-	MESSSAGE_DEBUG("mvpBMove")
+	SMSG_DEBUG("mvpBMove")
 }
 
 void mvpBackslash(void) {
-	MESSSAGE_DEBUG("mvpBackslash")
+	SMSG_DEBUG("mvpBackslash")
 }
 
 void mvpTriad(void) {
-	MESSSAGE_DEBUG("mvpTriad")
+	SMSG_DEBUG("mvpTriad")
 }
 
 void mvpTickTitle(void) {
-	MESSSAGE_DEBUG("mvpTickTitle")
+	SMSG_DEBUG("mvpTickTitle")
 }
 
 void mvpTitle(void) {
-	MESSSAGE_DEBUG("mvpTitle")
+	SMSG_DEBUG("mvpTitle")
 }
 
 void mvpThru(void) {
-	MESSSAGE_DEBUG("mvpThru")
+	SMSG_DEBUG("mvpThru")
 }
 
 void mvpZIbmPage(void) {
-	MESSSAGE_DEBUG("mvpZIbmPage")
+	SMSG_DEBUG("mvpZIbmPage")
 }
 
 void mvpRightParen(void) {
-	MESSSAGE_DEBUG("mvpRightParen")
+	SMSG_DEBUG("mvpRightParen")
 }
 
 void mvpXCompile(void) {
-	MESSSAGE_DEBUG("mvpXCompile")
+	SMSG_DEBUG("mvpXCompile")
 }
 
 void mvpLeftParen(void) {
-	MESSSAGE_DEBUG("mvpLeftParen")
+	SMSG_DEBUG("mvpLeftParen")
 }
 
 void mvpXor(void) {
-	MESSSAGE_DEBUG("mvpXor")
+	SMSG_DEBUG("mvpXor")
 }
 
 void mvpWord(void) {
-	MESSSAGE_DEBUG("mvpWord")
+	SMSG_DEBUG("mvpWord")
 }
 
 void mvpWidth(void) {
-	MESSSAGE_DEBUG("mvpWidth")
+	SMSG_DEBUG("mvpWidth")
 }
 
 void mvpWhile(void) {
-	MESSSAGE_DEBUG("mvpWhile")
+	SMSG_DEBUG("mvpWhile")
 }
 
 void mvpWhere(void) {
-	MESSSAGE_DEBUG("mvpWhere")
+	SMSG_DEBUG("mvpWhere")
 }
 
 void mvpWarning(void) {
-	MESSSAGE_DEBUG("mvpWarning")
+	SMSG_DEBUG("mvpWarning")
 }
 
 void mvpVocabulary(void) {
-	MESSSAGE_DEBUG("mvpVocabulary")
+	SMSG_DEBUG("mvpVocabulary")
 }
 
 void mvpVocLink(void) {
-	MESSSAGE_DEBUG("mvpVocLink")
+	SMSG_DEBUG("mvpVocLink")
 }
 
 void mvpVariable(void) {
-	MESSSAGE_DEBUG("mvpVariable")
+	SMSG_DEBUG("mvpVariable")
 }
 
 void mvpUser(void) {
-	MESSSAGE_DEBUG("mvpUser")
+	SMSG_DEBUG("mvpUser")
 }
 
 void mvpUse(void) {
-	MESSSAGE_DEBUG("mvpUse")
+	SMSG_DEBUG("mvpUse")
 }
 
 void mvpUpdate(void) {
-	MESSSAGE_DEBUG("mvpUpdate")
+	SMSG_DEBUG("mvpUpdate")
 }
 
 void mvpUp(void) {
-	MESSSAGE_DEBUG("mvpUp")
+	SMSG_DEBUG("mvpUp")
 }
 
 void mvpUntil(void) {
-	MESSSAGE_DEBUG("mvpUntil")
+	SMSG_DEBUG("mvpUntil")
 }
 
 void mvpULess(void) {
-	MESSSAGE_DEBUG("mvpULess")
+	SMSG_DEBUG("mvpULess")
 }
 
 void mvpUSlashMod(void) {
-	MESSSAGE_DEBUG("mvpUSlashMod")
+	SMSG_DEBUG("mvpUSlashMod")
 }
 
 void mvpUDot(void) {
-	MESSSAGE_DEBUG("mvpUDot")
+	SMSG_DEBUG("mvpUDot")
 }
 
 void mvpUStar(void) {
-	MESSSAGE_DEBUG("mvpUStar")
+	SMSG_DEBUG("mvpUStar")
 }
 
 void mvpType(void) {
-	MESSSAGE_DEBUG("mvpType")
+	SMSG_DEBUG("mvpType")
 }
 
 void mvpTraverse(void) {
-	MESSSAGE_DEBUG("mvpTraverse")
+	SMSG_DEBUG("mvpTraverse")
 }
 
 void mvpTrack(void) {
-	MESSSAGE_DEBUG("mvpTrack")
+	SMSG_DEBUG("mvpTrack")
 }
 
 void mvpToggle(void) {
-	MESSSAGE_DEBUG("mvpToggle")
+	SMSG_DEBUG("mvpToggle")
 }
 
 void mvpTib(void) {
-	MESSSAGE_DEBUG("mvpTib")
+	SMSG_DEBUG("mvpTib")
 }
 
 void mvpTAmpersandSCalc(void) {
-	MESSSAGE_DEBUG("mvpTAmpersandSCalc")
+	SMSG_DEBUG("mvpTAmpersandSCalc")
 }
 
 void mvpThen(void) {
-	MESSSAGE_DEBUG("mvpThen")
+	SMSG_DEBUG("mvpThen")
 }
 
 void mvpText(void) {
-	MESSSAGE_DEBUG("mvpText")
+	SMSG_DEBUG("mvpText")
 }
 
 void mvpSysCall(void) {
-	MESSSAGE_DEBUG("mvpSysCall")
+	SMSG_DEBUG("mvpSysCall")
 }
 
 void mvpSwap(void) {
-	MESSSAGE_DEBUG("mvpSwap")
+	SMSG_DEBUG("mvpSwap")
 }
 
 void mvpState(void) {
-	MESSSAGE_DEBUG("mvpState")
+	SMSG_DEBUG("mvpState")
 }
 
 void mvpSPt(void) {
-	MESSSAGE_DEBUG("mvpSPt")
+	SMSG_DEBUG("mvpSPt")
 }
 
 void mvpSPDrv(void) {
-	MESSSAGE_DEBUG("mvpSPDrv")
+	SMSG_DEBUG("mvpSPDrv")
 }
 
 void mvpSPBlk(void) {
-	MESSSAGE_DEBUG("mvpSPBlk")
+	SMSG_DEBUG("mvpSPBlk")
 }
 
 void mvpSpaces(void) {
-	MESSSAGE_DEBUG("mvpSpaces")
+	SMSG_DEBUG("mvpSpaces")
 }
 
 void mvpSpace(void) {
-	MESSSAGE_DEBUG("mvpSpace")
+	SMSG_DEBUG("mvpSpace")
 }
 
 void mvpSPFetch(void) {
-	MESSSAGE_DEBUG("mvpSPFetch")
+	SMSG_DEBUG("mvpSPFetch")
 }
 
 void mvpSP0(void) {
-	MESSSAGE_DEBUG("mvpSP0")
+	SMSG_DEBUG("mvpSP0")
 }
 
 void mvpSPStore(void) {
-	MESSSAGE_DEBUG("mvpSPStore")
+	SMSG_DEBUG("mvpSPStore")
 }
 
 void mvpSmudge(void) {
-	MESSSAGE_DEBUG("mvpSmudge")
+	SMSG_DEBUG("mvpSmudge")
 }
 
 void mvpSign(void) {
-	MESSSAGE_DEBUG("mvpSign")
+	SMSG_DEBUG("mvpSign")
 }
 
 void mvpSetDrx(void) {
-	MESSSAGE_DEBUG("mvpSetDrx")
+	SMSG_DEBUG("mvpSetDrx")
 }
 
 void mvpSecSlashTr(void) {
-	MESSSAGE_DEBUG("mvpSecSlashTr")
+	SMSG_DEBUG("mvpSecSlashTr")
 }
 
 void mvpSecSlashBlk(void) {
-	MESSSAGE_DEBUG("mvpSecSlashBlk")
+	SMSG_DEBUG("mvpSecSlashBlk")
 }
 
 void mvpSecWrite(void) {
-	MESSSAGE_DEBUG("mvpSecWrite")
+	SMSG_DEBUG("mvpSecWrite")
 }
 
 void mvpSecRead(void) {
-	MESSSAGE_DEBUG("mvpSecRead")
+	SMSG_DEBUG("mvpSecRead")
 }
 
 void mvpSec(void) {
-	MESSSAGE_DEBUG("mvpSec")
+	SMSG_DEBUG("mvpSec")
 }
 
 void mvpScr(void) {
-	MESSSAGE_DEBUG("mvpScr")
+	SMSG_DEBUG("mvpScr")
 }
 
 void mvpSaveBuffers(void) {
-	MESSSAGE_DEBUG("mvpSaveBuffers")
+	SMSG_DEBUG("mvpSaveBuffers")
 }
 
 void mvpS0(void) {
-	MESSSAGE_DEBUG("mvpS0")
+	SMSG_DEBUG("mvpS0")
 }
 
 void mvpSToD(void) {
-	MESSSAGE_DEBUG("mvpSToD")
+	SMSG_DEBUG("mvpSToD")
 }
 
 void mvpRPP(void) {
-	MESSSAGE_DEBUG("mvpRPP")
+	SMSG_DEBUG("mvpRPP")
 }
 
 void mvpRPFetch(void) {
-	MESSSAGE_DEBUG("mvpRPFetch")
+	SMSG_DEBUG("mvpRPFetch")
 }
 
 void mvpRPStore(void) {
-	MESSSAGE_DEBUG("mvpRPStore")
+	SMSG_DEBUG("mvpRPStore")
 }
 
 void mvpRot(void) {
-	MESSSAGE_DEBUG("mvpRot")
+	SMSG_DEBUG("mvpRot")
 }
 
 void mvpRoll(void) {
-	MESSSAGE_DEBUG("mvpRoll")
+	SMSG_DEBUG("mvpRoll")
 }
 
 void mvpRepeat(void) {
-	MESSSAGE_DEBUG("mvpRepeat")
+	SMSG_DEBUG("mvpRepeat")
 }
 
 void mvpRFetch(void) {
-	MESSSAGE_DEBUG("mvpRFetch")
+	SMSG_DEBUG("mvpRFetch")
 }
 
 void mvpRGreater(void) {
-	MESSSAGE_DEBUG("mvpRGreater")
+	SMSG_DEBUG("mvpRGreater")
 }
 
 void mvpR0(void) {
-	MESSSAGE_DEBUG("mvpR0")
+	SMSG_DEBUG("mvpR0")
 }
 
 void mvpRSlashW(void) {
-	MESSSAGE_DEBUG("mvpRSlashW")
+	SMSG_DEBUG("mvpRSlashW")
 }
 
 void mvpRNum(void) {
-	MESSSAGE_DEBUG("mvpRNum")
+	SMSG_DEBUG("mvpRNum")
 }
 
 void mvpQuit(void) {
-	MESSSAGE_DEBUG("mvpQuit")
+	SMSG_DEBUG("mvpQuit")
 }
 
 void mvpQuery(void) {
-	MESSSAGE_DEBUG("mvpQuery")
+	SMSG_DEBUG("mvpQuery")
 }
 
 void mvpPWFetch(void) {
-	MESSSAGE_DEBUG("mvpPWFetch")
+	SMSG_DEBUG("mvpPWFetch")
 }
 
 void mvpPWStore(void) {
-	MESSSAGE_DEBUG("mvpPWStore")
+	SMSG_DEBUG("mvpPWStore")
 }
 
 void mvpPrev(void) {
-	MESSSAGE_DEBUG("mvpPrev")
+	SMSG_DEBUG("mvpPrev")
 }
 
 void mvpPp(void) {
-	MESSSAGE_DEBUG("mvpPp")
+	SMSG_DEBUG("mvpPp")
 }
 
 void mvpPick(void) {
-	MESSSAGE_DEBUG("mvpPick")
+	SMSG_DEBUG("mvpPick")
 }
 
 void mvpPfa(void) {
-	MESSSAGE_DEBUG("mvpPick")
+	SMSG_DEBUG("mvpPick")
 }
 
 void mvpPage(void) {
-	MESSSAGE_DEBUG("mvpPage")
+	SMSG_DEBUG("mvpPage")
 }
 
 void mvpPad(void) {
-	MESSSAGE_DEBUG("mvpPad")
+	SMSG_DEBUG("mvpPad")
 }
 
 void mvpPFetch(void) {
-	MESSSAGE_DEBUG("mvpPFetch")
+	SMSG_DEBUG("mvpPFetch")
 }
 
 void mvpPStore(void) {
-	MESSSAGE_DEBUG("mvpPStore")
+	SMSG_DEBUG("mvpPStore")
 }
 
 void mvpOver(void) {
-	MESSSAGE_DEBUG("mvpOver")
+	SMSG_DEBUG("mvpOver")
 }
 
 void mvpOut(void) {
-	MESSSAGE_DEBUG("mvpOut")
+	SMSG_DEBUG("mvpOut")
 }
 
 void mvpOr(void) {
-	MESSSAGE_DEBUG("mvpOr")
+	SMSG_DEBUG("mvpOr")
 }
 
 void mvpOffset(void) {
-	MESSSAGE_DEBUG("mvpOffset")
+	SMSG_DEBUG("mvpOffset")
 }
 
 void mvpNumber(void) {
-	MESSSAGE_DEBUG("mvpNumber")
+	SMSG_DEBUG("mvpNumber")
 }
 
 void mvpNot(void) {
-	MESSSAGE_DEBUG("mvpNot")
+	SMSG_DEBUG("mvpNot")
 }
 
 void mvpNfa(void) {
-	MESSSAGE_DEBUG("mvpNfa")
+	SMSG_DEBUG("mvpNfa")
 }
 
 void mvpNext1(void) {
-	MESSSAGE_DEBUG("mvpNext1")
+	SMSG_DEBUG("mvpNext1")
 }
 
 void mvpNext(void) {
-	MESSSAGE_DEBUG("mvpNext")
+	SMSG_DEBUG("mvpNext")
 }
 
 void mvpNegate(void) {
-	MESSSAGE_DEBUG("mvpNegate")
+	SMSG_DEBUG("mvpNegate")
 }
 
 void mvpMove(void) {
-	MESSSAGE_DEBUG("mvpMove")
+	SMSG_DEBUG("mvpMove")
 }
 
 void mvpMod(void) {
-	MESSSAGE_DEBUG("mvpMod")
+	SMSG_DEBUG("mvpMod")
 }
 
 void mvpMin(void) {
-	MESSSAGE_DEBUG("mvpMin")
+	SMSG_DEBUG("mvpMin")
 }
 
 void mvpMaxDrv(void) {
-	MESSSAGE_DEBUG("mvpMaxDrv")
+	SMSG_DEBUG("mvpMaxDrv")
 }
 
 void mvpMax(void) {
-	MESSSAGE_DEBUG("mvpMax")
+	SMSG_DEBUG("mvpMax")
 }
 
 void mvpMSlashMod(void) {
-	MESSSAGE_DEBUG("mvpMSlashMod")
+	SMSG_DEBUG("mvpMSlashMod")
 }
 
 void mvpMSlash(void) {
-	MESSSAGE_DEBUG("mvpMSlash")
+	SMSG_DEBUG("mvpMSlash")
 }
 
 void mvpMPlus(void) {
-	MESSSAGE_DEBUG("mvpMPlus")
+	SMSG_DEBUG("mvpMPlus")
 }
 
 void mvpMStarSlash(void) {
-	MESSSAGE_DEBUG("mvpMStarSlash")
+	SMSG_DEBUG("mvpMStarSlash")
 }
 
 void mvpMStar(void) {
-	MESSSAGE_DEBUG("mvpMStar")
+	SMSG_DEBUG("mvpMStar")
 }
 
 void mvpLoop(void) {
-	MESSSAGE_DEBUG("mvpLoop")
+	SMSG_DEBUG("mvpLoop")
 }
 
 void mvpLoad(void) {
-	MESSSAGE_DEBUG("mvpLoad")
+	SMSG_DEBUG("mvpLoad")
 }
 
 void mvpLiteral(void) {
-	MESSSAGE_DEBUG("mvpLiteral")
+	SMSG_DEBUG("mvpLiteral")
 }
 
 void mvpLit(void) {
-	MESSSAGE_DEBUG("mvpLit")
+	SMSG_DEBUG("mvpLit")
 }
 
 void mvpList(void) {
-	MESSSAGE_DEBUG("mvpList")
+	SMSG_DEBUG("mvpList")
 }
 
 void mvpLimit(void) {
-	MESSSAGE_DEBUG("mvpLimit")
+	SMSG_DEBUG("mvpLimit")
 }
 
 void mvpLfa(void) {
-	MESSSAGE_DEBUG("mvpLfa")
+	SMSG_DEBUG("mvpLfa")
 }
 
 void mvpLeave(void) {
-	MESSSAGE_DEBUG("mvpLeave")
+	SMSG_DEBUG("mvpLeave")
 }
 
 void mvpLatest(void) {
-	MESSSAGE_DEBUG("mvpLatest")
+	SMSG_DEBUG("mvpLatest")
 }
 
 void mvpKey(void) {
-	MESSSAGE_DEBUG("mvpKey")
+	SMSG_DEBUG("mvpKey")
 }
 
 void mvpJ(void) {
-	MESSSAGE_DEBUG("mvpJ")
+	SMSG_DEBUG("mvpJ")
 }
 
 void mvpInterpret(void) {
-	MESSSAGE_DEBUG("mvpInterpret")
+	SMSG_DEBUG("mvpInterpret")
 }
 
 void mvpIntCall(void) {
-	MESSSAGE_DEBUG("mvpIntCall")
+	SMSG_DEBUG("mvpIntCall")
 }
 
 void mvpInitUser(void) {
-	MESSSAGE_DEBUG("mvpInitUser")
+	SMSG_DEBUG("mvpInitUser")
 }
 
 void mvpInitForth(void) {
-	MESSSAGE_DEBUG("mvpInitForth")
+	SMSG_DEBUG("mvpInitForth")
 }
 
 void mvpImmediate(void) {
-	MESSSAGE_DEBUG("mvpImmediate")
+	SMSG_DEBUG("mvpImmediate")
 }
 
 void mvpIf(void) {
-	MESSSAGE_DEBUG("mvpIf")
+	SMSG_DEBUG("mvpIf")
 }
 
 void mvpITick(void) {
-	MESSSAGE_DEBUG("mvpITick")
+	SMSG_DEBUG("mvpITick")
 }
 
 void mvpI(void) {
-	MESSSAGE_DEBUG("mvpI")
+	SMSG_DEBUG("mvpI")
 }
 
 void mvpHold(void) {
-	MESSSAGE_DEBUG("mvpHold")
+	SMSG_DEBUG("mvpHold")
 }
 
 void mvpHld(void) {
-	MESSSAGE_DEBUG("mvpHld")
+	SMSG_DEBUG("mvpHld")
 }
 
 void mvpHex(void) {
-	MESSSAGE_DEBUG("mvpHex")
+	SMSG_DEBUG("mvpHex")
 }
 
 void mvpHere(void) {
-	MESSSAGE_DEBUG("mvpHere")
+	SMSG_DEBUG("mvpHere")
 }
 
 void mvpFreeze(void) {
-	MESSSAGE_DEBUG("mvpFreeze")
+	SMSG_DEBUG("mvpFreeze")
 }
 
 void mvpForth(void) {
-	MESSSAGE_DEBUG("mvpForth")
+	SMSG_DEBUG("mvpForth")
 }
 
 void mvpForget(void) {
-	MESSSAGE_DEBUG("mvpForget")
+	SMSG_DEBUG("mvpForget")
 }
 
 void mvpFld(void) {
-	MESSSAGE_DEBUG("mvpFld")
+	SMSG_DEBUG("mvpFld")
 }
 
 void mvpFirst(void) {
-	MESSSAGE_DEBUG("mvpFirst")
+	SMSG_DEBUG("mvpFirst")
 }
 
 void mvpFind(void) {
-	MESSSAGE_DEBUG("mvpFind")
+	SMSG_DEBUG("mvpFind")
 }
 
 void mvpFill(void) {
-	MESSSAGE_DEBUG("mvpFill")
+	SMSG_DEBUG("mvpFill")
 }
 
 void mvpFence(void) {
-	MESSSAGE_DEBUG("mvpFence")
+	SMSG_DEBUG("mvpFence")
 }
 
 void mvpExpect(void) {
-	MESSSAGE_DEBUG("mvpExpect")
+	SMSG_DEBUG("mvpExpect")
 }
 
 void mvpExit(void) {
-	MESSSAGE_DEBUG("mvpExit")
+	SMSG_DEBUG("mvpExit")
 }
 
 void mvpExecute(void) {
-	MESSSAGE_DEBUG("mvpExecute")
+	SMSG_DEBUG("mvpExecute")
 }
 
 void mvpEPrint(void) {
-	MESSSAGE_DEBUG("mvpEPrint")
+	SMSG_DEBUG("mvpEPrint")
 }
 
 void mvpEnclose(void) {
-	MESSSAGE_DEBUG("mvpEnclose")
+	SMSG_DEBUG("mvpEnclose")
 }
 
 void mvpEmptyBuffers(void) {
-	MESSSAGE_DEBUG("mvpEmptyBuffers")
+	SMSG_DEBUG("mvpEmptyBuffers")
 }
 
 void mvpEmit(void) {
-	MESSSAGE_DEBUG("mvpEmit")
+	SMSG_DEBUG("mvpEmit")
 }
 
 void mvpElse(void) {
-	MESSSAGE_DEBUG("mvpElse")
+	SMSG_DEBUG("mvpElse")
 }
 
 void mvpDup(void) {
-	MESSSAGE_DEBUG("mvpDup")
+	SMSG_DEBUG("mvpDup")
 }
 
 void mvpDrop(void) {
-	MESSSAGE_DEBUG("mvpDrop")
+	SMSG_DEBUG("mvpDrop")
 }
 
 void mvpDrive(void) {
-	MESSSAGE_DEBUG("mvpDrive")
+	SMSG_DEBUG("mvpDrive")
 }
 
 void mvpDr4(void) {
-	MESSSAGE_DEBUG("mvpDr4")
+	SMSG_DEBUG("mvpDr4")
 }
 
 void mvpDr3(void) {
-	MESSSAGE_DEBUG("mvpDr3")
+	SMSG_DEBUG("mvpDr3")
 }
 
 void mvpDr2(void) {
-	MESSSAGE_DEBUG("mvpDr2")
+	SMSG_DEBUG("mvpDr2")
 }
 
 void mvpDr1(void) {
-	MESSSAGE_DEBUG("mvpDr1")
+	SMSG_DEBUG("mvpDr1")
 }
 
 void mvpDr0(void) {
-	MESSSAGE_DEBUG("mvpDr0")
+	SMSG_DEBUG("mvpDr0")
 }
 
 void mvpDrDen(void) {
-	MESSSAGE_DEBUG("mvpDrDen")
+	SMSG_DEBUG("mvpDrDen")
 }
 
 void mvpDPush(void) {
-	MESSSAGE_DEBUG("mvpDPush")
+	SMSG_DEBUG("mvpDPush")
 }
 
 void mvpDpl(void) {
-	MESSSAGE_DEBUG("mvpDpl")
+	SMSG_DEBUG("mvpDpl")
 }
 
 void mvpDp(void) {
-	MESSSAGE_DEBUG("mvpDp")
+	SMSG_DEBUG("mvpDp")
 }
 
 void mvpDoes(void) {
-	MESSSAGE_DEBUG("mvpDoes")
+	SMSG_DEBUG("mvpDoes")
 }
 
 void mvpDo(void) {
-	MESSSAGE_DEBUG("mvpDo")
+	SMSG_DEBUG("mvpDo")
 }
 
 void mvpDnegate(void) {
-	MESSSAGE_DEBUG("mvpDnegate")
+	SMSG_DEBUG("mvpDnegate")
 }
 
 void mvpDLiteral(void) {
-	MESSSAGE_DEBUG("mvpDLiteral")
+	SMSG_DEBUG("mvpDLiteral")
 }
 
 void mvpDiskError(void) {
-	MESSSAGE_DEBUG("mvpDiskError")
+	SMSG_DEBUG("mvpDiskError")
 }
 
 void mvpDigit(void) {
-	MESSSAGE_DEBUG("mvpDigit")
+	SMSG_DEBUG("mvpDigit")
 }
 
 void mvpDepth(void) {
-	MESSSAGE_DEBUG("mvpDepth")
+	SMSG_DEBUG("mvpDepth")
 }
 
 void mvpDensity(void) {
-	MESSSAGE_DEBUG("mvpDensity")
+	SMSG_DEBUG("mvpDensity")
 }
 
 void mvpDen(void) {
-	MESSSAGE_DEBUG("mvpDen")
+	SMSG_DEBUG("mvpDen")
 }
 
 void mvpDefinitions(void) {
-	MESSSAGE_DEBUG("mvpDefinitions")
+	SMSG_DEBUG("mvpDefinitions")
 }
 
 void mvpDecimal(void) {
-	MESSSAGE_DEBUG("mvpDecimal")
+	SMSG_DEBUG("mvpDecimal")
 }
 
 void mvpDDup(void) {
-	MESSSAGE_DEBUG("mvpDDup")
+	SMSG_DEBUG("mvpDDup")
 }
 
 void mvpDDrop(void) {
-	MESSSAGE_DEBUG("mvpDDrop")
+	SMSG_DEBUG("mvpDDrop")
 }
 
 void mvpDAbs(void) {
-	MESSSAGE_DEBUG("mvpDAbs")
+	SMSG_DEBUG("mvpDAbs")
 }
 
 void mvpDLess(void) {
-	MESSSAGE_DEBUG("mvpDLess")
+	SMSG_DEBUG("mvpDLess")
 }
 
 void mvpDDotR(void) {
-	MESSSAGE_DEBUG("mvpDDotR")
+	SMSG_DEBUG("mvpDDotR")
 }
 
 void mvpDDot(void) {
-	MESSSAGE_DEBUG("mvpDDot")
+	SMSG_DEBUG("mvpDDot")
 }
 
 void mvpDPlusMinus(void) {
-	MESSSAGE_DEBUG("mvpDPlusMinus")
+	SMSG_DEBUG("mvpDPlusMinus")
 }
 
 void mvpDPlus(void) {
-	MESSSAGE_DEBUG("mvpDPlus")
+	SMSG_DEBUG("mvpDPlus")
 }
 
 void mvpDStore(void) {
-	MESSSAGE_DEBUG("mvpDStore")
+	SMSG_DEBUG("mvpDStore")
 }
 
 void mvpCurrent(void) {
-	MESSSAGE_DEBUG("mvpCurrent")
+	SMSG_DEBUG("mvpCurrent")
 }
 
 void mvpCSP(void) {
-	MESSSAGE_DEBUG("mvpCSP")
+	SMSG_DEBUG("mvpCSP")
 }
 
 void mvpCreate(void) {
-	MESSSAGE_DEBUG("mvpCreate")
+	SMSG_DEBUG("mvpCreate")
 }
 
 void mvpCr(void) {
-	MESSSAGE_DEBUG("mvpCr")
+	SMSG_DEBUG("mvpCr")
 }
 
 void mvpCount(void) {
-	MESSSAGE_DEBUG("mvpCount")
+	SMSG_DEBUG("mvpCount")
 }
 
 void mvpConvert(void) {
-	MESSSAGE_DEBUG("mvpConvert")
+	SMSG_DEBUG("mvpConvert")
 }
 
 void mvpContext(void) {
-	MESSSAGE_DEBUG("mvpContext")
+	SMSG_DEBUG("mvpContext")
 }
 
 void mvpConstant(void) {
-	MESSSAGE_DEBUG("mvpConstant")
+	SMSG_DEBUG("mvpConstant")
 }
 
 void mvpConfigure(void) {
-	MESSSAGE_DEBUG("mvpConfigure")
+	SMSG_DEBUG("mvpConfigure")
 }
 
 void mvpCompile(void) {
-	MESSSAGE_DEBUG("mvpCompile")
+	SMSG_DEBUG("mvpCompile")
 }
 
 void mvpCold(void) {
-	MESSSAGE_DEBUG("mvpCold")
+	SMSG_DEBUG("mvpCold")
 }
 
 void mvpCMove(void) {
-	MESSSAGE_DEBUG("mvpCMove")
+	SMSG_DEBUG("mvpCMove")
 }
 
 void mvpClear(void) {
-	MESSSAGE_DEBUG("mvpClear")
+	SMSG_DEBUG("mvpClear")
 }
 
 void mvpChange(void) {
-	MESSSAGE_DEBUG("mvpChange")
+	SMSG_DEBUG("mvpChange")
 }
 
 void mvpCfa(void) {
-	MESSSAGE_DEBUG("mvpCfa")
+	SMSG_DEBUG("mvpCfa")
 }
 
 void mvpCFetchL(void) {
-	MESSSAGE_DEBUG("mvpCFetchL")
+	SMSG_DEBUG("mvpCFetchL")
 }
 
 void mvpCFetch(void) {
-	MESSSAGE_DEBUG("mvpCFetch")
+	SMSG_DEBUG("mvpCFetch")
 }
 
 void mvpCSlashL(void) {
-	MESSSAGE_DEBUG("mvpCSlashL")
+	SMSG_DEBUG("mvpCSlashL")
 }
 
 void mvpCComma(void) {
-	MESSSAGE_DEBUG("mvpCComma")
+	SMSG_DEBUG("mvpCComma")
 }
 
 void mvpCStoreL(void) {
-	MESSSAGE_DEBUG("mvpCStoreL")
+	SMSG_DEBUG("mvpCStoreL")
 }
 
 void mvpCStore(void) {
-	MESSSAGE_DEBUG("mvpCStore")
+	SMSG_DEBUG("mvpCStore")
 }
 
 void mvpBye(void) {
-	MESSSAGE_DEBUG("mvpBye")
+	SMSG_DEBUG("mvpBye")
 }
 
 void mvpBuffer(void) {
-	MESSSAGE_DEBUG("mvpBuffer")
+	SMSG_DEBUG("mvpBuffer")
 }
 
 void mvpBranch(void) {
-	MESSSAGE_DEBUG("mvpBranch")
+	SMSG_DEBUG("mvpBranch")
 }
 
 void mvpBPDrv(void) {
-	MESSSAGE_DEBUG("mvpBPDrv")
+	SMSG_DEBUG("mvpBPDrv")
 }
 
 void mvpBlock(void) {
-	MESSSAGE_DEBUG("mvpBlock")
+	SMSG_DEBUG("mvpBlock")
 }
 
 void mvpBlkSlashDrv(void) {
-	MESSSAGE_DEBUG("mvpBlkSlashDrv")
+	SMSG_DEBUG("mvpBlkSlashDrv")
 }
 
 void mvpBlk(void) {
-	MESSSAGE_DEBUG("mvpBlk")
+	SMSG_DEBUG("mvpBlk")
 }
 
 void mvpBlank(void) {
-	MESSSAGE_DEBUG("mvpBlank")
+	SMSG_DEBUG("mvpBlank")
 }
 
 void mvpBl(void) {
-	MESSSAGE_DEBUG("mvpBl")
+	SMSG_DEBUG("mvpBl")
 }
 
 void mvpBegin(void) {
-	MESSSAGE_DEBUG("mvpBegin")
+	SMSG_DEBUG("mvpBegin")
 }
 
 void mvpBase(void) {
-	MESSSAGE_DEBUG("mvpBase")
+	SMSG_DEBUG("mvpBase")
 }
 
 void mvpAPush(void) {
-	MESSSAGE_DEBUG("mvpAPush")
+	SMSG_DEBUG("mvpAPush")
 }
 
 void mvpAnd(void) {
-	MESSSAGE_DEBUG("mvpAnd")
+	SMSG_DEBUG("mvpAnd")
 }
 
 void mvpAllot(void) {
-	MESSSAGE_DEBUG("mvpAllot")
+	SMSG_DEBUG("mvpAllot")
 }
 
 void mvpAgain(void) {
-	MESSSAGE_DEBUG("mvpAgain")
+	SMSG_DEBUG("mvpAgain")
 }
 
 void mvpAbs(void) {
-	MESSSAGE_DEBUG("mvpAbs")
+	SMSG_DEBUG("mvpAbs")
 }
 
 void mvpAbortQuote(void) {
-	MESSSAGE_DEBUG("mvpAbortQuote")
+	SMSG_DEBUG("mvpAbortQuote")
 }
 
 void mvpAbort(void) {
-	MESSSAGE_DEBUG("mvpAbort")
+	SMSG_DEBUG("mvpAbort")
 }
 
 void mvpFetchL(void) {
-	MESSSAGE_DEBUG("mvpFetchL")
+	SMSG_DEBUG("mvpFetchL")
 }
 
 void mvpFetch(void) {
-	MESSSAGE_DEBUG("mvpFetch")
+	SMSG_DEBUG("mvpFetch")
 }
 
 void mvpQTerminal(void) {
-	MESSSAGE_DEBUG("mvpQTerminal")
+	SMSG_DEBUG("mvpQTerminal")
 }
 
 void mvpQStream(void) {
-	MESSSAGE_DEBUG("mvpQStream")
+	SMSG_DEBUG("mvpQStream")
 }
 
 void mvpQStack(void) {
-	MESSSAGE_DEBUG("mvpQStack")
+	SMSG_DEBUG("mvpQStack")
 }
 
 void mvpQPairs(void) {
-	MESSSAGE_DEBUG("mvpQPairs")
+	SMSG_DEBUG("mvpQPairs")
 }
 
 void mvpQLoading(void) {
-	MESSSAGE_DEBUG("mvpQLoading")
+	SMSG_DEBUG("mvpQLoading")
 }
 
 void mvpQDup(void) {
-	MESSSAGE_DEBUG("mvpQDup")
+	SMSG_DEBUG("mvpQDup")
 }
 
 void mvpQCSP(void) {
-	MESSSAGE_DEBUG("mvpQCSP")
+	SMSG_DEBUG("mvpQCSP")
 }
 
 void mvpQConfigure(void) {
-	MESSSAGE_DEBUG("mvpQConfigure")
+	SMSG_DEBUG("mvpQConfigure")
 }
 
 void mvpQComp(void) {
-	MESSSAGE_DEBUG("mvpQComp")
+	SMSG_DEBUG("mvpQComp")
 }
 
 void mvpQ(void) {
-	MESSSAGE_DEBUG("mvpQ")
+	SMSG_DEBUG("mvpQ")
 }
 
 void mvpToR(void) {
-	MESSSAGE_DEBUG("mvpToR")
+	SMSG_DEBUG("mvpToR")
 }
 
 void mvpToIn(void) {
-	MESSSAGE_DEBUG("mvpToIn")
+	SMSG_DEBUG("mvpToIn")
 }
 
 void mvpGreater(void) {
-	MESSSAGE_DEBUG("mvpGreater")
+	SMSG_DEBUG("mvpGreater")
 }
 
 void mvpEqual(void) {
-	MESSSAGE_DEBUG("mvpEqual")
+	SMSG_DEBUG("mvpEqual")
 }
 
 void mvpZWord(void) {
-	MESSSAGE_DEBUG("mvpZWord")
+	SMSG_DEBUG("mvpZWord")
 }
 
 void mvpZVocabularyFig(void) {
-	MESSSAGE_DEBUG("mvpZVocabularyFig")
+	SMSG_DEBUG("mvpZVocabularyFig")
 }
 
 void mvpZVocabulary79(void) {
-	MESSSAGE_DEBUG("mvpZVocabulary79")
+	SMSG_DEBUG("mvpZVocabulary79")
 }
 
 void mvpZTAmpersandSCalc(void) {
-	MESSSAGE_DEBUG("mvpZTAmpersandSCalc")
+	SMSG_DEBUG("mvpZTAmpersandSCalc")
 }
 
 void mvpZRSlashW(void) {
-	MESSSAGE_DEBUG("mvpZRSlashW")
+	SMSG_DEBUG("mvpZRSlashW")
 }
 
 void mvpZPage(void) {
-	MESSSAGE_DEBUG("mvpZPage")
+	SMSG_DEBUG("mvpZPage")
 }
 
 void mvpZNumber(void) {
-	MESSSAGE_DEBUG("mvpZNumber")
+	SMSG_DEBUG("mvpZNumber")
 }
 
 void mvpZLoop(void) {
-	MESSSAGE_DEBUG("mvpZLoop")
+	SMSG_DEBUG("mvpZLoop")
 }
 
 void mvpZLoad(void) {
-	MESSSAGE_DEBUG("mvpZLoad")
+	SMSG_DEBUG("mvpZLoad")
 }
 
 void mvpZLine(void) {
-	MESSSAGE_DEBUG("mvpZLine")
+	SMSG_DEBUG("mvpZLine")
 }
 
 void mvpZKey(void) {
-	MESSSAGE_DEBUG("mvpZKey")
+	SMSG_DEBUG("mvpZKey")
 }
 
 void mvpZInterpret(void) {
-	MESSSAGE_DEBUG("mvpZInterpret")
+	SMSG_DEBUG("mvpZInterpret")
 }
 
 void mvpZFind(void) {
-	MESSSAGE_DEBUG("mvpZFind")
+	SMSG_DEBUG("mvpZFind")
 }
 
 void mvpZFill(void) {
-	MESSSAGE_DEBUG("mvpZFill")
+	SMSG_DEBUG("mvpZFill")
 }
 
 void mvpZExpect(void) {
-	MESSSAGE_DEBUG("mvpZExpect")
+	SMSG_DEBUG("mvpZExpect")
 }
 
 void mvpZEmit(void) {
-	MESSSAGE_DEBUG("mvpZEmit")
+	SMSG_DEBUG("mvpZEmit")
 }
 
 void mvpZDo(void) {
-	MESSSAGE_DEBUG("mvpZDo")
+	SMSG_DEBUG("mvpZDo")
 }
 
 void mvpZCr(void) {
-	MESSSAGE_DEBUG("mvpZCr")
+	SMSG_DEBUG("mvpZCr")
 }
 
 void mvpZCMove(void) {
-	MESSSAGE_DEBUG("mvpZCMove")
+	SMSG_DEBUG("mvpZCMove")
 }
 
 void mvpLessCmove(void) {
-	MESSSAGE_DEBUG("mvpLessCmove")
+	SMSG_DEBUG("mvpLessCmove")
 }
 
 void mvpZBock(void) {
-	MESSSAGE_DEBUG("mvpZBock")
+	SMSG_DEBUG("mvpZBock")
 }
 
 void mvpZAbort(void) {
-	MESSSAGE_DEBUG("mvpZAbort")
+	SMSG_DEBUG("mvpZAbort")
 }
 
 void mvpZAbortQuote(void) {
-	MESSSAGE_DEBUG("mvpZAbortQuote")
+	SMSG_DEBUG("mvpZAbortQuote")
 }
 
 void mvpZQTerminal(void) {
-	MESSSAGE_DEBUG("mvpZQTerminal")
+	SMSG_DEBUG("mvpZQTerminal")
 }
 
 void mvpLessZCMove(void) {
-	MESSSAGE_DEBUG("mvpLessZCMove")
+	SMSG_DEBUG("mvpLessZCMove")
 }
 
 void mvpZSemicolonCode(void) {
-	MESSSAGE_DEBUG("mvpZSemicolonCode")
+	SMSG_DEBUG("mvpZSemicolonCode")
 }
 
 void mvpZSlashLoop(void) {
-	MESSSAGE_DEBUG("mvpZSlashLoop")
+	SMSG_DEBUG("mvpZSlashLoop")
 }
 
 void mvpZDotQuote(void) {
-	MESSSAGE_DEBUG("mvpZDotQuote")
+	SMSG_DEBUG("mvpZDotQuote")
 }
 
 void mvpZMinusFind(void) {
-	MESSSAGE_DEBUG("mvpZMinusFind")
+	SMSG_DEBUG("mvpZMinusFind")
 }
 
 void mvpZPlusLoop(void) {
-	MESSSAGE_DEBUG("mvpZPlusLoop")
+	SMSG_DEBUG("mvpZPlusLoop")
 }
 
 void mvpLessNum(void) {
-	MESSSAGE_DEBUG("mvpLessNum")
+	SMSG_DEBUG("mvpLessNum")
 }
 
 void mvpLess(void) {
-	MESSSAGE_DEBUG("mvpLess")
+	SMSG_DEBUG("mvpLess")
 }
 
 void mvpSemicolon(void) {
-	MESSSAGE_DEBUG("mvpSemicolon")
+	SMSG_DEBUG("mvpSemicolon")
 }
 
 void mvpColon(void) {
-	MESSSAGE_DEBUG("mvpColon")
+	SMSG_DEBUG("mvpColon")
 }
 
 void mvpSnineStandard(void) {
-	MESSSAGE_DEBUG("mvpSnineStandard")
+	SMSG_DEBUG("mvpSnineStandard")
 }
 
 void mvpTwoSlash(void) {
-	MESSSAGE_DEBUG("mvpTwoSlash")
+	SMSG_DEBUG("mvpTwoSlash")
 }
 
 void mvpTwoMinus(void) {
-	MESSSAGE_DEBUG("mvpTwoMinus")
+	SMSG_DEBUG("mvpTwoMinus")
 }
 
 void mvpTwoPlus(void) {
-	MESSSAGE_DEBUG("mvpTwoPlus")
+	SMSG_DEBUG("mvpTwoPlus")
 }
 
 void mvpTwoStar(void) {
-	MESSSAGE_DEBUG("mvpTwoStar")
+	SMSG_DEBUG("mvpTwoStar")
 }
 
 void mvpTwo(void) {
-	MESSSAGE_DEBUG("mvpTwo")
+	SMSG_DEBUG("mvpTwo")
 }
 
 void mvpOneMinus(void) {
-	MESSSAGE_DEBUG("mvpOneMinus")
+	SMSG_DEBUG("mvpOneMinus")
 }
 
 void mvpOnePlus(void) {
-	MESSSAGE_DEBUG("mvpOnePlus")
+	SMSG_DEBUG("mvpOnePlus")
 }
 
 void mvpOne(void) {
-	MESSSAGE_DEBUG("mvpOne")
+	SMSG_DEBUG("mvpOne")
 }
 
 void mvpZeroBranch(void) {
-	MESSSAGE_DEBUG("mvpZeroBranch")
+	SMSG_DEBUG("mvpZeroBranch")
 }
 
 void mvpZeroGreater(void) {
-	MESSSAGE_DEBUG("mvpZeroGreater")
+	SMSG_DEBUG("mvpZeroGreater")
 }
 
 void mvpZeroEqual(void) {
-	MESSSAGE_DEBUG("mvpZeroEqual")
+	SMSG_DEBUG("mvpZeroEqual")
 }
 
 void mvpZeroLess(void) {
-	MESSSAGE_DEBUG("mvpZeroLess")
+	SMSG_DEBUG("mvpZeroLess")
 }
 
 void mvpZero(void) {
-	MESSSAGE_DEBUG("mvpZero")
+	SMSG_DEBUG("mvpZero")
 }
 
 void mvpSlashMod(void) {
-	MESSSAGE_DEBUG("mvpSlashMod")
+	SMSG_DEBUG("mvpSlashMod")
 }
 
 void mvpSlashLoop(void) {
-	MESSSAGE_DEBUG("mvpSlashLoop")
+	SMSG_DEBUG("mvpSlashLoop")
 }
 
 void mvpSlash(void) {
-	MESSSAGE_DEBUG("mvpSlash")
+	SMSG_DEBUG("mvpSlash")
 }
 
 void mvpDotR(void) {
-	MESSSAGE_DEBUG("mvpDotR")
+	SMSG_DEBUG("mvpDotR")
 }
 
 void mvpDotLine(void) {
-	MESSSAGE_DEBUG("mvpDotLine")
+	SMSG_DEBUG("mvpDotLine")
 }
 
 void mvpDotQuote(void) {
-	MESSSAGE_DEBUG("mvpDotQuote")
+	SMSG_DEBUG("mvpDotQuote")
 }
 
 void mvpDot(void) {
-	MESSSAGE_DEBUG("mvpDot")
+	SMSG_DEBUG("mvpDot")
 }
 
 void mvpTrailing(void) {
-	MESSSAGE_DEBUG("mvpTrailing")
+	SMSG_DEBUG("mvpTrailing")
 }
 
 void mvpMinusFind(void) {
-	MESSSAGE_DEBUG("mvpMinusFind")
+	SMSG_DEBUG("mvpMinusFind")
 }
 
 void mvpMinus(void) {
-	MESSSAGE_DEBUG("mvpMinus")
+	SMSG_DEBUG("mvpMinus")
 }
 
 void mvpComma(void) {
-	MESSSAGE_DEBUG("mvpComma")
+	SMSG_DEBUG("mvpComma")
 }
 
 void mvpPlusLoop(void) {
-	MESSSAGE_DEBUG("mvpPlusLoop")
+	SMSG_DEBUG("mvpPlusLoop")
 }
 
 void mvpPlusBuf(void) {
-	MESSSAGE_DEBUG("mvpPlusBuf")
+	SMSG_DEBUG("mvpPlusBuf")
 }
 
 void mvpPlusMinus(void) {
-	MESSSAGE_DEBUG("mvpPlusMinus")
+	SMSG_DEBUG("mvpPlusMinus")
 }
 
 void mvpPlusStore(void) {
-	MESSSAGE_DEBUG("mvpPlusStore")
+	SMSG_DEBUG("mvpPlusStore")
 }
 
 void mvpPlus(void) {
-	MESSSAGE_DEBUG("mvpPlus")
+	SMSG_DEBUG("mvpPlus")
 }
 
 void mvpStarSlashMod(void) {
-	MESSSAGE_DEBUG("mvpStarSlashMod")
+	SMSG_DEBUG("mvpStarSlashMod")
 }
 
 void mvpStarSlash(void) {
-	MESSSAGE_DEBUG("mvpStarSlash")
+	SMSG_DEBUG("mvpStarSlash")
 }
 
 void mvpStar(void) {
-	MESSSAGE_DEBUG("mvpStar")
+	SMSG_DEBUG("mvpStar")
 }
 
 void mvpParen(void) {
-	MESSSAGE_DEBUG("mvpParen")
+	SMSG_DEBUG("mvpParen")
 }
 
 void mvpTickWord(void) {
-	MESSSAGE_DEBUG("mvpTickWord")
+	SMSG_DEBUG("mvpTickWord")
 }
 
 void mvpTickVocabulary(void) {
-	MESSSAGE_DEBUG("mvpTickVocabulary")
+	SMSG_DEBUG("mvpTickVocabulary")
 }
 
 void mvpTickTApersandSCalc(void) {
-	MESSSAGE_DEBUG("mvpTickTApersandSCalc")
+	SMSG_DEBUG("mvpTickTApersandSCalc")
 }
 
 void mvpTickStream(void) {
-	MESSSAGE_DEBUG("mvpTickStream")
+	SMSG_DEBUG("mvpTickStream")
 }
 
 void mvpTickRSlashW(void) {
-	MESSSAGE_DEBUG("mvpTickRSlashW")
+	SMSG_DEBUG("mvpTickRSlashW")
 }
 
 void mvpTickPage(void) {
-	MESSSAGE_DEBUG("mvpTickPage")
+	SMSG_DEBUG("mvpTickPage")
 }
 
 void mvpTickNumber(void) {
-	MESSSAGE_DEBUG("mvpTickNumber")
+	SMSG_DEBUG("mvpTickNumber")
 }
 
 void mvpTickLoad(void) {
-	MESSSAGE_DEBUG("mvpTickLoad")
+	SMSG_DEBUG("mvpTickLoad")
 }
 
 void mvpTickKey(void) {
-	MESSSAGE_DEBUG("mvpTickKey")
+	SMSG_DEBUG("mvpTickKey")
 }
 
 void mvpTickInterpret(void) {
-	MESSSAGE_DEBUG("mvpTickInterpret")
+	SMSG_DEBUG("mvpTickInterpret")
 }
 
 void mvpTickExpect(void) {
-	MESSSAGE_DEBUG("mvpTickExpect")
+	SMSG_DEBUG("mvpTickExpect")
 }
 
 void mvpTickEmit(void) {
-	MESSSAGE_DEBUG("mvpTickEmit")
+	SMSG_DEBUG("mvpTickEmit")
 }
 
 void mvpTickCr(void) {
-	MESSSAGE_DEBUG("mvpTickCr")
+	SMSG_DEBUG("mvpTickCr")
 }
 
 void mvpTickBlock(void) {
-	MESSSAGE_DEBUG("mvpTickBlock")
+	SMSG_DEBUG("mvpTickBlock")
 }
 
 void mvpTickAbort(void) {
-	MESSSAGE_DEBUG("mvpTickAbort")
+	SMSG_DEBUG("mvpTickAbort")
 }
 
 void mvpTickTerminal(void) {
-	MESSSAGE_DEBUG("mvpTickTerminal")
+	SMSG_DEBUG("mvpTickTerminal")
 }
 
 void mvpTickMinusFind(void) {
-	MESSSAGE_DEBUG("mvpTickMinusFind")
+	SMSG_DEBUG("mvpTickMinusFind")
 }
 
 void mvpTick(void) {
-	MESSSAGE_DEBUG("mvpTick")
+	SMSG_DEBUG("mvpTick")
 }
 
 void mvpNumS(void) {
-	MESSSAGE_DEBUG("mvpNumS")
+	SMSG_DEBUG("mvpNumS")
 }
 
 void mvpNumBuff(void) {
-	MESSSAGE_DEBUG("mvpNumBuff")
+	SMSG_DEBUG("mvpNumBuff")
 }
 
 void mvpNumGreater(void) {
-	MESSSAGE_DEBUG("mvpNumGreater")
+	SMSG_DEBUG("mvpNumGreater")
 }
 
 void mvpNum(void) {
-	MESSSAGE_DEBUG("mvpNum")
+	SMSG_DEBUG("mvpNum")
 }
 
 void mvpStoreL(void) {
-	MESSSAGE_DEBUG("mvpStoreL")
+	SMSG_DEBUG("mvpStoreL")
 }
 
 void mvpStore(void) {
-	MESSSAGE_DEBUG("mvpStore")
+	SMSG_DEBUG("mvpStore")
 }
 
 #endif

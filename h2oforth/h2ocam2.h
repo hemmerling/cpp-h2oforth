@@ -6,941 +6,941 @@
 /* Primitives */
 
 void camelExit(void) {
-	MESSSAGE_DEBUG("camelExit")
+	SMSG_DEBUG("camelExit")
 }
 
 void camelExecute(void) {
-	MESSSAGE_DEBUG("camelExecute")
+	SMSG_DEBUG("camelExecute")
 }
 
 void camelLit(void) {
-	MESSSAGE_DEBUG("camelLit")
+	SMSG_DEBUG("camelLit")
 }
 
 void camelDup(void) {
-	MESSSAGE_DEBUG("camelDup")
+	SMSG_DEBUG("camelDup")
 }
 
 void camelQDup(void) {
-	MESSSAGE_DEBUG("camelQDup")
+	SMSG_DEBUG("camelQDup")
 }
 
 void camelDrop(void) {
-	MESSSAGE_DEBUG("camelDrop")
+	SMSG_DEBUG("camelDrop")
 }
 
 void camelSwap(void) {
-	MESSSAGE_DEBUG("camelSwap")
+	SMSG_DEBUG("camelSwap")
 }
 
 void camelOver(void) {
-	MESSSAGE_DEBUG("camelOver")
+	SMSG_DEBUG("camelOver")
 }
 
 void camelRot(void) {
-	MESSSAGE_DEBUG("camelRot")
+	SMSG_DEBUG("camelRot")
 }
 
 void camelNip(void) {
-	MESSSAGE_DEBUG("camelNip")
+	SMSG_DEBUG("camelNip")
 }
 
 void camelTuck(void) {
-	MESSSAGE_DEBUG("camelTuck")
+	SMSG_DEBUG("camelTuck")
 }
 
 void camelToR(void) {
-	MESSSAGE_DEBUG("camelToR")
+	SMSG_DEBUG("camelToR")
 }
 
 void camelRFrom(void) {
-	MESSSAGE_DEBUG("camelRFrom")
+	SMSG_DEBUG("camelRFrom")
 }
 
 void camelRFetch(void) {
-	MESSSAGE_DEBUG("camelRFetch")
+	SMSG_DEBUG("camelRFetch")
 }
 
 void camelSPFetch(void) {
-	MESSSAGE_DEBUG("camelSPFetch")
+	SMSG_DEBUG("camelSPFetch")
 }
 
 void camelSPStore(void) {
-	MESSSAGE_DEBUG("camelSPStore")
+	SMSG_DEBUG("camelSPStore")
 }
 
 void camelRPfetch(void) {
-	MESSSAGE_DEBUG("camelRPfetch")
+	SMSG_DEBUG("camelRPfetch")
 }
 
 void camelRPStore(void) {
-	MESSSAGE_DEBUG("camelRPStore")
+	SMSG_DEBUG("camelRPStore")
 }
 
 void camelFetch(void) {
-	MESSSAGE_DEBUG("camelFetch")
+	SMSG_DEBUG("camelFetch")
 }
 
 void camelStore(void) {
-	MESSSAGE_DEBUG("camelStore")
+	SMSG_DEBUG("camelStore")
 }
 
 void camelCFetch(void) {
-	MESSSAGE_DEBUG("camelCFetch")
+	SMSG_DEBUG("camelCFetch")
 }
 
 void camelCStore(void) {
-	MESSSAGE_DEBUG("camelCStore")
+	SMSG_DEBUG("camelCStore")
 }
 
 void camelIFetch(void) {
-	MESSSAGE_DEBUG("camelIFetch")
+	SMSG_DEBUG("camelIFetch")
 }
 
 void camelIStore(void) {
-	MESSSAGE_DEBUG("camelIStore")
+	SMSG_DEBUG("camelIStore")
 }
 
 void camelICFetch(void) {
-	MESSSAGE_DEBUG("camelICFetch")
+	SMSG_DEBUG("camelICFetch")
 }
 
 void camelICStore(void) {
-	MESSSAGE_DEBUG("camelICStore")
+	SMSG_DEBUG("camelICStore")
 }
 
 void camelHFetch(void) {
-	MESSSAGE_DEBUG("camelHFetch")
+	SMSG_DEBUG("camelHFetch")
 }
 
 void camelHStore(void) {
-	MESSSAGE_DEBUG("camelHStore")
+	SMSG_DEBUG("camelHStore")
 }
 
 void camelHCFetch(void) {
-	MESSSAGE_DEBUG("camelHCFetch")
+	SMSG_DEBUG("camelHCFetch")
 }
 
 void camelHCStore(void) {
-	MESSSAGE_DEBUG("camelHCStore")
+	SMSG_DEBUG("camelHCStore")
 }
 
 void camelPlus(void) {
-	MESSSAGE_DEBUG("camelPlus")
+	SMSG_DEBUG("camelPlus")
 }
 
 void camelPlusStore(void) {
-	MESSSAGE_DEBUG("camelPlusStore")
+	SMSG_DEBUG("camelPlusStore")
 }
 
 void camelMPlus(void) {
-	MESSSAGE_DEBUG("camelMPlus")
+	SMSG_DEBUG("camelMPlus")
 }
 
 void camelMinus(void) {
-	MESSSAGE_DEBUG("camelMinus")
+	SMSG_DEBUG("camelMinus")
 }
 
 void camelMult(void) {
-	MESSSAGE_DEBUG("camelMult")
+	SMSG_DEBUG("camelMult")
 }
 
 void camelDiv(void) {
-	MESSSAGE_DEBUG("camelDiv")
+	SMSG_DEBUG("camelDiv")
 }
 
 void camelAnd(void) {
-	MESSSAGE_DEBUG("camelAnd")
+	SMSG_DEBUG("camelAnd")
 }
 
 void camelOr(void) {
-	MESSSAGE_DEBUG("camelOr")
+	SMSG_DEBUG("camelOr")
 }
 
 void camelXor(void) {
-	MESSSAGE_DEBUG("camelXor")
+	SMSG_DEBUG("camelXor")
 }
 
 void camelInvert(void) {
-	MESSSAGE_DEBUG("camelInvert")
+	SMSG_DEBUG("camelInvert")
 }
 
 void camelNegate(void) {
-	MESSSAGE_DEBUG("camelNegate")
+	SMSG_DEBUG("camelNegate")
 }
 
 void camelOnePlus(void) {
-	MESSSAGE_DEBUG("camelOnePlus")
+	SMSG_DEBUG("camelOnePlus")
 }
 
 void camelOneMinus(void) {
-	MESSSAGE_DEBUG("camelOneMinus")
+	SMSG_DEBUG("camelOneMinus")
 }
 
 void camelSwapBytes(void) {
-	MESSSAGE_DEBUG("camelSwapBytes")
+	SMSG_DEBUG("camelSwapBytes")
 }
 
 void camelTwoStar(void) {
-	MESSSAGE_DEBUG("camelTwoStar")
+	SMSG_DEBUG("camelTwoStar")
 }
 
 void camelTwoSlash(void) {
-	MESSSAGE_DEBUG("camelTwoSlash")
+	SMSG_DEBUG("camelTwoSlash")
 }
 
 void camelLShift(void) {
-	MESSSAGE_DEBUG("camelLShift")
+	SMSG_DEBUG("camelLShift")
 }
 
 void camelRShift(void) {
-	MESSSAGE_DEBUG("camelRShift")
+	SMSG_DEBUG("camelRShift")
 }
 
 void camelZeroEqual(void) {
-	MESSSAGE_DEBUG("camelZeroEqual")
+	SMSG_DEBUG("camelZeroEqual")
 }
 
 void camelZeroLess(void) {
-	MESSSAGE_DEBUG("camelZeroLess")
+	SMSG_DEBUG("camelZeroLess")
 }
 
 void camelEqual(void) {
-	MESSSAGE_DEBUG("camelEqual")
+	SMSG_DEBUG("camelEqual")
 }
 
 void camelNotEqual(void) {
-	MESSSAGE_DEBUG("camelNotEqual")
+	SMSG_DEBUG("camelNotEqual")
 }
 
 void camelLess(void) {
-	MESSSAGE_DEBUG("camelLess")
+	SMSG_DEBUG("camelLess")
 }
 
 void camelGreater(void) {
-	MESSSAGE_DEBUG("camelGreater")
+	SMSG_DEBUG("camelGreater")
 }
 
 void camelULess(void) {
-	MESSSAGE_DEBUG("camelULess")
+	SMSG_DEBUG("camelULess")
 }
 
 void camelUGreater(void) {
-	MESSSAGE_DEBUG("camelUGreater")
+	SMSG_DEBUG("camelUGreater")
 }
 
 void camelUBranch(void) {
-	MESSSAGE_DEBUG("camelUBranch")
+	SMSG_DEBUG("camelUBranch")
 }
 
 void camelBranch(void) {
-	MESSSAGE_DEBUG("camelBranch")
+	SMSG_DEBUG("camelBranch")
 }
 
 void camelQBranch(void) {
-	MESSSAGE_DEBUG("camelQBranch")
+	SMSG_DEBUG("camelQBranch")
 }
 
 void camelZPlusLoop(void) {
-	MESSSAGE_DEBUG("camelZPlusLoop")
+	SMSG_DEBUG("camelZPlusLoop")
 }
 
 void camelZLoop(void) {
-	MESSSAGE_DEBUG("camelZLoop")
+	SMSG_DEBUG("camelZLoop")
 }
 
 void camelZdo(void) {
-	MESSSAGE_DEBUG("camelZdo")
+	SMSG_DEBUG("camelZdo")
 }
 
 void camelI(void) {
-	MESSSAGE_DEBUG("camelI")
+	SMSG_DEBUG("camelI")
 }
 
 void camelJ(void) {
-	MESSSAGE_DEBUG("camelJ")
+	SMSG_DEBUG("camelJ")
 }
 
 void camelUnLoop(void) {
-	MESSSAGE_DEBUG("camelUnLoop")
+	SMSG_DEBUG("camelUnLoop")
 }
 
 void camelUmStar(void) {
-	MESSSAGE_DEBUG("camelUmStar")
+	SMSG_DEBUG("camelUmStar")
 }
 
 void camelUmSlashMod(void) {
-	MESSSAGE_DEBUG("camelUmSlashMod")
+	SMSG_DEBUG("camelUmSlashMod")
 }
 
 void camelFill(void) {
-	MESSSAGE_DEBUG("camelFill")
+	SMSG_DEBUG("camelFill")
 }
 
 void camelCMove(void) {
-	MESSSAGE_DEBUG("camelCMove")
+	SMSG_DEBUG("camelCMove")
 }
 
 void camelCMoveUp(void) {
-	MESSSAGE_DEBUG("camelCMoveUp")
+	SMSG_DEBUG("camelCMoveUp")
 }
 
 void camelIToD(void) {
-	MESSSAGE_DEBUG("camelIToD")
+	SMSG_DEBUG("camelIToD")
 }
 
 void camelSkip(void) {
-	MESSSAGE_DEBUG("camelSkip")
+	SMSG_DEBUG("camelSkip")
 }
 
 void camelScan(void) {
-	MESSSAGE_DEBUG("camelScan")
+	SMSG_DEBUG("camelScan")
 }
 
 void camelSEqual(void) {
-	MESSSAGE_DEBUG("camelSEqual")
+	SMSG_DEBUG("camelSEqual")
 }
 
 void camelNEqual(void) {
-	MESSSAGE_DEBUG("camelNEqual")
+	SMSG_DEBUG("camelNEqual")
 }
 
 void camelKey(void) {
-	MESSSAGE_DEBUG("camelKey")
+	SMSG_DEBUG("camelKey")
 }
 
 void camelEmit(void) {
-	MESSSAGE_DEBUG("camelEmit")
+	SMSG_DEBUG("camelEmit")
 }
 
 void camelKeyQ(void) {
-	MESSSAGE_DEBUG("camelKeyQ")
+	SMSG_DEBUG("camelKeyQ")
 }
 
 void camelDotHH(void) {
-	MESSSAGE_DEBUG("camelDotHH")
+	SMSG_DEBUG("camelDotHH")
 }
 
 void camelDotHHH(void) {
-	MESSSAGE_DEBUG("camelDotHHH")
+	SMSG_DEBUG("camelDotHHH")
 }
 
 void camelDotS(void) {
-	MESSSAGE_DEBUG("camelDotS")
+	SMSG_DEBUG("camelDotS")
 }
 
 void camelDump(void) {
-	MESSSAGE_DEBUG("camelDump")
+	SMSG_DEBUG("camelDump")
 }
 
 void camelBye(void) {
-	MESSSAGE_DEBUG("camelBye")
+	SMSG_DEBUG("camelBye")
 }
 
 /* High level words */
 
 void camelU0(void) {
-	MESSSAGE_DEBUG("camelU0")
+	SMSG_DEBUG("camelU0")
 }
 
 void camelToIN(void) {
-	MESSSAGE_DEBUG("camelToIN")
+	SMSG_DEBUG("camelToIN")
 }
 
 void camelBase(void) {
-	MESSSAGE_DEBUG("camelBase")
+	SMSG_DEBUG("camelBase")
 }
 
 void camelState(void) {
-	MESSSAGE_DEBUG("camelState")
+	SMSG_DEBUG("camelState")
 }
 
 void camelDp(void) {
-	MESSSAGE_DEBUG("camelDp")
+	SMSG_DEBUG("camelDp")
 }
 
 void camelTickSource(void) {
-	MESSSAGE_DEBUG("camelTickSource")
+	SMSG_DEBUG("camelTickSource")
 }
 
 void camelLatest(void) {
-	MESSSAGE_DEBUG("camelLatest")
+	SMSG_DEBUG("camelLatest")
 }
 
 void camelHp(void) {
-	MESSSAGE_DEBUG("camelHp")
+	SMSG_DEBUG("camelHp")
 }
 
 void camelLp(void) {
-	MESSSAGE_DEBUG("camelLp")
+	SMSG_DEBUG("camelLp")
 }
 
 void camelIdp(void) {
-	MESSSAGE_DEBUG("camelIdp")
+	SMSG_DEBUG("camelIdp")
 }
 
 void camelNewest(void) {
-	MESSSAGE_DEBUG("camelNewest")
+	SMSG_DEBUG("camelNewest")
 }
 
 void camelUInit(void) {
-	MESSSAGE_DEBUG("camelUInit")
+	SMSG_DEBUG("camelUInit")
 }
 
 void camelNInit(void) {
-	MESSSAGE_DEBUG("camelNInit")
+	SMSG_DEBUG("camelNInit")
 }
 
 void camelPad(void) {
-	MESSSAGE_DEBUG("camelPad")
+	SMSG_DEBUG("camelPad")
 }
 
 void camelL0(void) {
-	MESSSAGE_DEBUG("camelL0")
+	SMSG_DEBUG("camelL0")
 }
 
 void camelS0(void) {
-	MESSSAGE_DEBUG("camelS0")
+	SMSG_DEBUG("camelS0")
 }
 
 void camelR0(void) {
-	MESSSAGE_DEBUG("camelR0")
+	SMSG_DEBUG("camelR0")
 }
 
 void camelTib(void) {
-	MESSSAGE_DEBUG("camelTib")
+	SMSG_DEBUG("camelTib")
 }
 
 void camelTibSize(void) {
-	MESSSAGE_DEBUG("camelTibSize")
+	SMSG_DEBUG("camelTibSize")
 }
 
 void camelZero(void) {
-	MESSSAGE_DEBUG("camelZero")
+	SMSG_DEBUG("camelZero")
 }
 
 void camelOne(void) {
-	MESSSAGE_DEBUG("camelOne")
+	SMSG_DEBUG("camelOne")
 }
 
 void camelTwo(void) {
-	MESSSAGE_DEBUG("camelTwo")
+	SMSG_DEBUG("camelTwo")
 }
 
 void camelThree(void) {
-	MESSSAGE_DEBUG("camelThree")
+	SMSG_DEBUG("camelThree")
 }
 
 void camelMinusOne(void) {
-	MESSSAGE_DEBUG("camelMinusOne")
+	SMSG_DEBUG("camelMinusOne")
 }
 
 void camelCell(void) {
-	MESSSAGE_DEBUG("camelCell")
+	SMSG_DEBUG("camelCell")
 }
 
 void camelHere(void) {
-	MESSSAGE_DEBUG("camelHere")
+	SMSG_DEBUG("camelHere")
 }
 
 void camelAllot(void) {
-	MESSSAGE_DEBUG("camelAllot")
+	SMSG_DEBUG("camelAllot")
 }
 
 void camelComma(void) {
-	MESSSAGE_DEBUG("camelComma")
+	SMSG_DEBUG("camelComma")
 }
 
 void camelCComma(void) {
-	MESSSAGE_DEBUG("camelCComma")
+	SMSG_DEBUG("camelCComma")
 }
 
 void camelAligned(void) {
-	MESSSAGE_DEBUG("camelAligned")
+	SMSG_DEBUG("camelAligned")
 }
 
 void camelAlign(void) {
-	MESSSAGE_DEBUG("camelAlign")
+	SMSG_DEBUG("camelAlign")
 }
 
 void camelCellPlus(void) {
-	MESSSAGE_DEBUG("camelCellPlus")
+	SMSG_DEBUG("camelCellPlus")
 }
 
 void camelCharPlus(void) {
-	MESSSAGE_DEBUG("camelCharPlus")
+	SMSG_DEBUG("camelCharPlus")
 }
 
 void camelToBody(void) {
-	MESSSAGE_DEBUG("camelToBody")
+	SMSG_DEBUG("camelToBody")
 }
 
 void camelCommaXt(void) {
-	MESSSAGE_DEBUG("camelCommaXt")
+	SMSG_DEBUG("camelCommaXt")
 }
 
 void camelStoreCF(void) {
-	MESSSAGE_DEBUG("camelStoreCF")
+	SMSG_DEBUG("camelStoreCF")
 }
 
 void camelCommaCF(void) {
-	MESSSAGE_DEBUG("camelCommaCF")
+	SMSG_DEBUG("camelCommaCF")
 }
 
 void camelStoreColon(void) {
-	MESSSAGE_DEBUG("camelStoreColon")
+	SMSG_DEBUG("camelStoreColon")
 }
 
 void camelCommaExit(void) {
-	MESSSAGE_DEBUG("camelCommaExit")
+	SMSG_DEBUG("camelCommaExit")
 }
 
 void camelCommaBranch(void) {
-	MESSSAGE_DEBUG("camelCommaBranch")
+	SMSG_DEBUG("camelCommaBranch")
 }
 
 void camelCommaDest(void) {
-	MESSSAGE_DEBUG("camelCommaDest")
+	SMSG_DEBUG("camelCommaDest")
 }
 
 void camelStoreDest(void) {
-	MESSSAGE_DEBUG("camelStoreDest")
+	SMSG_DEBUG("camelStoreDest")
 }
 
 void camelCommaNone(void) {
-	MESSSAGE_DEBUG("camelCommaNone")
+	SMSG_DEBUG("camelCommaNone")
 }
 
 void camelTwoFetch(void) {
-	MESSSAGE_DEBUG("camelTwoFetch")
+	SMSG_DEBUG("camelTwoFetch")
 }
 
 void camelTwoStore(void) {
-	MESSSAGE_DEBUG("camelTwoStore")
+	SMSG_DEBUG("camelTwoStore")
 }
 
 void camelTwoDrop(void) {
-	MESSSAGE_DEBUG("camelTwoDrop")
+	SMSG_DEBUG("camelTwoDrop")
 }
 
 void camelTwoDup(void) {
-	MESSSAGE_DEBUG("camelTwoDup")
+	SMSG_DEBUG("camelTwoDup")
 }
 
 void camelTwoSwap(void) {
-	MESSSAGE_DEBUG("camelTwoSwap")
+	SMSG_DEBUG("camelTwoSwap")
 }
 
 void camelTwoOver(void) {
-	MESSSAGE_DEBUG("camelTwoOver")
+	SMSG_DEBUG("camelTwoOver")
 }
 
 void camelSToD(void) {
-	MESSSAGE_DEBUG("camelSToD")
+	SMSG_DEBUG("camelSToD")
 }
 
 void camelAbs(void) {
-	MESSSAGE_DEBUG("camelAbs")
+	SMSG_DEBUG("camelAbs")
 }
 
 void camelDNegate(void) {
-	MESSSAGE_DEBUG("camelDNegate")
+	SMSG_DEBUG("camelDNegate")
 }
 
 void camelQDNegate(void) {
-	MESSSAGE_DEBUG("camelQDNegate")
+	SMSG_DEBUG("camelQDNegate")
 }
 
 void camelDAbs(void) {
-	MESSSAGE_DEBUG("camelDAbs")
+	SMSG_DEBUG("camelDAbs")
 }
 
 void camelMStar(void) {
-	MESSSAGE_DEBUG("camelMStar")
+	SMSG_DEBUG("camelMStar")
 }
 
 void camelSMSlashREM(void) {
-	MESSSAGE_DEBUG("camelSMSlashREM")
+	SMSG_DEBUG("camelSMSlashREM")
 }
 
 void camelFMSlashMod(void) {
-	MESSSAGE_DEBUG("camelFMSlashMod")
+	SMSG_DEBUG("camelFMSlashMod")
 }
 
 void camelSlashMod(void) {
-	MESSSAGE_DEBUG("camelSlashMod")
+	SMSG_DEBUG("camelSlashMod")
 }
 
 void camelMod(void) {
-	MESSSAGE_DEBUG("camelMod")
+	SMSG_DEBUG("camelMod")
 }
 
 void camelStarSlashMod(void) {
-	MESSSAGE_DEBUG("camelStarSlashMod")
+	SMSG_DEBUG("camelStarSlashMod")
 }
 
 void camelStarSlash(void) {
-	MESSSAGE_DEBUG("camelStarSlash")
+	SMSG_DEBUG("camelStarSlash")
 }
 
 void camelMax(void) {
-	MESSSAGE_DEBUG("camelMax")
+	SMSG_DEBUG("camelMax")
 }
 
 void camelMin(void) {
-	MESSSAGE_DEBUG("camelMin")
+	SMSG_DEBUG("camelMin")
 }
 
 void camelUMax(void) {
-	MESSSAGE_DEBUG("camelUMax")
+	SMSG_DEBUG("camelUMax")
 }
 
 void camelUMin(void) {
-	MESSSAGE_DEBUG("camelUMin")
+	SMSG_DEBUG("camelUMin")
 }
 
 void camelCells(void) {
-	MESSSAGE_DEBUG("camelCells")
+	SMSG_DEBUG("camelCells")
 }
 
 void camelCount(void) {
-	MESSSAGE_DEBUG("camelCount")
+	SMSG_DEBUG("camelCount")
 }
 
 void camelCR(void) {
-	MESSSAGE_DEBUG("camelCR")
+	SMSG_DEBUG("camelCR")
 }
 
 void camelSpace(void) {
-	MESSSAGE_DEBUG("camelSpace")
+	SMSG_DEBUG("camelSpace")
 }
 
 void camelSpaces(void) {
-	MESSSAGE_DEBUG("camelSpaces")
+	SMSG_DEBUG("camelSpaces")
 }
 
 void camelAccept(void) {
-	MESSSAGE_DEBUG("camelAccept")
+	SMSG_DEBUG("camelAccept")
 }
 
 void camelType(void) {
-	MESSSAGE_DEBUG("camelType")
+	SMSG_DEBUG("camelType")
 }
 
 void camelUDSlashMod(void) {
-	MESSSAGE_DEBUG("camelUDSlashMod")
+	SMSG_DEBUG("camelUDSlashMod")
 }
 
 void camelUDStar(void) {
-	MESSSAGE_DEBUG("camelUDStar")
+	SMSG_DEBUG("camelUDStar")
 }
 
 void camelHold(void) {
-	MESSSAGE_DEBUG("camelHold")
+	SMSG_DEBUG("camelHold")
 }
 
 void camelLessNum(void) {
-	MESSSAGE_DEBUG("camelLessNum")
+	SMSG_DEBUG("camelLessNum")
 }
 
 void camelToDigit(void) {
-	MESSSAGE_DEBUG("camelToDigit")
+	SMSG_DEBUG("camelToDigit")
 }
 
 void camelNum(void) {
-	MESSSAGE_DEBUG("camelNum")
+	SMSG_DEBUG("camelNum")
 }
 
 void camelNums(void) {
-	MESSSAGE_DEBUG("camelNums")
+	SMSG_DEBUG("camelNums")
 }
 
 void camelNumGreater(void) {
-	MESSSAGE_DEBUG("camelNumGreater")
+	SMSG_DEBUG("camelNumGreater")
 }
 
 void camelSign(void) {
-	MESSSAGE_DEBUG("camelSign")
+	SMSG_DEBUG("camelSign")
 }
 
 void camelUDot(void) {
-	MESSSAGE_DEBUG("camelUDot")
+	SMSG_DEBUG("camelUDot")
 }
 
 void camelDot(void) {
-	MESSSAGE_DEBUG("camelDot")
+	SMSG_DEBUG("camelDot")
 }
 
 void camelDecimal(void) {
-	MESSSAGE_DEBUG("camelDecimal")
+	SMSG_DEBUG("camelDecimal")
 }
 
 void camelHex(void) {
-	MESSSAGE_DEBUG("camelHex")
+	SMSG_DEBUG("camelHex")
 }
 
 void camelSource(void) {
-	MESSSAGE_DEBUG("camelSource")
+	SMSG_DEBUG("camelSource")
 }
 
 void camelSlashString(void) {
-	MESSSAGE_DEBUG("camelSlashString")
+	SMSG_DEBUG("camelSlashString")
 }
 
 void camelToCounted(void) {
-	MESSSAGE_DEBUG("camelToCounted")
+	SMSG_DEBUG("camelToCounted")
 }
 
 void camelAdrToIN(void) {
-	MESSSAGE_DEBUG("camelAdrToIN")
+	SMSG_DEBUG("camelAdrToIN")
 }
 
 void camelParse(void) {
-	MESSSAGE_DEBUG("camelParse")
+	SMSG_DEBUG("camelParse")
 }
 
 void camelWord(void) {
-	MESSSAGE_DEBUG("camelWord")
+	SMSG_DEBUG("camelWord")
 }
 
 void camelZSQuote(void) {
-	MESSSAGE_DEBUG("camelZSQuote")
+	SMSG_DEBUG("camelZSQuote")
 }
 
 void camelSQuote(void) {
-	MESSSAGE_DEBUG("camelSQuote")
+	SMSG_DEBUG("camelSQuote")
 }
 
 void camelDotQuote(void) {
-	MESSSAGE_DEBUG("camelDotQuote")
+	SMSG_DEBUG("camelDotQuote")
 }
 
 void camelNFAToLFA(void) {
-	MESSSAGE_DEBUG("camelNFAToLFA")
+	SMSG_DEBUG("camelNFAToLFA")
 }
 
 void camelNFAToCFA(void) {
-	MESSSAGE_DEBUG("camelNFAToCFA")
+	SMSG_DEBUG("camelNFAToCFA")
 }
 
 void camelImmedQ(void) {
-	MESSSAGE_DEBUG("camelImmedQ")
+	SMSG_DEBUG("camelImmedQ")
 }
 
 void camelFind(void) {
-	MESSSAGE_DEBUG("camelFind")
+	SMSG_DEBUG("camelFind")
 }
 
 void camelLiteral(void) {
-	MESSSAGE_DEBUG("camelLiteral")
+	SMSG_DEBUG("camelLiteral")
 }
 
 void camelDigitQ(void) {
-	MESSSAGE_DEBUG("camelDigitQ")
+	SMSG_DEBUG("camelDigitQ")
 }
 
 void camelQSign(void) {
-	MESSSAGE_DEBUG("camelQSign")
+	SMSG_DEBUG("camelQSign")
 }
 
 void camelToNumber(void) {
-	MESSSAGE_DEBUG("camelToNumber")
+	SMSG_DEBUG("camelToNumber")
 }
 
 void camelQNumber(void) {
-	MESSSAGE_DEBUG("camelQNumber")
+	SMSG_DEBUG("camelQNumber")
 }
 
 void camelInterpret(void) {
-	MESSSAGE_DEBUG("camelInterpret")
+	SMSG_DEBUG("camelInterpret")
 }
 
 void camelEvaluate(void) {
-	MESSSAGE_DEBUG("camelEvaluate")
+	SMSG_DEBUG("camelEvaluate")
 }
 
 void camelQuit(void) {
-	MESSSAGE_DEBUG("camelQuit")
+	SMSG_DEBUG("camelQuit")
 }
 
 void camelAbort(void) {
-	MESSSAGE_DEBUG("camelAbort")
+	SMSG_DEBUG("camelAbort")
 }
 
 void camelQAbort(void) {
-	MESSSAGE_DEBUG("camelQAbort")
+	SMSG_DEBUG("camelQAbort")
 }
 
 void camelAbortQuote(void) {
-	MESSSAGE_DEBUG("camelAbortQuote")
+	SMSG_DEBUG("camelAbortQuote")
 }
 
 void camelTick(void) {
-	MESSSAGE_DEBUG("camelTick")
+	SMSG_DEBUG("camelTick")
 }
 
 void camelChar(void) {
-	MESSSAGE_DEBUG("camelChar")
+	SMSG_DEBUG("camelChar")
 }
 
 void camelXChar(void) {
-	MESSSAGE_DEBUG("camelXChar")
+	SMSG_DEBUG("camelXChar")
 }
 
 void camelParen(void) {
-	MESSSAGE_DEBUG("camelParen")
+	SMSG_DEBUG("camelParen")
 }
 
 void camelHeader(void) {
-	MESSSAGE_DEBUG("camelHeader")
+	SMSG_DEBUG("camelHeader")
 }
 
 void camelBuilds(void) {
-	MESSSAGE_DEBUG("camelBuilds")
+	SMSG_DEBUG("camelBuilds")
 }
 
 void camelVariable(void) {
-	MESSSAGE_DEBUG("camelVariable")
+	SMSG_DEBUG("camelVariable")
 }
 
 void camelConstant(void) {
-	MESSSAGE_DEBUG("camelConstant")
+	SMSG_DEBUG("camelConstant")
 }
 
 void camelUser(void) {
-	MESSSAGE_DEBUG("camelUser")
+	SMSG_DEBUG("camelUser")
 }
 
 void camelCreate(void) {
-	MESSSAGE_DEBUG("camelCreate")
+	SMSG_DEBUG("camelCreate")
 }
 
 void camelZDoes(void) {
-	MESSSAGE_DEBUG("camelZDoes")
+	SMSG_DEBUG("camelZDoes")
 }
 
 void camelRecurse(void) {
-	MESSSAGE_DEBUG("camelRecurse")
+	SMSG_DEBUG("camelRecurse")
 }
 
 void camelLeftBracket(void) {
-	MESSSAGE_DEBUG("camelLeftBracket")
+	SMSG_DEBUG("camelLeftBracket")
 }
 
 void camelRightBracket(void) {
-	MESSSAGE_DEBUG("camelRightBracket")
+	SMSG_DEBUG("camelRightBracket")
 }
 
 void camelHide(void) {
-	MESSSAGE_DEBUG("camelHide")
+	SMSG_DEBUG("camelHide")
 }
 
 void camelReveal(void) {
-	MESSSAGE_DEBUG("camelReveal")
+	SMSG_DEBUG("camelReveal")
 }
 
 void camelImmediate(void) {
-	MESSSAGE_DEBUG("camelImmediate")
+	SMSG_DEBUG("camelImmediate")
 }
 
 void camelColon(void) {
-	MESSSAGE_DEBUG("camelColon")
+	SMSG_DEBUG("camelColon")
 }
 
 void camelSemicolon(void) {
-	MESSSAGE_DEBUG("camelSemicolon")
+	SMSG_DEBUG("camelSemicolon")
 }
 
 void camelXTick(void) {
-	MESSSAGE_DEBUG("camelXTick")
+	SMSG_DEBUG("camelXTick")
 }
 
 void camelPostpone(void) {
-	MESSSAGE_DEBUG("camelPostpone")
+	SMSG_DEBUG("camelPostpone")
 }
 
 void camelCompile(void) {
-	MESSSAGE_DEBUG("camelCompile")
+	SMSG_DEBUG("camelCompile")
 }
 
 void camelIf(void) {
-	MESSSAGE_DEBUG("camelIf")
+	SMSG_DEBUG("camelIf")
 }
 
 void camelThen(void) {
-	MESSSAGE_DEBUG("camelThen")
+	SMSG_DEBUG("camelThen")
 }
 
 void camelElse(void) {
-	MESSSAGE_DEBUG("camelElse")
+	SMSG_DEBUG("camelElse")
 }
 
 void camelBegin(void) {
-	MESSSAGE_DEBUG("camelBegin")
+	SMSG_DEBUG("camelBegin")
 }
 
 void camelUntil(void) {
-	MESSSAGE_DEBUG("camelUntil")
+	SMSG_DEBUG("camelUntil")
 }
 
 void camelAgain(void) {
-	MESSSAGE_DEBUG("camelAgain")
+	SMSG_DEBUG("camelAgain")
 }
 
 void camelWhile(void) {
-	MESSSAGE_DEBUG("camelWhile")
+	SMSG_DEBUG("camelWhile")
 }
 
 void camelRepeat(void) {
-	MESSSAGE_DEBUG("camelRepeat")
+	SMSG_DEBUG("camelRepeat")
 }
 
 void camelToL(void) {
-	MESSSAGE_DEBUG("camelToL")
+	SMSG_DEBUG("camelToL")
 }
 
 void camelLFrom(void) {
-	MESSSAGE_DEBUG("camelLFrom")
+	SMSG_DEBUG("camelLFrom")
 }
 
 void camelDo(void) {
-	MESSSAGE_DEBUG("camelDo")
+	SMSG_DEBUG("camelDo")
 }
 
 void camelEndLoop(void) {
-	MESSSAGE_DEBUG("camelEndLoop")
+	SMSG_DEBUG("camelEndLoop")
 }
 
 void camelLoop(void) {
-	MESSSAGE_DEBUG("camelLoop")
+	SMSG_DEBUG("camelLoop")
 }
 
 void camelPlusLoop(void) {
-	MESSSAGE_DEBUG("camelPlusLoop")
+	SMSG_DEBUG("camelPlusLoop")
 }
 
 void camelLeave(void) {
-	MESSSAGE_DEBUG("camelLeave")
+	SMSG_DEBUG("camelLeave")
 }
 
 void camelWithin(void) {
-	MESSSAGE_DEBUG("camelWithin")
+	SMSG_DEBUG("camelWithin")
 }
 
 void camelMove(void) {
-	MESSSAGE_DEBUG("camelMove")
+	SMSG_DEBUG("camelMove")
 }
 
 void camelDepth(void) {
-	MESSSAGE_DEBUG("camelDepth")
+	SMSG_DEBUG("camelDepth")
 }
 
 void camelEnvironmentQ(void) {
-	MESSSAGE_DEBUG("camelEnvironmentQ")
+	SMSG_DEBUG("camelEnvironmentQ")
 }
 
 void camelMarker(void) {
-	MESSSAGE_DEBUG("camelMarker")
+	SMSG_DEBUG("camelMarker")
 }
 
 #endif

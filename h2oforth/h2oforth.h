@@ -593,20 +593,42 @@
 /* Macros */
 #if defined (__DEBUG__)
 #ifdef ARDUINO
-#define MESSSAGE_SUCCESS(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateMessage(buffer, STREAM_SUCCESS, FALSE, TRUE);};
-#define MESSSAGE_DEBUG(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateMessage(buffer, STREAM_DEBUG, TRUE, TRUE);};
-#define MESSSAGE_INFORMATION(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateMessage(buffer, STREAM_INFORMATION, FALSE, TRUE);};
+#define CMSG_SUCCESS(X) {static const PROGMEM char x = X; privateCMessage(pgm_read_byte(x), STREAM_SUCCESS);};
+#define CMSG_ERROR(X) {static const PROGMEM char x = X; privateCMessage(pgm_read_byte(x), STREAM_ERROR);};
+#define CMSG_WARNING(X) {static const PROGMEM char x = X; privateCMessage(pgm_read_byte(x), STREAM_WARNING);};
+#define CMSG_VERBOSE(X) {static const PROGMEM char x = X; privateCMessage(pgm_read_byte(x),  STREAM_VERBOSE);};
+#define CMSG_DEBUG(X) {static const PROGMEM char x = X; privateCMessage(pgm_read_byte(x),  STREAM_DEBUG);};
+#define CMSG_INFORMATION(X) {static const PROGMEM char x = X; privateCMessage(pgm_read_byte(x),  STREAM_INFORMATION);};
+#define SMSG_SUCCESS(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_SUCCESS, FALSE, FALSE);};
+#define SMSG_SUCCESS_CR(STRING_,CR2) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_SUCCESS, FALSE, TRUE);};
+#define SMSG_SUCCESS2(STRING_,CR1,CR2) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_SUCCESS, CR1, CR2);};
+#define SMSG_ERROR(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_ERROR, TRUE, TRUE);};
+#define SMSG_WARNING(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_WARNING, TRUE, TRUE);};
+#define SMSG_VERBOSE(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_VERBOSE, TRUE, TRUE);};
+#define SMSG_DEBUG(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_DEBUG, TRUE, TRUE);};
+#define SMSG_INFORMATION(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_INFORMATION, TRUE, TRUE);};
 /* This macro works :-): */
-//#define MESSSAGE_DEBUG(X) {FPUTC_ERR(CHAR_CR); FPUTS_ERR(F(X)); FPUTC_ERR(CHAR_CR);};
+//#define SMSG_DEBUG(X) {FPUTC_ERR(CHAR_CR); FPUTS_ERR(F(X)); FPUTC_ERR(CHAR_CR);};
 /* This macro does not (yet) work :-(: */
-//#define MESSSAGE_DEBUG(X) privateMessage(F(X), STREAM_DEBUG, TRUE, TRUE);
+//#define SMSG_DEBUG(X) privateMessage(F(X), STREAM_DEBUG, TRUE, TRUE);
 #else
-#define MESSSAGE_DEBUG(X) privateMessage((char *)X, STREAM_DEBUG, TRUE, TRUE);
-#define MESSAGE_SUCCESS(X) privateMessage((char *)X, STREAM_SUCCESS, FALSE, TRUE);
-#define MESSAGE_INFORMATION(X) privateMessage((char *)X, STREAM_INFORMATION, FALSE, TRUE);
+#define CMSG_SUCCESS(X) privateCMessage(X, STREAM_SUCCESS);
+#define CMSG_ERROR(X) privateCMessage(X, STREAM_ERROR);
+#define CMSG_WARNING(X) privateCMessage(X, STREAM_WARNING);
+#define CMSG_VERBOSE(X) privateCMessage(X, STREAM_VERBOSE);
+#define CMSG_DEBUG(X) privateCMessage(X, STREAM_DEBUG);
+#define CMSG_INFORMATION(X) privateCMessage(X, STREAM_INFORMATION);
+#define SMSG_SUCCESS(X) privateSMessage(char *)X, STREAM_SUCCESS, FALSE, FALSE);
+#define SMSG_SUCCESS_CR(X) privateSMessage((char *)X, STREAM_SUCCESS, FALSE, TRUE);
+#define SMSG_SUCCESS2(X,CR1,CR2) privateSMessage((char *)X, STREAM_SUCCESS, CR1, CR2);
+#define SMSG_ERROR(X) privateSMessage((char *)X, STREAM_ERROR, TRUE, TRUE);
+#define SMSG_WARNING(X) privateSMessage((char *)X, STREAM_WARNING, TRUE, TRUE);
+#define SMSG_VERBOSE(X) privateSMessage((char *)X, STREAM_VERBOSE, TRUE, TRUE);
+#define SMSG_DEBUG(X) privateSMessage((char *)X, STREAM_DEBUG, TRUE, TRUE);
+#define SMSG_INFORMATION(X) privateSMessage((char *)X, STREAM_INFORMATION, TRUE, TRUE);
 #endif
 #else
-#define MESSSAGE_DEBUG(X)
+#define SMSG_DEBUG(X)
 #endif
 
 int isSPInteger(void);

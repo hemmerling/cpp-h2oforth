@@ -6,563 +6,563 @@
 /* Primitives */
 
 void jupiterForth(void) {
-	MESSSAGE_DEBUG("jupiterForth")
+	SMSG_DEBUG("jupiterForth")
 }
 
 void jupiterUFLoat(void) {
-	MESSSAGE_DEBUG("jupiterUFLoat")
+	SMSG_DEBUG("jupiterUFLoat")
 }
 
 void jupiterInt(void) {
-	MESSSAGE_DEBUG("jupiterInt")
+	SMSG_DEBUG("jupiterInt")
 }
 
 void jupiterFNegate(void) {
-	MESSSAGE_DEBUG("jupiterFNegate")
+	SMSG_DEBUG("jupiterFNegate")
 }
 
 void jupiterFSlash(void) {
-	MESSSAGE_DEBUG("jupiterFSlash")
+	SMSG_DEBUG("jupiterFSlash")
 }
 
 void jupiterFStar(void) {
-	MESSSAGE_DEBUG("jupiterFStar")
+	SMSG_DEBUG("jupiterFStar")
 }
 
 void jupiterFPlus(void) {
-	MESSSAGE_DEBUG("jupiterFPlus")
+	SMSG_DEBUG("jupiterFPlus")
 }
 
 void jupiterFMinus(void) {
-	MESSSAGE_DEBUG("jupiterFMinus")
+	SMSG_DEBUG("jupiterFMinus")
 }
 
 void jupiterLoad(void) {
-	MESSSAGE_DEBUG("jupiterLoad")
+	SMSG_DEBUG("jupiterLoad")
 }
 
 void jupiterBVerify(void) {
-	MESSSAGE_DEBUG("jupiterBVerify")
+	SMSG_DEBUG("jupiterBVerify")
 }
 
 void jupiterVerify(void) {
-	MESSSAGE_DEBUG("jupiterVerify")
+	SMSG_DEBUG("jupiterVerify")
 }
 
 void jupiterBLoad(void) {
-	MESSSAGE_DEBUG("jupiterBLoad")
+	SMSG_DEBUG("jupiterBLoad")
 }
 
 void jupiterBSave(void) {
-	MESSSAGE_DEBUG("jupiterBSave")
+	SMSG_DEBUG("jupiterBSave")
 }
 
 void jupiterSave(void) {
-	MESSSAGE_DEBUG("jupiterSave")
+	SMSG_DEBUG("jupiterSave")
 }
 
 void jupiterList(void) {
-	MESSSAGE_DEBUG("jupiterList")
+	SMSG_DEBUG("jupiterList")
 }
 
 void jupiterEdit(void) {
-	MESSSAGE_DEBUG("jupiterEdit")
+	SMSG_DEBUG("jupiterEdit")
 }
 
 void jupiterForget(void) {
-	MESSSAGE_DEBUG("jupiterForget")
+	SMSG_DEBUG("jupiterForget")
 }
 
 void jupiterRedefine(void) {
-	MESSSAGE_DEBUG("jupiterRedefine")
+	SMSG_DEBUG("jupiterRedefine")
 }
 
 void jupiterExit(void) {
-	MESSSAGE_DEBUG("jupiterExit")
+	SMSG_DEBUG("jupiterExit")
 }
 
 void jupiterDotQuote(void) {
-	MESSSAGE_DEBUG("jupiterDotQuote")
+	SMSG_DEBUG("jupiterDotQuote")
 }
 
 void jupiterParen(void) {
-	MESSSAGE_DEBUG("jupiterParen")
+	SMSG_DEBUG("jupiterParen")
 }
 
 void jupiterLeftBracket(void) {
-	MESSSAGE_DEBUG("jupiterLeftBracket")
+	SMSG_DEBUG("jupiterLeftBracket")
 }
 
 void jupiterPlusLoop(void) {
-	MESSSAGE_DEBUG("jupiterPlusLoop")
+	SMSG_DEBUG("jupiterPlusLoop")
 }
 
 void jupiterLoop(void) {
-	MESSSAGE_DEBUG("jupiterLoop")
+	SMSG_DEBUG("jupiterLoop")
 }
 
 void jupiterDo(void) {
-	MESSSAGE_DEBUG("jupiterDo")
+	SMSG_DEBUG("jupiterDo")
 }
 
 void jupiterUntil(void) {
-	MESSSAGE_DEBUG("jupiterUntil")
+	SMSG_DEBUG("jupiterUntil")
 }
 
 void jupiterRepeat(void) {
-	MESSSAGE_DEBUG("jupiterRepeat")
+	SMSG_DEBUG("jupiterRepeat")
 }
 
 void jupiterBegin(void) {
-	MESSSAGE_DEBUG("jupiterBegin")
+	SMSG_DEBUG("jupiterBegin")
 }
 
 void jupiterThen(void) {
-	MESSSAGE_DEBUG("jupiterThen")
+	SMSG_DEBUG("jupiterThen")
 }
 
 void jupiterElse(void) {
-	MESSSAGE_DEBUG("jupiterElse")
+	SMSG_DEBUG("jupiterElse")
 }
 
 void jupiterWhile(void) {
-	MESSSAGE_DEBUG("jupiterWhile")
+	SMSG_DEBUG("jupiterWhile")
 }
 
 void jupiterIf(void) {
-	MESSSAGE_DEBUG("jupiterIf")
+	SMSG_DEBUG("jupiterIf")
 }
 
 void jupiterRightBracket(void) {
-	MESSSAGE_DEBUG("jupiterRightBracket")
+	SMSG_DEBUG("jupiterRightBracket")
 }
 
 void jupiterLeave(void) {
-	MESSSAGE_DEBUG("jupiterLeave")
+	SMSG_DEBUG("jupiterLeave")
 }
 
 void jupiterJ(void) {
-	MESSSAGE_DEBUG("jupiterJ")
+	SMSG_DEBUG("jupiterJ")
 }
 
 void jupiterITick(void) {
-	MESSSAGE_DEBUG("jupiterITick")
+	SMSG_DEBUG("jupiterITick")
 }
 
 void jupiterI(void) {
-	MESSSAGE_DEBUG("jupiterI")
+	SMSG_DEBUG("jupiterI")
 }
 
 void jupiterDefinitions(void) {
-	MESSSAGE_DEBUG("jupiterDefinitions")
+	SMSG_DEBUG("jupiterDefinitions")
 }
 
 void jupiterVocabulary(void) {
-	MESSSAGE_DEBUG("jupiterVocabulary")
+	SMSG_DEBUG("jupiterVocabulary")
 }
 
 void jupiterImmediate(void) {
-	MESSSAGE_DEBUG("jupiterImmediate")
+	SMSG_DEBUG("jupiterImmediate")
 }
 
 void jupiterDoes(void) {
-	MESSSAGE_DEBUG("jupiterDoes")
+	SMSG_DEBUG("jupiterDoes")
 }
 
 void jupiterCompiler(void) {
-	MESSSAGE_DEBUG("jupiterCompiler")
+	SMSG_DEBUG("jupiterCompiler")
 }
 
 void jupiterCall(void) {
-	MESSSAGE_DEBUG("jupiterCall")
+	SMSG_DEBUG("jupiterCall")
 }
 
 void jupiterDefiner(void) {
-	MESSSAGE_DEBUG("jupiterDefiner")
+	SMSG_DEBUG("jupiterDefiner")
 }
 
 void jupiterASCII(void) {
-	MESSSAGE_DEBUG("jupiterASCII")
+	SMSG_DEBUG("jupiterASCII")
 }
 
 void jupiterLiteral(void) {
-	MESSSAGE_DEBUG("jupiterLiteral")
+	SMSG_DEBUG("jupiterLiteral")
 }
 
 void jupiterConstant(void) {
-	MESSSAGE_DEBUG("jupiterConstant")
+	SMSG_DEBUG("jupiterConstant")
 }
 
 void jupiterVariable(void) {
-	MESSSAGE_DEBUG("jupiterVariable")
+	SMSG_DEBUG("jupiterVariable")
 }
 
 void jupiterAllot(void) {
-	MESSSAGE_DEBUG("jupiterAllot")
+	SMSG_DEBUG("jupiterAllot")
 }
 
 void jupiterCComma(void) {
-	MESSSAGE_DEBUG("jupiterCComma")
+	SMSG_DEBUG("jupiterCComma")
 }
 
 void jupiterComma(void) {
-	MESSSAGE_DEBUG("jupiterComma")
+	SMSG_DEBUG("jupiterComma")
 }
 
 void jupiterCreate(void) {
-	MESSSAGE_DEBUG("jupiterCreate")
+	SMSG_DEBUG("jupiterCreate")
 }
 
 void jupiterColon(void) {
-	MESSSAGE_DEBUG("jupiterColon")
+	SMSG_DEBUG("jupiterColon")
 }
 
 void jupiterDecimal(void) {
-	MESSSAGE_DEBUG("jupiterDecimal")
+	SMSG_DEBUG("jupiterDecimal")
 }
 
 void jupiterMin(void) {
-	MESSSAGE_DEBUG("jupiterMin")
+	SMSG_DEBUG("jupiterMin")
 }
 
 void jupiterMax(void) {
-	MESSSAGE_DEBUG("jupiterMax")
+	SMSG_DEBUG("jupiterMax")
 }
 
 void jupiterXor(void) {
-	MESSSAGE_DEBUG("jupiterXor")
+	SMSG_DEBUG("jupiterXor")
 }
 
 void jupiterAnd(void) {
-	MESSSAGE_DEBUG("jupiterAnd")
+	SMSG_DEBUG("jupiterAnd")
 }
 
 void jupiterOr(void) {
-	MESSSAGE_DEBUG("jupiterOr")
+	SMSG_DEBUG("jupiterOr")
 }
 
 void jupiterTwoMinus(void) {
-	MESSSAGE_DEBUG("jupiterTwoMinus")
+	SMSG_DEBUG("jupiterTwoMinus")
 }
 
 void jupiterOneMinus(void) {
-	MESSSAGE_DEBUG("jupiterOneMinus")
+	SMSG_DEBUG("jupiterOneMinus")
 }
 
 void jupiterTwoPlus(void) {
-	MESSSAGE_DEBUG("jupiterTwoPlus")
+	SMSG_DEBUG("jupiterTwoPlus")
 }
 
 void jupiterOnePlus(void) {
-	MESSSAGE_DEBUG("jupiterOnePlus")
+	SMSG_DEBUG("jupiterOnePlus")
 }
 
 void jupiterDPlus(void) {
-	MESSSAGE_DEBUG("jupiterDPlus")
+	SMSG_DEBUG("jupiterDPlus")
 }
 
 void jupiterMinus(void) {
-	MESSSAGE_DEBUG("jupiterMinus")
+	SMSG_DEBUG("jupiterMinus")
 }
 
 void jupiterPlus(void) {
-	MESSSAGE_DEBUG("jupiterPlus")
+	SMSG_DEBUG("jupiterPlus")
 }
 
 void jupiterDNegate(void) {
-	MESSSAGE_DEBUG("jupiterDNegate")
+	SMSG_DEBUG("jupiterDNegate")
 }
 
 void jupiterNegate(void) {
-	MESSSAGE_DEBUG("jupiterNegate")
+	SMSG_DEBUG("jupiterNegate")
 }
 
 void jupiterUSlashMOD(void) {
-	MESSSAGE_DEBUG("jupiterUSlashMOD")
+	SMSG_DEBUG("jupiterUSlashMOD")
 }
 
 void jupiterStarSlash(void) {
-	MESSSAGE_DEBUG("jupiterStarSlash")
+	SMSG_DEBUG("jupiterStarSlash")
 }
 
 void jupiterStar(void) {
-	MESSSAGE_DEBUG("jupiterStar")
+	SMSG_DEBUG("jupiterStar")
 }
 
 void jupiterMOD(void) {
-	MESSSAGE_DEBUG("jupiterMOD")
+	SMSG_DEBUG("jupiterMOD")
 }
 
 void jupiterSlash(void) {
-	MESSSAGE_DEBUG("jupiterSlash")
+	SMSG_DEBUG("jupiterSlash")
 }
 
 void jupiterStarSlashMOD(void) {
-	MESSSAGE_DEBUG("jupiterStarSlashMOD")
+	SMSG_DEBUG("jupiterStarSlashMOD")
 }
 
 void jupiterSlashMOD(void) {
-	MESSSAGE_DEBUG("jupiterSlashMOD")
+	SMSG_DEBUG("jupiterSlashMOD")
 }
 
 void jupiterUStar(void) {
-	MESSSAGE_DEBUG("jupiterUStar")
+	SMSG_DEBUG("jupiterUStar")
 }
 
 void jupiterDGreater(void) {
-	MESSSAGE_DEBUG("jupiterDGreater")
+	SMSG_DEBUG("jupiterDGreater")
 }
 
 void jupiterUGreater(void) {
-	MESSSAGE_DEBUG("jupiterUGreater")
+	SMSG_DEBUG("jupiterUGreater")
 }
 
 void jupiterLess(void) {
-	MESSSAGE_DEBUG("jupiterLess")
+	SMSG_DEBUG("jupiterLess")
 }
 
 void jupiterGreater(void) {
-	MESSSAGE_DEBUG("jupiterGreater")
+	SMSG_DEBUG("jupiterGreater")
 }
 
 void jupiterEqual(void) {
-	MESSSAGE_DEBUG("jupiterEqual")
+	SMSG_DEBUG("jupiterEqual")
 }
 
 void jupiterZeroGreater(void) {
-	MESSSAGE_DEBUG("jupiterZeroGreater")
+	SMSG_DEBUG("jupiterZeroGreater")
 }
 
 void jupiterZeroLess(void) {
-	MESSSAGE_DEBUG("jupiterZeroLess")
+	SMSG_DEBUG("jupiterZeroLess")
 }
 
 void jupiterZeroEqual(void) {
-	MESSSAGE_DEBUG("jupiterZeroEqual")
+	SMSG_DEBUG("jupiterZeroEqual")
 }
 
 void jupiterAbs(void) {
-	MESSSAGE_DEBUG("jupiterAbs")
+	SMSG_DEBUG("jupiterAbs")
 }
 
 void jupiterOut(void) {
-	MESSSAGE_DEBUG("jupiterOut")
+	SMSG_DEBUG("jupiterOut")
 }
 
 void jupiterIn(void) {
-	MESSSAGE_DEBUG("jupiterIn")
+	SMSG_DEBUG("jupiterIn")
 }
 
 void jupiterInKey(void) {
-	MESSSAGE_DEBUG("jupiterInKey")
+	SMSG_DEBUG("jupiterInKey")
 }
 
 void jupiterBeep(void) {
-	MESSSAGE_DEBUG("jupiterBeep")
+	SMSG_DEBUG("jupiterBeep")
 }
 
 void jupiterPlot(void) {
-	MESSSAGE_DEBUG("jupiterPlot")
+	SMSG_DEBUG("jupiterPlot")
 }
 
 void jupiterAt(void) {
-	MESSSAGE_DEBUG("jupiterAt")
+	SMSG_DEBUG("jupiterAt")
 }
 
 void jupiterFDot(void) {
-	MESSSAGE_DEBUG("jupiterFDot")
+	SMSG_DEBUG("jupiterFDot")
 }
 
 void jupiterEmit(void) {
-	MESSSAGE_DEBUG("jupiterEmit")
+	SMSG_DEBUG("jupiterEmit")
 }
 
 void jupiterCR(void) {
-	MESSSAGE_DEBUG("jupiterCR")
+	SMSG_DEBUG("jupiterCR")
 }
 
 void jupiterSpaces(void) {
-	MESSSAGE_DEBUG("jupiterSpaces")
+	SMSG_DEBUG("jupiterSpaces")
 }
 
 void jupiterSpace(void) {
-	MESSSAGE_DEBUG("jupiterSpace")
+	SMSG_DEBUG("jupiterSpace")
 }
 
 void jupiterHold(void) {
-	MESSSAGE_DEBUG("jupiterHold")
+	SMSG_DEBUG("jupiterHold")
 }
 
 void jupiterCLS(void) {
-	MESSSAGE_DEBUG("jupiterCLS")
+	SMSG_DEBUG("jupiterCLS")
 }
 
 void jupiterNum(void) {
-	MESSSAGE_DEBUG("jupiterNum")
+	SMSG_DEBUG("jupiterNum")
 }
 
 void jupiterNums(void) {
-	MESSSAGE_DEBUG("jupiterNums")
+	SMSG_DEBUG("jupiterNums")
 }
 
 void jupiterUDot(void) {
-	MESSSAGE_DEBUG("jupiterUDot")
+	SMSG_DEBUG("jupiterUDot")
 }
 
 void jupiterDot(void) {
-	MESSSAGE_DEBUG("jupiterDot")
+	SMSG_DEBUG("jupiterDot")
 }
 
 void jupiterSign(void) {
-	MESSSAGE_DEBUG("jupiterDot")
+	SMSG_DEBUG("jupiterDot")
 }
 
 void jupiterNumGreater(void) {
-	MESSSAGE_DEBUG("jupiterNumGreater")
+	SMSG_DEBUG("jupiterNumGreater")
 }
 
 void jupiterLessNum(void) {
-	MESSSAGE_DEBUG("jupiterLessNum")
+	SMSG_DEBUG("jupiterLessNum")
 }
 
 void jupiterType(void) {
-	MESSSAGE_DEBUG("jupiterType")
+	SMSG_DEBUG("jupiterType")
 }
 
 void jupiterRoll(void) {
-	MESSSAGE_DEBUG("jupiterRoll")
+	SMSG_DEBUG("jupiterRoll")
 }
 
 void jupiterPick(void) {
-	MESSSAGE_DEBUG("jupiterPick")
+	SMSG_DEBUG("jupiterPick")
 }
 
 void jupiterOver(void) {
-	MESSSAGE_DEBUG("jupiterOver")
+	SMSG_DEBUG("jupiterOver")
 }
 
 void jupiterRot(void) {
-	MESSSAGE_DEBUG("jupiterRot")
+	SMSG_DEBUG("jupiterRot")
 }
 
 void jupiterQDup(void) {
-	MESSSAGE_DEBUG("jupiterQDup")
+	SMSG_DEBUG("jupiterQDup")
 }
 
 void jupiterRFrom(void) {
-	MESSSAGE_DEBUG("jupiterRFrom")
+	SMSG_DEBUG("jupiterRFrom")
 }
 
 void jupiterToR(void) {
-	MESSSAGE_DEBUG("jupiterToR")
+	SMSG_DEBUG("jupiterToR")
 }
 
 void jupiterStore(void) {
-	MESSSAGE_DEBUG("jupiterStore")
+	SMSG_DEBUG("jupiterStore")
 }
 
 void jupiterFetch(void) {
-	MESSSAGE_DEBUG("jupiterFetch")
+	SMSG_DEBUG("jupiterFetch")
 }
 
 void jupiterCStore(void) {
-	MESSSAGE_DEBUG("jupiterCStore")
+	SMSG_DEBUG("jupiterCStore")
 }
 
 void jupiterCFetch(void) {
-	MESSSAGE_DEBUG("jupiterCFetch")
+	SMSG_DEBUG("jupiterCFetch")
 }
 
 void jupiterSwap(void) {
-	MESSSAGE_DEBUG("jupiterSwap")
+	SMSG_DEBUG("jupiterSwap")
 }
 
 void jupiterDrop(void) {
-	MESSSAGE_DEBUG("jupiterDrop")
+	SMSG_DEBUG("jupiterDrop")
 }
 
 void jupiterDup(void) {
-	MESSSAGE_DEBUG("jupiterDup")
+	SMSG_DEBUG("jupiterDup")
 }
 
 void jupiterSlow(void) {
-	MESSSAGE_DEBUG("jupiterSlow")
+	SMSG_DEBUG("jupiterSlow")
 }
 
 void jupiterFast(void) {
-	MESSSAGE_DEBUG("jupiterFast")
+	SMSG_DEBUG("jupiterFast")
 }
 
 void jupiterInvis(void) {
-	MESSSAGE_DEBUG("jupiterInvis")
+	SMSG_DEBUG("jupiterInvis")
 }
 
 void jupiterVis(void) {
-	MESSSAGE_DEBUG("jupiterVis")
+	SMSG_DEBUG("jupiterVis")
 }
 
 void jupiterConvert(void) {
-	MESSSAGE_DEBUG("jupiterConvert")
+	SMSG_DEBUG("jupiterConvert")
 }
 
 void jupiterNumber(void) {
-	MESSSAGE_DEBUG("jupiterNumber")
+	SMSG_DEBUG("jupiterNumber")
 }
 
 void jupiterExecute(void) {
-	MESSSAGE_DEBUG("jupiterExecute")
+	SMSG_DEBUG("jupiterExecute")
 }
 
 void jupiterFind(void) {
-	MESSSAGE_DEBUG("jupiterFind")
+	SMSG_DEBUG("jupiterFind")
 }
 
 void jupiterVlist(void) {
-	MESSSAGE_DEBUG("jupiterVlist")
+	SMSG_DEBUG("jupiterVlist")
 }
 
 void jupiterWord(void) {
-	MESSSAGE_DEBUG("jupiterWord")
+	SMSG_DEBUG("jupiterWord")
 }
 
 void jupiterRetype(void) {
-	MESSSAGE_DEBUG("jupiterRetype")
+	SMSG_DEBUG("jupiterRetype")
 }
 
 void jupiterQuery(void) {
-	MESSSAGE_DEBUG("jupiterQuery")
+	SMSG_DEBUG("jupiterQuery")
 }
 
 void jupiterLine(void) {
-	MESSSAGE_DEBUG("jupiterLine")
+	SMSG_DEBUG("jupiterLine")
 }
 
 void jupiterPad(void) {
-	MESSSAGE_DEBUG("jupiterPad")
+	SMSG_DEBUG("jupiterPad")
 }
 
 void jupiterBase(void) {
-	MESSSAGE_DEBUG("jupiterBase")
+	SMSG_DEBUG("jupiterBase")
 }
 
 void jupiterCurrent(void) {
-	MESSSAGE_DEBUG("jupiterCurrent")
+	SMSG_DEBUG("jupiterCurrent")
 }
 
 void jupiterContext(void) {
-	MESSSAGE_DEBUG("jupiterContext")
+	SMSG_DEBUG("jupiterContext")
 }
 
 void jupiterHere(void) {
-	MESSSAGE_DEBUG("jupiterHere")
+	SMSG_DEBUG("jupiterHere")
 }
 
 void jupiterAbort(void) {
-	MESSSAGE_DEBUG("jupiterAbort")
+	SMSG_DEBUG("jupiterAbort")
 }
 
 void jupiterQuit(void) {
-	MESSSAGE_DEBUG("jupiterQuit")
+	SMSG_DEBUG("jupiterQuit")
 }
 
 #endif

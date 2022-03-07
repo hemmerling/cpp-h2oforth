@@ -7,939 +7,939 @@
 /* Required Word Set */
 
 void snineStore(void) {
-	MESSSAGE_DEBUG("snineStore")
+	SMSG_DEBUG("snineStore")
 }
 
 void snineNum(void) {
-	MESSSAGE_DEBUG("snineNum")
+	SMSG_DEBUG("snineNum")
 }
 
 void snineNumGreater(void) {
-	MESSSAGE_DEBUG("snineNumGreater")
+	SMSG_DEBUG("snineNumGreater")
 }
 
 void snineNumS(void) {
-	MESSSAGE_DEBUG("snineNumS")
+	SMSG_DEBUG("snineNumS")
 }
 
 void snineTick(void) {
-	MESSSAGE_DEBUG("snineTick")
+	SMSG_DEBUG("snineTick")
 }
 
 void snineParen(void) {
-	MESSSAGE_DEBUG("snineParen")
+	SMSG_DEBUG("snineParen")
 }
 
 void snineStar(void) {
-	MESSSAGE_DEBUG("snineStar")
+	SMSG_DEBUG("snineStar")
 }
 
 void snineStarSlash(void) {
-	MESSSAGE_DEBUG("snineStarSlash")
+	SMSG_DEBUG("snineStarSlash")
 }
 
 void snineStarSlashMod(void) {
-	MESSSAGE_DEBUG("snineStarSlashMod")
+	SMSG_DEBUG("snineStarSlashMod")
 }
 
 void sninePlus(void) {
-	MESSSAGE_DEBUG("sninePlus")
+	SMSG_DEBUG("sninePlus")
 }
 
 void sninePlusStore(void) {
-	MESSSAGE_DEBUG("sninePlusStore")
+	SMSG_DEBUG("sninePlusStore")
 }
 
 void sninePlusLoop(void) {
-	MESSSAGE_DEBUG("sninePlusLoop")
+	SMSG_DEBUG("sninePlusLoop")
 }
 
 void snineComma(void) {
-	MESSSAGE_DEBUG("snineComma")
+	SMSG_DEBUG("snineComma")
 }
 
 void snineMinus(void) {
-	MESSSAGE_DEBUG("snineMinus")
+	SMSG_DEBUG("snineMinus")
 }
 
 void snineTrailing(void) {
-	MESSSAGE_DEBUG("snineTrailing")
+	SMSG_DEBUG("snineTrailing")
 }
 
 void snineDot(void) {
-	MESSSAGE_DEBUG("snineDot")
+	SMSG_DEBUG("snineDot")
 }
 
 void snineDotQuote(void) {
-	MESSSAGE_DEBUG("snineDotQuote")
+	SMSG_DEBUG("snineDotQuote")
 }
 
 void snineSlash(void) {
-	MESSSAGE_DEBUG("snineSlash")
+	SMSG_DEBUG("snineSlash")
 }
 
 void snineSlashMod(void) {
-	MESSSAGE_DEBUG("snineSlashMod")
+	SMSG_DEBUG("snineSlashMod")
 }
 
 void snineZeroLess(void) {
-	MESSSAGE_DEBUG("snineZeroLess")
+	SMSG_DEBUG("snineZeroLess")
 }
 
 void snineZeroEqual(void) {
-	MESSSAGE_DEBUG("snineZeroEqual")
+	SMSG_DEBUG("snineZeroEqual")
 }
 
 void snineZeroGreater(void) {
-	MESSSAGE_DEBUG("snineZeroGreater")
+	SMSG_DEBUG("snineZeroGreater")
 }
 
 void snineOnePlus(void) {
-	MESSSAGE_DEBUG("snineOnePlus")
+	SMSG_DEBUG("snineOnePlus")
 }
 
 void snineOneMinus(void) {
-	MESSSAGE_DEBUG("snineOneMinus")
+	SMSG_DEBUG("snineOneMinus")
 }
 
 void snineTwoPlus(void) {
-	MESSSAGE_DEBUG("snineTwoPlus")
+	SMSG_DEBUG("snineTwoPlus")
 }
 
 void snineTwoMinus(void) {
-	MESSSAGE_DEBUG("snineTwoMinus")
+	SMSG_DEBUG("snineTwoMinus")
 }
 
 void snineSnineStandard(void) {
-	MESSSAGE_DEBUG("snineSnineStandard")
+	SMSG_DEBUG("snineSnineStandard")
 }
 
 void snineColon(void) {
-	MESSSAGE_DEBUG("snineColon")
+	SMSG_DEBUG("snineColon")
 }
 
 void snineSemicolon(void) {
-	MESSSAGE_DEBUG("snineSemicolon")
+	SMSG_DEBUG("snineSemicolon")
 }
 
 void snineLess(void) {
-	MESSSAGE_DEBUG("snineLess")
+	SMSG_DEBUG("snineLess")
 }
 
 void snineLessNum(void) {
-	MESSSAGE_DEBUG("snineLessNum")
+	SMSG_DEBUG("snineLessNum")
 }
 
 void snineEqual(void) {
-	MESSSAGE_DEBUG("snineEqual")
+	SMSG_DEBUG("snineEqual")
 }
 
 void snineGreater(void) {
-	MESSSAGE_DEBUG("snineGreater")
+	SMSG_DEBUG("snineGreater")
 }
 
 void snineToIn(void) {
-	MESSSAGE_DEBUG("snineToIn")
+	SMSG_DEBUG("snineToIn")
 }
 
 void snineToR(void) {
-	MESSSAGE_DEBUG("snineToR")
+	SMSG_DEBUG("snineToR")
 }
 
 void snineQ(void) {
-	MESSSAGE_DEBUG("snineQ")
+	SMSG_DEBUG("snineQ")
 }
 
 void snineQDup(void) {
-	MESSSAGE_DEBUG("snineQDup")
+	SMSG_DEBUG("snineQDup")
 }
 
 void snineFetch(void) {
-	MESSSAGE_DEBUG("snineFetch")
+	SMSG_DEBUG("snineFetch")
 }
 
 void snineAbort(void) {
-	MESSSAGE_DEBUG("snineAbort")
+	SMSG_DEBUG("snineAbort")
 }
 
 void snineAbs(void) {
-	MESSSAGE_DEBUG("snineAbs")
+	SMSG_DEBUG("snineAbs")
 }
 
 void snineAllot(void) {
-	MESSSAGE_DEBUG("snineAllot")
+	SMSG_DEBUG("snineAllot")
 }
 
 void snineAnd(void) {
-	MESSSAGE_DEBUG("snineAnd")
+	SMSG_DEBUG("snineAnd")
 }
 
 void snineBase(void) {
-	MESSSAGE_DEBUG("snineBase")
+	SMSG_DEBUG("snineBase")
 }
 
 void snineBegin(void) {
-	MESSSAGE_DEBUG("snineBegin")
+	SMSG_DEBUG("snineBegin")
 }
 
 void snineBlk(void) {
-	MESSSAGE_DEBUG("snineBlk")
+	SMSG_DEBUG("snineBlk")
 }
 
 void snineBlock(void) {
-	MESSSAGE_DEBUG("snineBlock")
+	SMSG_DEBUG("snineBlock")
 }
 
 void snineBuffer(void) {
-	MESSSAGE_DEBUG("snineBuffer")
+	SMSG_DEBUG("snineBuffer")
 }
 
 void snineCStore(void) {
-	MESSSAGE_DEBUG("snineCStore")
+	SMSG_DEBUG("snineCStore")
 }
 
 void snineCFetch(void) {
-	MESSSAGE_DEBUG("snineCFetch")
+	SMSG_DEBUG("snineCFetch")
 }
 
 void snineCMove(void) {
-	MESSSAGE_DEBUG("snineCMove")
+	SMSG_DEBUG("snineCMove")
 }
 
 void snineCompile(void) {
-	MESSSAGE_DEBUG("snineCompile")
+	SMSG_DEBUG("snineCompile")
 }
 
 void snineConstant(void) {
-	MESSSAGE_DEBUG("snineConstant")
+	SMSG_DEBUG("snineConstant")
 }
 
 void snineContext(void) {
-	MESSSAGE_DEBUG("snineContext")
+	SMSG_DEBUG("snineContext")
 }
 
 void snineConvert(void) {
-	MESSSAGE_DEBUG("snineConvert")
+	SMSG_DEBUG("snineConvert")
 }
 
 void snineCount(void) {
-	MESSSAGE_DEBUG("snineCount")
+	SMSG_DEBUG("snineCount")
 }
 
 void snineCr(void) {
-	MESSSAGE_DEBUG("snineCr")
+	SMSG_DEBUG("snineCr")
 }
 
 void snineCreate(void) {
-	MESSSAGE_DEBUG("snineCreate")
+	SMSG_DEBUG("snineCreate")
 }
 
 void snineCurrent(void) {
-	MESSSAGE_DEBUG("snineCurrent")
+	SMSG_DEBUG("snineCurrent")
 }
 
 void snineDecimal(void) {
-	MESSSAGE_DEBUG("snineDecimal")
+	SMSG_DEBUG("snineDecimal")
 }
 
 void snineDefinitions(void) {
-	MESSSAGE_DEBUG("snineDefinitions")
+	SMSG_DEBUG("snineDefinitions")
 }
 
 void snineDepth(void) {
-	MESSSAGE_DEBUG("snineDepth")
+	SMSG_DEBUG("snineDepth")
 }
 
 void snineDo(void) {
-	MESSSAGE_DEBUG("snineDo")
+	SMSG_DEBUG("snineDo")
 }
 
 void snineDoes(void) {
-	MESSSAGE_DEBUG("snineDoes")
+	SMSG_DEBUG("snineDoes")
 }
 
 void snineDrop(void) {
-	MESSSAGE_DEBUG("snineDrop")
+	SMSG_DEBUG("snineDrop")
 }
 
 void snineDup(void) {
-	MESSSAGE_DEBUG("snineDup")
+	SMSG_DEBUG("snineDup")
 }
 
 void snineElse(void) {
-	MESSSAGE_DEBUG("snineElse")
+	SMSG_DEBUG("snineElse")
 }
 
 void snineEmit(void) {
-	MESSSAGE_DEBUG("snineEmit")
+	SMSG_DEBUG("snineEmit")
 }
 
 void snineEmptyBuffers(void) {
-	MESSSAGE_DEBUG("snineEmptyBuffers")
+	SMSG_DEBUG("snineEmptyBuffers")
 }
 
 void snineExecute(void) {
-	MESSSAGE_DEBUG("snineExecute")
+	SMSG_DEBUG("snineExecute")
 }
 
 void snineExit(void) {
-	MESSSAGE_DEBUG("snineExit")
+	SMSG_DEBUG("snineExit")
 }
 
 void snineExpect(void) {
-	MESSSAGE_DEBUG("snineExpect")
+	SMSG_DEBUG("snineExpect")
 }
 
 void snineFill(void) {
-	MESSSAGE_DEBUG("snineFill")
+	SMSG_DEBUG("snineFill")
 }
 
 void snineFind(void) {
-	MESSSAGE_DEBUG("snineFind")
+	SMSG_DEBUG("snineFind")
 }
 
 void snineForget(void) {
-	MESSSAGE_DEBUG("snineForget")
+	SMSG_DEBUG("snineForget")
 }
 
 void snineForth(void) {
-	MESSSAGE_DEBUG("snineForth")
+	SMSG_DEBUG("snineForth")
 }
 
 void snineHere(void) {
-	MESSSAGE_DEBUG("snineHere")
+	SMSG_DEBUG("snineHere")
 }
 
 void snineHold(void) {
-	MESSSAGE_DEBUG("snineHold")
+	SMSG_DEBUG("snineHold")
 }
 
 void snineI(void) {
-	MESSSAGE_DEBUG("snineI")
+	SMSG_DEBUG("snineI")
 }
 
 void snineIf(void) {
-	MESSSAGE_DEBUG("snineIf")
+	SMSG_DEBUG("snineIf")
 }
 
 void snineImmediate(void) {
-	MESSSAGE_DEBUG("snineImmediate")
+	SMSG_DEBUG("snineImmediate")
 }
 
 void snineJ(void) {
-	MESSSAGE_DEBUG("snineJ")
+	SMSG_DEBUG("snineJ")
 }
 
 void snineKey(void) {
-	MESSSAGE_DEBUG("snineKey")
+	SMSG_DEBUG("snineKey")
 }
 
 void snineLeave(void) {
-	MESSSAGE_DEBUG("snineLeave")
+	SMSG_DEBUG("snineLeave")
 }
 
 void snineList(void) {
-	MESSSAGE_DEBUG("snineList")
+	SMSG_DEBUG("snineList")
 }
 
 void snineLiteral(void) {
-	MESSSAGE_DEBUG("snineLiteral")
+	SMSG_DEBUG("snineLiteral")
 }
 
 void snineLoad(void) {
-	MESSSAGE_DEBUG("snineLoad")
+	SMSG_DEBUG("snineLoad")
 }
 
 void snineLoop(void) {
-	MESSSAGE_DEBUG("snineLoop")
+	SMSG_DEBUG("snineLoop")
 }
 
 void snineMax(void) {
-	MESSSAGE_DEBUG("snineMax")
+	SMSG_DEBUG("snineMax")
 }
 
 void snineMin(void) {
-	MESSSAGE_DEBUG("snineMin")
+	SMSG_DEBUG("snineMin")
 }
 
 void snineMod(void) {
-	MESSSAGE_DEBUG("snineMod")
+	SMSG_DEBUG("snineMod")
 }
 
 void snineMove(void) {
-	MESSSAGE_DEBUG("snineMove")
+	SMSG_DEBUG("snineMove")
 }
 
 void snineNegate(void) {
-	MESSSAGE_DEBUG("snineNegate")
+	SMSG_DEBUG("snineNegate")
 }
 
 void snineNot(void) {
-	MESSSAGE_DEBUG("snineNot")
+	SMSG_DEBUG("snineNot")
 }
 
 void snineOr(void) {
-	MESSSAGE_DEBUG("snineOr")
+	SMSG_DEBUG("snineOr")
 }
 
 void snineOver(void) {
-	MESSSAGE_DEBUG("snineOver")
+	SMSG_DEBUG("snineOver")
 }
 
 void sninePad(void) {
-	MESSSAGE_DEBUG("sninePad")
+	SMSG_DEBUG("sninePad")
 }
 
 void sninePick(void) {
-	MESSSAGE_DEBUG("sninePick")
+	SMSG_DEBUG("sninePick")
 }
 
 void snineQuery(void) {
-	MESSSAGE_DEBUG("snineQuery")
+	SMSG_DEBUG("snineQuery")
 }
 
 void snineQuit(void) {
-	MESSSAGE_DEBUG("snineQuit")
+	SMSG_DEBUG("snineQuit")
 }
 
 void snineRGreater(void) {
-	MESSSAGE_DEBUG("snineRGreater")
+	SMSG_DEBUG("snineRGreater")
 }
 
 void snineRFetch(void) {
-	MESSSAGE_DEBUG("snineRFetch")
+	SMSG_DEBUG("snineRFetch")
 }
 
 void snineRepeat(void) {
-	MESSSAGE_DEBUG("snineRepeat")
+	SMSG_DEBUG("snineRepeat")
 }
 
 void snineRoll(void) {
-	MESSSAGE_DEBUG("snineRoll")
+	SMSG_DEBUG("snineRoll")
 }
 
 void snineRot(void) {
-	MESSSAGE_DEBUG("snineRot")
+	SMSG_DEBUG("snineRot")
 }
 
 void snineSaveBuffers(void) {
-	MESSSAGE_DEBUG("snineSaveBuffers")
+	SMSG_DEBUG("snineSaveBuffers")
 }
 
 void snineScr(void) {
-	MESSSAGE_DEBUG("snineScr")
+	SMSG_DEBUG("snineScr")
 }
 
 void snineSign(void) {
-	MESSSAGE_DEBUG("snineSign")
+	SMSG_DEBUG("snineSign")
 }
 
 void snineSpace(void) {
-	MESSSAGE_DEBUG("snineSpace")
+	SMSG_DEBUG("snineSpace")
 }
 
 void snineSpaces(void) {
-	MESSSAGE_DEBUG("snineSpaces")
+	SMSG_DEBUG("snineSpaces")
 }
 
 void snineState(void) {
-	MESSSAGE_DEBUG("snineState")
+	SMSG_DEBUG("snineState")
 }
 
 void snineSwap(void) {
-	MESSSAGE_DEBUG("snineSwap")
+	SMSG_DEBUG("snineSwap")
 }
 
 void snineThen(void) {
-	MESSSAGE_DEBUG("snineThen")
+	SMSG_DEBUG("snineThen")
 }
 
 void snineType(void) {
-	MESSSAGE_DEBUG("snineType")
+	SMSG_DEBUG("snineType")
 }
 
 void snineUStar(void) {
-	MESSSAGE_DEBUG("snineUStar")
+	SMSG_DEBUG("snineUStar")
 }
 
 void snineUDot(void) {
-	MESSSAGE_DEBUG("snineUDot")
+	SMSG_DEBUG("snineUDot")
 }
 
 void snineUSlashMod(void) {
-	MESSSAGE_DEBUG("snineUSlashMod")
+	SMSG_DEBUG("snineUSlashMod")
 }
 
 void snineULess(void) {
-	MESSSAGE_DEBUG("snineULess")
+	SMSG_DEBUG("snineULess")
 }
 
 void snineUntil(void) {
-	MESSSAGE_DEBUG("snineUntil")
+	SMSG_DEBUG("snineUntil")
 }
 
 void snineUpdate(void) {
-	MESSSAGE_DEBUG("snineUpdate")
+	SMSG_DEBUG("snineUpdate")
 }
 
 void snineVariable(void) {
-	MESSSAGE_DEBUG("snineVariable")
+	SMSG_DEBUG("snineVariable")
 }
 
 void snineVocabulary(void) {
-	MESSSAGE_DEBUG("snineVocabulary")
+	SMSG_DEBUG("snineVocabulary")
 }
 
 void snineWhile(void) {
-	MESSSAGE_DEBUG("snineWhile")
+	SMSG_DEBUG("snineWhile")
 }
 
 void snineWord(void) {
-	MESSSAGE_DEBUG("snineWord")
+	SMSG_DEBUG("snineWord")
 }
 
 void snineXor(void) {
-	MESSSAGE_DEBUG("snineXor")
+	SMSG_DEBUG("snineXor")
 }
 
 void snineLeftParen(void) {
-	MESSSAGE_DEBUG("snineLeftParen")
+	SMSG_DEBUG("snineLeftParen")
 }
 
 void snineXCompile(void) {
-	MESSSAGE_DEBUG("snineXCompile")
+	SMSG_DEBUG("snineXCompile")
 }
 
 void snineRightParen(void) {
-	MESSSAGE_DEBUG("snineRightParen")
+	SMSG_DEBUG("snineRightParen")
 }
 
 /* Extension Word Sets */
 /* 1. Double Number Word Set */
 
 void snineTwoStore(void) {
-	MESSSAGE_DEBUG("snineTwoStore")
+	SMSG_DEBUG("snineTwoStore")
 }
 
 void snineTwoFetch(void) {
-	MESSSAGE_DEBUG("snineTwoFetch")
+	SMSG_DEBUG("snineTwoFetch")
 }
 
 void snineTwoConstant(void) {
-	MESSSAGE_DEBUG("snineTwoConstant")
+	SMSG_DEBUG("snineTwoConstant")
 }
 
 void snineTwoDrop(void) {
-	MESSSAGE_DEBUG("snineTwoDrop")
+	SMSG_DEBUG("snineTwoDrop")
 }
 
 void snineTwoDup(void) {
-	MESSSAGE_DEBUG("snineTwoDup")
+	SMSG_DEBUG("snineTwoDup")
 }
 
 void snineTwoOver(void) {
-	MESSSAGE_DEBUG("snineTwoOver")
+	SMSG_DEBUG("snineTwoOver")
 }
 
 void snineTwoRot(void) {
-	MESSSAGE_DEBUG("snineTwoRot")
+	SMSG_DEBUG("snineTwoRot")
 }
 
 void snineTwoSwap(void) {
-	MESSSAGE_DEBUG("snineTwoSwap")
+	SMSG_DEBUG("snineTwoSwap")
 }
 
 void snineTwoVariable(void) {
-	MESSSAGE_DEBUG("snineTwoVariable")
+	SMSG_DEBUG("snineTwoVariable")
 }
 
 void snineDPlus(void) {
-	MESSSAGE_DEBUG("snineDPlus")
+	SMSG_DEBUG("snineDPlus")
 }
 
 void snineDMinus(void) {
-	MESSSAGE_DEBUG("snineDMinus")
+	SMSG_DEBUG("snineDMinus")
 }
 
 void snineDDot(void) {
-	MESSSAGE_DEBUG("snineDDot")
+	SMSG_DEBUG("snineDDot")
 }
 
 void snineDDotR(void) {
-	MESSSAGE_DEBUG("snineDDotR")
+	SMSG_DEBUG("snineDDotR")
 }
 
 void snineDZeroEqual(void) {
-	MESSSAGE_DEBUG("snineDZeroEqual")
+	SMSG_DEBUG("snineDZeroEqual")
 }
 
 void snineDLess(void) {
-	MESSSAGE_DEBUG("snineDLess")
+	SMSG_DEBUG("snineDLess")
 }
 
 void snineDEqual(void) {
-	MESSSAGE_DEBUG("snineDEqual")
+	SMSG_DEBUG("snineDEqual")
 }
 
 void snineDAbs(void) {
-	MESSSAGE_DEBUG("snineDAbs")
+	SMSG_DEBUG("snineDAbs")
 }
 
 void snineDMax(void) {
-	MESSSAGE_DEBUG("snineDMax")
+	SMSG_DEBUG("snineDMax")
 }
 
 void snineDMin(void) {
-	MESSSAGE_DEBUG("snineDMin")
+	SMSG_DEBUG("snineDMin")
 }
 
 void snineDnegate(void) {
-	MESSSAGE_DEBUG("snineDnegate")
+	SMSG_DEBUG("snineDnegate")
 }
 
 void snineDULess(void) {
-	MESSSAGE_DEBUG("snineDULess")
+	SMSG_DEBUG("snineDULess")
 }
 
 /* 2. Assembler Word Set */
 
 void snineSemicolonCode(void) {
-	MESSSAGE_DEBUG("snineSemicolonCode")
+	SMSG_DEBUG("snineSemicolonCode")
 }
 
 void snineAssembler(void) {
-	MESSSAGE_DEBUG("snineAssembler")
+	SMSG_DEBUG("snineAssembler")
 }
 
 void snineCode(void) {
-	MESSSAGE_DEBUG("snineCode")
+	SMSG_DEBUG("snineCode")
 }
 
 void snineEndCode(void) {
-	MESSSAGE_DEBUG("snineEndCode")
+	SMSG_DEBUG("snineEndCode")
 }
 
 /* Experimental Proposals */
 /* Reference Word Set */
 
 void snineStoreBits(void) {
-	MESSSAGE_DEBUG("snineStoreBits")
+	SMSG_DEBUG("snineStoreBits")
 }
 
 void snineStarStar(void) {
-	MESSSAGE_DEBUG("snineStarStar")
+	SMSG_DEBUG("snineStarStar")
 }
 
 void sninePlusBlock(void) {
-	MESSSAGE_DEBUG("sninePlusBlock")
+	SMSG_DEBUG("sninePlusBlock")
 }
 
 void snineMinusTick(void) {
-	MESSSAGE_DEBUG("snineMinusTick")
+	SMSG_DEBUG("snineMinusTick")
 }
 
 void snineTo(void) {
-	MESSSAGE_DEBUG("snineTo")
+	SMSG_DEBUG("snineTo")
 }
 
 void snineMatch(void) {
-	MESSSAGE_DEBUG("snineMatch")
+	SMSG_DEBUG("snineMatch")
 }
 
 void snineMinusText(void) {
-	MESSSAGE_DEBUG("snineMinusText")
+	SMSG_DEBUG("snineMinusText")
 }
 
 void snineDotR(void) {
-	MESSSAGE_DEBUG("snineDotR")
+	SMSG_DEBUG("snineDotR")
 }
 
 void snineSlashLoop(void) {
-	MESSSAGE_DEBUG("snineSlashLoop")
+	SMSG_DEBUG("snineSlashLoop")
 }
 
 void snineOnePlusStore(void) {
-	MESSSAGE_DEBUG("snineOnePlusStore")
+	SMSG_DEBUG("snineOnePlusStore")
 }
 
 void snineOneMinusStore(void) {
-	MESSSAGE_DEBUG("snineOneMinusStore")
+	SMSG_DEBUG("snineOneMinusStore")
 }
 
 void snineTwoStar(void) {
-	MESSSAGE_DEBUG("snineTwoStar")
+	SMSG_DEBUG("snineTwoStar")
 }
 
 void snineTwoSlash(void) {
-	MESSSAGE_DEBUG("snineTwoSlash")
+	SMSG_DEBUG("snineTwoSlash")
 }
 
 void snineSemicolonColon(void) {
-	MESSSAGE_DEBUG("snineSemicolonColon")
+	SMSG_DEBUG("snineSemicolonColon")
 }
 
 void snineSemicolonS(void) {
-	MESSSAGE_DEBUG("snineSemicolonS")
+	SMSG_DEBUG("snineSemicolonS")
 }
 
 void snineUnequal(void) {
-	MESSSAGE_DEBUG("snineUnequal")
+	SMSG_DEBUG("snineUnequal")
 }
 
 void snineBuilds(void) {
-	MESSSAGE_DEBUG("snineBuilds")
+	SMSG_DEBUG("snineBuilds")
 }
 
 void snineLessCmove(void) {
-	MESSSAGE_DEBUG("snineLessCmove")
+	SMSG_DEBUG("snineLessCmove")
 }
 
 void snineveSwap(void) {
-	MESSSAGE_DEBUG("snineveSwap")
+	SMSG_DEBUG("snineveSwap")
 }
 
 void snineveSwapMove(void) {
-	MESSSAGE_DEBUG("snineveSwapMove")
+	SMSG_DEBUG("snineveSwapMove")
 }
 
 void snineveFetchBits(void) {
-	MESSSAGE_DEBUG("snineveFetchBits")
+	SMSG_DEBUG("snineveFetchBits")
 }
 
 void snineAbortQuote(void) {
-	MESSSAGE_DEBUG("snineAbortQuote")
+	SMSG_DEBUG("snineAbortQuote")
 }
 
 void snineAgain(void) {
-	MESSSAGE_DEBUG("snineAgain")
+	SMSG_DEBUG("snineAgain")
 }
 
 void snineAscii(void) {
-	MESSSAGE_DEBUG("snineAscii")
+	SMSG_DEBUG("snineAscii")
 }
 
 void snineAShift(void) {
-	MESSSAGE_DEBUG("snineAShift")
+	SMSG_DEBUG("snineAShift")
 }
 
 void snineBSlashBuf(void) {
-	MESSSAGE_DEBUG("snineBSlashBuf")
+	SMSG_DEBUG("snineBSlashBuf")
 }
 
 void snineBell(void) {
-	MESSSAGE_DEBUG("snineBell")
+	SMSG_DEBUG("snineBell")
 }
 
 void snineBl(void) {
-	MESSSAGE_DEBUG("snineBl")
+	SMSG_DEBUG("snineBl")
 }
 
 void snineBlanks(void) {
-	MESSSAGE_DEBUG("snineBlanks")
+	SMSG_DEBUG("snineBlanks")
 }
 
 void snineCComma(void) {
-	MESSSAGE_DEBUG("snineCComma")
+	SMSG_DEBUG("snineCComma")
 }
 
 void snineChain(void) {
-	MESSSAGE_DEBUG("snineChain")
+	SMSG_DEBUG("snineChain")
 }
 
 void snineCom(void) {
-	MESSSAGE_DEBUG("snineCom")
+	SMSG_DEBUG("snineCom")
 }
 
 void snineContinued(void) {
-	MESSSAGE_DEBUG("snineContinued")
+	SMSG_DEBUG("snineContinued")
 }
 
 void snineCur(void) {
-	MESSSAGE_DEBUG("snineCur")
+	SMSG_DEBUG("snineCur")
 }
 
 void snineDBlock(void) {
-	MESSSAGE_DEBUG("snineDBlock")
+	SMSG_DEBUG("snineDBlock")
 }
 
 void snineDpl(void) {
-	MESSSAGE_DEBUG("snineDpl")
+	SMSG_DEBUG("snineDpl")
 }
 
 void snineDump(void) {
-	MESSSAGE_DEBUG("snineDump")
+	SMSG_DEBUG("snineDump")
 }
 
 void snineEditor(void) {
-	MESSSAGE_DEBUG("snineEditor")
+	SMSG_DEBUG("snineEditor")
 }
 
 void snineEnd(void) {
-	MESSSAGE_DEBUG("snineEnd")
+	SMSG_DEBUG("snineEnd")
 }
 
 void snineErase(void) {
-	MESSSAGE_DEBUG("snineErase")
+	SMSG_DEBUG("snineErase")
 }
 
 void snineFld(void) {
-	MESSSAGE_DEBUG("snineFld")
+	SMSG_DEBUG("snineFld")
 }
 
 void snineFlush(void) {
-	MESSSAGE_DEBUG("snineFlush")
+	SMSG_DEBUG("snineFlush")
 }
 
 void snineHDot(void) {
-	MESSSAGE_DEBUG("snineHDot")
+	SMSG_DEBUG("snineHDot")
 }
 
 void snineHex(void) {
-	MESSSAGE_DEBUG("snineHex")
+	SMSG_DEBUG("snineHex")
 }
 
 void snineITick(void) {
-	MESSSAGE_DEBUG("snineITick")
+	SMSG_DEBUG("snineITick")
 }
 
 void snineIfEnd(void) {
-	MESSSAGE_DEBUG("snineIfEnd")
+	SMSG_DEBUG("snineIfEnd")
 }
 
 void snineIfTrue(void) {
-	MESSSAGE_DEBUG("snineIfTrue")
+	SMSG_DEBUG("snineIfTrue")
 }
 
 void snineIndex(void) {
-	MESSSAGE_DEBUG("snineIndex")
+	SMSG_DEBUG("snineIndex")
 }
 
 void snineInterpret(void) {
-	MESSSAGE_DEBUG("snineInterpret")
+	SMSG_DEBUG("snineInterpret")
 }
 
 void snineK(void) {
-	MESSSAGE_DEBUG("snineK")
+	SMSG_DEBUG("snineK")
 }
 
 void snineLast(void) {
-	MESSSAGE_DEBUG("snineLast")
+	SMSG_DEBUG("snineLast")
 }
 
 void snineLine(void) {
-	MESSSAGE_DEBUG("snineLine")
+	SMSG_DEBUG("snineLine")
 }
 
 void snineLineLoad(void) {
-	MESSSAGE_DEBUG("snineLineLoad")
+	SMSG_DEBUG("snineLineLoad")
 }
 
 void snineLoads(void) {
-	MESSSAGE_DEBUG("snineLoads")
+	SMSG_DEBUG("snineLoads")
 }
 
 void snineMap0(void) {
-	MESSSAGE_DEBUG("snineMap0")
+	SMSG_DEBUG("snineMap0")
 }
 
 void snineMask(void) {
-	MESSSAGE_DEBUG("snineMask")
+	SMSG_DEBUG("snineMask")
 }
 
 void snineMs(void) {
-	MESSSAGE_DEBUG("snineMs")
+	SMSG_DEBUG("snineMs")
 }
 
 void snineNand(void) {
-	MESSSAGE_DEBUG("snineNand")
+	SMSG_DEBUG("snineNand")
 }
 
 void snineNor(void) {
-	MESSSAGE_DEBUG("snineNor")
+	SMSG_DEBUG("snineNor")
 }
 
 void snineNumber(void) {
-	MESSSAGE_DEBUG("snineNumber")
+	SMSG_DEBUG("snineNumber")
 }
 
 void snineODot(void) {
-	MESSSAGE_DEBUG("snineODot")
+	SMSG_DEBUG("snineODot")
 }
 
 void snineOctal(void) {
-	MESSSAGE_DEBUG("snineOctal")
+	SMSG_DEBUG("snineOctal")
 }
 
 void snineOffset(void) {
-	MESSSAGE_DEBUG("snineOffset")
+	SMSG_DEBUG("snineOffset")
 }
 
 void snineOtherwise(void) {
-	MESSSAGE_DEBUG("snineOtherwise")
+	SMSG_DEBUG("snineOtherwise")
 }
 
 void sninePage(void) {
-	MESSSAGE_DEBUG("sninePage")
+	SMSG_DEBUG("sninePage")
 }
 
 void snineReadMap(void) {
-	MESSSAGE_DEBUG("snineReadMap")
+	SMSG_DEBUG("snineReadMap")
 }
 
 void snineRemember(void) {
-	MESSSAGE_DEBUG("snineRemember")
+	SMSG_DEBUG("snineRemember")
 }
 
 void snineRewind(void) {
-	MESSSAGE_DEBUG("snineRewind")
+	SMSG_DEBUG("snineRewind")
 }
 
 void snineRotate(void) {
-	MESSSAGE_DEBUG("snineRotate")
+	SMSG_DEBUG("snineRotate")
 }
 
 void snineS0(void) {
-	MESSSAGE_DEBUG("snineS0")
+	SMSG_DEBUG("snineS0")
 }
 
 void snineSet(void) {
-	MESSSAGE_DEBUG("snineSet")
+	SMSG_DEBUG("snineSet")
 }
 
 void snineShift(void) {
-	MESSSAGE_DEBUG("snineShift")
+	SMSG_DEBUG("snineShift")
 }
 
 void snineSPFetch(void) {
-	MESSSAGE_DEBUG("snineSPFetch")
+	SMSG_DEBUG("snineSPFetch")
 }
 
 void snineText(void) {
-	MESSSAGE_DEBUG("snineText")
+	SMSG_DEBUG("snineText")
 }
 
 void snineThru(void) {
-	MESSSAGE_DEBUG("snineThru")
+	SMSG_DEBUG("snineThru")
 }
 
 void snineUDotR(void) {
-	MESSSAGE_DEBUG("snineUDotR")
+	SMSG_DEBUG("snineUDotR")
 }
 
 void snineUser(void) {
-	MESSSAGE_DEBUG("snineUser")
+	SMSG_DEBUG("snineUser")
 }
 
 void snineVList(void) {
-	MESSSAGE_DEBUG("snineVList")
+	SMSG_DEBUG("snineVList")
 }
 
 void snineWhere(void) {
-	MESSSAGE_DEBUG("snineWhere")
+	SMSG_DEBUG("snineWhere")
 }
 
 void snineBackslashLoop(void) {
-	MESSSAGE_DEBUG("snineBackslashLoop")
+	SMSG_DEBUG("snineBackslashLoop")
 }
 
 #endif

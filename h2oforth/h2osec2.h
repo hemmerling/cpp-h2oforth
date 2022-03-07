@@ -8,56 +8,56 @@
 void sectorFetch(void) {
 	// unsigned long varAddr
 	// return (unsigned long)sectorSP
-	MESSSAGE_DEBUG("sectorFetch")
+	SMSG_DEBUG("sectorFetch")
 }
 
 /* ! ( x +addr – ) Store x at addr */
 void sectorStore(void) {
 	// unsigned long varAddr
-	MESSSAGE_DEBUG("sectorStore")
+	SMSG_DEBUG("sectorStore")
 }
 
 /* sp@ ( – sp ) Get pointer to top of data stack */
 void sectorSP(void) {
 	// return ( unsigned long )
-	MESSSAGE_DEBUG("sectorStore")
+	SMSG_DEBUG("sectorStore")
 }
 
 /* rp@ ( – rp ) Get pointer to top of return stack */
 void sectorRP(void) {
 	// return ( unsigned long )
-	MESSSAGE_DEBUG("sectorRP")
+	SMSG_DEBUG("sectorRP")
 }
 
 /* 0= ( x – flag ) -1 if top of stack is 0, 0 otherwise */
 void sectorTestTopOfStack(void) {
 	// return ( int )
-	MESSSAGE_DEBUG("sectorTestTopOfStack")
+	SMSG_DEBUG("sectorTestTopOfStack")
 }
 
 /* + ( x y – z ) Sum the two numbers at the top of the stack */
 void sectorSum(void) {
-	MESSSAGE_DEBUG("sectorSum")
+	SMSG_DEBUG("sectorSum")
 }
 
 /* nand ( x y – z ) NAND the two numbers at the top of the stack */
 void sectorNAND(void) {
-	MESSSAGE_DEBUG("sectorNAND")
+	SMSG_DEBUG("sectorNAND")
 }
 
 /* exit ( r:addr – ) Pop return stack and resume execution at addr */
 void sectorExit(void) {
-	MESSSAGE_DEBUG("sectorNAND")
+	SMSG_DEBUG("sectorNAND")
 }
 
 /* : - Start a new word by a colon */
 void sectorStartWord(void) {
-	MESSSAGE_DEBUG("sectorStartWord")
+	SMSG_DEBUG("sectorStartWord")
 }
 
 /* ; - Immediate */
 void sectorImmediate(void) {
-	MESSSAGE_DEBUG("sectorImmediate")
+	SMSG_DEBUG("sectorImmediate")
 }
 
 /* Extra words */

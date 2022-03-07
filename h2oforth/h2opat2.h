@@ -6,62 +6,62 @@
 
 /* >r ( x – ) */
 void patelToRS(void) {
-	MESSSAGE_DEBUG("patelToRS")
+	SMSG_DEBUG("patelToRS")
 }
 
 /* r> ( – x ) */
 void patelRSFrom(void) {
-	MESSSAGE_DEBUG("patelRSFrom")
+	SMSG_DEBUG("patelRSFrom")
 }
 
 /* 1+ ( x – y ) */
 void patelAdd1(void) {
-	MESSSAGE_DEBUG("patelAdd1")
+	SMSG_DEBUG("patelAdd1")
 }
 
 /* 0= ( x – flag ) */
 void patelTestTopOfStack(void) {
-	MESSSAGE_DEBUG("patelTestTopOfStack")
+	SMSG_DEBUG("patelTestTopOfStack")
 }
 
 /* nand ( x y – z ) */
 void patelNAND(void) {
-	MESSSAGE_DEBUG("patelNAND")
+	SMSG_DEBUG("patelNAND")
 }
 
 /* @ ( addr – x ) */
 void patelFetch(void) {
-	MESSSAGE_DEBUG("patelFetch")
+	SMSG_DEBUG("patelFetch")
 }
 
 /* dup! ( x addr – x ) */
 void patelDupStore(void) {
-	MESSSAGE_DEBUG("patelDupStore")
+	SMSG_DEBUG("patelDupStore")
 }
 
 /* execute ( addr – ) */
 void patelExecute(void) {
-	MESSSAGE_DEBUG("patelExecute")
+	SMSG_DEBUG("patelExecute")
 }
 
 /* exit ( – )  */
 void patelExit(void) {
-	MESSSAGE_DEBUG("patelExit")
+	SMSG_DEBUG("patelExit")
 }
 
 /* drop ( x – ) */
 void patelDrop(void) {
-	MESSSAGE_DEBUG("patelDrop")
+	SMSG_DEBUG("patelDrop")
 }
 
 /* dup ( x – x x ) */
 void patelDup(void) {
-	MESSSAGE_DEBUG("patelDup")
+	SMSG_DEBUG("patelDup")
 }
 
 /* swap ( x y – y x ) */
 void patelSwap(void) {
-	MESSSAGE_DEBUG("patelSwap")
+	SMSG_DEBUG("patelSwap")
 }
 
 /* Extra words */

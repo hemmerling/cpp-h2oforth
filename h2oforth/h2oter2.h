@@ -6,916 +6,916 @@
 /* Primitives */
 
 void terseRotn(void) {
-	MESSSAGE_DEBUG("terseRotn")
+	SMSG_DEBUG("terseRotn")
 }
 
 void terseVector(void) {
-	MESSSAGE_DEBUG("terseVector")
+	SMSG_DEBUG("terseVector")
 }
 
 void terseLimit(void) {
-	MESSSAGE_DEBUG("terseLimit")
+	SMSG_DEBUG("terseLimit")
 }
 
 void terseNegStore(void) {
-	MESSSAGE_DEBUG("terseNegStore")
+	SMSG_DEBUG("terseNegStore")
 }
 
 void terseRelabs(void) {
-	MESSSAGE_DEBUG("terseRelabs")
+	SMSG_DEBUG("terseRelabs")
 }
 
 void terseZeroShow(void) {
-	MESSSAGE_DEBUG("terseZeroShow")
+	SMSG_DEBUG("terseZeroShow")
 }
 
 void terseOneShow(void) {
-	MESSSAGE_DEBUG("terseOneShow")
+	SMSG_DEBUG("terseOneShow")
 }
 
 void terseTwoShow(void) {
-	MESSSAGE_DEBUG("terseTwoShow")
+	SMSG_DEBUG("terseTwoShow")
 }
 
 void terseThreeShow(void) {
-	MESSSAGE_DEBUG("terseThreeShow")
+	SMSG_DEBUG("terseThreeShow")
 }
 
 void terseFourShow(void) {
-	MESSSAGE_DEBUG("terseFourShow")
+	SMSG_DEBUG("terseFourShow")
 }
 
 void terseFiveShow(void) {
-	MESSSAGE_DEBUG("terseFiveShow")
+	SMSG_DEBUG("terseFiveShow")
 }
 
 void terseSixShow(void) {
-	MESSSAGE_DEBUG("terseSixShow")
+	SMSG_DEBUG("terseSixShow")
 }
 
 void terseSevenShow(void) {
-	MESSSAGE_DEBUG("terseSevenShow")
+	SMSG_DEBUG("terseSevenShow")
 }
 
 void terseZeroShowI(void) {
-	MESSSAGE_DEBUG("terseZeroShowI")
+	SMSG_DEBUG("terseZeroShowI")
 }
 
 void tersePost(void) {
-	MESSSAGE_DEBUG("tersePost")
+	SMSG_DEBUG("tersePost")
 }
 
 void terseOnePost(void) {
-	MESSSAGE_DEBUG("terseOnePost")
+	SMSG_DEBUG("terseOnePost")
 }
 
 void terseNumPost(void) {
-	MESSSAGE_DEBUG("terseNumPost")
+	SMSG_DEBUG("terseNumPost")
 }
 
 void terseNumToa(void) {
-	MESSSAGE_DEBUG("terseNumToa")
+	SMSG_DEBUG("terseNumToa")
 }
 
 void terseClock(void) {
-	MESSSAGE_DEBUG("terseClock")
+	SMSG_DEBUG("terseClock")
 }
 
 void terseErase(void) {
-	MESSSAGE_DEBUG("terseErase")
+	SMSG_DEBUG("terseErase")
 }
 
 void terseOneDot(void) {
-	MESSSAGE_DEBUG("terseOneDot")
+	SMSG_DEBUG("terseOneDot")
 }
 
 void terseDraw(void) {
-	MESSSAGE_DEBUG("terseDraw")
+	SMSG_DEBUG("terseDraw")
 }
 
 void terseBox(void) {
-	MESSSAGE_DEBUG("terseBox")
+	SMSG_DEBUG("terseBox")
 }
 
 void terseEllipse(void) {
-	MESSSAGE_DEBUG("terseEllipse")
+	SMSG_DEBUG("terseEllipse")
 }
 
 void terseColor(void) {
-	MESSSAGE_DEBUG("terseColor")
+	SMSG_DEBUG("terseColor")
 }
 
 void terseFlood(void) {
-	MESSSAGE_DEBUG("terseFlood")
+	SMSG_DEBUG("terseFlood")
 }
 
 void terseVertical(void) {
-	MESSSAGE_DEBUG("terseVertical")
+	SMSG_DEBUG("terseVertical")
 }
 
 void terseHorizontal(void) {
-	MESSSAGE_DEBUG("terseHorizontal")
+	SMSG_DEBUG("terseHorizontal")
 }
 
 void terseRandom(void) {
-	MESSSAGE_DEBUG("terseRandom")
+	SMSG_DEBUG("terseRandom")
 }
 
 void terseSow(void) {
-	MESSSAGE_DEBUG("terseSow")
+	SMSG_DEBUG("terseSow")
 }
 
 
 void terseStore(void) {
-	MESSSAGE_DEBUG("terseStore")
+	SMSG_DEBUG("terseStore")
 }
 
 void terseTick(void) {
-	MESSSAGE_DEBUG("terseTick")
+	SMSG_DEBUG("terseTick")
 }
 
 void terseParen(void) {
-	MESSSAGE_DEBUG("terseParen")
+	SMSG_DEBUG("terseParen")
 }
 
 void terseStar(void) {
-	MESSSAGE_DEBUG("terseStar")
+	SMSG_DEBUG("terseStar")
 }
 
 void tersePlus(void) {
-	MESSSAGE_DEBUG("tersePlus")
+	SMSG_DEBUG("tersePlus")
 }
 
 void tersePlusStore(void) {
-	MESSSAGE_DEBUG("tersePlusStore")
+	SMSG_DEBUG("tersePlusStore")
 }
 
 void tersePlusBlock(void) {
-	MESSSAGE_DEBUG("tersePlusBlock")
+	SMSG_DEBUG("tersePlusBlock")
 }
 
 void tersePlusLoop(void) {
-	MESSSAGE_DEBUG("tersePlusLoop")
+	SMSG_DEBUG("tersePlusLoop")
 }
 
 void terseComma(void) {
-	MESSSAGE_DEBUG("terseComma")
+	SMSG_DEBUG("terseComma")
 }
 
 void terseMinusWord(void) {
-	MESSSAGE_DEBUG("terseMinusWord")
+	SMSG_DEBUG("terseMinusWord")
 }
 
 void terseTo(void) {
-	MESSSAGE_DEBUG("terseTo")
+	SMSG_DEBUG("terseTo")
 }
 
 void terseDot(void) {
-	MESSSAGE_DEBUG("terseDot")
+	SMSG_DEBUG("terseDot")
 }
 
 void terseDotQuote(void) {
-	MESSSAGE_DEBUG("terseDotQuote")
+	SMSG_DEBUG("terseDotQuote")
 }
 
 void terseDotList(void) {
-	MESSSAGE_DEBUG("terseDotList")
+	SMSG_DEBUG("terseDotList")
 }
 
 void terseDotNList(void) {
-	MESSSAGE_DEBUG("terseDotNList")
+	SMSG_DEBUG("terseDotNList")
 }
 
 void terseSlash(void) {
-	MESSSAGE_DEBUG("terseSlash")
+	SMSG_DEBUG("terseSlash")
 }
 
 void terseSlashMod(void) {
-	MESSSAGE_DEBUG("terseSlashMod")
+	SMSG_DEBUG("terseSlashMod")
 }
 
 void terseZero(void) {
-	MESSSAGE_DEBUG("terseZero")
+	SMSG_DEBUG("terseZero")
 }
 
 void terseZeroLess(void) {
-	MESSSAGE_DEBUG("terseZeroLess")
+	SMSG_DEBUG("terseZeroLess")
 }
 
 void terseZeroEqual(void) {
-	MESSSAGE_DEBUG("terseZeroEqual")
+	SMSG_DEBUG("terseZeroEqual")
 }
 
 void terseZeroGreater(void) {
-	MESSSAGE_DEBUG("terseZeroGreater")
+	SMSG_DEBUG("terseZeroGreater")
 }
 
 void terseZeroEnd(void) {
-	MESSSAGE_DEBUG("terseZeroEnd")
+	SMSG_DEBUG("terseZeroEnd")
 }
 
 void terseOne(void) {
-	MESSSAGE_DEBUG("terseOne")
+	SMSG_DEBUG("terseOne")
 }
 
 void terseOnePlus(void) {
-	MESSSAGE_DEBUG("terseOnePlus")
+	SMSG_DEBUG("terseOnePlus")
 }
 
 void terseOnePlusStore(void) {
-	MESSSAGE_DEBUG("terseOnePlusStore")
+	SMSG_DEBUG("terseOnePlusStore")
 }
 
 void terseOneMinus(void) {
-	MESSSAGE_DEBUG("terseOneMinus")
+	SMSG_DEBUG("terseOneMinus")
 }
 
 void terseOneMinusStore(void) {
-	MESSSAGE_DEBUG("terseOneMinusStore")
+	SMSG_DEBUG("terseOneMinusStore")
 }
 
 void terseTwoStar(void) {
-	MESSSAGE_DEBUG("terseTwoStar")
+	SMSG_DEBUG("terseTwoStar")
 }
 
 void terseTwoPlus(void) {
-	MESSSAGE_DEBUG("terseTwoPlus")
+	SMSG_DEBUG("terseTwoPlus")
 }
 
 void terseTwoMinus(void) {
-	MESSSAGE_DEBUG("terseTwoMinus")
+	SMSG_DEBUG("terseTwoMinus")
 }
 
 void terseTwoSlash(void) {
-	MESSSAGE_DEBUG("terseTwoSlash")
+	SMSG_DEBUG("terseTwoSlash")
 }
 
 void terseTwoDrop(void) {
-	MESSSAGE_DEBUG("terseTwoDrop")
+	SMSG_DEBUG("terseTwoDrop")
 }
 
 void terseTwoDup(void) {
-	MESSSAGE_DEBUG("terseTwoDup")
+	SMSG_DEBUG("terseTwoDup")
 }
 
 void terseTwoSwap(void) {
-	MESSSAGE_DEBUG("terseTwoSwap")
+	SMSG_DEBUG("terseTwoSwap")
 }
 
 void terseColon(void) {
-	MESSSAGE_DEBUG("terseColon")
+	SMSG_DEBUG("terseColon")
 }
 
 void terseSemicolon(void) {
-	MESSSAGE_DEBUG("terseSemicolon")
+	SMSG_DEBUG("terseSemicolon")
 }
 
 void terseSemicolonS(void) {
-	MESSSAGE_DEBUG("terseSemicolonS")
+	SMSG_DEBUG("terseSemicolonS")
 }
 
 void terseLess(void) {
-	MESSSAGE_DEBUG("terseLess")
+	SMSG_DEBUG("terseLess")
 }
 
 void terseStartConditionalInterpretation(void) {
-	MESSSAGE_DEBUG("terseStartConditionalInterpretation")
+	SMSG_DEBUG("terseStartConditionalInterpretation")
 }
 
 void terseLessEqual(void) {
-	MESSSAGE_DEBUG("terseLessEqual")
+	SMSG_DEBUG("terseLessEqual")
 }
 
 void terseUnequal(void) {
-	MESSSAGE_DEBUG("terseUnequal")
+	SMSG_DEBUG("terseUnequal")
 }
 
 void terseEqual(void) {
-	MESSSAGE_DEBUG("terseEqual")
+	SMSG_DEBUG("terseEqual")
 }
 
 void terseGreater(void) {
-	MESSSAGE_DEBUG("terseGreater")
+	SMSG_DEBUG("terseGreater")
 }
 
 void terseGreaterEqual(void) {
-	MESSSAGE_DEBUG("terseGreaterEqual")
+	SMSG_DEBUG("terseGreaterEqual")
 }
 
 void terseStopConditionalInterpretation(void) {
-	MESSSAGE_DEBUG("terseStopConditionalInterpretation")
+	SMSG_DEBUG("terseStopConditionalInterpretation")
 }
 
 void terseToR(void) {
-	MESSSAGE_DEBUG("terseToR")
+	SMSG_DEBUG("terseToR")
 }
 
 void terseQ(void) {
-	MESSSAGE_DEBUG("terseQ")
+	SMSG_DEBUG("terseQ")
 }
 
 void terseFetch(void) {
-	MESSSAGE_DEBUG("terseFetch")
+	SMSG_DEBUG("terseFetch")
 }
 
 void terseAQuote(void) {
-	MESSSAGE_DEBUG("terseAQuote")
+	SMSG_DEBUG("terseAQuote")
 }
 
 void terseAbort(void) {
-	MESSSAGE_DEBUG("terseAbort")
+	SMSG_DEBUG("terseAbort")
 }
 
 void terseAbs(void) {
-	MESSSAGE_DEBUG("terseAbs")
+	SMSG_DEBUG("terseAbs")
 }
 
 void terseAnd(void) {
-	MESSSAGE_DEBUG("terseAnd")
+	SMSG_DEBUG("terseAnd")
 }
 
 void terseArray(void) {
-	MESSSAGE_DEBUG("terseArray")
+	SMSG_DEBUG("terseArray")
 }
 
 void terseAsm(void) {
-	MESSSAGE_DEBUG("terseAsm")
+	SMSG_DEBUG("terseAsm")
 }
 
 void terseBStore(void) {
-	MESSSAGE_DEBUG("terseBStore")
+	SMSG_DEBUG("terseBStore")
 }
 
 void terseBColon(void) {
-	MESSSAGE_DEBUG("terseBColon")
+	SMSG_DEBUG("terseBColon")
 }
 
 void terseBFetch(void) {
-	MESSSAGE_DEBUG("terseBFetch")
+	SMSG_DEBUG("terseBFetch")
 }
 
 void terseBArray(void) {
-	MESSSAGE_DEBUG("terseBArray")
+	SMSG_DEBUG("terseBArray")
 }
 
 void terseBase(void) {
-	MESSSAGE_DEBUG("terseBase")
+	SMSG_DEBUG("terseBase")
 }
 
 void terseBegin(void) {
-	MESSSAGE_DEBUG("terseBegin")
+	SMSG_DEBUG("terseBegin")
 }
 
 void terseBell(void) {
-	MESSSAGE_DEBUG("terseBell")
+	SMSG_DEBUG("terseBell")
 }
 
 void terseBlk(void) {
-	MESSSAGE_DEBUG("terseBlk")
+	SMSG_DEBUG("terseBlk")
 }
 
 void terseBlock(void) {
-	MESSSAGE_DEBUG("terseBlock")
+	SMSG_DEBUG("terseBlock")
 }
 
 void terseBMove(void) {
-	MESSSAGE_DEBUG("terseBMove")
+	SMSG_DEBUG("terseBMove")
 }
 
 void terseBPtr(void) {
-	MESSSAGE_DEBUG("terseBPtr")
+	SMSG_DEBUG("terseBPtr")
 }
 
 void terseBTa(void) {
-	MESSSAGE_DEBUG("terseBTa")
+	SMSG_DEBUG("terseBTa")
 }
 
 void terseBTable(void) {
-	MESSSAGE_DEBUG("terseBTable")
+	SMSG_DEBUG("terseBTable")
 }
 
 void terseBuffer(void) {
-	MESSSAGE_DEBUG("terseBuffer")
+	SMSG_DEBUG("terseBuffer")
 }
 
 void terseBuild(void) {
-	MESSSAGE_DEBUG("terseBuild")
+	SMSG_DEBUG("terseBuild")
 }
 
 void terseBye(void) {
-	MESSSAGE_DEBUG("terseBye")
+	SMSG_DEBUG("terseBye")
 }
 
 void terseByte(void) {
-	MESSSAGE_DEBUG("terseByte")
+	SMSG_DEBUG("terseByte")
 }
 
 void terseCase(void) {
-	MESSSAGE_DEBUG("terseCase")
+	SMSG_DEBUG("terseCase")
 }
 
 void terseCCalc(void) {
-	MESSSAGE_DEBUG("terseCCalc")
+	SMSG_DEBUG("terseCCalc")
 }
 
 void terseCin(void) {
-	MESSSAGE_DEBUG("terseCin")
+	SMSG_DEBUG("terseCin")
 }
 
 void terseCode(void) {
-	MESSSAGE_DEBUG("terseCode")
+	SMSG_DEBUG("terseCode")
 }
 
 void terseCom(void) {
-	MESSSAGE_DEBUG("terseCom")
+	SMSG_DEBUG("terseCom")
 }
 
 void terseConstant(void) {
-	MESSSAGE_DEBUG("terseConstant")
+	SMSG_DEBUG("terseConstant")
 }
 
 void terseContext(void) {
-	MESSSAGE_DEBUG("terseContext")
+	SMSG_DEBUG("terseContext")
 }
 
 void terseContinued(void) {
-	MESSSAGE_DEBUG("terseContinued")
+	SMSG_DEBUG("terseContinued")
 }
 
 void terseCopy(void) {
-	MESSSAGE_DEBUG("terseCopy")
+	SMSG_DEBUG("terseCopy")
 }
 
 void terseCount(void) {
-	MESSSAGE_DEBUG("terseCount")
+	SMSG_DEBUG("terseCount")
 }
 
 void terseCout(void) {
-	MESSSAGE_DEBUG("terseCout")
+	SMSG_DEBUG("terseCout")
 }
 
 void terseCr(void) {
-	MESSSAGE_DEBUG("terseCr")
+	SMSG_DEBUG("terseCr")
 }
 
 void terseCurrent(void) {
-	MESSSAGE_DEBUG("terseCurrent")
+	SMSG_DEBUG("terseCurrent")
 }
 
 void terseDecimal(void) {
-	MESSSAGE_DEBUG("terseDecimal")
+	SMSG_DEBUG("terseDecimal")
 }
 
 void terseDecimalDelim(void) {
-	MESSSAGE_DEBUG("terseDecimalDelim")
+	SMSG_DEBUG("terseDecimalDelim")
 }
 
 void terseDgts(void) {
-	MESSSAGE_DEBUG("terseDgts")
+	SMSG_DEBUG("terseDgts")
 }
 
 void terseDir(void) {
-	MESSSAGE_DEBUG("terseDir")
+	SMSG_DEBUG("terseDir")
 }
 
 void terseDiskCopy(void) {
-	MESSSAGE_DEBUG("terseDiskCopy")
+	SMSG_DEBUG("terseDiskCopy")
 }
 
 void terseDLit(void) {
-	MESSSAGE_DEBUG("terseDLit")
+	SMSG_DEBUG("terseDLit")
 }
 
 void terseDo(void) {
-	MESSSAGE_DEBUG("terseDo")
+	SMSG_DEBUG("terseDo")
 }
 
 void terseDP(void) {
-	MESSSAGE_DEBUG("terseDP")
+	SMSG_DEBUG("terseDP")
 }
 
 void terseDPPlusStore(void) {
-	MESSSAGE_DEBUG("terseDPPlusStore")
+	SMSG_DEBUG("terseDPPlusStore")
 }
 
 void terseDPRec(void) {
-	MESSSAGE_DEBUG("terseDPRec")
+	SMSG_DEBUG("terseDPRec")
 }
 
 void terseDrop(void) {
-	MESSSAGE_DEBUG("terseDrop")
+	SMSG_DEBUG("terseDrop")
 }
 
 void terseDump(void) {
-	MESSSAGE_DEBUG("terseDump")
+	SMSG_DEBUG("terseDump")
 }
 
 void terseDup(void) {
-	MESSSAGE_DEBUG("terseDup")
+	SMSG_DEBUG("terseDup")
 }
 
 void terseEDotB(void) {
-	MESSSAGE_DEBUG("terseEDotB")
+	SMSG_DEBUG("terseEDotB")
 }
 
 void terseEDotO(void) {
-	MESSSAGE_DEBUG("terseEDotO")
+	SMSG_DEBUG("terseEDotO")
 }
 
 void terseEdit(void) {
-	MESSSAGE_DEBUG("terseEdit")
+	SMSG_DEBUG("terseEdit")
 }
 
 void terseElse(void) {
-	MESSSAGE_DEBUG("terseElse")
+	SMSG_DEBUG("terseElse")
 }
 
 void terseEmpty(void) {
-	MESSSAGE_DEBUG("terseEmpty")
+	SMSG_DEBUG("terseEmpty")
 }
 
 void terseEnd(void) {
-	MESSSAGE_DEBUG("terseEnd")
+	SMSG_DEBUG("terseEnd")
 }
 
 void terseEnter(void) {
-	MESSSAGE_DEBUG("terseEnter")
+	SMSG_DEBUG("terseEnter")
 }
 
 void terseEraseCore(void) {
-	MESSSAGE_DEBUG("terseEraseCore")
+	SMSG_DEBUG("terseEraseCore")
 }
 
 void terseExec(void) {
-	MESSSAGE_DEBUG("terseExec")
+	SMSG_DEBUG("terseExec")
 }
 
 void terseExpect(void) {
-	MESSSAGE_DEBUG("terseExpect")
+	SMSG_DEBUG("terseExpect")
 }
 
 void terseFileCopy(void) {
-	MESSSAGE_DEBUG("terseFileCopy")
+	SMSG_DEBUG("terseFileCopy")
 }
 
 void terseFind(void) {
-	MESSSAGE_DEBUG("terseFind")
+	SMSG_DEBUG("terseFind")
 }
 
 void terseFld(void) {
-	MESSSAGE_DEBUG("terseFld")
+	SMSG_DEBUG("terseFld")
 }
 
 void terseFlush(void) {
-	MESSSAGE_DEBUG("terseFlush")
+	SMSG_DEBUG("terseFlush")
 }
 
 void terseFName(void) {
-	MESSSAGE_DEBUG("terseFName")
+	SMSG_DEBUG("terseFName")
 }
 
 void terseGetC(void) {
-	MESSSAGE_DEBUG("terseGetC")
+	SMSG_DEBUG("terseGetC")
 }
 
 void terseGoodbye(void) {
-	MESSSAGE_DEBUG("terseGoodbye")
+	SMSG_DEBUG("terseGoodbye")
 }
 
 void terseHDot(void) {
-	MESSSAGE_DEBUG("terseHDot")
+	SMSG_DEBUG("terseHDot")
 }
 
 void terseHelp(void) {
-	MESSSAGE_DEBUG("terseHelp")
+	SMSG_DEBUG("terseHelp")
 }
 
 void terseHere(void) {
-	MESSSAGE_DEBUG("terseHere")
+	SMSG_DEBUG("terseHere")
 }
 
 void terseHex(void) {
-	MESSSAGE_DEBUG("terseHex")
+	SMSG_DEBUG("terseHex")
 }
 
 void terseHexList(void) {
-	MESSSAGE_DEBUG("terseHexList")
+	SMSG_DEBUG("terseHexList")
 }
 
 void terseHexShow(void) {
-	MESSSAGE_DEBUG("terseHexShow")
+	SMSG_DEBUG("terseHexShow")
 }
 
 void terseI(void) {
-	MESSSAGE_DEBUG("terseI")
+	SMSG_DEBUG("terseI")
 }
 
 void terseIPlus(void) {
-	MESSSAGE_DEBUG("terseIPlus")
+	SMSG_DEBUG("terseIPlus")
 }
 
 void terseIf(void) {
-	MESSSAGE_DEBUG("terseIf")
+	SMSG_DEBUG("terseIf")
 }
 
 void terseIfEnd(void) {
-	MESSSAGE_DEBUG("terseIfEnd")
+	SMSG_DEBUG("terseIfEnd")
 }
 
 void terseIfTrue(void) {
-	MESSSAGE_DEBUG("terseIfTrue")
+	SMSG_DEBUG("terseIfTrue")
 }
 
 void terseImmed(void) {
-	MESSSAGE_DEBUG("terseImmed")
+	SMSG_DEBUG("terseImmed")
 }
 
 void terseInp(void) {
-	MESSSAGE_DEBUG("terseInp")
+	SMSG_DEBUG("terseInp")
 }
 
 void terseIOff(void) {
-	MESSSAGE_DEBUG("terseIOff")
+	SMSG_DEBUG("terseIOff")
 }
 
 void terseJ(void) {
-	MESSSAGE_DEBUG("terseJ")
+	SMSG_DEBUG("terseJ")
 }
 
 void terseJPlus(void) {
-	MESSSAGE_DEBUG("terseJPlus")
+	SMSG_DEBUG("terseJPlus")
 }
 
 void terseK(void) {
-	MESSSAGE_DEBUG("terseK")
+	SMSG_DEBUG("terseK")
 }
 
 void terseKPlus(void) {
-	MESSSAGE_DEBUG("terseKPlus")
+	SMSG_DEBUG("terseKPlus")
 }
 
 void terseLast(void) {
-	MESSSAGE_DEBUG("terseLast")
+	SMSG_DEBUG("terseLast")
 }
 
 void terseLeave(void) {
-	MESSSAGE_DEBUG("terseLeave")
+	SMSG_DEBUG("terseLeave")
 }
 
 void terseLine(void) {
-	MESSSAGE_DEBUG("terseLine")
+	SMSG_DEBUG("terseLine")
 }
 
 void terseLineLoad(void) {
-	MESSSAGE_DEBUG("terseLineLoad")
+	SMSG_DEBUG("terseLineLoad")
 }
 
 void terseList(void) {
-	MESSSAGE_DEBUG("terseList")
+	SMSG_DEBUG("terseList")
 }
 
 void terseLit(void) {
-	MESSSAGE_DEBUG("terseLit")
+	SMSG_DEBUG("terseLit")
 }
 
 void terseLiteral(void) {
-	MESSSAGE_DEBUG("terseLiteral")
+	SMSG_DEBUG("terseLiteral")
 }
 
 void terseLoad(void) {
-	MESSSAGE_DEBUG("terseLoad")
+	SMSG_DEBUG("terseLoad")
 }
 
 void terseLoop(void) {
-	MESSSAGE_DEBUG("terseLoop")
+	SMSG_DEBUG("terseLoop")
 }
 
 void terseLOut(void) {
-	MESSSAGE_DEBUG("terseLOut")
+	SMSG_DEBUG("terseLOut")
 }
 
 void terseMax(void) {
-	MESSSAGE_DEBUG("terseMax")
+	SMSG_DEBUG("terseMax")
 }
 
 void terseMin(void) {
-	MESSSAGE_DEBUG("terseMin")
+	SMSG_DEBUG("terseMin")
 }
 
 void terseMinus(void) {
-	MESSSAGE_DEBUG("terseMinus")
+	SMSG_DEBUG("terseMinus")
 }
 
 void terseMod(void) {
-	MESSSAGE_DEBUG("terseMod")
+	SMSG_DEBUG("terseMod")
 }
 
 void terseMove(void) {
-	MESSSAGE_DEBUG("terseMove")
+	SMSG_DEBUG("terseMove")
 }
 
 void terseNand(void) {
-	MESSSAGE_DEBUG("terseNand")
+	SMSG_DEBUG("terseNand")
 }
 
 void terseNext(void) {
-	MESSSAGE_DEBUG("terseNext")
+	SMSG_DEBUG("terseNext")
 }
 
 void terseNor(void) {
-	MESSSAGE_DEBUG("terseNor")
+	SMSG_DEBUG("terseNor")
 }
 
 void terseNot(void) {
-	MESSSAGE_DEBUG("terseNot")
+	SMSG_DEBUG("terseNot")
 }
 
 void terseNumber(void) {
-	MESSSAGE_DEBUG("terseNumber")
+	SMSG_DEBUG("terseNumber")
 }
 
 void terseOctal(void) {
-	MESSSAGE_DEBUG("terseOctal")
+	SMSG_DEBUG("terseOctal")
 }
 
 void terseOr(void) {
-	MESSSAGE_DEBUG("terseOr")
+	SMSG_DEBUG("terseOr")
 }
 
 void terseOtherwise(void) {
-	MESSSAGE_DEBUG("terseOtherwise")
+	SMSG_DEBUG("terseOtherwise")
 }
 
 void terseOutP(void) {
-	MESSSAGE_DEBUG("terseOutP")
+	SMSG_DEBUG("terseOutP")
 }
 
 void terseOver(void) {
-	MESSSAGE_DEBUG("terseOver")
+	SMSG_DEBUG("terseOver")
 }
 
 void tersePage(void) {
-	MESSSAGE_DEBUG("tersePage")
+	SMSG_DEBUG("tersePage")
 }
 
 void tersePick(void) {
-	MESSSAGE_DEBUG("tersePick")
+	SMSG_DEBUG("tersePick")
 }
 
 void tersePrintOut(void) {
-	MESSSAGE_DEBUG("tersePrintOut")
+	SMSG_DEBUG("tersePrintOut")
 }
 
 void terseProt(void) {
-	MESSSAGE_DEBUG("terseProt")
+	SMSG_DEBUG("terseProt")
 }
 
 void tersePutC(void) {
-	MESSSAGE_DEBUG("tersePutC")
+	SMSG_DEBUG("tersePutC")
 }
 
 void terseRTo(void) {
-	MESSSAGE_DEBUG("terseRTo")
+	SMSG_DEBUG("terseRTo")
 }
 
 void terseRepeat(void) {
-	MESSSAGE_DEBUG("terseRepeat")
+	SMSG_DEBUG("terseRepeat")
 }
 
 void terseRot(void) {
-	MESSSAGE_DEBUG("terseRot")
+	SMSG_DEBUG("terseRot")
 }
 
 void terseScr(void) {
-	MESSSAGE_DEBUG("terseScr")
+	SMSG_DEBUG("terseScr")
 }
 
 void terseSet(void) {
-	MESSSAGE_DEBUG("terseSet")
+	SMSG_DEBUG("terseSet")
 }
 
 void terseShow(void) {
-	MESSSAGE_DEBUG("terseShow")
+	SMSG_DEBUG("terseShow")
 }
 
 void terseSkip(void) {
-	MESSSAGE_DEBUG("terseSkip")
+	SMSG_DEBUG("terseSkip")
 }
 
 void terseSPFetch(void) {
-	MESSSAGE_DEBUG("terseSPFetch")
+	SMSG_DEBUG("terseSPFetch")
 }
 
 void terseSpace(void) {
-	MESSSAGE_DEBUG("terseSpace")
+	SMSG_DEBUG("terseSpace")
 }
 
 void terseSpaces(void) {
-	MESSSAGE_DEBUG("terseSpaces")
+	SMSG_DEBUG("terseSpaces")
 }
 
 void terseState(void) {
-	MESSSAGE_DEBUG("terseState")
+	SMSG_DEBUG("terseState")
 }
 
 void terseSpacesQ(void) {
-	MESSSAGE_DEBUG("terseSpacesQ")
+	SMSG_DEBUG("terseSpacesQ")
 }
 
 void terseSType(void) {
-	MESSSAGE_DEBUG("terseSType")
+	SMSG_DEBUG("terseSType")
 }
 
 void terseSwab(void) {
-	MESSSAGE_DEBUG("terseSwab")
+	SMSG_DEBUG("terseSwab")
 }
 
 void terseSwap(void) {
-	MESSSAGE_DEBUG("terseSwap")
+	SMSG_DEBUG("terseSwap")
 }
 
 void terseSysCopy(void) {
-	MESSSAGE_DEBUG("terseSysCopy")
+	SMSG_DEBUG("terseSysCopy")
 }
 
 void terseTable(void) {
-	MESSSAGE_DEBUG("terseTable")
+	SMSG_DEBUG("terseTable")
 }
 
 void terseTeco(void) {
-	MESSSAGE_DEBUG("terseTeco")
+	SMSG_DEBUG("terseTeco")
 }
 
 void terseTFlag(void) {
-	MESSSAGE_DEBUG("terseTFlag")
+	SMSG_DEBUG("terseTFlag")
 }
 
 void terseThen(void) {
-	MESSSAGE_DEBUG("terseThen")
+	SMSG_DEBUG("terseThen")
 }
 
 void terseType(void) {
-	MESSSAGE_DEBUG("terseType")
+	SMSG_DEBUG("terseType")
 }
 
 void terseUStore(void) {
-	MESSSAGE_DEBUG("terseUStore")
+	SMSG_DEBUG("terseUStore")
 }
 
 void terseUErr(void) {
-	MESSSAGE_DEBUG("terseUErr")
+	SMSG_DEBUG("terseUErr")
 }
 
 void terseUpdate(void) {
-	MESSSAGE_DEBUG("terseUpdate")
+	SMSG_DEBUG("terseUpdate")
 }
 
 void terseUnProt(void) {
-	MESSSAGE_DEBUG("terseUnProt")
+	SMSG_DEBUG("terseUnProt")
 }
 
 void terseVariable(void) {
-	MESSSAGE_DEBUG("terseVariable")
+	SMSG_DEBUG("terseVariable")
 }
 
 void terseVPtr(void) {
-	MESSSAGE_DEBUG("terseVPtr")
+	SMSG_DEBUG("terseVPtr")
 }
 
 void terseWhile(void) {
-	MESSSAGE_DEBUG("terseWhile")
+	SMSG_DEBUG("terseWhile")
 }
 
 void terseWhere(void) {
-	MESSSAGE_DEBUG("terseWhere")
+	SMSG_DEBUG("terseWhere")
 }
 
 void terseWord(void) {
-	MESSSAGE_DEBUG("terseWord")
+	SMSG_DEBUG("terseWord")
 }
 
 void terseXor(void) {
-	MESSSAGE_DEBUG("terseXor")
+	SMSG_DEBUG("terseXor")
 }
 
 void terseZeroWord(void) {
-	MESSSAGE_DEBUG("terseZeroWord")
+	SMSG_DEBUG("terseZeroWord")
 }
 
 void terseLeftBracket(void) {
-	MESSSAGE_DEBUG("terseLeftBracket")
+	SMSG_DEBUG("terseLeftBracket")
 }
 
 void terseLeftBracketLeftBracket(void) {
-	MESSSAGE_DEBUG("terseLeftBracketLeftBracket")
+	SMSG_DEBUG("terseLeftBracketLeftBracket")
 }
 
 void terseRightBracket(void) {
-	MESSSAGE_DEBUG("terseRightBracket")
+	SMSG_DEBUG("terseRightBracket")
 }
 
 void terseRightBracketRightBracket(void) {
-	MESSSAGE_DEBUG("terseRightBracketRightBracket")
+	SMSG_DEBUG("terseRightBracketRightBracket")
 }
 
 #endif

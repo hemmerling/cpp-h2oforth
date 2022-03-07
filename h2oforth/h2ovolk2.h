@@ -11,1243 +11,1243 @@
 	(H2O_FORTH_PRIMITIVES == VOLK_CPM_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == VOLK_PC_FORTH)
 void volkForth83(void) {
-	MESSSAGE_DEBUG("volkForth83")
+	SMSG_DEBUG("volkForth83")
 }
 
 void volkBSlashBlk(void) {
-	MESSSAGE_DEBUG("volkBSlashBlk")
+	SMSG_DEBUG("volkBSlashBlk")
 }
 
 void volkDisplay(void) {
-	MESSSAGE_DEBUG("volkDisplay")
+	SMSG_DEBUG("volkDisplay")
 }
 
 void volkKeyboard(void) {
-	MESSSAGE_DEBUG("volkKeyboard")
+	SMSG_DEBUG("volkKeyboard")
 }
 
 void volkNumCr(void) {
-	MESSSAGE_DEBUG("volkNumCr")
+	SMSG_DEBUG("volkNumCr")
 }
 
 void volkNumBs(void) {
-	MESSSAGE_DEBUG("volkNumBs")
+	SMSG_DEBUG("volkNumBs")
 }
 
 void volkCurOff(void) {
-	MESSSAGE_DEBUG("volkCurOff")
+	SMSG_DEBUG("volkCurOff")
 }
 
 void volkCurOn(void) {
-	MESSSAGE_DEBUG("volkCurOn")
+	SMSG_DEBUG("volkCurOn")
 }
 
 void volkRestart(void) {
-	MESSSAGE_DEBUG("volkRestart")
+	SMSG_DEBUG("volkRestart")
 }
 
 void volkTickCold(void) {
-	MESSSAGE_DEBUG("volkTickCold")
+	SMSG_DEBUG("volkTickCold")
 }
 
 void volkTickRestart(void) {
-	MESSSAGE_DEBUG("volkTickRestart")
+	SMSG_DEBUG("volkTickRestart")
 }
 
 void volkExpect(void) {
-	MESSSAGE_DEBUG("volkExpect")
+	SMSG_DEBUG("volkExpect")
 }
 
 void volkDecode(void) {
-	MESSSAGE_DEBUG("volkDecode")
+	SMSG_DEBUG("volkDecode")
 }
 
 void volkKeyQ(void) {
-	MESSSAGE_DEBUG("volkKeyQ")
+	SMSG_DEBUG("volkKeyQ")
 }
 
 void volkKey(void) {
-	MESSSAGE_DEBUG("volkKey")
+	SMSG_DEBUG("volkKey")
 }
 
 void volkInputColon(void) {
-	MESSSAGE_DEBUG("volkInputColon")
+	SMSG_DEBUG("volkInputColon")
 }
 
 void volkCol(void) {
-	MESSSAGE_DEBUG("volkCol")
+	SMSG_DEBUG("volkCol")
 }
 
 void volkRow(void) {
-	MESSSAGE_DEBUG("volkRow")
+	SMSG_DEBUG("volkRow")
 }
 
 void volkAtQ(void) {
-	MESSSAGE_DEBUG("volkAtQ")
+	SMSG_DEBUG("volkAtQ")
 }
 
 void volkAt(void) {
-	MESSSAGE_DEBUG("volkAt")
+	SMSG_DEBUG("volkAt")
 }
 
 void volkPage(void) {
-	MESSSAGE_DEBUG("volkPage")
+	SMSG_DEBUG("volkPage")
 }
 
 void volkDel(void) {
-	MESSSAGE_DEBUG("volkDel")
+	SMSG_DEBUG("volkDel")
 }
 
 void volkType(void) {
-	MESSSAGE_DEBUG("volkType")
+	SMSG_DEBUG("volkType")
 }
 
 void volkCr(void) {
-	MESSSAGE_DEBUG("volkCr")
+	SMSG_DEBUG("volkCr")
 }
 
 void volkEmit(void) {
-	MESSSAGE_DEBUG("volkEmit")
+	SMSG_DEBUG("volkEmit")
 }
 
 void volkOutputColon(void) {
-	MESSSAGE_DEBUG("volkOutputColon")
+	SMSG_DEBUG("volkOutputColon")
 }
 
 void volkZForget(void) {
-	MESSSAGE_DEBUG("volkZForget")
+	SMSG_DEBUG("volkZForget")
 }
 
 void volkClear(void) {
-	MESSSAGE_DEBUG("volkClear")
+	SMSG_DEBUG("volkClear")
 }
 
 void volkCustomRemove(void) {
-	MESSSAGE_DEBUG("volkCustomRemove")
+	SMSG_DEBUG("volkCustomRemove")
 }
 
 void volkAllBuffers(void) {
-	MESSSAGE_DEBUG("volkAllBuffers")
+	SMSG_DEBUG("volkAllBuffers")
 }
 
 void volkConvey(void) {
-	MESSSAGE_DEBUG("volkConvey")
+	SMSG_DEBUG("volkConvey")
 }
 
 void volkCopy(void) {
-	MESSSAGE_DEBUG("volkCopy")
+	SMSG_DEBUG("volkCopy")
 }
 
 void volkUpdate(void) {
-	MESSSAGE_DEBUG("volkUpdate")
+	SMSG_DEBUG("volkUpdate")
 }
 
 void volkBlock(void) {
-	MESSSAGE_DEBUG("volkBlock")
+	SMSG_DEBUG("volkBlock")
 }
 
 void volkBuffer(void) {
-	MESSSAGE_DEBUG("volkBuffer")
+	SMSG_DEBUG("volkBuffer")
 }
 
 void volkZBlock(void) {
-	MESSSAGE_DEBUG("volkZBlock")
+	SMSG_DEBUG("volkZBlock")
 }
 
 void volkZBuffer(void) {
-	MESSSAGE_DEBUG("volkZBuffer")
+	SMSG_DEBUG("volkZBuffer")
 }
 
 void volkCoreQ(void) {
-	MESSSAGE_DEBUG("volkCoreQ")
+	SMSG_DEBUG("volkCoreQ")
 }
 
 void volkFile(void) {
-	MESSSAGE_DEBUG("volkFile")
+	SMSG_DEBUG("volkFile")
 }
 
 void volkUnlock(void) {
-	MESSSAGE_DEBUG("volkUnlock")
+	SMSG_DEBUG("volkUnlock")
 }
 
 void volkLock(void) {
-	MESSSAGE_DEBUG("volkLock")
+	SMSG_DEBUG("volkLock")
 }
 
 void volkPause(void) {
-	MESSSAGE_DEBUG("volkPause")
+	SMSG_DEBUG("volkPause")
 }
 
 void volkList(void) {
-	MESSSAGE_DEBUG("volkList")
+	SMSG_DEBUG("volkList")
 }
 
 void volkLSlashS(void) {
-	MESSSAGE_DEBUG("volkLSlashS")
+	SMSG_DEBUG("volkLSlashS")
 }
 
 void volkCSlashL(void) {
-	MESSSAGE_DEBUG("volkCSlashL")
+	SMSG_DEBUG("volkCSlashL")
 }
 
 void volkDotS(void) {
-	MESSSAGE_DEBUG("volkDotS")
+	SMSG_DEBUG("volkDotS")
 }
 
 void volkUDot(void) {
-	MESSSAGE_DEBUG("volkUDot")
+	SMSG_DEBUG("volkUDot")
 }
 
 void volkDot(void) {
-	MESSSAGE_DEBUG("volkDot")
+	SMSG_DEBUG("volkDot")
 }
 
 void volkDColon(void) {
-	MESSSAGE_DEBUG("volkDColon")
+	SMSG_DEBUG("volkDColon")
 }
 
 void volkUDotR(void) {
-	MESSSAGE_DEBUG("volkUDotR")
+	SMSG_DEBUG("volkUDotR")
 }
 
 void volkDotR(void) {
-	MESSSAGE_DEBUG("volkDotR")
+	SMSG_DEBUG("volkDotR")
 }
 
 void volkDDotR(void) {
-	MESSSAGE_DEBUG("volkDDotR")
+	SMSG_DEBUG("volkDDotR")
 }
 
 void volkNumS(void) {
-	MESSSAGE_DEBUG("volkNumS")
+	SMSG_DEBUG("volkNumS")
 }
 
 void volkNum(void) {
-	MESSSAGE_DEBUG("volkNum")
+	SMSG_DEBUG("volkNum")
 }
 
 void volkSign(void) {
-	MESSSAGE_DEBUG("volkSign")
+	SMSG_DEBUG("volkSign")
 }
 
 void volkNumGreater(void) {
-	MESSSAGE_DEBUG("volkNumGreater")
+	SMSG_DEBUG("volkNumGreater")
 }
 
 void volkLessNum(void) {
-	MESSSAGE_DEBUG("volkLessNum")
+	SMSG_DEBUG("volkLessNum")
 }
 
 void volkHold(void) {
-	MESSSAGE_DEBUG("volkHold")
+	SMSG_DEBUG("volkHold")
 }
 
 void volkSpaces(void) {
-	MESSSAGE_DEBUG("volkSpaces")
+	SMSG_DEBUG("volkSpaces")
 }
 
 void volkSpace(void) {
-	MESSSAGE_DEBUG("volkSpace")
+	SMSG_DEBUG("volkSpace")
 }
 
 void volkTrailing(void) {
-	MESSSAGE_DEBUG("volkTrailing")
+	SMSG_DEBUG("volkTrailing")
 }
 
 void volkBl(void) {
-	MESSSAGE_DEBUG("volkBl")
+	SMSG_DEBUG("volkBl")
 }
 
 void volkErrorQuote(void) {
-	MESSSAGE_DEBUG("volkErrorQuote")
+	SMSG_DEBUG("volkErrorQuote")
 }
 
 void volkAbortQuote(void) {
-	MESSSAGE_DEBUG("volkAbortQuote")
+	SMSG_DEBUG("volkAbortQuote")
 }
 
 void volkZAbortQuote(void) {
-	MESSSAGE_DEBUG("volkZAbortQuote")
+	SMSG_DEBUG("volkZAbortQuote")
 }
 
 void volkZError(void) {
-	MESSSAGE_DEBUG("volkZError")
+	SMSG_DEBUG("volkZError")
 }
 
 void volkQuit(void) {
-	MESSSAGE_DEBUG("volkQuit")
+	SMSG_DEBUG("volkQuit")
 }
 
 void volkTickQuit(void) {
-	MESSSAGE_DEBUG("volkTickQuit")
+	SMSG_DEBUG("volkTickQuit")
 }
 
 void volkZQuit(void) {
-	MESSSAGE_DEBUG("volkZQuit")
+	SMSG_DEBUG("volkZQuit")
 }
 
 void volkDepth(void) {
-	MESSSAGE_DEBUG("volkDepth")
+	SMSG_DEBUG("volkDepth")
 }
 
 void volkRDepth(void) {
-	MESSSAGE_DEBUG("volkRDepth")
+	SMSG_DEBUG("volkRDepth")
 }
 
 void volkTo(void) {
-	MESSSAGE_DEBUG("volkTo")
+	SMSG_DEBUG("volkTo")
 }
 
 void volkPlusThru(void) {
-	MESSSAGE_DEBUG("volkPlusThru")
+	SMSG_DEBUG("volkPlusThru")
 }
 
 void volkThru(void) {
-	MESSSAGE_DEBUG("volkThru")
+	SMSG_DEBUG("volkThru")
 }
 
 void volkPlusLoad(void) {
-	MESSSAGE_DEBUG("volkPlusLoad")
+	SMSG_DEBUG("volkPlusLoad")
 }
 
 void volkLoad(void) {
-	MESSSAGE_DEBUG("volkLoad")
+	SMSG_DEBUG("volkLoad")
 }
 
 void volkPush(void) {
-	MESSSAGE_DEBUG("volkPush")
+	SMSG_DEBUG("volkPush")
 }
 
 void volkDotStatus(void) {
-	MESSSAGE_DEBUG("volkDotStatus")
+	SMSG_DEBUG("volkDotStatus")
 }
 
 void volkQStack(void) {
-	MESSSAGE_DEBUG("volkQStack")
+	SMSG_DEBUG("volkQStack")
 }
 
 void volkIs(void) {
-	MESSSAGE_DEBUG("volkIs")
+	SMSG_DEBUG("volkIs")
 }
 
 void volkZIs(void) {
-	MESSSAGE_DEBUG("volkZIs")
+	SMSG_DEBUG("volkZIs")
 }
 
 void volkDefer(void) {
-	MESSSAGE_DEBUG("volkDefer")
+	SMSG_DEBUG("volkDefer")
 }
 
 void volkRightBracket(void) {
-	MESSSAGE_DEBUG("volkRightBracket")
+	SMSG_DEBUG("volkRightBracket")
 }
 
 void volkLeftBracket(void) {
-	MESSSAGE_DEBUG("volkLeftBracket")
+	SMSG_DEBUG("volkLeftBracket")
 }
 
 void volkInterpret(void) {
-	MESSSAGE_DEBUG("volkInterpret")
+	SMSG_DEBUG("volkInterpret")
 }
 
 void volkNoDotExtensions(void) {
-	MESSSAGE_DEBUG("volkNoDotExtensions")
+	SMSG_DEBUG("volkNoDotExtensions")
 }
 
 void volkNotFound(void) {
-	MESSSAGE_DEBUG("volkNotFound")
+	SMSG_DEBUG("volkNotFound")
 }
 
 void volkXTick(void) {
-	MESSSAGE_DEBUG("volkXTick")
+	SMSG_DEBUG("volkXTick")
 }
 
 void volkXCompile(void) {
-	MESSSAGE_DEBUG("volkXCompile")
+	SMSG_DEBUG("volkXCompile")
 }
 
 void volkFind(void) {
-	MESSSAGE_DEBUG("volkFind")
+	SMSG_DEBUG("volkFind")
 }
 
 void volkZFind(void) {
-	MESSSAGE_DEBUG("volkZFind")
+	SMSG_DEBUG("volkZFind")
 }
 
 void volkWords(void) {
-	MESSSAGE_DEBUG("volkWords")
+	SMSG_DEBUG("volkWords")
 }
 
 void volkOrder(void) {
-	MESSSAGE_DEBUG("volkOrder")
+	SMSG_DEBUG("volkOrder")
 }
 
 void volkDefinitions(void) {
-	MESSSAGE_DEBUG("volkDefinitions")
+	SMSG_DEBUG("volkDefinitions")
 }
 
 void volkOnlyForth(void) {
-	MESSSAGE_DEBUG("volkOnlyForth")
+	SMSG_DEBUG("volkOnlyForth")
 }
 
 void volkOnly(void) {
-	MESSSAGE_DEBUG("volkOnly")
+	SMSG_DEBUG("volkOnly")
 }
 
 void volkForth(void) {
-	MESSSAGE_DEBUG("volkForth")
+	SMSG_DEBUG("volkForth")
 }
 
 void volkVocabulary(void) {
-	MESSSAGE_DEBUG("volkVocabulary")
+	SMSG_DEBUG("volkVocabulary")
 }
 
 void volkToss(void) {
-	MESSSAGE_DEBUG("volkToss")
+	SMSG_DEBUG("volkToss")
 }
 
 void volkAlso(void) {
-	MESSSAGE_DEBUG("volkAlso")
+	SMSG_DEBUG("volkAlso")
 }
 
 void volkUAllot(void) {
-	MESSSAGE_DEBUG("volkUAllot")
+	SMSG_DEBUG("volkUAllot")
 }
 
 void volkVariable(void) {
-	MESSSAGE_DEBUG("volkVariable")
+	SMSG_DEBUG("volkVariable")
 }
 
 void volkConstant(void) {
-	MESSSAGE_DEBUG("volkConstant")
+	SMSG_DEBUG("volkConstant")
 }
 
 void volkSemicolon(void) {
-	MESSSAGE_DEBUG("volkSemicolon")
+	SMSG_DEBUG("volkSemicolon")
 }
 
 void volkColon(void) {
-	MESSSAGE_DEBUG("volkColon")
+	SMSG_DEBUG("volkColon")
 }
 
 void volkCreateColon(void) {
-	MESSSAGE_DEBUG("volkCreateColon")
+	SMSG_DEBUG("volkCreateColon")
 }
 
 void volkDotName(void) {
-	MESSSAGE_DEBUG("volkDotName")
+	SMSG_DEBUG("volkDotName")
 }
 
 void volkToBody(void) {
-	MESSSAGE_DEBUG("volkToBody")
+	SMSG_DEBUG("volkToBody")
 }
 
 void volkNameFrom(void) {
-	MESSSAGE_DEBUG("volkNameFrom")
+	SMSG_DEBUG("volkNameFrom")
 }
 
 void volkToName(void) {
-	MESSSAGE_DEBUG("volkToName")
+	SMSG_DEBUG("volkToName")
 }
 
 void volkNFaq(void) {
-	MESSSAGE_DEBUG("volkNFaq")
+	SMSG_DEBUG("volkNFaq")
 }
 
 void volkCreate(void) {
-	MESSSAGE_DEBUG("volkCreate")
+	SMSG_DEBUG("volkCreate")
 }
 
 void volkWarning(void) {
-	MESSSAGE_DEBUG("volkWarning")
+	SMSG_DEBUG("volkWarning")
 }
 
 void volkVerticalBar(void) {
-	MESSSAGE_DEBUG("volkVerticalBar")
+	SMSG_DEBUG("volkVerticalBar")
 }
 
 void volkQHead(void) {
-	MESSSAGE_DEBUG("volkQHead")
+	SMSG_DEBUG("volkQHead")
 }
 
 void volkDoes(void) {
-	MESSSAGE_DEBUG("volkDoes")
+	SMSG_DEBUG("volkDoes")
 }
 
 void volkHeapQ(void) {
-	MESSSAGE_DEBUG("volkHeapQ")
+	SMSG_DEBUG("volkHeapQ")
 }
 
 void volkHeap(void) {
-	MESSSAGE_DEBUG("volkHeap")
+	SMSG_DEBUG("volkHeap")
 }
 
 void volkHallot(void) {
-	MESSSAGE_DEBUG("volkHallot")
+	SMSG_DEBUG("volkHallot")
 }
 
 void volkClearStack(void) {
-	MESSSAGE_DEBUG("volkClearStack")
+	SMSG_DEBUG("volkClearStack")
 }
 
 void volkRestrict(void) {
-	MESSSAGE_DEBUG("volkRestrict")
+	SMSG_DEBUG("volkRestrict")
 }
 
 void volkImmediate(void) {
-	MESSSAGE_DEBUG("volkImmediate")
+	SMSG_DEBUG("volkImmediate")
 }
 
 void volkRecursive(void) {
-	MESSSAGE_DEBUG("volkRecursive")
+	SMSG_DEBUG("volkRecursive")
 }
 
 void volkReveal(void) {
-	MESSSAGE_DEBUG("volkReveal")
+	SMSG_DEBUG("volkReveal")
 }
 
 void volkHide(void) {
-	MESSSAGE_DEBUG("volkHide")
+	SMSG_DEBUG("volkHide")
 }
 
 void volkLast(void) {
-	MESSSAGE_DEBUG("volkLast")
+	SMSG_DEBUG("volkLast")
 }
 
 void volkNumber(void) {
-	MESSSAGE_DEBUG("volkNumber")
+	SMSG_DEBUG("volkNumber")
 }
 
 void volkNumberQ(void) {
-	MESSSAGE_DEBUG("volkNumberQ")
+	SMSG_DEBUG("volkNumberQ")
 }
 
 void volkConvert(void) {
-	MESSSAGE_DEBUG("volkConvert")
+	SMSG_DEBUG("volkConvert")
 }
 
 void volkAccumulate(void) {
-	MESSSAGE_DEBUG("volkAccumulate")
+	SMSG_DEBUG("volkAccumulate")
 }
 
 void volkDecimal(void) {
-	MESSSAGE_DEBUG("volkDecimal")
+	SMSG_DEBUG("volkDecimal")
 }
 
 void volkBackslashNeeds(void) {
-	MESSSAGE_DEBUG("volkBackslashNeeds")
+	SMSG_DEBUG("volkBackslashNeeds")
 }
 
 void volkBackslashBackslash(void) {
-	MESSSAGE_DEBUG("volkBackslashBackslash")
+	SMSG_DEBUG("volkBackslashBackslash")
 }
 
 void volkBackslash(void) {
-	MESSSAGE_DEBUG("volkBackslash")
+	SMSG_DEBUG("volkBackslash")
 }
 
 void volkDotParen(void) {
-	MESSSAGE_DEBUG("volkDotParen")
+	SMSG_DEBUG("volkDotParen")
 }
 
 void volkParen(void) {
-	MESSSAGE_DEBUG("volkParen")
+	SMSG_DEBUG("volkParen")
 }
 
 void volkDotQuote(void) {
-	MESSSAGE_DEBUG("volkDotQuote")
+	SMSG_DEBUG("volkDotQuote")
 }
 
 void volkParenDotQuote(void) {
-	MESSSAGE_DEBUG("volkParenDotQuote")
+	SMSG_DEBUG("volkParenDotQuote")
 }
 
 void volkQuote(void) {
-	MESSSAGE_DEBUG("volkQuote")
+	SMSG_DEBUG("volkQuote")
 }
 
 void volkParenQuote(void) {
-	MESSSAGE_DEBUG("volkParenQuote")
+	SMSG_DEBUG("volkParenQuote")
 }
 
 void volkQuoteLit(void) {
-	MESSSAGE_DEBUG("volkQuoteLit")
+	SMSG_DEBUG("volkQuoteLit")
 }
 
 void volkAscii(void) {
-	MESSSAGE_DEBUG("volkAscii")
+	SMSG_DEBUG("volkAscii")
 }
 
 void volkState(void) {
-	MESSSAGE_DEBUG("volkState")
+	SMSG_DEBUG("volkState")
 }
 
 void volkName(void) {
-	MESSSAGE_DEBUG("volkName")
+	SMSG_DEBUG("volkName")
 }
 
 void volkParse(void) {
-	MESSSAGE_DEBUG("volkParse")
+	SMSG_DEBUG("volkParse")
 }
 
 void volkWord(void) {
-	MESSSAGE_DEBUG("volkWord")
+	SMSG_DEBUG("volkWord")
 }
 
 void volkSource(void) {
-	MESSSAGE_DEBUG("volkSource")
+	SMSG_DEBUG("volkSource")
 }
 
 void volkCapital(void) {
-	MESSSAGE_DEBUG("volkCapital")
+	SMSG_DEBUG("volkCapital")
 }
 
 void volkSlashString(void) {
-	MESSSAGE_DEBUG("volkSlashString")
+	SMSG_DEBUG("volkSlashString")
 }
 
 void volkSkip(void) {
-	MESSSAGE_DEBUG("volkSkip")
+	SMSG_DEBUG("volkSkip")
 }
 
 void volkScan(void) {
-	MESSSAGE_DEBUG("volkScan")
+	SMSG_DEBUG("volkScan")
 }
 
 void volkQuery(void) {
-	MESSSAGE_DEBUG("volkQuery")
+	SMSG_DEBUG("volkQuery")
 }
 
 void volkTib(void) {
-	MESSSAGE_DEBUG("volkTib")
+	SMSG_DEBUG("volkTib")
 }
 
 void volkSpan(void) {
-	MESSSAGE_DEBUG("volkSpan")
+	SMSG_DEBUG("volkSpan")
 }
 
 void volkBlk(void) {
-	MESSSAGE_DEBUG("volkBlk")
+	SMSG_DEBUG("volkBlk")
 }
 
 void volkToIn(void) {
-	MESSSAGE_DEBUG("volkToIn")
+	SMSG_DEBUG("volkToIn")
 }
 
 void volkToTib(void) {
-	MESSSAGE_DEBUG("volkToTib")
+	SMSG_DEBUG("volkToTib")
 }
 
 void volkNumTib(void) {
-	MESSSAGE_DEBUG("volkNumTib")
+	SMSG_DEBUG("volkNumTib")
 }
 
 void volkCompile(void) {
-	MESSSAGE_DEBUG("volkCompile")
+	SMSG_DEBUG("volkCompile")
 }
 
 void volkCComma(void) {
-	MESSSAGE_DEBUG("volkCComma")
+	SMSG_DEBUG("volkCComma")
 }
 
 void volkComma(void) {
-	MESSSAGE_DEBUG("volkComma")
+	SMSG_DEBUG("volkComma")
 }
 
 void volkAllot(void) {
-	MESSSAGE_DEBUG("volkAllot")
+	SMSG_DEBUG("volkAllot")
 }
 
 void volkPad(void) {
-	MESSSAGE_DEBUG("volkPad")
+	SMSG_DEBUG("volkPad")
 }
 
 void volkHere(void) {
-	MESSSAGE_DEBUG("volkHere")
+	SMSG_DEBUG("volkHere")
 }
 
 void volkFill(void) {
-	MESSSAGE_DEBUG("volkFill")
+	SMSG_DEBUG("volkFill")
 }
 
 void volkErase(void) {
-	MESSSAGE_DEBUG("volkErase")
+	SMSG_DEBUG("volkErase")
 }
 
 void volkCount(void) {
-	MESSSAGE_DEBUG("volkCount")
+	SMSG_DEBUG("volkCount")
 }
 
 void volkPlace(void) {
-	MESSSAGE_DEBUG("volkPlace")
+	SMSG_DEBUG("volkPlace")
 }
 
 void volkMove(void) {
-	MESSSAGE_DEBUG("volkMove")
+	SMSG_DEBUG("volkMove")
 }
 
 void volkCMoveTo(void) {
-	MESSSAGE_DEBUG("volkCMoveTo")
+	SMSG_DEBUG("volkCMoveTo")
 }
 
 void volkCMove(void) {
-	MESSSAGE_DEBUG("volkCMove")
+	SMSG_DEBUG("volkCMove")
 }
 
 void volkUdSlashMod(void) {
-	MESSSAGE_DEBUG("volkUdSlashMod")
+	SMSG_DEBUG("volkUdSlashMod")
 }
 
 void volkUSlashMod(void) {
-	MESSSAGE_DEBUG("volkUSlashMod")
+	SMSG_DEBUG("volkUSlashMod")
 }
 
 void volkStarSlash(void) {
-	MESSSAGE_DEBUG("volkStarSlash")
+	SMSG_DEBUG("volkStarSlash")
 }
 
 void volkStarSlashMod(void) {
-	MESSSAGE_DEBUG("volkStarSlashMod")
+	SMSG_DEBUG("volkStarSlashMod")
 }
 
 void volkMod(void) {
-	MESSSAGE_DEBUG("volkMod")
+	SMSG_DEBUG("volkMod")
 }
 
 void volkSlash(void) {
-	MESSSAGE_DEBUG("volkSlash")
+	SMSG_DEBUG("volkSlash")
 }
 
 void volkSlashMod(void) {
-	MESSSAGE_DEBUG("volkSlashMod")
+	SMSG_DEBUG("volkSlashMod")
 }
 
 void volkTwoSlash(void) {
-	MESSSAGE_DEBUG("volkTwoSlash")
+	SMSG_DEBUG("volkTwoSlash")
 }
 
 void volkMSlashMod(void) {
-	MESSSAGE_DEBUG("volkMSlashMod")
+	SMSG_DEBUG("volkMSlashMod")
 }
 
 void volkUmSlashMod(void) {
-	MESSSAGE_DEBUG("volkUmSlashMod")
+	SMSG_DEBUG("volkUmSlashMod")
 }
 
 void volkTwoStar(void) {
-	MESSSAGE_DEBUG("volkTwoStar")
+	SMSG_DEBUG("volkTwoStar")
 }
 
 void volkStar(void) {
-	MESSSAGE_DEBUG("volkStar")
+	SMSG_DEBUG("volkStar")
 }
 
 void volkMStar(void) {
-	MESSSAGE_DEBUG("volkMStar")
+	SMSG_DEBUG("volkMStar")
 }
 
 void volkUmStar(void) {
-	MESSSAGE_DEBUG("volkUmStar")
+	SMSG_DEBUG("volkUmStar")
 }
 
 void volkLeave(void) {
-	MESSSAGE_DEBUG("volkLeave")
+	SMSG_DEBUG("volkLeave")
 }
 
 void volkLoop(void) {
-	MESSSAGE_DEBUG("volkLoop")
+	SMSG_DEBUG("volkLoop")
 }
 
 void volkQDo(void) {
-	MESSSAGE_DEBUG("volkQDo")
+	SMSG_DEBUG("volkQDo")
 }
 
 void volkDo(void) {
-	MESSSAGE_DEBUG("volkDo")
+	SMSG_DEBUG("volkDo")
 }
 
 void volkUntil(void) {
-	MESSSAGE_DEBUG("volkUntil")
+	SMSG_DEBUG("volkUntil")
 }
 
 void volkRepeat(void) {
-	MESSSAGE_DEBUG("volkRepeat")
+	SMSG_DEBUG("volkRepeat")
 }
 
 void volkWhile(void) {
-	MESSSAGE_DEBUG("volkWhile")
+	SMSG_DEBUG("volkWhile")
 }
 
 void volkBegin(void) {
-	MESSSAGE_DEBUG("volkBegin")
+	SMSG_DEBUG("volkBegin")
 }
 
 void volkElse(void) {
-	MESSSAGE_DEBUG("volkElse")
+	SMSG_DEBUG("volkElse")
 }
 
 void volkThen(void) {
-	MESSSAGE_DEBUG("volkThen")
+	SMSG_DEBUG("volkThen")
 }
 
 void volkIf(void) {
-	MESSSAGE_DEBUG("volkIf")
+	SMSG_DEBUG("volkIf")
 }
 
 void volkQPairs(void) {
-	MESSSAGE_DEBUG("volkQPairs")
+	SMSG_DEBUG("volkQPairs")
 }
 
 void volkFromResolve(void) {
-	MESSSAGE_DEBUG("volkFromResolve")
+	SMSG_DEBUG("volkFromResolve")
 }
 
 void volkFromMark(void) {
-	MESSSAGE_DEBUG("volkFromMark")
+	SMSG_DEBUG("volkFromMark")
 }
 
 void volkToResolve(void) {
-	MESSSAGE_DEBUG("volkToResolve")
+	SMSG_DEBUG("volkToResolve")
 }
 
 void volkToMark(void) {
-	MESSSAGE_DEBUG("volkToMark")
+	SMSG_DEBUG("volkToMark")
 }
 
 void volkQBranch(void) {
-	MESSSAGE_DEBUG("volkQBranch")
+	SMSG_DEBUG("volkQBranch")
 }
 
 void volkBranch(void) {
-	MESSSAGE_DEBUG("volkBranch")
+	SMSG_DEBUG("volkBranch")
 }
 
 void volkJ(void) {
-	MESSSAGE_DEBUG("volkJ")
+	SMSG_DEBUG("volkJ")
 }
 
 void volkI(void) {
-	MESSSAGE_DEBUG("volkI")
+	SMSG_DEBUG("volkI")
 }
 
 void volkZPlusLoop(void) {
-	MESSSAGE_DEBUG("volkZPlusLoop")
+	SMSG_DEBUG("volkZPlusLoop")
 }
 
 void volkZLoop(void) {
-	MESSSAGE_DEBUG("volkZLoop")
+	SMSG_DEBUG("volkZLoop")
 }
 
 void volkEndLoop(void) {
-	MESSSAGE_DEBUG("volkEndLoop")
+	SMSG_DEBUG("volkEndLoop")
 }
 
 void volkBounds(void) {
-	MESSSAGE_DEBUG("volkBounds")
+	SMSG_DEBUG("volkBounds")
 }
 
 void volkZQDo(void) {
-	MESSSAGE_DEBUG("volkZQDo")
+	SMSG_DEBUG("volkZQDo")
 }
 
 void volkZDo(void) {
-	MESSSAGE_DEBUG("volkZDo")
+	SMSG_DEBUG("volkZDo")
 }
 
 void volkAbs(void) {
-	MESSSAGE_DEBUG("volkAbs")
+	SMSG_DEBUG("volkAbs")
 }
 
 void volkDAbs(void) {
-	MESSSAGE_DEBUG("volkDAbs")
+	SMSG_DEBUG("volkDAbs")
 }
 
 void volkUGreater(void) {
-	MESSSAGE_DEBUG("volkUGreater")
+	SMSG_DEBUG("volkUGreater")
 }
 
 void volkZeroUnequal(void) {
-	MESSSAGE_DEBUG("volkZeroUnequal")
+	SMSG_DEBUG("volkZeroUnequal")
 }
 
 void volkZeroGreater(void) {
-	MESSSAGE_DEBUG("volkZeroGreater")
+	SMSG_DEBUG("volkZeroGreater")
 }
 
 void volkGreater(void) {
-	MESSSAGE_DEBUG("volkGreater")
+	SMSG_DEBUG("volkGreater")
 }
 
 void volkULess(void) {
-	MESSSAGE_DEBUG("volkULess")
+	SMSG_DEBUG("volkULess")
 }
 
 void volkLess(void) {
-	MESSSAGE_DEBUG("volkLess")
+	SMSG_DEBUG("volkLess")
 }
 
 void volkZeroEqual(void) {
-	MESSSAGE_DEBUG("volkZeroEqual")
+	SMSG_DEBUG("volkZeroEqual")
 }
 
 void volkLiteral(void) {
-	MESSSAGE_DEBUG("volkLiteral")
+	SMSG_DEBUG("volkLiteral")
 }
 
 void volkLit(void) {
-	MESSSAGE_DEBUG("volkLit")
+	SMSG_DEBUG("volkLit")
 }
 
 void volkOff(void) {
-	MESSSAGE_DEBUG("volkOff")
+	SMSG_DEBUG("volkOff")
 }
 
 void volkFour(void) {
-	MESSSAGE_DEBUG("volkFour")
+	SMSG_DEBUG("volkFour")
 }
 
 void volkThree(void) {
-	MESSSAGE_DEBUG("volkThree")
+	SMSG_DEBUG("volkThree")
 }
 
 void volkTwo(void) {
-	MESSSAGE_DEBUG("volkTwo")
+	SMSG_DEBUG("volkTwo")
 }
 
 void volkOne(void) {
-	MESSSAGE_DEBUG("volkOne")
+	SMSG_DEBUG("volkOne")
 }
 
 void volkZero(void) {
-	MESSSAGE_DEBUG("volkZero")
+	SMSG_DEBUG("volkZero")
 }
 
 void volkMinusOne(void) {
-	MESSSAGE_DEBUG("volkMinusOne")
+	SMSG_DEBUG("volkMinusOne")
 }
 
 void volkFalse(void) {
-	MESSSAGE_DEBUG("volkFalse")
+	SMSG_DEBUG("volkFalse")
 }
 
 void volkTrue(void) {
-	MESSSAGE_DEBUG("volkTrue")
+	SMSG_DEBUG("volkTrue")
 }
 
 void volkTwoMinus(void) {
-	MESSSAGE_DEBUG("volkTwoMinus")
+	SMSG_DEBUG("volkTwoMinus")
 }
 
 void volkOneMinus(void) {
-	MESSSAGE_DEBUG("volkOneMinus")
+	SMSG_DEBUG("volkOneMinus")
 }
 
 void volkThreePlus(void) {
-	MESSSAGE_DEBUG("volkThreePlus")
+	SMSG_DEBUG("volkThreePlus")
 }
 
 void volkTwoPlus(void) {
-	MESSSAGE_DEBUG("volkTwoPlus")
+	SMSG_DEBUG("volkTwoPlus")
 }
 
 void volkOnePlus(void) {
-	MESSSAGE_DEBUG("volkOnePlus")
+	SMSG_DEBUG("volkOnePlus")
 }
 
 void volkDPlus(void) {
-	MESSSAGE_DEBUG("volkDPlus")
+	SMSG_DEBUG("volkDPlus")
 }
 
 void volkDNegate(void) {
-	MESSSAGE_DEBUG("volkDNegate")
+	SMSG_DEBUG("volkDNegate")
 }
 
 void volkNegate(void) {
-	MESSSAGE_DEBUG("volkNegate")
+	SMSG_DEBUG("volkNegate")
 }
 
 void volkNot(void) {
-	MESSSAGE_DEBUG("volkNot")
+	SMSG_DEBUG("volkNot")
 }
 
 void volkMinus(void) {
-	MESSSAGE_DEBUG("volkMinus")
+	SMSG_DEBUG("volkMinus")
 }
 
 void volkXOR(void) {
-	MESSSAGE_DEBUG("volkXOR")
+	SMSG_DEBUG("volkXOR")
 }
 
 void volkAnd(void) {
-	MESSSAGE_DEBUG("volkAnd")
+	SMSG_DEBUG("volkAnd")
 }
 
 void volkOr(void) {
-	MESSSAGE_DEBUG("volkOr")
+	SMSG_DEBUG("volkOr")
 }
 
 void volkPlus(void) {
-	MESSSAGE_DEBUG("volkPlus")
+	SMSG_DEBUG("volkPlus")
 }
 
 void volkTwoDup(void) {
-	MESSSAGE_DEBUG("volkTwoDup")
+	SMSG_DEBUG("volkTwoDup")
 }
 
 void volkTwoSwap(void) {
-	MESSSAGE_DEBUG("volkTwoSwap")
+	SMSG_DEBUG("volkTwoSwap")
 }
 
 void volkRoll(void) {
-	MESSSAGE_DEBUG("volkRoll")
+	SMSG_DEBUG("volkRoll")
 }
 
 void volkPick(void) {
-	MESSSAGE_DEBUG("volkPick")
+	SMSG_DEBUG("volkPick")
 }
 
 void volkUnder(void) {
-	MESSSAGE_DEBUG("volkUnder")
+	SMSG_DEBUG("volkUnder")
 }
 
 void volkNip(void) {
-	MESSSAGE_DEBUG("volkNip")
+	SMSG_DEBUG("volkNip")
 }
 
 void volkMinusRot(void) {
-	MESSSAGE_DEBUG("volkMinusRot")
+	SMSG_DEBUG("volkMinusRot")
 }
 
 void volkRot(void) {
-	MESSSAGE_DEBUG("volkRot")
+	SMSG_DEBUG("volkRot")
 }
 
 void volkOver(void) {
-	MESSSAGE_DEBUG("volkOver")
+	SMSG_DEBUG("volkOver")
 }
 
 void volkQDup(void) {
-	MESSSAGE_DEBUG("volkQDup")
+	SMSG_DEBUG("volkQDup")
 }
 
 void volkDup(void) {
-	MESSSAGE_DEBUG("volkDup")
+	SMSG_DEBUG("volkDup")
 }
 
 void volkSwap(void) {
-	MESSSAGE_DEBUG("volkSwap")
+	SMSG_DEBUG("volkSwap")
 }
 
 void volkDrop(void) {
-	MESSSAGE_DEBUG("volkDrop")
+	SMSG_DEBUG("volkDrop")
 }
 
 void volkPlusStore(void) {
-	MESSSAGE_DEBUG("volkPlusStore")
+	SMSG_DEBUG("volkPlusStore")
 }
 
 void volkStore(void) {
-	MESSSAGE_DEBUG("volkStore")
+	SMSG_DEBUG("volkStore")
 }
 
 void volkFetch(void) {
-	MESSSAGE_DEBUG("volkFetch")
+	SMSG_DEBUG("volkFetch")
 }
 
 void volkCToggle(void) {
-	MESSSAGE_DEBUG("volkCToggle")
+	SMSG_DEBUG("volkCToggle")
 }
 
 void volkCStore(void) {
-	MESSSAGE_DEBUG("volkCStore")
+	SMSG_DEBUG("volkCStore")
 }
 
 void volkCFetch(void) {
-	MESSSAGE_DEBUG("volkCFetch")
+	SMSG_DEBUG("volkCFetch")
 }
 
 void volkPerform(void) {
-	MESSSAGE_DEBUG("volkPerform")
+	SMSG_DEBUG("volkPerform")
 }
 
 void volkExecute(void) {
-	MESSSAGE_DEBUG("volkExecute")
+	SMSG_DEBUG("volkExecute")
 }
 
 void volkQExit(void) {
-	MESSSAGE_DEBUG("volkQExit")
+	SMSG_DEBUG("volkQExit")
 }
 
 void volkUnnest(void) {
-	MESSSAGE_DEBUG("volkUnnest")
+	SMSG_DEBUG("volkUnnest")
 }
 
 void volkExit(void) {
-	MESSSAGE_DEBUG("volkExit")
+	SMSG_DEBUG("volkExit")
 }
 
 void volkRDrop(void) {
-	MESSSAGE_DEBUG("volkRDrop")
+	SMSG_DEBUG("volkRDrop")
 }
 
 void volkRFetch(void) {
-	MESSSAGE_DEBUG("volkRFetch")
+	SMSG_DEBUG("volkRFetch")
 }
 
 void volkRFrom(void) {
-	MESSSAGE_DEBUG("volkRFrom")
+	SMSG_DEBUG("volkRFrom")
 }
 
 void volkToR(void) {
-	MESSSAGE_DEBUG("volkToR")
+	SMSG_DEBUG("volkToR")
 }
 
 void volkRPStore(void) {
-	MESSSAGE_DEBUG("volkRPStore")
+	SMSG_DEBUG("volkRPStore")
 }
 
 void volkRPFetch(void) {
-	MESSSAGE_DEBUG("volkRPFetch")
+	SMSG_DEBUG("volkRPFetch")
 }
 
 void volkUPStore(void) {
-	MESSSAGE_DEBUG("volkUPStore")
+	SMSG_DEBUG("volkUPStore")
 }
 
 void volkUPFetch(void) {
-	MESSSAGE_DEBUG("volkUPFetch")
+	SMSG_DEBUG("volkUPFetch")
 }
 
 void volkSPStore(void) {
-	MESSSAGE_DEBUG("volkSPStore")
+	SMSG_DEBUG("volkSPStore")
 }
 
 void volkSPFetch(void) {
-	MESSSAGE_DEBUG("volkSPFetch")
+	SMSG_DEBUG("volkSPFetch")
 }
 
 void volkUdp(void) {
-	MESSSAGE_DEBUG("volkUdp")
+	SMSG_DEBUG("volkUdp")
 }
 
 void volkVocLink(void) {
-	MESSSAGE_DEBUG("volkVocLink")
+	SMSG_DEBUG("volkVocLink")
 }
 
 void volkErrorhandler(void) {
-	MESSSAGE_DEBUG("volkErrorhandler")
+	SMSG_DEBUG("volkErrorhandler")
 }
 
 void volkInput(void) {
-	MESSSAGE_DEBUG("volkInput")
+	SMSG_DEBUG("volkInput")
 }
 
 void volkOutput(void) {
-	MESSSAGE_DEBUG("volkOutput")
+	SMSG_DEBUG("volkOutput")
 }
 
 void volkBase(void) {
-	MESSSAGE_DEBUG("volkBase")
+	SMSG_DEBUG("volkBase")
 }
 
 void volkOffset(void) {
-	MESSSAGE_DEBUG("volkOffset")
+	SMSG_DEBUG("volkOffset")
 }
 
 void volkDP(void) {
-	MESSSAGE_DEBUG("volkDP")
+	SMSG_DEBUG("volkDP")
 }
 
 void volkR0(void) {
-	MESSSAGE_DEBUG("volkR0")
+	SMSG_DEBUG("volkR0")
 }
 
 void volkS0(void) {
-	MESSSAGE_DEBUG("volkS0")
+	SMSG_DEBUG("volkS0")
 }
 
 void volkOrigin(void) {
-	MESSSAGE_DEBUG("volkOrigin")
+	SMSG_DEBUG("volkOrigin")
 }
 
 void volkNoop(void) {
-	MESSSAGE_DEBUG("volkNoop")
+	SMSG_DEBUG("volkNoop")
 }
 
 void volkRecover(void) {
-	MESSSAGE_DEBUG("volkRecover")
+	SMSG_DEBUG("volkRecover")
 }
 
 void volkEndTrace(void) {
-	MESSSAGE_DEBUG("volkEndTrace")
+	SMSG_DEBUG("volkEndTrace")
 }
 
 void volkZeroLess(void) {
-	MESSSAGE_DEBUG("volkZeroLess")
+	SMSG_DEBUG("volkZeroLess")
 }
 
 void volkEqual(void) {
-	MESSSAGE_DEBUG("volkEqual")
+	SMSG_DEBUG("volkEqual")
 }
 
 void volkExtend(void) {
-	MESSSAGE_DEBUG("volkExtend")
+	SMSG_DEBUG("volkExtend")
 }
 
 void volkUMin(void) {
-	MESSSAGE_DEBUG("volkUMin")
+	SMSG_DEBUG("volkUMin")
 }
 
 void volkUMax(void) {
-	MESSSAGE_DEBUG("volkUMax")
+	SMSG_DEBUG("volkUMax")
 }
 
 void volkMax(void) {
-	MESSSAGE_DEBUG("volkMax")
+	SMSG_DEBUG("volkMax")
 }
 
 void volkMin(void) {
-	MESSSAGE_DEBUG("volkMin")
+	SMSG_DEBUG("volkMin")
 }
 
 void volkDLess(void) {
-	MESSSAGE_DEBUG("volkDLess")
+	SMSG_DEBUG("volkDLess")
 }
 
 void volkDEqual(void) {
-	MESSSAGE_DEBUG("volkDEqual")
+	SMSG_DEBUG("volkDEqual")
 }
 
 void volkCaseQ(void) {
-	MESSSAGE_DEBUG("volkDEqual")
+	SMSG_DEBUG("volkDEqual")
 }
 
 void volkDZeroEqual(void) {
-	MESSSAGE_DEBUG("volkDZeroEqual")
+	SMSG_DEBUG("volkDZeroEqual")
 }
 
 void volkUWithin(void) {
-	MESSSAGE_DEBUG("volkUWithin")
+	SMSG_DEBUG("volkUWithin")
 }
 
 void volkDigitQ(void) {
-	MESSSAGE_DEBUG("volkDigitQ")
+	SMSG_DEBUG("volkDigitQ")
 }
 
 void volkCold(void) {
-	MESSSAGE_DEBUG("volkCold")
+	SMSG_DEBUG("volkCold")
 }
 
 void volkCommaQuote(void) {
-	MESSSAGE_DEBUG("volkCommaQuote")
+	SMSG_DEBUG("volkCommaQuote")
 }
 
 void volkNullStringQ(void) {
-	MESSSAGE_DEBUG("volkNullStringQ")
+	SMSG_DEBUG("volkNullStringQ")
 }
 
 void volkDpl(void) {
-	MESSSAGE_DEBUG("volkDpl")
+	SMSG_DEBUG("volkDpl")
 }
 
 #endif
@@ -1257,255 +1257,255 @@ void volkDpl(void) {
 	(H2O_FORTH_PRIMITIVES == VOLK_CPM_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == VOLK_PC_FORTH)
 void volkListing(void) {
-	MESSSAGE_DEBUG("volkListing")
+	SMSG_DEBUG("volkListing")
 }
 
 void volkDocument(void) {
-	MESSSAGE_DEBUG("volkDocument")
+	SMSG_DEBUG("volkDocument")
 }
 
 void volkPThru(void) {
-	MESSSAGE_DEBUG("volkPThru")
+	SMSG_DEBUG("volkPThru")
 }
 
 void volkPrint(void) {
-	MESSSAGE_DEBUG("volkPrint")
+	SMSG_DEBUG("volkPrint")
 }
 
 void volkPrinter(void) {
-	MESSSAGE_DEBUG("volkPrinter")
+	SMSG_DEBUG("volkPrinter")
 }
 
 void volkDump(void) {
-	MESSSAGE_DEBUG("volkDump")
+	SMSG_DEBUG("volkDump")
 }
 
 void volkTools(void) {
-	MESSSAGE_DEBUG("volkTools")
+	SMSG_DEBUG("volkTools")
 }
 
 void volkToolsDotFb(void) {
-	MESSSAGE_DEBUG("volkToolsDotFb")
+	SMSG_DEBUG("volkToolsDotFb")
 }
 
 void volkBye(void) {
-	MESSSAGE_DEBUG("volkBye")
+	SMSG_DEBUG("volkBye")
 }
 
 void volkView(void) {
-	MESSSAGE_DEBUG("volkView")
+	SMSG_DEBUG("volkView")
 }
 
 void volkL(void) {
-	MESSSAGE_DEBUG("volkL")
+	SMSG_DEBUG("volkL")
 }
 
 void volkV(void) {
-	MESSSAGE_DEBUG("volkV")
+	SMSG_DEBUG("volkV")
 }
 
 void volkDelete(void) {
-	MESSSAGE_DEBUG("volkDelete")
+	SMSG_DEBUG("volkDelete")
 }
 
 void volkCaps(void) {
-	MESSSAGE_DEBUG("volkCaps")
+	SMSG_DEBUG("volkCaps")
 }
 
 void volkCColon(void) {
-	MESSSAGE_DEBUG("volkCColon")
+	SMSG_DEBUG("volkCColon")
 }
 
 void volkBColon(void) {
-	MESSSAGE_DEBUG("volkBColon")
+	SMSG_DEBUG("volkBColon")
 }
 
 void volkAColon(void) {
-	MESSSAGE_DEBUG("volkAColon")
+	SMSG_DEBUG("volkAColon")
 }
 
 void volkDir(void) {
-	MESSSAGE_DEBUG("volkDir")
+	SMSG_DEBUG("volkDir")
 }
 
 void volkMore(void) {
-	MESSSAGE_DEBUG("volkDir")
+	SMSG_DEBUG("volkDir")
 }
 
 void volkFiles(void) {
-	MESSSAGE_DEBUG("volkFiles")
+	SMSG_DEBUG("volkFiles")
 }
 
 void volkInclude(void) {
-	MESSSAGE_DEBUG("volkInclude")
+	SMSG_DEBUG("volkInclude")
 }
 
 void volkLoadFrom(void) {
-	MESSSAGE_DEBUG("volkLoadFrom")
+	SMSG_DEBUG("volkLoadFrom")
 }
 
 void volkFrom(void) {
-	MESSSAGE_DEBUG("volkLoadFrom")
+	SMSG_DEBUG("volkLoadFrom")
 }
 
 void volkMakefile(void) {
-	MESSSAGE_DEBUG("volkMakefile")
+	SMSG_DEBUG("volkMakefile")
 }
 
 void volkUse(void) {
-	MESSSAGE_DEBUG("volkUse")
+	SMSG_DEBUG("volkUse")
 }
 
 void volkMake(void) {
-	MESSSAGE_DEBUG("volkMake")
+	SMSG_DEBUG("volkMake")
 }
 
 void volkAssign(void) {
-	MESSSAGE_DEBUG("volkAssign")
+	SMSG_DEBUG("volkAssign")
 }
 
 void volkClose(void) {
-	MESSSAGE_DEBUG("volkClose")
+	SMSG_DEBUG("volkClose")
 }
 
 void volkOpen(void) {
-	MESSSAGE_DEBUG("volkOpen")
+	SMSG_DEBUG("volkOpen")
 }
 
 void volkFileQ(void) {
-	MESSSAGE_DEBUG("volkFileQ")
+	SMSG_DEBUG("volkFileQ")
 }
 
 void volkCapacity(void) {
-	MESSSAGE_DEBUG("volkCapacity")
+	SMSG_DEBUG("volkCapacity")
 }
 
 void volkNumEsc(void) {
-	MESSSAGE_DEBUG("volkNumEsc")
+	SMSG_DEBUG("volkNumEsc")
 }
 
 void volkNumLf(void) {
-	MESSSAGE_DEBUG("volkNumLf")
+	SMSG_DEBUG("volkNumLf")
 }
 
 void volkQCr(void) {
-	MESSSAGE_DEBUG("volkQCr")
+	SMSG_DEBUG("volkQCr")
 }
 
 void volkStopQ(void) {
-	MESSSAGE_DEBUG("volkStopQ")
+	SMSG_DEBUG("volkStopQ")
 }
 
 void volkSave(void) {
-	MESSSAGE_DEBUG("volkSave")
+	SMSG_DEBUG("volkSave")
 }
 
 void volkEmpty(void) {
-	MESSSAGE_DEBUG("volkEmpty")
+	SMSG_DEBUG("volkEmpty")
 }
 
 void volkForget(void) {
-	MESSSAGE_DEBUG("volkForget")
+	SMSG_DEBUG("volkForget")
 }
 
 void volkIsFileFetch(void) {
-	MESSSAGE_DEBUG("volkIsFileFetch")
+	SMSG_DEBUG("volkIsFileFetch")
 }
 
 void volkDDot(void) {
-	MESSSAGE_DEBUG("volkDDot")
+	SMSG_DEBUG("volkDDot")
 }
 
 void volkRNum(void) {
-	MESSSAGE_DEBUG("volkRNum")
+	SMSG_DEBUG("volkRNum")
 }
 
 void volkScr(void) {
-	MESSSAGE_DEBUG("volkScr")
+	SMSG_DEBUG("volkScr")
 }
 
 void volkAbort(void) {
-	MESSSAGE_DEBUG("volkAbort")
+	SMSG_DEBUG("volkAbort")
 }
 
 void volkTickAbort(void) {
-	MESSSAGE_DEBUG("volkTickAbort")
+	SMSG_DEBUG("volkTickAbort")
 }
 
 void volkStandardISlashO(void) {
-	MESSSAGE_DEBUG("volkStandardISlashO")
+	SMSG_DEBUG("volkStandardISlashO")
 }
 
 void volkZLoad(void) {
-	MESSSAGE_DEBUG("volkZLoad")
+	SMSG_DEBUG("volkZLoad")
 }
 
 void volkContext(void) {
-	MESSSAGE_DEBUG("volkContext")
+	SMSG_DEBUG("volkContext")
 }
 
 void volkCurrent(void) {
-	MESSSAGE_DEBUG("volkCurrent")
+	SMSG_DEBUG("volkCurrent")
 }
 
 void volkVp(void) {
-	MESSSAGE_DEBUG("volkVp")
+	SMSG_DEBUG("volkVp")
 }
 
 void volkAlias(void) {
-	MESSSAGE_DEBUG("volkAlias")
+	SMSG_DEBUG("volkAlias")
 }
 
 void volkUser(void) {
-	MESSSAGE_DEBUG("volkUser")
+	SMSG_DEBUG("volkUser")
 }
 
 void volkMakeView(void) {
-	MESSSAGE_DEBUG("volkMakeView")
+	SMSG_DEBUG("volkMakeView")
 }
 
 void volkHAlign(void) {
-	MESSSAGE_DEBUG("volkHAlign")
+	SMSG_DEBUG("volkHAlign")
 }
 
 void volkAlign(void) {
-	MESSSAGE_DEBUG("volkAlign")
+	SMSG_DEBUG("volkAlign")
 }
 
 void volkLoadFile(void) {
-	MESSSAGE_DEBUG("volkLoadFile")
+	SMSG_DEBUG("volkLoadFile")
 }
 
 void volkEven(void) {
-	MESSSAGE_DEBUG("volkEven")
+	SMSG_DEBUG("volkEven")
 }
 
 void volkOn(void) {
-	MESSSAGE_DEBUG("volkOn")
+	SMSG_DEBUG("volkOn")
 }
 
 void volkFourMinus(void) {
-	MESSSAGE_DEBUG("volkFourMinus")
+	SMSG_DEBUG("volkFourMinus")
 }
 
 void volkFourPlus(void) {
-	MESSSAGE_DEBUG("volkFourPlus")
+	SMSG_DEBUG("volkFourPlus")
 }
 
 void volkTwoStore(void) {
-	MESSSAGE_DEBUG("volkTwoStore")
+	SMSG_DEBUG("volkTwoStore")
 }
 
 void volkTwoFetch(void) {
-	MESSSAGE_DEBUG("volkTwoFetch")
+	SMSG_DEBUG("volkTwoFetch")
 }
 
 void volkMinusRoll(void) {
-	MESSSAGE_DEBUG("volkMinusRoll")
+	SMSG_DEBUG("volkMinusRoll")
 }
 
 void volkSaveSystem(void) {
-	MESSSAGE_DEBUG("volkDebug")
+	SMSG_DEBUG("volkDebug")
 }
 
 #endif
@@ -1515,35 +1515,35 @@ void volkSaveSystem(void) {
 	(H2O_FORTH_PRIMITIVES == VOLK_CPM_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == VOLK_PC_FORTH)
 void volkAssembler(void) {
-	MESSSAGE_DEBUG("volkAssembler")
+	SMSG_DEBUG("volkAssembler")
 }
 
 void volkBSlashBuf(void) {
-	MESSSAGE_DEBUG("volkBSlashBuf")
+	SMSG_DEBUG("volkBSlashBuf")
 }
 
 void volkPrev(void) {
-	MESSSAGE_DEBUG("volkPrev")
+	SMSG_DEBUG("volkPrev")
 }
 
 void volkTick(void) {
-	MESSSAGE_DEBUG("volkTick")
+	SMSG_DEBUG("volkTick")
 }
 
 void volkHex(void) {
-	MESSSAGE_DEBUG("volkHex")
+	SMSG_DEBUG("volkHex")
 }
 
 void volkCLit(void) {
-	MESSSAGE_DEBUG("volkCLit")
+	SMSG_DEBUG("volkCLit")
 }
 
 void volkTwoDrop(void) {
-	MESSSAGE_DEBUG("volkTwoDrop")
+	SMSG_DEBUG("volkTwoDrop")
 }
 
 void volkRSlashW(void) {
-	MESSSAGE_DEBUG("volkRSlashW")
+	SMSG_DEBUG("volkRSlashW")
 }
 
 #endif
@@ -1553,11 +1553,11 @@ void volkRSlashW(void) {
     (H2O_FORTH_PRIMITIVES == VOLK_ST_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == VOLK_PC_FORTH)
 void volkToDrive(void) {
-	MESSSAGE_DEBUG("volkToDrive")
+	SMSG_DEBUG("volkToDrive")
 }
 
 void volkLDump(void) {
-	MESSSAGE_DEBUG("volkLDump")
+	SMSG_DEBUG("volkLDump")
 }
 
 #endif
@@ -1567,51 +1567,51 @@ void volkLDump(void) {
     (H2O_FORTH_PRIMITIVES == VOLK_ST_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == VOLK_CPM_FORTH)
 void volkDrvInit(void) {
-	MESSSAGE_DEBUG("volkDrvInit")
+	SMSG_DEBUG("volkDrvInit")
 }
 
 void volkConStore(void) {
-	MESSSAGE_DEBUG("volkConStore")
+	SMSG_DEBUG("volkConStore")
 }
 
 void volkGetKey(void) {
-	MESSSAGE_DEBUG("volkGetKey")
+	SMSG_DEBUG("volkGetKey")
 }
 
 void volkFreeBuffer(void) {
-	MESSSAGE_DEBUG("volkFreeBuffer")
+	SMSG_DEBUG("volkFreeBuffer")
 }
 
 void volkAllotBuffer(void) {
-	MESSSAGE_DEBUG("volkAllotBuffer")
+	SMSG_DEBUG("volkAllotBuffer")
 }
 
 void volkFirst(void) {
-	MESSSAGE_DEBUG("volkFirst")
+	SMSG_DEBUG("volkFirst")
 }
 
 void volkLimit(void) {
-	MESSSAGE_DEBUG("volkLimit")
+	SMSG_DEBUG("volkLimit")
 }
 
 void volkBuffers(void) {
-	MESSSAGE_DEBUG("volkBuffers")
+	SMSG_DEBUG("volkBuffers")
 }
 
 void volkPlusLoop(void) {
-	MESSSAGE_DEBUG("volkPlusLoop")
+	SMSG_DEBUG("volkPlusLoop")
 }
 
 void volkFlush(void) {
-	MESSSAGE_DEBUG("volkFlush")
+	SMSG_DEBUG("volkFlush")
 }
 
 void volkEmptyBuffers(void) {
-	MESSSAGE_DEBUG("volkEmptyBuffers")
+	SMSG_DEBUG("volkEmptyBuffers")
 }
 
 void volkSaveBuffers(void) {
-	MESSSAGE_DEBUG("volkSaveBuffers")
+	SMSG_DEBUG("volkSaveBuffers")
 }
 
 #endif
@@ -1621,23 +1621,23 @@ void volkSaveBuffers(void) {
     (H2O_FORTH_PRIMITIVES == VOLK_C64_FORTH) || \
     (H2O_FORTH_PRIMITIVES == VOLK_ST_FORTH)
 void volkIndex(void) {
-	MESSSAGE_DEBUG("volkIndex")
+	SMSG_DEBUG("volkIndex")
 }
 
 void volkDrvQ(void) {
-	MESSSAGE_DEBUG("volkDrvQ")
+	SMSG_DEBUG("volkDrvQ")
 }
 
 void volkToInterpret(void) {
-	MESSSAGE_DEBUG("volkToInterpret")
+	SMSG_DEBUG("volkToInterpret")
 }
 
 void volkCapitalize(void) {
-	MESSSAGE_DEBUG("volkCapitalize")
+	SMSG_DEBUG("volkCapitalize")
 }
 
 void volkBlkSlashDrv(void) {
-	MESSSAGE_DEBUG("volkBlkSlashDrv")
+	SMSG_DEBUG("volkBlkSlashDrv")
 }
 
 #endif
@@ -1646,67 +1646,67 @@ void volkBlkSlashDrv(void) {
     (H2O_FORTH_PRIMITIVES == VOLK_ST_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == VOLK_CPM_FORTH)
 void volkPrinterDotScr(void) {
-	MESSSAGE_DEBUG("volkPrinterDotScr")
+	SMSG_DEBUG("volkPrinterDotScr")
 }
 
 void volkRelocateDotScr(void) {
-	MESSSAGE_DEBUG("volkRelocateDotScr")
+	SMSG_DEBUG("volkRelocateDotScr")
 }
 
 void volkTraceTick(void) {
-	MESSSAGE_DEBUG("volkTraceTick")
+	SMSG_DEBUG("volkTraceTick")
 }
 
 void volkDebug(void) {
-	MESSSAGE_DEBUG("volkDebug")
+	SMSG_DEBUG("volkDebug")
 }
 
 void volkDotBlk(void) {
-	MESSSAGE_DEBUG("volkDotBlk")
+	SMSG_DEBUG("volkDotBlk")
 }
 
 void volkStartupDotScr(void) {
-	MESSSAGE_DEBUG("volkStartupDotScr")
+	SMSG_DEBUG("volkStartupDotScr")
 }
 
 void volkFileIntDotScr(void) {
-	MESSSAGE_DEBUG("volkFileIntDotScr")
+	SMSG_DEBUG("volkFileIntDotScr")
 }
 
 void volkFilesQuote(void) {
-	MESSSAGE_DEBUG("volkFilesQuote")
+	SMSG_DEBUG("volkFilesQuote")
 }
 
 void volkEof(void) {
-	MESSSAGE_DEBUG("volkEof")
+	SMSG_DEBUG("volkEof")
 }
 
 void volkCurRite(void) {
-	MESSSAGE_DEBUG("volkCurRite")
+	SMSG_DEBUG("volkCurRite")
 }
 
 void volkCurLeft(void) {
-	MESSSAGE_DEBUG("volkCurLeft")
+	SMSG_DEBUG("volkCurLeft")
 }
 
 void volkZWord(void) {
-	MESSSAGE_DEBUG("volkZWord")
+	SMSG_DEBUG("volkZWord")
 }
 
 void volkUP(void) {
-	MESSSAGE_DEBUG("volkUP")
+	SMSG_DEBUG("volkUP")
 }
 
 void volkToolsDotScr(void) {
-	MESSSAGE_DEBUG("volkToolsDotScr")
+	SMSG_DEBUG("volkToolsDotScr")
 }
 
 void volkEditorDotScr(void) {
-	MESSSAGE_DEBUG("volkEditorDotScr")
+	SMSG_DEBUG("volkEditorDotScr")
 }
 
 void volkZView(void) {
-	MESSSAGE_DEBUG("volkZView")
+	SMSG_DEBUG("volkZView")
 }
 
 #endif
@@ -1715,219 +1715,219 @@ void volkZView(void) {
 	(H2O_FORTH_PRIMITIVES == VOLK_CPM_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == VOLK_PC_FORTH)
 void volkRendezvous(void) {
-	MESSSAGE_DEBUG("volkRendezvous")
+	SMSG_DEBUG("volkRendezvous")
 }
 
 void volkTask(void) {
-	MESSSAGE_DEBUG("volkTask")
+	SMSG_DEBUG("volkTask")
 }
 
 void volkWake(void) {
-	MESSSAGE_DEBUG("volkWake")
+	SMSG_DEBUG("volkWake")
 }
 
 void volkSleep(void) {
-	MESSSAGE_DEBUG("volkSleep")
+	SMSG_DEBUG("volkSleep")
 }
 
 void volkActivate(void) {
-	MESSSAGE_DEBUG("volkActivate")
+	SMSG_DEBUG("volkActivate")
 }
 
 void volkPass(void) {
-	MESSSAGE_DEBUG("volkPass")
+	SMSG_DEBUG("volkPass")
 }
 
 void volkMultiTask(void) {
-	MESSSAGE_DEBUG("volkMultiTask")
+	SMSG_DEBUG("volkMultiTask")
 }
 
 void volkSingleTask(void) {
-	MESSSAGE_DEBUG("volkSingleTask")
+	SMSG_DEBUG("volkSingleTask")
 }
 
 void volkStop(void) {
-	MESSSAGE_DEBUG("volkStop")
+	SMSG_DEBUG("volkStop")
 }
 
 void volkFix(void) {
-	MESSSAGE_DEBUG("volkFix")
+	SMSG_DEBUG("volkFix")
 }
 
 void volkNumDel(void) {
-	MESSSAGE_DEBUG("volkNumDel")
+	SMSG_DEBUG("volkNumDel")
 }
 
 void volkCtrl(void) {
-	MESSSAGE_DEBUG("volkCtrl")
+	SMSG_DEBUG("volkCtrl")
 }
 
 void volkUpdatedQ(void) {
-	MESSSAGE_DEBUG("volkUpdatedQ")
+	SMSG_DEBUG("volkUpdatedQ")
 }
 
 void volkEditor(void) {
-	MESSSAGE_DEBUG("volkEditor")
+	SMSG_DEBUG("volkEditor")
 }
 
 void volkBlank(void) {
-	MESSSAGE_DEBUG("volkBlank")
+	SMSG_DEBUG("volkBlank")
 }
 
 void volkZKey(void) {
-	MESSSAGE_DEBUG("volkZKey")
+	SMSG_DEBUG("volkZKey")
 }
 
 void volkZExpect(void) {
-	MESSSAGE_DEBUG("volkZExpect")
+	SMSG_DEBUG("volkZExpect")
 }
 
 void volkZDecode(void) {
-	MESSSAGE_DEBUG("volkZDecode")
+	SMSG_DEBUG("volkZDecode")
 }
 
 void volkZDel(void) {
-	MESSSAGE_DEBUG("volkZDel")
+	SMSG_DEBUG("volkZDel")
 }
 
 void volkZCr(void) {
-	MESSSAGE_DEBUG("volkZCr")
+	SMSG_DEBUG("volkZCr")
 }
 
 void volkZEmit(void) {
-	MESSSAGE_DEBUG("volkZEmit")
+	SMSG_DEBUG("volkZEmit")
 }
 
 void volkZType(void) {
-	MESSSAGE_DEBUG("volkZType")
+	SMSG_DEBUG("volkZType")
 }
 
 void volkZPage(void) {
-	MESSSAGE_DEBUG("volkZPage")
+	SMSG_DEBUG("volkZPage")
 }
 
 void volkZAtQ(void) {
-	MESSSAGE_DEBUG("volkZAtQ")
+	SMSG_DEBUG("volkZAtQ")
 }
 
 void volkZAt(void) {
-	MESSSAGE_DEBUG("volkZAt")
+	SMSG_DEBUG("volkZAt")
 }
 
 void volkCSlashCol(void) {
-	MESSSAGE_DEBUG("volkCSlashCol")
+	SMSG_DEBUG("volkCSlashCol")
 }
 
 void volkCSlashRow(void) {
-	MESSSAGE_DEBUG("volkCSlashRow")
+	SMSG_DEBUG("volkCSlashRow")
 }
 
 void volkLabel(void) {
-	MESSSAGE_DEBUG("volkLabel")
+	SMSG_DEBUG("volkLabel")
 }
 
 void volkToLabel(void) {
-	MESSSAGE_DEBUG("volkToLabel")
+	SMSG_DEBUG("volkToLabel")
 }
 
 void volkSemicolonCode(void) {
-	MESSSAGE_DEBUG("volkSemicolonCode")
+	SMSG_DEBUG("volkSemicolonCode")
 }
 
 void volkCode(void) {
-	MESSSAGE_DEBUG("volkCode")
+	SMSG_DEBUG("volkCode")
 }
 
 void volkSaveFile(void) {
-	MESSSAGE_DEBUG("volkSaveFile")
+	SMSG_DEBUG("volkSaveFile")
 }
 
 void volkDirect(void) {
-	MESSSAGE_DEBUG("volkDirect")
+	SMSG_DEBUG("volkDirect")
 }
 
 void volkZRSlashW(void) {
-	MESSSAGE_DEBUG("volkZRSlashW")
+	SMSG_DEBUG("volkZRSlashW")
 }
 
 void volkNumBel(void) {
-	MESSSAGE_DEBUG("volkNumBel")
+	SMSG_DEBUG("volkNumBel")
 }
 
 void volkNumTab(void) {
-	MESSSAGE_DEBUG("volkNumTab")
+	SMSG_DEBUG("volkNumTab")
 }
 
 void volkDos(void) {
-	MESSSAGE_DEBUG("volkDos")
+	SMSG_DEBUG("volkDos")
 }
 
 void volkEmptyBuf(void) {
-	MESSSAGE_DEBUG("volkEmptyBuf")
+	SMSG_DEBUG("volkEmptyBuf")
 }
 
 void volkZCoreQ(void) {
-	MESSSAGE_DEBUG("volkZCoreQ")
+	SMSG_DEBUG("volkZCoreQ")
 }
 
 void volkFromFile(void) {
-	MESSSAGE_DEBUG("volkFromFile")
+	SMSG_DEBUG("volkFromFile")
 }
 
 void volkIsFile(void) {
-	MESSSAGE_DEBUG("volkIsFile")
+	SMSG_DEBUG("volkIsFile")
 }
 
 void volkPrompt(void) {
-	MESSSAGE_DEBUG("volkPrompt")
+	SMSG_DEBUG("volkPrompt")
 }
 
 void volkZPrompt(void) {
-	MESSSAGE_DEBUG("volkZPrompt")
+	SMSG_DEBUG("volkZPrompt")
 }
 
 void volkParser(void) {
-	MESSSAGE_DEBUG("volkParser")
+	SMSG_DEBUG("volkParser")
 }
 
 void volkRoot(void) {
-	MESSSAGE_DEBUG("volkRoot")
+	SMSG_DEBUG("volkRoot")
 }
 
 void volkBodyFrom(void) {
-	MESSSAGE_DEBUG("volkBodyFrom")
+	SMSG_DEBUG("volkBodyFrom")
 }
 
 void volkZNameFrom(void) {
-	MESSSAGE_DEBUG("volkZNameFrom")
+	SMSG_DEBUG("volkZNameFrom")
 }
 
 void volkZSemicolonCode(void) {
-	MESSSAGE_DEBUG("volkZSemicolonCode")
+	SMSG_DEBUG("volkZSemicolonCode")
 }
 
 void volkUpper(void) {
-	MESSSAGE_DEBUG("volkUpper")
+	SMSG_DEBUG("volkUpper")
 }
 
 void volkFlip(void) {
-	MESSSAGE_DEBUG("volkFlip")
+	SMSG_DEBUG("volkFlip")
 }
 
 void volkZeroEqualExit(void) {
-	MESSSAGE_DEBUG("volkZeroEqualExit")
+	SMSG_DEBUG("volkZeroEqualExit")
 }
 
 void volkRemove(void) {
-	MESSSAGE_DEBUG("volkRemove")
+	SMSG_DEBUG("volkRemove")
 }
 
 void volkZKeyQ(void) {
-	MESSSAGE_DEBUG("volkZKeyQ")
+	SMSG_DEBUG("volkZKeyQ")
 }
 
 void volkTipp(void) {
-	MESSSAGE_DEBUG("volkTipp")
+	SMSG_DEBUG("volkTipp")
 }
 
 #endif
@@ -1936,15 +1936,15 @@ void volkTipp(void) {
     (H2O_FORTH_PRIMITIVES == VOLK_C64_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == VOLK_CPM_FORTH)
 void volkPrintableQ(void) {
-	MESSSAGE_DEBUG("volkPrintableQ")
+	SMSG_DEBUG("volkPrintableQ")
 }
 
 void volkDiskErr(void) {
-	MESSSAGE_DEBUG("volkDiskErr")
+	SMSG_DEBUG("volkDiskErr")
 }
 
 void volkZDiskErr(void) {
-	MESSSAGE_DEBUG("volkZDiskErr")
+	SMSG_DEBUG("volkZDiskErr")
 }
 
 #endif
@@ -1953,7 +1953,7 @@ void volkZDiskErr(void) {
     (H2O_FORTH_PRIMITIVES == VOLK_C64_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == VOLK_PC_FORTH)
 void volkDrive(void) {
-	MESSSAGE_DEBUG("volkDrive")
+	SMSG_DEBUG("volkDrive")
 }
 
 #endif
@@ -1962,39 +1962,39 @@ void volkDrive(void) {
     (H2O_FORTH_PRIMITIVES == VOLK_ST_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == VOLK_PC_FORTH)
 void volkBell(void) {
-	MESSSAGE_DEBUG("volkBell")
+	SMSG_DEBUG("volkBell")
 }
 
 void volkAbortZ(void) {
-	MESSSAGE_DEBUG("volkAbortZ")
+	SMSG_DEBUG("volkAbortZ")
 }
 
 void volkPath(void) {
-	MESSSAGE_DEBUG("volkPath")
+	SMSG_DEBUG("volkPath")
 }
 
 void volkArguments(void) {
-	MESSSAGE_DEBUG("volkArguments")
+	SMSG_DEBUG("volkArguments")
 }
 
 void volkTwoOver(void) {
-	MESSSAGE_DEBUG("volkTwoOver")
+	SMSG_DEBUG("volkTwoOver")
 }
 
 void volkLFetch(void) {
-	MESSSAGE_DEBUG("volkLFetch")
+	SMSG_DEBUG("volkLFetch")
 }
 
 void volkLStore(void) {
-	MESSSAGE_DEBUG("volkLStore")
+	SMSG_DEBUG("volkLStore")
 }
 
 void volkLCStore(void) {
-	MESSSAGE_DEBUG("volkLCStore")
+	SMSG_DEBUG("volkLCStore")
 }
 
 void volkNextLink(void) {
-	MESSSAGE_DEBUG("volkNextLink")
+	SMSG_DEBUG("volkNextLink")
 }
 
 #endif
@@ -2003,175 +2003,175 @@ void volkNextLink(void) {
 #if (H2O_FORTH_PRIMITIVES == VOLK_FORTH) || \
    (H2O_FORTH_PRIMITIVES == VOLK_C64_FORTH)
 void volkZ64(void) {
-	MESSSAGE_DEBUG("volkZ64")
+	SMSG_DEBUG("volkZ64")
 }
 
 void volkCZ(void) {
-	MESSSAGE_DEBUG("volkCZ")
+	SMSG_DEBUG("volkCZ")
 }
 
 void volkZ16(void) {
-	MESSSAGE_DEBUG("volkZ16")
+	SMSG_DEBUG("volkZ16")
 }
 
 void volkC64Init(void) {
-	MESSSAGE_DEBUG("volkC64Init")
+	SMSG_DEBUG("volkC64Init")
 }
 
 void volkInitSystem(void) {
-	MESSSAGE_DEBUG("volkInitSystem")
+	SMSG_DEBUG("volkInitSystem")
 }
 
 void volkInkPot(void) {
-	MESSSAGE_DEBUG("volkInkPot")
+	SMSG_DEBUG("volkInkPot")
 }
 
 void volkFIndex(void) {
-	MESSSAGE_DEBUG("volkFIndex")
+	SMSG_DEBUG("volkFIndex")
 }
 
 void volkCBM1541RSlashW(void) {
-	MESSSAGE_DEBUG("volkCBM1541RSlashW")
+	SMSG_DEBUG("volkCBM1541RSlashW")
 }
 
 void volkDiskClose(void) {
-	MESSSAGE_DEBUG("volkDiskClose")
+	SMSG_DEBUG("volkDiskClose")
 }
 
 void volkDiskOpen(void) {
-	MESSSAGE_DEBUG("volkDiskOpen")
+	SMSG_DEBUG("volkDiskOpen")
 }
 
 void volkWriteSector(void) {
-	MESSSAGE_DEBUG("volkWriteSector")
+	SMSG_DEBUG("volkWriteSector")
 }
 
 void volkReadSector(void) {
-	MESSSAGE_DEBUG("volkReadSector")
+	SMSG_DEBUG("volkReadSector")
 }
 
 void volkDErrorQ(void) {
-	MESSSAGE_DEBUG("volkDErrorQ")
+	SMSG_DEBUG("volkDErrorQ")
 }
 
 void volkBusInput(void) {
-	MESSSAGE_DEBUG("volkBusInput")
+	SMSG_DEBUG("volkBusInput")
 }
 
 void volkBusFetch(void) {
-	MESSSAGE_DEBUG("volkBusFetch")
+	SMSG_DEBUG("volkBusFetch")
 }
 
 void volkBusType(void) {
-	MESSSAGE_DEBUG("volkBusType")
+	SMSG_DEBUG("volkBusType")
 }
 
 void volkBusStore(void) {
-	MESSSAGE_DEBUG("volkBusStore")
+	SMSG_DEBUG("volkBusStore")
 }
 
 void volkBusIn(void) {
-	MESSSAGE_DEBUG("volkBusIn")
+	SMSG_DEBUG("volkBusIn")
 }
 
 void volkZBusIn(void) {
-	MESSSAGE_DEBUG("volkZBusIn")
+	SMSG_DEBUG("volkZBusIn")
 }
 
 void volkBusClose(void) {
-	MESSSAGE_DEBUG("volkBusClose")
+	SMSG_DEBUG("volkBusClose")
 }
 
 void volkBusOpen(void) {
-	MESSSAGE_DEBUG("volkBusOpen")
+	SMSG_DEBUG("volkBusOpen")
 }
 
 void volkBusOff(void) {
-	MESSSAGE_DEBUG("volkBusOff")
+	SMSG_DEBUG("volkBusOff")
 }
 
 void volkISlashO(void) {
-	MESSSAGE_DEBUG("volkISlashO")
+	SMSG_DEBUG("volkISlashO")
 }
 
 void volkZDrv(void) {
-	MESSSAGE_DEBUG("volkZDrv")
+	SMSG_DEBUG("volkZDrv")
 }
 
 void volkC64Type(void) {
-	MESSSAGE_DEBUG("volkC64Type")
+	SMSG_DEBUG("volkC64Type")
 }
 
 void volkC64AtQ(void) {
-	MESSSAGE_DEBUG("volkC64AtQ")
+	SMSG_DEBUG("volkC64AtQ")
 }
 
 void volkC64At(void) {
-	MESSSAGE_DEBUG("volkC64At")
+	SMSG_DEBUG("volkC64At")
 }
 
 void volkC64Page(void) {
-	MESSSAGE_DEBUG("volkC64Page")
+	SMSG_DEBUG("volkC64Page")
 }
 
 void volkC64Del(void) {
-	MESSSAGE_DEBUG("volkC64Del")
+	SMSG_DEBUG("volkC64Del")
 }
 
 void volkC64Cr(void) {
-	MESSSAGE_DEBUG("volkC64Cr")
+	SMSG_DEBUG("volkC64Cr")
 }
 
 void volkC64Emit(void) {
-	MESSSAGE_DEBUG("volkC64Emit")
+	SMSG_DEBUG("volkC64Emit")
 }
 
 void volkC64Expect(void) {
-	MESSSAGE_DEBUG("volkC64Expect")
+	SMSG_DEBUG("volkC64Expect")
 }
 
 void volkC64Decode(void) {
-	MESSSAGE_DEBUG("volkC64Decode")
+	SMSG_DEBUG("volkC64Decode")
 }
 
 void volkC64Key(void) {
-	MESSSAGE_DEBUG("volkC64Key")
+	SMSG_DEBUG("volkC64Key")
 }
 
 void volkC64KeyQ(void) {
-	MESSSAGE_DEBUG("volkC64KeyQ")
+	SMSG_DEBUG("volkC64KeyQ")
 }
 
 void volkBlkMove(void) {
-	MESSSAGE_DEBUG("volkBlkMove")
+	SMSG_DEBUG("volkBlkMove")
 }
 
 void volkZCopy(void) {
-	MESSSAGE_DEBUG("volkZCopy")
+	SMSG_DEBUG("volkZCopy")
 }
 
 void volkTickNumberQ(void) {
-	MESSSAGE_DEBUG("volkTickNumberQ")
+	SMSG_DEBUG("volkTickNumberQ")
 }
 
 void volkPrevious(void) {
-	MESSSAGE_DEBUG("volkPrevious")
+	SMSG_DEBUG("volkPrevious")
 }
 
 void volkChar(void) {
-	MESSSAGE_DEBUG("volkChar")
+	SMSG_DEBUG("volkChar")
 }
 
 void volkEndQ(void) {
-	MESSSAGE_DEBUG("volkEndQ")
+	SMSG_DEBUG("volkEndQ")
 }
 
 void volkBasOn(void) {
-	MESSSAGE_DEBUG("volkBasOn")
+	SMSG_DEBUG("volkBasOn")
 }
 
 void volkLogo(void) {
-	MESSSAGE_DEBUG("volkLogo")
+	SMSG_DEBUG("volkLogo")
 }
 
 #endif
@@ -2179,272 +2179,272 @@ void volkLogo(void) {
 #if (H2O_FORTH_PRIMITIVES == VOLK_FORTH) || \
     (H2O_FORTH_PRIMITIVES == VOLK_ST_FORTH)
 void volkPrintALL(void) {
-	MESSSAGE_DEBUG("volkPrintALL")
+	SMSG_DEBUG("volkPrintALL")
 }
 
 void volkRelocate(void) {
-	MESSSAGE_DEBUG("volkRelocate")
+	SMSG_DEBUG("volkRelocate")
 }
 
 void volkIndexDotScr(void) {
-	MESSSAGE_DEBUG("volkIndexDotScr")
+	SMSG_DEBUG("volkIndexDotScr")
 }
 
 void volkTickEditFile(void) {
-	MESSSAGE_DEBUG("volkTickEditFile")
+	SMSG_DEBUG("volkTickEditFile")
 }
 
 void volkTickRNum(void) {
-	MESSSAGE_DEBUG("volkTickRNum")
+	SMSG_DEBUG("volkTickRNum")
 }
 
 void volkTickScr(void) {
-	MESSSAGE_DEBUG("volkTickScr")
+	SMSG_DEBUG("volkTickScr")
 }
 
 void volkEdWindowDotScr(void) {
-	MESSSAGE_DEBUG("volkEdWindowDotScr")
+	SMSG_DEBUG("volkEdWindowDotScr")
 }
 
 void volkGemBackslashVdiDotScr(void) {
-	MESSSAGE_DEBUG("volkGemBackslashVdiDotScr")
+	SMSG_DEBUG("volkGemBackslashVdiDotScr")
 }
 
 void volkGemBackslashSuperGemDotScr(void) {
-	MESSSAGE_DEBUG("volkGemBackslashSuperGemDotScr")
+	SMSG_DEBUG("volkGemBackslashSuperGemDotScr")
 }
 
 void volkEdiConDotScr(void) {
-	MESSSAGE_DEBUG("volkEdiConDotScr")
+	SMSG_DEBUG("volkEdiConDotScr")
 }
 
 void volkGem(void) {
-	MESSSAGE_DEBUG("volkGem")
+	SMSG_DEBUG("volkGem")
 }
 
 void volkGemBackslashBsicDotScr(void) {
-	MESSSAGE_DEBUG("volkGemBackslashBsicDotScr")
+	SMSG_DEBUG("volkGemBackslashBsicDotScr")
 }
 
 void volkGemBackslashAesDotScr(void) {
-	MESSSAGE_DEBUG("volkGemBackslashAesDotScr")
+	SMSG_DEBUG("volkGemBackslashAesDotScr")
 }
 
 void volkMFree(void) {
-	MESSSAGE_DEBUG("volkMFree")
+	SMSG_DEBUG("volkMFree")
 }
 
 void volkMalloc(void) {
-	MESSSAGE_DEBUG("volkMalloc")
+	SMSG_DEBUG("volkMalloc")
 }
 
 void volkAllocateDotScr(void) {
-	MESSSAGE_DEBUG("volkAllocateDotScr")
+	SMSG_DEBUG("volkAllocateDotScr")
 }
 
 void volkZeroQuote(void) {
-	MESSSAGE_DEBUG("volkZeroQuote")
+	SMSG_DEBUG("volkZeroQuote")
 }
 
 void volkCommaZeroQuote(void) {
-	MESSSAGE_DEBUG("volkCommaZeroQuote")
+	SMSG_DEBUG("volkCommaZeroQuote")
 }
 
 void volkZeroGreaterCQuote(void) {
-	MESSSAGE_DEBUG("volkZeroGreaterCQuote")
+	SMSG_DEBUG("volkZeroGreaterCQuote")
 }
 
 void volkCGreaterZeroQuote(void) {
-	MESSSAGE_DEBUG("volkCGreaterZeroQuote")
+	SMSG_DEBUG("volkCGreaterZeroQuote")
 }
 
 void volkDollarAdd(void) {
-	MESSSAGE_DEBUG("volkDollarAdd")
+	SMSG_DEBUG("volkDollarAdd")
 }
 
 void volkDollarSum(void) {
-	MESSSAGE_DEBUG("volkDollarSum")
+	SMSG_DEBUG("volkDollarSum")
 }
 
 void volkSearch(void) {
-	MESSSAGE_DEBUG("volkSearch")
+	SMSG_DEBUG("volkSearch")
 }
 
 void volkCompareText(void) {
-	MESSSAGE_DEBUG("volkCompareText")
+	SMSG_DEBUG("volkCompareText")
 }
 
 void volkringsDotScr(void) {
-	MESSSAGE_DEBUG("volkringsDotScr")
+	SMSG_DEBUG("volkringsDotScr")
 }
 
 void volkAssembleDotScr(void) {
-	MESSSAGE_DEBUG("volkAssembleDotScr")
+	SMSG_DEBUG("volkAssembleDotScr")
 }
 
 void volkBlak(void) {
-	MESSSAGE_DEBUG("volkBlak")
+	SMSG_DEBUG("volkBlak")
 }
 
 void volkCPush(void) {
-	MESSSAGE_DEBUG("volkCPush")
+	SMSG_DEBUG("volkCPush")
 }
 
 void volkAbsAddr(void) {
-	MESSSAGE_DEBUG("volkAbsAddr")
+	SMSG_DEBUG("volkAbsAddr")
 }
 
 void volkDiversesDotScr(void) {
-	MESSSAGE_DEBUG("volkDiversesDotScr")
+	SMSG_DEBUG("volkDiversesDotScr")
 }
 
 void volkForth83DotScr(void) {
-	MESSSAGE_DEBUG("volkForth83DotScr")
+	SMSG_DEBUG("volkForth83DotScr")
 }
 
 void volkRemoveQ(void) {
-	MESSSAGE_DEBUG("volkRemoveQ")
+	SMSG_DEBUG("volkRemoveQ")
 }
 
 void volkMakeDir(void) {
 	/* = volkMd */
-	MESSSAGE_DEBUG("volkMakeDir")
+	SMSG_DEBUG("volkMakeDir")
 }
 
 void volkZMore(void) {
-	MESSSAGE_DEBUG("volkZMore")
+	SMSG_DEBUG("volkZMore")
 }
 
 void volkDirekt(void) {
-	MESSSAGE_DEBUG("volkDirekt")
+	SMSG_DEBUG("volkDirekt")
 }
 
 void volkSTRSlashW(void) {
-	MESSSAGE_DEBUG("volkSTRSlashW")
+	SMSG_DEBUG("volkSTRSlashW")
 }
 
 void volkRWAbs(void) {
-	MESSSAGE_DEBUG("volkRWAbs")
+	SMSG_DEBUG("volkRWAbs")
 }
 
 void volkDrv1(void) {
-	MESSSAGE_DEBUG("volkDrv1")
+	SMSG_DEBUG("volkDrv1")
 }
 
 void volkDrv0(void) {
-	MESSSAGE_DEBUG("volkDrv0")
+	SMSG_DEBUG("volkDrv0")
 }
 
 void volkZBlkSlashDrv(void) {
-	MESSSAGE_DEBUG("volkZBlkSlashDrv")
+	SMSG_DEBUG("volkZBlkSlashDrv")
 }
 
 void volkStType(void) {
-	MESSSAGE_DEBUG("volkStType")
+	SMSG_DEBUG("volkStType")
 }
 
 void volkStAtQ(void) {
-	MESSSAGE_DEBUG("volkStAtQ")
+	SMSG_DEBUG("volkStAtQ")
 }
 
 void volkStAt(void) {
-	MESSSAGE_DEBUG("volkStAt")
+	SMSG_DEBUG("volkStAt")
 }
 
 void volkStPage(void) {
-	MESSSAGE_DEBUG("volkStPage")
+	SMSG_DEBUG("volkStPage")
 }
 
 void volkStDel(void) {
-	MESSSAGE_DEBUG("volkStDel")
+	SMSG_DEBUG("volkStDel")
 }
 
 void volkStCR(void) {
-	MESSSAGE_DEBUG("volkStCR")
+	SMSG_DEBUG("volkStCR")
 }
 
 void volkStEmit(void) {
-	MESSSAGE_DEBUG("volkStEmit")
+	SMSG_DEBUG("volkStEmit")
 }
 
 void volkStExpect(void) {
-	MESSSAGE_DEBUG("volkStExpect")
+	SMSG_DEBUG("volkStExpect")
 }
 
 void volkStDecode(void) {
-	MESSSAGE_DEBUG("volkStDecode")
+	SMSG_DEBUG("volkStDecode")
 }
 
 void volkStKey(void) {
-	MESSSAGE_DEBUG("volkStKey")
+	SMSG_DEBUG("volkStKey")
 }
 
 void volkStKeyQ(void) {
-	MESSSAGE_DEBUG("volkStKeyQ")
+	SMSG_DEBUG("volkStKeyQ")
 }
 
 void volkWrap(void) {
-	MESSSAGE_DEBUG("volkWrap")
+	SMSG_DEBUG("volkWrap")
 }
 
 void volkBConOut(void) {
-	MESSSAGE_DEBUG("volkBConOut")
+	SMSG_DEBUG("volkBConOut")
 }
 
 void volkBConIn(void) {
-	MESSSAGE_DEBUG("volkBConIn")
+	SMSG_DEBUG("volkBConIn")
 }
 
 void volkBcoStat(void) {
-	MESSSAGE_DEBUG("volkBcoStat")
+	SMSG_DEBUG("volkBcoStat")
 }
 
 void volkBconStat(void) {
-	MESSSAGE_DEBUG("volkBconStat")
+	SMSG_DEBUG("volkBconStat")
 }
 
 void volkTwoVariable(void) {
-	MESSSAGE_DEBUG("volkTwoVariable")
+	SMSG_DEBUG("volkTwoVariable")
 }
 
 void volkTwoConstant(void) {
-	MESSSAGE_DEBUG("volkTwoConstant")
+	SMSG_DEBUG("volkTwoConstant")
 }
 
 void volkBlkFetch(void) {
-	MESSSAGE_DEBUG("volkBlkFetch")
+	SMSG_DEBUG("volkBlkFetch")
 }
 
 void volkDStar(void) {
-	MESSSAGE_DEBUG("volkDStar")
+	SMSG_DEBUG("volkDStar")
 }
 
 void volkDMinus(void) {
-	MESSSAGE_DEBUG("volkDMinus")
+	SMSG_DEBUG("volkDMinus")
 }
 
 void volkQuoteDrop(void) {
-	MESSSAGE_DEBUG("volkQuoteDrop")
+	SMSG_DEBUG("volkQuoteDrop")
 }
 
 void volkLNPlusStore(void) {
-	MESSSAGE_DEBUG("volkLNPlusStore")
+	SMSG_DEBUG("volkLNPlusStore")
 }
 
 void volkL2Store(void) {
-	MESSSAGE_DEBUG("volkL2Store")
+	SMSG_DEBUG("volkL2Store")
 }
 
 void volkL2Fetch(void) {
-	MESSSAGE_DEBUG("volkL2Fetch")
+	SMSG_DEBUG("volkL2Fetch")
 }
 
 void volkLCMove(void) {
-	MESSSAGE_DEBUG("volkLCMove")
+	SMSG_DEBUG("volkLCMove")
 }
 
 void volkForthStart(void) {
-	MESSSAGE_DEBUG("volkForthStart")
+	SMSG_DEBUG("volkForthStart")
 }
 
 #endif
@@ -2452,183 +2452,183 @@ void volkForthStart(void) {
 #if (H2O_FORTH_PRIMITIVES == VOLK_FORTH) || \
     (H2O_FORTH_PRIMITIVES == VOLK_CPM_FORTH)
 void volkSpool(void) {
-	MESSSAGE_DEBUG("volkSpool")
+	SMSG_DEBUG("volkSpool")
 }
 
 void volkSpooler(void) {
-	MESSSAGE_DEBUG("volkSpooler")
+	SMSG_DEBUG("volkSpooler")
 }
 
 void volkShadow(void) {
-	MESSSAGE_DEBUG("volkShadow")
+	SMSG_DEBUG("volkShadow")
 }
 
 void volkTasks(void) {
-	MESSSAGE_DEBUG("volkTasks")
+	SMSG_DEBUG("volkTasks")
 }
 
 void volkTickS(void) {
 	/* "'S" => Capital "S" */
-	MESSSAGE_DEBUG("volkTasks")
+	SMSG_DEBUG("volkTasks")
 }
 void volkTaskerDotScr(void) {
-	MESSSAGE_DEBUG("volkTaskerDotScr")
+	SMSG_DEBUG("volkTaskerDotScr")
 }
 
 void volkSee(void) {
-	MESSSAGE_DEBUG("volkSee")
+	SMSG_DEBUG("volkSee")
 }
 
 void volkSeeDotScr(void) {
-	MESSSAGE_DEBUG("volkSeeDotScr")
+	SMSG_DEBUG("volkSeeDotScr")
 }
 
 void volkExternal(void) {
-	MESSSAGE_DEBUG("volkExternal")
+	SMSG_DEBUG("volkExternal")
 }
 
 void volkInternal(void) {
-	MESSSAGE_DEBUG("volkInternal")
+	SMSG_DEBUG("volkInternal")
 }
 
 void volkQAbortZ(void) {
-	MESSSAGE_DEBUG("volkQAbortZ")
+	SMSG_DEBUG("volkQAbortZ")
 }
 
 void volkQEnough(void) {
-	MESSSAGE_DEBUG("volkQEnough")
+	SMSG_DEBUG("volkQEnough")
 }
 
 void volkReplace(void) {
-	MESSSAGE_DEBUG("volkReplace")
+	SMSG_DEBUG("volkReplace")
 }
 
 void volkInsert(void) {
-	MESSSAGE_DEBUG("volkInsert")
+	SMSG_DEBUG("volkInsert")
 }
 
 void volkSaveSysDotScr(void) {
-	MESSSAGE_DEBUG("volkSaveSysDotScr")
+	SMSG_DEBUG("volkSaveSysDotScr")
 }
 
 void volkCopyDotScr(void) {
-	MESSSAGE_DEBUG("volkSaveSysDotScr")
+	SMSG_DEBUG("volkSaveSysDotScr")
 }
 
 void volkAnsi(void) {
-	MESSSAGE_DEBUG("volkAnsi")
+	SMSG_DEBUG("volkAnsi")
 }
 
 void volkTerminalDotScr(void) {
-	MESSSAGE_DEBUG("volkTerminalDotScr")
+	SMSG_DEBUG("volkTerminalDotScr")
 }
 
 void volkDumb(void) {
-	MESSSAGE_DEBUG("volkDumb")
+	SMSG_DEBUG("volkDumb")
 }
 
 void volkLocate(void) {
-	MESSSAGE_DEBUG("volkLocate")
+	SMSG_DEBUG("volkLocate")
 }
 
 void volkDark(void) {
-	MESSSAGE_DEBUG("volkDark")
+	SMSG_DEBUG("volkDark")
 }
 
 void volkRvsOff(void) {
-	MESSSAGE_DEBUG("volkRvsOff")
+	SMSG_DEBUG("volkRvsOff")
 }
 
 void volkRvsOn(void) {
-	MESSSAGE_DEBUG("volkRvsOn")
+	SMSG_DEBUG("volkRvsOn")
 }
 
 void volkTerminalColon(void) {
-	MESSSAGE_DEBUG("volkTerminalColon")
+	SMSG_DEBUG("volkTerminalColon")
 }
 
 void volkTermColon(void) {
-	MESSSAGE_DEBUG("volkTermColon")
+	SMSG_DEBUG("volkTermColon")
 }
 
 void volkXinOutDotScr(void) {
-	MESSSAGE_DEBUG("volkXinOutDotScr")
+	SMSG_DEBUG("volkXinOutDotScr")
 }
 
 void volkAss8080DotScr(void) {
-	MESSSAGE_DEBUG("volkAss8080DotScr")
+	SMSG_DEBUG("volkAss8080DotScr")
 }
 
 void volkSourceDotScr(void) {
-	MESSSAGE_DEBUG("volkSourceDotScr")
+	SMSG_DEBUG("volkSourceDotScr")
 }
 
 void volkJColon(void) {
-	MESSSAGE_DEBUG("volkJColon")
+	SMSG_DEBUG("volkJColon")
 }
 
 void volkDriveColon(void) {
-	MESSSAGE_DEBUG("volkDriveColon")
+	SMSG_DEBUG("volkDriveColon")
 }
 
 void volkDirQuote(void) {
-	MESSSAGE_DEBUG("volkDirQuote")
+	SMSG_DEBUG("volkDirQuote")
 }
 
 void volkDotBuffers(void) {
-	MESSSAGE_DEBUG("volkDotBuffers")
+	SMSG_DEBUG("volkDotBuffers")
 }
 
 void volkZMakeView(void) {
-	MESSSAGE_DEBUG("volkZMakeView")
+	SMSG_DEBUG("volkZMakeView")
 }
 
 void volkForthFiles(void) {
-	MESSSAGE_DEBUG("volkForthFiles")
+	SMSG_DEBUG("volkForthFiles")
 }
 
 void volkDotSize(void) {
-	MESSSAGE_DEBUG("volkDotSize")
+	SMSG_DEBUG("volkDotSize")
 }
 
 void volkPostlude(void) {
-	MESSSAGE_DEBUG("volkPostlude")
+	SMSG_DEBUG("volkPostlude")
 }
 
 void volkRecSlashBlk(void) {
-	MESSSAGE_DEBUG("volkRecSlashBlk")
+	SMSG_DEBUG("volkRecSlashBlk")
 }
 
 void volkBSlashRec(void) {
-	MESSSAGE_DEBUG("volkBSlashRec")
+	SMSG_DEBUG("volkBSlashRec")
 }
 
 void volkNumFf(void) {
-	MESSSAGE_DEBUG("volkNumFf")
+	SMSG_DEBUG("volkNumFf")
 }
 
 void volkQuoteSearch(void) {
-	MESSSAGE_DEBUG("volkQuoteSearch")
+	SMSG_DEBUG("volkQuoteSearch")
 }
 
 void volkSaveDosBuffers(void) {
-	MESSSAGE_DEBUG("volkSaveDosBuffers")
+	SMSG_DEBUG("volkSaveDosBuffers")
 }
 
 void volkCreateZ(void) {
-	MESSSAGE_DEBUG("volkCreateZ")
+	SMSG_DEBUG("volkCreateZ")
 }
 
 void volkPlusToMark(void) {
-	MESSSAGE_DEBUG("volkPlusToMark")
+	SMSG_DEBUG("volkPlusToMark")
 }
 
 void volkIPSave(void) {
-	MESSSAGE_DEBUG("volkIPSave")
+	SMSG_DEBUG("volkIPSave")
 }
 
 void volkRP(void) {
-	MESSSAGE_DEBUG("volkRP")
+	SMSG_DEBUG("volkRP")
 }
 
 #endif
@@ -2636,492 +2636,492 @@ void volkRP(void) {
 #if (H2O_FORTH_PRIMITIVES == VOLK_FORTH) || \
     (H2O_FORTH_PRIMITIVES == VOLK_PC_FORTH)
 void volkPList(void) {
-	MESSSAGE_DEBUG("volkPList")
+	SMSG_DEBUG("volkPList")
 }
 
 void volkPlusPrint(void) {
-	MESSSAGE_DEBUG("volkPlusPrint")
+	SMSG_DEBUG("volkPlusPrint")
 }
 
 void volkGraphicsDotPrn(void) {
-	MESSSAGE_DEBUG("volkGraphicsDotPrn")
+	SMSG_DEBUG("volkGraphicsDotPrn")
 }
 
 void volkEdit(void) {
-	MESSSAGE_DEBUG("volkEdit")
+	SMSG_DEBUG("volkEdit")
 }
 
 void volkED(void) {
-	MESSSAGE_DEBUG("volkED")
+	SMSG_DEBUG("volkED")
 }
 
 void volkEditorDotFb(void) {
-	MESSSAGE_DEBUG("volkEditorDotFb")
+	SMSG_DEBUG("volkEditorDotFb")
 }
 
 void volkTimes(void) {
-	MESSSAGE_DEBUG("volkTimes")
+	SMSG_DEBUG("volkTimes")
 }
 
 void volkOften(void) {
-	MESSSAGE_DEBUG("volkOften")
+	SMSG_DEBUG("volkOften")
 }
 
 void volkTimeFetch(void) {
-	MESSSAGE_DEBUG("volkTimeFetch")
+	SMSG_DEBUG("volkTimeFetch")
 }
 
 void volkDateFetch(void) {
-	MESSSAGE_DEBUG("volkDateFetch")
+	SMSG_DEBUG("volkDateFetch")
 }
 
 void volkMinutes(void) {
-	MESSSAGE_DEBUG("volkMinutes")
+	SMSG_DEBUG("volkMinutes")
 }
 
 void volkSeconds(void) {
-	MESSSAGE_DEBUG("volkSeconds")
+	SMSG_DEBUG("volkSeconds")
 }
 
 void volkWait(void) {
-	MESSSAGE_DEBUG("volkWait")
+	SMSG_DEBUG("volkWait")
 }
 
 void volkTime(void) {
-	MESSSAGE_DEBUG("volkTime")
+	SMSG_DEBUG("volkTime")
 }
 
 void volkTill(void) {
-	MESSSAGE_DEBUG("volkTill")
+	SMSG_DEBUG("volkTill")
 }
 
 void volkTimeoutQ(void) {
-	MESSSAGE_DEBUG("volkTimeoutQ")
+	SMSG_DEBUG("volkTimeoutQ")
 }
 
 /* Ticks */
 void volkTicks(void) {
-	MESSSAGE_DEBUG("volkTimeoutQ")
+	SMSG_DEBUG("volkTimeoutQ")
 }
 
 void volkTimerDotFb(void) {
-	MESSSAGE_DEBUG("volkTimerDotFb")
+	SMSG_DEBUG("volkTimerDotFb")
 }
 
 void volkTaskerDotFb(void) {
-	MESSSAGE_DEBUG("volkTaskerDotFb")
+	SMSG_DEBUG("volkTaskerDotFb")
 }
 
 void volkCall(void) {
-	MESSSAGE_DEBUG("volkCall")
+	SMSG_DEBUG("volkCall")
 }
 
 void volkMsdos(void) {
-	MESSSAGE_DEBUG("volkMsdos")
+	SMSG_DEBUG("volkMsdos")
 }
 
 void volkFType(void) {
-	MESSSAGE_DEBUG("volkFType")
+	SMSG_DEBUG("volkFType")
 }
 
 void volkFcopy(void) {
-	MESSSAGE_DEBUG("volkFcopy")
+	SMSG_DEBUG("volkFcopy")
 }
 
 void volkRd(void) {
-	MESSSAGE_DEBUG("volkRd")
+	SMSG_DEBUG("volkRd")
 }
 
 void volkCd(void) {
-	MESSSAGE_DEBUG("volkCd")
+	SMSG_DEBUG("volkCd")
 }
 
 void volkMd(void) {
-	MESSSAGE_DEBUG("volkMd")
+	SMSG_DEBUG("volkMd")
 }
 
 void volkRen(void) {
-	MESSSAGE_DEBUG("volkRen")
+	SMSG_DEBUG("volkRen")
 }
 
 void volkDotPath(void) {
-	MESSSAGE_DEBUG("volkDotPath")
+	SMSG_DEBUG("volkDotPath")
 }
 
 void volkEmptyFile(void) {
-	MESSSAGE_DEBUG("volkEmptyFile")
+	SMSG_DEBUG("volkEmptyFile")
 }
 
 void volkKillfile(void) {
-	MESSSAGE_DEBUG("volkKillfile")
+	SMSG_DEBUG("volkKillfile")
 }
 
 void volkQFile(void) {
-	MESSSAGE_DEBUG("volkQFile")
+	SMSG_DEBUG("volkQFile")
 }
 
 void volkUsedQ(void) {
-	MESSSAGE_DEBUG("volkUsedQ")
+	SMSG_DEBUG("volkUsedQ")
 }
 
 void volkDTA(void) {
-	MESSSAGE_DEBUG("volkDTA")
+	SMSG_DEBUG("volkDTA")
 }
 
 void volkFSwap(void) {
-	MESSSAGE_DEBUG("volkFSwap")
+	SMSG_DEBUG("volkFSwap")
 }
 
 void volkDosDotFb(void) {
-	MESSSAGE_DEBUG("volkDosDotFb")
+	SMSG_DEBUG("volkDosDotFb")
 }
 
 void volkZDotStatus(void) {
-	MESSSAGE_DEBUG("volkZDotStatus")
+	SMSG_DEBUG("volkZDotStatus")
 }
 
 void volkDotSpace(void) {
-	MESSSAGE_DEBUG("volkDotSpace")
+	SMSG_DEBUG("volkDotSpace")
 }
 
 void volkDotScr(void) {
-	MESSSAGE_DEBUG("volkDotScr")
+	SMSG_DEBUG("volkDotScr")
 }
 
 void volkDotDR(void) {
-	MESSSAGE_DEBUG("volkDotDR")
+	SMSG_DEBUG("volkDotDR")
 }
 
 void volkZDotDrv(void) {
-	MESSSAGE_DEBUG("volkZDotDrv")
+	SMSG_DEBUG("volkZDotDrv")
 }
 
 void volkDotSP(void) {
-	MESSSAGE_DEBUG("volkDotSP")
+	SMSG_DEBUG("volkDotSP")
 }
 
 void volkDotBase(void) {
-	MESSSAGE_DEBUG("volkDotBase")
+	SMSG_DEBUG("volkDotBase")
 }
 
 void volkScroll(void) {
-	MESSSAGE_DEBUG("volkScroll")
+	SMSG_DEBUG("volkScroll")
 }
 
 void volkBlankLine(void) {
-	MESSSAGE_DEBUG("volkBlankLine")
+	SMSG_DEBUG("volkBlankLine")
 }
 
 void volkBright(void) {
-	MESSSAGE_DEBUG("volkBright")
+	SMSG_DEBUG("volkBright")
 }
 
 void volkUnderline(void) {
-	MESSSAGE_DEBUG("volkUnderline")
+	SMSG_DEBUG("volkUnderline")
 }
 
 void volkInvers(void) {
-	MESSSAGE_DEBUG("volkInvers")
+	SMSG_DEBUG("volkInvers")
 }
 
 void volkNormal(void) {
-	MESSSAGE_DEBUG("volkNormal")
+	SMSG_DEBUG("volkNormal")
 }
 
 void volkSetPage(void) {
-	MESSSAGE_DEBUG("volkSetPage")
+	SMSG_DEBUG("volkSetPage")
 }
 
 void volkCurShape(void) {
-	MESSSAGE_DEBUG("volkCurShape")
+	SMSG_DEBUG("volkCurShape")
 }
 
 void volkCurStore(void) {
-	MESSSAGE_DEBUG("volkCurStore")
+	SMSG_DEBUG("volkCurStore")
 }
 
 void volkCurAtQ(void) {
-	MESSSAGE_DEBUG("volkCurAtQ")
+	SMSG_DEBUG("volkCurAtQ")
 }
 
 void volkFull(void) {
-	MESSSAGE_DEBUG("volkFull")
+	SMSG_DEBUG("volkFull")
 }
 
 void volkWindow(void) {
-	MESSSAGE_DEBUG("volkWindow")
+	SMSG_DEBUG("volkWindow")
 }
 
 void volkCatt(void) {
-	MESSSAGE_DEBUG("volkCatt")
+	SMSG_DEBUG("volkCatt")
 }
 
 void volkZArea(void) {
-	MESSSAGE_DEBUG("volkZArea")
+	SMSG_DEBUG("volkZArea")
 }
 
 void volkTerminal(void) {
-	MESSSAGE_DEBUG("volkTerminal")
+	SMSG_DEBUG("volkTerminal")
 }
 
 void volkAreaColon(void) {
-	MESSSAGE_DEBUG("volkAreaColon")
+	SMSG_DEBUG("volkAreaColon")
 }
 
 void volkStatus(void) {
-	MESSSAGE_DEBUG("volkStatus")
+	SMSG_DEBUG("volkStatus")
 }
 
 void volkArea(void) {
-	MESSSAGE_DEBUG("volkArea")
+	SMSG_DEBUG("volkArea")
 }
 
 void volkMultiDotVid(void) {
-	MESSSAGE_DEBUG("volkMultiDotVid")
+	SMSG_DEBUG("volkMultiDotVid")
 }
 
 void volkDotIf(void) {
-	MESSSAGE_DEBUG("volkDotIf")
+	SMSG_DEBUG("volkDotIf")
 }
 
 void volkDotElse(void) {
-	MESSSAGE_DEBUG("volkDotElse")
+	SMSG_DEBUG("volkDotElse")
 }
 
 void volkDotThen(void) {
-	MESSSAGE_DEBUG("volkDotThen")
+	SMSG_DEBUG("volkDotThen")
 }
 
 void volkQQuote(void) {
-	MESSSAGE_DEBUG("volkQQuote")
+	SMSG_DEBUG("volkQQuote")
 }
 
 void volkToMonth(void) {
-	MESSSAGE_DEBUG("volkToMonth")
+	SMSG_DEBUG("volkToMonth")
 }
 
 void volkAttach(void) {
-	MESSSAGE_DEBUG("volkAttach")
+	SMSG_DEBUG("volkAttach")
 }
 
 void volkAppend(void) {
-	MESSSAGE_DEBUG("volkAppend")
+	SMSG_DEBUG("volkAppend")
 }
 
 void volkRestoreVideo(void) {
-	MESSSAGE_DEBUG("volkRestoreVideo")
+	SMSG_DEBUG("volkRestoreVideo")
 }
 
 void volkSaveVideo(void) {
-	MESSSAGE_DEBUG("volkSaveVideo")
+	SMSG_DEBUG("volkSaveVideo")
 }
 
 void volkVideoFetch(void) {
-	MESSSAGE_DEBUG("volkVideoFetch")
+	SMSG_DEBUG("volkVideoFetch")
 }
 
 void volkCSlashDIS(void) {
-	MESSSAGE_DEBUG("volkCSlashDIS")
+	SMSG_DEBUG("volkCSlashDIS")
 }
 
 void volkLFree(void) {
-	MESSSAGE_DEBUG("volkLFree")
+	SMSG_DEBUG("volkLFree")
 }
 
 void volkLAllocate(void) {
-	MESSSAGE_DEBUG("volkLAllocate")
+	SMSG_DEBUG("volkLAllocate")
 }
 
 void volkAdr(void) {
-	MESSSAGE_DEBUG("volkAdr")
+	SMSG_DEBUG("volkAdr")
 }
 
 void volkUQ(void) {
-	MESSSAGE_DEBUG("volkUQ")
+	SMSG_DEBUG("volkUQ")
 }
 
 void volkTab(void) {
-	MESSSAGE_DEBUG("volkTab")
+	SMSG_DEBUG("volkTab")
 }
 
 void volkDotField(void) {
-	MESSSAGE_DEBUG("volkDotField")
+	SMSG_DEBUG("volkDotField")
 }
 
 void volkToExpect(void) {
-	MESSSAGE_DEBUG("volkToExpect")
+	SMSG_DEBUG("volkToExpect")
 }
 
 void volkStash(void) {
-	MESSSAGE_DEBUG("volkStash")
+	SMSG_DEBUG("volkStash")
 }
 
 void volkCls(void) {
-	MESSSAGE_DEBUG("volkCls")
+	SMSG_DEBUG("volkCls")
 }
 
 void volkTickName(void) {
-	MESSSAGE_DEBUG("volkTickName")
+	SMSG_DEBUG("volkTickName")
 }
 
 void volkSav(void) {
-	MESSSAGE_DEBUG("volkSav")
+	SMSG_DEBUG("volkSav")
 }
 
 void volkExtendDotFb(void) {
-	MESSSAGE_DEBUG("volkExtendDotFb")
+	SMSG_DEBUG("volkExtendDotFb")
 }
 
 void volkEndCode(void) {
-	MESSSAGE_DEBUG("volkEndCode")
+	SMSG_DEBUG("volkEndCode")
 }
 
 void volkASmDotFb(void) {
-	MESSSAGE_DEBUG("volkASmDotFb")
+	SMSG_DEBUG("volkASmDotFb")
 }
 
 void volkVolks4THDotSys(void) {
-	MESSSAGE_DEBUG("volkvolks4THDotSys")
+	SMSG_DEBUG("volkvolks4THDotSys")
 }
 
 void volkHelp(void) {
-	MESSSAGE_DEBUG("volkHelp")
+	SMSG_DEBUG("volkHelp")
 }
 
 void volkLFSave(void) {
-	MESSSAGE_DEBUG("volkLFSave")
+	SMSG_DEBUG("volkLFSave")
 }
 
 void volkHColon(void) {
-	MESSSAGE_DEBUG("volkHColon")
+	SMSG_DEBUG("volkHColon")
 }
 
 void volkGColon(void) {
-	MESSSAGE_DEBUG("volkGColon")
+	SMSG_DEBUG("volkGColon")
 }
 
 void volkFColon(void) {
-	MESSSAGE_DEBUG("volkFColon")
+	SMSG_DEBUG("volkFColon")
 }
 
 void volkEColon(void) {
-	MESSSAGE_DEBUG("volkEColon")
+	SMSG_DEBUG("volkEColon")
 }
 
 void volkDrv(void) {
-	MESSSAGE_DEBUG("volkDrv")
+	SMSG_DEBUG("volkDrv")
 }
 
 void volkPushFile(void) {
-	MESSSAGE_DEBUG("volkPushFile")
+	SMSG_DEBUG("volkPushFile")
 }
 
 void volkXFCB(void) {
-	MESSSAGE_DEBUG("volkXFCB")
+	SMSG_DEBUG("volkXFCB")
 }
 
 void volkKernelDotScr(void) {
-	MESSSAGE_DEBUG("volkKernelDotScr")
+	SMSG_DEBUG("volkKernelDotScr")
 }
 
 void volkAsciz(void) {
-	MESSSAGE_DEBUG("volkAsciz")
+	SMSG_DEBUG("volkAsciz")
 }
 
 void volkToAsciz(void) {
-	MESSSAGE_DEBUG("volkToAsciz")
+	SMSG_DEBUG("volkToAsciz")
 }
 
 void volkCounted(void) {
-	MESSSAGE_DEBUG("volkCounted")
+	SMSG_DEBUG("volkCounted")
 }
 
 void volkPCStore(void) {
-	MESSSAGE_DEBUG("volkPCStore")
+	SMSG_DEBUG("volkPCStore")
 }
 
 void volkPCFetch(void) {
-	MESSSAGE_DEBUG("volkPCFetch")
+	SMSG_DEBUG("volkPCFetch")
 }
 
 void volkListStore(void) {
-	MESSSAGE_DEBUG("volkListStore")
+	SMSG_DEBUG("volkListStore")
 }
 
 void volkCharOut(void) {
-	MESSSAGE_DEBUG("volkCharOut")
+	SMSG_DEBUG("volkCharOut")
 }
 
 void volkEmptyKeys(void) {
-	MESSSAGE_DEBUG("volkEmptyKeys")
+	SMSG_DEBUG("volkEmptyKeys")
 }
 
 void volkZKeyFetch(void) {
-	MESSSAGE_DEBUG("volkZKeyFetch")
+	SMSG_DEBUG("volkZKeyFetch")
 }
 
 void volkLMove(void) {
-	MESSSAGE_DEBUG("volkLMove")
+	SMSG_DEBUG("volkLMove")
 }
 
 void volkLType(void) {
-	MESSSAGE_DEBUG("volkLType")
+	SMSG_DEBUG("volkLType")
 }
 
 void volkLCFetch(void) {
-	MESSSAGE_DEBUG("volkLCFetch")
+	SMSG_DEBUG("volkLCFetch")
 }
 
 void volkReturnCode(void) {
-	MESSSAGE_DEBUG("volkReturnCode")
+	SMSG_DEBUG("volkReturnCode")
 }
 
 void volkTrim(void) {
-	MESSSAGE_DEBUG("volkTrim")
+	SMSG_DEBUG("volkTrim")
 }
 
 void volkQDiskError(void) {
-	MESSSAGE_DEBUG("volkQDiskError")
+	SMSG_DEBUG("volkQDiskError")
 }
 
 void volkErrorNum(void) {
-	MESSSAGE_DEBUG("volkErrorNum")
+	SMSG_DEBUG("volkErrorNum")
 }
 
 void volkVocs(void) {
-	MESSSAGE_DEBUG("volkVocs")
+	SMSG_DEBUG("volkVocs")
 }
 
 void volkLastTick(void) {
-	MESSSAGE_DEBUG("volkLastTick")
+	SMSG_DEBUG("volkLastTick")
 }
 
 void volkHave(void) {
-	MESSSAGE_DEBUG("volkHave")
+	SMSG_DEBUG("volkHave")
 }
 
 void volkZCapital(void) {
-	MESSSAGE_DEBUG("volkZCapital")
+	SMSG_DEBUG("volkZCapital")
 }
 
 void volkStarLoop(void) {
-	MESSSAGE_DEBUG("volkStarLoop")
+	SMSG_DEBUG("volkStarLoop")
 }
 
 void volkBSlashSeg(void) {
-	MESSSAGE_DEBUG("volkBSlashSeg")
+	SMSG_DEBUG("volkBSlashSeg")
 }
 
 void volkDSFetch(void) {
-	MESSSAGE_DEBUG("volkDSFetch")
+	SMSG_DEBUG("volkDSFetch")
 }
 
 void volkFileLink(void) {
-	MESSSAGE_DEBUG("volkFileLink")
+	SMSG_DEBUG("volkFileLink")
 }
 
 void volkAborted(void) {
-	MESSSAGE_DEBUG("volkAborted")
+	SMSG_DEBUG("volkAborted")
 }
 
 #endif

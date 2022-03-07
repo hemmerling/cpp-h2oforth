@@ -6,971 +6,971 @@
 /* Primitives */
 
 void aimTASK(void) {
-	MESSSAGE_DEBUG("aimTASK")
+	SMSG_DEBUG("aimTASK")
 }
 
 void aimDotS(void) {
-	MESSSAGE_DEBUG("aimDotS")
+	SMSG_DEBUG("aimDotS")
 }
 
 void aimMon(void) {
-	MESSSAGE_DEBUG("aimMon")
+	SMSG_DEBUG("aimMon")
 }
 
 void aimHang(void) {
-	MESSSAGE_DEBUG("aimHang")
+	SMSG_DEBUG("aimHang")
 }
 
 void aimQTTY(void) {
-	MESSSAGE_DEBUG("aimQTTY")
+	SMSG_DEBUG("aimQTTY")
 }
 
 void aimVList(void) {
-	MESSSAGE_DEBUG("aimVList")
+	SMSG_DEBUG("aimVList")
 }
 
 void aimQ(void) {
-	MESSSAGE_DEBUG("aimQ")
+	SMSG_DEBUG("aimQ")
 }
 
 void aimDot(void) {
-	MESSSAGE_DEBUG("aimDot")
+	SMSG_DEBUG("aimDot")
 }
 
 void aimDotR(void) {
-	MESSSAGE_DEBUG("aimDotR")
+	SMSG_DEBUG("aimDotR")
 }
 
 void aimDDot(void) {
-	MESSSAGE_DEBUG("aimDDot")
+	SMSG_DEBUG("aimDDot")
 }
 
 void aimDDotR(void) {
-	MESSSAGE_DEBUG("aimDDotR")
+	SMSG_DEBUG("aimDDotR")
 }
 
 void aimNumS(void) {
-	MESSSAGE_DEBUG("aimNumS")
+	SMSG_DEBUG("aimNumS")
 }
 
 void aimNum(void) {
-	MESSSAGE_DEBUG("aimNum")
+	SMSG_DEBUG("aimNum")
 }
 
 void aimSign(void) {
-	MESSSAGE_DEBUG("aimSign")
+	SMSG_DEBUG("aimSign")
 }
 
 void aimNumGreater(void) {
-	MESSSAGE_DEBUG("aimNumGreater")
+	SMSG_DEBUG("aimNumGreater")
 }
 
 void aimLessNum(void) {
-	MESSSAGE_DEBUG("aimLessNum")
+	SMSG_DEBUG("aimLessNum")
 }
 
 void aimSpaces(void) {
-	MESSSAGE_DEBUG("aimSpaces")
+	SMSG_DEBUG("aimSpaces")
 }
 
 void aimWhile(void) {
-	MESSSAGE_DEBUG("aimWhile")
+	SMSG_DEBUG("aimWhile")
 }
 
 void aimElse(void) {
-	MESSSAGE_DEBUG("aimElse")
+	SMSG_DEBUG("aimElse")
 }
 
 void aimIf(void) {
-	MESSSAGE_DEBUG("aimIf")
+	SMSG_DEBUG("aimIf")
 }
 
 void aimRepeat(void) {
-	MESSSAGE_DEBUG("aimRepeat")
+	SMSG_DEBUG("aimRepeat")
 }
 
 void aimAgain(void) {
-	MESSSAGE_DEBUG("aimAgain")
+	SMSG_DEBUG("aimAgain")
 }
 
 void aimEnd(void) {
-	MESSSAGE_DEBUG("aimEnd")
+	SMSG_DEBUG("aimEnd")
 }
 
 void aimUntil(void) {
-	MESSSAGE_DEBUG("aimUntil")
+	SMSG_DEBUG("aimUntil")
 }
 
 void aimPlusLoop(void) {
-	MESSSAGE_DEBUG("aimPlusLoop")
+	SMSG_DEBUG("aimPlusLoop")
 }
 
 void aimLoop(void) {
-	MESSSAGE_DEBUG("aimLoop")
+	SMSG_DEBUG("aimLoop")
 }
 
 void aimDo(void) {
-	MESSSAGE_DEBUG("aimDo")
+	SMSG_DEBUG("aimDo")
 }
 
 void aimThen(void) {
-	MESSSAGE_DEBUG("aimThen")
+	SMSG_DEBUG("aimThen")
 }
 
 void aimEndIf(void) {
-	MESSSAGE_DEBUG("aimEndIf")
+	SMSG_DEBUG("aimEndIf")
 }
 
 void aimBegin(void) {
-	MESSSAGE_DEBUG("aimBegin")
+	SMSG_DEBUG("aimBegin")
 }
 
 void aimForget(void) {
-	MESSSAGE_DEBUG("aimForget")
+	SMSG_DEBUG("aimForget")
 }
 
 void aimTick(void) {
-	MESSSAGE_DEBUG("aimTick")
+	SMSG_DEBUG("aimTick")
 }
 
 void aimRSlashW(void) {
-	MESSSAGE_DEBUG("aimRSlashW")
+	SMSG_DEBUG("aimRSlashW")
 }
 
 void aimTo(void) {
-	MESSSAGE_DEBUG("aimTo")
+	SMSG_DEBUG("aimTo")
 }
 
 void aimLoad(void) {
-	MESSSAGE_DEBUG("aimLoad")
+	SMSG_DEBUG("aimLoad")
 }
 
 void aimMessage(void) {
-	MESSSAGE_DEBUG("aimMessage")
+	SMSG_DEBUG("aimMessage")
 }
 
 void aimDotLine(void) {
-	MESSSAGE_DEBUG("aimDotLine")
+	SMSG_DEBUG("aimDotLine")
 }
 
 void aimZLine(void) {
-	MESSSAGE_DEBUG("aimZLine")
+	SMSG_DEBUG("aimZLine")
 }
 
 void aimDump(void) {
-	MESSSAGE_DEBUG("aimDump")
+	SMSG_DEBUG("aimDump")
 }
 
 void aimFlush(void) {
-	MESSSAGE_DEBUG("aimFlush")
+	SMSG_DEBUG("aimFlush")
 }
 
 void aimBlock(void) {
-	MESSSAGE_DEBUG("aimBlock")
+	SMSG_DEBUG("aimBlock")
 }
 
 void aimBuffer(void) {
-	MESSSAGE_DEBUG("aimBuffer")
+	SMSG_DEBUG("aimBuffer")
 }
 
 void aimEmptyBuffers(void) {
-	MESSSAGE_DEBUG("aimEmptyBuffers")
+	SMSG_DEBUG("aimEmptyBuffers")
 }
 
 void aimUpdate(void) {
-	MESSSAGE_DEBUG("aimUpdate")
+	SMSG_DEBUG("aimUpdate")
 }
 
 void aimPlusBuf(void) {
-	MESSSAGE_DEBUG("aimPlusBuf")
+	SMSG_DEBUG("aimPlusBuf")
 }
 
 void aimMSlashMOD(void) {
-	MESSSAGE_DEBUG("aimMSlashMOD")
+	SMSG_DEBUG("aimMSlashMOD")
 }
 
 void aimStarSlash(void) {
-	MESSSAGE_DEBUG("aimStarSlash")
+	SMSG_DEBUG("aimStarSlash")
 }
 
 void aimStarSlashMOD(void) {
-	MESSSAGE_DEBUG("aimStarSlashMOD")
+	SMSG_DEBUG("aimStarSlashMOD")
 }
 
 void aimMOD(void) {
-	MESSSAGE_DEBUG("aimMOD")
+	SMSG_DEBUG("aimMOD")
 }
 
 void aimSlash(void) {
-	MESSSAGE_DEBUG("aimSlash")
+	SMSG_DEBUG("aimSlash")
 }
 
 void aimSlashMOD(void) {
-	MESSSAGE_DEBUG("aimSlashMOD")
+	SMSG_DEBUG("aimSlashMOD")
 }
 
 void aimStar(void) {
-	MESSSAGE_DEBUG("aimStar")
+	SMSG_DEBUG("aimStar")
 }
 
 void aimMSlash(void) {
-	MESSSAGE_DEBUG("aimMSlash")
+	SMSG_DEBUG("aimMSlash")
 }
 
 void aimMStar(void) {
-	MESSSAGE_DEBUG("aimMStar")
+	SMSG_DEBUG("aimMStar")
 }
 
 void aimMax(void) {
-	MESSSAGE_DEBUG("aimMax")
+	SMSG_DEBUG("aimMax")
 }
 
 void aimMin(void) {
-	MESSSAGE_DEBUG("aimMin")
+	SMSG_DEBUG("aimMin")
 }
 
 void aimDAbs(void) {
-	MESSSAGE_DEBUG("aimDAbs")
+	SMSG_DEBUG("aimDAbs")
 }
 
 void aimAbs(void) {
-	MESSSAGE_DEBUG("aimAbs")
+	SMSG_DEBUG("aimAbs")
 }
 
 void aimDPlusMinus(void) {
-	MESSSAGE_DEBUG("aimDPlusMinus")
+	SMSG_DEBUG("aimDPlusMinus")
 }
 
 void aimPlusMinus(void) {
-	MESSSAGE_DEBUG("aimPlusMinus")
+	SMSG_DEBUG("aimPlusMinus")
 }
 
 void aimSToD(void) {
-	MESSSAGE_DEBUG("aimSToD")
+	SMSG_DEBUG("aimSToD")
 }
 
 void aimCold(void) {
-	MESSSAGE_DEBUG("aimCold")
+	SMSG_DEBUG("aimCold")
 }
 
 void aimAbort(void) {
-	MESSSAGE_DEBUG("aimAbort")
+	SMSG_DEBUG("aimAbort")
 }
 
 void aimQuit(void) {
-	MESSSAGE_DEBUG("aimQuit")
+	SMSG_DEBUG("aimQuit")
 }
 
 void aimParen(void) {
-	MESSSAGE_DEBUG("aimParen")
+	SMSG_DEBUG("aimParen")
 }
 
 void aimDefinitions(void) {
-	MESSSAGE_DEBUG("aimDefinitions")
+	SMSG_DEBUG("aimDefinitions")
 }
 
 void aimAssembler(void) {
-	MESSSAGE_DEBUG("aimAssembler")
+	SMSG_DEBUG("aimAssembler")
 }
 
 void aimForth(void) {
-	MESSSAGE_DEBUG("aimForth")
+	SMSG_DEBUG("aimForth")
 }
 
 void aimVocabulary(void) {
-	MESSSAGE_DEBUG("aimVocabulary")
+	SMSG_DEBUG("aimVocabulary")
 }
 
 void aimImmediate(void) {
-	MESSSAGE_DEBUG("aimImmediate")
+	SMSG_DEBUG("aimImmediate")
 }
 
 void aimInterpret(void) {
-	MESSSAGE_DEBUG("aimInterpret")
+	SMSG_DEBUG("aimInterpret")
 }
 
 void aimQStack(void) {
-	MESSSAGE_DEBUG("aimQStack")
+	SMSG_DEBUG("aimQStack")
 }
 
 void aimDLiteral(void) {
-	MESSSAGE_DEBUG("aimDLiteral")
+	SMSG_DEBUG("aimDLiteral")
 }
 
 void aimLiteral(void) {
-	MESSSAGE_DEBUG("aimLiteral")
+	SMSG_DEBUG("aimLiteral")
 }
 
 void aimXCompile(void) {
-	MESSSAGE_DEBUG("aimXCompile")
+	SMSG_DEBUG("aimXCompile")
 }
 
 void aimCreate(void) {
-	MESSSAGE_DEBUG("aimCreate")
+	SMSG_DEBUG("aimCreate")
 }
 
 void aimIDDot(void) {
-	MESSSAGE_DEBUG("aimIDDot")
+	SMSG_DEBUG("aimIDDot")
 }
 
 void aimError(void) {
-	MESSSAGE_DEBUG("aimIDDot")
+	SMSG_DEBUG("aimIDDot")
 }
 
 void aimZABORT(void) {
-	MESSSAGE_DEBUG("aimZABORT")
+	SMSG_DEBUG("aimZABORT")
 }
 
 void aimMinusFind(void) {
-	MESSSAGE_DEBUG("aimMinusFind")
+	SMSG_DEBUG("aimMinusFind")
 }
 
 void aimNumber(void) {
-	MESSSAGE_DEBUG("aimNumber")
+	SMSG_DEBUG("aimNumber")
 }
 
 void aimZNumber(void) {
-	MESSSAGE_DEBUG("aimZNumber")
+	SMSG_DEBUG("aimZNumber")
 }
 
 void aimWord(void) {
-	MESSSAGE_DEBUG("aimWord")
+	SMSG_DEBUG("aimWord")
 }
 
 void aimPad(void) {
-	MESSSAGE_DEBUG("aimPad")
+	SMSG_DEBUG("aimPad")
 }
 
 void aimHold(void) {
-	MESSSAGE_DEBUG("aimHold")
+	SMSG_DEBUG("aimHold")
 }
 
 void aimBlanks(void) {
-	MESSSAGE_DEBUG("aimBlanks")
+	SMSG_DEBUG("aimBlanks")
 }
 
 void aimErase(void) {
-	MESSSAGE_DEBUG("aimErase")
+	SMSG_DEBUG("aimErase")
 }
 
 void aimFill(void) {
-	MESSSAGE_DEBUG("aimFill")
+	SMSG_DEBUG("aimFill")
 }
 
 void aimFetch(void) {
-	MESSSAGE_DEBUG("aimFetch")
+	SMSG_DEBUG("aimFetch")
 }
 
 void aimQuery(void) {
-	MESSSAGE_DEBUG("aimQuery")
+	SMSG_DEBUG("aimQuery")
 }
 
 void aimExpect(void) {
-	MESSSAGE_DEBUG("aimExpect")
+	SMSG_DEBUG("aimExpect")
 }
 
 void aimDotQuote(void) {
-	MESSSAGE_DEBUG("aimDotQuote")
+	SMSG_DEBUG("aimDotQuote")
 }
 
 void aimParenDotQuote(void) {
-	MESSSAGE_DEBUG("aimParenDotQuote")
+	SMSG_DEBUG("aimParenDotQuote")
 }
 
 void aimMinusTrailing(void) {
-	MESSSAGE_DEBUG("aimMinusTrailing")
+	SMSG_DEBUG("aimMinusTrailing")
 }
 
 void aimType(void) {
-	MESSSAGE_DEBUG("aimType")
+	SMSG_DEBUG("aimType")
 }
 
 void aimCount(void) {
-	MESSSAGE_DEBUG("aimCount")
+	SMSG_DEBUG("aimCount")
 }
 
 void aimDoes(void) {
-	MESSSAGE_DEBUG("aimDoes")
+	SMSG_DEBUG("aimDoes")
 }
 
 void aimBuilds(void) {
-	MESSSAGE_DEBUG("aimBuilds")
+	SMSG_DEBUG("aimBuilds")
 }
 
 void aimSemicolonCode(void) {
-	MESSSAGE_DEBUG("aimSemicolonCode")
+	SMSG_DEBUG("aimSemicolonCode")
 }
 
 void aimZSemicolonCode(void) {
-	MESSSAGE_DEBUG("aimZSemicolonCode")
+	SMSG_DEBUG("aimZSemicolonCode")
 }
 
 void aimDecimal(void) {
-	MESSSAGE_DEBUG("aimDecimal")
+	SMSG_DEBUG("aimDecimal")
 }
 
 void aimHex(void) {
-	MESSSAGE_DEBUG("aimHex")
+	SMSG_DEBUG("aimHex")
 }
 
 void aimSmudge(void) {
-	MESSSAGE_DEBUG("aimSmudge")
+	SMSG_DEBUG("aimSmudge")
 }
 
 void aimRightBracket(void) {
-	MESSSAGE_DEBUG("aimRightBracket")
+	SMSG_DEBUG("aimRightBracket")
 }
 
 void aimLeftBracket(void) {
-	MESSSAGE_DEBUG("aimLeftBracket")
+	SMSG_DEBUG("aimLeftBracket")
 }
 
 void aimCompile(void) {
-	MESSSAGE_DEBUG("aimCompile")
+	SMSG_DEBUG("aimCompile")
 }
 
 void aimQCSP(void) {
-	MESSSAGE_DEBUG("aimQCSP")
+	SMSG_DEBUG("aimQCSP")
 }
 
 void aimQPairs(void) {
-	MESSSAGE_DEBUG("aimQPairs")
+	SMSG_DEBUG("aimQPairs")
 }
 
 void aimQExec(void) {
-	MESSSAGE_DEBUG("aimQExec")
+	SMSG_DEBUG("aimQExec")
 }
 
 void aimQComp(void) {
-	MESSSAGE_DEBUG("aimQComp")
+	SMSG_DEBUG("aimQComp")
 }
 
 void aimQError(void) {
-	MESSSAGE_DEBUG("aimQError")
+	SMSG_DEBUG("aimQError")
 }
 
 void aimStoreCSP(void) {
-	MESSSAGE_DEBUG("aimStoreCSP")
+	SMSG_DEBUG("aimStoreCSP")
 }
 
 void aimPFA(void) {
-	MESSSAGE_DEBUG("aimPFA")
+	SMSG_DEBUG("aimPFA")
 }
 
 void aimNFA(void) {
-	MESSSAGE_DEBUG("aimNFA")
+	SMSG_DEBUG("aimNFA")
 }
 
 void aimCFA(void) {
-	MESSSAGE_DEBUG("aimCFA")
+	SMSG_DEBUG("aimCFA")
 }
 
 void aimLFA(void) {
-	MESSSAGE_DEBUG("aimLFA")
+	SMSG_DEBUG("aimLFA")
 }
 
 void aimLatest(void) {
-	MESSSAGE_DEBUG("aimLatest")
+	SMSG_DEBUG("aimLatest")
 }
 
 void aimMinusDup(void) {
-	MESSSAGE_DEBUG("aimMinusDup")
+	SMSG_DEBUG("aimMinusDup")
 }
 
 void aimSpace(void) {
-	MESSSAGE_DEBUG("aimSpace")
+	SMSG_DEBUG("aimSpace")
 }
 
 void aimPick(void) {
-	MESSSAGE_DEBUG("aimSpace")
+	SMSG_DEBUG("aimSpace")
 }
 
 void aimRot(void) {
-	MESSSAGE_DEBUG("aimRot")
+	SMSG_DEBUG("aimRot")
 }
 
 void aimGreater(void) {
-	MESSSAGE_DEBUG("aimGreater")
+	SMSG_DEBUG("aimGreater")
 }
 
 void aimLess(void) {
-	MESSSAGE_DEBUG("aimLess")
+	SMSG_DEBUG("aimLess")
 }
 
 void aimULess(void) {
-	MESSSAGE_DEBUG("aimULess")
+	SMSG_DEBUG("aimULess")
 }
 
 void aimEqual(void) {
-	MESSSAGE_DEBUG("aimULess")
+	SMSG_DEBUG("aimULess")
 }
 
 void aimMinus(void) {
-	MESSSAGE_DEBUG("aimMinus")
+	SMSG_DEBUG("aimMinus")
 }
 
 void aimCComma(void) {
-	MESSSAGE_DEBUG("aimCComma")
+	SMSG_DEBUG("aimCComma")
 }
 
 void aimComma(void) {
-	MESSSAGE_DEBUG("aimComma")
+	SMSG_DEBUG("aimComma")
 }
 
 void aimAllot(void) {
-	MESSSAGE_DEBUG("aimAllot")
+	SMSG_DEBUG("aimAllot")
 }
 
 void aimHere(void) {
-	MESSSAGE_DEBUG("aimHere")
+	SMSG_DEBUG("aimHere")
 }
 
 void aimTwoMinus(void) {
-	MESSSAGE_DEBUG("aimTwoMinus")
+	SMSG_DEBUG("aimTwoMinus")
 }
 
 void aimOneMinus(void) {
-	MESSSAGE_DEBUG("aimOneMinus")
+	SMSG_DEBUG("aimOneMinus")
 }
 
 void aimTwoPlus(void) {
-	MESSSAGE_DEBUG("aimTwoPlus")
+	SMSG_DEBUG("aimTwoPlus")
 }
 
 void aimOnePLus(void) {
-	MESSSAGE_DEBUG("aimOnePLus")
+	SMSG_DEBUG("aimOnePLus")
 }
 
 void aimBSlashSCR(void) {
-	MESSSAGE_DEBUG("aimBSlashSCR")
+	SMSG_DEBUG("aimBSlashSCR")
 }
 
 void aimBSlashBUF(void) {
-	MESSSAGE_DEBUG("aimBSlashBUF")
+	SMSG_DEBUG("aimBSlashBUF")
 }
 
 void aimLimit(void) {
-	MESSSAGE_DEBUG("aimLimit")
+	SMSG_DEBUG("aimLimit")
 }
 
 void aimFirst(void) {
-	MESSSAGE_DEBUG("aimFirst")
+	SMSG_DEBUG("aimFirst")
 }
 
 void aimCSlashL(void) {
-	MESSSAGE_DEBUG("aimCSlashL")
+	SMSG_DEBUG("aimCSlashL")
 }
 
 void aimMode(void) {
-	MESSSAGE_DEBUG("aimMode")
+	SMSG_DEBUG("aimMode")
 }
 
 void aimHLD(void) {
-	MESSSAGE_DEBUG("aimHLD")
+	SMSG_DEBUG("aimHLD")
 }
 
 void aimCSP(void) {
-	MESSSAGE_DEBUG("aimCSP")
+	SMSG_DEBUG("aimCSP")
 }
 
 void aimDPL(void) {
-	MESSSAGE_DEBUG("aimDPL")
+	SMSG_DEBUG("aimDPL")
 }
 
 void aimBase(void) {
-	MESSSAGE_DEBUG("aimBase")
+	SMSG_DEBUG("aimBase")
 }
 
 void aimState(void) {
-	MESSSAGE_DEBUG("aimState")
+	SMSG_DEBUG("aimState")
 }
 
 void aimCurrent(void) {
-	MESSSAGE_DEBUG("aimCurrent")
+	SMSG_DEBUG("aimCurrent")
 }
 
 void aimContext(void) {
-	MESSSAGE_DEBUG("aimContext")
+	SMSG_DEBUG("aimContext")
 }
 
 void aimOffset(void) {
-	MESSSAGE_DEBUG("aimOffset")
+	SMSG_DEBUG("aimOffset")
 }
 
 void aimSCR(void) {
-	MESSSAGE_DEBUG("aimSCR")
+	SMSG_DEBUG("aimSCR")
 }
 
 void aimIn(void) {
-	MESSSAGE_DEBUG("aimIn")
+	SMSG_DEBUG("aimIn")
 }
 
 void aimBLK(void) {
-	MESSSAGE_DEBUG("aimBLK")
+	SMSG_DEBUG("aimBLK")
 }
 
 void aimUEmit(void) {
-	MESSSAGE_DEBUG("aimUEmit")
+	SMSG_DEBUG("aimUEmit")
 }
 
 void aimUKey(void) {
-	MESSSAGE_DEBUG("aimUKey")
+	SMSG_DEBUG("aimUKey")
 }
 
 void aimURSlashW(void) {
-	MESSSAGE_DEBUG("aimURSlashW")
+	SMSG_DEBUG("aimURSlashW")
 }
 
 void aimUAbort(void) {
-	MESSSAGE_DEBUG("aimUAbort")
+	SMSG_DEBUG("aimUAbort")
 }
 
 void aimUBSlashSCR(void) {
-	MESSSAGE_DEBUG("aimUBSlashSCR")
+	SMSG_DEBUG("aimUBSlashSCR")
 }
 
 void aimUBSlashBUF(void) {
-	MESSSAGE_DEBUG("aimUBSlashBUF")
+	SMSG_DEBUG("aimUBSlashBUF")
 }
 
 void aimULimit(void) {
-	MESSSAGE_DEBUG("aimULimit")
+	SMSG_DEBUG("aimULimit")
 }
 
 void aimUFirst(void) {
-	MESSSAGE_DEBUG("aimUFirst")
+	SMSG_DEBUG("aimUFirst")
 }
 
 void aimUCSlashL(void) {
-	MESSSAGE_DEBUG("aimUCSlashL")
+	SMSG_DEBUG("aimUCSlashL")
 }
 
 void aimPrev(void) {
-	MESSSAGE_DEBUG("aimPrev")
+	SMSG_DEBUG("aimPrev")
 }
 
 void aimUse(void) {
-	MESSSAGE_DEBUG("aimUse")
+	SMSG_DEBUG("aimUse")
 }
 
 void aimVocLink(void) {
-	MESSSAGE_DEBUG("aimVocLink")
+	SMSG_DEBUG("aimVocLink")
 }
 
 void aimDP(void) {
-	MESSSAGE_DEBUG("aimDP")
+	SMSG_DEBUG("aimDP")
 }
 
 void aimFence(void) {
-	MESSSAGE_DEBUG("aimFence")
+	SMSG_DEBUG("aimFence")
 }
 
 void aimWarning(void) {
-	MESSSAGE_DEBUG("aimWarning")
+	SMSG_DEBUG("aimWarning")
 }
 
 void aimWidth(void) {
-	MESSSAGE_DEBUG("aimWidth")
+	SMSG_DEBUG("aimWidth")
 }
 
 void aimTIB(void) {
-	MESSSAGE_DEBUG("aimTIB")
+	SMSG_DEBUG("aimTIB")
 }
 
 void aimR0(void) {
-	MESSSAGE_DEBUG("aimR0")
+	SMSG_DEBUG("aimR0")
 }
 
 void aimS0(void) {
-	MESSSAGE_DEBUG("aimS0")
+	SMSG_DEBUG("aimS0")
 }
 
 void aimBL(void) {
-	MESSSAGE_DEBUG("aimBL")
+	SMSG_DEBUG("aimBL")
 }
 
 void aimThree(void) {
-	MESSSAGE_DEBUG("aimThree")
+	SMSG_DEBUG("aimThree")
 }
 
 void aimTwo(void) {
-	MESSSAGE_DEBUG("aimTwo")
+	SMSG_DEBUG("aimTwo")
 }
 
 void aimOne(void) {
-	MESSSAGE_DEBUG("aimOne")
+	SMSG_DEBUG("aimOne")
 }
 
 void aimZero(void) {
-	MESSSAGE_DEBUG("aimZero")
+	SMSG_DEBUG("aimZero")
 }
 
 void aimUser(void) {
-	MESSSAGE_DEBUG("aimUser")
+	SMSG_DEBUG("aimUser")
 }
 
 void aimCode(void) {
-	MESSSAGE_DEBUG("aimCode")
+	SMSG_DEBUG("aimCode")
 }
 
 void aimVariable(void) {
-	MESSSAGE_DEBUG("aimVariable")
+	SMSG_DEBUG("aimVariable")
 }
 
 void aimConstant(void) {
-	MESSSAGE_DEBUG("aimConstant")
+	SMSG_DEBUG("aimConstant")
 }
 
 void aimSemicolon(void) {
-	MESSSAGE_DEBUG("aimSemicolon")
+	SMSG_DEBUG("aimSemicolon")
 }
 
 void aimColon(void) {
-	MESSSAGE_DEBUG("aimColon")
+	SMSG_DEBUG("aimColon")
 }
 
 void aimCStore(void) {
-	MESSSAGE_DEBUG("aimCStore")
+	SMSG_DEBUG("aimCStore")
 }
 
 void aimStore(void) {
-	MESSSAGE_DEBUG("aimStore")
+	SMSG_DEBUG("aimStore")
 }
 
 void aimCFetch(void) {
-	MESSSAGE_DEBUG("aimCFetch")
+	SMSG_DEBUG("aimCFetch")
 }
 
 void aimToggle(void) {
-	MESSSAGE_DEBUG("aimToggle")
+	SMSG_DEBUG("aimToggle")
 }
 
 void aimPlusStore(void) {
-	MESSSAGE_DEBUG("aimPlusStore")
+	SMSG_DEBUG("aimPlusStore")
 }
 
 void aimBounds(void) {
-	MESSSAGE_DEBUG("aimBounds")
+	SMSG_DEBUG("aimBounds")
 }
 
 void aimTwoDup(void) {
-	MESSSAGE_DEBUG("aimTwoDup")
+	SMSG_DEBUG("aimTwoDup")
 }
 
 void aimDup(void) {
-	MESSSAGE_DEBUG("aimDup")
+	SMSG_DEBUG("aimDup")
 }
 
 void aimSwap(void) {
-	MESSSAGE_DEBUG("aimSwap")
+	SMSG_DEBUG("aimSwap")
 }
 
 void aimTwoDrop(void) {
-	MESSSAGE_DEBUG("aimTwoDrop")
+	SMSG_DEBUG("aimTwoDrop")
 }
 
 void aimDrop(void) {
-	MESSSAGE_DEBUG("aimDrop")
+	SMSG_DEBUG("aimDrop")
 }
 
 void aimOver(void) {
-	MESSSAGE_DEBUG("aimOver")
+	SMSG_DEBUG("aimOver")
 }
 
 void aimDNegate(void) {
-	MESSSAGE_DEBUG("aimDNegate")
+	SMSG_DEBUG("aimDNegate")
 }
 
 void aimNegate(void) {
-	MESSSAGE_DEBUG("aimNegate")
+	SMSG_DEBUG("aimNegate")
 }
 
 void aimDPlus(void) {
-	MESSSAGE_DEBUG("aimDPlus")
+	SMSG_DEBUG("aimDPlus")
 }
 
 void aimPlus(void) {
-	MESSSAGE_DEBUG("aimPlus")
+	SMSG_DEBUG("aimPlus")
 }
 
 void aimZeroLess(void) {
-	MESSSAGE_DEBUG("aimZeroLess")
+	SMSG_DEBUG("aimZeroLess")
 }
 
 void aimNot(void) {
-	MESSSAGE_DEBUG("aimNot")
+	SMSG_DEBUG("aimNot")
 }
 
 void aimZeroEqual(void) {
-	MESSSAGE_DEBUG("aimZeroEqual")
+	SMSG_DEBUG("aimZeroEqual")
 }
 
 void aimR(void) {
-	MESSSAGE_DEBUG("aimR")
+	SMSG_DEBUG("aimR")
 }
 
 void aimRGreater(void) {
-	MESSSAGE_DEBUG("aimRGreater")
+	SMSG_DEBUG("aimRGreater")
 }
 
 void aimToR(void) {
-	MESSSAGE_DEBUG("aimToR")
+	SMSG_DEBUG("aimToR")
 }
 
 void aimLeave(void) {
-	MESSSAGE_DEBUG("aimLeave")
+	SMSG_DEBUG("aimLeave")
 }
 
 void aimSemicolonS(void) {
-	MESSSAGE_DEBUG("aimSemicolonS")
+	SMSG_DEBUG("aimSemicolonS")
 }
 
 void aimRPFetch(void) {
-	MESSSAGE_DEBUG("aimRPFetch")
+	SMSG_DEBUG("aimRPFetch")
 }
 
 void aimRPStore(void) {
-	MESSSAGE_DEBUG("aimRPStore")
+	SMSG_DEBUG("aimRPStore")
 }
 
 void aimSPStore(void) {
-	MESSSAGE_DEBUG("aimSPStore")
+	SMSG_DEBUG("aimSPStore")
 }
 
 void aimSPFetch(void) {
-	MESSSAGE_DEBUG("aimSPFetch")
+	SMSG_DEBUG("aimSPFetch")
 }
 
 void aimXor(void) {
-	MESSSAGE_DEBUG("aimXor")
+	SMSG_DEBUG("aimXor")
 }
 
 void aimOr(void) {
-	MESSSAGE_DEBUG("aimOr")
+	SMSG_DEBUG("aimOr")
 }
 
 void aimAnd(void) {
-	MESSSAGE_DEBUG("aimAnd")
+	SMSG_DEBUG("aimAnd")
 }
 
 void aimUSlash(void) {
-	MESSSAGE_DEBUG("aimUSlash")
+	SMSG_DEBUG("aimUSlash")
 }
 
 void aimUStar(void) {
-	MESSSAGE_DEBUG("aimUStar")
+	SMSG_DEBUG("aimUStar")
 }
 
 void aimCMove(void) {
-	MESSSAGE_DEBUG("aimCMove")
+	SMSG_DEBUG("aimCMove")
 }
 
 void aimMinusCR(void) {
-	MESSSAGE_DEBUG("aimMinusCR")
+	SMSG_DEBUG("aimMinusCR")
 }
 
 void aimClose(void) {
-	MESSSAGE_DEBUG("aimClose")
+	SMSG_DEBUG("aimClose")
 }
 
 void aimChain(void) {
-	MESSSAGE_DEBUG("aimChain")
+	SMSG_DEBUG("aimChain")
 }
 
 void aimFinis(void) {
-	MESSSAGE_DEBUG("aimFinis")
+	SMSG_DEBUG("aimFinis")
 }
 
 void aimSource(void) {
-	MESSSAGE_DEBUG("aimSource")
+	SMSG_DEBUG("aimSource")
 }
 
 void aimBaud(void) {
-	MESSSAGE_DEBUG("aimBaud")
+	SMSG_DEBUG("aimBaud")
 }
 
 void aimWrite(void) {
-	MESSSAGE_DEBUG("aimWrite")
+	SMSG_DEBUG("aimWrite")
 }
 
 void aimRead(void) {
-	MESSSAGE_DEBUG("aimRead")
+	SMSG_DEBUG("aimRead")
 }
 
 void aimQOut(void) {
-	MESSSAGE_DEBUG("aimQOut")
+	SMSG_DEBUG("aimQOut")
 }
 
 void aimQIn(void) {
-	MESSSAGE_DEBUG("aimQIn")
+	SMSG_DEBUG("aimQIn")
 }
 
 void aimPut(void) {
-	MESSSAGE_DEBUG("aimPut")
+	SMSG_DEBUG("aimPut")
 }
 
 void aimGet(void) {
-	MESSSAGE_DEBUG("aimGet")
+	SMSG_DEBUG("aimGet")
 }
 
 void aimCR(void) {
-	MESSSAGE_DEBUG("aimCR")
+	SMSG_DEBUG("aimCR")
 }
 
 void aimQTerminal(void) {
-	MESSSAGE_DEBUG("aimQTerminal")
+	SMSG_DEBUG("aimQTerminal")
 }
 
 void aimKey(void) {
-	MESSSAGE_DEBUG("aimKey")
+	SMSG_DEBUG("aimKey")
 }
 
 void aimEmit(void) {
-	MESSSAGE_DEBUG("aimEmit")
+	SMSG_DEBUG("aimEmit")
 }
 
 void aimEnclose(void) {
-	MESSSAGE_DEBUG("aimEnclose")
+	SMSG_DEBUG("aimEnclose")
 }
 
 void aimZFind(void) {
-	MESSSAGE_DEBUG("aimZFind")
+	SMSG_DEBUG("aimZFind")
 }
 
 void aimDigit(void) {
-	MESSSAGE_DEBUG("aimDigit")
+	SMSG_DEBUG("aimDigit")
 }
 
 void aimI(void) {
-	MESSSAGE_DEBUG("aimI")
+	SMSG_DEBUG("aimI")
 }
 
 void aimZDo(void) {
-	MESSSAGE_DEBUG("aimZDo")
+	SMSG_DEBUG("aimZDo")
 }
 
 void aimZPlusLoop(void) {
-	MESSSAGE_DEBUG("aimZPlusLoop")
+	SMSG_DEBUG("aimZPlusLoop")
 }
 
 void aimZeroBranch(void) {
-	MESSSAGE_DEBUG("aimZeroBranch")
+	SMSG_DEBUG("aimZeroBranch")
 }
 
 void aimBranch(void) {
-	MESSSAGE_DEBUG("aimBranch")
+	SMSG_DEBUG("aimBranch")
 }
 
 void aimExecute(void) {
-	MESSSAGE_DEBUG("aimExecute")
+	SMSG_DEBUG("aimExecute")
 }
 
 void aimClit(void) {
-	MESSSAGE_DEBUG("aimClit")
+	SMSG_DEBUG("aimClit")
 }
 
 void aimLit(void) {
-	MESSSAGE_DEBUG("aimClit")
+	SMSG_DEBUG("aimClit")
 }
 
 #endif
