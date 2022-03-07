@@ -6,534 +6,534 @@
 
 /* Control Commands */
 void qforthAgain(void) {
-	SMSG_DEBUG("qforthAgain")
+	PSMSG_DEBUG("qforthAgain")
 }
 
 void qforthBegin(void) {
-	SMSG_DEBUG("qforthBegin")
+	PSMSG_DEBUG("qforthBegin")
 }
 
 void qforthDo(void) {
-	SMSG_DEBUG("qforthDo")
+	PSMSG_DEBUG("qforthDo")
 }
 
 void qforthNumDo(void) {
-	SMSG_DEBUG("qforthNumDo")
+	PSMSG_DEBUG("qforthNumDo")
 }
 
 void qforthQDo(void) {
-	SMSG_DEBUG("qforthQDo")
+	PSMSG_DEBUG("qforthQDo")
 }
 
 void qforthLoop(void) {
-	SMSG_DEBUG("qforthLoop")
+	PSMSG_DEBUG("qforthLoop")
 }
 
 void qforthNumLoop(void) {
-	SMSG_DEBUG("qforthNumLoop")
+	PSMSG_DEBUG("qforthNumLoop")
 }
 
 void qforthPlusLoop(void) {
-	SMSG_DEBUG("qforthPlusLoop")
+	PSMSG_DEBUG("qforthPlusLoop")
 }
 
 void qforthQLeave(void) {
-	SMSG_DEBUG("qforthQLeave")
+	PSMSG_DEBUG("qforthQLeave")
 }
 
 void qforthMinusQLeave(void) {
-	SMSG_DEBUG("qforthMinusQLeave")
+	PSMSG_DEBUG("qforthMinusQLeave")
 }
 
 void qforthRepeat(void) {
-	SMSG_DEBUG("qforthRepeat")
+	PSMSG_DEBUG("qforthRepeat")
 }
 
 void qforthUntil(void) {
-	SMSG_DEBUG("qforthUntil")
+	PSMSG_DEBUG("qforthUntil")
 }
 
 void qforthWhile(void) {
-	SMSG_DEBUG("qforthWhile")
+	PSMSG_DEBUG("qforthWhile")
 }
 
 void qforthCase(void) {
-	SMSG_DEBUG("qforthCase")
+	PSMSG_DEBUG("qforthCase")
 }
 
 void qforthElse(void) {
-	SMSG_DEBUG("qforthElse")
+	PSMSG_DEBUG("qforthElse")
 }
 
 void qforthEndCase(void) {
-	SMSG_DEBUG("qforthEndCase")
+	PSMSG_DEBUG("qforthEndCase")
 }
 
 void qforthEndOf(void) {
-	SMSG_DEBUG("qforthEndOf")
+	PSMSG_DEBUG("qforthEndOf")
 }
 
 void qforthExecute(void) {
 	/* Atmel 2004, but not Temic 1994 */
-	SMSG_DEBUG("qforthExecute")
+	PSMSG_DEBUG("qforthExecute")
 }
 
 void qforthIf(void) {
-	SMSG_DEBUG("qforthIf")
+	PSMSG_DEBUG("qforthIf")
 }
 
 void qforthOf(void) {
-	SMSG_DEBUG("qforthOf")
+	PSMSG_DEBUG("qforthOf")
 }
 
 void qforthThen(void) {
-	SMSG_DEBUG("qforthThen")
+	PSMSG_DEBUG("qforthThen")
 }
 
 void qforthCcrFetch(void) {
-	SMSG_DEBUG("qforthCcrFetch")
+	PSMSG_DEBUG("qforthCcrFetch")
 }
 
 void qforthCcrStore(void) {
-	SMSG_DEBUG("qforthCcrStore")
+	PSMSG_DEBUG("qforthCcrStore")
 }
 
 void qforthClrBcf(void) {
-	SMSG_DEBUG("qforthClrBcf")
+	PSMSG_DEBUG("qforthClrBcf")
 }
 
 void qforthEi(void) {
-	SMSG_DEBUG("qforthEi")
+	PSMSG_DEBUG("qforthEi")
 }
 
 void qforthExit(void) {
-	SMSG_DEBUG("qforthExit")
+	PSMSG_DEBUG("qforthExit")
 }
 
 void qforthDi(void) {
-	SMSG_DEBUG("qforthDi")
+	PSMSG_DEBUG("qforthDi")
 }
 
 void qforthSetBcf(void) {
-	SMSG_DEBUG("qforthSetBcf")
+	PSMSG_DEBUG("qforthSetBcf")
 }
 
 void qforthSwi0To7(void) {
-	SMSG_DEBUG("qforthSwi0To7")
+	PSMSG_DEBUG("qforthSwi0To7")
 }
 
 void qforthTogBf(void) {
-	SMSG_DEBUG("qforthTogBf")
+	PSMSG_DEBUG("qforthTogBf")
 }
 
 /* Mathematic Commands */
 void qforthAdd(void) {
-	SMSG_DEBUG("qforthAdd")
+	PSMSG_DEBUG("qforthAdd")
 }
 
 void qforthPlus(void) {
-	SMSG_DEBUG("qforthPlus")
+	PSMSG_DEBUG("qforthPlus")
 }
 
 void qforthPlusStore(void) {
-	SMSG_DEBUG("qforthPlusStore")
+	PSMSG_DEBUG("qforthPlusStore")
 }
 
 void qforthInc(void) {
-	SMSG_DEBUG("qforthInc")
+	PSMSG_DEBUG("qforthInc")
 }
 
 void qforthOnePlus(void) {
-	SMSG_DEBUG("qforthOnePlus")
+	PSMSG_DEBUG("qforthOnePlus")
 }
 
 void qforthOnePlusStore(void) {
-	SMSG_DEBUG("qforthOnePlusStore")
+	PSMSG_DEBUG("qforthOnePlusStore")
 }
 
 void qforthAddC(void) {
-	SMSG_DEBUG("qforthAddC")
+	PSMSG_DEBUG("qforthAddC")
 }
 
 void qforthPlusC(void) {
-	SMSG_DEBUG("qforthPlusC")
+	PSMSG_DEBUG("qforthPlusC")
 }
 
 void qforthDPlus(void) {
-	SMSG_DEBUG("qforthDPlus")
+	PSMSG_DEBUG("qforthDPlus")
 }
 
 void qforthDPlusStore(void) {
-	SMSG_DEBUG("qforthDPlusStore")
+	PSMSG_DEBUG("qforthDPlusStore")
 }
 
 void qforthMPlus(void) {
-	SMSG_DEBUG("qforthMPlus")
+	PSMSG_DEBUG("qforthMPlus")
 }
 
 void qforthTPlusStore(void) {
-	SMSG_DEBUG("qforthTPlusStore")
+	PSMSG_DEBUG("qforthTPlusStore")
 }
 
 void qforthTDPlusStore(void) {
-	SMSG_DEBUG("qforthTDPlusStore")
+	PSMSG_DEBUG("qforthTDPlusStore")
 }
 
 void qforthDaa(void) {
-	SMSG_DEBUG("qforthDaa")
+	PSMSG_DEBUG("qforthDaa")
 }
 
 void qforthSub(void) {
-	SMSG_DEBUG("qforthSub")
+	PSMSG_DEBUG("qforthSub")
 }
 
 void qforthMinus(void) {
-	SMSG_DEBUG("qforthMinus")
+	PSMSG_DEBUG("qforthMinus")
 }
 
 void qforthDec(void) {
-	SMSG_DEBUG("qforthDec")
+	PSMSG_DEBUG("qforthDec")
 }
 
 void qforthOneMinus(void) {
-	SMSG_DEBUG("qforthOneMinus")
+	PSMSG_DEBUG("qforthOneMinus")
 }
 
 void qforthOneMinusStore(void) {
-	SMSG_DEBUG("qforthOneMinusStore")
+	PSMSG_DEBUG("qforthOneMinusStore")
 }
 
 void qforthSubb(void) {
-	SMSG_DEBUG("qforthSubb")
+	PSMSG_DEBUG("qforthSubb")
 }
 
 void qforthMinusC(void) {
-	SMSG_DEBUG("qforthMinusC")
+	PSMSG_DEBUG("qforthMinusC")
 }
 
 void qforthDMinus(void) {
-	SMSG_DEBUG("qforthDMinus")
+	PSMSG_DEBUG("qforthDMinus")
 }
 
 void qforthDMinusStore(void) {
-	SMSG_DEBUG("qforthDMinusStore")
+	PSMSG_DEBUG("qforthDMinusStore")
 }
 
 void qforthMMinus(void) {
-	SMSG_DEBUG("qforthMMinus")
+	PSMSG_DEBUG("qforthMMinus")
 }
 
 void qforthTMinusStore(void) {
-	SMSG_DEBUG("qforthTMinusStore")
+	PSMSG_DEBUG("qforthTMinusStore")
 }
 
 void qforthTDMinus(void) {
-	SMSG_DEBUG("qforthTDMinus")
+	PSMSG_DEBUG("qforthTDMinus")
 }
 
 void qforthDas(void) {
-	SMSG_DEBUG("qforthDas")
+	PSMSG_DEBUG("qforthDas")
 }
 
 void qforthTwoStar(void) {
-	SMSG_DEBUG("qforthTwoStar")
+	PSMSG_DEBUG("qforthTwoStar")
 }
 
 void qforthD2Star(void) {
-	SMSG_DEBUG("qforthD2Star")
+	PSMSG_DEBUG("qforthD2Star")
 }
 
 void qforthTwoSlash(void) {
-	SMSG_DEBUG("qforthTwoSlash")
+	PSMSG_DEBUG("qforthTwoSlash")
 }
 
 void qforthD2Slash(void) {
-	SMSG_DEBUG("qforthD2Slash")
+	PSMSG_DEBUG("qforthD2Slash")
 }
 
 void qforthCmpEq(void) {
-	SMSG_DEBUG("qforthCmpEq")
+	PSMSG_DEBUG("qforthCmpEq")
 }
 
 void qforthEqual(void) {
-	SMSG_DEBUG("qforthEqual")
+	PSMSG_DEBUG("qforthEqual")
 }
 
 void qforthZeroEqual(void) {
-	SMSG_DEBUG("qforthZeroEqual")
+	PSMSG_DEBUG("qforthZeroEqual")
 }
 
 void qforthDEqual(void) {
-	SMSG_DEBUG("qforthDEqual")
+	PSMSG_DEBUG("qforthDEqual")
 }
 
 void qforthD0Equal(void) {
-	SMSG_DEBUG("qforthD0Equal")
+	PSMSG_DEBUG("qforthD0Equal")
 }
 
 void qforthCmpGe(void) {
-	SMSG_DEBUG("qforthCmpGe")
+	PSMSG_DEBUG("qforthCmpGe")
 }
 
 void qforthGreaterEqual(void) {
 	/* Temic 1994, but not Atmel 2004 */
-	SMSG_DEBUG("qforthCmpGe")
+	PSMSG_DEBUG("qforthCmpGe")
 }
 
 void qforthDGreaterEqual(void) {
-	SMSG_DEBUG("qforthDGreaterEqual")
+	PSMSG_DEBUG("qforthDGreaterEqual")
 }
 
 void qforthCmpGt(void) {
-	SMSG_DEBUG("qforthCmpGt")
+	PSMSG_DEBUG("qforthCmpGt")
 }
 
 void qforthGreater(void) {
-	SMSG_DEBUG("qforthGreater")
+	PSMSG_DEBUG("qforthGreater")
 }
 
 void qforthDGreater(void) {
-	SMSG_DEBUG("qforthDGreater")
+	PSMSG_DEBUG("qforthDGreater")
 }
 
 void qforthCmpLe(void) {
-	SMSG_DEBUG("qforthCmpLe")
+	PSMSG_DEBUG("qforthCmpLe")
 }
 
 void qforthLessEqual(void) {
-	SMSG_DEBUG("qforthLessEqual")
+	PSMSG_DEBUG("qforthLessEqual")
 }
 
 void qforthDLessEqual(void) {
-	SMSG_DEBUG("qforthDLessEqual")
+	PSMSG_DEBUG("qforthDLessEqual")
 }
 
 void qforthCmpLt(void) {
-	SMSG_DEBUG("qforthCmpLt")
+	PSMSG_DEBUG("qforthCmpLt")
 }
 
 void qforthLess(void) {
-	SMSG_DEBUG("qforthLess")
+	PSMSG_DEBUG("qforthLess")
 }
 
 void qforthDLess(void) {
-	SMSG_DEBUG("qforthDLess")
+	PSMSG_DEBUG("qforthDLess")
 }
 
 void qforthCmpNe(void) {
-	SMSG_DEBUG("qforthCmpNe")
+	PSMSG_DEBUG("qforthCmpNe")
 }
 
 void qforthUnequal(void) {
-	SMSG_DEBUG("qforthUnequal")
+	PSMSG_DEBUG("qforthUnequal")
 }
 
 void qforthZeroUnequal(void) {
-	SMSG_DEBUG("qforthZeroUnequal")
+	PSMSG_DEBUG("qforthZeroUnequal")
 }
 
 void qforthD0Unequal(void) {
-	SMSG_DEBUG("qforthD0Unequal")
+	PSMSG_DEBUG("qforthD0Unequal")
 }
 
 void qforthDUnequal(void) {
-	SMSG_DEBUG("qforthDUnequal")
+	PSMSG_DEBUG("qforthDUnequal")
 }
 
 void qforthMax(void) {
-	SMSG_DEBUG("qforthMax")
+	PSMSG_DEBUG("qforthMax")
 }
 
 void qforthDMax(void) {
-	SMSG_DEBUG("qforthDMax")
+	PSMSG_DEBUG("qforthDMax")
 }
 
 void qforthMin(void) {
-	SMSG_DEBUG("qforthMin")
+	PSMSG_DEBUG("qforthMin")
 }
 
 void qforthDMin(void) {
-	SMSG_DEBUG("qforthDMin")
+	PSMSG_DEBUG("qforthDMin")
 }
 
 void qforthNegate(void) {
-	SMSG_DEBUG("qforthNegate")
+	PSMSG_DEBUG("qforthNegate")
 }
 
 void qforthDNegate(void) {
-	SMSG_DEBUG("qforthDNegate")
+	PSMSG_DEBUG("qforthDNegate")
 }
 
 void qforthNot(void) {
-	SMSG_DEBUG("qforthNot")
+	PSMSG_DEBUG("qforthNot")
 }
 
 void qforthRoL(void) {
-	SMSG_DEBUG("qforthRoL")
+	PSMSG_DEBUG("qforthRoL")
 }
 
 void qforthRoR(void) {
-	SMSG_DEBUG("qforthRoR")
+	PSMSG_DEBUG("qforthRoR")
 }
 
 void qforthShL(void) {
-	SMSG_DEBUG("qforthShL")
+	PSMSG_DEBUG("qforthShL")
 }
 
 void qforthShR(void) {
-	SMSG_DEBUG("qforthShR")
+	PSMSG_DEBUG("qforthShR")
 }
 
 void qforthAnd(void) {
-	SMSG_DEBUG("qforthAnd")
+	PSMSG_DEBUG("qforthAnd")
 }
 
 void qforthOr(void) {
-	SMSG_DEBUG("qforthOr")
+	PSMSG_DEBUG("qforthOr")
 }
 
 void qforthXor(void) {
-	SMSG_DEBUG("qforthXor")
+	PSMSG_DEBUG("qforthXor")
 }
 
 void qforthToggle(void) {
-	SMSG_DEBUG("qforthToggle")
+	PSMSG_DEBUG("qforthToggle")
 }
 
 void qforthDToS(void) {
-	SMSG_DEBUG("qforthDToS")
+	PSMSG_DEBUG("qforthDToS")
 }
 
 void qforthSToD(void) {
-	SMSG_DEBUG("qforthSToD")
+	PSMSG_DEBUG("qforthSToD")
 }
 
 /* Memory Commands */
 void qforthFetch(void) {
-	SMSG_DEBUG("qforthFetch")
+	PSMSG_DEBUG("qforthFetch")
 }
 
 void qforthTwoFetch(void) {
-	SMSG_DEBUG("qforthTwoFetch")
+	PSMSG_DEBUG("qforthTwoFetch")
 }
 
 void qforthThreeFetch(void) {
-	SMSG_DEBUG("qforthThreeFetch")
+	PSMSG_DEBUG("qforthThreeFetch")
 }
 
 void qforthXFetch(void) {
-	SMSG_DEBUG("qforthXFetch")
+	PSMSG_DEBUG("qforthXFetch")
 }
 
 void qforthXXFetch(void) {
-	SMSG_DEBUG("qforthXXFetch")
+	PSMSG_DEBUG("qforthXXFetch")
 }
 
 void qforthXPlusXFetch(void) {
-	SMSG_DEBUG("qforthXPlusXFetch")
+	PSMSG_DEBUG("qforthXPlusXFetch")
 }
 
 void qforthXXMinusFetch(void) {
-	SMSG_DEBUG("qforthXXMinusFetch")
+	PSMSG_DEBUG("qforthXXMinusFetch")
 }
 
 void qforthYFetch(void) {
-	SMSG_DEBUG("qforthYFetch")
+	PSMSG_DEBUG("qforthYFetch")
 }
 
 void qforthXYFetch(void) {
-	SMSG_DEBUG("qforthXYFetch")
+	PSMSG_DEBUG("qforthXYFetch")
 }
 
 void qforthXPlusYFetch(void) {
-	SMSG_DEBUG("qforthXPlusYFetch")
+	PSMSG_DEBUG("qforthXPlusYFetch")
 }
 
 void qforthXYMinusFetch(void) {
-	SMSG_DEBUG("qforthXYMinusFetch")
+	PSMSG_DEBUG("qforthXYMinusFetch")
 }
 
 void qforthDTableFetch(void) {
-	SMSG_DEBUG("qforthDTableFetch")
+	PSMSG_DEBUG("qforthDTableFetch")
 }
 
 void qforthRomByteFetch(void) {
-	SMSG_DEBUG("qforthRomByteFetch")
+	PSMSG_DEBUG("qforthRomByteFetch")
 }
 
 void qforthStore(void) {
-	SMSG_DEBUG("qforthStore")
+	PSMSG_DEBUG("qforthStore")
 }
 
 void qforthTwoStore(void) {
-	SMSG_DEBUG("qforthTwoStore")
+	PSMSG_DEBUG("qforthTwoStore")
 }
 
 void qforthThreeStore(void) {
-	SMSG_DEBUG("qforthThreeStore")
+	PSMSG_DEBUG("qforthThreeStore")
 }
 
 void qforthXStore(void) {
-	SMSG_DEBUG("qforthXStore")
+	PSMSG_DEBUG("qforthXStore")
 }
 
 void qforthXXStore(void) {
-	SMSG_DEBUG("qforthXXStore")
+	PSMSG_DEBUG("qforthXXStore")
 }
 
 void qforthXPlusXStore(void) {
-	SMSG_DEBUG("qforthXPlusXStore")
+	PSMSG_DEBUG("qforthXPlusXStore")
 }
 
 void qforthXXMinusStore(void) {
-	SMSG_DEBUG("qforthXXMinusStore")
+	PSMSG_DEBUG("qforthXXMinusStore")
 }
 
 void qforthYStore(void) {
-	SMSG_DEBUG("qforthYStore")
+	PSMSG_DEBUG("qforthYStore")
 }
 
 void qforthXYStore(void) {
-	SMSG_DEBUG("qforthXYStore")
+	PSMSG_DEBUG("qforthXYStore")
 }
 
 void qforthXPlusYStore(void) {
-	SMSG_DEBUG("qforthXPlusYStore")
+	PSMSG_DEBUG("qforthXPlusYStore")
 }
 
 void qforthXYMinusStore(void) {
-	SMSG_DEBUG("qforthXYMinusStore")
+	PSMSG_DEBUG("qforthXYMinusStore")
 }
 
 void qforthErase(void) {
-	SMSG_DEBUG("qforthErase")
+	PSMSG_DEBUG("qforthErase")
 }
 
 void qforthFill(void) {
-	SMSG_DEBUG("qforthFill")
+	PSMSG_DEBUG("qforthFill")
 }
 
 void qforthMove(void) {
-	SMSG_DEBUG("qforthMove")
+	PSMSG_DEBUG("qforthMove")
 }
 
 void qforthMoveTo(void) {
-	SMSG_DEBUG("qforthMoveTo")
+	PSMSG_DEBUG("qforthMoveTo")
 }
 
 void qforthIn(void) {
-	SMSG_DEBUG("qforthIn")
+	PSMSG_DEBUG("qforthIn")
 }
 
 void qforthOut(void) {
-	SMSG_DEBUG("qforthOut")
+	PSMSG_DEBUG("qforthOut")
 }
 
 /* Commands */
 /* qforthStore(void) */
 
 void qforthTick(void) {
-	SMSG_DEBUG("qforthTick")
+	PSMSG_DEBUG("qforthTick")
 }
 
 /* qforthNumDo(void) */
@@ -542,15 +542,15 @@ void qforthTick(void) {
 /* qforthMinusQLeave(void) */
 
 void qforthLessR(void) {
-	SMSG_DEBUG("qforthLessR")
+	PSMSG_DEBUG("qforthLessR")
 }
 
 void qforthToRP(void) {
-	SMSG_DEBUG("qforthToRP")
+	PSMSG_DEBUG("qforthToRP")
 }
 
 void qforthToSP(void) {
-	SMSG_DEBUG("qforthToSP")
+	PSMSG_DEBUG("qforthToSP")
 }
 
 /* qforthQDo */
@@ -568,7 +568,7 @@ void qforthToSP(void) {
 /* qforthXYMinusStore */
 
 void qforthXYMinuSFetch(void) {
-	SMSG_DEBUG("qforthXYMinuSFetch")
+	PSMSG_DEBUG("qforthXYMinuSFetch")
 }
 
 /* qforthXYStore */
@@ -583,7 +583,7 @@ void qforthXYMinuSFetch(void) {
 /* qforthRFetch */
 
 void qforthTwoRFetch(void) {
-	SMSG_DEBUG("qforthTwoRFetch")
+	PSMSG_DEBUG("qforthTwoRFetch")
 }
 
 /* qforthTwoRot */
@@ -613,7 +613,7 @@ void qforthTwoRFetch(void) {
 /* qforthOneMinusStore */
 
 void qforthSubB(void) {
-	SMSG_DEBUG("qforthSubB")
+	PSMSG_DEBUG("qforthSubB")
 }
 
 /* qforthMinusC */
@@ -664,7 +664,7 @@ void qforthSubB(void) {
 /* qforthDTableFetch */
 
 void qforthDToggle(void) {
-	SMSG_DEBUG("qforthDToggle")
+	PSMSG_DEBUG("qforthDToggle")
 }
 
 /* qforthDup */
@@ -694,7 +694,7 @@ void qforthDToggle(void) {
 /* qforthDToS */
 
 void qforthNop(void) {
-	SMSG_DEBUG("qforthNop")
+	PSMSG_DEBUG("qforthNop")
 }
 
 /* qforthNot */
@@ -715,7 +715,7 @@ void qforthNop(void) {
 /* qforthRoL */
 
 void qforthRoLL(void) {
-	SMSG_DEBUG("qforthRoLL")
+	PSMSG_DEBUG("qforthRoLL")
 }
 
 /* qforthRomByteFetch */
@@ -728,14 +728,14 @@ void qforthRoLL(void) {
 /* qforthShR */
 
 void qforthSPStore(void) {
-	SMSG_DEBUG("qforthSPStore")
+	PSMSG_DEBUG("qforthSPStore")
 }
 
 /* qforthSPFetch */
 /* qforthSwap */
 
 void qforthSwi0ToSw17(void) {
-	SMSG_DEBUG("qforthSwi0ToSw17")
+	PSMSG_DEBUG("qforthSwi0ToSw17")
 }
 
 /* qforthTPlusStore */
@@ -743,7 +743,7 @@ void qforthSwi0ToSw17(void) {
 /* qforthTDPlusStore */
 
 void qforthTDMinusStore(void) {
-	SMSG_DEBUG("qforthTDMinusStore")
+	PSMSG_DEBUG("qforthTDMinusStore")
 }
 
 /* qforthThen */
@@ -757,172 +757,172 @@ void qforthTDMinusStore(void) {
 /* qforthXStore */
 
 void qforthXorYStore(void) {
-	SMSG_DEBUG("qforthXorYStore")
+	PSMSG_DEBUG("qforthXorYStore")
 }
 
 /* qforthYFetch */
 
 /* STACK Commands */
 void qforthDecR(void) {
-	SMSG_DEBUG("qforthDecR")
+	PSMSG_DEBUG("qforthDecR")
 }
 
 void qforthDepth(void) {
-	SMSG_DEBUG("qforthDepth")
+	PSMSG_DEBUG("qforthDepth")
 }
 
 void qforthDrop(void) {
-	SMSG_DEBUG("qforthDrop")
+	PSMSG_DEBUG("qforthDrop")
 }
 
 void qforthTwoDrop(void) {
-	SMSG_DEBUG("qforthTwoDrop")
+	PSMSG_DEBUG("qforthTwoDrop")
 }
 
 void qforthThreeDrop(void) {
-	SMSG_DEBUG("qforthThreeDrop")
+	PSMSG_DEBUG("qforthThreeDrop")
 }
 
 void qforthDropR(void) {
-	SMSG_DEBUG("qforthDropR")
+	PSMSG_DEBUG("qforthDropR")
 }
 
 void qforthDup(void) {
-	SMSG_DEBUG("qforthDup")
+	PSMSG_DEBUG("qforthDup")
 }
 
 void qforthQDup(void) {
-	SMSG_DEBUG("qforthQDup")
+	PSMSG_DEBUG("qforthQDup")
 }
 
 void qforthTwoDup(void) {
-	SMSG_DEBUG("qforthTwoDup")
+	PSMSG_DEBUG("qforthTwoDup")
 }
 
 void qforthThreeDup(void) {
-	SMSG_DEBUG("qforthThreeDup")
+	PSMSG_DEBUG("qforthThreeDup")
 }
 
 void qforthI(void) {
-	SMSG_DEBUG("qforthI")
+	PSMSG_DEBUG("qforthI")
 }
 
 void qforthIndex(void) {
-	SMSG_DEBUG("qforthIndex")
+	PSMSG_DEBUG("qforthIndex")
 }
 
 void qforthJ(void) {
-	SMSG_DEBUG("qforthJ")
+	PSMSG_DEBUG("qforthJ")
 }
 
 void qforthNip(void) {
-	SMSG_DEBUG("qforthNip")
+	PSMSG_DEBUG("qforthNip")
 }
 
 void qforthTwoNip(void) {
-	SMSG_DEBUG("qforthTwoNip")
+	PSMSG_DEBUG("qforthTwoNip")
 }
 
 void qforthOver(void) {
-	SMSG_DEBUG("qforthOver")
+	PSMSG_DEBUG("qforthOver")
 }
 
 void qforthTwoOver(void) {
-	SMSG_DEBUG("qforthTwoOver")
+	PSMSG_DEBUG("qforthTwoOver")
 }
 
 void qforthPick(void) {
-	SMSG_DEBUG("qforthPick")
+	PSMSG_DEBUG("qforthPick")
 }
 
 void qforthRFetch(void) {
-	SMSG_DEBUG("qforthRFetch")
+	PSMSG_DEBUG("qforthRFetch")
 }
 
 /* qforthTwoFetch */
 
 void qforthThreeRFetch(void) {
-	SMSG_DEBUG("qforthThreeRFetch")
+	PSMSG_DEBUG("qforthThreeRFetch")
 }
 
 void qforthToR(void) {
-	SMSG_DEBUG("qforthToR")
+	PSMSG_DEBUG("qforthToR")
 }
 
 void qforthTwoToR(void) {
-	SMSG_DEBUG("qforthTwoToR")
+	PSMSG_DEBUG("qforthTwoToR")
 }
 
 void qforthThreeToR(void) {
-	SMSG_DEBUG("qforthThreeToR")
+	PSMSG_DEBUG("qforthThreeToR")
 }
 
 void qforthRTo(void) {
-	SMSG_DEBUG("qforthRTo")
+	PSMSG_DEBUG("qforthRTo")
 }
 
 void qforthTwoRTo(void) {
-	SMSG_DEBUG("qforthTwoRTo")
+	PSMSG_DEBUG("qforthTwoRTo")
 }
 
 void qforthThreeRTo(void) {
-	SMSG_DEBUG("qforthThreeRTo")
+	PSMSG_DEBUG("qforthThreeRTo")
 }
 
 void qforthRDepth(void) {
-	SMSG_DEBUG("qforthRDepth")
+	PSMSG_DEBUG("qforthRDepth")
 }
 
 void qforthRFree(void) {
-	SMSG_DEBUG("qforthRFree")
+	PSMSG_DEBUG("qforthRFree")
 }
 
 void qforthRot(void) {
-	SMSG_DEBUG("qforthRot")
+	PSMSG_DEBUG("qforthRot")
 }
 
 void qforthTwoRot(void) {
-	SMSG_DEBUG("qforthTwoRot")
+	PSMSG_DEBUG("qforthTwoRot")
 }
 
 void qforthLessRot(void) {
-	SMSG_DEBUG("qforthLessRot")
+	PSMSG_DEBUG("qforthLessRot")
 }
 
 void qforthTwoLessRot(void) {
-	SMSG_DEBUG("qforthTwoLessRot")
+	PSMSG_DEBUG("qforthTwoLessRot")
 }
 
 void qforthRPFetch(void) {
-	SMSG_DEBUG("qforthRPFetch")
+	PSMSG_DEBUG("qforthRPFetch")
 }
 
 void qforthRPStore(void) {
-	SMSG_DEBUG("qforthRPStore")
+	PSMSG_DEBUG("qforthRPStore")
 }
 
 void qforthSPFetch(void) {
-	SMSG_DEBUG("qforthSPFetch")
+	PSMSG_DEBUG("qforthSPFetch")
 }
 
 void qforthSpStore(void) {
-	SMSG_DEBUG("qforthSpStore")
+	PSMSG_DEBUG("qforthSpStore")
 }
 
 void qforthSwap(void) {
-	SMSG_DEBUG("qforthSwap")
+	PSMSG_DEBUG("qforthSwap")
 }
 
 void qforthTwoSwap(void) {
-	SMSG_DEBUG("qforthTwoSwap")
+	PSMSG_DEBUG("qforthTwoSwap")
 }
 
 void qforthTuck(void) {
-	SMSG_DEBUG("qforthTuck")
+	PSMSG_DEBUG("qforthTuck")
 }
 
 void qforthTwoTuck(void) {
-	SMSG_DEBUG("qforthTwoTuck")
+	PSMSG_DEBUG("qforthTwoTuck")
 }
 
 #endif

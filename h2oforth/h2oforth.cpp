@@ -1243,16 +1243,16 @@ void forthParseTib(void) {
       strcpy_P(buffer, forthWord4a);
       Serial.println(buffer); 
 
-// #define SMSG_DEBUG2(X) {static const PROGMEM char nameOfFunction[] = X; \
+// #define PSMSG_DEBUG2(X) {static const PROGMEM char nameOfFunction[] = X; \
 // char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, nameOfFunction); \ 
 // Serial.println(buffer); \
 //;};
-//#define SMSG_DEBUG3(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); \ 
+//#define PSMSG_DEBUG3(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); \ 
 //Serial.println(buffer);};
 
-#define SMSG_DEBUG3(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateDebugWord(buffer);};
+#define PSMSG_DEBUG3(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateDebugWord(buffer);};
 
-      SMSG_DEBUG3("test debug funktioniert");
+      PSMSG_DEBUG3("test debug funktioniert");
 
 //      myptr = (char *)pgm_read_ptr(forthWord4a);
 //      Serial.println(myptr);

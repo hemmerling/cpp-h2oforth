@@ -35,8 +35,8 @@ void readInput(void) {
 	if (forthState.forthReadsKeyboard) {
 		if (doInput == CTRLZ_GETCHAR) {
 			forthState.forthIsExit = TRUE;
-			//PUTS("CTRLZ_GETCH - Exit");
-			//PUTS("H2oForth is terminating");
+			//PSMSG_ERROR("CTRLZ_GETCH - Exit");
+			//PSMSG_ERROR("H2oForth is terminating");
 		};
 	};
 
@@ -46,13 +46,13 @@ void readInput(void) {
 				forthState.forthReadsKeyboard = TRUE;
 				forthState.forthReadsTerminal = FALSE;
 				if (forthState.forthIsVerbose) {
-					PUTS("\nH2OForth - Wait for keyboard input(2)");
+					PSMSG_VERBOSE("\nH2OForth - Wait for keyboard input(2)");
 				};
 			}
 			else {
 				forthState.forthIsExit = TRUE;
-				//PUTS("CTRLZ_GETCHAR - Exit");
-				//PUTS("H2oForth is terminating");
+				//PSMSG_ERROR("CTRLZ_GETCHAR - Exit");
+				//PSMSG_ERROR("H2oForth is terminating");
 			};
 		};
 

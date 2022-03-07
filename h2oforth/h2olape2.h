@@ -10,2187 +10,2187 @@
     (H2O_FORTH_PRIMITIVES == LAXONPERRY_CPM_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == LAXONPERRY_CPM68K_FORTH)
 void laxperEmpty(void) {
-	SMSG_DEBUG("laxperEmpty")
+	PSMSG_DEBUG("laxperEmpty")
 }
 
 void laxperMark(void) {
-	SMSG_DEBUG("laxperMark")
+	PSMSG_DEBUG("laxperMark")
 }
 
 void laxperHello(void) {
-	SMSG_DEBUG("laxperHello")
+	PSMSG_DEBUG("laxperHello")
 }
 
 void laxperBackgroundColon(void) {
-	SMSG_DEBUG("laxperBackgroundColon")
+	PSMSG_DEBUG("laxperBackgroundColon")
 }
 
 void laxperActivate(void) {
-	SMSG_DEBUG("laxperActivate")
+	PSMSG_DEBUG("laxperActivate")
 }
 
 void laxperSetTask(void) {
-	SMSG_DEBUG("laxperSetTask")
+	PSMSG_DEBUG("laxperSetTask")
 }
 
 void laxperTaskColon(void) {
-	SMSG_DEBUG("laxperTaskColon")
+	PSMSG_DEBUG("laxperTaskColon")
 }
 
 void laxperResume(void) {
-	SMSG_DEBUG("laxperResume")
+	PSMSG_DEBUG("laxperResume")
 }
 
 void laxperDebug(void) {
-	SMSG_DEBUG("laxperDebug")
+	PSMSG_DEBUG("laxperDebug")
 }
 
 void laxperListing(void) {
-	SMSG_DEBUG("laxperListing")
+	PSMSG_DEBUG("laxperListing")
 }
 
 void laxperShow(void) {
-	SMSG_DEBUG("laxperShow")
+	PSMSG_DEBUG("laxperShow")
 }
 
 void laxperYSemit(void) {
-	SMSG_DEBUG("laxperYSemit")
+	PSMSG_DEBUG("laxperYSemit")
 }
 
 void laxperYPage(void) {
-	SMSG_DEBUG("laxperYPage")
+	PSMSG_DEBUG("laxperYPage")
 }
 
 void laxperFormFeed(void) {
-	SMSG_DEBUG("laxperFormFeed")
+	PSMSG_DEBUG("laxperFormFeed")
 }
 
 void laxperPage(void) {
-	SMSG_DEBUG("laxperPage")
+	PSMSG_DEBUG("laxperPage")
 }
 
 void laxperNumPage(void) {
-	SMSG_DEBUG("laxperNumPage")
+	PSMSG_DEBUG("laxperNumPage")
 }
 
 void laxperLogo(void) {
-	SMSG_DEBUG("laxperLogo")
+	PSMSG_DEBUG("laxperLogo")
 }
 
 void laxperLSlashPage(void) {
-	SMSG_DEBUG("laxperLSlashPage")
+	PSMSG_DEBUG("laxperLSlashPage")
 }
 
 void laxperFooting(void) {
-	SMSG_DEBUG("laxperFooting")
+	PSMSG_DEBUG("laxperFooting")
 }
 
 void laxperInitPr(void) {
-	SMSG_DEBUG("laxperInitPr")
+	PSMSG_DEBUG("laxperInitPr")
 }
 
 void laxperEpson(void) {
-	SMSG_DEBUG("laxperEpson")
+	PSMSG_DEBUG("laxperEpson")
 }
 
 void laxperSee(void) {
-	SMSG_DEBUG("laxperSee")
+	PSMSG_DEBUG("laxperSee")
 }
 
 void laxperYSee(void) {
-	SMSG_DEBUG("laxperYSee")
+	PSMSG_DEBUG("laxperYSee")
 }
 
 void laxperAssociativeColon(void) {
-	SMSG_DEBUG("laxperAssociativeColon")
+	PSMSG_DEBUG("laxperAssociativeColon")
 }
 
 void laxperCaseColon(void) {
-	SMSG_DEBUG("laxperCaseColon")
+	PSMSG_DEBUG("laxperCaseColon")
 }
 
 void laxperMap(void) {
-	SMSG_DEBUG("laxperMap")
+	PSMSG_DEBUG("laxperMap")
 }
 
 void laxperOut(void) {
-	SMSG_DEBUG("laxperOut")
+	PSMSG_DEBUG("laxperOut")
 }
 
 void laxperDL(void) {
-	SMSG_DEBUG("laxperDL")
+	PSMSG_DEBUG("laxperDL")
 }
 
 void laxperDU(void) {
-	SMSG_DEBUG("laxperDU")
+	PSMSG_DEBUG("laxperDU")
 }
 
 void laxperDump(void) {
-	SMSG_DEBUG("laxperDump")
+	PSMSG_DEBUG("laxperDump")
 }
 
 void laxperDotHead(void) {
-	SMSG_DEBUG("laxperDotHead")
+	PSMSG_DEBUG("laxperDotHead")
 }
 
 void laxperQDotA(void) {
-	SMSG_DEBUG("laxperQDotA")
+	PSMSG_DEBUG("laxperQDotA")
 }
 
 void laxperQDotN(void) {
-	SMSG_DEBUG("laxperQDotN")
+	PSMSG_DEBUG("laxperQDotN")
 }
 
 void laxperDln(void) {
-	SMSG_DEBUG("laxperDln")
+	PSMSG_DEBUG("laxperDln")
 }
 
 void laxperEmitDot(void) {
-	SMSG_DEBUG("laxperEmitDot")
+	PSMSG_DEBUG("laxperEmitDot")
 }
 
 void laxperDDotTwo(void) {
-	SMSG_DEBUG("laxperDDotTwo")
+	PSMSG_DEBUG("laxperDDotTwo")
 }
 
 void laxperDotTwo(void) {
-	SMSG_DEBUG("laxperDotTwo")
+	PSMSG_DEBUG("laxperDotTwo")
 }
 
 void laxperA(void) {
-	SMSG_DEBUG("laxperA")
+	PSMSG_DEBUG("laxperA")
 }
 
 void laxperShadow(void) {
-	SMSG_DEBUG("laxperShadow")
+	PSMSG_DEBUG("laxperShadow")
 }
 
 void laxperYWhere(void) {
-	SMSG_DEBUG("laxperYWhere")
+	PSMSG_DEBUG("laxperYWhere")
 }
 
 void laxperFix(void) {
-	SMSG_DEBUG("laxperFix")
+	PSMSG_DEBUG("laxperFix")
 }
 
 void laxperEdit(void) {
-	SMSG_DEBUG("laxperEdit")
+	PSMSG_DEBUG("laxperEdit")
 }
 
 void laxperEd(void) {
-	SMSG_DEBUG("laxperEd")
+	PSMSG_DEBUG("laxperEd")
 }
 
 void laxperDone(void) {
-	SMSG_DEBUG("laxperDone")
+	PSMSG_DEBUG("laxperDone")
 }
 
 void laxperEditor(void) {
-	SMSG_DEBUG("laxperEditor")
+	PSMSG_DEBUG("laxperEditor")
 }
 
 void laxperDark(void) {
-	SMSG_DEBUG("laxperDark")
+	PSMSG_DEBUG("laxperDark")
 }
 
 void laxperAt(void) {
-	SMSG_DEBUG("laxperAt")
+	PSMSG_DEBUG("laxperAt")
 }
 
 void laxperMinusLine(void) {
-	SMSG_DEBUG("laxperMinusLine")
+	PSMSG_DEBUG("laxperMinusLine")
 }
 
 void laxperBlot(void) {
-	SMSG_DEBUG("laxperBlot")
+	PSMSG_DEBUG("laxperBlot")
 }
 
 void laxperReplace(void) {
-	SMSG_DEBUG("laxperReplace")
+	PSMSG_DEBUG("laxperReplace")
 }
 
 void laxperInsert(void) {
-	SMSG_DEBUG("laxperInsert")
+	PSMSG_DEBUG("laxperInsert")
 }
 
 void laxperDelete(void) {
-	SMSG_DEBUG("laxperDelete")
+	PSMSG_DEBUG("laxperDelete")
 }
 
 void laxperSearch(void) {
-	SMSG_DEBUG("laxperSearch")
+	PSMSG_DEBUG("laxperSearch")
 }
 
 void laxperScanFirst(void) {
-	SMSG_DEBUG("laxperScanFirst")
+	PSMSG_DEBUG("laxperScanFirst")
 }
 
 void laxperFound(void) {
-	SMSG_DEBUG("laxperFound")
+	PSMSG_DEBUG("laxperFound")
 }
 
 void laxperTo(void) {
-	SMSG_DEBUG("laxperTo")
+	PSMSG_DEBUG("laxperTo")
 }
 
 void laxperCorvey(void) {
-	SMSG_DEBUG("laxperCorvey")
+	PSMSG_DEBUG("laxperCorvey")
 }
 
 void laxperYConvey(void) {
-	SMSG_DEBUG("laxperYConvey")
+	PSMSG_DEBUG("laxperYConvey")
 }
 
 void laxperDotTo(void) {
-	SMSG_DEBUG("laxperDotTo")
+	PSMSG_DEBUG("laxperDotTo")
 }
 
 void laxperHop(void) {
-	SMSG_DEBUG("laxperHop")
+	PSMSG_DEBUG("laxperHop")
 }
 
 void laxperConveyCopy(void) {
-	SMSG_DEBUG("laxperConveyCopy")
+	PSMSG_DEBUG("laxperConveyCopy")
 }
 
 void laxperUSlashD(void) {
-	SMSG_DEBUG("laxperUSlashD")
+	PSMSG_DEBUG("laxperUSlashD")
 }
 
 void laxperHopped(void) {
-	SMSG_DEBUG("laxperHopped")
+	PSMSG_DEBUG("laxperHopped")
 }
 
 void laxperView(void) {
-	SMSG_DEBUG("laxperView")
+	PSMSG_DEBUG("laxperView")
 }
 
 void laxperFetchView(void) {
-	SMSG_DEBUG("laxperFetchView")
+	PSMSG_DEBUG("laxperFetchView")
 }
 
 void laxperCopy(void) {
-	SMSG_DEBUG("laxperCopy")
+	PSMSG_DEBUG("laxperCopy")
 }
 
 void laxperYCopy(void) {
-	SMSG_DEBUG("laxperYCopy")
+	PSMSG_DEBUG("laxperYCopy")
 }
 
 void laxperEstablish(void) {
-	SMSG_DEBUG("laxperEstablish")
+	PSMSG_DEBUG("laxperEstablish")
 }
 
 void laxperL(void) {
-	SMSG_DEBUG("laxperL")
+	PSMSG_DEBUG("laxperL")
 }
 
 void laxperB(void) {
-	SMSG_DEBUG("laxperB")
+	PSMSG_DEBUG("laxperB")
 }
 
 void laxperN(void) {
-	SMSG_DEBUG("laxperN")
+	PSMSG_DEBUG("laxperN")
 }
 
 void laxperColonColon(void) {
-	SMSG_DEBUG("laxperColonColon")
+	PSMSG_DEBUG("laxperColonColon")
 }
 
 void laxperMany(void) {
-	SMSG_DEBUG("laxperMany")
+	PSMSG_DEBUG("laxperMany")
 }
 
 void laxperTimes(void) {
-	SMSG_DEBUG("laxperTimes")
+	PSMSG_DEBUG("laxperTimes")
 }
 
 void laxperNumTimes(void) {
-	SMSG_DEBUG("laxperNumTimes")
+	PSMSG_DEBUG("laxperNumTimes")
 }
 
 void laxperWords(void) {
-	SMSG_DEBUG("laxperWords")
+	PSMSG_DEBUG("laxperWords")
 }
 
 void laxperLargest(void) {
-	SMSG_DEBUG("laxperLargest")
+	PSMSG_DEBUG("laxperLargest")
 }
 
 void laxperInd(void) {
-	SMSG_DEBUG("laxperInd")
+	PSMSG_DEBUG("laxperInd")
 }
 
 void laxperIndex(void) {
-	SMSG_DEBUG("laxperIndex")
+	PSMSG_DEBUG("laxperIndex")
 }
 
 void laxperDotLineZero(void) {
-	SMSG_DEBUG("laxperDotLineZero")
+	PSMSG_DEBUG("laxperDotLineZero")
 }
 
 void laxperTriad(void) {
-	SMSG_DEBUG("laxperTriad")
+	PSMSG_DEBUG("laxperTriad")
 }
 
 void laxperList(void) {
-	SMSG_DEBUG("laxperList")
+	PSMSG_DEBUG("laxperList")
 }
 
 void laxperDotScr(void) {
-	SMSG_DEBUG("laxperDotScr")
+	PSMSG_DEBUG("laxperDotScr")
 }
 
 void laxperQCr(void) {
-	SMSG_DEBUG("laxperQCr")
+	PSMSG_DEBUG("laxperQCr")
 }
 
 void laxperQLine(void) {
-	SMSG_DEBUG("laxperQLine")
+	PSMSG_DEBUG("laxperQLine")
 }
 
 void laxperRMargin(void) {
-	SMSG_DEBUG("laxperRMargin")
+	PSMSG_DEBUG("laxperRMargin")
 }
 
 void laxperLMargin(void) {
-	SMSG_DEBUG("laxperLMargin")
+	PSMSG_DEBUG("laxperLMargin")
 }
 
 void laxperHidden(void) {
-	SMSG_DEBUG("laxperHidden")
+	PSMSG_DEBUG("laxperHidden")
 }
 
 void laxperZeroLessEqual(void) {
-	SMSG_DEBUG("laxperZeroLessEqual")
+	PSMSG_DEBUG("laxperZeroLessEqual")
 }
 
 void laxperZeroGreaterEqual(void) {
-	SMSG_DEBUG("laxperZeroGreaterEqual")
+	PSMSG_DEBUG("laxperZeroGreaterEqual")
 }
 
 void laxperGreaterEqual(void) {
-	SMSG_DEBUG("laxperGreaterEqual")
+	PSMSG_DEBUG("laxperGreaterEqual")
 }
 
 void laxperLessEqual(void) {
-	SMSG_DEBUG("laxperLessEqual")
+	PSMSG_DEBUG("laxperLessEqual")
 }
 
 void laxperUGreaterEqual(void) {
-	SMSG_DEBUG("laxperUGreaterEqual")
+	PSMSG_DEBUG("laxperUGreaterEqual")
 }
 
 void laxperULessEqual(void) {
-	SMSG_DEBUG("laxperULessEqual")
+	PSMSG_DEBUG("laxperULessEqual")
 }
 
 void laxperMs(void) {
-	SMSG_DEBUG("laxperMs")
+	PSMSG_DEBUG("laxperMs")
 }
 
 void laxperFudge(void) {
-	SMSG_DEBUG("laxperFudge")
+	PSMSG_DEBUG("laxperFudge")
 }
 
 void laxperPCStore(void) {
-	SMSG_DEBUG("laxperPCStore")
+	PSMSG_DEBUG("laxperPCStore")
 }
 
 void laxperPCFetch(void) {
-	SMSG_DEBUG("laxperPCFetch")
+	PSMSG_DEBUG("laxperPCFetch")
 }
 
 void laxperMulti(void) {
-	SMSG_DEBUG("laxperMulti")
+	PSMSG_DEBUG("laxperMulti")
 }
 
 void laxperSingle(void) {
-	SMSG_DEBUG("laxperSingle")
+	PSMSG_DEBUG("laxperSingle")
 }
 
 void laxperStop(void) {
-	SMSG_DEBUG("laxperStop")
+	PSMSG_DEBUG("laxperStop")
 }
 
 void laxperWake(void) {
-	SMSG_DEBUG("laxperWake")
+	PSMSG_DEBUG("laxperWake")
 }
 
 void laxperSleep(void) {
-	SMSG_DEBUG("laxperSleep")
+	PSMSG_DEBUG("laxperSleep")
 }
 
 void laxperStoreLink(void) {
-	SMSG_DEBUG("laxperStoreLink")
+	PSMSG_DEBUG("laxperStoreLink")
 }
 
 void laxperFetchLink(void) {
-	SMSG_DEBUG("laxperFetchLink")
+	PSMSG_DEBUG("laxperFetchLink")
 }
 
 void laxperLocal(void) {
-	SMSG_DEBUG("laxperLocal")
+	PSMSG_DEBUG("laxperLocal")
 }
 
 void laxperRestart(void) {
-	SMSG_DEBUG("laxperRestart")
+	PSMSG_DEBUG("laxperRestart")
 }
 
 void laxperYPause(void) {
-	SMSG_DEBUG("laxperYPause")
+	PSMSG_DEBUG("laxperYPause")
 }
 
 void laxperUnbug(void) {
-	SMSG_DEBUG("laxperUnbug")
+	PSMSG_DEBUG("laxperUnbug")
 }
 
 void laxperBug(void) {
-	SMSG_DEBUG("laxperBug")
+	PSMSG_DEBUG("laxperBug")
 }
 
 void laxperDoesQ(void) {
-	SMSG_DEBUG("laxperDoesQ")
+	PSMSG_DEBUG("laxperDoesQ")
 }
 
 void laxperDoesSize(void) {
-	SMSG_DEBUG("laxperDoesSize")
+	PSMSG_DEBUG("laxperDoesSize")
 }
 
 void laxperDoesOp(void) {
-	SMSG_DEBUG("laxperDoesOp")
+	PSMSG_DEBUG("laxperDoesOp")
 }
 
 void laxperLabel(void) {
-	SMSG_DEBUG("laxperLabel")
+	PSMSG_DEBUG("laxperLabel")
 }
 
 void laxperUtilityDotBlk(void) {
-	SMSG_DEBUG("laxperUtilityDotBlk")
+	PSMSG_DEBUG("laxperUtilityDotBlk")
 }
 
 void laxperViews(void) {
-	SMSG_DEBUG("laxperViews")
+	PSMSG_DEBUG("laxperViews")
 }
 
 void laxperViewFiles(void) {
-	SMSG_DEBUG("laxperViewFiles")
+	PSMSG_DEBUG("laxperViewFiles")
 }
 
 void laxperSaveSystem(void) {
-	SMSG_DEBUG("laxperSaveSystem")
+	PSMSG_DEBUG("laxperSaveSystem")
 }
 
 void laxperForm(void) {
-	SMSG_DEBUG("laxperForm")
+	PSMSG_DEBUG("laxperForm")
 }
 
 void laxperOpen(void) {
-	SMSG_DEBUG("laxperOpen")
+	PSMSG_DEBUG("laxperOpen")
 }
 
 void laxperDefine(void) {
-	SMSG_DEBUG("laxperDefine")
+	PSMSG_DEBUG("laxperDefine")
 }
 
 void laxperBColon(void) {
-	SMSG_DEBUG("laxperBColon")
+	PSMSG_DEBUG("laxperBColon")
 }
 
 void laxperAColon(void) {
-	SMSG_DEBUG("laxperAColon")
+	PSMSG_DEBUG("laxperAColon")
 }
 
 void laxperDriveQ(void) {
-	SMSG_DEBUG("laxperDriveQ")
+	PSMSG_DEBUG("laxperDriveQ")
 }
 
 void laxperDir(void) {
-	SMSG_DEBUG("laxperDir")
+	PSMSG_DEBUG("laxperDir")
 }
 
 void laxperCreateFile(void) {
-	SMSG_DEBUG("laxperCreateFile")
+	PSMSG_DEBUG("laxperCreateFile")
 }
 
 void laxperMore(void) {
-	SMSG_DEBUG("laxperMore")
+	PSMSG_DEBUG("laxperMore")
 }
 
 void laxperRoot(void) {
-	SMSG_DEBUG("laxperRoot")
+	PSMSG_DEBUG("laxperRoot")
 }
 
 void laxperNextBlock(void) {
-	SMSG_DEBUG("laxperNextBlock")
+	PSMSG_DEBUG("laxperNextBlock")
 }
 
 void laxperPlusThru(void) {
-	SMSG_DEBUG("laxperPlusThru")
+	PSMSG_DEBUG("laxperPlusThru")
 }
 
 void laxperThru(void) {
-	SMSG_DEBUG("laxperThru")
+	PSMSG_DEBUG("laxperThru")
 }
 
 void laxperQEnough(void) {
-	SMSG_DEBUG("laxperQEnough")
+	PSMSG_DEBUG("laxperQEnough")
 }
 
 void laxperQ(void) {
-	SMSG_DEBUG("laxperQ")
+	PSMSG_DEBUG("laxperQ")
 }
 
 void laxperParenS(void) {
-	SMSG_DEBUG("laxperParenS")
+	PSMSG_DEBUG("laxperParenS")
 }
 
 void laxperBackslash(void) {
-	SMSG_DEBUG("laxperBackslash")
+	PSMSG_DEBUG("laxperBackslash")
 }
 
 void laxperLSlashScr(void) {
-	SMSG_DEBUG("laxperLSlashScr")
+	PSMSG_DEBUG("laxperLSlashScr")
 }
 
 void laxperCSlashL(void) {
-	SMSG_DEBUG("laxperCSlashL")
+	PSMSG_DEBUG("laxperCSlashL")
 }
 
 void laxperRecurse(void) {
-	SMSG_DEBUG("laxperRecurse")
+	PSMSG_DEBUG("laxperRecurse")
 }
 
 void laxperDotId(void) {
-	SMSG_DEBUG("laxperDotId")
+	PSMSG_DEBUG("laxperDotId")
 }
 
 void laxperDotS(void) {
-	SMSG_DEBUG("laxperDotS")
+	PSMSG_DEBUG("laxperDotS")
 }
 
 void laxperDepth(void) {
-	SMSG_DEBUG("laxperDepth")
+	PSMSG_DEBUG("laxperDepth")
 }
 
 void laxperBye(void) {
-	SMSG_DEBUG("laxperBye")
+	PSMSG_DEBUG("laxperBye")
 }
 
 void laxperStart(void) {
-	SMSG_DEBUG("laxperStart")
+	PSMSG_DEBUG("laxperStart")
 }
 
 void laxperOk(void) {
-	SMSG_DEBUG("laxperOk")
+	PSMSG_DEBUG("laxperOk")
 }
 
 void laxperInitial(void) {
-	SMSG_DEBUG("laxperInitial")
+	PSMSG_DEBUG("laxperInitial")
 }
 
 void laxperCold(void) {
-	SMSG_DEBUG("laxperCold")
+	PSMSG_DEBUG("laxperCold")
 }
 
 void laxperWarm(void) {
-	SMSG_DEBUG("laxperWarm")
+	PSMSG_DEBUG("laxperWarm")
 }
 
 void laxperBoot(void) {
-	SMSG_DEBUG("laxperBoot")
+	PSMSG_DEBUG("laxperBoot")
 }
 
 void laxperQuit(void) {
-	SMSG_DEBUG("laxperQuit")
+	PSMSG_DEBUG("laxperQuit")
 }
 
 void laxperRun(void) {
-	SMSG_DEBUG("laxperRun")
+	PSMSG_DEBUG("laxperRun")
 }
 
 void laxperIs(void) {
-	SMSG_DEBUG("laxperIs")
+	PSMSG_DEBUG("laxperIs")
 }
 
 void laxperYIs(void) {
-	SMSG_DEBUG("laxperYIs")
+	PSMSG_DEBUG("laxperYIs")
 }
 
 void laxperToIs(void) {
-	SMSG_DEBUG("laxperToIs")
+	PSMSG_DEBUG("laxperToIs")
 }
 
 void laxperUser(void) {
-	SMSG_DEBUG("laxperUser")
+	PSMSG_DEBUG("laxperUser")
 }
 
 void laxperNumUser(void) {
-	SMSG_DEBUG("laxperNumUser")
+	PSMSG_DEBUG("laxperNumUser")
 }
 
 void laxperCode(void) {
-	SMSG_DEBUG("laxperCode")
+	PSMSG_DEBUG("laxperCode")
 }
 
 void laxperAvoc(void) {
-	SMSG_DEBUG("laxperAvoc")
+	PSMSG_DEBUG("laxperAvoc")
 }
 
 void laxperTwoVariable(void) {
-	SMSG_DEBUG("laxperTwoVariable")
+	PSMSG_DEBUG("laxperTwoVariable")
 }
 
 void laxperTwoConstant(void) {
-	SMSG_DEBUG("laxperTwoConstant")
+	PSMSG_DEBUG("laxperTwoConstant")
 }
 
 void laxperDefinitions(void) {
-	SMSG_DEBUG("laxperDefinitions")
+	PSMSG_DEBUG("laxperDefinitions")
 }
 
 void laxperVocabulary(void) {
-	SMSG_DEBUG("laxperVocabulary")
+	PSMSG_DEBUG("laxperVocabulary")
 }
 
 void laxperDefer(void) {
-	SMSG_DEBUG("laxperDefer")
+	PSMSG_DEBUG("laxperDefer")
 }
 
 void laxperVariable(void) {
-	SMSG_DEBUG("laxperVariable")
+	PSMSG_DEBUG("laxperVariable")
 }
 
 void laxperConstant(void) {
-	SMSG_DEBUG("laxperConstant")
+	PSMSG_DEBUG("laxperConstant")
 }
 
 void laxperRecursive(void) {
-	SMSG_DEBUG("laxperRecursive")
+	PSMSG_DEBUG("laxperRecursive")
 }
 
 void laxperSemicolon(void) {
-	SMSG_DEBUG("laxperSemicolon")
+	PSMSG_DEBUG("laxperSemicolon")
 }
 
 void laxperColon(void) {
-	SMSG_DEBUG("laxperColon")
+	PSMSG_DEBUG("laxperColon")
 }
 
 void laxperRightBracket(void) {
-	SMSG_DEBUG("laxperRightBracket")
+	PSMSG_DEBUG("laxperRightBracket")
 }
 
 void laxperLeftBracket(void) {
-	SMSG_DEBUG("laxperLeftBracket")
+	PSMSG_DEBUG("laxperLeftBracket")
 }
 
 void laxperDoes(void) {
-	SMSG_DEBUG("laxperDoes")
+	PSMSG_DEBUG("laxperDoes")
 }
 
 void laxperSemicolonCode(void) {
-	SMSG_DEBUG("laxperSemicolonCode")
+	PSMSG_DEBUG("laxperSemicolonCode")
 }
 
 void laxperYSemicolonCode(void) {
-	SMSG_DEBUG("laxperYSemicolonCode")
+	PSMSG_DEBUG("laxperYSemicolonCode")
 }
 
 void laxperSemicolonUses(void) {
-	SMSG_DEBUG("laxperSemicolonUses")
+	PSMSG_DEBUG("laxperSemicolonUses")
 }
 
 void laxperAssembler(void) {
-	SMSG_DEBUG("laxperAssembler")
+	PSMSG_DEBUG("laxperAssembler")
 }
 
 void laxperYSemicolonUses(void) {
-	SMSG_DEBUG("laxperYSemicolonUses")
+	PSMSG_DEBUG("laxperYSemicolonUses")
 }
 
 void laxperReveal(void) {
-	SMSG_DEBUG("laxperReveal")
+	PSMSG_DEBUG("laxperReveal")
 }
 
 void laxperHide(void) {
-	SMSG_DEBUG("laxperHide")
+	PSMSG_DEBUG("laxperHide")
 }
 
 void laxperQCsp(void) {
-	SMSG_DEBUG("laxperQCsp")
+	PSMSG_DEBUG("laxperQCsp")
 }
 
 void laxperStoreCsp(void) {
-	SMSG_DEBUG("laxperStoreCsp")
+	PSMSG_DEBUG("laxperStoreCsp")
 }
 
 void laxperCreate(void) {
-	SMSG_DEBUG("laxperCreate")
+	PSMSG_DEBUG("laxperCreate")
 }
 
 void laxperBackslashCreate(void) {
-	SMSG_DEBUG("laxperBackslashCreate")
+	PSMSG_DEBUG("laxperBackslashCreate")
 }
 
 void laxperCommaView(void) {
-	SMSG_DEBUG("laxperCommaView")
+	PSMSG_DEBUG("laxperCommaView")
 }
 
 void laxperWhile(void) {
-	SMSG_DEBUG("laxperWhile")
+	PSMSG_DEBUG("laxperWhile")
 }
 
 void laxperElse(void) {
-	SMSG_DEBUG("laxperElse")
+	PSMSG_DEBUG("laxperElse")
 }
 
 void laxperIf(void) {
-	SMSG_DEBUG("laxperIf")
+	PSMSG_DEBUG("laxperIf")
 }
 
 void laxperRepeat(void) {
-	SMSG_DEBUG("laxperRepeat")
+	PSMSG_DEBUG("laxperRepeat")
 }
 
 void laxperAgain(void) {
-	SMSG_DEBUG("laxperAgain")
+	PSMSG_DEBUG("laxperAgain")
 }
 
 void laxperUntil(void) {
-	SMSG_DEBUG("laxperUntil")
+	PSMSG_DEBUG("laxperUntil")
 }
 
 void laxperPlusLoop(void) {
-	SMSG_DEBUG("laxperPlusLoop")
+	PSMSG_DEBUG("laxperPlusLoop")
 }
 
 void laxperLoop(void) {
-	SMSG_DEBUG("laxperLoop")
+	PSMSG_DEBUG("laxperLoop")
 }
 
 void laxperQDo(void) {
-	SMSG_DEBUG("laxperQDo")
+	PSMSG_DEBUG("laxperQDo")
 }
 
 void laxperDo(void) {
-	SMSG_DEBUG("laxperDo")
+	PSMSG_DEBUG("laxperDo")
 }
 
 void laxperThen(void) {
-	SMSG_DEBUG("laxperThen")
+	PSMSG_DEBUG("laxperThen")
 }
 
 void laxperBegin(void) {
-	SMSG_DEBUG("laxperBegin")
+	PSMSG_DEBUG("laxperBegin")
 }
 
 void laxperQLeave(void) {
-	SMSG_DEBUG("laxperQLeave")
+	PSMSG_DEBUG("laxperQLeave")
 }
 
 void laxperLeave(void) {
-	SMSG_DEBUG("laxperLeave")
+	PSMSG_DEBUG("laxperLeave")
 }
 
 void laxperQLessResolve(void) {
-	SMSG_DEBUG("laxperQLessResolve")
+	PSMSG_DEBUG("laxperQLessResolve")
 }
 
 void laxperQLessMark(void) {
-	SMSG_DEBUG("laxperQLessMark")
+	PSMSG_DEBUG("laxperQLessMark")
 }
 
 void laxperQGreaterResolve(void) {
-	SMSG_DEBUG("laxperQGreaterResolve")
+	PSMSG_DEBUG("laxperQGreaterResolve")
 }
 
 void laxperQGreaterMark(void) {
-	SMSG_DEBUG("laxperQGreaterMark")
+	PSMSG_DEBUG("laxperQGreaterMark")
 }
 
 void laxperLessResolve(void) {
-	SMSG_DEBUG("laxperLessResolve")
+	PSMSG_DEBUG("laxperLessResolve")
 }
 
 void laxperLessMark(void) {
-	SMSG_DEBUG("laxperLessMark")
+	PSMSG_DEBUG("laxperLessMark")
 }
 
 void laxperToResolve(void) {
-	SMSG_DEBUG("laxperToResolve")
+	PSMSG_DEBUG("laxperToResolve")
 }
 
 void laxperToMark(void) {
-	SMSG_DEBUG("laxperToMark")
+	PSMSG_DEBUG("laxperToMark")
 }
 
 void laxperQCondition(void) {
-	SMSG_DEBUG("laxperQCondition")
+	PSMSG_DEBUG("laxperQCondition")
 }
 
 void laxperAbort(void) {
-	SMSG_DEBUG("laxperAbort")
+	PSMSG_DEBUG("laxperAbort")
 }
 
 void laxperAbortQuote(void) {
-	SMSG_DEBUG("laxperAbortQuote")
+	PSMSG_DEBUG("laxperAbortQuote")
 }
 
 void laxperYAbortQuote(void) {
-	SMSG_DEBUG("laxperYAbortQuote")
+	PSMSG_DEBUG("laxperYAbortQuote")
 }
 
 void laxperYQError(void) {
-	SMSG_DEBUG("laxperYQError")
+	PSMSG_DEBUG("laxperYQError")
 }
 
 void laxperQError(void) {
-	SMSG_DEBUG("laxperQError")
+	PSMSG_DEBUG("laxperQError")
 }
 
 void laxperWhere(void) {
-	SMSG_DEBUG("laxperWhere")
+	PSMSG_DEBUG("laxperWhere")
 }
 
 void laxperForget(void) {
-	SMSG_DEBUG("laxperForget")
+	PSMSG_DEBUG("laxperForget")
 }
 
 void laxperYForget(void) {
-	SMSG_DEBUG("laxperYForget")
+	PSMSG_DEBUG("laxperYForget")
 }
 
 void laxperTrim(void) {
-	SMSG_DEBUG("laxperTrim")
+	PSMSG_DEBUG("laxperTrim")
 }
 
 void laxperFence(void) {
-	SMSG_DEBUG("laxperFence")
+	PSMSG_DEBUG("laxperFence")
 }
 
 void laxperQuote(void) {
-	SMSG_DEBUG("laxperQuoten")
+	PSMSG_DEBUG("laxperQuoten")
 }
 
 void laxperDotQuote(void) {
-	SMSG_DEBUG("laxperDotQuote")
+	PSMSG_DEBUG("laxperDotQuote")
 }
 
 void laxperCommaQuote(void) {
-	SMSG_DEBUG("laxperCommaQuote")
+	PSMSG_DEBUG("laxperCommaQuote")
 }
 
 void laxperYDotQuote(void) {
-	SMSG_DEBUG("laxperYDotQuote")
+	PSMSG_DEBUG("laxperYDotQuote")
 }
 
 void laxperYQuote(void) {
-	SMSG_DEBUG("laxperYQuote")
+	PSMSG_DEBUG("laxperYQuote")
 }
 
 void laxperXCompile(void) {
-	SMSG_DEBUG("laxperXCompile")
+	PSMSG_DEBUG("laxperXCompile")
 }
 
 void laxperXTick(void) {
-	SMSG_DEBUG("laxperXTick")
+	PSMSG_DEBUG("laxperXTick")
 }
 
 void laxperTick(void) {
-	SMSG_DEBUG("laxperTick")
+	PSMSG_DEBUG("laxperTick")
 }
 
 void laxperQMissing(void) {
-	SMSG_DEBUG("laxperQMissing")
+	PSMSG_DEBUG("laxperQMissing")
 }
 
 void laxperCrash(void) {
-	SMSG_DEBUG("laxperCrash")
+	PSMSG_DEBUG("laxperCrash")
 }
 
 void laxperControl(void) {
-	SMSG_DEBUG("laxperControl")
+	PSMSG_DEBUG("laxperControl")
 }
 
 void laxperAscii(void) {
-	SMSG_DEBUG("laxperAscii")
+	PSMSG_DEBUG("laxperAscii")
 }
 
 void laxperDLiteral(void) {
-	SMSG_DEBUG("laxperDLiteral")
+	PSMSG_DEBUG("laxperDLiteral")
 }
 
 void laxperLiteral(void) {
-	SMSG_DEBUG("laxperLiteral")
+	PSMSG_DEBUG("laxperLiteral")
 }
 
 void laxperImmediate(void) {
-	SMSG_DEBUG("laxperImmediate")
+	PSMSG_DEBUG("laxperImmediate")
 }
 
 void laxperCompile(void) {
-	SMSG_DEBUG("laxperCompile")
+	PSMSG_DEBUG("laxperCompile")
 }
 
 void laxperEven(void) {
-	SMSG_DEBUG("laxperEven")
+	PSMSG_DEBUG("laxperEven")
 }
 
 void laxperAlign(void) {
-	SMSG_DEBUG("laxperAlign")
+	PSMSG_DEBUG("laxperAlign")
 }
 
 void laxperCComma(void) {
-	SMSG_DEBUG("laxperCComma")
+	PSMSG_DEBUG("laxperCComma")
 }
 
 void laxperComma(void) {
-	SMSG_DEBUG("laxperComma")
+	PSMSG_DEBUG("laxperComma")
 }
 
 void laxperAllot(void) {
-	SMSG_DEBUG("laxperAllot")
+	PSMSG_DEBUG("laxperAllot")
 }
 
 void laxperInterpret(void) {
-	SMSG_DEBUG("laxperInterpret")
+	PSMSG_DEBUG("laxperInterpret")
 }
 
 void laxperStatus(void) {
-	SMSG_DEBUG("laxperStatus")
+	PSMSG_DEBUG("laxperStatus")
 }
 
 void laxperQStatus(void) {
-	SMSG_DEBUG("laxperQStatus")
+	PSMSG_DEBUG("laxperQStatus")
 }
 
 void laxperDefined(void) {
-	SMSG_DEBUG("laxperDefined")
+	PSMSG_DEBUG("laxperDefined")
 }
 
 void laxperQUppercase(void) {
-	SMSG_DEBUG("laxperQUppercase")
+	PSMSG_DEBUG("laxperQUppercase")
 }
 
 void laxperFind(void) {
-	SMSG_DEBUG("laxperFind")
+	PSMSG_DEBUG("laxperFind")
 }
 
 void laxperNumThreads(void) {
-	SMSG_DEBUG("laxperNumThreads")
+	PSMSG_DEBUG("laxperNumThreads")
 }
 
 void laxperYFind(void) {
-	SMSG_DEBUG("laxperYFind")
+	PSMSG_DEBUG("laxperYFind")
 }
 
 void laxperHash(void) {
-	SMSG_DEBUG("laxperHash")
+	PSMSG_DEBUG("laxperHash")
 }
 
 void laxperViewFrom(void) {
-	SMSG_DEBUG("laxperViewFrom")
+	PSMSG_DEBUG("laxperViewFrom")
 }
 
 void laxperToView(void) {
-	SMSG_DEBUG("laxperToView")
+	PSMSG_DEBUG("laxperToView")
 }
 
 void laxperToLink(void) {
-	SMSG_DEBUG("laxperToLink")
+	PSMSG_DEBUG("laxperToLink")
 }
 
 void laxperToName(void) {
-	SMSG_DEBUG("laxperToName")
+	PSMSG_DEBUG("laxperToName")
 }
 
 void laxperToBody(void) {
-	SMSG_DEBUG("laxperToBody")
+	PSMSG_DEBUG("laxperToBody")
 }
 
 void laxperLinkFrom(void) {
-	SMSG_DEBUG("laxperLinkFrom")
+	PSMSG_DEBUG("laxperLinkFrom")
 }
 
 void laxperNameFrom(void) {
-	SMSG_DEBUG("laxperNameFrom")
+	PSMSG_DEBUG("laxperNameFrom")
 }
 
 void laxperBodyFrom(void) {
-	SMSG_DEBUG("laxperBodyFrom")
+	PSMSG_DEBUG("laxperBodyFrom")
 }
 
 void laxperLGreaterName(void) {
-	SMSG_DEBUG("laxperLGreaterName")
+	PSMSG_DEBUG("laxperLGreaterName")
 }
 
 void laxperNToLink(void) {
-	SMSG_DEBUG("laxperNToLink")
+	PSMSG_DEBUG("laxperNToLink")
 }
 
 void laxperForth83(void) {
-	SMSG_DEBUG("laxperForth83")
+	PSMSG_DEBUG("laxperForth83")
 }
 
 void laxperDoneQ(void) {
-	SMSG_DEBUG("laxperDoneQ")
+	PSMSG_DEBUG("laxperDoneQ")
 }
 
 void laxperTraverse(void) {
-	SMSG_DEBUG("laxperTraverse")
+	PSMSG_DEBUG("laxperTraverse")
 }
 
 void laxperBackslashS(void) {
-	SMSG_DEBUG("laxperBackslashS")
+	PSMSG_DEBUG("laxperBackslashS")
 }
 
 void laxperParen(void) {
-	SMSG_DEBUG("laxperParen")
+	PSMSG_DEBUG("laxperParen")
 }
 
 void laxperDotParen(void) {
-	SMSG_DEBUG("laxperDotParen")
+	PSMSG_DEBUG("laxperDotParen")
 }
 
 void laxperToType(void) {
-	SMSG_DEBUG("laxperToType")
+	PSMSG_DEBUG("laxperToType")
 }
 
 void laxperWord(void) {
-	SMSG_DEBUG("laxperWord")
+	PSMSG_DEBUG("laxperWord")
 }
 
 void laxperTickWord(void) {
-	SMSG_DEBUG("laxperTickWord")
+	PSMSG_DEBUG("laxperTickWord")
 }
 
 void laxperParse(void) {
-	SMSG_DEBUG("laxperParse")
+	PSMSG_DEBUG("laxperParse")
 }
 
 void laxperParseWord(void) {
-	SMSG_DEBUG("laxperParseWord")
+	PSMSG_DEBUG("laxperParseWord")
 }
 
 void laxperSource(void) {
-	SMSG_DEBUG("laxperSource")
+	PSMSG_DEBUG("laxperSource")
 }
 
 void laxperYSource(void) {
-	SMSG_DEBUG("laxperYSource")
+	PSMSG_DEBUG("laxperYSource")
 }
 
 void laxperPlace(void) {
-	SMSG_DEBUG("laxperPlace")
+	PSMSG_DEBUG("laxperPlace")
 }
 
 void laxperSlashString(void) {
-	SMSG_DEBUG("laxperSlashString")
+	PSMSG_DEBUG("laxperSlashString")
 }
 
 void laxperScan(void) {
-	SMSG_DEBUG("laxperScan")
+	PSMSG_DEBUG("laxperScan")
 }
 
 void laxperSkip(void) {
-	SMSG_DEBUG("laxperSkip")
+	PSMSG_DEBUG("laxperSkip")
 }
 
 void laxperDDotR(void) {
-	SMSG_DEBUG("laxperDDotR")
+	PSMSG_DEBUG("laxperDDotR")
 }
 
 void laxperDDot(void) {
-	SMSG_DEBUG("laxperDDot")
+	PSMSG_DEBUG("laxperDDot")
 }
 
 void laxperYDDot(void) {
-	SMSG_DEBUG("laxperYDDot")
+	PSMSG_DEBUG("laxperYDDot")
 }
 
 void laxperUdDotR(void) {
-	SMSG_DEBUG("laxperUdDotR")
+	PSMSG_DEBUG("laxperUdDotR")
 }
 
 void laxperUdDot(void) {
-	SMSG_DEBUG("laxperUdDot")
+	PSMSG_DEBUG("laxperUdDot")
 }
 
 void laxperYUdDot(void) {
-	SMSG_DEBUG("laxperYUdDo")
+	PSMSG_DEBUG("laxperYUdDo")
 }
 
 void laxperDotR(void) {
-	SMSG_DEBUG("laxperDotR")
+	PSMSG_DEBUG("laxperDotR")
 }
 
 void laxperDot(void) {
-	SMSG_DEBUG("laxperDot")
+	PSMSG_DEBUG("laxperDot")
 }
 
 void laxperYDot(void) {
-	SMSG_DEBUG("laxperYDot")
+	PSMSG_DEBUG("laxperYDot")
 }
 
 void laxperUDotR(void) {
-	SMSG_DEBUG("laxperUDotR")
+	PSMSG_DEBUG("laxperUDotR")
 }
 
 void laxperUDot(void) {
-	SMSG_DEBUG("laxperUDot")
+	PSMSG_DEBUG("laxperUDot")
 }
 
 void laxperYUDot(void) {
-	SMSG_DEBUG("laxperYUDot")
+	PSMSG_DEBUG("laxperYUDot")
 }
 
 void laxperOctal(void) {
-	SMSG_DEBUG("laxperOctal")
+	PSMSG_DEBUG("laxperOctal")
 }
 
 void laxperDecimal(void) {
-	SMSG_DEBUG("laxperDecimal")
+	PSMSG_DEBUG("laxperDecimal")
 }
 
 void laxperHex(void) {
-	SMSG_DEBUG("laxperHex")
+	PSMSG_DEBUG("laxperHex")
 }
 
 void laxperNumS(void) {
-	SMSG_DEBUG("laxperNumS")
+	PSMSG_DEBUG("laxperNumS")
 }
 
 void laxperNum(void) {
-	SMSG_DEBUG("laxperNum")
+	PSMSG_DEBUG("laxperNum")
 }
 
 void laxperSign(void) {
-	SMSG_DEBUG("laxperSign")
+	PSMSG_DEBUG("laxperSign")
 }
 
 void laxperNumGreater(void) {
-	SMSG_DEBUG("laxperNumGreater")
+	PSMSG_DEBUG("laxperNumGreater")
 }
 
 void laxperLessNum(void) {
-	SMSG_DEBUG("laxperLessNum")
+	PSMSG_DEBUG("laxperLessNum")
 }
 
 void laxperHold(void) {
-	SMSG_DEBUG("laxperHold")
+	PSMSG_DEBUG("laxperHold")
 }
 
 void laxperNumber(void) {
-	SMSG_DEBUG("laxperNumber")
+	PSMSG_DEBUG("laxperNumber")
 }
 
 void laxperYNumber(void) {
-	SMSG_DEBUG("laxperYNumber")
+	PSMSG_DEBUG("laxperYNumber")
 }
 
 void laxperNumberQ(void) {
-	SMSG_DEBUG("laxperNumberQ")
+	PSMSG_DEBUG("laxperNumberQ")
 }
 
 void laxperYNumberQ(void) {
-	SMSG_DEBUG("laxperYNumberQ")
+	PSMSG_DEBUG("laxperYNumberQ")
 }
 
 void laxperConvert(void) {
-	SMSG_DEBUG("laxperConvert")
+	PSMSG_DEBUG("laxperConvert")
 }
 
 void laxperDoubleQ(void) {
-	SMSG_DEBUG("laxperDoubleQ")
+	PSMSG_DEBUG("laxperDoubleQ")
 }
 
 void laxperDigit(void) {
-	SMSG_DEBUG("laxperDigit")
+	PSMSG_DEBUG("laxperDigit")
 }
 
 void laxperLoad(void) {
-	SMSG_DEBUG("laxperLoad")
+	PSMSG_DEBUG("laxperLoad")
 }
 
 void laxperYLoad(void) {
-	SMSG_DEBUG("laxperYLoad")
+	PSMSG_DEBUG("laxperYLoad")
 }
 
 void laxperDefault(void) {
-	SMSG_DEBUG("laxperDefault")
+	PSMSG_DEBUG("laxperDefault")
 }
 
 void laxperViewNum(void) {
-	SMSG_DEBUG("laxperViewNum")
+	PSMSG_DEBUG("laxperViewNum")
 }
 
 void laxperFlush(void) {
-	SMSG_DEBUG("laxperFlush")
+	PSMSG_DEBUG("laxperFlush")
 }
 
 void laxperSaveBuffers(void) {
-	SMSG_DEBUG("laxperSaveBuffers")
+	PSMSG_DEBUG("laxperSaveBuffers")
 }
 
 void laxperEmptyBuffers(void) {
-	SMSG_DEBUG("laxperEmptyBuffers")
+	PSMSG_DEBUG("laxperEmptyBuffers")
 }
 
 void laxperInBlock(void) {
-	SMSG_DEBUG("laxperInBlock")
+	PSMSG_DEBUG("laxperInBlock")
 }
 
 void laxperBlock(void) {
-	SMSG_DEBUG("laxperBlock")
+	PSMSG_DEBUG("laxperBlock")
 }
 
 void laxperYBlock(void) {
-	SMSG_DEBUG("laxperYBlock")
+	PSMSG_DEBUG("laxperYBlock")
 }
 
 void laxperBuffer(void) {
-	SMSG_DEBUG("laxperBuffer")
+	PSMSG_DEBUG("laxperBuffer")
 }
 
 void laxperYBuffer(void) {
-	SMSG_DEBUG("laxperYBuffer")
+	PSMSG_DEBUG("laxperYBuffer")
 }
 
 void laxperMissing(void) {
-	SMSG_DEBUG("laxperMissing")
+	PSMSG_DEBUG("laxperMissing")
 }
 
 void laxperDiscord(void) {
-	SMSG_DEBUG("laxperDiscord")
+	PSMSG_DEBUG("laxperDiscord")
 }
 
 void laxperUpdate(void) {
-	SMSG_DEBUG("laxperUpdate")
+	PSMSG_DEBUG("laxperUpdate")
 }
 
 void laxperAbsentQ(void) {
-	SMSG_DEBUG("laxperAbsentQ")
+	PSMSG_DEBUG("laxperAbsentQ")
 }
 
 void laxperLatestQ(void) {
-	SMSG_DEBUG("laxperLatestQ")
+	PSMSG_DEBUG("laxperLatestQ")
 }
 
 void laxperCapacity(void) {
-	SMSG_DEBUG("laxperCapacity")
+	PSMSG_DEBUG("laxperCapacity")
 }
 
 void laxperDos(void) {
-	SMSG_DEBUG("laxperDos")
+	PSMSG_DEBUG("laxperDos")
 }
 
 void laxperSwitch(void) {
-	SMSG_DEBUG("laxperSwitch")
+	PSMSG_DEBUG("laxperSwitch")
 }
 
 void laxperFileQ(void) {
-	SMSG_DEBUG("laxperFileQ")
+	PSMSG_DEBUG("laxperFileQ")
 }
 
 void laxperDotFile(void) {
-	SMSG_DEBUG("laxperDotFile")
+	PSMSG_DEBUG("laxperDotFile")
 }
 
 void laxperWriteBlock(void) {
-	SMSG_DEBUG("laxperWriteBlock")
+	PSMSG_DEBUG("laxperWriteBlock")
 }
 
 void laxperReadBlock(void) {
-	SMSG_DEBUG("laxperReadBlock")
+	PSMSG_DEBUG("laxperReadBlock")
 }
 
 void laxperToUpdate(void) {
-	SMSG_DEBUG("laxperToUpdate")
+	PSMSG_DEBUG("laxperToUpdate")
 }
 
 void laxperBuffersNum(void) {
-	SMSG_DEBUG("laxperBuffersNum")
+	PSMSG_DEBUG("laxperBuffersNum")
 }
 
 void laxperToEnd(void) {
-	SMSG_DEBUG("laxperToEnd")
+	PSMSG_DEBUG("laxperToEnd")
 }
 
 void laxperToBuffers(void) {
-	SMSG_DEBUG("laxperToBuffers")
+	PSMSG_DEBUG("laxperToBuffers")
 }
 
 void laxperInitR0(void) {
-	SMSG_DEBUG("laxperInitR0")
+	PSMSG_DEBUG("laxperInitR0")
 }
 
 void laxperFirst(void) {
-	SMSG_DEBUG("laxperFirst")
+	PSMSG_DEBUG("laxperFirst")
 }
 
 void laxperToSize(void) {
-	SMSG_DEBUG("laxperToSize")
+	PSMSG_DEBUG("laxperToSize")
 }
 
 void laxperLimit(void) {
-	SMSG_DEBUG("laxperLimit")
+	PSMSG_DEBUG("laxperLimit")
 }
 
 void laxperDiskError(void) {
-	SMSG_DEBUG("laxperDiskError")
+	PSMSG_DEBUG("laxperDiskError")
 }
 
 void laxperBSlashFcb(void) {
-	SMSG_DEBUG("laxperBSlashFcb")
+	PSMSG_DEBUG("laxperBSlashFcb")
 }
 
 void laxperRecSlashBlk(void) {
-	SMSG_DEBUG("laxperRecSlashBlk")
+	PSMSG_DEBUG("laxperRecSlashBlk")
 }
 
 void laxperBSlashRec(void) {
-	SMSG_DEBUG("laxperBSlashRec")
+	PSMSG_DEBUG("laxperBSlashRec")
 }
 
 void laxperBSlashBuf(void) {
-	SMSG_DEBUG("laxperBSlashBuf")
+	PSMSG_DEBUG("laxperBSlashBuf")
 }
 
 void laxperNumBuffers(void) {
-	SMSG_DEBUG("laxperNumBuffers")
+	PSMSG_DEBUG("laxperNumBuffers")
 }
 
 void laxperQuery(void) {
-	SMSG_DEBUG("laxperQuery")
+	PSMSG_DEBUG("laxperQuery")
 }
 
 void laxperTib(void) {
-	SMSG_DEBUG("laxperTib")
+	PSMSG_DEBUG("laxperTib")
 }
 
 void laxperExpect(void) {
-	SMSG_DEBUG("laxperExpect")
+	PSMSG_DEBUG("laxperExpect")
 }
 
 void laxperCcForth(void) {
-	SMSG_DEBUG("laxperCcForth")
+	PSMSG_DEBUG("laxperCcForth")
 }
 
 void laxperCc(void) {
-	SMSG_DEBUG("laxperCc")
+	PSMSG_DEBUG("laxperCc")
 }
 
 void laxperDelIn(void) {
-	SMSG_DEBUG("laxperDelIn")
+	PSMSG_DEBUG("laxperDelIn")
 }
 
 void laxperChar(void) {
-	SMSG_DEBUG("laxperChar")
+	PSMSG_DEBUG("laxperChar")
 }
 
 void laxperYChar(void) {
-	SMSG_DEBUG("laxperYChar")
+	PSMSG_DEBUG("laxperYChar")
 }
 
 void laxperCrIn(void) {
-	SMSG_DEBUG("laxperCrIn")
+	PSMSG_DEBUG("laxperCrIn")
 }
 
 void laxperPIn(void) {
-	SMSG_DEBUG("laxperPIn")
+	PSMSG_DEBUG("laxperPIn")
 }
 
 void laxperResIn(void) {
-	SMSG_DEBUG("laxperResIn")
+	PSMSG_DEBUG("laxperResIn")
 }
 
 void laxperBackUp(void) {
-	SMSG_DEBUG("laxperBackUp")
+	PSMSG_DEBUG("laxperBackUp")
 }
 
 void laxperYDelIn(void) {
-	SMSG_DEBUG("laxperYDelIn")
+	PSMSG_DEBUG("laxperYDelIn")
 }
 
 void laxperBsIn(void) {
-	SMSG_DEBUG("laxperBsIn")
+	PSMSG_DEBUG("laxperBsIn")
 }
 
 void laxperBeep(void) {
-	SMSG_DEBUG("laxperBeep")
+	PSMSG_DEBUG("laxperBeep")
 }
 
 void laxperBackspaces(void) {
-	SMSG_DEBUG("laxperBackspaces")
+	PSMSG_DEBUG("laxperBackspaces")
 }
 
 void laxperSpaces(void) {
-	SMSG_DEBUG("laxperSpaces")
+	PSMSG_DEBUG("laxperSpaces")
 }
 
 void laxperSpace(void) {
-	SMSG_DEBUG("laxperSpace")
+	PSMSG_DEBUG("laxperSpace")
 }
 
 void laxperType(void) {
-	SMSG_DEBUG("laxperType")
+	PSMSG_DEBUG("laxperType")
 }
 
 void laxperCrLf(void) {
-	SMSG_DEBUG("laxperCrLf")
+	PSMSG_DEBUG("laxperCrLf")
 }
 
 void laxperYEmit(void) {
-	SMSG_DEBUG("laxperYEmit")
+	PSMSG_DEBUG("laxperYEmit")
 }
 
 void laxperYPrint(void) {
-	SMSG_DEBUG("laxperYPrint")
+	PSMSG_DEBUG("laxperYPrint")
 }
 
 void laxperPrStat(void) {
-	SMSG_DEBUG("laxperPrStat")
+	PSMSG_DEBUG("laxperPrStat")
 }
 
 void laxperCr(void) {
-	SMSG_DEBUG("laxperCr")
+	PSMSG_DEBUG("laxperCr")
 }
 
 void laxperKey(void) {
-	SMSG_DEBUG("laxperKey")
+	PSMSG_DEBUG("laxperKey")
 }
 
 void laxperKeyQ(void) {
-	SMSG_DEBUG("laxperKeyQ")
+	PSMSG_DEBUG("laxperKeyQ")
 }
 
 void laxperYConsole(void) {
-	SMSG_DEBUG("laxperYConsole")
+	PSMSG_DEBUG("laxperYConsole")
 }
 
 void laxperYKey(void) {
-	SMSG_DEBUG("laxperYKey")
+	PSMSG_DEBUG("laxperYKey")
 }
 
 void laxperYKeyQ(void) {
-	SMSG_DEBUG("laxperYKeyQ")
+	PSMSG_DEBUG("laxperYKeyQ")
 }
 
 void laxperBdos(void) {
-	SMSG_DEBUG("laxperBdos")
+	PSMSG_DEBUG("laxperBdos")
 }
 
 void laxperCompare(void) {
-	SMSG_DEBUG("laxperCompare")
+	PSMSG_DEBUG("laxperCompare")
 }
 
 void laxperCapsComp(void) {
-	SMSG_DEBUG("laxperCapsComp")
+	PSMSG_DEBUG("laxperCapsComp")
 }
 
 void laxperComp(void) {
-	SMSG_DEBUG("laxperComp")
+	PSMSG_DEBUG("laxperComp")
 }
 
 void laxperMinusTrailing(void) {
-	SMSG_DEBUG("laxperMinusTrailing")
+	PSMSG_DEBUG("laxperMinusTrailing")
 }
 
 void laxperPad(void) {
-	SMSG_DEBUG("laxperPad")
+	PSMSG_DEBUG("laxperPad")
 }
 
 void laxperHere(void) {
-	SMSG_DEBUG("laxperHere")
+	PSMSG_DEBUG("laxperHere")
 }
 
 void laxperUpper(void) {
-	SMSG_DEBUG("laxperUpper")
+	PSMSG_DEBUG("laxperUpper")
 }
 
 void laxperUpc(void) {
-	SMSG_DEBUG("laxperUpc")
+	PSMSG_DEBUG("laxperUpc")
 }
 
 void laxperMove(void) {
-	SMSG_DEBUG("laxperMove")
+	PSMSG_DEBUG("laxperMove")
 }
 
 void laxperLength(void) {
-	SMSG_DEBUG("laxperLength")
+	PSMSG_DEBUG("laxperLength")
 }
 
 void laxperCount(void) {
-	SMSG_DEBUG("laxperCount")
+	PSMSG_DEBUG("laxperCount")
 }
 
 void laxperBlank(void) {
-	SMSG_DEBUG("laxperBlank")
+	PSMSG_DEBUG("laxperBlank")
 }
 
 void laxperErase(void) {
-	SMSG_DEBUG("laxperErase")
+	PSMSG_DEBUG("laxperErase")
 }
 
 void laxperFill(void) {
-	SMSG_DEBUG("laxperFill")
+	PSMSG_DEBUG("laxperFill")
 }
 
 void laxperCaps(void) {
-	SMSG_DEBUG("laxperCaps")
+	PSMSG_DEBUG("laxperCaps")
 }
 
 void laxperBell(void) {
-	SMSG_DEBUG("laxperBell")
+	PSMSG_DEBUG("laxperBell")
 }
 
 void laxperBs(void) {
-	SMSG_DEBUG("laxperBs")
+	PSMSG_DEBUG("laxperBs")
 }
 
 void laxperBl(void) {
-	SMSG_DEBUG("laxperBl")
+	PSMSG_DEBUG("laxperBl")
 }
 
 void laxperEndQ(void) {
-	SMSG_DEBUG("laxperEndQ")
+	PSMSG_DEBUG("laxperEndQ")
 }
 
 void laxperNumTib(void) {
-	SMSG_DEBUG("laxperNumTib")
+	PSMSG_DEBUG("laxperNumTib")
 }
 
 void laxperSpan(void) {
-	SMSG_DEBUG("laxperSpan")
+	PSMSG_DEBUG("laxperSpan")
 }
 
 void laxperToIn(void) {
-	SMSG_DEBUG("laxperToIn")
+	PSMSG_DEBUG("laxperToIn")
 }
 
 void laxperBlk(void) {
-	SMSG_DEBUG("laxperBlk")
+	PSMSG_DEBUG("laxperBlk")
 }
 
 void laxperVocLink(void) {
-	SMSG_DEBUG("laxperVocLink")
+	PSMSG_DEBUG("laxperVocLink")
 }
 
 void laxperWidth(void) {
-	SMSG_DEBUG("laxperWidth")
+	PSMSG_DEBUG("laxperWidth")
 }
 
 void laxperTickTib(void) {
-	SMSG_DEBUG("laxperTickTib")
+	PSMSG_DEBUG("laxperTickTib")
 }
 
 void laxperContext(void) {
-	SMSG_DEBUG("laxperContext")
+	PSMSG_DEBUG("laxperContext")
 }
 
 void laxperNumVocs(void) {
-	SMSG_DEBUG("laxperNumVocs")
+	PSMSG_DEBUG("laxperNumVocs")
 }
 
 void laxperCurrent(void) {
-	SMSG_DEBUG("laxperCurrent")
+	PSMSG_DEBUG("laxperCurrent")
 }
 
 void laxperCsp(void) {
-	SMSG_DEBUG("laxperCsp")
+	PSMSG_DEBUG("laxperCsp")
 }
 
 void laxperLast(void) {
-	SMSG_DEBUG("laxperLast")
+	PSMSG_DEBUG("laxperLast")
 }
 
 void laxperRNum(void) {
-	SMSG_DEBUG("laxperRNum")
+	PSMSG_DEBUG("laxperRNum")
 }
 
 void laxperDpl(void) {
-	SMSG_DEBUG("laxperDpl")
+	PSMSG_DEBUG("laxperDpl")
 }
 
 void laxperWarning(void) {
-	SMSG_DEBUG("laxperWarning")
+	PSMSG_DEBUG("laxperWarning")
 }
 
 void laxperState(void) {
-	SMSG_DEBUG("laxperState")
+	PSMSG_DEBUG("laxperState")
 }
 
 void laxperPrior(void) {
-	SMSG_DEBUG("laxperPrior")
+	PSMSG_DEBUG("laxperPrior")
 }
 
 void laxperScr(void) {
-	SMSG_DEBUG("laxperScr")
+	PSMSG_DEBUG("laxperScr")
 }
 
 void laxperEmit(void) {
-	SMSG_DEBUG("laxperEmit")
+	PSMSG_DEBUG("laxperEmit")
 }
 
 void laxperPrinting(void) {
-	SMSG_DEBUG("laxperPrinting")
+	PSMSG_DEBUG("laxperPrinting")
 }
 
 void laxperInFile(void) {
-	SMSG_DEBUG("laxperInFile")
+	PSMSG_DEBUG("laxperInFile")
 }
 
 void laxperFile(void) {
-	SMSG_DEBUG("laxperFile")
+	PSMSG_DEBUG("laxperFile")
 }
 
 void laxperHld(void) {
-	SMSG_DEBUG("laxperHld")
+	PSMSG_DEBUG("laxperHld")
 }
 
 void laxperBase(void) {
-	SMSG_DEBUG("laxperBase")
+	PSMSG_DEBUG("laxperBase")
 }
 
 void laxperOffset(void) {
-	SMSG_DEBUG("laxperOffset")
+	PSMSG_DEBUG("laxperOffset")
 }
 
 void laxperNumLine(void) {
-	SMSG_DEBUG("laxperOffset")
+	PSMSG_DEBUG("laxperOffset")
 }
 
 void laxperNumOut(void) {
-	SMSG_DEBUG("laxperNumOut")
+	PSMSG_DEBUG("laxperNumOut")
 }
 
 void laxperDP(void) {
-	SMSG_DEBUG("laxperDP")
+	PSMSG_DEBUG("laxperDP")
 }
 
 void laxperRP0(void) {
-	SMSG_DEBUG("laxperRP0")
+	PSMSG_DEBUG("laxperRP0")
 }
 
 void laxperSP0(void) {
-	SMSG_DEBUG("laxperSP0")
+	PSMSG_DEBUG("laxperSP0")
 }
 
 void laxperLink(void) {
-	SMSG_DEBUG("laxperLink")
+	PSMSG_DEBUG("laxperLink")
 }
 
 void laxperEntry(void) {
-	SMSG_DEBUG("laxperEntry")
+	PSMSG_DEBUG("laxperEntry")
 }
 
 void laxperTos(void) {
-	SMSG_DEBUG("laxperTos")
+	PSMSG_DEBUG("laxperTos")
 }
 
 void laxperStarSlash(void) {
-	SMSG_DEBUG("laxperStarSlash")
+	PSMSG_DEBUG("laxperStarSlash")
 }
 
 void laxperStarSlashMod(void) {
-	SMSG_DEBUG("laxperStarSlashMod")
+	PSMSG_DEBUG("laxperStarSlashMod")
 }
 
 void laxperMod(void) {
-	SMSG_DEBUG("laxperMod")
+	PSMSG_DEBUG("laxperMod")
 }
 
 void laxperSlash(void) {
-	SMSG_DEBUG("laxperSlash")
+	PSMSG_DEBUG("laxperSlash")
 }
 
 void laxperSlashMod(void) {
-	SMSG_DEBUG("laxperSlashMod")
+	PSMSG_DEBUG("laxperSlashMod")
 }
 
 void laxperStar(void) {
-	SMSG_DEBUG("laxperStar")
+	PSMSG_DEBUG("laxperStar")
 }
 
 void laxperMuSlashMod(void) {
-	SMSG_DEBUG("laxperMuSlashMod")
+	PSMSG_DEBUG("laxperMuSlashMod")
 }
 
 void laxperMSlashMod(void) {
-	SMSG_DEBUG("laxperMSlashMod")
+	PSMSG_DEBUG("laxperMSlashMod")
 }
 
 void laxperStarD(void) {
-	SMSG_DEBUG("laxperStarD")
+	PSMSG_DEBUG("laxperStarD")
 }
 
 void laxperDMax(void) {
-	SMSG_DEBUG("laxperDMax")
+	PSMSG_DEBUG("laxperDMax")
 }
 
 void laxperDMin(void) {
-	SMSG_DEBUG("laxperDMin")
+	PSMSG_DEBUG("laxperDMin")
 }
 
 void laxperDGreater(void) {
-	SMSG_DEBUG("laxperDGreater")
+	PSMSG_DEBUG("laxperDGreater")
 }
 
 void laxperDLess(void) {
-	SMSG_DEBUG("laxperDLess")
+	PSMSG_DEBUG("laxperDLess")
 }
 
 void laxperDULess(void) {
-	SMSG_DEBUG("laxperDULess")
+	PSMSG_DEBUG("laxperDULess")
 }
 
 void laxperDEqual(void) {
-	SMSG_DEBUG("laxperDEqual")
+	PSMSG_DEBUG("laxperDEqual")
 }
 
 void laxperD0Equal(void) {
-	SMSG_DEBUG("laxperD0Equal")
+	PSMSG_DEBUG("laxperD0Equal")
 }
 
 void laxperQDNegate(void) {
-	SMSG_DEBUG("laxperQDNegate")
+	PSMSG_DEBUG("laxperQDNegate")
 }
 
 void laxperDMinus(void) {
-	SMSG_DEBUG("laxperDMinus")
+	PSMSG_DEBUG("laxperDMinus")
 }
 
 void laxperD2Slash(void) {
-	SMSG_DEBUG("laxperD2Slash")
+	PSMSG_DEBUG("laxperD2Slash")
 }
 
 void laxperD2Star(void) {
-	SMSG_DEBUG("laxperD2Star")
+	PSMSG_DEBUG("laxperD2Star")
 }
 
 void laxperDAbs(void) {
-	SMSG_DEBUG("laxperDAbs")
+	PSMSG_DEBUG("laxperDAbs")
 }
 
 void laxperSToD(void) {
-	SMSG_DEBUG("laxperSToD")
+	PSMSG_DEBUG("laxperSToD")
 }
 
 void laxperDNegate(void) {
-	SMSG_DEBUG("laxperDNegate")
+	PSMSG_DEBUG("laxperDNegate")
 }
 
 void laxperDPLus(void) {
-	SMSG_DEBUG("laxperDPLus")
+	PSMSG_DEBUG("laxperDPLus")
 }
 
 void laxperTwoRot(void) {
-	SMSG_DEBUG("laxperTwoRot")
+	PSMSG_DEBUG("laxperTwoRot")
 }
 
 void laxperFourDup(void) {
-	SMSG_DEBUG("laxperFourDup")
+	PSMSG_DEBUG("laxperFourDup")
 }
 
 void laxperThreeDup(void) {
-	SMSG_DEBUG("laxperThreeDup")
+	PSMSG_DEBUG("laxperThreeDup")
 }
 
 void laxperTwoOver(void) {
-	SMSG_DEBUG("laxperTwoOver")
+	PSMSG_DEBUG("laxperTwoOver")
 }
 
 void laxperTwoSwap(void) {
-	SMSG_DEBUG("laxperTwoSwap")
+	PSMSG_DEBUG("laxperTwoSwap")
 }
 
 void laxperTwoDup(void) {
-	SMSG_DEBUG("laxperTwoDup")
+	PSMSG_DEBUG("laxperTwoDup")
 }
 
 void laxperTwoDrop(void) {
-	SMSG_DEBUG("laxperTwoDrop")
+	PSMSG_DEBUG("laxperTwoDrop")
 }
 
 void laxperTwoStore(void) {
-	SMSG_DEBUG("laxperTwoStore")
+	PSMSG_DEBUG("laxperTwoStore")
 }
 
 void laxperTwoFetch(void) {
-	SMSG_DEBUG("laxperTwoFetch")
+	PSMSG_DEBUG("laxperTwoFetch")
 }
 
 void laxperWithin(void) {
-	SMSG_DEBUG("laxperWithin")
+	PSMSG_DEBUG("laxperWithin")
 }
 
 void laxperBetween(void) {
-	SMSG_DEBUG("laxperBetween")
+	PSMSG_DEBUG("laxperBetween")
 }
 
 void laxperMax(void) {
-	SMSG_DEBUG("laxperMax")
+	PSMSG_DEBUG("laxperMax")
 }
 
 void laxperMin(void) {
-	SMSG_DEBUG("laxperMin")
+	PSMSG_DEBUG("laxperMin")
 }
 
 void laxperGreater(void) {
-	SMSG_DEBUG("laxperGreater")
+	PSMSG_DEBUG("laxperGreater")
 }
 
 void laxperLess(void) {
-	SMSG_DEBUG("laxperLess")
+	PSMSG_DEBUG("laxperLess")
 }
 
 void laxperUGreater(void) {
-	SMSG_DEBUG("laxperUGreater")
+	PSMSG_DEBUG("laxperUGreater")
 }
 
 void laxperULess(void) {
-	SMSG_DEBUG("laxperULess")
+	PSMSG_DEBUG("laxperULess")
 }
 
 void laxperQNegate(void) {
-	SMSG_DEBUG("laxperQNegate")
+	PSMSG_DEBUG("laxperQNegate")
 }
 
 void laxperUnequal(void) {
-	SMSG_DEBUG("laxperUnequal")
+	PSMSG_DEBUG("laxperUnequal")
 }
 
 void laxperEqual(void) {
-	SMSG_DEBUG("laxperEqual")
+	PSMSG_DEBUG("laxperEqual")
 }
 
 void laxperZeroUnequal(void) {
-	SMSG_DEBUG("laxperZeroUnequal")
+	PSMSG_DEBUG("laxperZeroUnequal")
 }
 
 void laxperZeroGreater(void) {
-	SMSG_DEBUG("laxperZeroGreater")
+	PSMSG_DEBUG("laxperZeroGreater")
 }
 
 void laxperZeroLess(void) {
-	SMSG_DEBUG("laxperZeroLess")
+	PSMSG_DEBUG("laxperZeroLess")
 }
 
 void laxperZeroEqual(void) {
-	SMSG_DEBUG("laxperZeroEqual")
+	PSMSG_DEBUG("laxperZeroEqual")
 }
 
 void laxperUmSlashMod(void) {
-	SMSG_DEBUG("laxperUmSlashMod")
+	PSMSG_DEBUG("laxperUmSlashMod")
 }
 
 void laxperUStarD(void) {
-	SMSG_DEBUG("laxperUStarD")
+	PSMSG_DEBUG("laxperUStarD")
 }
 
 void laxperUmStar(void) {
-	SMSG_DEBUG("laxperUmStar")
+	PSMSG_DEBUG("laxperUmStar")
 }
 
 void laxperTwoMinus(void) {
-	SMSG_DEBUG("laxperTwoMinus")
+	PSMSG_DEBUG("laxperTwoMinus")
 }
 
 void laxperOneMinus(void) {
-	SMSG_DEBUG("laxperOneMinus")
+	PSMSG_DEBUG("laxperOneMinus")
 }
 
 void laxperTwoPlus(void) {
-	SMSG_DEBUG("laxperTwoPlus")
+	PSMSG_DEBUG("laxperTwoPlus")
 }
 
 void laxperOnePlus(void) {
-	SMSG_DEBUG("laxperOnePlus")
+	PSMSG_DEBUG("laxperOnePlus")
 }
 
 void laxperEightStar(void) {
-	SMSG_DEBUG("laxperEightStar")
+	PSMSG_DEBUG("laxperEightStar")
 }
 
 void laxperU2Slash(void) {
-	SMSG_DEBUG("laxperU2Slash")
+	PSMSG_DEBUG("laxperU2Slash")
 }
 
 void laxperTwoSlash(void) {
-	SMSG_DEBUG("laxperTwoSlash")
+	PSMSG_DEBUG("laxperTwoSlash")
 }
 
 void laxperTwoStar(void) {
-	SMSG_DEBUG("laxperTwoStar")
+	PSMSG_DEBUG("laxperTwoStar")
 }
 
 void laxperThree(void) {
-	SMSG_DEBUG("laxperThree")
+	PSMSG_DEBUG("laxperThree")
 }
 
 void laxperTwo(void) {
-	SMSG_DEBUG("laxperTwo")
+	PSMSG_DEBUG("laxperTwo")
 }
 
 void laxperOne(void) {
-	SMSG_DEBUG("laxperOne")
+	PSMSG_DEBUG("laxperOne")
 }
 
 void laxperZero(void) {
-	SMSG_DEBUG("laxperZero")
+	PSMSG_DEBUG("laxperZero")
 }
 
 void laxperPlusStore(void) {
-	SMSG_DEBUG("laxperPlusStore")
+	PSMSG_DEBUG("laxperPlusStore")
 }
 
 void laxperAbs(void) {
-	SMSG_DEBUG("laxperAbs")
+	PSMSG_DEBUG("laxperAbs")
 }
 
 void laxperMinus(void) {
-	SMSG_DEBUG("laxperMinus")
+	PSMSG_DEBUG("laxperMinus")
 }
 
 void laxperNegate(void) {
-	SMSG_DEBUG("laxperNegate")
+	PSMSG_DEBUG("laxperNegate")
 }
 
 void laxperPlus(void) {
-	SMSG_DEBUG("laxperPlus")
+	PSMSG_DEBUG("laxperPlus")
 }
 
 void laxperOff(void) {
-	SMSG_DEBUG("laxperOff")
+	PSMSG_DEBUG("laxperOff")
 }
 
 void laxperOn(void) {
-	SMSG_DEBUG("laxperOn")
+	PSMSG_DEBUG("laxperOn")
 }
 
 void laxperCToggle(void) {
-	SMSG_DEBUG("laxperCToggle")
+	PSMSG_DEBUG("laxperCToggle")
 }
 
 void laxperCReset(void) {
-	SMSG_DEBUG("laxperCReset")
+	PSMSG_DEBUG("laxperCReset")
 }
 
 void laxperCSet(void) {
-	SMSG_DEBUG("laxperCSet")
+	PSMSG_DEBUG("laxperCSet")
 }
 
 void laxperFalse(void) {
-	SMSG_DEBUG("laxperFalse")
+	PSMSG_DEBUG("laxperFalse")
 }
 
 void laxperTrue(void) {
-	SMSG_DEBUG("laxperTrue")
+	PSMSG_DEBUG("laxperTrue")
 }
 
 void laxperNot(void) {
-	SMSG_DEBUG("laxperNot")
+	PSMSG_DEBUG("laxperNot")
 }
 
 void laxperYor(void) {
-	SMSG_DEBUG("laxperYor")
+	PSMSG_DEBUG("laxperYor")
 }
 
 void laxperOr(void) {
-	SMSG_DEBUG("laxperOr")
+	PSMSG_DEBUG("laxperOr")
 }
 
 void laxperAnd(void) {
-	SMSG_DEBUG("laxperAnd")
+	PSMSG_DEBUG("laxperAnd")
 }
 
 void laxperRoll(void) {
-	SMSG_DEBUG("laxperRoll")
+	PSMSG_DEBUG("laxperRoll")
 }
 
 void laxperPick(void) {
-	SMSG_DEBUG("laxperPick")
+	PSMSG_DEBUG("laxperPick")
 }
 
 void laxperRFetch(void) {
-	SMSG_DEBUG("laxperRFetch")
+	PSMSG_DEBUG("laxperRFetch")
 }
 
 void laxperToR(void) {
-	SMSG_DEBUG("laxperToR")
+	PSMSG_DEBUG("laxperToR")
 }
 
 void laxperRFrom(void) {
-	SMSG_DEBUG("laxperRFrom")
+	PSMSG_DEBUG("laxperRFrom")
 }
 
 void laxperQDup(void) {
-	SMSG_DEBUG("laxperQDup")
+	PSMSG_DEBUG("laxperQDup")
 }
 
 void laxperFlip(void) {
-	SMSG_DEBUG("laxperFlip")
+	PSMSG_DEBUG("laxperFlip")
 }
 
 void laxperMinusRot(void) {
-	SMSG_DEBUG("laxperMinusRot")
+	PSMSG_DEBUG("laxperMinusRot")
 }
 
 void laxperRot(void) {
-	SMSG_DEBUG("laxperRot")
+	PSMSG_DEBUG("laxperRot")
 }
 
 void laxperNip(void) {
-	SMSG_DEBUG("laxperNip")
+	PSMSG_DEBUG("laxperNip")
 }
 
 void laxperTuck(void) {
-	SMSG_DEBUG("laxperTuck")
+	PSMSG_DEBUG("laxperTuck")
 }
 
 void laxperOver(void) {
-	SMSG_DEBUG("laxperOver")
+	PSMSG_DEBUG("laxperOver")
 }
 
 void laxperSwap(void) {
-	SMSG_DEBUG("laxperSwap")
+	PSMSG_DEBUG("laxperSwap")
 }
 
 void laxperDup(void) {
-	SMSG_DEBUG("laxperDup")
+	PSMSG_DEBUG("laxperDup")
 }
 
 void laxperDrop(void) {
-	SMSG_DEBUG("laxperDrop")
+	PSMSG_DEBUG("laxperDrop")
 }
 
 void laxperRPStore(void) {
-	SMSG_DEBUG("laxperRPStore")
+	PSMSG_DEBUG("laxperRPStore")
 }
 
 void laxperRPFetch(void) {
-	SMSG_DEBUG("laxperRPFetch")
+	PSMSG_DEBUG("laxperRPFetch")
 }
 
 void laxperSPStore(void) {
-	SMSG_DEBUG("laxperSPStore")
+	PSMSG_DEBUG("laxperSPStore")
 }
 
 void laxperSPFetch(void) {
-	SMSG_DEBUG("laxperSPFetch")
+	PSMSG_DEBUG("laxperSPFetch")
 }
 
 void laxperCMoveFrom(void) {
-	SMSG_DEBUG("laxperCMoveFrom")
+	PSMSG_DEBUG("laxperCMoveFrom")
 }
 
 void laxperCMove(void) {
-	SMSG_DEBUG("laxperCMove")
+	PSMSG_DEBUG("laxperCMove")
 }
 
 void laxperCStore(void) {
-	SMSG_DEBUG("laxperCStore")
+	PSMSG_DEBUG("laxperCStore")
 }
 
 void laxperCFetch(void) {
-	SMSG_DEBUG("laxperCFetch")
+	PSMSG_DEBUG("laxperCFetch")
 }
 
 void laxperStore(void) {
-	SMSG_DEBUG("laxperStore")
+	PSMSG_DEBUG("laxperStore")
 }
 
 void laxperFetch(void) {
-	SMSG_DEBUG("laxperFetch")
+	PSMSG_DEBUG("laxperFetch")
 }
 
 void laxperYQLeave(void) {
-	SMSG_DEBUG("laxperYQLeave")
+	PSMSG_DEBUG("laxperYQLeave")
 }
 
 void laxperYLeave(void) {
-	SMSG_DEBUG("laxperYLeave")
+	PSMSG_DEBUG("laxperYLeave")
 }
 
 void laxperJ(void) {
-	SMSG_DEBUG("laxperJ")
+	PSMSG_DEBUG("laxperJ")
 }
 
 void laxperI(void) {
-	SMSG_DEBUG("laxperI")
+	PSMSG_DEBUG("laxperI")
 }
 
 void laxperPause(void) {
-	SMSG_DEBUG("laxperPause")
+	PSMSG_DEBUG("laxperPause")
 }
 
 void laxperNoop(void) {
-	SMSG_DEBUG("laxperNoop")
+	PSMSG_DEBUG("laxperNoop")
 }
 
 void laxperGo(void) {
-	SMSG_DEBUG("laxperGo")
+	PSMSG_DEBUG("laxperGo")
 }
 
 void laxperPerform(void) {
-	SMSG_DEBUG("laxperPerform")
+	PSMSG_DEBUG("laxperPerform")
 }
 
 void laxperExecute(void) {
-	SMSG_DEBUG("laxperExecute")
+	PSMSG_DEBUG("laxperExecute")
 }
 
 void laxperToNext(void) {
-	SMSG_DEBUG("laxperToNext")
+	PSMSG_DEBUG("laxperToNext")
 }
 
 void laxperBounds(void) {
-	SMSG_DEBUG("laxperBounds")
+	PSMSG_DEBUG("laxperBounds")
 }
 
 void laxperYQDo(void) {
-	SMSG_DEBUG("laxperYQDo")
+	PSMSG_DEBUG("laxperYQDo")
 }
 
 void laxperYDo(void) {
-	SMSG_DEBUG("laxperYDo")
+	PSMSG_DEBUG("laxperYDo")
 }
 
 void laxperYPlusLoop(void) {
-	SMSG_DEBUG("laxperYPlusLoop")
+	PSMSG_DEBUG("laxperYPlusLoop")
 }
 
 void laxperYLoop(void) {
-	SMSG_DEBUG("laxperYLoop")
+	PSMSG_DEBUG("laxperYLoop")
 }
 
 void laxperQBranch(void) {
-	SMSG_DEBUG("laxperQBranch")
+	PSMSG_DEBUG("laxperQBranch")
 }
 
 void laxperBranch(void) {
-	SMSG_DEBUG("laxperBranch")
+	PSMSG_DEBUG("laxperBranch")
 }
 
 void laxperYLit(void) {
-	SMSG_DEBUG("laxperYLit")
+	PSMSG_DEBUG("laxperYLit")
 }
 
 void laxperUp(void) {
-	SMSG_DEBUG("laxperUp")
+	PSMSG_DEBUG("laxperUp")
 }
 
 void laxperUnnest(void) {
-	SMSG_DEBUG("laxperUnnest")
+	PSMSG_DEBUG("laxperUnnest")
 }
 
 void laxperExit(void) {
-	SMSG_DEBUG("laxperExit")
+	PSMSG_DEBUG("laxperExit")
 }
 
 void laxperForth(void) {
-	SMSG_DEBUG("laxperForth")
+	PSMSG_DEBUG("laxperForth")
 }
 
 #endif
@@ -2198,74 +2198,74 @@ void laxperForth(void) {
 #if (H2O_FORTH_PRIMITIVES == LAXONPERRY_FORTH) || \
     (H2O_FORTH_PRIMITIVES == LAXONPERRY_PC_FORTH)
 void laxperPStore(void) {
-	SMSG_DEBUG("laxperPStore")
+	PSMSG_DEBUG("laxperPStore")
 }
 
 void laxperPFetch(void) {
-	SMSG_DEBUG("laxperPFetch")
+	PSMSG_DEBUG("laxperPFetch")
 }
 
 void laxperIntNum(void) {
-	SMSG_DEBUG("laxperIntNum")
+	PSMSG_DEBUG("laxperIntNum")
 }
 
 void laxperCpu8086DotBlk(void) {
-	SMSG_DEBUG("laxperCpu8086DotBlk")
+	PSMSG_DEBUG("laxperCpu8086DotBlk")
 }
 
 void laxperExtend86DotBlk(void) {
-	SMSG_DEBUG("laxperExtend86DotBlk")
+	PSMSG_DEBUG("laxperExtend86DotBlk")
 }
 
 void laxperKernel86DotBlk(void) {
-	SMSG_DEBUG("laxperKernel86DotBlk")
+	PSMSG_DEBUG("laxperKernel86DotBlk")
 }
 #endif
 
 #if (H2O_FORTH_PRIMITIVES == LAXONPERRY_FORTH) || \
     (H2O_FORTH_PRIMITIVES == LAXONPERRY_CPM_FORTH)
 void laxperCpu8080DotBlk(void) {
-	SMSG_DEBUG("laxperCpu8080DotBlk")
+	PSMSG_DEBUG("laxperCpu8080DotBlk")
 }
 
 void laxperExtend80DotBlk(void) {
-	SMSG_DEBUG("laxperExtend80DotBlk")
+	PSMSG_DEBUG("laxperExtend80DotBlk")
 }
 
 void laxperKernel80DotBlk(void) {
-	SMSG_DEBUG("laxperKernel80DotBlk")
+	PSMSG_DEBUG("laxperKernel80DotBlk")
 }
 
 void laxperBios(void) {
-	SMSG_DEBUG("laxperBios")
+	PSMSG_DEBUG("laxperBios")
 }
 
 void laxperRP(void) {
-	SMSG_DEBUG("laxperRP")
+	PSMSG_DEBUG("laxperRP")
 }
 #endif
 
 #if (H2O_FORTH_PRIMITIVES == LAXONPERRY_FORTH) || \
 	(H2O_FORTH_PRIMITIVES == LAXONPERRY_CPM68K_FORTH)
 void laxperCpu68000DotBlk(void) {
-	SMSG_DEBUG("laxperCpu68000DotBlk")
+	PSMSG_DEBUG("laxperCpu68000DotBlk")
 }
 
 void laxperExtend68DotBlk(void) {
-	SMSG_DEBUG("laxperExtend68DotBlk")
+	PSMSG_DEBUG("laxperExtend68DotBlk")
 }
 
 void laxperKernel68DotBlk(void) {
-	SMSG_DEBUG("laxperKernel68DotBlk")
+	PSMSG_DEBUG("laxperKernel68DotBlk")
 }
 
 /* unchecked: */
 void laxperBios(void) {
-	SMSG_DEBUG("laxperBios")
+	PSMSG_DEBUG("laxperBios")
 }
 
 void laxperRP(void) {
-	SMSG_DEBUG("laxperRP")
+	PSMSG_DEBUG("laxperRP")
 }
 
 #endif

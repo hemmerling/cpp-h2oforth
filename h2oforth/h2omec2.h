@@ -7,1333 +7,1333 @@
 
  /* Mecrisp Core */
 void mecrispHookKeyQ(void) {
-	SMSG_DEBUG("mecrispHookKeyQ")
+	PSMSG_DEBUG("mecrispHookKeyQ")
 }
 
 void mecrispHookKey(void) {
-	SMSG_DEBUG("mecrispHookKey")
+	PSMSG_DEBUG("mecrispHookKey")
 }
 
 void mecrispHookEmitQ(void) {
-	SMSG_DEBUG("mecrispHookEmitQ")
+	PSMSG_DEBUG("mecrispHookEmitQ")
 }
 
 void mecrispHookEmit(void) {
-	SMSG_DEBUG("mecrispHookEmit")
+	PSMSG_DEBUG("mecrispHookEmit")
 }
 
 void mecrispKeyQ(void) {
-	SMSG_DEBUG("mecrispKeyQ")
+	PSMSG_DEBUG("mecrispKeyQ")
 }
 
 void mecrispKey(void) {
-	SMSG_DEBUG("mecrispKey")
+	PSMSG_DEBUG("mecrispKey")
 }
 
 void mecrispEmitQ(void) {
-	SMSG_DEBUG("mecrispEmitQ")
+	PSMSG_DEBUG("mecrispEmitQ")
 }
 
 void mecrispEmit(void) {
-	SMSG_DEBUG("mecrispEmit")
+	PSMSG_DEBUG("mecrispEmit")
 }
 
 void mecrispHexDot(void) {
-	SMSG_DEBUG("mecrispHexDot")
+	PSMSG_DEBUG("mecrispHexDot")
 }
 
 void mecrispCr(void) {
-	SMSG_DEBUG("mecrispCr")
+	PSMSG_DEBUG("mecrispCr")
 }
 
 void mecrispBl(void) {
-	SMSG_DEBUG("mecrispBl")
+	PSMSG_DEBUG("mecrispBl")
 }
 
 void mecrispSpace(void) {
-	SMSG_DEBUG("mecrispSpace")
+	PSMSG_DEBUG("mecrispSpace")
 }
 
 void mecrispSpaces(void) {
-	SMSG_DEBUG("mecrispSpaces")
+	PSMSG_DEBUG("mecrispSpaces")
 }
 
 void mecrispWords(void) {
-	SMSG_DEBUG("mecrispWords")
+	PSMSG_DEBUG("mecrispWords")
 }
 
 void mecrispDotS(void) {
-	SMSG_DEBUG("mecrispDotS")
+	PSMSG_DEBUG("mecrispDotS")
 }
 
 void mecrispHDotS(void) {
-	SMSG_DEBUG("mecrispHDotS")
+	PSMSG_DEBUG("mecrispHDotS")
 }
 
 void mecrispUDotS(void) {
-	SMSG_DEBUG("mecrispUDotS")
+	PSMSG_DEBUG("mecrispUDotS")
 }
 
 void mecrispDotRs(void) {
-	SMSG_DEBUG("mecrispDotRs")
+	PSMSG_DEBUG("mecrispDotRs")
 }
 
 void mecrispTwoNip(void) {
-	SMSG_DEBUG("mecrispTwoNip")
+	PSMSG_DEBUG("mecrispTwoNip")
 }
 
 void mecrispTwoDrop(void) {
-	SMSG_DEBUG("mecrispTwoDrop")
+	PSMSG_DEBUG("mecrispTwoDrop")
 }
 
 void mecrispTwoMinusRot(void) {
-	SMSG_DEBUG("mecrispTwoMinusRot")
+	PSMSG_DEBUG("mecrispTwoMinusRot")
 }
 
 void mecrispTwoRot(void) {
-	SMSG_DEBUG("mecrispTwoRot")
+	PSMSG_DEBUG("mecrispTwoRot")
 }
 
 void mecrispTwoTuck(void) {
-	SMSG_DEBUG("mecrispTwoTuck")
+	PSMSG_DEBUG("mecrispTwoTuck")
 }
 
 void mecrispTwoSwap(void) {
-	SMSG_DEBUG("mecrispTwoSwap")
+	PSMSG_DEBUG("mecrispTwoSwap")
 }
 
 void mecrispTwoOver(void) {
-	SMSG_DEBUG("mecrispTwoOver")
+	PSMSG_DEBUG("mecrispTwoOver")
 }
 
 void mecrispTwoDup(void) {
-	SMSG_DEBUG("mecrispTwoDup")
+	PSMSG_DEBUG("mecrispTwoDup")
 }
 
 void mecrispTwoToR(void) {
-	SMSG_DEBUG("mecrispTwoToR")
+	PSMSG_DEBUG("mecrispTwoToR")
 }
 
 void mecrispTwoRFrom(void) {
-	SMSG_DEBUG("mecrispTwoRFrom")
+	PSMSG_DEBUG("mecrispTwoRFrom")
 }
 
 void mecrispTwoRFetch(void) {
-	SMSG_DEBUG("mecrispTwoRFetch")
+	PSMSG_DEBUG("mecrispTwoRFetch")
 }
 
 void mecrispTwoRDrop(void) {
-	SMSG_DEBUG("mecrispTwoRDrop")
+	PSMSG_DEBUG("mecrispTwoRDrop")
 }
 
 void mecrispDepth(void) {
-	SMSG_DEBUG("mecrispDepth")
+	PSMSG_DEBUG("mecrispDepth")
 }
 
 void mecrispPick(void) {
-	SMSG_DEBUG("mecrispPick")
+	PSMSG_DEBUG("mecrispPick")
 }
 
 void mecrispNip(void) {
-	SMSG_DEBUG("mecrispNip")
+	PSMSG_DEBUG("mecrispNip")
 }
 
 void mecrispDrop(void) {
-	SMSG_DEBUG("mecrispDrop")
+	PSMSG_DEBUG("mecrispDrop")
 }
 
 void mecrispRot(void) {
-	SMSG_DEBUG("mecrispRot")
+	PSMSG_DEBUG("mecrispRot")
 }
 
 void mecrispMinusRot(void) {
-	SMSG_DEBUG("mecrispMinusRot")
+	PSMSG_DEBUG("mecrispMinusRot")
 }
 
 void mecrispSwap(void) {
-	SMSG_DEBUG("mecrispSwap")
+	PSMSG_DEBUG("mecrispSwap")
 }
 
 void mecrispTuck(void) {
-	SMSG_DEBUG("mecrispTuck")
+	PSMSG_DEBUG("mecrispTuck")
 }
 
 void mecrispOver(void) {
-	SMSG_DEBUG("mecrispOver")
+	PSMSG_DEBUG("mecrispOver")
 }
 
 void mecrispQDup(void) {
-	SMSG_DEBUG("mecrispQDup")
+	PSMSG_DEBUG("mecrispQDup")
 }
 
 void mecrispDup(void) {
-	SMSG_DEBUG("mecrispDup")
+	PSMSG_DEBUG("mecrispDup")
 }
 
 void mecrispToR(void) {
-	SMSG_DEBUG("mecrispToR")
+	PSMSG_DEBUG("mecrispToR")
 }
 
 void mecrispRFrom(void) {
-	SMSG_DEBUG("mecrispRFrom")
+	PSMSG_DEBUG("mecrispRFrom")
 }
 
 void mecrispRFetch(void) {
-	SMSG_DEBUG("mecrispRFetch")
+	PSMSG_DEBUG("mecrispRFetch")
 }
 
 void mecrispRDrop(void) {
-	SMSG_DEBUG("mecrispRDrop")
+	PSMSG_DEBUG("mecrispRDrop")
 }
 
 void mecrispRDepth(void) {
-	SMSG_DEBUG("mecrispRDepth")
+	PSMSG_DEBUG("mecrispRDepth")
 }
 
 void mecrispRPick(void) {
-	SMSG_DEBUG("mecrispRPick")
+	PSMSG_DEBUG("mecrispRPick")
 }
 
 void mecrispSPFetch(void) {
-	SMSG_DEBUG("mecrispSPFetch")
+	PSMSG_DEBUG("mecrispSPFetch")
 }
 
 void mecrispSPStore(void) {
-	SMSG_DEBUG("mecrispSPStore")
+	PSMSG_DEBUG("mecrispSPStore")
 }
 
 void mecrispRPFetch(void) {
-	SMSG_DEBUG("mecrispRPFetch")
+	PSMSG_DEBUG("mecrispRPFetch")
 }
 
 void mecrispRPStore(void) {
-	SMSG_DEBUG("mecrispRPStore")
+	PSMSG_DEBUG("mecrispRPStore")
 }
 
 void mecrispReverseHalf(void) {
-	SMSG_DEBUG("mecrispReverseHalf")
+	PSMSG_DEBUG("mecrispReverseHalf")
 }
 
 void mecrispARShift(void) {
-	SMSG_DEBUG("mecrispARShift")
+	PSMSG_DEBUG("mecrispARShift")
 }
 
 void mecrispRShift(void) {
-	SMSG_DEBUG("mecrispRShift")
+	PSMSG_DEBUG("mecrispRShift")
 }
 
 void mecrispLShift(void) {
-	SMSG_DEBUG("mecrispLShift")
+	PSMSG_DEBUG("mecrispLShift")
 }
 
 void mecrispShR(void) {
-	SMSG_DEBUG("mecrispShR")
+	PSMSG_DEBUG("mecrispShR")
 }
 
 void mecrispShL(void) {
-	SMSG_DEBUG("mecrispShL")
+	PSMSG_DEBUG("mecrispShL")
 }
 
 void mecrispRoR(void) {
-	SMSG_DEBUG("mecrispRoR")
+	PSMSG_DEBUG("mecrispRoR")
 }
 
 void mecrispRoL(void) {
-	SMSG_DEBUG("mecrispRoL")
+	PSMSG_DEBUG("mecrispRoL")
 }
 
 void mecrispBic(void) {
-	SMSG_DEBUG("mecrispBic")
+	PSMSG_DEBUG("mecrispBic")
 }
 
 void mecrispNot(void) {
-	SMSG_DEBUG("mecrispNot")
+	PSMSG_DEBUG("mecrispNot")
 }
 
 void mecrispXor(void) {
-	SMSG_DEBUG("mecrispXor")
+	PSMSG_DEBUG("mecrispXor")
 }
 
 void mecrispOr(void) {
-	SMSG_DEBUG("mecrispOr")
+	PSMSG_DEBUG("mecrispOr")
 }
 
 void mecrispAnd(void) {
-	SMSG_DEBUG("mecrispAnd")
+	PSMSG_DEBUG("mecrispAnd")
 }
 
 void mecrispTrue(void) {
-	SMSG_DEBUG("mecrispTrue")
+	PSMSG_DEBUG("mecrispTrue")
 }
 
 void mecrispFalse(void) {
-	SMSG_DEBUG("mecrispFalse")
+	PSMSG_DEBUG("mecrispFalse")
 }
 
 void mecrispClz(void) {
-	SMSG_DEBUG("mecrispClz")
+	PSMSG_DEBUG("mecrispClz")
 }
 
 void mecrispDotDigit(void) {
-	SMSG_DEBUG("mecrispDotDigit")
+	PSMSG_DEBUG("mecrispDotDigit")
 }
 
 void mecrispDigit(void) {
-	SMSG_DEBUG("mecrispDigit")
+	PSMSG_DEBUG("mecrispDigit")
 }
 
 void mecrispHold(void) {
-	SMSG_DEBUG("mecrispHold")
+	PSMSG_DEBUG("mecrispHold")
 }
 
 void mecrispSign(void) {
-	SMSG_DEBUG("mecrispSign")
+	PSMSG_DEBUG("mecrispSign")
 }
 
 void mecrispNumS(void) {
-	SMSG_DEBUG("mecrispNumS")
+	PSMSG_DEBUG("mecrispNumS")
 }
 
 void mecrispNum(void) {
-	SMSG_DEBUG("mecrispNum")
+	PSMSG_DEBUG("mecrispNum")
 }
 
 void mecrispNumGreater(void) {
-	SMSG_DEBUG("mecrispNumGreater")
+	PSMSG_DEBUG("mecrispNumGreater")
 }
 
 void mecrispLessNum(void) {
-	SMSG_DEBUG("mecrispLessNum")
+	PSMSG_DEBUG("mecrispLessNum")
 }
 
 void mecrispUDot(void) {
-	SMSG_DEBUG("mecrispUDot")
+	PSMSG_DEBUG("mecrispUDot")
 }
 
 void mecrispDot(void) {
-	SMSG_DEBUG("mecrispDot")
+	PSMSG_DEBUG("mecrispDot")
 }
 
 void mecrispUDDot(void) {
-	SMSG_DEBUG("mecrispUDDot")
+	PSMSG_DEBUG("mecrispUDDot")
 }
 
 void mecrispDDot(void) {
-	SMSG_DEBUG("mecrispDDot")
+	PSMSG_DEBUG("mecrispDDot")
 }
 
 void mecrispFSlash(void) {
-	SMSG_DEBUG("mecrispFSlash")
+	PSMSG_DEBUG("mecrispFSlash")
 }
 
 void mecrispFStar(void) {
-	SMSG_DEBUG("mecrispFStar")
+	PSMSG_DEBUG("mecrispFStar")
 }
 
 void mecrispHoldLess(void) {
-	SMSG_DEBUG("mecrispHoldLess")
+	PSMSG_DEBUG("mecrispHoldLess")
 }
 
 void mecrispFNumS(void) {
-	SMSG_DEBUG("mecrispFNumS")
+	PSMSG_DEBUG("mecrispFNumS")
 }
 
 void mecrispFNum(void) {
-	SMSG_DEBUG("mecrispFNum")
+	PSMSG_DEBUG("mecrispFNum")
 }
 
 void mecrispFDot(void) {
-	SMSG_DEBUG("mecrispFDot")
+	PSMSG_DEBUG("mecrispFDot")
 }
 
 void mecrisp(void) {
-	SMSG_DEBUG("mecrisp")
+	PSMSG_DEBUG("mecrisp")
 }
 
 void mecrispNumber(void) {
-	SMSG_DEBUG("mecrispNumber")
+	PSMSG_DEBUG("mecrispNumber")
 }
 
 void mecrispSlashStar(void) {
-	SMSG_DEBUG("mecrispSlashStar")
+	PSMSG_DEBUG("mecrispSlashStar")
 }
 
 void mecrispUStarSlash(void) {
-	SMSG_DEBUG("mecrispUStarSlash")
+	PSMSG_DEBUG("mecrispUStarSlash")
 }
 
 void mecrispStarSlashMod(void) {
-	SMSG_DEBUG("mecrispStarSlashMod")
+	PSMSG_DEBUG("mecrispStarSlashMod")
 }
 
 void mecrispMSlashMod(void) {
-	SMSG_DEBUG("mecrispMSlashMod")
+	PSMSG_DEBUG("mecrispMSlashMod")
 }
 
 void mecrispMStar(void) {
-	SMSG_DEBUG("mecrispMStar")
+	PSMSG_DEBUG("mecrispMStar")
 }
 
 void mecrispUMSlashMod(void) {
-	SMSG_DEBUG("mecrispUMSlashMod")
+	PSMSG_DEBUG("mecrispUMSlashMod")
 }
 
 void mecrispUDSlashMod(void) {
-	SMSG_DEBUG("mecrispUDSlashMod")
+	PSMSG_DEBUG("mecrispUDSlashMod")
 }
 
 void mecrispUDMStar(void) {
-	SMSG_DEBUG("mecrispUDMStar")
+	PSMSG_DEBUG("mecrispUDMStar")
 }
 
 void mecrispD2Slash(void) {
-	SMSG_DEBUG("mecrispD2Slash")
+	PSMSG_DEBUG("mecrispD2Slash")
 }
 
 void mecrispD2Star(void) {
-	SMSG_DEBUG("mecrispD2Star")
+	PSMSG_DEBUG("mecrispD2Star")
 }
 
 void mecrispDShR(void) {
-	SMSG_DEBUG("mecrispDShR")
+	PSMSG_DEBUG("mecrispDShR")
 }
 
 void mecrispDShL(void) {
-	SMSG_DEBUG("mecrispDShL")
+	PSMSG_DEBUG("mecrispDShL")
 }
 
 void mecrispDAbs(void) {
-	SMSG_DEBUG("mecrispDAbs")
+	PSMSG_DEBUG("mecrispDAbs")
 }
 
 void mecrispDNegate(void) {
-	SMSG_DEBUG("mecrispDNegate")
+	PSMSG_DEBUG("mecrispDNegate")
 }
 
 void mecrispDMinus(void) {
-	SMSG_DEBUG("mecrispDMinus")
+	PSMSG_DEBUG("mecrispDMinus")
 }
 
 void mecrispDPlus(void) {
-	SMSG_DEBUG("mecrispDPlus")
+	PSMSG_DEBUG("mecrispDPlus")
 }
 
 void mecrispSToD(void) {
-	SMSG_DEBUG("mecrispSToD")
+	PSMSG_DEBUG("mecrispSToD")
 }
 
 void mecrispDuGreater(void) {
-	SMSG_DEBUG("mecrispDuGreater")
+	PSMSG_DEBUG("mecrispDuGreater")
 }
 
 void mecrispDuLess(void) {
-	SMSG_DEBUG("mecrispDuLess")
+	PSMSG_DEBUG("mecrispDuLess")
 }
 
 void mecrispDGreater(void) {
-	SMSG_DEBUG("mecrispDGreater")
+	PSMSG_DEBUG("mecrispDGreater")
 }
 
 void mecrispDLess(void) {
-	SMSG_DEBUG("mecrispDLess")
+	PSMSG_DEBUG("mecrispDLess")
 }
 
 void mecrispD0Less(void) {
-	SMSG_DEBUG("mecrispD0Less")
+	PSMSG_DEBUG("mecrispD0Less")
 }
 
 void mecrispD0Equal(void) {
-	SMSG_DEBUG("mecrispD0Equal")
+	PSMSG_DEBUG("mecrispD0Equal")
 }
 
 void mecrispD0Unequal(void) {
-	SMSG_DEBUG("mecrispD0Unequal")
+	PSMSG_DEBUG("mecrispD0Unequal")
 }
 
 void mecrispDEqual(void) {
-	SMSG_DEBUG("mecrispDEqual")
+	PSMSG_DEBUG("mecrispDEqual")
 }
 
 void mecrispUMStar(void) {
-	SMSG_DEBUG("mecrispUMStar")
+	PSMSG_DEBUG("mecrispUMStar")
 }
 
 void mecrispUSlashMod(void) {
-	SMSG_DEBUG("mecrispUSlashMod")
+	PSMSG_DEBUG("mecrispUSlashMod")
 }
 
 void mecrispSlashMod(void) {
-	SMSG_DEBUG("mecrispSlashMod")
+	PSMSG_DEBUG("mecrispSlashMod")
 }
 
 void mecrispMod(void) {
-	SMSG_DEBUG("mecrispMod")
+	PSMSG_DEBUG("mecrispMod")
 }
 
 void mecrispSlash(void) {
-	SMSG_DEBUG("mecrispSlash")
+	PSMSG_DEBUG("mecrispSlash")
 }
 
 void mecrispStar(void) {
-	SMSG_DEBUG("mecrispStar")
+	PSMSG_DEBUG("mecrispStar")
 }
 
 void mecrispCompare(void) {
-	SMSG_DEBUG("mecrispCompare")
+	PSMSG_DEBUG("mecrispCompare")
 }
 
 void mecrispSkipString(void) {
-	SMSG_DEBUG("mecrispSkipString")
+	PSMSG_DEBUG("mecrispSkipString")
 }
 
 void mecrispCType(void) {
-	SMSG_DEBUG("mecrispCType")
+	PSMSG_DEBUG("mecrispCType")
 }
 
 void mecrispType(void) {
-	SMSG_DEBUG("mecrispType")
+	PSMSG_DEBUG("mecrispType")
 }
 
 void mecrispSQuote(void) {
-	SMSG_DEBUG("mecrispSQuote")
+	PSMSG_DEBUG("mecrispSQuote")
 }
 
 void mecrispCQuote(void) {
-	SMSG_DEBUG("mecrispCQuote")
+	PSMSG_DEBUG("mecrispCQuote")
 }
 
 void mecrispDotQuote(void) {
-	SMSG_DEBUG("mecrispDotQuote")
+	PSMSG_DEBUG("mecrispDotQuote")
 }
 
 void mecrispParen(void) {
-	SMSG_DEBUG("mecrispParen")
+	PSMSG_DEBUG("mecrispParen")
 }
 
 void mecrispCount(void) {
-	SMSG_DEBUG("mecrispCount")
+	PSMSG_DEBUG("mecrispCount")
 }
 
 void mecrispBackslash(void) {
-	SMSG_DEBUG("mecrispBackslash")
+	PSMSG_DEBUG("mecrispBackslash")
 }
 
 void mecrispMin(void) {
-	SMSG_DEBUG("mecrispMin")
+	PSMSG_DEBUG("mecrispMin")
 }
 
 void mecrispMax(void) {
-	SMSG_DEBUG("mecrispMax")
+	PSMSG_DEBUG("mecrispMax")
 }
 
 void mecrispUMin(void) {
-	SMSG_DEBUG("mecrispUMin")
+	PSMSG_DEBUG("mecrispUMin")
 }
 
 void mecrispUMax(void) {
-	SMSG_DEBUG("mecrispUMax")
+	PSMSG_DEBUG("mecrispUMax")
 }
 
 void mecrispTwoMinus(void) {
-	SMSG_DEBUG("mecrispTwoMinus")
+	PSMSG_DEBUG("mecrispTwoMinus")
 }
 
 void mecrispOneMinus(void) {
-	SMSG_DEBUG("mecrispOneMinus")
+	PSMSG_DEBUG("mecrispOneMinus")
 }
 
 void mecrispTwoPlus(void) {
-	SMSG_DEBUG("mecrispTwoPlus")
+	PSMSG_DEBUG("mecrispTwoPlus")
 }
 
 void mecrispOnePlus(void) {
-	SMSG_DEBUG("mecrispOnePlus")
+	PSMSG_DEBUG("mecrispOnePlus")
 }
 
 void mecrispEven(void) {
-	SMSG_DEBUG("mecrispEven")
+	PSMSG_DEBUG("mecrispEven")
 }
 
 void mecrispTwoStar(void) {
-	SMSG_DEBUG("mecrispTwoStar")
+	PSMSG_DEBUG("mecrispTwoStar")
 }
 
 void mecrispTwoSlash(void) {
-	SMSG_DEBUG("mecrispTwoSlash")
+	PSMSG_DEBUG("mecrispTwoSlash")
 }
 
 void mecrispAbs(void) {
-	SMSG_DEBUG("mecrispAbs")
+	PSMSG_DEBUG("mecrispAbs")
 }
 
 void mecrispNegate(void) {
-	SMSG_DEBUG("mecrispNegate")
+	PSMSG_DEBUG("mecrispNegate")
 }
 
 void mecrispMinus(void) {
-	SMSG_DEBUG("mecrispMinus")
+	PSMSG_DEBUG("mecrispMinus")
 }
 
 void mecrispPlus(void) {
-	SMSG_DEBUG("mecrispPlus")
+	PSMSG_DEBUG("mecrispPlus")
 }
 
 void mecrispBinary(void) {
-	SMSG_DEBUG("mecrispBinary")
+	PSMSG_DEBUG("mecrispBinary")
 }
 
 void mecrispDecimal(void) {
-	SMSG_DEBUG("mecrispDecimal")
+	PSMSG_DEBUG("mecrispDecimal")
 }
 
 void mecrispHex(void) {
-	SMSG_DEBUG("mecrispHex")
+	PSMSG_DEBUG("mecrispHex")
 }
 
 void mecrispBase(void) {
-	SMSG_DEBUG("mecrispBase")
+	PSMSG_DEBUG("mecrispBase")
 }
 
 void mecrispCells(void) {
-	SMSG_DEBUG("mecrispCells")
+	PSMSG_DEBUG("mecrispCells")
 }
 
 void mecrispCellPlus(void) {
-	SMSG_DEBUG("mecrispCellPlus")
+	PSMSG_DEBUG("mecrispCellPlus")
 }
 
 void mecrispMove(void) {
-	SMSG_DEBUG("mecrispMove")
+	PSMSG_DEBUG("mecrispMove")
 }
 
 void mecrispFill(void) {
-	SMSG_DEBUG("mecrispFill")
+	PSMSG_DEBUG("mecrispFill")
 }
 
 void mecrispCBitFetch(void) {
-	SMSG_DEBUG("mecrispCBitFetch")
+	PSMSG_DEBUG("mecrispCBitFetch")
 }
 
 void mecrispBitFetch(void) {
-	SMSG_DEBUG("mecrispBitFetch")
+	PSMSG_DEBUG("mecrispBitFetch")
 }
 
 void mecrispCXorStore(void) {
-	SMSG_DEBUG("mecrispCXorStore")
+	PSMSG_DEBUG("mecrispCXorStore")
 }
 
 void mecrispXorStore(void) {
-	SMSG_DEBUG("mecrispXorStore")
+	PSMSG_DEBUG("mecrispXorStore")
 }
 
 void mecrispCBicStore(void) {
-	SMSG_DEBUG("mecrispXorStore")
+	PSMSG_DEBUG("mecrispXorStore")
 }
 
 void mecrispBicStore(void) {
-	SMSG_DEBUG("mecrispBicStore")
+	PSMSG_DEBUG("mecrispBicStore")
 }
 
 void mecrispCBisStore(void) {
-	SMSG_DEBUG("mecrispCBisStore")
+	PSMSG_DEBUG("mecrispCBisStore")
 }
 
 void mecrispBisStore(void) {
-	SMSG_DEBUG("mecrispBisStore")
+	PSMSG_DEBUG("mecrispBisStore")
 }
 
 void mecrispTwoConstant(void) {
-	SMSG_DEBUG("mecrispTwoConstant")
+	PSMSG_DEBUG("mecrispTwoConstant")
 }
 
 void mecrispConstant(void) {
-	SMSG_DEBUG("mecrispConstant")
+	PSMSG_DEBUG("mecrispConstant")
 }
 
 void mecrispTwoVariable(void) {
-	SMSG_DEBUG("mecrispTwoVariable")
+	PSMSG_DEBUG("mecrispTwoVariable")
 }
 
 void mecrispVariable(void) {
-	SMSG_DEBUG("mecrispVariable")
+	PSMSG_DEBUG("mecrispVariable")
 }
 
 void mecrispNVariable(void) {
-	SMSG_DEBUG("mecrispNVariable")
+	PSMSG_DEBUG("mecrispNVariable")
 }
 
 void mecrispBufferColon(void) {
-	SMSG_DEBUG("mecrispBufferColon")
+	PSMSG_DEBUG("mecrispBufferColon")
 }
 
 void mecrispPlusStore(void) {
-	SMSG_DEBUG("mecrispPlusStore")
+	PSMSG_DEBUG("mecrispPlusStore")
 }
 
 void mecrispCPlusStore(void) {
-	SMSG_DEBUG("mecrispCPlusStore")
+	PSMSG_DEBUG("mecrispCPlusStore")
 }
 
 void mecrispTwoStore(void) {
-	SMSG_DEBUG("mecrispTwoStore")
+	PSMSG_DEBUG("mecrispTwoStore")
 }
 
 void mecrispTwoFetch(void) {
-	SMSG_DEBUG("mecrispTwoFetch")
+	PSMSG_DEBUG("mecrispTwoFetch")
 }
 
 void mecrispCStore(void) {
-	SMSG_DEBUG("mecrispCStore")
+	PSMSG_DEBUG("mecrispCStore")
 }
 
 void mecrispCFetch(void) {
-	SMSG_DEBUG("mecrispCFetch")
+	PSMSG_DEBUG("mecrispCFetch")
 }
 
 void mecrispStore(void) {
-	SMSG_DEBUG("mecrispStore")
+	PSMSG_DEBUG("mecrispStore")
 }
 
 void mecrispFetch(void) {
-	SMSG_DEBUG("mecrispFetch")
+	PSMSG_DEBUG("mecrispFetch")
 }
 
 void mecrispToIn(void) {
-	SMSG_DEBUG("mecrispToIn")
+	PSMSG_DEBUG("mecrispToIn")
 }
 
 void mecrispCurrentSource(void) {
-	SMSG_DEBUG("mecrispCurrentSource")
+	PSMSG_DEBUG("mecrispCurrentSource")
 }
 
 void mecrispSource(void) {
-	SMSG_DEBUG("mecrispSource")
+	PSMSG_DEBUG("mecrispSource")
 }
 
 void mecrispSetSource(void) {
-	SMSG_DEBUG("mecrispSetSource")
+	PSMSG_DEBUG("mecrispSetSource")
 }
 
 void mecrispTib(void) {
-	SMSG_DEBUG("mecrispTib")
+	PSMSG_DEBUG("mecrispTib")
 }
 
 void mecrispQuery(void) {
-	SMSG_DEBUG("mecrispQuery")
+	PSMSG_DEBUG("mecrispQuery")
 }
 
 void mecrispCExpect(void) {
-	SMSG_DEBUG("mecrispCExpect")
+	PSMSG_DEBUG("mecrispCExpect")
 }
 
 void mecrispForth(void) {
-	SMSG_DEBUG("mecrispForth")
+	PSMSG_DEBUG("mecrispForth")
 }
 
 void mecrispToken(void) {
-	SMSG_DEBUG("mecrispToken")
+	PSMSG_DEBUG("mecrispToken")
 }
 
 void mecrispParse(void) {
-	SMSG_DEBUG("mecrispParse")
+	PSMSG_DEBUG("mecrispParse")
 }
 
 void mecrispXTick(void) {
-	SMSG_DEBUG("mecrispXTick")
+	PSMSG_DEBUG("mecrispXTick")
 }
 
 void mecrispTick(void) {
-	SMSG_DEBUG("mecrispTick")
+	PSMSG_DEBUG("mecrispTick")
 }
 
 void mecrispEvaluate(void) {
-	SMSG_DEBUG("mecrispEvaluate")
+	PSMSG_DEBUG("mecrispEvaluate")
 }
 
 void mecrispInterpret(void) {
-	SMSG_DEBUG("mecrispInterpret")
+	PSMSG_DEBUG("mecrispInterpret")
 }
 
 void mecrispHookQuit(void) {
-	SMSG_DEBUG("mecrispHookQuit")
+	PSMSG_DEBUG("mecrispHookQuit")
 }
 
 void mecrispQuit(void) {
-	SMSG_DEBUG("mecrispQuit")
+	PSMSG_DEBUG("mecrispQuit")
 }
 
 void mecrispDictionaryStart(void) {
-	SMSG_DEBUG("mecrispDictionaryStart")
+	PSMSG_DEBUG("mecrispDictionaryStart")
 }
 
 void mecrispDictionaryNext(void) {
-	SMSG_DEBUG("mecrispDictionaryNext")
+	PSMSG_DEBUG("mecrispDictionaryNext")
 }
 
 void mecrispComma(void) {
-	SMSG_DEBUG("mecrispComma")
+	PSMSG_DEBUG("mecrispComma")
 }
 
 void mecrispCComma(void) {
-	SMSG_DEBUG("mecrispCComma")
+	PSMSG_DEBUG("mecrispCComma")
 }
 
 void mecrispAlign(void) {
-	SMSG_DEBUG("mecrispAlign")
+	PSMSG_DEBUG("mecrispAlign")
 }
 
 void mecrispAligned(void) {
-	SMSG_DEBUG("mecrispAligned")
+	PSMSG_DEBUG("mecrispAligned")
 }
 
 void mecrispXChar(void) {
-	SMSG_DEBUG("mecrispXChar")
+	PSMSG_DEBUG("mecrispXChar")
 }
 
 void mecrispChar(void) {
-	SMSG_DEBUG("mecrispChar")
+	PSMSG_DEBUG("mecrispChar")
 }
 
 void mecrispStringComma(void) {
-	SMSG_DEBUG("mecrispStringComma")
+	PSMSG_DEBUG("mecrispStringComma")
 }
 
 void mecrispLiteralComma(void) {
-	SMSG_DEBUG("mecrispLiteralComma")
+	PSMSG_DEBUG("mecrispLiteralComma")
 }
 
 void mecrispTwoLiteralComma(void) {
-	SMSG_DEBUG("mecrispTwoLiteralComma")
+	PSMSG_DEBUG("mecrispTwoLiteralComma")
 }
 
 void mecrispInlineComma(void) {
-	SMSG_DEBUG("mecrispInlineComma")
+	PSMSG_DEBUG("mecrispInlineComma")
 }
 
 void mecrispCallComma(void) {
-	SMSG_DEBUG("mecrispCallComma")
+	PSMSG_DEBUG("mecrispCallComma")
 }
 
 void mecrispRetComma(void) {
-	SMSG_DEBUG("mecrispRetComma")
+	PSMSG_DEBUG("mecrispRetComma")
 }
 
 void mecrispFlashVarHere(void) {
-	SMSG_DEBUG("mecrispFlashVarHere")
+	PSMSG_DEBUG("mecrispFlashVarHere")
 }
 
 void mecrispHere(void) {
-	SMSG_DEBUG("mecrispHere")
+	PSMSG_DEBUG("mecrispHere")
 }
 
 void mecrispAllot(void) {
-	SMSG_DEBUG("mecrispAllot")
+	PSMSG_DEBUG("mecrispAllot")
 }
 
 void mecrispYCreate(void) {
-	SMSG_DEBUG("mecrispYCreate")
+	PSMSG_DEBUG("mecrispYCreate")
 }
 
 void mecrispCompiletoRamQ(void) {
-	SMSG_DEBUG("mecrispCompiletoRamQ")
+	PSMSG_DEBUG("mecrispCompiletoRamQ")
 }
 
 void mecrispCompiletoRam(void) {
-	SMSG_DEBUG("mecrispCompiletoRam")
+	PSMSG_DEBUG("mecrispCompiletoRam")
 }
 
 void mecrispCompileToFlash(void) {
-	SMSG_DEBUG("mecrispCompileToFlash")
+	PSMSG_DEBUG("mecrispCompileToFlash")
 }
 
 void mecrispSmudge(void) {
-	SMSG_DEBUG("mecrispSmudge")
+	PSMSG_DEBUG("mecrispSmudge")
 }
 
 void mecrispCompileOnly(void) {
-	SMSG_DEBUG("mecrispCompileOnly")
+	PSMSG_DEBUG("mecrispCompileOnly")
 }
 
 void mecrispInline(void) {
-	SMSG_DEBUG("mecrispInline")
+	PSMSG_DEBUG("mecrispInline")
 }
 
 void mecrispImmediate(void) {
-	SMSG_DEBUG("mecrispImmediate")
+	PSMSG_DEBUG("mecrispImmediate")
 }
 
 void mecrispSetflags(void) {
-	SMSG_DEBUG("mecrispSetflags")
+	PSMSG_DEBUG("mecrispSetflags")
 }
 
 void mecrispFind(void) {
-	SMSG_DEBUG("mecrispFind")
+	PSMSG_DEBUG("mecrispFind")
 }
 
 void mecrispExecute(void) {
-	SMSG_DEBUG("mecrispExecute")
+	PSMSG_DEBUG("mecrispExecute")
 }
 
 void mecrispRecurse(void) {
-	SMSG_DEBUG("mecrispRecurse")
+	PSMSG_DEBUG("mecrispRecurse")
 }
 
 void mecrispPostpone(void) {
-	SMSG_DEBUG("mecrispPostpone")
+	PSMSG_DEBUG("mecrispPostpone")
 }
 
 void mecrispDoes(void) {
-	SMSG_DEBUG("mecrispDoes")
+	PSMSG_DEBUG("mecrispDoes")
 }
 
 void mecrispBuilds(void) {
-	SMSG_DEBUG("mecrispBuilds")
+	PSMSG_DEBUG("mecrispBuilds")
 }
 
 void mecrispCreate(void) {
-	SMSG_DEBUG("mecrispCreate")
+	PSMSG_DEBUG("mecrispCreate")
 }
 
 void mecrispState(void) {
-	SMSG_DEBUG("mecrispState")
+	PSMSG_DEBUG("mecrispState")
 }
 
 void mecrispRightBracket(void) {
-	SMSG_DEBUG("mecrispRightBracket")
+	PSMSG_DEBUG("mecrispRightBracket")
 }
 
 void mecrispLeftBracket(void) {
-	SMSG_DEBUG("mecrispLeftBracket")
+	PSMSG_DEBUG("mecrispLeftBracket")
 }
 
 void mecrispSemicolon(void) {
-	SMSG_DEBUG("mecrispSemicolon")
+	PSMSG_DEBUG("mecrispSemicolon")
 }
 
 void mecrispColon(void) {
-	SMSG_DEBUG("mecrispColon")
+	PSMSG_DEBUG("mecrispColon")
 }
 
 void mecrispZeroFoldable(void) {
-	SMSG_DEBUG("mecrispZeroFoldable")
+	PSMSG_DEBUG("mecrispZeroFoldable")
 }
 
 void mecrispOneFoldable(void) {
-	SMSG_DEBUG("mecrispOneFoldable")
+	PSMSG_DEBUG("mecrispOneFoldable")
 }
 
 void mecrispTwoFoldable(void) {
-	SMSG_DEBUG("mecrispTwoFoldable")
+	PSMSG_DEBUG("mecrispTwoFoldable")
 }
 
 void mecrispThreeFoldable(void) {
-	SMSG_DEBUG("mecrispThreeFoldable")
+	PSMSG_DEBUG("mecrispThreeFoldable")
 }
 
 void mecrispFourFoldable(void) {
-	SMSG_DEBUG("mecrispFourFoldable")
+	PSMSG_DEBUG("mecrispFourFoldable")
 }
 
 void mecrispFiveFoldable(void) {
-	SMSG_DEBUG("mecrispFiveFoldable")
+	PSMSG_DEBUG("mecrispFiveFoldable")
 }
 
 void mecrispSixFoldable(void) {
-	SMSG_DEBUG("mecrispSixFoldable")
+	PSMSG_DEBUG("mecrispSixFoldable")
 }
 
 void mecrispSevenFoldable(void) {
-	SMSG_DEBUG("mecrispSevenFoldable")
+	PSMSG_DEBUG("mecrispSevenFoldable")
 }
 
 void mecrispJumpComma(void) {
-	SMSG_DEBUG("mecrispJumpComma")
+	PSMSG_DEBUG("mecrispJumpComma")
 }
 
 void mecrispThen(void) {
-	SMSG_DEBUG("mecrispThen")
+	PSMSG_DEBUG("mecrispThen")
 }
 
 void mecrispElse(void) {
-	SMSG_DEBUG("mecrispElse")
+	PSMSG_DEBUG("mecrispElse")
 }
 
 void mecrispIf(void) {
-	SMSG_DEBUG("mecrispIf")
+	PSMSG_DEBUG("mecrispIf")
 }
 
 void mecrispAhead(void) {
-	SMSG_DEBUG("mecrispAhead")
+	PSMSG_DEBUG("mecrispAhead")
 }
 
 void mecrispRepeat(void) {
-	SMSG_DEBUG("mecrispRepeat")
+	PSMSG_DEBUG("mecrispRepeat")
 }
 
 void mecrispWhile(void) {
-	SMSG_DEBUG("mecrispWhile")
+	PSMSG_DEBUG("mecrispWhile")
 }
 
 void mecrispUntil(void) {
-	SMSG_DEBUG("mecrispUntil")
+	PSMSG_DEBUG("mecrispUntil")
 }
 
 void mecrispAgain(void) {
-	SMSG_DEBUG("mecrispAgain")
+	PSMSG_DEBUG("mecrispAgain")
 }
 
 void mecrispBegin(void) {
-	SMSG_DEBUG("mecrispBegin")
+	PSMSG_DEBUG("mecrispBegin")
 }
 
 void mecrispExit(void) {
-	SMSG_DEBUG("mecrispExit")
+	PSMSG_DEBUG("mecrispExit")
 }
 
 void mecrispK(void) {
-	SMSG_DEBUG("mecrispK")
+	PSMSG_DEBUG("mecrispK")
 }
 
 void mecrispJ(void) {
-	SMSG_DEBUG("mecrispJ")
+	PSMSG_DEBUG("mecrispJ")
 }
 
 void mecrispI(void) {
-	SMSG_DEBUG("mecrispI")
+	PSMSG_DEBUG("mecrispI")
 }
 
 void mecrispUnLoop(void) {
-	SMSG_DEBUG("mecrispUnLoop")
+	PSMSG_DEBUG("mecrispUnLoop")
 }
 
 void mecrispLeave(void) {
-	SMSG_DEBUG("mecrispLeave")
+	PSMSG_DEBUG("mecrispLeave")
 }
 
 void mecrispPlusLoop(void) {
-	SMSG_DEBUG("mecrispPlusLoop")
+	PSMSG_DEBUG("mecrispPlusLoop")
 }
 
 void mecrispLoop(void) {
-	SMSG_DEBUG("mecrispLoop")
+	PSMSG_DEBUG("mecrispLoop")
 }
 
 void mecrispQDo(void) {
-	SMSG_DEBUG("mecrispQDo")
+	PSMSG_DEBUG("mecrispQDo")
 }
 
 void mecrispDo(void) {
-	SMSG_DEBUG("mecrispDo")
+	PSMSG_DEBUG("mecrispDo")
 }
 
 void mecrispCase(void) {
-	SMSG_DEBUG("mecrispCase")
+	PSMSG_DEBUG("mecrispCase")
 }
 
 void mecrispQOf(void) {
-	SMSG_DEBUG("mecrispQOf")
+	PSMSG_DEBUG("mecrispQOf")
 }
 
 void mecrispOf(void) {
-	SMSG_DEBUG("mecrispOf")
+	PSMSG_DEBUG("mecrispOf")
 }
 
 void mecrispEndOf(void) {
-	SMSG_DEBUG("mecrispEndOf")
+	PSMSG_DEBUG("mecrispEndOf")
 }
 
 void mecrispEndCase(void) {
-	SMSG_DEBUG("mecrispEndCase")
+	PSMSG_DEBUG("mecrispEndCase")
 }
 
 void mecrispULessEqual(void) {
-	SMSG_DEBUG("mecrispULessEqual")
+	PSMSG_DEBUG("mecrispULessEqual")
 }
 
 void mecrispUGreaterEqual(void) {
-	SMSG_DEBUG("mecrispUGreaterEqual")
+	PSMSG_DEBUG("mecrispUGreaterEqual")
 }
 
 void mecrispUGreater(void) {
-	SMSG_DEBUG("mecrispUGreater")
+	PSMSG_DEBUG("mecrispUGreater")
 }
 
 void mecrispULess(void) {
-	SMSG_DEBUG("mecrispULess")
+	PSMSG_DEBUG("mecrispULess")
 }
 
 void mecrispLessEqual(void) {
-	SMSG_DEBUG("mecrispLessEqual")
+	PSMSG_DEBUG("mecrispLessEqual")
 }
 
 void mecrispGreaterEqual(void) {
-	SMSG_DEBUG("mecrispGreaterEqual")
+	PSMSG_DEBUG("mecrispGreaterEqual")
 }
 
 void mecrispGreater(void) {
-	SMSG_DEBUG("mecrispGreater")
+	PSMSG_DEBUG("mecrispGreater")
 }
 
 void mecrispLess(void) {
-	SMSG_DEBUG("mecrispLess")
+	PSMSG_DEBUG("mecrispLess")
 }
 
 void mecrispZeroLess(void) {
-	SMSG_DEBUG("mecrispZeroLess")
+	PSMSG_DEBUG("mecrispZeroLess")
 }
 
 void mecrispZeroUnequal(void) {
-	SMSG_DEBUG("mecrispZeroUnequal")
+	PSMSG_DEBUG("mecrispZeroUnequal")
 }
 
 void mecrispZeroEqual(void) {
-	SMSG_DEBUG("mecrispZeroEqual")
+	PSMSG_DEBUG("mecrispZeroEqual")
 }
 
 void mecrispUnequal(void) {
-	SMSG_DEBUG("mecrispUnequal")
+	PSMSG_DEBUG("mecrispUnequal")
 }
 
 void mecrispEqual(void) {
-	SMSG_DEBUG("mecrispEqual")
+	PSMSG_DEBUG("mecrispEqual")
 }
 
 void mecrispDInt(void) {
-	SMSG_DEBUG("mecrispDInt")
+	PSMSG_DEBUG("mecrispDInt")
 }
 
 void mecrispEInt(void) {
-	SMSG_DEBUG("mecrispEInt")
+	PSMSG_DEBUG("mecrispEInt")
 }
 
 void mecrispEIntQ(void) {
-	SMSG_DEBUG("mecrispEIntQ")
+	PSMSG_DEBUG("mecrispEIntQ")
 }
 
 void mecrispNop(void) {
-	SMSG_DEBUG("mecrispNop")
+	PSMSG_DEBUG("mecrispNop")
 }
 
 void mecrispReset(void) {
-	SMSG_DEBUG("mecrispReset")
+	PSMSG_DEBUG("mecrispReset")
 }
 
 void mecrispLpm0(void) {
-	SMSG_DEBUG("mecrispLpm0")
+	PSMSG_DEBUG("mecrispLpm0")
 }
 
 void mecrispLpm1(void) {
-	SMSG_DEBUG("mecrispLpm1")
+	PSMSG_DEBUG("mecrispLpm1")
 }
 
 void mecrispLpm2(void) {
-	SMSG_DEBUG("mecrispLpm2")
+	PSMSG_DEBUG("mecrispLpm2")
 }
 
 void mecrispLpm3(void) {
-	SMSG_DEBUG("mecrispLpm3")
+	PSMSG_DEBUG("mecrispLpm3")
 }
 
 void mecrispLpm4(void) {
-	SMSG_DEBUG("mecrispLpm4")
+	PSMSG_DEBUG("mecrispLpm4")
 }
 
 void mecrispWakeup(void) {
-	SMSG_DEBUG("mecrispWakeup")
+	PSMSG_DEBUG("mecrispWakeup")
 }
 
 void mecrispHookPause(void) {
-	SMSG_DEBUG("mecrispHookPause")
+	PSMSG_DEBUG("mecrispHookPause")
 }
 
 void mecrispPause(void) {
-	SMSG_DEBUG("mecrispPause")
+	PSMSG_DEBUG("mecrispPause")
 }
 
 void mecrispSerialKeyQ(void) {
-	SMSG_DEBUG("mecrispSerialKeyQ")
+	PSMSG_DEBUG("mecrispSerialKeyQ")
 }
 
 void mecrispSerialKey(void) {
-	SMSG_DEBUG("mecrispSerialKey")
+	PSMSG_DEBUG("mecrispSerialKey")
 }
 
 void mecrispSerialEmitQ(void) {
-	SMSG_DEBUG("mecrispSerialEmitQ")
+	PSMSG_DEBUG("mecrispSerialEmitQ")
 }
 
 void mecrispSerialEmit(void) {
-	SMSG_DEBUG("mecrispSerialEmit")
+	PSMSG_DEBUG("mecrispSerialEmit")
 }
 
 void mecrispAdcVcc(void) {
-	SMSG_DEBUG("mecrispAdcVcc")
+	PSMSG_DEBUG("mecrispAdcVcc")
 }
 
 void mecrispAdc1Dot5(void) {
-	SMSG_DEBUG("mecrispAdc1Dot5")
+	PSMSG_DEBUG("mecrispAdc1Dot5")
 }
 
 void mecrispAnalog(void) {
-	SMSG_DEBUG("mecrispAnalog")
+	PSMSG_DEBUG("mecrispAnalog")
 }
 
 void mecrispEraseFlashFrom(void) {
-	SMSG_DEBUG("mecrispEraseFlashFrom")
+	PSMSG_DEBUG("mecrispEraseFlashFrom")
 }
 
 void mecrispEraseFlash(void) {
-	SMSG_DEBUG("mecrispEraseFlash")
+	PSMSG_DEBUG("mecrispEraseFlash")
 }
 
 void mecrispCFlashStore(void) {
-	SMSG_DEBUG("mecrispCFlashStore")
+	PSMSG_DEBUG("mecrispCFlashStore")
 }
 
 void mecrispFlashStore(void) {
-	SMSG_DEBUG("mecrispFlashStore")
+	PSMSG_DEBUG("mecrispFlashStore")
 }
 
 void mecrispIrqPort1(void) {
-	SMSG_DEBUG("mecrispIrqPort1")
+	PSMSG_DEBUG("mecrispIrqPort1")
 }
 
 void mecrispIrqPort2(void) {
-	SMSG_DEBUG("mecrispIrqPort2")
+	PSMSG_DEBUG("mecrispIrqPort2")
 }
 
 void mecrispIrqAdc(void) {
-	SMSG_DEBUG("mecrispIrqAdc")
+	PSMSG_DEBUG("mecrispIrqAdc")
 }
 
 void mecrispIrqTimerA1(void) {
-	SMSG_DEBUG("mecrispIrqTimerA1")
+	PSMSG_DEBUG("mecrispIrqTimerA1")
 }
 
 void mecrispIrqTimerA0(void) {
-	SMSG_DEBUG("mecrispIrqTimerA0")
+	PSMSG_DEBUG("mecrispIrqTimerA0")
 }
 
 void mecrispIrqWatchdog(void) {
-	SMSG_DEBUG("mecrispIrqWatchdog")
+	PSMSG_DEBUG("mecrispIrqWatchdog")
 }
 
 void mecrispIrqTimerB1(void) {
-	SMSG_DEBUG("mecrispIrqTimerB1")
+	PSMSG_DEBUG("mecrispIrqTimerB1")
 }
 
 void mecrispIrqTimerB0(void) {
-	SMSG_DEBUG("mecrispIrqTimerB0")
+	PSMSG_DEBUG("mecrispIrqTimerB0")
 }
 
 void mecrispIrqComp(void) {
-	SMSG_DEBUG("mecrispIrqComp")
+	PSMSG_DEBUG("mecrispIrqComp")
 }
 
 void mecrispIrqTx(void) {
-	SMSG_DEBUG("mecrispIrqTx")
+	PSMSG_DEBUG("mecrispIrqTx")
 }
 
 void mecrispIrqRx(void) {
-	SMSG_DEBUG("mecrispIrqRx")
+	PSMSG_DEBUG("mecrispIrqRx")
 }
 
 /* Flash Dictionary */
 
 void mecrispList(void) {
-	SMSG_DEBUG("mecrispIrqRx")
+	PSMSG_DEBUG("mecrispIrqRx")
 }
 
 void mecrispSearchFor(void) {
-	SMSG_DEBUG("mecrispSearchFor")
+	PSMSG_DEBUG("mecrispSearchFor")
 }
 
 void mecrispSearchCalls(void) {
-	SMSG_DEBUG("mecrispSearchCalls")
+	PSMSG_DEBUG("mecrispSearchCalls")
 }
 
 void mecrispUses(void) {
-	SMSG_DEBUG("mecrispUses")
+	PSMSG_DEBUG("mecrispUses")
 }
 
 void mecrispNameDot(void) {
-	SMSG_DEBUG("mecrispNameDot")
+	PSMSG_DEBUG("mecrispNameDot")
 }
 
 void mecrispDisasmDollar(void) {
-	SMSG_DEBUG("mecrispDisasmDollar")
+	PSMSG_DEBUG("mecrispDisasmDollar")
 }
 
 void mecrispDisasmFetch(void) {
-	SMSG_DEBUG("mecrispDisasmFetch")
+	PSMSG_DEBUG("mecrispDisasmFetch")
 }
 
 void mecrispUDot4(void) {
-	SMSG_DEBUG("mecrispUDot4")
+	PSMSG_DEBUG("mecrispUDot4")
 }
 
 void mecrispUDotNs(void) {
-	SMSG_DEBUG("mecrispUDotNs")
+	PSMSG_DEBUG("mecrispUDotNs")
 }
 
 void mecrispUDotH(void) {
-	SMSG_DEBUG("mecrispUDotH")
+	PSMSG_DEBUG("mecrispUDotH")
 }
 
 void mecrispRegisterDot(void) {
-	SMSG_DEBUG("mecrispRegisterDot")
+	PSMSG_DEBUG("mecrispRegisterDot")
 }
 
 void mecrispDisasmConst(void) {
-	SMSG_DEBUG("mecrispDisasmConst")
+	PSMSG_DEBUG("mecrispDisasmConst")
 }
 
 void mecrispDisasmJumps(void) {
-	SMSG_DEBUG("mecrispDisasmJumps")
+	PSMSG_DEBUG("mecrispDisasmJumps")
 }
 
 void mecrispDisasmSource(void) {
-	SMSG_DEBUG("mecrispDisasmSource")
+	PSMSG_DEBUG("mecrispDisasmSource")
 }
 
 void mecrispDisasmDestination(void) {
-	SMSG_DEBUG("mecrispDisasmDestination")
+	PSMSG_DEBUG("mecrispDisasmDestination")
 }
 
 void mecrispDisasmString(void) {
-	SMSG_DEBUG("mecrispDisasmString")
+	PSMSG_DEBUG("mecrispDisasmString")
 }
 
 void mecrispDisasmSingle(void) {
-	SMSG_DEBUG("mecrispDisasmSingle")
+	PSMSG_DEBUG("mecrispDisasmSingle")
 }
 
 void mecrispDisasmDouble(void) {
-	SMSG_DEBUG("mecrispDisasmDouble")
+	PSMSG_DEBUG("mecrispDisasmDouble")
 }
 
 void mecrispDisasm(void) {
-	SMSG_DEBUG("mecrispDisasm")
+	PSMSG_DEBUG("mecrispDisasm")
 }
 
 void mecrispMemStamp(void) {
-	SMSG_DEBUG("mecrispMemStamp")
+	PSMSG_DEBUG("mecrispMemStamp")
 }
 
 void mecrispDisasmStep(void) {
-	SMSG_DEBUG("mecrispDisasmStep")
+	PSMSG_DEBUG("mecrispDisasmStep")
 }
 
 void mecrispSeeC(void) {
-	SMSG_DEBUG("mecrispSeeC")
+	PSMSG_DEBUG("mecrispSeeC")
 }
 
 void mecrispSee(void) {
-	SMSG_DEBUG("mecrispSee")
+	PSMSG_DEBUG("mecrispSee")
 }
 
 void mecrispCornerStone(void) {
-	SMSG_DEBUG("mecrispCornerStone")
+	PSMSG_DEBUG("mecrispCornerStone")
 }
 
 #endif

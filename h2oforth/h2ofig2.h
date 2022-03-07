@@ -6,898 +6,898 @@
 /* Primitives */
 
 void figStore(void) {
-	SMSG_DEBUG("figStore")
+	PSMSG_DEBUG("figStore")
 }
 
 void figStoreCsp(void) {
-	SMSG_DEBUG("figStoreCsp")
+	PSMSG_DEBUG("figStoreCsp")
 }
 
 void figNum(void) {
-	SMSG_DEBUG("figNum")
+	PSMSG_DEBUG("figNum")
 }
 
 void figNumGreater(void) {
-	SMSG_DEBUG("figNumGreater")
+	PSMSG_DEBUG("figNumGreater")
 }
 
 void figNumS(void) {
-	SMSG_DEBUG("figNumS")
+	PSMSG_DEBUG("figNumS")
 }
 
 void figTick(void) {
-	SMSG_DEBUG("figTick")
+	PSMSG_DEBUG("figTick")
 }
 
 void figParen(void) {
-	SMSG_DEBUG("figParen")
+	PSMSG_DEBUG("figParen")
 }
 
 void figYDotQuote(void) {
-	SMSG_DEBUG("figYDotQuote")
+	PSMSG_DEBUG("figYDotQuote")
 }
 
 void figYSemicolonCode(void) {
-	SMSG_DEBUG("figYSemicolonCode")
+	PSMSG_DEBUG("figYSemicolonCode")
 }
 
 void figYPlusLoop(void) {
-	SMSG_DEBUG("figYPlusLoop")
+	PSMSG_DEBUG("figYPlusLoop")
 }
 
 void figYAbort(void) {
-	SMSG_DEBUG("figYAbort")
+	PSMSG_DEBUG("figYAbort")
 }
 
 void figYDo(void) {
-	SMSG_DEBUG("figYDo")
+	PSMSG_DEBUG("figYDo")
 }
 
 void figYFind(void) {
-	SMSG_DEBUG("figYFind")
+	PSMSG_DEBUG("figYFind")
 }
 
 void figYLine(void) {
-	SMSG_DEBUG("figYLine")
+	PSMSG_DEBUG("figYLine")
 }
 
 void figYLoop(void) {
-	SMSG_DEBUG("figYLoop")
+	PSMSG_DEBUG("figYLoop")
 }
 
 void figYNumber(void) {
-	SMSG_DEBUG("figYNumber")
+	PSMSG_DEBUG("figYNumber")
 }
 
 void figStar(void) {
-	SMSG_DEBUG("figStar")
+	PSMSG_DEBUG("figStar")
 }
 
 void figStarSlash(void) {
-	SMSG_DEBUG("figStarSlash")
+	PSMSG_DEBUG("figStarSlash")
 }
 
 void figStarSlashMod(void) {
-	SMSG_DEBUG("figStarSlashMod")
+	PSMSG_DEBUG("figStarSlashMod")
 }
 
 void figPlus(void) {
-	SMSG_DEBUG("figPlus")
+	PSMSG_DEBUG("figPlus")
 }
 
 void figPlusStore(void) {
-	SMSG_DEBUG("figPlusStore")
+	PSMSG_DEBUG("figPlusStore")
 }
 
 void figPlusMinus(void) {
-	SMSG_DEBUG("figPlusMinus")
+	PSMSG_DEBUG("figPlusMinus")
 }
 
 void figPlusBuf(void) {
-	SMSG_DEBUG("figPlusBuf")
+	PSMSG_DEBUG("figPlusBuf")
 }
 
 void figPlusLoop(void) {
-	SMSG_DEBUG("figPlusLoop")
+	PSMSG_DEBUG("figPlusLoop")
 }
 
 void figOrigin(void) {
-	SMSG_DEBUG("figOrigin")
+	PSMSG_DEBUG("figOrigin")
 }
 
 void figComma(void) {
-	SMSG_DEBUG("figComma")
+	PSMSG_DEBUG("figComma")
 }
 
 void figMinus(void) {
-	SMSG_DEBUG("figMinus")
+	PSMSG_DEBUG("figMinus")
 }
 
 void figTo(void) {
-	SMSG_DEBUG("figTo")
+	PSMSG_DEBUG("figTo")
 }
 
 void figMinusDup(void) {
-	SMSG_DEBUG("figMinusDup")
+	PSMSG_DEBUG("figMinusDup")
 }
 
 void figFind(void) {
-	SMSG_DEBUG("figFind")
+	PSMSG_DEBUG("figFind")
 }
 
 void figTrailing(void) {
-	SMSG_DEBUG("figTrailing")
+	PSMSG_DEBUG("figTrailing")
 }
 
 void figDot(void) {
-	SMSG_DEBUG("figDot")
+	PSMSG_DEBUG("figDot")
 }
 
 void figDotQuote(void) {
-	SMSG_DEBUG("figDotQuote")
+	PSMSG_DEBUG("figDotQuote")
 }
 
 void figDotLine(void) {
-	SMSG_DEBUG("figDotLine")
+	PSMSG_DEBUG("figDotLine")
 }
 
 void figDotR(void) {
-	SMSG_DEBUG("figDotR")
+	PSMSG_DEBUG("figDotR")
 }
 
 void figSlash(void) {
-	SMSG_DEBUG("figSlash")
+	PSMSG_DEBUG("figSlash")
 }
 
 void figSlashMod(void) {
-	SMSG_DEBUG("figSlashMod")
+	PSMSG_DEBUG("figSlashMod")
 }
 
 void figZero(void) {
-	SMSG_DEBUG("figZero")
+	PSMSG_DEBUG("figZero")
 }
 
 void figOne(void) {
-	SMSG_DEBUG("figOne")
+	PSMSG_DEBUG("figOne")
 }
 
 void figTwo(void) {
-	SMSG_DEBUG("figTwo")
+	PSMSG_DEBUG("figTwo")
 }
 
 void figThree(void) {
-	SMSG_DEBUG("figThree")
+	PSMSG_DEBUG("figThree")
 }
 
 void figZeroLess(void) {
-	SMSG_DEBUG("figZeroLess")
+	PSMSG_DEBUG("figZeroLess")
 }
 
 void figZeroEqual(void) {
-	SMSG_DEBUG("figZeroEqual")
+	PSMSG_DEBUG("figZeroEqual")
 }
 
 void figZeroBranch(void) {
-	SMSG_DEBUG("figZeroBranch")
+	PSMSG_DEBUG("figZeroBranch")
 }
 
 void figOnePlus(void) {
-	SMSG_DEBUG("figOnePlus")
+	PSMSG_DEBUG("figOnePlus")
 }
 
 void figTwoPlus(void) {
-	SMSG_DEBUG("figTwoPlus")
+	PSMSG_DEBUG("figTwoPlus")
 }
 
 void figColon(void) {
-	SMSG_DEBUG("figColon")
+	PSMSG_DEBUG("figColon")
 }
 
 void figSemicolon(void) {
-	SMSG_DEBUG("figSemicolon")
+	PSMSG_DEBUG("figSemicolon")
 }
 
 void figSemicolonCode(void) {
-	SMSG_DEBUG("figSemicolonCode")
+	PSMSG_DEBUG("figSemicolonCode")
 }
 
 void figSemicolonS(void) {
-	SMSG_DEBUG("figSemicolonS")
+	PSMSG_DEBUG("figSemicolonS")
 }
 
 void figLess(void) {
-	SMSG_DEBUG("figLess")
+	PSMSG_DEBUG("figLess")
 }
 
 void figLessNum(void) {
-	SMSG_DEBUG("figLessNum")
+	PSMSG_DEBUG("figLessNum")
 }
 
 void figBuilds(void) {
-	SMSG_DEBUG("figBuilds")
+	PSMSG_DEBUG("figBuilds")
 }
 
 void figEqual(void) {
-	SMSG_DEBUG("figEqual")
+	PSMSG_DEBUG("figEqual")
 }
 
 void figGreater(void) {
-	SMSG_DEBUG("figGreater")
+	PSMSG_DEBUG("figGreater")
 }
 
 void figToR(void) {
-	SMSG_DEBUG("figToR")
+	PSMSG_DEBUG("figToR")
 }
 
 void figQ(void) {
-	SMSG_DEBUG("figQ")
+	PSMSG_DEBUG("figQ")
 }
 
 void figQComp(void) {
-	SMSG_DEBUG("figQComp")
+	PSMSG_DEBUG("figQComp")
 }
 
 void figQCsp(void) {
-	SMSG_DEBUG("figQCsp")
+	PSMSG_DEBUG("figQCsp")
 }
 
 void figQError(void) {
-	SMSG_DEBUG("figQError")
+	PSMSG_DEBUG("figQError")
 }
 
 void figQExec(void) {
-	SMSG_DEBUG("figQExec")
+	PSMSG_DEBUG("figQExec")
 }
 
 void figQLoading(void) {
-	SMSG_DEBUG("figQLoading")
+	PSMSG_DEBUG("figQLoading")
 }
 
 void figQPairs(void) {
-	SMSG_DEBUG("figQPairs")
+	PSMSG_DEBUG("figQPairs")
 }
 
 void figQStack(void) {
-	SMSG_DEBUG("figQStack")
+	PSMSG_DEBUG("figQStack")
 }
 
 void figQTerminal(void) {
-	SMSG_DEBUG("figQTerminal")
+	PSMSG_DEBUG("figQTerminal")
 }
 
 void figFetch(void) {
-	SMSG_DEBUG("figFetch")
+	PSMSG_DEBUG("figFetch")
 }
 
 void figAbort(void) {
-	SMSG_DEBUG("figAbort")
+	PSMSG_DEBUG("figAbort")
 }
 
 void figAbs(void) {
-	SMSG_DEBUG("figAbs")
+	PSMSG_DEBUG("figAbs")
 }
 
 void figAgain(void) {
-	SMSG_DEBUG("figAgain")
+	PSMSG_DEBUG("figAgain")
 }
 
 void figAllot(void) {
-	SMSG_DEBUG("figAllot")
+	PSMSG_DEBUG("figAllot")
 }
 
 void figAnd(void) {
-	SMSG_DEBUG("figAnd")
+	PSMSG_DEBUG("figAnd")
 }
 
 void figBSlashBuf(void) {
-	SMSG_DEBUG("figBSlashBuf")
+	PSMSG_DEBUG("figBSlashBuf")
 }
 
 void figBSlashScr(void) {
-	SMSG_DEBUG("figBSlashScr")
+	PSMSG_DEBUG("figBSlashScr")
 }
 
 void figBack(void) {
-	SMSG_DEBUG("figBack")
+	PSMSG_DEBUG("figBack")
 }
 
 void figBase(void) {
-	SMSG_DEBUG("figBase")
+	PSMSG_DEBUG("figBase")
 }
 
 void figBegin(void) {
-	SMSG_DEBUG("figBegin")
+	PSMSG_DEBUG("figBegin")
 }
 
 void figBl(void) {
-	SMSG_DEBUG("figBl")
+	PSMSG_DEBUG("figBl")
 }
 
 void figBlanks(void) {
-	SMSG_DEBUG("figBlanks")
+	PSMSG_DEBUG("figBlanks")
 }
 
 void figBlk(void) {
-	SMSG_DEBUG("figBlk")
+	PSMSG_DEBUG("figBlk")
 }
 
 void figBlock(void) {
-	SMSG_DEBUG("figBlock")
+	PSMSG_DEBUG("figBlock")
 }
 
 void figBlockRead(void) {
-	SMSG_DEBUG("figBlockRead")
+	PSMSG_DEBUG("figBlockRead")
 }
 
 void figBlockWrite(void) {
-	SMSG_DEBUG("figBlockWrite")
+	PSMSG_DEBUG("figBlockWrite")
 }
 
 void figBranch(void) {
-	SMSG_DEBUG("figBranch")
+	PSMSG_DEBUG("figBranch")
 }
 
 void figBuffer(void) {
-	SMSG_DEBUG("figBuffer")
+	PSMSG_DEBUG("figBuffer")
 }
 
 void figCStore(void) {
-	SMSG_DEBUG("figCStore")
+	PSMSG_DEBUG("figCStore")
 }
 
 void figCComma(void) {
-	SMSG_DEBUG("figCComma")
+	PSMSG_DEBUG("figCComma")
 }
 
 void figCFetch(void) {
-	SMSG_DEBUG("figCFetch")
+	PSMSG_DEBUG("figCFetch")
 }
 
 void figCfa(void) {
-	SMSG_DEBUG("figCfa")
+	PSMSG_DEBUG("figCfa")
 }
 
 void figCMove(void) {
-	SMSG_DEBUG("figCMove")
+	PSMSG_DEBUG("figCMove")
 }
 
 void figCold(void) {
-	SMSG_DEBUG("figCold")
+	PSMSG_DEBUG("figCold")
 }
 
 void figCompile(void) {
-	SMSG_DEBUG("figCompile")
+	PSMSG_DEBUG("figCompile")
 }
 
 void figConstant(void) {
-	SMSG_DEBUG("figConstant")
+	PSMSG_DEBUG("figConstant")
 }
 
 void figContext(void) {
-	SMSG_DEBUG("figContext")
+	PSMSG_DEBUG("figContext")
 }
 
 void figCount(void) {
-	SMSG_DEBUG("figCount")
+	PSMSG_DEBUG("figCount")
 }
 
 void figCr(void) {
-	SMSG_DEBUG("figCr")
+	PSMSG_DEBUG("figCr")
 }
 
 void figCreate(void) {
-	SMSG_DEBUG("figCreate")
+	PSMSG_DEBUG("figCreate")
 }
 
 void figCsp(void) {
-	SMSG_DEBUG("figCsp")
+	PSMSG_DEBUG("figCsp")
 }
 
 void figDPlus(void) {
-	SMSG_DEBUG("figDPlus")
+	PSMSG_DEBUG("figDPlus")
 }
 
 void figDPlusMinus(void) {
-	SMSG_DEBUG("figAbsrscDPlusMinus")
+	PSMSG_DEBUG("figAbsrscDPlusMinus")
 }
 
 void figDDot(void) {
-	SMSG_DEBUG("figDDot")
+	PSMSG_DEBUG("figDDot")
 }
 
 void figDDotR(void) {
-	SMSG_DEBUG("figDDotR")
+	PSMSG_DEBUG("figDDotR")
 }
 
 void figDAbs(void) {
-	SMSG_DEBUG("figDAbs")
+	PSMSG_DEBUG("figDAbs")
 }
 
 void figDecimal(void) {
-	SMSG_DEBUG("figDecimal")
+	PSMSG_DEBUG("figDecimal")
 }
 
 void figDefinitions(void) {
-	SMSG_DEBUG("figDefinitions")
+	PSMSG_DEBUG("figDefinitions")
 }
 
 void figDigit(void) {
-	SMSG_DEBUG("figDigit")
+	PSMSG_DEBUG("figDigit")
 }
 
 void figDList(void) {
-	SMSG_DEBUG("figDList")
+	PSMSG_DEBUG("figDList")
 }
 
 void figDLiteral(void) {
-	SMSG_DEBUG("figDLiteral")
+	PSMSG_DEBUG("figDLiteral")
 }
 
 void figDMinus(void) {
-	SMSG_DEBUG("figDMinus")
+	PSMSG_DEBUG("figDMinus")
 }
 
 void figDo(void) {
-	SMSG_DEBUG("figDo")
+	PSMSG_DEBUG("figDo")
 }
 
 void figDoes(void) {
-	SMSG_DEBUG("figDoes")
+	PSMSG_DEBUG("figDoes")
 }
 
 void figDP(void) {
-	SMSG_DEBUG("figDP")
+	PSMSG_DEBUG("figDP")
 }
 
 void figDpl(void) {
-	SMSG_DEBUG("figDpl")
+	PSMSG_DEBUG("figDpl")
 }
 
 void figDr0(void) {
-	SMSG_DEBUG("figDr0")
+	PSMSG_DEBUG("figDr0")
 }
 
 void figDr1(void) {
-	SMSG_DEBUG("figDr1")
+	PSMSG_DEBUG("figDr1")
 }
 
 void figDrop(void) {
-	SMSG_DEBUG("figDrop")
+	PSMSG_DEBUG("figDrop")
 }
 
 void figDump(void) {
-	SMSG_DEBUG("figDump")
+	PSMSG_DEBUG("figDump")
 }
 
 void figDup(void) {
-	SMSG_DEBUG("figDup")
+	PSMSG_DEBUG("figDup")
 }
 
 void figElse(void) {
-	SMSG_DEBUG("figElse")
+	PSMSG_DEBUG("figElse")
 }
 
 void figEmit(void) {
-	SMSG_DEBUG("figEmit")
+	PSMSG_DEBUG("figEmit")
 }
 
 void figEmptyBuffers(void) {
-	SMSG_DEBUG("figEmptyBuffers")
+	PSMSG_DEBUG("figEmptyBuffers")
 }
 
 void figEnclose(void) {
-	SMSG_DEBUG("figEnclose")
+	PSMSG_DEBUG("figEnclose")
 }
 
 void figEnd(void) {
-	SMSG_DEBUG("figEnd")
+	PSMSG_DEBUG("figEnd")
 }
 
 void figEndIf(void) {
-	SMSG_DEBUG("figEndIf")
+	PSMSG_DEBUG("figEndIf")
 }
 
 void figErase(void) {
-	SMSG_DEBUG("figErase")
+	PSMSG_DEBUG("figErase")
 }
 
 void figError(void) {
-	SMSG_DEBUG("figError")
+	PSMSG_DEBUG("figError")
 }
 
 void figExecute(void) {
-	SMSG_DEBUG("figExecute")
+	PSMSG_DEBUG("figExecute")
 }
 
 void figExpect(void) {
-	SMSG_DEBUG("figExpect")
+	PSMSG_DEBUG("figExpect")
 }
 
 void figFence(void) {
-	SMSG_DEBUG("figFence")
+	PSMSG_DEBUG("figFence")
 }
 
 void figFill(void) {
-	SMSG_DEBUG("figFill")
+	PSMSG_DEBUG("figFill")
 }
 
 void figFirst(void) {
-	SMSG_DEBUG("figFirst")
+	PSMSG_DEBUG("figFirst")
 }
 
 void figFld(void) {
-	SMSG_DEBUG("figFld")
+	PSMSG_DEBUG("figFld")
 }
 
 void figForget(void) {
-	SMSG_DEBUG("figForget")
+	PSMSG_DEBUG("figForget")
 }
 
 void figForth(void) {
-	SMSG_DEBUG("figForth")
+	PSMSG_DEBUG("figForth")
 }
 
 void figHere(void) {
-	SMSG_DEBUG("figHere")
+	PSMSG_DEBUG("figHere")
 }
 
 void figHex(void) {
-	SMSG_DEBUG("figHex")
+	PSMSG_DEBUG("figHex")
 }
 
 void figHld(void) {
-	SMSG_DEBUG("figHld")
+	PSMSG_DEBUG("figHld")
 }
 
 void figHold(void) {
-	SMSG_DEBUG("figHold")
+	PSMSG_DEBUG("figHold")
 }
 
 void figI(void) {
-	SMSG_DEBUG("figI")
+	PSMSG_DEBUG("figI")
 }
 
 void figIDDot(void) {
-	SMSG_DEBUG("figIDDot")
+	PSMSG_DEBUG("figIDDot")
 }
 
 void figIf(void) {
-	SMSG_DEBUG("figIf")
+	PSMSG_DEBUG("figIf")
 }
 
 void figImmediate(void) {
-	SMSG_DEBUG("figImmediate")
+	PSMSG_DEBUG("figImmediate")
 }
 
 void figIn(void) {
-	SMSG_DEBUG("figIn")
+	PSMSG_DEBUG("figIn")
 }
 
 void figIndex(void) {
-	SMSG_DEBUG("figIndex")
+	PSMSG_DEBUG("figIndex")
 }
 
 void figInterpret(void) {
-	SMSG_DEBUG("figInterpret")
+	PSMSG_DEBUG("figInterpret")
 }
 
 void figKey(void) {
-	SMSG_DEBUG("figKey")
+	PSMSG_DEBUG("figKey")
 }
 
 void figLatest(void) {
-	SMSG_DEBUG("figLatest")
+	PSMSG_DEBUG("figLatest")
 }
 
 void figLeave(void) {
-	SMSG_DEBUG("figLeave")
+	PSMSG_DEBUG("figLeave")
 }
 
 void figLfa(void) {
-	SMSG_DEBUG("figLfa")
+	PSMSG_DEBUG("figLfa")
 }
 
 void figLimit(void) {
-	SMSG_DEBUG("figLimit")
+	PSMSG_DEBUG("figLimit")
 }
 
 void figList(void) {
-	SMSG_DEBUG("figList")
+	PSMSG_DEBUG("figList")
 }
 
 void figLit(void) {
-	SMSG_DEBUG("figLit")
+	PSMSG_DEBUG("figLit")
 }
 
 void figLiteral(void) {
-	SMSG_DEBUG("figLiteral")
+	PSMSG_DEBUG("figLiteral")
 }
 
 void figLoad(void) {
-	SMSG_DEBUG("figLoad")
+	PSMSG_DEBUG("figLoad")
 }
 
 void figLoop(void) {
-	SMSG_DEBUG("figLoop")
+	PSMSG_DEBUG("figLoop")
 }
 
 void figMStar(void) {
-	SMSG_DEBUG("figMStar")
+	PSMSG_DEBUG("figMStar")
 }
 
 void figMSlash(void) {
-	SMSG_DEBUG("figMSlash")
+	PSMSG_DEBUG("figMSlash")
 }
 
 void figMSlashMod(void) {
-	SMSG_DEBUG("figMSlashMod")
+	PSMSG_DEBUG("figMSlashMod")
 }
 
 void figMax(void) {
-	SMSG_DEBUG("figMax")
+	PSMSG_DEBUG("figMax")
 }
 
 void figMessage(void) {
-	SMSG_DEBUG("figMessage")
+	PSMSG_DEBUG("figMessage")
 }
 
 void figMin(void) {
-	SMSG_DEBUG("figMin")
+	PSMSG_DEBUG("figMin")
 }
 
 void figMod(void) {
-	SMSG_DEBUG("figMod")
+	PSMSG_DEBUG("figMod")
 }
 
 void figMon(void) {
-	SMSG_DEBUG("figMon")
+	PSMSG_DEBUG("figMon")
 }
 
 void figMove(void) {
-	SMSG_DEBUG("figMove")
+	PSMSG_DEBUG("figMove")
 }
 
 void figNext(void) {
-	SMSG_DEBUG("figNext")
+	PSMSG_DEBUG("figNext")
 }
 
 
 
 void figNumber(void) {
-	SMSG_DEBUG("figNumber")
+	PSMSG_DEBUG("figNumber")
 }
 
 void figOffset(void) {
-	SMSG_DEBUG("figOffset")
+	PSMSG_DEBUG("figOffset")
 }
 
 void figOr(void) {
-	SMSG_DEBUG("figOr")
+	PSMSG_DEBUG("figOr")
 }
 
 void figOut(void) {
-	SMSG_DEBUG("figOut")
+	PSMSG_DEBUG("figOut")
 }
 
 void figOver(void) {
-	SMSG_DEBUG("figOver")
+	PSMSG_DEBUG("figOver")
 }
 
 void figPad(void) {
-	SMSG_DEBUG("figPad")
+	PSMSG_DEBUG("figPad")
 }
 
 void figNfa(void) {
-	SMSG_DEBUG("figNfa")
+	PSMSG_DEBUG("figNfa")
 }
 
 void figPfa(void) {
-	SMSG_DEBUG("figPfa")
+	PSMSG_DEBUG("figPfa")
 }
 
 void figPop(void) {
-	SMSG_DEBUG("figPop")
+	PSMSG_DEBUG("figPop")
 }
 
 void figPrev(void) {
-	SMSG_DEBUG("figPrev")
+	PSMSG_DEBUG("figPrev")
 }
 
 void figPush(void) {
-	SMSG_DEBUG("figPush")
+	PSMSG_DEBUG("figPush")
 }
 
 void figPut(void) {
-	SMSG_DEBUG("figPut")
+	PSMSG_DEBUG("figPut")
 }
 
 void figQuery(void) {
-	SMSG_DEBUG("figQuery")
+	PSMSG_DEBUG("figQuery")
 }
 
 void figQuit(void) {
-	SMSG_DEBUG("figQuit")
+	PSMSG_DEBUG("figQuit")
 }
 
 void figR(void) {
-	SMSG_DEBUG("figR")
+	PSMSG_DEBUG("figR")
 }
 
 void figRNum(void) {
-	SMSG_DEBUG("figRNum")
+	PSMSG_DEBUG("figRNum")
 }
 
 void figRSlashW(void) {
-	SMSG_DEBUG("figRSlashW")
+	PSMSG_DEBUG("figRSlashW")
 }
 
 void figRFrom(void) {
-	SMSG_DEBUG("figRFrom")
+	PSMSG_DEBUG("figRFrom")
 }
 
 void figR0(void) {
-	SMSG_DEBUG("figR0L")
+	PSMSG_DEBUG("figR0L")
 }
 
 void figRepeat(void) {
-	SMSG_DEBUG("figRepeat")
+	PSMSG_DEBUG("figRepeat")
 }
 
 void figRot(void) {
-	SMSG_DEBUG("figRot")
+	PSMSG_DEBUG("figRot")
 }
 
 void figRPStore(void) {
-	SMSG_DEBUG("figRPStore")
+	PSMSG_DEBUG("figRPStore")
 }
 
 void figSToD(void) {
-	SMSG_DEBUG("figSToD")
+	PSMSG_DEBUG("figSToD")
 }
 
 void figS0(void) {
-	SMSG_DEBUG("figS0")
+	PSMSG_DEBUG("figS0")
 }
 
 void figScr(void) {
-	SMSG_DEBUG("figScr")
+	PSMSG_DEBUG("figScr")
 }
 
 void figSign(void) {
-	SMSG_DEBUG("figSign")
+	PSMSG_DEBUG("figSign")
 }
 
 void figSmudge(void) {
-	SMSG_DEBUG("figSmudge")
+	PSMSG_DEBUG("figSmudge")
 }
 
 void figSPStore(void) {
-	SMSG_DEBUG("figSPStore")
+	PSMSG_DEBUG("figSPStore")
 }
 
 void figSPFetch(void) {
-	SMSG_DEBUG("figSPFetch")
+	PSMSG_DEBUG("figSPFetch")
 }
 
 void figSpace(void) {
-	SMSG_DEBUG("figSpace")
+	PSMSG_DEBUG("figSpace")
 }
 
 void figSpaces(void) {
-	SMSG_DEBUG("figSpaces")
+	PSMSG_DEBUG("figSpaces")
 }
 
 
 void figState(void) {
-	SMSG_DEBUG("figState")
+	PSMSG_DEBUG("figState")
 }
 
 void figSwap(void) {
-	SMSG_DEBUG("figSwap")
+	PSMSG_DEBUG("figSwap")
 }
 
 void figTask(void) {
-	SMSG_DEBUG("figTask")
+	PSMSG_DEBUG("figTask")
 }
 
 void figThen(void) {
-	SMSG_DEBUG("figThen")
+	PSMSG_DEBUG("figThen")
 }
 
 void figTib(void) {
-	SMSG_DEBUG("figTib")
+	PSMSG_DEBUG("figTib")
 }
 
 void figToggle(void) {
-	SMSG_DEBUG("figToggle")
+	PSMSG_DEBUG("figToggle")
 }
 
 void figTraverse(void) {
-	SMSG_DEBUG("figTraverse")
+	PSMSG_DEBUG("figTraverse")
 }
 
 void figTriad(void) {
-	SMSG_DEBUG("figTriad")
+	PSMSG_DEBUG("figTriad")
 }
 
 void figType(void) {
-	SMSG_DEBUG("figType")
+	PSMSG_DEBUG("figType")
 }
 
 void figUStar(void) {
-	SMSG_DEBUG("figUStar")
+	PSMSG_DEBUG("figUStar")
 }
 
 void figUSlash(void) {
-	SMSG_DEBUG("figUSlash")
+	PSMSG_DEBUG("figUSlash")
 }
 
 void figUntil(void) {
-	SMSG_DEBUG("figUntil")
+	PSMSG_DEBUG("figUntil")
 }
 
 void figUpdate(void) {
-	SMSG_DEBUG("figUpdate")
+	PSMSG_DEBUG("figUpdate")
 }
 
 void figUse(void) {
-	SMSG_DEBUG("figUse")
+	PSMSG_DEBUG("figUse")
 }
 
 void figUser(void) {
-	SMSG_DEBUG("figUser")
+	PSMSG_DEBUG("figUser")
 }
 
 void figVariable(void) {
-	SMSG_DEBUG("figVariable")
+	PSMSG_DEBUG("figVariable")
 }
 
 void figVocLink(void) {
-	SMSG_DEBUG("figVocLink")
+	PSMSG_DEBUG("figVocLink")
 }
 
 void figVocabulary(void) {
-	SMSG_DEBUG("figVocabulary")
+	PSMSG_DEBUG("figVocabulary")
 }
 
 void figVlist(void) {
-	SMSG_DEBUG("figVlist")
+	PSMSG_DEBUG("figVlist")
 }
 
 void figWarning(void) {
-	SMSG_DEBUG("figWarning")
+	PSMSG_DEBUG("figWarning")
 }
 
 void figWhile(void) {
-	SMSG_DEBUG("figWhile")
+	PSMSG_DEBUG("figWhile")
 }
 
 void figWidth(void) {
-	SMSG_DEBUG("figWidth")
+	PSMSG_DEBUG("figWidth")
 }
 
 void figWord(void) {
-	SMSG_DEBUG("figWord")
+	PSMSG_DEBUG("figWord")
 }
 
 void figX(void) {
-	SMSG_DEBUG("figX")
+	PSMSG_DEBUG("figX")
 }
 
 void figXor(void) {
-	SMSG_DEBUG("figXor")
+	PSMSG_DEBUG("figXor")
 }
 
 void figRightBracket(void) {
-	SMSG_DEBUG("figRightBracket")
+	PSMSG_DEBUG("figRightBracket")
 }
 
 void figXCompile(void) {
-	SMSG_DEBUG("figXCompile")
+	PSMSG_DEBUG("figXCompile")
 }
 
 void figLeftBracket(void) {
-	SMSG_DEBUG("figLeftBracket")
+	PSMSG_DEBUG("figLeftBracket")
 }
 
 #endif

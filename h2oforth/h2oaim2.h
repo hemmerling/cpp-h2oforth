@@ -6,971 +6,971 @@
 /* Primitives */
 
 void aimTASK(void) {
-	SMSG_DEBUG("aimTASK")
+	PSMSG_DEBUG("aimTASK")
 }
 
 void aimDotS(void) {
-	SMSG_DEBUG("aimDotS")
+	PSMSG_DEBUG("aimDotS")
 }
 
 void aimMon(void) {
-	SMSG_DEBUG("aimMon")
+	PSMSG_DEBUG("aimMon")
 }
 
 void aimHang(void) {
-	SMSG_DEBUG("aimHang")
+	PSMSG_DEBUG("aimHang")
 }
 
 void aimQTTY(void) {
-	SMSG_DEBUG("aimQTTY")
+	PSMSG_DEBUG("aimQTTY")
 }
 
 void aimVList(void) {
-	SMSG_DEBUG("aimVList")
+	PSMSG_DEBUG("aimVList")
 }
 
 void aimQ(void) {
-	SMSG_DEBUG("aimQ")
+	PSMSG_DEBUG("aimQ")
 }
 
 void aimDot(void) {
-	SMSG_DEBUG("aimDot")
+	PSMSG_DEBUG("aimDot")
 }
 
 void aimDotR(void) {
-	SMSG_DEBUG("aimDotR")
+	PSMSG_DEBUG("aimDotR")
 }
 
 void aimDDot(void) {
-	SMSG_DEBUG("aimDDot")
+	PSMSG_DEBUG("aimDDot")
 }
 
 void aimDDotR(void) {
-	SMSG_DEBUG("aimDDotR")
+	PSMSG_DEBUG("aimDDotR")
 }
 
 void aimNumS(void) {
-	SMSG_DEBUG("aimNumS")
+	PSMSG_DEBUG("aimNumS")
 }
 
 void aimNum(void) {
-	SMSG_DEBUG("aimNum")
+	PSMSG_DEBUG("aimNum")
 }
 
 void aimSign(void) {
-	SMSG_DEBUG("aimSign")
+	PSMSG_DEBUG("aimSign")
 }
 
 void aimNumGreater(void) {
-	SMSG_DEBUG("aimNumGreater")
+	PSMSG_DEBUG("aimNumGreater")
 }
 
 void aimLessNum(void) {
-	SMSG_DEBUG("aimLessNum")
+	PSMSG_DEBUG("aimLessNum")
 }
 
 void aimSpaces(void) {
-	SMSG_DEBUG("aimSpaces")
+	PSMSG_DEBUG("aimSpaces")
 }
 
 void aimWhile(void) {
-	SMSG_DEBUG("aimWhile")
+	PSMSG_DEBUG("aimWhile")
 }
 
 void aimElse(void) {
-	SMSG_DEBUG("aimElse")
+	PSMSG_DEBUG("aimElse")
 }
 
 void aimIf(void) {
-	SMSG_DEBUG("aimIf")
+	PSMSG_DEBUG("aimIf")
 }
 
 void aimRepeat(void) {
-	SMSG_DEBUG("aimRepeat")
+	PSMSG_DEBUG("aimRepeat")
 }
 
 void aimAgain(void) {
-	SMSG_DEBUG("aimAgain")
+	PSMSG_DEBUG("aimAgain")
 }
 
 void aimEnd(void) {
-	SMSG_DEBUG("aimEnd")
+	PSMSG_DEBUG("aimEnd")
 }
 
 void aimUntil(void) {
-	SMSG_DEBUG("aimUntil")
+	PSMSG_DEBUG("aimUntil")
 }
 
 void aimPlusLoop(void) {
-	SMSG_DEBUG("aimPlusLoop")
+	PSMSG_DEBUG("aimPlusLoop")
 }
 
 void aimLoop(void) {
-	SMSG_DEBUG("aimLoop")
+	PSMSG_DEBUG("aimLoop")
 }
 
 void aimDo(void) {
-	SMSG_DEBUG("aimDo")
+	PSMSG_DEBUG("aimDo")
 }
 
 void aimThen(void) {
-	SMSG_DEBUG("aimThen")
+	PSMSG_DEBUG("aimThen")
 }
 
 void aimEndIf(void) {
-	SMSG_DEBUG("aimEndIf")
+	PSMSG_DEBUG("aimEndIf")
 }
 
 void aimBegin(void) {
-	SMSG_DEBUG("aimBegin")
+	PSMSG_DEBUG("aimBegin")
 }
 
 void aimForget(void) {
-	SMSG_DEBUG("aimForget")
+	PSMSG_DEBUG("aimForget")
 }
 
 void aimTick(void) {
-	SMSG_DEBUG("aimTick")
+	PSMSG_DEBUG("aimTick")
 }
 
 void aimRSlashW(void) {
-	SMSG_DEBUG("aimRSlashW")
+	PSMSG_DEBUG("aimRSlashW")
 }
 
 void aimTo(void) {
-	SMSG_DEBUG("aimTo")
+	PSMSG_DEBUG("aimTo")
 }
 
 void aimLoad(void) {
-	SMSG_DEBUG("aimLoad")
+	PSMSG_DEBUG("aimLoad")
 }
 
 void aimMessage(void) {
-	SMSG_DEBUG("aimMessage")
+	PSMSG_DEBUG("aimMessage")
 }
 
 void aimDotLine(void) {
-	SMSG_DEBUG("aimDotLine")
+	PSMSG_DEBUG("aimDotLine")
 }
 
 void aimZLine(void) {
-	SMSG_DEBUG("aimZLine")
+	PSMSG_DEBUG("aimZLine")
 }
 
 void aimDump(void) {
-	SMSG_DEBUG("aimDump")
+	PSMSG_DEBUG("aimDump")
 }
 
 void aimFlush(void) {
-	SMSG_DEBUG("aimFlush")
+	PSMSG_DEBUG("aimFlush")
 }
 
 void aimBlock(void) {
-	SMSG_DEBUG("aimBlock")
+	PSMSG_DEBUG("aimBlock")
 }
 
 void aimBuffer(void) {
-	SMSG_DEBUG("aimBuffer")
+	PSMSG_DEBUG("aimBuffer")
 }
 
 void aimEmptyBuffers(void) {
-	SMSG_DEBUG("aimEmptyBuffers")
+	PSMSG_DEBUG("aimEmptyBuffers")
 }
 
 void aimUpdate(void) {
-	SMSG_DEBUG("aimUpdate")
+	PSMSG_DEBUG("aimUpdate")
 }
 
 void aimPlusBuf(void) {
-	SMSG_DEBUG("aimPlusBuf")
+	PSMSG_DEBUG("aimPlusBuf")
 }
 
 void aimMSlashMOD(void) {
-	SMSG_DEBUG("aimMSlashMOD")
+	PSMSG_DEBUG("aimMSlashMOD")
 }
 
 void aimStarSlash(void) {
-	SMSG_DEBUG("aimStarSlash")
+	PSMSG_DEBUG("aimStarSlash")
 }
 
 void aimStarSlashMOD(void) {
-	SMSG_DEBUG("aimStarSlashMOD")
+	PSMSG_DEBUG("aimStarSlashMOD")
 }
 
 void aimMOD(void) {
-	SMSG_DEBUG("aimMOD")
+	PSMSG_DEBUG("aimMOD")
 }
 
 void aimSlash(void) {
-	SMSG_DEBUG("aimSlash")
+	PSMSG_DEBUG("aimSlash")
 }
 
 void aimSlashMOD(void) {
-	SMSG_DEBUG("aimSlashMOD")
+	PSMSG_DEBUG("aimSlashMOD")
 }
 
 void aimStar(void) {
-	SMSG_DEBUG("aimStar")
+	PSMSG_DEBUG("aimStar")
 }
 
 void aimMSlash(void) {
-	SMSG_DEBUG("aimMSlash")
+	PSMSG_DEBUG("aimMSlash")
 }
 
 void aimMStar(void) {
-	SMSG_DEBUG("aimMStar")
+	PSMSG_DEBUG("aimMStar")
 }
 
 void aimMax(void) {
-	SMSG_DEBUG("aimMax")
+	PSMSG_DEBUG("aimMax")
 }
 
 void aimMin(void) {
-	SMSG_DEBUG("aimMin")
+	PSMSG_DEBUG("aimMin")
 }
 
 void aimDAbs(void) {
-	SMSG_DEBUG("aimDAbs")
+	PSMSG_DEBUG("aimDAbs")
 }
 
 void aimAbs(void) {
-	SMSG_DEBUG("aimAbs")
+	PSMSG_DEBUG("aimAbs")
 }
 
 void aimDPlusMinus(void) {
-	SMSG_DEBUG("aimDPlusMinus")
+	PSMSG_DEBUG("aimDPlusMinus")
 }
 
 void aimPlusMinus(void) {
-	SMSG_DEBUG("aimPlusMinus")
+	PSMSG_DEBUG("aimPlusMinus")
 }
 
 void aimSToD(void) {
-	SMSG_DEBUG("aimSToD")
+	PSMSG_DEBUG("aimSToD")
 }
 
 void aimCold(void) {
-	SMSG_DEBUG("aimCold")
+	PSMSG_DEBUG("aimCold")
 }
 
 void aimAbort(void) {
-	SMSG_DEBUG("aimAbort")
+	PSMSG_DEBUG("aimAbort")
 }
 
 void aimQuit(void) {
-	SMSG_DEBUG("aimQuit")
+	PSMSG_DEBUG("aimQuit")
 }
 
 void aimParen(void) {
-	SMSG_DEBUG("aimParen")
+	PSMSG_DEBUG("aimParen")
 }
 
 void aimDefinitions(void) {
-	SMSG_DEBUG("aimDefinitions")
+	PSMSG_DEBUG("aimDefinitions")
 }
 
 void aimAssembler(void) {
-	SMSG_DEBUG("aimAssembler")
+	PSMSG_DEBUG("aimAssembler")
 }
 
 void aimForth(void) {
-	SMSG_DEBUG("aimForth")
+	PSMSG_DEBUG("aimForth")
 }
 
 void aimVocabulary(void) {
-	SMSG_DEBUG("aimVocabulary")
+	PSMSG_DEBUG("aimVocabulary")
 }
 
 void aimImmediate(void) {
-	SMSG_DEBUG("aimImmediate")
+	PSMSG_DEBUG("aimImmediate")
 }
 
 void aimInterpret(void) {
-	SMSG_DEBUG("aimInterpret")
+	PSMSG_DEBUG("aimInterpret")
 }
 
 void aimQStack(void) {
-	SMSG_DEBUG("aimQStack")
+	PSMSG_DEBUG("aimQStack")
 }
 
 void aimDLiteral(void) {
-	SMSG_DEBUG("aimDLiteral")
+	PSMSG_DEBUG("aimDLiteral")
 }
 
 void aimLiteral(void) {
-	SMSG_DEBUG("aimLiteral")
+	PSMSG_DEBUG("aimLiteral")
 }
 
 void aimXCompile(void) {
-	SMSG_DEBUG("aimXCompile")
+	PSMSG_DEBUG("aimXCompile")
 }
 
 void aimCreate(void) {
-	SMSG_DEBUG("aimCreate")
+	PSMSG_DEBUG("aimCreate")
 }
 
 void aimIDDot(void) {
-	SMSG_DEBUG("aimIDDot")
+	PSMSG_DEBUG("aimIDDot")
 }
 
 void aimError(void) {
-	SMSG_DEBUG("aimIDDot")
+	PSMSG_DEBUG("aimIDDot")
 }
 
 void aimZABORT(void) {
-	SMSG_DEBUG("aimZABORT")
+	PSMSG_DEBUG("aimZABORT")
 }
 
 void aimMinusFind(void) {
-	SMSG_DEBUG("aimMinusFind")
+	PSMSG_DEBUG("aimMinusFind")
 }
 
 void aimNumber(void) {
-	SMSG_DEBUG("aimNumber")
+	PSMSG_DEBUG("aimNumber")
 }
 
 void aimZNumber(void) {
-	SMSG_DEBUG("aimZNumber")
+	PSMSG_DEBUG("aimZNumber")
 }
 
 void aimWord(void) {
-	SMSG_DEBUG("aimWord")
+	PSMSG_DEBUG("aimWord")
 }
 
 void aimPad(void) {
-	SMSG_DEBUG("aimPad")
+	PSMSG_DEBUG("aimPad")
 }
 
 void aimHold(void) {
-	SMSG_DEBUG("aimHold")
+	PSMSG_DEBUG("aimHold")
 }
 
 void aimBlanks(void) {
-	SMSG_DEBUG("aimBlanks")
+	PSMSG_DEBUG("aimBlanks")
 }
 
 void aimErase(void) {
-	SMSG_DEBUG("aimErase")
+	PSMSG_DEBUG("aimErase")
 }
 
 void aimFill(void) {
-	SMSG_DEBUG("aimFill")
+	PSMSG_DEBUG("aimFill")
 }
 
 void aimFetch(void) {
-	SMSG_DEBUG("aimFetch")
+	PSMSG_DEBUG("aimFetch")
 }
 
 void aimQuery(void) {
-	SMSG_DEBUG("aimQuery")
+	PSMSG_DEBUG("aimQuery")
 }
 
 void aimExpect(void) {
-	SMSG_DEBUG("aimExpect")
+	PSMSG_DEBUG("aimExpect")
 }
 
 void aimDotQuote(void) {
-	SMSG_DEBUG("aimDotQuote")
+	PSMSG_DEBUG("aimDotQuote")
 }
 
 void aimParenDotQuote(void) {
-	SMSG_DEBUG("aimParenDotQuote")
+	PSMSG_DEBUG("aimParenDotQuote")
 }
 
 void aimMinusTrailing(void) {
-	SMSG_DEBUG("aimMinusTrailing")
+	PSMSG_DEBUG("aimMinusTrailing")
 }
 
 void aimType(void) {
-	SMSG_DEBUG("aimType")
+	PSMSG_DEBUG("aimType")
 }
 
 void aimCount(void) {
-	SMSG_DEBUG("aimCount")
+	PSMSG_DEBUG("aimCount")
 }
 
 void aimDoes(void) {
-	SMSG_DEBUG("aimDoes")
+	PSMSG_DEBUG("aimDoes")
 }
 
 void aimBuilds(void) {
-	SMSG_DEBUG("aimBuilds")
+	PSMSG_DEBUG("aimBuilds")
 }
 
 void aimSemicolonCode(void) {
-	SMSG_DEBUG("aimSemicolonCode")
+	PSMSG_DEBUG("aimSemicolonCode")
 }
 
 void aimZSemicolonCode(void) {
-	SMSG_DEBUG("aimZSemicolonCode")
+	PSMSG_DEBUG("aimZSemicolonCode")
 }
 
 void aimDecimal(void) {
-	SMSG_DEBUG("aimDecimal")
+	PSMSG_DEBUG("aimDecimal")
 }
 
 void aimHex(void) {
-	SMSG_DEBUG("aimHex")
+	PSMSG_DEBUG("aimHex")
 }
 
 void aimSmudge(void) {
-	SMSG_DEBUG("aimSmudge")
+	PSMSG_DEBUG("aimSmudge")
 }
 
 void aimRightBracket(void) {
-	SMSG_DEBUG("aimRightBracket")
+	PSMSG_DEBUG("aimRightBracket")
 }
 
 void aimLeftBracket(void) {
-	SMSG_DEBUG("aimLeftBracket")
+	PSMSG_DEBUG("aimLeftBracket")
 }
 
 void aimCompile(void) {
-	SMSG_DEBUG("aimCompile")
+	PSMSG_DEBUG("aimCompile")
 }
 
 void aimQCSP(void) {
-	SMSG_DEBUG("aimQCSP")
+	PSMSG_DEBUG("aimQCSP")
 }
 
 void aimQPairs(void) {
-	SMSG_DEBUG("aimQPairs")
+	PSMSG_DEBUG("aimQPairs")
 }
 
 void aimQExec(void) {
-	SMSG_DEBUG("aimQExec")
+	PSMSG_DEBUG("aimQExec")
 }
 
 void aimQComp(void) {
-	SMSG_DEBUG("aimQComp")
+	PSMSG_DEBUG("aimQComp")
 }
 
 void aimQError(void) {
-	SMSG_DEBUG("aimQError")
+	PSMSG_DEBUG("aimQError")
 }
 
 void aimStoreCSP(void) {
-	SMSG_DEBUG("aimStoreCSP")
+	PSMSG_DEBUG("aimStoreCSP")
 }
 
 void aimPFA(void) {
-	SMSG_DEBUG("aimPFA")
+	PSMSG_DEBUG("aimPFA")
 }
 
 void aimNFA(void) {
-	SMSG_DEBUG("aimNFA")
+	PSMSG_DEBUG("aimNFA")
 }
 
 void aimCFA(void) {
-	SMSG_DEBUG("aimCFA")
+	PSMSG_DEBUG("aimCFA")
 }
 
 void aimLFA(void) {
-	SMSG_DEBUG("aimLFA")
+	PSMSG_DEBUG("aimLFA")
 }
 
 void aimLatest(void) {
-	SMSG_DEBUG("aimLatest")
+	PSMSG_DEBUG("aimLatest")
 }
 
 void aimMinusDup(void) {
-	SMSG_DEBUG("aimMinusDup")
+	PSMSG_DEBUG("aimMinusDup")
 }
 
 void aimSpace(void) {
-	SMSG_DEBUG("aimSpace")
+	PSMSG_DEBUG("aimSpace")
 }
 
 void aimPick(void) {
-	SMSG_DEBUG("aimSpace")
+	PSMSG_DEBUG("aimSpace")
 }
 
 void aimRot(void) {
-	SMSG_DEBUG("aimRot")
+	PSMSG_DEBUG("aimRot")
 }
 
 void aimGreater(void) {
-	SMSG_DEBUG("aimGreater")
+	PSMSG_DEBUG("aimGreater")
 }
 
 void aimLess(void) {
-	SMSG_DEBUG("aimLess")
+	PSMSG_DEBUG("aimLess")
 }
 
 void aimULess(void) {
-	SMSG_DEBUG("aimULess")
+	PSMSG_DEBUG("aimULess")
 }
 
 void aimEqual(void) {
-	SMSG_DEBUG("aimULess")
+	PSMSG_DEBUG("aimULess")
 }
 
 void aimMinus(void) {
-	SMSG_DEBUG("aimMinus")
+	PSMSG_DEBUG("aimMinus")
 }
 
 void aimCComma(void) {
-	SMSG_DEBUG("aimCComma")
+	PSMSG_DEBUG("aimCComma")
 }
 
 void aimComma(void) {
-	SMSG_DEBUG("aimComma")
+	PSMSG_DEBUG("aimComma")
 }
 
 void aimAllot(void) {
-	SMSG_DEBUG("aimAllot")
+	PSMSG_DEBUG("aimAllot")
 }
 
 void aimHere(void) {
-	SMSG_DEBUG("aimHere")
+	PSMSG_DEBUG("aimHere")
 }
 
 void aimTwoMinus(void) {
-	SMSG_DEBUG("aimTwoMinus")
+	PSMSG_DEBUG("aimTwoMinus")
 }
 
 void aimOneMinus(void) {
-	SMSG_DEBUG("aimOneMinus")
+	PSMSG_DEBUG("aimOneMinus")
 }
 
 void aimTwoPlus(void) {
-	SMSG_DEBUG("aimTwoPlus")
+	PSMSG_DEBUG("aimTwoPlus")
 }
 
 void aimOnePLus(void) {
-	SMSG_DEBUG("aimOnePLus")
+	PSMSG_DEBUG("aimOnePLus")
 }
 
 void aimBSlashSCR(void) {
-	SMSG_DEBUG("aimBSlashSCR")
+	PSMSG_DEBUG("aimBSlashSCR")
 }
 
 void aimBSlashBUF(void) {
-	SMSG_DEBUG("aimBSlashBUF")
+	PSMSG_DEBUG("aimBSlashBUF")
 }
 
 void aimLimit(void) {
-	SMSG_DEBUG("aimLimit")
+	PSMSG_DEBUG("aimLimit")
 }
 
 void aimFirst(void) {
-	SMSG_DEBUG("aimFirst")
+	PSMSG_DEBUG("aimFirst")
 }
 
 void aimCSlashL(void) {
-	SMSG_DEBUG("aimCSlashL")
+	PSMSG_DEBUG("aimCSlashL")
 }
 
 void aimMode(void) {
-	SMSG_DEBUG("aimMode")
+	PSMSG_DEBUG("aimMode")
 }
 
 void aimHLD(void) {
-	SMSG_DEBUG("aimHLD")
+	PSMSG_DEBUG("aimHLD")
 }
 
 void aimCSP(void) {
-	SMSG_DEBUG("aimCSP")
+	PSMSG_DEBUG("aimCSP")
 }
 
 void aimDPL(void) {
-	SMSG_DEBUG("aimDPL")
+	PSMSG_DEBUG("aimDPL")
 }
 
 void aimBase(void) {
-	SMSG_DEBUG("aimBase")
+	PSMSG_DEBUG("aimBase")
 }
 
 void aimState(void) {
-	SMSG_DEBUG("aimState")
+	PSMSG_DEBUG("aimState")
 }
 
 void aimCurrent(void) {
-	SMSG_DEBUG("aimCurrent")
+	PSMSG_DEBUG("aimCurrent")
 }
 
 void aimContext(void) {
-	SMSG_DEBUG("aimContext")
+	PSMSG_DEBUG("aimContext")
 }
 
 void aimOffset(void) {
-	SMSG_DEBUG("aimOffset")
+	PSMSG_DEBUG("aimOffset")
 }
 
 void aimSCR(void) {
-	SMSG_DEBUG("aimSCR")
+	PSMSG_DEBUG("aimSCR")
 }
 
 void aimIn(void) {
-	SMSG_DEBUG("aimIn")
+	PSMSG_DEBUG("aimIn")
 }
 
 void aimBLK(void) {
-	SMSG_DEBUG("aimBLK")
+	PSMSG_DEBUG("aimBLK")
 }
 
 void aimUEmit(void) {
-	SMSG_DEBUG("aimUEmit")
+	PSMSG_DEBUG("aimUEmit")
 }
 
 void aimUKey(void) {
-	SMSG_DEBUG("aimUKey")
+	PSMSG_DEBUG("aimUKey")
 }
 
 void aimURSlashW(void) {
-	SMSG_DEBUG("aimURSlashW")
+	PSMSG_DEBUG("aimURSlashW")
 }
 
 void aimUAbort(void) {
-	SMSG_DEBUG("aimUAbort")
+	PSMSG_DEBUG("aimUAbort")
 }
 
 void aimUBSlashSCR(void) {
-	SMSG_DEBUG("aimUBSlashSCR")
+	PSMSG_DEBUG("aimUBSlashSCR")
 }
 
 void aimUBSlashBUF(void) {
-	SMSG_DEBUG("aimUBSlashBUF")
+	PSMSG_DEBUG("aimUBSlashBUF")
 }
 
 void aimULimit(void) {
-	SMSG_DEBUG("aimULimit")
+	PSMSG_DEBUG("aimULimit")
 }
 
 void aimUFirst(void) {
-	SMSG_DEBUG("aimUFirst")
+	PSMSG_DEBUG("aimUFirst")
 }
 
 void aimUCSlashL(void) {
-	SMSG_DEBUG("aimUCSlashL")
+	PSMSG_DEBUG("aimUCSlashL")
 }
 
 void aimPrev(void) {
-	SMSG_DEBUG("aimPrev")
+	PSMSG_DEBUG("aimPrev")
 }
 
 void aimUse(void) {
-	SMSG_DEBUG("aimUse")
+	PSMSG_DEBUG("aimUse")
 }
 
 void aimVocLink(void) {
-	SMSG_DEBUG("aimVocLink")
+	PSMSG_DEBUG("aimVocLink")
 }
 
 void aimDP(void) {
-	SMSG_DEBUG("aimDP")
+	PSMSG_DEBUG("aimDP")
 }
 
 void aimFence(void) {
-	SMSG_DEBUG("aimFence")
+	PSMSG_DEBUG("aimFence")
 }
 
 void aimWarning(void) {
-	SMSG_DEBUG("aimWarning")
+	PSMSG_DEBUG("aimWarning")
 }
 
 void aimWidth(void) {
-	SMSG_DEBUG("aimWidth")
+	PSMSG_DEBUG("aimWidth")
 }
 
 void aimTIB(void) {
-	SMSG_DEBUG("aimTIB")
+	PSMSG_DEBUG("aimTIB")
 }
 
 void aimR0(void) {
-	SMSG_DEBUG("aimR0")
+	PSMSG_DEBUG("aimR0")
 }
 
 void aimS0(void) {
-	SMSG_DEBUG("aimS0")
+	PSMSG_DEBUG("aimS0")
 }
 
 void aimBL(void) {
-	SMSG_DEBUG("aimBL")
+	PSMSG_DEBUG("aimBL")
 }
 
 void aimThree(void) {
-	SMSG_DEBUG("aimThree")
+	PSMSG_DEBUG("aimThree")
 }
 
 void aimTwo(void) {
-	SMSG_DEBUG("aimTwo")
+	PSMSG_DEBUG("aimTwo")
 }
 
 void aimOne(void) {
-	SMSG_DEBUG("aimOne")
+	PSMSG_DEBUG("aimOne")
 }
 
 void aimZero(void) {
-	SMSG_DEBUG("aimZero")
+	PSMSG_DEBUG("aimZero")
 }
 
 void aimUser(void) {
-	SMSG_DEBUG("aimUser")
+	PSMSG_DEBUG("aimUser")
 }
 
 void aimCode(void) {
-	SMSG_DEBUG("aimCode")
+	PSMSG_DEBUG("aimCode")
 }
 
 void aimVariable(void) {
-	SMSG_DEBUG("aimVariable")
+	PSMSG_DEBUG("aimVariable")
 }
 
 void aimConstant(void) {
-	SMSG_DEBUG("aimConstant")
+	PSMSG_DEBUG("aimConstant")
 }
 
 void aimSemicolon(void) {
-	SMSG_DEBUG("aimSemicolon")
+	PSMSG_DEBUG("aimSemicolon")
 }
 
 void aimColon(void) {
-	SMSG_DEBUG("aimColon")
+	PSMSG_DEBUG("aimColon")
 }
 
 void aimCStore(void) {
-	SMSG_DEBUG("aimCStore")
+	PSMSG_DEBUG("aimCStore")
 }
 
 void aimStore(void) {
-	SMSG_DEBUG("aimStore")
+	PSMSG_DEBUG("aimStore")
 }
 
 void aimCFetch(void) {
-	SMSG_DEBUG("aimCFetch")
+	PSMSG_DEBUG("aimCFetch")
 }
 
 void aimToggle(void) {
-	SMSG_DEBUG("aimToggle")
+	PSMSG_DEBUG("aimToggle")
 }
 
 void aimPlusStore(void) {
-	SMSG_DEBUG("aimPlusStore")
+	PSMSG_DEBUG("aimPlusStore")
 }
 
 void aimBounds(void) {
-	SMSG_DEBUG("aimBounds")
+	PSMSG_DEBUG("aimBounds")
 }
 
 void aimTwoDup(void) {
-	SMSG_DEBUG("aimTwoDup")
+	PSMSG_DEBUG("aimTwoDup")
 }
 
 void aimDup(void) {
-	SMSG_DEBUG("aimDup")
+	PSMSG_DEBUG("aimDup")
 }
 
 void aimSwap(void) {
-	SMSG_DEBUG("aimSwap")
+	PSMSG_DEBUG("aimSwap")
 }
 
 void aimTwoDrop(void) {
-	SMSG_DEBUG("aimTwoDrop")
+	PSMSG_DEBUG("aimTwoDrop")
 }
 
 void aimDrop(void) {
-	SMSG_DEBUG("aimDrop")
+	PSMSG_DEBUG("aimDrop")
 }
 
 void aimOver(void) {
-	SMSG_DEBUG("aimOver")
+	PSMSG_DEBUG("aimOver")
 }
 
 void aimDNegate(void) {
-	SMSG_DEBUG("aimDNegate")
+	PSMSG_DEBUG("aimDNegate")
 }
 
 void aimNegate(void) {
-	SMSG_DEBUG("aimNegate")
+	PSMSG_DEBUG("aimNegate")
 }
 
 void aimDPlus(void) {
-	SMSG_DEBUG("aimDPlus")
+	PSMSG_DEBUG("aimDPlus")
 }
 
 void aimPlus(void) {
-	SMSG_DEBUG("aimPlus")
+	PSMSG_DEBUG("aimPlus")
 }
 
 void aimZeroLess(void) {
-	SMSG_DEBUG("aimZeroLess")
+	PSMSG_DEBUG("aimZeroLess")
 }
 
 void aimNot(void) {
-	SMSG_DEBUG("aimNot")
+	PSMSG_DEBUG("aimNot")
 }
 
 void aimZeroEqual(void) {
-	SMSG_DEBUG("aimZeroEqual")
+	PSMSG_DEBUG("aimZeroEqual")
 }
 
 void aimR(void) {
-	SMSG_DEBUG("aimR")
+	PSMSG_DEBUG("aimR")
 }
 
 void aimRGreater(void) {
-	SMSG_DEBUG("aimRGreater")
+	PSMSG_DEBUG("aimRGreater")
 }
 
 void aimToR(void) {
-	SMSG_DEBUG("aimToR")
+	PSMSG_DEBUG("aimToR")
 }
 
 void aimLeave(void) {
-	SMSG_DEBUG("aimLeave")
+	PSMSG_DEBUG("aimLeave")
 }
 
 void aimSemicolonS(void) {
-	SMSG_DEBUG("aimSemicolonS")
+	PSMSG_DEBUG("aimSemicolonS")
 }
 
 void aimRPFetch(void) {
-	SMSG_DEBUG("aimRPFetch")
+	PSMSG_DEBUG("aimRPFetch")
 }
 
 void aimRPStore(void) {
-	SMSG_DEBUG("aimRPStore")
+	PSMSG_DEBUG("aimRPStore")
 }
 
 void aimSPStore(void) {
-	SMSG_DEBUG("aimSPStore")
+	PSMSG_DEBUG("aimSPStore")
 }
 
 void aimSPFetch(void) {
-	SMSG_DEBUG("aimSPFetch")
+	PSMSG_DEBUG("aimSPFetch")
 }
 
 void aimXor(void) {
-	SMSG_DEBUG("aimXor")
+	PSMSG_DEBUG("aimXor")
 }
 
 void aimOr(void) {
-	SMSG_DEBUG("aimOr")
+	PSMSG_DEBUG("aimOr")
 }
 
 void aimAnd(void) {
-	SMSG_DEBUG("aimAnd")
+	PSMSG_DEBUG("aimAnd")
 }
 
 void aimUSlash(void) {
-	SMSG_DEBUG("aimUSlash")
+	PSMSG_DEBUG("aimUSlash")
 }
 
 void aimUStar(void) {
-	SMSG_DEBUG("aimUStar")
+	PSMSG_DEBUG("aimUStar")
 }
 
 void aimCMove(void) {
-	SMSG_DEBUG("aimCMove")
+	PSMSG_DEBUG("aimCMove")
 }
 
 void aimMinusCR(void) {
-	SMSG_DEBUG("aimMinusCR")
+	PSMSG_DEBUG("aimMinusCR")
 }
 
 void aimClose(void) {
-	SMSG_DEBUG("aimClose")
+	PSMSG_DEBUG("aimClose")
 }
 
 void aimChain(void) {
-	SMSG_DEBUG("aimChain")
+	PSMSG_DEBUG("aimChain")
 }
 
 void aimFinis(void) {
-	SMSG_DEBUG("aimFinis")
+	PSMSG_DEBUG("aimFinis")
 }
 
 void aimSource(void) {
-	SMSG_DEBUG("aimSource")
+	PSMSG_DEBUG("aimSource")
 }
 
 void aimBaud(void) {
-	SMSG_DEBUG("aimBaud")
+	PSMSG_DEBUG("aimBaud")
 }
 
 void aimWrite(void) {
-	SMSG_DEBUG("aimWrite")
+	PSMSG_DEBUG("aimWrite")
 }
 
 void aimRead(void) {
-	SMSG_DEBUG("aimRead")
+	PSMSG_DEBUG("aimRead")
 }
 
 void aimQOut(void) {
-	SMSG_DEBUG("aimQOut")
+	PSMSG_DEBUG("aimQOut")
 }
 
 void aimQIn(void) {
-	SMSG_DEBUG("aimQIn")
+	PSMSG_DEBUG("aimQIn")
 }
 
 void aimPut(void) {
-	SMSG_DEBUG("aimPut")
+	PSMSG_DEBUG("aimPut")
 }
 
 void aimGet(void) {
-	SMSG_DEBUG("aimGet")
+	PSMSG_DEBUG("aimGet")
 }
 
 void aimCR(void) {
-	SMSG_DEBUG("aimCR")
+	PSMSG_DEBUG("aimCR")
 }
 
 void aimQTerminal(void) {
-	SMSG_DEBUG("aimQTerminal")
+	PSMSG_DEBUG("aimQTerminal")
 }
 
 void aimKey(void) {
-	SMSG_DEBUG("aimKey")
+	PSMSG_DEBUG("aimKey")
 }
 
 void aimEmit(void) {
-	SMSG_DEBUG("aimEmit")
+	PSMSG_DEBUG("aimEmit")
 }
 
 void aimEnclose(void) {
-	SMSG_DEBUG("aimEnclose")
+	PSMSG_DEBUG("aimEnclose")
 }
 
 void aimZFind(void) {
-	SMSG_DEBUG("aimZFind")
+	PSMSG_DEBUG("aimZFind")
 }
 
 void aimDigit(void) {
-	SMSG_DEBUG("aimDigit")
+	PSMSG_DEBUG("aimDigit")
 }
 
 void aimI(void) {
-	SMSG_DEBUG("aimI")
+	PSMSG_DEBUG("aimI")
 }
 
 void aimZDo(void) {
-	SMSG_DEBUG("aimZDo")
+	PSMSG_DEBUG("aimZDo")
 }
 
 void aimZPlusLoop(void) {
-	SMSG_DEBUG("aimZPlusLoop")
+	PSMSG_DEBUG("aimZPlusLoop")
 }
 
 void aimZeroBranch(void) {
-	SMSG_DEBUG("aimZeroBranch")
+	PSMSG_DEBUG("aimZeroBranch")
 }
 
 void aimBranch(void) {
-	SMSG_DEBUG("aimBranch")
+	PSMSG_DEBUG("aimBranch")
 }
 
 void aimExecute(void) {
-	SMSG_DEBUG("aimExecute")
+	PSMSG_DEBUG("aimExecute")
 }
 
 void aimClit(void) {
-	SMSG_DEBUG("aimClit")
+	PSMSG_DEBUG("aimClit")
 }
 
 void aimLit(void) {
-	SMSG_DEBUG("aimClit")
+	PSMSG_DEBUG("aimClit")
 }
 
 #endif

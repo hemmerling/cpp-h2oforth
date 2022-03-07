@@ -4,20 +4,20 @@
 /* Support for command line arguments / command line parameters */
 
 void readDatabase(char* databaseString) {
-	PUTS("H2oForth - Reads a database. TBD");
+	PSMSG_VERBOSE("H2oForth - Reads a database. TBD");
 }
 
 void readCode(char* filename) {
 	FILE* fp = fopen(filename, "r");
 	int nn; /* < 32 */
 	if (fp == NULL) {
-		FPUTS_ERR("H2oForth - Unable to open a file\n");
-		PERROR(filename);
-		FPUTS_ERR("\n");
+		PSMSG_ERROR("H2oForth - Unable to open a file\n");
+		PERROR(filename); /* TBD */
+		PSMSG_ERROR("\n");
 		exit(EXIT_CODE_NOTFOUND);
 	};
 	if (forthState.forthIsVerbose) {
-		PUTS("H2oForth - Reads a code file. TBD");
+		PSMSG_VERBOSE("H2oForth - Reads a code file. TBD");
 	};
 	fclose(fp);
 }
@@ -30,9 +30,9 @@ void createDefaultBlock(void) {
 	char* filename = (char*)DEFAULT_BLOCKSNAME;
 	int fd = _open(filename, O_CREAT | O_WRONLY | O_TRUNC);
 	if (fd == FILEIO_ERROR) {
-		FPUTS_ERR("H2oForth - Unable to create a blocks file\n");
-		PERROR(filename);
-		FPUTS_ERR("\n");
+		PSMSG_ERROR("H2oForth - Unable to create a blocks file\n");
+		PERROR(filename); /* TBD */
+		PSMSG_ERROR("\n");
 	}
 	else {
 		int result;
@@ -62,14 +62,14 @@ void readBlocks(char* filename) {
 	int nn; /* < 32 */
 	int fd = _open(filename, O_RDONLY);
 	if (fd == FILEIO_ERROR) {
-		FPUTS_ERR("H2oForth - Unable to open a blocks file\n");
+		PSMSG_ERROR("H2oForth - Unable to open a blocks file\n");
 		PERROR(filename);
-		FPUTS_ERR("\n");
+		PSMSG_ERROR("\n");
 		createDefaultBlock();
 		if (forthState.forthIsVerbose) {
 			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
 						 "H2oForth - Done Writing the default blocks file %s", filename);
-			PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+			PSMSG_VERBOSE(forthTasks[forthState.forthCurrentTask].printBuffer);
 		};
 		exit(EXIT_BLOCKS_NOTFOUND);
 	};
@@ -93,9 +93,9 @@ void readFile(char* filename) {
 	int nn; /* < 32 */
 	FILE* fp = fopen(filename, "r");
 	if (fp == NULL) {
-		FPUTS_ERR("H2oForth - Unable to open a file\n");
-		PERROR(filename);
-		FPUTS_ERR("\n");
+		PSMSG_ERROR("H2oForth - Unable to open a file\n");
+		PERROR(filename); /* TBD */
+		PSMSG_ERROR("\n");
 		exit(EXIT_FILE_NOTFOUND);
 	};
 
@@ -108,7 +108,7 @@ void readFile(char* filename) {
 void writeCode(char* filename) {
 	int nn; /* < 32 */
 	if (forthState.forthIsVerbose) {
-		PUTS("H2oForth - Writes a code file. TBD");
+		PSMSG_VERBOSE("H2oForth - Writes a code file. TBD");
 	};
 }
 
@@ -118,130 +118,130 @@ int parameterHelp(void) {
 #if defined(__BORLANDC__) || defined(__TURBOC__) || defined(ARDUINO)
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%s, Version %d - Built %d\n( Int=%d, INTEGER_CELL=%d, *Int=%d, Long Long=%d", COPYRIGHT_MESSAGE, VERSION, BUILT, \
 		sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
-	FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef FLOAT_SUPPORT
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL=%d", sizeof(CELL_FLOAT));
-	FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef FLOAT_ON_DATASTACK
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL/INTEGER_CELL=%d", sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
-	FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 #endif
-	PUTS(" )");
+	SMSG_SUCCESS(" )");
 #else
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 		"%s, Version %d - Built %d\n( Int=%zd, INTEGER_CELL=%zd, *Int=%zd, Long Long=%zd",
 		COPYRIGHT_MESSAGE, VERSION, BUILT,
 		sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
-	FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef FLOAT_SUPPORT
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL=%zd", sizeof(CELL_FLOAT));
-	FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef FLOAT_ON_DATASTACK
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL/INTEGER_CELL=%zd",
 		sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
-	FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 #endif
-	PUTS(" )");
+	SMSG_SUCCESS(" )");
 #endif
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 		"\nH2oForth [%c%s][%c%s][%c%s]", PARAMETER_IDENTIFIER,
 		(parameters[PARAMETER_HELP]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName2,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).name);
-	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 		"H2oForth [%c%s][%c%s]", PARAMETER_IDENTIFIER,
 		(parameters[PARAMETER_VERBOSE]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_VERBOSE]).name);
-	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 		"H2oForth [%c%s][%c%s] %s", PARAMETER_IDENTIFIER,
 		(parameters[PARAMETER_DATABASE]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_DATABASE]).name,
 		DEFAULT_DATABASE);
-	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 		"H2oForth [%c%s][%c%s] code.fc code*.fc", PARAMETER_IDENTIFIER,
 		(parameters[PARAMETER_LOAD]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_LOAD]).name);
-	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 		"H2oForth [%c%s][%c%s] blocks.fb blocks*.fb", PARAMETER_IDENTIFIER,
 		(parameters[PARAMETER_BLOCKS]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_BLOCKS]).name);
-	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 		"H2oForth [%c%s][%c%s] file.f file*.f", PARAMETER_IDENTIFIER,
 		(parameters[PARAMETER_FILE]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_FILE]).name);
-	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 		"H2oForth [%c%s][%c%s]", PARAMETER_IDENTIFIER,
 		(parameters[PARAMETER_TERMINAL]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_TERMINAL]).name);
-	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 		"H2oForth [%c%s][%c%s] < file.f", PARAMETER_IDENTIFIER,
 		(parameters[PARAMETER_TERMINAL]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_TERMINAL]).name);
-	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 		"H2oForth [%c%s][%c%s]", PARAMETER_IDENTIFIER,
 		(parameters[PARAMETER_KEYBOARD]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_KEYBOARD]).name);
-	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 		"H2oForth [%c%s][%c%s] code.fc\n", PARAMETER_IDENTIFIER,
 		(parameters[PARAMETER_SAVE]).shortName, PARAMETER_IDENTIFIER,
 		(parameters[PARAMETER_SAVE]).name);
-	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 #if defined(H2O_DISPLAY_HELP_WITH_NO_PARAMETERS)
-	PUTS("Without parameters: Display this help screen");
+	PSMSG_SUCCESS_CR("Without parameters: Display this help screen");
 #else
-	PUTS("Without parameters: Wait for first for terminal input, then for keyboard input")
-		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
-			"%c%s, %c%s, %c%s       Display this help screen",
-			PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName,
-			PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName2,
-			PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).name);
-	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+	PSMSG_SUCCESS_CR("Without parameters: Wait for first for terminal input, then for keyboard input")
+	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+		"%c%s, %c%s, %c%s       Display this help screen",
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName,
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName2,
+		PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).name);
+	SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 		"%c%s, %c%s        Verbose output off", PARAMETER_IDENTIFIER,
 		(parameters[PARAMETER_VERBOSE]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_VERBOSE]).name);
-	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 		"%c%s, %c%s       Read words from a database or some databases. TBD",
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_DATABASE]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_DATABASE]).name);
-	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 		"%c%s, %c%s           Load a single code file or some code files. TBD",
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_LOAD]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_LOAD]).name);
-	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 		"%c%s, %c%s         Read a single blocks file or some blocks files",
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_BLOCKS]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_BLOCKS]).name);
-	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 		"%c%s, %c%s           Read a single file or some files",
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_FILE]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_FILE]).name);
-	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 		"%c%s, %c%s       Wait for terminal input", PARAMETER_IDENTIFIER,
 		(parameters[PARAMETER_TERMINAL]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_TERMINAL]).name);
-	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 		"%c%s, %c%s       Wait for keyboard input", PARAMETER_IDENTIFIER,
 		(parameters[PARAMETER_KEYBOARD]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_KEYBOARD]).name);
-	PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+	SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 		"%c%s, %c%s           Save a code file. TBD",
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_SAVE]).shortName,
@@ -261,7 +261,7 @@ int parameterVerbose(void) {
 int parameterTerminal(void) {
 	(parameters[PARAMETER_TERMINAL]).isWaitingFor = TRUE;
 	forthState.forthIsWaitingForParameter = FALSE;
-	//PUTS("Waits for terminal input");
+	//PSMSG_DEBUG("Waits for terminal input");
 	return(FALSE);
 }
 
@@ -300,10 +300,10 @@ int parameterFile(void) {
 
 int parameterUnknown(char* parParameter) {
 	int nn; /* < 32 */
-	FPUTS_ERR("H2oForth - Unknown parameter: ");
+	PSMSG_ERROR("H2oForth - Unknown parameter: ");
 	//PERROR(parParameter);
-	FPUTS_ERR(parParameter);
-	FPUTS_ERR("\n");
+	PSMSG_ERROR(parParameter);
+	PSMSG_ERROR("\n");
 	forthState.forthIsExit = TRUE;
 	exitCode = EXIT_UNKNOWN_PARAMETER;
 	return(FALSE);
@@ -413,21 +413,21 @@ void parameterPreProcessing(int argc, char* argv[]) {
 	if ((parameters[PARAMETER_TERMINAL]).isWaitingFor) {
 		forthState.forthReadsTerminal = TRUE;
 		if (forthState.forthIsVerbose) {
-			PUTS("H2OForth - Wait for terminal input");
+			PSMSG_VERBOSE("H2OForth - Wait for terminal input");
 		};
 	};
 
 	if ((parameters[PARAMETER_KEYBOARD]).isWaitingFor && (!(parameters[PARAMETER_TERMINAL]).isWaitingFor)) {
 		forthState.forthReadsKeyboard = TRUE;
 		if (forthState.forthIsVerbose) {
-			PUTS("H2OForth - Wait for keyboard input(1)");
+			PSMSG_VERBOSE("H2OForth - Wait for keyboard input(1)");
 		};
 	};
 
 	if ((!(parameters[PARAMETER_KEYBOARD]).isWaitingFor) && (!(parameters[PARAMETER_TERMINAL]).isWaitingFor)) {
 		forthState.forthIsExit = TRUE;
 		if (forthState.forthIsVerbose) {
-			PUTS("H2OForth - Terminating");
+			PSMSG_VERBOSE("H2OForth - Terminating");
 		};
 	};
 #endif
@@ -439,7 +439,7 @@ void parameterPostProcessing(void) {
 	int nn; /* < 32 */
 	if ((parameters[PARAMETER_SAVE]).isWaitingFor) {
 		if (forthState.forthIsVerbose) {
-			PUTS("H2OForth - Saving compiled code. TBD");
+			PSMSG_VERBOSE("H2OForth - Saving compiled code. TBD");
 		};
 	}
 }

@@ -39,8 +39,8 @@ unsigned int ioKey(void) {
 	result = _GETCH();
 #endif
     //nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "\ninput = %d\n\n", result);
-	//PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
-	//PUTS("\nTest\n");
+	//SMSG_DEBUG(forthTasks[forthState.forthCurrentTask].printBuffer);
+	//SMSG_DEBUG("\nTest\n");
 	return(result);
 #else
 	/* Linux, bare-metall microcontroller systems .. */

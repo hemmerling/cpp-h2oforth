@@ -7,412 +7,412 @@
 
 /* Definitions */
 void rcamicroImmediate(void) {
-	SMSG_DEBUG("rcamicroImmediate")
+	PSMSG_DEBUG("rcamicroImmediate")
 }
 
 void rcamicroParen(void) {
-	SMSG_DEBUG("rcamicroParen")
+	PSMSG_DEBUG("rcamicroParen")
 }
 
 void rcamicroEightStar(void) {
-	SMSG_DEBUG("rcamicroEightStar")
+	PSMSG_DEBUG("rcamicroEightStar")
 }
 
 void rcamicroLoad(void) {
-	SMSG_DEBUG("rcamicroLoad")
+	PSMSG_DEBUG("rcamicroLoad")
 }
 
 void rcamicroBuilds(void) {
-	SMSG_DEBUG("rcamicroBuilds")
+	PSMSG_DEBUG("rcamicroBuilds")
 }
 
 void rcamicroBlock(void) {
-	SMSG_DEBUG("rcamicroBlock")
+	PSMSG_DEBUG("rcamicroBlock")
 }
 
 void rcamicroTick(void) {
-	SMSG_DEBUG("rcamicroTick")
+	PSMSG_DEBUG("rcamicroTick")
 }
 
 void rcamicroEraseCore(void) {
-	SMSG_DEBUG("rcamicroEraseCore")
+	PSMSG_DEBUG("rcamicroEraseCore")
 }
 
 void rcamicroFlush(void) {
-	SMSG_DEBUG("rcamicroFlush")
+	PSMSG_DEBUG("rcamicroFlush")
 }
 
 void rcamicroTask(void) {
-	SMSG_DEBUG("rcamicroTask")
+	PSMSG_DEBUG("rcamicroTask")
 }
 
 /* Vocabulary Assembler */
 void rcamicroVanish(void) {
-	SMSG_DEBUG("rcamicroVanish")
+	PSMSG_DEBUG("rcamicroVanish")
 }
 
 void rcamicroCode(void) {
-	SMSG_DEBUG("rcamicroCode")
+	PSMSG_DEBUG("rcamicroCode")
 }
 
 void rcamicroColonCode(void) {
-	SMSG_DEBUG("rcamicroColonCode")
+	PSMSG_DEBUG("rcamicroColonCode")
 }
 
 void rcamicroPage(void) {
-	SMSG_DEBUG("rcamicroPage")
+	PSMSG_DEBUG("rcamicroPage")
 }
 
 void rcamicroOctal(void) {
-	SMSG_DEBUG("rcamicroOctal")
+	PSMSG_DEBUG("rcamicroOctal")
 }
 
 void rcamicroDecimal(void) {
-	SMSG_DEBUG("rcamicroDecimal")
+	PSMSG_DEBUG("rcamicroDecimal")
 }
 
 void rcamicroHex(void) {
-	SMSG_DEBUG("rcamicroHex")
+	PSMSG_DEBUG("rcamicroHex")
 }
 
 void rcamicroCVariable(void) {
-	SMSG_DEBUG("rcamicroCVariable")
+	PSMSG_DEBUG("rcamicroCVariable")
 }
 
 void rcamicroVariable(void) {
-	SMSG_DEBUG("rcamicroVariable")
+	PSMSG_DEBUG("rcamicroVariable")
 }
 
 /* Arithmetic Operators */
 void rcamicroGreater(void) {
-	SMSG_DEBUG("rcamicroGreater")
+	PSMSG_DEBUG("rcamicroGreater")
 }
 
 void rcamicroMStar(void) {
-	SMSG_DEBUG("rcamicroMStar")
+	PSMSG_DEBUG("rcamicroMStar")
 }
 
 void rcamicroMSlashMod(void) {
-	SMSG_DEBUG("rcamicroMSlashMod")
+	PSMSG_DEBUG("rcamicroMSlashMod")
 }
 
 void rcamicroStarSlashMod(void) {
-	SMSG_DEBUG("rcamicroStarSlashMod")
+	PSMSG_DEBUG("rcamicroStarSlashMod")
 }
 
 void rcamicroStarSlash(void) {
-	SMSG_DEBUG("rcamicroStarSlashMod")
+	PSMSG_DEBUG("rcamicroStarSlashMod")
 }
 
 void rcamicroSlashMod(void) {
-	SMSG_DEBUG("rcamicroSlashMod")
+	PSMSG_DEBUG("rcamicroSlashMod")
 }
 
 void rcamicroMod(void) {
-	SMSG_DEBUG("rcamicroMod")
+	PSMSG_DEBUG("rcamicroMod")
 }
 
 void rcamicroStar(void) {
-	SMSG_DEBUG("rcamicroStar")
+	PSMSG_DEBUG("rcamicroStar")
 }
 
 void rcamicroSlash(void) {
-	SMSG_DEBUG("rcamicroSlash")
+	PSMSG_DEBUG("rcamicroSlash")
 }
 
 void rcamicroMax(void) {
-	SMSG_DEBUG("rcamicroMax")
+	PSMSG_DEBUG("rcamicroMax")
 }
 
 void rcamicroMin(void) {
-	SMSG_DEBUG("rcamicroMin")
+	PSMSG_DEBUG("rcamicroMin")
 }
 
 void rcamicroNum(void) {
-	SMSG_DEBUG("rcamicroNum")
+	PSMSG_DEBUG("rcamicroNum")
 }
 
 void rcamicroPlusC(void) {
-	SMSG_DEBUG("rcamicroPlusC")
+	PSMSG_DEBUG("rcamicroPlusC")
 }
 
 void rcamicroOneRg(void) {
-	SMSG_DEBUG("rcamicroOneRg")
+	PSMSG_DEBUG("rcamicroOneRg")
 }
 
 void rcamicroAlu(void) {
-	SMSG_DEBUG("rcamicroAlu")
+	PSMSG_DEBUG("rcamicroAlu")
 }
 
 /* Macros */
 void rcamicroEntry(void) {
-	SMSG_DEBUG("rcamicroEntry")
+	PSMSG_DEBUG("rcamicroEntry")
 }
 
 void rcamicroNext(void) {
-	SMSG_DEBUG("rcamicroNext")
+	PSMSG_DEBUG("rcamicroNext")
 }
 
 void rcamicroZeroNumLd(void) {
-	SMSG_DEBUG("rcamicroZeroNumLd")
+	PSMSG_DEBUG("rcamicroZeroNumLd")
 }
 
 void rcamicroDst(void) {
-	SMSG_DEBUG("rcamicroDst")
+	PSMSG_DEBUG("rcamicroDst")
 }
 
 void rcamicroPush(void) {
-	SMSG_DEBUG("rcamicroPush")
+	PSMSG_DEBUG("rcamicroPush")
 }
 
 /* Transfers */
 void rcamicroEfl(void) {
-	SMSG_DEBUG("rcamicroEfl")
+	PSMSG_DEBUG("rcamicroEfl")
 }
 
 void rcamicroLess(void) {
-	SMSG_DEBUG("rcamicroLess")
+	PSMSG_DEBUG("rcamicroLess")
 }
 
 void rcamicroZeroLess(void) {
-	SMSG_DEBUG("rcamicroZeroLess")
+	PSMSG_DEBUG("rcamicroZeroLess")
 }
 
 void rcamicroIf(void) {
-	SMSG_DEBUG("rcamicroIf")
+	PSMSG_DEBUG("rcamicroIf")
 }
 
 void rcamicroThen(void) {
-	SMSG_DEBUG("rcamicroThen")
+	PSMSG_DEBUG("rcamicroThen")
 }
 
 void rcamicroElse(void) {
-	SMSG_DEBUG("rcamicroElse")
+	PSMSG_DEBUG("rcamicroElse")
 }
 
 void rcamicroEnd(void) {
-	SMSG_DEBUG("rcamicroEnd")
+	PSMSG_DEBUG("rcamicroEnd")
 }
 
 void rcamicroBr(void) {
-	SMSG_DEBUG("rcamicroBr")
+	PSMSG_DEBUG("rcamicroBr")
 }
 
 void rcamicroLs(void) {
-	SMSG_DEBUG("rcamicroLs")
+	PSMSG_DEBUG("rcamicroLs")
 }
 
 /* Compiler */
 void rcamicroYMark(void) {
-	SMSG_DEBUG("rcamicroYMark")
+	PSMSG_DEBUG("rcamicroYMark")
 }
 
 void rcamicroYThen(void) {
-	SMSG_DEBUG("rcamicroYThen")
+	PSMSG_DEBUG("rcamicroYThen")
 }
 
 void rcamicroDo(void) {
-	SMSG_DEBUG("rcamicroDo")
+	PSMSG_DEBUG("rcamicroDo")
 }
 
 void rcamicroLoop(void) {
-	SMSG_DEBUG("rcamicroLoop")
+	PSMSG_DEBUG("rcamicroLoop")
 }
 
 void rcamicroPlusLoop(void) {
-	SMSG_DEBUG("rcamicroPlusLoop")
+	PSMSG_DEBUG("rcamicroPlusLoop")
 }
 
 void rcamicroWhile(void) {
-	SMSG_DEBUG("rcamicroWhile")
+	PSMSG_DEBUG("rcamicroWhile")
 }
 
 void rcamicroBegin(void) {
-	SMSG_DEBUG("rcamicroBegin")
+	PSMSG_DEBUG("rcamicroBegin")
 }
 
 /* Errors */
 void rcamicroMessage(void) {
-	SMSG_DEBUG("rcamicroMessage")
+	PSMSG_DEBUG("rcamicroMessage")
 }
 
 void rcamicroQuestion(void) {
-	SMSG_DEBUG("rcamicroQuestion")
+	PSMSG_DEBUG("rcamicroQuestion")
 }
 
 void rcamicroQStack(void) {
-	SMSG_DEBUG("rcamicroQStack")
+	PSMSG_DEBUG("rcamicroQStack")
 }
 
 void rcamicroYNumber(void) {
-	SMSG_DEBUG("rcamicroYNumber")
+	PSMSG_DEBUG("rcamicroYNumber")
 }
 
 /* Vocabularies */
 void rcamicroVocabulary(void) {
-	SMSG_DEBUG("rcamicroVocabulary")
+	PSMSG_DEBUG("rcamicroVocabulary")
 }
 
 void rcamicroDefinitions(void) {
-	SMSG_DEBUG("rcamicroDefinitions")
+	PSMSG_DEBUG("rcamicroDefinitions")
 }
 
 void rcamicroForget(void) {
-	SMSG_DEBUG("rcamicroForget")
+	PSMSG_DEBUG("rcamicroForget")
 }
 
 void rcamicroInLine(void) {
-	SMSG_DEBUG("rcamicroInLine")
+	PSMSG_DEBUG("rcamicroInLine")
 }
 
 void rcamicroXTick(void) {
-	SMSG_DEBUG("rcamicroXTick")
+	PSMSG_DEBUG("rcamicroXTick")
 }
 
 void rcamicroXSwap(void) {
-	SMSG_DEBUG("rcamicroXSwap")
+	PSMSG_DEBUG("rcamicroXSwap")
 }
 
 /* Number Formatting */
 void rcamicroSpaces(void) {
-	SMSG_DEBUG("rcamicroSpaces")
+	PSMSG_DEBUG("rcamicroSpaces")
 }
 
 void rcamicroPad(void) {
-	SMSG_DEBUG("rcamicroPad")
+	PSMSG_DEBUG("rcamicroPad")
 }
 
 void rcamicroLessNum(void) {
-	SMSG_DEBUG("rcamicroLessNum")
+	PSMSG_DEBUG("rcamicroLessNum")
 }
 
 void rcamicroNumGreater(void) {
-	SMSG_DEBUG("rcamicroNumGreater")
+	PSMSG_DEBUG("rcamicroNumGreater")
 }
 
 void rcamicroSign(void) {
-	SMSG_DEBUG("rcamicroSign")
+	PSMSG_DEBUG("rcamicroSign")
 }
 
 void rcamicroNumS(void) {
-	SMSG_DEBUG("rcamicroNumS")
+	PSMSG_DEBUG("rcamicroNumS")
 }
 
 void rcamicroYDot(void) {
-	SMSG_DEBUG("rcamicroYDot")
+	PSMSG_DEBUG("rcamicroYDot")
 }
 
 void rcamicroQ(void) {
-	SMSG_DEBUG("rcamicroQ")
+	PSMSG_DEBUG("rcamicroQ")
 }
 
 void rcamicroDot(void) {
-	SMSG_DEBUG("rcamicroDot")
+	PSMSG_DEBUG("rcamicroDot")
 }
 
 /* Output Vocabulary */
 void rcamicroDotR(void) {
-	SMSG_DEBUG("rcamicroDotR")
+	PSMSG_DEBUG("rcamicroDotR")
 }
 
 void rcamicroDump(void) {
-	SMSG_DEBUG("rcamicroDump")
+	PSMSG_DEBUG("rcamicroDump")
 }
 
 void rcamicroTrailing(void) {
-	SMSG_DEBUG("rcamicroTrailing")
+	PSMSG_DEBUG("rcamicroTrailing")
 }
 
 void rcamicroLine(void) {
-	SMSG_DEBUG("rcamicroLine")
+	PSMSG_DEBUG("rcamicroLine")
 }
 
 void rcamicroText(void) {
-	SMSG_DEBUG("rcamicroText")
+	PSMSG_DEBUG("rcamicroText")
 }
 
 void rcamicroList(void) {
-	SMSG_DEBUG("rcamicroList")
+	PSMSG_DEBUG("rcamicroList")
 }
 
 void rcamicroL(void) {
-	SMSG_DEBUG("rcamicroL")
+	PSMSG_DEBUG("rcamicroL")
 }
 
 void rcamicroRightBracket(void) {
-	SMSG_DEBUG("rcamicroRightBracket")
+	PSMSG_DEBUG("rcamicroRightBracket")
 }
 
 /* Editor */
 void rcamicroHold(void) {
-	SMSG_DEBUG("rcamicroHold")
+	PSMSG_DEBUG("rcamicroHold")
 }
 
 void rcamicroGap(void) {
-	SMSG_DEBUG("rcamicroGap")
+	PSMSG_DEBUG("rcamicroGap")
 }
 
 void rcamicroT(void) {
-	SMSG_DEBUG("rcamicroT")
+	PSMSG_DEBUG("rcamicroT")
 }
 
 void rcamicroD(void) {
-	SMSG_DEBUG("rcamicroD")
+	PSMSG_DEBUG("rcamicroD")
 }
 
 void rcamicroR(void) {
-	SMSG_DEBUG("rcamicroR")
+	PSMSG_DEBUG("rcamicroR")
 }
 
 void rcamicroI(void) {
-	SMSG_DEBUG("rcamicroI")
+	PSMSG_DEBUG("rcamicroI")
 }
 
 void rcamicroQuote(void) {
-	SMSG_DEBUG("rcamicroQuote")
+	PSMSG_DEBUG("rcamicroQuote")
 }
 
 void rcamicroP(void) {
-	SMSG_DEBUG("rcamicroP")
+	PSMSG_DEBUG("rcamicroP")
 }
 
 void rcamicroA(void) {
-	SMSG_DEBUG("rcamicroA")
+	PSMSG_DEBUG("rcamicroA")
 }
 
 void rcamicroCopy(void) {
-	SMSG_DEBUG("rcamicroCopy")
+	PSMSG_DEBUG("rcamicroCopy")
 }
 
 void rcamicroDelete(void) {
-	SMSG_DEBUG("rcamicroDelete")
+	PSMSG_DEBUG("rcamicroDelete")
 }
 
 void rcamicroTop(void) {
-	SMSG_DEBUG("rcamicroTop")
+	PSMSG_DEBUG("rcamicroTop")
 }
 
 /* Lower Baud Serial I/O */
 
 /* Terminal I/O */
 void rcamicroType(void) {
-	SMSG_DEBUG("rcamicroType")
+	PSMSG_DEBUG("rcamicroType")
 }
 
 void rcamicroCount(void) {
-	SMSG_DEBUG("rcamicroCount")
+	PSMSG_DEBUG("rcamicroCount")
 }
 
 void rcamicroMsg(void) {
-	SMSG_DEBUG("rcamicroMsg")
+	PSMSG_DEBUG("rcamicroMsg")
 }
 
 void rcamicroExpect(void) {
-	SMSG_DEBUG("rcamicroExpect")
+	PSMSG_DEBUG("rcamicroExpect")
 }
 
 void rcamicroQuit(void) {
-	SMSG_DEBUG("rcamicroQuit")
+	PSMSG_DEBUG("rcamicroQuit")
 }
 
 /* Higher Baud Serial I/O */
@@ -421,433 +421,433 @@ void rcamicroQuit(void) {
 
 /* Options */
 void rcamicroDro(void) {
-	SMSG_DEBUG("rcamicroDro")
+	PSMSG_DEBUG("rcamicroDro")
 }
 
 void rcamicroDri(void) {
-	SMSG_DEBUG("rcamicroDri")
+	PSMSG_DEBUG("rcamicroDri")
 }
 
 /* Assembler */
 
 /* String Editor */
 void rcamicroCNum(void) {
-	SMSG_DEBUG("rcamicroCNum")
+	PSMSG_DEBUG("rcamicroCNum")
 }
 
 void rcamicroNumLeft(void) {
-	SMSG_DEBUG("rcamicroNumLeft")
+	PSMSG_DEBUG("rcamicroNumLeft")
 }
 
 void rcamicroLNum(void) {
-	SMSG_DEBUG("rcamicroLNum")
+	PSMSG_DEBUG("rcamicroLNum")
 }
 
 void rcamicroAt(void) {
-	SMSG_DEBUG("rcamicroAt")
+	PSMSG_DEBUG("rcamicroAt")
 }
 
 void rcamicroString(void) {
-	SMSG_DEBUG("rcamicroString")
+	PSMSG_DEBUG("rcamicroString")
 }
 
 void rcamicroErr(void) {
-	SMSG_DEBUG("rcamicroErr")
+	PSMSG_DEBUG("rcamicroErr")
 }
 
 void rcamicroOneLine(void) {
-	SMSG_DEBUG("rcamicroOneLine")
+	PSMSG_DEBUG("rcamicroOneLine")
 }
 
 void rcamicroFind(void) {
-	SMSG_DEBUG("rcamicroFind")
+	PSMSG_DEBUG("rcamicroFind")
 }
 
 void rcamicroRemove(void) {
-	SMSG_DEBUG("rcamicroRemove")
+	PSMSG_DEBUG("rcamicroRemove")
 }
 
 void rcamicroM(void) {
-	SMSG_DEBUG("rcamicroM")
+	PSMSG_DEBUG("rcamicroM")
 }
 
 void rcamicroB(void) {
-	SMSG_DEBUG("rcamicroB")
+	PSMSG_DEBUG("rcamicroB")
 }
 
 void rcamicroN(void) {
-	SMSG_DEBUG("rcamicroN")
+	PSMSG_DEBUG("rcamicroN")
 }
 
 void rcamicroF(void) {
-	SMSG_DEBUG("rcamicroF")
+	PSMSG_DEBUG("rcamicroF")
 }
 
 void rcamicroX(void) {
-	SMSG_DEBUG("rcamicroX")
+	PSMSG_DEBUG("rcamicroX")
 }
 
 void rcamicroTill(void) {
-	SMSG_DEBUG("rcamicroTill")
+	PSMSG_DEBUG("rcamicroTill")
 }
 
 void rcamicroC(void) {
-	SMSG_DEBUG("rcamicroC")
+	PSMSG_DEBUG("rcamicroC")
 }
 
 /* Character Editor Primitives */
 void rcamicroMove(void) {
-	SMSG_DEBUG("rcamicroMove")
+	PSMSG_DEBUG("rcamicroMove")
 }
 
 /* Disk Utilities */
 void rcamicroFill(void) {
-	SMSG_DEBUG("rcamicroFill")
+	PSMSG_DEBUG("rcamicroFill")
 }
 
 void rcamicroRight(void) {
-	SMSG_DEBUG("rcamicroRight")
+	PSMSG_DEBUG("rcamicroRight")
 }
 
 void rcamicroBackup(void) {
-	SMSG_DEBUG("rcamicroBackup")
+	PSMSG_DEBUG("rcamicroBackup")
 }
 
 void rcamicroSweep(void) {
-	SMSG_DEBUG("rcamicroSweep")
+	PSMSG_DEBUG("rcamicroSweep")
 }
 
 /* Disk Compare */
 void rcamicroMatch(void) {
-	SMSG_DEBUG("rcamicroMatch")
+	PSMSG_DEBUG("rcamicroMatch")
 }
 
 /* Disk Error Checking */
 void rcamicroStatus(void) {
-	SMSG_DEBUG("rcamicroStatus")
+	PSMSG_DEBUG("rcamicroStatus")
 }
 
 void rcamicroError(void) {
-	SMSG_DEBUG("rcamicroError")
+	PSMSG_DEBUG("rcamicroError")
 }
 
 void rcamicroLog(void) {
-	SMSG_DEBUG("rcamicroLog")
+	PSMSG_DEBUG("rcamicroLog")
 }
 
 void rcamicroNotify(void) {
-	SMSG_DEBUG("rcamicroNotify")
+	PSMSG_DEBUG("rcamicroNotify")
 }
 
 void rcamicroDup(void) {
-	SMSG_DEBUG("rcamicroDup")
+	PSMSG_DEBUG("rcamicroDup")
 }
 
 void rcamicroXBlock(void) {
-	SMSG_DEBUG("rcamicroXBlock")
+	PSMSG_DEBUG("rcamicroXBlock")
 }
 
 /* Documentation */
 void rcamicroIndex(void) {
-	SMSG_DEBUG("rcamicroIndex")
+	PSMSG_DEBUG("rcamicroIndex")
 }
 
 void rcamicroTriad(void) {
-	SMSG_DEBUG("rcamicroTriad")
+	PSMSG_DEBUG("rcamicroTriad")
 }
 
 void rcamicroShow(void) {
-	SMSG_DEBUG("rcamicroShow")
+	PSMSG_DEBUG("rcamicroShow")
 }
 
 /* Reconfiguration */
 void rcamicroBStore(void) {
-	SMSG_DEBUG("rcamicroBStore")
+	PSMSG_DEBUG("rcamicroBStore")
 }
 
 void rcamicroPStore(void) {
-	SMSG_DEBUG("rcamicroPStore")
+	PSMSG_DEBUG("rcamicroPStore")
 }
 
 void rcamicroDisk(void) {
-	SMSG_DEBUG("rcamicroDisk")
+	PSMSG_DEBUG("rcamicroDisk")
 }
 
 /* Compiler */
 void rcamicroAdrs(void) {
-	SMSG_DEBUG("rcamicroAdrs")
+	PSMSG_DEBUG("rcamicroAdrs")
 }
 
 void rcamicroHere(void) {
-	SMSG_DEBUG("rcamicroHere")
+	PSMSG_DEBUG("rcamicroHere")
 }
 
 void rcamicroOrg(void) {
-	SMSG_DEBUG("rcamicroOrg")
+	PSMSG_DEBUG("rcamicroOrg")
 }
 
 void rcamicroCComma(void) {
-	SMSG_DEBUG("rcamicroCComma")
+	PSMSG_DEBUG("rcamicroCComma")
 }
 
 void rcamicroComma(void) {
-	SMSG_DEBUG("rcamicroComma")
+	PSMSG_DEBUG("rcamicroComma")
 }
 
 /* Target Vocabulary */
 void rcamicroClear(void) {
-	SMSG_DEBUG("rcamicroClear")
+	PSMSG_DEBUG("rcamicroClear")
 }
 
 void rcamicroSmudge(void) {
-	SMSG_DEBUG("rcamicroSmudge")
+	PSMSG_DEBUG("rcamicroSmudge")
 }
 
 void rcamicroEmplace(void) {
-	SMSG_DEBUG("rcamicroEmplace")
+	PSMSG_DEBUG("rcamicroEmplace")
 }
 
 /* Target Dictionary */
 void rcamicroHFetch(void) {
-	SMSG_DEBUG("rcamicroHFetch")
+	PSMSG_DEBUG("rcamicroHFetch")
 }
 
 void rcamicroHStore(void) {
-	SMSG_DEBUG("rcamicroHStore")
+	PSMSG_DEBUG("rcamicroHStore")
 }
 
 void rcamicroInside(void) {
-	SMSG_DEBUG("rcamicroInside")
+	PSMSG_DEBUG("rcamicroInside")
 }
 
 void rcamicroCFetch(void) {
-	SMSG_DEBUG("rcamicroCFetch")
+	PSMSG_DEBUG("rcamicroCFetch")
 }
 
 void rcamicroCStore(void) {
-	SMSG_DEBUG("rcamicroCStore")
+	PSMSG_DEBUG("rcamicroCStore")
 }
 
 void rcamicroFetch(void) {
-	SMSG_DEBUG("rcamicroFetch")
+	PSMSG_DEBUG("rcamicroFetch")
 }
 
 void rcamicroStore(void) {
-	SMSG_DEBUG("rcamicroStore")
+	PSMSG_DEBUG("rcamicroStore")
 }
 
 /* Target Compiler */
 void rcamicroCommaHost(void) {
-	SMSG_DEBUG("rcamicroCommaHost")
+	PSMSG_DEBUG("rcamicroCommaHost")
 }
 
 void rcamicroSemicolonCode(void) {
-	SMSG_DEBUG("rcamicroSemicolonCode")
+	PSMSG_DEBUG("rcamicroSemicolonCode")
 }
 
 void rcamicroMinusTick(void) {
-	SMSG_DEBUG("rcamicroMinusTick")
+	PSMSG_DEBUG("rcamicroMinusTick")
 }
 
 void rcamicroBackslash(void) {
-	SMSG_DEBUG("rcamicroBackslash")
+	PSMSG_DEBUG("rcamicroBackslash")
 }
 
 void rcamicroCompile(void) {
-	SMSG_DEBUG("rcamicroCompile")
+	PSMSG_DEBUG("rcamicroCompile")
 }
 
 /* Target Assembler */
 void rcamicroEqu(void) {
-	SMSG_DEBUG("rcamicroEqu")
+	PSMSG_DEBUG("rcamicroEqu")
 }
 
 void rcamicroLabel(void) {
-	SMSG_DEBUG("rcamicroLabel")
+	PSMSG_DEBUG("rcamicroLabel")
 }
 
 void rcamicroCr(void) {
-	SMSG_DEBUG("rcamicroCr")
+	PSMSG_DEBUG("rcamicroCr")
 }
 
 void rcamicroComputer(void) {
-	SMSG_DEBUG("rcamicroComputer")
+	PSMSG_DEBUG("rcamicroComputer")
 }
 
 /* RAM Defining */
 void rcamicroAccessible(void) {
-	SMSG_DEBUG("rcamicroAccessible")
+	PSMSG_DEBUG("rcamicroAccessible")
 }
 
 void rcamicroConstant(void) {
-	SMSG_DEBUG("rcamicroConstant")
+	PSMSG_DEBUG("rcamicroConstant")
 }
 
 void rcamicroUser(void) {
-	SMSG_DEBUG("rcamicroUser")
+	PSMSG_DEBUG("rcamicroUser")
 }
 
 void rcamicroTable(void) {
-	SMSG_DEBUG("rcamicroTable")
+	PSMSG_DEBUG("rcamicroTable")
 }
 
 void rcamicroDoes(void) {
-	SMSG_DEBUG("rcamicroDoes")
+	PSMSG_DEBUG("rcamicroDoes")
 }
 
 /* PROM Defining */
 void rcamicroThere(void) {
-	SMSG_DEBUG("rcamicroThere")
+	PSMSG_DEBUG("rcamicroThere")
 }
 
 void rcamicroRes(void) {
-	SMSG_DEBUG("rcamicroRes")
+	PSMSG_DEBUG("rcamicroRes")
 }
 
 /* Compiling Words */
 void rcamicroSemicolon(void) {
-	SMSG_DEBUG("rcamicroSemicolon")
+	PSMSG_DEBUG("rcamicroSemicolon")
 }
 
 void rcamicroHColon(void) {
-	SMSG_DEBUG("rcamicroHColon")
+	PSMSG_DEBUG("rcamicroHColon")
 }
 
 void rcamicroColon(void) {
-	SMSG_DEBUG("rcamicroColon")
+	PSMSG_DEBUG("rcamicroColon")
 }
 
 /* Initialize Symbols */
 
 /* Compiler Output */
 void rcamicroLeader(void) {
-	SMSG_DEBUG("rcamicroLeader")
+	PSMSG_DEBUG("rcamicroLeader")
 }
 
 void rcamicroProms(void) {
-	SMSG_DEBUG("rcamicroProms")
+	PSMSG_DEBUG("rcamicroProms")
 }
 
 void rcamicroEntire(void) {
-	SMSG_DEBUG("rcamicroEntire")
+	PSMSG_DEBUG("rcamicroEntire")
 }
 
 void rcamicroSimulate(void) {
-	SMSG_DEBUG("rcamicroSimulate")
+	PSMSG_DEBUG("rcamicroSimulate")
 }
 
 void rcamicroZero(void) {
-	SMSG_DEBUG("rcamicroZero")
+	PSMSG_DEBUG("rcamicroZero")
 }
 
 void rcamicroLit(void) {
-	SMSG_DEBUG("rcamicroLit")
+	PSMSG_DEBUG("rcamicroLit")
 }
 
 void rcamicroExecute(void) {
-	SMSG_DEBUG("rcamicroExecute")
+	PSMSG_DEBUG("rcamicroExecute")
 }
 
 void rcamicroSemicolonS(void) {
-	SMSG_DEBUG("rcamicroSemicolonS")
+	PSMSG_DEBUG("rcamicroSemicolonS")
 }
 
 void rcamicroUStar(void) {
-	SMSG_DEBUG("rcamicroUStar")
+	PSMSG_DEBUG("rcamicroUStar")
 }
 
 void rcamicroUSlash(void) {
-	SMSG_DEBUG("rcamicroUSlash")
+	PSMSG_DEBUG("rcamicroUSlash")
 }
 
 void rcamicroCz(void) {
-	SMSG_DEBUG("rcamicroCz")
+	PSMSG_DEBUG("rcamicroCz")
 }
 
 void rcamicroZeroEqual(void) {
-	SMSG_DEBUG("rcamicroZeroEqual")
+	PSMSG_DEBUG("rcamicroZeroEqual")
 }
 
 void rcamicroPlus(void) {
-	SMSG_DEBUG("rcamicroPlus")
+	PSMSG_DEBUG("rcamicroPlus")
 }
 
 void rcamicroTwoStar(void) {
-	SMSG_DEBUG("rcamicroTwoStar")
+	PSMSG_DEBUG("rcamicroTwoStar")
 }
 
 void rcamicroMinus(void) {
-	SMSG_DEBUG("rcamicroMinus")
+	PSMSG_DEBUG("rcamicroMinus")
 }
 
 void rcamicroAnd(void) {
-	SMSG_DEBUG("rcamicroAnd")
+	PSMSG_DEBUG("rcamicroAnd")
 }
 
 void rcamicroBinary(void) {
-	SMSG_DEBUG("rcamicroBinary")
+	PSMSG_DEBUG("rcamicroBinary")
 }
 
 void rcamicroOnePlus(void) {
-	SMSG_DEBUG("rcamicroOnePlus")
+	PSMSG_DEBUG("rcamicroOnePlus")
 }
 
 void rcamicroTwoPlus(void) {
-	SMSG_DEBUG("rcamicroTwoPlus")
+	PSMSG_DEBUG("rcamicroTwoPlus")
 }
 
 void rcamicroOver(void) {
-	SMSG_DEBUG("rcamicroOver")
+	PSMSG_DEBUG("rcamicroOver")
 }
 
 void rcamicroMinusDup(void) {
-	SMSG_DEBUG("rcamicroMinusDup")
+	PSMSG_DEBUG("rcamicroMinusDup")
 }
 
 void rcamicroSwap(void) {
-	SMSG_DEBUG("rcamicroSwap")
+	PSMSG_DEBUG("rcamicroSwap")
 }
 
 void rcamicroPlusStore(void) {
-	SMSG_DEBUG("rcamicroPlusStore")
+	PSMSG_DEBUG("rcamicroPlusStore")
 }
 
 void rcamicroFromR(void) {
-	SMSG_DEBUG("rcamicroFromR")
+	PSMSG_DEBUG("rcamicroFromR")
 }
 
 void rcamicroRTo(void) {
-	SMSG_DEBUG("rcamicroRTo")
+	PSMSG_DEBUG("rcamicroRTo")
 }
 
 void rcamicroRot(void) {
-	SMSG_DEBUG("rcamicroRot")
+	PSMSG_DEBUG("rcamicroRot")
 }
 
 void rcamicroTwoPop(void) {
-	SMSG_DEBUG("rcamicroTwoPop")
+	PSMSG_DEBUG("rcamicroTwoPop")
 }
 
 void rcamicroOnePop(void) {
-	SMSG_DEBUG("rcamicroOnePop")
+	PSMSG_DEBUG("rcamicroOnePop")
 }
 
 /* More Definitions */
 void rcamicroEqual(void) {
-	SMSG_DEBUG("rcamicroEqual")
+	PSMSG_DEBUG("rcamicroEqual")
 }
 
 /* Cross Illustration */
 void rcamicroLittle(void) {
-	SMSG_DEBUG("rcamicroLittle")
+	PSMSG_DEBUG("rcamicroLittle")
 }
 
 void rcamicroTimes(void) {
-	SMSG_DEBUG("rcamicroTimes")
+	PSMSG_DEBUG("rcamicroTimes")
 }
 
 void rcamicroTest(void) {
-	SMSG_DEBUG("rcamicroTest")
+	PSMSG_DEBUG("rcamicroTest")
 }
 
 #endif

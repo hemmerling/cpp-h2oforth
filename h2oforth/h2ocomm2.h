@@ -92,7 +92,7 @@ void privateMessageHandler(void) {
 			forthTasks[forthState.forthCurrentTask].forthErrors[forthTasks[forthState.forthCurrentTask].errorNumber].messageText,
 #endif
 			forthTasks[forthState.forthCurrentTask].errorNumber);
-		 PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+		 SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 	};
 	if (messageNumber
 #if defined (__DEVELOP__)
@@ -106,7 +106,7 @@ void privateMessageHandler(void) {
 #else
 			forthTasks[forthState.forthCurrentTask].forthMessages[forthTasks[forthState.forthCurrentTask].messageNumber].messageText);
 #endif
-		PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+		SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 	};
 	if (osErrorNumber
 #if defined (__DEVELOP__)
@@ -120,7 +120,7 @@ void privateMessageHandler(void) {
 #else
 			forthTasks[forthState.forthCurrentTask].forthOsErrors[forthTasks[forthState.forthCurrentTask].osErrorNumber].messageText);
 #endif
-		PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+		SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 	};
 	forthTasks[forthState.forthCurrentTask].errorNumber = 0;
 	forthTasks[forthState.forthCurrentTask].messageNumber = 0;
@@ -164,7 +164,7 @@ void privateSetBaseLFormat(void) {
 void commonOctal(void) {
 	forthTasks[forthState.forthCurrentTask].forthBase = OCTAL;
 	forthTasks[forthState.forthCurrentTask].baseFormat = (char*)BASE_FORMAT_OCTAL;
-	SMSG_DEBUG("commonOctal")
+	PSMSG_DEBUG("commonOctal")
 }
 
 /* Display in hexadecimal base in the format of <.> */
@@ -174,18 +174,18 @@ void commonHexDot(void) {
 		if (sizeof(CELL_INTEGER) == CELLSIZE8) {
 			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%llx ",
 				forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
-			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+			SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
 		}
 		else {
 			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%x ",
 				forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
-			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+			SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
 		}
 	}
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-	SMSG_DEBUG("commonHexDot")
+	PSMSG_DEBUG("commonHexDot")
 }
 
 /* Display in octal base in the format of <.> */
@@ -195,18 +195,18 @@ void commonOctDot(void) {
 		if (sizeof(CELL_INTEGER) == CELLSIZE8) {
 			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%llo ",
 				forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
-			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+			SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
 		}
 		else {
 			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%o ",
 				forthTasks[forthState.forthCurrentTask].dataStackSpace[--forthTasks[forthState.forthCurrentTask].dataStackIndex]);
-			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+			SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
 		};
 	}
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-	SMSG_DEBUG("commonOctDot")
+	PSMSG_DEBUG("commonOctDot")
 }
 
 /* Display the ReturnStack ( H2OForth unique ) */
@@ -217,43 +217,43 @@ void commonRDotS(void) {
 	if (returnStackIndex) {
 		privateSetBaseFormat();
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "[%d] ", returnStackIndex);
-		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+		SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
 		for (ii = 0; ii < returnStackIndex; ii++) {
 			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 				forthTasks[forthState.forthCurrentTask].baseFormat,
 				forthTasks[forthState.forthCurrentTask].returnStackSpace[ii]);
-			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
-			PUTCHAR(CHAR_SPACE);
+			SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
+			CMSG_SUCCESS(CHAR_SPACE);
 		};
-		PUTCHAR(CHAR_CR);
+		CMSG_SUCCESS(CHAR_CR);
 	}
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_RETURNSTACK_EMPTY;
 	};
-	SMSG_DEBUG("commonRDot")
+	PSMSG_DEBUG("commonRDot")
 }
 
 
 #ifdef EXCEPTION_SUPPORT
 void exceptionAbort(void) {
-	SMSG_DEBUG("exceptionAbort")
+	PSMSG_DEBUG("exceptionAbort")
 }
 
 void exceptionAbortQ(void) {
-	SMSG_DEBUG("exceptionAbortQ")
+	PSMSG_DEBUG("exceptionAbortQ")
 }
 
 void exceptionCatch(void) {
-	SMSG_DEBUG("exceptionCatch")
+	PSMSG_DEBUG("exceptionCatch")
 }
 
 void exceptionThrow(void) {
-	SMSG_DEBUG("exceptionThrow")
+	PSMSG_DEBUG("exceptionThrow")
 }
 
 /* Quit with exception handling. Overrides standard implementation in forthWords */
 void exceptionQuit(void) {
-	SMSG_DEBUG("exceptionQuit")
+	PSMSG_DEBUG("exceptionQuit")
 }
 #endif
 
@@ -262,316 +262,316 @@ void exceptionQuit(void) {
 #if (FLOATSTD == FLOAT_ANS94) || (FLOATSTD == FLOAT_FORTH2012)
 /* Floating-Point extension words */
 void fpointDFStore(void) {
-	SMSG_DEBUG("fpointDFStore")
+	PSMSG_DEBUG("fpointDFStore")
 }
 
 void fpointDFFetch(void) {
-	SMSG_DEBUG("fpointDFFetch")
+	PSMSG_DEBUG("fpointDFFetch")
 }
 
 void fpointDFAlign(void) {
-	SMSG_DEBUG("fpointDFAlign")
+	PSMSG_DEBUG("fpointDFAlign")
 }
 
 void fpointDFFieldColon(void) {
-	SMSG_DEBUG("fpointDFFieldColon")
+	PSMSG_DEBUG("fpointDFFieldColon")
 }
 
 void fpointDFloatPlus(void) {
-	SMSG_DEBUG("fpointDFloatPlus")
+	PSMSG_DEBUG("fpointDFloatPlus")
 }
 
 void fpointDFloatS(void) {
-	SMSG_DEBUG("fpointDFloatS")
+	PSMSG_DEBUG("fpointDFloatS")
 }
 
 void fpointFStarStar(void) {
-	SMSG_DEBUG("fpointFStarStar")
+	PSMSG_DEBUG("fpointFStarStar")
 }
 
 void fpointFDot(void) {
-	SMSG_DEBUG("fpointFDot")
+	PSMSG_DEBUG("fpointFDot")
 }
 
 void fpointFToS(void) {
-	SMSG_DEBUG("fpointFToS")
+	PSMSG_DEBUG("fpointFToS")
 }
 
 void fpointFAbs(void) {
-	SMSG_DEBUG("fpointFAbs")
+	PSMSG_DEBUG("fpointFAbs")
 }
 
 void fpointFAcos(void) {
-	SMSG_DEBUG("fpointFAcos")
+	PSMSG_DEBUG("fpointFAcos")
 }
 
 void fpointFAcosh(void) {
-	SMSG_DEBUG("fpointFAcosh")
+	PSMSG_DEBUG("fpointFAcosh")
 }
 
 void fpointFAlog(void) {
-	SMSG_DEBUG("fpointFAlog")
+	PSMSG_DEBUG("fpointFAlog")
 }
 
 void fpointFAsin(void) {
-	SMSG_DEBUG("fpointFAsin")
+	PSMSG_DEBUG("fpointFAsin")
 }
 
 void fpointAsinh(void) {
-	SMSG_DEBUG("fpointAsinh")
+	PSMSG_DEBUG("fpointAsinh")
 }
 
 void fpointAtan(void) {
-	SMSG_DEBUG("fpointAtan")
+	PSMSG_DEBUG("fpointAtan")
 }
 
 void fpointAtan2(void) {
-	SMSG_DEBUG("fpointAtan2")
+	PSMSG_DEBUG("fpointAtan2")
 }
 
 void fpointFAtanh(void) {
-	SMSG_DEBUG("fpointFAtanh")
+	PSMSG_DEBUG("fpointFAtanh")
 }
 
 void fpointFCos(void) {
-	SMSG_DEBUG("fpointFCos")
+	PSMSG_DEBUG("fpointFCos")
 }
 
 void fpointFCosh(void) {
-	SMSG_DEBUG("fpointFCosh")
+	PSMSG_DEBUG("fpointFCosh")
 }
 
 void fpointFEDot(void) {
-	SMSG_DEBUG("fpointFEDot")
+	PSMSG_DEBUG("fpointFEDot")
 }
 
 void fpointFExp(void) {
-	SMSG_DEBUG("fpointFExp")
+	PSMSG_DEBUG("fpointFExp")
 }
 
 void fpointFExpm1(void) {
-	SMSG_DEBUG("fpointFExpm1")
+	PSMSG_DEBUG("fpointFExpm1")
 }
 
 void fpointFFieldColon(void) {
-	SMSG_DEBUG("fpointFFieldColon")
+	PSMSG_DEBUG("fpointFFieldColon")
 }
 
 void fpointFLn(void) {
-	SMSG_DEBUG("fpointFLn")
+	PSMSG_DEBUG("fpointFLn")
 }
 
 void fpointFLnp1(void) {
-	SMSG_DEBUG("fpointFLnp1")
+	PSMSG_DEBUG("fpointFLnp1")
 }
 
 void fpointFLog(void) {
-	SMSG_DEBUG("fpointFLog")
+	PSMSG_DEBUG("fpointFLog")
 }
 
 void fpointFSDot(void) {
-	SMSG_DEBUG("fpointFSDot")
+	PSMSG_DEBUG("fpointFSDot")
 }
 
 void fpointFSin(void) {
-	SMSG_DEBUG("fpointFSin")
+	PSMSG_DEBUG("fpointFSin")
 }
 
 void fpointFSincos(void) {
-	SMSG_DEBUG("fpointFSincos")
+	PSMSG_DEBUG("fpointFSincos")
 }
 
 void fpointFSinH(void) {
-	SMSG_DEBUG("fpointFSinH")
+	PSMSG_DEBUG("fpointFSinH")
 }
 
 void fpointFSqrt(void) {
-	SMSG_DEBUG("fpointFSqrt")
+	PSMSG_DEBUG("fpointFSqrt")
 }
 
 void fpointFTan(void) {
-	SMSG_DEBUG("fpointFTan")
+	PSMSG_DEBUG("fpointFTan")
 }
 
 void fpointFTanh(void) {
-	SMSG_DEBUG("fpointFTanh")
+	PSMSG_DEBUG("fpointFTanh")
 }
 
 void fpointFTrunc(void) {
-	SMSG_DEBUG("fpointFTrunc")
+	PSMSG_DEBUG("fpointFTrunc")
 }
 
 void fpointFValue(void) {
-	SMSG_DEBUG("fpointFValue")
+	PSMSG_DEBUG("fpointFValue")
 }
 
 void fpointFTilde(void) {
-	SMSG_DEBUG("fpointFTilde")
+	PSMSG_DEBUG("fpointFTilde")
 }
 
 void fpointPrecision(void) {
-	SMSG_DEBUG("fpointPrecision")
+	PSMSG_DEBUG("fpointPrecision")
 }
 
 void fpointSToF(void) {
-	SMSG_DEBUG("fpointSToF")
+	PSMSG_DEBUG("fpointSToF")
 }
 
 void fpointSetPrecision(void) {
-	SMSG_DEBUG("fpointSetPrecision")
+	PSMSG_DEBUG("fpointSetPrecision")
 }
 
 void fpointSFStore(void) {
-	SMSG_DEBUG("fpointSFStore")
+	PSMSG_DEBUG("fpointSFStore")
 }
 
 void fpointSFFetch(void) {
-	SMSG_DEBUG("fpointSFFetch")
+	PSMSG_DEBUG("fpointSFFetch")
 }
 
 void fpointSFAlign(void) {
-	SMSG_DEBUG("fpointSFAlign")
+	PSMSG_DEBUG("fpointSFAlign")
 }
 
 void fpointSFAligned(void) {
-	SMSG_DEBUG("fpointSFAligned")
+	PSMSG_DEBUG("fpointSFAligned")
 }
 
 void fpointSFFieldColon(void) {
-	SMSG_DEBUG("fpointSFFieldColon")
+	PSMSG_DEBUG("fpointSFFieldColon")
 }
 
 void fpointSFloatPlus(void) {
-	SMSG_DEBUG("fpointSFloatPlus")
+	PSMSG_DEBUG("fpointSFloatPlus")
 }
 
 void fpointSFloatS(void) {
-	SMSG_DEBUG("fpointSFloatS")
+	PSMSG_DEBUG("fpointSFloatS")
 }
 
 /* Floating-Point words */
 void fpointToFloat(void) {
-	SMSG_DEBUG("fpointToFloat")
+	PSMSG_DEBUG("fpointToFloat")
 }
 
 void fpointDToF(void) {
-	SMSG_DEBUG("fpointDToF")
+	PSMSG_DEBUG("fpointDToF")
 }
 
 void fpointFStore(void) {
-	SMSG_DEBUG("fpointFStore")
+	PSMSG_DEBUG("fpointFStore")
 }
 
 void fpointFMultiply(void) {
-	SMSG_DEBUG("fpointFMultiply")
+	PSMSG_DEBUG("fpointFMultiply")
 }
 
 void fpointFPlus(void) {
-	SMSG_DEBUG("fpointFPlus")
+	PSMSG_DEBUG("fpointFPlus")
 }
 
 void fpointFMinus(void) {
-	SMSG_DEBUG("fpointFMinus")
+	PSMSG_DEBUG("fpointFMinus")
 }
 
 void fpointFfpointFSlash(void) {
-	SMSG_DEBUG("fpointFfpointFSlash")
+	PSMSG_DEBUG("fpointFfpointFSlash")
 }
 
 void fpointF0Less(void) {
-	SMSG_DEBUG("fpointF0Less")
+	PSMSG_DEBUG("fpointF0Less")
 }
 
 void fpointF0Equal(void) {
-	SMSG_DEBUG("fpointF0Equal")
+	PSMSG_DEBUG("fpointF0Equal")
 }
 
 void fpointFLess(void) {
-	SMSG_DEBUG("fpointFLess")
+	PSMSG_DEBUG("fpointFLess")
 }
 
 void fpointFToD(void) {
-	SMSG_DEBUG("fpointFToD")
+	PSMSG_DEBUG("fpointFToD")
 }
 
 void fpointFFetch(void) {
-	SMSG_DEBUG("fpointFFetch")
+	PSMSG_DEBUG("fpointFFetch")
 }
 
 void fpointtFAlign(void) {
-	SMSG_DEBUG("fpointtFAlign")
+	PSMSG_DEBUG("fpointtFAlign")
 }
 
 void fpointFAligned(void) {
-	SMSG_DEBUG("fpointFAligned")
+	PSMSG_DEBUG("fpointFAligned")
 }
 
 void fpointFConstant(void) {
-	SMSG_DEBUG("fpointFConstant")
+	PSMSG_DEBUG("fpointFConstant")
 }
 
 void fpointFDepth(void) {
-	SMSG_DEBUG("fpointFDepth")
+	PSMSG_DEBUG("fpointFDepth")
 }
 
 void fpointFDrop(void) {
-	SMSG_DEBUG("fpointFDrop")
+	PSMSG_DEBUG("fpointFDrop")
 }
 
 void fpointFDup(void) {
-	SMSG_DEBUG("fpointFDup")
+	PSMSG_DEBUG("fpointFDup")
 }
 
 void fpointFLiteral(void) {
-	SMSG_DEBUG("fpointFLiteral")
+	PSMSG_DEBUG("fpointFLiteral")
 }
 
 void fpointFloatPlus(void) {
-	SMSG_DEBUG("fpointFloatPlus")
+	PSMSG_DEBUG("fpointFloatPlus")
 }
 
 void fpointFloatS(void) {
-	SMSG_DEBUG("fpointFloatS")
+	PSMSG_DEBUG("fpointFloatS")
 }
 
 void fpointFloor(void) {
-	SMSG_DEBUG("fpointFloor")
+	PSMSG_DEBUG("fpointFloor")
 }
 
 void fpointFMax(void) {
-	SMSG_DEBUG("fpointFMax")
+	PSMSG_DEBUG("fpointFMax")
 }
 
 void fpointFMin(void) {
-	SMSG_DEBUG("fpointFMin")
+	PSMSG_DEBUG("fpointFMin")
 }
 
 void fpointFNegate(void) {
-	SMSG_DEBUG("fpointFNegate")
+	PSMSG_DEBUG("fpointFNegate")
 }
 
 void fpointFOver(void) {
-	SMSG_DEBUG("fpointFOver")
+	PSMSG_DEBUG("fpointFOver")
 }
 
 void fpointFRot(void) {
-	SMSG_DEBUG("fpointFRot")
+	PSMSG_DEBUG("fpointFRot")
 }
 
 void fpointFRound(void) {
-	SMSG_DEBUG("fpointFRound")
+	PSMSG_DEBUG("fpointFRound")
 }
 
 void fpointFSwap(void) {
-	SMSG_DEBUG("fpointFSwap")
+	PSMSG_DEBUG("fpointFSwap")
 }
 
 void fpointFVariable(void) {
-	SMSG_DEBUG("fpointFVariable")
+	PSMSG_DEBUG("fpointFVariable")
 }
 
 void fpointRepresent(void) {
-	SMSG_DEBUG("fpointRepresent")
+	PSMSG_DEBUG("fpointRepresent")
 }
 
 #endif
@@ -600,7 +600,7 @@ void fpointUFLoat(void) {
 #else
 	/* TBD */
 #endif
-	SMSG_DEBUG("fpointUFLoat")
+	PSMSG_DEBUG("fpointUFLoat")
 }
 
 void fpointInt(void) {
@@ -625,19 +625,19 @@ void fpointInt(void) {
 #else
 	/* TBD */
 #endif
-	SMSG_DEBUG("fpointInt")
+	PSMSG_DEBUG("fpointInt")
 }
 
 void fpointFNegate(void) {
-	SMSG_DEBUG("fpointFNegate")
+	PSMSG_DEBUG("fpointFNegate")
 }
 
 void fpointFSlash(void) {
-	SMSG_DEBUG("fpointFSlash")
+	PSMSG_DEBUG("fpointFSlash")
 }
 
 void fpointFStar(void) {
-	SMSG_DEBUG("fpointFStar")
+	PSMSG_DEBUG("fpointFStar")
 }
 
 void fpointFPlus(void) {
@@ -668,11 +668,11 @@ void fpointFPlus(void) {
 	};
 #else
 #endif
-	SMSG_DEBUG("fpointFPlus")
+	PSMSG_DEBUG("fpointFPlus")
 }
 
 void fpointFMinus(void) {
-	SMSG_DEBUG("fpointFMinus")
+	PSMSG_DEBUG("fpointFMinus")
 }
 
 void fpointFDot(void) {
@@ -685,14 +685,14 @@ void fpointFDot(void) {
 		floatStackPointer = (CELL_FLOAT*)&forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex];
 		value = *floatStackPointer;
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%f", value);
-		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
-		PUTCHAR(CHAR_SPACE);
+		SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
+		CMSG_SUCCESS(CHAR_SPACE);
 		forthTasks[forthState.forthCurrentTask].dataStackIndex = forthTasks[forthState.forthCurrentTask].dataStackIndex - forthTasks[forthState.forthCurrentTask].floatFloatIntRatio;
 	}
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-	SMSG_DEBUG("fpointFDot")
+	PSMSG_DEBUG("fpointFDot")
 }
 
 
@@ -704,444 +704,444 @@ void fpointFDotS(void) {
 	int nn; /* < 32 */
 	if (floatStackIndex) {
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "[%d] ", floatStackIndex);
-		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+		SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
 		for (ii = 0; ii < floatStackIndex; ii++) {
 			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%f",
 				forthTasks[forthState.forthCurrentTask].floatStackSpace[ii]);
-			FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+			SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
 		};
-		PUTCHAR(CHAR_CR);
+		CMSG_SUCCESS(CHAR_CR);
 	}
 	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DATASTACK_EMPTY;
 	};
-	SMSG_DEBUG("fpointDotF")
+	PSMSG_DEBUG("fpointDotF")
 }
 
 void fpointFDot(void) {
-	SMSG_DEBUG("fpoinFtDot")
+	PSMSG_DEBUG("fpoinFtDot")
 }
 
 void fpointNumFS(void) {
-	SMSG_DEBUG("fpointNumFS")
+	PSMSG_DEBUG("fpointNumFS")
 }
 
 void fpointSetPrecision(void) {
-	SMSG_DEBUG("fpointSetPrecision")
+	PSMSG_DEBUG("fpointSetPrecision")
 }
 
 void fpointPrecision(void) {
-	SMSG_DEBUG("fpointPrecision")
+	PSMSG_DEBUG("fpointPrecision")
 }
 
 void fpointFSqrt(void) {
-	SMSG_DEBUG("fpointFSqrt")
+	PSMSG_DEBUG("fpointFSqrt")
 }
 
 void fpointPi(void) {
-	SMSG_DEBUG("fpointPi")
+	PSMSG_DEBUG("fpointPi")
 }
 
 void fpointFVariable(void) {
-	SMSG_DEBUG("fpointFVariable")
+	PSMSG_DEBUG("fpointFVariable")
 }
 
 void fpointFConstant(void) {
-	SMSG_DEBUG("fpointFConstant")
+	PSMSG_DEBUG("fpointFConstant")
 }
 
 void fpointFLiteral(void) {
-	SMSG_DEBUG("fpointFLiteral")
+	PSMSG_DEBUG("fpointFLiteral")
 }
 
 void fpointAFLiteral(void) {
-	SMSG_DEBUG("fpointAFLiteral")
+	PSMSG_DEBUG("fpointAFLiteral")
 }
 
 void fpointSFComma(void) {
-	SMSG_DEBUG("fpointSFComma")
+	PSMSG_DEBUG("fpointSFComma")
 }
 
 void fpointSFloatPlus(void) {
-	SMSG_DEBUG("fpointSFloatPlus")
+	PSMSG_DEBUG("fpointSFloatPlus")
 }
 
 void fpointSFloats(void) {
-	SMSG_DEBUG("fpointSFloats")
+	PSMSG_DEBUG("fpointSFloats")
 }
 
 void fpointSFloat(void) {
-	SMSG_DEBUG("fpointSFloat")
+	PSMSG_DEBUG("fpointSFloat")
 }
 
 void fpointSFGreaterEqual(void) {
-	SMSG_DEBUG("fpointSFGreaterEqual")
+	PSMSG_DEBUG("fpointSFGreaterEqual")
 }
 
 void fpointSFLessEqual(void) {
-	SMSG_DEBUG("fpointSFLessEqual")
+	PSMSG_DEBUG("fpointSFLessEqual")
 }
 
 void fpointSFUnequal(void) {
-	SMSG_DEBUG("fpointSFUnequal")
+	PSMSG_DEBUG("fpointSFUnequal")
 }
 
 void fpointSFGreater(void) {
-	SMSG_DEBUG("fpointSFGreater")
+	PSMSG_DEBUG("fpointSFGreater")
 }
 
 void fpointSFLess(void) {
-	SMSG_DEBUG("fpointSFLess")
+	PSMSG_DEBUG("fpointSFLess")
 }
 
 void fpointSFEqual(void) {
-	SMSG_DEBUG("fpointSFEqual")
+	PSMSG_DEBUG("fpointSFEqual")
 }
 
 void fpointFg(void) {
-	SMSG_DEBUG("fpointFg")
+	PSMSG_DEBUG("fpointFg")
 }
 
 void fpointFDepth(void) {
-	SMSG_DEBUG("fpointFDepth")
+	PSMSG_DEBUG("fpointFDepth")
 }
 
 void fpointFP0(void) {
-	SMSG_DEBUG("fpointFP0")
+	PSMSG_DEBUG("fpointFP0")
 }
 
 void fpointFGreaterNumberQ(void) {
-	SMSG_DEBUG("fpointFGreaterNumberQ")
+	PSMSG_DEBUG("fpointFGreaterNumberQ")
 }
 
 void fpointFToS(void) {
-	SMSG_DEBUG("fpointFToS")
+	PSMSG_DEBUG("fpointFToS")
 }
 
 void fpointSToF(void) {
-	SMSG_DEBUG("fpointSToF")
+	PSMSG_DEBUG("fpointSToF")
 }
 
 void fpointOneSlashF(void) {
-	SMSG_DEBUG("fpointOneSlashF")
+	PSMSG_DEBUG("fpointOneSlashF")
 }
 
 void fpointFSlash(void) {
-	SMSG_DEBUG("fpointFSlash")
+	PSMSG_DEBUG("fpointFSlash")
 }
 
 void fpointFStar(void) {
-	SMSG_DEBUG("fpointFStar")
+	PSMSG_DEBUG("fpointFStar")
 }
 
 void fpointFMinus(void) {
-	SMSG_DEBUG("fpointFMinus")
+	PSMSG_DEBUG("fpointFMinus")
 }
 
 void fpointFPlus(void) {
-	SMSG_DEBUG("fpointFPlus")
+	PSMSG_DEBUG("fpointFPlus")
 }
 
 void fpointF0Equal(void) {
-	SMSG_DEBUG("fpointF0Equal")
+	PSMSG_DEBUG("fpointF0Equal")
 }
 
 void fpointF0Less(void) {
-	SMSG_DEBUG("fpointF0Less")
+	PSMSG_DEBUG("fpointF0Less")
 }
 
 void fpointFNegate(void) {
-	SMSG_DEBUG("fpointFNegate")
+	PSMSG_DEBUG("fpointFNegate")
 }
 
 void fpointFswa(void) {
-	SMSG_DEBUG("fpointFswa")
+	PSMSG_DEBUG("fpointFswa")
 }
 
 void fpointFOver(void) {
-	SMSG_DEBUG("fpointFOver")
+	PSMSG_DEBUG("fpointFOver")
 }
 
 void fpointFDrop(void) {
-	SMSG_DEBUG("fpointFDrop")
+	PSMSG_DEBUG("fpointFDrop")
 }
 
 void fpointFNip(void) {
-	SMSG_DEBUG("fpointFNip")
+	PSMSG_DEBUG("fpointFNip")
 }
 
 void fpointFDup(void) {
-	SMSG_DEBUG("fpointFDup")
+	PSMSG_DEBUG("fpointFDup")
 }
 
 void fpointSFStore(void) {
-	SMSG_DEBUG("fpointSFStore")
+	PSMSG_DEBUG("fpointSFStore")
 }
 
 void fpointSFFetch(void) {
-	SMSG_DEBUG("fpointSFFetch")
+	PSMSG_DEBUG("fpointSFFetch")
 }
 
 void fpointSF(void) {
-	SMSG_DEBUG("fpointSF")
+	PSMSG_DEBUG("fpointSF")
 }
 
 void fpointFPStore(void) {
-	SMSG_DEBUG("fpointFPStore")
+	PSMSG_DEBUG("fpointFPStore")
 }
 
 void fpointFPFetch(void) {
-	SMSG_DEBUG("fpointFPFetch")
+	PSMSG_DEBUG("fpointFPFetch")
 }
 
 #endif
 #if (FLOATSTD == FLOAT_TURBO)
 /* 10 Floating-Point Stack Manipulation Words */
 void fpointFDup(void) {
-	SMSG_DEBUG("fpointFDup")
+	PSMSG_DEBUG("fpointFDup")
 }
 
 void fpointFDrop(void) {
-	SMSG_DEBUG("fpointFDrop")
+	PSMSG_DEBUG("fpointFDrop")
 }
 
 void fpointFSwap(void) {
-	SMSG_DEBUG("fpointFSwap")
+	PSMSG_DEBUG("fpointFSwap")
 }
 
 void fpointFOver(void) {
-	SMSG_DEBUG("fpointFOver")
+	PSMSG_DEBUG("fpointFOver")
 }
 
 void fpointFPClear(void) {
-	SMSG_DEBUG("fpointFPClear")
+	PSMSG_DEBUG("fpointFPClear")
 }
 
 /* 11 Math Words */
 void fpointFPlus(void) {
-	SMSG_DEBUG("fpointFPlus")
+	PSMSG_DEBUG("fpointFPlus")
 }
 
 void fpointFMinus(void) {
-	SMSG_DEBUG("fpointFMinus")
+	PSMSG_DEBUG("fpointFMinus")
 }
 
 void fpointFStar(void) {
-	SMSG_DEBUG("fpointFStar")
+	PSMSG_DEBUG("fpointFStar")
 }
 
 void fpointFSlash(void) {
-	SMSG_DEBUG("fpointFSlash")
+	PSMSG_DEBUG("fpointFSlash")
 }
 
 void fpointFNegate(void) {
-	SMSG_DEBUG("fpointFNegate")
+	PSMSG_DEBUG("fpointFNegate")
 }
 
 void fpointFAbs(void) {
-	SMSG_DEBUG("fpointFAbs")
+	PSMSG_DEBUG("fpointFAbs")
 }
 
 void fpointFloor(void) {
-	SMSG_DEBUG("fpointFloor")
+	PSMSG_DEBUG("fpointFloor")
 }
 
 void fpointCeil(void) {
-	SMSG_DEBUG("fpointCeil")
+	PSMSG_DEBUG("fpointCeil")
 }
 
 void fpointTrunc(void) {
-	SMSG_DEBUG("fpointTrunc")
+	PSMSG_DEBUG("fpointTrunc")
 }
 
 void fpointFrac(void) {
-	SMSG_DEBUG("fpointFrac")
+	PSMSG_DEBUG("fpointFrac")
 }
 
 /* 12 Comparison Words */
 void fpointFEqual(void) {
-	SMSG_DEBUG("fpointFEqual")
+	PSMSG_DEBUG("fpointFEqual")
 }
 
 void fpointF0Equal(void) {
-	SMSG_DEBUG("fpointF0Equal")
+	PSMSG_DEBUG("fpointF0Equal")
 }
 
 void fpointFLess(void) {
-	SMSG_DEBUG("fpointFLess")
+	PSMSG_DEBUG("fpointFLess")
 }
 
 void fpointFGreater(void) {
-	SMSG_DEBUG("fpointFGreater")
+	PSMSG_DEBUG("fpointFGreater")
 }
 
 void fpointF0Less(void) {
-	SMSG_DEBUG("fpointF0Less")
+	PSMSG_DEBUG("fpointF0Less")
 }
 
 /* 13 Floating-Point Literal Handling */
 void fpointToF(void) {
-	SMSG_DEBUG("fpointToF")
+	PSMSG_DEBUG("fpointToF")
 }
 
 void fpointFLiteral(void) {
-	SMSG_DEBUG("fpointFLiteral")
+	PSMSG_DEBUG("fpointFLiteral")
 }
 
 void fpointFLit(void) {
-	SMSG_DEBUG("fpointFLit")
+	PSMSG_DEBUG("fpointFLit")
 }
 
 /* 14 Floating-Point Variables */
 void fpointFVariable(void) {
-	SMSG_DEBUG("fpointFVariable")
+	PSMSG_DEBUG("fpointFVariable")
 }
 
 void fpointFStore(void) {
-	SMSG_DEBUG("fpointFStore")
+	PSMSG_DEBUG("fpointFStore")
 }
 
 void fpointFFetch(void) {
-	SMSG_DEBUG("fpointFFetch")
+	PSMSG_DEBUG("fpointFFetch")
 }
 
 /* 15 Floating-Point Constants */
 void fpointFConstant(void) {
-	SMSG_DEBUG("fpointFConstant")
+	PSMSG_DEBUG("fpointFConstant")
 }
 
 /* 16 Floating-Point Values */
 void fpointFValue(void) {
-	SMSG_DEBUG("fpointFValue")
+	PSMSG_DEBUG("fpointFValue")
 }
 
 void fpointFTo(void) {
-	SMSG_DEBUG("fpointFTo")
+	PSMSG_DEBUG("fpointFTo")
 }
 
 void fpointPlusFTo(void) {
-	SMSG_DEBUG("fpointPlusFTo")
+	PSMSG_DEBUG("fpointPlusFTo")
 }
 
 /* 17 Displaying Floating-Point Numbers */
 void fpointFDot(void) {
-	SMSG_DEBUG("fpointFDot")
+	PSMSG_DEBUG("fpointFDot")
 }
 
 void fpointFFDpt(void) {
-	SMSG_DEBUG("fpointFFDpt")
+	PSMSG_DEBUG("fpointFFDpt")
 }
 
 void fpointFFPlusDot(void) {
-	SMSG_DEBUG("fpointFFPlusDot")
+	PSMSG_DEBUG("fpointFFPlusDot")
 }
 
 void fpointFFEDot(void) {
-	SMSG_DEBUG("fpointFFEDot")
+	PSMSG_DEBUG("fpointFFEDot")
 }
 
 void fpointFFEPlusDot(void) {
-	SMSG_DEBUG("fpointFFEPlusDot")
+	PSMSG_DEBUG("fpointFFEPlusDot")
 }
 
 void fpointFFXDot(void) {
-	SMSG_DEBUG("fpointFFXDot")
+	PSMSG_DEBUG("fpointFFXDot")
 }
 
 void fpointFFXPlusDot(void) {
-	SMSG_DEBUG("fpointFFXPlusDot")
+	PSMSG_DEBUG("fpointFFXPlusDot")
 }
 
 void fpointFDollarDot(void) {
-	SMSG_DEBUG("fpointFDollarDot")
+	PSMSG_DEBUG("fpointFDollarDot")
 }
 
 void fpointDotFS(void) {
-	SMSG_DEBUG("fpointDotFS")
+	PSMSG_DEBUG("fpointDotFS")
 }
 
 void fpointDotFDollar(void) {
-	SMSG_DEBUG("fpointDotFDollar")
+	PSMSG_DEBUG("fpointDotFDollar")
 }
 
 /* 18 Floating-Point Number Conversion */
 void fpointSToFP(void) {
-	SMSG_DEBUG("fpointSToFP")
+	PSMSG_DEBUG("fpointSToFP")
 }
 
 void fpointFPToS(void) {
-	SMSG_DEBUG("fpointFPToS")
+	PSMSG_DEBUG("fpointFPToS")
 }
 
 /* 19 Transcendental Constants and Conversion Functions */
 void fpointPi(void) {
-	SMSG_DEBUG("fpointPi")
+	PSMSG_DEBUG("fpointPi")
 }
 
 void fpointEulerE(void) {
-	SMSG_DEBUG("fpointEulerE")
+	PSMSG_DEBUG("fpointEulerE")
 }
 
 void fpointRadDeg(void) {
-	SMSG_DEBUG("fpointRadDeg")
+	PSMSG_DEBUG("fpointRadDeg")
 }
 
 void fpointDegRad(void) {
-	SMSG_DEBUG("fpointDegRad")
+	PSMSG_DEBUG("fpointDegRad")
 }
 
 void fpointToRad(void) {
-	SMSG_DEBUG("fpointToRad")
+	PSMSG_DEBUG("fpointToRad")
 }
 
 void fpointToDeg(void) {
-	SMSG_DEBUG("fpointToDeg")
+	PSMSG_DEBUG("fpointToDeg")
 }
 
 /* 20 Transcendental Functions */
 void fpointExp(void) {
-	SMSG_DEBUG("fpointExp")
+	PSMSG_DEBUG("fpointExp")
 }
 
 void fpointLog(void) {
-	SMSG_DEBUG("fpointLog")
+	PSMSG_DEBUG("fpointLog")
 }
 
 void fpointSqrt(void) {
-	SMSG_DEBUG("fpointSqrt")
+	PSMSG_DEBUG("fpointSqrt")
 }
 
 void fpointCos(void) {
-	SMSG_DEBUG("fpointCos")
+	PSMSG_DEBUG("fpointCos")
 }
 
 void fpointSin(void) {
-	SMSG_DEBUG("fpointSin")
+	PSMSG_DEBUG("fpointSin")
 }
 
 void fpointTan(void) {
-	SMSG_DEBUG("fpointTan")
+	PSMSG_DEBUG("fpointTan")
 }
 
 void fpointAtn(void) {
-	SMSG_DEBUG("fpointAtn")
+	PSMSG_DEBUG("fpointAtn")
 }
 
 void fpointPow(void) {
-	SMSG_DEBUG("fpointPow")
+	PSMSG_DEBUG("fpointPow")
 }
 
 void fpointLog10(void) {
-	SMSG_DEBUG("fpointLog10")
+	PSMSG_DEBUG("fpointLog10")
 }
 
 void fpointExp10(void) {
-	SMSG_DEBUG("fpointExp10")
+	PSMSG_DEBUG("fpointExp10")
 }
 
 /* 21.3 Floating Point Error Handling */
 void fpointQFPErr(void) {
-	SMSG_DEBUG("fpointQFPErr")
+	PSMSG_DEBUG("fpointQFPErr")
 }
 
 #endif
@@ -1149,373 +1149,373 @@ void fpointQFPErr(void) {
 
 #if TASKINGSTANDARD == TASKINGSTD_FORTH83
 void taskingF83Allot(void) {
-	SMSG_DEBUG("taskingF83Allot")
+	PSMSG_DEBUG("taskingF83Allot")
 }
 
 void taskingF83Create(void) {
-	SMSG_DEBUG("taskingF83Create")
+	PSMSG_DEBUG("taskingF83Create")
 }
 
 void taskingF83Variable(void) {
-	SMSG_DEBUG("taskingF83Variable")
+	PSMSG_DEBUG("taskingF83Variable")
 }
 
 void taskingF83Defer(void) {
-	SMSG_DEBUG("taskingF83Defer")
+	PSMSG_DEBUG("taskingF83Defer")
 }
 
 void taskingF83Pause(void) {
-	SMSG_DEBUG("taskingF83Pause")
+	PSMSG_DEBUG("taskingF83Pause")
 }
 
 void taskingF83Restart(void) {
-	SMSG_DEBUG("taskingF83Restart")
+	PSMSG_DEBUG("taskingF83Restart")
 }
 
 void taskingF83Local(void) {
-	SMSG_DEBUG("taskingF83Local")
+	PSMSG_DEBUG("taskingF83Local")
 }
 
 void taskingF83FetchLink(void) {
-	SMSG_DEBUG("taskingF83FetchLink")
+	PSMSG_DEBUG("taskingF83FetchLink")
 }
 
 void taskingF83StoreLink(void) {
-	SMSG_DEBUG("taskingF83StoreLink")
+	PSMSG_DEBUG("taskingF83StoreLink")
 }
 
 void taskingF83Sleep(void) {
-	SMSG_DEBUG("taskingF83Sleep")
+	PSMSG_DEBUG("taskingF83Sleep")
 }
 
 void taskingF83Wake(void) {
-	SMSG_DEBUG("taskingF83Wake")
+	PSMSG_DEBUG("taskingF83Wake")
 }
 
 void taskingF83Stop(void) {
-	SMSG_DEBUG("taskingF83Stop")
+	PSMSG_DEBUG("taskingF83Stop")
 }
 
 void taskingF83Multi(void) {
-	SMSG_DEBUG("taskingF83Multi")
+	PSMSG_DEBUG("taskingF83Multi")
 }
 
 void taskingF83Single(void) {
-	SMSG_DEBUG("taskingF83Single")
+	PSMSG_DEBUG("taskingF83Single")
 }
 
 void taskingF83Task(void) {
-	SMSG_DEBUG("taskingF83Task")
+	PSMSG_DEBUG("taskingF83Task")
 }
 
 void taskingF83SetTask(void) {
-	SMSG_DEBUG("taskingF83SetTask")
+	PSMSG_DEBUG("taskingF83SetTask")
 }
 
 void taskingF83Activate(void) {
-	SMSG_DEBUG("taskingF83Activate")
+	PSMSG_DEBUG("taskingF83Activate")
 }
 
 void taskingF83Background(void) {
-	SMSG_DEBUG("taskingF83Background")
+	PSMSG_DEBUG("taskingF83Background")
 }
 
 #endif
 
 #if TASKINGSTANDARD == TASKINGSTD_FPC
 void taskingFPCPause(void) {
-	SMSG_DEBUG("taskingFPCPause")
+	PSMSG_DEBUG("taskingFPCPause")
 }
 
 void taskingFPCRestart(void) {
-	SMSG_DEBUG("taskingFPCRestart")
+	PSMSG_DEBUG("taskingFPCRestart")
 }
 
 void taskingFPCLocal(void) {
-	SMSG_DEBUG("taskingFPCLocal")
+	PSMSG_DEBUG("taskingFPCLocal")
 }
 
 void taskingFPCFetchLink(void) {
-	SMSG_DEBUG("taskingFPCFetchLink")
+	PSMSG_DEBUG("taskingFPCFetchLink")
 }
 
 void taskingFPCStoreLink(void) {
-	SMSG_DEBUG("taskingFPCStoreLink")
+	PSMSG_DEBUG("taskingFPCStoreLink")
 }
 
 void taskingFPCSleep(void) {
-	SMSG_DEBUG("taskingFPCSleep")
+	PSMSG_DEBUG("taskingFPCSleep")
 }
 
 void taskingFPCWake(void) {
-	SMSG_DEBUG("taskingFPCWake")
+	PSMSG_DEBUG("taskingFPCWake")
 }
 
 void taskingFPCStop(void) {
-	SMSG_DEBUG("taskingFPCStop")
+	PSMSG_DEBUG("taskingFPCStop")
 }
 
 void taskingFPCSingle(void) {
-	SMSG_DEBUG("taskingFPCSingle")
+	PSMSG_DEBUG("taskingFPCSingle")
 }
 
 void taskingFPCMulti(void) {
-	SMSG_DEBUG("taskingFPCMulti")
+	PSMSG_DEBUG("taskingFPCMulti")
 }
 
 void taskingFPCTask(void) {
-	SMSG_DEBUG("taskingFPCTask")
+	PSMSG_DEBUG("taskingFPCTask")
 }
 
 void taskingFPCSetTask(void) {
-	SMSG_DEBUG("taskingFPCSetTask")
+	PSMSG_DEBUG("taskingFPCSetTask")
 }
 
 void taskingFPCActivate(void) {
-	SMSG_DEBUG("taskingFPCActivate")
+	PSMSG_DEBUG("taskingFPCActivate")
 }
 
 void taskingFPCBackground(void) {
-	SMSG_DEBUG("taskingFPCBackground")
+	PSMSG_DEBUG("taskingFPCBackground")
 }
 
 #endif
 
 #if TASKINGSTANDARD == TASKINGSTD_VOLK
 void taskingVolkActivate(void) {
-	SMSG_DEBUG("taskingVolkActivate")
+	PSMSG_DEBUG("taskingVolkActivate")
 }
 
 void taskingVolkLock(void) {
-	SMSG_DEBUG("taskingVolkLock")
+	PSMSG_DEBUG("taskingVolkLock")
 }
 
 void taskingVolkMultiTask(void) {
-	SMSG_DEBUG("taskingVolkMultiTask")
+	PSMSG_DEBUG("taskingVolkMultiTask")
 }
 
 void taskingVolkPass(void) {
-	SMSG_DEBUG("taskingVolkPass")
+	PSMSG_DEBUG("taskingVolkPass")
 }
 
 void taskingVolkPause(void) {
-	SMSG_DEBUG("taskingVolkPause")
+	PSMSG_DEBUG("taskingVolkPause")
 }
 
 void taskingVolkRendezvous(void) {
-	SMSG_DEBUG("taskingVolkRendezvous")
+	PSMSG_DEBUG("taskingVolkRendezvous")
 }
 
 void taskingVolkSingleTask(void) {
-	SMSG_DEBUG("taskingVolkSingleTask")
+	PSMSG_DEBUG("taskingVolkSingleTask")
 }
 
 void taskingVolkSleep(void) {
-	SMSG_DEBUG("taskingVolkSleep")
+	PSMSG_DEBUG("taskingVolkSleep")
 }
 
 void taskingVolkStop(void) {
-	SMSG_DEBUG("taskingVolkStop")
+	PSMSG_DEBUG("taskingVolkStop")
 }
 
 void taskingVolkTask(void) {
-	SMSG_DEBUG("taskingVolkTask")
+	PSMSG_DEBUG("taskingVolkTask")
 }
 
 void taskingVolkTasks(void) {
-	SMSG_DEBUG("taskingVolkTasks")
+	PSMSG_DEBUG("taskingVolkTasks")
 }
 
 void taskingVolkUnlock(void) {
-	SMSG_DEBUG("taskingVolkUnlock")
+	PSMSG_DEBUG("taskingVolkUnlock")
 }
 
 void taskingVolkWake(void) {
-	SMSG_DEBUG("taskingVolkWake")
+	PSMSG_DEBUG("taskingVolkWake")
 }
 
 void taskingVolkUPFetch(void) {
-	SMSG_DEBUG("taskingVolkUPFetch")
+	PSMSG_DEBUG("taskingVolkUPFetch")
 }
 
 void taskingVolkUPStore(void) {
-	SMSG_DEBUG("taskingVolkUPStore")
+	PSMSG_DEBUG("taskingVolkUPStore")
 }
 
 #endif
 
 #if TASKINGSTANDARD == TASKINGSTD_BIGFORTH
 void taskingBigTaskerDotScr(void) {
-	SMSG_DEBUG("taskingBigTaskerDotScr")
+	PSMSG_DEBUG("taskingBigTaskerDotScr")
 }
 
 void taskingBigStop(void) {
-	SMSG_DEBUG("taskingBigStop")
+	PSMSG_DEBUG("taskingBigStop")
 }
 
 void taskingBigSingleTask(void) {
-	SMSG_DEBUG("taskingBigSingleTask")
+	PSMSG_DEBUG("taskingBigSingleTask")
 }
 
 void taskingBigMultiTask(void) {
-	SMSG_DEBUG("taskingBigMultiTask")
+	PSMSG_DEBUG("taskingBigMultiTask")
 }
 
 void taskingBigActivate(void) {
-	SMSG_DEBUG("taskingBigActivate")
+	PSMSG_DEBUG("taskingBigActivate")
 }
 
 void taskingBigPass(void) {
-	SMSG_DEBUG("taskingBigPass")
+	PSMSG_DEBUG("taskingBigPass")
 }
 
 void taskingBigAutostart(void) {
-	SMSG_DEBUG("taskingBigAutostart")
+	PSMSG_DEBUG("taskingBigAutostart")
 }
 
 void taskingBigSleep(void) {
-	SMSG_DEBUG("taskingBigSleep")
+	PSMSG_DEBUG("taskingBigSleep")
 }
 
 void taskingBigWake(void) {
-	SMSG_DEBUG("taskingBigWake")
+	PSMSG_DEBUG("taskingBigWake")
 }
 
 void taskingBigTimerFetch(void) {
-	SMSG_DEBUG("taskingBigTimerFetch")
+	PSMSG_DEBUG("taskingBigTimerFetch")
 }
 
 void taskingBigSyncTime(void) {
-	SMSG_DEBUG("taskingBigSyncTime")
+	PSMSG_DEBUG("taskingBigSyncTime")
 }
 
 void taskingBigSyncStore(void) {
-	SMSG_DEBUG("taskingBigSyncStore")
+	PSMSG_DEBUG("taskingBigSyncStore")
 }
 
 void taskingBigSync(void) {
-	SMSG_DEBUG("taskingBigSync")
+	PSMSG_DEBUG("taskingBigSync")
 }
 
 void taskingBigTask(void) {
-	SMSG_DEBUG("taskingBigTask")
+	PSMSG_DEBUG("taskingBigTask")
 }
 
 void taskingBigRendezvous(void) {
-	SMSG_DEBUG("taskingBigRendezvous")
+	PSMSG_DEBUG("taskingBigRendezvous")
 }
 
 void taskingBigSTick(void) {
-	SMSG_DEBUG("taskingBigSTick")
+	PSMSG_DEBUG("taskingBigSTick")
 }
 
 void taskingBigTasks(void) {
-	SMSG_DEBUG("taskingBigTasks")
+	PSMSG_DEBUG("taskingBigTasks")
 }
 
 void taskingBigClockTask(void) {
-	SMSG_DEBUG("taskingBigClockTask")
+	PSMSG_DEBUG("taskingBigClockTask")
 }
 
 void taskingBigClock(void) {
-	SMSG_DEBUG("taskingBigClock")
+	PSMSG_DEBUG("taskingBigClock")
 }
 
 void taskingBigWaitC(void) {
-	SMSG_DEBUG("taskingBigWaitC")
+	PSMSG_DEBUG("taskingBigWaitC")
 }
 
 void taskingBigStartC(void) {
-	SMSG_DEBUG("taskingBigStartC")
+	PSMSG_DEBUG("taskingBigStartC")
 }
 
 void taskingBigNoClock(void) {
-	SMSG_DEBUG("taskingBigNoClock")
+	PSMSG_DEBUG("taskingBigNoClock")
 }
 
 void taskingBigSetClock(void) {
-	SMSG_DEBUG("taskingBigSetClock")
+	PSMSG_DEBUG("taskingBigSetClock")
 }
 
 void taskingBigPause(void) {
-	SMSG_DEBUG("taskingBigPause")
+	PSMSG_DEBUG("taskingBigPause")
 }
 
 void taskingBigLock(void) {
-	SMSG_DEBUG("taskingBigLock")
+	PSMSG_DEBUG("taskingBigLock")
 }
 
 void taskingBigUnlock(void) {
-	SMSG_DEBUG("taskingBigUnlock")
+	PSMSG_DEBUG("taskingBigUnlock")
 }
 
 #endif
 
 #if TASKINGSTANDARD == TASKINGSTD_RTF
 void taskingRtfSingle(void) {
-	SMSG_DEBUG("taskingRtfSingle")
+	PSMSG_DEBUG("taskingRtfSingle")
 }
 
 void taskingRtfMulti(void) {
-	SMSG_DEBUG("taskingRtfMulti")
+	PSMSG_DEBUG("taskingRtfMulti")
 }
 
 void taskingRtfBackground(void) {
-	SMSG_DEBUG("taskingRtfBackground")
+	PSMSG_DEBUG("taskingRtfBackground")
 }
 
 void taskingRtfWake(void) {
-	SMSG_DEBUG("taskingRtfWake")
+	PSMSG_DEBUG("taskingRtfWake")
 }
 
 void taskingRtfSleep(void) {
-	SMSG_DEBUG("taskingRtfSleep")
+	PSMSG_DEBUG("taskingRtfSleep")
 }
 
 void taskingRtfStop(void) {
-	SMSG_DEBUG("taskingRtfStop")
+	PSMSG_DEBUG("taskingRtfStop")
 }
 
 void taskingRtfPause(void) {
-	SMSG_DEBUG("taskingRtfPause")
+	PSMSG_DEBUG("taskingRtfPause")
 }
 
 void taskingRtfActivate(void) {
-	SMSG_DEBUG("taskingRtfActivate")
+	PSMSG_DEBUG("taskingRtfActivate")
 }
 
 #endif
 
 #if TASKINGSTANDARD == TASKINGSTD_CAMEL
 void taskingCamelSwitch(void) {
-	SMSG_DEBUG("taskingCamelSwitch")
+	PSMSG_DEBUG("taskingCamelSwitch")
 }
 
 void taskingCamelInitTask(void) {
-	SMSG_DEBUG("taskingCamelInitTask")
+	PSMSG_DEBUG("taskingCamelInitTask")
 }
 
 void taskingCamelDetach(void) {
-	SMSG_DEBUG("taskingCamelDetach")
+	PSMSG_DEBUG("taskingCamelDetach")
 }
 
 void taskingCamelAttach(void) {
-	SMSG_DEBUG("taskingCamelAttach")
+	PSMSG_DEBUG("taskingCamelAttach")
 }
 
 void taskingCamelPreempt(void) {
-	SMSG_DEBUG("taskingCamelPreempt")
+	PSMSG_DEBUG("taskingCamelPreempt")
 }
 
 #endif
 
 #ifdef TESTING_SUPPORT
 void testingTCurlyBracket(void) {
-	SMSG_DEBUG("testingTCurlyBracket")
+	PSMSG_DEBUG("testingTCurlyBracket")
 }
 
 void testingCurlyBracketT(void) {
-	SMSG_DEBUG("testingCurlyBracketT")
+	PSMSG_DEBUG("testingCurlyBracketT")
 }
 #endif
 
