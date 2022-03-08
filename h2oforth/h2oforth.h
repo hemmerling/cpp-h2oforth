@@ -611,16 +611,12 @@
 #define PCMSG_VERBOSE(X) {privateCMessage(pgm_read_byte(X),  STREAM_VERBOSE);};
 #define PCMSG_INFORMATION(X) {privateCMessage(pgm_read_byte(X),  STREAM_INFORMATION);};
 #define PSMSG_SUCCESS(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_SUCCESS, FALSE, FALSE);};
-#define PSMSG_SUCCESS_CR(STRING_,CR2) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_SUCCESS, FALSE, TRUE);};
-#define PSMSG_SUCCESS2(STRING_,CR1,CR2) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_SUCCESS, CR1, CR2);};
+#define PSMSG_SUCCESS_CR(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_SUCCESS, FALSE, TRUE);};
+#define PSMSG_SUCCESS2(X,CR1,CR2) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_SUCCESS, CR1, CR2);};
 #define PSMSG_ERROR(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_ERROR, TRUE, TRUE);};
 #define PSMSG_WARNING(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_WARNING, TRUE, TRUE);};
 #define PSMSG_VERBOSE(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_VERBOSE, TRUE, TRUE);};
 #define PSMSG_INFORMATION(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_INFORMATION, TRUE, TRUE);};
-/* This macro works :-): */
-//#define PSMSG_DEBUG(X) {FPUTC_ERR(CHAR_CR); FPUTS_ERR(F(X)); FPUTC_ERR(CHAR_CR);};
-/* This macro does not (yet) work :-(: */
-//#define PSMSG_DEBUG(X) privateMessage(F(X), STREAM_DEBUG, TRUE, TRUE);
 #else
 #define PCMSG_SUCCESS(X) privateCMessage(X, STREAM_SUCCESS);
 #define PCMSG_ERROR(X) privateCMessage(X, STREAM_ERROR);
@@ -639,8 +635,14 @@
 #if defined (__DEBUG__)
 #define CMSG_DEBUG(X) privateCMessage(X, STREAM_DEBUG);
 #ifdef ARDUINO
-#define PCMSG_DEBUG(X) {privateCMessage(pgm_read_byte(X),  STREAM_DEBUG);};
+#define PCMSG_DEBUG(X) privateCMessage(pgm_read_byte(X), STREAM_DEBUG);
+//#define PSMSG_DEBUG(X) privateSMessage((char *)X, STREAM_DEBUG, TRUE, TRUE);
 #define PSMSG_DEBUG(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_DEBUG, TRUE, TRUE);};
+/* This macro works :-): */
+//#define PSMSG_DEBUG(X) {FPUTC_ERR(CHAR_CR); FPUTS_ERR(F(X)); FPUTC_ERR(CHAR_CR);};
+/* These macros don´t not (yet) work :-(: */
+//#define PSMSG_DEBUG(X) privateSMessage(F(X), STREAM_DEBUG, TRUE, TRUE);
+//#define PSMSG_DEBUG(X) privateSMessage(PSTR(X), STREAM_DEBUG, TRUE, TRUE);
 #else
 #define PCMSG_DEBUG(X) privateCMessage(X, STREAM_DEBUG);
 #define PSMSG_DEBUG(X) privateSMessage((char *)X, STREAM_DEBUG, TRUE, TRUE);

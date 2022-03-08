@@ -79,15 +79,14 @@ void privateMessageHandler(void) {
 	int sizeOfMessages = sizeof(forthMessages) / sizeof(forthMessages[0]);
 	int sizeOfOsErrors = sizeof(forthOsErrors) / sizeof(forthOsErrors[0]);
 #endif
-	if (errorNumber
+ 	if (errorNumber
 #if defined (__DEVELOP__)
 		&& (errorNumber < sizeOfErrors)
 #endif
 		) {
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "? %s %s # %d", wordBuffer,
 #ifdef ARDUINO
-			(char *)pgm_read_ptr(
-			forthTasks[forthState.forthCurrentTask].forthErrors[forthTasks[forthState.forthCurrentTask].errorNumber].messageText),
+			pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthErrors[forthTasks[forthState.forthCurrentTask].errorNumber].messageText),
 #else
 			forthTasks[forthState.forthCurrentTask].forthErrors[forthTasks[forthState.forthCurrentTask].errorNumber].messageText,
 #endif
@@ -101,8 +100,7 @@ void privateMessageHandler(void) {
 		) {
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%s",
 #ifdef ARDUINO
-			(char *)pgm_read_ptr(
-			forthTasks[forthState.forthCurrentTask].forthMessages[forthTasks[forthState.forthCurrentTask].messageNumber].messageText));
+			pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthMessages[forthTasks[forthState.forthCurrentTask].messageNumber].messageText));
 #else
 			forthTasks[forthState.forthCurrentTask].forthMessages[forthTasks[forthState.forthCurrentTask].messageNumber].messageText);
 #endif
@@ -115,8 +113,7 @@ void privateMessageHandler(void) {
 		) {
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%s",
 #ifdef ARDUINO
-			(char *)pgm_read_ptr(
-			forthTasks[forthState.forthCurrentTask].forthOsErrors[forthTasks[forthState.forthCurrentTask].osErrorNumber].messageText));
+			pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthOsErrors[forthTasks[forthState.forthCurrentTask].osErrorNumber].messageText));
 #else
 			forthTasks[forthState.forthCurrentTask].forthOsErrors[forthTasks[forthState.forthCurrentTask].osErrorNumber].messageText);
 #endif

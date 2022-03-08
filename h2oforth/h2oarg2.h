@@ -12,7 +12,7 @@ void readCode(char* filename) {
 	int nn; /* < 32 */
 	if (fp == NULL) {
 		PSMSG_ERROR("H2oForth - Unable to open a file\n");
-		PERROR(filename); /* TBD */
+		PERROR(filename);
 		PSMSG_ERROR("\n");
 		exit(EXIT_CODE_NOTFOUND);
 	};
@@ -31,7 +31,7 @@ void createDefaultBlock(void) {
 	int fd = _open(filename, O_CREAT | O_WRONLY | O_TRUNC);
 	if (fd == FILEIO_ERROR) {
 		PSMSG_ERROR("H2oForth - Unable to create a blocks file\n");
-		PERROR(filename); /* TBD */
+		PERROR(filename);
 		PSMSG_ERROR("\n");
 	}
 	else {
@@ -94,7 +94,7 @@ void readFile(char* filename) {
 	FILE* fp = fopen(filename, "r");
 	if (fp == NULL) {
 		PSMSG_ERROR("H2oForth - Unable to open a file\n");
-		PERROR(filename); /* TBD */
+		PERROR(filename);
 		PSMSG_ERROR("\n");
 		exit(EXIT_FILE_NOTFOUND);
 	};

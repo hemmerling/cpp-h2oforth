@@ -49,10 +49,10 @@
 #include "h2oarg1.h"
 #endif
 
-#ifdef SYSTEM_INTERACTIVE
+//#ifdef SYSTEM_INTERACTIVE
 /* Support for interactive applications with user input */
 #include "h2oint1.h"
-#endif
+//#endif
 
 /******** State of the FORTH System ********************/
 
@@ -275,7 +275,6 @@ typedef  struct _forthTask {
 #ifdef FLOAT_SUPPORT
 #ifdef FLOAT_ON_DATASTACK
 	int floatFloatIntRatio;
-#else
 #endif
 	int floatStackIndex;
 	CELL_FLOAT floatStackSpace[MAX_FLOATSTACK];
