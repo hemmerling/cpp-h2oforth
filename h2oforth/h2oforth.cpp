@@ -268,7 +268,7 @@ typedef  struct _forthTask {
 	char ioBlockBuffer[MAX_BLOCKBUFFER];
 #endif
 	typedef_forthWordList* forthWordLists;
-  typedef_forthWord* forthWords;
+  //typedef_forthWord* forthWords;
 	typedef_forthMessage* forthErrors;
 	typedef_forthMessage* forthMessages;
 	typedef_forthMessage* forthOsErrors;
@@ -1413,7 +1413,7 @@ void setup(void) {
 		forthTasks[ii].dataStackIndex = 0;
 		forthTasks[ii].returnStackIndex = 0;
 		forthTasks[ii].forthWordLists = (typedef_forthWordList*)forthWordLists;
-    forthTasks[ii].forthWords = (typedef_forthWord*)forthWords;
+    //forthTasks[ii].forthWords = (typedef_forthWord*)forthWords;
 		forthTasks[ii].forthErrors = (typedef_forthMessage*)forthErrors;
 		forthTasks[ii].forthMessages = (typedef_forthMessage*)forthMessages;
 		forthTasks[ii].forthOsErrors = (typedef_forthMessage*)forthOsErrors;

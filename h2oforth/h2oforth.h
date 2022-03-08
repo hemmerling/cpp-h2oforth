@@ -137,12 +137,12 @@
 #undef EXCEPTION_SUPPORT
 //#define EXCEPTION_SUPPORT
 
-//#undef LOWERCASE_BASE_SUPPORT
-#define LOWERCASE_BASE_SUPPORT
+#undef LOWERCASE_BASE_SUPPORT
+//#define LOWERCASE_BASE_SUPPORT
 
 /* FLOAT options start --------- */
 #undef FLOAT_SUPPORT
-#define FLOAT_SUPPORT
+//#define FLOAT_SUPPORT
 
 #ifdef FLOAT_SUPPORT
 //#define FLOATSTD FLOAT_ANS94
@@ -302,15 +302,15 @@
 
 #define COPYRIGHT_MESSAGE "H2oForth by Rolf Hemmerling, (c) 2021-2022, MIT License"
 
-#define MAX_DATASTACK 64
-#define MAX_FLOATSTACK 64
-#define MAX_RETURNSTACK 64
+#define MAX_DATASTACK 32
+#define MAX_FLOATSTACK 32
+#define MAX_RETURNSTACK 32
 /* Blocks are always 1024 bytes */
 #define MAX_BLOCKBUFFER 1024
 #define MAX_FORTHTASKS 1
 
 /* Size of local printBuffer, for use with sprintf() */
-#define MAX_PRINTBUFFER 256
+#define MAX_PRINTBUFFER 128
 
 #define BLOCK_COLUMNS 64
 #define BLOCK_LINES 16
