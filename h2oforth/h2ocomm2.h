@@ -84,10 +84,11 @@ void privateMessageHandler(void) {
 		&& (errorNumber < sizeOfErrors)
 #endif
 		) {
-		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "? %s %s # %d", wordBuffer,
 #ifdef ARDUINO
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "? %s %s # %d", wordBuffer,
 			pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthErrors[forthTasks[forthState.forthCurrentTask].errorNumber].messageText),
 #else
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "? %s %s # %d", wordBuffer,
 			forthTasks[forthState.forthCurrentTask].forthErrors[forthTasks[forthState.forthCurrentTask].errorNumber].messageText,
 #endif
 			forthTasks[forthState.forthCurrentTask].errorNumber);
