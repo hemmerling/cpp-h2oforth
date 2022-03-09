@@ -329,6 +329,38 @@ void taskingCamelDetach(void);
 void taskingCamelAttach(void);
 void taskingCamelPreempt(void);
 
+void taskingGnuNewTask(void);
+void taskingGnuNewTask4(void);
+void taskingGnuActivate(void);
+void taskingGnuInitiate(void);
+void taskingGnuPause(void);
+void taskingGnuUValue(void);
+void taskingGnuStoreFetch(void);
+void taskingGnuAddStoreFetch(void);
+void taskingGnuQStoreFetch(void);
+void taskingGnuBarrier(void);
+void taskingGnuFromEvent(void);
+void taskingGnuEventTo(void);
+void taskingGnuEventColon(void);
+void taskingGnuStop(void);
+void taskingGnuQEvents(void);
+void taskingGnuColonTo(void);
+void taskingGnuSignal(void);
+void taskingGnuBroadcast(void);
+void taskingGnuWait(void);
+void taskingGnuTimedwait(void);
+void taskingGnuLinkTask(void);
+void taskingGnuSleep(void);
+void taskingGnuWake(void);
+void taskingGnuKill(void);
+void taskingGnuParenPassParen(void);
+void taskingGnuPass(void);
+void taskingGnuSingleTaskingQ(void);
+void taskingGnuTaskKeyIor(void);
+void taskingGnuTaskEmit(void);
+void taskingGnuTaskType(void);
+void taskingGnuTaskDeadline(void);
+
 void testingTCurlyBracket(void);
 void testingCurlyBracketT(void);
 
@@ -614,7 +646,6 @@ static const PROGMEM typedef_forthWord taskingWords[] = {
 			{ "SET-TASK", "SET-TASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCSetTask },
 			{ "ACTIVATE", "ACTIVATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCActivate },
 			{ "BACKGROUND", "BACKGROUND", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingFPCBackground }
-
 };
 #endif 
 
@@ -693,6 +724,42 @@ static const PROGMEM typedef_forthWord taskingWords[] = {
 			{ "DETACH", "DETACH", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingCamelDetach },
 			{ "ATTACH", "ATTACH", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingCamelAttach },
 			{ "PREEMPT", "PREEMPT", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingCamelPreempt }
+};
+#endif
+
+#if TASKINGSTANDARD == TASKINGSTD_GNUFORTH
+static const PROGMEM typedef_forthWord taskingWords[] = {
+			{ "newtask", "newtask", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuNewTask },
+			{ "newtask4", "newtask4", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuNewTask4 },
+			{ "activate", "activate", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuActivate },
+			{ "initiate", "initiate", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuInitiate },
+			{ "pause", "pause", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuPause },
+			{ "UValue", "UValue", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuUValue },
+			{ "!@", "!@", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuStoreFetch },
+			{ "+!@", "+!@", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuAddStoreFetch },
+			{ "?!@", "?!@", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuQStoreFetch },
+			{ "barrier", "barrier", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuBarrier },
+			{ "<event", "<event", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuFromEvent },
+			{ "event>", "event>", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuEventTo },
+			{ "event:", "event:", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuEventColon },
+			{ "stop", "stop", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuStop },
+			{ "?events", "?events", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuQEvents },
+			{ ":>", ":>", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuColonTo },
+			{ "pthread_cond_signal", "pthread_cond_signal", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuSignal },
+			{ "pthread_cond_broadcast", "pthread_cond_broadcast", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuBroadcast },
+			{ "pthread_cond_wait", "pthread_cond_wait", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuWait },
+			{ "pthread_cond_timedwait", "pthread_cond_timedwait", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuTimedwait },
+			{ "link-task", "link-task", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuLinkTask },
+			{ "sleep", "sleep", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuSleep },
+			{ "wake", "wake", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuWake },
+			{ "kill", "kill", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuKill },
+			{ "(pass)", "(pass)", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuParenPassParen },
+			{ "pass", "pass", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuPass },
+			{ "single-tasking?", "single-tasking?", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuSingleTaskingQ },
+			{ "task-key-ior", "task-key-ior", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuTaskKeyIor },
+			{ "task-emit", "task-emit", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuTaskEmit },
+			{ "task-type", "task-type", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuTaskType },
+			{ "task-deadline", "task-deadline", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuTaskDeadline }
 };
 #endif
 

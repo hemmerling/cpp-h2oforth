@@ -1507,6 +1507,133 @@ void taskingCamelPreempt(void) {
 
 #endif
 
+#if TASKINGSTANDARD == TASKINGSTD_GNUFORTH
+void taskingGnuNewTask(void) {
+	PSMSG_DEBUG("taskingGnuNewTask")
+}
+
+void taskingGnuNewTask4(void) {
+	PSMSG_DEBUG("taskingGnuNewTask4")
+}
+
+void taskingGnuActivate(void) {
+	PSMSG_DEBUG("taskingGnuActivate")
+}
+
+void taskingGnuInitiate(void) {
+	PSMSG_DEBUG("taskingGnuInitiate")
+}
+
+void taskingGnuPause(void) {
+	PSMSG_DEBUG("taskingGnuPause")
+}
+
+void taskingGnuUValue(void) {
+	PSMSG_DEBUG("taskingGnuUValue")
+}
+
+void taskingGnuStoreFetch(void) {
+	PSMSG_DEBUG("taskingGnuStoreFetch")
+}
+
+void taskingGnuAddStoreFetch(void) {
+	PSMSG_DEBUG("taskingGnuAddStoreFetch")
+}
+
+void taskingGnuQStoreFetch(void) {
+	PSMSG_DEBUG("taskingGnuQStoreFetch")
+}
+
+void taskingGnuBarrier(void) {
+	PSMSG_DEBUG("taskingGnuBarrier")
+}
+
+void taskingGnuFromEvent(void) {
+	PSMSG_DEBUG("taskingGnuFromEvent")
+}
+
+void taskingGnuEventTo(void) {
+	PSMSG_DEBUG("taskingGnuEventTo")
+}
+
+void taskingGnuEventColon(void) {
+	PSMSG_DEBUG("taskingGnuEventColon")
+}
+
+void taskingGnuStop(void) {
+	PSMSG_DEBUG("taskingGnuStop")
+}
+
+void taskingGnuQEvents(void) {
+	PSMSG_DEBUG("taskingGnuQEvents")
+}
+
+void taskingGnuColonTo(void) {
+	PSMSG_DEBUG("taskingGnuColonTo")
+}
+
+void taskingGnuSignal(void) {
+	PSMSG_DEBUG("taskingGnuSignal")
+}
+
+void taskingGnuBroadcast(void) {
+	PSMSG_DEBUG("taskingGnuBroadcast")
+}
+
+void taskingGnuWait(void) {
+	PSMSG_DEBUG("taskingGnuWait")
+}
+
+void taskingGnuTimedwait(void) {
+	PSMSG_DEBUG("taskingGnuTimedwait")
+}
+
+void taskingGnuLinkTask(void) {
+	PSMSG_DEBUG("taskingGnuLinkTask")
+}
+
+void taskingGnuSleep(void) {
+	PSMSG_DEBUG("taskingGnuSleep")
+}
+
+void taskingGnuWake(void) {
+	PSMSG_DEBUG("taskingGnuWake")
+}
+
+void taskingGnuKill(void) {
+	PSMSG_DEBUG("taskingGnuKil")
+}
+
+void taskingGnuParenPassParen(void) {
+	PSMSG_DEBUG("taskingGnuParenPassParen")
+}
+
+void taskingGnuPass(void) {
+	PSMSG_DEBUG("taskingGnuPass")
+}
+
+void taskingGnuSingleTaskingQ(void) {
+	PSMSG_DEBUG("taskingGnuSingleTaskingQ")
+}
+
+void taskingGnuTaskKeyIor(void) {
+	PSMSG_DEBUG("taskingGnuTaskKeyIor")
+}
+
+void taskingGnuTaskEmit(void) {
+	PSMSG_DEBUG("taskingGnuTaskEmit")
+}
+
+void taskingGnuTaskType(void) {
+	PSMSG_DEBUG("taskingGnuTaskType")
+}
+
+void taskingGnuTaskDeadline(void) {
+	PSMSG_DEBUG("taskingGnuTaskDeadline")
+}
+
+#endif
+
 #ifdef TESTING_SUPPORT
 void testingTCurlyBracket(void) {
 	PSMSG_DEBUG("testingTCurlyBracket")

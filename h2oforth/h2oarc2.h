@@ -80,7 +80,7 @@ void ioStorePort(unsigned long varPortAddress, unsigned int varValue) {
 	/* Borland C/C++ 5.5.2 and newer lack of DOS support */
 #endif 
 #endif
-#if defined (_MSC_VER)
+#if defined (_MSC_VER) && !defined(_WIN32)
 	_outpw(locPort, varValue);
 #endif
 #if defined (__DJGPP__)
@@ -107,7 +107,7 @@ unsigned int ioGetPort(unsigned long varPortAddress) {
 	/* Borland C/C++ 5.5.2 and newer lack of DOS support */
 #endif
 #endif
-#if defined (_MSC_VER)
+#if defined (_MSC_VER) && !defined(_WIN32)
 	return(_inpw(locPort));
 #endif
 #if defined (__DJGPP__)

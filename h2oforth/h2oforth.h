@@ -77,6 +77,7 @@
 #define TASKINGSTD_BIG 3
 #define TASKINGSTD_RTF 4
 #define TASKINGSTD_CAMEL 5
+#define TASKINGSTD_GNUFORTH 6
 
 /* XXYYZZBit = Int=XX, PTR=YY, Long(Long)=ZZ */
 #define SYSTEM_ARCHITECTURE_HOST 0
@@ -190,6 +191,7 @@
 //#define TASKINGSTANDARD TASKINGSTD_BIG
 //#define TASKINGSTANDARD TASKINGSTD_RTF
 //#define TASKINGSTANDARD TASKINGSTD_CAMEL
+#define TASKINGSTANDARD TASKINGSTD_GNUFORTH
 
 #undef ERROR_BEHAVIOUR
 #define ERROR_BEHAVIOUR ERROR_CAUSES_IGNORE
@@ -464,6 +466,7 @@
 #endif
 #endif
 #endif
+#endif
 
 #ifdef ARDUINO
 #include <arduino.h>
@@ -513,8 +516,6 @@
 #define DEFAULT 1
 #define INTERNAL1V1 2
 #define INTERNAL2V56 3
-#endif
-
 #endif
 
 #undef UINT_MIN
