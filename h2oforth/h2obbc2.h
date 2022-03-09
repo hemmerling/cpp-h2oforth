@@ -339,6 +339,36 @@ void bbc79Novec(void) {
 }
 
 void bbc79Vlist(void) {
+	int ii = 0;
+	int jj = 0;
+	int nn = 0;
+	int result = FALSE;
+	int lenForthWordLists = sizeof(forthWordLists) /
+		sizeof(forthWordLists[0]);
+	for (ii = 0; ii < lenForthWordLists; ii++) {
+		for (jj = 0; jj < forthTasks[forthState.forthCurrentTask].forthWordLists[ii].lenForthWords; jj++) {
+#ifdef ARDUINO
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%s ",
+			 pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName);
+#else
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%s ",
+			 forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName);
+#endif
+		 SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
+#ifdef __DEBUG__
+#ifdef ARDUINO
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%d\n",
+			 pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordNumber);
+#else
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%d\n",
+			 forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordNumber);
+#endif
+		 SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
+#endif
+
+		};
+	};
+	CMSG_SUCCESS(CHAR_CR);
 	PSMSG_DEBUG("bbc79Vlist")
 }
 

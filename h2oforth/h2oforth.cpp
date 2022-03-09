@@ -244,6 +244,7 @@ static const PROGMEM char aListOfAllBases[NUMBERTABLE_SIZE] = { '-', '0', '1', '
 	 ',', '.' };
 static const PROGMEM char aListofFloat[] = { '-', '+', '.', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'E', ',' };
 static const PROGMEM char aListofExponent[] = { '-', '+', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ',' };
+static const PROGMEM char aListofNewWord[] = { ':', ';'};
 
 /******** Typedefs ********************/
 
@@ -1142,6 +1143,12 @@ int isPermWord(void) {
 	return(result);
 }
 
+/* Create new word */
+/* TBD, does not work */
+int isNewWord(void) {
+	int result = FALSE;
+	return(result);
+}
 
 /* Parse the terminal input buffer (tib) */
 void forthParseTib(void) {

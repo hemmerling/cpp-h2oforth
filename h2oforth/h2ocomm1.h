@@ -366,20 +366,20 @@ void testingCurlyBracketT(void);
 
 
 static const PROGMEM typedef_forthWord commonWords[] = {
-			{ "OCTAL", "OCTAL", TRUE, FALSE, FALSE, 0UL, (forthOperation)commonOctal },
-			{ "HEX.", "HEX.", TRUE, FALSE, FALSE, 0UL, (forthOperation)commonHexDot },
-			{ "OCT.", "OCT.", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)commonOctDot },
-			{ "R.S", "R.S", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)commonRDotS },
+	{ "OCTAL", "OCTAL", TRUE, FALSE, FALSE, 2048UL, (forthOperation)commonOctal },
+	{ "HEX.", "HEX.", TRUE, FALSE, FALSE, 2049UL, (forthOperation)commonHexDot },
+	{ "OCT.", "OCT.", TRUE, FALSE, FALSE, 2050UL, (forthOperation)commonOctDot },
+	{ "R.S", "R.S", TRUE, FALSE, FALSE, 2051UL, (forthOperation)commonRDotS },
 };
 
 
 #ifdef EXCEPTION_SUPPORT
 static const PROGMEM typedef_forthWord exceptionWords[] = {
-			{ "ABORT", "ABORT", TRUE, FALSE, FALSE, 0UL, (forthOperation)exceptionAbort },
-			{ "ABORT\"", "ABORT\"", TRUE, FALSE, FALSE, 0UL, (forthOperation)exceptionAbortQ },
-			{ "CATCH", "CATCH", TRUE, FALSE, FALSE, 0UL, (forthOperation)exceptionCatch },
-			{ "QUIT", "QUIT", TRUE, FALSE, FALSE, 0UL, (forthOperation)exceptionQuit },
-			{ "THROW", "THROW", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)exceptionThrow }
+	{ "ABORT", "ABORT", TRUE, FALSE, FALSE, 3072UL, (forthOperation)exceptionAbort },
+	{ "ABORT\"", "ABORT\"", TRUE, FALSE, FALSE, 3073UL, (forthOperation)exceptionAbortQ },
+	{ "CATCH", "CATCH", TRUE, FALSE, FALSE, 3074UL, (forthOperation)exceptionCatch },
+	{ "QUIT", "QUIT", TRUE, FALSE, FALSE, 3075UL, (forthOperation)exceptionQuit },
+	{ "THROW", "THROW", TRUE, FALSE, FALSE, 3076UL, (forthOperation)exceptionThrow }
 };
 #endif
 
@@ -387,7 +387,7 @@ static const PROGMEM typedef_forthWord exceptionWords[] = {
 #if (FLOATSTD == FLOAT_ANS94) || (FLOATSTD == FLOAT_FORTH2012)
 static const PROGMEM typedef_forthWord fpointWords[] = {
 	/* Floating-Point extension words */
-	{ "DF!", "DF!", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointDFStore },
+	{ "DF!", "DF!", TRUE, FALSE, FALSE, 4096UL, (forthOperation)fpointDFStore },
 	{ "DF@", "DF@", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointDFFetch },
 	{ "DFALIGN", "DFALIGNED", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointDFAlign },
 	{ "DFFIELD:", "DFFIELD:", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointDFFieldColon },
@@ -470,69 +470,69 @@ static const PROGMEM typedef_forthWord fpointWords[] = {
 #endif
 #if (FLOATSTD == FLOAT_JUPITER)
 static const PROGMEM typedef_forthWord fpointWords[] = {
-			{ "UFLOAT", "UFLOAT", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointUFLoat },
-			{ "INT", "INT", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointInt },
-			{ "FNEGATE", "FNEGATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFNegate },
-			{ "F/", "F/", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFSlash },
-			{ "F*", "F*", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFStar },
-			{ "F+", "F+", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFPlus },
-			{ "F-", "F-", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFMinus },
-			{ "F.", "F.", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDot }
+	{ "UFLOAT", "UFLOAT", TRUE, FALSE, FALSE, 4096UL, (forthOperation)fpointUFLoat },
+	{ "INT", "INT", TRUE, FALSE, FALSE, 4097UL, (forthOperation)fpointInt },
+	{ "FNEGATE", "FNEGATE", TRUE, FALSE, FALSE, 4098UL, (forthOperation)fpointFNegate },
+	{ "F/", "F/", TRUE, FALSE, FALSE, 4099UL, (forthOperation)fpointFSlash },
+	{ "F*", "F*", TRUE, FALSE, FALSE, 5000UL, (forthOperation)fpointFStar },
+	{ "F+", "F+", TRUE, FALSE, FALSE, 5001UL, (forthOperation)fpointFPlus },
+	{ "F-", "F-", TRUE, FALSE, FALSE, 5002UL, (forthOperation)fpointFMinus },
+	{ "F.", "F.", TRUE, FALSE, FALSE, 5003UL, (forthOperation)fpointFDot }
 };
 #endif
 #if (FLOATSTD == FLOAT_NELSON)
 static const PROGMEM typedef_forthWord fpointWords[] = {
-			{ "F.S", "f.s", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDotS },
-			{ "F.", "f.", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDot },
-			{ "#FS", "#fs", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointNumFS },
-			{ "SET-PRECISION", "set-precision", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSetPrecision },
-			{ "PRECISION", "precision", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointPrecision },
-			{ "FSQRT", "fsqrt", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFSqrt },
-			{ "PI", "pi", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointPi },
-			{ "FVARIABLE", "fvariable", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFVariable },
-			{ "FCONSTANT", "fconstant", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFConstant },
-			{ "FLITERAL", "fliteral", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFLiteral },
-			{ "AFLITERAL", "afliteral", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointAFLiteral },
-			{ "SF,", "sf,", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFComma },
-			{ "SFLOAT+", "sfloat+", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFloatPlus },
-			{ "SFLOATS", "sfloats", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFloats },
-			{ "SFLOAT", "sfloat", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFloat },
-			{ "F>=", "f>=", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFGreaterEqual },
-			{ "F<=", "f<=", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFLessEqual },
-			{ "F<>", "f<>", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFUnequal },
-			{ "F>", "f>", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFGreater },
-			{ "F<", "f<", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFLess },
-			{ "F=", "f=", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFEqual },
-			{ "FG", "fg", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFg },
-			{ "FDEPTH", "fdepth", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDepth },
-			{ "FP0", "fp0", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFP0 },
-			{ "F>NUMBER?", "F>NUMBER?", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFGreaterNumberQ },
-			{ "F>S", "F>S", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFToS },
-			{ "S>F", "S>F", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSToF },
-			{ "1/F", "1/F", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointOneSlashF },
-			{ "F/", "F/", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFSlash },
-			{ "F*", "F*", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFStar },
-			{ "F-", "F-", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFMinus },
-			{ "F+", "F+", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFPlus },
-			{ "F0=", "F0=", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointF0Equal },
-			{ "F0<>", "F0<", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointF0Less },
-			{ "FNEGATE", "FNEGATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFNegate },
-			{ "FSWA", "FSWA", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFswa },
-			{ "FOVER", "FOVER", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFOver },
-			{ "FDROP", "FDROP", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDrop },
-			{ "FNIP", "FNIP", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFNip },
-			{ "FDUP", "FDUP", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDup },
-			{ "SF!", "SF!", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFStore },
-			{ "SF@", "SF@", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFFetch },
-			{ "SF", "SF", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSF },
-			{ "FP!", "FP!", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFPStore },
-			{ "FP@", "FP@", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFPFetch }
+	{ "F.S", "f.s", TRUE, FALSE, FALSE, 4096UL, (forthOperation)fpointFDotS },
+	{ "F.", "f.", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDot },
+	{ "#FS", "#fs", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointNumFS },
+	{ "SET-PRECISION", "set-precision", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSetPrecision },
+	{ "PRECISION", "precision", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointPrecision },
+	{ "FSQRT", "fsqrt", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFSqrt },
+	{ "PI", "pi", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointPi },
+	{ "FVARIABLE", "fvariable", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFVariable },
+	{ "FCONSTANT", "fconstant", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFConstant },
+	{ "FLITERAL", "fliteral", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFLiteral },
+	{ "AFLITERAL", "afliteral", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointAFLiteral },
+	{ "SF,", "sf,", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFComma },
+	{ "SFLOAT+", "sfloat+", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFloatPlus },
+	{ "SFLOATS", "sfloats", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFloats },
+	{ "SFLOAT", "sfloat", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFloat },
+	{ "F>=", "f>=", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFGreaterEqual },
+	{ "F<=", "f<=", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFLessEqual },
+	{ "F<>", "f<>", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFUnequal },
+	{ "F>", "f>", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFGreater },
+	{ "F<", "f<", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFLess },
+	{ "F=", "f=", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFEqual },
+	{ "FG", "fg", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFg },
+	{ "FDEPTH", "fdepth", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDepth },
+	{ "FP0", "fp0", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFP0 },
+	{ "F>NUMBER?", "F>NUMBER?", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFGreaterNumberQ },
+	{ "F>S", "F>S", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFToS },
+	{ "S>F", "S>F", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSToF },
+	{ "1/F", "1/F", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointOneSlashF },
+	{ "F/", "F/", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFSlash },
+	{ "F*", "F*", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFStar },
+	{ "F-", "F-", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFMinus },
+	{ "F+", "F+", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFPlus },
+	{ "F0=", "F0=", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointF0Equal },
+	{ "F0<>", "F0<", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointF0Less },
+	{ "FNEGATE", "FNEGATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFNegate },
+	{ "FSWA", "FSWA", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFswa },
+	{ "FOVER", "FOVER", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFOver },
+	{ "FDROP", "FDROP", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDrop },
+	{ "FNIP", "FNIP", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFNip },
+	{ "FDUP", "FDUP", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDup },
+	{ "SF!", "SF!", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFStore },
+	{ "SF@", "SF@", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSFFetch },
+	{ "SF", "SF", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointSF },
+	{ "FP!", "FP!", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFPStore },
+	{ "FP@", "FP@", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFPFetch }
 };
 #endif
 #if (FLOATSTD == FLOAT_TURBO)
 static const PROGMEM typedef_forthWord fpointWords[] = {
 	/* 10 Floating-Point Stack Manipulation Words */
-	{ "FDUP", "FDUP", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDup },
+	{ "FDUP", "FDUP", TRUE, FALSE, FALSE, 4096UL, (forthOperation)fpointFDup },
 	{ "FDROP", "FDROP", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFDrop },
 	{ "FSWAP", "FSWAP", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFSwap },
 	{ "FOVER", "FOVER", TRUE, FALSE, FALSE, 0UL, (forthOperation)fpointFOver },
@@ -608,166 +608,166 @@ static const PROGMEM typedef_forthWord fpointWords[] = {
 
 #if TASKINGSTANDARD == TASKINGSTD_FORTH83
 static const PROGMEM typedef_forthWord taskingWords[] = {
-			{ "TSKALLOT", "TSKALLOT", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Allot },
-			{ "TSKCREATE", "TSKCREATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Create },
-			{ "TSKVARIABLE", "TSKVARIABLE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Variable },
-			{ "TSKDEFER", "TSKDEFER", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Defer },
-			{ "PAUSE", "PAUSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Pause },
-			{ "RESTART", "RESTART", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Restart },
-			{ "LOCAL", "LOCAL", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Local },
-			{ "@LINK", "@LINK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83FetchLink },
-			{ "!LINK", "!LINK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83StoreLink },
-			{ "SLEEP", "SLEEP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Sleep },
-			{ "WAKE", "WAKE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Wake },
-			{ "STOP", "STOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Stop },
-			{ "MULTI", "MULTI", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Multi },
-			{ "SINGLE", "SINGLE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Single },
-			{ "TASK", "TASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Task },
-			{ "SET-TASK", "SET-TASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83SetTask },
-			{ "ACTIVATE", "ACTIVATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Activate },
-			{ "BACKGROUND", "BACKGROUND", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingF83Background }
+	{ "TSKALLOT", "TSKALLOT", TRUE, FALSE, FALSE, 5120UL, (forthOperation)taskingF83Allot },
+	{ "TSKCREATE", "TSKCREATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Create },
+	{ "TSKVARIABLE", "TSKVARIABLE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Variable },
+	{ "TSKDEFER", "TSKDEFER", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Defer },
+	{ "PAUSE", "PAUSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Pause },
+	{ "RESTART", "RESTART", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Restart },
+	{ "LOCAL", "LOCAL", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Local },
+	{ "@LINK", "@LINK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83FetchLink },
+	{ "!LINK", "!LINK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83StoreLink },
+	{ "SLEEP", "SLEEP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Sleep },
+	{ "WAKE", "WAKE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Wake },
+	{ "STOP", "STOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Stop },
+	{ "MULTI", "MULTI", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Multi },
+	{ "SINGLE", "SINGLE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Single },
+	{ "TASK", "TASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Task },
+	{ "SET-TASK", "SET-TASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83SetTask },
+	{ "ACTIVATE", "ACTIVATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingF83Activate },
+	{ "BACKGROUND", "BACKGROUND", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingF83Background }
 };
 #endif
 
 #if TASKINGSTANDARD == TASKINGSTD_FPC
 static const PROGMEM typedef_forthWord taskingWords[] = {
-			{ "PAUSE", "PAUSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCPause },
-			{ "RESTART", "RESTART", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCRestart },
-			{ "LOCAL", "LOCAL", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCLocal },
-			{ "@LINK", "@LINK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCFetchLink },
-			{ "!LINK", "!LINK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCStoreLink },
-			{ "SLEEP", "SLEEP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCSleep },
-			{ "WAKE", "WAKE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCWake },
-			{ "STOP", "STOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCStop },
-			{ "SINGLE", "SINGLE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCSingle },
-			{ "MULTI", "MULTI", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCMulti },
-			{ "WAKE", "WAKE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCWake },
-			{ "TASK", "TASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCTask },
-			{ "SET-TASK", "SET-TASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCSetTask },
-			{ "ACTIVATE", "ACTIVATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCActivate },
-			{ "BACKGROUND", "BACKGROUND", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingFPCBackground }
+	{ "PAUSE", "PAUSE", TRUE, FALSE, FALSE, 5120UL, (forthOperation)taskingFPCPause },
+	{ "RESTART", "RESTART", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCRestart },
+	{ "LOCAL", "LOCAL", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCLocal },
+	{ "@LINK", "@LINK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCFetchLink },
+	{ "!LINK", "!LINK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCStoreLink },
+	{ "SLEEP", "SLEEP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCSleep },
+	{ "WAKE", "WAKE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCWake },
+	{ "STOP", "STOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCStop },
+	{ "SINGLE", "SINGLE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCSingle },
+	{ "MULTI", "MULTI", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCMulti },
+	{ "WAKE", "WAKE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCWake },
+	{ "TASK", "TASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCTask },
+	{ "SET-TASK", "SET-TASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCSetTask },
+	{ "ACTIVATE", "ACTIVATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingFPCActivate },
+	{ "BACKGROUND", "BACKGROUND", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingFPCBackground }
 };
 #endif 
 
 #if TASKINGSTANDARD == TASKINGSTD_VOLK
 static const PROGMEM typedef_forthWord taskingWords[] = {
-			{ "ACTIVATE", "ACTIVATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkActivate },
-			{ "LOCK", "LOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkLock },
-			{ "MULTITASK", "MULTITASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkMultiTask },
-			{ "PASS", "PASS", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkPass },
-			{ "PAUSE", "PAUSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkPause },
-			{ "RENDEZVOUS", "RENDEZVOUS", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkRendezvous },
-			{ "SINGLETASK", "SINGLETASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkSingleTask },
-			{ "SLEEP", "SLEEP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkSleep },
-			{ "STOP", "STOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkStop },
-			/*			{ "TASKER.SCR", "TASKER.SCR", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingTaskerDotScr }, */
-						{ "TASK", "TASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkTask },
-						{ "TASKS", "TASKS", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkTasks },
-						{ "UNLOCK", "UNLOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkUnlock },
-						{ "STOP", "STOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkStop },
-						{ "WAKE", "WAKE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkWake },
-						{ "UP@", "UP@", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkUPFetch },
-						{ "UP!", "UP!", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingVolkUPStore }
+	{ "ACTIVATE", "ACTIVATE", TRUE, FALSE, FALSE, 5120UL, (forthOperation)taskingVolkActivate },
+	{ "LOCK", "LOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkLock },
+	{ "MULTITASK", "MULTITASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkMultiTask },
+	{ "PASS", "PASS", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkPass },
+	{ "PAUSE", "PAUSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkPause },
+	{ "RENDEZVOUS", "RENDEZVOUS", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkRendezvous },
+	{ "SINGLETASK", "SINGLETASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkSingleTask },
+	{ "SLEEP", "SLEEP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkSleep },
+	{ "STOP", "STOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkStop },
+/*	{ "TASKER.SCR", "TASKER.SCR", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingTaskerDotScr }, */
+	{ "TASK", "TASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkTask },
+	{ "TASKS", "TASKS", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkTasks },
+	{ "UNLOCK", "UNLOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkUnlock },
+	{ "STOP", "STOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkStop },
+	{ "WAKE", "WAKE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkWake },
+	{ "UP@", "UP@", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingVolkUPFetch },
+	{ "UP!", "UP!", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingVolkUPStore }
 };
 #endif
 
 #if TASKINGSTANDARD == TASKINGSTD_BIG
 static const PROGMEM typedef_forthWord taskingWords[] = {
 	/* Der Tasker */
-/*			{ "TASKER.SCR", "TASKER.SCR", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigTaskerDotScr }, */
-			{ "STOP", "STOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigStop },
-			{ "SINGLETASK", "SINGLETASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigSingleTask },
-			{ "MULTITASK", "MULTITASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigMultiTask },
-			{ "ACTIVATE", "ACTIVATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigActivate },
-			{ "PASS", "PASS", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigPass },
-			{ "AUTOSTART", "AUTOSTART", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigAutostart },
-			{ "SLEEP", "SLEEP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigSleep },
-			{ "WAKE", "WAKE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigWake },
-			{ "TIMER@", "TIMER@", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigTimerFetch },
-			{ "SYNCTIME", "SYNCTIME", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigSyncTime },
-			{ "SYNC!", "SYNC!", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigSyncStore },
-			{ "SYNC", "SYNC", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigSync },
-			{ "TASK", "TASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigTask },
-			{ "RENDEZVOUS", "RENDEZVOUS", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigRendezvous },
-			{ "S'", "S'", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigSTick },
-			{ "TASKS", "TASKS", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigTasks },
-			{ "CLOCKTASK", "CLOCKTASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigClockTask },
-			{ "CLOCK", "CLOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigClock },
-			{ "WAITC", "WAITC", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigWaitC },
-			{ "STARTC", "STARTC", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigStartC },
-			{ "NOCLOCK", "NOCLOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigNoClock },
-			{ "SETCLOCK", "SETCLOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigSetClock },
+/*	{ "TASKER.SCR", "TASKER.SCR", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigTaskerDotScr }, */
+	{ "STOP", "STOP", TRUE, FALSE, FALSE, 5120UL, (forthOperation)taskingBigStop },
+	{ "SINGLETASK", "SINGLETASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigSingleTask },
+	{ "MULTITASK", "MULTITASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigMultiTask },
+	{ "ACTIVATE", "ACTIVATE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigActivate },
+	{ "PASS", "PASS", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigPass },
+	{ "AUTOSTART", "AUTOSTART", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigAutostart },
+	{ "SLEEP", "SLEEP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigSleep },
+	{ "WAKE", "WAKE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigWake },
+	{ "TIMER@", "TIMER@", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigTimerFetch },
+	{ "SYNCTIME", "SYNCTIME", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigSyncTime },
+	{ "SYNC!", "SYNC!", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigSyncStore },
+	{ "SYNC", "SYNC", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigSync },
+	{ "TASK", "TASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigTask },
+	{ "RENDEZVOUS", "RENDEZVOUS", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigRendezvous },
+	{ "S'", "S'", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigSTick },
+	{ "TASKS", "TASKS", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigTasks },
+	{ "CLOCKTASK", "CLOCKTASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigClockTask },
+	{ "CLOCK", "CLOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigClock },
+	{ "WAITC", "WAITC", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigWaitC },
+	{ "STARTC", "STARTC", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigStartC },
+	{ "NOCLOCK", "NOCLOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigNoClock },
+	{ "SETCLOCK", "SETCLOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigSetClock },
 			/* Tasker Primitives */
-			{ "PAUSE", "PAUSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigPause },
-			{ "LOCK", "LOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigLock },
-			{ "UNLOCK", "UNLOCK", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingBigUnlock }
+	{ "PAUSE", "PAUSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigPause },
+	{ "LOCK", "LOCK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingBigLock },
+	{ "UNLOCK", "UNLOCK", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingBigUnlock }
 };
 #endif
 
 #if TASKINGSTANDARD == TASKINGSTD_RTF
 static const PROGMEM typedef_forthWord taskingWords[] = {
-			{ "SINGLE", "SINGLE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfSingle },
-			{ "MULTI", "MULTI", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfMulti },
-			{ "BACKGROUND", "BACKGROUND", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfBackground },
-			{ "WAKE", "WAKE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfWake },
-			{ "SLEEP", "SLEEP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfSleep },
-			{ "STOP", "STOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfStop },
-			{ "PAUSE", "PAUSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfPause },
-			{ "ACTIVATE", "ACTIVATE", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingRtfActivate }
+	{ "SINGLE", "SINGLE", TRUE, FALSE, FALSE, 5120UL, (forthOperation)taskingRtfSingle },
+	{ "MULTI", "MULTI", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfMulti },
+	{ "BACKGROUND", "BACKGROUND", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfBackground },
+	{ "WAKE", "WAKE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfWake },
+	{ "SLEEP", "SLEEP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfSleep },
+	{ "STOP", "STOP", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfStop },
+	{ "PAUSE", "PAUSE", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingRtfPause },
+	{ "ACTIVATE", "ACTIVATE", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)taskingRtfActivate }
 };
 #endif
 
 #if TASKINGSTANDARD == TASKINGSTD_CAMEL
 static const PROGMEM typedef_forthWord taskingWords[] = {
-			{ "SWITCH", "SWITCH", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingCamelSwitch },
-			{ "INITTASK", "INITTASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingCamelInitTask },
-			{ "DETACH", "DETACH", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingCamelDetach },
-			{ "ATTACH", "ATTACH", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingCamelAttach },
-			{ "PREEMPT", "PREEMPT", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingCamelPreempt }
+	{ "SWITCH", "SWITCH", TRUE, FALSE, FALSE, 5120UL, (forthOperation)taskingCamelSwitch },
+	{ "INITTASK", "INITTASK", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingCamelInitTask },
+	{ "DETACH", "DETACH", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingCamelDetach },
+	{ "ATTACH", "ATTACH", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingCamelAttach },
+	{ "PREEMPT", "PREEMPT", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingCamelPreempt }
 };
 #endif
 
 #if TASKINGSTANDARD == TASKINGSTD_GNUFORTH
 static const PROGMEM typedef_forthWord taskingWords[] = {
-			{ "newtask", "newtask", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuNewTask },
-			{ "newtask4", "newtask4", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuNewTask4 },
-			{ "activate", "activate", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuActivate },
-			{ "initiate", "initiate", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuInitiate },
-			{ "pause", "pause", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuPause },
-			{ "UValue", "UValue", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuUValue },
-			{ "!@", "!@", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuStoreFetch },
-			{ "+!@", "+!@", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuAddStoreFetch },
-			{ "?!@", "?!@", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuQStoreFetch },
-			{ "barrier", "barrier", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuBarrier },
-			{ "<event", "<event", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuFromEvent },
-			{ "event>", "event>", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuEventTo },
-			{ "event:", "event:", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuEventColon },
-			{ "stop", "stop", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuStop },
-			{ "?events", "?events", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuQEvents },
-			{ ":>", ":>", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuColonTo },
-			{ "pthread_cond_signal", "pthread_cond_signal", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuSignal },
-			{ "pthread_cond_broadcast", "pthread_cond_broadcast", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuBroadcast },
-			{ "pthread_cond_wait", "pthread_cond_wait", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuWait },
-			{ "pthread_cond_timedwait", "pthread_cond_timedwait", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuTimedwait },
-			{ "link-task", "link-task", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuLinkTask },
-			{ "sleep", "sleep", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuSleep },
-			{ "wake", "wake", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuWake },
-			{ "kill", "kill", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuKill },
-			{ "(pass)", "(pass)", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuParenPassParen },
-			{ "pass", "pass", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuPass },
-			{ "single-tasking?", "single-tasking?", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuSingleTaskingQ },
-			{ "task-key-ior", "task-key-ior", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuTaskKeyIor },
-			{ "task-emit", "task-emit", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuTaskEmit },
-			{ "task-type", "task-type", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuTaskType },
-			{ "task-deadline", "task-deadline", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuTaskDeadline }
+	{ "newtask", "newtask", TRUE, FALSE, FALSE, 5120UL, (forthOperation)taskingGnuNewTask },
+	{ "newtask4", "newtask4", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuNewTask4 },
+	{ "activate", "activate", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuActivate },
+	{ "initiate", "initiate", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuInitiate },
+	{ "pause", "pause", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuPause },
+	{ "UValue", "UValue", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuUValue },
+	{ "!@", "!@", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuStoreFetch },
+	{ "+!@", "+!@", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuAddStoreFetch },
+	{ "?!@", "?!@", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuQStoreFetch },
+	{ "barrier", "barrier", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuBarrier },
+	{ "<event", "<event", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuFromEvent },
+	{ "event>", "event>", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuEventTo },
+	{ "event:", "event:", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuEventColon },
+	{ "stop", "stop", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuStop },
+	{ "?events", "?events", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuQEvents },
+	{ ":>", ":>", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuColonTo },
+	{ "pthread_cond_signal", "pthread_cond_signal", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuSignal },
+	{ "pthread_cond_broadcast", "pthread_cond_broadcast", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuBroadcast },
+	{ "pthread_cond_wait", "pthread_cond_wait", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuWait },
+	{ "pthread_cond_timedwait", "pthread_cond_timedwait", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuTimedwait },
+	{ "link-task", "link-task", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuLinkTask },
+	{ "sleep", "sleep", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuSleep },
+	{ "wake", "wake", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuWake },
+	{ "kill", "kill", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuKill },
+	{ "(pass)", "(pass)", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuParenPassParen },
+	{ "pass", "pass", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuPass },
+	{ "single-tasking?", "single-tasking?", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuSingleTaskingQ },
+	{ "task-key-ior", "task-key-ior", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuTaskKeyIor },
+	{ "task-emit", "task-emit", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuTaskEmit },
+	{ "task-type", "task-type", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuTaskType },
+	{ "task-deadline", "task-deadline", TRUE, FALSE, FALSE, 0UL, (forthOperation)taskingGnuTaskDeadline }
 };
 #endif
 
 
 #ifdef TESTING_SUPPORT
 static const PROGMEM typedef_forthWord testingWords[] = {
-			{ "T{", "T{", TRUE, FALSE, FALSE, 0UL, (forthOperation)testingTCurlyBracket },
-			{ "}T", "}T", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)testingCurlyBracketT }
+	{ "T{", "T{", TRUE, FALSE, FALSE, 6144UL, (forthOperation)testingTCurlyBracket },
+	{ "}T", "}T", TRUE, FALSE, FALSE, 6145UL, (forthOperation)testingCurlyBracketT }
 };
 #endif
 
