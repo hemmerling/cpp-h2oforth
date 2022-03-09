@@ -142,7 +142,7 @@
 
 /* FLOAT options start --------- */
 #undef FLOAT_SUPPORT
-//#define FLOAT_SUPPORT
+#define FLOAT_SUPPORT
 
 #ifdef FLOAT_SUPPORT
 //#define FLOATSTD FLOAT_ANS94
@@ -174,6 +174,9 @@
    so that the input from the input window is echoed to the output window  
  */
 #define ARDUINO_SERIAL_MONITOR
+
+/* Just for fun, switch the internal LED after each processed FORTH word */
+#define ARDUINO_SWITCH_LIGHT
 
 /* ARDUINO options end ----------- */
 
@@ -610,13 +613,21 @@
 #define PCMSG_WARNING(X) {privateCMessage(pgm_read_byte(X), STREAM_WARNING);};
 #define PCMSG_VERBOSE(X) {privateCMessage(pgm_read_byte(X),  STREAM_VERBOSE);};
 #define PCMSG_INFORMATION(X) {privateCMessage(pgm_read_byte(X),  STREAM_INFORMATION);};
-#define PSMSG_SUCCESS(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_SUCCESS, FALSE, FALSE);};
-#define PSMSG_SUCCESS_CR(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_SUCCESS, FALSE, TRUE);};
-#define PSMSG_SUCCESS2(X,CR1,CR2) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_SUCCESS, CR1, CR2);};
-#define PSMSG_ERROR(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_ERROR, TRUE, TRUE);};
-#define PSMSG_WARNING(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_WARNING, TRUE, TRUE);};
-#define PSMSG_VERBOSE(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_VERBOSE, TRUE, TRUE);};
-#define PSMSG_INFORMATION(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_INFORMATION, TRUE, TRUE);};
+#define PRINT_BUFFER forthTasks[forthState.forthCurrentTask].printBuffer
+#define PSMSG_SUCCESS(X) {strcpy_P(PRINT_BUFFER, PSTR(X)); privateSMessage(PRINT_BUFFER, STREAM_SUCCESS, FALSE, FALSE);};
+#define PSMSG_SUCCESS_CR(X) {strcpy_P(PRINT_BUFFER, PSTR(X)); privateSMessage(PRINT_BUFFER, STREAM_SUCCESS, FALSE, TRUE);};
+#define PSMSG_SUCCESS2(X,CR1,CR2) {strcpy_P(PRINT_BUFFER, PSTR(X)); privateSMessage(PRINT_BUFFER, STREAM_SUCCESS, CR1, CR2);};
+#define PSMSG_ERROR(X) {strcpy_P(PRINT_BUFFER, PSTR(X)); privateSMessage(PRINT_BUFFER, STREAM_ERROR, TRUE, TRUE);};
+#define PSMSG_WARNING(X) {strcpy_P(PRINT_BUFFER, PSTR(X)); privateSMessage(PRINT_BUFFER, STREAM_WARNING, TRUE, TRUE);};
+#define PSMSG_VERBOSE(X) {strcpy_P(PRINT_BUFFER, PSTR(X)); privateSMessage(PRINT_BUFFER, STREAM_VERBOSE, TRUE, TRUE);};
+#define PSMSG_INFORMATION(X) {strcpy_P(PRINT_BUFFER, PSTR(X)); privateSMessage(PRINT_BUFFER, STREAM_INFORMATION, TRUE, TRUE);};
+//#define PSMSG_SUCCESS(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_SUCCESS, FALSE, FALSE);};
+//#define PSMSG_SUCCESS_CR(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_SUCCESS, FALSE, TRUE);};
+//#define PSMSG_SUCCESS2(X,CR1,CR2) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_SUCCESS, CR1, CR2);};
+//#define PSMSG_ERROR(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_ERROR, TRUE, TRUE);};
+//#define PSMSG_WARNING(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_WARNING, TRUE, TRUE);};
+//#define PSMSG_VERBOSE(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_VERBOSE, TRUE, TRUE);};
+//#define PSMSG_INFORMATION(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_INFORMATION, TRUE, TRUE);};
 #else
 #define PCMSG_SUCCESS(X) privateCMessage(X, STREAM_SUCCESS);
 #define PCMSG_ERROR(X) privateCMessage(X, STREAM_ERROR);
@@ -637,12 +648,9 @@
 #ifdef ARDUINO
 #define PCMSG_DEBUG(X) privateCMessage(pgm_read_byte(X), STREAM_DEBUG);
 //#define PSMSG_DEBUG(X) privateSMessage((char *)X, STREAM_DEBUG, TRUE, TRUE);
-#define PSMSG_DEBUG(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_DEBUG, TRUE, TRUE);};
-/* This macro works :-): */
+#define PSMSG_DEBUG(X) {strcpy_P(PRINT_BUFFER, PSTR(X)); privateSMessage(PRINT_BUFFER, STREAM_DEBUG, TRUE, TRUE);};
+//#define PSMSG_DEBUG(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_DEBUG, TRUE, TRUE);};
 //#define PSMSG_DEBUG(X) {FPUTC_ERR(CHAR_CR); FPUTS_ERR(F(X)); FPUTC_ERR(CHAR_CR);};
-/* These macros don´t not (yet) work :-(: */
-//#define PSMSG_DEBUG(X) privateSMessage(F(X), STREAM_DEBUG, TRUE, TRUE);
-//#define PSMSG_DEBUG(X) privateSMessage(PSTR(X), STREAM_DEBUG, TRUE, TRUE);
 #else
 #define PCMSG_DEBUG(X) privateCMessage(X, STREAM_DEBUG);
 #define PSMSG_DEBUG(X) privateSMessage((char *)X, STREAM_DEBUG, TRUE, TRUE);

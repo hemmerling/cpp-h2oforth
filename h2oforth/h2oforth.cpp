@@ -301,6 +301,11 @@ static const typedef_forthWordList forthWordLists[] = {
 		, {sizeof(forthWords) / sizeof(forthWords[0]), forthWords}
 };
 
+#if defined(ARDUINO) && defined(ARDUINO_SWITCH_LIGHT)
+/* Switch LED on and off */
+int ledSwitch = 0;
+#endif
+
 /******** FORTH Primitives ********************/
 
 #include "h2oarc2.h"
@@ -1189,90 +1194,6 @@ void forthParseTib(void) {
 					", isWordFound = [%d]", isWordFound);
 				PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
-
-//#define POINTER_TEST
-#ifdef POINTER_TEST
-    static const char string_0[] PROGMEM = "String 0"; // Definiere deine Strings "String 0" ist hier nur ein Beispiel
-    static const char string_1[] PROGMEM = "String 1"; // Definiere deine Strings "String 1" ist hier nur ein Beispiel
-    static const char string_2[] PROGMEM = "String 2"; // Definiere deine Strings "String 2" ist hier nur ein Beispiel
-    static const char string_3[] PROGMEM = "String 3"; // Definiere deine Strings "String 3" ist hier nur ein Beispiel
-    static const char string_4[] PROGMEM = "String 4"; // Definiere deine Strings "String 4" ist hier nur ein Beispiel
-    static const char string_5[] PROGMEM = "String 5"; // Definiere deine Strings "String 5" ist hier nur ein Beispiel
-
-    // Initialisiere die Tabelle von Strings
-    static const char* const string_table[] PROGMEM = { string_0, string_1, string_2, string_3, string_4, string_5 };
-    char buffer[30];
-
-    typedef  struct _forthWord2 {
-      const char* forthWordName;
-    } typedef_forthWord2;
-
-    static const PROGMEM typedef_forthWord2 forthWord2 = { "TEST2" };
-    static const PROGMEM typedef_forthWord2 forthWord3[] = { "TEST3a", "TEST3b" };
-
-    static const PROGMEM char forthWord4a[] = "Single TEST4a";
-    static const PROGMEM char forthWord4b[] = "Single TEST4b";
-    static const PROGMEM char* const forthWord4[] = { "TEST4a", "TEST4b"};
-    static const PROGMEM char* const forthWord5[] = { forthWord4a, forthWord4b };
-
-//    for (int i = 0; i < 6; i++) {
-//      strcpy_P(buffer, (char*)pgm_read_word(&(string_table[1])));
-//      Serial.println(buffer); // Gib den gelesenen Wert aus
-      char *myptr = pgm_read_word(&(forthWord2.forthWordName));
-      Serial.println(myptr);
-      myptr = pgm_read_word(&(forthWord3[0].forthWordName));
-      Serial.println(myptr);
-      myptr = pgm_read_word(&(forthWords[0].forthWordName));
-      Serial.println(myptr);
-      myptr = pgm_read_word(&(forthTasks[forthState.forthCurrentTask].forthWordLists[0].forthWords[0].forthWordName));
-      Serial.println(myptr);
-      myptr = pgm_read_ptr(&(forthTasks[forthState.forthCurrentTask].forthWordLists[0].forthWords[0].forthWordName));
-      Serial.println(myptr);
-      forthOperation funcptr = pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[0].forthWords[0].forthOpt);
-      funcptr();
-
-      Serial.println("Start");
-      int a;
-      a = strlen_P(forthWord4a);
-      Serial.println(a); 
- 
-      //strcpy_PF(buffer, (char*)pgm_read_word(forthWord4a));
-      strcpy_P(buffer, PSTR("Here you go!"));
-      Serial.println(buffer); 
-      strcpy_P(buffer, forthWord4a);
-      Serial.println(buffer); 
-
-// #define PSMSG_DEBUG2(X) {static const PROGMEM char nameOfFunction[] = X; \
-// char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, nameOfFunction); \ 
-// Serial.println(buffer); \
-//;};
-//#define PSMSG_DEBUG3(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); \ 
-//Serial.println(buffer);};
-
-#define PSMSG_DEBUG3(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateDebugWord(buffer);};
-
-      PSMSG_DEBUG3("test debug funktioniert");
-
-//      myptr = (char *)pgm_read_ptr(forthWord4a);
-//      Serial.println(myptr);
-
-      Serial.println("Finish");
-
-      myptr = (char *)pgm_read_ptr(&forthWord4[1]);
-      Serial.println(myptr);
-      
-      strcpy_P(buffer, (char*)pgm_read_word(&(forthWord5[1])));
-      Serial.println(buffer); 
-
-      //myptr = (char *)pgm_read_ptr(&string_0);
-      //Serial.println(myptr);
-        // privateDebugWord((char *)pgm_read_ptr(&(nameOfFunction)));
-   
-      //strcpy_P(buffer, (char*)pgm_read_word(&(forthWord2.forthWordName))); // Casts und Dereferenzierung des Speichers
- //     Serial.println(buffer); // Gib den gelesenen Wert aus
-  //    delay(500); // Warte eine halbe Sekunde
-  //  };
-#endif
 				if (!isWordFound) {
 					if (isSPIntegerWord) {
 						storeSPInteger();
@@ -1373,19 +1294,6 @@ void noParameterPreProcessing(void) {
 	forthState.forthReadsKeyboard = FALSE;
 }
 
-void loop2()
-{
-	PUTS("Hello my Computer");
-	//Set the LED pin to HIGH. This gives power to the LED and turns it on
-	digitalWrite(LED_BUILTIN, HIGH);
-	//Wait for a second
-	delay(1000);
-	//Set the LED pin to LOW. This turns it off
-	digitalWrite(LED_BUILTIN, LOW);
-	//Wait for a second
-	delay(1000);
-}
-
 /* setup(). Name is fixed as Arduino setup function */
 void setup(void) {
 	/* Arduino: put your setup code here, to run once */
@@ -1441,6 +1349,11 @@ void loop(void) {
 		//ioTib[0] = 0;
 		do {
 			/* Main FORTH input loop */
+#if defined(ARDUINO) && defined(ARDUINO_SWITCH_LIGHT)
+			/* Switch LED on and off */
+      		digitalWrite(LED_BUILTIN, ledSwitch);
+      		ledSwitch = !ledSwitch;
+#endif
 			readInput();
 			processTib();
 		} while (!forthState.forthIsExit);
