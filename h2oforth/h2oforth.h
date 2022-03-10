@@ -292,6 +292,9 @@
 #define IS_IMPLEMENTED 8
 #define NOT_IMPLEMENTED 0
 
+#define MODE_INTERPRET 1
+#define MODE_COMPILE 2
+
 #define BINARY 2
 #define OCTAL 8
 #define DECIMAL 10
@@ -683,6 +686,7 @@ void storeDPInteger(void);
 int isFloat(void);
 void storeFloat(void);
 int istPermWord(void);
+void executePermWord(void);
 void forthParseTib(void);
 void processTib(void);
 void noParameterPreProcessing(void);

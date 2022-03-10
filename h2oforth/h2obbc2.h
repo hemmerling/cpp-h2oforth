@@ -698,10 +698,12 @@ void bbc79Number(void) {
 }
 
 void bbc79Semicolon(void) {
+	forthTasks[forthState.forthCurrentTask].forthMode = MODE_INTERPRET;
 	PSMSG_DEBUG("bbc79Semicolon")
 }
 
 void bbc79Colon(void) {
+	forthTasks[forthState.forthCurrentTask].forthMode = MODE_COMPILE;
 	PSMSG_DEBUG("bbc79Colon")
 }
 

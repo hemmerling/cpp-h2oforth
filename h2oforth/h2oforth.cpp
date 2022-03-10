@@ -256,11 +256,12 @@ static const PROGMEM char aListofNewWord[] = { ':', ';'};
 typedef  struct _forthTask {
 	char* baseFormat;
 	CELL_INTEGER forthBase; /* instead of int, for safety if somebody tries to store a BASE by ! instead of C! */
-	int errorNumber;
-	int messageNumber;
-	int osErrorNumber;
-	int dataStackIndex;
-	int returnStackIndex;
+	short int forthMode;
+	short int errorNumber;
+	short int messageNumber;
+	short int osErrorNumber;
+	short int dataStackIndex;
+	short int returnStackIndex;
 	CELL_INTEGER dataStackSpace[MAX_DATASTACK];
 	void* returnStackSpace[MAX_RETURNSTACK];
 	char printBuffer[MAX_PRINTBUFFER];
@@ -269,7 +270,7 @@ typedef  struct _forthTask {
 	char ioBlockBuffer[MAX_BLOCKBUFFER];
 #endif
 	typedef_forthWordList* forthWordLists;
-  //typedef_forthWord* forthWords;
+  	typedef_forthWord* forthCompiledWords;
 	typedef_forthMessage* forthErrors;
 	typedef_forthMessage* forthMessages;
 	typedef_forthMessage* forthOsErrors;
@@ -1104,8 +1105,36 @@ void storeFloat(void) {
 }
 #endif
 
-/* Find word in wordlist */
+/* Find word in permanent ( C/C++ ) wordlist */
 int isPermWord(void) {
+	int ii = 0;
+	int jj = 0;
+	int result = FALSE;
+	/* TBD: lenForthWordLists should be calculated by forthTasks[forthState.forthCurrentTask].forthWordLists */
+	int lenForthWordLists = sizeof(forthWordLists) /
+		sizeof(forthWordLists[0]);
+	for (ii = 0; ii < lenForthWordLists; ii++) {
+		for (jj = 0; jj < forthTasks[forthState.forthCurrentTask].forthWordLists[ii].lenForthWords; jj++) {
+#ifdef ARDUINO
+      if (strcmp(wordBuffer, 
+                 pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName)) 
+                 == 0) {
+#else
+      if (strcmp(wordBuffer, 
+                 forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName) 
+                 == 0) {
+#endif			
+				result = TRUE;
+				break;
+			};
+		};
+	};
+	return(result);
+}
+
+/* Execute word in permanent C/C+ wordlist */
+/* TBD: If a word appears in more than one wordlist, don't execute each time */
+void executePermWord(void) {
 	int ii = 0;
 	int jj = 0;
 	int result = FALSE;
@@ -1140,12 +1169,12 @@ int isPermWord(void) {
 			};
 		};
 	};
-	return(result);
+	return;
 }
 
-/* Create new word */
+/* Find word in compiled wordlist */
 /* TBD, does not work */
-int isNewWord(void) {
+int isCompiledWord(void) {
 	int result = FALSE;
 	return(result);
 }
@@ -1181,7 +1210,7 @@ void forthParseTib(void) {
 #ifdef FLOAT_SUPPORT
 				isFloatWord = isFloat();
 #endif
-				/* Check if a permanent word, and execute it */
+				/* Check if a permanent word */
 				isWordFound = isPermWord();
 #if defined (__DEBUG__)
 				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
@@ -1201,7 +1230,10 @@ void forthParseTib(void) {
 					", isWordFound = [%d]", isWordFound);
 				PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
-				if (!isWordFound) {
+				if (isWordFound) {
+						executePermWord();
+					}
+				else {
 					if (isSPIntegerWord) {
 						storeSPInteger();
 					};
@@ -1322,13 +1354,14 @@ void setup(void) {
 	for (ii = 0; ii < MAX_FORTHTASKS; ii++) {
 		forthTasks[ii].baseFormat = (char*)BASE_FORMAT_DECIMAL;
 		forthTasks[ii].forthBase = DECIMAL;
+		forthTasks[ii].forthMode = MODE_INTERPRET;
 		forthTasks[ii].errorNumber = 0;
 		forthTasks[ii].messageNumber = 0;
 		forthTasks[ii].osErrorNumber = 0;
 		forthTasks[ii].dataStackIndex = 0;
 		forthTasks[ii].returnStackIndex = 0;
 		forthTasks[ii].forthWordLists = (typedef_forthWordList*)forthWordLists;
-    //forthTasks[ii].forthWords = (typedef_forthWord*)forthWords;
+    	forthTasks[ii].forthCompiledWords = (typedef_forthWord*)forthWords;
 		forthTasks[ii].forthErrors = (typedef_forthMessage*)forthErrors;
 		forthTasks[ii].forthMessages = (typedef_forthMessage*)forthMessages;
 		forthTasks[ii].forthOsErrors = (typedef_forthMessage*)forthOsErrors;
