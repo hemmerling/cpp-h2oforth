@@ -862,7 +862,7 @@ typedef  struct _forthWord {
 	const int interpreted;
 	const int immediate;
 	const short int implemented;
-	const unsigned long forthWordNumber;
+	const unsigned long forthWordID;
 	const forthOperation  forthOpt; // function pointer 
 } typedef_forthWord;
 
@@ -2861,7 +2861,7 @@ static const typedef_forthWord forthWords[] = { /* PC */
 			{ "RECOVER", "RECOVER", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkRecover },
 			{ "NEXT-LINK", "NEXT-LINK", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkNextLink },
 			{ "ORIGIN", "ORIGIN", TRUE, FALSE, FALSE, 0UL, (forthOperation)volkOrigin },
-			{ "H2OFORTH", "H2OFORTH", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)NULL }
+			{ "H2OFORTH", "H2OFORTH", TRUE, FALSE, FALSE, MAX_WORDID, (forthOperation)NULL }
 };
 #endif
 

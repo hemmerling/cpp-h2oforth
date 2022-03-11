@@ -597,7 +597,7 @@ typedef  struct _forthWord {
 	const short int interpreted;
 	const short int immediate;
 	const short int implemented;
-	const unsigned long forthWordNumber;
+	const unsigned long forthWordID;
 	const forthOperation  forthOpt; // function pointer 
 } typedef_forthWord;
 
@@ -1163,7 +1163,7 @@ static const PROGMEM typedef_forthWord forthWords[] = { /* PC */
 			{ "UNNEST", "UNNEST", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperUnnest },
 			{ "EXIT", "EXIT", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperExit },
 			{ "FORTH", "FORTH", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperForth },
-			{ "H2OFORTH", "H2OFORTH", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)NULL }
+			{ "H2OFORTH", "H2OFORTH", TRUE, FALSE, FALSE, MAX_WORDID, (forthOperation)NULL }
 };
 
 //                                   
@@ -1723,7 +1723,7 @@ static const typedef_forthWord forthWords[] = { /* CP/M */
 			{ "EXIT", "EXIT", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperExit },
 			{ "RP", "RP", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperRP },
 			{ "FORTH", "FORTH", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperForth },
-			{ "H2OFORTH", "H2OFORTH", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)NULL }
+			{ "H2OFORTH", "H2OFORTH", TRUE, FALSE, FALSE, MAX_WORDID, (forthOperation)NULL }
 };
 
 #endif
@@ -2282,7 +2282,7 @@ static const typedef_forthWord forthWords[] = { /* CP/M 68 K, unchecked wordlist
 			{ "EXIT", "EXIT", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperExit },
 			{ "RP", "RP", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperRP },
 			{ "FORTH", "FORTH", TRUE, FALSE, FALSE, 0UL, (forthOperation)laxperForth },
-			{ "H2OFORTH", "H2OFORTH", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)NULL }
+			{ "H2OFORTH", "H2OFORTH", TRUE, FALSE, FALSE, MAX_WORDID, (forthOperation)NULL }
 };
 #endif
 #endif

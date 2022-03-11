@@ -244,7 +244,6 @@ static const PROGMEM char aListOfAllBases[NUMBERTABLE_SIZE] = { '-', '0', '1', '
 	 ',', '.' };
 static const PROGMEM char aListofFloat[] = { '-', '+', '.', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'E', ',' };
 static const PROGMEM char aListofExponent[] = { '-', '+', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ',' };
-static const PROGMEM char aListofNewWord[] = { ':', ';'};
 
 /******** Typedefs ********************/
 
@@ -262,6 +261,7 @@ typedef  struct _forthTask {
 	short int osErrorNumber;
 	short int dataStackIndex;
 	short int returnStackIndex;
+	short int definitionStackIndex;
 	CELL_INTEGER dataStackSpace[MAX_DATASTACK];
 	void* returnStackSpace[MAX_RETURNSTACK];
 	char printBuffer[MAX_PRINTBUFFER];
@@ -1360,6 +1360,7 @@ void setup(void) {
 		forthTasks[ii].osErrorNumber = 0;
 		forthTasks[ii].dataStackIndex = 0;
 		forthTasks[ii].returnStackIndex = 0;
+		forthTasks[ii].definitionStackIndex = 0;
 		forthTasks[ii].forthWordLists = (typedef_forthWordList*)forthWordLists;
     	forthTasks[ii].forthCompiledWords = (typedef_forthWord*)forthWords;
 		forthTasks[ii].forthErrors = (typedef_forthMessage*)forthErrors;

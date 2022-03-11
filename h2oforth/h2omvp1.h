@@ -393,7 +393,7 @@ typedef  struct _forthWord {
 	const short int interpreted;
 	const short int immediate;
 	const short int implemented;
-	const unsigned long forthWordNumber;
+	const unsigned long forthWordID;
 	const forthOperation  forthOpt; // function pointer 
 } typedef_forthWord;
 
@@ -828,7 +828,7 @@ static const PROGMEM typedef_forthWord forthWords[] = {
 			{ "#", "#", TRUE, FALSE, FALSE, 0UL, (forthOperation)mvpNum },
 			{ "!L", "!L", TRUE, FALSE, FALSE, 0UL, (forthOperation)mvpStoreL },
 			{ "!", "!", TRUE, FALSE, FALSE, 0UL, (forthOperation)mvpStore },
-			{ "H2OFORTH", "H2OFORTH", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)NULL }
+			{ "H2OFORTH", "H2OFORTH", TRUE, FALSE, FALSE, MAX_WORDID, (forthOperation)NULL }
 };
 #endif
 //                          

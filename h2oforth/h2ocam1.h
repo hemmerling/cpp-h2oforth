@@ -250,7 +250,7 @@ typedef  struct _forthWord {
 	const short int interpreted;
 	const short int immediate;
 	const short int implemented;
-	const unsigned long forthWordNumber;
+	const unsigned long forthWordID;
 	const forthOperation  forthOpt; // function pointer 
 } typedef_forthWord;
 
@@ -493,6 +493,6 @@ static const PROGMEM typedef_forthWord forthWords[] = {
 			{ "DEPTH", "DEPTH", TRUE, FALSE, FALSE, 0UL, (forthOperation)camelDepth },
 			{ "ENVIRONMENT?", "ENVIRONMENT?", TRUE, FALSE, FALSE, 0UL, (forthOperation)camelEnvironmentQ },
 			{ "MARKER", "MARKER", TRUE, FALSE, FALSE, 0UL, (forthOperation)camelMarker },
-			{ "H2OFORTH", "H2OFORTH", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)NULL }
+			{ "H2OFORTH", "H2OFORTH", TRUE, FALSE, FALSE, MAX_WORDID, (forthOperation)NULL }
 };
 #endif

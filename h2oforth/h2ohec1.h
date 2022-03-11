@@ -319,7 +319,7 @@ typedef  struct _forthWord {
 	const short int interpreted;
 	const short int immediate;
 	const short int implemented;
-	const unsigned long forthWordNumber;
+	const unsigned long forthWordID;
 	const forthOperation forthOpt; // function pointer 
 } typedef_forthWord;
 
@@ -632,7 +632,7 @@ static const PROGMEM typedef_forthWord forthWords[] = {
 			{ "OBRANCH", "OBRANCH", TRUE, FALSE, FALSE, 303UL, (forthOperation)hectorOBranch },
 			{ "EXECUTE", "EXECUTE", TRUE, FALSE, FALSE, 304UL, (forthOperation)hectorExecute },
 			{ "LIT", "LIT", TRUE, FALSE, FALSE, 305UL, (forthOperation)hectorLit },
-			{ "H2OFORTH", "H2OFORTH", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)NULL }
+			{ "H2OFORTH", "H2OFORTH", TRUE, FALSE, FALSE, MAX_WORDID, (forthOperation)NULL }
 };
 
 #endif

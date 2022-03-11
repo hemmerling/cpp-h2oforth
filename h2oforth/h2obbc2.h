@@ -358,10 +358,10 @@ void bbc79Vlist(void) {
 #ifdef __DEBUG__
 #ifdef ARDUINO
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%d\n",
-			 pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordNumber);
+			 pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordID);
 #else
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%d\n",
-			 forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordNumber);
+			 forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordID);
 #endif
 		 SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif

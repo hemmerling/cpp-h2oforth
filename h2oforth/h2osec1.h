@@ -26,7 +26,7 @@ typedef  struct _forthWord {
 	const short int interpreted;
 	const short int immediate;
 	const short int implemented;
-	const unsigned long forthWordNumber;
+	const unsigned long forthWordID;
 	const forthOperation  forthOpt; // function pointer 
 } typedef_forthWord;
 
@@ -49,7 +49,7 @@ static const PROGMEM typedef_forthWord forthWords[] = {
 			{ "T{", "T{", TRUE, FALSE, FALSE, 0UL, (forthOperation)sectorTestStart },
 			{ "}T", "}T", TRUE, FALSE, FALSE, 0UL, (forthOperation)sectorTestEnd },
 			{ "==", "==", TRUE, FALSE, FALSE, 0UL, (forthOperation)sectorTestComparison },
-			{ "H2OFORTH", "H2OFORTH", TRUE, FALSE, FALSE, MAX_FORTHWORD_ID, (forthOperation)NULL }
+			{ "H2OFORTH", "H2OFORTH", TRUE, FALSE, FALSE, MAX_WORDID, (forthOperation)NULL }
 };
 
 /* state = 0: execute words; 1: compile word addresses to the dictionary */
