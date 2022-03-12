@@ -337,7 +337,7 @@ typedef  struct _forthWord {
 
 /* Variables */
 static typedef_forthWord forthDefinitions[MAX_DEFINITIONS];
-unsigned long forthDefinitionStack[MAX_DEFINITIONSTACK];
+static WORDID forthDefinitionStack[MAX_DEFINITIONSTACK];
 
 static const PROGMEM typedef_forthWord forthWords[] = {
 	{ "$MSG", "$MSG", TRUE, FALSE, FALSE, 0UL, 0UL, 1UL, (forthOperation)bbc79DollarMSG },

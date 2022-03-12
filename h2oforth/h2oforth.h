@@ -292,8 +292,8 @@
 #define IS_IMPLEMENTED 8
 #define NOT_IMPLEMENTED 0
 
-#define MODE_INTERPRET 1
-#define MODE_COMPILE 2
+#define MODE_INTERPRET 0
+#define MODE_COMPILE 1
 
 #define BINARY 2
 #define OCTAL 8
@@ -308,6 +308,7 @@
 #define CHAR_SPACE ' '
 #define CHAR_CR '\n'
 
+#define STRING_SEMICOLON ";"
 #define STRING_SPACE " "
 #define STRING_CR "\n"
 
@@ -689,6 +690,7 @@ void storeDPInteger(void);
 int isFloat(void);
 void storeFloat(void);
 int istPermWord(void);
+int isEndOfCompilation(void);
 void executePermWord(void);
 void forthParseTib(void);
 void processTib(void);

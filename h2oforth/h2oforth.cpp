@@ -270,7 +270,8 @@ typedef  struct _forthTask {
 	char ioBlockBuffer[MAX_BLOCKBUFFER];
 #endif
 	typedef_forthWordList* forthWordLists;
-  	typedef_forthWord* forthCompiledWords;
+  	typedef_forthWord* forthDefinitions;
+	WORDID* forthDefinitionStack;
 	typedef_forthMessage* forthErrors;
 	typedef_forthMessage* forthMessages;
 	typedef_forthMessage* forthOsErrors;
@@ -1132,6 +1133,18 @@ int isPermWord(void) {
 	return(result);
 }
 
+/* 
+	Detect end of compilation.
+	Not by browsing the FORTH wordlists,
+	but by "knowing" implicitely that ";" ends compilation.
+	TBD: Solution without using implicitely knowledge
+*/
+int isEndOfCompilation(void) {
+	int result = FALSE;
+    result = (strcmp(wordBuffer, STRING_SEMICOLON ) == 0);
+	return(result);
+}
+
 /* Execute word in permanent C/C+ wordlist */
 /* TBD: If a word appears in more than one wordlist, don't execute each time */
 void executePermWord(void) {
@@ -1230,38 +1243,48 @@ void forthParseTib(void) {
 					", isWordFound = [%d]", isWordFound);
 				PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
-				if (isWordFound) {
-						executePermWord();
-					}
-				else {
-					if (isSPIntegerWord) {
-						storeSPInteger();
+				if (forthTasks[forthState.forthCurrentTask].forthMode == MODE_COMPILE )
+				{
+#if defined (__DEBUG__)
+					PUTS("Compile Mode");
+#endif
+					if (isEndOfCompilation()){
+							executePermWord();
 					};
+				} else {
+					if (isWordFound) {
+							executePermWord();
+						}
+					else {
+						if (isSPIntegerWord) {
+							storeSPInteger();
+						};
 #ifdef DPINTEGER_SUPPORT
-					if (isDPIntegerWord) {
-						storeDPInteger();
-					};
+						if (isDPIntegerWord) {
+							storeDPInteger();
+						};
 #endif
 #ifdef FLOAT_SUPPORT
-					if (isFloatWord) {
-						storeFloat();
-					};
+						if (isFloatWord) {
+							storeFloat();
+						};
 #endif
-					if (!isSPIntegerWord
+						if (!isSPIntegerWord
 #ifdef DPINTEGER_SUPPORT
-						&& !isDPIntegerWord
+							&& !isDPIntegerWord
 #endif
 #ifdef FLOAT_SUPPORT
-						&& !isFloatWord
+							&& !isFloatWord
 #endif
-						) {
-						forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_NOT_IN_CURRENT_DIRECTORY;
+							) {
+							forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_NOT_IN_CURRENT_DIRECTORY;
+						};
+						privateMessageHandler();
 					};
 					privateMessageHandler();
+					// int aWordIndex = 0;
+					// wordBuffer[aWordIndex] = 0;
 				};
-				privateMessageHandler();
-				// int aWordIndex = 0;
-				// wordBuffer[aWordIndex] = 0;
 			}
 			else {
 				/* Continue word detection */
@@ -1362,7 +1385,8 @@ void setup(void) {
 		forthTasks[ii].returnStackIndex = 0;
 		forthTasks[ii].definitionStackIndex = 0;
 		forthTasks[ii].forthWordLists = (typedef_forthWordList*)forthWordLists;
-    	forthTasks[ii].forthCompiledWords = (typedef_forthWord*)forthWords;
+    	forthTasks[ii].forthDefinitions = (typedef_forthWord*)forthDefinitions;
+		forthTasks[ii].forthDefinitionStack = (WORDID *)forthDefinitionStack;
 		forthTasks[ii].forthErrors = (typedef_forthMessage*)forthErrors;
 		forthTasks[ii].forthMessages = (typedef_forthMessage*)forthMessages;
 		forthTasks[ii].forthOsErrors = (typedef_forthMessage*)forthOsErrors;
