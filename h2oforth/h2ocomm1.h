@@ -3,6 +3,7 @@
 
 /* Definitions of FORTH words common to one or more FORTH standards & FORTH implementations */
 
+void privateCreateDemoWord(void);
 void privateCMessage(char, int);
 void privateSMessage(char*, int, int, int);
 char* privateBaseConversion(CELL_INTEGER, CELL_INTEGER);

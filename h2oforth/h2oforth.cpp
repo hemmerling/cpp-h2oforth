@@ -261,7 +261,8 @@ typedef  struct _forthTask {
 	short int osErrorNumber;
 	short int dataStackIndex;
 	short int returnStackIndex;
-	short int definitionStackIndex;
+	short int definitionIndex;
+	short int definitionSpaceIndex;
 	CELL_INTEGER dataStackSpace[MAX_DATASTACK];
 	void* returnStackSpace[MAX_RETURNSTACK];
 	char printBuffer[MAX_PRINTBUFFER];
@@ -271,7 +272,7 @@ typedef  struct _forthTask {
 #endif
 	typedef_forthWordList* forthWordLists;
   	typedef_forthWord* forthDefinitions;
-	WORDID* forthDefinitionStack;
+	WORDID* forthDefinitionSpace;
 	typedef_forthMessage* forthErrors;
 	typedef_forthMessage* forthMessages;
 	typedef_forthMessage* forthOsErrors;
@@ -1111,11 +1112,11 @@ int isPermWord(void) {
 	int ii = 0;
 	int jj = 0;
 	int result = FALSE;
-	/* TBD: lenForthWordLists should be calculated by forthTasks[forthState.forthCurrentTask].forthWordLists */
+	/* TBD: Size should be calculated by forthTasks[forthState.forthCurrentTask].forthWordLists */
 	int lenForthWordLists = sizeof(forthWordLists) /
 		sizeof(forthWordLists[0]);
 	for (ii = 0; ii < lenForthWordLists; ii++) {
-		for (jj = 0; jj < forthTasks[forthState.forthCurrentTask].forthWordLists[ii].lenForthWords; jj++) {
+		for (jj = 0; jj < forthTasks[forthState.forthCurrentTask].forthWordLists[ii].size; jj++) {
 #ifdef ARDUINO
       if (strcmp(wordBuffer, 
                  pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName)) 
@@ -1155,7 +1156,7 @@ void executePermWord(void) {
 	int lenForthWordLists = sizeof(forthWordLists) /
 		sizeof(forthWordLists[0]);
 	for (ii = 0; ii < lenForthWordLists; ii++) {
-		for (jj = 0; jj < forthTasks[forthState.forthCurrentTask].forthWordLists[ii].lenForthWords; jj++) {
+		for (jj = 0; jj < forthTasks[forthState.forthCurrentTask].forthWordLists[ii].size; jj++) {
 #ifdef ARDUINO
       if (strcmp(wordBuffer, 
                  pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName)) 
@@ -1383,10 +1384,11 @@ void setup(void) {
 		forthTasks[ii].osErrorNumber = 0;
 		forthTasks[ii].dataStackIndex = 0;
 		forthTasks[ii].returnStackIndex = 0;
-		forthTasks[ii].definitionStackIndex = 0;
+		forthTasks[ii].definitionIndex = 0;
+		forthTasks[ii].definitionSpaceIndex = 0;
 		forthTasks[ii].forthWordLists = (typedef_forthWordList*)forthWordLists;
     	forthTasks[ii].forthDefinitions = (typedef_forthWord*)forthDefinitions;
-		forthTasks[ii].forthDefinitionStack = (WORDID *)forthDefinitionStack;
+		forthTasks[ii].forthDefinitionSpace = (WORDID *)forthDefinitionSpace;
 		forthTasks[ii].forthErrors = (typedef_forthMessage*)forthErrors;
 		forthTasks[ii].forthMessages = (typedef_forthMessage*)forthMessages;
 		forthTasks[ii].forthOsErrors = (typedef_forthMessage*)forthOsErrors;

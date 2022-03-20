@@ -335,9 +335,14 @@ typedef  struct _forthWord {
 	forthOperation  forthOpt; // function pointer 
 } typedef_forthWord;
 
+typedef  struct _forthWordList {
+	int size;
+	const typedef_forthWord* forthWords;
+} typedef_forthWordList;
+
 /* Variables */
 static typedef_forthWord forthDefinitions[MAX_DEFINITIONS];
-static WORDID forthDefinitionStack[MAX_DEFINITIONSTACK];
+static WORDID forthDefinitionSpace[MAX_DEFINITIONSPACE];
 
 static const PROGMEM typedef_forthWord forthWords[] = {
 	{ "$MSG", "$MSG", TRUE, FALSE, FALSE, 0UL, 0UL, 1UL, (forthOperation)bbc79DollarMSG },

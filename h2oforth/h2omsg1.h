@@ -3,11 +3,6 @@
 
 /* Messages and error messages */
 
-typedef  struct _forthWordList {
-	int lenForthWords;
-	const typedef_forthWord* forthWords;
-} typedef_forthWordList;
-
 typedef  struct _forthMessage {
 	int messageNumber;
 	const char* messageText;
@@ -26,7 +21,8 @@ typedef  struct _forthMessage {
 #define ERROR_DIVISION_BY_ZERO 55
 #define ERROR_NOT_IN_CURRENT_DIRECTORY 56
 #define ERROR_PARAMETER_OUT_OF_RANGE 57
-#define ERROR_DICTIONARY_FULL 58
+#define ERROR_DICTIONARY_LIST_FULL 58
+#define ERROR_DICTIONARY_SPACE_FULL 59
 
 #define ERROR_SPINTEGER_UNDERFLOW 60
 #define ERROR_SPINTEGER_OVERFLOW 61
@@ -388,8 +384,8 @@ static const PROGMEM typedef_forthMessage forthErrors[] = {
 			{  55, "Can 't Divide by Zero" },
 			{  56, "Not in CURRENT Vocabulary" },
 			{  57, "Parameter Outside Valid Range" },
-			{  58, "Dictionary Full" },
-			{  59, "(reserved)" },
+			{  58, "Dictionary List Full" },
+			{  59, "Dictionary Space Full" },
 
 			{  60, "SP Integer Underflow!" }, /* h2oforth */
 			{  61, "SP Integer Overflow!" },

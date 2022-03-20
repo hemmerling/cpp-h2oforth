@@ -4,6 +4,39 @@
 /* Declarations of FORTH words common to one or more FORTH standards & FORTH implementations */
 
 /* Internal functions */
+
+#define DEMOWORD_SIZE 10
+#define WORD_LITERAL 143UL
+#define WORD_PLUS 269UL
+void privateCreateDemoWord(void) {
+	int maxDefinitions = sizeof(forthTasks[forthState.forthCurrentTask].forthDefinitions ) / sizeof(forthTasks[forthState.forthCurrentTask].forthDefinitions[0]);
+	int maxSpace = sizeof(forthTasks[forthState.forthCurrentTask].forthDefinitionSpace ) / sizeof(forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[0]);
+	if (  forthTasks[forthState.forthCurrentTask].definitionIndex < maxDefinitions ) {
+		if ( forthTasks[forthState.forthCurrentTask].definitionSpaceIndex + DEMOWORD_SIZE < maxSpace ) {
+			{
+				// forthTasks[forthState.forthCurrentTask].forthDefinitions[forthTasks[forthState.forthCurrentTask].definitionIndex].forthWordName = "1+2";
+				// forthTasks[forthState.forthCurrentTask].forthDefinitions[forthTasks[forthState.forthCurrentTask].definitionIndex].startID = forthTasks[forthState.forthCurrentTask].definitionSpaceIndex;
+				// forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex++] = WORD_LITERAL;
+				// forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex++] = 1;
+				// forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex++] = WORD_LITERAL;
+				// forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex++] = 2;
+				// forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex++] = WORD_PLUS;
+				// forthTasks[forthState.forthCurrentTask].forthDefinitions[forthTasks[forthState.forthCurrentTask].definitionIndex].wordLength = 5;
+				// forthTasks[forthState.forthCurrentTask].definitionIndex++;
+				forthTasks[forthState.forthCurrentTask].forthDefinitions[forthTasks[forthState.forthCurrentTask].definitionIndex].forthWordName = "PLUS";
+				forthTasks[forthState.forthCurrentTask].forthDefinitions[forthTasks[forthState.forthCurrentTask].definitionIndex].startID = forthTasks[forthState.forthCurrentTask].definitionSpaceIndex;
+				forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex++] = WORD_PLUS;
+				forthTasks[forthState.forthCurrentTask].forthDefinitions[forthTasks[forthState.forthCurrentTask].definitionIndex].wordLength = 1;
+				forthTasks[forthState.forthCurrentTask].definitionIndex++;
+			};
+		} else {
+			forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DICTIONARY_SPACE_FULL;			
+		};
+	} else {
+		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DICTIONARY_LIST_FULL;
+	};
+}
+
 void privateCMessage(char message, int stream) {
 	switch (stream)
 	{
