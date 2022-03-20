@@ -271,7 +271,7 @@ typedef  struct _forthTask {
 	char ioBlockBuffer[MAX_BLOCKBUFFER];
 #endif
 	typedef_forthWordList* forthWordLists;
-  	typedef_forthWord* forthDefinitions;
+  	typedef_forthWord* forthDefinitionWords;
 	WORDID* forthDefinitionSpace;
 	typedef_forthMessage* forthErrors;
 	typedef_forthMessage* forthMessages;
@@ -288,21 +288,46 @@ typedef  struct _forthTask {
 /* Variables */
 typedef_forthTask forthTasks[MAX_FORTHTASKS];
 
-static const typedef_forthWordList forthWordLists[] = {
-		{sizeof(commonWords) / sizeof(commonWords[0]), commonWords}
+static const unsigned int commonWordListSize = sizeof(commonWords) / sizeof(commonWords[0]);
+static const typedef_forthWordList commonWordList = {(unsigned int *)&commonWordListSize, commonWords};
 #ifdef EXCEPTION_SUPPORT
-		, {sizeof(exceptionWords) / sizeof(exceptionWords[0]), exceptionWords}
+static const unsigned int exceptionWordListSize = sizeof(exceptionWords) / sizeof(exceptionWords[0]);
+static const typedef_forthWordList exceptionWordList = {&exceptionWordListSize, exceptionWords};
 #endif
 #ifdef FLOAT_SUPPORT
-		, {sizeof(fpointWords) / sizeof(fpointWords[0]), fpointWords}
+static const unsigned int fpointListSize = sizeof(fpointWords) / sizeof(fpointWords[0]);
+static const typedef_forthWordList fpointWordList =  {(unsigned int *)&fpointListSize, fpointWords};
 #endif
 #if ((TASKINGSTANDARD == TASKINGSTD_VOLK)) || ( TASKINGSTANDARD == TASKINGSTD_FORTH83 )
-		, {sizeof(taskingWords) / sizeof(taskingWords[0]), taskingWords}
+static const unsigned int taskingListSize = sizeof(taskingWords) / sizeof(taskingWords[0]);
+static const typedef_forthWordList taskingWordList = {&taskingListSize, taskingWords};
 #endif       
 #ifdef TESTING_SUPPORT
-		, {sizeof(testingWords) / sizeof(testingWords[0]), testingWords}
+static const unsigned int testingWordListSize = sizeof(testingWords) / sizeof(testingWords[0]);
+static const typedef_forthWordList testingWordList = {(unsigned int *)&testingWordListSize, testingWords};
 #endif
-		, {sizeof(forthWords) / sizeof(forthWords[0]), forthWords}
+static const unsigned int forthWordListSize = sizeof(forthWords) / sizeof(forthWords[0]);
+static const typedef_forthWordList forthWordList = {(unsigned int *)&forthWordListSize, forthWords};
+
+static typedef_forthWordList definitionWordList = { (unsigned int *)&forthTasks[forthState.forthCurrentTask].definitionIndex, 
+ 													forthTasks[forthState.forthCurrentTask].forthDefinitionWords};
+
+static const typedef_forthWordList forthWordLists[] = {
+		commonWordList
+#ifdef EXCEPTION_SUPPORT
+		, exceptionWordList
+#endif
+#ifdef FLOAT_SUPPORT
+		, fpointWordList
+#endif
+#if ((TASKINGSTANDARD == TASKINGSTD_VOLK)) || ( TASKINGSTANDARD == TASKINGSTD_FORTH83 )
+		, taskingWordList
+#endif       
+#ifdef TESTING_SUPPORT
+		, testingWordList
+#endif
+		, definitionWordList
+		, forthWordList
 };
 
 #if defined(ARDUINO) && defined(ARDUINO_SWITCH_LIGHT)
@@ -1116,7 +1141,7 @@ int isPermWord(void) {
 	int lenForthWordLists = sizeof(forthWordLists) /
 		sizeof(forthWordLists[0]);
 	for (ii = 0; ii < lenForthWordLists; ii++) {
-		for (jj = 0; jj < forthTasks[forthState.forthCurrentTask].forthWordLists[ii].size; jj++) {
+		for (jj = 0; jj < *forthTasks[forthState.forthCurrentTask].forthWordLists[ii].size; jj++) {
 #ifdef ARDUINO
       if (strcmp(wordBuffer, 
                  pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName)) 
@@ -1156,7 +1181,7 @@ void executePermWord(void) {
 	int lenForthWordLists = sizeof(forthWordLists) /
 		sizeof(forthWordLists[0]);
 	for (ii = 0; ii < lenForthWordLists; ii++) {
-		for (jj = 0; jj < forthTasks[forthState.forthCurrentTask].forthWordLists[ii].size; jj++) {
+		for (jj = 0; jj < *forthTasks[forthState.forthCurrentTask].forthWordLists[ii].size; jj++) {
 #ifdef ARDUINO
       if (strcmp(wordBuffer, 
                  pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName)) 
@@ -1387,7 +1412,7 @@ void setup(void) {
 		forthTasks[ii].definitionIndex = 0;
 		forthTasks[ii].definitionSpaceIndex = 0;
 		forthTasks[ii].forthWordLists = (typedef_forthWordList*)forthWordLists;
-    	forthTasks[ii].forthDefinitions = (typedef_forthWord*)forthDefinitions;
+    	forthTasks[ii].forthDefinitionWords = (typedef_forthWord*)forthDefinitionWords;
 		forthTasks[ii].forthDefinitionSpace = (WORDID *)forthDefinitionSpace;
 		forthTasks[ii].forthErrors = (typedef_forthMessage*)forthErrors;
 		forthTasks[ii].forthMessages = (typedef_forthMessage*)forthMessages;

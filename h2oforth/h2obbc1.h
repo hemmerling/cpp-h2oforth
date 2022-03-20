@@ -336,12 +336,12 @@ typedef  struct _forthWord {
 } typedef_forthWord;
 
 typedef  struct _forthWordList {
-	int size;
+	unsigned int *size;
 	const typedef_forthWord* forthWords;
 } typedef_forthWordList;
 
 /* Variables */
-static typedef_forthWord forthDefinitions[MAX_DEFINITIONS];
+static typedef_forthWord forthDefinitionWords[MAX_DEFINITIONS];
 static WORDID forthDefinitionSpace[MAX_DEFINITIONSPACE];
 
 static const PROGMEM typedef_forthWord forthWords[] = {

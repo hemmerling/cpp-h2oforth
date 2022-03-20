@@ -9,7 +9,7 @@
 #define WORD_LITERAL 143UL
 #define WORD_PLUS 269UL
 void privateCreateDemoWord(void) {
-	int maxDefinitions = sizeof(forthTasks[forthState.forthCurrentTask].forthDefinitions ) / sizeof(forthTasks[forthState.forthCurrentTask].forthDefinitions[0]);
+	int maxDefinitions = sizeof(forthTasks[forthState.forthCurrentTask].forthDefinitionWords ) / sizeof(forthTasks[forthState.forthCurrentTask].forthDefinitionWords[0]);
 	int maxSpace = sizeof(forthTasks[forthState.forthCurrentTask].forthDefinitionSpace ) / sizeof(forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[0]);
 	if (  forthTasks[forthState.forthCurrentTask].definitionIndex < maxDefinitions ) {
 		if ( forthTasks[forthState.forthCurrentTask].definitionSpaceIndex + DEMOWORD_SIZE < maxSpace ) {
@@ -23,10 +23,11 @@ void privateCreateDemoWord(void) {
 				// forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex++] = WORD_PLUS;
 				// forthTasks[forthState.forthCurrentTask].forthDefinitions[forthTasks[forthState.forthCurrentTask].definitionIndex].wordLength = 5;
 				// forthTasks[forthState.forthCurrentTask].definitionIndex++;
-				forthTasks[forthState.forthCurrentTask].forthDefinitions[forthTasks[forthState.forthCurrentTask].definitionIndex].forthWordName = "PLUS";
-				forthTasks[forthState.forthCurrentTask].forthDefinitions[forthTasks[forthState.forthCurrentTask].definitionIndex].startID = forthTasks[forthState.forthCurrentTask].definitionSpaceIndex;
+				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthWordName = "PLUS";
+				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].startID = 
+																							forthTasks[forthState.forthCurrentTask].definitionSpaceIndex;
 				forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex++] = WORD_PLUS;
-				forthTasks[forthState.forthCurrentTask].forthDefinitions[forthTasks[forthState.forthCurrentTask].definitionIndex].wordLength = 1;
+				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].wordLength = 1;
 				forthTasks[forthState.forthCurrentTask].definitionIndex++;
 			};
 		} else {
