@@ -54,8 +54,6 @@ void privateCreateDemoWord(void) {
 	} else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DICTIONARY_LIST_FULL;
 	};
-	printf("error = %d", forthTasks[forthState.forthCurrentTask].errorNumber);		
-
 }
 
 void privateCMessage(char message, int stream) {
