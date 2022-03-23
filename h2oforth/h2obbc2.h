@@ -339,13 +339,13 @@ void bbc79Novec(void) {
 }
 
 void bbc79Vlist(void) {
-	int ii = 0;
-	int jj = 0;
+	unsigned int ii = 0;
+	unsigned int jj = 0;
 	int nn = 0;
 	int result = FALSE;
-	int lenForthWordLists = sizeof(forthWordLists) /
-		sizeof(forthWordLists[0]);
+	unsigned int lenForthWordLists = sizeof(forthWordLists) / sizeof(forthWordLists[0]);
 	for (ii = 0; ii < lenForthWordLists; ii++) {
+		printf("\nVocabulary size = %d\n", *forthTasks[forthState.forthCurrentTask].forthWordLists[ii].size);
 		for (jj = 0; jj < *forthTasks[forthState.forthCurrentTask].forthWordLists[ii].size; jj++) {
 #ifdef ARDUINO
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%s ",

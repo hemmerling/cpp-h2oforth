@@ -358,8 +358,8 @@
 #define CELLSIZE4 4
 #define CELLSIZE8 8
 
-#define MAX_DEFINITIONS 1
-#define MAX_DEFINITIONSPACE 2
+#define MAX_DEFINITIONS 2
+#define MAX_DEFINITIONSPACE 32
 #define WORDID unsigned short
 #define MAX_WORDID 65535U
 
@@ -400,6 +400,7 @@
 #define DPINTEGER_SUPPORT
 #else
 /* Microsoft C/C++, Win64 compilation target */
+#pragma warning( disable : 4101 )
 #define CELL_INTEGER long long
 #define CELL_UNSIGNED unsigned long long
 #define LONG_LONG long long
@@ -409,6 +410,7 @@
 #ifdef _WIN32
 /* Microsoft C/C++, Win32 compilation target */
 /* Open Watcom C/C++ 1.9, Win32 (NT/Win95/Win32s) */
+//#pragma warning( disable : 4101 )
 #undef CELL_INTEGER
 #define CELL_INTEGER int
 #define CELL_UNSIGNED unsigned int
@@ -450,6 +452,10 @@
 #undef LONG_LONG
 #define LONG_LONG long
 #undef DPINTEGER_SUPPORT
+/* Turns off warning #8004, 'identifier' is assigned a value that is never used */
+#pragma warn -8004 
+/* Turns off warning #8057, 'identifier' is never used in function 'function' */
+#pragma warn -8057
 #endif
 
 #if defined (__WATCOMC__)

@@ -5,12 +5,12 @@
 
 /* Internal functions */
 
-#define DEMOWORD_SIZE 10
+#define DEMOWORD_SIZE 1
 #define WORD_LITERAL 143UL
 #define WORD_PLUS 269UL
 void privateCreateDemoWord(void) {
-	int maxDefinitions = sizeof(forthTasks[forthState.forthCurrentTask].forthDefinitionWords ) / sizeof(forthTasks[forthState.forthCurrentTask].forthDefinitionWords[0]);
-	int maxSpace = sizeof(forthTasks[forthState.forthCurrentTask].forthDefinitionSpace ) / sizeof(forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[0]);
+	int maxDefinitions = sizeof(forthDefinitionWords) / sizeof( forthDefinitionWords[0]);
+	int maxSpace = sizeof(forthDefinitionSpace) / sizeof(forthDefinitionSpace[0]);
 	if (  forthTasks[forthState.forthCurrentTask].definitionIndex < maxDefinitions ) {
 		if ( forthTasks[forthState.forthCurrentTask].definitionSpaceIndex + DEMOWORD_SIZE < maxSpace ) {
 			{
@@ -23,19 +23,39 @@ void privateCreateDemoWord(void) {
 				// forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex++] = WORD_PLUS;
 				// forthTasks[forthState.forthCurrentTask].forthDefinitions[forthTasks[forthState.forthCurrentTask].definitionIndex].wordLength = 5;
 				// forthTasks[forthState.forthCurrentTask].definitionIndex++;
+
 				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthWordName = "PLUS";
+				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthAlternativeName = "PLUS";
+				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthWordID = 7168;
+				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthOpt = (forthOperation)NULL;
 				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].startID = 
-																							forthTasks[forthState.forthCurrentTask].definitionSpaceIndex;
-				forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex++] = WORD_PLUS;
+				 																			forthTasks[forthState.forthCurrentTask].definitionSpaceIndex;
+
+			    forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = WORD_PLUS;
 				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].wordLength = 1;
 				forthTasks[forthState.forthCurrentTask].definitionIndex++;
+				
+				// forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthWordName = "PLUS2";
+				// forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthAlternativeName = "PLUS2";
+				// forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthWordID = 7169;
+				// forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthOpt = (forthOperation)NULL;
+				// forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].startID = 
+				//  																			forthTasks[forthState.forthCurrentTask].definitionSpaceIndex;
+
+			    // forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = WORD_PLUS;
+				// forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].wordLength = 1;
+				// forthTasks[forthState.forthCurrentTask].definitionIndex++;
+
+				//forthTasks[forthState.forthCurrentTask].definitionSpaceIndex++;
 			};
 		} else {
-			forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DICTIONARY_SPACE_FULL;			
+			forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DICTIONARY_SPACE_FULL;	
 		};
 	} else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DICTIONARY_LIST_FULL;
 	};
+	printf("error = %d", forthTasks[forthState.forthCurrentTask].errorNumber);		
+
 }
 
 void privateCMessage(char message, int stream) {
