@@ -11,9 +11,9 @@ void readCode(char* filename) {
 	FILE* fp = fopen(filename, "r");
 	int nn; /* < 32 */
 	if (fp == NULL) {
-		PSMSG_ERROR("H2oForth - Unable to open a file\n");
+		PSMSG_ERROR_CRCR("H2oForth - Unable to open a file\n");
 		PERROR(filename);
-		PSMSG_ERROR("\n");
+		PSMSG_ERROR_CRCR("\n");
 		exit(EXIT_CODE_NOTFOUND);
 	};
 	if (forthState.forthIsVerbose) {
@@ -30,9 +30,9 @@ void createDefaultBlock(void) {
 	char* filename = (char*)DEFAULT_BLOCKSNAME;
 	int fd = _open(filename, O_CREAT | O_WRONLY | O_TRUNC);
 	if (fd == FILEIO_ERROR) {
-		PSMSG_ERROR("H2oForth - Unable to create a blocks file\n");
+		PSMSG_ERROR_CRCR("H2oForth - Unable to create a blocks file\n");
 		PERROR(filename);
-		PSMSG_ERROR("\n");
+		PSMSG_ERROR_CRCR("\n");
 	}
 	else {
 		int result;
@@ -62,9 +62,9 @@ void readBlocks(char* filename) {
 	int nn; /* < 32 */
 	int fd = _open(filename, O_RDONLY);
 	if (fd == FILEIO_ERROR) {
-		PSMSG_ERROR("H2oForth - Unable to open a blocks file\n");
+		PSMSG_ERROR_CRCR("H2oForth - Unable to open a blocks file\n");
 		PERROR(filename);
-		PSMSG_ERROR("\n");
+		PSMSG_ERROR_CRCR("\n");
 		createDefaultBlock();
 		if (forthState.forthIsVerbose) {
 			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
@@ -93,9 +93,9 @@ void readFile(char* filename) {
 	int nn; /* < 32 */
 	FILE* fp = fopen(filename, "r");
 	if (fp == NULL) {
-		PSMSG_ERROR("H2oForth - Unable to open a file\n");
+		PSMSG_ERROR_CRCR("H2oForth - Unable to open a file\n");
 		PERROR(filename);
-		PSMSG_ERROR("\n");
+		PSMSG_ERROR_CRCR("\n");
 		exit(EXIT_FILE_NOTFOUND);
 	};
 
@@ -300,10 +300,10 @@ int parameterFile(void) {
 
 int parameterUnknown(char* parParameter) {
 	int nn; /* < 32 */
-	PSMSG_ERROR("H2oForth - Unknown parameter: ");
+	PSMSG_ERROR_CRCR("H2oForth - Unknown parameter: ");
 	//PERROR(parParameter);
-	PSMSG_ERROR(parParameter);
-	PSMSG_ERROR("\n");
+	PSMSG_ERROR_CRCR(parParameter);
+	PSMSG_ERROR_CRCR("\n");
 	forthState.forthIsExit = TRUE;
 	exitCode = EXIT_UNKNOWN_PARAMETER;
 	return(FALSE);

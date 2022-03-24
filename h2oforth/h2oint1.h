@@ -10,6 +10,7 @@
 #define CTRLZ_GETCHAR 26
 #define CTRLZ_EOF -1
 
+int readStaticInput(void);
 void readInput(void);
 
 #endif

@@ -136,6 +136,9 @@
 //#undef SYSTEM_INTERACTIVE
 #define SYSTEM_INTERACTIVE
 
+/* Read some static input from ( compiled ) ROM code, at start of input processing */
+#define READ_STATIC_INPUT
+
 /* SYSTEM_WITH_FILEIO might be changed by NO_EXIT setting in "h2oarc1.h" */
 //#undef SYSTEM_WITH_FILEIO
 #define SYSTEM_WITH_FILEIO
@@ -632,7 +635,9 @@
 #define SMSG_SUCCESS(X) privateSMessage((char *)X, STREAM_SUCCESS, FALSE, FALSE);
 #define SMSG_SUCCESS_CR(X) privateSMessage((char *)X, STREAM_SUCCESS, FALSE, TRUE);
 #define SMSG_SUCCESS2(X,CR1,CR2) privateSMessage((char *)X, STREAM_SUCCESS, CR1, CR2);
-#define SMSG_ERROR(X) privateSMessage((char *)X, STREAM_ERROR, TRUE, TRUE);
+#define SMSG_ERROR(X) privateSMessage((char *)X, STREAM_ERROR, FALSE, FALSE);
+#define SMSG_ERROR_CR(X) privateSMessage((char *)X, STREAM_ERROR, FALSE, TRUE);
+#define SMSG_ERROR_CRCR(X) privateSMessage((char *)X, STREAM_ERROR, TRUE, TRUE);
 #define SMSG_WARNING(X) privateSMessage((char *)X, STREAM_WARNING, TRUE, TRUE);
 #define SMSG_VERBOSE(X) privateSMessage((char *)X, STREAM_VERBOSE, TRUE, TRUE);
 #define SMSG_INFORMATION(X) privateSMessage((char *)X, STREAM_INFORMATION, TRUE, TRUE);
@@ -647,14 +652,18 @@
 #define PSMSG_SUCCESS(X) {strcpy_P(PRINT_BUFFER, PSTR(X)); privateSMessage(PRINT_BUFFER, STREAM_SUCCESS, FALSE, FALSE);};
 #define PSMSG_SUCCESS_CR(X) {strcpy_P(PRINT_BUFFER, PSTR(X)); privateSMessage(PRINT_BUFFER, STREAM_SUCCESS, FALSE, TRUE);};
 #define PSMSG_SUCCESS2(X,CR1,CR2) {strcpy_P(PRINT_BUFFER, PSTR(X)); privateSMessage(PRINT_BUFFER, STREAM_SUCCESS, CR1, CR2);};
-#define PSMSG_ERROR(X) {strcpy_P(PRINT_BUFFER, PSTR(X)); privateSMessage(PRINT_BUFFER, STREAM_ERROR, TRUE, TRUE);};
+#define PSMSG_ERROR(X) {strcpy_P(PRINT_BUFFER, PSTR(X)); privateSMessage(PRINT_BUFFER, STREAM_ERROR, FALSE, FALSE);};
+#define PSMSG_ERROR_CR(X) {strcpy_P(PRINT_BUFFER, PSTR(X)); privateSMessage(PRINT_BUFFER, STREAM_ERROR, FALSE, TRUE);};
+#define PSMSG_ERROR_CRCR(X) {strcpy_P(PRINT_BUFFER, PSTR(X)); privateSMessage(PRINT_BUFFER, STREAM_ERROR, TRUE, TRUE);};
 #define PSMSG_WARNING(X) {strcpy_P(PRINT_BUFFER, PSTR(X)); privateSMessage(PRINT_BUFFER, STREAM_WARNING, TRUE, TRUE);};
 #define PSMSG_VERBOSE(X) {strcpy_P(PRINT_BUFFER, PSTR(X)); privateSMessage(PRINT_BUFFER, STREAM_VERBOSE, TRUE, TRUE);};
 #define PSMSG_INFORMATION(X) {strcpy_P(PRINT_BUFFER, PSTR(X)); privateSMessage(PRINT_BUFFER, STREAM_INFORMATION, TRUE, TRUE);};
 //#define PSMSG_SUCCESS(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_SUCCESS, FALSE, FALSE);};
 //#define PSMSG_SUCCESS_CR(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_SUCCESS, FALSE, TRUE);};
 //#define PSMSG_SUCCESS2(X,CR1,CR2) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_SUCCESS, CR1, CR2);};
-//#define PSMSG_ERROR(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_ERROR, TRUE, TRUE);};
+//#define PSMSG_ERROR(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_ERROR, FALSE, FALSE);};
+//#define PSMSG_ERROR_CR(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_ERROR, FALSE, TRUE);};
+//#define PSMSG_ERROR_CRCR(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_ERROR, TRUE, TRUE);};
 //#define PSMSG_WARNING(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_WARNING, TRUE, TRUE);};
 //#define PSMSG_VERBOSE(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_VERBOSE, TRUE, TRUE);};
 //#define PSMSG_INFORMATION(X) {char buffer[MAX_PRINTBUFFER]; strcpy_P(buffer, PSTR(X)); privateSMessage(buffer, STREAM_INFORMATION, TRUE, TRUE);};
@@ -667,7 +676,9 @@
 #define PSMSG_SUCCESS(X) privateSMessage(char *)X, STREAM_SUCCESS, FALSE, FALSE);
 #define PSMSG_SUCCESS_CR(X) privateSMessage((char *)X, STREAM_SUCCESS, FALSE, TRUE);
 #define PSMSG_SUCCESS2(X,CR1,CR2) privateSMessage((char *)X, STREAM_SUCCESS, CR1, CR2);
-#define PSMSG_ERROR(X) privateSMessage((char *)X, STREAM_ERROR, TRUE, TRUE);
+#define PSMSG_ERROR(X) privateSMessage((char *)X, STREAM_ERROR, FALSE, FALSE);
+#define PSMSG_ERROR_CR(X) privateSMessage((char *)X, STREAM_ERROR, FALSE, TRUE);
+#define PSMSG_ERROR_CRCR(X) privateSMessage((char *)X, STREAM_ERROR, TRUE, TRUE);
 #define PSMSG_WARNING(X) privateSMessage((char *)X, STREAM_WARNING, TRUE, TRUE);
 #define PSMSG_VERBOSE(X) privateSMessage((char *)X, STREAM_VERBOSE, TRUE, TRUE);
 #define PSMSG_INFORMATION(X) privateSMessage((char *)X, STREAM_INFORMATION, TRUE, TRUE);

@@ -3,6 +3,28 @@
 
 /* Support for interactive applications with user input */
 
+#ifdef READ_STATIC_INPUT
+//static const PROGMEM char *staticInputLines[] = {"1", "2", "+", ".S"};
+static const PROGMEM char *staticInputLines[] = {"11", "12"};
+
+unsigned int staticInputCounter = 0;
+const unsigned int numberOfStaticInputLines = sizeof(staticInputLines) / sizeof(staticInputLines[0]);
+
+/* Read some static input from ( compiled ) ROM code, at start of input processing */
+int readStaticInput(void) {
+	int result = staticInputCounter < numberOfStaticInputLines;
+	if (result) {
+		SMSG_SUCCESS_CR("Static Input");
+		strcpy(ioTib, staticInputLines[staticInputCounter]);
+		SMSG_SUCCESS_CR(ioTib);
+		staticInputCounter++; 
+	} else {
+		SMSG_SUCCESS_CR("End of Static Input");		
+	};
+	return(result);
+}
+#endif
+
 /* Get input, fill the terminal input buffer (tib) */
 void readInput(void) {
 	int doTibPointer = 0;
@@ -35,8 +57,8 @@ void readInput(void) {
 	if (forthState.forthReadsKeyboard) {
 		if (doInput == CTRLZ_GETCHAR) {
 			forthState.forthIsExit = TRUE;
-			//PSMSG_ERROR("CTRLZ_GETCH - Exit");
-			//PSMSG_ERROR("H2oForth is terminating");
+			//PSMSG_ERROR_CRCR("CTRLZ_GETCH - Exit");
+			//PSMSG_ERROR_CRCR("H2oForth is terminating");
 		};
 	};
 
@@ -51,8 +73,8 @@ void readInput(void) {
 			}
 			else {
 				forthState.forthIsExit = TRUE;
-				//PSMSG_ERROR("CTRLZ_GETCHAR - Exit");
-				//PSMSG_ERROR("H2oForth is terminating");
+				//PSMSG_ERROR_CRCR("CTRLZ_GETCHAR - Exit");
+				//PSMSG_ERROR_CRCR("H2oForth is terminating");
 			};
 		};
 

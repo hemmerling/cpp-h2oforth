@@ -83,19 +83,19 @@ typedef  struct _forthMessage {
 #define MSG_HELP_EXPLAIN09 54
 #define MSG_HELP_EXPLAIN10 55
 #define MSG_SAVING_CODE2 56
+#define MSG_STATIC_INPUT 57		
+#define MSG_END_OF_STATIC_INPUT 58		
 
-#define MSG_COMMONWORD01 57
-#define MSG_COMMONWORD02 58
-#define MSG_COMMONWORD03 59
-#define MSG_COMMONWORD04 60
-#define MSG_COMMONWORD05 61
-#define MSG_COMMONWORD06 62
-#define MSG_COMMONWORD07 63
-#define MSG_COMMONWORD08 64
-#define MSG_COMMONWORD09 65
-#define MSG_COMMONWORD10 66
-#define MSG_COMMONWORD11 67
-#define MSG_COMMONWORD12 68
+#define MSG_COMMONWORD01 60
+#define MSG_COMMONWORD02 61
+#define MSG_COMMONWORD03 62
+#define MSG_COMMONWORD04 63
+#define MSG_COMMONWORD05 64
+#define MSG_COMMONWORD06 65
+#define MSG_COMMONWORD07 66
+#define MSG_COMMONWORD08 67
+#define MSG_COMMONWORD09 68
+#define MSG_COMMONWORD10 69
 
 #define MSG_WORD01 70
 #define MSG_WORD02 71
@@ -483,8 +483,8 @@ static const PROGMEM typedef_forthMessage forthMessages[] = {
 			{  54, "%c%s, %c%s       Wait for keyboard input" }, 
 			{  55, "%c%s, %c%s           Save a code file. TBD" }, 
 			{  56, "H2OForth - Saving compiled code. TBD" }, 
-			{  57, "" }, 
-			{  58, "" }, 
+			{  57, "Static Input" }, 
+			{  58, "End of Static Input" }, 
 			{  59, "" }, 
 
 			{  60, "\n%s" }, /* common words */

@@ -1223,8 +1223,10 @@ void forthParseTib(void) {
 #endif
 	while (aTibIndex < lenIoTib) {
 		if (aWordDetected) {
-			//PUTS("WORD_DETECTION_IN_PROGRESS");
-			if (ioTib[aTibIndex] <= SPACE) {
+			//SMSG_ERROR_CR("Word detection in process");
+			if ( (ioTib[aTibIndex] <= SPACE)|| ( aTibIndex == lenIoTib-1) ) {
+				/* With static input, word is finished at end of buffer */
+				/* With input from keyboard or terminal, word is finished by non-word character, e.g. SPACE, CR */
 				/* Finish word detection */
 				aWordDetected = FALSE;
 				/* Reset message numbers */
@@ -1243,25 +1245,25 @@ void forthParseTib(void) {
 #if defined (__DEBUG__)
 				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 					"word = [%s], isSPInteger = [%d]", wordBuffer, isSPIntegerWord);
-				FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+				SMSG_ERROR(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef DPINTEGER_SUPPORT
 				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 					", isDPInteger = [%d]", isDPIntegerWord);
-				FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+				SMSG_ERROR(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 #ifdef FLOAT_SUPPORT
 				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 					", isDPFloat = [%d]", isFloatWord);
-				FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+				SMSG_ERROR(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 				nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 					", isWordFound = [%d]", isWordFound);
-				PUTS(forthTasks[forthState.forthCurrentTask].printBuffer);
+				SMSG_ERROR_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 				if (forthTasks[forthState.forthCurrentTask].forthMode == MODE_COMPILE )
 				{
 #if defined (__DEBUG__)
-					PUTS("Compile Mode");
+					SMSG_ERROR_CR("Compile Mode");
 #endif
 					if (isEndOfCompilation()){
 							executePermWord();
@@ -1338,32 +1340,32 @@ void noParameterPreProcessing(void) {
 #if defined(__BORLANDC__) || defined(__TURBOC__) || defined(ARDUINO)
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%s, Version %d - Built %d\n( Int=%d, INTEGER_CELL=%d, *Int=%d, Long Long=%d", COPYRIGHT_MESSAGE, VERSION, BUILT, \
 			sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
-		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+		SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef FLOAT_SUPPORT
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL=%d", sizeof(CELL_FLOAT));
-		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+		SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef FLOAT_ON_DATASTACK
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL/INTEGER_CELL=%d", sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
-		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+		SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 #endif
-		PUTS(" )");
+		SMSG_SUCCESS_CR(" )");
 #else
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 			"%s, Version %d - Built %d\n( Int=%zd, INTEGER_CELL=%zd, *Int=%zd, Long Long=%zd",
 			COPYRIGHT_MESSAGE, VERSION, BUILT,
 			sizeof(int), sizeof(CELL_INTEGER), sizeof(void*), sizeof(LONG_LONG));
-		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+		SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef FLOAT_SUPPORT
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL=%zd", sizeof(CELL_FLOAT));
-		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+		SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #ifdef FLOAT_ON_DATASTACK
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, ", FLOAT_CELL/INTEGER_CELL=%zd",
 			sizeof(CELL_FLOAT) / sizeof(CELL_INTEGER));
-		FPUTS_OUT(forthTasks[forthState.forthCurrentTask].printBuffer);
+		SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
 #endif
-		PUTS(" )");
+		SMSG_SUCCESS_CR(" )");
 #endif
 	};
 	forthState.forthIsWaitingForKeyboard = FALSE;
@@ -1436,7 +1438,15 @@ void loop(void) {
       		digitalWrite(LED_BUILTIN, ledSwitch);
       		ledSwitch = !ledSwitch;
 #endif
+#ifdef READ_STATIC_INPUT
+			int isStaticInput = FALSE;
+			isStaticInput = readStaticInput(); 
+			if (!isStaticInput){
+				readInput();
+			};
+#else
 			readInput();
+#endif
 			processTib();
 		} while (!forthState.forthIsExit);
 	};
