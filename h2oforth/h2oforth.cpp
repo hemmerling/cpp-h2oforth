@@ -1125,11 +1125,11 @@ void storeFloat(void) {
 
 /* Find word in permanent ( C/C++ ) wordlist */
 int isPermWord(void) {
-	int ii = 0;
-	int jj = 0;
+	unsigned int ii = 0;
+	unsigned int jj = 0;
 	int result = FALSE;
 	/* TBD: Size should be calculated by forthTasks[forthState.forthCurrentTask].forthWordLists */
-	int lenForthWordLists = sizeof(forthWordLists) / sizeof(forthWordLists[0]);
+	unsigned int lenForthWordLists = sizeof(forthWordLists) / sizeof(forthWordLists[0]);
 	for (ii = 0; ii < lenForthWordLists; ii++) {
 		for (jj = 0; jj < *forthTasks[forthState.forthCurrentTask].forthWordLists[ii].size; jj++) {
 #ifdef ARDUINO
