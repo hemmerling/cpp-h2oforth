@@ -201,6 +201,7 @@ int parameterHelp(void) {
 	PSMSG_SUCCESS_CR("Without parameters: Display this help screen");
 #else
 	PSMSG_SUCCESS_CR("Without parameters: Wait for first for terminal input, then for keyboard input")
+#endif
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 		"%c%s, %c%s, %c%s       Display this help screen",
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName,
@@ -246,7 +247,6 @@ int parameterHelp(void) {
 		"%c%s, %c%s           Save a code file. TBD",
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_SAVE]).shortName,
 		PARAMETER_IDENTIFIER, (parameters[PARAMETER_SAVE]).name);
-#endif
 	forthState.forthIsExit = TRUE;
 	exitCode = EXIT_HELP;
 	return(TRUE);
