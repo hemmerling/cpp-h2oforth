@@ -485,6 +485,7 @@
 #ifdef __I86__
 /* Open Watcom C/C++ 1.9, Win16 */
 #endif
+
 #ifdef __386__
 /* Open Watcom C/C++ 1.9, Win386(Watcom Extender), 16-bit application */
 #endif
@@ -498,6 +499,10 @@
 #endif
 #endif
 #endif
+//#pragma warning * 9;
+//#pragma warning * 1;
+#pragma warning 14 9;
+#pragma warning 726 9;
 #endif
 
 #ifdef ARDUINO
