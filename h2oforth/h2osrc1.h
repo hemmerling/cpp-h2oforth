@@ -4,8 +4,8 @@
 /* Static FORTH source code, to be processed at startup, before interactive input processing */
 
 #ifdef READ_STATIC_INPUT
-//static const char *staticInputLines[] = {"111", "112", "+", ".S"};
-static const char *staticInputLines[] = {"111", "112", "+\n"};
+//static const PROGMEM char *staticInputLines[] = {"DECIMAL", "123", "456", " ", "", "+"};
+static const PROGMEM char *staticInputLines[] = {""};
 #endif
 
 #endif

@@ -345,7 +345,6 @@ void bbc79Vlist(void) {
 	int result = FALSE;
 	unsigned int lenForthWordLists = sizeof(forthWordLists) / sizeof(forthWordLists[0]);
 	for (ii = 0; ii < lenForthWordLists; ii++) {
-		printf("\nVocabulary size = %d\n", *forthTasks[forthState.forthCurrentTask].forthWordLists[ii].size);
 		for (jj = 0; jj < ( unsigned int)*forthTasks[forthState.forthCurrentTask].forthWordLists[ii].size; jj++) {
 #ifdef ARDUINO
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%s ",
@@ -355,7 +354,7 @@ void bbc79Vlist(void) {
 			 forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName);
 #endif
 		 SMSG_SUCCESS(forthTasks[forthState.forthCurrentTask].printBuffer);
-#ifdef __DEBUG__
+#ifdef __DEBUG2__
 #ifdef ARDUINO
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%d\n",
 			 pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordID);

@@ -5,18 +5,32 @@
 
 #ifdef READ_STATIC_INPUT
 unsigned int staticInputCounter = 0;
+int endOfStaticInput = TRUE;
 const unsigned int numberOfStaticInputLines = sizeof(staticInputLines) / sizeof(staticInputLines[0]);
 
 /* Read some static input from ( compiled ) ROM code, at start of input processing */
 int readStaticInput(void) {
 	int result = staticInputCounter < numberOfStaticInputLines;
 	if (result) {
-		SMSG_SUCCESS_CR("Static Input");
+#if defined(__DEBUG2__)
+		SMSG_ERROR_CR("Static Input");
+#endif
+
+#ifdef ARDUINO
+		strcpy(ioTib, pgm_read_ptr(&staticInputLines[staticInputCounter]));
+#else
 		strcpy(ioTib, staticInputLines[staticInputCounter]);
+#endif			
+
 		SMSG_SUCCESS_CR(ioTib);
 		staticInputCounter++; 
 	} else {
-		SMSG_SUCCESS_CR("End of Static Input");		
+		if (endOfStaticInput) {
+#if defined(__DEBUG2__)
+			SMSG_ERROR_CR("End of Static Input");
+#endif
+		};
+		endOfStaticInput = FALSE;
 	};
 	return(result);
 }

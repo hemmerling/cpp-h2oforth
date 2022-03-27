@@ -1210,7 +1210,12 @@ int isCompiledWord(void) {
 	return(result);
 }
 
-/* Parse the terminal input buffer (tib) */
+/* 
+	Parse the terminal input buffer (tib) 
+   	With static input:
+		1.Consequent CR or SPACE is not necessary, e.g. "+".
+		2. Words with zero length ( "" ) is ok.
+*/
 void forthParseTib(void) {
 	int aTibIndex = 0;
 	int aWordIndex = 0;
@@ -1225,11 +1230,12 @@ void forthParseTib(void) {
 	int isFloatWord = FALSE;
 #endif
 	while (aTibIndex < lenIoTib) {
-		if (aWordDetected) {
-			//SMSG_ERROR_CR("Word detection in process");
-			/* This code does not work properly */
+		if ( (aWordDetected) || ( ( aTibIndex == lenIoTib-1 ) && (ioTib[aTibIndex] > SPACE) ) ) {
+			/* Process here, if either a word is detected OR there is a single character */
 			if ( ( aTibIndex == lenIoTib-1 ) && (ioTib[aTibIndex] > SPACE) ) {
-				wordBuffer[aWordIndex] = ioTib[aTibIndex];
+				/* With static input, if last character is not CR, add it and terminate the wordbuffer string */
+				wordBuffer[aWordIndex++] = ioTib[aTibIndex];
+				wordBuffer[aWordIndex] = 0;
 			};
 			if ( (ioTib[aTibIndex] <= SPACE) || ( aTibIndex == lenIoTib-1 ) ) {
 				/* With static input, word is finished at end of buffer */
