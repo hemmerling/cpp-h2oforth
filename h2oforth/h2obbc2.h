@@ -346,7 +346,7 @@ void bbc79Vlist(void) {
 	unsigned int lenForthWordLists = sizeof(forthWordLists) / sizeof(forthWordLists[0]);
 	for (ii = 0; ii < lenForthWordLists; ii++) {
 		printf("\nVocabulary size = %d\n", *forthTasks[forthState.forthCurrentTask].forthWordLists[ii].size);
-		for (jj = 0; jj < *forthTasks[forthState.forthCurrentTask].forthWordLists[ii].size; jj++) {
+		for (jj = 0; jj < ( unsigned int)*forthTasks[forthState.forthCurrentTask].forthWordLists[ii].size; jj++) {
 #ifdef ARDUINO
 		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "%s ",
 			 pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName);

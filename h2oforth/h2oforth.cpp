@@ -283,7 +283,7 @@ typedef  struct _forthTask {
 #ifdef FLOAT_ON_DATASTACK
 	unsigned int floatFloatIntRatio;
 #endif
-	int floatStackIndex;
+	unsigned int floatStackIndex;
 	CELL_FLOAT floatStackSpace[MAX_FLOATSTACK];
 #endif
 } typedef_forthTask;
