@@ -36,17 +36,17 @@ void privateCreateDemoWord(void) {
 				forthTasks[forthState.forthCurrentTask].definitionIndex++;
 				forthTasks[forthState.forthCurrentTask].definitionSpaceIndex++;
 
-				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthWordName = "PLUS2";
-				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthAlternativeName = "PLUS2";
-				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthWordID = 7169;
-				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthOpt = (forthOperation)NULL;
-				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].startID = 
-				 																			forthTasks[forthState.forthCurrentTask].definitionSpaceIndex;
+				// forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthWordName = "PLUS2";
+				// forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthAlternativeName = "PLUS2";
+				// forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthWordID = 7169;
+				// forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthOpt = (forthOperation)NULL;
+				// forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].startID = 
+				//  																			forthTasks[forthState.forthCurrentTask].definitionSpaceIndex;
 
-			    forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = WORD_PLUS;
-				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].wordLength = 1;
-				forthTasks[forthState.forthCurrentTask].definitionIndex++;
-				forthTasks[forthState.forthCurrentTask].definitionSpaceIndex++;
+			    // forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = WORD_PLUS;
+				// forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].wordLength = 1;
+				// forthTasks[forthState.forthCurrentTask].definitionIndex++;
+				// forthTasks[forthState.forthCurrentTask].definitionSpaceIndex++;
 			};
 		} else {
 			forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DICTIONARY_SPACE_FULL;	
