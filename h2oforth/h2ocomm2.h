@@ -46,7 +46,7 @@ void privateCreateDemoWord(void) {
 				// forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].wordLength = 1;
 				// forthTasks[forthState.forthCurrentTask].definitionIndex++;
 
-				//forthTasks[forthState.forthCurrentTask].definitionSpaceIndex++;
+				forthTasks[forthState.forthCurrentTask].definitionSpaceIndex++;
 			};
 		} else {
 			forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DICTIONARY_SPACE_FULL;	

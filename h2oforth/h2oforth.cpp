@@ -226,6 +226,9 @@ char wordBuffer[MAX_INPUTBUFFER];
 /* Messages and error messages */
 #include "h2omsg1.h"
 
+/* Static FORTH source code, to be processed at startup, before interactive input processing */
+#include "h2osrc1.h"
+
 #ifdef COMMON_FORTH_WORDS
 #include "h2ocomm1.h"
 #endif
@@ -278,7 +281,7 @@ typedef  struct _forthTask {
 	typedef_forthMessage* forthOsErrors;
 #ifdef FLOAT_SUPPORT
 #ifdef FLOAT_ON_DATASTACK
-	int floatFloatIntRatio;
+	unsigned int floatFloatIntRatio;
 #endif
 	int floatStackIndex;
 	CELL_FLOAT floatStackSpace[MAX_FLOATSTACK];
