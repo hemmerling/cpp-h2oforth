@@ -336,7 +336,7 @@ typedef  struct _forthWord {
 } typedef_forthWord;
 
 typedef  struct _forthWordList {
-	unsigned int *size;
+	WORDID *size;
 	const typedef_forthWord* forthWords;
 } typedef_forthWordList;
 

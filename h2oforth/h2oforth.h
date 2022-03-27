@@ -363,7 +363,7 @@
 
 #define MAX_DEFINITIONS 2
 #define MAX_DEFINITIONSPACE 32
-#define WORDID unsigned short
+#define WORDID unsigned int
 #define MAX_WORDID 65535U
 
 #ifdef LOWERCASE_BASE_SUPPORT

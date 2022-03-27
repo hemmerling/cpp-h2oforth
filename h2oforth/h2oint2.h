@@ -4,8 +4,8 @@
 /* Support for interactive applications with user input */
 
 #ifdef READ_STATIC_INPUT
-//static const PROGMEM char *staticInputLines[] = {"1", "2", "+", ".S"};
-static const PROGMEM char *staticInputLines[] = {"11", "12"};
+//static const char *staticInputLines[] = {"111", "112", "+", ".S"};
+static const char *staticInputLines[] = {"111", "112", "+\n"};
 
 unsigned int staticInputCounter = 0;
 const unsigned int numberOfStaticInputLines = sizeof(staticInputLines) / sizeof(staticInputLines[0]);

@@ -255,14 +255,14 @@ static const PROGMEM char aListofExponent[] = { '-', '+', '0', '1', '2', '3', '4
 typedef  struct _forthTask {
 	char* baseFormat;
 	CELL_INTEGER forthBase; /* instead of int, for safety if somebody tries to store a BASE by ! instead of C! */
-	short int forthMode;
-	short int errorNumber;
-	short int messageNumber;
-	short int osErrorNumber;
-	short int dataStackIndex;
-	short int returnStackIndex;
-	short int definitionIndex;
-	short int definitionSpaceIndex;
+	unsigned short int forthMode;
+	unsigned short int errorNumber;
+	unsigned short int messageNumber;
+	unsigned short int osErrorNumber;
+	unsigned int dataStackIndex;
+	unsigned int returnStackIndex;
+	WORDID definitionIndex;
+	WORDID definitionSpaceIndex;
 	CELL_INTEGER dataStackSpace[MAX_DATASTACK];
 	void* returnStackSpace[MAX_RETURNSTACK];
 	char printBuffer[MAX_PRINTBUFFER];
@@ -288,37 +288,37 @@ typedef  struct _forthTask {
 /* Variables */
 typedef_forthTask forthTasks[MAX_FORTHTASKS];
 
-static const unsigned int commonWordListSize = sizeof(commonWords) / sizeof(commonWords[0]);
+static const WORDID commonWordListSize = sizeof(commonWords) / sizeof(commonWords[0]);
 #ifdef EXCEPTION_SUPPORT
-static const unsigned int exceptionWordListSize = sizeof(exceptionWords) / sizeof(exceptionWords[0]);
+static const WORDID exceptionWordListSize = sizeof(exceptionWords) / sizeof(exceptionWords[0]);
 #endif
 #ifdef FLOAT_SUPPORT
-static const unsigned int fpointListSize = sizeof(fpointWords) / sizeof(fpointWords[0]);
+static const WORDID fpointListSize = sizeof(fpointWords) / sizeof(fpointWords[0]);
 #endif
 #if ((TASKINGSTANDARD == TASKINGSTD_VOLK)) || ( TASKINGSTANDARD == TASKINGSTD_FORTH83 )
-static const unsigned int taskingListSize = sizeof(taskingWords) / sizeof(taskingWords[0]);
+static const WORDID taskingListSize = sizeof(taskingWords) / sizeof(taskingWords[0]);
 #endif       
 #ifdef TESTING_SUPPORT
-static const unsigned int testingWordListSize = sizeof(testingWords) / sizeof(testingWords[0]);
+static const WORDID testingWordListSize = sizeof(testingWords) / sizeof(testingWords[0]);
 #endif
-static const unsigned int forthWordListSize = sizeof(forthWords) / sizeof(forthWords[0]);
+static const WORDID forthWordListSize = sizeof(forthWords) / sizeof(forthWords[0]);
 
 static const typedef_forthWordList forthWordLists[] = {
-		{(unsigned int *)&commonWordListSize, commonWords}
+		{(WORDID *)&commonWordListSize, commonWords}
 #ifdef EXCEPTION_SUPPORT
-		, {(unsigned int *)&exceptionWordListSize, exceptionWords}
+		, {(WORDID int *)&exceptionWordListSize, exceptionWords}
 #endif
 #ifdef FLOAT_SUPPORT
-		, {(unsigned int *)&fpointListSize, fpointWords}
+		, {(WORDID *)&fpointListSize, fpointWords}
 #endif
 #if ((TASKINGSTANDARD == TASKINGSTD_VOLK)) || ( TASKINGSTANDARD == TASKINGSTD_FORTH83 )
-		, {(unsigned int *)&taskingListSize, taskingWords}
+		, {(WORDID *)&taskingListSize, taskingWords}
 #endif       
 #ifdef TESTING_SUPPORT
-		, {(unsigned int *)&testingWordListSize, testingWords}
+		, {(WORDID *)&testingWordListSize, testingWords}
 #endif
-		, { (unsigned int *)&forthTasks[forthState.forthCurrentTask].definitionIndex, forthDefinitionWords}
-		, { (unsigned int *)&forthWordListSize, forthWords}
+		, { (WORDID *)&forthTasks[forthState.forthCurrentTask].definitionIndex, forthDefinitionWords}
+		, { (WORDID *)&forthWordListSize, forthWords}
 };
 
 #if defined(ARDUINO) && defined(ARDUINO_SWITCH_LIGHT)
@@ -1224,7 +1224,11 @@ void forthParseTib(void) {
 	while (aTibIndex < lenIoTib) {
 		if (aWordDetected) {
 			//SMSG_ERROR_CR("Word detection in process");
-			if ( (ioTib[aTibIndex] <= SPACE)|| ( aTibIndex == lenIoTib-1) ) {
+			/* This code does not work properly */
+			if ( ( aTibIndex == lenIoTib-1 ) && (ioTib[aTibIndex] > SPACE) ) {
+				wordBuffer[aWordIndex] = ioTib[aTibIndex];
+			};
+			if ( (ioTib[aTibIndex] <= SPACE) || ( aTibIndex == lenIoTib-1 ) ) {
 				/* With static input, word is finished at end of buffer */
 				/* With input from keyboard or terminal, word is finished by non-word character, e.g. SPACE, CR */
 				/* Finish word detection */
