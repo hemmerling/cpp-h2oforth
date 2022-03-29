@@ -30,7 +30,6 @@ void privateCreateDemoWord(void) {
 				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthOpt = (forthOperation)NULL;
 				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].startID = 
 				 																			forthTasks[forthState.forthCurrentTask].definitionSpaceIndex;
-
 			    forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = WORD_PLUS;
 				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].wordLength = 1;
 				forthTasks[forthState.forthCurrentTask].definitionIndex++;

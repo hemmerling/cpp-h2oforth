@@ -1169,6 +1169,7 @@ int isEndOfCompilation(void) {
 void executePermWord(void) {
 	unsigned int ii = 0;
 	unsigned int jj = 0;
+	unsigned int kk = 0;
 	int result = FALSE;
 	/* TBD: lenForthWordLists should be calculated by forthTasks[forthState.forthCurrentTask].forthWordLists */
 	unsigned int lenForthWordLists = sizeof(forthWordLists) / sizeof(forthWordLists[0]);
@@ -1192,8 +1193,17 @@ void executePermWord(void) {
         };
 #else  
 				if (forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthOpt != NULL) {
-					/* Execute word */
+					/* Execute word by function pointer */
 					forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthOpt();
+				} else 
+					if (forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].startID>0) {
+						unsigned int definitionSize = forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].wordLength;
+						unsigned int startID = forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].startID;
+					/* Execute word by FORTH definition space */
+					for (kk = 0; kk < definitionSize; kk++) {
+						 unsigned int forthWord = forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[startID+kk];
+						 printf("forthWordID = %d\n", forthWord);
+					};
 				};
 #endif      
 				break;
@@ -1414,7 +1424,7 @@ void setup(void) {
 		forthTasks[ii].dataStackIndex = 0;
 		forthTasks[ii].returnStackIndex = 0;
 		forthTasks[ii].definitionIndex = 0;
-		forthTasks[ii].definitionSpaceIndex = 0;
+		forthTasks[ii].definitionSpaceIndex = 1; /* 0 is reserved for "no definition" */
 		forthTasks[ii].forthWordLists = (typedef_forthWordList*)forthWordLists;
     	forthTasks[ii].forthDefinitionWords = (typedef_forthWord*)forthDefinitionWords;
 		forthTasks[ii].forthDefinitionSpace = (WORDID *)forthDefinitionSpace;
