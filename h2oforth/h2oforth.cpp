@@ -273,12 +273,13 @@ typedef  struct _forthTask {
 	/* Block buffer, used to read Blocks files, by command line parameter support functions */
 	char ioBlockBuffer[MAX_BLOCKBUFFER];
 #endif
-	typedef_forthWordList* forthWordLists;
-  	typedef_forthWord* forthDefinitionWords;
+	typedef_forthWordList *forthWordLists;
+  	typedef_forthWord *forthDefinitionWords;
 	WORDID* forthDefinitionSpace;
-	typedef_forthMessage* forthErrors;
-	typedef_forthMessage* forthMessages;
-	typedef_forthMessage* forthOsErrors;
+	typedef_forthWord *forthDefinitionSpace2;
+	typedef_forthMessage *forthErrors;
+	typedef_forthMessage *forthMessages;
+	typedef_forthMessage *forthOsErrors;
 #ifdef FLOAT_SUPPORT
 #ifdef FLOAT_ON_DATASTACK
 	unsigned int floatFloatIntRatio;
@@ -1126,7 +1127,7 @@ void storeFloat(void) {
 }
 #endif
 
-/* Find word in permanent ( C/C++ ) wordlist */
+/* Find word in wordlist */
 int isPermWord(void) {
 	unsigned int ii = 0;
 	unsigned int jj = 0;
@@ -1152,6 +1153,32 @@ int isPermWord(void) {
 	return(result);
 }
 
+/* Get word in wordlist */
+typedef_forthWord *getPermWord(void) {
+	unsigned int ii = 0;
+	unsigned int jj = 0;
+	typedef_forthWord *result = NULL;
+	/* TBD: Size should be calculated by forthTasks[forthState.forthCurrentTask].forthWordLists */
+	unsigned int lenForthWordLists = sizeof(forthWordLists) / sizeof(forthWordLists[0]);
+	for (ii = 0; ii < lenForthWordLists; ii++) {
+		for (jj = 0; jj < *forthTasks[forthState.forthCurrentTask].forthWordLists[ii].size; jj++) {
+#ifdef ARDUINO
+      if (strcmp(wordBuffer, 
+                 pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName)) 
+                 == 0) {
+#else
+      if (strcmp(wordBuffer, 
+                 forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName) 
+                 == 0) {
+#endif			
+				result = ( typedef_forthWord *)&(forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj]);
+				break;
+			};
+		};
+	};
+	return(result);
+}
+
 /* 
 	Detect end of compilation.
 	Not by browsing the FORTH wordlists,
@@ -1164,7 +1191,7 @@ int isEndOfCompilation(void) {
 	return(result);
 }
 
-/* Execute word in permanent C/C+ wordlist */
+/* Execute word of wordlist */
 /* TBD: If a word appears in more than one wordlist, don't execute each time */
 void executePermWord(void) {
 	unsigned int ii = 0;
@@ -1425,9 +1452,10 @@ void setup(void) {
 		forthTasks[ii].returnStackIndex = 0;
 		forthTasks[ii].definitionIndex = 0;
 		forthTasks[ii].definitionSpaceIndex = 1; /* 0 is reserved for "no definition" */
-		forthTasks[ii].forthWordLists = (typedef_forthWordList*)forthWordLists;
-    	forthTasks[ii].forthDefinitionWords = (typedef_forthWord*)forthDefinitionWords;
+		forthTasks[ii].forthWordLists = (typedef_forthWordList *)forthWordLists;
+    	forthTasks[ii].forthDefinitionWords = (typedef_forthWord* )forthDefinitionWords;
 		forthTasks[ii].forthDefinitionSpace = (WORDID *)forthDefinitionSpace;
+		forthTasks[ii].forthDefinitionSpace2 = (typedef_forthWord *)forthDefinitionSpace2;
 		forthTasks[ii].forthErrors = (typedef_forthMessage*)forthErrors;
 		forthTasks[ii].forthMessages = (typedef_forthMessage*)forthMessages;
 		forthTasks[ii].forthOsErrors = (typedef_forthMessage*)forthOsErrors;
