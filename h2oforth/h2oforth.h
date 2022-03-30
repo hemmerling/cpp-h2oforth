@@ -712,7 +712,7 @@ void storeDPInteger(void);
 int isFloat(void);
 void storeFloat(void);
 int istPermWord(void);
-//_forthWord getPermWord(void);
+//typedef_forthWord *getPermWord(int);
 int isEndOfCompilation(void);
 void executePermWord(void);
 void forthParseTib(void);

@@ -1154,7 +1154,7 @@ int isPermWord(void) {
 }
 
 /* Get word in wordlist */
-typedef_forthWord *getPermWord(void) {
+typedef_forthWord *getPermWord(int forthWordID) {
 	unsigned int ii = 0;
 	unsigned int jj = 0;
 	typedef_forthWord *result = NULL;
@@ -1163,13 +1163,8 @@ typedef_forthWord *getPermWord(void) {
 	for (ii = 0; ii < lenForthWordLists; ii++) {
 		for (jj = 0; jj < *forthTasks[forthState.forthCurrentTask].forthWordLists[ii].size; jj++) {
 #ifdef ARDUINO
-      if (strcmp(wordBuffer, 
-                 pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName)) 
-                 == 0) {
 #else
-      if (strcmp(wordBuffer, 
-                 forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName) 
-                 == 0) {
+      		if ( forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordID == forthWordID ) {
 #endif			
 				result = ( typedef_forthWord *)&(forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj]);
 				break;
@@ -1228,8 +1223,10 @@ void executePermWord(void) {
 						unsigned int startID = forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].startID;
 					/* Execute word by FORTH definition space */
 					for (kk = 0; kk < definitionSize; kk++) {
-						 unsigned int forthWord = forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[startID+kk];
-						 printf("forthWordID = %d\n", forthWord);
+						 unsigned int forthWordID = forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[startID+kk];
+						 printf("forthWordID = %d\n", forthWordID);
+						 typedef_forthWord *forthWordPtr = getPermWord(forthWordID);
+						 printf("forthWordPtr-> Name = %s\n", forthWordPtr->forthWordName );
 					};
 				};
 #endif      
