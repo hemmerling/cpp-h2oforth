@@ -361,7 +361,7 @@
 #define CELLSIZE4 4
 #define CELLSIZE8 8
 
-#define MAX_DEFINITIONS 2
+#define MAX_DEFINITIONS 4
 #define MAX_DEFINITIONSPACE 32
 #define WORDID unsigned int
 #define MAX_WORDID 65535U

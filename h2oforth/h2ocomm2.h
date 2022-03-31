@@ -32,9 +32,25 @@ void privateCreateDemoWord(void) {
 				 																			forthTasks[forthState.forthCurrentTask].definitionSpaceIndex;
 			    forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = WORD_PLUS;
 			    forthTasks[forthState.forthCurrentTask].forthDefinitionSpace2[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = forthWords[WORD_PLUS-1];
+				forthTasks[forthState.forthCurrentTask].definitionSpaceIndex++;
 				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].wordLength = 1;
 				forthTasks[forthState.forthCurrentTask].definitionIndex++;
+				
+				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthWordName = "PLUSPLUS";
+				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthAlternativeName = "PLUSPLUS";
+				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthWordID = 7169;
+				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthOpt = (forthOperation)NULL;
+				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].startID = 
+				 																			forthTasks[forthState.forthCurrentTask].definitionSpaceIndex;
+			    forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = WORD_PLUS;
+			    forthTasks[forthState.forthCurrentTask].forthDefinitionSpace2[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = forthWords[WORD_PLUS-1];
 				forthTasks[forthState.forthCurrentTask].definitionSpaceIndex++;
+			    forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = WORD_PLUS;
+			    forthTasks[forthState.forthCurrentTask].forthDefinitionSpace2[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = forthWords[WORD_PLUS-1];
+				forthTasks[forthState.forthCurrentTask].definitionSpaceIndex++;
+				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].wordLength = 2;
+				forthTasks[forthState.forthCurrentTask].definitionIndex++;
+
 
 			};
 		} else {
