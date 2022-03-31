@@ -8,6 +8,15 @@
 #define DEMOWORD_SIZE 1
 #define WORD_LITERAL 143UL
 #define WORD_PLUS 269UL
+#define WORD_STATIC_PLUS 7168UL
+#define WORD_STATIC_PLUSPLUS 7169UL
+
+/* Execute a word */
+void privateExecuteWord(WORDID forthWordID){
+	
+}
+
+
 void privateCreateDemoWord(void) {
 	int maxDefinitions = sizeof(forthDefinitionWords) / sizeof( forthDefinitionWords[0]);
 	int maxSpace = sizeof(forthDefinitionSpace) / sizeof(forthDefinitionSpace[0]);
@@ -288,6 +297,12 @@ void commonRDotS(void) {
 	PSMSG_DEBUG("commonRDot")
 }
 
+/* Execute the statically defined word PLUS */
+void commonStaticWord(void){
+	privateExecuteWord(WORD_STATIC_PLUS);
+	// privateExecute(WORD_STATIC_PLUSPLUS);
+	PSMSG_DEBUG("commonStaticWord")
+}
 
 #ifdef EXCEPTION_SUPPORT
 void exceptionAbort(void) {
