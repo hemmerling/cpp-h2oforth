@@ -273,13 +273,13 @@ typedef  struct _forthTask {
 	/* Block buffer, used to read Blocks files, by command line parameter support functions */
 	char ioBlockBuffer[MAX_BLOCKBUFFER];
 #endif
-	typedef_forthWordList *forthWordLists;
-  	typedef_forthWord *forthDefinitionWords;
+	typedef_forthWordList* forthWordLists;
+	typedef_forthWord* forthDefinitionWords;
 	WORDID* forthDefinitionSpace;
-	typedef_forthWord *forthDefinitionSpace2;
-	typedef_forthMessage *forthErrors;
-	typedef_forthMessage *forthMessages;
-	typedef_forthMessage *forthOsErrors;
+	typedef_forthWord* forthDefinitionSpace2;
+	typedef_forthMessage* forthErrors;
+	typedef_forthMessage* forthMessages;
+	typedef_forthMessage* forthOsErrors;
 #ifdef FLOAT_SUPPORT
 #ifdef FLOAT_ON_DATASTACK
 	unsigned int floatFloatIntRatio;
@@ -308,21 +308,21 @@ static const WORDID testingWordListSize = sizeof(testingWords) / sizeof(testingW
 static const WORDID forthWordListSize = sizeof(forthWords) / sizeof(forthWords[0]);
 
 static const typedef_forthWordList forthWordLists[] = {
-		{(WORDID *)&commonWordListSize, commonWords}
+		{(WORDID*)&commonWordListSize, commonWords}
 #ifdef EXCEPTION_SUPPORT
-		, {(WORDID int *)&exceptionWordListSize, exceptionWords}
+		, {(WORDID int*) & exceptionWordListSize, exceptionWords}
 #endif
 #ifdef FLOAT_SUPPORT
-		, {(WORDID *)&fpointListSize, fpointWords}
+		, {(WORDID*)&fpointListSize, fpointWords}
 #endif
 #if ((TASKINGSTANDARD == TASKINGSTD_VOLK)) || ( TASKINGSTANDARD == TASKINGSTD_FORTH83 )
-		, {(WORDID *)&taskingListSize, taskingWords}
+		, {(WORDID*)&taskingListSize, taskingWords}
 #endif       
 #ifdef TESTING_SUPPORT
-		, {(WORDID *)&testingWordListSize, testingWords}
+		, {(WORDID*)&testingWordListSize, testingWords}
 #endif
-		, { (WORDID *)&forthTasks[forthState.forthCurrentTask].definitionIndex, forthDefinitionWords}
-		, { (WORDID *)&forthWordListSize, forthWords}
+		, { (WORDID*)&forthTasks[forthState.forthCurrentTask].definitionIndex, forthDefinitionWords}
+		, { (WORDID*)&forthWordListSize, forthWords}
 };
 
 #if defined(ARDUINO) && defined(ARDUINO_SWITCH_LIGHT)
@@ -509,7 +509,7 @@ int isSPInteger(void) {
 			for (ii = startIndex; ii < endIndex; ii++) {
 				if (wordBuffer[aWordIndex] ==
 #ifdef ARDUINO
-					(char)pgm_read_ptr(aListPointer + ii)) {
+				(char)pgm_read_ptr(aListPointer + ii)) {
 #else
 					aListPointer[ii]) {
 #endif
@@ -578,9 +578,9 @@ void storeSPInteger(void) {
 		for (ii = startIndex; ii < endIndex; ii++) {
 			if (wordBuffer[aWordIndex] ==
 #ifdef ARDUINO
-					(char)pgm_read_ptr(aListPointer + ii)) {
+			(char)pgm_read_ptr(aListPointer + ii)) {
 #else
-					aListPointer[ii]) {
+				aListPointer[ii]) {
 #endif
 				if ((wordBuffer[aWordIndex] == DIGIT_COMMA) || (wordBuffer[aWordIndex] == DIGIT_DOT)) {
 					break;
@@ -696,20 +696,20 @@ int isDPInteger(void) {
 			for (ii = startIndex; ii < endIndex; ii++) {
 				if (wordBuffer[aWordIndex] ==
 #ifdef ARDUINO
-					(char)pgm_read_ptr(aListPointer + ii)) {
+				(char)pgm_read_ptr(aListPointer + ii)) {
 #else
 					aListPointer[ii]) {
 #endif
 					isNumeric = TRUE;
 					break;
 				};
-			};
+				};
 			result = result && isNumeric;
 			aWordIndex++;
+			};
 		};
-	};
 	return(result);
-}
+	}
 #endif
 
 /* Convert word to an Double Precision Integer and store it on the DataStack */
@@ -771,7 +771,7 @@ void storeDPInteger(void) {
 			for (ii = startIndex; ii < endIndex; ii++) {
 				if (wordBuffer[aWordIndex] ==
 #ifdef ARDUINO
-					(char)pgm_read_ptr(aListPointer + ii)) {
+				(char)pgm_read_ptr(aListPointer + ii)) {
 #else
 					aListPointer[ii]) {
 #endif
@@ -785,10 +785,10 @@ void storeDPInteger(void) {
 					value = value * forthTasks[forthState.forthCurrentTask].forthBase + ii - 1;
 					break;
 				};
-			};
+				};
 			aWordIndex++;
+			};
 		};
-	};
 
 	if (valueIsNegative) {
 		value = value * (-1);
@@ -817,7 +817,7 @@ void storeDPInteger(void) {
 
 	forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex++] = lowValue;
 	forthTasks[forthState.forthCurrentTask].dataStackSpace[forthTasks[forthState.forthCurrentTask].dataStackIndex++] = highValue;
-}
+	}
 #endif
 
 /* Check if word is a Float, but just in DECIMAL mode, e.g. "1.2e .F" => 1.2 */
@@ -886,7 +886,7 @@ int isFloat(void) {
 			for (ii = startIndex; ii < endIndex; ii++) {
 				if (wordBuffer[aWordIndex] ==
 #ifdef ARDUINO
-					(char)pgm_read_ptr(aListPointer1 + ii)) {
+				(char)pgm_read_ptr(aListPointer1 + ii)) {
 #else
 					aListPointer1[ii]) {
 #endif
@@ -936,7 +936,7 @@ int isFloat(void) {
 			for (ii = startIndex; ii < endIndex; ii++) {
 				if (wordBuffer[aWordIndex] ==
 #ifdef ARDUINO
-					(char)pgm_read_ptr(aListPointer2 + ii)) {
+				(char)pgm_read_ptr(aListPointer2 + ii)) {
 #else
 					aListPointer2[ii]) {
 #endif
@@ -1015,7 +1015,7 @@ void storeFloat(void) {
 
 			if (wordBuffer[aWordIndex] ==
 #ifdef ARDUINO
-				(char)pgm_read_ptr(aListPointer1 + ii)) {
+			(char)pgm_read_ptr(aListPointer1 + ii)) {
 #else
 				aListPointer1[ii]) {
 #endif
@@ -1088,7 +1088,7 @@ void storeFloat(void) {
 		for (ii = startIndex; ii < endIndex; ii++) {
 			if (wordBuffer[aWordIndex] ==
 #ifdef ARDUINO
-				(char)pgm_read_ptr(aListPointer2 + ii)) {
+			(char)pgm_read_ptr(aListPointer2 + ii)) {
 #else
 				aListPointer2[ii]) {
 #endif
@@ -1137,13 +1137,13 @@ int isPermWord(void) {
 	for (ii = 0; ii < lenForthWordLists; ii++) {
 		for (jj = 0; jj < *forthTasks[forthState.forthCurrentTask].forthWordLists[ii].size; jj++) {
 #ifdef ARDUINO
-      if (strcmp(wordBuffer, 
-                 pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName)) 
-                 == 0) {
+			if (strcmp(wordBuffer,
+				pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName))
+				== 0) {
 #else
-      if (strcmp(wordBuffer, 
-                 forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName) 
-                 == 0) {
+			if (strcmp(wordBuffer,
+				forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName)
+				== 0) {
 #endif			
 				result = TRUE;
 				break;
@@ -1154,19 +1154,19 @@ int isPermWord(void) {
 }
 
 /* Get word in wordlist */
-typedef_forthWord *getPermWord(int forthWordID) {
+typedef_forthWord* getPermWord(WORDID forthWordID) {
 	unsigned int ii = 0;
 	unsigned int jj = 0;
-	typedef_forthWord *result = NULL;
+	typedef_forthWord* result = NULL;
 	/* TBD: Size should be calculated by forthTasks[forthState.forthCurrentTask].forthWordLists */
 	unsigned int lenForthWordLists = sizeof(forthWordLists) / sizeof(forthWordLists[0]);
 	for (ii = 0; ii < lenForthWordLists; ii++) {
 		for (jj = 0; jj < *forthTasks[forthState.forthCurrentTask].forthWordLists[ii].size; jj++) {
 #ifdef ARDUINO
 #else
-      		if ( forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordID == forthWordID ) {
+			if (forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordID == forthWordID) {
 #endif			
-				result = ( typedef_forthWord *)&(forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj]);
+				result = (typedef_forthWord*)&(forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj]);
 				break;
 			};
 		};
@@ -1174,7 +1174,7 @@ typedef_forthWord *getPermWord(int forthWordID) {
 	return(result);
 }
 
-/* 
+/*
 	Detect end of compilation.
 	Not by browsing the FORTH wordlists,
 	but by "knowing" implicitely that ";" ends compilation.
@@ -1182,7 +1182,7 @@ typedef_forthWord *getPermWord(int forthWordID) {
 */
 int isEndOfCompilation(void) {
 	int result = FALSE;
-    result = (strcmp(wordBuffer, STRING_SEMICOLON ) == 0);
+	result = (strcmp(wordBuffer, STRING_SEMICOLON) == 0);
 	return(result);
 }
 
@@ -1198,37 +1198,38 @@ void executePermWord(void) {
 	for (ii = 0; ii < lenForthWordLists; ii++) {
 		for (jj = 0; jj < *forthTasks[forthState.forthCurrentTask].forthWordLists[ii].size; jj++) {
 #ifdef ARDUINO
-      if (strcmp(wordBuffer, 
-                 pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName)) 
-                 == 0) {
+			if (strcmp(wordBuffer,
+				pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName))
+				== 0) {
 #else
-      if (strcmp(wordBuffer, 
-                 forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName) 
-                 == 0) {
+			if (strcmp(wordBuffer,
+				forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName)
+				== 0) {
 #endif			
 				result = TRUE;
 #ifdef ARDUINO
-        forthOperation funcPtr = pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthOpt);
-        if (funcPtr != NULL) {
-          /* Execute word */
-          funcPtr();
-        };
+				forthOperation funcPtr = pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthOpt);
+				if (funcPtr != NULL) {
+					/* Execute word */
+					funcPtr();
+				};
 #else  
 				if (forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthOpt != NULL) {
 					/* Execute word by function pointer */
 					forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthOpt();
-				} else 
-					if (forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].startID>0) {
+				}
+				else
+					if (forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].startID > 0) {
 						unsigned int definitionSize = forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].wordLength;
 						unsigned int startID = forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].startID;
-					/* Execute word by FORTH definition space */
-					for (kk = 0; kk < definitionSize; kk++) {
-						 unsigned int forthWordID = forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[startID+kk];
-						 printf("forthWordID = %d\n", forthWordID);
-						 typedef_forthWord *forthWordPtr = getPermWord(forthWordID);
-						 printf("forthWordPtr-> Name = %s\n", forthWordPtr->forthWordName );
+						/* Execute word by FORTH definition space */
+						for (kk = 0; kk < definitionSize; kk++) {
+							unsigned int forthWordID = forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[startID + kk];
+							printf("forthWordID = %d\n", forthWordID);
+							typedef_forthWord* forthWordPtr = getPermWord(forthWordID);
+							printf("forthWordPtr-> Name = %s\n", forthWordPtr->forthWordName);
+						};
 					};
-				};
 #endif      
 				break;
 			};
@@ -1244,9 +1245,9 @@ int isCompiledWord(void) {
 	return(result);
 }
 
-/* 
-	Parse the terminal input buffer (tib) 
-   	With static input:
+/*
+	Parse the terminal input buffer (tib)
+	With static input:
 		1.Consequent CR or SPACE is not necessary, e.g. "+".
 		2. Words with zero length ( "" ) is ok.
 */
@@ -1264,14 +1265,14 @@ void forthParseTib(void) {
 	int isFloatWord = FALSE;
 #endif
 	while (aTibIndex < lenIoTib) {
-		if ( (aWordDetected) || ( ( aTibIndex == lenIoTib-1 ) && (ioTib[aTibIndex] > SPACE) ) ) {
+		if ((aWordDetected) || ((aTibIndex == lenIoTib - 1) && (ioTib[aTibIndex] > SPACE))) {
 			/* Process here, if either a word is detected OR there is a single character */
-			if ( ( aTibIndex == lenIoTib-1 ) && (ioTib[aTibIndex] > SPACE) ) {
+			if ((aTibIndex == lenIoTib - 1) && (ioTib[aTibIndex] > SPACE)) {
 				/* With static input, if last character is not CR, add it and terminate the wordbuffer string */
 				wordBuffer[aWordIndex++] = ioTib[aTibIndex];
 				wordBuffer[aWordIndex] = 0;
 			};
-			if ( (ioTib[aTibIndex] <= SPACE) || ( aTibIndex == lenIoTib-1 ) ) {
+			if ((ioTib[aTibIndex] <= SPACE) || (aTibIndex == lenIoTib - 1)) {
 				/* With static input, word is finished at end of buffer */
 				/* With input from keyboard or terminal, word is finished by non-word character, e.g. SPACE, CR */
 				/* Finish word detection */
@@ -1280,7 +1281,7 @@ void forthParseTib(void) {
 				forthTasks[forthState.forthCurrentTask].messageNumber = 0;
 				forthTasks[forthState.forthCurrentTask].errorNumber = 0;
 				forthTasks[forthState.forthCurrentTask].osErrorNumber = 0;
-				isSPIntegerWord = isSPInteger();    
+				isSPIntegerWord = isSPInteger();
 #ifdef DPINTEGER_SUPPORT
 				isDPIntegerWord = isDPInteger();
 #endif
@@ -1307,18 +1308,19 @@ void forthParseTib(void) {
 					", isWordFound = [%d]", isWordFound);
 				SMSG_ERROR_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 #endif
-				if (forthTasks[forthState.forthCurrentTask].forthMode == MODE_COMPILE )
+				if (forthTasks[forthState.forthCurrentTask].forthMode == MODE_COMPILE)
 				{
 #if defined (__DEBUG__)
 					SMSG_ERROR_CR("Compile Mode");
 #endif
-					if (isEndOfCompilation()){
-							executePermWord();
+					if (isEndOfCompilation()) {
+						executePermWord();
 					};
-				} else {
+				}
+				else {
 					if (isWordFound) {
-							executePermWord();
-						}
+						executePermWord();
+					}
 					else {
 						if (isSPIntegerWord) {
 							storeSPInteger();
@@ -1449,10 +1451,10 @@ void setup(void) {
 		forthTasks[ii].returnStackIndex = 0;
 		forthTasks[ii].definitionIndex = 0;
 		forthTasks[ii].definitionSpaceIndex = 1; /* 0 is reserved for "no definition" */
-		forthTasks[ii].forthWordLists = (typedef_forthWordList *)forthWordLists;
-    	forthTasks[ii].forthDefinitionWords = (typedef_forthWord* )forthDefinitionWords;
-		forthTasks[ii].forthDefinitionSpace = (WORDID *)forthDefinitionSpace;
-		forthTasks[ii].forthDefinitionSpace2 = (typedef_forthWord *)forthDefinitionSpace2;
+		forthTasks[ii].forthWordLists = (typedef_forthWordList*)forthWordLists;
+		forthTasks[ii].forthDefinitionWords = (typedef_forthWord*)forthDefinitionWords;
+		forthTasks[ii].forthDefinitionSpace = (WORDID*)forthDefinitionSpace;
+		forthTasks[ii].forthDefinitionSpace2 = (typedef_forthWord*)forthDefinitionSpace2;
 		forthTasks[ii].forthErrors = (typedef_forthMessage*)forthErrors;
 		forthTasks[ii].forthMessages = (typedef_forthMessage*)forthMessages;
 		forthTasks[ii].forthOsErrors = (typedef_forthMessage*)forthOsErrors;
@@ -1483,13 +1485,13 @@ void loop(void) {
 			/* Main FORTH input loop */
 #if defined(ARDUINO) && defined(ARDUINO_SWITCH_LIGHT)
 			/* Switch LED on and off */
-      		digitalWrite(LED_BUILTIN, ledSwitch);
-      		ledSwitch = !ledSwitch;
+			digitalWrite(LED_BUILTIN, ledSwitch);
+			ledSwitch = !ledSwitch;
 #endif
 #ifdef READ_STATIC_INPUT
 			int isStaticInput = FALSE;
-			isStaticInput = readStaticInput(); 
-			if (!isStaticInput){
+			isStaticInput = readStaticInput();
+			if (!isStaticInput) {
 				readInput();
 			};
 #else

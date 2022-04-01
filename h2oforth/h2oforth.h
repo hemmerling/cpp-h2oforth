@@ -180,14 +180,14 @@
 
 #define ARDUINO_TERMINAL_POLLING TPOLLING1
 
-/* 
-   If you are using the "Serial Monitor" of the original "Arduino IDE 1" 
+/*
+   If you are using the "Serial Monitor" of the original "Arduino IDE 1"
    as terminal, please define ARDUINO_IDE1,
-   so that the input from the input window is echoed to the output window  
+   so that the input from the input window is echoed to the output window
  */
 #define ARDUINO_SERIAL_MONITOR
 
-/* Just for fun, switch the internal LED after each processed FORTH word */
+ /* Just for fun, switch the internal LED after each processed FORTH word */
 #define ARDUINO_SWITCH_LIGHT
 
 /* ARDUINO options end ----------- */
@@ -712,7 +712,7 @@ void storeDPInteger(void);
 int isFloat(void);
 void storeFloat(void);
 int istPermWord(void);
-//typedef_forthWord *getPermWord(int);
+//typedef_forthWord *getPermWord(WORDID);
 int isEndOfCompilation(void);
 void executePermWord(void);
 void forthParseTib(void);

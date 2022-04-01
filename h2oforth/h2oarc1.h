@@ -93,7 +93,7 @@ void ioStorePort(unsigned long, unsigned int);
 unsigned int ioGetPort(unsigned long);
 #ifndef ARDUINO 
 #if defined(__DJGPP__) || defined (__WATCOMC__)
-void delay(unsigned int ); /* unsigned _msec */
+void delay(unsigned int); /* unsigned _msec */
 #else
 void delay(unsigned long);
 #endif

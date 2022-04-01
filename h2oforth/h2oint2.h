@@ -23,8 +23,9 @@ int readStaticInput(void) {
 #endif			
 
 		SMSG_SUCCESS_CR(ioTib);
-		staticInputCounter++; 
-	} else {
+		staticInputCounter++;
+	}
+	else {
 		if (endOfStaticInput) {
 #if defined(__DEBUG2__)
 			SMSG_ERROR_CR("End of Static Input");

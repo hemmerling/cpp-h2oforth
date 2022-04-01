@@ -11,17 +11,80 @@
 #define WORD_STATIC_PLUS 7168UL
 #define WORD_STATIC_PLUSPLUS 7169UL
 
+/* Get word in wordlist */
+typedef_forthWord* privateGetPermWord(WORDID forthWordID) {
+	unsigned int ii = 0;
+	unsigned int jj = 0;
+	typedef_forthWord* result = NULL;
+	/* TBD: Size should be calculated by forthTasks[forthState.forthCurrentTask].forthWordLists */
+	unsigned int lenForthWordLists = sizeof(forthWordLists) / sizeof(forthWordLists[0]);
+	for (ii = 0; ii < lenForthWordLists; ii++) {
+		for (jj = 0; jj < *forthTasks[forthState.forthCurrentTask].forthWordLists[ii].size; jj++) {
+#ifdef ARDUINO
+#else
+			if (forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordID == forthWordID) {
+#endif			
+				result = (typedef_forthWord*)&(forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj]);
+				break;
+			};
+		};
+	};
+	return(result);
+}
+
 /* Execute a word */
-void privateExecuteWord(WORDID forthWordID){
-	
+void privateExecuteWord(WORDID forthWordID) {
+	unsigned int ii = 0;
+	unsigned int jj = 0;
+	unsigned int kk = 0;
+	int result = FALSE;
+	/* TBD: lenForthWordLists should be calculated by forthTasks[forthState.forthCurrentTask].forthWordLists */
+	unsigned int lenForthWordLists = sizeof(forthWordLists) / sizeof(forthWordLists[0]);
+	for (ii = 0; ii < lenForthWordLists; ii++) {
+		for (jj = 0; jj < *forthTasks[forthState.forthCurrentTask].forthWordLists[ii].size; jj++) {
+#ifdef ARDUINO
+			if (pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordID == forthWordID)) {
+#else
+			if (forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordID == forthWordID) {
+#endif			
+				result = TRUE;
+#ifdef ARDUINO
+				forthOperation funcPtr = pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthOpt);
+				if (funcPtr != NULL) {
+					/* Execute word */
+					funcPtr();
+				};
+#else  
+				if (forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthOpt != NULL) {
+					/* Execute word by function pointer */
+					forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthOpt();
+				}
+				else
+					if (forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].startID > 0) {
+						unsigned int definitionSize = forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].wordLength;
+						unsigned int startID = forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].startID;
+						/* Execute word by FORTH definition space */
+						for (kk = 0; kk < definitionSize; kk++) {
+							unsigned int forthWordID = forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[startID + kk];
+							printf("forthWordID = %d\n", forthWordID);
+							typedef_forthWord* forthWordPtr = privateGetPermWord(forthWordID);
+							printf("forthWordPtr-> Name = %s\n", forthWordPtr->forthWordName);
+						};
+					};
+#endif      
+				break;
+			};
+		};
+	};
+	return;
 }
 
 
 void privateCreateDemoWord(void) {
-	int maxDefinitions = sizeof(forthDefinitionWords) / sizeof( forthDefinitionWords[0]);
+	int maxDefinitions = sizeof(forthDefinitionWords) / sizeof(forthDefinitionWords[0]);
 	int maxSpace = sizeof(forthDefinitionSpace) / sizeof(forthDefinitionSpace[0]);
-	if (  forthTasks[forthState.forthCurrentTask].definitionIndex < maxDefinitions ) {
-		if ( forthTasks[forthState.forthCurrentTask].definitionSpaceIndex + DEMOWORD_SIZE < maxSpace ) {
+	if (forthTasks[forthState.forthCurrentTask].definitionIndex < maxDefinitions) {
+		if (forthTasks[forthState.forthCurrentTask].definitionSpaceIndex + DEMOWORD_SIZE < maxSpace) {
 			{
 				// forthTasks[forthState.forthCurrentTask].forthDefinitions[forthTasks[forthState.forthCurrentTask].definitionIndex].forthWordName = "1+2";
 				// forthTasks[forthState.forthCurrentTask].forthDefinitions[forthTasks[forthState.forthCurrentTask].definitionIndex].startID = forthTasks[forthState.forthCurrentTask].definitionSpaceIndex;
@@ -37,35 +100,37 @@ void privateCreateDemoWord(void) {
 				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthAlternativeName = "PLUS";
 				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthWordID = 7168;
 				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthOpt = (forthOperation)NULL;
-				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].startID = 
-				 																			forthTasks[forthState.forthCurrentTask].definitionSpaceIndex;
-			    forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = WORD_PLUS;
-			    forthTasks[forthState.forthCurrentTask].forthDefinitionSpace2[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = forthWords[WORD_PLUS-1];
+				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].startID =
+					forthTasks[forthState.forthCurrentTask].definitionSpaceIndex;
+				forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = WORD_PLUS;
+				forthTasks[forthState.forthCurrentTask].forthDefinitionSpace2[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = forthWords[WORD_PLUS - 1];
 				forthTasks[forthState.forthCurrentTask].definitionSpaceIndex++;
 				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].wordLength = 1;
 				forthTasks[forthState.forthCurrentTask].definitionIndex++;
-				
+
 				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthWordName = "PLUSPLUS";
 				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthAlternativeName = "PLUSPLUS";
 				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthWordID = 7169;
 				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].forthOpt = (forthOperation)NULL;
-				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].startID = 
-				 																			forthTasks[forthState.forthCurrentTask].definitionSpaceIndex;
-			    forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = WORD_PLUS;
-			    forthTasks[forthState.forthCurrentTask].forthDefinitionSpace2[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = forthWords[WORD_PLUS-1];
+				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].startID =
+					forthTasks[forthState.forthCurrentTask].definitionSpaceIndex;
+				forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = WORD_PLUS;
+				forthTasks[forthState.forthCurrentTask].forthDefinitionSpace2[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = forthWords[WORD_PLUS - 1];
 				forthTasks[forthState.forthCurrentTask].definitionSpaceIndex++;
-			    forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = WORD_PLUS;
-			    forthTasks[forthState.forthCurrentTask].forthDefinitionSpace2[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = forthWords[WORD_PLUS-1];
+				forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = WORD_PLUS;
+				forthTasks[forthState.forthCurrentTask].forthDefinitionSpace2[forthTasks[forthState.forthCurrentTask].definitionSpaceIndex] = forthWords[WORD_PLUS - 1];
 				forthTasks[forthState.forthCurrentTask].definitionSpaceIndex++;
 				forthTasks[forthState.forthCurrentTask].forthDefinitionWords[forthTasks[forthState.forthCurrentTask].definitionIndex].wordLength = 2;
 				forthTasks[forthState.forthCurrentTask].definitionIndex++;
 
 
 			};
-		} else {
-			forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DICTIONARY_SPACE_FULL;	
+		}
+		else {
+			forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DICTIONARY_SPACE_FULL;
 		};
-	} else {
+	}
+	else {
 		forthTasks[forthState.forthCurrentTask].errorNumber = ERROR_DICTIONARY_LIST_FULL;
 	};
 }
@@ -73,48 +138,48 @@ void privateCreateDemoWord(void) {
 void privateCMessage(char message, int stream) {
 	switch (stream)
 	{
-    	case STREAM_SUCCESS:
-			FPUTC_OUT(message);
-      		break;
-    	case STREAM_ERROR:
-    	case STREAM_WARNING:
-    	case STREAM_VERBOSE:
-    	case STREAM_DEBUG:
-    	case STREAM_INFORMATION:
-			FPUTC_ERR(message);
-      		break;
-    	default:
-      		return;
+	case STREAM_SUCCESS:
+		FPUTC_OUT(message);
+		break;
+	case STREAM_ERROR:
+	case STREAM_WARNING:
+	case STREAM_VERBOSE:
+	case STREAM_DEBUG:
+	case STREAM_INFORMATION:
+		FPUTC_ERR(message);
+		break;
+	default:
+		return;
 	};
 }
 
 void privateSMessage(char* message, int stream, int cr1, int cr2) {
 	switch (stream)
 	{
-    	case STREAM_SUCCESS:
-			if (cr1){
-				FPUTC_OUT(CHAR_CR);
-			};
-			FPUTS_OUT(message);
-			if (cr2){
-				FPUTC_OUT(CHAR_CR);
-			};
-      		break;
-    	case STREAM_ERROR:
-    	case STREAM_WARNING:
-    	case STREAM_VERBOSE:
-    	case STREAM_DEBUG:
-    	case STREAM_INFORMATION:
-			if (cr1){
-				FPUTC_ERR(CHAR_CR);
-			};
-			FPUTS_ERR(message);
-			if (cr2){
-				FPUTC_ERR(CHAR_CR);
-			};
-      		break;
-    	default:
-      		return;
+	case STREAM_SUCCESS:
+		if (cr1) {
+			FPUTC_OUT(CHAR_CR);
+		};
+		FPUTS_OUT(message);
+		if (cr2) {
+			FPUTC_OUT(CHAR_CR);
+		};
+		break;
+	case STREAM_ERROR:
+	case STREAM_WARNING:
+	case STREAM_VERBOSE:
+	case STREAM_DEBUG:
+	case STREAM_INFORMATION:
+		if (cr1) {
+			FPUTC_ERR(CHAR_CR);
+		};
+		FPUTS_ERR(message);
+		if (cr2) {
+			FPUTC_ERR(CHAR_CR);
+		};
+		break;
+	default:
+		return;
 	};
 }
 
@@ -145,7 +210,7 @@ void privateMessageHandler(void) {
 	int sizeOfMessages = sizeof(forthMessages) / sizeof(forthMessages[0]);
 	int sizeOfOsErrors = sizeof(forthOsErrors) / sizeof(forthOsErrors[0]);
 #endif
- 	if (errorNumber
+	if (errorNumber
 #if defined (__DEVELOP__)
 		&& (errorNumber < sizeOfErrors)
 #endif
@@ -158,7 +223,7 @@ void privateMessageHandler(void) {
 			forthTasks[forthState.forthCurrentTask].forthErrors[forthTasks[forthState.forthCurrentTask].errorNumber].messageText,
 #endif
 			forthTasks[forthState.forthCurrentTask].errorNumber);
-		 SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
+		SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 	};
 	if (messageNumber
 #if defined (__DEVELOP__)
@@ -298,7 +363,7 @@ void commonRDotS(void) {
 }
 
 /* Execute the statically defined word PLUS */
-void commonStaticWord(void){
+void commonStaticWord(void) {
 	privateExecuteWord(WORD_STATIC_PLUS);
 	// privateExecute(WORD_STATIC_PLUSPLUS);
 	PSMSG_DEBUG("commonStaticWord")

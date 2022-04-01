@@ -3,6 +3,7 @@
 
 /* Definitions of FORTH words common to one or more FORTH standards & FORTH implementations */
 
+typedef_forthWord *privateGetPermWord(WORDID);
 void privateExecuteWord(WORDID);
 void privateCreateDemoWord(void);
 void privateCMessage(char, int);

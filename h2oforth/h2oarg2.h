@@ -67,15 +67,15 @@ void readBlocks(char* filename) {
 		PSMSG_ERROR_CRCR("\n");
 		createDefaultBlock();
 		if (forthState.forthIsVerbose) {
-			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, 
-						 "H2oForth - Done Writing the default blocks file %s", filename);
+			nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+				"H2oForth - Done Writing the default blocks file %s", filename);
 			PSMSG_VERBOSE(forthTasks[forthState.forthCurrentTask].printBuffer);
 		};
 		exit(EXIT_BLOCKS_NOTFOUND);
 	};
 
-	while (_read(fd, forthTasks[forthState.forthCurrentTask].ioBlockBuffer, 
-	       sizeof(forthTasks[forthState.forthCurrentTask].ioBlockBuffer))) {
+	while (_read(fd, forthTasks[forthState.forthCurrentTask].ioBlockBuffer,
+		sizeof(forthTasks[forthState.forthCurrentTask].ioBlockBuffer))) {
 		int ii;
 		char lineBuffer[67];
 		for (ii = 0; ii < BLOCK_LINES; ii++) {
@@ -202,11 +202,11 @@ int parameterHelp(void) {
 #else
 	PSMSG_SUCCESS_CR("Without parameters: Wait for first for terminal input, then for keyboard input")
 #endif
-	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
-		"%c%s, %c%s, %c%s       Display this help screen",
-		PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName,
-		PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName2,
-		PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).name);
+		nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
+			"%c%s, %c%s, %c%s       Display this help screen",
+			PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName,
+			PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).shortName2,
+			PARAMETER_IDENTIFIER, (parameters[PARAMETER_HELP]).name);
 	SMSG_SUCCESS_CR(forthTasks[forthState.forthCurrentTask].printBuffer);
 	nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer,
 		"%c%s, %c%s        Verbose output off", PARAMETER_IDENTIFIER,

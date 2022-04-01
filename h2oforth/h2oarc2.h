@@ -23,29 +23,29 @@ unsigned int ioKey(void) {
 	};
 #else
 	/*
-		This generic Arduino Firmware function 
+		This generic Arduino Firmware function
 		reads characters from keyboard until the user presses the RETURN key.
 		Characters are not echoed.
 	 */
 #ifdef ARDUINO
- 	unsigned int result;
+	unsigned int result;
 	int nn; /* < 32 */
 #if (ARDUINO_TERMINAL_POLLING == TPOLLING1)
 	do {
-    	result = _GETCH();
+		result = _GETCH();
 	} while (result == -1);
 #else
-	while (CHAR_AVAILABLE <=0) {;};
+	while (CHAR_AVAILABLE <= 0) { ; };
 	result = _GETCH();
 #endif
-    //nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "\ninput = %d\n\n", result);
+	//nn = sprintf(forthTasks[forthState.forthCurrentTask].printBuffer, "\ninput = %d\n\n", result);
 	//SMSG_DEBUG(forthTasks[forthState.forthCurrentTask].printBuffer);
 	//SMSG_DEBUG("\nTest\n");
 	return(result);
 #else
-	/* Linux, bare-metall microcontroller systems .. */
-	/* This generic os function reads characters from keyboard 
-	   until the user presses the RETURN key */
+	 /* Linux, bare-metall microcontroller systems .. */
+	 /* This generic os function reads characters from keyboard
+		until the user presses the RETURN key */
 	return(GETCHAR());
 #endif
 #endif
@@ -160,7 +160,7 @@ unsigned int analogRead(unsigned int pin) {
 void setupTerminal(unsigned int speed, unsigned int config) {
 #ifdef ARDUINO
 	Serial.begin(speed, config);
-	while(!Serial); /* Wait until the serial port is available */
+	while (!Serial); /* Wait until the serial port is available */
 #endif
 }
 
