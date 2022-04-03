@@ -33,7 +33,8 @@ typedef  struct _forthMessage {
 #define ERROR_OPEN_BLOCKS 66
 #define ERROR_UNKNOWN_PARAMETER 67
 #define WARNING_SYSWORD_IN_APPWORD 68
-#define ERROR_NEWLINE 69
+#define LIT_COMPILE_ONLY 69
+#define ERROR_NEWLINE 70
 
 #define DEBUGMSG_WORD_IS_INTEGER 80
 #define DEBUGMSG_IS_DPINTEGER 81
@@ -396,9 +397,9 @@ static const PROGMEM typedef_forthMessage forthErrors[] = {
 												{  66, "H2oForth - Unable to open a blocks file" },
 												{  67, "H2oForth - Unknown parameter:" },
 												{  68, "Warning: %s is a system word in an application word" }, /* Warning */
-												{  69, "\n" },
+												{  69, "LIT compile only" },
 
-												{  70, "" },
+												{  70, "\n" },
 												{  71, "" },
 												{  72, "" },
 												{  73, "" },

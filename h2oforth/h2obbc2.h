@@ -1497,6 +1497,10 @@ void bbc79Execute(void) {
 }
 
 void bbc79Lit(void) {
+	if (forthTasks[forthState.forthCurrentTask].forthMode == MODE_COMPILE) {
+	} else {
+		SMSG_ERROR_CR("LIT compile only");
+	};
 	PSMSG_DEBUG("bbc79Lit")
 }
 
