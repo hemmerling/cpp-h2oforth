@@ -1228,6 +1228,7 @@ void executePermWord(void) {
 							printf("forthWordID = %d\n", forthWordID);
 							typedef_forthWord* forthWordPtr = getPermWord(forthWordID);
 							printf("forthWordPtr-> Name = %s\n", forthWordPtr->forthWordName);
+							privateExecuteWord(forthWordID);
 						};
 					};
 #endif      
