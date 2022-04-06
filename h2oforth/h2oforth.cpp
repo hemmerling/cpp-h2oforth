@@ -267,6 +267,7 @@ typedef  struct _forthTask {
 	WORDID definitionIndex;
 	WORDID definitionSpaceIndex;
 	WORDID instructionPointer;
+	WORDID currentInstructionAddress; /* "w" */
 	CELL_INTEGER dataStackSpace[MAX_DATASTACK];
 	void* returnStackSpace[MAX_RETURNSTACK];
 	char printBuffer[MAX_PRINTBUFFER];
@@ -1454,6 +1455,7 @@ void setup(void) {
 		forthTasks[ii].definitionIndex = 0;
 		forthTasks[ii].definitionSpaceIndex = 1; /* 0 is reserved for "no definition" */
 		forthTasks[ii].instructionPointer = 0;
+		forthTasks[ii].currentInstructionAddress = 0; /* "w" */
 		forthTasks[ii].forthWordLists = (typedef_forthWordList*)forthWordLists;
 		forthTasks[ii].forthDefinitionWords = (typedef_forthWord*)forthDefinitionWords;
 		forthTasks[ii].forthDefinitionSpace = (WORDID*)forthDefinitionSpace;
