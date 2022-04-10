@@ -9,6 +9,7 @@
 #define WORD_LITERAL 143UL
 #define WORD_PLUS 269UL
 #define WORD_LIT 308UL
+#define WORD_NOOPERATION 2052UL
 #define WORD_STATIC_PLUS 7168UL
 #define WORD_STATIC_PLUSPLUS 7169UL
 
@@ -34,7 +35,7 @@ typedef_forthWord* privateGetPermWord(WORDID forthWordID) {
 }
 
 /* Execute a word */
-void privateExecuteWord(WORDID forthWordID) {
+void privateExecuteWordByWordID(WORDID forthWordID) {
 	unsigned int ii = 0;
 	unsigned int jj = 0;
 	unsigned int kk = 0;
@@ -70,7 +71,60 @@ void privateExecuteWord(WORDID forthWordID) {
 							printf("forthWordID = %d\n", forthWordID);
 							typedef_forthWord* forthWordPtr = privateGetPermWord(forthWordID);
 							printf("forthWordPtr-> Name = %s\n", forthWordPtr->forthWordName);
-							privateExecuteWord(forthWordID);
+							privateExecuteWordByWordID(forthWordID);
+						};
+					};
+#endif      
+				break;
+			};
+		};
+	};
+	return;
+}
+
+
+/* Execute word of wordlist */
+void privateExecuteWordByName(char *forthWordName) {
+	unsigned int ii = 0;
+	unsigned int jj = 0;
+	unsigned int kk = 0;
+	int result = FALSE;
+	/* TBD: lenForthWordLists should be calculated by forthTasks[forthState.forthCurrentTask].forthWordLists */
+	unsigned int lenForthWordLists = sizeof(forthWordLists) / sizeof(forthWordLists[0]);
+	for (ii = 0; ii < lenForthWordLists; ii++) {
+		for (jj = 0; jj < *forthTasks[forthState.forthCurrentTask].forthWordLists[ii].size; jj++) {
+#ifdef ARDUINO
+			if (strcmp(forthWordName,
+				pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName))
+				== 0) {
+#else
+			if (strcmp(forthWordName,
+				forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthWordName)
+				== 0) {
+#endif			
+				result = TRUE;
+#ifdef ARDUINO
+				forthOperation funcPtr = pgm_read_ptr(&forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthOpt);
+				if (funcPtr != NULL) {
+					/* Execute word */
+					funcPtr();
+				};
+#else  
+				if (forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthOpt != NULL) {
+					/* Execute word by function pointer */
+					forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].forthOpt();
+				}
+				else
+					if (forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].startID > 0) {
+						unsigned int definitionSize = forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].wordLength;
+						unsigned int startID = forthTasks[forthState.forthCurrentTask].forthWordLists[ii].forthWords[jj].startID;
+						/* Execute word by FORTH definition space */
+						for (kk = 0; kk < definitionSize; kk++) {
+							unsigned int forthWordID = forthTasks[forthState.forthCurrentTask].forthDefinitionSpace[startID + kk];
+							printf("forthWordID = %d\n", forthWordID);
+							typedef_forthWord* forthWordPtr = privateGetPermWord(forthWordID);
+							printf("forthWordPtr-> Name = %s\n", forthWordPtr->forthWordName);
+							privateExecuteWordByWordID(forthWordID);
 						};
 					};
 #endif      
@@ -364,10 +418,18 @@ void commonRDotS(void) {
 	PSMSG_DEBUG("commonRDot")
 }
 
+/* 
+	NoOperation
+	Btw, there is the BBCForth word "NOOP" with unknown meaning... 
+ */
+void commonNoOperation(void) {
+	PSMSG_DEBUG("commonNoOperation")
+}
+
 /* Execute the statically defined word PLUS */
 void commonStaticWord(void) {
-	//privateExecuteWord(WORD_STATIC_PLUS);
-	privateExecuteWord(WORD_STATIC_PLUSPLUS);
+	//privateExecuteWordByWordID(WORD_STATIC_PLUS);
+	privateExecuteWordByWordID(WORD_STATIC_PLUSPLUS);
 	PSMSG_DEBUG("commonStaticWord")
 }
 

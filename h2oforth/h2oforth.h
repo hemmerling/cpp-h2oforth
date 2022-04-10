@@ -273,6 +273,8 @@
 #define FALSE 0
 #define EQUAL 0
 #define TRUE !0
+#define IS_OK 0
+#define IS_ERROR !0
 #define CHAR_NULLPOINTER (char*)NULL
 #define CHAR_NULL '\0'
 #define FUNCTION_NULLPOINTER ((void *)NULL)

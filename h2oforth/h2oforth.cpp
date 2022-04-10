@@ -249,6 +249,15 @@ static const PROGMEM char aListofFloat[] = { '-', '+', '.', '0', '1', '2', '3', 
 static const PROGMEM char aListofExponent[] = { '-', '+', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ',' };
 
 /******** Typedefs ********************/
+/*
+ 	instructionPointer.
+ */
+typedef  struct _instructionPointer {
+	const char* forthWordName;
+	const char* forthAlternativeName;
+	WORDID forthWordID;
+	forthOperation  forthOpt; // function pointer 
+} typedef_instructionPointer;
 
 /*
 		FORTH Task.
@@ -266,8 +275,8 @@ typedef  struct _forthTask {
 	unsigned int returnStackIndex;
 	WORDID definitionIndex;
 	WORDID definitionSpaceIndex;
-	WORDID instructionPointer;
-	WORDID currentInstructionAddress; /* "w" */
+	typedef_instructionPointer instructionPointer;
+	typedef_instructionPointer currentInstructionAddress; /* "w" */
 	CELL_INTEGER dataStackSpace[MAX_DATASTACK];
 	void* returnStackSpace[MAX_RETURNSTACK];
 	char printBuffer[MAX_PRINTBUFFER];
@@ -1230,7 +1239,7 @@ void executePermWord(void) {
 							printf("forthWordID = %d\n", forthWordID);
 							typedef_forthWord* forthWordPtr = getPermWord(forthWordID);
 							printf("forthWordPtr-> Name = %s\n", forthWordPtr->forthWordName);
-							privateExecuteWord(forthWordID);
+							privateExecuteWordByWordID(forthWordID);
 						};
 					};
 #endif      
@@ -1425,6 +1434,14 @@ void noParameterPreProcessing(void) {
 	forthState.forthReadsKeyboard = FALSE;
 }
 
+/* Set the instructionPointer to "NoOperation" */
+void setToNoOperation(typedef_instructionPointer instructionPointer) {
+	instructionPointer.forthWordName = "NOOPERATION";
+	instructionPointer.forthAlternativeName = "NOOPERATION";
+	instructionPointer.forthWordID = WORD_NOOPERATION; 
+	instructionPointer.forthOpt = commonNoOperation; // function pointer
+}
+
 /* setup(). Name is fixed as Arduino setup function */
 void setup(void) {
 	/* Arduino: put your setup code here, to run once */
@@ -1454,8 +1471,8 @@ void setup(void) {
 		forthTasks[ii].returnStackIndex = 0;
 		forthTasks[ii].definitionIndex = 0;
 		forthTasks[ii].definitionSpaceIndex = 1; /* 0 is reserved for "no definition" */
-		forthTasks[ii].instructionPointer = 0;
-		forthTasks[ii].currentInstructionAddress = 0; /* "w" */
+		setToNoOperation(forthTasks[ii].instructionPointer);
+		setToNoOperation(forthTasks[ii].currentInstructionAddress);
 		forthTasks[ii].forthWordLists = (typedef_forthWordList*)forthWordLists;
 		forthTasks[ii].forthDefinitionWords = (typedef_forthWord*)forthDefinitionWords;
 		forthTasks[ii].forthDefinitionSpace = (WORDID*)forthDefinitionSpace;
@@ -1476,6 +1493,78 @@ void setup(void) {
 	noParameterPreProcessing();
 	//PUTS("after noParameterPreProcessing");
 #endif
+}
+
+// QUIT executes:
+//     Input source is set to keyboard.
+//     Enter interpret-mode.
+//     Emit "OK".
+//     Clear R-stack
+//     Accept keyboard input until Enter is pressed or buffer is filled.
+//     Interpret keyboard input by executing INTERPRET.
+//         If in interpret-mode then branch to step Emit OK.
+//         If in compile-mode then branch to step Clear R-stack.
+void quit(void){
+}
+
+// INTERPRET executes:
+//     Error if S-stack (data stack) is out-of-bounds.
+//     Parse next word in input stream.
+//     Search for word in dictionary.
+//         If found:
+//             If compiling:
+//                  Execute word if it is marked IMMEDIATE,
+//                  else add word to dictionary.
+//             If interpreting:
+//                   Execute word if not NULL
+//                   If word was NULL, then INTERPRET returns to QUIT.
+//             If not found:
+//                   Try to convert word into a double-cell number.
+//                       Convert to single-cell number if word is numeric but does not contain ".".
+//                   If word is not numeric then error.
+void interpret(void){
+}
+
+//  NEXT routine:
+//     Fetch CFA stored in cell pointed to by FORTH IP.
+//     Increment FORTH IP to next/following FORTH instruction (cell).
+//     Jump to fetched CFA.
+int next(typedef_instructionPointer instructionPointer, 
+		 typedef_instructionPointer currentInstructionAddress) {
+	int result = IS_OK;
+	/* Primitive FORTH word ? */
+	if ( instructionPointer.forthOpt == (forthOperation )NULL ) {
+		/* FORTH bytcode ? */
+		if ( instructionPointer.forthWordID == 0 ) {
+			/* FORTH word name ? */
+			if ( instructionPointer.forthWordName == 0 ) {
+				/* alternative FORTH word name ? */
+				if ( instructionPointer.forthAlternativeName == 0 ) {
+					/* Neither primitive FORTH word, nor FORTH bytecode, 
+					   nor FORTH name, nor alternative FORTH name */
+					result = IS_ERROR;
+					return(result);
+				} else {
+					/* Execute FORTH word by alternative name */
+					/* TBD - Not yet implemented */
+					result = IS_ERROR;
+					return(result);
+				};
+			} else {
+				/* Execute FORTH word by name */	
+				privateExecuteWordByName((char *)instructionPointer.forthAlternativeName);
+			};
+		} else {
+			/* Execute FORTH word by bytecode */
+			privateExecuteWordByWordID(instructionPointer.forthWordID);			
+		};
+	} else {
+		/* Execute FORTH word by primitive FORTH word function */
+		instructionPointer.forthOpt();
+	};
+	/* Increase the instructionPointer to next FORTH word */
+	/* TBD */
+	return(result);
 }
 
 /* loop(). Name is fixed as Arduino loop function */

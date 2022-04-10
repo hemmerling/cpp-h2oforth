@@ -4,7 +4,8 @@
 /* Definitions of FORTH words common to one or more FORTH standards & FORTH implementations */
 
 typedef_forthWord *privateGetPermWord(WORDID);
-void privateExecuteWord(WORDID);
+void privateExecuteWordByName(char *);
+void privateExecuteWordByWordID(WORDID);
 void privateCreateDemoWord(void);
 void privateCMessage(char, int);
 void privateSMessage(char*, int, int, int);
@@ -16,6 +17,7 @@ void commonOctal(void);
 void commonHexDot(void);
 void commonOctDot(void);
 void commonRDotS(void);
+void commonNoOperation(void);
 void commonStaticWord(void);
 
 void exceptionAbort(void);
@@ -374,7 +376,8 @@ static const PROGMEM typedef_forthWord commonWords[] = {
 	{ "HEX.", "HEX.", TRUE, FALSE, FALSE, 0UL, 0UL, 2049UL, (forthOperation)commonHexDot },
 	{ "OCT.", "OCT.", TRUE, FALSE, FALSE, 0UL, 0UL, 2050UL, (forthOperation)commonOctDot },
 	{ "R.S", "R.S", TRUE, FALSE, FALSE, 0UL, 0UL, 2051UL, (forthOperation)commonRDotS },
-	{ "STATICWORD", "STATICWORD", TRUE, FALSE, FALSE, 0UL, 0UL, 2051UL, (forthOperation)commonStaticWord },
+	{ "NOOPERATION", "NOOPERATION", TRUE, FALSE, FALSE, 0UL, 0UL, 2052UL, (forthOperation)commonNoOperation },
+	{ "STATICWORD", "STATICWORD", TRUE, FALSE, FALSE, 0UL, 0UL, 2053UL, (forthOperation)commonStaticWord }
 };
 
 
